@@ -1,0 +1,1090 @@
+{
+  "schema": {
+    "era_role": "What the leader actually IS during each era block. Roles shift; a guide written for one role misleads in the next.",
+    "caveats": "Specific traps. Things the strategy summary implies are free but are not.",
+    "guide_must_account_for": "What a turn-by-turn guide needs as structure, not content. Checkpoints, gates, monitors, abort conditions.",
+    "guide_shape": "The structural type of guide this leader needs. One of: Countdown, Gate, Monitor, Front-Load, Dead-Phase, Linear."
+  },
+  "leaders": [
+    {
+      "name": "Gilgamesh",
+      "guide_shape": "Countdown",
+      "era_role": {
+        "ancient_classical": "Primary aggressor. The War-Cart window is the entire identity.",
+        "medieval_renaissance": "Digester. Turning captured cities into functional infrastructure.",
+        "industrial_modern": "Generic wide empire. Leader ability contributes nothing.",
+        "atomic_information": "Wins or loses on empire size banked 150 turns earlier."
+      },
+      "caveats": [
+        "War-Carts obsolete and their upgrade path is expensive; the unit advantage is a window, not a standing army.",
+        "Captured cities arrive with no infrastructure and immediately tax amenities and loyalty.",
+        "The barbarian outpost reward encourages leaving camps alive, which is also how you get raided."
+      ],
+      "guide_must_account_for": [
+        "A hard stop-conquering turn, after which the guide switches entirely to consolidation.",
+        "An amenity and loyalty checkpoint after every single capture, not at fixed intervals.",
+        "An abort condition: if the first neighbor is not taken by the deadline, what replaces the plan."
+      ]
+    },
+    {
+      "name": "Amanitore",
+      "guide_shape": "Front-Load",
+      "era_role": {
+        "ancient_classical": "Simultaneous aggressor and district engine. Rare double role.",
+        "medieval_renaissance": "Infrastructure snowball off permanently cheaper districts.",
+        "industrial_modern": "Strong generic empire; the military identity is long gone.",
+        "atomic_information": "No ability relevance."
+      },
+      "caveats": [
+        "Nubian Pyramid placement is permanent. A bad early siting is a permanent tax.",
+        "Pitati Archers fall off hard once Crossbowmen exist; the window is narrower than it feels.",
+        "The district production discount does nothing for purchased districts."
+      ],
+      "guide_must_account_for": [
+        "Pyramid siting resolved before the first district is queued anywhere.",
+        "An explicit archer-window countdown tied to opponent tech, not turn number.",
+        "The pivot turn from military production to district spam."
+      ]
+    },
+    {
+      "name": "Montezuma",
+      "guide_shape": "Countdown",
+      "era_role": {
+        "ancient_classical": "Raider harvesting Builders rather than territory.",
+        "medieval_renaissance": "Wide empire with a luxury-scaled army.",
+        "industrial_modern": "Luxury combat bonus diluted by inflated base strength values.",
+        "atomic_information": "Negligible."
+      },
+      "caveats": [
+        "Captured Builders are worthless without a queued improvement plan to spend charges on.",
+        "The combat bonus counts distinct luxuries, not copies. Ten of one resource is one bonus.",
+        "Warring everyone removes the trade partners you need to acquire luxuries you lack."
+      ],
+      "guide_must_account_for": [
+        "A Builder-charge sink list maintained in parallel with the war plan.",
+        "Luxury acquisition tracked as its own objective line, separate from conquest.",
+        "A diplomacy floor: which civs must stay peaceful to keep the luxury count climbing."
+      ]
+    },
+    {
+      "name": "Tomyris",
+      "guide_shape": "Countdown",
+      "era_role": {
+        "ancient_classical": "Swarm. Peak power.",
+        "medieval_renaissance": "Still cavalry, no longer dominant.",
+        "industrial_modern": "Ability contributes nothing.",
+        "atomic_information": "Ability contributes nothing."
+      },
+      "caveats": [
+        "Heal-on-kill requires kills. Grinding against walls with no field units to kill is where the engine dies.",
+        "Duplicate unit training doubles maintenance, and the gold cost arrives before the payoff.",
+        "Nothing about the kit produces a standing yield. If the swarm does not take cities, there is no residue."
+      ],
+      "guide_must_account_for": [
+        "A named target list with per-target deadlines, because the whole plan is time-boxed.",
+        "A gold and maintenance checkpoint before each new wave of units.",
+        "An explicit failure branch: what this civ becomes if the early war stalls."
+      ]
+    },
+    {
+      "name": "Simon Bolivar",
+      "guide_shape": "Linear",
+      "era_role": {
+        "ancient_classical": "Accelerated settling. Settlers and Builders move faster than anyone's.",
+        "medieval_renaissance": "Fast wars with stacked Comandante Generals.",
+        "industrial_modern": "Still faster than everyone. The bonus never stops applying.",
+        "atomic_information": "Still relevant. One of the few kits with no expiry."
+      },
+      "caveats": [
+        "Comandante Generals are era-bound and retire; banking them without using them wastes the ability.",
+        "Movement advantage shrinks on rough terrain and once rivals have roads and railroads.",
+        "The bonus is broad but shallow. It amplifies a plan, it does not supply one."
+      ],
+      "guide_must_account_for": [
+        "General expiry tracked per era, with a use-or-lose prompt at each era transition.",
+        "Settle radius planning that assumes the extra movement point, otherwise the advantage evaporates unused.",
+        "A primary victory path chosen separately, since the ability is path-agnostic."
+      ]
+    },
+    {
+      "name": "Alexander",
+      "guide_shape": "Monitor",
+      "era_role": {
+        "ancient_classical": "Encampment build-out and first wars.",
+        "medieval_renaissance": "Peak. Continuous war with no domestic penalty.",
+        "industrial_modern": "Still warring, but tech parity becomes the binding constraint.",
+        "atomic_information": "Functional, no longer special."
+      },
+      "caveats": [
+        "Peace switches the kit off. There is no reward for consolidation phases.",
+        "No war weariness is not no unhappiness. Loyalty and amenities in captured cities still bite.",
+        "Science from unit training only pays while you keep training. Stopping stops the science."
+      ],
+      "guide_must_account_for": [
+        "A rolling target queue with the next war identified before the current one ends.",
+        "Loyalty, not weariness, as the monitored stat during occupation.",
+        "A continuous unit production line treated as a science building, not a military decision."
+      ]
+    },
+    {
+      "name": "Gorgo",
+      "guide_shape": "Monitor",
+      "era_role": {
+        "ancient_classical": "Barbarian farming into an early civic lead.",
+        "medieval_renaissance": "Culture lead cashed into governments and policy cards ahead of schedule.",
+        "industrial_modern": "Combat culture diluted; the lead must already exist.",
+        "atomic_information": "Irrelevant."
+      },
+      "caveats": [
+        "Culture comes from killing units, not from capturing cities. A clean city grab pays nothing.",
+        "Barbarian supply dries up as the map is settled, and that is usually before the ability stops mattering.",
+        "The culture is only worth what you unlock with it; hoarding it is the common failure."
+      ],
+      "guide_must_account_for": [
+        "A kill-source pipeline as a maintained resource, with a plan for when barbarians run out.",
+        "A pre-committed civic target list so the culture spike converts immediately.",
+        "A warning that siege-heavy, low-kill warfare produces almost nothing for her."
+      ]
+    },
+    {
+      "name": "Ambiorix",
+      "guide_shape": "Countdown",
+      "era_role": {
+        "ancient_classical": "Clustered rush at maximum effectiveness.",
+        "medieval_renaissance": "Falls off as fronts widen and clustering becomes a liability.",
+        "industrial_modern": "Nothing.",
+        "atomic_information": "Nothing."
+      },
+      "caveats": [
+        "Clustered units are exactly what siege and later area damage are designed to punish.",
+        "Culture from training units encourages building an army the economy cannot maintain.",
+        "The adjacency bonus rewards formations, which is a skill the guide has to teach, not a build order."
+      ],
+      "guide_must_account_for": [
+        "Formation guidance as an actual step, not a build queue.",
+        "A maintenance checkpoint, since the culture incentive pushes toward overbuilding.",
+        "The turn at which clustering stops being an advantage and becomes a target."
+      ]
+    },
+    {
+      "name": "Shaka",
+      "guide_shape": "Gate",
+      "era_role": {
+        "ancient_classical": "Genuinely weak. Survival phase with no leader-specific advantage.",
+        "medieval_renaissance": "Peak. Corps snowball with auto-upgrade on capture.",
+        "industrial_modern": "Advantage shrinks once every civ has Corps and Armies access.",
+        "atomic_information": "Nothing."
+      },
+      "caveats": [
+        "The early game is a real vulnerability, not a slow start. Getting rushed ends the game before the kit exists.",
+        "The +5 edge is an edge over civs without Corps. It shrinks to nothing once everyone has them.",
+        "The go signal is a civic unlock, not a turn number, and it varies by game."
+      ],
+      "guide_must_account_for": [
+        "A defensive phase with its own complete build order, treated as a real phase and not filler.",
+        "A gate condition (Mercenaries) that triggers the transition, replacing any fixed turn.",
+        "A closing window warning: the snowball must be underway before rivals reach Corps parity."
+      ]
+    },
+    {
+      "name": "Cyrus",
+      "guide_shape": "Countdown",
+      "era_role": {
+        "ancient_classical": "Surprise war bursts against unprepared neighbors.",
+        "medieval_renaissance": "Same pattern, higher grievance cost.",
+        "industrial_modern": "Ten turns no longer crosses the distances involved.",
+        "atomic_information": "Diplomatically radioactive with little to show."
+      },
+      "caveats": [
+        "Grievances accumulate permanently and invite coalitions. The cost is paid long after the war.",
+        "The ten turns start at declaration, so any staging done after the DoW is time spent from the budget.",
+        "Repeated surprise wars foreclose every diplomatic and city-state avenue for the rest of the game."
+      ],
+      "guide_must_account_for": [
+        "A staging checklist that must fully complete before the declaration turn.",
+        "A grievance budget tracked as a resource with a ceiling.",
+        "A turn-10 checkpoint with an explicit abort-and-peace branch if the objective is not taken."
+      ]
+    },
+    {
+      "name": "Genghis Khan",
+      "guide_shape": "Gate",
+      "era_role": {
+        "ancient_classical": "Horsemen pressure and trade route positioning.",
+        "medieval_renaissance": "Peak. Knights and Keshigs with captured cavalry compounding.",
+        "industrial_modern": "Cavalry still functional, no longer decisive.",
+        "atomic_information": "Nothing."
+      },
+      "caveats": [
+        "The trade route must reach and survive at the target, which means setting it up well before hostility.",
+        "Capturing defeated cavalry only pays against civs that actually field cavalry.",
+        "Horse resource access is a hard prerequisite the ability does not provide."
+      ],
+      "guide_must_account_for": [
+        "Trade route dispatch as an explicit pre-war step with its own lead time.",
+        "A horse and strategic resource audit before committing to the plan.",
+        "Target selection filtered by whether the enemy fields capturable units."
+      ]
+    },
+    {
+      "name": "Chandragupta",
+      "guide_shape": "Gate",
+      "era_role": {
+        "ancient_classical": "Largely dormant. The casus belli is not available immediately.",
+        "medieval_renaissance": "Peak, in narrow bursts against adjacent targets.",
+        "industrial_modern": "The movement burst no longer covers the map.",
+        "atomic_information": "Nothing."
+      },
+      "caveats": [
+        "The bonus requires a specific casus belli, so the real start turn is a civic unlock, not turn one.",
+        "The target must be adjacent. A distant neighbor makes the whole kit inapplicable.",
+        "Ten turns is the entire window, and it is spent moving as much as fighting."
+      ],
+      "guide_must_account_for": [
+        "The civic unlock as the actual opening of the plan, with a defined pre-gate build order.",
+        "Pre-positioning completed before the war declaration.",
+        "A target viability check based on distance, run before committing to the strategy."
+      ]
+    },
+    {
+      "name": "Harald Hardrada",
+      "guide_shape": "Monitor",
+      "era_role": {
+        "ancient_classical": "Longship raiding as primary income.",
+        "medieval_renaissance": "Still raiding, with diminishing returns per coast.",
+        "industrial_modern": "The pillage economy is obsolete; coastal defenses outclass raiders.",
+        "atomic_information": "Nothing."
+      },
+      "caveats": [
+        "Pillage yields deplete per tile. The same coastline does not pay twice.",
+        "Raiding produces income but never territory, so the empire does not grow while the ability works.",
+        "Landlocked or low-coast maps flatly disable the strategy."
+      ],
+      "guide_must_account_for": [
+        "A parallel domestic build plan, since raiding alone never compounds.",
+        "A trigger for when to stop raiding and start actually taking cities.",
+        "A map viability check before the strategy is recommended at all."
+      ]
+    },
+    {
+      "name": "Matthias Corvinus",
+      "guide_shape": "Monitor",
+      "era_role": {
+        "ancient_classical": "Envoy and gold economy. Not yet a military civ.",
+        "medieval_renaissance": "Peak. Levied proxy armies at full effect.",
+        "industrial_modern": "Levied city-state units lag badly behind modern militaries.",
+        "atomic_information": "Nothing."
+      },
+      "caveats": [
+        "Levy costs scale, so the strategy gets more expensive exactly as you use it more.",
+        "Suzerainty can be taken mid-campaign, which removes the army you are currently fighting with.",
+        "Levied units revert. Nothing you levy is ever yours."
+      ],
+      "guide_must_account_for": [
+        "A gold reserve threshold checked before each levy, not after.",
+        "Suzerainty defense as an ongoing per-turn concern, tracked like a resource.",
+        "Captured city consolidation, since the cities are the only permanent gain."
+      ]
+    },
+    {
+      "name": "Suleiman",
+      "guide_shape": "Dead-Phase",
+      "era_role": {
+        "ancient_classical": "Ordinary civ. No leader advantage. Survive and develop.",
+        "medieval_renaissance": "Begins to matter as siege becomes relevant.",
+        "industrial_modern": "Peak. Siege specialization against fortified capitals.",
+        "atomic_information": "Still functional."
+      },
+      "caveats": [
+        "There is no early identity at all. The guide has to fill roughly 100 turns with generic play.",
+        "Janissary recruitment costs population, which competes directly with growth.",
+        "The unique governor needs establishment time in place before it affects anything."
+      ],
+      "guide_must_account_for": [
+        "A complete generic early build order, because the leader supplies no direction there.",
+        "Governor placement scheduled well ahead of the intended war, not at declaration.",
+        "A defensive floor for the long dormant phase, since the kit offers no early protection."
+      ]
+    },
+    {
+      "name": "Lautaro",
+      "guide_shape": "Monitor",
+      "era_role": {
+        "ancient_classical": "Dormant. No Golden Ages exist to punish yet.",
+        "medieval_renaissance": "Opportunistic spoiler against whoever is ahead.",
+        "industrial_modern": "Same role, dependent on rival era scores.",
+        "atomic_information": "Same role, increasingly situational."
+      },
+      "caveats": [
+        "The trigger belongs to other players. There are eras where the ability simply does not apply.",
+        "Loyalty flipping requires population pressure to already be in place; the kills alone do not do it.",
+        "Verify the direction of the ability before writing the guide: the loyalty pressure keys off kills in his own territory."
+      ],
+      "guide_must_account_for": [
+        "Rival era score as a monitored per-turn stat, since it determines whether the kit is live.",
+        "A default plan for eras where no rival is in a Golden Age.",
+        "Loyalty pressure groundwork built before the opportunity appears, not in response to it."
+      ]
+    },
+    {
+      "name": "Trajan",
+      "guide_shape": "Linear",
+      "era_role": {
+        "ancient_classical": "Aggressive settling with free culture in every city.",
+        "medieval_renaissance": "Compounding civic lead from accumulated Monuments.",
+        "industrial_modern": "Ordinary large empire; ability contribution is baked in already.",
+        "atomic_information": "No ongoing effect, but the head start persists."
+      },
+      "caveats": [
+        "Free Monuments make expansion feel free. Amenities, gold, and loyalty are still real limits.",
+        "Automatic roads move invaders through your territory as efficiently as they move Legions.",
+        "The bonus is front-loaded per city, so late-founded cities contribute much less."
+      ],
+      "guide_must_account_for": [
+        "A settle-rate cap tied to amenity and gold capacity rather than available land.",
+        "A culture spend plan, since the advantage is worthless unbanked.",
+        "Diminishing returns on cities founded after the culture lead is already established."
+      ]
+    },
+    {
+      "name": "Hojo Tokimune",
+      "guide_shape": "Front-Load",
+      "era_role": {
+        "ancient_classical": "Tight city placement and the first district clusters.",
+        "medieval_renaissance": "Peak. Compact high-yield complexes across every city.",
+        "industrial_modern": "Still strong, though spacing begins to cap growth.",
+        "atomic_information": "Solid, terrain-independent."
+      },
+      "caveats": [
+        "Tight spacing that helps adjacency also caps late-game population per city.",
+        "The half-cost applies to three district types only; everything else is normal price.",
+        "Adjacency requires deliberate placement order, so build sequence is a real decision."
+      ],
+      "guide_must_account_for": [
+        "A city spacing plan drawn before the second Settler moves.",
+        "District placement order as an explicit sequence, since later placements depend on earlier ones.",
+        "The tradeoff point where tighter spacing starts costing more than the adjacency returns."
+      ]
+    },
+    {
+      "name": "Qin Shi Huang",
+      "guide_shape": "Countdown",
+      "era_role": {
+        "ancient_classical": "Builder spam converting charges directly into Wonders.",
+        "medieval_renaissance": "Ability expired. Living off the wonders already banked.",
+        "industrial_modern": "Ordinary civ with an unusually good wonder collection.",
+        "atomic_information": "No ability relevance."
+      },
+      "caveats": [
+        "Charges spent on Wonders are charges not spent on tile improvements, so the terrain stays weak.",
+        "A rival completing the wonder first wastes the charges entirely with no refund.",
+        "The ability covers Ancient and Classical wonders only. It has a hard expiry."
+      ],
+      "guide_must_account_for": [
+        "A wonder shortlist with pre-planned fallbacks for each one being sniped.",
+        "A Builder charge budget explicitly split between wonders and improvements.",
+        "The era boundary where the ability stops, treated as a scheduled transition."
+      ]
+    },
+    {
+      "name": "Frederick Barbarossa",
+      "guide_shape": "Linear",
+      "era_role": {
+        "ancient_classical": "City-state bullying and expansion. Ability not yet leveraged.",
+        "medieval_renaissance": "Hansa clusters begin compounding.",
+        "industrial_modern": "Peak industrial output.",
+        "atomic_information": "Strong production base carries into any victory type."
+      },
+      "caveats": [
+        "The extra district still requires the population to staff and the production to build it.",
+        "Hansa adjacency depends on Commercial Hubs and resources being placed correctly first.",
+        "Bullying city-states creates lasting grievances and forfeits suzerainty options."
+      ],
+      "guide_must_account_for": [
+        "District cap tracked per city, since the extra slot is the whole ability.",
+        "Hansa and Commercial Hub placement planned jointly, before either is built.",
+        "A decision point on bullying versus envoy investment, because they are mutually exclusive."
+      ]
+    },
+    {
+      "name": "Pachacuti",
+      "guide_shape": "Front-Load",
+      "era_role": {
+        "ancient_classical": "Mountain settling. Slow but structurally sound.",
+        "medieval_renaissance": "High-population fortified cities coming online.",
+        "industrial_modern": "Strong tall empire with natural defense.",
+        "atomic_information": "Solid, unremarkable."
+      },
+      "caveats": [
+        "A start without mountains makes the leader ordinary at best. Start roll variance is the highest on the roster.",
+        "Mountains block your own unit movement as effectively as they block invaders.",
+        "Early production from mountain-heavy terrain is low even with the ability."
+      ],
+      "guide_must_account_for": [
+        "A start assessment step with a genuine go or no-go on the position.",
+        "Terrace Farm placement planned against mountain adjacency from the first Builder.",
+        "An early production supplement plan, since the terrain does not provide one."
+      ]
+    },
+    {
+      "name": "John Curtin",
+      "guide_shape": "Monitor",
+      "era_role": {
+        "ancient_classical": "Passive. Appeal-aware settling with no active ability use.",
+        "medieval_renaissance": "Baiting aggression to trigger production bursts.",
+        "industrial_modern": "Peak. Bursts dumped into high-cost projects.",
+        "atomic_information": "Space race acceleration."
+      },
+      "caveats": [
+        "The trigger requires being attacked, which you do not control and cannot schedule.",
+        "Baiting aggression risks actually losing cities to a competent aggressor.",
+        "A burst with nothing queued is a burst wasted; the ten turns do not wait."
+      ],
+      "guide_must_account_for": [
+        "A pre-queued list of expensive builds kept ready at all times to absorb a burst.",
+        "A defensive floor that keeps baiting from becoming actual defeat.",
+        "A fallback plan for a game where nobody ever attacks."
+      ]
+    },
+    {
+      "name": "Victoria (Age of Steam)",
+      "guide_shape": "Dead-Phase",
+      "era_role": {
+        "ancient_classical": "Ordinary civ. No leader advantage whatsoever.",
+        "medieval_renaissance": "Still ordinary. Building the base the bonus will later multiply.",
+        "industrial_modern": "Peak. Stacking percentage production across the empire.",
+        "atomic_information": "Dominant production for space race or military output."
+      },
+      "caveats": [
+        "Percentage bonuses on a small base produce almost nothing. Empire size before Industrial decides the payoff.",
+        "Coal and iron access is a hard prerequisite the ability assumes but does not provide.",
+        "Roughly 120 turns with no leader-specific direction at all."
+      ],
+      "guide_must_account_for": [
+        "A full generic early and mid game build order, because the kit supplies none.",
+        "A strategic resource securing deadline set before the Industrial era arrives.",
+        "An explicit statement that the flat early curve is expected, so players do not abandon the plan."
+      ]
+    },
+    {
+      "name": "Ba Trieu",
+      "guide_shape": "Front-Load",
+      "era_role": {
+        "ancient_classical": "Constrained development. District placement is the dominant concern.",
+        "medieval_renaissance": "Defensive fortress with strong terrain-based culture.",
+        "industrial_modern": "Still defensively excellent, offensively limited.",
+        "atomic_information": "Solid but hard-capped."
+      },
+      "caveats": [
+        "The district restriction is permanent and can make necessary districts genuinely unbuildable in some cities.",
+        "Some starts are close to unplayable without waiting on the civic that allows planting Woods.",
+        "Every settle decision is also a district decision, made turns before the district exists."
+      ],
+      "guide_must_account_for": [
+        "A terrain audit run before every single settle, not just the first.",
+        "District planning resolved at settle time rather than build time.",
+        "A recovery path for cities that end up unable to host a needed district."
+      ]
+    },
+    {
+      "name": "Lady Six Sky",
+      "guide_shape": "Front-Load",
+      "era_role": {
+        "ancient_classical": "Precise tight settling inside the radius.",
+        "medieval_renaissance": "Efficient compact core outperforming its size.",
+        "industrial_modern": "Hard ceiling reached. Efficiency without scale.",
+        "atomic_information": "Capped. Wins on quality or not at all."
+      },
+      "caveats": [
+        "The city count ceiling is real and low. Domination is structurally awkward.",
+        "Captured cities outside the radius are penalized liabilities, not gains.",
+        "The radius is measured from the capital, so a poor capital position is unrecoverable."
+      ],
+      "guide_must_account_for": [
+        "A settle map drawn before the first Settler moves, with every city site pre-assigned.",
+        "An explicit rule for conquered cities outside the radius: raze, gift, or accept the penalty.",
+        "A victory path chosen early, since domination fights the kit."
+      ]
+    },
+    {
+      "name": "Nzinga Mbande",
+      "guide_shape": "Front-Load",
+      "era_role": {
+        "ancient_classical": "Claim the home continent quickly.",
+        "medieval_renaissance": "Consolidated continental empire with stacked yields.",
+        "industrial_modern": "Ceiling determined by continent size, which was fixed at map generation.",
+        "atomic_information": "Capped."
+      },
+      "caveats": [
+        "A small home continent is a permanent low ceiling with no workaround.",
+        "Overseas expansion is actively bad, which removes an entire mid-game option.",
+        "You cannot know your ceiling until you have explored the continent's edges."
+      ],
+      "guide_must_account_for": [
+        "A continent survey prioritized early, since it determines the size of the whole game.",
+        "An explicit prohibition on overseas settling, including tempting captured cities.",
+        "A pivot for small continents: a faster victory path instead of a larger empire."
+      ]
+    },
+    {
+      "name": "Seondeok",
+      "guide_shape": "Front-Load",
+      "era_role": {
+        "ancient_classical": "Hill-sited Seowons producing reliable science immediately.",
+        "medieval_renaissance": "Steady, unspectacular science lead.",
+        "industrial_modern": "Ceiling shows. Rivals with real adjacency overtake.",
+        "atomic_information": "Adequate, not competitive at the top end."
+      },
+      "caveats": [
+        "Isolation forfeits all district adjacency stacking, so the science ceiling is genuinely low.",
+        "Hills are a hard requirement for the full bonus and constrain city siting.",
+        "Verify the isolated adjacency figure before publishing it; sources cite both +3 and +4."
+      ],
+      "guide_must_account_for": [
+        "A hill inventory taken at settle time, since Seowon placement is decided then.",
+        "District spacing rules that keep Seowons isolated, which conflicts with normal placement instincts.",
+        "A faster victory timeline, because the ceiling does not reward a long game."
+      ]
+    },
+    {
+      "name": "Hammurabi",
+      "guide_shape": "Countdown",
+      "era_role": {
+        "ancient_classical": "Explosive. Eurekas convert to whole technologies.",
+        "medieval_renaissance": "Eurekas thin out while the halved base science starts hurting.",
+        "industrial_modern": "Actively behind. The penalty outlives the benefit.",
+        "atomic_information": "Structurally disadvantaged."
+      },
+      "caveats": [
+        "The science halving is permanent and never improves. Only the benefit expires.",
+        "Later-era Eurekas require conditions that are difficult or slow to satisfy deliberately.",
+        "A tech lead that is not converted into something material is worth nothing once rivals catch up."
+      ],
+      "guide_must_account_for": [
+        "A Eureka availability audit per era, so the decline is visible before it bites.",
+        "A hard conversion deadline: the tech lead must become military, wonders, or territory by a set point.",
+        "An explicit late-game plan that assumes a science deficit rather than a lead."
+      ]
+    },
+    {
+      "name": "Robert the Bruce",
+      "guide_shape": "Monitor",
+      "era_role": {
+        "ancient_classical": "Amenity infrastructure build-up before any bonus exists.",
+        "medieval_renaissance": "Bonuses live, conditional on maintaining Ecstatic.",
+        "industrial_modern": "Strong while the amenity state holds.",
+        "atomic_information": "Same, still conditional."
+      },
+      "caveats": [
+        "An amenity crash removes the bonus empire-wide instantly, not gradually.",
+        "Luxuries acquired by trade expire, so the amenity state has a renewal schedule you must track.",
+        "Wide play makes Ecstatic across all cities practically unachievable."
+      ],
+      "guide_must_account_for": [
+        "Amenities as a per-turn monitored stat with a warning threshold, not a build item.",
+        "A city count cap derived from available luxuries rather than available land.",
+        "A luxury renewal calendar tied to trade deal expiry dates."
+      ]
+    },
+    {
+      "name": "Teddy Roosevelt (Bull Moose)",
+      "guide_shape": "Linear",
+      "era_role": {
+        "ancient_classical": "Appeal-preserving settlement. Slow, deliberate.",
+        "medieval_renaissance": "Preserves and appeal yields compounding.",
+        "industrial_modern": "Peak tourism and passive science.",
+        "atomic_information": "Strong culture position."
+      },
+      "caveats": [
+        "No chopping means forfeiting the standard production acceleration lever for the entire game.",
+        "Mines and Industrial Zones destroy the appeal the whole strategy depends on.",
+        "Appeal-based yields need the Preserve civic to fully pay, which gates the payoff."
+      ],
+      "guide_must_account_for": [
+        "Appeal-aware district placement rules that override normal adjacency instincts.",
+        "An alternative production plan, since chopping is off the table.",
+        "Appeal as a tracked per-tile value that improvements can silently degrade."
+      ]
+    },
+    {
+      "name": "Kupe",
+      "guide_shape": "Linear",
+      "era_role": {
+        "ancient_classical": "Ocean opening, then coastal settling on high-appeal land.",
+        "medieval_renaissance": "Pristine terrain yields compounding.",
+        "industrial_modern": "National Parks and tourism.",
+        "atomic_information": "Culture victory position."
+      },
+      "caveats": [
+        "Starting at sea with no turn-one settle is a genuine tempo loss that must be planned around.",
+        "Coastal cities are production-poor, which compounds with the no-chopping restriction.",
+        "The appeal payoff arrives late while the costs are all paid early."
+      ],
+      "guide_must_account_for": [
+        "An opening ocean route decision with a settle deadline attached.",
+        "Explicit acknowledgment of the slow opening so players do not read it as failure.",
+        "A production plan that assumes neither chopping nor strong land tiles."
+      ]
+    },
+    {
+      "name": "Pericles",
+      "guide_shape": "Monitor",
+      "era_role": {
+        "ancient_classical": "Envoy accumulation and early culture districts.",
+        "medieval_renaissance": "Multiplier at full effect across a growing culture base.",
+        "industrial_modern": "Strong, still contingent on holding suzerainties.",
+        "atomic_information": "Culture victory position, still rented."
+      },
+      "caveats": [
+        "Suzerainty can be outbid at any time, and the culture loss is immediate and global.",
+        "A percentage of nothing is nothing. The multiplier needs real culture districts underneath it.",
+        "Envoy competition intensifies as other civs pursue diplomatic victory."
+      ],
+      "guide_must_account_for": [
+        "An envoy budget per era, plus a defense reserve for contested city-states.",
+        "Culture district construction as a parallel mandatory track, not an optional one.",
+        "Suzerainty count as a monitored stat with a response plan when one is lost."
+      ]
+    },
+    {
+      "name": "Cleopatra (Ptolemaic)",
+      "guide_shape": "Linear",
+      "era_role": {
+        "ancient_classical": "River and floodplain settling with early Food and Culture.",
+        "medieval_renaissance": "Appeal advantage compounding into culture.",
+        "industrial_modern": "National Parks and Seaside Resorts on inverted-appeal terrain.",
+        "atomic_information": "Strong tourism position."
+      },
+      "caveats": [
+        "Floodplains still flood. The appeal inversion does not prevent the damage.",
+        "Dam construction competes for production exactly when growth is most valuable.",
+        "River dependency constrains settling more tightly than it first appears."
+      ],
+      "guide_must_account_for": [
+        "A flood risk versus appeal tradeoff decision per city, with dam timing attached.",
+        "The two-phase nature of the payoff, since early Food and late Parks need different plans.",
+        "River availability assessed at settle time across the whole intended empire."
+      ]
+    },
+    {
+      "name": "Pedro II",
+      "guide_shape": "Monitor",
+      "era_role": {
+        "ancient_classical": "Rainforest-adjacent district placement.",
+        "medieval_renaissance": "Great Person accumulation accelerating.",
+        "industrial_modern": "Great Person monopoly across chosen categories.",
+        "atomic_information": "Strong in whichever category was monopolized."
+      },
+      "caveats": [
+        "Rainforest suppresses production and is constantly tempting to clear, which breaks the engine.",
+        "Great People are contested. A lost race is points spent for nothing.",
+        "The refund only applies on recruitment, so patronage spending does not compound the same way."
+      ],
+      "guide_must_account_for": [
+        "A Great Person priority list committed to early, since spreading thin loses every race.",
+        "Rival Great Person point totals as a monitored value.",
+        "A production plan that accepts rainforest penalties rather than clearing them."
+      ]
+    },
+    {
+      "name": "Ludwig II",
+      "guide_shape": "Monitor",
+      "era_role": {
+        "ancient_classical": "Nothing meaningful.",
+        "medieval_renaissance": "Peak. Half-built Wonders as a culture engine.",
+        "industrial_modern": "Culture converting to tourism.",
+        "atomic_information": "Culture victory position."
+      },
+      "caveats": [
+        "Completing the Wonder ends the bonus. This is the only self-terminating ability on the roster.",
+        "A rival completing that Wonder destroys the engine and wastes all invested production.",
+        "Production locked in permanently unfinished builds is production doing nothing else."
+      ],
+      "guide_must_account_for": [
+        "A designated stall list: which Wonders are deliberately never finished.",
+        "Rival wonder progress as a monitored risk, with a finish-it-now trigger.",
+        "A rule for when completing is better than stalling, since it changes late in the game."
+      ]
+    },
+    {
+      "name": "Kristina",
+      "guide_shape": "Dead-Phase",
+      "era_role": {
+        "ancient_classical": "No leader advantage. Survive and develop normally.",
+        "medieval_renaissance": "Still nothing active. Great Person groundwork only.",
+        "industrial_modern": "Peak. Automatic theming across the empire.",
+        "atomic_information": "Effortless tourism output."
+      },
+      "caveats": [
+        "Roughly 80 turns with no leader-specific direction at all.",
+        "Auto-theming needs Great Works, which need Great People, which need early investment with no visible return.",
+        "The Queen's Library is a one-time effect, not an engine."
+      ],
+      "guide_must_account_for": [
+        "A full survival and development build order for the dormant phase.",
+        "Great Person point accumulation started early despite producing nothing immediately.",
+        "An explicit note that the flat early curve is intended, so the plan is not abandoned."
+      ]
+    },
+    {
+      "name": "Catherine de Medici (Black Queen)",
+      "guide_shape": "Linear",
+      "era_role": {
+        "ancient_classical": "Free spy and early diplomatic visibility.",
+        "medieval_renaissance": "Espionage economy plus combat visibility bonuses.",
+        "industrial_modern": "Chateau tourism coming online.",
+        "atomic_information": "Tourism and intelligence together."
+      },
+      "caveats": [
+        "Spies get caught and killed. The free spy is not a permanent asset.",
+        "The visibility combat bonus only matters if you actually go to war.",
+        "Chateaux require rivers, so the late payoff depends on early land decisions."
+      ],
+      "guide_must_account_for": [
+        "Spy mission priority that shifts by era rather than a fixed assignment.",
+        "River tiles reserved for Chateaux from the early game onward.",
+        "A decision on whether war is part of the plan, since it changes the value of visibility."
+      ]
+    },
+    {
+      "name": "Wilfrid Laurier",
+      "guide_shape": "Dead-Phase",
+      "era_role": {
+        "ancient_classical": "Tundra survival. Low output, low risk.",
+        "medieval_renaissance": "Still low output. Building toward the late spike.",
+        "industrial_modern": "Peak. National Parks and tourism spike.",
+        "atomic_information": "Strong culture position."
+      },
+      "caveats": [
+        "Surprise War immunity is not immunity to formal war. A prepared aggressor can still declare.",
+        "Tundra means low food and production, so everything takes longer than the guide's default pacing.",
+        "The late tourism spike needs Parks, which need appeal and Preserves in place well beforehand."
+      ],
+      "guide_must_account_for": [
+        "A stated low-output expectation for the first two eras so pacing feels intentional.",
+        "A formal war defense plan, since the immunity covers only one war type.",
+        "National Park groundwork begun long before the era where it pays."
+      ]
+    },
+    {
+      "name": "Eleanor of Aquitaine",
+      "guide_shape": "Dead-Phase",
+      "era_role": {
+        "ancient_classical": "Great Work accumulation with no visible effect.",
+        "medieval_renaissance": "Pressure beginning to register on border cities.",
+        "industrial_modern": "Peak. Neighboring cities defecting.",
+        "atomic_information": "Consolidated empire acquired without war."
+      },
+      "caveats": [
+        "The strategy requires neighbors close enough for loyalty pressure to reach, which is a map condition.",
+        "Great Works must be concentrated in border cities, not distributed for safety.",
+        "Flipped cities can flip back if the pressure balance shifts."
+      ],
+      "guide_must_account_for": [
+        "Border city selection made early and deliberately, since the whole plan concentrates there.",
+        "Great Work placement as a strategic decision rather than a storage question.",
+        "Loyalty pressure math surfaced to the player, because the mechanism is otherwise invisible."
+      ]
+    },
+    {
+      "name": "Peter",
+      "guide_shape": "Gate",
+      "era_role": {
+        "ancient_classical": "Tundra Lavras generating early Faith.",
+        "medieval_renaissance": "Great Writers, Artists, and Musicians accumulating rapidly.",
+        "industrial_modern": "Culture and tourism from banked Great People.",
+        "atomic_information": "Strong culture position."
+      },
+      "caveats": [
+        "Tundra food scarcity caps city growth, which caps everything downstream.",
+        "The pantheon that makes tundra Faith work is contested and can be taken.",
+        "Lavra Great Person points still need Faith to convert into actual Great People."
+      ],
+      "guide_must_account_for": [
+        "A pantheon race deadline with a fallback pantheon if the preferred one is taken.",
+        "A food strategy for tundra cities, since the terrain does not provide one.",
+        "Faith allocation split between Great People purchase and religious spread."
+      ]
+    },
+    {
+      "name": "Jayavarman VII",
+      "guide_shape": "Linear",
+      "era_role": {
+        "ancient_classical": "River Holy Sites providing Food, Housing, and Faith at once.",
+        "medieval_renaissance": "Population engine compounding.",
+        "industrial_modern": "Large high-population empire.",
+        "atomic_information": "Flexible; population supports any path."
+      },
+      "caveats": [
+        "River dependency constrains settling more than it appears, especially for later cities.",
+        "Flooding threatens exactly the tiles the strategy is built on.",
+        "Holy Site placement for the river bonus can conflict with optimal adjacency for other districts."
+      ],
+      "guide_must_account_for": [
+        "River-first settle planning across the whole intended empire, not just the capital.",
+        "Aqueduct and dam sequencing relative to Holy Site placement.",
+        "A victory path chosen separately, since population is an input rather than a direction."
+      ]
+    },
+    {
+      "name": "Saladin",
+      "guide_shape": "Linear",
+      "era_role": {
+        "ancient_classical": "Skip the Faith race entirely. Campuses and expansion.",
+        "medieval_renaissance": "Religion arrives; Madrasa science comes online.",
+        "industrial_modern": "Strong combined science and faith.",
+        "atomic_information": "Solid science position."
+      },
+      "caveats": [
+        "The guaranteed prophet is the last one, so belief selection is whatever others left behind.",
+        "A late religion means rival religions may already have spread into your cities.",
+        "The free tempo only pays if it is actually spent on science and expansion, not banked."
+      ],
+      "guide_must_account_for": [
+        "A belief plan that assumes leftovers rather than first choice.",
+        "Religious defense against earlier-founded faiths already pressuring your cities.",
+        "An explicit use for the skipped early Faith investment, or the advantage disappears."
+      ]
+    },
+    {
+      "name": "Gandhi",
+      "guide_shape": "Monitor",
+      "era_role": {
+        "ancient_classical": "Exploration and first contact. Faith scales with civs met.",
+        "medieval_renaissance": "Passive Faith accumulating from peaceful relations.",
+        "industrial_modern": "Strong Faith economy contingent on continued peace.",
+        "atomic_information": "Same, increasingly fragile as wars become likelier."
+      },
+      "caveats": [
+        "Output depends on how many rivals founded religions, which you do not control.",
+        "Each war zeroes that civ's contribution, so a single conflict has an ongoing economic cost.",
+        "Civs you have not met contribute nothing, making early exploration an economic activity."
+      ],
+      "guide_must_account_for": [
+        "Exploration prioritized early and treated as income generation, not scouting.",
+        "A strictly defensive military doctrine with rules for what counts as provocation.",
+        "A contingency for games where few rivals found religions."
+      ]
+    },
+    {
+      "name": "Menelik II",
+      "guide_shape": "Linear",
+      "era_role": {
+        "ancient_classical": "Hill settling and early Faith generation.",
+        "medieval_renaissance": "Faith converting into Science and Culture simultaneously.",
+        "industrial_modern": "One yield stream funding three victory paths.",
+        "atomic_information": "Flexible and self-sufficient."
+      },
+      "caveats": [
+        "Hills mean low food, which caps the population that drives everything else.",
+        "The conversion is a percentage, so a weak Faith base converts into very little.",
+        "Rock-Hewn Church placement has terrain requirements that constrain city layout."
+      ],
+      "guide_must_account_for": [
+        "Faith base construction prioritized before the conversion is worth anything.",
+        "A food supplement plan for hill-heavy cities.",
+        "A victory path decision, since the kit funds three without preferring one."
+      ]
+    },
+    {
+      "name": "Gitarja",
+      "guide_shape": "Gate",
+      "era_role": {
+        "ancient_classical": "Coastal Faith generation from improvements.",
+        "medieval_renaissance": "Peak. Faith-purchased Jong armadas.",
+        "industrial_modern": "Naval advantage eroding as ships modernize.",
+        "atomic_information": "Ordinary."
+      },
+      "caveats": [
+        "Continental maps disable the strategy almost completely.",
+        "Coastal cities are production-poor, which is why Faith purchasing matters, but it also caps everything else.",
+        "The Jong window closes; Faith spent too late buys obsolete ships."
+      ],
+      "guide_must_account_for": [
+        "A map viability check before the strategy is recommended at all.",
+        "Navy purchase timing set against the obsolescence window, not against Faith availability.",
+        "A land plan, since coastal cities alone rarely carry a full game."
+      ]
+    },
+    {
+      "name": "Jadwiga",
+      "guide_shape": "Gate",
+      "era_role": {
+        "ancient_classical": "Early Encampments stealing border tiles.",
+        "medieval_renaissance": "Peak. Forced conversion and territorial pressure.",
+        "industrial_modern": "Less relevant as borders stabilize.",
+        "atomic_information": "Ordinary."
+      },
+      "caveats": [
+        "The ability requires a founded religion first, which gates the whole strategy.",
+        "Guaranteed grievances from every affected neighbor, with no diplomatic recovery.",
+        "Border Encampments are exposed positions by definition."
+      ],
+      "guide_must_account_for": [
+        "Religion founding as a hard prerequisite gate before any Encampment placement.",
+        "A defensive plan for exposed forward Encampments.",
+        "Acceptance of permanent diplomatic isolation as a stated cost of the plan."
+      ]
+    },
+    {
+      "name": "Basil II",
+      "guide_shape": "Gate",
+      "era_role": {
+        "ancient_classical": "Religion rush. No military advantage yet.",
+        "medieval_renaissance": "Peak. Cavalry ignoring walls against converted cities.",
+        "industrial_modern": "Falls off as cavalry loses primacy.",
+        "atomic_information": "Nothing."
+      },
+      "caveats": [
+        "Two prerequisites must both be met before the bonus exists: found the religion, then spread it to the target.",
+        "Missionaries and Apostles must survive the trip, and they are fragile.",
+        "If the target converts away, the bonus disappears mid-campaign."
+      ],
+      "guide_must_account_for": [
+        "Religious spread treated as a military logistics step with its own timeline.",
+        "Escort planning for religious units moving toward hostile territory.",
+        "Target faith status as a per-turn check during the war, not just before it."
+      ]
+    },
+    {
+      "name": "Philip II",
+      "guide_shape": "Gate",
+      "era_role": {
+        "ancient_classical": "Religion founding. No combat advantage yet.",
+        "medieval_renaissance": "Peak. Conquistadors against differently-faithed neighbors.",
+        "industrial_modern": "Falls off sharply.",
+        "atomic_information": "Nothing."
+      },
+      "caveats": [
+        "If a target adopts your religion, your combat bonus against them vanishes entirely.",
+        "The unit bonus requires a religious unit stacked with the military unit, which is a logistics burden.",
+        "The Conquistador window is narrow and era-bound."
+      ],
+      "guide_must_account_for": [
+        "A faith check on each target run before declaring, since it determines whether the kit applies.",
+        "Paired military and religious units as a standard formation in the build plan.",
+        "A caution against spreading your own religion to intended targets."
+      ]
+    },
+    {
+      "name": "Tamar",
+      "guide_shape": "Monitor",
+      "era_role": {
+        "ancient_classical": "Walls and envoy investment. Slow start.",
+        "medieval_renaissance": "Golden Age chaining at full effect.",
+        "industrial_modern": "Strong while the chain holds, fragile if broken.",
+        "atomic_information": "Dependent on an unbroken sequence."
+      },
+      "caveats": [
+        "Missing a single Golden Age breaks the compounding sequence and it does not restart at the same value.",
+        "Protectorate Wars require an ally to be attacked, which you do not control.",
+        "Wall production is defensive spending that competes with everything else early."
+      ],
+      "guide_must_account_for": [
+        "Era score as a monitored per-turn stat with a warning threshold before each era transition.",
+        "Ally threat status watched continuously so Protectorate opportunities are not missed.",
+        "A fallback plan for eras where no ally is attacked and no Golden Age is reachable."
+      ]
+    },
+    {
+      "name": "Mansa Musa",
+      "guide_shape": "Monitor",
+      "era_role": {
+        "ancient_classical": "Desert settling with weak production and growing Gold.",
+        "medieval_renaissance": "Purchasing infrastructure faster than rivals can build it.",
+        "industrial_modern": "Buying whatever the game requires.",
+        "atomic_information": "Strong if the Gold engine held; helpless if it did not."
+      },
+      "caveats": [
+        "The production penalty makes Wonders effectively unavailable for the whole game.",
+        "Desert food scarcity limits population, which limits the Gold engine itself.",
+        "An economic collapse is unrecoverable, because there is no production fallback."
+      ],
+      "guide_must_account_for": [
+        "A Gold income floor defined per era, treated as a survival threshold.",
+        "An explicit never-build-always-buy rule, since the instinct to build wastes turns.",
+        "Wonders removed from the plan entirely rather than listed as optional."
+      ]
+    },
+    {
+      "name": "Yongle",
+      "guide_shape": "Gate",
+      "era_role": {
+        "ancient_classical": "Growth infrastructure. No bonus active yet.",
+        "medieval_renaissance": "Cities crossing the threshold; yields step up sharply.",
+        "industrial_modern": "Peak. Percentage yields and per-citizen Gold compounding.",
+        "atomic_information": "Strong across every path."
+      },
+      "caveats": [
+        "The payoff is threshold-gated, so progress genuinely looks like nothing until it looks like everything.",
+        "Projects consume production that could otherwise be building the housing needed to reach the threshold.",
+        "Housing and amenities must be solved before the projects are worth running."
+      ],
+      "guide_must_account_for": [
+        "Housing and food infrastructure sequenced before project spam, not alongside it.",
+        "Per-city threshold tracking, since cities cross at different times.",
+        "An explicit note that the pre-threshold flatline is expected."
+      ]
+    },
+    {
+      "name": "Dido",
+      "guide_shape": "Monitor",
+      "era_role": {
+        "ancient_classical": "Coastal settling and early forward positions.",
+        "medieval_renaissance": "Loyalty-free expansion onto new continents.",
+        "industrial_modern": "Wide multi-continental empire.",
+        "atomic_information": "Strong, broad position."
+      },
+      "caveats": [
+        "Relocating the capital has real costs and cannot be undone casually.",
+        "Coastal cities are production-poor, which the loyalty immunity does not fix.",
+        "Forward settling generates grievances from every civ you settle near."
+      ],
+      "guide_must_account_for": [
+        "Capital relocation as a scheduled decision point with stated prerequisites, not an improvisation.",
+        "A production supplement plan for coastal-heavy empires.",
+        "A diplomatic cost budget for forward settling."
+      ]
+    },
+    {
+      "name": "Tokugawa",
+      "guide_shape": "Linear",
+      "era_role": {
+        "ancient_classical": "Establishing the capital cluster and first internal routes.",
+        "medieval_renaissance": "Domestic route yields stacking.",
+        "industrial_modern": "Strong self-contained economy.",
+        "atomic_information": "Solid, insulated."
+      },
+      "caveats": [
+        "International trade income is forfeited entirely, not reduced. That is a whole mechanic given away.",
+        "Domestic routes need many cities to be worth much, so the kit rewards width you must build first.",
+        "Isolation reduces diplomatic leverage and information about rival progress."
+      ],
+      "guide_must_account_for": [
+        "City count treated as the multiplier on the entire trade strategy.",
+        "An explicit prohibition on international routes, since they will look tempting.",
+        "An information plan, because isolation means flying blind on rival progress."
+      ]
+    },
+    {
+      "name": "Joao III",
+      "guide_shape": "Monitor",
+      "era_role": {
+        "ancient_classical": "Exploration and first contact with coastal civs.",
+        "medieval_renaissance": "Feitorias and high-yield foreign routes.",
+        "industrial_modern": "Strong trade economy, still externally dependent.",
+        "atomic_information": "Solid if the route network survived."
+      },
+      "caveats": [
+        "Routes require coastal foreign cities that must exist, be reachable, and remain in friendly hands.",
+        "A rival conquering your route destinations damages your economy without touching your territory.",
+        "Water-poor maps make the extra route capacity nearly useless."
+      ],
+      "guide_must_account_for": [
+        "Exploration as a core early loop rather than a preliminary step.",
+        "A target city audit maintained over time, since destinations change hands.",
+        "Route re-planning triggers when destinations are lost or become hostile."
+      ]
+    }
+  ]
+}
