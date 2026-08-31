@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leadership Focus — Civilization VI Strategy Guides</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@500;600;700&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a href="#/" class="brand">
+      <span class="brand__crest" aria-hidden="true">
+        <svg viewBox="0 0 40 40" width="34" height="34">
+          <circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="1.2"/>
+          <circle cx="20" cy="20" r="13.5" fill="none" stroke="currentColor" stroke-width="0.7"/>
+          <path d="M20 3 L20 37 M3 20 L37 20" stroke="currentColor" stroke-width="0.6"/>
+          <path d="M20 6 L27 20 L20 34 L13 20 Z" fill="none" stroke="currentColor" stroke-width="1.1"/>
+          <circle cx="20" cy="20" r="2.4" fill="currentColor"/>
+        </svg>
+      </span>
+      <span class="brand__text">
+        <span class="brand__title">Leadership Focus</span>
+        <span class="brand__subtitle">Civilization&nbsp;VI Strategic Planning</span>
+      </span>
+    </a>
+    <nav class="site-nav">
+      <a href="#/leaders" class="site-nav__link" data-nav="leaders">Codex</a>
+      <a href="#/quiz" class="site-nav__link" data-nav="quiz">Quiz</a>
+      <span class="roster-count" id="rosterCount"></span>
+    </nav>
+  </div>
+</header>
+
+<main id="app"></main>
+
+<footer class="site-footer">
+  <span class="rule-orn" aria-hidden="true">❦</span>
+  <p>54 leaders · 6 leadership shapes · 4 power curves · Compiled from the Leadership Focus guide pipeline.</p>
+</footer>
+
+<!-- ============ LANDING ============ -->
+<template id="tpl-landing">
+  <section class="landing">
+    <div class="landing__plate">
+      <p class="landing__eyebrow">A Strategist's Codex</p>
+      <h1 class="landing__title">Leadership Focus</h1>
+      <p class="landing__lede">
+        Every Civilization VI leader has a shape — a moment their kit is loudest, a price it charges,
+        and a deadline by which that advantage must become something permanent. This codex reads all
+        fifty-four of them the same way, so you can plan the game instead of improvising it.
+      </p>
+
+      <div class="landing__actions">
+        <a href="#/leaders" class="btn btn--primary btn--lg">Enter the Codex</a>
+        <a href="#/quiz" class="btn btn--lg">Find My Leader</a>
+      </div>
+    </div>
+
+    <div class="landing__axes">
+      <h2 class="section__title section__title--center">The Three Measures</h2>
+      <p class="landing__note">Each leader is filed against three axes. Learn these and every guide reads faster.</p>
+      <div class="axis-grid" id="landingAxes"></div>
+    </div>
+
+    <div class="landing__howto">
+      <h2 class="section__title section__title--center">How To Use This</h2>
+      <ol class="steps">
+        <li>
+          <span class="steps__num">I</span>
+          <div>
+            <h3>Pick a leader, or let the quiz pick.</h3>
+            <p>Browse the Codex grouped by focus — Military, Production, Science, Culture, Faith, Gold — or answer five questions and get your three best matches with the reasoning shown.</p>
+          </div>
+        </li>
+        <li>
+          <span class="steps__num">II</span>
+          <div>
+            <h3>Read the curve before the build order.</h3>
+            <p>The power curve tells you when the kit pays. A Spike leader that reaches turn 100 with nothing banked has already lost; a Bloom leader idle at turn 60 is exactly on schedule.</p>
+          </div>
+        </li>
+        <li>
+          <span class="steps__num">III</span>
+          <div>
+            <h3>Play the phases, watch the checkpoints.</h3>
+            <p>Each guide is a numbered timeline with decision checkpoints, an abort branch, and a plainly stated fail state — so you know when the plan is dead instead of discovering it forty turns late.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+</template>
+
+<!-- ============ CODEX GRID ============ -->
+<template id="tpl-grid">
+  <section class="toolbar" id="toolbar">
+    <button class="toolbar__toggle" id="filterToggle" aria-expanded="true" aria-controls="filterBody">
+      <span class="toolbar__toggle-icon" aria-hidden="true">⚙</span>
+      <span class="toolbar__toggle-label">Refine the Roster</span>
+      <span class="toolbar__summary" id="filterSummary"></span>
+      <span class="toolbar__chevron" aria-hidden="true">▾</span>
+    </button>
+    <div class="toolbar__body" id="filterBody">
+      <div class="toolbar__inner">
+        <div class="field field--search">
+          <label for="searchInput" class="field__label">Search</label>
+          <input id="searchInput" type="search" placeholder="Leader, civilization, or title…" autocomplete="off">
+        </div>
+        <div class="chip-group">
+          <span class="field__label">Focus — groups the roster below</span>
+          <div class="chip-row" id="categoryChips"></div>
+        </div>
+        <div class="chip-group">
+          <span class="field__label">Power Curve</span>
+          <div class="chip-row" id="curveChips"></div>
+        </div>
+        <div class="chip-group">
+          <span class="field__label">Conversion</span>
+          <div class="chip-row" id="conversionChips"></div>
+        </div>
+        <div class="toolbar__meta">
+          <span id="resultCount"></span>
+          <button id="clearFilters" class="btn btn--sm" type="button">Clear all</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="leaderSections"></div>
+  <p class="empty-state" id="emptyState" hidden>No leaders match those filters.</p>
+</template>
+
+<template id="tpl-card">
+  <a class="card" href="#">
+    <div class="card__portrait">
+      <img loading="lazy" alt="">
+      <span class="roundel roundel--sm card__cat-roundel"><img alt=""></span>
+    </div>
+    <div class="card__body">
+      <h3 class="card__name"></h3>
+      <p class="card__civ"></p>
+      <div class="card__tags">
+        <span class="roundel roundel--xs card__curve-roundel"><img alt=""></span>
+        <span class="roundel roundel--xs card__conversion-roundel"><img alt=""></span>
+      </div>
+    </div>
+  </a>
+</template>
+
+<!-- ============ DETAIL ============ -->
+<template id="tpl-detail">
+  <article class="detail">
+    <nav class="detail__nav">
+      <a href="#/leaders" class="btn btn--sm">← Codex</a>
+      <div class="detail__pager">
+        <button type="button" class="btn btn--sm" id="prevLeader">‹ Prev</button>
+        <button type="button" class="btn btn--sm" id="nextLeader">Next ›</button>
+      </div>
+    </nav>
+    <header class="detail__hero" id="detailHero"></header>
+    <div id="detailBody"></div>
+  </article>
+</template>
+
+<!-- ============ QUIZ ============ -->
+<template id="tpl-quiz">
+  <section class="quiz">
+    <header class="quiz__head">
+      <p class="landing__eyebrow">Five Questions</p>
+      <h1 class="landing__title landing__title--sm">Find My Leader</h1>
+      <p class="landing__note">Answer honestly about how you actually play, not how you wish you played. Your three closest matches are shown with the reasoning.</p>
+    </header>
+    <div class="quiz__progress"><div class="quiz__progress-bar" id="quizProgress"></div></div>
+    <div id="quizStage"></div>
+  </section>
+</template>
+
+<script src="js/app.js"></script>
+</body>
+</html>
