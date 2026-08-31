@@ -1,0 +1,44 @@
+# Menelik II — Leadership Focus Guide
+
+**Shape:** Linear
+**Curve:** Flat | **Conversion:** Permanent | **Condition cost:** Hill settling requirement
+
+> Standard era-block guides work. The ability amplifies a plan rather than supplying one, so the guide's real job is making the player choose a direction the amplifier can act on.
+
+## Ancient / Classical
+*Turns: 1 to 80*
+- Hill settling and early Faith generation.
+- Choose the victory path now. A permanent, unconditional bonus applied to no particular plan produces a comfortable game and no win.
+- Respect the one constraint: Hill settling requirement
+
+## Medieval / Renaissance
+*Turns: 80 to 160*
+- Faith converting into Science and Culture simultaneously.
+- Era checkpoint: confirm the bonus is being spent, not banked. This is the characteristic failure of the shape.
+
+## Industrial / Modern
+*Turns: 160 to 240*
+- One yield stream funding three victory paths.
+- Era checkpoint: is the chosen victory path still reachable? Linear leaders can pivot; the flat curve makes it affordable.
+
+## Atomic / Information
+*Turns: 240 onward*
+- Flexible and self-sufficient.
+- Close out the chosen condition.
+
+## Abort branch
+**Trigger:** Turn 150 with no victory path committed.
+- Pick the path the accumulated empire is already closest to and commit fully. Linear leaders lose by drifting, not by collapsing.
+
+## Fail state
+A comfortable, undirected empire that never converts its advantage into a win condition.
+
+## Caveats
+- Hills mean low food, which caps the population that drives everything else.
+- The conversion is a percentage, so a weak Faith base converts into very little.
+- Rock-Hewn Church placement has terrain requirements that constrain city layout.
+
+## Guide must account for
+- Faith base construction prioritized before the conversion is worth anything.
+- A food supplement plan for hill-heavy cities.
+- A victory path decision, since the kit funds three without preferring one.
