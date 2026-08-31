@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "purpose": "Fills the slots the templates referenced but no source file provided: gate_condition, watched_stat, activation_turn, prerequisite. Also declares alt_shape for leaders that legitimately span two guide shapes, and a name_key normalization table so the join is exact-match safe.",
+    "join_key": "name_key (lowercase, parenthetical suffixes stripped, ASCII only). Every one of the four files must resolve to the same name_key for a given leader."
+  },
+
+  "name_key_normalization": {
+    "rule": "lowercase; strip anything in parentheses; trim whitespace; collapse internal double spaces",
+    "examples": {
+      "Victoria (Age of Steam)": "victoria",
+      "Amanitore": "amanitore",
+      "Catherine de Medici (Black Queen)": "catherine de medici",
+      "Teddy Roosevelt (Bull Moose)": "teddy roosevelt",
+      "Cleopatra (Ptolemaic)": "cleopatra",
+      "Ba Trieu": "ba trieu",
+      "Bà Triệu": "ba trieu",
+      "Joao III": "joao iii",
+      "João III": "joao iii"
+    },
+    "note": "leadership-focus-tags.json uses ASCII-simplified names already (Ba Trieu, Joao III). leadership-focus-caveats.json matches this. The templates file's applies_to arrays used the diacritic form for Ba Trieu in one place and ASCII in others — normalize on load, do not trust either file's spelling as canonical."
+  },
+
+  "alt_shapes_note": "primary_shape here MUST match the leader's guide_shape field in leadership-focus-caveats.json exactly — the join script treats caveats.guide_shape as the sole source of truth for the primary shape and will use it regardless of what this file says. These fields are kept in sync manually; a mismatch here is a data bug, not a script decision. The build script also asserts primary_shape === secondary_shape never happens and logs a warning if it does.",
+  "alt_shapes": [
+    {
+      "name_key": "amanitore",
+      "primary_shape": "Front-Load",
+      "secondary_shape": "Countdown",
+      "reason": "Pyramid siting (turn 0-10, irreversible) is Front-Load in character and IS her caveats.json primary shape. The Pitati Archer window (turn ~20-60, expiring) is Countdown-shaped and layers on top of it.",
+      "render_rule": "Render the Front-Load template as the spine (already primary). After 'Turns 1-20 — Commit', insert template.Countdown.structure[1] (Phase 2 — Window) as an embedded sub-phase covering the archer window, before proceeding to Front-Load's 'Turns 20-80 — Execute'."
+    },
+    {
+      "name_key": "john curtin",
+      "primary_shape": "Monitor",
+      "secondary_shape": "Linear",
+      "reason": "The production-burst response is a reactive stat-check and IS his caveats.json primary shape (Monitor). Baseline empire management underneath it is ordinary era-block play.",
+      "render_rule": "Render the Monitor template as the spine (already primary). Insert template.Linear.structure era-block phases as the 'default state' content beneath each Monitor checkpoint, so the guide reads as era blocks with a standing watch layered on top rather than a bare stat-check with no baseline plan."
+    }
+  ],
+
+  "gate_supplements": [
+    { "name_key": "shaka", "gate_condition": "Mercenaries civic unlocked", "estimated_arrival": "~turn 85-100 on standard research pace" },
+    { "name_key": "basil ii", "gate_condition": "Religion founded AND that religion spread to the intended target city", "estimated_arrival": "founding: ~turn 40-60; spread to target: variable, add 15-30 turns" },
+    { "name_key": "chandragupta", "gate_condition": "A valid casus belli for a War of Territorial Expansion against an adjacent civ", "estimated_arrival": "variable; requires an adjacent target and the correct grievance/border state, often turn 50-80" },
+    { "name_key": "philip ii", "gate_condition": "Religion founded, Renaissance era reached (for Conquistadors)", "estimated_arrival": "religion: ~turn 40-60; Conquistadors: ~turn 130-150" },
+    { "name_key": "genghis khan", "gate_condition": "Trade route established and running to the intended target before declaring", "estimated_arrival": "as soon as Horsemen and a trade route both exist, ~turn 30-50" },
+    { "name_key": "jadwiga", "gate_condition": "Religion founded", "estimated_arrival": "~turn 40-60" },
+    { "name_key": "yongle", "gate_condition": "A city crosses population 10 via the Lijia project", "estimated_arrival": "per-city; earliest cities typically cross turn 70-100" },
+    { "name_key": "gitarja", "gate_condition": "Coastal Holy Sites generating enough Faith to fund a Jong purchase, on a water-heavy map", "estimated_arrival": "~turn 60-80 for first purchase, map-dependent" },
+    { "name_key": "peter", "gate_condition": "A tundra-compatible pantheon secured (contested — race it)", "estimated_arrival": "pantheon: turn 1-20; Lavra output meaningful by turn 40" }
+  ],
+
+  "monitor_supplements": [
+    { "name_key": "lautaro", "watched_stat": "Rival era score / Golden Age status (external trigger)", "off_period_plan": "Standard defensive development. Groundwork loyalty pressure in border cities so it's ready the moment a rival enters a Golden Age." },
+    { "name_key": "tamar", "watched_stat": "Own era score approaching Golden Age threshold, AND ally-under-attack status", "off_period_plan": "Wall construction and envoy investment; these ARE the off-period plan, not filler." },
+    { "name_key": "robert the bruce", "watched_stat": "Empire-wide amenity level (city-by-city)", "off_period_plan": "n/a — always active once cities exist" },
+    { "name_key": "john curtin", "watched_stat": "War/threat status (are we currently being attacked)", "off_period_plan": "Ordinary Linear-shape empire play; see alt_shape entry" },
+    { "name_key": "pericles", "watched_stat": "Suzerainty count and contested city-state envoy gaps", "off_period_plan": "n/a — continuous" },
+    { "name_key": "ludwig ii", "watched_stat": "Rival production progress on each stalled Wonder", "off_period_plan": "n/a — continuous once first Wonder is stalled" },
+    { "name_key": "alexander", "watched_stat": "Current war/peace state and next-target readiness", "off_period_plan": "There should be no off period by design; if peace lasts more than a few turns, that itself is the amber signal" },
+    { "name_key": "matthias corvinus", "watched_stat": "Gold reserve vs. rising levy cost, and suzerainty status of levied city-states", "off_period_plan": "n/a — continuous" },
+    { "name_key": "mansa musa", "watched_stat": "Gold income per turn against upcoming purchase costs", "off_period_plan": "n/a — continuous from turn 1" },
+    { "name_key": "gorgo", "watched_stat": "Available kill sources (barbarian camp count, active wars)", "off_period_plan": "Standard development while sources are scarce; pre-commit the civic unlock list for when culture spikes" },
+    { "name_key": "harald hardrada", "watched_stat": "Un-pillaged coastal tile inventory near current fleet position", "off_period_plan": "Parallel domestic build, since raiding alone never compounds" },
+    { "name_key": "pedro ii", "watched_stat": "Own Great Person points vs. leading rival's points, per category", "off_period_plan": "n/a — continuous" },
+    { "name_key": "dido", "watched_stat": "Loyalty pressure on newly settled/captured overseas cities pre-relocation", "off_period_plan": "Standard coastal development before the capital move is triggered" },
+    { "name_key": "joao iii", "watched_stat": "Status of each Feitoria-hosting foreign city (still coastal, still standing, still reachable)", "off_period_plan": "Exploration and initial contact while route network is being established" },
+    { "name_key": "gandhi", "watched_stat": "Number of met civs with an active religion, and current war/peace status with each", "off_period_plan": "Exploration is the off-period plan; it directly grows the watched stat" }
+  ],
+
+  "deadphase_supplements": [
+    { "name_key": "kristina", "activation_turn": 140, "prerequisite": "Accumulated Great Person points and a stock of undisplayed Great Works", "phase_a_length_turns": 140 },
+    { "name_key": "wilfrid laurier", "activation_turn": 150, "prerequisite": "Preserve civic unlocked and tundra appeal groundwork laid for future National Parks", "phase_a_length_turns": 150 },
+    { "name_key": "eleanor of aquitaine", "activation_turn": 130, "prerequisite": "A concentrated Great Work stockpile in border cities specifically, not spread empire-wide", "phase_a_length_turns": 130 },
+    { "name_key": "victoria", "activation_turn": 120, "prerequisite": "Iron and coal secured, and a functioning Industrial Zone in most cities", "phase_a_length_turns": 120 },
+    { "name_key": "suleiman", "activation_turn": 110, "prerequisite": "Siege-capable production base and the unique governor already placed in position", "phase_a_length_turns": 110 }
+  ]
+}

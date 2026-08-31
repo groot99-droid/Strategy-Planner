@@ -1,0 +1,413 @@
+{
+  "meta": {
+    "purpose": "Six guide templates, one per guide_shape. Each leader renders through exactly one template. Slots in {{double_braces}} populate from leadership-focus-tags.json and leadership-focus-caveats.json.",
+    "assumed_conditions": "Standard speed, standard map size, mid difficulty. Turn numbers are scaffolding, not law. See timing_adjustments.",
+    "timing_adjustments": {
+      "online_speed": "Multiply all turn numbers by 0.67",
+      "epic_speed": "Multiply by 1.5",
+      "marathon_speed": "Multiply by 3",
+      "higher_difficulty": "Pull every deadline earlier by roughly 10-15%; AI bonuses compress every window",
+      "large_maps": "Countdown and Gate deadlines slip later; Front-Load decisions do not move"
+    },
+    "slot_sources": {
+      "{{leader}}": "tags.name",
+      "{{curve}}": "tags.curve",
+      "{{conversion}}": "tags.conversion",
+      "{{condition_cost}}": "tags.condition_cost",
+      "{{convert_by}}": "tags.convert_by",
+      "{{era_role.*}}": "caveats.era_role",
+      "{{caveats[]}}": "caveats.caveats",
+      "{{guide_requirements[]}}": "caveats.guide_must_account_for"
+    },
+    "universal_rules": [
+      "Every template forces a re-read at each era boundary, because era_role changes there.",
+      "Every template ends with a fail-state block stated plainly. A guide that cannot tell you the plan is dead is not a guide.",
+      "No template lists turns the player does not need to think about. Silence is a valid instruction."
+    ]
+  },
+
+  "templates": {
+
+    "Countdown": {
+      "applies_to": ["Gilgamesh", "Cyrus", "Tomyris", "Qin Shi Huang", "Hammurabi", "Montezuma", "Ambiorix", "Amanitore"],
+      "principle": "The ability has an expiry. The guide is a timer wrapped around a conversion deadline. Its most important content is not the build order, it is the turn the plan stops and what replaces it.",
+      "structure": [
+        {
+          "phase": "Phase 1 — Arm",
+          "turns": "1 to roughly 30",
+          "goal": "Reach the window with everything already staged. Nothing in this phase is optional; staging done after the window opens is spent from the budget.",
+          "steps": [
+            "Turn 1: identify the target. {{leader}}'s window is short enough that target selection cannot wait for scouting to finish.",
+            "Turns 1-15: scout toward the target only. Exploration away from the target is a luxury this shape cannot afford.",
+            "Turns 10-30: production goes to the units or charges the window will consume. Infrastructure that pays back after {{convert_by}} is deferred.",
+            "Pre-window checkpoint: confirm {{condition_cost}} is satisfied and units are within striking distance, not at home."
+          ]
+        },
+        {
+          "phase": "Phase 2 — Window",
+          "turns": "roughly 30 to {{convert_by}}",
+          "goal": "Convert tempo into permanent assets. Cities, wonders, or improvements. Not kills, not gold, not map presence.",
+          "core_loop": [
+            "Each turn, ask: is the objective closer than it was last turn?",
+            "If the answer is no for three consecutive turns, the window is failing. Go to the abort branch.",
+            "Track remaining turns explicitly. The player should always know the number."
+          ],
+          "checkpoints": [
+            {
+              "at": "midpoint of window",
+              "test": "Is at least half the objective secured?",
+              "if_no": "Reduce scope now. Take one city instead of three. Partial conversion beats total expiry."
+            },
+            {
+              "at": "{{convert_by}}",
+              "test": "Has the tempo become something permanent?",
+              "if_yes": "Proceed to Phase 3.",
+              "if_no": "Abort branch."
+            }
+          ]
+        },
+        {
+          "phase": "Phase 3 — Digest",
+          "turns": "{{convert_by}} onward",
+          "goal": "Stabilize what was taken. This phase is longer than both prior phases combined and most guides for this shape underwrite it badly.",
+          "steps": [
+            "Amenity and loyalty audit on every acquired city before any new construction.",
+            "Infrastructure catch-up: the arming phase deliberately skipped this, and the bill comes due now.",
+            "Choose a victory path. {{leader}} has no leader-specific direction from here; {{era_role.industrial_modern}}"
+          ]
+        }
+      ],
+      "abort_branch": {
+        "trigger": "Window closed with no permanent gain, or three stalled turns before the midpoint.",
+        "actions": [
+          "Make peace immediately. Prolonging a failed window converts a bad position into a lost game.",
+          "Disband surplus units. The maintenance is now pure loss.",
+          "Switch to the generic development plan for the empire you actually have."
+        ]
+      },
+      "fail_state": "The window closed and nothing permanent was gained. {{leader}} is now an ordinary civ with an army it cannot afford and grievances it cannot repay.",
+      "anti_patterns": [
+        "Writing Phase 3 as an afterthought. It is most of the game.",
+        "Expressing the deadline as a turn number only. Tie it to opponent tech where possible, since that is what actually closes the window.",
+        "Letting the player believe a large army at {{convert_by}} counts as success. It does not."
+      ]
+    },
+
+    "Gate": {
+      "applies_to": ["Shaka", "Basil II", "Chandragupta", "Philip II", "Genghis Khan", "Jadwiga", "Yongle", "Gitarja", "Peter"],
+      "principle": "The strategy does not begin on a turn. It begins on an unlock. This needs two complete guides with a trigger between them, not one guide with a note in the middle.",
+      "structure": [
+        {
+          "phase": "Pre-Gate",
+          "turns": "1 until the gate opens",
+          "goal": "Survive, develop, and stage. This is a real phase with its own complete build order, not a waiting room.",
+          "steps": [
+            "State the gate explicitly on turn 1 so the player knows what they are working toward: {{gate_condition}}",
+            "Give an estimated arrival turn AND the research or civic path that gets there fastest.",
+            "Build the prerequisites the gate assumes but does not provide. {{condition_cost}}",
+            "Maintain a defensive floor. The gate does not protect you while you wait for it."
+          ],
+          "staging_checklist": [
+            "Are the units, gold, or Faith the post-gate phase consumes already accumulating?",
+            "Is the target identified and still viable?",
+            "Will the prerequisites finish before the gate, or after? If after, the gate is not the real bottleneck and the guide should say so."
+          ]
+        },
+        {
+          "phase": "Gate Check",
+          "turns": "variable",
+          "goal": "A single decision point, not a phase.",
+          "tests": [
+            "Gate open AND staging complete: proceed to Post-Gate.",
+            "Gate open, staging incomplete: do not proceed. Finish staging. An unstaged opening wastes the gate entirely.",
+            "Gate late: run the contingency. Every Gate leader needs a stated answer for a gate that arrives 20 turns behind schedule."
+          ]
+        },
+        {
+          "phase": "Post-Gate",
+          "turns": "gate onward",
+          "goal": "The actual leader strategy, now live.",
+          "steps": [
+            "{{era_role.medieval_renaissance}}",
+            "Run the closing-window check: most Gate abilities are also time-limited on the far end. Identify when parity arrives.",
+            "Convert before parity. {{conversion}}"
+          ]
+        }
+      ],
+      "abort_branch": {
+        "trigger": "Gate opens with staging incomplete and a rival is already at parity.",
+        "actions": [
+          "Do not open the strategy. Playing an unstaged Gate leader into a prepared opponent is the worst outcome available.",
+          "Fold into a generic plan built on whatever the pre-gate phase produced."
+        ]
+      },
+      "fail_state": "The gate opened, the window closed, and the strategy never ran. The pre-gate phase was treated as filler and produced nothing usable.",
+      "anti_patterns": [
+        "Expressing the gate as a turn number. It varies by game and the player will trust the number over the condition.",
+        "Leaving the pre-gate phase thin. For {{leader}} this is often 60 or more turns.",
+        "Omitting the closing window. Gate leaders have two deadlines, not one."
+      ]
+    },
+
+    "Monitor": {
+      "applies_to": ["Lautaro", "Tamar", "Robert the Bruce", "John Curtin", "Pericles", "Ludwig II", "Alexander", "Matthias Corvinus", "Mansa Musa", "Gorgo", "Harald Hardrada", "Pedro II", "Dido", "Joao III", "Gandhi"],
+      "principle": "The core loop is a stat check, not a build order. These guides fail hardest when written as sequences, because the player's real job is watching one number and responding to it.",
+      "structure": [
+        {
+          "phase": "Setup",
+          "turns": "1 to roughly 25",
+          "goal": "Establish the thing being monitored and the infrastructure that lets you respond to it.",
+          "steps": [
+            "Name the watched stat on turn 1: {{watched_stat}}",
+            "Establish its bands before it matters, so the player recognizes trouble the first time rather than the third.",
+            "Build the response capacity. A monitor with no available response is just anxiety."
+          ]
+        },
+        {
+          "phase": "Standing Loop",
+          "turns": "25 to end of game",
+          "goal": "This replaces the turn list entirely. The guide is this loop plus the era checkpoints.",
+          "per_turn_check": [
+            "Read {{watched_stat}}.",
+            "Green band: continue current build. No action.",
+            "Amber band: begin the correction now. Amber is the acting band; red is the failing band.",
+            "Red band: the ability is off or about to be. Everything else is deprioritized until it clears."
+          ],
+          "opportunity_trigger": "For reactive leaders (Lautaro, Tamar, John Curtin), add a second watched value: the external condition that switches the ability on. The guide must state what to do during the periods it is off, because those periods are most of the game."
+        },
+        {
+          "phase": "Era Checkpoints",
+          "turns": "each era boundary",
+          "goal": "Re-read the role. Monitor leaders change what the stat means across eras.",
+          "steps": [
+            "Ancient/Classical: {{era_role.ancient_classical}}",
+            "Medieval/Renaissance: {{era_role.medieval_renaissance}}",
+            "Industrial/Modern: {{era_role.industrial_modern}}",
+            "Atomic/Information: {{era_role.atomic_information}}"
+          ]
+        }
+      ],
+      "abort_branch": {
+        "trigger": "Watched stat sits in the red band for more than roughly 15 turns with no recovery path.",
+        "actions": [
+          "Stop paying the {{condition_cost}}. If the bonus is unreachable, its price is pure loss.",
+          "Rebuild as a generic civ around whatever the monitored strategy already produced."
+        ]
+      },
+      "fail_state": "The stat crossed into red and stayed. For {{leader}}, {{caveats[0]}}",
+      "anti_patterns": [
+        "Writing this shape as a turn-by-turn build order. It is the wrong instrument.",
+        "Stating the green band only. Players need the amber threshold, because that is where action is still cheap.",
+        "Omitting the off-period plan for reactive leaders. Most turns are off-period."
+      ]
+    },
+
+    "Front-Load": {
+      "applies_to": ["Ba Trieu", "Lady Six Sky", "Nzinga Mbande", "Amanitore", "Hojo Tokimune", "Pachacuti", "Seondeok"],
+      "principle": "Nearly every decision that matters is made in the first twenty turns and cannot be reversed. Guide density should be inverted: dense at the start, sparse after.",
+      "structure": [
+        {
+          "phase": "Turn 0 — Assessment",
+          "turns": "before the first Settler moves",
+          "goal": "A genuine go or no-go on the start position. This phase exists only in this shape and it is the most valuable thing in the template.",
+          "steps": [
+            "Check the hard requirement: {{condition_cost}}",
+            "If the requirement is absent within a reasonable walk, decide now whether to move the Settler or play the leader as a generic civ. Deciding this at turn 40 is deciding it too late.",
+            "Estimate the ceiling. For radius- and continent-capped leaders, the ceiling is knowable early and determines the victory path."
+          ]
+        },
+        {
+          "phase": "Turns 1-20 — Commit",
+          "turns": "1 to 20",
+          "goal": "Make every irreversible decision deliberately rather than incidentally.",
+          "steps": [
+            "Draw the full settle map before the second Settler is produced, including sites you will not reach for 40 turns.",
+            "Assign district roles to each city site at settle time, not at build time. For placement-restricted leaders this is the whole game.",
+            "Mark each decision with its reversibility. The guide should say plainly which choices are permanent.",
+            "{{guide_requirements[0]}}"
+          ]
+        },
+        {
+          "phase": "Turns 20-80 — Execute",
+          "turns": "20 to 80",
+          "goal": "Build out the plan drawn in the commit phase. Low decision density by design.",
+          "steps": [
+            "Follow the settle map. Deviation is the common failure, and it usually feels reasonable at the time.",
+            "{{era_role.medieval_renaissance}}"
+          ]
+        },
+        {
+          "phase": "Turn 80+ — Live With It",
+          "turns": "80 onward",
+          "goal": "Operate inside the ceiling set at turn 20.",
+          "steps": [
+            "Choose a victory path that fits the ceiling rather than fighting it.",
+            "{{era_role.industrial_modern}}"
+          ]
+        }
+      ],
+      "abort_branch": {
+        "trigger": "Turn 0 assessment fails and no acceptable alternative start is within reach.",
+        "actions": [
+          "Play the leader as a generic civ and say so explicitly. A named fallback is better than a strategy that quietly cannot work.",
+          "Target a faster victory, since the capped ceiling will not win a long game."
+        ]
+      },
+      "fail_state": "A placement decision made before turn 20 has capped the game, and the cap will not be visible until roughly turn 100. {{caveats[0]}}",
+      "anti_patterns": [
+        "Even turn-density across the guide. This shape needs 60% of its words before turn 20.",
+        "Omitting the go or no-go. Some starts genuinely cannot run these leaders.",
+        "Presenting settle sites one at a time. The map has to be drawn whole or the radius logic does not work."
+      ]
+    },
+
+    "Dead-Phase": {
+      "applies_to": ["Kristina", "Wilfrid Laurier", "Eleanor of Aquitaine", "Victoria (Age of Steam)", "Suleiman"],
+      "principle": "The hardest template to write and the most necessary. The leader contributes nothing for 80 to 120 turns. Without an explicit early game AND an explicit statement that the flatness is intended, players abandon the plan around turn 60.",
+      "structure": [
+        {
+          "phase": "Phase A — Dormant",
+          "turns": "1 to roughly {{activation_turn}}",
+          "goal": "Survive, develop, and quietly accumulate the prerequisite the payoff phase consumes.",
+          "opening_statement": "State plainly at the top: {{leader}} has no leader advantage during this phase. That is expected. The kit pays later and pays large. Do not evaluate this leader before turn {{activation_turn}}.",
+          "steps": [
+            "Run a complete generic build order. The guide must supply this in full, because the leader supplies no direction.",
+            "Maintain a defensive floor. Elimination during Phase A is the single most common way these leaders lose, and it is invisible in the ability description.",
+            "Accumulate the prerequisite even though it produces nothing yet: {{prerequisite}}",
+            "Provide non-ability progress markers so the player has feedback: city count, science rate, district count. Something must be visibly improving."
+          ]
+        },
+        {
+          "phase": "Phase B — Activation",
+          "turns": "roughly {{activation_turn}}",
+          "goal": "The kit switches on. Verify the accumulated prerequisite is actually sufficient.",
+          "steps": [
+            "Check the stockpile. Activation with an empty stockpile wastes the entire dormant phase.",
+            "{{era_role.industrial_modern}}",
+            "Reorient production toward the payoff. Phase A build habits are now wrong."
+          ]
+        },
+        {
+          "phase": "Phase C — Payoff",
+          "turns": "{{activation_turn}} onward",
+          "goal": "Convert the accumulated position at speed. The remaining game is short, so this phase runs hot.",
+          "steps": [
+            "{{era_role.atomic_information}}",
+            "Push the victory condition directly. There is no time for a second build-out."
+          ]
+        }
+      ],
+      "abort_branch": {
+        "trigger": "Reaching activation with the prerequisite stockpile empty, or having lost cities during the dormant phase.",
+        "actions": [
+          "Accept a lesser victory path built on the generic empire rather than the leader ability.",
+          "The leader ability is now decorative. Say so and stop planning around it."
+        ]
+      },
+      "fail_state": "Crippled or eliminated before activation, or arriving at activation with nothing stockpiled. Both are Phase A failures that only become visible in Phase B.",
+      "anti_patterns": [
+        "A thin early game. This is where the player spends most of their turns and all of their patience.",
+        "Omitting the flatness statement. Players read a flat curve as a mistake and switch strategies at exactly the wrong time.",
+        "Framing Phase A as preparation only. It also has to be survivable on its own terms."
+      ]
+    },
+
+    "Linear": {
+      "applies_to": ["Trajan", "Simon Bolivar", "Jayavarman VII", "Menelik II", "Catherine de Medici (Black Queen)", "Tokugawa", "Saladin", "Cleopatra (Ptolemaic)", "Teddy Roosevelt (Bull Moose)", "Kupe", "Frederick Barbarossa", "John Curtin"],
+      "principle": "Standard era-block guides work. The ability amplifies a plan rather than supplying one, so the guide's real job is making the player choose a direction the amplifier can act on.",
+      "structure": [
+        {
+          "phase": "Ancient / Classical",
+          "turns": "1 to 80",
+          "steps": [
+            "{{era_role.ancient_classical}}",
+            "Choose the victory path now. A permanent, unconditional bonus applied to no particular plan produces a comfortable game and no win.",
+            "Respect the one constraint: {{condition_cost}}"
+          ]
+        },
+        {
+          "phase": "Medieval / Renaissance",
+          "turns": "80 to 160",
+          "steps": [
+            "{{era_role.medieval_renaissance}}",
+            "Era checkpoint: confirm the bonus is being spent, not banked. This is the characteristic failure of the shape."
+          ]
+        },
+        {
+          "phase": "Industrial / Modern",
+          "turns": "160 to 240",
+          "steps": [
+            "{{era_role.industrial_modern}}",
+            "Era checkpoint: is the chosen victory path still reachable? Linear leaders can pivot; the flat curve makes it affordable."
+          ]
+        },
+        {
+          "phase": "Atomic / Information",
+          "turns": "240 onward",
+          "steps": [
+            "{{era_role.atomic_information}}",
+            "Close out the chosen condition."
+          ]
+        }
+      ],
+      "abort_branch": {
+        "trigger": "Turn 150 with no victory path committed.",
+        "actions": [
+          "Pick the path the accumulated empire is already closest to and commit fully. Linear leaders lose by drifting, not by collapsing."
+        ]
+      },
+      "fail_state": "A comfortable, undirected empire that never converts its advantage into a win condition.",
+      "anti_patterns": [
+        "Assuming a good bonus produces a plan. It does not.",
+        "Skipping the era checkpoints because the curve is flat. The checkpoints are what force the direction decision.",
+        "Treating these leaders as beginner-only. Flat curves reward long-range planning more than spikes do."
+      ]
+    }
+  },
+
+  "worked_examples": {
+    "Countdown_Gilgamesh": {
+      "arm": "Turns 1-20. Scout toward the nearest neighbor only. Production is War-Carts and nothing else. Settle two cities maximum.",
+      "window": "Turns 20-80. Target neighbor's capital. Midpoint check at turn 50: at least one city taken.",
+      "convert_by": 80,
+      "digest": "Turn 80+. Amenity and loyalty audit on every captured city. Monuments and granaries before any further military.",
+      "fail_state": "Turn 80, no cities taken, War-Carts obsoleting, neighbor now has walls."
+    },
+    "Gate_Shaka": {
+      "gate_condition": "Mercenaries civic",
+      "pre_gate": "Turns 1 to roughly 90. Full defensive build. Walls, a standing defensive army, expansion where safe. No offensive commitment.",
+      "staging_checklist": "Impi production capacity ready; target identified; gold reserve for Corps formation.",
+      "post_gate": "Form Corps immediately, attack, let capture-upgrades compound.",
+      "closing_window": "Rival Corps access. Snowball must be running before parity.",
+      "fail_state": "Rushed before turn 90, or reaching Mercenaries with no army staged."
+    },
+    "Monitor_RobertTheBruce": {
+      "watched_stat": "Empire-wide amenity level",
+      "bands": "Green = all cities Ecstatic. Amber = any city below Ecstatic. Red = multiple cities below.",
+      "amber_response": "Buy or trade luxuries immediately; pause settling.",
+      "second_watch": "Trade deal expiry dates, since luxuries acquired by trade lapse on a schedule.",
+      "fail_state": "Sustained amber or red. The Science and Production bonuses are off empire-wide, and the leader is a plain civ."
+    },
+    "FrontLoad_LadySixSky": {
+      "turn_0": "Assess capital position. Everything is measured from here and it cannot be moved.",
+      "commit": "Draw all city sites within 6 tiles before the first Settler moves. Count them. That number is the empire.",
+      "ceiling": "Fixed by turn 20. Choose a victory path that fits it.",
+      "execute": "Farms and Observatories in a compact core.",
+      "fail_state": "Cities founded outside the radius, or a capital sited where fewer than about six good sites fit inside it."
+    },
+    "DeadPhase_Kristina": {
+      "activation_turn": 140,
+      "prerequisite": "Great Person points and Great Works",
+      "phase_a": "Turns 1-140. Generic strong development. Campuses, expansion, defensive floor. Accumulate Great People despite no visible payoff.",
+      "opening_statement": "Kristina does nothing for the first 140 turns. This is correct.",
+      "phase_c": "Auto-themed Great Works and Open-Air Museums converting directly to tourism.",
+      "fail_state": "Turn 140 with no Great Work stockpile, or cities lost during the dormant phase."
+    },
+    "Linear_Trajan": {
+      "ancient": "Settle aggressively. Free Monuments make each city productive immediately.",
+      "direction_decision": "Choose the victory path by turn 60. The culture lead is directionless without one.",
+      "checkpoint": "Each era: is the culture advantage being spent on civics that serve the chosen path?",
+      "fail_state": "A large comfortable empire at turn 200 with no win condition close."
+    }
+  }
+}

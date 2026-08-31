@@ -1,0 +1,505 @@
+{
+  "schema": {
+    "curve": {
+      "Spike": "Peaks Ancient-Classical. Bonus is loudest before turn ~100.",
+      "Ramp": "Peaks Medieval-Renaissance. Needs a functional early game to reach it.",
+      "Bloom": "Peaks Industrial onward. Near-inert early; needs a survival plan, not a growth plan.",
+      "Flat": "Compounds evenly across the whole game. No cliff, no dead zone."
+    },
+    "conversion": {
+      "Permanent": "The peak banks into something that persists after the bonus stops mattering (cities, wonders, districts, banked civics).",
+      "Conditional": "Persists only while an external state holds (war footing, suzerainty, amenity level, someone else's golden age).",
+      "Expiring": "Runs on a timer or a trigger. If it didn't buy territory inside the window, there is no second act."
+    },
+    "condition_cost": "What the kit charges you in exchange. 'None' means the bonus is free.",
+    "convert_by": "For Spike leaders: the rough turn by which the tempo must have become permanent assets. Null where not applicable."
+  },
+  "leaders": [
+    {
+      "name": "Gilgamesh",
+      "category": "Military, Movement & Conquest",
+      "curve": "Spike",
+      "conversion": "Permanent",
+      "condition_cost": "None",
+      "convert_by": 80,
+      "note": "War-Carts expire as units but captured cities do not. Cleanest spike on the roster."
+    },
+    {
+      "name": "Amanitore",
+      "category": "Military, Movement & Conquest",
+      "curve": "Spike",
+      "conversion": "Permanent",
+      "condition_cost": "Nubian Pyramids want desert-adjacent placement",
+      "convert_by": 100,
+      "note": "Dual-banks: conquest AND permanently cheaper districts. Survives its own spike better than most."
+    },
+    {
+      "name": "Montezuma",
+      "category": "Military, Movement & Conquest",
+      "curve": "Spike",
+      "conversion": "Permanent",
+      "condition_cost": "Combat strength scales with luxury variety, so needs wide territory",
+      "convert_by": 90,
+      "note": "Captured Builders are permanent infrastructure. Luxury bonus decays in relevance as strength numbers inflate."
+    },
+    {
+      "name": "Tomyris",
+      "category": "Military, Movement & Conquest",
+      "curve": "Spike",
+      "conversion": "Expiring",
+      "condition_cost": "None",
+      "convert_by": 85,
+      "note": "Highest-risk spike. Duplicate units and heal-on-kill produce zero standing yield. Pure tempo."
+    },
+    {
+      "name": "Simon Bolivar",
+      "category": "Military, Movement & Conquest",
+      "curve": "Flat",
+      "conversion": "Permanent",
+      "condition_cost": "None",
+      "convert_by": null,
+      "note": "Movement applies to civilians, so it compounds settling speed as much as war speed."
+    },
+    {
+      "name": "Alexander",
+      "category": "Military, Movement & Conquest",
+      "curve": "Ramp",
+      "conversion": "Conditional",
+      "condition_cost": "Must stay at war to keep the engine running",
+      "convert_by": null,
+      "note": "No war weariness is only worth anything while at war. Peace turns the kit off."
+    },
+    {
+      "name": "Gorgo",
+      "category": "Military, Movement & Conquest",
+      "curve": "Ramp",
+      "conversion": "Permanent",
+      "condition_cost": "Requires a continuous supply of things to kill",
+      "convert_by": null,
+      "note": "Culture banks into unlocked civics permanently, which is why she outlasts other combat-trigger leaders."
+    },
+    {
+      "name": "Ambiorix",
+      "category": "Military, Movement & Conquest",
+      "curve": "Spike",
+      "conversion": "Conditional",
+      "condition_cost": "Bonus only holds while units stay clustered",
+      "convert_by": 95,
+      "note": "Positioning discipline is the cost. Falls apart in wide-front late-game wars."
+    },
+    {
+      "name": "Shaka",
+      "category": "Military, Movement & Conquest",
+      "curve": "Ramp",
+      "conversion": "Permanent",
+      "condition_cost": "Genuinely weak until Mercenaries",
+      "convert_by": null,
+      "note": "Auto-upgrade on capture is a compounding loop, not a flat bonus. Strongest ramp in the category."
+    },
+    {
+      "name": "Cyrus",
+      "category": "Military, Movement & Conquest",
+      "curve": "Spike",
+      "conversion": "Expiring",
+      "condition_cost": "Surprise War diplomatic and grievance penalties",
+      "convert_by": 90,
+      "note": "Ten-turn window, repeatable but never banked. The trap case for the whole Spike tier."
+    },
+    {
+      "name": "Genghis Khan",
+      "category": "Military, Movement & Conquest",
+      "curve": "Ramp",
+      "conversion": "Permanent",
+      "condition_cost": "Requires trade route setup before each target",
+      "convert_by": null,
+      "note": "Captured cavalry is real accumulation. The visibility bonus is a setup tax, not a restriction."
+    },
+    {
+      "name": "Chandragupta",
+      "category": "Military, Movement & Conquest",
+      "curve": "Spike",
+      "conversion": "Expiring",
+      "condition_cost": "Only fires on Wars of Territorial Expansion, so needs an adjacent target",
+      "convert_by": 100,
+      "note": "Doubly gated: right war type AND inside the timer."
+    },
+    {
+      "name": "Harald Hardrada",
+      "category": "Military, Movement & Conquest",
+      "curve": "Ramp",
+      "conversion": "Conditional",
+      "condition_cost": "Coastal-heavy map dependency",
+      "convert_by": null,
+      "note": "Pillage yield is one-time per tile. Raiding is income, not territory, so nothing accumulates structurally."
+    },
+    {
+      "name": "Matthias Corvinus",
+      "category": "Military, Movement & Conquest",
+      "curve": "Ramp",
+      "conversion": "Conditional",
+      "condition_cost": "Ongoing gold and envoy spend; levied units are rented, not owned",
+      "convert_by": null,
+      "note": "Captured cities are permanent but the army itself never is. Cash flow is the whole constraint."
+    },
+    {
+      "name": "Suleiman",
+      "category": "Military, Movement & Conquest",
+      "curve": "Bloom",
+      "conversion": "Permanent",
+      "condition_cost": "Nothing early, which is also the problem",
+      "convert_by": null,
+      "note": "No meaningful Ancient-era identity. Needs a survival plan for the first 100 turns."
+    },
+    {
+      "name": "Lautaro",
+      "category": "Military, Movement & Conquest",
+      "curve": "Ramp",
+      "conversion": "Conditional",
+      "condition_cost": "Depends entirely on other civs entering Golden Ages",
+      "convert_by": null,
+      "note": "Only leader whose trigger is owned by someone else. Reactive by design."
+    },
+    {
+      "name": "Trajan",
+      "category": "Production, Infrastructure & General Yields",
+      "curve": "Flat",
+      "conversion": "Permanent",
+      "condition_cost": "None",
+      "convert_by": null,
+      "note": "Free Monument in every city is the definition of a compounding, unconditional bonus. Beginner-safe."
+    },
+    {
+      "name": "Hojo Tokimune",
+      "category": "Production, Infrastructure & General Yields",
+      "curve": "Flat",
+      "conversion": "Permanent",
+      "condition_cost": "Tight city spacing; rewards planning discipline",
+      "convert_by": null,
+      "note": "Terrain-agnostic, which is rare. Works on almost any start. Beginner-safe."
+    },
+    {
+      "name": "Qin Shi Huang",
+      "category": "Production, Infrastructure & General Yields",
+      "curve": "Spike",
+      "conversion": "Permanent",
+      "condition_cost": "Builder charges spent on wonders are charges not spent on improvements",
+      "convert_by": 110,
+      "note": "Wonders are the most permanent asset in the game. Best conversion rate of any spike."
+    },
+    {
+      "name": "Frederick Barbarossa",
+      "category": "Production, Infrastructure & General Yields",
+      "curve": "Ramp",
+      "conversion": "Permanent",
+      "condition_cost": "Extra district needs population and production to actually fill",
+      "convert_by": null,
+      "note": "The district cap break compounds with every city founded. Scales with empire size, not era."
+    },
+    {
+      "name": "Pachacuti",
+      "category": "Production, Infrastructure & General Yields",
+      "curve": "Flat",
+      "conversion": "Permanent",
+      "condition_cost": "Mountain terrain dependency; dead start without it",
+      "convert_by": null,
+      "note": "Turns the map's worst tiles into workable ones. Highest start-roll variance on the roster."
+    },
+    {
+      "name": "John Curtin",
+      "category": "Production, Infrastructure & General Yields",
+      "curve": "Ramp",
+      "conversion": "Expiring",
+      "condition_cost": "Requires being attacked, which you do not control",
+      "convert_by": null,
+      "note": "Ten-turn production bursts. Banks only if the burst is spent on something permanent."
+    },
+    {
+      "name": "Victoria (Age of Steam)",
+      "category": "Production, Infrastructure & General Yields",
+      "curve": "Bloom",
+      "conversion": "Permanent",
+      "condition_cost": "Iron and coal access; percentage bonuses need an existing base to multiply",
+      "convert_by": null,
+      "note": "Textbook Bloom. Multiplicative bonuses on a small early empire are near-zero."
+    },
+    {
+      "name": "Ba Trieu",
+      "category": "Production, Infrastructure & General Yields",
+      "curve": "Ramp",
+      "conversion": "Permanent",
+      "condition_cost": "Districts only on Woods, Rainforest, or Marsh. Severe placement restriction.",
+      "convert_by": null,
+      "note": "Highest condition cost in the game. The restriction never lifts."
+    },
+    {
+      "name": "Lady Six Sky",
+      "category": "Production, Infrastructure & General Yields",
+      "curve": "Flat",
+      "conversion": "Permanent",
+      "condition_cost": "Hard 6-tile expansion ceiling; penalties outside it",
+      "convert_by": null,
+      "note": "Flat but capped. Yields compound, empire size does not. Trades scale for efficiency."
+    },
+    {
+      "name": "Nzinga Mbande",
+      "category": "Production, Infrastructure & General Yields",
+      "curve": "Flat",
+      "conversion": "Permanent",
+      "condition_cost": "Continent-locked; overseas cities are actively bad",
+      "convert_by": null,
+      "note": "Same shape as Lady Six Sky but the ceiling is drawn by the map instead of a radius."
+    },
+    {
+      "name": "Seondeok",
+      "category": "Science & Technological Progression",
+      "curve": "Flat",
+      "conversion": "Permanent",
+      "condition_cost": "Seowon isolation forfeits all district adjacency stacking",
+      "convert_by": null,
+      "note": "Trades ceiling for floor. Guaranteed science on any start, but cannot be optimized upward."
+    },
+    {
+      "name": "Hammurabi",
+      "category": "Science & Technological Progression",
+      "curve": "Spike",
+      "conversion": "Conditional",
+      "condition_cost": "Base per-turn Science permanently halved",
+      "convert_by": 120,
+      "note": "The halving never goes away. Eureka availability thins in later eras, so the engine quietly dies."
+    },
+    {
+      "name": "Robert the Bruce",
+      "category": "Science & Technological Progression",
+      "curve": "Ramp",
+      "conversion": "Conditional",
+      "condition_cost": "Permanent Ecstatic amenity upkeep across the whole empire",
+      "convert_by": null,
+      "note": "The bonus is rented every single turn. One luxury loss switches it off empire-wide."
+    },
+    {
+      "name": "Teddy Roosevelt (Bull Moose)",
+      "category": "Culture, Loyalty & Tourism",
+      "curve": "Ramp",
+      "conversion": "Permanent",
+      "condition_cost": "Cannot chop; forfeits the standard production-acceleration lever",
+      "convert_by": null,
+      "note": "Appeal is a permanent tile property, so the yields never decay."
+    },
+    {
+      "name": "Kupe",
+      "category": "Culture, Loyalty & Tourism",
+      "curve": "Ramp",
+      "conversion": "Permanent",
+      "condition_cost": "No chopping, plus an ocean start with no immediate settle",
+      "convert_by": null,
+      "note": "Pays a real opening tempo cost before the ramp begins."
+    },
+    {
+      "name": "Pericles",
+      "category": "Culture, Loyalty & Tourism",
+      "curve": "Flat",
+      "conversion": "Conditional",
+      "condition_cost": "Ongoing envoy investment; suzerainty can be taken from you",
+      "convert_by": null,
+      "note": "Flat and smooth, but rented. Losing suzerainty is an instant global culture cut."
+    },
+    {
+      "name": "Cleopatra (Ptolemaic)",
+      "category": "Culture, Loyalty & Tourism",
+      "curve": "Ramp",
+      "conversion": "Permanent",
+      "condition_cost": "River and floodplain dependency",
+      "convert_by": null,
+      "note": "Appeal inversion pays early in Food and late in National Parks. Genuinely two-phase."
+    },
+    {
+      "name": "Pedro II",
+      "category": "Culture, Loyalty & Tourism",
+      "curve": "Ramp",
+      "conversion": "Permanent",
+      "condition_cost": "Rainforest dependency; must not clear it",
+      "convert_by": null,
+      "note": "Great People refunds compound. Every recruit makes the next one cheaper in real terms."
+    },
+    {
+      "name": "Ludwig II",
+      "category": "Culture, Loyalty & Tourism",
+      "curve": "Ramp",
+      "conversion": "Conditional",
+      "condition_cost": "Requires deliberately leaving Wonders unfinished, locking up production",
+      "convert_by": null,
+      "note": "The bonus ends the moment the wonder completes. Uniquely self-terminating."
+    },
+    {
+      "name": "Kristina",
+      "category": "Culture, Loyalty & Tourism",
+      "curve": "Bloom",
+      "conversion": "Permanent",
+      "condition_cost": "None mechanically, but no early-game identity at all",
+      "convert_by": null,
+      "note": "Auto-theming is pure late-game convenience. Needs a survival plan for the first 80 turns."
+    },
+    {
+      "name": "Catherine de Medici (Black Queen)",
+      "category": "Culture, Loyalty & Tourism",
+      "curve": "Flat",
+      "conversion": "Permanent",
+      "condition_cost": "None",
+      "convert_by": null,
+      "note": "Rare kit that pays in every era for a different reason: spy, then combat visibility, then tourism."
+    },
+    {
+      "name": "Wilfrid Laurier",
+      "category": "Culture, Loyalty & Tourism",
+      "curve": "Bloom",
+      "conversion": "Permanent",
+      "condition_cost": "Tundra start; the terrain bonus is survival, not growth",
+      "convert_by": null,
+      "note": "Surprise War immunity is the survival plan built into the kit. Cleanest Bloom on the roster."
+    },
+    {
+      "name": "Eleanor of Aquitaine",
+      "category": "Culture, Loyalty & Tourism",
+      "curve": "Bloom",
+      "conversion": "Permanent",
+      "condition_cost": "Needs a large Great Work stockpile before anything happens",
+      "convert_by": null,
+      "note": "Annexed cities are permanent, but the prerequisite is a long build-up with nothing to show."
+    },
+    {
+      "name": "Peter",
+      "category": "Faith, Religion & Holy Sites",
+      "curve": "Ramp",
+      "conversion": "Permanent",
+      "condition_cost": "Tundra dependency",
+      "convert_by": null,
+      "note": "Great Writers and Artists are permanent assets. Turns dead terrain into a Great Person engine."
+    },
+    {
+      "name": "Jayavarman VII",
+      "category": "Faith, Religion & Holy Sites",
+      "curve": "Flat",
+      "conversion": "Permanent",
+      "condition_cost": "River dependency",
+      "convert_by": null,
+      "note": "Food, Housing, and Faith from one district. Compounds through population, so it never plateaus."
+    },
+    {
+      "name": "Saladin",
+      "category": "Faith, Religion & Holy Sites",
+      "curve": "Ramp",
+      "conversion": "Permanent",
+      "condition_cost": "None",
+      "convert_by": null,
+      "note": "The guaranteed religion is what lets him skip the early Faith race entirely. Free tempo."
+    },
+    {
+      "name": "Gandhi",
+      "category": "Faith, Religion & Holy Sites",
+      "curve": "Ramp",
+      "conversion": "Conditional",
+      "condition_cost": "Must stay at peace; scales with other civs founding religions",
+      "convert_by": null,
+      "note": "Output partly determined by other players' choices. Second-most externally dependent after Lautaro."
+    },
+    {
+      "name": "Menelik II",
+      "category": "Faith, Religion & Holy Sites",
+      "curve": "Flat",
+      "conversion": "Permanent",
+      "condition_cost": "Hill settling requirement",
+      "convert_by": null,
+      "note": "Faith-to-Science-and-Culture conversion means one yield stream funds three victory paths."
+    },
+    {
+      "name": "Gitarja",
+      "category": "Faith, Religion & Holy Sites",
+      "curve": "Ramp",
+      "conversion": "Permanent",
+      "condition_cost": "Water-heavy map required; dead on continents",
+      "convert_by": null,
+      "note": "Highest map-roll dependency in the Faith category."
+    },
+    {
+      "name": "Jadwiga",
+      "category": "Faith, Religion & Holy Sites",
+      "curve": "Ramp",
+      "conversion": "Permanent",
+      "condition_cost": "Guaranteed diplomatic hostility from every neighbor",
+      "convert_by": null,
+      "note": "Stolen tiles and converted cities are permanent. The cost is paid in grievances, not mechanics."
+    },
+    {
+      "name": "Basil II",
+      "category": "Faith, Religion & Holy Sites",
+      "curve": "Ramp",
+      "conversion": "Permanent",
+      "condition_cost": "Requires founding a religion AND spreading it to the target first",
+      "convert_by": null,
+      "note": "Two-step prerequisite before the combat bonus exists. Slow to come online, brutal once it does."
+    },
+    {
+      "name": "Philip II",
+      "category": "Faith, Religion & Holy Sites",
+      "curve": "Ramp",
+      "conversion": "Conditional",
+      "condition_cost": "Bonus only applies against differently-faithed civs",
+      "convert_by": null,
+      "note": "If a neighbor converts to your religion, your combat bonus against them evaporates."
+    },
+    {
+      "name": "Tamar",
+      "category": "Faith, Religion & Holy Sites",
+      "curve": "Ramp",
+      "conversion": "Conditional",
+      "condition_cost": "Envoy and wall investment; Golden Age chain breaks if an era is missed",
+      "convert_by": null,
+      "note": "Chained bonuses are fragile. One Normal Age resets the whole compounding sequence."
+    },
+    {
+      "name": "Mansa Musa",
+      "category": "Gold, Trade & Economic Output",
+      "curve": "Flat",
+      "conversion": "Permanent",
+      "condition_cost": "Severe Production penalty and desert dependency",
+      "convert_by": null,
+      "note": "Buys permanence with gold instead of building it. Works, but only if the gold never stops."
+    },
+    {
+      "name": "Yongle",
+      "category": "Gold, Trade & Economic Output",
+      "curve": "Ramp",
+      "conversion": "Permanent",
+      "condition_cost": "Project turns spent reaching pop thresholds are turns not spent building",
+      "convert_by": null,
+      "note": "Threshold-gated rather than gradual. Nothing happens, then everything does."
+    },
+    {
+      "name": "Dido",
+      "category": "Gold, Trade & Economic Output",
+      "curve": "Flat",
+      "conversion": "Permanent",
+      "condition_cost": "Coastal settling; capital relocation has a real opportunity cost",
+      "convert_by": null,
+      "note": "Loyalty immunity removes the single biggest constraint on overseas expansion."
+    },
+    {
+      "name": "Tokugawa",
+      "category": "Gold, Trade & Economic Output",
+      "curve": "Flat",
+      "conversion": "Permanent",
+      "condition_cost": "International trade heavily penalized; forfeits foreign trade income entirely",
+      "convert_by": null,
+      "note": "Trades a whole mechanic away for a stronger version of a different one."
+    },
+    {
+      "name": "Joao III",
+      "category": "Gold, Trade & Economic Output",
+      "curve": "Ramp",
+      "conversion": "Conditional",
+      "condition_cost": "Water map plus coastal foreign cities that must actually exist and stay reachable",
+      "convert_by": null,
+      "note": "Routes depend on other civs' city placement. Yields drop if targets are lost or conquered."
+    }
+  ]
+}
