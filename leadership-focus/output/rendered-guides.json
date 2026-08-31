@@ -100,7 +100,40 @@
         "Letting the player believe a large army at 80 counts as success. It does not."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Gilgamesh",
+      "civilization": "Sumeria",
+      "leader_title": "King of Uruk",
+      "expansion_origin": "Base Game",
+      "leader_ability": {
+        "name": "Adventures of Enkidu",
+        "text": "When Gilgamesh declares war on a civilization that is already at war with one of his Allies, he suffers no warmonger penalty for it, and his units share pillage rewards and combat experience with the nearest allied unit within a few tiles. This rewards Gilgamesh for piling onto wars his allies have already started rather than starting his own."
+      },
+      "agenda": {
+        "name": "Ally of Enkidu",
+        "text": "Gilgamesh wants to form long-term Alliances and likes leaders willing to ally with him. He dislikes anyone who denounces or attacks his friends and allies."
+      },
+      "civ_ability": {
+        "name": "Epic Quest",
+        "text": "Sumeria receives a free Tribal Village-style reward each time it captures a Barbarian Outpost, and the Gold cost to levy military units from city-states is halved, making early aggressive expansion and city-state levying unusually cheap."
+      },
+      "unique_units": [
+        {
+          "name": "War-Cart",
+          "replaces": "Chariot Archer",
+          "notes": "An early ranged unit that hits harder than the standard Chariot Archer, letting Sumeria punch above its weight in the Ancient era."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Ziggurat",
+          "type": "Improvement",
+          "notes": "A unique tile improvement that boosts Science and Faith, rewarding Sumeria for building tall with strong early yields outside of districts."
+        }
+      ],
+      "historical_background": "Gilgamesh was the legendary king of the Sumerian city-state of Uruk, likely based on a real ruler from around 2700 BCE, and is the hero of the Epic of Gilgamesh, one of the oldest surviving works of literature. The epic recounts his friendship with the wild man Enkidu, their shared adventures and battles against monsters, and Gilgamesh's grief-driven quest for immortality after Enkidu's death. That central friendship is directly reflected in his Civ VI leader ability, Adventures of Enkidu, which rewards fighting alongside allies rather than alone. Uruk itself was one of the world's first true cities, and Gilgamesh was famed for building its great walls."
+    }
   },
   {
     "name_key": "amanitore",
@@ -246,6 +279,39 @@
           ]
         }
       ]
+    },
+    "civInfo": {
+      "name": "Amanitore",
+      "civilization": "Nubia",
+      "leader_title": "Kandake of Meroë",
+      "expansion_origin": "Rise and Fall",
+      "leader_ability": {
+        "name": "Kandake of Meroë",
+        "text": "Cities gain a solid Production bonus toward Districts, which increases further in cities where a Nubian Pyramid is adjacent to the City Center, pushing Nubia toward rapid, district-heavy cities."
+      },
+      "agenda": {
+        "name": "City Planner",
+        "text": "Amanitore tries to build as many districts as possible in her cities and favors other leaders who also prioritize dense district development."
+      },
+      "civ_ability": {
+        "name": "Ta-Seti",
+        "text": "Nubia gets extra Production toward Ranged units, and those units earn combat experience faster than normal. Mines also yield bonus Production on strategic resources and bonus Gold on luxury resources, tying the civilization's military and economic strength together."
+      },
+      "unique_units": [
+        {
+          "name": "Pitati Archer",
+          "replaces": "Archer",
+          "notes": "A stronger, faster Ancient-era ranged unit that synergizes with Nubia's Ranged-unit production and experience bonuses for early ranged-rush strategies."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Nubian Pyramid",
+          "type": "Improvement",
+          "notes": "A unique tile improvement (unlocked with Masonry) that generates Faith and gains extra yields when placed next to the City Center or other districts, rewarding compact, district-rich cities."
+        }
+      ],
+      "historical_background": "Amanitore was a Kandake (ruling queen) of the Kingdom of Kush, centered at Meroë in what is now Sudan, reigning in the 1st century CE alongside her co-ruler Natakamani. Nubian kandakes held real political and sometimes military authority, a tradition distinct from many neighboring cultures, and several are remembered leading armies in defense of their kingdom. Amanitore and Natakamani presided over an extensive building program, constructing and restoring temples and pyramids at Meroë, Naqa, and elsewhere, which is echoed in-game by the civilization's pyramid improvement and its strong bias toward dense urban district construction."
     }
   },
   {
@@ -349,7 +415,41 @@
         "Letting the player believe a large army at 90 counts as success. It does not."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Montezuma",
+      "civilization": "Aztec",
+      "leader_title": "The Boiling Lake",
+      "expansion_origin": "Base Game",
+      "leader_ability": {
+        "name": "Gifts for the Tlatoani",
+        "text": "Luxury resources improved in Aztec territory grant an Amenity to two extra cities, and Montezuma's military (and religious) units gain Combat Strength on attack for each different luxury resource he has improved, making luxury acquisition a direct combat multiplier."
+      },
+      "agenda": {
+        "name": "Tlatoani",
+        "text": "Montezuma likes civilizations that possess the same luxury resources he does, and dislikes those who hold luxuries he lacks."
+      },
+      "civ_ability": {
+        "name": "Legend of the Five Suns",
+        "text": "Builders can be used to speed up (rush) the construction of Districts, letting the Aztecs convert worker labor directly into faster district growth."
+      },
+      "unique_units": [
+        {
+          "name": "Eagle Warrior",
+          "replaces": "Warrior",
+          "notes": "A stronger melee unit than the standard Warrior that can capture defeated enemy units and turn them into Builders, fueling the civ's district-rushing ability."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Tlachtli",
+          "type": "Building",
+          "replaces_note": "replaces the Arena",
+          "notes": "Provides Faith, Culture, an Amenity from Entertainment, and Great General points, giving the Aztecs strong early culture and faith output from a military-adjacent building."
+        }
+      ],
+      "historical_background": "Montezuma (Moctezuma II) was the ninth tlatoani (emperor) of the Aztec Empire, ruling from 1502 until 1520 at the height of its territorial power, commanding a tribute-based empire across central Mexico. He is best known historically for his fateful encounter with Spanish conquistador Hernán Cortés in 1519, which set in motion the fall of Tenochtitlan and the Aztec Empire within two years. Aztec economic and religious life depended heavily on luxury goods and tribute, which is reflected in his in-game ability tying luxury resources directly to happiness and combat strength."
+    }
   },
   {
     "name_key": "tomyris",
@@ -452,7 +552,40 @@
         "Letting the player believe a large army at 85 counts as success. It does not."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Tomyris",
+      "civilization": "Scythia",
+      "leader_title": "Warrior Queen of the Massagetae",
+      "expansion_origin": "Base Game",
+      "leader_ability": {
+        "name": "Killer of Cyrus",
+        "text": "All of Tomyris's units gain a large Combat Strength bonus when attacking wounded (damaged) enemy units, and heal a significant amount of health whenever they eliminate a unit, rewarding aggressive follow-up strikes on weakened targets."
+      },
+      "agenda": {
+        "name": "Backstab Averse",
+        "text": "Tomyris favors leaders willing to become her Declared Friends, but strongly dislikes anyone who launches Surprise Wars, especially against a former friend or ally."
+      },
+      "civ_ability": {
+        "name": "People of the Steppe",
+        "text": "Training any light cavalry unit, or the unique Saka Horse Archer, produces two units for the price of one, giving Scythia an unmatched early-cavalry rush capability."
+      },
+      "unique_units": [
+        {
+          "name": "Saka Horse Archer",
+          "replaces": "Horse Archer",
+          "notes": "A ranged cavalry unit that, combined with the civ ability, is produced in pairs, giving Scythia overwhelming early mounted numbers."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Kurgan",
+          "type": "Improvement",
+          "notes": "A unique tile improvement built on flat land that generates Faith and Gold, giving Scythia useful yields even as a mobile, cavalry-focused civilization."
+        }
+      ],
+      "historical_background": "Tomyris was queen of the Massagetae, a confederation of Iranian-Scythian nomadic peoples on the Central Asian steppe, in the 6th century BCE. She is remembered chiefly for defeating and killing Cyrus the Great of Persia in battle around 530 BCE after he invaded her territory, reportedly having his corpse's head placed in a wineskin filled with blood in retribution for her son's death at his hands. That victory over Cyrus is the direct namesake of her leader ability, Killer of Cyrus, and her agenda's suspicion of surprise wars mirrors the treachery she associated with the Persian invasion."
+    }
   },
   {
     "name_key": "simon bolivar",
@@ -546,7 +679,40 @@
         "Treating these leaders as beginner-only. Flat curves reward long-range planning more than spikes do."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Simon Bolivar",
+      "civilization": "Gran Colombia",
+      "leader_title": "El Libertador",
+      "expansion_origin": "New Frontier Pass (Leader Pass persona)",
+      "leader_ability": {
+        "name": "Campaña Admirable",
+        "text": "Whenever the game advances to a new era, Bolívar gains a Comandante General, a unique Great Person-style military leader whose presence heals and strengthens nearby Gran Colombian units, reinforcing sustained campaigns of conquest."
+      },
+      "agenda": {
+        "name": "Carabobo",
+        "text": "Bolívar respects leaders who build up large numbers of promoted, veteran military units, and favors civilizations that invest heavily in Encampments and unit experience."
+      },
+      "civ_ability": {
+        "name": "Ejército Patriota",
+        "text": "Gran Colombian units gain extra Movement and can be promoted without ending their turn, allowing units to level up and reposition in the same turn for highly mobile offensives."
+      },
+      "unique_units": [
+        {
+          "name": "Llanero",
+          "replaces": "Cavalry",
+          "notes": "Costs less to maintain, gains a combat bonus for each adjacent Llanero, and fully heals near an active Comandante General, rewarding massed cavalry pushes."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Hacienda",
+          "type": "Improvement",
+          "notes": "A unique tile improvement unlocked with the Mercantilism civic that provides Production, Gold, and Housing, with extra Food for each adjacent Plantation, strengthening the economic base behind Gran Colombia's mobile armies."
+        }
+      ],
+      "historical_background": "Simón Bolívar was the preeminent leader of the early 19th-century Spanish American wars of independence, liberating what are now Venezuela, Colombia, Ecuador, Panama, Peru, and Bolivia from Spanish colonial rule. Revered across Latin America as 'El Libertador,' he envisioned a unified South American state, Gran Colombia, which he helped found in 1819 but which fractured into separate nations shortly after his death in 1830. His campaigns depended on rapid, long-distance cavalry movement across difficult terrain, reflected in-game by his civilization's extra-movement and rapid-promotion abilities and the mobile Llanero cavalry unit named for the horsemen of the Venezuelan plains who formed the backbone of his armies."
+    }
   },
   {
     "name_key": "alexander",
@@ -647,7 +813,46 @@
         "Omitting the off-period plan for reactive leaders. Most turns are off-period."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Alexander",
+      "civilization": "Macedon",
+      "leader_title": "The Great",
+      "expansion_origin": "Rise and Fall",
+      "leader_ability": {
+        "name": "To the World's End",
+        "text": "Removes war weariness in Alexander's cities, heals his units when he captures a city containing a Wonder, and unlocks his unique Hetairoi heavy cavalry unit, supporting a strategy of continuous, far-flung conquest without the usual unhappiness penalties."
+      },
+      "agenda": {
+        "name": "Short Life of Glory",
+        "text": "Alexander favors civilizations that are at war with someone other than himself and dislikes those at peace; in Gathering Storm, Grievances against him also decay twice as fast as normal."
+      },
+      "civ_ability": {
+        "name": "Hellenistic Fusion",
+        "text": "When Macedon captures a foreign city, it gains a bonus tied to the types of Districts already present there, letting Alexander's empire absorb and benefit from the specializations of conquered territory rather than razing them."
+      },
+      "unique_units": [
+        {
+          "name": "Hetairoi",
+          "replaces": "Horseman",
+          "notes": "A powerful heavy cavalry unit unlocked by Alexander's leader ability, giving Macedon an early mounted strike force well ahead of other civilizations."
+        },
+        {
+          "name": "Hypaspist",
+          "replaces": "Swordsman",
+          "notes": "Gains a combat bonus when attacking districts and cities, making Macedon especially effective at siege and city capture."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Basilikoi Paides",
+          "type": "Building",
+          "replaces_note": "replaces the Barracks, built in the Encampment district",
+          "notes": "Boosts Production, Housing, and combat experience for units trained in the city, and grants Science based on the cost of units produced, tying Macedon's military machine to both growth and research."
+        }
+      ],
+      "historical_background": "Alexander the Great became king of Macedon in 336 BCE and, within thirteen years, conquered the entire Persian Empire, extending Macedonian rule from Greece to Egypt and northwest India before his death at age 32 in 323 BCE. His conquests spread Greek (Hellenistic) language, art, and institutions across the ancient world, blending with local cultures in the regions he took — the direct inspiration for Macedon's civ ability, which lets the empire absorb bonuses from captured cities rather than simply destroying them. After his death his generals, the Diadochi, carved his empire into rival successor kingdoms, and his relentless campaigning without ever losing a battle is echoed by his agenda's restless preference for a civilization always at war."
+    }
   },
   {
     "name_key": "gorgo",
@@ -748,7 +953,41 @@
         "Omitting the off-period plan for reactive leaders. Most turns are off-period."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Gorgo",
+      "civilization": "Greece",
+      "leader_title": "Warrior Queen of Sparta",
+      "expansion_origin": "Base Game",
+      "leader_ability": {
+        "name": "Thermopylae",
+        "text": "Every combat victory grants Culture equal to a portion of the defeated unit's Combat Strength, turning Gorgo's wars into a steady source of Culture generation alongside conquest."
+      },
+      "agenda": {
+        "name": "With Your Shield Or On It",
+        "text": "Gorgo never yields territory or cities in a peace deal and admires leaders who likewise refuse to concede in negotiations; she dislikes anyone who has surrendered in a peace deal or who has never gone to war at all. In Gathering Storm, Grievances against her decay at twice the normal rate."
+      },
+      "civ_ability": {
+        "name": "Plato's Republic",
+        "text": "Greece gains an extra Wildcard policy slot in every government, giving it unmatched flexibility to mix and match policy cards regardless of which government is in use."
+      },
+      "unique_units": [
+        {
+          "name": "Hoplite",
+          "replaces": "Spearman",
+          "notes": "Gains a large Combat Strength bonus when adjacent to another Hoplite, rewarding tightly packed phalanx-style formations reminiscent of Greek warfare."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Acropolis",
+          "type": "District",
+          "replaces_note": "replaces the Theater Square",
+          "notes": "A unique district (best placed on hills) that generates strong Culture output, reinforcing Greece's natural strength in a Culture Victory."
+        }
+      ],
+      "historical_background": "Gorgo was queen of Sparta and wife of King Leonidas I, one of the few women of the ancient Greek world whose political wisdom and outspokenness were specifically recorded by the historian Herodotus. Leonidas famously led 300 Spartans (with allied Greek forces) in a last stand against the invading Persian army at the Battle of Thermopylae in 480 BCE, an event directly named in Gorgo's leader ability. Spartan culture prized unyielding martial resolve, epitomized by the (possibly apocryphal) saying attributed to Spartan mothers urging sons to return from battle 'with your shield, or on it' — the namesake of Gorgo's agenda, which rewards refusing to back down in war or negotiation."
+    }
   },
   {
     "name_key": "ambiorix",
@@ -851,7 +1090,41 @@
         "Letting the player believe a large army at 95 counts as success. It does not."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Ambiorix",
+      "civilization": "Gaul",
+      "leader_title": "King of the Eburones",
+      "expansion_origin": "New Frontier Pass",
+      "leader_ability": {
+        "name": "King of the Eburones",
+        "text": "Training any non-civilian unit grants Ambiorix Culture equal to a share of that unit's Production cost, and his melee, anti-cavalry, and ranged units gain extra Combat Strength for each friendly combat unit adjacent to them, rewarding both militarization and massed unit stacks."
+      },
+      "agenda": {
+        "name": "Scourge of Rome",
+        "text": "Ambiorix admires leaders who maintain large military forces and looks down on those with few military units."
+      },
+      "civ_ability": {
+        "name": "Hallstatt Culture",
+        "text": "Mines grant an adjacency bonus to all districts along with bonus Culture, and can culture-bomb unowned territory into Gaul's borders; however, specialty districts cannot be built adjacent to the City Center and lose adjacency bonuses from other districts, pushing Gaulish cities to spread outward rather than stack districts centrally."
+      },
+      "unique_units": [
+        {
+          "name": "Gaesatae",
+          "replaces": "Warrior",
+          "notes": "Costs more than a standard Warrior but hits far harder, especially against units with higher base strength and against district defenses, making it a potent early aggressive unit."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Oppidum",
+          "type": "District",
+          "replaces_note": "replaces the Industrial Zone",
+          "notes": "Cheaper and available earlier than the Industrial Zone, defensible with its own ranged attack, and gains a strong adjacency bonus from Quarries and strategic resources, letting Gaul industrialize unusually early."
+        }
+      ],
+      "historical_background": "Ambiorix was chieftain of the Eburones, a Belgic tribe in northeastern Gaul (modern Belgium), who led a major uprising against Julius Caesar's occupying Roman legions in 54 BCE, annihilating an entire Roman legion and inflicting one of Rome's worst defeats during the Gallic Wars. Caesar's brutal reprisal campaign nearly exterminated the Eburones, though Ambiorix himself reportedly escaped and vanished from history. He is remembered today, especially in Belgium, as an early symbol of resistance to Roman conquest, directly reflected in his in-game agenda 'Scourge of Rome' and his ability rewarding militarization and unit concentration reminiscent of guerrilla-style Gallic warfare."
+    }
   },
   {
     "name_key": "shaka",
@@ -949,7 +1222,41 @@
         "Omitting the closing window. Gate leaders have two deadlines, not one."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Shaka",
+      "civilization": "Zulu",
+      "leader_title": "King of the Zulu",
+      "expansion_origin": "Rise and Fall",
+      "leader_ability": {
+        "name": "Amabutho",
+        "text": "Allows the Zulus to form military units into Corps and Armies far earlier than other civilizations, unlocking these formations ahead of the normal Mercenaries and Nationalism civic requirements."
+      },
+      "agenda": {
+        "name": "Horn, Chest, Loins",
+        "text": "Shaka tries to organize as many of his units as possible into Corps and Armies, and dislikes civilizations that keep their military as unconsolidated single units."
+      },
+      "civ_ability": {
+        "name": "Isibongo",
+        "text": "Garrisoned units boost the Loyalty of their cities, and units automatically upgrade into Corps, Armies, Fleets, or Armadas upon capturing a city once the relevant civics are known, making Zulu conquest self-reinforcing."
+      },
+      "unique_units": [
+        {
+          "name": "Impi",
+          "replaces": "Pikeman",
+          "notes": "A cheap, low-maintenance Pikeman upgrade with a strong flanking bonus and faster experience gain, ideal for forming into Corps and Armies early."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Ikanda",
+          "type": "District",
+          "replaces_note": "replaces the Encampment",
+          "notes": "Built in half the normal time, letting the Zulu establish military infrastructure and start training Impi far earlier than rival civilizations."
+        }
+      ],
+      "historical_background": "Shaka was king of the Zulu Kingdom in the early 19th century and one of the most transformative military leaders in southern African history, credited with reorganizing Zulu warfare around the short stabbing spear (iklwa), the 'buffalo horns' encirclement tactic, and age-grade regiments housed in fortified military kraals called amakhanda (singular ikanda) — the direct namesake of the civilization's unique district. His reforms fueled the Zulu Kingdom's rapid expansion and contributed to the wider upheaval and displacement across the region known as the Mfecane. His emphasis on organized, disciplined regiments is mirrored in-game by his leader ability's early access to Corps and Armies."
+    }
   },
   {
     "name_key": "cyrus",
@@ -1052,7 +1359,40 @@
         "Letting the player believe a large army at 90 counts as success. It does not."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Cyrus",
+      "civilization": "Persia",
+      "leader_title": "The Great",
+      "expansion_origin": "Base Game",
+      "leader_ability": {
+        "name": "Fall of Babylon",
+        "text": "For a number of turns after declaring a Surprise War, Cyrus's units gain bonus Movement and other yields, and cities he occupies with a garrisoned unit receive extra Loyalty, softening the usual drawbacks of launching a sudden attack."
+      },
+      "agenda": {
+        "name": "Opportunist",
+        "text": "Cyrus favors leaders who have themselves declared Surprise Wars and dislikes those who have never done so."
+      },
+      "civ_ability": {
+        "name": "Satrapies",
+        "text": "Persia gains a free Trade Route upon researching Political Philosophy, and its internal (domestic) Trade Routes generate enhanced yields, rewarding a strong internal trade network alongside military expansion."
+      },
+      "unique_units": [
+        {
+          "name": "Immortal",
+          "replaces": "Swordsman",
+          "notes": "Gains a bonus ranged attack and strong defense, making it unusually versatile compared to a standard melee Swordsman."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Pairidaeza",
+          "type": "Improvement",
+          "notes": "A unique tile improvement ('paradise garden') that boosts Culture, Gold, and Appeal, with further bonuses based on adjacent districts, supporting a strong domestic economy."
+        }
+      ],
+      "historical_background": "Cyrus II, known as Cyrus the Great, founded the Achaemenid Persian Empire in the mid-6th century BCE, rapidly conquering the Median, Lydian, and Neo-Babylonian empires (including the fall of Babylon referenced in his leader ability) to create the largest empire the world had yet seen. He was noted for relatively tolerant governance of conquered peoples, exemplified by the Cyrus Cylinder, and for a career built on swift, decisive military campaigns — reflected in his ability's rewards for surprise warfare. Cyrus was ultimately killed in 530 BCE in battle against Tomyris and the Massagetae, a fitting rival matchup within Civilization VI given her leader ability is literally named for his death."
+    }
   },
   {
     "name_key": "genghis khan",
@@ -1150,7 +1490,34 @@
         "Omitting the closing window. Gate leaders have two deadlines, not one."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Genghis Khan",
+      "civilization": "Mongolia",
+      "leader_title": "Khan of Khans",
+      "expansion_origin": "Rise and Fall",
+      "leader_ability": {
+        "name": "Mongol Horde",
+        "text": "All light and heavy cavalry units, plus the unique Keshig, gain bonus Combat Strength and a chance to capture defeated enemy cavalry units instead of destroying them, letting Genghis Khan's armies grow stronger the more they fight."
+      },
+      "agenda": {
+        "name": "Horse Lord",
+        "text": "Genghis Khan strives to build the world's strongest cavalry force and dislikes other civilizations that field powerful cavalry armies of their own."
+      },
+      "civ_ability": {
+        "name": "Örtöö",
+        "text": "Trade Routes to and from Mongolia instantly build a Trading Post in the destination city and grant an extra level of Diplomatic Visibility, echoing the historical Mongol relay-messenger and trade network."
+      },
+      "unique_units": [
+        {
+          "name": "Keshig",
+          "replaces": "none",
+          "notes": "A ranged cavalry unit unique to Mongolia that benefits from Genghis Khan's Combat Strength bonus on defense and can capture defeated enemy cavalry, reinforcing the civ's snowballing horde playstyle."
+        }
+      ],
+      "unique_infrastructure": [],
+      "historical_background": "Genghis Khan founded and became the first Great Khan of the Mongol Empire in the early 13th century, uniting the fractious tribes of the Central Asian steppe and forging, through his descendants, the largest contiguous land empire in world history. His success relied on highly mobile, disciplined cavalry armies, meritocratic promotion, and an extensive relay communication and trade network known as the Yam — the historical basis for Mongolia's Örtöö civilization ability. His campaigns were also marked by devastating psychological warfare and rapid conquest, a legacy echoed in-game by a leader ability that lets Mongol cavalry armies grow stronger by absorbing defeated enemy horsemen."
+    }
   },
   {
     "name_key": "chandragupta",
@@ -1248,7 +1615,40 @@
         "Omitting the closing window. Gate leaders have two deadlines, not one."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Chandragupta",
+      "civilization": "India",
+      "leader_title": "Founder of the Maurya Empire",
+      "expansion_origin": "Rise and Fall",
+      "leader_ability": {
+        "name": "Arthashastra",
+        "text": "After researching Military Training, Chandragupta can declare a War of Territorial Expansion, granting his units extra Movement and Combat Strength for the following turns — a controlled way to seize nearby territory quickly."
+      },
+      "agenda": {
+        "name": "Maurya Empire",
+        "text": "Chandragupta seeks to expand his own empire and dislikes other civilizations that settle cities too close to his borders."
+      },
+      "civ_ability": {
+        "name": "Dharma",
+        "text": "Indian cities gain the Follower Beliefs of every religion present among their population, not just the majority religion. In Gathering Storm this also grants an Amenity for each religion with at least one follower and boosts Missionary spreads and Trade Route religious pressure, making India uniquely effective at multi-religion cities."
+      },
+      "unique_units": [
+        {
+          "name": "Varu",
+          "replaces": "Knight",
+          "notes": "An elephant-mounted heavy cavalry unit that causes nearby enemy units to become fearful (reducing their effectiveness) and resists the usual counters to cavalry, well-suited to India's defensive-leaning playstyle."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Stepwell",
+          "type": "Improvement",
+          "notes": "A unique tile improvement that boosts Faith and Housing/growth-related yields, particularly valuable on dry terrain, supporting India's strong religious and population growth focus."
+        }
+      ],
+      "historical_background": "Chandragupta Maurya founded the Maurya Empire around 321 BCE, unifying most of the Indian subcontinent for the first time in history with guidance from his strategist advisor Chanakya, traditionally credited as author of the Arthashastra — the classical treatise on statecraft and military strategy directly named in Chandragupta's leader ability. His empire laid the foundation later expanded and famously ruled with a turn toward Buddhist pacifism by his grandson, Ashoka. India's long history as home to numerous major religions living alongside one another is reflected in the civ ability Dharma, which rewards accommodating multiple faiths within the same cities rather than enforcing religious uniformity."
+    }
   },
   {
     "name_key": "harald hardrada",
@@ -1349,7 +1749,46 @@
         "Omitting the off-period plan for reactive leaders. Most turns are off-period."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Harald Hardrada",
+      "civilization": "Norway",
+      "leader_title": "The Last Great Viking",
+      "expansion_origin": "Base Game",
+      "leader_ability": {
+        "name": "Thunderbolt of the North",
+        "text": "Grants a large Production bonus toward naval melee units and enables coastal raiding (pillaging coastal tiles and cities directly from naval melee units), and unlocks the unique Viking Longship, supporting an aggressive naval-raiding playstyle. (Harald also has an alternate 'Varangian' persona, added later, with a different ability, Varangian Guard, focused on cheaply levying and maintaining city-state units.)"
+      },
+      "agenda": {
+        "name": "Last Viking King",
+        "text": "Harald wants to build a powerful navy, respects other civilizations with strong naval forces, and looks down on those with weak ones."
+      },
+      "civ_ability": {
+        "name": "Knarr",
+        "text": "Norwegian units can cross Ocean tiles once Shipbuilding is researched, suffer no extra Movement cost for embarking or disembarking, and naval melee units can heal even in neutral (unowned) territory, giving Norway unmatched early naval mobility."
+      },
+      "unique_units": [
+        {
+          "name": "Berserker",
+          "replaces": "Man-At-Arms",
+          "notes": "A strong early melee unit that gains a further boost once Military Tactics is researched, fitting Norway's aggressive coastal-raiding identity."
+        },
+        {
+          "name": "Viking Longship",
+          "replaces": "Galley",
+          "notes": "A cheaper, faster, and stronger early naval unit than the Galley it replaces, able to heal in neutral waters thanks to the Knarr civ ability, ideal for early raiding."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Stave Church",
+          "type": "Building",
+          "replaces_note": "replaces the Temple",
+          "notes": "Provides Faith and additional benefits, and in the Varangian persona also grants Influence points, supporting Norway's religious and diplomatic play alongside its raiding."
+        }
+      ],
+      "historical_background": "Harald Hardrada ('Hard Ruler') was King of Norway from 1046 to 1066 and is often called the last great king of the Viking Age. Before taking the Norwegian throne he spent years as a mercenary commander in the Byzantine Empire's elite Varangian Guard, the historical basis for his alternate in-game persona. He died in 1066 at the Battle of Stamford Bridge in England while attempting to conquer the English throne, a defeat just weeks before the Norman Conquest that many historians treat as marking the symbolic end of the Viking Age — a fittingly aggressive, sea-borne legacy reflected in Norway's naval-raiding leader ability and civ-wide ocean mobility."
+    }
   },
   {
     "name_key": "matthias corvinus",
@@ -1450,7 +1889,46 @@
         "Omitting the off-period plan for reactive leaders. Most turns are off-period."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Matthias Corvinus",
+      "civilization": "Hungary",
+      "leader_title": "The Raven King",
+      "expansion_origin": "Gathering Storm",
+      "leader_ability": {
+        "name": "Raven King",
+        "text": "Units levied from city-states gain bonus Movement and Combat Strength, cost far less Gold and resources to upgrade, and levying troops from a city-state grants 2 extra Envoys there, making city-state levying a core Hungarian military strategy."
+      },
+      "agenda": {
+        "name": "Raven Banner",
+        "text": "Matthias Corvinus frequently levies units from city-states and admires other leaders who do the same, while disliking those who avoid using mercenaries."
+      },
+      "civ_ability": {
+        "name": "Pearl of the Danube",
+        "text": "Districts and buildings built across a River from the City Center receive a large Production bonus, rewarding cities founded and developed along rivers."
+      },
+      "unique_units": [
+        {
+          "name": "Black Army",
+          "replaces": "Man-At-Arms",
+          "notes": "An early professional-army unit that upgrades directly into Hungary's second unique unit, giving Hungary a long-lasting line of powerful cavalry-adjacent forces."
+        },
+        {
+          "name": "Huszár",
+          "replaces": "none (upgrade of Black Army)",
+          "notes": "A strong light cavalry unit that continues Hungary's unique military line into the medieval era, well suited to levied-army compositions."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Thermal Bath",
+          "type": "Building",
+          "replaces_note": "replaces the Zoo",
+          "notes": "Provides Amenities and helps prevent revolt/loyalty problems in newly conquered or levy-heavy cities, supporting Hungary's mercenary-driven playstyle."
+        }
+      ],
+      "historical_background": "Matthias Corvinus ruled the Kingdom of Hungary from 1458 to 1490, nicknamed 'the Raven King' for his family's raven emblem (Corvinus), and is remembered as one of Renaissance Europe's most capable rulers. He built the Black Army of Hungary, one of Europe's first large professional standing armies, financed partly through mercenaries and levied forces, directly reflected in his in-game ability and agenda around cheaply levying city-state units. He also turned his court at Buda into a major center of Renaissance humanism, attracting scholars and artists from across Europe, and his Hungary sat astride the Danube, echoed by the civilization's river-adjacency production bonus."
+    }
   },
   {
     "name_key": "suleiman",
@@ -1540,7 +2018,40 @@
         "Framing Phase A as preparation only. It also has to be survivable on its own terms."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Suleiman",
+      "civilization": "Ottoman",
+      "leader_title": "Suleiman I, The Magnificent (also known as Kanuni, \"The Lawgiver\")",
+      "expansion_origin": "Base Game",
+      "leader_ability": {
+        "name": "Grand Vizier",
+        "text": "Suleiman gains access to a unique, exclusive Governor (Ibrahim) with strong military and diplomatic bonuses, and unlocks the Janissary unique unit plus a bonus Governor Title once Gunpowder is researched. It lets the Ottomans field an elite late-game army while also running a top-tier governor for loyalty and diplomacy."
+      },
+      "agenda": {
+        "name": "Lawgiver",
+        "text": "Suleiman keeps his own cities happy and loyal, and is impressed by civilizations that do the same or have founded many cities; he dislikes leaders whose cities are unhappy, disloyal, or few in number due to conquest."
+      },
+      "civ_ability": {
+        "name": "Great Turkish Bombard",
+        "text": "Ottoman siege units are trained 50% faster and gain +5 Combat Strength when attacking or defending against district defenses, making the Ottomans exceptionally strong at both offensive sieges and city-state coercion."
+      },
+      "unique_units": [
+        {
+          "name": "Janissary",
+          "replaces": "Musketman",
+          "notes": "Cheaper and stronger than the Musketman, starts with a free promotion, and can convert a defeated enemy unit into an Ottoman unit, letting Ottoman armies grow while attacking."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Grand Bazaar",
+          "type": "Building",
+          "notes": "Replaces the Bank in the Commercial Hub, is the cheapest unique building in the game, and adds bonus Amenities and access to extra strategic resources."
+        }
+      ],
+      "historical_background": "Suleiman I (r. 1520-1566) presided over the Ottoman Empire at its territorial and cultural zenith, pushing its borders deep into Hungary and the Middle East while his fleets contested the Mediterranean. Ottomans called him 'Kanuni' (the Lawgiver) for his sweeping legal and administrative reforms that brought consistency to a sprawling multiethnic empire, while Europeans knew him as 'the Magnificent' for his court's wealth and patronage of architecture (including the Süleymaniye Mosque) and the arts. His reign relied heavily on the elite, gunpowder-armed Janissary corps and an efficient siege-focused military, both reflected in the Ottomans' in-game strengths. This mix of centralizing governance and relentless military expansion is the throughline connecting the historical sultan to his in-game kit of governance-boosting abilities and siege-crushing bombards."
+    }
   },
   {
     "name_key": "lautaro",
@@ -1641,7 +2152,40 @@
         "Omitting the off-period plan for reactive leaders. Most turns are off-period."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Lautaro",
+      "civilization": "Mapuche",
+      "leader_title": "Toqui of the Mapuche",
+      "expansion_origin": "Rise and Fall",
+      "leader_ability": {
+        "name": "Swift Hawk",
+        "text": "Defeating an enemy unit in enemy territory reduces the Loyalty of that unit's origin city, and Lautaro's units get a combat bonus when fighting civilizations that are in a Golden or Heroic Age, letting him punish and destabilize thriving rivals through raiding."
+      },
+      "agenda": {
+        "name": "Spirit of Tucapel",
+        "text": "Lautaro works to keep Loyalty high in his own cities and dislikes other civilizations that let their own cities' Loyalty slip, favoring stable, well-governed rivals."
+      },
+      "civ_ability": {
+        "name": "Toqui",
+        "text": "Cities with an established Governor gain bonus Culture, Production, and combat experience for trained units, and radiate Loyalty pressure toward nearby Mapuche cities, letting the Mapuche use Governors to both develop and hold their territory against Loyalty pressure."
+      },
+      "unique_units": [
+        {
+          "name": "Malón Raider",
+          "replaces": "none (unique Renaissance-era light cavalry)",
+          "notes": "A hard-hitting raiding cavalry unit that gains a combat bonus near friendly territory and can pillage for a single movement point, ideal for hit-and-run war-of-attrition strategies that punish rival Loyalty."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Chemamull",
+          "type": "Improvement",
+          "notes": "A high-Appeal-requirement tile improvement that converts Appeal into Culture (and Tourism after Flight), making it a strong late-game culture/tourism engine for high-Appeal Mapuche territory."
+        }
+      ],
+      "historical_background": "Lautaro was a young Mapuche man captured and pressed into service by Spanish conquistador Pedro de Valdivia in 16th-century Chile, during which time he learned Spanish cavalry and siege tactics from the inside. He escaped and used that knowledge to lead Mapuche forces in the Arauco War, most famously defeating and killing Valdivia at the Battle of Tucapel in 1553. His guerrilla-style raiding tactics and refusal to hold static ground helped the Mapuche resist full Spanish conquest for centuries, longer than almost any other indigenous American people, a legacy echoed in his in-game focus on mobile raiding and loyalty-destabilizing warfare against more 'settled' golden-age rivals."
+    }
   },
   {
     "name_key": "trajan",
@@ -1735,7 +2279,40 @@
         "Treating these leaders as beginner-only. Flat curves reward long-range planning more than spikes do."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Trajan",
+      "civilization": "Roman",
+      "leader_title": "Optimus Princeps (\"Best Ruler\")",
+      "expansion_origin": "Base Game",
+      "leader_ability": {
+        "name": "Trajan's Column",
+        "text": "Every city Trajan founds or acquires gets an extra free building in its City Center slot beyond the normal one (a Monument if still in the Ancient Era, or the era-appropriate equivalent later), giving Rome a permanent head start on infrastructure in every city, new or old."
+      },
+      "agenda": {
+        "name": "Optimus Princeps",
+        "text": "Trajan tries to bring as much territory as possible under his empire's control and looks down on civilizations that hold only a small amount of territory."
+      },
+      "civ_ability": {
+        "name": "All Roads Lead to Rome",
+        "text": "All Roman cities start with a free Trading Post, roads are automatically built to new cities within trade range of the Capital, and Gold income from Trade Routes passing through Roman cities is increased, giving Rome an economic and connectivity edge from the earliest turns."
+      },
+      "unique_units": [
+        {
+          "name": "Legion",
+          "replaces": "Swordsman",
+          "notes": "A stronger, more expensive Classical-era melee unit that doesn't require Iron and carries a builder charge it can spend to construct a Roman Fort, build a road, or harvest a resource in the field."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Bath",
+          "type": "District",
+          "notes": "Replaces the Aqueduct (must be built adjacent to the City Center and a water/mountain feature) and provides Amenities alongside its Housing bonus, making Rome's early cities more comfortable to grow."
+        }
+      ],
+      "historical_background": "Trajan ruled the Roman Empire from 98 to 117 AD and pushed it to its greatest territorial extent, conquering Dacia (for its gold) and campaigning into Mesopotamia and Armenia against Parthia. He is remembered as one of the 'Five Good Emperors' for combining military conquest with an ambitious building program: Trajan's Forum, Trajan's Market, and Trajan's Column (commemorating the Dacian Wars) all still stand in Rome today. His reputation for expanding territory while simultaneously building up infrastructure at home directly informs his in-game kit, which rewards both extra city buildings and holding maximal territory."
+    }
   },
   {
     "name_key": "hojo tokimune",
@@ -1831,7 +2408,40 @@
         "Presenting settle sites one at a time. The map has to be drawn whole or the radius logic does not work."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Hojo Tokimune",
+      "civilization": "Japanese",
+      "leader_title": "Regent of the Kamakura Shogunate",
+      "expansion_origin": "Base Game",
+      "leader_ability": {
+        "name": "Divine Wind",
+        "text": "Japanese land units get +5 Combat Strength on land tiles adjacent to Coast, and naval units get +5 Combat Strength in shallow water; Encampment, Holy Site, and Theater Square districts are also built in half the normal time, making Japan strong at coastal warfare and fast at fielding military/cultural/religious infrastructure."
+      },
+      "agenda": {
+        "name": "Bushido",
+        "text": "Tokimune favors civilizations that pair a strong military with high Faith and Culture output, and disapproves of civilizations that are militarily powerful but weak in Faith and Culture."
+      },
+      "civ_ability": {
+        "name": "Meiji Restoration",
+        "text": "Japanese districts receive the full (standard) adjacency bonus from being placed next to other districts, instead of the reduced 'minor' bonus other civilizations get, letting Japan pack districts tightly together for outsized yields."
+      },
+      "unique_units": [
+        {
+          "name": "Samurai",
+          "replaces": "Man-At-Arms",
+          "notes": "A stronger Medieval-era melee unit that suffers no combat penalty when damaged, letting it keep fighting effectively even at low health."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Electronics Factory",
+          "type": "Building",
+          "notes": "Replaces the Factory; a late-game production building that keeps Japan's tightly-packed district cities industrially competitive."
+        }
+      ],
+      "historical_background": "Hojo Tokimune served as regent (shikken) of Japan's Kamakura shogunate from 1268 to 1284, a period defined by the Mongol Empire's two attempted invasions of Japan in 1274 and 1281. Tokimune organized Japan's samurai defenses and coastal fortifications to repel both invasions, and the second fleet was famously destroyed by a typhoon the Japanese called 'kamikaze,' or 'divine wind' -- the direct namesake of his in-game leader ability. A devout patron of Zen Buddhism, he is remembered as a symbol of samurai resolve and Japan's successful defense of its coastline, which the ability's coastal combat bonuses and fast military infrastructure evoke directly."
+    }
   },
   {
     "name_key": "qin shi huang",
@@ -1934,7 +2544,40 @@
         "Letting the player believe a large army at 110 counts as success. It does not."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Qin Shi Huang",
+      "civilization": "Chinese",
+      "leader_title": "The First Emperor",
+      "expansion_origin": "Base Game",
+      "leader_ability": {
+        "name": "The First Emperor",
+        "text": "Builders can be spent to instantly complete 15% of the original cost of Ancient and Classical era Wonders, and Builders gain an extra build charge, letting Qin Shi Huang rush out early Wonders far faster than other civilizations."
+      },
+      "agenda": {
+        "name": "Wall of 10,000 Li",
+        "text": "Qin Shi Huang likes civilizations that don't compete with him for Wonders and that build Wonders themselves; he strongly dislikes losing a Wonder race to another civilization."
+      },
+      "civ_ability": {
+        "name": "Dynastic Cycle",
+        "text": "Earning a Eureka or Inspiration grants an extra flat percentage of Science or Culture toward the associated Technology or Civic, and completing a Wonder grants a free Eureka and Inspiration, reinforcing China's wonder- and tech-rushing playstyle."
+      },
+      "unique_units": [
+        {
+          "name": "Crouching Tiger",
+          "replaces": "Field Cannon",
+          "notes": "A cheaper ranged siege unit with strong ranged strength but shorter range than the Field Cannon it replaces, giving China an efficient siege option."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Great Wall",
+          "type": "Improvement",
+          "notes": "A unique defensive tile improvement that generates Gold (more when connected to adjacent wall segments) and grants a large defensive Combat Strength bonus to units standing on it."
+        }
+      ],
+      "historical_background": "Qin Shi Huang unified China's warring states in 221 BCE to become its first emperor, founding the short-lived but transformative Qin dynasty. He standardized China's writing system, currency, weights and measures, and road networks, and connected and extended existing regional walls into the precursor of the Great Wall of China -- the direct basis for China's in-game unique improvement. He is equally famous for the enormous Terracotta Army buried to guard his tomb, and for a harsh, centralizing rule that built lasting state infrastructure at great human cost. His fixation on grand unifying construction projects and standardization is mirrored in his in-game ability to rush Wonders and China's civilization-wide bonus for converting breakthroughs into further progress."
+    }
   },
   {
     "name_key": "frederick barbarossa",
@@ -2028,7 +2671,40 @@
         "Treating these leaders as beginner-only. Flat curves reward long-range planning more than spikes do."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Frederick Barbarossa",
+      "civilization": "German",
+      "leader_title": "Holy Roman Emperor",
+      "expansion_origin": "Base Game",
+      "leader_ability": {
+        "name": "Holy Roman Emperor",
+        "text": "Frederick gets an additional Military policy card slot and +7 Combat Strength when his units attack city-states, making him a formidable coercer and conqueror of city-states specifically."
+      },
+      "agenda": {
+        "name": "Iron Crown",
+        "text": "Frederick prefers civilizations that stay out of city-state affairs, and dislikes leaders who become suzerains of city-states or who conquer them."
+      },
+      "civ_ability": {
+        "name": "Free Imperial Cities",
+        "text": "German cities can build one additional District beyond what their Population would normally allow, letting Germany build wider, more district-dense cities than any other civilization."
+      },
+      "unique_units": [
+        {
+          "name": "U-Boat",
+          "replaces": "Submarine",
+          "notes": "A cheaper Modern-era submarine with a combat bonus in ocean tiles and extra sight, giving Germany an efficient naval raiding tool."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Hansa",
+          "type": "District",
+          "notes": "Replaces the Industrial Zone; it gains adjacency bonuses from any resource (not just mines/quarries) and extra Production next to a Commercial Hub, making it a powerful, flexibly-placed production district."
+        }
+      ],
+      "historical_background": "Frederick I 'Barbarossa' (red beard) ruled as Holy Roman Emperor from 1155 to 1190, spending much of his reign trying to reassert direct imperial authority over the fractious Italian city-states and princely territories that nominally owed him fealty -- a struggle his in-game agenda around city-states is built on. A leading figure of the Crusades, he drowned crossing a river in Anatolia while leading forces on the Third Crusade, and German legend later held that he was merely sleeping beneath a mountain, ready to return and restore Germany's greatness. That legacy of a fragmented Germany striving to hold its component territories together under central authority is echoed in the German civilization's extra-district ability, which lets Germany's cities exceed normal size limits the way the Holy Roman Empire itself sprawled beyond normal medieval state boundaries."
+    }
   },
   {
     "name_key": "pachacuti",
@@ -2124,7 +2800,45 @@
         "Presenting settle sites one at a time. The map has to be drawn whole or the radius logic does not work."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Pachacuti",
+      "civilization": "Incan",
+      "leader_title": "Sapa Inca (\"the Earth Shaker\")",
+      "expansion_origin": "Gathering Storm",
+      "leader_ability": {
+        "name": "Qhapaq Ñan",
+        "text": "Domestic Trade Routes gain bonus Food for every Mountain tile near their origin city, and the Incas gain access to the Qhapaq Ñan unique tile improvement once the Foreign Trade civic is researched, rewarding mountain-heavy empires with strong internal trade."
+      },
+      "agenda": {
+        "name": "Sapa Inca",
+        "text": "Pachacuti wants to settle his own cities near Mountains and is happy to let other civilizations avoid that terrain, but dislikes rival leaders who also settle near Mountains and compete with him for that land."
+      },
+      "civ_ability": {
+        "name": "Mit'a",
+        "text": "Incan citizens can work Mountain tiles directly for Production (with an increased yield reached in the Industrial Era), and Mountains provide bonus Food to adjacent Terrace Farms, letting the Inca build thriving cities in terrain other civilizations must avoid."
+      },
+      "unique_units": [
+        {
+          "name": "Warak'aq",
+          "replaces": "Skirmisher",
+          "notes": "A ranged unit with notably higher Ranged Strength than the Skirmisher it replaces, giving the Inca strong early ranged offense to complement their mountain-based defense."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Terrace Farm",
+          "type": "Improvement",
+          "notes": "A unique farm improvement buildable on hills/grassland/plains/desert that gets bonus Food next to Mountains and bonus Production next to an Aqueduct, letting mountain cities also feed themselves."
+        },
+        {
+          "name": "Qhapaq Ñan",
+          "type": "Improvement",
+          "notes": "A unique road-like mountain-tunnel improvement unlocked by Pachacuti's leader ability, granted automatically with Foreign Trade, that helps connect an Inca empire fragmented by mountainous terrain."
+        }
+      ],
+      "historical_background": "Pachacuti Inca Yupanqui ruled from roughly 1438 to 1471 and is credited with transforming the small kingdom of Cusco into the vast Inca Empire (Tawantinsuyu) through a combination of military conquest and sweeping administrative reform. He is traditionally credited with commissioning Machu Picchu and with building out the empire's remarkable road network, the Qhapaq Ñan, which linked its Andean territories across extremely difficult mountain terrain -- the direct namesake of his in-game leader ability and unique improvement. His empire's mastery of mountain agriculture, especially terrace farming, let the Inca feed large populations in terrain most other pre-modern states avoided, which is exactly what his in-game civilization ability rewards."
+    }
   },
   {
     "name_key": "john curtin",
@@ -2264,6 +2978,39 @@
           ]
         }
       ]
+    },
+    "civInfo": {
+      "name": "John Curtin",
+      "civilization": "Australian",
+      "leader_title": "Prime Minister of Australia",
+      "expansion_origin": "Rise and Fall (Australia Civilization & Scenario Pack, a standalone DLC released alongside Rise and Fall, not part of New Frontier Pass)",
+      "leader_ability": {
+        "name": "Citadel of Civilization",
+        "text": "Australia gains a large temporary Production bonus for a set number of turns after being on the receiving end of a Declaration of War, and an even longer-lasting Production bonus after liberating a captured city, letting Curtin turn being attacked (or liberating others) into a Production surge."
+      },
+      "agenda": {
+        "name": "Perpetually on Guard",
+        "text": "Curtin seeks Defensive Pacts with other civilizations and likes leaders who liberate captured cities, while disliking those who occupy and hold cities they've conquered."
+      },
+      "civ_ability": {
+        "name": "Land Down Under",
+        "text": "Coastal cities get bonus Housing, Pastures can trigger a Culture Bomb to claim surrounding territory, and Campus, Commercial Hub, Holy Site, and Theater Square districts get bonus yields on tiles with high Appeal, rewarding Australia for building scenic, coastal, well-developed cities."
+      },
+      "unique_units": [
+        {
+          "name": "Digger",
+          "replaces": "Infantry",
+          "notes": "A stronger Modern-era infantry unit with combat bonuses on land tiles adjacent to water and when fighting outside Australian territory, fitting an expeditionary, coastal-defense playstyle."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Outback Station",
+          "type": "Improvement",
+          "notes": "A unique tile improvement unlocked with Guilds (and upgradeable later) that develops otherwise marginal outback terrain, supporting Australia's wide, resource-heavy territory."
+        }
+      ],
+      "historical_background": "John Curtin served as Australia's Prime Minister from 1941 to 1945, leading the country through the most direct existential threat it had faced: the Japanese advance through the Pacific during World War II, including air raids on Darwin and the fall of Singapore. Facing the limits of British support, Curtin controversially redirected Australian troops home from the Middle East and pivoted Australia's strategic alliance toward the United States, reshaping Australian foreign policy for the rest of the century. He died in office in July 1945, shortly before the war's end, worn down by the strain of wartime leadership. His defining legacy of turning a defensive crisis into national mobilization and a lasting policy of forming strong external alliances is reflected directly in his in-game kit's war-triggered production bonuses and preference for Defensive Pacts."
     }
   },
   {
@@ -2354,7 +3101,40 @@
         "Framing Phase A as preparation only. It also has to be survivable on its own terms."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Victoria (Age of Steam)",
+      "civilization": "English",
+      "leader_title": "Queen of the United Kingdom (Age of Steam persona)",
+      "expansion_origin": "New Frontier Pass (Leader Pass persona)",
+      "leader_ability": {
+        "name": "Age of Steam",
+        "text": "Cities gain +10% Production for every Industrial Zone building present in them, and all Strategic Resources in England's territory (even unimproved ones) receive a flat Production bonus, making this Victoria persona a heavy Industrial-era production and Strategic Resource specialist rather than the original 'Pax Britannica' overseas-expansion leader."
+      },
+      "agenda": {
+        "name": "Industrial Revolution",
+        "text": "This Victoria persona pushes hard to build up industry and favors civilizations with high Production output, while looking down on those with low Production."
+      },
+      "civ_ability": {
+        "name": "Workshop of the World",
+        "text": "England gets bonus yields from Iron and Coal resources, greatly boosted Military Engineer production and extra Military Engineer charges, bonus yields from powered buildings, extra Production toward Industrial Zones, and increased strategic resource stockpiles from Harbors -- an Industrial-Revolution-themed civilization ability shared by all English leaders."
+      },
+      "unique_units": [
+        {
+          "name": "Sea Dog",
+          "replaces": "Privateer",
+          "notes": "A unique naval raider that upgrades into the Submarine line and is strong at harassing enemy trade routes and coastal territory during the early-modern naval era; note the Redcoat unique unit is tied specifically to the alternate Victoria (Age of Empire) persona's leader ability, not to Age of Steam."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Royal Navy Dockyard",
+          "type": "District",
+          "notes": "Replaces the Harbor; grants a free naval unit when first built and extra Trade Route capacity/unit movement, reinforcing England's naval and trade-route strengths."
+        }
+      ],
+      "historical_background": "Queen Victoria reigned over the United Kingdom from 1837 to 1901, a period that saw Britain become the dominant global industrial and colonial power, with an empire famously described as one 'on which the sun never sets.' Her reign coincided with the height of the Industrial Revolution -- steam-powered railways, factories, and the Royal Navy's coal-fired fleet all expanded dramatically during this era, which is exactly what this 'Age of Steam' persona's Industrial Zone and Strategic Resource bonuses represent. This persona (added via the Leader Pass's Rulers of England content) is a deliberately narrower, industrially-focused counterpart to the original 'Age of Empire' Victoria persona, whose ability and Redcoat unit instead modeled 19th-century British colonial expansion overseas."
+    }
   },
   {
     "name_key": "ba trieu",
@@ -2450,7 +3230,40 @@
         "Presenting settle sites one at a time. The map has to be drawn whole or the radius logic does not work."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Ba Trieu",
+      "civilization": "Vietnamese",
+      "leader_title": "Lady Trieu, folk heroine of Vietnamese resistance",
+      "expansion_origin": "New Frontier Pass",
+      "leader_ability": {
+        "name": "Drive Out The Aggressors",
+        "text": "Vietnamese units gain bonus Movement and Combat Strength while on Woods, Rainforest, or Marsh tiles, with the bonus doubled when those tiles are inside Vietnam's own territory, making Vietnam extremely strong at defending its jungle terrain against invasion."
+      },
+      "agenda": {
+        "name": "Defender of the Homeland",
+        "text": "Ba Trieu favors civilizations that have never declared war on Vietnam, and permanently distrusts and dislikes any civilization that ever has, regardless of how much time has passed."
+      },
+      "civ_ability": {
+        "name": "Nine Dragon River Delta",
+        "text": "Vietnam can only place specialty land districts on Woods, Rainforest, or Marsh tiles, but buildings in those districts gain bonus Culture, Science, or Production depending on the terrain feature, turning a placement restriction into a themed yield bonus."
+      },
+      "unique_units": [
+        {
+          "name": "Voi Chiến",
+          "replaces": "Crossbowman",
+          "notes": "A Medieval ranged unit with more Movement and Sight than the Crossbowman, and the ability to move after attacking, well suited to Vietnam's mobile jungle-terrain warfare."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Thành",
+          "type": "District",
+          "notes": "Replaces the Encampment; provides bonus Culture for each adjacent district and, once Flight is researched, converts that Culture output into Tourism, giving Vietnam a militarized district with a late-game culture payoff."
+        }
+      ],
+      "historical_background": "Triệu Thị Trinh, known as Bà Triệu ('Lady Trieu'), was a 3rd-century CE Vietnamese woman who led an armed rebellion against occupying Chinese (Eastern Wu) rule around 248 CE. Vietnamese tradition holds she declared she would rather 'ride the wind and walk the waves' and fight as a warrior than live bowed under foreign rule as a servant, and though her rebellion was ultimately crushed, she became -- alongside the earlier Trung Sisters -- one of Vietnam's most enduring symbols of resistance to foreign domination. That legacy of guerrilla resistance fought from Vietnam's dense terrain against a more powerful invader directly informs her in-game kit, which rewards fighting from (and defending) Vietnam's woods, rainforest, and marsh tiles and never forgives a civilization that has declared war on her."
+    }
   },
   {
     "name_key": "lady six sky",
@@ -2546,7 +3359,40 @@
         "Presenting settle sites one at a time. The map has to be drawn whole or the radius logic does not work."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Lady Six Sky",
+      "civilization": "Mayan",
+      "leader_title": "Queen of Naranjo",
+      "expansion_origin": "New Frontier Pass",
+      "leader_ability": {
+        "name": "Ix Mutal Ajaw",
+        "text": "Within 6 tiles of her Capital, all of Lady Six Sky's units get bonus Combat Strength and her cities get a yield bonus, but any of her cities founded more than 6 tiles from the Capital instead take a yield penalty, strongly rewarding a small, tightly-clustered empire over a sprawling one."
+      },
+      "agenda": {
+        "name": "Solitary",
+        "text": "Lady Six Sky wants to keep her own cities clustered close together near her Capital; she likes leaders who settle far away from her and dislikes those who encroach on her borders."
+      },
+      "civ_ability": {
+        "name": "Mayab",
+        "text": "Mayan cities don't get the normal Housing bonus from being adjacent to fresh water or Coast, but their Farms grant bonus Housing and Gold instead (with an added Production bonus next to an Observatory), letting the Maya build tall, food-driven cities away from rivers."
+      },
+      "unique_units": [
+        {
+          "name": "Hul'che",
+          "replaces": "Archer",
+          "notes": "An Ancient-era ranged unit with higher Ranged Strength than the Archer and a bonus against already-wounded units, giving the Maya strong early skirmishing power, especially near the Capital where Lady Six Sky's ability adds further Combat Strength."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Observatory",
+          "type": "District",
+          "notes": "Replaces the Campus; gets a major Science bonus from each adjacent Plantation and a minor bonus from adjacent Farms or districts, tying neatly into the Maya's farm-focused civilization ability."
+        }
+      ],
+      "historical_background": "Lady Six Sky was a Maya queen who arrived at the city-state of Naranjo (in present-day Guatemala) around 682 CE and is credited with reviving it after a period of military defeat and decline, quite possibly having come from the powerful city of Dos Pilas or Calakmul. She oversaw military campaigns that restored Naranjo's regional power and, notably, placed her young son on the throne as king while continuing to wield significant authority herself, an unusual degree of female political power commemorated on Naranjo's carved stelae. That story of rebuilding and defending a single powerful city-state rather than pursuing distant conquest is mirrored directly in her in-game ability, which rewards a compact empire clustered tightly around the capital and penalizes overextension."
+    }
   },
   {
     "name_key": "nzinga mbande",
@@ -2642,7 +3488,40 @@
         "Presenting settle sites one at a time. The map has to be drawn whole or the radius logic does not work."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Nzinga Mbande",
+      "civilization": "Kongolese",
+      "leader_title": "Queen of Ndongo and Matamba",
+      "expansion_origin": "New Frontier Pass (Leader Pass persona)",
+      "leader_ability": {
+        "name": "Queen of Ndongo and Matamba",
+        "text": "All Kongolese cities on the same continent as the Capital (including the Capital itself) get a bonus to all yields, while any cities founded on other continents instead suffer a yield penalty, strongly pushing Nzinga toward staying concentrated on her home continent rather than overseas colonization."
+      },
+      "agenda": {
+        "name": "Decolonization",
+        "text": "Nzinga favors civilizations that have not settled any cities on her home continent, and dislikes those that have established a foothold there, reflecting her historical resistance to foreign colonization."
+      },
+      "civ_ability": {
+        "name": "Nkisi",
+        "text": "Kongo gets bonus Food, Production, Faith, and Gold from Relics, Artifacts, and Sculptures (including Heroic Relics), earns Great Artist, Great Musician, and Great Merchant points faster, and its Palace can hold extra Great Works, making Kongo a strong Culture/Great Works-focused civilization."
+      },
+      "unique_units": [
+        {
+          "name": "Ngao Mbeba",
+          "replaces": "Swordsman",
+          "notes": "A stronger melee unit that avoids movement/sight penalties in Woods and Rainforest and gets a defensive bonus against ranged attacks, well suited to fighting through and defending Kongo's forested homeland."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Mbanza",
+          "type": "District",
+          "notes": "Replaces the Neighborhood; unlocked earlier (with Guilds instead of Urbanization) and grants Housing, Food, and Gold, but can only be built on Woods or Rainforest tiles, matching Kongo's historical jungle-based settlements."
+        }
+      ],
+      "historical_background": "Nzinga Mbande ruled the Central African kingdoms of Ndongo and later Matamba (in modern Angola) for roughly four decades in the 17th century, becoming one of the most formidable diplomats and military strategists to resist European colonization in her era. She skillfully played the Portuguese against rival African and Dutch powers, converted to Christianity as a political tool when useful, built alliances with escaped slaves and runaway soldiers to bolster her forces, and successfully kept her kingdoms independent of Portuguese control for most of her reign. Her lifelong struggle to keep foreign powers out of her home territory while she herself avoided overseas entanglement is the direct historical basis for her in-game ability and 'Decolonization' agenda, both of which reward staying concentrated on one's home continent and punish rivals who colonize it."
+    }
   },
   {
     "name_key": "seondeok",
@@ -2738,7 +3617,40 @@
         "Presenting settle sites one at a time. The map has to be drawn whole or the radius logic does not work."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Seondeok",
+      "civilization": "Korean",
+      "leader_title": "Queen of Silla",
+      "expansion_origin": "Rise and Fall",
+      "leader_ability": {
+        "name": "Hwarang",
+        "text": "Each promotion a Governor has earned grants a percentage boost to both Culture and Science in the city they're assigned to, meaning heavily-promoted Governors turn into powerful Science and Culture engines under Seondeok."
+      },
+      "agenda": {
+        "name": "Cheomseongdae",
+        "text": "Seondeok focuses on maximizing her own empire's Science output and dislikes civilizations that produce comparatively little Science."
+      },
+      "civ_ability": {
+        "name": "Three Kingdoms",
+        "text": "Mines gain a Science yield and Farms gain a Food yield when placed adjacent to Korea's unique Seowon district, letting Korea weave its normal tile improvements directly into a Science-focused district strategy."
+      },
+      "unique_units": [
+        {
+          "name": "Hwacha",
+          "replaces": "Field Cannon",
+          "notes": "A powerful Renaissance-era ranged siege unit that cannot move and attack in the same turn, trading mobility for strong ranged damage output."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Seowon",
+          "type": "District",
+          "notes": "Replaces the Campus and is Korea's central Science district, gaining adjacency bonuses from Mines and Farms placed near it rather than from the usual mountains/rainforest, tying directly into the Three Kingdoms civilization ability."
+        }
+      ],
+      "historical_background": "Seondeok reigned as Queen of Silla, one of Korea's Three Kingdoms, from 632 to 647 CE, becoming the first reigning queen in Korean history. Her rule is remembered for its patronage of Buddhism, learning, and science, including the construction of Cheomseongdae, widely regarded as the oldest surviving astronomical observatory in East Asia and the direct namesake of her in-game agenda. She also strengthened Silla's diplomatic ties with Tang China during a period of intense rivalry among Korea's Three Kingdoms, groundwork that helped Silla eventually unify the peninsula after her reign. Her hallmark blend of scholarly patronage, astronomy, and governance is reflected in her in-game kit's emphasis on Science output and Governor-driven yield bonuses."
+    }
   },
   {
     "name_key": "hammurabi",
@@ -2841,7 +3753,40 @@
         "Letting the player believe a large army at 120 counts as success. It does not."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Hammurabi",
+      "civilization": "Babylon",
+      "leader_title": "King of Babylon",
+      "expansion_origin": "New Frontier Pass (Babylon Pack)",
+      "leader_ability": {
+        "name": "Ninu Ilu Sirum",
+        "text": "The first time each specialty district (except the Government Plaza) is constructed, Hammurabi instantly receives the lowest-production-cost building available for that district for free, plus a bonus Envoy for any other district built for the first time. This lets Babylon rush ahead on infrastructure and Eureka/Inspiration-style tech snowballing without spending production on the basic district buildings."
+      },
+      "agenda": {
+        "name": "Cradle of Civilization",
+        "text": "Hammurabi tries to build every possible type of district in his cities and respects civilizations that also pursue district variety; he looks down on civilizations that neglect districts."
+      },
+      "civ_ability": {
+        "name": "Enuma Anu Enlil",
+        "text": "Whenever Babylon triggers a Eureka or Inspiration, it can immediately unlock the full associated technology or civic by paying a share of its current per-turn Science or Culture output, letting a high-yield Babylon blitz through the tech/civic trees."
+      },
+      "unique_units": [
+        {
+          "name": "Sabum Kibittum",
+          "replaces": "none (standalone Ancient era unit)",
+          "notes": "An early melee unit with extra Movement and Sight and a large Combat Strength bonus against light and heavy cavalry, making it a strong early anti-horse defender."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Palgum",
+          "type": "Building",
+          "notes": "Replaces the Water Mill; must be built in a city adjacent to a river, and adds Production, Housing, and extra Food from adjacent Freshwater tiles, reinforcing Babylon's strong early growth/science engine."
+        }
+      ],
+      "historical_background": "Hammurabi (r. c. 1792-1750 BCE) was the sixth king of the First Babylonian Dynasty, who unified much of Mesopotamia under Babylonian rule through a mix of diplomacy and conquest. He is best remembered for the Code of Hammurabi, one of the earliest and most complete written legal codes, inscribed on a stone stele and organized into numbered provisions ('ninu ilu sirum' loosely 'when the exalted god...' opens its prologue) that lend their name to his in-game ability. His reign also oversaw major irrigation and building projects along the Euphrates, echoed in Babylon's river-and-floodplain-focused kit and its free-district-building leader ability."
+    }
   },
   {
     "name_key": "robert the bruce",
@@ -2942,7 +3887,40 @@
         "Omitting the off-period plan for reactive leaders. Most turns are off-period."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Robert the Bruce",
+      "civilization": "Scotland",
+      "leader_title": "King of the Scots",
+      "expansion_origin": "Rise and Fall",
+      "leader_ability": {
+        "name": "Bannockburn",
+        "text": "Once Scotland researches the Defensive Tactics civic, Robert can declare a War of Liberation; doing so grants all his units +100% Production and +2 Movement for the following 10 turns, turning a defensive liberation war into a powerful offensive window."
+      },
+      "agenda": {
+        "name": "Flower of Scotland",
+        "text": "Robert will not attack civilizations that share a landmass with him unless they break a promise, and he dislikes leaders who attack their own neighbors unprovoked."
+      },
+      "civ_ability": {
+        "name": "Scottish Enlightenment",
+        "text": "Happy cities gain bonus Science and Production, plus extra Great Scientist points per Campus and Great Engineer points per Industrial Zone; Ecstatic cities double these bonuses, rewarding Scotland for maximizing city Amenities."
+      },
+      "unique_units": [
+        {
+          "name": "Highlander",
+          "replaces": "Ranger",
+          "notes": "A Recon-class unit that fights especially well in Hills and Woods, well suited to Scotland's rugged, resource-rich terrain."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Golf Course",
+          "type": "Improvement",
+          "notes": "A unique tile improvement that generates Amenities and Gold once built, rewarding Scotland's happiness-driven playstyle."
+        }
+      ],
+      "historical_background": "Robert the Bruce (1274-1329) was King of Scots who led Scotland during the Wars of Scottish Independence against England. His decisive victory at the Battle of Bannockburn in 1314 secured effective Scottish independence and is the namesake of his signature in-game ability, which rewards declaring a liberating war. Earlier in his career he had also endured defeats and exile before rallying Scottish nobles to his cause, reflecting the game's framing of him as a defensive, promise-keeping leader who only turns aggressive when wronged."
+    }
   },
   {
     "name_key": "teddy roosevelt",
@@ -3036,7 +4014,45 @@
         "Treating these leaders as beginner-only. Flat curves reward long-range planning more than spikes do."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Teddy Roosevelt (Bull Moose)",
+      "civilization": "America",
+      "leader_title": "President of the United States",
+      "expansion_origin": "New Frontier Pass (Persona Packs)",
+      "leader_ability": {
+        "name": "Antiquities and Parks (Bull Moose persona of Roosevelt Corollary)",
+        "text": "The default (non-persona) Teddy Roosevelt's ability, Roosevelt Corollary, grants units +5 Combat Strength on his home continent and +1 Appeal to all tiles in any city containing a National Park. When Persona Packs are enabled, Roosevelt splits into two alternate personas: Rough Rider (keeps a Roosevelt Corollary variant focused on the home-continent combat bonus and doubled Envoys to trade-route city-states) and Bull Moose, whose ability 'Antiquities and Parks' instead grants bonus Science on tiles of Breathtaking Appeal adjacent to a Natural Wonder or Mountain, and bonus Culture on Breathtaking tiles adjacent to a Wonder or Woods — a peaceful, conservation-and-culture playstyle built around National Parks and high-Appeal terrain."
+      },
+      "agenda": {
+        "name": "Big Stick Policy",
+        "text": "Roosevelt (in both personas) likes peaceful civilizations that share his continent and dislikes any civilization that starts a war on that continent."
+      },
+      "civ_ability": {
+        "name": "Founding Fathers",
+        "text": "America's civilization ability has evolved across versions: in the base game it halved the time to earn government legacy bonuses; in Rise and Fall it instead converts all Diplomatic policy slots in the current government into Wildcard slots; Gathering Storm added +1 Diplomatic Favor per turn for each Wildcard slot in the current government, making America's policy setup unusually flexible."
+      },
+      "unique_units": [
+        {
+          "name": "Rough Rider",
+          "replaces": "Cuirassier",
+          "notes": "An Industrial era heavy cavalry unit with a Combat Strength bonus on Hills and reduced maintenance, reflecting Roosevelt's historical cavalry regiment."
+        },
+        {
+          "name": "P-51 Mustang",
+          "replaces": "Fighter",
+          "notes": "A Modern era air unit with bonus attack against other fighters, extra range, and faster experience gain, giving America strong air superiority in the late game."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Film Studio",
+          "type": "Building",
+          "notes": "Replaces the Broadcast Center and adds extra Tourism pressure toward other civilizations in the Modern era, supporting a Culture/Tourism victory."
+        }
+      ],
+      "historical_background": "Theodore 'Teddy' Roosevelt (1858-1919) was the 26th U.S. President, a Progressive-era reformer known for trust-busting, conservation of public lands, and an assertive foreign policy summarized by his phrase 'speak softly and carry a big stick' (the source of his in-game agenda name). After leaving the presidency he ran for a third term in 1912 as the candidate of the Progressive 'Bull Moose' Party, the persona referenced in this leader's parenthetical name, campaigning on social reform rather than the more militaristic image of his earlier 'Rough Rider' cavalry service in the Spanish-American War. His dual legacy as both war hero and national-parks conservationist is split directly into Civ VI's two Roosevelt personas."
+    }
   },
   {
     "name_key": "kupe",
@@ -3130,7 +4146,40 @@
         "Treating these leaders as beginner-only. Flat curves reward long-range planning more than spikes do."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Kupe",
+      "civilization": "Māori",
+      "leader_title": "Voyager of the Māori",
+      "expansion_origin": "Gathering Storm",
+      "leader_ability": {
+        "name": "Kupe's Voyage",
+        "text": "Kupe begins the game embarked on the Ocean rather than on land, earning +2 Science and +2 Culture per turn before he founds his first city. Founding that first city grants a free Builder and +1 Population, and his Palace provides extra Housing and an Amenity, smoothing the unusual late, ocean-based start."
+      },
+      "agenda": {
+        "name": "Kaitiakitanga",
+        "text": "Kupe preserves natural features and builds National Parks; he likes civilizations that respect the environment (avoiding harvesting and terrain removal) and dislikes those who despoil it."
+      },
+      "civ_ability": {
+        "name": "Mana",
+        "text": "The Māori start with Sailing and Shipbuilding and can move directly onto Ocean tiles from the outset. Their embarked units gain bonus Combat Strength and Movement, unimproved Woods and Rainforest tiles yield bonus Production, and Fishing Boats grant extra Food and trigger a Culture Bomb, making the Māori strong at settling and expanding across open ocean."
+      },
+      "unique_units": [
+        {
+          "name": "Toa",
+          "replaces": "Swordsman",
+          "notes": "A Classical era melee unit that can build the defensive Pā improvement on hills and weakens adjacent enemy units with a Haka war dance, giving the Māori solid mid-game defense despite their peaceful, exploration-focused kit."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Marae",
+          "type": "District",
+          "notes": "Replaces the Amphitheater in the Theater Square; it grants Culture and Faith from every passable feature (e.g., Woods, Floodplains) in the city and Tourism after Flight, rewarding a Māori empire that keeps its natural terrain intact."
+        }
+      ],
+      "historical_background": "Kupe is a legendary Polynesian navigator credited in Māori oral tradition with being one of the first explorers to discover and name Aotearoa (New Zealand), guiding a great ocean-going waka (canoe) across the Pacific using wayfinding by stars, currents, and birds. As a figure of oral history rather than documented record, his exact dates are unknown, but he is central to Māori foundational narratives of migration and settlement. His in-game role as an ocean-starting leader who arrives to found cities directly mirrors this voyaging legend, and the Māori civilization's environmental, ocean-adjacency-focused kit reflects traditional Māori concepts of kaitiakitanga (guardianship of nature)."
+    }
   },
   {
     "name_key": "pericles",
@@ -3231,7 +4280,40 @@
         "Omitting the off-period plan for reactive leaders. Most turns are off-period."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Pericles",
+      "civilization": "Greece",
+      "leader_title": "First Citizen of Athens",
+      "expansion_origin": "Base Game",
+      "leader_ability": {
+        "name": "Surrounded by Glory",
+        "text": "Pericles gains bonus Culture for every city-state of which he is Suzerain, rewarding an aggressive envoy/diplomacy strategy aimed at accumulating city-state alliances."
+      },
+      "agenda": {
+        "name": "Delian League",
+        "text": "Pericles favors leaders who are not competing with him for the same city-states' suzerainty, and dislikes leaders who directly contest the city-state alliances he is pursuing."
+      },
+      "civ_ability": {
+        "name": "Plato's Republic",
+        "text": "Greece gains an extra Wildcard policy card slot in every government, giving it unusual flexibility to mix and match policy cards for whichever strategy (culture, science, or otherwise) it is pursuing."
+      },
+      "unique_units": [
+        {
+          "name": "Hoplite",
+          "replaces": "Spearman",
+          "notes": "Gains a very large Combat Strength bonus when adjacent to another Hoplite, rewarding tight phalanx-style formations reminiscent of Greek warfare."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Acropolis",
+          "type": "District",
+          "notes": "Replaces the Theater Square, must be built on a Hill, and gets stronger Culture adjacency bonuses from neighboring districts (including the City Center), making Greek cities strong culture generators."
+        }
+      ],
+      "historical_background": "Pericles (c. 495-429 BCE) was the leading statesman of Athens during its Golden Age, guiding the city through the height of its democratic institutions, its cultural flourishing (including the Parthenon and other Acropolis monuments, echoed by Greece's unique district), and the early years of the Peloponnesian War against Sparta. He was famously eulogized by Thucydides as effectively Athens' 'first citizen' despite holding no monarchical title, a nod reflected in his in-game leader title. His policy of forging and managing an alliance network among Greek city-states — the Delian League — is the direct inspiration for his in-game agenda's focus on city-state suzerainty."
+    }
   },
   {
     "name_key": "cleopatra",
@@ -3325,7 +4407,40 @@
         "Treating these leaders as beginner-only. Flat curves reward long-range planning more than spikes do."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Cleopatra (Ptolemaic)",
+      "civilization": "Egypt",
+      "leader_title": "Pharaoh of the Ptolemaic Kingdom",
+      "expansion_origin": "New Frontier Pass (Persona Packs) for the base 'Cleopatra' persona; Ptolemaic Cleopatra specifically is a Leader Pass persona (Rulers of the Sahara Pack)",
+      "leader_ability": {
+        "name": "Arrival of Hapi",
+        "text": "As the Ptolemaic persona (added later via the Leader Pass' Rulers of the Sahara Pack), Cleopatra's ability grants resources on Floodplains +1 Food and +1 Culture, and Floodplains in her territory grant adjacent tiles +1 Appeal instead of the usual -1. (Her original, base-game persona instead uses the ability Mediterranean's Bride, which gives bonus Gold on Egypt's outgoing Trade Routes and bonus Food/Gold on incoming ones.)"
+      },
+      "agenda": {
+        "name": "Basilike Ge",
+        "text": "As Ptolemaic Cleopatra, she favors civilizations with high Food output and dislikes those with low Food output. (Her original persona's agenda, Queen of the Nile, instead favors leaders with powerful militaries and dislikes weak ones.)"
+      },
+      "civ_ability": {
+        "name": "Iteru",
+        "text": "Egypt builds Wonders and districts faster when adjacent to a river, and uniquely can construct Wonders and districts directly on Floodplains, letting Egypt turn its floodplain-heavy river valleys into dense wonder- and district-packed cities."
+      },
+      "unique_units": [
+        {
+          "name": "Maryannu Chariot Archer",
+          "replaces": "Heavy Chariot (Horseman-tier ranged cavalry)",
+          "notes": "A fast Ancient era ranged cavalry unit with strong Ranged Strength and extra Movement on open terrain, giving Egypt an unusually powerful early rush/exploration unit."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Sphinx",
+          "type": "Improvement",
+          "notes": "A unique tile improvement giving Faith and Culture (with a bonus when adjacent to a Wonder), and Tourism after Flight, reinforcing Egypt's wonder- and culture-focused playstyle."
+        }
+      ],
+      "historical_background": "Cleopatra VII Thea Philopator (69-30 BCE) was the last active ruler of Egypt's Ptolemaic dynasty, a Greek Macedonian line established after Alexander the Great's conquests, ruling Egypt for nearly three centuries before Roman annexation. Fluent, politically astute, and famed for her alliances with Julius Caesar and Mark Antony, she worked to preserve Egyptian independence against expanding Roman power, ultimately losing at the Battle of Actium. Civ VI splits her into two personas reflecting this hybrid identity: a base-game 'Egyptian' Cleopatra evoking the older pharaonic tradition and river/floodplain economy of the Nile, and a Leader Pass 'Ptolemaic' persona (Arrival of Hapi, named for the Egyptian god of the Nile flood) emphasizing her Hellenistic-Egyptian royal household and its farmland (basilike ge, 'royal land')."
+    }
   },
   {
     "name_key": "pedro ii",
@@ -3426,7 +4541,45 @@
         "Omitting the off-period plan for reactive leaders. Most turns are off-period."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Pedro II",
+      "civilization": "Brazil",
+      "leader_title": "Emperor of Brazil",
+      "expansion_origin": "Base Game",
+      "leader_ability": {
+        "name": "Magnanimous",
+        "text": "Whenever Pedro recruits or patronizes a Great Person, he recoups a portion (about a fifth) of the Great Person points spent, letting Brazil chase Great People more efficiently and repeatedly."
+      },
+      "agenda": {
+        "name": "Patron of the Arts",
+        "text": "Pedro wants to acquire as many Great People as possible and dislikes civilizations that beat him to Great People he was pursuing."
+      },
+      "civ_ability": {
+        "name": "Amazon",
+        "text": "Rainforest tiles in Brazilian territory give +1 Appeal instead of the usual -1, and Rainforest provides the standard adjacency bonus to Campuses, Commercial Hubs, Holy Sites, and Theater Squares — turning Brazil's rainforest-heavy terrain from a liability into a major yield and Appeal asset."
+      },
+      "unique_units": [
+        {
+          "name": "Minas Geraes",
+          "replaces": "Battleship",
+          "notes": "A powerful Modern era naval unit with strong Anti-Air and bombardment capability, reflecting the historical Brazilian dreadnought of the same name."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Street Carnival",
+          "type": "District",
+          "notes": "Replaces the Entertainment Complex and adds bonus Amenities and Culture/Tourism, letting Brazil generate happiness and tourism cheaply."
+        },
+        {
+          "name": "Copacabana",
+          "type": "Improvement",
+          "notes": "A Rise and Fall unique improvement replacing the Water Park, giving bonus Appeal, Amenities, and Tourism along Brazil's coastlines."
+        }
+      ],
+      "historical_background": "Dom Pedro II (1825-1891) ruled the Empire of Brazil for nearly 50 years, presiding over a long period of relative internal stability, gradual abolition of slavery, and active patronage of the sciences and arts (he corresponded with scientists worldwide and funded research and exhibitions), which inspires his in-game focus on collecting Great People. His reign ended with a bloodless 1889 military coup that established the Brazilian republic, after which he lived out his life in exile in Europe. Brazil's unusual rainforest-friendly civilization ability reflects the country's Amazonian geography, a defining feature of the empire he ruled."
+    }
   },
   {
     "name_key": "ludwig ii",
@@ -3527,7 +4680,40 @@
         "Omitting the off-period plan for reactive leaders. Most turns are off-period."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Ludwig II",
+      "civilization": "Germany",
+      "leader_title": "King of Bavaria",
+      "expansion_origin": "New Frontier Pass / Leader Pass (Great Builders Pack persona)",
+      "leader_ability": {
+        "name": "Swan King",
+        "text": "All Wonders (finished or still under construction) grant 2 Culture from each adjacent District, and after researching Castles, all Culture adjacency bonuses also generate Tourism — turning a wonder-dense empire into a strong late-game Culture/Tourism engine."
+      },
+      "agenda": {
+        "name": "Eternal Enigma",
+        "text": "Ludwig favors civilizations that do not max out the number of Districts in their cities, and dislikes those who pack their cities with as many Districts as possible."
+      },
+      "civ_ability": {
+        "name": "Free Imperial Cities",
+        "text": "German cities can build one additional District beyond what their Population would normally allow, letting Germany build wider, more specialized cities earlier than other civilizations."
+      },
+      "unique_units": [
+        {
+          "name": "U-Boat",
+          "replaces": "Submarine",
+          "notes": "A stronger, stealthier submarine unit reflecting Germany's historical submarine warfare, useful for both raiding and area denial at sea."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Hansa",
+          "type": "District",
+          "notes": "Germany's unique Industrial Zone replacement: cheaper to build, with better adjacency bonuses (from Commercial Hubs and resources) for Production, making it easier to power through Ludwig's many Wonders."
+        }
+      ],
+      "historical_background": "Ludwig II (1845-1886) was King of Bavaria, famous less for statecraft than for his extravagant, fairy-tale castle-building projects — most notably Neuschwanstein Castle — and his devoted patronage of composer Richard Wagner, which together earned him the nickname 'the Swan King,' the name of his in-game ability. His reign saw Bavaria's political independence curtailed as Germany unified under Prussian leadership, and he died in disputed circumstances shortly after being declared mentally unfit to rule. As a Leader Pass persona representing Germany despite historically ruling only Bavaria, his in-game focus on wonder-building and culture/tourism is a direct nod to his architectural obsessions."
+    }
   },
   {
     "name_key": "kristina",
@@ -3617,7 +4803,40 @@
         "Framing Phase A as preparation only. It also has to be survivable on its own terms."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Kristina",
+      "civilization": "Sweden",
+      "leader_title": "Queen of Sweden",
+      "expansion_origin": "Gathering Storm",
+      "leader_ability": {
+        "name": "Minerva of the North",
+        "text": "Any building with at least 3 Great Work slots and any Wonder with at least 2 Great Work slots is automatically 'themed' once all its slots are filled (no need to manually match eras/types), and Kristina can build the unique Queen's Bibliothèque in the Government Plaza — a 6-slot Great Work building (2 each for Writing, Art, and Music) that also grants Great Person points, a Governor Title, and a policy card, making Sweden extremely efficient at Culture Victory play."
+      },
+      "agenda": {
+        "name": "Bibliophile",
+        "text": "Kristina tries to collect as many Great Works as possible and likes leaders who leave Great Works for her to acquire; she dislikes rivals who compete hard for the same Great Works."
+      },
+      "civ_ability": {
+        "name": "Nobel Prize",
+        "text": "Sweden gains bonus Great Scientist and Great Engineer points from Universities and Factories, generates Diplomatic Favor for every Great Person it recruits, and unlocks three unique World Congress competitions from the Industrial era onward, blending science, culture, and diplomacy."
+      },
+      "unique_units": [
+        {
+          "name": "Carolean",
+          "replaces": "Pike and Shot",
+          "notes": "A Renaissance era unit with extra Movement and a Combat Strength bonus for each point of unused Movement, plus bonus strength against cavalry, rewarding aggressive, mobile play."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Open-Air Museum",
+          "type": "Improvement",
+          "notes": "Grants Culture and Tourism scaling with the variety of terrain types (Snow, Tundra, Desert, Plains, Grassland) Swedish cities are founded on, up to one per city, rewarding geographically diverse settling."
+        }
+      ],
+      "historical_background": "Kristina (1626-1689) was Queen of Sweden from 1632 to 1654, a famously erudite and unconventional monarch who turned Stockholm into a hub for scholars, philosophers (including René Descartes, who died there), and artists, earning Sweden the nickname 'Athens of the North' during her reign — the direct inspiration for her in-game 'Minerva of the North' ability and Great Works focus. She abdicated the throne in 1654, converted to Catholicism (a controversial act for a Lutheran monarch), and spent much of her later life in Rome as a patron of the arts and sciences. Her personal passion for collecting books, art, and manuscripts is reflected in Sweden's Great Works/Bibliophile-centered kit."
+    }
   },
   {
     "name_key": "catherine de medici",
@@ -3711,7 +4930,40 @@
         "Treating these leaders as beginner-only. Flat curves reward long-range planning more than spikes do."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Catherine de Medici (Black Queen)",
+      "civilization": "France",
+      "leader_title": "Queen of France",
+      "expansion_origin": "Base Game (Black Queen is Catherine's original/default persona; the alternate 'Magnificence' persona was added later via New Frontier Pass Persona Packs)",
+      "leader_ability": {
+        "name": "Catherine's Flying Squadron",
+        "text": "As the Black Queen persona (her default, original ability), Catherine gains one extra level of Diplomatic Visibility with every civilization she has met, receives a free Spy upon researching Castles, and all her Spies start with a free promotion — making her the strongest espionage leader in the game. (Her alternate Magnificence persona instead focuses on collecting and trading Luxury resources via the agenda 'Sumptuous Finery.')"
+      },
+      "agenda": {
+        "name": "Black Queen",
+        "text": "Catherine wants to accumulate as many Spies and as much Diplomatic Visibility as possible, and dislikes leaders who ignore espionage entirely."
+      },
+      "civ_ability": {
+        "name": "Grand Tour",
+        "text": "France gets bonus Production toward Medieval, Renaissance, and Industrial era Wonders, and doubles the Tourism generated by Wonders of any era, making France one of the strongest wonder-rush/culture-victory civilizations."
+      },
+      "unique_units": [
+        {
+          "name": "Garde Impériale",
+          "replaces": "Line Infantry (later replaces the Musketman-tier military unit chain)",
+          "notes": "An Industrial era melee unit with higher base Combat Strength and a large bonus fighting on the capital's home continent, plus Great General points from kills."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Château",
+          "type": "Improvement",
+          "notes": "Must be built adjacent to a river and provides Culture, with bonus Culture the closer it is to a Wonder, reinforcing France's wonder-and-culture strategy."
+        }
+      ],
+      "historical_background": "Catherine de' Medici (1519-1589) was an Italian-born queen consort and later regent of France during the tumultuous French Wars of Religion, wielding influence over her sons' reigns as king. She earned a fearsome reputation — fairly or not — for court intrigue, poison plots, and involvement in events like the St. Bartholomew's Day Massacre, cementing the 'Black Queen' legend that names her default in-game persona and its espionage/spy focus. Her family's Medici banking and political dynasty in Florence also connects to her later New Frontier persona, 'Magnificence,' which instead emphasizes courtly luxury and the collection of fine resources, echoing the opulent Medici court culture."
+    }
   },
   {
     "name_key": "wilfrid laurier",
@@ -3801,7 +5053,40 @@
         "Framing Phase A as preparation only. It also has to be survivable on its own terms."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Wilfrid Laurier",
+      "civilization": "Canada",
+      "leader_title": "Prime Minister of Canada",
+      "expansion_origin": "Gathering Storm",
+      "leader_ability": {
+        "name": "The Last Best West",
+        "text": "Canada can build Farms on Tundra tiles from the start of the game (and on Tundra Hills after Engineering), Mines/Lumber Mills on Tundra and Snow gain bonus Production, and Camps/Farms on those tiles gain bonus Food; flat Tundra/Snow and Tundra/Snow Hills tiles can also be purchased for less Gold, turning otherwise weak cold terrain into productive land."
+      },
+      "agenda": {
+        "name": "Canadian Expeditionary Force",
+        "text": "Laurier responds to World Congress Emergencies whenever possible and dislikes leaders who refuse to participate in Emergencies."
+      },
+      "civ_ability": {
+        "name": "Four Faces of Peace",
+        "text": "Canada cannot declare or be the target of Surprise Wars, and cannot declare war on city-states; it also gains Diplomatic Favor for accumulated Tourism and for completing Emergencies and Scored Competitions, making Canada a strongly diplomacy- and peace-oriented civilization."
+      },
+      "unique_units": [
+        {
+          "name": "Mountie",
+          "replaces": "none (standalone Modern era light cavalry unit)",
+          "notes": "A low-maintenance cavalry unit that can found a National Park and gains a large Combat Strength bonus near National Parks (even more if Canadian-owned), primarily useful for defense rather than conquest."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Ice Hockey Rink",
+          "type": "Improvement",
+          "notes": "Built on Tundra or Snow tiles, it grants Appeal, Amenities, Culture, and other bonuses to adjacent cold terrain, complementing Canada's tundra-focused kit."
+        }
+      ],
+      "historical_background": "Sir Wilfrid Laurier (1841-1919) served as Canada's seventh Prime Minister from 1896 to 1911, presiding over a period of major western settlement and economic growth often summarized by his own phrase that the 20th century would 'belong to Canada.' He championed a policy of national unity between English and French Canadians and pursued a cautious, peace-oriented approach to Canada's relationship with the British Empire, reflected in the in-game civilization's inability to fight surprise wars or attack city-states. His government actively promoted immigration and settlement of the Canadian prairies and north, directly inspiring 'The Last Best West' ability's focus on making Tundra land productive."
+    }
   },
   {
     "name_key": "eleanor of aquitaine",
@@ -3891,7 +5176,55 @@
         "Framing Phase A as preparation only. It also has to be survivable on its own terms."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Eleanor of Aquitaine",
+      "civilization": "France or England (player's choice at game start)",
+      "leader_title": "Queen of France and England",
+      "expansion_origin": "Gathering Storm",
+      "leader_ability": {
+        "name": "Court of Love",
+        "text": "Every Great Work present in one of Eleanor's cities exerts a cumulative -1 Loyalty per turn on foreign cities within 9 tiles; if a foreign city's Loyalty is driven to 0 while Eleanor is exerting the most pressure on it, that city peacefully defects and joins her civilization — enabling a non-military, culture-driven form of conquest."
+      },
+      "agenda": {
+        "name": "Angevin Empire",
+        "text": "Eleanor focuses on growing the Population of her own cities and dislikes leaders whose nearby cities have low Population, since low-population neighboring cities are easy prey for her Loyalty-pressure playstyle."
+      },
+      "civ_ability": {
+        "name": "Uses the chosen civilization's ability",
+        "text": "Eleanor is unique among Civ VI leaders in that the player chooses whether she leads France (gaining Grand Tour and France's unique units/infrastructure) or England (gaining England's civilization ability, currently 'Workshop of the World,' and units like the Sea Dog and Redcoat), while always keeping her own Court of Love leader ability and Angevin Empire agenda."
+      },
+      "unique_units": [
+        {
+          "name": "Garde Impériale (if France)",
+          "replaces": "Line Infantry",
+          "notes": "Available if Eleanor is played as France; strong on the home continent with Great General points from kills."
+        },
+        {
+          "name": "Sea Dog (if England)",
+          "replaces": "Privateer",
+          "notes": "Available if Eleanor is played as England; a strong naval raiding unit."
+        },
+        {
+          "name": "Redcoat (if England)",
+          "replaces": "none (standalone Industrial era unit)",
+          "notes": "Available if Eleanor is played as England; one of the strongest melee units through several eras, especially off the home continent."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Château (if France)",
+          "type": "Improvement",
+          "notes": "River-adjacent Culture improvement, bonus near Wonders."
+        },
+        {
+          "name": "Royal Navy Dockyard (if England)",
+          "type": "District",
+          "notes": "England's Harbor replacement, boosting naval Production and strategic resource stockpiles."
+        }
+      ],
+      "historical_background": "Eleanor of Aquitaine (c. 1122-1204) was one of medieval Europe's most powerful women, first as Queen of France through her marriage to Louis VII and later, after that marriage was annulled, as Queen of England through her marriage to Henry II — the basis for Civ VI's unusual choice to let players pick either civilization for her. She ruled vast territories in her own right as Duchess of Aquitaine, presided over a famously sophisticated court associated with the culture of courtly love (the namesake of her 'Court of Love' ability), and later backed her sons' rebellions against Henry II, spending years imprisoned as a result. Her personal patronage of troubadours, poets, and the arts across both French and English courts underlies her Great Works/Loyalty-pressure-based path to peacefully absorbing rival cities."
+    }
   },
   {
     "name_key": "peter",
@@ -3989,7 +5322,40 @@
         "Omitting the closing window. Gate leaders have two deadlines, not one."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Peter",
+      "civilization": "Russia",
+      "leader_title": "Tsar of Russia",
+      "expansion_origin": "Base Game",
+      "leader_ability": {
+        "name": "The Grand Embassy",
+        "text": "When Russia has an active Trade Route to a civilization that is significantly more advanced in technology or civics, Peter gains bonus Science and Culture from that route (scaling with how far behind Russia is), incentivizing Russia to trade with — and catch up to — more advanced neighbors early on."
+      },
+      "agenda": {
+        "name": "Westernizer",
+        "text": "Peter is friendly toward civilizations that are ahead of him in technology and civics, and dislikes civilizations that are behind, reflecting his historical drive to modernize Russia along Western European lines."
+      },
+      "civ_ability": {
+        "name": "Mother Russia",
+        "text": "Russian cities claim extra surrounding territory the moment they are founded and gain bonus Faith and Production from Tundra tiles; in Gathering Storm, Russian units are also immune to Blizzard damage while enemies in Russian territory take extra Blizzard damage, letting Russia thrive in its characteristic cold, tundra-heavy homeland."
+      },
+      "unique_units": [
+        {
+          "name": "Cossack",
+          "replaces": "Cavalry",
+          "notes": "A strong Industrial era cavalry unit with bonus Combat Strength against wounded units, well-suited to finishing off weakened enemies."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Lavra",
+          "type": "District",
+          "notes": "Replaces the Holy Site at lower production cost; generates strong Great Prophet points (plus Great Writer/Artist/Musician points from its worship buildings) and expands the city's borders whenever a Great Person is activated there, making Russia excellent for religious and cultural strategies."
+        }
+      ],
+      "historical_background": "Peter I ('Peter the Great', 1672-1725) ruled Russia (first as Tsar, later as Emperor) and pursued an aggressive campaign to modernize and Westernize the country, including a famous 1697-98 'Grand Embassy' tour of Western Europe — traveling incognito to study shipbuilding, military technology, and administration — that directly inspires his in-game leader ability and 'Westernizer' agenda. He founded St. Petersburg as a new, Western-facing capital, built Russia's first modern navy, and reformed the army, bureaucracy, and calendar. His reign's expansionist, cold-climate character (fighting the Great Northern War partly in harsh winter conditions) is echoed by Russia's tundra-friendly, territory-grabbing civilization ability."
+    }
   },
   {
     "name_key": "jayavarman vii",
@@ -4083,7 +5449,40 @@
         "Treating these leaders as beginner-only. Flat curves reward long-range planning more than spikes do."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Jayavarman VII",
+      "civilization": "Khmer",
+      "leader_title": "none",
+      "expansion_origin": "New Frontier Pass",
+      "leader_ability": {
+        "name": "Monasteries of the King",
+        "text": "Jayavarman's Holy Sites gain a strong adjacency bonus from Rivers, provide Housing when built on a River, generate Food equal to their total adjacency bonus, and trigger a Culture Bomb on nearby unowned tiles when built. This lets Khmer cities grow huge around river-adjacent Holy Sites while also expanding borders for free."
+      },
+      "agenda": {
+        "name": "An End to Suffering",
+        "text": "Jayavarman likes civilizations that build Holy Sites and maintain a high average city population, and dislikes those that neglect religion or keep small, undeveloped cities."
+      },
+      "civ_ability": {
+        "name": "Grand Barays",
+        "text": "Khmer Aqueducts grant bonus Faith and an Amenity in addition to their normal Housing bonus, and adjacent Farms receive extra Food, making Aqueduct placement a key part of Khmer city planning."
+      },
+      "unique_units": [
+        {
+          "name": "Domrey",
+          "replaces": "Trebuchet",
+          "notes": "An elephant-mounted ballista that can move and fire in the same turn and exerts a zone of control, making it far more mobile and threatening than the siege unit it replaces."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Prasat",
+          "type": "Building",
+          "notes": "Replaces the Temple, adds a Relic Great Work slot, and lets Missionaries killed in religious combat generate a Relic, tying nicely into a religious/culture hybrid strategy."
+        }
+      ],
+      "historical_background": "Jayavarman VII (reigned c. 1181-1218) was the most powerful ruler of the Khmer Empire, expanding it to its greatest territorial extent from the capital of Angkor Thom in present-day Cambodia. A devout Mahayana Buddhist, he launched an unprecedented building program of temples, hospitals, roads, and reservoirs (barays), including the Bayon temple with its enormous carved stone faces. His combination of massive water-management infrastructure and prolific religious construction is directly reflected in the Khmer's in-game focus on Holy Sites, Aqueducts, and river-based city growth."
+    }
   },
   {
     "name_key": "saladin",
@@ -4177,7 +5576,40 @@
         "Treating these leaders as beginner-only. Flat curves reward long-range planning more than spikes do."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Saladin",
+      "civilization": "Arabia",
+      "leader_title": "Vizier",
+      "expansion_origin": "Base Game",
+      "leader_ability": {
+        "name": "Righteousness of the Faith",
+        "text": "The worship building of Saladin's religion can be purchased by any civilization at a steep Faith discount, and it grants extra Science, Faith, and Culture to the cities that have it, letting Arabia's religion spread its economic benefits far beyond its own borders."
+      },
+      "agenda": {
+        "name": "Ayyubid Dynasty",
+        "text": "Saladin favors leaders who have adopted his religion's worship building and likes those who avoid war with its followers; he dislikes leaders who follow a different religion or attack civilizations that share his faith."
+      },
+      "civ_ability": {
+        "name": "The Last Prophet",
+        "text": "Arabia is guaranteed to receive the final available Great Prophet, virtually ensuring it can always found a religion, and it gains bonus Science for every foreign city following Arabia's religion."
+      },
+      "unique_units": [
+        {
+          "name": "Mamluk",
+          "replaces": "Knight",
+          "notes": "A heavy cavalry unit that heals every turn regardless of location, giving Arabian armies unusual staying power on extended campaigns."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Madrasa",
+          "type": "Building",
+          "notes": "Replaces the University with higher base Science and a Faith bonus equal to the city's Campus adjacency bonus, letting Arabia convert religious strength into science output."
+        }
+      ],
+      "historical_background": "Saladin (Salah ad-Din, c. 1137-1193) was the Kurdish founder of the Ayyubid dynasty who unified Egypt and Syria under his rule and became the preeminent Muslim leader of the Crusades. He is best remembered for recapturing Jerusalem from the Crusader states in 1187 and for his chivalrous conduct toward defeated enemies, including Richard the Lionheart, which earned him a reputation for both military skill and honor across cultures. His deep association with founding and defending a shared faith across a wide territory underlies Arabia's in-game identity as the civilization most reliably able to found and spread a religion."
+    }
   },
   {
     "name_key": "gandhi",
@@ -4278,7 +5710,40 @@
         "Omitting the off-period plan for reactive leaders. Most turns are off-period."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Gandhi",
+      "civilization": "India",
+      "leader_title": "none",
+      "expansion_origin": "Base Game",
+      "leader_ability": {
+        "name": "Satyagraha",
+        "text": "For every civilization India has met that has founded a religion and is not at war with India, India gains bonus Faith; civilizations that go to war with India suffer an Amenities penalty, rewarding India for staying peaceful while religions spread around the world."
+      },
+      "agenda": {
+        "name": "Peacekeeper",
+        "text": "Gandhi avoids starting wars or actions that would brand him a warmonger, likes other leaders who keep the peace, and dislikes aggressive, war-prone civilizations."
+      },
+      "civ_ability": {
+        "name": "Dharma",
+        "text": "Indian cities gain the Follower Beliefs of every religion present within them rather than just the majority religion; from Gathering Storm onward India also gains an Amenity per religion present, extra Missionary spreads, and stronger religious pressure from Trade Routes, making India a religious-diversity powerhouse."
+      },
+      "unique_units": [
+        {
+          "name": "Varu",
+          "replaces": "Horseman",
+          "notes": "A war-elephant unit that ignores enemy Zones of Control and reduces the combat strength of adjacent enemy units, making it a strong early anti-cavalry and area-denial unit."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Stepwell",
+          "type": "Improvement",
+          "notes": "A unique tile improvement that provides Housing and Food, with bonus Food next to Farms and bonus Faith next to Holy Sites, supporting India's tall, high-population playstyle."
+        }
+      ],
+      "historical_background": "Mohandas 'Mahatma' Gandhi (1869-1948) led India's independence movement from British colonial rule through a philosophy of nonviolent civil disobedience, or satyagraha ('truth-force'), that inspired later civil rights movements worldwide. A devout advocate of religious pluralism and tolerance between India's Hindu and Muslim communities, he was assassinated in 1948 shortly after independence was achieved. His commitment to nonviolence and interfaith coexistence is directly named in his leader ability (Satyagraha) and echoed in India's civilization ability, which rewards embracing many religions rather than enforcing one."
+    }
   },
   {
     "name_key": "menelik ii",
@@ -4372,7 +5837,40 @@
         "Treating these leaders as beginner-only. Flat curves reward long-range planning more than spikes do."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Menelik II",
+      "civilization": "Ethiopia",
+      "leader_title": "none",
+      "expansion_origin": "New Frontier Pass",
+      "leader_ability": {
+        "name": "Council of Ministers",
+        "text": "Ethiopian cities founded on Hills gain Science and Culture equal to a share of the Faith they generate, and Ethiopian units get a combat strength bonus when fighting on Hills, rewarding a hill-focused settling pattern."
+      },
+      "agenda": {
+        "name": "Ethiopian Highlands",
+        "text": "Menelik prefers to settle on Hills himself and likes civilizations that leave hill-heavy regions for Ethiopia to claim; he dislikes rivals who also aggressively settle Hills."
+      },
+      "civ_ability": {
+        "name": "Aksumite Legacy",
+        "text": "Ethiopian cities gain bonus Faith from resources, amplified further when international Trade Routes originate from resource-rich cities, and Ethiopia can purchase Archaeology Museums and Archaeologists with Faith."
+      },
+      "unique_units": [
+        {
+          "name": "Oromo Cavalry",
+          "replaces": "Courser",
+          "notes": "A light cavalry unit with improved Combat Strength and Sight that suffers no movement penalty on Hills, fitting Ethiopia's hill-based playstyle."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Rock-Hewn Church",
+          "type": "Improvement",
+          "notes": "A unique tile improvement buildable only on Hills that generates strong Faith and cannot be destroyed by natural disasters, reinforcing Ethiopia's Faith-centric hill economy."
+        }
+      ],
+      "historical_background": "Menelik II (reigned 1889-1913) was Emperor of Ethiopia who modernized the country's military and infrastructure while decisively defeating an invading Italian army at the Battle of Adwa in 1896, preserving Ethiopian sovereignty during the era of European colonization of Africa. His reign built on centuries of Ethiopian Christian tradition, including the rock-hewn churches carved into hillsides at places like Lalibela centuries earlier, and expanded the empire's territory significantly. The in-game emphasis on Hills, Faith, and rock-hewn architecture directly reflects Ethiopia's highland geography and its long Christian religious heritage."
+    }
   },
   {
     "name_key": "gitarja",
@@ -4470,7 +5968,40 @@
         "Omitting the closing window. Gate leaders have two deadlines, not one."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Gitarja",
+      "civilization": "Indonesia",
+      "leader_title": "none",
+      "expansion_origin": "Base Game",
+      "leader_ability": {
+        "name": "Exalted Goddess of the Three Worlds",
+        "text": "Gitarja can purchase naval units with Faith and her religious units can embark and disembark for free, while City Centers adjacent to Coast or Lake tiles gain bonus Faith, tying Indonesia's naval and religious games together."
+      },
+      "agenda": {
+        "name": "Archipelagic State",
+        "text": "Gitarja favors civilizations that avoid settling or conquering cities on small, isolated landmasses and dislikes those with many such cities."
+      },
+      "civ_ability": {
+        "name": "Great Nusantara",
+        "text": "Coast and Lake tiles grant a minor adjacency bonus to Holy Sites, Campuses, Industrial Zones, and Theater Squares, and Entertainment Complexes gain extra Amenities, making coastal district placement especially rewarding for Indonesia."
+      },
+      "unique_units": [
+        {
+          "name": "Jong",
+          "replaces": "Frigate",
+          "notes": "A unique naval ranged unit with higher movement than the Frigate it replaces, giving Indonesia strong early control of the seas."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Kampung",
+          "type": "Improvement",
+          "notes": "A coastal tile improvement built adjacent to a water resource that grants Housing, Production, and Food scaling with adjacent Fishing Boats, supporting dense coastal cities."
+        }
+      ],
+      "historical_background": "Gitarja (Dyah Gitarja, also known as Tribhuwana Wijayatunggadewi, reigned 1328-1350) was a queen of the Majapahit Empire, one of the last and largest Hindu-Buddhist thalassocratic empires of maritime Southeast Asia, centered on Java. Under her rule and that of her son Hayam Wuruk, Majapahit extended influence across a vast archipelago through naval power and control of inter-island trade routes rather than contiguous land conquest. This archipelago-spanning, sea-based model of statecraft is the basis for Indonesia's in-game focus on coastal adjacency bonuses, naval units, and an agenda that rewards leaving small islands to Indonesia's control."
+    }
   },
   {
     "name_key": "jadwiga",
@@ -4568,7 +6099,40 @@
         "Omitting the closing window. Gate leaders have two deadlines, not one."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Jadwiga",
+      "civilization": "Poland",
+      "leader_title": "none",
+      "expansion_origin": "Base Game",
+      "leader_ability": {
+        "name": "Lithuanian Union",
+        "text": "Foreign cities that lose territory to a Polish Culture Bomb convert to Poland's religion, and Jadwiga gains extra Gold, Culture, and Faith from Relics along with stronger Holy Site adjacency bonuses, blending Poland's territorial and religious games."
+      },
+      "agenda": {
+        "name": "Saint",
+        "text": "Jadwiga focuses on accumulating Faith and building up religion, and she favors other leaders who invest heavily in Faith generation."
+      },
+      "civ_ability": {
+        "name": "Golden Liberty",
+        "text": "Poland claims all surrounding unowned tiles whenever it builds an Encampment or Fort within its territory, and one of its government's Military policy slots becomes a flexible Wildcard slot, rewarding aggressive early border expansion."
+      },
+      "unique_units": [
+        {
+          "name": "Winged Hussar",
+          "replaces": "Cuirassier",
+          "notes": "A powerful heavy cavalry unit that deals bonus damage and ignores Zone of Control when attacking damaged units, making it excellent at breaking through weakened enemy lines."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Sukiennice",
+          "type": "Building",
+          "notes": "Replaces the Market and provides additional Gold and Great Merchant points, strengthening Poland's commercial output."
+        }
+      ],
+      "historical_background": "Jadwiga (reigned 1384-1399) was crowned 'King' (rather than Queen, to underscore her full sovereign authority) of Poland at age ten, and her 1386 marriage to Grand Duke Jogaila of Lithuania created the Polish-Lithuanian union that grew into one of early modern Europe's largest states. A devoted patron of the Church, she funded the restoration of Kraków's university and pushed for the Christianization of pagan Lithuania. Her role in forging a lasting personal union between two realms is echoed in the leader ability's name, Lithuanian Union, while her religious patronage is reflected in her Faith-focused agenda and Relic bonuses."
+    }
   },
   {
     "name_key": "basil ii",
@@ -4666,7 +6230,45 @@
         "Omitting the closing window. Gate leaders have two deadlines, not one."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Basil II",
+      "civilization": "Byzantium",
+      "leader_title": "none",
+      "expansion_origin": "New Frontier Pass",
+      "leader_ability": {
+        "name": "Porphyrogénnētos",
+        "text": "Basil's heavy and light cavalry units deal full damage when attacking cities that follow the same religion as Byzantium, and researching Divine Right unlocks his powerful unique Tagma unit, rewarding a combined religious-military conquest strategy."
+      },
+      "agenda": {
+        "name": "Divine Guardian",
+        "text": "Basil II focuses on spreading his religion and defending it, favoring civilizations that share his faith and disliking those that follow a different one."
+      },
+      "civ_ability": {
+        "name": "Taxis",
+        "text": "Byzantine units gain bonus Combat and Religious Strength for every Holy City following Byzantium's religion (including its own), Byzantium's religion spreads automatically when an enemy unit is defeated in combat, and Holy Site cities earn extra Great Prophet points."
+      },
+      "unique_units": [
+        {
+          "name": "Tagma",
+          "replaces": "Knight",
+          "notes": "Unlocked via Basil's leader ability upon researching Divine Right; it grants Combat or Religious Strength to nearby friendly land units, functioning as a mobile support unit as well as a strong attacker."
+        },
+        {
+          "name": "Dromon",
+          "replaces": "Quadrireme",
+          "notes": "A naval melee unit with greater range and combat strength than the Quadrireme, giving Byzantium an early naval edge."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Hippodrome",
+          "type": "District",
+          "notes": "Replaces the Entertainment Complex, costs less Production, grants extra Amenities, and spawns a free Heavy Cavalry unit each time the district or one of its buildings is completed."
+        }
+      ],
+      "historical_background": "Basil II (reigned 976-1025) was one of the Byzantine Empire's most formidable emperors, expanding its borders to their greatest extent since Justinian through decades of relentless campaigning, most famously his prolonged conquest of the First Bulgarian Empire, which earned him the epithet 'Bulgar-Slayer.' Born 'porphyrogennetos' ('born in the purple'), meaning born to a reigning emperor in the palace's porphyry chamber, he ruled as a soldier-emperor who tied military success closely to Orthodox Christian identity and left the treasury and empire stronger than he found them. His fusion of religious authority with battlefield conquest is captured directly in his leader ability's name and its focus on converting military victories into religious dominance."
+    }
   },
   {
     "name_key": "philip ii",
@@ -4764,7 +6366,40 @@
         "Omitting the closing window. Gate leaders have two deadlines, not one."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Philip II",
+      "civilization": "Spain",
+      "leader_title": "none",
+      "expansion_origin": "Base Game",
+      "leader_ability": {
+        "name": "El Escorial",
+        "text": "Philip's Inquisitors gain an extra use of Remove Heresy, and his military and religious units gain a Combat or Religious Strength bonus against units belonging to civilizations that follow a different religion, rewarding religious uniformity backed by force."
+      },
+      "agenda": {
+        "name": "Counter Reformer",
+        "text": "Philip II wants every one of his cities to follow the same religion he does, favors civilizations that share his faith, and strongly dislikes anyone who spreads a different religion into his empire."
+      },
+      "civ_ability": {
+        "name": "Treasure Fleet",
+        "text": "Spain gains bonus yields from intercontinental Trade Routes and can form naval units into Fleets and Armadas earlier than other civilizations, reflecting Spain's historical dominance of transoceanic trade."
+      },
+      "unique_units": [
+        {
+          "name": "Conquistador",
+          "replaces": "none",
+          "notes": "A Renaissance-era unit that gains a large Combat Strength bonus when escorted by a religious unit and automatically converts captured cities to Spain's religion, combining conquest with religious conversion."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Mission",
+          "type": "Improvement",
+          "notes": "A tile improvement providing Faith and Science, with extra yields when built adjacent to a Campus or on a continent other than Spain's home continent, rewarding overseas expansion."
+        }
+      ],
+      "historical_background": "Philip II of Spain (reigned 1556-1598) ruled the largest empire the world had yet seen, spanning territories in Europe, the Americas, Africa, and Asia, funded in large part by silver shipped home in fleets from the New World. A fiercely devout Catholic monarch, he positioned himself as Europe's foremost defender of the Counter-Reformation, waging war against Protestant England and the Dutch rebels and overseeing the Spanish Inquisition's campaign against heresy. His combination of a religiously enforced empire and treasure-fleet-driven wealth is reflected directly in Spain's civilization ability and Philip's religious-conformity agenda and Inquisitor bonus."
+    }
   },
   {
     "name_key": "tamar",
@@ -4865,7 +6500,40 @@
         "Omitting the off-period plan for reactive leaders. Most turns are off-period."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Tamar",
+      "civilization": "Georgia",
+      "leader_title": "none",
+      "expansion_origin": "Rise and Fall",
+      "leader_ability": {
+        "name": "Glory of the World, Kingdom and Faith",
+        "text": "Tamar gains Faith from combat victories based on the strength of the defeated unit, and after adopting Theology she can declare a special Protectorate War that doubles Faith output for a period and makes envoys sent to city-states that share Georgia's majority religion count double, tying military success to religious and diplomatic gains."
+      },
+      "agenda": {
+        "name": "Narikala Fortress",
+        "text": "Tamar fortifies her cities with the strongest available Walls and dislikes civilizations that leave their cities poorly defended."
+      },
+      "civ_ability": {
+        "name": "Strength in Unity",
+        "text": "Georgia earns bonus Era Score for Dedications made at the start of Golden and Heroic Ages and gains extra Production toward building Walls, helping it weather the Loyalty and warfare pressures of the Rise and Fall systems."
+      },
+      "unique_units": [
+        {
+          "name": "Khevsur",
+          "replaces": "Man-at-Arms",
+          "notes": "A Medieval-era unit with a large Combat Strength bonus on Hills and no hill movement penalty, giving Georgia a strong defensive infantry option in its mountainous heartland."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Tsikhe",
+          "type": "Building",
+          "notes": "Replaces the Renaissance-era City Center walls upgrade with substantially higher Outer Defense Strength plus bonus Faith and Tourism, reinforcing Georgia's fortress-focused playstyle."
+        }
+      ],
+      "historical_background": "Tamar the Great (reigned 1184-1213) presided over the political, military, and cultural high point of the medieval Kingdom of Georgia, expanding its borders through successful campaigns while overseeing a flourishing of Georgian art, architecture, and literature, including the national epic 'The Knight in the Panther's Skin.' She ruled from heavily fortified strongholds carved into the Caucasus mountains, such as the Narikala fortress overlooking Tbilisi, defending her kingdom against Seljuk and other regional powers. Her reign's reputation for both formidable defenses and religious devotion (Georgia being one of the world's oldest Christian states) is reflected in her fortress-building agenda and Faith-generating combat ability."
+    }
   },
   {
     "name_key": "mansa musa",
@@ -4966,7 +6634,40 @@
         "Omitting the off-period plan for reactive leaders. Most turns are off-period."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Mansa Musa",
+      "civilization": "Mali",
+      "leader_title": "none",
+      "expansion_origin": "Gathering Storm",
+      "leader_ability": {
+        "name": "Sahel Merchants",
+        "text": "International Trade Routes gain bonus Gold for every flat Desert tile in their origin city, and entering a Golden or Heroic Age grants Mali a permanent extra Trade Route slot, rewarding a gold-focused desert trading empire."
+      },
+      "agenda": {
+        "name": "Lord of the Mines",
+        "text": "Mansa Musa single-mindedly pursues Gold accumulation and looks unfavorably on civilizations with weak Gold income."
+      },
+      "civ_ability": {
+        "name": "Songs of the Jeli",
+        "text": "Mali's City Centers gain extra Faith and Food for adjacent Desert and Desert Hills tiles, Commercial Hub buildings can be purchased with Faith, and Mines produce more Gold at the cost of reduced Production, in exchange for a Production penalty on units and buildings overall."
+      },
+      "unique_units": [
+        {
+          "name": "Mandekalu Cavalry",
+          "replaces": "Knight",
+          "notes": "A cavalry unit well-suited to protecting Mali's lucrative trade routes across the desert."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Suguba",
+          "type": "District",
+          "notes": "Replaces the Commercial Hub and provides discounts on Gold and Faith purchases made in its city, reinforcing Mali's wealth-and-Faith hybrid economy."
+        }
+      ],
+      "historical_background": "Mansa Musa I (reigned c. 1312-1337) ruled the West African Mali Empire at the height of its wealth and power, controlling lucrative trans-Saharan trade routes in gold and salt. His 1324-1325 pilgrimage to Mecca became legendary for its extravagance—he reportedly distributed so much gold along the way that he temporarily depressed its value in the regions he passed through—cementing his reputation as perhaps the wealthiest individual in history. He also invested heavily in Islamic scholarship and architecture, transforming Timbuktu into a major center of learning. His singular association with fabulous gold wealth built on desert trade routes is the direct inspiration for his Gold-obsessed agenda and Mali's desert-and-trade-focused civilization ability."
+    }
   },
   {
     "name_key": "yongle",
@@ -5064,7 +6765,40 @@
         "Omitting the closing window. Gate leaders have two deadlines, not one."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Yongle",
+      "civilization": "China",
+      "leader_title": "The Yongle Emperor",
+      "expansion_origin": "New Frontier Pass (Leader Pass persona)",
+      "leader_ability": {
+        "name": "Lijia",
+        "text": "Yongle's cities gain access to unique Lijia projects that convert a share of Production into Food, Faith, or Gold, and cities with high Population generate extra Gold, Science, and Culture per Citizen, rewarding large, well-developed Chinese cities."
+      },
+      "agenda": {
+        "name": "Yinding",
+        "text": "Yongle favors civilizations running a positive Gold income and dislikes those running a Gold deficit."
+      },
+      "civ_ability": {
+        "name": "Dynastic Cycle",
+        "text": "China's Eurekas and Inspirations provide a larger boost toward the cost of the technology or civic they unlock, and completing a Wonder grants a free Eureka and Inspiration, accelerating China's overall tech and civic progress."
+      },
+      "unique_units": [
+        {
+          "name": "Crouching Tiger Cannon",
+          "replaces": "Bombard",
+          "notes": "An early gunpowder siege unit that does not require the Niter resource normally needed by the Bombard, letting China field powerful siege weapons without a strategic resource dependency."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Great Wall",
+          "type": "Improvement",
+          "notes": "A unique tile improvement built on Hills that provides early defense and Gold, later converting to Culture and Tourism, and gains bonuses for connecting to adjacent Great Wall segments."
+        }
+      ],
+      "historical_background": "The Yongle Emperor (reigned 1402-1424) was the third emperor of China's Ming dynasty, who seized the throne from his nephew and went on to relocate the capital to Beijing, where he commissioned the Forbidden City. He commissioned the enormous 'Yongle Encyclopedia' compiling China's accumulated knowledge, expanded and fortified sections of the Great Wall, and sponsored Admiral Zheng He's famous treasure-fleet voyages that projected Chinese naval power and trade across the Indian Ocean. Yongle is presented in Civilization VI as an alternate persona for China alongside the base game's Qin Shi Huang, added later via the Leader Pass DLC program, with his in-game focus on Production-conversion projects and large, wealthy cities reflecting his ambitious capital-building and encyclopedic era."
+    }
   },
   {
     "name_key": "dido",
@@ -5165,7 +6899,40 @@
         "Omitting the off-period plan for reactive leaders. Most turns are off-period."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Dido",
+      "civilization": "Phoenicia",
+      "leader_title": "none",
+      "expansion_origin": "Gathering Storm",
+      "leader_ability": {
+        "name": "Founder of Carthage",
+        "text": "Cities with a Cothon can use a unique project to relocate Phoenicia's capital there, and Dido gains extra Trade Route capacity and a Production bonus toward Districts in the city containing her Government Plaza, supporting a highly mobile, expansion-driven playstyle."
+      },
+      "agenda": {
+        "name": "Sicilian Wars",
+        "text": "Dido pursues coastal expansion for herself but dislikes rival civilizations that accumulate many coastal cities, echoing Carthage's historical rivalry with Greek colonies over Mediterranean coastlines."
+      },
+      "civ_ability": {
+        "name": "Mediterranean Colonies",
+        "text": "Coastal Phoenician cities founded on the same continent as the capital always have maximum Loyalty, embarked Settlers move faster and see farther with reduced embarkation costs, and Phoenicia starts with the Eureka for Writing already unlocked, making it exceptionally strong at rapid coastal settlement."
+      },
+      "unique_units": [
+        {
+          "name": "Bireme",
+          "replaces": "Galley",
+          "notes": "A faster, stronger naval melee unit that also shields nearby Traders from plundering, protecting Phoenicia's seaborne trade network."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Cothon",
+          "type": "District",
+          "notes": "Replaces the Harbor, boosts Production toward Settlers and naval units, heals naval units faster, and is required to relocate the Phoenician capital via Dido's leader ability."
+        }
+      ],
+      "historical_background": "Dido is the legendary founder and first queen of Carthage, said in classical tradition (notably Virgil's Aeneid) to have fled Phoenician Tyre and founded her new city on the North African coast around the 9th century BC, growing it into one of the ancient Mediterranean's great maritime trading powers. Carthage's power rested on an extensive network of coastal colonies and trade routes stretching across the Mediterranean, a legacy that eventually put it in prolonged conflict with Greek city-states in Sicily and, later, with Rome in the Punic Wars. Her legendary founding of a new city by the sea and Phoenicia's historical mastery of coastal colonization directly shape both her capital-relocating leader ability and the civilization's emphasis on rapid, loyal coastal settlement."
+    }
   },
   {
     "name_key": "tokugawa",
@@ -5259,7 +7026,40 @@
         "Treating these leaders as beginner-only. Flat curves reward long-range planning more than spikes do."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Tokugawa",
+      "civilization": "Japan",
+      "leader_title": "Tokugawa Ieyasu",
+      "expansion_origin": "New Frontier Pass (Leader Pass persona)",
+      "leader_ability": {
+        "name": "Bakuhan",
+        "text": "Tokugawa's international Trade Routes suffer a penalty to all yields and Tourism, but his domestic Trade Routes grant bonus Culture, Science, and Gold for every specialty District at the destination, pushing Japan toward an inward-facing, isolationist economy built on strong domestic trade networks."
+      },
+      "agenda": {
+        "name": "Sakoku",
+        "text": "Tokugawa wants to remain safe from conquest, favoring civilizations that likewise avoid war and expansion by conquest, and he dislikes leaders who have captured other civilizations' capitals."
+      },
+      "civ_ability": {
+        "name": "Meiji Restoration",
+        "text": "Japanese Districts receive standard rather than reduced adjacency bonuses even when adjacency conditions would normally give a lesser bonus (such as on Hills or next to other districts), letting Japan cluster districts tightly for strong yields; cities near the capital also gain Amenities, with Tourism from Districts unlocked later after researching Flight."
+      },
+      "unique_units": [
+        {
+          "name": "Samurai",
+          "replaces": "Man-at-Arms",
+          "notes": "A resilient melee unit that does not lose combat strength as it takes damage, letting it keep fighting effectively even when badly wounded."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Electronics Factory",
+          "type": "Building",
+          "notes": "Replaces the Factory and extends bonus Production and Culture to nearby cities rather than only its own city, strengthening Japan's tightly clustered industrial cities."
+        }
+      ],
+      "historical_background": "Tokugawa Ieyasu (1543-1616) was the daimyo who emerged victorious from Japan's chaotic Sengoku ('Warring States') period after his decisive victory at the Battle of Sekigahara in 1600, founding the Tokugawa shogunate that would rule Japan for over 250 years. His government pursued a policy of strict social order and, under his successors, near-total national seclusion (sakoku), closing Japan off from most foreign trade and contact to preserve internal stability. Added to Civilization VI as an alternate persona for Japan alongside the base game's Hojo Tokimune, his in-game penalty to foreign trade paired with strong domestic trade bonuses, along with an agenda built around avoiding conquest, directly mirrors the historical isolationist Sakoku policy associated with his dynasty."
+    }
   },
   {
     "name_key": "joao iii",
@@ -5360,6 +7160,44 @@
         "Omitting the off-period plan for reactive leaders. Most turns are off-period."
       ]
     },
-    "secondary": null
+    "secondary": null,
+    "civInfo": {
+      "name": "Joao III",
+      "civilization": "Portugal",
+      "leader_title": "none",
+      "expansion_origin": "New Frontier Pass",
+      "leader_ability": {
+        "name": "Porta do Cerco",
+        "text": "All of João's units gain extra Sight, meeting a new civilization grants an additional Trade Route capacity, and Portugal automatically has Open Borders with all city-states, supporting an exploration-and-trade-focused playstyle from the earliest turns."
+      },
+      "agenda": {
+        "name": "Navigator's Legacy",
+        "text": "João III loves exploring the map and favors other civilizations that prioritize exploration as well."
+      },
+      "civ_ability": {
+        "name": "Casa da Índia",
+        "text": "Portuguese international Trade Routes can only target coastal cities or cities with a Harbor, but those routes gain a large yield bonus, and Portuguese Traders have increased range over water and can embark as soon as Trade Routes are unlocked, rewarding an ocean-spanning trade network."
+      },
+      "unique_units": [
+        {
+          "name": "Nau",
+          "replaces": "Caravel",
+          "notes": "A naval unit with a free promotion and lower maintenance than the Caravel, and it carries charges to build the unique Feitoria improvement, linking exploration directly to Portugal's trade economy."
+        }
+      ],
+      "unique_infrastructure": [
+        {
+          "name": "Feitoria",
+          "type": "Improvement",
+          "notes": "Built only by a Nau on a foreign coastal city's tile next to a resource; Trade Routes sent to that city grant Portugal bonus Gold and Production, a unique way to profit from other civilizations' territory."
+        },
+        {
+          "name": "Navigation School",
+          "type": "Building",
+          "notes": "Replaces the University and boosts Production toward naval units in its city, supporting Portugal's seafaring, exploration-heavy strategy."
+        }
+      ],
+      "historical_background": "João III (reigned 1521-1557) ruled Portugal during the height of its overseas empire, consolidating and expanding the trading-post network established by his predecessors across the Atlantic, coastal Africa, India, and Southeast Asia through institutions like the Casa da Índia, which regulated the lucrative spice and goods trade with Portuguese Asia. His reign saw continued Portuguese exploration and colonization, including the beginnings of Portuguese Brazil's development, even as the crown increasingly relied on trade-post profits rather than large-scale territorial conquest. This coastal, trading-post-based model of empire—profit from controlled maritime trade routes rather than land conquest—is the direct basis for Portugal's Casa da Índia civilization ability and its unique Feitoria trading-post improvement."
+    }
   }
 ]

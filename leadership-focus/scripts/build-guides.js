@@ -7,6 +7,7 @@
  *   leadership-focus-caveats.json       (era_role, caveats, guide_must_account_for, guide_shape)
  *   leadership-focus-guide-templates.json (6 shape skeletons + worked examples)
  *   leadership-focus-supplemental.json  (missing slots + alt_shape rules + name normalization)
+ *   leadership-focus-civ-info.json      (leader ability/agenda/civ ability/unique unit+infra + history)
  *
  * Output:
  *   /output/guides/<name_key>.md   — one rendered guide per leader
@@ -53,6 +54,7 @@ function main() {
   const caveatsData = load('leadership-focus-caveats.json');
   const templatesData = load('leadership-focus-guide-templates.json');
   const supplementalData = load('leadership-focus-supplemental.json');
+  const civInfoData = load('leadership-focus-civ-info.json');
 
   const buildLog = {
     generated_at: new Date().toISOString(),
@@ -74,6 +76,12 @@ function main() {
   const caveatsByKey = new Map();
   for (const leader of caveatsData.leaders) {
     caveatsByKey.set(normalizeKey(leader.name), leader);
+  }
+
+  // ---------- index civ-info by name_key ----------
+  const civInfoByKey = new Map();
+  for (const leader of civInfoData.leaders) {
+    civInfoByKey.set(normalizeKey(leader.name), leader);
   }
 
   // ---------- index supplemental lookups ----------
@@ -212,6 +220,11 @@ function main() {
 
     const filledTemplate = deepFill(template, ctx);
 
+    const civInfo = civInfoByKey.get(key);
+    if (!civInfo) {
+      buildLog.warnings.push(`${key}: no leadership-focus-civ-info.json entry — Civilization VI Profile section will be omitted`);
+    }
+
     return {
       name_key: key,
       leader: tags.name,
@@ -219,7 +232,8 @@ function main() {
       alt_shape: altRule ? altRule.secondary_shape : null,
       context: ctx,
       template: filledTemplate,
-      secondary: secondaryBlock
+      secondary: secondaryBlock,
+      civInfo: civInfo || null
     };
   }
 
@@ -256,7 +270,47 @@ function main() {
 function toMarkdown(r) {
   const c = r.context;
   const lines = [];
-  lines.push(`# ${r.leader} — Leadership Focus Guide`);
+  lines.push(`# ${r.leader} — Strategic Planning Guide`);
+  lines.push('');
+
+  if (r.civInfo) {
+    const ci = r.civInfo;
+    lines.push('## Civilization VI Profile');
+    lines.push('');
+    lines.push(`**Civilization:** ${ci.civilization}${ci.leader_title ? `  |  **Leader Title:** ${ci.leader_title}` : ''}`);
+    lines.push(`**Source:** ${ci.expansion_origin}`);
+    lines.push('');
+    lines.push(`**Leader Ability — ${ci.leader_ability.name}**`);
+    lines.push(ci.leader_ability.text);
+    lines.push('');
+    lines.push(`**Agenda — ${ci.agenda.name}**`);
+    lines.push(ci.agenda.text);
+    lines.push('');
+    lines.push(`**Civilization Ability — ${ci.civ_ability.name}**`);
+    lines.push(ci.civ_ability.text);
+    lines.push('');
+    if (ci.unique_units && ci.unique_units.length) {
+      lines.push('**Unique Units**');
+      for (const u of ci.unique_units) {
+        lines.push(`- ${u.name}${u.replaces && u.replaces !== 'none' ? ` (replaces ${u.replaces})` : ''} — ${u.notes}`);
+      }
+      lines.push('');
+    }
+    if (ci.unique_infrastructure && ci.unique_infrastructure.length) {
+      lines.push('**Unique Infrastructure**');
+      for (const i of ci.unique_infrastructure) {
+        lines.push(`- ${i.name} (${i.type}) — ${i.notes}`);
+      }
+      lines.push('');
+    }
+    lines.push('### Historical Background');
+    lines.push(ci.historical_background);
+    lines.push('');
+    lines.push('---');
+    lines.push('');
+  }
+
+  lines.push('## Leadership Focus Guide');
   lines.push('');
   lines.push(`**Shape:** ${r.shape}${r.secondary ? ` (secondary: ${r.secondary.secondary_shape})` : ''}`);
   lines.push(`**Curve:** ${c.curve} | **Conversion:** ${c.conversion} | **Condition cost:** ${c.condition_cost}`);
@@ -266,7 +320,7 @@ function toMarkdown(r) {
   lines.push('');
 
   if (r.secondary) {
-    lines.push(`## Alt-shape note`);
+    lines.push(`### Alt-shape note`);
     lines.push(r.secondary.reason);
     lines.push('');
     lines.push(`**Render rule:** ${r.secondary.rule}`);
@@ -274,7 +328,7 @@ function toMarkdown(r) {
   }
 
   for (const phase of r.template.structure) {
-    lines.push(`## ${phase.phase}`);
+    lines.push(`### ${phase.phase}`);
     if (phase.turns) lines.push(`*Turns: ${phase.turns}*`);
     if (phase.goal) lines.push(`\n${phase.goal}\n`);
     const steps = phase.steps || phase.per_turn_check || phase.staging_checklist || phase.opening_statement;
@@ -292,20 +346,20 @@ function toMarkdown(r) {
     lines.push('');
   }
 
-  lines.push('## Abort branch');
+  lines.push('### Abort branch');
   lines.push(`**Trigger:** ${r.template.abort_branch.trigger}`);
   for (const a of r.template.abort_branch.actions) lines.push(`- ${a}`);
   lines.push('');
 
-  lines.push('## Fail state');
+  lines.push('### Fail state');
   lines.push(r.template.fail_state);
   lines.push('');
 
-  lines.push('## Caveats');
+  lines.push('### Caveats');
   for (const cv of c.caveats || []) lines.push(`- ${cv}`);
   lines.push('');
 
-  lines.push('## Guide must account for');
+  lines.push('### Guide must account for');
   for (const g of c.guide_requirements || []) lines.push(`- ${g}`);
   lines.push('');
 
