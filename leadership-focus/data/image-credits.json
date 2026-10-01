@@ -586,5 +586,17 @@
   "description": "Part of the left screen of a pair of six-panel folding screens, \"View of Edo\" (Edo zu), from the 17th century. Upper middle of first panel, left screen. Central enceinte of Edo Castle, Castle Tower, Bairinzaka, Hirakawaguchi Gate.",
   "original_width": 1470,
   "original_height": 997
+ },
+ "hero-tomyris": {
+  "file": "images/heroes/tomyris.jpg",
+  "caption": "The Head of Cyrus Brought to Queen Tomyris, Peter Paul Rubens",
+  "commons_title": "File:Head of Cyrus Brought to Queen Tomyris, Peter Paul Rubens.jpg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Head_of_Cyrus_Brought_to_Queen_Tomyris,_Peter_Paul_Rubens.jpg",
+  "licence": "Public domain",
+  "licence_url": "",
+  "author": "Peter Paul Rubens",
+  "description": "",
+  "original_width": 2352,
+  "original_height": 1339
  }
 }
