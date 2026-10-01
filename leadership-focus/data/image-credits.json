@@ -550,5 +550,29 @@
   "description": "La cour de la mosquée Süleymaniye à Istanbul, en Turquie.",
   "original_width": 3301,
   "original_height": 2840
+ },
+ "hero-tamar": {
+  "file": "images/heroes/tamar.jpg",
+  "caption": "The cave monastery of Vardzia",
+  "commons_title": "File:Vardzia Cave Monastery 05.jpg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Vardzia_Cave_Monastery_05.jpg",
+  "licence": "CC BY 4.0",
+  "licence_url": "",
+  "author": "Bernard Gagnon",
+  "description": "Ensemble monastique de Vardzia, Géorgie",
+  "original_width": 4720,
+  "original_height": 3147
+ },
+ "hero-teddy-roosevelt": {
+  "file": "images/heroes/teddy-roosevelt.jpg",
+  "caption": "Colonel Roosevelt and the Rough Riders on Kettle Hill, 1898",
+  "commons_title": "File:TR San Juan Hill 1898.jpg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:TR_San_Juan_Hill_1898.jpg",
+  "licence": "Public domain",
+  "licence_url": "",
+  "author": "Unknown sourceUnknown source",
+  "description": "Col Theodore Roosevelt stands triumphant on San Juan Hill, Cuba after his \"Rough Riders\" captured this hill and its sister Kettle Hill during the Spanish American War. Theodore Roosevelt Association and Library of Congress as well as Public Domain",
+  "original_width": 1144,
+  "original_height": 925
  }
 }
