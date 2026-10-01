@@ -598,5 +598,17 @@
   "description": "",
   "original_width": 2352,
   "original_height": 1339
+ },
+ "hero-trajan": {
+  "file": "images/heroes/trajan.jpg",
+  "caption": "Trajan's Column, Rome",
+  "commons_title": "File:Remains of the Trajan's Bridge on the right bank of Danube, Serbia (27251575447).jpg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Remains_of_the_Trajan's_Bridge_on_the_right_bank_of_Danube,_Serbia_(27251575447).jpg",
+  "licence": "CC BY-SA 2.0",
+  "licence_url": "",
+  "author": "Carole Raddato from FRANKFURT, Germany",
+  "description": "Remains of the Trajan's Bridge on the right bank of Danube, Serbia",
+  "original_width": 4928,
+  "original_height": 3264
  }
 }
