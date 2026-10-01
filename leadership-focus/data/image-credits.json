@@ -574,5 +574,17 @@
   "description": "Col Theodore Roosevelt stands triumphant on San Juan Hill, Cuba after his \"Rough Riders\" captured this hill and its sister Kettle Hill during the Spanish American War. Theodore Roosevelt Association and Library of Congress as well as Public Domain",
   "original_width": 1144,
   "original_height": 925
+ },
+ "hero-tokugawa": {
+  "file": "images/heroes/tokugawa.jpg",
+  "caption": "Edo Castle from a 17th-century painting",
+  "commons_title": "File:Edo P detail.jpg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Edo_P_detail.jpg",
+  "licence": "Public domain",
+  "licence_url": "",
+  "author": "Unknown authorUnknown author",
+  "description": "Part of the left screen of a pair of six-panel folding screens, \"View of Edo\" (Edo zu), from the 17th century. Upper middle of first panel, left screen. Central enceinte of Edo Castle, Castle Tower, Bairinzaka, Hirakawaguchi Gate.",
+  "original_width": 1470,
+  "original_height": 997
  }
 }
