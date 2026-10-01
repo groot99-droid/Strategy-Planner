@@ -1,6 +1,7 @@
 // Landing, leader grid and leader detail.
-import { esc, escKw, icon, CATEGORY_ORDER, CATEGORY_LABELS, CATEGORY_BLURB, CURVE_ORDER, CURVE_INFO, CONVERSION_ORDER, CONVERSION_INFO, ERA_ORDER, ERA_SPAN, REGION_ORDER, titleCase } from "./util.js";
-import { heroHtml, rowHtml, leaderCard, wonderCard, terrainCard, cityStateCard, pantheonCard, linkCard, statBlock, sectionHead, subnavHtml, curvePanel } from "./components.js";
+import { esc, escKw, icon, reducedMotion, CATEGORY_ORDER, CATEGORY_LABELS, CATEGORY_BLURB, CURVE_ORDER, CURVE_INFO, CONVERSION_ORDER, CONVERSION_INFO, ERA_ORDER, ERA_SPAN, REGION_ORDER, titleCase } from "./util.js";
+import { heroHtml, rowHtml, initRows, leaderCard, wonderCard, terrainCard, cityStateCard, pantheonCard, linkCard, statBlock, sectionHead, curvePanel, tabsHtml, initTabs, setActiveTab, listPlain, phaseHtml } from "./components.js";
+import { planPanelHtml, initPlanPanel } from "./plan.js";
 
 function creditLine(ctx, id) {
   const c = ctx.creditsById.get(id); if (!c) return "";
@@ -87,38 +88,50 @@ export function renderLeaders(ctx, query) {
   return { html, title: "Leaders — Leadership Focus", init };
 }
 
-/* ---------- leader detail ---------- */
+/* ---------- leader detail: a hero, a tab bar, and one panel at a time ---------- */
+export const LEADER_TABS = [
+  { id: "overview", label: "Overview", blurb: "Focus, curve, conversion and the shape of the game at a glance." },
+  { id: "plan", label: "Plan", blurb: "The plan proper: build order, research and civics with their boosts, checkpoints and the stat to watch." },
+  { id: "history", label: "History", blurb: "Era, country, dates, titles and temperament, from the record." },
+  { id: "kit", label: "Kit", blurb: "Leader ability, agenda, civilization ability, unique units and infrastructure." },
+  { id: "ground", label: "Ground", blurb: "Start bias and the terrain the kit was built for." },
+  { id: "world", label: "World", blurb: "Natural wonders, pantheons and city-state priorities." },
+  { id: "barbarians", label: "Barbarians", blurb: "How this leader treats the map's own army." },
+  { id: "shape", label: "Shape", blurb: "The guide shape: the general structure the plan is a specific case of." },
+];
+const LEGACY_ANCHOR_TAB = { history: "history", profile: "kit", ground: "ground", world: "world", barbarians: "barbarians", guide: "shape" };
+export const tabHref = (slug, tab) => (tab === "overview" ? `#/leader/${slug}` : `#/leader/${slug}/${tab}`);
+function resolveTab(tabParam, anchor) {
+  if (tabParam && LEADER_TABS.some(t => t.id === tabParam)) return tabParam;
+  if (!tabParam && anchor && LEGACY_ANCHOR_TAB[anchor]) return LEGACY_ANCHOR_TAB[anchor];
+  return "overview";
+}
+
 function abilityCard(kicker, name, text) { if (!name && !text) return ""; return `<div class="panel panel--cat"><div class="panel__kicker">${esc(kicker)}</div><h3 class="panel__title">${esc(name)}</h3><p>${escKw(text)}</p></div>`; }
 function subcards(items, metaKey) { return items.map(it => `<div class="subcard"><p class="subcard__title">${esc(it.name)}</p>${it[metaKey] ? `<p class="subcard__meta">${esc(it[metaKey])}</p>` : ""}<p class="subcard__text">${escKw(it.notes)}</p></div>`).join(""); }
-function checklist(items) { return `<ul class="checklist">${items.map(s => `<li>${escKw(s)}</li>`).join("")}</ul>`; }
-function loopBox(label, items) { return `<div class="subblock"><p class="subblock__label">${esc(label)}</p><div class="loop-box"><ul>${items.map(s => `<li>${escKw(s)}</li>`).join("")}</ul></div></div>`; }
-function checkpoints(cps) { return `<div class="subblock"><p class="subblock__label">Checkpoints</p><div class="checkpoint-grid">${cps.map(cp => `<div class="checkpoint"><p class="checkpoint__at">Checkpoint · ${esc(cp.at)}</p><p class="checkpoint__test">${escKw(cp.test)}</p><div class="checkpoint__branches">${cp.if_yes ? `<div class="checkpoint__branch"><b>Yes</b><span>${escKw(cp.if_yes)}</span></div>` : ""}${cp.if_no ? `<div class="checkpoint__branch"><b>No</b><span>${escKw(cp.if_no)}</span></div>` : ""}</div></div>`).join("")}</div></div>`; }
-function phase(p, i) {
-  let inner = `<div class="phase__header"><h3 class="phase__title">${esc(p.phase)}</h3>${p.turns ? `<span class="phase__turns">Turns ${esc(p.turns)}</span>` : ""}</div>`;
-  if (p.goal) inner += `<p class="phase__goal">${escKw(p.goal)}</p>`;
-  if (p.opening_statement) inner += `<div class="note-callout">${escKw(p.opening_statement)}</div>`;
-  if (p.steps) inner += checklist(p.steps); if (p.tests) inner += checklist(p.tests);
-  if (p.staging_checklist) inner += loopBox("Staging checklist", p.staging_checklist);
-  if (p.core_loop) inner += loopBox("Core loop", p.core_loop); if (p.per_turn_check) inner += loopBox("Per-turn check", p.per_turn_check);
-  if (p.opportunity_trigger) inner += `<div class="note-callout">${escKw(p.opportunity_trigger)}</div>`;
-  if (p.checkpoints) inner += checkpoints(p.checkpoints);
-  return `<div class="phase"><div class="phase__node" aria-hidden="true">${i + 1}</div><div class="phase__card">${inner}</div></div>`;
-}
-function listPlain(items) { return `<ul class="list-plain">${items.map(s => `<li>${escKw(s)}</li>`).join("")}</ul>`; }
+const emptyPanel = (what) => `<section class="section"><div class="wrap"><p class="empty-state">${esc(what)}</p></div></section>`;
 
-export function renderLeader(ctx, slug) {
-  const l = ctx.bySlug.get(slug); if (!l) return null;
-  const { codex } = ctx; const h = l.history; const a = l.affinity; const ci = l.civInfo || {}; const tmpl = l.template || {}; const cx = l.context || {};
-  const idx = ctx.leaders.findIndex(x => x.slug === slug); const prev = ctx.leaders[(idx - 1 + ctx.leaders.length) % ctx.leaders.length]; const next = ctx.leaders[(idx + 1) % ctx.leaders.length];
-  const kicker = `<span class="tag">${esc(CATEGORY_LABELS[l.categoryKey])}</span>${l.era ? `<span class="tag tag--era">${esc(l.era)}</span>` : ""}<span>${esc(l.civilization)}${l.persona ? ` · ${esc(l.persona)} persona` : ""} · ${esc(l.expansionOrigin)}</span>`;
-  const hero = heroHtml([{ image: l.hero, fallbackImage: l.image, catKey: l.categoryKey, era: l.era, kicker, title: l.name, sub: esc(l.leaderTitle),
-    meta: [h ? `<span class="pill">${esc(h.dates.display)}</span>` : "", h ? `<span class="pill">${esc(h.polity)}</span>` : "", `<span class="pill pill--accent">${esc(l.shape)}${l.altShape ? " + " + esc(l.altShape) : ""}</span>`, l.convertBy ? `<span class="pill">Convert by turn ${esc(l.convertBy)}</span>` : "", (l.conditionCost && l.conditionCost !== "None") ? `<span class="pill">Cost: ${esc(l.conditionCost)}</span>` : ""],
-    credit: l.heroCredit ? creditLine(ctx, l.heroCredit) : "" }], { short: true, id: "leaderHero" });
-  const nav = `<div class="detail__nav"><a class="btn btn--sm" href="#/leaders">${icon("chevron-left", "icon icon--sm")} All leaders</a><div class="detail__pager"><a class="btn btn--sm" href="#/leader/${esc(prev.slug)}" rel="prev">${icon("chevron-left", "icon icon--sm")} ${esc(prev.name)}</a><a class="btn btn--sm" href="#/leader/${esc(next.slug)}" rel="next">${esc(next.name)} ${icon("chevron-right", "icon icon--sm")}</a></div></div>`;
-  const sections = [{ id: "history", label: "History" }, { id: "profile", label: "Civ VI kit" }, { id: "ground", label: "Ground" }, { id: "world", label: "Wonders, pantheons, city-states" }, { id: "barbarians", label: "Barbarians" }, { id: "guide", label: "Guide" }];
+function overviewPanel(ctx, l) {
+  const h = l.history; const a = l.affinity; const tmpl = l.template || {}; const ps = l.planSummary;
   const rail = `<div class="detail__rail">${statBlock(l.categoryBadge, CATEGORY_LABELS[l.categoryKey], "Focus")}${statBlock(l.curveBadge, l.curve, "Curve")}${statBlock(l.conversionBadge, l.conversion, "Conversion")}</div>`;
-  const head = `<section class="section section--tight"><div class="wrap"><div class="detail__head"><div class="detail__portrait"><img src="${esc(l.image)}" alt="${esc(l.name)}, in-game portrait" width="200" height="200"></div><div>${rail}<p class="muted" style="margin-top:var(--space-md)">${esc(l.note)}</p></div></div></div></section>`;
-  const historyHtml = h ? `<section class="section" id="history" data-category-key="${esc(l.categoryKey)}"><div class="wrap">${sectionHead("From the record", `${l.name} in history`, "")}
+  const head = `<div class="detail__head"><div class="detail__portrait"><img src="${esc(l.image)}" alt="${esc(l.name)}, in-game portrait" width="200" height="200"></div><div>${rail}<p class="muted" style="margin-top:var(--space-md)">${escKw(l.note)}</p></div></div>`;
+  const facts = `<dl class="facts">
+    <div><dt>Guide shape</dt><dd>${esc(l.shape || "")}${l.altShape ? ` <small class="muted">+ ${esc(l.altShape)}</small>` : ""}</dd></div>
+    <div><dt>Convert by</dt><dd>${l.convertBy ? `Turn ${esc(l.convertBy)}` : "No fixed deadline"}</dd></div>
+    <div><dt>Condition cost</dt><dd>${esc(l.conditionCost || "None")}</dd></div>
+    ${a && a.victoryLean ? `<div><dt>Victory lean</dt><dd>${a.victoryLean.map(esc).join(", ")}</dd></div>` : ""}
+    ${h ? `<div><dt>Era</dt><dd>${esc(h.era.label)}<br><small class="muted">${esc(h.dates.display)}</small></dd></div>` : ""}
+    <div><dt>Civilization</dt><dd>${esc(l.civilization)}<br><small class="muted">${esc(l.expansionOrigin)}</small></dd></div></dl>`;
+  const verdict = ps ? `<div class="panel panel--cat overview__verdict"><div class="panel__kicker">The plan's verdict</div><h3 class="panel__title">${esc(ps.victory)}${ps.secondary ? ` <small class="muted">· ${esc(ps.secondary)} as the fallback</small>` : ""}</h3><p>${escKw(ps.one_line)}</p><a class="btn btn--sm" href="${tabHref(l.slug, "plan")}">Open the plan ${icon("arrow", "icon icon--sm")}</a></div>`
+    : `<div class="panel"><div class="panel__kicker">The plan</div><p class="muted">The plan for ${esc(l.name)} is being written.</p></div>`;
+  const principle = tmpl.principle ? `<div class="principle"><span class="principle__glyph" aria-hidden="true">${icon("quote")}</span><p>${escKw(tmpl.principle)}</p></div>` : "";
+  const cards = `<div class="overview__grid">${LEADER_TABS.filter(t => t.id !== "overview").map(t => `<a class="overview__card" href="${tabHref(l.slug, t.id)}"><h3>${esc(t.label)}</h3><p>${esc(t.blurb)}</p><span class="arrow">Open ${icon("arrow", "icon icon--sm")}</span></a>`).join("")}</div>`;
+  return `<section class="section section--tight" id="overview"><div class="wrap overview">${head}${facts}<div class="two-col">${verdict}${curvePanel(l.curve, l.categoryKey)}</div>${principle}${cards}</div></section>`;
+}
+
+function historyPanel(ctx, l) {
+  const h = l.history; const ci = l.civInfo || {}; if (!h) return emptyPanel(`No historical record is filed for ${l.name} yet.`);
+  return `<section class="section" id="history"><div class="wrap">${sectionHead("From the record", `${l.name} in history`, "")}
     <dl class="facts">
       <div><dt>Era</dt><dd>${esc(h.era.label)}<br><small class="muted">${esc(h.era.span)}</small></dd></div>
       <div><dt>Lived</dt><dd>${esc(h.dates.born || "unknown")} to ${esc(h.dates.died || "unknown")}<br><small class="muted">${esc(h.dates.historicity)}</small></dd></div>
@@ -131,33 +144,97 @@ export function renderLeader(ctx, slug) {
     </dl>
     <div class="two-col" style="margin-top:var(--space-xl)"><div><div class="section__kicker">Codex entry</div><div class="prose">${h.bio.split(/\n+/).map(p => `<p>${esc(p)}</p>`).join("")}<p><b>${esc(h.legacy)}</b></p></div>${h.quote && h.quote.text ? `<blockquote class="quote">“${esc(h.quote.text)}”<cite>${esc(h.quote.source)}</cite></blockquote>` : ""}</div>
     <div><div class="section__kicker">Personality</div><div class="traits">${h.personality.traits.map(t => `<span class="chip chip--cat"><span class="dot" aria-hidden="true"></span>${esc(t)}</span>`).join("")}</div><div class="prose prose--sm"><p>${esc(h.personality.temperament)}</p></div><div class="panel panel--cat" style="margin-top:var(--space-md)"><div class="panel__kicker">In the game</div><h3 class="panel__title">${esc(ci.agenda ? ci.agenda.name : "Agenda")}</h3><p>${esc(h.personality.agenda_tie)}</p></div>
-    <p class="muted" style="margin-top:var(--space-md);font-size:var(--text-sm)">Source: <a href="https://en.wikipedia.org/wiki/${encodeURIComponent(h.wikipediaTitle.replace(/ /g, "_"))}" rel="noopener" target="_blank">${esc(h.wikipediaTitle)} on Wikipedia</a> and Wikidata.</p></div></div></div></section>` : "";
-  const profile = `<section class="section" id="profile" data-category-key="${esc(l.categoryKey)}"><div class="wrap">${sectionHead("Civilization VI", "The kit", "")}
+    <p class="muted" style="margin-top:var(--space-md);font-size:var(--text-sm)">Source: <a href="https://en.wikipedia.org/wiki/${encodeURIComponent(h.wikipediaTitle.replace(/ /g, "_"))}" rel="noopener" target="_blank">${esc(h.wikipediaTitle)} on Wikipedia</a> and Wikidata.</p></div></div></div></section>`;
+}
+
+function kitPanel(ctx, l) {
+  const a = l.affinity; const ci = l.civInfo || {};
+  return `<section class="section" id="profile"><div class="wrap">${sectionHead("Civilization VI", "The kit", "")}
     <div class="ability-grid">${abilityCard("Leader ability", ci.leader_ability && ci.leader_ability.name, ci.leader_ability && ci.leader_ability.text)}${abilityCard("Agenda", ci.agenda && ci.agenda.name, ci.agenda && ci.agenda.text)}${abilityCard("Civilization ability", ci.civ_ability && ci.civ_ability.name, ci.civ_ability && ci.civ_ability.text)}</div>
     ${ci.unique_units && ci.unique_units.length ? `<p class="subgroup-label">Unique units</p><div class="subcard-grid">${subcards(ci.unique_units, "replaces")}</div>` : ""}
     ${ci.unique_infrastructure && ci.unique_infrastructure.length ? `<p class="subgroup-label">Unique infrastructure</p><div class="subcard-grid">${subcards(ci.unique_infrastructure, "type")}</div>` : ""}
     ${a && a.victoryLean ? `<p class="subgroup-label">Victory lean</p><div class="chip-row">${a.victoryLean.map(v => `<span class="chip">${esc(v)}</span>`).join("")}</div>` : ""}
     ${a && a.rivals && a.rivals.length ? `<p class="subgroup-label">Rivals on this roster</p><ul class="mini-list">${a.rivals.map(r => { const rl = ctx.bySlug.get(r.slug); return rl ? `<li><a href="#/leader/${esc(rl.slug)}"><b>${esc(rl.name)}</b> <small>${esc(rl.civilization)}</small></a><small>${esc(r.why)}</small></li>` : ""; }).join("")}</ul>` : ""}
   </div></section>`;
+}
+
+function groundPanel(ctx, l) {
+  const a = l.affinity; if (!a) return emptyPanel(`No terrain notes are filed for ${l.name} yet.`);
   const tile = (slug, why, tier) => { const t = ctx.terrainBySlug.get(slug); if (!t) return `<div class="tile"><div class="tile__name">${esc(titleCase(slug))}</div><div class="tile__why">${esc(why || "")}</div></div>`; return `<div class="tile"><a href="#/terrain/${esc(t.slug)}"><img src="${esc(t.image)}" alt="${esc(t.name)} tile" loading="lazy" width="150" height="150"><div class="tile__name">${esc(t.name)}${tier ? ` <span class="muted">tier ${esc(tier)}</span>` : ""}</div></a>${why ? `<div class="tile__why">${esc(why)}</div>` : ""}</div>`; };
-  const ground = a ? `<section class="section" id="ground" data-category-key="${esc(l.categoryKey)}"><div class="wrap">${sectionHead("Terrain", "The ground this kit wants", `${a.startBias.length ? `The game seeds ${esc(l.civilization)} near this terrain (start bias, tier 1 strongest). Source: ${esc(a.biasSource)}.` : `${esc(l.civilization)} has no start bias; the map gives it whatever comes.`}`)}
+  return `<section class="section" id="ground"><div class="wrap">${sectionHead("Terrain", "The ground this kit wants", `${a.startBias.length ? `The game seeds ${esc(l.civilization)} near this terrain (start bias, tier 1 strongest). Source: ${esc(a.biasSource)}.` : `${esc(l.civilization)} has no start bias; the map gives it whatever comes.`}`)}
     ${a.startBias.length ? `<p class="subgroup-label">Start bias</p><div class="tile-row">${a.startBias.map(b => tile(b.terrain, "", b.tier)).join("")}</div>` : ""}
-    <p class="subgroup-label">Terrain the kit cares about</p><div class="tile-row">${a.terrain.map(t => tile(t.terrain, t.why)).join("")}</div></div></section>` : "";
-  const world = a ? `<section class="section" id="world" data-category-key="${esc(l.categoryKey)}"><div class="wrap">${sectionHead("The map", "Wonders, pantheons and city-states", "")}
+    <p class="subgroup-label">Terrain the kit cares about</p><div class="tile-row">${a.terrain.map(t => tile(t.terrain, t.why)).join("")}</div></div></section>`;
+}
+
+function worldPanel(ctx, l) {
+  const a = l.affinity; const { codex } = ctx; if (!a) return emptyPanel(`No map notes are filed for ${l.name} yet.`);
+  return `<section class="section" id="world"><div class="wrap">${sectionHead("The map", "Wonders, pantheons and city-states", "")}
     <div class="two-col"><div><p class="subgroup-label">Natural wonders worth settling</p>${a.naturalWonders.length ? `<div class="grid">${a.naturalWonders.map(w => { const ww = ctx.wondersBySlug.get(w.slug); return ww ? wonderCard(ww, { grid: true }) + `<p class="muted" style="font-size:var(--text-sm)">${esc(w.why)}</p>` : ""; }).join("")}</div>` : `<p class="muted">No wonder changes this kit's plan; take any that appears.</p>`}</div>
     <div><p class="subgroup-label">Pantheons</p><ul class="mini-list">${a.pantheons.map(p => { const pp = ctx.pantheonsBySlug.get(p.slug); return `<li><a href="#/pantheons#${esc(p.slug)}"><b>${esc(pp ? pp.name : titleCase(p.slug))}</b> <small>${esc(pp ? pp.effect : "")}</small></a><small>${esc(p.why)}</small></li>`; }).join("")}</ul>
-    <p class="subgroup-label">City-state priority</p><ul class="mini-list">${a.cityStates.map(c => { const t = codex.cityStates.types.find(x => x.type === c.type); return `<li style="--cat:${t ? esc(t.color) : "inherit"}"><a href="#/city-states#type-${esc(c.type.toLowerCase())}"><b>${esc(c.type)}</b> <small>${t ? esc(t.members.join(", ")) : ""}</small></a><small>${esc(c.why)}</small></li>`; }).join("")}</ul></div></div></div></section>` : "";
+    <p class="subgroup-label">City-state priority</p><ul class="mini-list">${a.cityStates.map(c => { const t = codex.cityStates.types.find(x => x.type === c.type); return `<li style="--cat:${t ? esc(t.color) : "inherit"}"><a href="#/city-states#type-${esc(c.type.toLowerCase())}"><b>${esc(c.type)}</b> <small>${t ? esc(t.members.join(", ")) : ""}</small></a><small>${esc(c.why)}</small></li>`; }).join("")}</ul></div></div></div></section>`;
+}
+
+function barbariansPanel(ctx, l) {
+  const a = l.affinity; const { codex } = ctx; if (!a) return emptyPanel(`No barbarian notes are filed for ${l.name} yet.`);
   const barbNote = codex.barbarians.leader_notes.find(n => n.slug === l.slug);
-  const barb = a ? `<section class="section" id="barbarians" data-category-key="${esc(l.categoryKey)}"><div class="wrap">${sectionHead("The map's own army", "Barbarians", "")}<div class="two-col"><div class="panel panel--cat"><div class="panel__kicker">Stance for ${esc(l.name)}</div><p>${escKw(a.barbarianStance)}</p>${barbNote ? `<p><b>Note.</b> ${escKw(barbNote.note)}</p>` : ""}</div><div class="panel"><div class="panel__kicker">${esc(l.curve)} curve rule</div><p>${escKw(codex.barbarians.strategy_by_curve[l.curve] || "")}</p><a class="btn btn--sm" href="#/barbarians">Barbarians and clans ${icon("arrow", "icon icon--sm")}</a></div></div></div></section>` : "";
-  const secondary = l.secondary ? `<details class="secondary-note"><summary>Alt-shape overlay: ${esc(l.secondary.secondary_shape)}</summary><div class="secondary-note__body">${l.secondary.reason ? `<p>${escKw(l.secondary.reason)}</p>` : ""}${l.secondary.rule ? `<p>${escKw(l.secondary.rule)}</p>` : ""}${l.secondary.secondary_structure ? `<div class="timeline">${l.secondary.secondary_structure.map(phase).join("")}</div>` : ""}</div></details>` : "";
-  const guide = `<section class="section" id="guide" data-category-key="${esc(l.categoryKey)}"><div class="wrap">${sectionHead("Leadership Focus", "The guide", "")}${curvePanel(l.curve, l.categoryKey)}
+  return `<section class="section" id="barbarians"><div class="wrap">${sectionHead("The map's own army", "Barbarians", "")}<div class="two-col"><div class="panel panel--cat"><div class="panel__kicker">Stance for ${esc(l.name)}</div><p>${escKw(a.barbarianStance)}</p>${barbNote ? `<p><b>Note.</b> ${escKw(barbNote.note)}</p>` : ""}</div><div class="panel"><div class="panel__kicker">${esc(l.curve)} curve rule</div><p>${escKw(codex.barbarians.strategy_by_curve[l.curve] || "")}</p><a class="btn btn--sm" href="#/barbarians">Barbarians and clans ${icon("arrow", "icon icon--sm")}</a></div></div></div></section>`;
+}
+
+function shapePanel(ctx, l) {
+  const tmpl = l.template || {}; const cx = l.context || {};
+  const secondary = l.secondary ? `<details class="secondary-note"><summary>Alt-shape overlay: ${esc(l.secondary.secondary_shape)}</summary><div class="secondary-note__body">${l.secondary.reason ? `<p>${escKw(l.secondary.reason)}</p>` : ""}${l.secondary.rule ? `<p>${escKw(l.secondary.rule)}</p>` : ""}${l.secondary.secondary_structure ? `<div class="timeline">${l.secondary.secondary_structure.map(phaseHtml).join("")}</div>` : ""}</div></details>` : "";
+  return `<section class="section" id="guide"><div class="wrap">${sectionHead("Leadership Focus", `The ${l.shape || ""} shape`, `This is the general structure every ${esc(l.shape || "")} leader shares. The <a href="${tabHref(l.slug, "plan")}">Plan</a> tab is ${esc(l.name)}'s specific case of it.`)}${curvePanel(l.curve, l.categoryKey)}
     ${tmpl.principle ? `<div class="principle"><span class="principle__glyph" aria-hidden="true">${icon("quote")}</span><p>${escKw(tmpl.principle)}</p></div>` : ""}
-    ${tmpl.structure ? `<div class="timeline">${tmpl.structure.map(phase).join("")}</div>` : ""}${secondary}
+    ${tmpl.structure ? `<div class="timeline">${tmpl.structure.map(phaseHtml).join("")}</div>` : ""}${secondary}
     ${tmpl.abort_branch ? `<div class="callout callout--warn"><p class="callout__title">${icon("warn", "icon icon--sm")} Abort branch</p><p><b>Trigger:</b> ${escKw(tmpl.abort_branch.trigger)}</p>${tmpl.abort_branch.actions ? `<ul>${tmpl.abort_branch.actions.map(s => `<li>${escKw(s)}</li>`).join("")}</ul>` : ""}</div>` : ""}
     ${tmpl.fail_state ? `<div class="callout callout--danger"><p class="callout__title">${icon("x", "icon icon--sm")} Fail state</p><p>${escKw(tmpl.fail_state)}</p></div>` : ""}
     <div class="two-col">${cx.caveats ? `<div><p class="subgroup-label">Caveats</p>${listPlain(cx.caveats)}</div>` : ""}${cx.guide_requirements ? `<div><p class="subgroup-label">The guide must account for</p>${listPlain(cx.guide_requirements)}</div>` : ""}</div>
     ${cx.era_role ? `<p class="subgroup-label">Era by era</p><div class="table-wrap"><table><thead><tr><th>Eras</th><th>Role</th></tr></thead><tbody>${Object.entries(cx.era_role).map(([k, v]) => `<tr><td>${esc(titleCase(k.replace("_", " / ")))}</td><td>${escKw(v)}</td></tr>`).join("")}</tbody></table></div>` : ""}
     ${tmpl.anti_patterns ? `<p class="subgroup-label">Common mistakes</p>${listPlain(tmpl.anti_patterns)}` : ""}</div></section>`;
-  const html = hero + nav + subnavHtml(sections) + head + historyHtml + profile + ground + world + barb + guide;
-  return { html, title: `${l.name} — Leadership Focus`, catKey: l.categoryKey };
+}
+
+const PANELS = { overview: overviewPanel, plan: planPanelHtml, history: historyPanel, kit: kitPanel, ground: groundPanel, world: worldPanel, barbarians: barbariansPanel, shape: shapePanel };
+const PANEL_INIT = { plan: initPlanPanel };
+
+export function renderLeader(ctx, slug, tabParam, anchor) {
+  const l = ctx.bySlug.get(slug); if (!l) return null;
+  const tab = resolveTab(tabParam, anchor); const canonical = tabHref(slug, tab);
+  const h = l.history;
+  const idx = ctx.leaders.findIndex(x => x.slug === slug); const prev = ctx.leaders[(idx - 1 + ctx.leaders.length) % ctx.leaders.length]; const next = ctx.leaders[(idx + 1) % ctx.leaders.length];
+  const kicker = `<span class="tag">${esc(CATEGORY_LABELS[l.categoryKey])}</span>${l.era ? `<span class="tag tag--era">${esc(l.era)}</span>` : ""}<span>${esc(l.civilization)}${l.persona ? ` · ${esc(l.persona)} persona` : ""} · ${esc(l.expansionOrigin)}</span>`;
+  const hero = heroHtml([{ image: l.hero, fallbackImage: l.image, catKey: l.categoryKey, era: l.era, kicker, title: l.name, sub: esc(l.leaderTitle),
+    meta: [h ? `<span class="pill">${esc(h.dates.display)}</span>` : "", h ? `<span class="pill">${esc(h.polity)}</span>` : "", `<span class="pill pill--accent">${esc(l.shape)}${l.altShape ? " + " + esc(l.altShape) : ""}</span>`, l.convertBy ? `<span class="pill">Convert by turn ${esc(l.convertBy)}</span>` : "", (l.conditionCost && l.conditionCost !== "None") ? `<span class="pill">Cost: ${esc(l.conditionCost)}</span>` : ""],
+    credit: l.heroCredit ? creditLine(ctx, l.heroCredit) : "" }], { short: true, id: "leaderHero" });
+  const pager = `<div class="detail__nav"><a class="btn btn--sm" href="#/leaders">${icon("chevron-left", "icon icon--sm")} All leaders</a><div class="detail__pager"><a class="btn btn--sm" href="${tabHref(prev.slug, tab)}" rel="prev">${icon("chevron-left", "icon icon--sm")} ${esc(prev.name)}</a><a class="btn btn--sm" href="${tabHref(next.slug, tab)}" rel="next">${esc(next.name)} ${icon("chevron-right", "icon icon--sm")}</a></div></div>`;
+  const tabs = tabsHtml(LEADER_TABS.map(t => ({ id: t.id, label: t.label, href: tabHref(slug, t.id) })), { active: tab, label: `${l.name} sections`, panelId: "leaderPanel" });
+  const titleFor = (t) => `${l.name}${t === "overview" ? "" : " · " + LEADER_TABS.find(x => x.id === t).label} — Leadership Focus`;
+  const html = `<div class="leader" data-category-key="${esc(l.categoryKey)}" data-era="${esc(l.era || "")}">${hero}${pager}${tabs}<div class="tabpanel" id="leaderPanel" role="tabpanel" aria-labelledby="tab-${esc(tab)}" tabindex="-1">${PANELS[tab](ctx, l)}</div></div>`;
+
+  const state = { root: null, tab, panelCleanup: () => {}, timer: 0 };
+  // app.js runs initRows over the whole page on first mount; on a swap the panel is wired here.
+  const wire = (panel, t, { rows }) => { const fns = []; if (PANEL_INIT[t]) { const c = PANEL_INIT[t](panel, ctx, l); if (typeof c === "function") fns.push(c); } if (rows) fns.push(initRows(panel)); return () => fns.forEach(f => f()); };
+  const scrollToAnchor = (id) => { const t = id && document.getElementById(id); if (!t) return false; t.scrollIntoView({ block: "start" }); t.setAttribute("tabindex", "-1"); t.focus({ preventScroll: true }); return true; };
+  const mountPanel = (nextTab, nextAnchor) => {
+    const root = state.root; const panel = root.querySelector("#leaderPanel"); const tablist = root.querySelector('[role="tablist"]'); const tabsEl = root.querySelector(".subnav--tabs");
+    if (nextTab === state.tab) { document.title = titleFor(nextTab); scrollToAnchor(nextAnchor); return; }
+    const finish = () => {
+      try { state.panelCleanup(); } catch (err) { console.error(err); }
+      panel.innerHTML = PANELS[nextTab](ctx, l); panel.setAttribute("aria-labelledby", "tab-" + nextTab);
+      try { state.panelCleanup = wire(panel, nextTab, { rows: true }); } catch (err) { state.panelCleanup = () => {}; console.error(err); }
+      setActiveTab(tablist, nextTab);
+      root.querySelectorAll('a[rel="prev"], a[rel="next"]').forEach(a => a.setAttribute("href", tabHref(a.rel === "prev" ? prev.slug : next.slug, nextTab)));
+      document.title = titleFor(nextTab); state.tab = nextTab; panel.classList.remove("is-swapping");
+      if (scrollToAnchor(nextAnchor)) return;
+      const headerH = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--header-h")) || 58;
+      const top = tabsEl.offsetTop - headerH; if (window.scrollY > top) window.scrollTo({ top, behavior: "auto" });
+      if (!tablist.contains(document.activeElement)) panel.focus({ preventScroll: true });
+    };
+    clearTimeout(state.timer);
+    if (reducedMotion.matches) finish(); else { panel.classList.add("is-swapping"); state.timer = setTimeout(finish, 120); }
+  };
+  return {
+    key: `leader:${slug}`, tab, anchor, canonical, html, title: titleFor(tab), catKey: l.categoryKey,
+    init(root) { state.root = root; state.panelCleanup = wire(root.querySelector("#leaderPanel"), tab, { rows: false }); const t = initTabs(root.querySelector('[role="tablist"]')); return () => { clearTimeout(state.timer); state.panelCleanup(); t(); state.root = null; }; },
+    swap(nextView) { if (!state.root) return false; mountPanel(nextView.tab, nextView.anchor); return true; },
+  };
 }

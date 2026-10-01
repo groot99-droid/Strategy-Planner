@@ -29,6 +29,7 @@
    "Oceania": 2,
    "Southeast Asia": 3
   },
+  "plans": 1,
   "generated": "2026-10-01"
  },
  "wonders": {
@@ -3740,6 +3741,868 @@
    "https://forums.civfanatics.com/threads/gathering-storm-start-biases-from-xml-file.642006/",
    "https://steamcommunity.com/sharedfiles/filedetails/?id=1688993712"
   ]
+ },
+ "eurekas": {
+  "ruleset": "Gathering Storm (all expansions and the Leader Pass)",
+  "note": "Boost objectives as the in-game Civilopedia words them. A boost pays 40% of the technology or civic's cost (50% before Rise and Fall). 'Great Scientist only' marks a technology whose only boost comes from a Great Scientist ability, so no plan can schedule it. Cross-checked against civilization6planner.com's tech-tree and civics-tree pages on 2026-10-01; verify in the game's Civilopedia when a patch changes a boost.",
+  "boost_share": 0.4,
+  "techs": [
+   {
+    "id": "pottery",
+    "name": "Pottery",
+    "era": "ancient",
+    "eureka": null
+   },
+   {
+    "id": "animal-husbandry",
+    "name": "Animal Husbandry",
+    "era": "ancient",
+    "eureka": null
+   },
+   {
+    "id": "mining",
+    "name": "Mining",
+    "era": "ancient",
+    "eureka": null
+   },
+   {
+    "id": "sailing",
+    "name": "Sailing",
+    "era": "ancient",
+    "eureka": "Found a city on the coast."
+   },
+   {
+    "id": "astrology",
+    "name": "Astrology",
+    "era": "ancient",
+    "eureka": "Discover a natural wonder."
+   },
+   {
+    "id": "irrigation",
+    "name": "Irrigation",
+    "era": "ancient",
+    "eureka": "Farm a resource."
+   },
+   {
+    "id": "archery",
+    "name": "Archery",
+    "era": "ancient",
+    "eureka": "Kill a unit with a Slinger."
+   },
+   {
+    "id": "writing",
+    "name": "Writing",
+    "era": "ancient",
+    "eureka": "Meet another civilization."
+   },
+   {
+    "id": "masonry",
+    "name": "Masonry",
+    "era": "ancient",
+    "eureka": "Build a Quarry."
+   },
+   {
+    "id": "bronze-working",
+    "name": "Bronze Working",
+    "era": "ancient",
+    "eureka": "Kill 3 Barbarian units."
+   },
+   {
+    "id": "wheel",
+    "name": "The Wheel",
+    "era": "ancient",
+    "eureka": "Mine a resource."
+   },
+   {
+    "id": "celestial-navigation",
+    "name": "Celestial Navigation",
+    "era": "classical",
+    "eureka": "Improve 2 sea resources (Fishing Boats)."
+   },
+   {
+    "id": "currency",
+    "name": "Currency",
+    "era": "classical",
+    "eureka": "Make a Trade Route."
+   },
+   {
+    "id": "horseback-riding",
+    "name": "Horseback Riding",
+    "era": "classical",
+    "eureka": "Build a Pasture."
+   },
+   {
+    "id": "iron-working",
+    "name": "Iron Working",
+    "era": "classical",
+    "eureka": "Build a Mine on an Iron resource."
+   },
+   {
+    "id": "shipbuilding",
+    "name": "Shipbuilding",
+    "era": "classical",
+    "eureka": "Own 2 Galleys (or the civilization's replacement)."
+   },
+   {
+    "id": "mathematics",
+    "name": "Mathematics",
+    "era": "classical",
+    "eureka": "Build 3 different specialty districts."
+   },
+   {
+    "id": "construction",
+    "name": "Construction",
+    "era": "classical",
+    "eureka": "Build a Water Mill."
+   },
+   {
+    "id": "engineering",
+    "name": "Engineering",
+    "era": "classical",
+    "eureka": "Build Ancient Walls."
+   },
+   {
+    "id": "military-tactics",
+    "name": "Military Tactics",
+    "era": "medieval",
+    "eureka": "Kill a unit with a Spearman."
+   },
+   {
+    "id": "buttress",
+    "name": "Buttress",
+    "era": "medieval",
+    "eureka": "Own a wonder from the Classical era or later."
+   },
+   {
+    "id": "apprenticeship",
+    "name": "Apprenticeship",
+    "era": "medieval",
+    "eureka": "Build 3 Mines."
+   },
+   {
+    "id": "stirrups",
+    "name": "Stirrups",
+    "era": "medieval",
+    "eureka": "Unlock the Feudalism civic."
+   },
+   {
+    "id": "machinery",
+    "name": "Machinery",
+    "era": "medieval",
+    "eureka": "Own 3 Archers (or the civilization's replacement)."
+   },
+   {
+    "id": "education",
+    "name": "Education",
+    "era": "medieval",
+    "eureka": "Earn a Great Scientist."
+   },
+   {
+    "id": "military-engineering",
+    "name": "Military Engineering",
+    "era": "medieval",
+    "eureka": "Build an Aqueduct."
+   },
+   {
+    "id": "castles",
+    "name": "Castles",
+    "era": "medieval",
+    "eureka": "Adopt a Tier 2 government (a government with 6 policy slots)."
+   },
+   {
+    "id": "cartography",
+    "name": "Cartography",
+    "era": "renaissance",
+    "eureka": "Build 2 Harbors."
+   },
+   {
+    "id": "mass-production",
+    "name": "Mass Production",
+    "era": "renaissance",
+    "eureka": "Build a Lumber Mill."
+   },
+   {
+    "id": "banking",
+    "name": "Banking",
+    "era": "renaissance",
+    "eureka": "Unlock the Guilds civic."
+   },
+   {
+    "id": "gunpowder",
+    "name": "Gunpowder",
+    "era": "renaissance",
+    "eureka": "Build an Armory."
+   },
+   {
+    "id": "printing",
+    "name": "Printing",
+    "era": "renaissance",
+    "eureka": "Build 2 Universities."
+   },
+   {
+    "id": "square-rigging",
+    "name": "Square Rigging",
+    "era": "renaissance",
+    "eureka": "Kill a unit with a Musketman."
+   },
+   {
+    "id": "astronomy",
+    "name": "Astronomy",
+    "era": "renaissance",
+    "eureka": "Build a University adjacent to a Mountain."
+   },
+   {
+    "id": "metal-casting",
+    "name": "Metal Casting",
+    "era": "renaissance",
+    "eureka": "Own 2 Crossbowmen."
+   },
+   {
+    "id": "siege-tactics",
+    "name": "Siege Tactics",
+    "era": "renaissance",
+    "eureka": "Own 2 Trebuchets."
+   },
+   {
+    "id": "industrialization",
+    "name": "Industrialization",
+    "era": "industrial",
+    "eureka": "Build 2 Workshops."
+   },
+   {
+    "id": "scientific-theory",
+    "name": "Scientific Theory",
+    "era": "industrial",
+    "eureka": "Unlock The Enlightenment civic."
+   },
+   {
+    "id": "ballistics",
+    "name": "Ballistics",
+    "era": "industrial",
+    "eureka": "Have 2 Forts in your territory."
+   },
+   {
+    "id": "military-science",
+    "name": "Military Science",
+    "era": "industrial",
+    "eureka": "Kill a unit with a Knight."
+   },
+   {
+    "id": "steam-power",
+    "name": "Steam Power",
+    "era": "industrial",
+    "eureka": "Build 2 Shipyards."
+   },
+   {
+    "id": "sanitation",
+    "name": "Sanitation",
+    "era": "industrial",
+    "eureka": "Build 2 Neighborhoods."
+   },
+   {
+    "id": "economics",
+    "name": "Economics",
+    "era": "industrial",
+    "eureka": "Build 2 Banks."
+   },
+   {
+    "id": "rifling",
+    "name": "Rifling",
+    "era": "industrial",
+    "eureka": "Build a Mine on a Niter resource."
+   },
+   {
+    "id": "flight",
+    "name": "Flight",
+    "era": "modern",
+    "eureka": "Own a wonder from the Industrial era or later."
+   },
+   {
+    "id": "replaceable-parts",
+    "name": "Replaceable Parts",
+    "era": "modern",
+    "eureka": "Own 3 Line Infantry."
+   },
+   {
+    "id": "steel",
+    "name": "Steel",
+    "era": "modern",
+    "eureka": "Own an Ironclad and build a Mine on a Coal resource."
+   },
+   {
+    "id": "refining",
+    "name": "Refining",
+    "era": "modern",
+    "eureka": "Build a Coal Power Plant."
+   },
+   {
+    "id": "electricity",
+    "name": "Electricity",
+    "era": "modern",
+    "eureka": "Own 2 Privateers."
+   },
+   {
+    "id": "radio",
+    "name": "Radio",
+    "era": "modern",
+    "eureka": "Create a National Park."
+   },
+   {
+    "id": "chemistry",
+    "name": "Chemistry",
+    "era": "modern",
+    "eureka": "Reach alliance level 2 with another civilization."
+   },
+   {
+    "id": "combustion",
+    "name": "Combustion",
+    "era": "modern",
+    "eureka": "Extract an Artifact."
+   },
+   {
+    "id": "advanced-flight",
+    "name": "Advanced Flight",
+    "era": "atomic",
+    "eureka": "Own 2 Biplanes."
+   },
+   {
+    "id": "rocketry",
+    "name": "Rocketry",
+    "era": "atomic",
+    "eureka": null,
+    "great_scientist_only": true
+   },
+   {
+    "id": "advanced-ballistics",
+    "name": "Advanced Ballistics",
+    "era": "atomic",
+    "eureka": "Build an Oil Power Plant."
+   },
+   {
+    "id": "combined-arms",
+    "name": "Combined Arms",
+    "era": "atomic",
+    "eureka": "Own 3 Armies."
+   },
+   {
+    "id": "plastics",
+    "name": "Plastics",
+    "era": "atomic",
+    "eureka": "Build an Oil Well on an Oil resource."
+   },
+   {
+    "id": "computers",
+    "name": "Computers",
+    "era": "atomic",
+    "eureka": "Adopt a Tier 3 government (a government with 8 policy slots)."
+   },
+   {
+    "id": "nuclear-fission",
+    "name": "Nuclear Fission",
+    "era": "atomic",
+    "eureka": null,
+    "great_scientist_only": true
+   },
+   {
+    "id": "synthetic-materials",
+    "name": "Synthetic Materials",
+    "era": "atomic",
+    "eureka": "Build 2 Aerodromes."
+   },
+   {
+    "id": "telecommunications",
+    "name": "Telecommunications",
+    "era": "information",
+    "eureka": null,
+    "great_scientist_only": true
+   },
+   {
+    "id": "satellites",
+    "name": "Satellites",
+    "era": "information",
+    "eureka": "Build 2 Broadcast Centers."
+   },
+   {
+    "id": "guidance-systems",
+    "name": "Guidance Systems",
+    "era": "information",
+    "eureka": "Kill a Fighter."
+   },
+   {
+    "id": "lasers",
+    "name": "Lasers",
+    "era": "information",
+    "eureka": "Own 2 Drones."
+   },
+   {
+    "id": "composites",
+    "name": "Composites",
+    "era": "information",
+    "eureka": "Own 3 Tanks."
+   },
+   {
+    "id": "stealth-technology",
+    "name": "Stealth Technology",
+    "era": "information",
+    "eureka": null,
+    "great_scientist_only": true
+   },
+   {
+    "id": "robotics",
+    "name": "Robotics",
+    "era": "information",
+    "eureka": "Unlock the Globalization civic."
+   },
+   {
+    "id": "nuclear-fusion",
+    "name": "Nuclear Fusion",
+    "era": "information",
+    "eureka": "Own a Nuclear Power Plant."
+   },
+   {
+    "id": "nanotechnology",
+    "name": "Nanotechnology",
+    "era": "information",
+    "eureka": "Build a Mine on an Aluminum resource."
+   },
+   {
+    "id": "advanced-ai",
+    "name": "Advanced AI",
+    "era": "future",
+    "eureka": null
+   },
+   {
+    "id": "advanced-power-cells",
+    "name": "Advanced Power Cells",
+    "era": "future",
+    "eureka": null
+   },
+   {
+    "id": "cybernetics",
+    "name": "Cybernetics",
+    "era": "future",
+    "eureka": null
+   },
+   {
+    "id": "predictive-systems",
+    "name": "Predictive Systems",
+    "era": "future",
+    "eureka": null
+   },
+   {
+    "id": "seasteads",
+    "name": "Seasteads",
+    "era": "future",
+    "eureka": null
+   },
+   {
+    "id": "smart-materials",
+    "name": "Smart Materials",
+    "era": "future",
+    "eureka": null
+   },
+   {
+    "id": "offworld-mission",
+    "name": "Offworld Mission",
+    "era": "future",
+    "eureka": null
+   },
+   {
+    "id": "future-tech",
+    "name": "Future Tech",
+    "era": "future",
+    "eureka": null
+   }
+  ],
+  "civics": [
+   {
+    "id": "code-of-laws",
+    "name": "Code of Laws",
+    "era": "ancient",
+    "inspiration": null
+   },
+   {
+    "id": "craftsmanship",
+    "name": "Craftsmanship",
+    "era": "ancient",
+    "inspiration": "Improve 3 tiles."
+   },
+   {
+    "id": "foreign-trade",
+    "name": "Foreign Trade",
+    "era": "ancient",
+    "inspiration": "Discover a second continent."
+   },
+   {
+    "id": "military-tradition",
+    "name": "Military Tradition",
+    "era": "ancient",
+    "inspiration": "Clear a Barbarian outpost."
+   },
+   {
+    "id": "state-workforce",
+    "name": "State Workforce",
+    "era": "ancient",
+    "inspiration": "Build any district."
+   },
+   {
+    "id": "early-empire",
+    "name": "Early Empire",
+    "era": "ancient",
+    "inspiration": "Grow your civilization to 6 population."
+   },
+   {
+    "id": "mysticism",
+    "name": "Mysticism",
+    "era": "ancient",
+    "inspiration": "Found a pantheon."
+   },
+   {
+    "id": "games-and-recreation",
+    "name": "Games and Recreation",
+    "era": "classical",
+    "inspiration": "Research the Construction technology."
+   },
+   {
+    "id": "political-philosophy",
+    "name": "Political Philosophy",
+    "era": "classical",
+    "inspiration": "Meet 3 city-states."
+   },
+   {
+    "id": "drama-and-poetry",
+    "name": "Drama and Poetry",
+    "era": "classical",
+    "inspiration": "Build a wonder."
+   },
+   {
+    "id": "military-training",
+    "name": "Military Training",
+    "era": "classical",
+    "inspiration": "Build an Encampment."
+   },
+   {
+    "id": "theology",
+    "name": "Theology",
+    "era": "classical",
+    "inspiration": "Found a religion."
+   },
+   {
+    "id": "defensive-tactics",
+    "name": "Defensive Tactics",
+    "era": "classical",
+    "inspiration": "Be the target of a declaration of war."
+   },
+   {
+    "id": "recorded-history",
+    "name": "Recorded History",
+    "era": "classical",
+    "inspiration": "Build 2 Campuses."
+   },
+   {
+    "id": "naval-tradition",
+    "name": "Naval Tradition",
+    "era": "medieval",
+    "inspiration": "Kill a unit with a Quadrireme."
+   },
+   {
+    "id": "feudalism",
+    "name": "Feudalism",
+    "era": "medieval",
+    "inspiration": "Have 6 Farms."
+   },
+   {
+    "id": "civil-service",
+    "name": "Civil Service",
+    "era": "medieval",
+    "inspiration": "Grow a city to 10 population."
+   },
+   {
+    "id": "mercenaries",
+    "name": "Mercenaries",
+    "era": "medieval",
+    "inspiration": "Have 8 land combat units."
+   },
+   {
+    "id": "divine-right",
+    "name": "Divine Right",
+    "era": "medieval",
+    "inspiration": "Build 2 Temples (or the civilization's replacement)."
+   },
+   {
+    "id": "guilds",
+    "name": "Guilds",
+    "era": "medieval",
+    "inspiration": "Build 2 Markets."
+   },
+   {
+    "id": "medieval-faires",
+    "name": "Medieval Faires",
+    "era": "medieval",
+    "inspiration": "Have 4 Trade Routes running at once."
+   },
+   {
+    "id": "exploration",
+    "name": "Exploration",
+    "era": "renaissance",
+    "inspiration": "Build 2 Caravels."
+   },
+   {
+    "id": "humanism",
+    "name": "Humanism",
+    "era": "renaissance",
+    "inspiration": "Earn a Great Artist."
+   },
+   {
+    "id": "diplomatic-service",
+    "name": "Diplomatic Service",
+    "era": "renaissance",
+    "inspiration": "Form an alliance."
+   },
+   {
+    "id": "reformed-church",
+    "name": "Reformed Church",
+    "era": "renaissance",
+    "inspiration": "Have 6 cities following your religion."
+   },
+   {
+    "id": "mercantilism",
+    "name": "Mercantilism",
+    "era": "renaissance",
+    "inspiration": "Earn a Great Merchant."
+   },
+   {
+    "id": "the-enlightenment",
+    "name": "The Enlightenment",
+    "era": "renaissance",
+    "inspiration": "Earn 3 Great People."
+   },
+   {
+    "id": "civil-engineering",
+    "name": "Civil Engineering",
+    "era": "industrial",
+    "inspiration": "Build 7 different specialty districts."
+   },
+   {
+    "id": "nationalism",
+    "name": "Nationalism",
+    "era": "industrial",
+    "inspiration": "Declare a war using a Casus Belli."
+   },
+   {
+    "id": "opera-and-ballet",
+    "name": "Opera and Ballet",
+    "era": "industrial",
+    "inspiration": "Build an Art Museum."
+   },
+   {
+    "id": "natural-history",
+    "name": "Natural History",
+    "era": "industrial",
+    "inspiration": "Build an Archaeological Museum."
+   },
+   {
+    "id": "scorched-earth",
+    "name": "Scorched Earth",
+    "era": "industrial",
+    "inspiration": "Own 2 Field Cannons."
+   },
+   {
+    "id": "colonialism",
+    "name": "Colonialism",
+    "era": "industrial",
+    "inspiration": "Research the Astronomy technology."
+   },
+   {
+    "id": "urbanization",
+    "name": "Urbanization",
+    "era": "industrial",
+    "inspiration": "Grow a city to 15 population."
+   },
+   {
+    "id": "conservation",
+    "name": "Conservation",
+    "era": "modern",
+    "inspiration": "Build a Neighborhood on a tile with Breathtaking appeal."
+   },
+   {
+    "id": "mass-media",
+    "name": "Mass Media",
+    "era": "modern",
+    "inspiration": "Research the Radio technology."
+   },
+   {
+    "id": "mobilization",
+    "name": "Mobilization",
+    "era": "modern",
+    "inspiration": "Own 3 Corps."
+   },
+   {
+    "id": "capitalism",
+    "name": "Capitalism",
+    "era": "modern",
+    "inspiration": "Build 2 Stock Exchanges."
+   },
+   {
+    "id": "class-struggle",
+    "name": "Class Struggle",
+    "era": "modern",
+    "inspiration": "Build 3 Factories."
+   },
+   {
+    "id": "ideology",
+    "name": "Ideology",
+    "era": "modern",
+    "inspiration": null
+   },
+   {
+    "id": "suffrage",
+    "name": "Suffrage",
+    "era": "modern",
+    "inspiration": "Build 4 Sewers."
+   },
+   {
+    "id": "totalitarianism",
+    "name": "Totalitarianism",
+    "era": "modern",
+    "inspiration": "Build 3 Military Academies."
+   },
+   {
+    "id": "nuclear-program",
+    "name": "Nuclear Program",
+    "era": "modern",
+    "inspiration": "Build a Research Lab."
+   },
+   {
+    "id": "cultural-heritage",
+    "name": "Cultural Heritage",
+    "era": "atomic",
+    "inspiration": "Have a themed building."
+   },
+   {
+    "id": "cold-war",
+    "name": "Cold War",
+    "era": "atomic",
+    "inspiration": "Research the Nuclear Fission technology."
+   },
+   {
+    "id": "professional-sports",
+    "name": "Professional Sports",
+    "era": "atomic",
+    "inspiration": "Build 2 Entertainment Complexes."
+   },
+   {
+    "id": "rapid-deployment",
+    "name": "Rapid Deployment",
+    "era": "atomic",
+    "inspiration": "Have an Airstrip or Aerodrome on a foreign continent."
+   },
+   {
+    "id": "space-race",
+    "name": "Space Race",
+    "era": "atomic",
+    "inspiration": "Build a Spaceport."
+   },
+   {
+    "id": "environmentalism",
+    "name": "Environmentalism",
+    "era": "information",
+    "inspiration": "Build 2 Solar Farms."
+   },
+   {
+    "id": "globalization",
+    "name": "Globalization",
+    "era": "information",
+    "inspiration": "Build 2 Airports."
+   },
+   {
+    "id": "social-media",
+    "name": "Social Media",
+    "era": "information",
+    "inspiration": "Research the Telecommunications technology."
+   },
+   {
+    "id": "venture-politics",
+    "name": "Venture Politics",
+    "era": "information",
+    "inspiration": "Build a Mine on a Uranium resource."
+   },
+   {
+    "id": "distributed-sovereignty",
+    "name": "Distributed Sovereignty",
+    "era": "information",
+    "inspiration": "Earn a Rock Band."
+   },
+   {
+    "id": "optimization-imperative",
+    "name": "Optimization Imperative",
+    "era": "information",
+    "inspiration": "Research the Robotics technology."
+   },
+   {
+    "id": "near-future-governance",
+    "name": "Near Future Governance",
+    "era": "information",
+    "inspiration": "Adopt a Tier 4 government."
+   },
+   {
+    "id": "cultural-hegemony",
+    "name": "Cultural Hegemony",
+    "era": "future",
+    "inspiration": null
+   },
+   {
+    "id": "exodus-imperative",
+    "name": "Exodus Imperative",
+    "era": "future",
+    "inspiration": null
+   },
+   {
+    "id": "global-warming-mitigation",
+    "name": "Global Warming Mitigation",
+    "era": "future",
+    "inspiration": null
+   },
+   {
+    "id": "information-warfare",
+    "name": "Information Warfare",
+    "era": "future",
+    "inspiration": null
+   },
+   {
+    "id": "smart-power-doctrine",
+    "name": "Smart Power Doctrine",
+    "era": "future",
+    "inspiration": null
+   },
+   {
+    "id": "future-civic",
+    "name": "Future Civic",
+    "era": "future",
+    "inspiration": null
+   }
+  ]
+ },
+ "plansMeta": {
+  "assumed_conditions": "Standard speed, standard map size, mid difficulty. Turn numbers are scaffolding, not law. See timing_adjustments.",
+  "speed_factors": {
+   "online": 0.5,
+   "quick": 0.67,
+   "standard": 1,
+   "epic": 1.5,
+   "marathon": 3
+  },
+  "difficulty_factors": {
+   "settler": 1.15,
+   "chieftain": 1.15,
+   "warlord": 1.1,
+   "prince": 1.1,
+   "king": 1,
+   "emperor": 1,
+   "immortal": 0.9,
+   "deity": 0.85
+  },
+  "large_maps": "Countdown and Gate deadlines slip later; Front-Load decisions do not move"
  },
  "credits": [
   {

@@ -1,5 +1,6 @@
 [
  {
+  "planSummary": null,
   "slug": "gilgamesh",
   "name": "Gilgamesh",
   "persona": null,
@@ -267,6 +268,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "amanitore",
   "name": "Amanitore",
   "persona": null,
@@ -589,6 +591,7 @@
   }
  },
  {
+  "planSummary": null,
   "slug": "montezuma",
   "name": "Montezuma",
   "persona": null,
@@ -851,6 +854,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "tomyris",
   "name": "Tomyris",
   "persona": null,
@@ -1123,6 +1127,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "simon-bolivar",
   "name": "Simon Bolivar",
   "persona": null,
@@ -1390,6 +1395,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "alexander",
   "name": "Alexander",
   "persona": null,
@@ -1666,6 +1672,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "gorgo",
   "name": "Gorgo",
   "persona": null,
@@ -1944,6 +1951,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "ambiorix",
   "name": "Ambiorix",
   "persona": null,
@@ -2219,6 +2227,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "shaka",
   "name": "Shaka",
   "persona": null,
@@ -2476,6 +2485,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "cyrus",
   "name": "Cyrus",
   "persona": null,
@@ -2756,6 +2766,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "genghis-khan",
   "name": "Genghis Khan",
   "persona": null,
@@ -3029,6 +3040,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "chandragupta",
   "name": "Chandragupta",
   "persona": null,
@@ -3292,6 +3304,17 @@
   "secondary": null
  },
  {
+  "planSummary": {
+   "victory": "Domination",
+   "secondary": "Religion",
+   "confidence": "medium",
+   "one_line": "Raid for Gold and Faith until the coasts run dry, then turn the fleet and the Berserkers on the coastal cities you have already scouted. If the map has no reachable coast, you are a Faith civ with a good Temple.",
+   "updated": "2026-10-01",
+   "version": 1,
+   "file": "data/plans/harald-hardrada.json",
+   "phases": 5,
+   "boosts": 57
+  },
   "slug": "harald-hardrada",
   "name": "Harald Hardrada",
   "persona": null,
@@ -3583,6 +3606,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "matthias-corvinus",
   "name": "Matthias Corvinus",
   "persona": null,
@@ -3871,6 +3895,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "suleiman",
   "name": "Suleiman",
   "persona": null,
@@ -4138,6 +4163,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "lautaro",
   "name": "Lautaro",
   "persona": null,
@@ -4404,6 +4430,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "trajan",
   "name": "Trajan",
   "persona": null,
@@ -4675,6 +4702,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "hojo-tokimune",
   "name": "Hojo Tokimune",
   "persona": null,
@@ -4935,6 +4963,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "qin-shi-huang",
   "name": "Qin Shi Huang",
   "persona": null,
@@ -5201,6 +5230,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "frederick-barbarossa",
   "name": "Frederick Barbarossa",
   "persona": null,
@@ -5472,6 +5502,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "pachacuti",
   "name": "Pachacuti",
   "persona": null,
@@ -5753,6 +5784,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "john-curtin",
   "name": "John Curtin",
   "persona": null,
@@ -6061,6 +6093,7 @@
   }
  },
  {
+  "planSummary": null,
   "slug": "victoria",
   "name": "Victoria",
   "persona": "Age of Steam",
@@ -6339,6 +6372,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "ba-trieu",
   "name": "Ba Trieu",
   "persona": null,
@@ -6611,6 +6645,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "lady-six-sky",
   "name": "Lady Six Sky",
   "persona": null,
@@ -6875,6 +6910,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "nzinga-mbande",
   "name": "Nzinga Mbande",
   "persona": null,
@@ -7139,6 +7175,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "seondeok",
   "name": "Seondeok",
   "persona": null,
@@ -7416,6 +7453,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "hammurabi",
   "name": "Hammurabi",
   "persona": null,
@@ -7685,6 +7723,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "robert-the-bruce",
   "name": "Robert the Bruce",
   "persona": null,
@@ -7946,6 +7985,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "teddy-roosevelt",
   "name": "Teddy Roosevelt",
   "persona": "Bull Moose",
@@ -8217,6 +8257,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "kupe",
   "name": "Kupe",
   "persona": null,
@@ -8486,6 +8527,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "pericles",
   "name": "Pericles",
   "persona": null,
@@ -8765,6 +8807,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "cleopatra",
   "name": "Cleopatra",
   "persona": "Ptolemaic",
@@ -9039,6 +9082,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "pedro-ii",
   "name": "Pedro II",
   "persona": null,
@@ -9315,6 +9359,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "ludwig-ii",
   "name": "Ludwig II",
   "persona": null,
@@ -9576,6 +9621,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "kristina",
   "name": "Kristina",
   "persona": null,
@@ -9835,6 +9881,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "catherine-de-medici",
   "name": "Catherine de Medici",
   "persona": "Black Queen",
@@ -10108,6 +10155,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "wilfrid-laurier",
   "name": "Wilfrid Laurier",
   "persona": null,
@@ -10382,6 +10430,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "eleanor-of-aquitaine",
   "name": "Eleanor of Aquitaine",
   "persona": null,
@@ -10653,6 +10702,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "peter",
   "name": "Peter",
   "persona": null,
@@ -10936,6 +10986,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "jayavarman-vii",
   "name": "Jayavarman VII",
   "persona": null,
@@ -11208,6 +11259,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "saladin",
   "name": "Saladin",
   "persona": null,
@@ -11479,6 +11531,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "gandhi",
   "name": "Gandhi",
   "persona": null,
@@ -11742,6 +11795,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "menelik-ii",
   "name": "Menelik II",
   "persona": null,
@@ -12006,6 +12060,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "gitarja",
   "name": "Gitarja",
   "persona": null,
@@ -12278,6 +12333,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "jadwiga",
   "name": "Jadwiga",
   "persona": null,
@@ -12543,6 +12599,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "basil-ii",
   "name": "Basil II",
   "persona": null,
@@ -12818,6 +12875,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "philip-ii",
   "name": "Philip II",
   "persona": null,
@@ -13097,6 +13155,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "tamar",
   "name": "Tamar",
   "persona": null,
@@ -13374,6 +13433,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "mansa-musa",
   "name": "Mansa Musa",
   "persona": null,
@@ -13667,6 +13727,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "yongle",
   "name": "Yongle",
   "persona": null,
@@ -13933,6 +13994,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "dido",
   "name": "Dido",
   "persona": null,
@@ -14204,6 +14266,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "tokugawa",
   "name": "Tokugawa",
   "persona": null,
@@ -14463,6 +14526,7 @@
   "secondary": null
  },
  {
+  "planSummary": null,
   "slug": "joao-iii",
   "name": "Joao III",
   "persona": null,

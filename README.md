@@ -19,7 +19,8 @@ python3 -m http.server 8877 --directory docs
 |---|---|
 | Home | A rotating hero, one auto-scrolling row per focus, rows by historical era, and rows for wonders, terrain, city-states and pantheons |
 | Leaders | The 54-leader grid with filters for focus, curve, conversion, era and region |
-| Leader page | History, Civ VI kit, start-bias terrain tiles, wonders, pantheons, city-state priorities, barbarian stance, rivals, and the guide |
+| Leader page | Eight tabs, each its own page: Overview, Plan, History, Kit, Ground, World, Barbarians and Shape. The URL carries the tab (`#/leader/<slug>/<tab>`), so a tab can be linked to and the back button moves between tabs |
+| Plan tab | The leader's own plan: verdict and map check, what each ability buys, the shape block (the stat to watch, the deadline, the gate, the activation turn, the turn-0 test or the direction decision), four to six phases with build order, research and civics with their Eurekas and Inspirations, policy cards, districts, wonders, governors, city-states, great people, checkpoints and tasks, a tracker for every boost the kit reaches, decision triggers, abort branch and fail state. Pick the game speed and difficulty and every turn number rescales; type the turn you are on and the current phase, due tasks and next checkpoint light up; ticks are remembered in the browser; the JSON can be downloaded or copied |
 | Natural wonders | All 37 wonders, their yields, the real place, and the leaders who want them |
 | Eras | The eight world eras, Era Score, the four Ages and every Dedication |
 | Barbarians | Outpost mechanics, the seven clans of Barbarian Clans mode, strategy by power curve and by leader |
@@ -29,23 +30,28 @@ python3 -m http.server 8877 --directory docs
 | Find my leader | A five-question quiz scored on focus, curve, conversion, shape and condition cost |
 | Credits | Every historical image with its Commons source, licence and author |
 
-Search (press `/`) covers leaders, wonders, city-states, pantheons, terrain,
-eras, dedications and clans.
+Search (press `/`) covers leaders, their plans, wonders, city-states, pantheons,
+terrain, eras, dedications and clans.
 
 ## Layout
 
 ```
 docs/                     the published site (plain HTML, CSS and ES modules; no build tool)
-  data/leaders.json       one record per leader, generated
-  data/codex.json         wonders, barbarians, eras, city-states, pantheons, terrain, credits, generated
+  data/leaders.json       one record per leader, generated (with a plan summary)
+  data/plans/<slug>.json  one plan per leader, generated from the source plans, downloadable from the Plan tab
+  data/codex.json         wonders, barbarians, eras, city-states, pantheons, terrain, eurekas, credits, generated
   images/                 54 portraits, badges, Commons heroes and wonders, 24 generated terrain tiles
 leadership-focus/
   data/                   source data: tags, caveats, guide templates, supplemental, civ-info,
                           leadership-focus-history.json (era, country, dates, personality, codex bios),
                           civ6/ (natural wonders, barbarians, eras, city-states, pantheons, terrain,
-                          leader affinities), image manifests and image-credits.json
+                          leader affinities, eurekas: every technology and civic with its boost),
+                          plans/<slug>.json (the 54 hand-written leader plans),
+                          image manifests and image-credits.json
   scripts/build-guides.js       renders the 54 guides from the templates
-  scripts/build-site-data.js    joins everything into docs/data/*.json
+  scripts/validate-plans.js     checks every plan against the schema in scripts/lib/plan-rules.js
+  scripts/build-site-data.js    joins everything into docs/data/*.json (validating the plans again)
+  scripts/check-motion.mjs      drives the site in headless Chromium: rows move, hero rotates, tabs swap, plan state keeps
   scripts/fetch-images.py       Commons fetcher (API search, licence check, resize)
   scripts/fetch-images-direct.py  the same with explicit file titles, for when the API throttles
   output/                 rendered guides (markdown and JSON) and the build log
@@ -58,12 +64,36 @@ Badges/                   original badge art
 ```
 cd leadership-focus
 node scripts/build-guides.js --data-dir=./data --out-dir=./output
+node scripts/validate-plans.js
 node scripts/build-site-data.js
 ```
 
-The second script warns about any leader without history or affinities, any
-wonder, pantheon or terrain slug it cannot resolve, and any missing image.
-A clean run prints no warnings.
+The last script warns about any leader without history, affinities or a plan, any
+wonder, pantheon, terrain or boost id it cannot resolve, any plan that fails the
+schema (such a plan is dropped from the site rather than shipped broken), and any
+missing image. A clean run prints no warnings.
+
+## The plans
+
+Each leader has a plan in `leadership-focus/data/plans/<slug>.json`, written for
+Gathering Storm with every expansion, Standard speed, Emperor, and rescaled by the
+site for other speeds and difficulties (the factors live in the guide templates'
+`meta.timing_adjustments`). A plan is the specific case of its leader's guide shape:
+a Monitor plan carries the watched stat and its bands, a Countdown plan its deadline
+and midpoint, a Gate plan the gate and the fastest path to it, a Dead-Phase plan its
+activation turn and stockpile, a Front-Load plan its turn-0 tests and irreversible
+decisions, a Linear plan the direction decision. The schema and the minimum content
+a plan must carry (phases, build orders, boosts, checkpoints, tasks, triggers) are
+enforced by `scripts/lib/plan-rules.js`; `node scripts/validate-plans.js --only=<slug>`
+checks one plan while it is being written. Boost ids are `tech:<slug>` and
+`civic:<slug>` from `data/civ6/eurekas.json`, which lists every technology's Eureka
+and every civic's Inspiration.
+
+To check the site in a browser (Playwright and Chromium needed):
+
+```
+node leadership-focus/scripts/check-motion.mjs
+```
 
 To fetch or refresh imagery (needs network access and ImageMagick):
 

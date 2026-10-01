@@ -1,0 +1,1390 @@
+{
+  "leader": "Harald Hardrada",
+  "civilization": "Norway",
+  "generated": "2026-10-01",
+  "slug": "harald-hardrada",
+  "shape": "Monitor",
+  "secondary_shape": null,
+  "version": 1,
+  "updated": "2026-10-01",
+  "assumptions": {
+    "ruleset": "Gathering Storm with every expansion and the Leader Pass",
+    "speed": "Standard",
+    "difficulty": "Emperor",
+    "map": "Continents or Small Continents, standard size, 8 civilizations",
+    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. Harald's base persona is planned here, not the Varangian persona."
+  },
+  "verdict": {
+    "victory": "Domination",
+    "secondary": "Religion",
+    "confidence": "medium",
+    "one_line": "Raid for Gold and Faith until the coasts run dry, then turn the fleet and the Berserkers on the coastal cities you have already scouted. If the map has no reachable coast, you are a Faith civ with a good Temple.",
+    "why": "Thunderbolt of the North makes every rival coastal tile a one-time deposit a Longship can collect, and Knarr lets the fleet reach a second continent before anyone else can. That is income, not territory, and the pillage economy dies the moment Walls and Renaissance ships arrive, so the plan treats raiding as the financing of a Medieval coastal conquest rather than as the strategy. The Stave Church and Dance of the Aurora give a cheap religion that keeps paying when the raiding stops, which is why Religion is the fallback rather than Science or Culture."
+  },
+  "map_check": {
+    "must_have": [
+      "A coastal capital, or coast within one Settler move of the start.",
+      "At least one rival or city-state coastline within roughly 25 tiles of water travel by turn 40."
+    ],
+    "prefer": [
+      "Woods near the capital for Stave Church Faith and Longship Production.",
+      "Tundra coast, so Dance of the Aurora turns a cold start into a Holy Site engine.",
+      "Reef or coastal resources for Celestial Navigation and God of the Sea."
+    ],
+    "no_go": "A landlocked start, or an inland sea with no rival coast on it. The leader ability and the Longship are off for the whole game and nothing in the kit replaces them.",
+    "fallback": "Move the Settler up to two turns toward coast. If there is still no coast, play Norway as a Faith civilization: Holy Sites with Stave Churches, Dance of the Aurora or God of the Forge, and a Religion victory; keep one Encampment for Berserkers in case a neighbour is weak."
+  },
+  "kit_levers": [
+    {
+      "source": "leader_ability",
+      "name": "Thunderbolt of the North",
+      "buys": "Naval melee units can pillage coastal tiles and districts and raid directly from the water, with a Production bonus toward building them.",
+      "exploit": "Every rival coastal improvement and district within reach of the fleet is Gold, Faith, Science or Culture once. The plan routes the fleet along un-pillaged coast, never pays to re-raid a stripped coast, and times each raid so the Raid policy card is slotted."
+    },
+    {
+      "source": "civ_ability",
+      "name": "Knarr",
+      "buys": "Ocean crossing at Shipbuilding, no Movement cost to embark or disembark, and naval melee units heal in neutral territory.",
+      "exploit": "The fleet never has to come home to heal and can cross to the second continent two eras before anyone else. That is where the un-pillaged coast is after the first continent is stripped, and where the Discover a second continent Inspiration comes from."
+    },
+    {
+      "source": "unique_unit",
+      "name": "Viking Longship",
+      "buys": "A cheaper, stronger Galley that heals anywhere at sea and pillages cheaply.",
+      "exploit": "Two Longships are the opening, not an afterthought: they clear coastal camps for Bronze Working and Military Tradition, trigger the Shipbuilding Eureka by existing, and are the raiding economy from turn 25 to the Medieval era."
+    },
+    {
+      "source": "unique_unit",
+      "name": "Berserker",
+      "buys": "A Man-At-Arms replacement that hits harder than it defends and pillages for a single Movement point.",
+      "exploit": "The land half of the conversion phase. Four Berserkers landed beside a coastal city the Longships have already softened take it before Walls go up, and they pillage the ring of tiles on the way in."
+    },
+    {
+      "source": "unique_infrastructure",
+      "name": "Stave Church",
+      "buys": "A Temple replacement with extra Faith from Woods adjacency and Production for coastal resources.",
+      "exploit": "The off-period engine. Holy Sites beside Woods pay Faith whether or not the fleet is raiding, which is what buys the Religion fallback, Faith-purchased Apostles for Theology, and later Great Admirals."
+    },
+    {
+      "source": "agenda",
+      "name": "Last Viking King",
+      "buys": "Harald likes civilizations with strong navies and dislikes those without.",
+      "exploit": "Irrelevant to your own play, but a reminder that AI Harald on the same map will contest your coasts; treat him as the first target rather than a friend."
+    }
+  ],
+  "shape_block": {
+    "monitor": {
+      "watched_stat": "Un-pillaged coastal tiles and districts within six tiles of the fleet, counting only coasts with no Walls",
+      "check_every": "turn, from the moment the second Longship launches",
+      "bands": {
+        "green": {
+          "test": "Six or more un-pillaged improved tiles or districts in reach and no Walls on the next two cities along the coast.",
+          "response": "Keep raiding. Production at home stays on Settlers, Monuments and the first Holy Site; do not build more ships than the coast can feed."
+        },
+        "amber": {
+          "test": "Two to five un-pillaged targets in reach, or Ancient Walls on the next city along the coast.",
+          "response": "Move the fleet one coast over now, before it is empty, and queue the next Longship pair only if the new coast is confirmed. Start the Encampment in the second city so Berserkers are available when raiding ends."
+        },
+        "red": {
+          "test": "One or no un-pillaged targets in reach, or Walls on both of the next two cities.",
+          "response": "Stop raiding. Either run the take-cities trigger below against the weakest Walled city with Berserkers and a Battering Ram, or cross the ocean after Shipbuilding to a fresh coast. Disband or stop building Longships beyond four."
+        }
+      },
+      "second_watch": {
+        "stat": "Number of rival coastal cities with Ancient or Medieval Walls, and whether the next target has reached Masonry",
+        "why": "Walls end the raid economy on that coast and double the cost of the conversion phase; the plan switches from raiding to taking a city before the target builds them, not after."
+      },
+      "off_period_plan": "The domestic build that raiding never provides: a third and fourth city, a Holy Site with a Stave Church in each, Harbors for Trade Routes and Great Admiral points, and a Commercial Hub in the capital. Raid Gold pays for Builders and Settlers rather than being spent on more ships."
+    }
+  },
+  "phases": [
+    {
+      "id": "setup",
+      "name": "Setup",
+      "turns": {
+        "from": 1,
+        "to": 25
+      },
+      "era": "ancient",
+      "objective": "Settle on the coast, scout the coastline in both directions, found the pantheon, and have two Longships launched and clearing the nearest coastal camp by turn 25.",
+      "build_order": [
+        {
+          "item": "Scout",
+          "why": "Find the coastline and the first rival capital; Writing and Astrology come from it."
+        },
+        {
+          "item": "Slinger",
+          "why": "Archery Eureka on the first barbarian scout, and a defender while the ships are away."
+        },
+        {
+          "item": "Settler",
+          "why": "The second city goes on the coast toward the nearest rival."
+        },
+        {
+          "item": "Viking Longship",
+          "why": "Clears the coastal camp and starts pillaging; Production bonus applies."
+        },
+        {
+          "item": "Viking Longship",
+          "why": "Two Longships trigger the Shipbuilding Eureka and let one raid while one heals."
+        },
+        {
+          "item": "Monument",
+          "why": "Culture to reach Foreign Trade and Military Tradition on time."
+        },
+        {
+          "item": "Builder",
+          "why": "Fishing Boats for Celestial Navigation and the first Mine for The Wheel."
+        },
+        {
+          "item": "Settler",
+          "why": "Third city on a Woods coast for the Stave Church engine."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:sailing",
+          "note": "Eureka is free from the coastal capital; Longships need it."
+        },
+        {
+          "id": "tech:mining",
+          "note": "Lumber mills later and the first Mine now."
+        },
+        {
+          "id": "tech:bronze-working",
+          "note": "Eureka from the three barbarian kills the Longships make at the coastal camp; Encampment and iron reveal."
+        },
+        {
+          "id": "tech:astrology",
+          "note": "Holy Site for the Stave Church path; Eureka if the Scout finds a natural wonder."
+        },
+        {
+          "id": "tech:shipbuilding",
+          "note": "Eureka free once both Longships exist; unlocks Knarr ocean crossing."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:code-of-laws",
+          "note": "God King for the pantheon, Discipline against the camps."
+        },
+        {
+          "id": "civic:foreign-trade",
+          "note": "Maritime Industries and the first Trade Route; Inspiration if the Scout or a Longship sees a second continent."
+        },
+        {
+          "id": "civic:military-tradition",
+          "note": "The Raid card is the whole economy; Inspiration from the first camp cleared."
+        }
+      ],
+      "policies": [
+        {
+          "card": "God King",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "Faith for the pantheon by turn 20."
+        },
+        {
+          "card": "Discipline",
+          "slot": "military",
+          "from": "civic:code-of-laws",
+          "why": "Longships and the Slinger beat camp units."
+        },
+        {
+          "card": "Maritime Industries",
+          "slot": "military",
+          "from": "civic:foreign-trade",
+          "why": "Cheaper Longships on top of the leader bonus."
+        }
+      ],
+      "districts": [
+        {
+          "district": "harbor",
+          "city": "capital",
+          "note": "First district once Celestial Navigation lands; it is the Trade Route, the Great Admiral points and the Shipyard later."
+        }
+      ],
+      "pantheon": {
+        "slug": "god-of-the-sea",
+        "why": "Production from Fishing Boats feeds every ship the plan builds.",
+        "alternative": "dance-of-the-aurora"
+      },
+      "wonders": [],
+      "governors": [],
+      "city_states": [
+        {
+          "type": "Militaristic",
+          "why": "An early envoy into any Militaristic city-state met by sea buys Longship Production."
+        },
+        {
+          "slug": "auckland",
+          "why": "Production on shallow water turns every coastal city into a shipyard."
+        }
+      ],
+      "great_people": [],
+      "checkpoints": [
+        {
+          "turn": 25,
+          "test": "Two Longships afloat, the first coastal camp cleared, and a rival or city-state coast sighted?",
+          "pass": "Enter the standing loop; begin reading the watched stat every turn.",
+          "fail": "Delay the second Settler and put Production on the second Longship. If no coast has been sighted by turn 35, run the map-check fallback."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "setup-settle-coast",
+          "turn": 1,
+          "text": "Settle on the coast with at least two sea resources in range; move at most two turns to get there."
+        },
+        {
+          "id": "setup-scout-both-ways",
+          "turn": 5,
+          "text": "Send the Scout along the coastline toward the nearest rival; note every camp and every coastal city."
+        },
+        {
+          "id": "setup-pantheon",
+          "turn": 18,
+          "text": "Found God of the Sea, or Dance of the Aurora if the start is tundra."
+        },
+        {
+          "id": "setup-first-camp",
+          "turn": 22,
+          "text": "Clear the nearest coastal camp with the first Longship for Military Tradition and Bronze Working."
+        },
+        {
+          "id": "setup-second-city",
+          "turn": 25,
+          "text": "Settle the second city on the coast in the direction of the nearest rival."
+        }
+      ]
+    },
+    {
+      "id": "loop",
+      "name": "Standing loop",
+      "turns": {
+        "from": 26,
+        "to": 90
+      },
+      "era": "classical",
+      "objective": "Run the raid economy against every un-walled coast in reach while the homeland grows to four cities with Holy Sites, Stave Churches and Harbors, and found a religion before turn 90.",
+      "build_order": [
+        {
+          "item": "Holy Site",
+          "why": "In the capital and the Woods city; Faith is the off-period income."
+        },
+        {
+          "item": "Stave Church",
+          "why": "Shrine first, then the Stave Church; Divine Right Inspiration needs two."
+        },
+        {
+          "item": "Settler",
+          "why": "Fourth city; the empire has to exist for the conversion phase to defend."
+        },
+        {
+          "item": "Encampment",
+          "why": "In the city nearest the first target; Berserkers and the Military Training Inspiration."
+        },
+        {
+          "item": "Viking Longship",
+          "why": "Third and fourth ship only when the watched stat is green."
+        },
+        {
+          "item": "Trader",
+          "why": "Currency Eureka and Gold the raids cannot provide once a coast is stripped."
+        },
+        {
+          "item": "Water Mill",
+          "why": "Construction Eureka in a river city; growth for the Early Empire Inspiration."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:celestial-navigation",
+          "note": "Eureka from two Fishing Boats; Harbors and the Great Lighthouse."
+        },
+        {
+          "id": "tech:currency",
+          "note": "Eureka from the first Trade Route; Commercial Hub in the capital."
+        },
+        {
+          "id": "tech:iron-working",
+          "note": "Mine the Iron the Longships reveal; Berserkers need it."
+        },
+        {
+          "id": "tech:masonry",
+          "note": "Build a Quarry if one is available; Walls at home before the targets retaliate."
+        },
+        {
+          "id": "tech:apprenticeship",
+          "note": "Three Mines; the Production the conversion phase runs on."
+        },
+        {
+          "id": "tech:military-tactics",
+          "note": "Kill a camp unit with a Spearman; Berserkers unlock on the way to it."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:early-empire",
+          "note": "Colonization for the third and fourth Settler; Inspiration at six population."
+        },
+        {
+          "id": "civic:mysticism",
+          "note": "Free Inspiration from the pantheon; Holy Site adjacency."
+        },
+        {
+          "id": "civic:political-philosophy",
+          "note": "Oligarchy for the Longships and Berserkers; Inspiration from three city-states met by sea."
+        },
+        {
+          "id": "civic:theology",
+          "note": "Found the religion with the Great Prophet the Holy Sites buy; Inspiration on founding."
+        },
+        {
+          "id": "civic:military-training",
+          "note": "Inspiration from the Encampment; Maneuver and Agoge are not needed, but the Great General points are."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Raid",
+          "slot": "military",
+          "from": "civic:military-tradition",
+          "why": "Half again as much from every pillage; slotted whenever the fleet is raiding."
+        },
+        {
+          "card": "Colonization",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "Settlers at half the cost while the raids pay for Builders."
+        },
+        {
+          "card": "Oligarchy",
+          "slot": "wildcard",
+          "from": "civic:political-philosophy",
+          "why": "The government: Combat Strength for Longships and Berserkers and extra experience."
+        }
+      ],
+      "districts": [
+        {
+          "district": "holy-site",
+          "city": "capital and the Woods city",
+          "note": "Beside Woods for the Stave Church adjacency; the religion comes from here."
+        },
+        {
+          "district": "harbor",
+          "city": "every coastal city",
+          "note": "Cartography Eureka at two; Trade Routes and Great Admiral points."
+        },
+        {
+          "district": "encampment",
+          "city": "the city nearest the first target",
+          "note": "Berserkers, Walls and the Military Training Inspiration."
+        }
+      ],
+      "pantheon": {
+        "slug": "god-of-the-sea",
+        "why": "Already founded; this phase spends the Production it gives."
+      },
+      "wonders": [
+        {
+          "name": "Great Lighthouse",
+          "why": "Extra Movement for every naval unit and Great Admiral points; it is a raiding wonder.",
+          "skip_if": "Any rival has Celestial Navigation before you, or the capital Harbor is not up by turn 60."
+        },
+        {
+          "name": "Colossus",
+          "why": "A free Trade Route and Gold on the capital's coast.",
+          "skip_if": "Shipbuilding arrives after turn 70 or a Gold or Trade civilization is on the map."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "magnus",
+          "promotion": "Provision",
+          "city": "capital",
+          "why": "Settlers from the capital do not cost population while it also builds ships."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "wolin",
+          "why": "Great General and Great Admiral points per Encampment and Harbor building; suzerainty is worth three envoys."
+        },
+        {
+          "slug": "nan-madol",
+          "why": "Culture from coastal districts, which this empire builds anyway."
+        },
+        {
+          "type": "Religious",
+          "why": "Faith-buying Apostles for Theology and the religion's spread."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-prophet",
+          "why": "The religion must be founded before the Classical era ends; two Holy Sites with Shrines get there."
+        },
+        {
+          "class": "great-admiral",
+          "why": "Any Classical Great Admiral retires for a free promotion and Combat Strength on the raiding fleet."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 50,
+          "test": "Is the watched stat still green on at least one coast, and are three cities settled?",
+          "pass": "Continue; queue the third Longship.",
+          "fail": "Amber or red this early means the coast was poor: cross to the next landmass after Shipbuilding or bring the conversion phase forward against the nearest un-walled city."
+        },
+        {
+          "turn": 90,
+          "test": "Religion founded, four cities, an Encampment, and Iron mined?",
+          "pass": "Begin the conversion phase against the target scouted in setup.",
+          "fail": "If the religion is missing, Faith-buy nothing and finish it first; if Iron is missing, the Berserker plan becomes a Swordsman plan and the first target must be smaller."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "loop-raid-card",
+          "turn": 30,
+          "text": "Slot Raid before the first pillage and keep it slotted while the stat is green."
+        },
+        {
+          "id": "loop-first-raid",
+          "turn": 32,
+          "text": "Pillage every improved tile and district on the first rival coast, starting with Holy Sites and Campuses."
+        },
+        {
+          "id": "loop-holy-sites",
+          "turn": 45,
+          "text": "Holy Sites in the capital and the Woods city, Shrines bought with raid Gold."
+        },
+        {
+          "id": "loop-third-city",
+          "turn": 50,
+          "text": "Third city settled on a Woods coast."
+        },
+        {
+          "id": "loop-encampment",
+          "turn": 65,
+          "text": "Encampment started in the city nearest the first conquest target."
+        },
+        {
+          "id": "loop-religion",
+          "turn": 85,
+          "text": "Found the religion; take a Founder belief that pays per follower city and Monasticism or Crusade as the follower and enhancer line."
+        }
+      ]
+    },
+    {
+      "id": "convert",
+      "name": "Take the coast",
+      "turns": {
+        "from": 91,
+        "to": 160
+      },
+      "era": "medieval",
+      "objective": "Convert the raid economy into two or three captured coastal cities before Renaissance Walls and Frigates close the window, using Berserkers landed by a fleet that has already stripped the target's tiles.",
+      "build_order": [
+        {
+          "item": "Berserker",
+          "why": "Four of them; the land half of a coastal siege."
+        },
+        {
+          "item": "Battering Ram",
+          "why": "Ancient Walls fall to Berserkers with a Ram; without one the plan stalls."
+        },
+        {
+          "item": "Quadrireme",
+          "why": "One ranged ship to finish Walled cities and to trigger Naval Tradition with a kill."
+        },
+        {
+          "item": "Viking Longship",
+          "why": "Replace losses only; upgrade the survivors to Caravels later."
+        },
+        {
+          "item": "Stave Church",
+          "why": "Second and third Stave Churches for Divine Right and the religion's spread."
+        },
+        {
+          "item": "Market",
+          "why": "Two Markets for Guilds; Gold for unit upgrades."
+        },
+        {
+          "item": "Aqueduct",
+          "why": "Military Engineering Eureka and Housing in the capital."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:military-engineering",
+          "note": "Aqueduct Eureka; Siege Towers if Medieval Walls appear."
+        },
+        {
+          "id": "tech:machinery",
+          "note": "Crossbowmen behind the Berserkers."
+        },
+        {
+          "id": "tech:castles",
+          "note": "Eureka from a Tier 2 government; Walls at home for Defensive Tactics-style wars."
+        },
+        {
+          "id": "tech:cartography",
+          "note": "Eureka from two Harbors; Caravels and ocean movement for the whole fleet."
+        },
+        {
+          "id": "tech:mass-production",
+          "note": "Eureka from a Lumber Mill on Woods; Venetian Arsenal and Shipyards."
+        },
+        {
+          "id": "tech:siege-tactics",
+          "note": "Two Trebuchets if the second target already has Medieval Walls."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:feudalism",
+          "note": "Six Farms for the Inspiration; Serfdom for the Builders raid Gold buys."
+        },
+        {
+          "id": "civic:mercenaries",
+          "note": "Eight land units is the invasion force anyway; Professional Army for cheap upgrades."
+        },
+        {
+          "id": "civic:divine-right",
+          "note": "Two Stave Churches give the Inspiration; Monarchy if the empire is wide."
+        },
+        {
+          "id": "civic:naval-tradition",
+          "note": "One Quadrireme kill; Great Admiral points and the Press Gangs line later."
+        },
+        {
+          "id": "civic:guilds",
+          "note": "Two Markets; Banking Eureka."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Professional Army",
+          "slot": "military",
+          "from": "civic:mercenaries",
+          "why": "Longships to Caravels and Berserkers to Musketmen at half price."
+        },
+        {
+          "card": "Feudal Contract",
+          "slot": "military",
+          "from": "civic:feudalism",
+          "why": "Berserkers and Crossbowmen faster while the war is on."
+        },
+        {
+          "card": "Serfdom",
+          "slot": "economic",
+          "from": "civic:feudalism",
+          "why": "Builders with extra charges to repair what the war pillages at home."
+        },
+        {
+          "card": "Monarchy",
+          "slot": "wildcard",
+          "from": "civic:divine-right",
+          "why": "The government for a wide empire with Walls and captured cities."
+        }
+      ],
+      "districts": [
+        {
+          "district": "commercial-hub",
+          "city": "capital",
+          "note": "Markets for Guilds and the Gold that keeps the army upgraded."
+        },
+        {
+          "district": "aqueduct",
+          "city": "capital",
+          "note": "Military Engineering Eureka and Housing."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Venetian Arsenal",
+          "why": "Every naval unit built comes with a second one; the conversion fleet doubles.",
+          "skip_if": "Mass Production lands after turn 150, or a coastal rival has a stronger Production base."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "victor",
+          "promotion": "Garrison Commander",
+          "city": "the first captured city",
+          "why": "Loyalty and Combat Strength in the city most likely to flip or be retaken."
+        },
+        {
+          "governor": "magnus",
+          "promotion": "Black Marketeer",
+          "city": "the Encampment city",
+          "why": "Berserkers without the full Iron bill."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "valletta",
+          "why": "Faith-buy Walls and Encampment buildings in captured cities."
+        },
+        {
+          "slug": "preslav",
+          "why": "Loyalty per Encampment building and cheaper upgrades."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-admiral",
+          "why": "A Medieval Great Admiral escorts the landing and retires into Combat Strength or a free unit."
+        },
+        {
+          "class": "great-general",
+          "why": "One Great General with four Berserkers turns a Walled city into a two-turn siege."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 120,
+          "test": "First coastal city captured with its Harbor intact?",
+          "pass": "Audit Amenities and Loyalty in it, then move the fleet to the next target while the Berserkers heal.",
+          "fail": "If the first target still stands at turn 120, the window is closing: take whatever smaller coastal city is weakest or end the war and keep the raid Gold."
+        },
+        {
+          "turn": 160,
+          "test": "Two or more captured coastal cities, and the religion in six cities?",
+          "pass": "Enter the digest phase; the empire is now the asset.",
+          "fail": "One city or none: stop the war, keep the fleet for defence, and shift to the Religion fallback with the Faith the Stave Churches have banked."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "convert-target-walls",
+          "turn": 95,
+          "text": "Confirm the first target has no Medieval Walls; if it does, switch to the second-weakest coastal city."
+        },
+        {
+          "id": "convert-berserkers",
+          "turn": 105,
+          "text": "Four Berserkers and a Battering Ram staged in the Encampment city, Longships already beside the target."
+        },
+        {
+          "id": "convert-strip-first",
+          "turn": 108,
+          "text": "Pillage the target's tiles with the Longships the turn before the Berserkers land; the healing pays for the landing."
+        },
+        {
+          "id": "convert-casus-belli",
+          "turn": 110,
+          "text": "Declare with a Casus Belli where one exists; Nationalism's Inspiration comes from it later and grievances stay lower."
+        },
+        {
+          "id": "convert-first-capture",
+          "turn": 118,
+          "text": "Capture the first coastal city and keep it; raze only a size-one city that cannot hold Loyalty."
+        },
+        {
+          "id": "convert-upgrade-fleet",
+          "turn": 140,
+          "text": "Upgrade surviving Longships to Caravels under Professional Army before Frigates appear."
+        }
+      ]
+    },
+    {
+      "id": "digest",
+      "name": "Digest and choose",
+      "turns": {
+        "from": 161,
+        "to": 230
+      },
+      "era": "renaissance",
+      "objective": "Stabilize the captured cities, rebuild the domestic economy the raiding years skipped, and decide by turn 230 whether the Domination push continues with Frigates and Ironclads or the game is closed by Religion.",
+      "build_order": [
+        {
+          "item": "Monument",
+          "why": "In every captured city; Loyalty first, everything else second."
+        },
+        {
+          "item": "Granary",
+          "why": "Housing and growth in cities that were pillaged on the way in."
+        },
+        {
+          "item": "Shipyard",
+          "why": "Two Shipyards for the Steam Power Eureka and Production in coastal cities."
+        },
+        {
+          "item": "University",
+          "why": "Two for the Printing Eureka; the Science the raids never bought."
+        },
+        {
+          "item": "Frigate",
+          "why": "Only if the Domination branch is chosen; otherwise Caravels suffice for defence."
+        },
+        {
+          "item": "Workshop",
+          "why": "Two Workshops for Industrialization; Industrial Zones in the two best Production cities."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:square-rigging",
+          "note": "Frigates; Eureka from a Musketman kill if a war is still on."
+        },
+        {
+          "id": "tech:printing",
+          "note": "Two Universities; the Science catch-up."
+        },
+        {
+          "id": "tech:banking",
+          "note": "Free Eureka from Guilds; Banks for Economics."
+        },
+        {
+          "id": "tech:industrialization",
+          "note": "Two Workshops; Factories and Coal for Ironclads."
+        },
+        {
+          "id": "tech:steam-power",
+          "note": "Two Shipyards give the Eureka; Ironclads for the second conquest or coastal defence."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:exploration",
+          "note": "Two Caravels give the Inspiration; Press Gangs for naval Production."
+        },
+        {
+          "id": "civic:reformed-church",
+          "note": "Six cities following the religion; Simultaneum or Religious Orders."
+        },
+        {
+          "id": "civic:nationalism",
+          "note": "Casus Belli war gave the Inspiration; Corps for the Frigate fleet."
+        },
+        {
+          "id": "civic:colonialism",
+          "note": "Astronomy research gives the Inspiration; Grand Armee later if the war continues."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Press Gangs",
+          "slot": "military",
+          "from": "civic:exploration",
+          "why": "Naval units at double speed if the Domination branch is chosen."
+        },
+        {
+          "card": "Simultaneum",
+          "slot": "economic",
+          "from": "civic:reformed-church",
+          "why": "Faith from Holy Site buildings for the Religion branch."
+        },
+        {
+          "card": "Retainers",
+          "slot": "military",
+          "from": "civic:feudalism",
+          "why": "Amenities in the captured cities while they settle."
+        }
+      ],
+      "districts": [
+        {
+          "district": "industrial-zone",
+          "city": "the two best Production cities",
+          "note": "Workshops for Industrialization; Factories for Ironclads."
+        },
+        {
+          "district": "campus",
+          "city": "capital and the largest captured city",
+          "note": "Universities for Printing; the plan is behind in Science and this is the catch-up."
+        }
+      ],
+      "wonders": [],
+      "governors": [
+        {
+          "governor": "amani",
+          "promotion": "Emissary",
+          "city": "a captured city near a rival",
+          "why": "Loyalty pressure outward and an envoy where the fleet took a city-state's neighbour."
+        },
+        {
+          "governor": "pingala",
+          "promotion": "Researcher",
+          "city": "capital",
+          "why": "The Science the raiding years skipped."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "cardiff",
+          "why": "Power from Harbor buildings once Industrial buildings need it."
+        },
+        {
+          "slug": "yerevan",
+          "why": "Apostle promotions if the Religion branch is chosen."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-admiral",
+          "why": "Renaissance Great Admirals retire into Combat Strength or a free Frigate for the second push."
+        },
+        {
+          "class": "great-engineer",
+          "why": "Shipyard and Industrial Zone Production for the branch chosen at turn 230."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 200,
+          "test": "Every captured city at positive Loyalty and above neutral Amenities, and Science within an era of the leaders?",
+          "pass": "Continue the catch-up; start deciding the branch.",
+          "fail": "A city at negative Loyalty is the only emergency: Monument, Garrison Commander, and a Governor in place before anything else is built."
+        },
+        {
+          "turn": 230,
+          "test": "Can the fleet take the two nearest remaining capitals before Battleships, or is the religion in a majority of civilizations?",
+          "pass": "Commit: Frigates and Ironclads for Domination, or Apostles and Inquisitors for Religion.",
+          "fail": "Neither: the game is a Score game. Build for Science and Culture and stop paying naval maintenance."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "digest-loyalty-audit",
+          "turn": 165,
+          "text": "Audit Loyalty and Amenities in every captured city; Monuments and a Governor before any new military."
+        },
+        {
+          "id": "digest-shipyards",
+          "turn": 185,
+          "text": "Two Shipyards built; Steam Power Eureka collected."
+        },
+        {
+          "id": "digest-universities",
+          "turn": 195,
+          "text": "Two Universities built; Printing Eureka collected."
+        },
+        {
+          "id": "digest-branch",
+          "turn": 230,
+          "text": "Choose the branch: Domination with Frigates and Ironclads, or Religion with Apostles, and write the decision down."
+        }
+      ]
+    },
+    {
+      "id": "close",
+      "name": "Close",
+      "turns": {
+        "from": 231,
+        "to": null
+      },
+      "era": "industrial",
+      "objective": "Finish the chosen branch: coastal capitals taken by Ironclads and Battleships with Infantry landed behind them, or the religion carried to a majority of civilizations by Apostles under a naval escort.",
+      "build_order": [
+        {
+          "item": "Ironclad",
+          "why": "Domination branch: the first ship Walls cannot stop."
+        },
+        {
+          "item": "Battleship",
+          "why": "Domination branch: capitals fall to Battleships with one landed Infantry corps."
+        },
+        {
+          "item": "Apostle",
+          "why": "Religion branch: Faith-bought in the Stave Church cities with Proselytizer or Debater promotions."
+        },
+        {
+          "item": "Factory",
+          "why": "Both branches: the Production for the last units."
+        },
+        {
+          "item": "Research Lab",
+          "why": "Keep Science close enough that rivals cannot out-tech the fleet."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:steel",
+          "note": "Battleships; Eureka from an Ironclad plus a Coal Mine, both of which this branch builds."
+        },
+        {
+          "id": "tech:electricity",
+          "note": "Eureka from two Privateers; Power for Factories and Shipyards."
+        },
+        {
+          "id": "tech:military-science",
+          "note": "Knight kill if a war is on; Military Academies."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:mobilization",
+          "note": "Three Corps give the Inspiration; Grand Armee for the landing force."
+        },
+        {
+          "id": "civic:scorched-earth",
+          "note": "Two Field Cannons; Total War for the final sieges."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Grand Armee",
+          "slot": "military",
+          "from": "civic:nationalism",
+          "why": "Industrial units faster for the landing force."
+        },
+        {
+          "card": "Total War",
+          "slot": "military",
+          "from": "civic:scorched-earth",
+          "why": "Pillaging pays again, at double, for the last campaign."
+        }
+      ],
+      "districts": [],
+      "wonders": [],
+      "governors": [
+        {
+          "governor": "victor",
+          "promotion": "Embrasure",
+          "city": "the newest capture",
+          "why": "Each new capital holds while the fleet moves on."
+        }
+      ],
+      "city_states": [],
+      "great_people": [
+        {
+          "class": "great-admiral",
+          "why": "Industrial Great Admirals retire into a free Ironclad or a Combat Strength aura for the Battleship line."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 280,
+          "test": "Domination: two capitals taken since turn 230, or Religion: the religion dominant in half the civilizations?",
+          "pass": "Continue to the end; no further decisions.",
+          "fail": "Convert to Score: stop building military beyond defence and spend on Culture and Science."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "close-ironclads",
+          "turn": 245,
+          "text": "Domination branch: four Ironclads and two Infantry corps staged beside the first remaining capital."
+        },
+        {
+          "id": "close-apostles",
+          "turn": 245,
+          "text": "Religion branch: six Apostles under naval escort to the largest unconverted civilization."
+        },
+        {
+          "id": "close-review",
+          "turn": 280,
+          "text": "Review the turn 280 checkpoint and either continue or declare the game a Score game."
+        }
+      ]
+    }
+  ],
+  "boosts": [
+    {
+      "id": "tech:sailing",
+      "fit": "free",
+      "when": "setup",
+      "how": "The coastal capital triggers it on settle."
+    },
+    {
+      "id": "tech:writing",
+      "fit": "free",
+      "when": "setup",
+      "how": "The Scout meets the first civilization along the coast."
+    },
+    {
+      "id": "tech:bronze-working",
+      "fit": "cheap",
+      "when": "setup",
+      "how": "Three barbarian kills from the coastal camp the first Longship clears."
+    },
+    {
+      "id": "tech:archery",
+      "fit": "cheap",
+      "when": "setup",
+      "how": "The Slinger finishes a barbarian scout near the capital."
+    },
+    {
+      "id": "tech:astrology",
+      "fit": "cheap",
+      "when": "setup",
+      "how": "Coastal scouting finds a natural wonder more often than inland scouting does."
+    },
+    {
+      "id": "tech:wheel",
+      "fit": "cheap",
+      "when": "setup",
+      "how": "The first Builder mines a resource hill."
+    },
+    {
+      "id": "tech:shipbuilding",
+      "fit": "free",
+      "when": "setup",
+      "how": "Owning two Longships is the opening build order."
+    },
+    {
+      "id": "tech:celestial-navigation",
+      "fit": "free",
+      "when": "loop",
+      "how": "Two Fishing Boats from the first Builder."
+    },
+    {
+      "id": "tech:currency",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "The first Trader runs a route to the second city."
+    },
+    {
+      "id": "tech:iron-working",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "Mine the Iron the Berserkers need anyway."
+    },
+    {
+      "id": "tech:masonry",
+      "fit": "costly",
+      "when": "loop",
+      "how": "Only if a Quarry resource is nearby; otherwise research it unboosted."
+    },
+    {
+      "id": "tech:construction",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "A Water Mill in a river city."
+    },
+    {
+      "id": "tech:apprenticeship",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "Three Mines across the first three cities."
+    },
+    {
+      "id": "tech:military-tactics",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "One Spearman kill at a camp; Berserkers are on this line."
+    },
+    {
+      "id": "tech:horseback-riding",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:mathematics",
+      "fit": "costly",
+      "when": "loop",
+      "how": "Harbor, Holy Site and Encampment make three specialty districts by turn 80."
+    },
+    {
+      "id": "tech:engineering",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "Ancient Walls in the Encampment city before the first war."
+    },
+    {
+      "id": "tech:military-engineering",
+      "fit": "cheap",
+      "when": "convert",
+      "how": "The capital Aqueduct."
+    },
+    {
+      "id": "tech:machinery",
+      "fit": "costly",
+      "when": "convert",
+      "how": "Three Archers only if Crossbowmen are wanted; usually unboosted."
+    },
+    {
+      "id": "tech:castles",
+      "fit": "free",
+      "when": "convert",
+      "how": "Any Tier 2 government."
+    },
+    {
+      "id": "tech:stirrups",
+      "fit": "free",
+      "when": "convert",
+      "how": "Feudalism is on the civic path."
+    },
+    {
+      "id": "tech:cartography",
+      "fit": "cheap",
+      "when": "convert",
+      "how": "Two Harbors are built by the loop phase."
+    },
+    {
+      "id": "tech:mass-production",
+      "fit": "free",
+      "when": "convert",
+      "how": "One Lumber Mill on the Woods the Stave Church cities sit beside."
+    },
+    {
+      "id": "tech:siege-tactics",
+      "fit": "costly",
+      "when": "convert",
+      "how": "Two Trebuchets only if the second target has Medieval Walls."
+    },
+    {
+      "id": "tech:banking",
+      "fit": "free",
+      "when": "digest",
+      "how": "Guilds is on the civic path."
+    },
+    {
+      "id": "tech:printing",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "Two Universities in the Science catch-up."
+    },
+    {
+      "id": "tech:square-rigging",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "A Musketman kill in the ongoing war."
+    },
+    {
+      "id": "tech:gunpowder",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "An Armory in the Encampment city."
+    },
+    {
+      "id": "tech:industrialization",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "Two Workshops in the Industrial Zones."
+    },
+    {
+      "id": "tech:steam-power",
+      "fit": "free",
+      "when": "digest",
+      "how": "Two Shipyards in coastal cities that already have Harbors."
+    },
+    {
+      "id": "tech:economics",
+      "fit": "costly",
+      "when": "digest",
+      "how": "Two Banks if Gold is short."
+    },
+    {
+      "id": "tech:steel",
+      "fit": "cheap",
+      "when": "close",
+      "how": "An Ironclad plus a Coal Mine, both built on the Domination branch."
+    },
+    {
+      "id": "tech:electricity",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Privateers from the Shipyards."
+    },
+    {
+      "id": "tech:military-science",
+      "fit": "costly",
+      "when": "close",
+      "how": "A Knight kill, which this plan rarely has a Knight for."
+    },
+    {
+      "id": "civic:craftsmanship",
+      "fit": "free",
+      "when": "setup",
+      "how": "Three improved tiles from the first Builder."
+    },
+    {
+      "id": "civic:foreign-trade",
+      "fit": "cheap",
+      "when": "setup",
+      "how": "A Longship or the Scout sights a second continent; Knarr makes this early."
+    },
+    {
+      "id": "civic:military-tradition",
+      "fit": "free",
+      "when": "setup",
+      "how": "The first coastal camp cleared by a Longship."
+    },
+    {
+      "id": "civic:state-workforce",
+      "fit": "free",
+      "when": "loop",
+      "how": "The first Harbor, which is also the first district."
+    },
+    {
+      "id": "civic:early-empire",
+      "fit": "free",
+      "when": "loop",
+      "how": "Six population across the first two cities."
+    },
+    {
+      "id": "civic:mysticism",
+      "fit": "free",
+      "when": "loop",
+      "how": "Founding the pantheon in the setup phase."
+    },
+    {
+      "id": "civic:political-philosophy",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "Three city-states met by the fleet along the coast."
+    },
+    {
+      "id": "civic:games-and-recreation",
+      "fit": "free",
+      "when": "loop",
+      "how": "Researching Construction."
+    },
+    {
+      "id": "civic:theology",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "Founding the religion."
+    },
+    {
+      "id": "civic:military-training",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "The Encampment in the forward city."
+    },
+    {
+      "id": "civic:defensive-tactics",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "A raided neighbour declares war on you."
+    },
+    {
+      "id": "civic:drama-and-poetry",
+      "fit": "costly",
+      "when": "loop",
+      "how": "Only if the Great Lighthouse or Colossus is built."
+    },
+    {
+      "id": "civic:recorded-history",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:feudalism",
+      "fit": "cheap",
+      "when": "convert",
+      "how": "Six Farms across four cities."
+    },
+    {
+      "id": "civic:mercenaries",
+      "fit": "cheap",
+      "when": "convert",
+      "how": "Eight land units is the invasion force."
+    },
+    {
+      "id": "civic:divine-right",
+      "fit": "free",
+      "when": "convert",
+      "how": "Two Stave Churches in the Holy Site cities."
+    },
+    {
+      "id": "civic:naval-tradition",
+      "fit": "costly",
+      "when": "convert",
+      "how": "One Quadrireme kill; the fleet is otherwise melee."
+    },
+    {
+      "id": "civic:guilds",
+      "fit": "cheap",
+      "when": "convert",
+      "how": "Two Markets, in the capital and the Harbor city."
+    },
+    {
+      "id": "civic:civil-service",
+      "fit": "cheap",
+      "when": "convert",
+      "how": "The capital reaches ten population with the Aqueduct."
+    },
+    {
+      "id": "civic:exploration",
+      "fit": "free",
+      "when": "digest",
+      "how": "Two Caravels upgraded from Longships."
+    },
+    {
+      "id": "civic:reformed-church",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "Six cities following the religion, captured cities included."
+    },
+    {
+      "id": "civic:nationalism",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "The conversion war was declared with a Casus Belli."
+    },
+    {
+      "id": "civic:colonialism",
+      "fit": "free",
+      "when": "digest",
+      "how": "Researching Astronomy."
+    },
+    {
+      "id": "civic:humanism",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:mobilization",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Three Corps on the Domination branch."
+    },
+    {
+      "id": "civic:scorched-earth",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Field Cannons for the last sieges."
+    }
+  ],
+  "decision_triggers": [
+    {
+      "name": "Stop raiding, take the city",
+      "if": "A rival coastal city has no Walls, two or fewer land defenders, and sits within four tiles of water the Longships already control.",
+      "then": "Switch that fleet from raiding to landing: pillage its ring on the way in, land four Berserkers with a Battering Ram, and keep the city. Raiding resumes on the next coast afterwards."
+    },
+    {
+      "name": "Cross the ocean",
+      "if": "Two consecutive coasts on the home continent show Ancient Walls and the watched stat has been amber for five turns.",
+      "then": "Take the fleet to the second continent as soon as Shipbuilding is in; Knarr means the ships heal on the way. The Foreign Trade Inspiration comes with it."
+    },
+    {
+      "name": "Walls on the target",
+      "if": "The first conversion target builds Medieval Walls before the Berserkers land.",
+      "then": "Do not besiege it. Swap to the second-weakest coastal city, or bring two Trebuchets and the Siege Tactics Eureka with them."
+    },
+    {
+      "name": "Religion over conquest",
+      "if": "At turn 160 the war has produced one city or none but the religion is in six cities.",
+      "then": "Stop the war on the best terms available, keep the fleet for defence, and run the Religion branch from the Stave Church Faith."
+    }
+  ],
+  "abort": {
+    "trigger": "The watched stat has sat in the red band for fifteen turns with no un-raided coast reachable and no un-walled target within reach of the Berserkers.",
+    "actions": [
+      "Disband every Longship beyond four and stop building naval units; the maintenance is pure loss.",
+      "Rebuild as a Faith civilization around the Holy Sites and Stave Churches already standing, and target Religion.",
+      "Keep the Encampment and one defensive army; raided neighbours remember."
+    ]
+  },
+  "fail_state": "The Industrial era arrives with the pillage economy obsolete, no captured cities, a fleet that cost the Settlers and Builders the homeland never built, and four cities that are an era behind in Science. Norway is then a small Faith civ with grievances against it and nothing the kit can do about it.",
+  "common_mistakes": [
+    "Re-raiding a coast that has already been stripped. The tiles pay once; the second visit costs maintenance and ships.",
+    "Building Longships in every city because they are cheap. Four is the number the coast can feed; the fifth is a Settler not built.",
+    "Sailing past rival cities without noting whether they have Masonry. Walls on the target turn a ten-turn conquest into a lost war.",
+    "Treating raid Gold as income. It is a one-time deposit and should buy Settlers, Builders and Shrines, not unit upkeep.",
+    "Skipping the religion because the fleet is busy. The Stave Church Faith is the only part of the kit that still pays after turn 160."
+  ],
+  "sources": [
+    "Civilization VI Civilopedia, Gathering Storm ruleset (Norway, Harald Hardrada, Viking Longship, Berserker, Stave Church).",
+    "Boost objectives cross-checked against civilization6planner.com tech-tree and civics-tree pages, 2026-10-01.",
+    "Leadership Focus tags, caveats and Monitor supplement for Harald Hardrada in this repository."
+  ]
+}
