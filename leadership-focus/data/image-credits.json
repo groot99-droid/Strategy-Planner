@@ -526,5 +526,29 @@
   "description": "Battle of Isandhlwana (1879) Natal, South Africa",
   "original_width": 1200,
   "original_height": 748
+ },
+ "hero-simon-bolivar": {
+  "file": "images/heroes/simon-bolivar.jpg",
+  "caption": "Bolívar and Santander at the Congress of Cúcuta, 1821",
+  "commons_title": "File:Equestrian portrait of Simón Bolívar.jpg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Equestrian_portrait_of_Simón_Bolívar.jpg",
+  "licence": "Public domain",
+  "licence_url": "",
+  "author": "José Hilarión Ibarra (fl.1825-1854)",
+  "description": "",
+  "original_width": 1104,
+  "original_height": 1540
+ },
+ "hero-suleiman": {
+  "file": "images/heroes/suleiman.jpg",
+  "caption": "The courtyard of the Süleymaniye Mosque, Istanbul",
+  "commons_title": "File:Cour mosquee Suleymaniye Istanbul.jpg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Cour_mosquee_Suleymaniye_Istanbul.jpg",
+  "licence": "CC BY-SA 3.0",
+  "licence_url": "",
+  "author": "Myrabella",
+  "description": "La cour de la mosquée Süleymaniye à Istanbul, en Turquie.",
+  "original_width": 3301,
+  "original_height": 2840
  }
 }
