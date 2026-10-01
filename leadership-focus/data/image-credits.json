@@ -670,5 +670,17 @@
   "description": "White Cliffs of Dover",
   "original_width": 2048,
   "original_height": 1536
+ },
+ "wonder-crater-lake": {
+  "file": "images/wonders/crater-lake.jpg",
+  "caption": "Crater Lake and Wizard Island, Oregon",
+  "commons_title": "File:Crater Lake Panorama, Aug 2013.jpg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Crater_Lake_Panorama,_Aug_2013.jpg",
+  "licence": "CC BY-SA 3.0",
+  "licence_url": "",
+  "author": "Epmatsw",
+  "description": "Panorama photo of Crater Lake, Oregon, USA taken in early August 2013.",
+  "original_width": 6592,
+  "original_height": 2480
  }
 }
