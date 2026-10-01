@@ -783,6 +783,12 @@
   "orient": "landscape",
   "min_width": 1000,
   "titles": [
+   "File:Kakadu_Mamukala_DSC03562.JPG",
+   "File:Yellow_Waters_Billabong_July_2001.JPG",
+   "File:Maguk_Gorge.jpg",
+   "File:Termite_cathedral_mounds_in_a_bushfire_blackened_tropical_savanna.jpg",
+   "File:Kakadu_YellowWaters_Croc.jpg",
+   "File:Kakadu_brumbies.jpg",
    "File:Kakadu_2411.jpg",
    "File:Mamukala.jpg",
    "File:Kakadu_2431.jpg",
@@ -882,7 +888,7 @@
    "File:Grumman_TBF-1_Avengers_of_VGS-29_in_flight_over_Norfolk,_Virginia_(USA),_on_1_September_1942_(80-G-427475).jpg",
    "File:Atlantic_hurricane_tracks.jpg"
   ],
-  "caption": "The Gulf Stream through the western Atlantic, false-colour NASA image"
+  "caption": "Grumman Avengers in formation, 1942, the aircraft type lost as Flight 19 in 1945"
  },
  {
   "id": "wonder-fountain-of-youth",
@@ -1014,8 +1020,13 @@
   "orient": "landscape",
   "min_width": 1000,
   "titles": [
-   "File:Tsingy_de_Bemaraha.jpg",
-   "File:Tsingy_de_Bemaraha_National_Park,_Madagascar.jpg"
+   "File:Big_Tsingy,_Madagascar_(24082669822).jpg",
+   "File:Bemaraha_Tsingy,_Madagascar.jpg",
+   "File:Grand_Tsingy_01.JPG",
+   "File:Big_Tsingy,_Madagascar_(20915441580).jpg",
+   "File:GrandeTsingy.jpg",
+   "File:Madagascar_tsingy_Igor_Sid.jpg",
+   "File:Grand_Tsingy_03.JPG"
   ],
   "caption": "The stone forest of Tsingy de Bemaraha"
  },
@@ -1093,9 +1104,13 @@
   "orient": "landscape",
   "min_width": 1200,
   "titles": [
+   "File:Otto_Albert_Koch_Varusschlacht_1909.jpg",
+   "File:Hermann_(Arminius)_at_the_battle_of_the_Teutoburg_Forest_in_9_CE_by_Peter_Jannsen,_1873,_with_painting_creases_and_damage_removed.jpg",
+   "File:Hermannsschlacht_(1813).jpg",
+   "File:Kalkriese_Turmblick.JPG",
    "File:Ulpiano_Checa_La_invasión_de_los_bárbaros.jpg"
   ],
-  "caption": "The Invasion of the Barbarians, Ulpiano Checa, 1887"
+  "caption": "Arminius at the Battle of the Teutoburg Forest, 9 CE, painted by Peter Janssen in 1873"
  },
  {
   "id": "section-eras",

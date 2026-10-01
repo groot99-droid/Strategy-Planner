@@ -72,8 +72,8 @@
       "why": "Science from a coastal Campus"
      }
     ],
-    "image": null,
-    "imageCredit": null
+    "image": "images/wonders/bermuda-triangle.jpg",
+    "imageCredit": "wonder-bermuda-triangle"
    },
    {
     "slug": "chocolate-hills",
@@ -114,8 +114,8 @@
       "why": "A wide empire wants every productive hill"
      }
     ],
-    "image": null,
-    "imageCredit": null
+    "image": "images/wonders/chocolate-hills.jpg",
+    "imageCredit": "wonder-chocolate-hills"
    },
    {
     "slug": "cliffs-of-dover",
@@ -156,8 +156,8 @@
       "why": "Scotland wants happy, productive coastal cities"
      }
     ],
-    "image": null,
-    "imageCredit": null
+    "image": "images/wonders/cliffs-of-dover.jpg",
+    "imageCredit": "wonder-cliffs-of-dover"
    },
    {
     "slug": "crater-lake",
@@ -197,8 +197,8 @@
       "why": "A faith economy from the first turns"
      }
     ],
-    "image": null,
-    "imageCredit": null
+    "image": "images/wonders/crater-lake.jpg",
+    "imageCredit": "wonder-crater-lake"
    },
    {
     "slug": "dead-sea",
@@ -238,8 +238,8 @@
       "why": "Faith feeds Tagma and the heal supports the push"
      }
     ],
-    "image": null,
-    "imageCredit": null
+    "image": "images/wonders/dead-sea.jpg",
+    "imageCredit": "wonder-dead-sea"
    },
    {
     "slug": "delicate-arch",
@@ -279,8 +279,8 @@
       "why": "Faith to fund the Inquisition"
      }
     ],
-    "image": null,
-    "imageCredit": null
+    "image": "images/wonders/delicate-arch.jpg",
+    "imageCredit": "wonder-delicate-arch"
    },
    {
     "slug": "eye-of-the-sahara",
@@ -320,8 +320,8 @@
       "why": "Desert adjacency for a late science push"
      }
     ],
-    "image": null,
-    "imageCredit": null
+    "image": "images/wonders/eye-of-the-sahara.jpg",
+    "imageCredit": "wonder-eye-of-the-sahara"
    },
    {
     "slug": "eyjafjallajokull",
@@ -361,8 +361,8 @@
       "why": "Canada's tundra bias and farms"
      }
     ],
-    "image": null,
-    "imageCredit": null
+    "image": "images/wonders/eyjafjallajokull.jpg",
+    "imageCredit": "wonder-eyjafjallajokull"
    },
    {
     "slug": "fountain-of-youth",
@@ -402,8 +402,8 @@
       "why": "Science adjacency near the capital"
      }
     ],
-    "image": null,
-    "imageCredit": null
+    "image": "images/wonders/fountain-of-youth.jpg",
+    "imageCredit": "wonder-fountain-of-youth"
    },
    {
     "slug": "galapagos-islands",
@@ -442,8 +442,8 @@
       "why": "Australian coastal Campuses"
      }
     ],
-    "image": null,
-    "imageCredit": null
+    "image": "images/wonders/galapagos-islands.jpg",
+    "imageCredit": "wonder-galapagos-islands"
    },
    {
     "slug": "giants-causeway",
@@ -482,8 +482,8 @@
       "why": "A tireless army made stronger"
      }
     ],
-    "image": null,
-    "imageCredit": null
+    "image": "images/wonders/giants-causeway.jpg",
+    "imageCredit": "wonder-giants-causeway"
    },
    {
     "slug": "gobustan",
@@ -523,8 +523,8 @@
       "why": "Culture to fill the Queen's Bibliotheque"
      }
     ],
-    "image": null,
-    "imageCredit": null
+    "image": "images/wonders/gobustan.jpg",
+    "imageCredit": "wonder-gobustan"
    },
    {
     "slug": "great-barrier-reef",
@@ -564,8 +564,8 @@
       "why": "Food and appeal on the shore"
      }
     ],
-    "image": null,
-    "imageCredit": null
+    "image": "images/wonders/great-barrier-reef.jpg",
+    "imageCredit": "wonder-great-barrier-reef"
    },
    {
     "slug": "ha-long-bay",
@@ -606,8 +606,8 @@
       "why": "Food for Khmer growth"
      }
     ],
-    "image": null,
-    "imageCredit": null
+    "image": "images/wonders/ha-long-bay.jpg",
+    "imageCredit": "wonder-ha-long-bay"
    },
    {
     "slug": "ik-kil",
@@ -645,8 +645,8 @@
       "why": "Ludwig wants every wonder he can afford"
      }
     ],
-    "image": null,
-    "imageCredit": null
+    "image": "images/wonders/ik-kil.jpg",
+    "imageCredit": "wonder-ik-kil"
    },
    {
     "slug": "kakadu",
@@ -682,8 +682,8 @@
       "why": "Coastal growth and culture"
      }
     ],
-    "image": null,
-    "imageCredit": null
+    "image": "images/wonders/kakadu.jpg",
+    "imageCredit": "wonder-kakadu"
    },
    {
     "slug": "lake-retba",
@@ -724,8 +724,8 @@
       "why": "Nubian desert river cities"
      }
     ],
-    "image": null,
-    "imageCredit": null
+    "image": "images/wonders/lake-retba.jpg",
+    "imageCredit": "wonder-lake-retba"
    },
    {
     "slug": "lysefjord",
@@ -764,8 +764,8 @@
       "why": "A promoted navy for a trading empire"
      }
     ],
-    "image": null,
-    "imageCredit": null
+    "image": "images/wonders/lysefjord.jpg",
+    "imageCredit": "wonder-lysefjord"
    },
    {
     "slug": "mato-tipila",
@@ -805,8 +805,8 @@
       "why": "Mountain-like adjacency without the mountain"
      }
     ],
-    "image": null,
-    "imageCredit": null
+    "image": "images/wonders/mato-tipila.jpg",
+    "imageCredit": "wonder-mato-tipila"
    },
    {
     "slug": "matterhorn",
@@ -845,8 +845,8 @@
       "why": "Mapuche warriors fighting in the hills"
      }
     ],
-    "image": null,
-    "imageCredit": null
+    "image": "images/wonders/matterhorn.jpg",
+    "imageCredit": "wonder-matterhorn"
    },
    {
     "slug": "mount-everest",
@@ -885,8 +885,8 @@
       "why": "Faith with no war penalty"
      }
     ],
-    "image": null,
-    "imageCredit": null
+    "image": "images/wonders/mount-everest.jpg",
+    "imageCredit": "wonder-mount-everest"
    },
    {
     "slug": "mount-kilimanjaro",
@@ -925,8 +925,8 @@
       "why": "Growth for a Nubian core"
      }
     ],
-    "image": null,
-    "imageCredit": null
+    "image": "images/wonders/mount-kilimanjaro.jpg",
+    "imageCredit": "wonder-mount-kilimanjaro"
    },
    {
     "slug": "roraima",
@@ -966,8 +966,8 @@
       "why": "Science near the Maya capital"
      }
     ],
-    "image": null,
-    "imageCredit": null
+    "image": "images/wonders/roraima.jpg",
+    "imageCredit": "wonder-roraima"
    },
    {
     "slug": "mount-vesuvius",
@@ -1006,8 +1006,8 @@
       "why": "Terrace Farms rebuilt on enriched soil"
      }
     ],
-    "image": null,
-    "imageCredit": null
+    "image": "images/wonders/mount-vesuvius.jpg",
+    "imageCredit": "wonder-mount-vesuvius"
    },
    {
     "slug": "paititi",
@@ -1047,8 +1047,8 @@
       "why": "Inca legend, Inca gold"
      }
     ],
-    "image": null,
-    "imageCredit": null
+    "image": "images/wonders/paititi.jpg",
+    "imageCredit": "wonder-paititi"
    },
    {
     "slug": "pamukkale",
@@ -1086,8 +1086,8 @@
       "why": "A wide empire that needs contentment"
      }
     ],
-    "image": null,
-    "imageCredit": null
+    "image": "images/wonders/pamukkale.jpg",
+    "imageCredit": "wonder-pamukkale"
    },
    {
     "slug": "pantanal",
@@ -1127,8 +1127,8 @@
       "why": "Growth for the river cities"
      }
     ],
-    "image": null,
-    "imageCredit": null
+    "image": "images/wonders/pantanal.jpg",
+    "imageCredit": "wonder-pantanal"
    },
    {
     "slug": "pinnacles",
@@ -1164,8 +1164,8 @@
       "why": "Appeal for a National Park"
      }
     ],
-    "image": null,
-    "imageCredit": null
+    "image": "images/wonders/pinnacles.jpg",
+    "imageCredit": "wonder-pinnacles"
    },
    {
     "slug": "piopiotahi",
@@ -1205,8 +1205,8 @@
       "why": "Culture pressure from a pretty coast"
      }
     ],
-    "image": null,
-    "imageCredit": null
+    "image": "images/wonders/piopiotahi.jpg",
+    "imageCredit": "wonder-piopiotahi"
    },
    {
     "slug": "sahara-el-beyda",
@@ -1247,8 +1247,8 @@
       "why": "Gold to fund a faith empire"
      }
     ],
-    "image": null,
-    "imageCredit": null
+    "image": "images/wonders/sahara-el-beyda.jpg",
+    "imageCredit": "wonder-sahara-el-beyda"
    },
    {
     "slug": "torres-del-paine",
@@ -1287,8 +1287,8 @@
       "why": "Mapuche homeland; raw tile yields for an early army"
      }
     ],
-    "image": null,
-    "imageCredit": null
+    "image": "images/wonders/torres-del-paine.jpg",
+    "imageCredit": "wonder-torres-del-paine"
    },
    {
     "slug": "tsingy-de-bemaraha",
@@ -1328,8 +1328,8 @@
       "why": "Science adjacency for Eureka-driven research"
      }
     ],
-    "image": null,
-    "imageCredit": null
+    "image": "images/wonders/tsingy-de-bemaraha.jpg",
+    "imageCredit": "wonder-tsingy-de-bemaraha"
    },
    {
     "slug": "ubsunur-hollow",
@@ -1370,8 +1370,8 @@
       "why": "Scythian steppe homeland"
      }
     ],
-    "image": null,
-    "imageCredit": null
+    "image": "images/wonders/ubsunur-hollow.jpg",
+    "imageCredit": "wonder-ubsunur-hollow"
    },
    {
     "slug": "uluru",
@@ -1411,8 +1411,8 @@
       "why": "Appeal is the whole Māori plan"
      }
     ],
-    "image": null,
-    "imageCredit": null
+    "image": "images/wonders/uluru.jpg",
+    "imageCredit": "wonder-uluru"
    },
    {
     "slug": "vinland",
@@ -1448,8 +1448,8 @@
       "why": "Canadian coast"
      }
     ],
-    "image": null,
-    "imageCredit": null
+    "image": "images/wonders/vinland.jpg",
+    "imageCredit": "wonder-vinland"
    },
    {
     "slug": "yosemite",
@@ -1490,8 +1490,8 @@
       "why": "Canada's National Parks from appeal"
      }
     ],
-    "image": null,
-    "imageCredit": null
+    "image": "images/wonders/yosemite.jpg",
+    "imageCredit": "wonder-yosemite"
    },
    {
     "slug": "zhangye-danxia",
@@ -1530,8 +1530,8 @@
       "why": "Great Merchants for the treasure fleets"
      }
     ],
-    "image": null,
-    "imageCredit": null
+    "image": "images/wonders/zhangye-danxia.jpg",
+    "imageCredit": "wonder-zhangye-danxia"
    }
   ]
  },
@@ -1691,13 +1691,13 @@
     "note": "Russia settles tundra, and tundra fog is where outposts live. Scout the north before the second city, not after."
    }
   ],
-  "image": null,
+  "image": "images/sections/barbarians.jpg",
   "sources": [
    "https://gamerant.com/civilization-6-all-barbarian-clan-types/",
    "https://www.pcgamesn.com/civilization-vi/barbarian-update-patch-notes",
    "https://forums.civfanatics.com/threads/barbarian-clans-game-mode-discussion.667535/"
   ],
-  "imageCredit": null
+  "imageCredit": "section-barbarians"
  },
  "eras": {
   "overview": "The game runs through eight world eras, each entered when the world's technology or civics reach the threshold. With Rise and Fall, your own Era Score decides whether the next era is a Dark, Normal, Golden or Heroic Age for you, and each age opens a Dedication that sets the tone of the next era. A leader's power curve is a statement about which eras the kit is loud in.",
@@ -2185,13 +2185,13 @@
     }
    ]
   },
-  "image": null,
+  "image": "images/sections/eras.jpg",
   "sources": [
    "https://www.thegamer.com/civilization-6-complete-guide-to-era-score-golden-dark-heroic-age/",
    "https://www.digitaltrends.com/gaming/civ-vi-rise-and-fall-ages-guide/",
    "https://forums.civfanatics.com/threads/era-score-for-ages-question.628177/"
   ],
-  "imageCredit": null
+  "imageCredit": "section-eras"
  },
  "cityStates": {
   "overview": "City-states are the small powers of the map: one city each, no victory of their own, and a bonus for whoever earns their loyalty. You earn it with envoys. One envoy opens the type bonus, three and six deepen it, and the player with the most envoys (at least three) is suzerain, gaining the city's unique bonus, its resources, and the right to levy its army for gold. A city-state can also be conquered, which ends its bonuses for everyone and angers the rest.",
@@ -2906,12 +2906,12 @@
    "Quests are free envoys. Check them every ten turns; most are things you were about to do.",
    "A city-state that a rival conquers stops paying everyone. Gorgo, Pericles and Suleiman all want the Kumasi or Valletta on their border alive."
   ],
-  "image": null,
+  "image": "images/sections/city-states.jpg",
   "sources": [
    "https://eatyourburger.neocities.org/civ6/abilities/city-states/",
    "https://gamerant.com/civilization-6-best-city-states-to-suzerain/"
   ],
-  "imageCredit": null
+  "imageCredit": "section-city-states"
  },
  "pantheons": {
   "overview": "A pantheon is the first belief, bought with the first twenty-five Faith and held for the whole game. One per civilization, chosen from a list that empties as rivals pick. It affects only your own cities and never leaves them, which is why the right pantheon is the one that matches the ground you settled, not the one that sounds strongest.",
@@ -3319,12 +3319,12 @@
     "note": "Stone, marble and gypsum in the capital's ring make this the fastest road to a religion."
    }
   ],
-  "image": null,
+  "image": "images/sections/pantheons.jpg",
   "sources": [
    "https://www.thegamer.com/civilization-6-best-pantheons/",
    "https://gamerant.com/civilization-6-best-pantheons-ranked/"
   ],
-  "imageCredit": null
+  "imageCredit": "section-pantheons"
  },
  "terrain": {
   "overview": "Every tile on the map is a terrain, sometimes carrying a feature. Terrain sets the base yields, the movement cost and what can be built; features add to or replace them. A city's first fifteen turns are decided by the six tiles around the settler. Each leader on this roster has ground that suits the kit, and the start bias is the game telling you where it expects the kit to be played.",
@@ -3810,15 +3810,15 @@
   {
    "id": "hero-catherine-de-medici",
    "file": "images/heroes/catherine-de-medici.jpg",
-   "caption": "Chateau de Chenonceau",
-   "commons_title": "File:Château de Chenonceau - caryatides (Chenonceaux).jpg",
-   "source_url": "https://commons.wikimedia.org/wiki/File:Ch%C3%A2teau_de_Chenonceau_-_caryatides_(Chenonceaux).jpg",
-   "licence": "CC BY-SA 4.0",
-   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "author": "Gzen92",
-   "description": "Caryatids in of Chenonceau castle (Chenonceaux, Indre-et-Loire, France).",
-   "original_width": 5472,
-   "original_height": 3648
+   "caption": "The Brazilian ball for Henry II and Catherine at Rouen, 1550",
+   "commons_title": "File:Brazilian ball for Henry II in Rouen October 1 1550.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Brazilian_ball_for_Henry_II_in_Rouen_October_1_1550.jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Anonymous French painter",
+   "description": "Brazilian_ball_for_Henry_II_in_Rouen_October_1_1550",
+   "original_width": 3002,
+   "original_height": 1872
   },
   {
    "id": "hero-chandragupta",
@@ -3836,15 +3836,15 @@
   {
    "id": "hero-cleopatra",
    "file": "images/heroes/cleopatra.jpg",
-   "caption": "Dendera temple Cleopatra Caesarion relief",
-   "commons_title": "File:Dendera. Hathortempel Exterieur Reliëf op de zuidelijke façade met centraal offerscène van Caesarion en Cleopatra VII Philopator aan de enneade van Dendera, GDE001186.jpg",
-   "source_url": "https://commons.wikimedia.org/wiki/File:Dendera._Hathortempel_Exterieur_Reli%C3%ABf_op_de_zuidelijke_fa%C3%A7ade_met_centraal_offersc%C3%A8ne_van_Caesarion_en_Cleopatra_VII_Philopator_aan_de_enneade_van_Dendera,_GDE001186.jpg",
+   "caption": "The Meeting of Antony and Cleopatra, Lawrence Alma-Tadema, 1885",
+   "commons_title": "File:Sir Lawrence Alma-Tadema - The Meeting of Antony and Cleopatra.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Sir_Lawrence_Alma-Tadema_-_The_Meeting_of_Antony_and_Cleopatra.jpg",
    "licence": "Public domain",
    "licence_url": "",
-   "author": "Unknown",
-   "description": "TitleDendera. Hathortempel: Exterieur: Reliëf op de zuidelijke façade met centraal offerscène van Caesarion en Cleopatra VII Philopator aan de enneade van DenderaPublisherParis: Projections Molteni, Radiguet & MassiotSeriesEuroPhot. Archaeology. Ancient. Architecture. BuildingEuroPhot. Archaeology. ",
-   "original_width": 5840,
-   "original_height": 4972
+   "author": "Lawrence Alma-Tadema",
+   "description": "لقاء أنطوني وكليوباترا، 41 ق.م.(لوحة بالألوان الزيتية للرسام لورينس تديما)",
+   "original_width": 4000,
+   "original_height": 2838
   },
   {
    "id": "hero-cyrus",
@@ -4083,15 +4083,15 @@
   {
    "id": "hero-lady-six-sky",
    "file": "images/heroes/lady-six-sky.jpg",
-   "caption": "Stela 24 of Naranjo, Lady Six Sky standing on a captive",
-   "commons_title": "File:Lady Wak Chanil Ajaw's name glyphs.jpg",
-   "source_url": "https://commons.wikimedia.org/wiki/File:Lady_Wak_Chanil_Ajaw's_name_glyphs.jpg",
-   "licence": "CC BY-SA 4.0",
+   "caption": "The ruins of Naranjo, Petén",
+   "commons_title": "File:Sitio el naranjo 2.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Sitio_el_naranjo_2.jpg",
+   "licence": "CC BY-SA 3.0",
    "licence_url": "",
-   "author": "Arqueogato",
-   "description": "Name glyphs of the queen of Naranjo as written on Naranjo Stela 24, drawing by Arqueogato from Ian Graham. Read IX-6 CHAN-(li/LEM?)-AJAW ix wak chanil ajaw (or possibly ix wak chan lem ajaw) Lady Six Sky-like Queen (or possibly Lady Six Shimmering Sky Queen)",
-   "original_width": 1479,
-   "original_height": 813
+   "author": "Rudy Canales",
+   "description": "fotografia de las estructuras en proceso de restauración sitio arqueologico el naranjo saal Melchor de Mencos Peten, Guatemala",
+   "original_width": 3264,
+   "original_height": 2448
   },
   {
    "id": "hero-lautaro",
@@ -4157,6 +4157,19 @@
    "description": "Menelik II leading his army before the Battle of Adwa",
    "original_width": 1502,
    "original_height": 640
+  },
+  {
+   "id": "hero-montezuma",
+   "file": "images/heroes/montezuma.jpg",
+   "caption": "Moctezuma I, fifth tlatoani of Tenochtitlan, in a colonial codex",
+   "commons_title": "File:Moctezuma I, the Fifth Aztec King.png",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Moctezuma_I,_the_Fifth_Aztec_King.png",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Juan de Tovar",
+   "description": "Coronation",
+   "original_width": 1348,
+   "original_height": 1024
   },
   {
    "id": "hero-nzinga-mbande",
@@ -4287,6 +4300,708 @@
    "description": "선덕여왕릉",
    "original_width": 3648,
    "original_height": 2736
+  },
+  {
+   "id": "hero-shaka",
+   "file": "images/heroes/shaka.jpg",
+   "caption": "The Battle of Isandlwana, 1879",
+   "commons_title": "File:Isandhlwana.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Isandhlwana.jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Charles Edwin Fripp",
+   "description": "Battle of Isandhlwana (1879) Natal, South Africa",
+   "original_width": 1200,
+   "original_height": 748
+  },
+  {
+   "id": "hero-simon-bolivar",
+   "file": "images/heroes/simon-bolivar.jpg",
+   "caption": "Bolívar and Santander at the Congress of Cúcuta, 1821",
+   "commons_title": "File:Equestrian portrait of Simón Bolívar.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Equestrian_portrait_of_Simón_Bolívar.jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "José Hilarión Ibarra (fl.1825-1854)",
+   "description": "",
+   "original_width": 1104,
+   "original_height": 1540
+  },
+  {
+   "id": "hero-suleiman",
+   "file": "images/heroes/suleiman.jpg",
+   "caption": "The courtyard of the Süleymaniye Mosque, Istanbul",
+   "commons_title": "File:Cour mosquee Suleymaniye Istanbul.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Cour_mosquee_Suleymaniye_Istanbul.jpg",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "",
+   "author": "Myrabella",
+   "description": "La cour de la mosquée Süleymaniye à Istanbul, en Turquie.",
+   "original_width": 3301,
+   "original_height": 2840
+  },
+  {
+   "id": "hero-tamar",
+   "file": "images/heroes/tamar.jpg",
+   "caption": "The cave monastery of Vardzia",
+   "commons_title": "File:Vardzia Cave Monastery 05.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Vardzia_Cave_Monastery_05.jpg",
+   "licence": "CC BY 4.0",
+   "licence_url": "",
+   "author": "Bernard Gagnon",
+   "description": "Ensemble monastique de Vardzia, Géorgie",
+   "original_width": 4720,
+   "original_height": 3147
+  },
+  {
+   "id": "hero-teddy-roosevelt",
+   "file": "images/heroes/teddy-roosevelt.jpg",
+   "caption": "Colonel Roosevelt and the Rough Riders on Kettle Hill, 1898",
+   "commons_title": "File:TR San Juan Hill 1898.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:TR_San_Juan_Hill_1898.jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Unknown source",
+   "description": "Col Theodore Roosevelt stands triumphant on San Juan Hill, Cuba after his \"Rough Riders\" captured this hill and its sister Kettle Hill during the Spanish American War. Theodore Roosevelt Association and Library of Congress as well as Public Domain",
+   "original_width": 1144,
+   "original_height": 925
+  },
+  {
+   "id": "hero-tokugawa",
+   "file": "images/heroes/tokugawa.jpg",
+   "caption": "Edo Castle from a 17th-century painting",
+   "commons_title": "File:Edo P detail.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Edo_P_detail.jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Unknown author",
+   "description": "Part of the left screen of a pair of six-panel folding screens, \"View of Edo\" (Edo zu), from the 17th century. Upper middle of first panel, left screen. Central enceinte of Edo Castle, Castle Tower, Bairinzaka, Hirakawaguchi Gate.",
+   "original_width": 1470,
+   "original_height": 997
+  },
+  {
+   "id": "hero-tomyris",
+   "file": "images/heroes/tomyris.jpg",
+   "caption": "The Head of Cyrus Brought to Queen Tomyris, Peter Paul Rubens",
+   "commons_title": "File:Head of Cyrus Brought to Queen Tomyris, Peter Paul Rubens.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Head_of_Cyrus_Brought_to_Queen_Tomyris,_Peter_Paul_Rubens.jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Peter Paul Rubens",
+   "description": "",
+   "original_width": 2352,
+   "original_height": 1339
+  },
+  {
+   "id": "hero-trajan",
+   "file": "images/heroes/trajan.jpg",
+   "caption": "Trajan's Column, Rome",
+   "commons_title": "File:Remains of the Trajan's Bridge on the right bank of Danube, Serbia (27251575447).jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Remains_of_the_Trajan's_Bridge_on_the_right_bank_of_Danube,_Serbia_(27251575447).jpg",
+   "licence": "CC BY-SA 2.0",
+   "licence_url": "",
+   "author": "Carole Raddato from FRANKFURT, Germany",
+   "description": "Remains of the Trajan's Bridge on the right bank of Danube, Serbia",
+   "original_width": 4928,
+   "original_height": 3264
+  },
+  {
+   "id": "hero-victoria",
+   "file": "images/heroes/victoria.jpg",
+   "caption": "The Family of Queen Victoria, Laurits Tuxen, 1887",
+   "commons_title": "File:The Family of Queen Victoria (Tuxen).jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:The_Family_of_Queen_Victoria_(Tuxen).jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Laurits Tuxen",
+   "description": "Queen Victoria is sitting in the Green Drawing Room at Windsor Castle, surrounded by members of her family.",
+   "original_width": 1500,
+   "original_height": 1105
+  },
+  {
+   "id": "hero-wilfrid-laurier",
+   "file": "images/heroes/wilfrid-laurier.jpg",
+   "caption": "Laurier at the 1902 Colonial Conference",
+   "commons_title": "File:1902 Colonial Conference.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:1902_Colonial_Conference.jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Unknown photographer",
+   "description": "Delegates attending the 1902 Colonial Conference in London.\nFront row left-right: Sir Robert Bond (Premier of Newfoundland), Richard Seddon (Prime Minister of New Zealand), Sir Wilfrid Laurier (Prime Minister of Canada), Joseph Chamberlain (Secretary of State for the Colonies (Chairman)), Sir Edmond",
+   "original_width": 2320,
+   "original_height": 1544
+  },
+  {
+   "id": "hero-yongle",
+   "file": "images/heroes/yongle.jpg",
+   "caption": "The Forbidden City from Jingshan",
+   "commons_title": "File:景山公园 (19687188164) - panorama.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:景山公园_(19687188164)_-_panorama.jpg",
+   "licence": "CC BY-SA 2.0",
+   "licence_url": "",
+   "author": "Han Zheng",
+   "description": "View the Forbidden City from Jingshan Park",
+   "original_width": 5400,
+   "original_height": 1703
+  },
+  {
+   "id": "section-barbarians",
+   "file": "images/sections/barbarians.jpg",
+   "caption": "Arminius at the Battle of the Teutoburg Forest, 9 CE, painted by Peter Janssen in 1873",
+   "commons_title": "File:Hermann (Arminius) at the battle of the Teutoburg Forest in 9 CE by Peter Jannsen, 1873, with painting creases and damage removed.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Hermann_(Arminius)_at_the_battle_of_the_Teutoburg_Forest_in_9_CE_by_Peter_Jannsen,_1873,_with_painting_creases_and_damage_removed.jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Peter Janssen",
+   "description": "\"Der siegreich vordringende Hermann\" (\"The Victorious Advancing Hermann\"), by Peter Janssen, completed in 1873, depicting Hermann (Arminius) at the Battle of the Teutoburg Forest in 9 CE. With painting creases and damage removed.",
+   "original_width": 1519,
+   "original_height": 1224
+  },
+  {
+   "id": "section-city-states",
+   "file": "images/sections/city-states.jpg",
+   "caption": "The Bucintoro returning to the Molo, Canaletto",
+   "commons_title": "File:Canaletto - Bucentaur's return to the pier by the Palazzo Ducale - Google Art Project.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Canaletto_-_Bucentaur's_return_to_the_pier_by_the_Palazzo_Ducale_-_Google_Art_Project.jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Canaletto",
+   "description": "",
+   "original_width": 30000,
+   "original_height": 20857
+  },
+  {
+   "id": "section-credits",
+   "file": "images/sections/credits.jpg",
+   "caption": "The Library of Celsus, Ephesus",
+   "commons_title": "File:Celsus Library, Ephesus.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Celsus_Library,_Ephesus.jpg",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "",
+   "author": "Austrian Archaeological Institute",
+   "description": "Celsus Library, Ephesus",
+   "original_width": 3861,
+   "original_height": 2574
+  },
+  {
+   "id": "section-eras",
+   "file": "images/sections/eras.jpg",
+   "caption": "The Course of Empire: The Consummation of Empire, Thomas Cole, 1836",
+   "commons_title": "File:Cole Thomas The Consummation The Course of the Empire 1836.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Cole_Thomas_The_Consummation_The_Course_of_the_Empire_1836.jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Thomas Cole",
+   "description": "",
+   "original_width": 7784,
+   "original_height": 5277
+  },
+  {
+   "id": "section-pantheons",
+   "file": "images/sections/pantheons.jpg",
+   "caption": "Stonehenge",
+   "commons_title": "File:Stonehenge2007 07 30.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Stonehenge2007_07_30.jpg",
+   "licence": "CC BY 2.0",
+   "licence_url": "",
+   "author": "garethwiscombe",
+   "description": "Stonehenge",
+   "original_width": 2816,
+   "original_height": 2112
+  },
+  {
+   "id": "section-quiz",
+   "file": "images/sections/quiz.jpg",
+   "caption": "The School of Athens, Raphael",
+   "commons_title": "File:\"The School of Athens\" by Raffaello Sanzio da Urbino.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:\"The_School_of_Athens\"_by_Raffaello_Sanzio_da_Urbino.jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Raphael",
+   "description": "Italian:  Scuola di AteneThe School of Athenstitle QS:P1476,it:\"Scuola di Atene\"label QS:Lit,\"Scuola di Atene\"label QS:Les,\"La escuela de Atenas\"label QS:Lfr,\"L'École d'Athènes\"label QS:Lar,\"مدرسة أثينا\"label QS:Len,\"The School of Athens\"label QS:Lel,\"Η Σχολή των Αθηνών\"",
+   "original_width": 3820,
+   "original_height": 2964
+  },
+  {
+   "id": "wonder-bermuda-triangle",
+   "file": "images/wonders/bermuda-triangle.jpg",
+   "caption": "Grumman Avengers in formation, 1942, the aircraft type lost as Flight 19 in 1945",
+   "commons_title": "File:Grumman TBF-1 Avengers of VGS-29 in flight over Norfolk, Virginia (USA), on 1 September 1942 (80-G-427475).jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Grumman_TBF-1_Avengers_of_VGS-29_in_flight_over_Norfolk,_Virginia_(USA),_on_1_September_1942_(80-G-427475).jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Lt. Comdr. Horace Bristol, U.S. Navy photo 80-G-427475",
+   "description": "Five U.S. Navy Grumman TBF-1 Avengers from Escort Scouting Squadron 29 (VGS-29) flying in formation over Norfolk, Virginia (USA), on 1 September 1942.\nVGS-29 was established on 20 May 1942. It was redesignated Composite Squadron 29 (VC-29) on 1 March 1943 and Torpedo Squadron 29 (VT-29) on 1 Decembe",
+   "original_width": 2490,
+   "original_height": 2001
+  },
+  {
+   "id": "wonder-chocolate-hills",
+   "file": "images/wonders/chocolate-hills.jpg",
+   "caption": "The Chocolate Hills from Sagbayan Peak, Bohol",
+   "commons_title": "File:Chocolate Hills from Sagbayan Peak.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Chocolate_Hills_from_Sagbayan_Peak.jpg",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "",
+   "author": "Francisco M. Pajares, Jr.",
+   "description": "View of the Chocolate Hills from Sagbayan Peak in Bohol",
+   "original_width": 3600,
+   "original_height": 2400
+  },
+  {
+   "id": "wonder-cliffs-of-dover",
+   "file": "images/wonders/cliffs-of-dover.jpg",
+   "caption": "The White Cliffs of Dover",
+   "commons_title": "File:White Cliffs of Dover 02.JPG",
+   "source_url": "https://commons.wikimedia.org/wiki/File:White_Cliffs_of_Dover_02.JPG",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "",
+   "author": "Immanuel Giel",
+   "description": "White Cliffs of Dover",
+   "original_width": 2048,
+   "original_height": 1536
+  },
+  {
+   "id": "wonder-crater-lake",
+   "file": "images/wonders/crater-lake.jpg",
+   "caption": "Crater Lake and Wizard Island, Oregon",
+   "commons_title": "File:Crater Lake Panorama, Aug 2013.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Crater_Lake_Panorama,_Aug_2013.jpg",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "",
+   "author": "Epmatsw",
+   "description": "Panorama photo of Crater Lake, Oregon, USA taken in early August 2013.",
+   "original_width": 6592,
+   "original_height": 2480
+  },
+  {
+   "id": "wonder-dead-sea",
+   "file": "images/wonders/dead-sea.jpg",
+   "caption": "The Dead Sea at sunrise, seen from Masada",
+   "commons_title": "File:Dead Sea Sunrise.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Dead_Sea_Sunrise.jpg",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "",
+   "author": "Grauesel",
+   "description": "Sonnenaufgang am Toten Meer",
+   "original_width": 1620,
+   "original_height": 1072
+  },
+  {
+   "id": "wonder-delicate-arch",
+   "file": "images/wonders/delicate-arch.jpg",
+   "caption": "Delicate Arch at sunset, Utah",
+   "commons_title": "File:Delicate arch sunset.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Delicate_arch_sunset.jpg",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "",
+   "author": "Palacemusic",
+   "description": "Sunset at Delicate Arch (Arches National Park, Utah).",
+   "original_width": 2592,
+   "original_height": 1944
+  },
+  {
+   "id": "wonder-eye-of-the-sahara",
+   "file": "images/wonders/eye-of-the-sahara.jpg",
+   "caption": "The Richat Structure from the International Space Station",
+   "commons_title": "File:Richat Structure ISS030-E-12516.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Richat_Structure_ISS030-E-12516.jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "NASA",
+   "description": "The Richat Structure of Mauritania has captured the attention of astronauts for about as long as NASA has sent humans into orbit around Earth. This circular geologic feature is thought to be caused by an uplifted dome—geologists would classify it as a domed anticline—that has been eroded to expose t",
+   "original_width": 4288,
+   "original_height": 2848
+  },
+  {
+   "id": "wonder-eyjafjallajokull",
+   "file": "images/wonders/eyjafjallajokull.jpg",
+   "caption": "Eyjafjallajökull from Þórsmörk, Iceland",
+   "commons_title": "File:Þórsmörk Eyjafjallajökull 1 Iceland (cropped).jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Þórsmörk_Eyjafjallajökull_1_Iceland_(cropped).jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "TommyBee",
+   "description": "Aerial view of Eyjafjallajökull glacier in Iceland",
+   "original_width": 2048,
+   "original_height": 1536
+  },
+  {
+   "id": "wonder-fountain-of-youth",
+   "file": "images/wonders/fountain-of-youth.jpg",
+   "caption": "The Fountain of Youth, Lucas Cranach the Elder, 1546",
+   "commons_title": "File:Lucas Cranach - Der Jungbrunnen (Gemäldegalerie Berlin).jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Lucas_Cranach_-_Der_Jungbrunnen_(Gemäldegalerie_Berlin).jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Lucas Cranach the Elder",
+   "description": "Fountain of Youth",
+   "original_width": 10380,
+   "original_height": 6719
+  },
+  {
+   "id": "wonder-galapagos-islands",
+   "file": "images/wonders/galapagos-islands.jpg",
+   "caption": "North Seymour Island, Galápagos",
+   "commons_title": "File:North Seymour Island in the Galapagos about to land on shore photo by Alvaro Sevilla Design.JPG",
+   "source_url": "https://commons.wikimedia.org/wiki/File:North_Seymour_Island_in_the_Galapagos_about_to_land_on_shore_photo_by_Alvaro_Sevilla_Design.JPG",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "",
+   "author": "David Adam Kess",
+   "description": "Professional photographer David Adam Kess took this photograph before going ashore to North Seymour Island in the Galapagos.\nhttp://en.wikipedia.org/wiki/North_Seymour_Island",
+   "original_width": 4000,
+   "original_height": 3000
+  },
+  {
+   "id": "wonder-giants-causeway",
+   "file": "images/wonders/giants-causeway.jpg",
+   "caption": "The Giant's Causeway, County Antrim",
+   "commons_title": "File:Causeway-code poet-4.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Causeway-code_poet-4.jpg",
+   "licence": "CC BY-SA 2.0",
+   "licence_url": "",
+   "author": "code poet on flickr.",
+   "description": "Giant's Causeway, Co. Antrim, Northern Ireland.",
+   "original_width": 2048,
+   "original_height": 1536
+  },
+  {
+   "id": "wonder-gobustan",
+   "file": "images/wonders/gobustan.jpg",
+   "caption": "Rock carvings at Gobustan, Azerbaijan",
+   "commons_title": "File:Gobustan Azerbaijan 01.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Gobustan_Azerbaijan_01.jpg",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "",
+   "author": "Abu Zarr",
+   "description": "Gobustan, Azerbaijan 2008",
+   "original_width": 2816,
+   "original_height": 2112
+  },
+  {
+   "id": "wonder-great-barrier-reef",
+   "file": "images/wonders/great-barrier-reef.jpg",
+   "caption": "The Great Barrier Reef from the air",
+   "commons_title": "File:Part of Great Barrier Reef from Helicopter.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Part_of_Great_Barrier_Reef_from_Helicopter.jpg",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "",
+   "author": "",
+   "description": "",
+   "original_width": 1632,
+   "original_height": 1232
+  },
+  {
+   "id": "wonder-ha-long-bay",
+   "file": "images/wonders/ha-long-bay.jpg",
+   "caption": "Hạ Long Bay, Vietnam",
+   "commons_title": "File:Ha Long Bay in 2019.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Ha_Long_Bay_in_2019.jpg",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "",
+   "author": "Taewangkorea",
+   "description": "This image was taken by me at Titov Island of Ha Long Bay in July 2019.",
+   "original_width": 3251,
+   "original_height": 2280
+  },
+  {
+   "id": "wonder-ik-kil",
+   "file": "images/wonders/ik-kil.jpg",
+   "caption": "The cenote of Ik Kil, Yucatán",
+   "commons_title": "File:Cenote en Chichén Itzá, Yucatán, México.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Cenote_en_Chichén_Itzá,_Yucatán,_México.jpg",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "",
+   "author": "Luis Miguel Bugallo Sánchez",
+   "description": "The Ik Kil cenote, close to Chichén Itzá, México",
+   "original_width": 1666,
+   "original_height": 1250
+  },
+  {
+   "id": "wonder-kakadu",
+   "file": "images/wonders/kakadu.jpg",
+   "caption": "Kakadu wetlands, Northern Territory",
+   "commons_title": "File:Kakadu Mamukala DSC03562.JPG",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Kakadu_Mamukala_DSC03562.JPG",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "",
+   "author": "",
+   "description": "",
+   "original_width": 2272,
+   "original_height": 1704
+  },
+  {
+   "id": "wonder-lake-retba",
+   "file": "images/wonders/lake-retba.jpg",
+   "caption": "Lake Retba, the pink lake of Senegal",
+   "commons_title": "File:Lac Rose in Senegal.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Lac_Rose_in_Senegal.jpg",
+   "licence": "CC BY-SA 2.0",
+   "licence_url": "",
+   "author": "Arnault",
+   "description": "Site privilégié pour l'arrivée du Paris/Dakar, le lac rose possède 390g de sel par litre d'eau",
+   "original_width": 2048,
+   "original_height": 1536
+  },
+  {
+   "id": "wonder-lysefjord",
+   "file": "images/wonders/lysefjord.jpg",
+   "caption": "The Lysefjord, Rogaland",
+   "commons_title": "File:Panorama of Lysefjord.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Panorama_of_Lysefjord.jpg",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "",
+   "author": "Carsten Steger",
+   "description": "Panorama of Lysefjord with Preikestolen at the right of the image",
+   "original_width": 15370,
+   "original_height": 5336
+  },
+  {
+   "id": "wonder-mato-tipila",
+   "file": "images/wonders/mato-tipila.jpg",
+   "caption": "Mato Tipila, Devils Tower, Wyoming",
+   "commons_title": "File:Devils Tower CROP.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Devils_Tower_CROP.jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "",
+   "description": "",
+   "original_width": 2100,
+   "original_height": 1400
+  },
+  {
+   "id": "wonder-matterhorn",
+   "file": "images/wonders/matterhorn.jpg",
+   "caption": "The Matterhorn from the Domhütte",
+   "commons_title": "File:Matterhorn from Domhütte - 2.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Matterhorn_from_Domhütte_-_2.jpg",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "",
+   "author": "Photo: chil, on Camptocamp.org\nDerivative work:Zacharie Grossen",
+   "description": "The Matterhorn seen from the Domhütte (Valais). Elevation points from Swisstopo.",
+   "original_width": 1610,
+   "original_height": 1073
+  },
+  {
+   "id": "wonder-mount-everest",
+   "file": "images/wonders/mount-everest.jpg",
+   "caption": "Mount Everest from Gokyo Ri",
+   "commons_title": "File:Mt. Everest from Gokyo Ri November 5, 2012.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Mt._Everest_from_Gokyo_Ri_November_5,_2012.jpg",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "",
+   "author": "Rdevany",
+   "description": "Digital photograph of Mount Everest taken at an elevation of 5,300 meter from Gokyo Ri, Khumbu, Nepal",
+   "original_width": 3157,
+   "original_height": 2104
+  },
+  {
+   "id": "wonder-mount-kilimanjaro",
+   "file": "images/wonders/mount-kilimanjaro.jpg",
+   "caption": "Kilimanjaro from Amboseli",
+   "commons_title": "File:Kilimanjaro from Amboseli.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Kilimanjaro_from_Amboseli.jpg",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "",
+   "author": "Sergey Pesterev",
+   "description": "View of Kilimanjaro from Amboseli National Park, Kenya.",
+   "original_width": 3043,
+   "original_height": 2036
+  },
+  {
+   "id": "wonder-mount-vesuvius",
+   "file": "images/wonders/mount-vesuvius.jpg",
+   "caption": "Vesuvius over Naples from Castel Sant'Elmo",
+   "commons_title": "File:Naples from the Castello Sant Elmo with Abbazia San Martino the port and the Vesuv.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Naples_from_the_Castello_Sant_Elmo_with_Abbazia_San_Martino_the_port_and_the_Vesuv.jpg",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "",
+   "author": "This Photo was taken by Wolfgang Moroder.  \n\nFeel free to use my photos, but please mention me as the author and send me a  message. \n\n\n\nThis image is not in th",
+   "description": "Vista del golfo di Napoli dal Castello Sant Elmo e con la  Certosa di San Martino in primo piano.",
+   "original_width": 7360,
+   "original_height": 4912
+  },
+  {
+   "id": "wonder-paititi",
+   "file": "images/wonders/paititi.jpg",
+   "caption": "The Manu river in the Peruvian cloud forest, where legend places Paititi",
+   "commons_title": "File:Manu riverbank.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Manu_riverbank.jpg",
+   "licence": "CC BY-SA 2.5",
+   "licence_url": "",
+   "author": "As578",
+   "description": "View of riverbank in Manu National Park, Madre de Dios, Peru",
+   "original_width": 1500,
+   "original_height": 1024
+  },
+  {
+   "id": "wonder-pamukkale",
+   "file": "images/wonders/pamukkale.jpg",
+   "caption": "The travertine terraces of Pamukkale",
+   "commons_title": "File:PamukkaleView.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:PamukkaleView.jpg",
+   "licence": "CC BY-SA 2.0",
+   "licence_url": "",
+   "author": "Casal Partiu",
+   "description": "Panoramic view of Pamukkale",
+   "original_width": 2048,
+   "original_height": 683
+  },
+  {
+   "id": "wonder-pantanal",
+   "file": "images/wonders/pantanal.jpg",
+   "caption": "The Pantanal, Mato Grosso",
+   "commons_title": "File:Pantanal, Mato Grosso, Brasil.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Pantanal,_Mato_Grosso,_Brasil.jpg",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "",
+   "author": "Filipefrazao",
+   "description": "Vista aérea do Pantanal",
+   "original_width": 4417,
+   "original_height": 2950
+  },
+  {
+   "id": "wonder-pinnacles",
+   "file": "images/wonders/pinnacles.jpg",
+   "caption": "The Pinnacles, Nambung National Park",
+   "commons_title": "File:Pinnacles pano 2005-08-26.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Pinnacles_pano_2005-08-26.jpg",
+   "licence": "CC BY-SA 2.5",
+   "licence_url": "",
+   "author": "No machine-readable author provided. Neilcreek~commonswiki assumed (based on copyright claims).",
+   "description": "Partial panorama of the Pinnacles in the Pinnacles Desert \n\ntaken by myself (Neil Creek). http://neilcreek.com\nCapture date: 26th August 2005.",
+   "original_width": 1000,
+   "original_height": 500
+  },
+  {
+   "id": "wonder-piopiotahi",
+   "file": "images/wonders/piopiotahi.jpg",
+   "caption": "Piopiotahi, Milford Sound",
+   "commons_title": "File:Milford Sound (New Zealand).JPG",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Milford_Sound_(New_Zealand).JPG",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "",
+   "author": "Maros M r a z (Maros)",
+   "description": "Mitre Peak, Milford Sound, New Zealand",
+   "original_width": 4878,
+   "original_height": 1766
+  },
+  {
+   "id": "wonder-roraima",
+   "file": "images/wonders/roraima.jpg",
+   "caption": "Mount Roraima",
+   "commons_title": "File:Panorámica del Tepuy Roraima.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Panorámica_del_Tepuy_Roraima.jpg",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "",
+   "author": "Carlos Santos Colorado",
+   "description": "Roraima. Bolívar, Venezuela.",
+   "original_width": 2439,
+   "original_height": 1230
+  },
+  {
+   "id": "wonder-sahara-el-beyda",
+   "file": "images/wonders/sahara-el-beyda.jpg",
+   "caption": "The White Desert near Farafra",
+   "commons_title": "File:White Desert, Egypt.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:White_Desert,_Egypt.jpg",
+   "licence": "CC BY 4.0",
+   "licence_url": "",
+   "author": "Vyacheslav Argenberg",
+   "description": "The bizarre rock formations, some rocks look like animals, mushrooms, trees, and some have totally ethereal shapes. White Desert is a site of cliffs, dunes and large white chalk rock formations, created through erosion by wind and sand. White Desert, part of Saharan Libyan Desert, some 30 km to the ",
+   "original_width": 3072,
+   "original_height": 2048
+  },
+  {
+   "id": "wonder-torres-del-paine",
+   "file": "images/wonders/torres-del-paine.jpg",
+   "caption": "Torres del Paine and the Cuernos del Paine",
+   "commons_title": "File:Cuernos del Paine in Torres del Paine National Park.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Cuernos_del_Paine_in_Torres_del_Paine_National_Park.jpg",
+   "licence": "CC BY-SA 2.0",
+   "licence_url": "",
+   "author": "Pedro Szekely from Los Angeles, USA",
+   "description": "View Cuernos del Paine from lake Pehoé",
+   "original_width": 5184,
+   "original_height": 3888
+  },
+  {
+   "id": "wonder-tsingy-de-bemaraha",
+   "file": "images/wonders/tsingy-de-bemaraha.jpg",
+   "caption": "The stone forest of Tsingy de Bemaraha",
+   "commons_title": "File:Big Tsingy, Madagascar (24082669822).jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Big_Tsingy,_Madagascar_(24082669822).jpg",
+   "licence": "CC BY-SA 2.0",
+   "licence_url": "",
+   "author": "Rod Waddington",
+   "description": "Karst limestone",
+   "original_width": 4123,
+   "original_height": 2843
+  },
+  {
+   "id": "wonder-ubsunur-hollow",
+   "file": "images/wonders/ubsunur-hollow.jpg",
+   "caption": "Uvs Nuur, the Ubsunur Hollow",
+   "commons_title": "File:Uvs núr.JPG",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Uvs_núr.JPG",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "",
+   "author": "Original uploader was Jan Sysel at cs.wikipedia",
+   "description": "mongolské jezero Uvs núr",
+   "original_width": 1600,
+   "original_height": 1200
+  },
+  {
+   "id": "wonder-uluru",
+   "file": "images/wonders/uluru.jpg",
+   "caption": "Uluru",
+   "commons_title": "File:ULURU.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:ULURU.jpg",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "",
+   "author": "Ek2030372672",
+   "description": "Uluru/Ayers rock",
+   "original_width": 2048,
+   "original_height": 1536
+  },
+  {
+   "id": "wonder-vinland",
+   "file": "images/wonders/vinland.jpg",
+   "caption": "Reconstructed Norse buildings at L'Anse aux Meadows",
+   "commons_title": "File:Authentic Viking recreation.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Authentic_Viking_recreation.jpg",
+   "licence": "CC BY 2.0",
+   "licence_url": "",
+   "author": "Dylan Kereluk from White Rock, Canada",
+   "description": "Authentic Viking recreation, Newfoundland, CanadaJuly 17 - 30, 2003",
+   "original_width": 2272,
+   "original_height": 1704
+  },
+  {
+   "id": "wonder-yosemite",
+   "file": "images/wonders/yosemite.jpg",
+   "caption": "Yosemite Valley from Tunnel View",
+   "commons_title": "File:Tunnel View, Yosemite Valley, Yosemite NP - Diliff.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Tunnel_View,_Yosemite_Valley,_Yosemite_NP_-_Diliff.jpg",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "",
+   "author": "Diliff",
+   "description": "View of the valley of Yosemite (from Tunnel View) in the Yosemite National Park, California, USA",
+   "original_width": 6000,
+   "original_height": 3916
+  },
+  {
+   "id": "wonder-zhangye-danxia",
+   "file": "images/wonders/zhangye-danxia.jpg",
+   "caption": "The coloured strata of Zhangye Danxia",
+   "commons_title": "File:Colourful mountains of the Zhangye National Geopark.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Colourful_mountains_of_the_Zhangye_National_Geopark.jpg",
+   "licence": "CC BY-SA 2.0",
+   "licence_url": "",
+   "author": "Terry Wu",
+   "description": "DSC02868",
+   "original_width": 6000,
+   "original_height": 4000
   }
  ],
  "terrainTiles": {
