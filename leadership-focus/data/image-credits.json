@@ -646,5 +646,29 @@
   "description": "View the Forbidden City from Jingshan Park",
   "original_width": 5400,
   "original_height": 1703
+ },
+ "wonder-chocolate-hills": {
+  "file": "images/wonders/chocolate-hills.jpg",
+  "caption": "The Chocolate Hills from Sagbayan Peak, Bohol",
+  "commons_title": "File:Chocolate Hills from Sagbayan Peak.jpg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Chocolate_Hills_from_Sagbayan_Peak.jpg",
+  "licence": "CC BY-SA 4.0",
+  "licence_url": "",
+  "author": "Francisco M. Pajares, Jr.",
+  "description": "View of the Chocolate Hills from Sagbayan Peak in Bohol",
+  "original_width": 3600,
+  "original_height": 2400
+ },
+ "wonder-cliffs-of-dover": {
+  "file": "images/wonders/cliffs-of-dover.jpg",
+  "caption": "The White Cliffs of Dover",
+  "commons_title": "File:White Cliffs of Dover 02.JPG",
+  "source_url": "https://commons.wikimedia.org/wiki/File:White_Cliffs_of_Dover_02.JPG",
+  "licence": "CC BY-SA 3.0",
+  "licence_url": "",
+  "author": "Immanuel Giel",
+  "description": "White Cliffs of Dover",
+  "original_width": 2048,
+  "original_height": 1536
  }
 }
