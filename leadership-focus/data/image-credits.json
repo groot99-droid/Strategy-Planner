@@ -682,5 +682,29 @@
   "description": "Panorama photo of Crater Lake, Oregon, USA taken in early August 2013.",
   "original_width": 6592,
   "original_height": 2480
+ },
+ "wonder-dead-sea": {
+  "file": "images/wonders/dead-sea.jpg",
+  "caption": "The Dead Sea at sunrise, seen from Masada",
+  "commons_title": "File:Dead Sea Sunrise.jpg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Dead_Sea_Sunrise.jpg",
+  "licence": "CC BY-SA 3.0",
+  "licence_url": "",
+  "author": "Grauesel",
+  "description": "Sonnenaufgang am Toten Meer",
+  "original_width": 1620,
+  "original_height": 1072
+ },
+ "wonder-delicate-arch": {
+  "file": "images/wonders/delicate-arch.jpg",
+  "caption": "Delicate Arch at sunset, Utah",
+  "commons_title": "File:Delicate arch sunset.jpg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Delicate_arch_sunset.jpg",
+  "licence": "CC BY-SA 3.0",
+  "licence_url": "",
+  "author": "Palacemusic",
+  "description": "Sunset at Delicate Arch (Arches National Park, Utah).",
+  "original_width": 2592,
+  "original_height": 1944
  }
 }
