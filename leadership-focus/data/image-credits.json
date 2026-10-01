@@ -622,5 +622,29 @@
   "description": "Queen Victoria is sitting in the Green Drawing Room at Windsor Castle, surrounded by members of her family.",
   "original_width": 1500,
   "original_height": 1105
+ },
+ "hero-wilfrid-laurier": {
+  "file": "images/heroes/wilfrid-laurier.jpg",
+  "caption": "Laurier at the 1902 Colonial Conference",
+  "commons_title": "File:1902 Colonial Conference.jpg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:1902_Colonial_Conference.jpg",
+  "licence": "Public domain",
+  "licence_url": "",
+  "author": "Unknown photographer",
+  "description": "Delegates attending the 1902 Colonial Conference in London.\nFront row left-right: Sir Robert Bond (Premier of Newfoundland), Richard Seddon (Prime Minister of New Zealand), Sir Wilfrid Laurier (Prime Minister of Canada), Joseph Chamberlain (Secretary of State for the Colonies (Chairman)), Sir Edmond",
+  "original_width": 2320,
+  "original_height": 1544
+ },
+ "hero-yongle": {
+  "file": "images/heroes/yongle.jpg",
+  "caption": "The Forbidden City from Jingshan",
+  "commons_title": "File:景山公园 (19687188164) - panorama.jpg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:景山公园_(19687188164)_-_panorama.jpg",
+  "licence": "CC BY-SA 2.0",
+  "licence_url": "",
+  "author": "Han Zheng",
+  "description": "View the Forbidden City from Jingshan Park",
+  "original_width": 5400,
+  "original_height": 1703
  }
 }
