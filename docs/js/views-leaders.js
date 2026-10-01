@@ -19,14 +19,14 @@ export function renderLanding(ctx) {
     ...featuredLeaders.slice(1, 4).map(l => ({ image: l.hero, catKey: l.categoryKey, era: l.era, kicker: `<span class="tag">${esc(CATEGORY_LABELS[l.categoryKey])}</span><span>${esc(l.civilization)} · ${esc(l.era)}</span>`, title: l.name,
       sub: esc(l.history ? l.history.legacy : l.note), meta: [`<span class="pill">${esc(l.curve)} curve</span>`, `<span class="pill">${esc(l.conversion)}</span>`, l.history ? `<span class="pill">${esc(l.history.dates.display)}</span>` : ""],
       actions: [{ href: `#/leader/${l.slug}`, label: "Read the guide", primary: true }], credit: creditLine(ctx, l.heroCredit) })),
-    ...featuredWonders.slice(0, 2).map(w => ({ image: w.image, kicker: `<span class="tag" style="--cat:#A7F3D0">Natural wonder</span><span>${esc(w.real_world.country)}</span>`, title: w.name, sub: esc(w.effect),
+    ...featuredWonders.slice(0, 2).map(w => ({ image: w.image, kicker: `<span class="tag" style="--cat:var(--cat-wonder)">Natural wonder</span><span>${esc(w.real_world.country)}</span>`, title: w.name, sub: esc(w.effect),
       actions: [{ href: `#/wonder/${w.slug}`, label: "See the wonder", primary: true }, { href: "#/wonders", label: "All 37 wonders" }], credit: creditLine(ctx, w.imageCredit) })),
   ];
   const strip = `<section class="strip" aria-label="The three measures"><div class="strip__inner">
-    <div class="strip__item"><h3>${icon("compass", "icon icon--sm")} Focus</h3><p>What the kit is for: Military, Production, Science, Culture, Faith or Gold.</p></div>
-    <div class="strip__item"><h3>${icon("mountain", "icon icon--sm")} Power curve</h3><p>When the leader is loudest: Spike, Ramp, Bloom or Flat.</p></div>
-    <div class="strip__item"><h3>${icon("shield", "icon icon--sm")} Conversion</h3><p>Whether the advantage keeps: Permanent, Conditional or Expiring.</p></div>
-    <div class="strip__item"><h3>${icon("book", "icon icon--sm")} History</h3><p>Era, country, dates and temperament for every leader, from the record.</p></div>
+    <div class="strip__item"><h2>${icon("compass", "icon icon--sm")} Focus</h2><p>What the kit is for: Military, Production, Science, Culture, Faith or Gold.</p></div>
+    <div class="strip__item"><h2>${icon("mountain", "icon icon--sm")} Power curve</h2><p>When the leader is loudest: Spike, Ramp, Bloom or Flat.</p></div>
+    <div class="strip__item"><h2>${icon("shield", "icon icon--sm")} Conversion</h2><p>Whether the advantage keeps: Permanent, Conditional or Expiring.</p></div>
+    <div class="strip__item"><h2>${icon("book", "icon icon--sm")} History</h2><p>Era, country, dates and temperament for every leader, from the record.</p></div>
   </div></section>`;
   const catRows = CATEGORY_ORDER.map(k => {
     const ls = leaders.filter(l => l.categoryKey === k);
@@ -48,7 +48,7 @@ export function renderLanding(ctx) {
     linkCard({ href: "#/pantheons", image: codex.pantheons.image, kicker: "Reference", title: "Pantheons", sub: "25 beliefs and the ground they want", wide: true }),
     linkCard({ href: "#/quiz", image: null, kicker: "Five questions", title: "Find my leader", sub: "Scored on focus, curve, conversion and shape", wide: true }),
   ] });
-  const cta = `<section class="section"><div class="wrap" style="text-align:center"><div class="section__kicker">Five questions</div><h2 class="section__title">Which of the fifty-four is yours?</h2><p class="section__lede" style="margin:0 auto var(--space-lg)">Answer honestly about how you actually play. Three matches come back with the reasoning shown.</p><a class="btn btn--primary btn--lg" href="#/quiz">Take the quiz</a></div></section>`;
+  const cta = `<section class="section"><div class="wrap" style="text-align:center"><div class="section__kicker">Five questions</div><h2 class="section__title">Which of the fifty-four is yours?</h2><p class="section__lede" style="margin:0 auto var(--space-lg)">Answer honestly about how you actually play. Three matches come back with the reasoning shown.</p><a class="btn btn--lg" href="#/quiz">Take the quiz</a></div></section>`;
   return { html: heroHtml(slides) + strip + catRows + wonderRow + eraRows + terrainRow + csRow + pantheonRow + refRow + cta, title: "Leadership Focus — Civilization VI Strategy Codex" };
 }
 
@@ -63,7 +63,7 @@ export function renderLeaders(ctx, query) {
     <div><span class="field__label">Focus</span><div class="chip-row">${chips("focus", CATEGORY_ORDER, v => CATEGORY_LABELS[v])}</div></div></div>
     <div class="toolbar__row"><div><span class="field__label">Power curve</span><div class="chip-row">${chips("curve", CURVE_ORDER)}</div></div><div><span class="field__label">Conversion</span><div class="chip-row">${chips("conversion", CONVERSION_ORDER)}</div></div></div>
     <div class="toolbar__row"><div><span class="field__label">Era</span><div class="chip-row">${chips("era", ERA_ORDER)}</div></div><div><span class="field__label">Region</span><div class="chip-row">${chips("region", regions)}</div></div></div>
-    <div class="toolbar__meta"><span id="resultCount" aria-live="polite"></span><button class="btn btn--sm" type="button" id="clearFilters">Clear all</button></div></div>`;
+    <div class="toolbar__meta"><span id="resultCount" role="status"></span><button class="btn btn--sm" type="button" id="clearFilters">Clear all</button></div></div>`;
   const html = `<section class="hero hero--short"><div class="hero__media"><div class="hero__slide is-active hero__slide--fallback"></div></div><div class="hero__scrim"></div><div class="hero__content"><div class="hero__inner"><div class="hero__kicker"><span>The codex</span></div><h1 class="hero__title hero__title--page">Fifty-four leaders</h1><p class="hero__sub">Filed by focus, curve and conversion, and now by era and region. Open any of them for the history, the kit, the ground, and the guide.</p></div></div></section>
     <section class="section section--tight"><div class="wrap">${toolbar}<div id="leaderSections"></div><p class="empty-state" id="emptyState" hidden>No leaders match those filters.</p></div></section>`;
   const init = (root) => {
@@ -151,7 +151,7 @@ export function renderLeader(ctx, slug) {
   const barb = a ? `<section class="section" id="barbarians" data-category-key="${esc(l.categoryKey)}"><div class="wrap">${sectionHead("The map's own army", "Barbarians", "")}<div class="two-col"><div class="panel panel--cat"><div class="panel__kicker">Stance for ${esc(l.name)}</div><p>${escKw(a.barbarianStance)}</p>${barbNote ? `<p><b>Note.</b> ${escKw(barbNote.note)}</p>` : ""}</div><div class="panel"><div class="panel__kicker">${esc(l.curve)} curve rule</div><p>${escKw(codex.barbarians.strategy_by_curve[l.curve] || "")}</p><a class="btn btn--sm" href="#/barbarians">Barbarians and clans ${icon("arrow", "icon icon--sm")}</a></div></div></div></section>` : "";
   const secondary = l.secondary ? `<details class="secondary-note"><summary>Alt-shape overlay: ${esc(l.secondary.secondary_shape)}</summary><div class="secondary-note__body">${l.secondary.reason ? `<p>${escKw(l.secondary.reason)}</p>` : ""}${l.secondary.rule ? `<p>${escKw(l.secondary.rule)}</p>` : ""}${l.secondary.secondary_structure ? `<div class="timeline">${l.secondary.secondary_structure.map(phase).join("")}</div>` : ""}</div></details>` : "";
   const guide = `<section class="section" id="guide" data-category-key="${esc(l.categoryKey)}"><div class="wrap">${sectionHead("Leadership Focus", "The guide", "")}${curvePanel(l.curve, l.categoryKey)}
-    ${tmpl.principle ? `<div class="principle"><span class="principle__glyph" aria-hidden="true">❝</span><p>${escKw(tmpl.principle)}</p></div>` : ""}
+    ${tmpl.principle ? `<div class="principle"><span class="principle__glyph" aria-hidden="true">${icon("quote")}</span><p>${escKw(tmpl.principle)}</p></div>` : ""}
     ${tmpl.structure ? `<div class="timeline">${tmpl.structure.map(phase).join("")}</div>` : ""}${secondary}
     ${tmpl.abort_branch ? `<div class="callout callout--warn"><p class="callout__title">${icon("warn", "icon icon--sm")} Abort branch</p><p><b>Trigger:</b> ${escKw(tmpl.abort_branch.trigger)}</p>${tmpl.abort_branch.actions ? `<ul>${tmpl.abort_branch.actions.map(s => `<li>${escKw(s)}</li>`).join("")}</ul>` : ""}</div>` : ""}
     ${tmpl.fail_state ? `<div class="callout callout--danger"><p class="callout__title">${icon("x", "icon icon--sm")} Fail state</p><p>${escKw(tmpl.fail_state)}</p></div>` : ""}

@@ -37,6 +37,8 @@ const pantheons = read(path.join(DATA, 'civ6', 'pantheons.json'));
 const terrain = read(path.join(DATA, 'civ6', 'terrain.json'));
 const creditsPath = path.join(DATA, 'image-credits.json');
 const credits = fs.existsSync(creditsPath) ? read(creditsPath) : {};
+const undouble = s => { if (!s) return s; const h = s.length / 2; return s.length % 2 === 0 && s.slice(0, h) === s.slice(h) ? s.slice(0, h) : s; };
+for (const c of Object.values(credits)) c.author = undouble(String(c.author || '').trim());
 
 const CATEGORY = {
   'Military, Movement & Conquest': 'military',

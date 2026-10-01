@@ -14,7 +14,7 @@ import xml.etree.ElementTree as ET
 UA = "LeadershipFocusSiteBot/0.2 (https://github.com/groot99-droid/Strategy-Planner)"
 OK_LICENCE = re.compile(r"^(Public domain|CC0|PDM|CC BY(-SA)? \d(\.\d)?|CC-BY(-SA)?-\d(\.\d)?|CC BY-SA|CC BY|Attribution)", re.I)
 
-def get(url, retries=4):
+def get(url, retries=10):
     for attempt in range(retries):
         req = urllib.request.Request(url, headers={"User-Agent": UA})
         try:
@@ -22,7 +22,8 @@ def get(url, retries=4):
                 return r.read()
         except urllib.error.HTTPError as e:
             if e.code in (429, 503) and attempt < retries - 1:
-                time.sleep(20 * (attempt + 1)); continue
+                wait = 90 if attempt < 3 else 180
+                print('  429, waiting', wait, 's', flush=True); time.sleep(wait); continue
             raise
         except Exception:
             if attempt < retries - 1: time.sleep(5); continue
@@ -94,7 +95,7 @@ def main():
             print("OK  ", entry["id"], "<-", chosen["name"], "|", chosen["licence"], f"{chosen['width']}x{chosen['height']}", flush=True)
         except Exception as e:
             failures.append((entry["id"], repr(e)[:160])); print("FAIL", entry["id"], repr(e)[:160], flush=True)
-        time.sleep(1.2)
+        time.sleep(8)
     if failures:
         print("\nFailures:", len(failures)); [print(" ", *f) for f in failures]
     return 1 if failures else 0

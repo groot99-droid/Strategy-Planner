@@ -7,7 +7,14 @@ import { renderQuiz } from "./quiz.js";
 import { initSearch } from "./search.js";
 
 const app = document.getElementById("app");
+const nav = document.getElementById("siteNav"); const navToggle = document.getElementById("navToggle");
+const reduced = window.matchMedia("(prefers-reduced-motion: reduce)");
 let ctx = null; let cleanups = [];
+if (navToggle) {
+  navToggle.addEventListener("click", () => { const open = !nav.classList.contains("is-open"); nav.classList.toggle("is-open", open); navToggle.setAttribute("aria-expanded", String(open)); });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && nav.classList.contains("is-open")) { nav.classList.remove("is-open"); navToggle.setAttribute("aria-expanded", "false"); navToggle.focus(); } });
+}
+function closeNav() { if (nav) { nav.classList.remove("is-open"); } if (navToggle) navToggle.setAttribute("aria-expanded", "false"); }
 
 async function loadData() {
   const [leaders, codex] = await Promise.all([fetch("data/leaders.json").then(r => { if (!r.ok) throw new Error("leaders.json " + r.status); return r.json(); }), fetch("data/codex.json").then(r => { if (!r.ok) throw new Error("codex.json " + r.status); return r.json(); })]);
@@ -49,15 +56,24 @@ function route() {
   else if (head === "credits") view = renderCredits(ctx);
   if (!view) view = { html: `<section class="section"><div class="wrap"><h1 class="section__title">Not in the codex</h1><p class="section__lede">There is no page at <code>${esc(location.hash)}</code>.</p><a class="btn" href="#/">Back to the start</a></div></section>`, title: "Not found — Leadership Focus" };
   cleanups.forEach(f => f()); cleanups = [];
-  app.innerHTML = view.html;
-  document.title = view.title || "Leadership Focus";
-  if (view.init) view.init(app);
-  app.querySelectorAll(".hero").forEach(h => cleanups.push(initHero(h)));
-  cleanups.push(initRows(app));
-  cleanups.push(initSubnav(app));
-  if (anchor) { const el = document.getElementById(anchor); if (el) { el.scrollIntoView({ block: "start" }); el.setAttribute("tabindex", "-1"); el.focus({ preventScroll: true }); } }
-  else window.scrollTo(0, 0);
+  closeNav();
+  const mount = () => {
+    app.innerHTML = view.html;
+    document.title = view.title || "Leadership Focus";
+    if (view.init) view.init(app);
+    app.querySelectorAll(".hero").forEach(h => cleanups.push(initHero(h)));
+    cleanups.push(initRows(app));
+    cleanups.push(initSubnav(app));
+    app.classList.remove("is-swapping");
+    if (anchor) { const el = document.getElementById(anchor); if (el) { el.scrollIntoView({ block: "start" }); el.setAttribute("tabindex", "-1"); el.focus({ preventScroll: true }); return; } }
+    window.scrollTo(0, 0);
+    if (booted) app.focus({ preventScroll: true });
+  };
+  if (reduced.matches || !booted) mount();
+  else { app.classList.add("is-swapping"); setTimeout(mount, 160); }
+  booted = true;
 }
+let booted = false;
 
 document.addEventListener("keydown", (e) => {
   if (/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)) return;

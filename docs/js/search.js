@@ -20,10 +20,12 @@ export function initSearch(ctx) {
   };
   const open = () => { if (dialog.open) return; dialog.showModal(); input.value = ""; render(""); input.focus(); };
   openBtn.addEventListener("click", open);
+  dialog.querySelector("form").addEventListener("submit", (e) => { e.preventDefault(); const first = list.querySelector("a"); if (first && input.value.trim()) { location.hash = first.getAttribute("href"); dialog.close(); } });
+  const closeBtn = document.getElementById("searchClose"); if (closeBtn) closeBtn.addEventListener("click", () => dialog.close());
   input.addEventListener("input", () => render(input.value));
   list.addEventListener("click", (e) => { if (e.target.closest("a")) dialog.close(); });
   document.addEventListener("keydown", (e) => {
     const typing = /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName);
-    if ((e.key === "/" && !typing) || ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k")) { e.preventDefault(); open(); }
+    if (e.key === "/" && !typing && !e.ctrlKey && !e.metaKey && !e.altKey) { e.preventDefault(); open(); }
   });
 }

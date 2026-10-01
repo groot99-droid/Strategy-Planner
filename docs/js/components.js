@@ -6,7 +6,7 @@ export function heroHtml(slides, { short = false, id = "hero" } = {}) {
   const media = slides.map((s, i) => {
     const inner = s.image
       ? `<img src="${esc(s.image)}" alt="" ${i === 0 ? 'fetchpriority="high"' : 'loading="lazy"'} width="1280" height="720">`
-      : (s.fallbackImage ? `<img src="${esc(s.fallbackImage)}" alt="" style="filter:blur(28px) saturate(1.2);opacity:.55;transform:scale(1.2)">` : "");
+      : "";
     return `<div class="hero__slide${s.image ? "" : " hero__slide--fallback"}${i === 0 ? " is-active" : ""}" data-category-key="${esc(s.catKey || "")}">${inner}</div>`;
   }).join("");
   const content = slides.map((s, i) => `
@@ -38,8 +38,15 @@ export function initHero(root, { interval = 8000 } = {}) {
   const dots = root.querySelectorAll(".hero__dot");
   const toggle = root.querySelector('[data-hero="toggle"]');
   let active = 0, timer, onscreen = true, wantPlaying = !reducedMotion.matches;
+  const stage = root.querySelector(".hero__stage");
   const show = (i) => {
-    active = (i + slides.length) % slides.length;
+    const target = (i + slides.length) % slides.length;
+    if (target === active || reducedMotion.matches || !stage) { apply(target); return; }
+    stage.classList.add("is-fading");
+    setTimeout(() => { apply(target); stage.classList.remove("is-fading"); }, 180);
+  };
+  const apply = (i) => {
+    active = i;
     slides.forEach((s, k) => s.classList.toggle("is-active", k === active));
     panels.forEach((p, k) => { p.hidden = k !== active; });
     credits.forEach(c => { c.hidden = Number(c.dataset.i) !== active; });
@@ -71,6 +78,14 @@ export function initHero(root, { interval = 8000 } = {}) {
 }
 
 /* ---------- rows ---------- */
+const ROW_BUDGET = 2; // at most two rows move at once (excessive-motion)
+const ROWS = new Set();
+function reconcile() {
+  const wanting = Array.from(ROWS).filter(r => r.wants());
+  wanting.sort((a, b) => b.ratio - a.ratio);
+  wanting.forEach((r, i) => (i < ROW_BUDGET && r.ratio > 0 ? r.start() : r.halt()));
+  Array.from(ROWS).filter(r => !r.wants()).forEach(r => r.halt());
+}
 export function rowHtml({ id, title, sub, href, cards, catKey, era, autoplay = true, speed = 26 }) {
   if (!cards.length) return "";
   const t = href ? `<a href="${esc(href)}">${esc(title)}</a>` : esc(title);
@@ -94,7 +109,7 @@ export function initRows(root) {
     const autoplay = row.dataset.autoplay === "1";
     const speed = Number(row.dataset.speed || 26); // px per second
     const toggle = row.querySelector('[data-row="toggle"]');
-    let playing = autoplay && !reducedMotion.matches, raf, last, onscreen = true, hover = false, focus = false, half = 0;
+    let playing = autoplay && !reducedMotion.matches, raf, last, onscreen = true, hover = false, focus = false, half = 0, userScroll = false, idleTimer;
     const originals = Array.from(scroller.children);
     const cardStep = () => (originals[0] ? originals[0].getBoundingClientRect().width + 16 : 240);
     const needsLoop = () => scroller.scrollWidth > scroller.clientWidth + 40;
@@ -106,12 +121,19 @@ export function initRows(root) {
     };
     const wrap = () => { if (!half) return; if (scroller.scrollLeft >= half) scroller.scrollLeft -= half; else if (scroller.scrollLeft < 0) scroller.scrollLeft += half; };
     const tick = (ts) => {
-      if (!playing || hover || focus || document.hidden || !onscreen || reducedMotion.matches) { raf = undefined; last = undefined; return; }
+      if (!playing || hover || focus || userScroll || document.hidden || !onscreen || reducedMotion.matches) { raf = undefined; last = undefined; return; }
       if (last !== undefined) { scroller.scrollLeft += (speed * (ts - last)) / 1000; wrap(); }
       last = ts; raf = requestAnimationFrame(tick);
     };
-    const run = () => { ensureClones(); if (!raf && half) raf = requestAnimationFrame(tick); row.classList.toggle("row--playing", playing && !reducedMotion.matches); };
+    const start = () => { ensureClones(); if (!raf && half) raf = requestAnimationFrame(tick); row.classList.toggle("row--playing", playing && !reducedMotion.matches); };
     const halt = () => { if (raf) cancelAnimationFrame(raf); raf = undefined; last = undefined; row.classList.remove("row--playing"); };
+    const entry = { ratio: 0, wants: () => autoplay && playing && !hover && !focus && !userScroll && onscreen && !document.hidden && !reducedMotion.matches, start, halt };
+    ROWS.add(entry);
+    const run = () => reconcile();
+    const onUserScroll = () => { userScroll = true; halt(); clearTimeout(idleTimer); idleTimer = setTimeout(() => { userScroll = false; run(); }, 1500); };
+    scroller.addEventListener("wheel", onUserScroll, { passive: true });
+    scroller.addEventListener("touchstart", onUserScroll, { passive: true });
+    scroller.addEventListener("pointerdown", onUserScroll, { passive: true });
     const setToggle = () => { if (!toggle) return; toggle.setAttribute("aria-pressed", String(!playing)); toggle.innerHTML = icon(playing ? "pause" : "play"); toggle.setAttribute("aria-label", (playing ? "Pause " : "Resume ") + row.getAttribute("aria-label") + " rotation"); };
     row.addEventListener("click", (e) => {
       const b = e.target.closest("[data-row]"); if (!b) return;
@@ -127,12 +149,12 @@ export function initRows(root) {
     row.addEventListener("focusout", (e) => { if (!row.contains(e.relatedTarget)) { focus = false; run(); } });
     const onVis = () => (document.hidden ? halt() : run());
     document.addEventListener("visibilitychange", onVis);
-    const io = new IntersectionObserver(([en]) => { onscreen = en.isIntersecting; onscreen ? run() : halt(); }, { rootMargin: "100px" });
+    const io = new IntersectionObserver(([en]) => { onscreen = en.isIntersecting; entry.ratio = en.intersectionRatio; run(); }, { threshold: [0, 0.25, 0.5, 0.75, 1] });
     io.observe(row);
     const onRM = () => { if (reducedMotion.matches) { playing = false; halt(); } setToggle(); };
     reducedMotion.addEventListener("change", onRM);
     setToggle(); if (autoplay) requestAnimationFrame(run);
-    cleanups.push(() => { halt(); io.disconnect(); document.removeEventListener("visibilitychange", onVis); reducedMotion.removeEventListener("change", onRM); });
+    cleanups.push(() => { halt(); ROWS.delete(entry); clearTimeout(idleTimer); io.disconnect(); document.removeEventListener("visibilitychange", onVis); reducedMotion.removeEventListener("change", onRM); });
   });
   return () => cleanups.forEach(f => f());
 }
@@ -161,11 +183,11 @@ export function terrainCard(t, opts = {}) {
 export function cityStateCard(cs, type, opts = {}) {
   return `<a class="card card--wide${opts.grid ? " card--grid" : ""}" href="#/city-states#${esc(cs.slug)}" style="--cat:${esc(type.color)}">
     <div class="card__media" style="background:linear-gradient(160deg, color-mix(in srgb, ${esc(type.color)} 35%, #000), #000)"></div>
-    <div class="card__body"><div class="card__kicker">${esc(cs.type)}</div><h3 class="card__name">${esc(cs.name)}</h3><p class="card__sub">${esc(cs.suzerain_bonus.length > 90 ? cs.suzerain_bonus.slice(0, 88) + "…" : cs.suzerain_bonus)}</p></div></a>`;
+    <div class="card__body"><div class="card__kicker">${esc(cs.type)}</div><h3 class="card__name">${esc(cs.name)}</h3><p class="card__sub" title="${esc(cs.suzerain_bonus)}">${esc(cs.suzerain_bonus)}</p></div></a>`;
 }
 export function pantheonCard(p, opts = {}) {
   return `<a class="card card--wide${opts.grid ? " card--grid" : ""}" href="#/pantheons#${esc(p.slug)}" data-category-key="faith">
-    <div class="card__media" style="background:linear-gradient(160deg,#2a2210,#000)"></div>
+    <div class="card__media" style="background:linear-gradient(160deg, color-mix(in srgb, var(--cat-faith) 22%, #000), #000)"></div>
     <div class="card__body"><div class="card__kicker">${esc(p.category)}</div><h3 class="card__name">${esc(p.name)}</h3><p class="card__sub">${esc(p.effect)}</p></div></a>`;
 }
 
@@ -203,7 +225,7 @@ let chartSeq = 0;
 export function curveChart(curve) {
   const path = CURVE_PATHS[curve]; if (!path) return "";
   const id = "cc" + (++chartSeq); const peakX = CURVE_PEAK_X[curve];
-  const eras = ["Ancient", "Medieval", "Industrial", "Information"];
+  const eras = ["Ancient", "Medieval", "Industrial", "Endgame"];
   let grid = "";
   for (let i = 1; i <= 3; i++) { const x = 12 + (280 / 4) * i; grid += `<line class="cc-grid" x1="${x}" y1="14" x2="${x}" y2="108"/>`; }
   [38, 62, 86].forEach(y => { grid += `<line class="cc-grid" x1="12" y1="${y}" x2="292" y2="${y}"/>`; });

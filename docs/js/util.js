@@ -66,6 +66,8 @@ const ICONS = {
   arrow: '<path d="M5 12h14M13 6l6 6-6 6"/>',
   warn: '<path d="M12 3l10 18H2zM12 9v5M12 17.5v.5"/>',
   x: '<path d="M6 6l12 12M18 6L6 18"/>',
+  menu: '<path d="M4 7h16M4 12h16M4 17h16"/>',
+  quote: '<path d="M10 7H6a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h2v3M20 7h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h2v3"/>',
 };
 export function icon(name, cls = "icon") {
   return `<svg class="${cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICONS[name] || ""}</svg>`;

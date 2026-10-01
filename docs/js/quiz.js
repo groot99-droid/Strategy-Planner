@@ -44,8 +44,9 @@ export function renderQuiz(ctx) {
   const html = `<section class="quiz"><div class="section__kicker">Five questions</div><h1 class="section__title">Find my leader</h1><p class="section__lede">Answer honestly about how you actually play, not how you wish you played. Your three closest matches come back with the reasoning shown.</p><div class="quiz__progress" aria-hidden="true"><div class="quiz__progress-bar" id="quizProgress"></div></div><div id="quizStage"></div></section>`;
   const init = (root) => {
     const stage = root.querySelector("#quizStage"); const bar = root.querySelector("#quizProgress");
-    let answers = {}, index = 0;
-    const setProgress = f => { bar.style.width = Math.round(f * 100) + "%"; };
+    let answers = {}, index = 0, started = false;
+    const setProgress = f => { bar.style.transform = `scaleX(${f})`; };
+    const focusHeading = () => { const h = stage.querySelector("h2"); if (h) { h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); } };
     const badge = (o) => { let src = null; if (o.cat) { const s = ctx.leaders.find(l => l.categoryKey === o.cat); if (s) src = s.categoryBadge; } else if (o.curve) { const s = ctx.leaders.find(l => l.curve === o.curve); if (s) src = s.curveBadge; } else if (o.conv) { const s = ctx.leaders.find(l => l.conversion === o.conv); if (s) src = s.conversionBadge; } return src ? `<img src="${esc(src)}" alt="" width="40" height="40" style="width:40px;height:40px;border-radius:50%;float:right;margin-left:12px">` : ""; };
     const question = () => {
       const q = QUESTIONS[index]; setProgress(index / QUESTIONS.length);
@@ -54,6 +55,7 @@ export function renderQuiz(ctx) {
         <div style="display:flex;justify-content:space-between;margin-top:var(--space-lg)">${index > 0 ? '<button class="btn btn--sm" type="button" id="quizBack">Back</button>' : "<span></span>"}<a class="btn btn--sm" href="#/leaders">Skip to the codex</a></div>`;
       stage.querySelectorAll(".quiz__option").forEach(b => b.addEventListener("click", () => { answers[q.key] = q.options[Number(b.dataset.i)]; if (index < QUESTIONS.length - 1) { index++; question(); } else { setProgress(1); results(); } root.scrollIntoView({ block: "start" }); }));
       const back = stage.querySelector("#quizBack"); if (back) back.addEventListener("click", () => { index--; question(); });
+      if (started) focusHeading(); started = true;
     };
     const score = () => {
       const a = answers; const max = QUESTIONS.reduce((s, q) => s + q.weight, 0);
@@ -73,6 +75,7 @@ export function renderQuiz(ctx) {
       stage.innerHTML = `<p class="section__kicker">Your three</p><h2 class="quiz__question">Closest matches</h2><div class="quiz__result">${top.map((r, i) => { const l = r.leader; return `<article class="match" data-category-key="${esc(l.categoryKey)}"><img src="${esc(l.image)}" alt="" width="96" height="96"><div><div class="match__rank">${num[i]} · ${r.pct}% match</div><h3>${esc(l.name)}</h3><p class="muted" style="margin:0">${esc(l.civilization)} · ${esc(l.leaderTitle)}${l.era ? ` · ${esc(l.era)}` : ""}</p><ul>${(r.why.length ? r.why : ["No strong match on your answers; this is the closest the roster gets."]).map(w => `<li>${esc(w)}</li>`).join("")}</ul><a class="btn btn--sm" href="#/leader/${esc(l.slug)}" style="margin-top:10px">Read the guide</a></div></article>`; }).join("")}</div>
         <div style="display:flex;gap:8px;margin-top:var(--space-lg);flex-wrap:wrap"><button class="btn" type="button" id="quizRetake">Retake the quiz</button><a class="btn" href="#/leaders">Browse the codex</a></div>`;
       stage.querySelector("#quizRetake").addEventListener("click", () => { answers = {}; index = 0; question(); });
+      focusHeading();
     };
     question();
   };
