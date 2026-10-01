@@ -610,5 +610,17 @@
   "description": "Remains of the Trajan's Bridge on the right bank of Danube, Serbia",
   "original_width": 4928,
   "original_height": 3264
+ },
+ "hero-victoria": {
+  "file": "images/heroes/victoria.jpg",
+  "caption": "The Family of Queen Victoria, Laurits Tuxen, 1887",
+  "commons_title": "File:The Family of Queen Victoria (Tuxen).jpg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:The_Family_of_Queen_Victoria_(Tuxen).jpg",
+  "licence": "Public domain",
+  "licence_url": "",
+  "author": "Laurits Tuxen",
+  "description": "Queen Victoria is sitting in the Green Drawing Room at Windsor Castle, surrounded by members of her family.",
+  "original_width": 1500,
+  "original_height": 1105
  }
 }
