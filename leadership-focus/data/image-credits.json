@@ -502,5 +502,29 @@
   "description": "Candi Bajang Ratu merupakan salah satu candi peninggalan kerajaan Majapahit, yang tepatnya berada di desa Temon, Kecamatan Trowulan, Mojokerto, Jawa Timur. Berdasarkan namanya, Bajang Ratu diambil dari bahasa jawa yaitu asal kata bajang dan ratu, bajang sendiri artinya kerdil, jadi bajang ratu maksu",
   "original_width": 2905,
   "original_height": 1937
+ },
+ "hero-montezuma": {
+  "file": "images/heroes/montezuma.jpg",
+  "caption": "Moctezuma I, fifth tlatoani of Tenochtitlan, in a colonial codex",
+  "commons_title": "File:Moctezuma I, the Fifth Aztec King.png",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Moctezuma_I,_the_Fifth_Aztec_King.png",
+  "licence": "Public domain",
+  "licence_url": "",
+  "author": "Juan de Tovar",
+  "description": "Coronation",
+  "original_width": 1348,
+  "original_height": 1024
+ },
+ "hero-shaka": {
+  "file": "images/heroes/shaka.jpg",
+  "caption": "The Battle of Isandlwana, 1879",
+  "commons_title": "File:Isandhlwana.jpg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Isandhlwana.jpg",
+  "licence": "Public domain",
+  "licence_url": "",
+  "author": "Charles Edwin Fripp",
+  "description": "Battle of Isandhlwana (1879) Natal, South Africa",
+  "original_width": 1200,
+  "original_height": 748
  }
 }
