@@ -1,0 +1,55 @@
+{
+ "overview": "Barbarians are the map's own army. They have no capital, no diplomacy and no victory condition; they exist to punish an empty frontier. An outpost appears in the fog, sends out a scout, and if that scout sees one of your cities the outpost begins to spawn raiders aimed at it. Every leader on this roster meets them in the first thirty turns, and the shape of that meeting is part of the leader's shape.",
+ "mechanics": [
+  {"title": "Outposts spawn in the dark", "text": "A new outpost can appear on any land tile that no civilization can see, at least a few tiles from the nearest city. Fog is the condition. A scout or a city's sight line that covers the empty ground between you and the horizon is the cheapest defence in the game."},
+  {"title": "The scout decides the raid", "text": "Each outpost sends a Scout first. If it reaches a tile where it can see your city, it turns and runs home, and the outpost switches from spawning scouts to spawning raiders pointed at that city. Kill the scout before it gets home and the raid never starts. A warrior parked on the approach is worth more than walls."},
+  {"title": "Raiders keep pace with the world", "text": "Barbarian units are drawn from the technology of the most advanced civilization on the map, not yours. A backward empire is raided by swordsmen while it fields slingers. Outposts near Horses produce cavalry; outposts on the coast produce galleys and quadriremes that pillage fishing boats and harbours."},
+  {"title": "Pillage, capture, never hold", "text": "Raiders pillage improvements and districts for gold and heal from it. They can capture Builders and Settlers and take them home to the outpost. They can take a city that has no walls and no defender, but they cannot keep one: a captured city is razed. Walls and one ranged unit end most raids."},
+  {"title": "Clearing an outpost", "text": "Dispersing an outpost grants gold, a unit's worth of experience, and an Era Score moment if the outpost sat within a few tiles of your border. Sumeria takes a tribal-village reward as well. The rule for everyone else: clear what can see you, leave what cannot, and never march past one on the way to a war."},
+  {"title": "Difficulty changes the pressure", "text": "On higher difficulties outposts spawn sooner and raiders come in larger groups with combat bonuses. The Discipline policy card (+5 Combat Strength against barbarians) is a first-civic pick for most leaders on Emperor and above, and Survey lets scouts earn experience faster so they live long enough to matter."},
+  {"title": "Experience farming", "text": "A unit that holds a chokepoint against barbarian waves earns promotions it would otherwise wait eras for. Gorgo turns every kill into Culture. The limit is one outpost left alive near one defended city; two outposts in range is a siege, not a farm."}
+ ],
+ "clans_mode": {
+  "name": "Barbarian Clans",
+  "introduced": "Free February 2021 update, released alongside the New Frontier Pass (Vietnam and Kublai Khan pack cycle). Optional game mode.",
+  "overview": "Clans mode gives each outpost a people, a specialty and a path. Every clan is one of seven types that decides where it appears and what it builds. Instead of only fighting them, you can pay them: to leave, to attack someone else, to sell you a unit, or to return a captured Builder. Dealings with a clan move it along a progress bar toward becoming a city-state, with walls and envoys and a suzerain bonus of its own.",
+  "clans": [
+   {"name": "Chariot Clan", "spawns": "Desert near Horses", "units": "Mounted and light cavalry, occasional ranged", "notes": "Fast raiders that outrun early infantry; hold them with spearmen on hills."},
+   {"name": "Flatland Clan", "spawns": "Open terrain away from woods and hills", "units": "Melee and ranged", "notes": "The ordinary warband. Walls and archers are enough."},
+   {"name": "Hills Clan", "spawns": "Open terrain with hills", "units": "Melee", "notes": "Tough on defence; their outpost on a hill takes a siege to clear."},
+   {"name": "Jungle Clan", "spawns": "Rainforest near Ivory", "units": "Light and heavy cavalry, ranged", "notes": "Heavy cavalry early is rare; a Jungle Clan can field a Heavy Chariot before anyone else."},
+   {"name": "Rover Clan", "spawns": "Open terrain near Horses, away from woods", "units": "Mounted light and heavy cavalry", "notes": "The cavalry that Scythia and Mongolia hire; the clan to hire from if you want horsemen without the Horses."},
+   {"name": "Seafaring Clan", "spawns": "Coastal tiles", "units": "Anti-cavalry, naval melee and naval ranged", "notes": "Galleys that pillage fishing boats. Hire a quadrireme early and you have a navy before Shipbuilding."},
+   {"name": "Woodland Clan", "spawns": "Woods and rainforest", "units": "Ranged in abundance, with melee", "notes": "Archers in woods are the raid that takes a city; answer with your own ranged behind walls."}
+  ],
+  "interactions": [
+   {"action": "Disperse", "effect": "Destroy the outpost. Ends the clan, grants gold and experience, and the Era Score moment if it was near your border."},
+   {"action": "Raid", "effect": "Take gold from the clan every ten turns and move its city-state progress backward. The clan spawns a unit to push you out."},
+   {"action": "Bribe", "effect": "Pay gold and the clan stops attacking you for a period. The cost rises with the number of cities you own, and the deal advances the clan toward becoming a city-state."},
+   {"action": "Hire", "effect": "Buy one of the clan's units at a discount. A cooldown follows each purchase. Hiring also advances conversion."},
+   {"action": "Incite", "effect": "Pay the clan to raid a civilization or city-state you have met. Incitement slows the clan's conversion."},
+   {"action": "Ransom", "effect": "Pay to recover a captured Builder or Settler. Ransom slows conversion."}
+  ],
+  "conversion": "A clan's progress bar fills with time and with bribes and hires, and empties with raids, incitement and ransoms. When it fills, the outpost becomes a new city-state with walls, and the clan can no longer be hired. Players who want a friendly city-state on their flank feed the bar; players who want a quiet border starve it. A dispersed clan never converts."
+ },
+ "strategy_by_curve": {
+  "Spike": "Barbarians are the first enemy and the first prize. Clear the outposts that can see you in the first fifteen turns with the units you were building anyway, take the experience, and do not let a raid cost you the turns the window needs. Gilgamesh and Tomyris profit from each camp; nobody else should hunt them past the border.",
+  "Ramp": "Build one archer and one warrior per city and hold the approaches while the economy comes up. A raid that pillages a district sets a Ramp back a dozen turns. Scout the fog on every side by turn twenty so no outpost can send a scout you have not seen.",
+  "Bloom": "A Bloom leader has nothing to spend and the most to lose. Walls in every city by the time the first outpost's raiders arrive, Discipline slotted, and a standing ranged unit per city. Treat barbarians as weather: not fought, survived.",
+  "Flat": "Clear what is near and ignore what is far. Flat kits do not need the experience and cannot afford the detour. In Clans mode, bribe once if a raid would hit a growing city, and let the clan convert into a city-state you can then win."
+ },
+ "leader_notes": [
+  {"slug": "gilgamesh", "note": "Epic Quest pays a tribal-village reward for every outpost cleared. Leave camps alive only until a War-Cart is free to take them; the reward is real but so is the raid."},
+  {"slug": "gorgo", "note": "Every barbarian killed is Culture. One defended camp in range of the capital is a civic engine; two is a siege."},
+  {"slug": "tomyris", "note": "Scythian units heal on kills and strike wounded enemies harder. Barbarian waves are free healing and free experience for the Saka Horse Archers."},
+  {"slug": "genghis-khan", "note": "Mongolia's cavalry wants Horses; in Clans mode a Rover Clan is a unit vendor. Hire early, convert late."},
+  {"slug": "shaka", "note": "Impi corps promote fast and the Ikanda shortens the path. Camps are the training ground before the first real war."},
+  {"slug": "lautaro", "note": "Malón Raiders and the Toqui's extra experience against civilizations in a Golden Age do not apply to barbarians; clear camps for safety, not profit."},
+  {"slug": "amanitore", "note": "Pítati Archers outrange early raiders; one per city makes barbarians a non-event for Nubia."},
+  {"slug": "montezuma", "note": "Eagle Warriors can capture barbarian units as Builders. A raid on the Aztecs is a labour supply."},
+  {"slug": "harald-hardrada", "note": "Coastal outposts spawn galleys that pillage Norway's fishing boats. A Longship on patrol early is cheaper than rebuilding boats."},
+  {"slug": "peter", "note": "Russia settles tundra, and tundra fog is where outposts live. Scout the north before the second city, not after."}
+ ],
+ "image": "images/sections/barbarians.jpg",
+ "sources": ["https://gamerant.com/civilization-6-all-barbarian-clan-types/", "https://www.pcgamesn.com/civilization-vi/barbarian-update-patch-notes", "https://forums.civfanatics.com/threads/barbarian-clans-game-mode-discussion.667535/"]
+}

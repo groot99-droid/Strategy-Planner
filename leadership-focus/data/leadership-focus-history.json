@@ -1,0 +1,2656 @@
+{
+ "leaders": [
+  {
+   "slug": "alexander",
+   "name": "Alexander",
+   "wikipedia_title": "Alexander the Great",
+   "era": {
+    "label": "Classical",
+    "span": "356 to 323 BCE",
+    "century": "4th century BCE"
+   },
+   "dates": {
+    "born": "356 BCE",
+    "died": "323 BCE",
+    "reign_start": "336 BCE",
+    "reign_end": "323 BCE",
+    "display": "r. 336 to 323 BCE",
+    "historicity": "historical"
+   },
+   "polity": "Kingdom of Macedon and the empire it conquered",
+   "modern_countries": [
+    "Greece",
+    "North Macedonia",
+    "Turkey",
+    "Egypt",
+    "Iraq",
+    "Iran",
+    "Afghanistan",
+    "Pakistan"
+   ],
+   "region": "Europe",
+   "titles": [
+    "King of Macedon",
+    "Hegemon of the Hellenic League",
+    "Pharaoh of Egypt",
+    "King of Persia"
+   ],
+   "faith": "Greek polytheism",
+   "personality": {
+    "traits": [
+     "restless",
+     "audacious",
+     "charismatic",
+     "volatile"
+    ],
+    "temperament": "Alexander could not stay still. He slept little, drank hard, wept at the deaths of friends and killed one of them in a quarrel. He led from the front and carried the wounds to prove it. Plutarch records a man who wanted glory more than land and who asked his tutor, Aristotle, for more worlds. His soldiers followed him past the edge of every map they knew.",
+    "agenda_tie": "His agenda, Short Life of Glory, rewards leaders at war and scorns those at peace; the historical Alexander fought for eleven of his thirteen years as king."
+   },
+   "bio_codex": "Alexander came to the throne of Macedon at twenty, in 336 BCE, after his father Philip was murdered at a wedding. Within two years he had burned Thebes and crossed into Asia with forty thousand men. At the Granicus, at Issus and at Gaugamela he broke the armies of Darius III, and by 331 the Persian Empire was his. He took Egypt and was named pharaoh, founded Alexandria, burned Persepolis, and marched east through Bactria into the Punjab, where his army refused to go further. He turned back along the desert coast and died in Babylon in June 323 BCE, aged thirty-two, of a fever or a poison; the sources disagree. He left no settled heir. His generals divided the world he had taken, and the Greek language, Greek cities and Greek gods settled in it for three centuries after him. Cities fell to him by the hundred; the people in them were sold or spared at his mood.",
+   "legacy": "He conquered the known world in eleven years and left it to be fought over for forty.",
+   "quote": {
+    "text": "There is nothing impossible to him who will try.",
+    "source": "Attributed to Alexander; recorded in later collections, not in a contemporary source"
+   },
+   "expansion_origin": "Persia and Macedon Civilization & Scenario Pack"
+  },
+  {
+   "slug": "amanitore",
+   "name": "Amanitore",
+   "wikipedia_title": "Amanitore",
+   "era": {
+    "label": "Classical",
+    "span": "c. 1 to 50 CE",
+    "century": "1st century CE"
+   },
+   "dates": {
+    "born": null,
+    "died": null,
+    "reign_start": "c. 1 CE",
+    "reign_end": "c. 50 CE",
+    "display": "r. c. 1 to 50 CE",
+    "historicity": "historical; dates approximate"
+   },
+   "polity": "Kingdom of Kush, Meroitic period",
+   "modern_countries": [
+    "Sudan"
+   ],
+   "region": "Africa",
+   "titles": [
+    "Kandake of Kush",
+    "Queen of Meroë",
+    "Co-regent with King Natakamani"
+   ],
+   "faith": "Kushite religion (Amun, Apedemak)",
+   "personality": {
+    "traits": [
+     "industrious",
+     "commanding",
+     "devout",
+     "builder"
+    ],
+    "temperament": "The record of Amanitore is in stone, not in words. Her name stands beside Natakamani's on temples at Naqa, Amun's great hall at Meroë and the restored sanctuary at Jebel Barkal. The Lion Temple shows her striding, broad-shouldered, a sword raised over bound captives. The kandakes of Kush ruled as warriors and builders, and she was shown as both. Rome's writers noted queens in Meroë and did not name her.",
+    "agenda_tie": "Her agenda, City Planner, favours leaders who build districts; the historical Amanitore's reign is the most productive building period in Meroitic history."
+   },
+   "bio_codex": "Amanitore ruled the Kingdom of Kush from Meroë, on the Nile between the fifth and sixth cataracts, in the first half of the first century CE. She held the title kandake, queen, and governed alongside Natakamani, who may have been her husband or her son; the inscriptions name them together and give her equal size and equal regalia. Their reign was the last great age of Meroitic building. They restored the temple of Amun at Meroë, built the Lion Temple and the Amun temple at Naqa, repaired Jebel Barkal and raised reservoirs along the river. Kush had treated with Augustus a generation earlier and now traded with Rome in gold, ivory and iron. Her pyramid stands at Meroë in the northern cemetery, steeper and smaller than Egypt's, and robbed long before archaeologists reached it. The Meroitic script on her monuments has still not been read in full.",
+   "legacy": "She built more of Kush than any ruler before or after her, and her name is on all of it.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "Nubia Civilization & Scenario Pack"
+  },
+  {
+   "slug": "ambiorix",
+   "name": "Ambiorix",
+   "wikipedia_title": "Ambiorix",
+   "era": {
+    "label": "Ancient",
+    "span": "fl. 54 to 53 BCE",
+    "century": "1st century BCE"
+   },
+   "dates": {
+    "born": null,
+    "died": null,
+    "reign_start": null,
+    "reign_end": null,
+    "display": "fl. 54 to 53 BCE",
+    "historicity": "historical; known only from Caesar"
+   },
+   "polity": "Eburones, a Belgic tribe of Gaul",
+   "modern_countries": [
+    "Belgium",
+    "Netherlands",
+    "Germany"
+   ],
+   "region": "Europe",
+   "titles": [
+    "King of the Eburones",
+    "Co-ruler with Catuvolcus"
+   ],
+   "faith": "Gaulish polytheism",
+   "personality": {
+    "traits": [
+     "cunning",
+     "defiant",
+     "persuasive",
+     "elusive"
+    ],
+    "temperament": "Everything known of Ambiorix comes from the man who hunted him. Caesar presents him as a talker who could turn a Roman officer's trust into a trap, and a fighter who knew when to leave a field. He parleyed, lied, ambushed, and vanished into the forest with four horsemen when the legions came for him. The Eburones were destroyed for his sake; he was never caught.",
+    "agenda_tie": "His agenda, Scourge of Rome, dislikes leaders who build large armies; the historical Ambiorix was the Belgic king who nearly broke Caesar's hold on Gaul."
+   },
+   "bio_codex": "Ambiorix ruled half the Eburones, a Belgic people between the Meuse and the Rhine, under Caesar's occupation of Gaul. In the winter of 54 BCE, with a Roman legion and five cohorts quartered on his land, he persuaded their commanders, Sabinus and Cotta, that a general rising was coming and that he would see them safely to another camp. He ambushed the column in a valley and destroyed it, the heaviest Roman loss of the whole war. He then raised the Nervii and Aduatuci and besieged Quintus Cicero's camp until Caesar himself broke the siege. In 53 BCE Caesar invited every tribe in Gaul to plunder the Eburones and marched through their country with fire. Ambiorix escaped across the Rhine with a few riders, and the record ends there. Nineteenth-century Belgium made him a national hero and put his statue in Tongeren, the Roman town that replaced his people.",
+   "legacy": "He destroyed a legion by talking to it, and the Romans erased his nation to find him.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "New Frontier Pass: Byzantium & Gaul Pack"
+  },
+  {
+   "slug": "ba-trieu",
+   "name": "Bà Triệu",
+   "wikipedia_title": "Lady Triệu",
+   "era": {
+    "label": "Classical",
+    "span": "225 to 248 CE",
+    "century": "3rd century CE"
+   },
+   "dates": {
+    "born": "225",
+    "died": "248",
+    "reign_start": "248",
+    "reign_end": "248",
+    "display": "rebellion of 248 CE",
+    "historicity": "historical in Vietnamese tradition; Chinese sources are thin"
+   },
+   "polity": "Jiuzhen (Cửu Chân) under the Chinese Wu dynasty, in what became Vietnam",
+   "modern_countries": [
+    "Vietnam"
+   ],
+   "region": "Southeast Asia",
+   "titles": [
+    "Lady Triệu",
+    "Triệu Thị Trinh",
+    "Nhụy Kiều Tướng quân (the Lady General Clad in Golden Robe)"
+   ],
+   "faith": "Vietnamese folk religion",
+   "personality": {
+    "traits": [
+     "fierce",
+     "proud",
+     "unyielding",
+     "solitary"
+    ],
+    "temperament": "The Vietnamese tradition gives her a sentence that outlived her: that she would ride the storm, tread the waves, cut the whale from the eastern sea, sweep the frontier, and never bend her back to be a man's concubine. Chinese chroniclers called her a bandit and noted her height and her elephant. She refused marriage, refused her brother's caution and refused surrender.",
+    "agenda_tie": "Her agenda, Defender of the Homeland, likes leaders who hold their own lands and dislikes those who take cities from her; she fought one war, against an occupier."
+   },
+   "bio_codex": "Triệu Thị Trinh was born in 225 CE in the district of Cửu Chân, in the Thanh Hóa country south of the Red River, under the rule of the Chinese state of Wu. Tradition says she killed a sister-in-law who abused her, went into the mountains, and gathered a thousand followers before she was twenty. In 248 she led a rising against the Wu governor, riding to battle on an elephant in yellow robes with a sword in each hand, and took the fortified towns of the district. Wu sent the general Lu Yin with eight thousand men. After several months of fighting her force broke, and she withdrew to Mount Tùng and died there, by her own hand according to the Vietnamese accounts. She was twenty-three. Later kings built her a temple and granted her posthumous titles, and her name was taken by Vietnamese nationalists for a thousand years of risings that came after.",
+   "legacy": "She rose at twenty-three against the empire next door and set the pattern for every Vietnamese rising that followed.",
+   "quote": {
+    "text": "I want to ride the storm, tread the dangerous waves, win back the fatherland and destroy the yoke of slavery.",
+    "source": "Attributed in Vietnamese tradition; recorded in later chronicles, not in a contemporary source"
+   },
+   "expansion_origin": "New Frontier Pass: Vietnam & Kublai Khan Pack"
+  },
+  {
+   "slug": "basil-ii",
+   "name": "Basil II",
+   "wikipedia_title": "Basil II",
+   "era": {
+    "label": "Medieval",
+    "span": "958 to 1025",
+    "century": "11th century"
+   },
+   "dates": {
+    "born": "958",
+    "died": "1025",
+    "reign_start": "976",
+    "reign_end": "1025",
+    "display": "r. 976 to 1025",
+    "historicity": "historical"
+   },
+   "polity": "Eastern Roman (Byzantine) Empire",
+   "modern_countries": [
+    "Turkey",
+    "Greece",
+    "Bulgaria",
+    "North Macedonia",
+    "Syria",
+    "Armenia",
+    "Georgia"
+   ],
+   "region": "Europe",
+   "titles": [
+    "Emperor of the Romans",
+    "Basileus",
+    "Porphyrogennetos",
+    "Bulgaroktonos (Bulgar-slayer)"
+   ],
+   "faith": "Eastern Orthodox Christianity",
+   "personality": {
+    "traits": [
+     "austere",
+     "relentless",
+     "distrustful",
+     "disciplined"
+    ],
+    "temperament": "Psellos, who knew men who had served him, described an emperor who gave up wine, women, jewels and conversation, slept on the ground with his soldiers, and spoke in short sentences in a soldier's voice. He trusted no aristocrat after two of them tried to take his throne, and he ruled through eunuchs and the army. He laughed rarely. He campaigned every year of his adult life.",
+    "agenda_tie": "His agenda, Porphyrogénnētos, respects leaders with strong cavalry and distrusts those who neglect it; Basil's empire was built on the armoured horse."
+   },
+   "bio_codex": "Basil was born in the purple chamber of the palace in 958 and crowned co-emperor at two. He did not rule until 976, and for the first thirteen years of his reign the generals Skleros and Phokas each rose against him; he broke the second at Abydos in 989 with six thousand Varangians sent by Vladimir of Kiev, to whom he gave his sister in marriage and the Orthodox faith. He then turned on Bulgaria and fought it for thirty years. At Kleidion in 1014 he took fourteen thousand prisoners and, by the chroniclers' account, blinded ninety-nine of every hundred and sent them home led by the hundredth; Tsar Samuel died at the sight. Bulgaria fell in 1018 and the Danube was Rome's frontier again. He annexed Armenian lands, held Syria against the Fatimids, and filled a treasury that his heirs emptied in a generation. He never married and died in 1025 planning an expedition to Sicily.",
+   "legacy": "He ruled for forty-nine years, restored the Danube frontier, and left an empire at its height to heirs who could not hold it.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "New Frontier Pass: Byzantium & Gaul Pack"
+  },
+  {
+   "slug": "catherine-de-medici",
+   "name": "Catherine de Medici",
+   "wikipedia_title": "Catherine de' Medici",
+   "era": {
+    "label": "Renaissance",
+    "span": "1519 to 1589",
+    "century": "16th century"
+   },
+   "dates": {
+    "born": "1519",
+    "died": "1589",
+    "reign_start": "1547",
+    "reign_end": "1589",
+    "display": "Queen consort 1547 to 1559; regent and queen mother to 1589",
+    "historicity": "historical"
+   },
+   "polity": "Kingdom of France",
+   "modern_countries": [
+    "France",
+    "Italy"
+   ],
+   "region": "Europe",
+   "titles": [
+    "Queen of France",
+    "Queen Mother",
+    "Regent of France",
+    "Duchess of Urbino"
+   ],
+   "faith": "Roman Catholicism",
+   "personality": {
+    "traits": [
+     "watchful",
+     "pragmatic",
+     "patient",
+     "theatrical"
+    ],
+    "temperament": "She was orphaned at three weeks, held hostage in a convent during the siege of Florence, and married at fourteen to a prince who preferred his mistress for twenty-five years. She waited. When her husband died she governed through three sons, balancing Catholic and Huguenot factions that each wanted the other dead, and she spent what the treasury did not have on festivals, ballets and palaces. Her enemies made her a poisoner; the record makes her a survivor.",
+    "agenda_tie": "Her agenda, Black Queen, favours leaders with strong intelligence networks and distrusts those who keep none; she ran the most elaborate court of spies in Europe."
+   },
+   "bio_codex": "Caterina de' Medici was born in Florence in 1519, the last legitimate heir of the elder Medici line, and was married at fourteen to Henri, second son of Francis I of France, in a bargain between the French crown and her uncle Pope Clement VII. She bore ten children after a decade of barrenness. Henri II died in a tournament in 1559 and she governed for three sons in succession, Francis II, Charles IX and Henri III, through the Wars of Religion. She tried toleration first, at Saint-Germain in 1562, and failed. In August 1572, days after her daughter's wedding to the Protestant Henri of Navarre, Paris murdered thousands of Huguenots in the Saint Bartholomew's Day massacre; how far she ordered it is still argued, and she did not stop it. She built the Tuileries, bought Chenonceau, commissioned Nostradamus and Ronsard, and died in January 1589 eight months before her last son was stabbed to death.",
+   "legacy": "She held the French crown together through thirty years of civil war and three weak kings, at a price Paris still remembers.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "Base Game"
+  },
+  {
+   "slug": "chandragupta",
+   "name": "Chandragupta",
+   "wikipedia_title": "Chandragupta Maurya",
+   "era": {
+    "label": "Ancient",
+    "span": "c. 340 to c. 297 BCE",
+    "century": "4th century BCE"
+   },
+   "dates": {
+    "born": "c. 340 BCE",
+    "died": "c. 297 BCE",
+    "reign_start": "c. 321 BCE",
+    "reign_end": "c. 297 BCE",
+    "display": "r. c. 321 to c. 297 BCE",
+    "historicity": "historical; dates approximate"
+   },
+   "polity": "Maurya Empire",
+   "modern_countries": [
+    "India",
+    "Pakistan",
+    "Bangladesh",
+    "Afghanistan",
+    "Nepal"
+   ],
+   "region": "South Asia",
+   "titles": [
+    "Samrat (Emperor) of the Maurya Empire",
+    "Founder of the Mauryan dynasty"
+   ],
+   "faith": "Later Jainism; earlier Vedic religion",
+   "personality": {
+    "traits": [
+     "ambitious",
+     "decisive",
+     "adaptable",
+     "ascetic in the end"
+    ],
+    "temperament": "Greek sources knew him as Sandrokottos, a young man who had seen Alexander's camp and judged that an empire could be taken. Indian tradition gives him a teacher, Chanakya, whose treatise on statecraft counsels spies, bribes and surprise. He took the throne by force, held it with a vast army and a vaster bureaucracy, and at the end, the Jain accounts say, gave it up and starved himself to death as a monk.",
+    "agenda_tie": "His agenda, Boundless Ambition, pushes him to expand into any neighbour's land; the historical Chandragupta took the whole of northern India in twenty years."
+   },
+   "bio_codex": "Chandragupta rose from obscure origins in the Magadha country in the years after Alexander's withdrawal from the Indus. Around 321 BCE, guided by the Brahmin strategist Chanakya, he overthrew the Nanda dynasty and took Pataliputra on the Ganges. He then pushed west into the Punjab, drove out the Macedonian garrisons, and in 305 met Seleucus I, Alexander's successor in Asia, in war. The peace that followed gave Chandragupta the provinces of the Hindu Kush and gave Seleucus five hundred war elephants and a marriage alliance. Seleucus's envoy Megasthenes lived at his court and wrote of a city nine miles long, an army of six hundred thousand, and a king who feared assassination enough to sleep in a different room each night. His empire ran from Afghanistan to Bengal. Late in life he abdicated for his son Bindusara, followed the Jain teacher Bhadrabahu south to Shravanabelagola, and died there by ritual fast.",
+   "legacy": "He founded the first empire to hold most of India and gave it up to die as a monk.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "Rise and Fall"
+  },
+  {
+   "slug": "cleopatra",
+   "name": "Cleopatra",
+   "wikipedia_title": "Cleopatra",
+   "era": {
+    "label": "Classical",
+    "span": "69 to 30 BCE",
+    "century": "1st century BCE"
+   },
+   "dates": {
+    "born": "69 BCE",
+    "died": "30 BCE",
+    "reign_start": "51 BCE",
+    "reign_end": "30 BCE",
+    "display": "r. 51 to 30 BCE",
+    "historicity": "historical"
+   },
+   "polity": "Ptolemaic Kingdom of Egypt",
+   "modern_countries": [
+    "Egypt",
+    "Libya",
+    "Cyprus"
+   ],
+   "region": "Africa",
+   "titles": [
+    "Queen of Egypt",
+    "Pharaoh",
+    "Thea Philopator"
+   ],
+   "faith": "Egyptian and Greek religion (as Isis)",
+   "personality": {
+    "traits": [
+     "intelligent",
+     "political",
+     "multilingual",
+     "unyielding"
+    ],
+    "temperament": "Plutarch said her beauty was not remarkable but her voice and conversation were, and that she spoke Egyptian, which no Ptolemy before her had bothered to learn, along with Greek, Ethiopian, Hebrew, Arabic, Syriac, Median and Parthian. She chose her allies among the most powerful men alive and bore their children. When the last alliance failed she chose her own death over a Roman triumph.",
+    "agenda_tie": "Her agenda, Queen of the Nile, likes leaders with strong militaries and dislikes weak ones; she allied with Caesar and Antony because each was the strongest man in Rome."
+   },
+   "bio_codex": "Cleopatra VII Philopator was born in 69 BCE, the daughter of Ptolemy XII, in a Greek dynasty that had ruled Egypt since Alexander's general took it. She became queen in 51 BCE beside her brother, lost a civil war to him, and in 48 had herself carried into Caesar's quarters in Alexandria rolled in a carpet or a bedroll; the brother drowned in the Nile and she ruled. She bore Caesar a son, Caesarion, and lived in Rome until Caesar was killed. In 41 she met Mark Antony at Tarsus, sailing up the Cydnus in a gilded barge, and over ten years bore him three children and bound Egypt's treasury to his half of the Roman world. Octavian defeated them at Actium in 31 BCE. Antony fell on his sword; Cleopatra, taken in her mausoleum, died in August 30 BCE, by an asp in the tradition and by poison in all likelihood. Egypt became a Roman province. She was the last pharaoh.",
+   "legacy": "She was the last ruler of independent Egypt, and she chose the manner of its ending.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "Base Game"
+  },
+  {
+   "slug": "cyrus",
+   "name": "Cyrus",
+   "wikipedia_title": "Cyrus the Great",
+   "era": {
+    "label": "Ancient",
+    "span": "c. 600 to 530 BCE",
+    "century": "6th century BCE"
+   },
+   "dates": {
+    "born": "c. 600 BCE",
+    "died": "530 BCE",
+    "reign_start": "559 BCE",
+    "reign_end": "530 BCE",
+    "display": "r. 559 to 530 BCE",
+    "historicity": "historical"
+   },
+   "polity": "Achaemenid Persian Empire",
+   "modern_countries": [
+    "Iran",
+    "Iraq",
+    "Turkey",
+    "Afghanistan",
+    "Turkmenistan",
+    "Uzbekistan",
+    "Syria",
+    "Lebanon",
+    "Israel"
+   ],
+   "region": "Middle East",
+   "titles": [
+    "King of Persia",
+    "King of Anshan",
+    "King of Babylon",
+    "King of the Four Corners of the World",
+    "Great King"
+   ],
+   "faith": "Early Iranian religion (Ahura Mazda)",
+   "personality": {
+    "traits": [
+     "magnanimous",
+     "swift",
+     "tolerant",
+     "calculating"
+    ],
+    "temperament": "The Greeks, who had every reason to hate Persia, admired him. Xenophon made him the model of a just king and Herodotus gave him a childhood out of legend. The clay cylinder he left in Babylon speaks of restoring temples and sending exiles home, and the Hebrew prophets called him anointed. He moved faster than his enemies expected and treated the conquered as subjects rather than spoil.",
+    "agenda_tie": "His agenda, Opportunist, likes leaders who declare surprise wars and dislikes those who never do; Cyrus took Lydia by marching in winter when Croesus had sent his army home."
+   },
+   "bio_codex": "Cyrus became king of the Persians at Anshan around 559 BCE, a vassal of the Medes, and within a decade had overthrown his overlord Astyages and taken Ecbatana. In 547 or 546 he marched on Lydia, fought Croesus to a draw at Pteria, and then followed him home to Sardis in the off-season and took the city. The Greek cities of Ionia fell to his generals. In 539 he entered Babylon, the sources say without a battle, after the Euphrates was diverted or the garrison opened the gates. He let the Jews return to Jerusalem and rebuild the temple, kept the Babylonian gods in their shrines and himself in the local titles, and governed through satraps and roads. He died in 530 BCE campaigning in Central Asia against the Massagetae; Herodotus says Queen Tomyris had his head put in a skin of blood. His tomb at Pasargadae is a plain stone house on six steps, and Alexander, who found it looted, had it restored.",
+   "legacy": "He built the largest empire the world had seen and governed it by leaving its peoples their gods.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "Persia and Macedon Civilization & Scenario Pack"
+  },
+  {
+   "slug": "dido",
+   "name": "Dido",
+   "wikipedia_title": "Dido",
+   "era": {
+    "label": "Ancient",
+    "span": "traditionally c. 814 BCE",
+    "century": "9th century BCE"
+   },
+   "dates": {
+    "born": null,
+    "died": null,
+    "reign_start": null,
+    "reign_end": null,
+    "display": "fl. c. 814 BCE (traditional founding of Carthage)",
+    "historicity": "legendary; Carthage's founding is historical, its founder is tradition"
+   },
+   "polity": "Carthage, a Phoenician colony of Tyre",
+   "modern_countries": [
+    "Tunisia",
+    "Lebanon"
+   ],
+   "region": "Africa",
+   "titles": [
+    "Queen of Carthage",
+    "Elissa of Tyre",
+    "Founder of Carthage"
+   ],
+   "faith": "Phoenician religion (Tanit, Baal Hammon)",
+   "personality": {
+    "traits": [
+     "resourceful",
+     "resolute",
+     "grieving",
+     "exact"
+    ],
+    "temperament": "The tradition remembers a woman who outwitted a brother, a landlord and a god. She fled Tyre with her husband's treasure and a company of nobles, asked the Libyan king for as much land as an ox-hide would cover, and cut the hide into a thread that enclosed a hill. Virgil gave her a Trojan lover and a funeral pyre; the Carthaginian version, lost with the city, made her die rather than marry a Libyan king.",
+    "agenda_tie": "Her agenda, Sicilian Wars, likes leaders who settle away from her and dislikes those who settle near her coast; the historical Carthage fought Greece for Sicily for three centuries."
+   },
+   "bio_codex": "Elissa, called Dido, was by tradition a princess of Tyre, sister of King Pygmalion, who murdered her husband the priest Acerbas for his gold. She took the gold and a company of followers, sailed west by way of Cyprus, and landed on the coast of Libya near the modern city of Tunis. There she bought from the Berber king Iarbas the land an ox-hide could cover and, cutting it into strips, enclosed the hill called Byrsa, the hide. The city founded there, Qart-hadasht, the new city, grew into Carthage, the greatest trading power of the western Mediterranean, with harbours, a navy, and colonies from Spain to Sicily. The founding date given by ancient writers is 814 BCE, and archaeology finds Phoenician settlement on the site by the late ninth century. Dido herself has left no inscription, no coin and no tomb. Timaeus told her story first; Virgil gave her to Aeneas; Carthage, which kept its own account, was burned by Rome in 146 BCE.",
+   "legacy": "She founded the city that fought Rome for the Mediterranean, and Rome's poet gave her the only story of her that survives.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "Gathering Storm"
+  },
+  {
+   "slug": "eleanor-of-aquitaine",
+   "name": "Eleanor of Aquitaine",
+   "wikipedia_title": "Eleanor of Aquitaine",
+   "era": {
+    "label": "Medieval",
+    "span": "c. 1122 to 1204",
+    "century": "12th century"
+   },
+   "dates": {
+    "born": "c. 1122",
+    "died": "1204",
+    "reign_start": "1137",
+    "reign_end": "1204",
+    "display": "Duchess of Aquitaine 1137 to 1204; Queen of France 1137 to 1152; Queen of England 1154 to 1189",
+    "historicity": "historical"
+   },
+   "polity": "Duchy of Aquitaine; Kingdom of France; Kingdom of England (Angevin Empire)",
+   "modern_countries": [
+    "France",
+    "United Kingdom"
+   ],
+   "region": "Europe",
+   "titles": [
+    "Duchess of Aquitaine",
+    "Queen of France",
+    "Queen of England",
+    "Countess of Poitiers"
+   ],
+   "faith": "Roman Catholicism",
+   "personality": {
+    "traits": [
+     "formidable",
+     "independent",
+     "cultured",
+     "long-lived"
+    ],
+    "temperament": "She outlived two husbands, both kings, and eight of her ten children. She went on crusade with the first, divorced him, married the second ten weeks later, rebelled against him with their sons and spent sixteen years in his custody. Freed at seventy, she rode across Europe to ransom one son and to fetch a bride for another. The troubadours sang in her court and the chroniclers, mostly clerics, disapproved of her in detail.",
+    "agenda_tie": "Her agenda, Angevin Empire, likes leaders with high loyalty and dislikes those whose cities waver; her own lands followed her from one crown to the other."
+   },
+   "bio_codex": "Eleanor inherited Aquitaine, a third of France, at fifteen on her father's death in 1137 and was married within months to Louis VII of France. She went with him on the Second Crusade, quarrelled with him at Antioch, and had the marriage annulled in 1152 on grounds of kinship. Eight weeks later she married Henry Plantagenet, eleven years younger, who in 1154 became Henry II of England. Her dowry made him lord of more of France than the French king. She bore him eight children, including Richard the Lionheart and John, and in 1173 backed her sons' revolt against him; he kept her confined until his death in 1189. As queen mother she governed England during Richard's crusade, raised his ransom from the Emperor, and at eighty crossed the Pyrenees to bring her granddaughter Blanche to marry the heir of France. She died at Fontevraud in 1204 and lies there in effigy, reading a book.",
+   "legacy": "She carried a third of France from one crown to the other and outlasted every man who tried to rule her.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "Gathering Storm"
+  },
+  {
+   "slug": "frederick-barbarossa",
+   "name": "Frederick Barbarossa",
+   "wikipedia_title": "Frederick I, Holy Roman Emperor",
+   "era": {
+    "label": "Medieval",
+    "span": "c. 1122 to 1190",
+    "century": "12th century"
+   },
+   "dates": {
+    "born": "c. 1122",
+    "died": "1190",
+    "reign_start": "1152",
+    "reign_end": "1190",
+    "display": "r. 1152 to 1190 (Emperor from 1155)",
+    "historicity": "historical"
+   },
+   "polity": "Holy Roman Empire",
+   "modern_countries": [
+    "Germany",
+    "Italy",
+    "Austria",
+    "Switzerland",
+    "Czech Republic",
+    "Netherlands",
+    "Belgium"
+   ],
+   "region": "Europe",
+   "titles": [
+    "Holy Roman Emperor",
+    "King of Germany",
+    "King of Italy",
+    "King of Burgundy",
+    "Duke of Swabia"
+   ],
+   "faith": "Roman Catholicism",
+   "personality": {
+    "traits": [
+     "energetic",
+     "imperious",
+     "legalistic",
+     "indefatigable"
+    ],
+    "temperament": "Red-bearded, broad, courteous in speech and relentless in purpose, he spent his reign trying to make the empire a fact rather than a title. He crossed the Alps six times to make the cities of Lombardy obey and burned Milan when they would not. He treated with popes and made antipopes. He died at nearly seventy in a river in Anatolia, in armour, on his way to Jerusalem; the legend has him asleep under a mountain waiting to come back.",
+    "agenda_tie": "His agenda, Iron Crown, dislikes leaders who ally with or hold city-states he wants; he spent thirty years fighting the free communes of Italy."
+   },
+   "bio_codex": "Frederick of Hohenstaufen, duke of Swabia, was elected king of Germany in 1152 as a compromise between the Welf and Staufen factions that had torn the kingdom. Pope Adrian IV crowned him emperor in Rome in 1155. He issued the Roncaglia decrees in 1158 claiming the regalian rights of the Lombard cities, and the cities refused him; he razed Milan in 1162, lost his army to malaria outside Rome in 1167, and was beaten by the Lombard League at Legnano in 1176. He made peace at Constance in 1183, keeping the title and conceding the substance. In Germany he broke the power of Henry the Lion, settled the eastern marches, and married his son to the heiress of Sicily. In 1189 he took the Third Crusade east with the largest army of the three. On 10 June 1190 he drowned crossing the Saleph river in Cilicia, and his army dissolved.",
+   "legacy": "He spent thirty-eight years making the Holy Roman Empire mean what its name said, and drowned on the way to Jerusalem.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "Base Game"
+  },
+  {
+   "slug": "gandhi",
+   "name": "Gandhi",
+   "wikipedia_title": "Mahatma Gandhi",
+   "era": {
+    "label": "Modern",
+    "span": "1869 to 1948",
+    "century": "20th century"
+   },
+   "dates": {
+    "born": "1869",
+    "died": "1948",
+    "reign_start": null,
+    "reign_end": null,
+    "display": "led the Indian independence movement 1915 to 1947",
+    "historicity": "historical"
+   },
+   "polity": "British India; the Indian independence movement",
+   "modern_countries": [
+    "India",
+    "South Africa"
+   ],
+   "region": "South Asia",
+   "titles": [
+    "Mahatma",
+    "Bapu",
+    "Father of the Nation",
+    "Leader of the Indian National Congress"
+   ],
+   "faith": "Hinduism",
+   "personality": {
+    "traits": [
+     "ascetic",
+     "stubborn",
+     "experimental",
+     "unflinching"
+    ],
+    "temperament": "He called his autobiography the story of his experiments with truth, and he ran the experiments on himself: diet, celibacy, silence, fasting to the edge of death to stop a riot. He was a lawyer who dressed as a peasant, a Hindu who read the Sermon on the Mount, and a man who answered an empire's police with a march to the sea to make salt. He was shot by a Hindu who thought him too soft on Muslims.",
+    "agenda_tie": "His agenda, Peacekeeper, likes leaders at peace and refuses to forgive warmongers; the historical Gandhi built a national movement on non-violence."
+   },
+   "bio_codex": "Mohandas Karamchand Gandhi was born in Porbandar in 1869, trained as a barrister in London, and spent twenty-one years in South Africa, where he was thrown off a train for his colour and began the campaigns of civil disobedience he named satyagraha. He returned to India in 1915. He led the non-cooperation movement of 1920, the Salt March of 1930, walking 240 miles to the sea to break the British monopoly, and the Quit India campaign of 1942, and he spent more than six years of his life in prison for them. He worked for the untouchables, for village industry and for Hindu-Muslim unity, and he fasted against the violence of partition in 1947 while the country he had freed divided itself in blood. On 30 January 1948 Nathuram Godse shot him three times at a prayer meeting in Delhi. He held no office and commanded no army. Independent India has his face on every banknote.",
+   "legacy": "He freed a nation without an army and was killed by one of his own for the peace he kept.",
+   "quote": {
+    "text": "The weak can never forgive. Forgiveness is the attribute of the strong.",
+    "source": "Young India, 2 April 1931"
+   },
+   "expansion_origin": "Base Game"
+  },
+  {
+   "slug": "genghis-khan",
+   "name": "Genghis Khan",
+   "wikipedia_title": "Genghis Khan",
+   "era": {
+    "label": "Medieval",
+    "span": "c. 1162 to 1227",
+    "century": "13th century"
+   },
+   "dates": {
+    "born": "c. 1162",
+    "died": "1227",
+    "reign_start": "1206",
+    "reign_end": "1227",
+    "display": "r. 1206 to 1227 as Great Khan",
+    "historicity": "historical"
+   },
+   "polity": "Mongol Empire",
+   "modern_countries": [
+    "Mongolia",
+    "China",
+    "Russia",
+    "Kazakhstan",
+    "Uzbekistan",
+    "Turkmenistan",
+    "Iran",
+    "Afghanistan"
+   ],
+   "region": "Central Asia",
+   "titles": [
+    "Great Khan of the Mongols",
+    "Chinggis Khan",
+    "Khagan"
+   ],
+   "faith": "Tengrism",
+   "personality": {
+    "traits": [
+     "ruthless",
+     "loyal to the loyal",
+     "methodical",
+     "curious"
+    ],
+    "temperament": "Temüjin was abandoned by his clan as a boy, enslaved, and hunted; he killed his half-brother over a fish. As khan he rewarded loyalty above birth, promoted a herdsman to general and a captured enemy archer to the head of his army, and made treachery to any master, even his enemy, a capital crime. He asked Taoist sages about immortality and let every faith pray for him. He emptied cities that resisted.",
+    "agenda_tie": "His agenda, Horse Lord, likes leaders with strong cavalry and resents those who field it against him; the Mongol army was horse, bow and nothing else."
+   },
+   "bio_codex": "Temüjin was born on the Onon river around 1162 to a minor chieftain who was poisoned when the boy was nine. He spent his youth hunted, captured and freed, and built a following from the dispossessed. By 1206 he had defeated or absorbed every tribe on the steppe and was proclaimed Chinggis Khan at a great assembly. He reorganised the Mongols into decimal units with no regard to clan, issued a written law, and turned outward. He broke the Western Xia, took Beijing from the Jin in 1215, and when the Khwarazmian shah murdered his envoys in 1219 he destroyed that empire in three years; Bukhara, Samarkand, Merv and Nishapur were depopulated. His generals rode around the Caspian and beat the Russian princes on the Kalka. He died in August 1227 on campaign against Xia, from a fall or a wound, and was buried in secret. His sons and grandsons ruled from Korea to Hungary.",
+   "legacy": "He took a scattered people and made them the largest land empire in history, and the cities that refused him were erased.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "Rise and Fall"
+  },
+  {
+   "slug": "gilgamesh",
+   "name": "Gilgamesh",
+   "wikipedia_title": "Gilgamesh",
+   "era": {
+    "label": "Ancient",
+    "span": "c. 2700 BCE (traditional)",
+    "century": "27th century BCE"
+   },
+   "dates": {
+    "born": null,
+    "died": null,
+    "reign_start": "c. 2700 BCE",
+    "reign_end": null,
+    "display": "r. c. 2700 BCE (traditional)",
+    "historicity": "legendary; possibly a historical king of Uruk, later deified"
+   },
+   "polity": "Sumerian city-state of Uruk",
+   "modern_countries": [
+    "Iraq"
+   ],
+   "region": "Middle East",
+   "titles": [
+    "King of Uruk",
+    "Lugal of Uruk",
+    "Hero of the Epic of Gilgamesh"
+   ],
+   "faith": "Sumerian polytheism (Inanna, Shamash)",
+   "personality": {
+    "traits": [
+     "restless",
+     "proud",
+     "grieving",
+     "wall-building"
+    ],
+    "temperament": "The epic opens with a king too strong for his city, who wears out its young men and takes its brides, until the gods make him an equal, Enkidu, out of clay. The two fight, embrace, and go to kill the guardian of the cedar forest together. When Enkidu dies, Gilgamesh wanders the earth in a lion skin looking for a way not to. He comes home without one and looks at his walls.",
+    "agenda_tie": "His agenda, Ally of Enkidu, seeks long alliances and defends his friends; the epic's whole second half is grief for one."
+   },
+   "bio_codex": "Gilgamesh appears in the Sumerian King List as the fifth king of the first dynasty of Uruk, reigning 126 years, and in inscriptions of later kings who claimed him as a brother or a god. If he lived, it was around 2700 BCE, in the city on the Euphrates whose walls he is credited with building, nine kilometres of baked brick around what was then the largest settlement in the world. The poems about him were written in Sumerian by 2100 BCE and gathered into the Akkadian Epic of Gilgamesh by the end of the second millennium; the standard version, twelve tablets, was found in the library of Ashurbanipal at Nineveh in 1853. It tells of his friendship with Enkidu, the killing of Humbaba and the Bull of Heaven, Enkidu's death, the journey to Utnapishtim who survived the flood, and the return to Uruk with nothing but the knowledge that the walls would outlast him. The walls are still there, a mound in the desert called Warka.",
+   "legacy": "He is the first hero whose name is written down, and his story is the oldest one still read.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "Base Game"
+  },
+  {
+   "slug": "gitarja",
+   "name": "Gitarja",
+   "wikipedia_title": "Tribhuwana Wijayatunggadewi",
+   "era": {
+    "label": "Medieval",
+    "span": "r. 1328 to 1350",
+    "century": "14th century"
+   },
+   "dates": {
+    "born": null,
+    "died": "c. 1372",
+    "reign_start": "1328",
+    "reign_end": "1350",
+    "display": "r. 1328 to 1350",
+    "historicity": "historical"
+   },
+   "polity": "Majapahit Empire, Java",
+   "modern_countries": [
+    "Indonesia",
+    "Malaysia",
+    "Singapore",
+    "Brunei"
+   ],
+   "region": "Southeast Asia",
+   "titles": [
+    "Queen regnant of Majapahit",
+    "Tribhuwana Wijayatunggadewi",
+    "Bhre Kahuripan"
+   ],
+   "faith": "Hinduism and Buddhism (Javanese syncretic)",
+   "personality": {
+    "traits": [
+     "decisive",
+     "expansionist",
+     "devout",
+     "delegating"
+    ],
+    "temperament": "The Javanese chronicles call her Tribhuwana, ruler of the three worlds, and Gitarja is the childhood name the Pararaton preserves. She took the throne when her brother died without a son, put down a rebellion in person, and appointed as chief minister Gajah Mada, who swore an oath not to taste spice until the archipelago was hers. She let him keep it. She is shown in temple statuary as the goddess Parvati.",
+    "agenda_tie": "Her agenda, Exalted Goddess of the Three Worlds, likes leaders who hold faith and dislikes those with none; Majapahit's queen was carved as a goddess in her own lifetime."
+   },
+   "bio_codex": "Dyah Gitarja was the daughter of Raden Wijaya, founder of Majapahit, and of Gayatri Rajapatni, a princess of the older kingdom of Singhasari. When her half-brother Jayanegara was murdered in 1328 the succession passed through her mother, who had become a Buddhist nun, and Gitarja ruled in her name under the title Tribhuwana Wijayatunggadewi. In 1331 she led the army herself against the rebellion of Sadeng and Keta in eastern Java. She raised Gajah Mada to mahapatih, chief minister, in 1334, and under his Palapa oath Majapahit took Bali in 1343 and sent fleets to Sumatra, Borneo and the Malay coast. She abdicated in 1350 when her mother died and the regency ended, and her son Hayam Wuruk reigned over the empire at its height. She lived on at court for two decades more. Her memorial statue at Candi Rimbi shows her as Parvati with four arms.",
+   "legacy": "She took Majapahit from a murdered brother and handed her son the largest sea empire in Southeast Asian history.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "Khmer and Indonesia Civilization & Scenario Pack"
+  },
+  {
+   "slug": "gorgo",
+   "name": "Gorgo",
+   "wikipedia_title": "Gorgo, Queen of Sparta",
+   "era": {
+    "label": "Ancient",
+    "span": "c. 518 to after 480 BCE",
+    "century": "5th century BCE"
+   },
+   "dates": {
+    "born": "c. 518 BCE",
+    "died": null,
+    "reign_start": "c. 490 BCE",
+    "reign_end": "480 BCE",
+    "display": "Queen consort of Sparta c. 490 to 480 BCE",
+    "historicity": "historical; known through Herodotus and Plutarch"
+   },
+   "polity": "Sparta (Lacedaemon)",
+   "modern_countries": [
+    "Greece"
+   ],
+   "region": "Europe",
+   "titles": [
+    "Queen of Sparta",
+    "Daughter of Cleomenes I",
+    "Wife of Leonidas I"
+   ],
+   "faith": "Greek polytheism",
+   "personality": {
+    "traits": [
+     "blunt",
+     "shrewd",
+     "laconic",
+     "unafraid"
+    ],
+    "temperament": "Herodotus tells of her at eight or nine warning her father not to be bribed by a Milesian with a case for war; the king sent the man away. When a blank wax tablet came to Sparta she was the one who guessed the message was under the wax. Asked by an Athenian woman why Spartan women alone ruled their men, Plutarch has her say, because we alone give birth to men. She sent Leonidas to Thermopylae with instructions to marry a good man and bear good children.",
+    "agenda_tie": "Her agenda, With Your Shield or On It, respects leaders who never give up cities and despises those who do; her husband's three hundred did not retreat."
+   },
+   "bio_codex": "Gorgo was the only child of Cleomenes I, king of Sparta of the Agiad line, and was born around 518 BCE. She married her uncle Leonidas, who succeeded to the throne in about 490 after Cleomenes died, mad or murdered, in prison. Herodotus, who wrote within living memory, gives her two of the few recorded sayings of any Spartan woman and credits her with reading the secret message from Demaratus that warned Greece of Xerxes' invasion. In 480 Leonidas marched north with three hundred Spartans and died at Thermopylae holding the pass; their son Pleistarchus was a child, and Gorgo's brother-in-law Cleombrotus and then her nephew Pausanias held the regency. Her later life is unrecorded. Sparta kept no histories of its own, and what survives of Gorgo is what Athenians and a Boeotian chose to remember: a girl who was listened to, and a queen who told the truth in one sentence.",
+   "legacy": "She is the one Spartan woman whose words the Greeks wrote down, and they were all about not yielding.",
+   "quote": {
+    "text": "Because we are the only women who give birth to men.",
+    "source": "Plutarch, Sayings of Spartan Women, Gorgo 5"
+   },
+   "expansion_origin": "Base Game"
+  },
+  {
+   "slug": "hammurabi",
+   "name": "Hammurabi",
+   "wikipedia_title": "Hammurabi",
+   "era": {
+    "label": "Ancient",
+    "span": "c. 1810 to c. 1750 BCE",
+    "century": "18th century BCE"
+   },
+   "dates": {
+    "born": "c. 1810 BCE",
+    "died": "c. 1750 BCE",
+    "reign_start": "c. 1792 BCE",
+    "reign_end": "c. 1750 BCE",
+    "display": "r. c. 1792 to c. 1750 BCE (middle chronology)",
+    "historicity": "historical"
+   },
+   "polity": "First Babylonian Empire",
+   "modern_countries": [
+    "Iraq",
+    "Syria"
+   ],
+   "region": "Middle East",
+   "titles": [
+    "King of Babylon",
+    "King of Sumer and Akkad",
+    "King of the Four Quarters"
+   ],
+   "faith": "Mesopotamian polytheism (Marduk, Shamash)",
+   "personality": {
+    "traits": [
+     "lawgiving",
+     "patient",
+     "diplomatic",
+     "exacting"
+    ],
+    "temperament": "His letters survive by the hundred, written to governors about canals, late taxes, a stolen ox and a bribed judge. He waited thirty years before making war on his rivals and then took them one by one. The stele of his laws shows him standing before the sun god, receiving the rod and ring of justice, and its prologue says he was called to make justice visible in the land so that the strong should not oppress the weak.",
+    "agenda_tie": "His agenda, Cradle of Civilization, likes leaders who build and run many district types and dislikes those who build few; his laws governed every trade in Babylon."
+   },
+   "bio_codex": "Hammurabi inherited Babylon in about 1792 BCE as one of a dozen Amorite kingdoms on the rivers of Mesopotamia, hemmed by Larsa, Eshnunna, Mari and Assyria. For three decades he dug canals, built walls and kept treaties. Then, in a span of about ten years from 1763, he beat Elam and Larsa, took Eshnunna, destroyed Mari, which had been his ally, and made Babylon the capital of all of Sumer and Akkad. His code of 282 laws, cut into a two-metre stele of black diorite near the end of his reign, set prices, wages, divorce terms, the liability of builders whose houses fell, and the lex talionis, an eye for an eye between equals and silver between unequals. The stele was carried off to Susa by the Elamites six centuries later and found there in 1901. His empire shrank under his son and was gone within a century and a half; the laws were copied in schools for a thousand years.",
+   "legacy": "He wrote the oldest long code of law that survives and set it where everyone could read it.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "New Frontier Pass: Babylon Pack"
+  },
+  {
+   "slug": "harald-hardrada",
+   "name": "Harald Hardrada",
+   "wikipedia_title": "Harald Hardrada",
+   "era": {
+    "label": "Medieval",
+    "span": "c. 1015 to 1066",
+    "century": "11th century"
+   },
+   "dates": {
+    "born": "c. 1015",
+    "died": "1066",
+    "reign_start": "1046",
+    "reign_end": "1066",
+    "display": "r. 1046 to 1066",
+    "historicity": "historical"
+   },
+   "polity": "Kingdom of Norway",
+   "modern_countries": [
+    "Norway",
+    "Denmark",
+    "Ukraine",
+    "Turkey",
+    "United Kingdom"
+   ],
+   "region": "Europe",
+   "titles": [
+    "King of Norway",
+    "Commander of the Varangian Guard",
+    "Hardråde (hard ruler)"
+   ],
+   "faith": "Christianity (recently converted Norway)",
+   "personality": {
+    "traits": [
+     "hard",
+     "ambitious",
+     "skilled in verse",
+     "unlucky at the last"
+    ],
+    "temperament": "He fought his first battle at fifteen and lost it. He fled to Kiev, then to Constantinople, where he led the emperor's Varangian axemen in Sicily, Bulgaria and the Holy Land, came home with a ship's hold of gold, and bought half a kingdom with it. He composed poetry, blinded a Byzantine emperor if the sagas are believed, and burned Hedeby. He died with an arrow in the throat, charging, at fifty-one.",
+    "agenda_tie": "His agenda, Last Viking King, likes leaders with strong navies and dislikes those without; he crossed the North Sea with three hundred ships."
+   },
+   "bio_codex": "Harald Sigurdsson was half-brother to Olaf II of Norway and fought beside him at Stiklestad in 1030, where Olaf was killed and Harald, wounded at fifteen, escaped east. He served Yaroslav of Kiev and then, from about 1034, the Byzantine emperors as a commander of the Varangian Guard, campaigning in Sicily and the Balkans and amassing a fortune. He returned north in 1045, married Yaroslav's daughter, and forced his nephew Magnus to share the Norwegian crown; Magnus died a year later and Harald ruled alone. He fought Denmark for fifteen years without taking it, founded Oslo, and crushed the old chieftains at home, earning the name Hardrada. In 1066, invited by Tostig Godwinson, he invaded England to claim its throne. He won at Fulford and five days later, on 25 September, was killed at Stamford Bridge by Harold Godwinson's army. Three weeks after that Harold fell at Hastings. The Viking age is usually dated to end with Harald.",
+   "legacy": "He fought from Kiev to Sicily to York, and his death at Stamford Bridge is where historians end the Viking age.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "Base Game"
+  },
+  {
+   "slug": "hojo-tokimune",
+   "name": "Hojo Tokimune",
+   "wikipedia_title": "Hōjō Tokimune",
+   "era": {
+    "label": "Medieval",
+    "span": "1251 to 1284",
+    "century": "13th century"
+   },
+   "dates": {
+    "born": "1251",
+    "died": "1284",
+    "reign_start": "1268",
+    "reign_end": "1284",
+    "display": "Shikken (regent) 1268 to 1284",
+    "historicity": "historical"
+   },
+   "polity": "Kamakura shogunate, Japan",
+   "modern_countries": [
+    "Japan"
+   ],
+   "region": "East Asia",
+   "titles": [
+    "Shikken (regent of the Kamakura shogunate)",
+    "Head of the Hōjō clan",
+    "Tokusō"
+   ],
+   "faith": "Zen Buddhism",
+   "personality": {
+    "traits": [
+     "resolute",
+     "young",
+     "austere",
+     "immovable"
+    ],
+    "temperament": "He was eighteen when the Mongol envoys came, and he had them turned away; when they came again he had them beheaded. He studied Zen with Chinese masters, built Engaku-ji for the dead of both sides, and is said to have asked his teacher Mugaku Sogen how to face the invasion and been told to cut off the source of fear. He answered the Mongols with walls and with a refusal that did not change.",
+    "agenda_tie": "His agenda, Bushido, likes leaders whose faith and culture match their military strength and dislikes those who field armies without them."
+   },
+   "bio_codex": "Hōjō Tokimune was born in 1251, the son of the regent Tokiyori, and became shikken, regent for a child shogun and the real ruler of Japan, in 1268 at eighteen. That year Kublai Khan's envoys arrived demanding submission. Tokimune refused them. In November 1274 a Mongol-Korean fleet landed in Hakata Bay with perhaps thirty thousand men, fought a day against the samurai of Kyushu, and withdrew in a storm. Tokimune executed the next embassies, in 1275 and 1279, and built a stone wall twenty kilometres long around the bay. In the summer of 1281 two fleets, some four thousand ships and a hundred and forty thousand men by the chronicles, were held on the beaches for seven weeks and then destroyed by a typhoon, the kamikaze, the divine wind. Tokimune founded Engaku-ji in Kamakura to pray for the dead of both sides, and died in 1284 at thirty-three. The shogunate, unable to pay the samurai who had fought, outlived him by fifty years.",
+   "legacy": "He refused the Mongols twice and the sea finished the argument; Japan was not invaded again for seven centuries.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "Base Game"
+  },
+  {
+   "slug": "jadwiga",
+   "name": "Jadwiga",
+   "wikipedia_title": "Jadwiga of Poland",
+   "era": {
+    "label": "Medieval",
+    "span": "1373 or 1374 to 1399",
+    "century": "14th century"
+   },
+   "dates": {
+    "born": "1373",
+    "died": "1399",
+    "reign_start": "1384",
+    "reign_end": "1399",
+    "display": "r. 1384 to 1399",
+    "historicity": "historical"
+   },
+   "polity": "Kingdom of Poland",
+   "modern_countries": [
+    "Poland",
+    "Lithuania",
+    "Ukraine",
+    "Belarus",
+    "Hungary"
+   ],
+   "region": "Europe",
+   "titles": [
+    "King of Poland (Hedvig Rex Poloniæ)",
+    "Grand Duchess of Lithuania",
+    "Saint Jadwiga"
+   ],
+   "faith": "Roman Catholicism",
+   "personality": {
+    "traits": [
+     "devout",
+     "self-sacrificing",
+     "learned",
+     "gentle in rule"
+    ],
+    "temperament": "She was crowned king, not queen, at ten, so that no husband could claim the crown over her. At twelve she gave up the Habsburg prince she had been promised and married the pagan grand duke of Lithuania, who was baptised for the purpose, and the chronicles treat the marriage as a sacrifice she made for the conversion of a nation. She spoke six languages, founded a theology faculty at Kraków, and sold her jewels to refound the university. She died at twenty-five, days after her only child.",
+    "agenda_tie": "Her agenda, Saint, likes leaders who follow her religion and dislikes those who spread another; her marriage converted Lithuania, the last pagan state in Europe."
+   },
+   "bio_codex": "Jadwiga was the younger daughter of Louis I of Hungary and Poland, of the Angevin house, and was crowned at Kraków in October 1384 at the age of ten with the title of king, since Polish law knew no reigning queen. The Polish lords broke her childhood betrothal to William of Habsburg and in 1386 married her to Jogaila, grand duke of Lithuania, who accepted baptism as Władysław and was crowned beside her. The union of the two crowns created the largest state in Europe and lasted, in one form or another, until 1795. She ruled in her own right, negotiating with the Teutonic Knights, reconciling Jogaila with his cousin Vytautas, and leading an army into Ruthenia in 1387. She was a patron of scholars and translators and endowed the University of Kraków from her estate. She died on 17 July 1399, weeks after giving birth to a daughter who did not live. Poland venerated her at once; the Church canonised her in 1997.",
+   "legacy": "She was crowned king at ten, married for a nation's conversion at twelve, and died at twenty-five a saint.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "Poland Civilization & Scenario Pack"
+  },
+  {
+   "slug": "jayavarman-vii",
+   "name": "Jayavarman VII",
+   "wikipedia_title": "Jayavarman VII",
+   "era": {
+    "label": "Medieval",
+    "span": "c. 1122 to c. 1218",
+    "century": "12th century"
+   },
+   "dates": {
+    "born": "c. 1122",
+    "died": "c. 1218",
+    "reign_start": "1181",
+    "reign_end": "c. 1218",
+    "display": "r. 1181 to c. 1218",
+    "historicity": "historical"
+   },
+   "polity": "Khmer Empire",
+   "modern_countries": [
+    "Cambodia",
+    "Thailand",
+    "Laos",
+    "Vietnam"
+   ],
+   "region": "Southeast Asia",
+   "titles": [
+    "King of the Khmer Empire",
+    "Mahaparamasaugata",
+    "Devaraja"
+   ],
+   "faith": "Mahayana Buddhism",
+   "personality": {
+    "traits": [
+     "pious",
+     "tireless",
+     "compassionate in stone",
+     "total in ambition"
+    ],
+    "temperament": "His face is the one carved two hundred times on the towers of the Bayon, eyes half closed, mouth in a slight smile, and probably his portrait. He came to power late, after the Cham had sacked Angkor, drove them out and built more in thirty-seven years than any Khmer king before him: a walled city, a temple for his mother, a temple for his father, a hundred hospitals, rest houses along every road. An inscription says he suffered from the illnesses of his subjects more than from his own.",
+    "agenda_tie": "His agenda, Monsoon Season, likes leaders with large city populations and dislikes those with small ones; his reign fed Angkor's million from its reservoirs."
+   },
+   "bio_codex": "Jayavarman was a prince of the Khmer royal house who spent his middle years in Champa, the kingdom on the coast of what is now Vietnam, and was nearly sixty when a Cham fleet sailed up the Tonlé Sap and sacked Angkor in 1177. He returned, raised an army, defeated the Cham on the lake and in the field, and was crowned in 1181. He then invaded Champa itself and ruled it for twenty years. At home he built Angkor Thom, a walled capital with the Bayon at its centre, and the temple monasteries of Ta Prohm and Preah Khan, dedicated to his mother and father; he built one hundred and two hospitals and one hundred and twenty-one rest houses, and roads with stone bridges to link them. He made Mahayana Buddhism the state religion in a Hindu kingdom. The building emptied the treasury and the labour of a generation, and his successors reversed his faith and defaced his images. He died around 1218, in his nineties.",
+   "legacy": "He rebuilt Angkor from a sack and left more stone, more hospitals and more roads than any king of Cambodia.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "Khmer and Indonesia Civilization & Scenario Pack"
+  },
+  {
+   "slug": "joao-iii",
+   "name": "João III",
+   "wikipedia_title": "John III of Portugal",
+   "era": {
+    "label": "Renaissance",
+    "span": "1502 to 1557",
+    "century": "16th century"
+   },
+   "dates": {
+    "born": "1502",
+    "died": "1557",
+    "reign_start": "1521",
+    "reign_end": "1557",
+    "display": "r. 1521 to 1557",
+    "historicity": "historical"
+   },
+   "polity": "Kingdom of Portugal and its overseas empire",
+   "modern_countries": [
+    "Portugal",
+    "Brazil",
+    "Mozambique",
+    "Angola",
+    "India",
+    "Malaysia",
+    "Japan"
+   ],
+   "region": "Europe",
+   "titles": [
+    "King of Portugal and the Algarves",
+    "Lord of Guinea and of the Conquest, Navigation and Commerce of Ethiopia, Arabia, Persia and India",
+    "O Piedoso (the Pious)"
+   ],
+   "faith": "Roman Catholicism",
+   "personality": {
+    "traits": [
+     "pious",
+     "cautious",
+     "administrative",
+     "colonising"
+    ],
+    "temperament": "The Pious King was not a sailor and never left Portugal. He inherited an empire of forts and factories from Lisbon to the Spice Islands and spent his reign deciding which to keep. He brought the Inquisition to Portugal, sent the Jesuits to Goa and Japan, settled Brazil with captaincies, and gave up Moroccan fortresses the crown could no longer pay for. He married his sister to Charles V and his children died before him, all nine.",
+    "agenda_tie": "His agenda, Navigator's Legacy, likes leaders who settle coasts and dislikes those who keep away from the sea; Portugal's whole empire was a line of harbours."
+   },
+   "bio_codex": "João III succeeded his father Manuel I in December 1521, at nineteen, as king of a country of a million people that held the sea route to India. He reorganised the Estado da Índia, took Diu and Bassein, and opened trade with China at Macau and with Japan at Tanegashima in 1543. He divided Brazil into hereditary captaincies in 1534 and, when most of them failed, sent a royal governor to found Salvador in 1549. He invited the Society of Jesus to Portugal in 1540 and sent Francis Xavier east; he obtained the Inquisition from Rome in 1536 and it burned its first heretics in Lisbon in 1540. He abandoned Safim, Azamor and Arzila in Morocco, judging them unaffordable, and he fell into debt to the bankers of Antwerp for the rest. He died in June 1557, outlived by none of his children; the crown passed to his grandson Sebastião, a child of three.",
+   "legacy": "He turned an age of discovery into an empire of administration, from Brazil to Japan, and buried every heir he had.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "New Frontier Pass: Portugal Pack"
+  },
+  {
+   "slug": "john-curtin",
+   "name": "John Curtin",
+   "wikipedia_title": "John Curtin",
+   "era": {
+    "label": "Modern",
+    "span": "1885 to 1945",
+    "century": "20th century"
+   },
+   "dates": {
+    "born": "1885",
+    "died": "1945",
+    "reign_start": "1941",
+    "reign_end": "1945",
+    "display": "Prime Minister of Australia 1941 to 1945",
+    "historicity": "historical"
+   },
+   "polity": "Commonwealth of Australia",
+   "modern_countries": [
+    "Australia"
+   ],
+   "region": "Oceania",
+   "titles": [
+    "Prime Minister of Australia",
+    "Leader of the Australian Labor Party",
+    "Member for Fremantle"
+   ],
+   "faith": "Catholic upbringing; secular socialist",
+   "personality": {
+    "traits": [
+     "conscientious",
+     "anxious",
+     "plain-spoken",
+     "steadfast"
+    ],
+    "temperament": "He was a socialist newspaperman who had gone to prison for opposing conscription in 1916 and who, as prime minister, introduced it. He had fought drink and lost for years, then won. He walked the grounds of the Lodge at night during the Battle of the Coral Sea, unable to sleep. He told the country, in the week after Pearl Harbor, that Australia looked to America, free of any pangs about its links with Britain, and Churchill did not forgive him.",
+    "agenda_tie": "His agenda, Perpetually on Guard, likes leaders who liberate cities and dislikes those who take cities from others; he brought Australia's divisions home to defend it."
+   },
+   "bio_codex": "John Curtin was born in Creswick, Victoria, in 1885, left school at thirteen, and came up through the Victorian socialist movement and the timber workers' union. He edited the Westralian Worker in Perth, won Fremantle for Labor in 1928, and led the party from 1935. He became prime minister in October 1941 when two independents crossed the floor, and nine weeks later Japan entered the war. In December he turned to the United States over Britain's objection; in February 1942 he refused Churchill's order to divert the 7th Division to Burma and brought it home; he placed Australian forces under MacArthur's command, introduced conscription for service in the islands, and organised the economy for total war. His health broke under it. He died in office on 5 July 1945, six weeks before Japan's surrender. He is the only Australian prime minister to have died in the Lodge in wartime, and polls of historians regularly name him the country's greatest.",
+   "legacy": "He turned Australia from Britain to America in a week and died before the war he directed was won.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "Australia Civilization & Scenario Pack"
+  },
+  {
+   "slug": "kristina",
+   "name": "Kristina",
+   "wikipedia_title": "Christina, Queen of Sweden",
+   "era": {
+    "label": "Renaissance",
+    "span": "1626 to 1689",
+    "century": "17th century"
+   },
+   "dates": {
+    "born": "1626",
+    "died": "1689",
+    "reign_start": "1632",
+    "reign_end": "1654",
+    "display": "r. 1632 to 1654 (abdicated)",
+    "historicity": "historical"
+   },
+   "polity": "Swedish Empire",
+   "modern_countries": [
+    "Sweden",
+    "Finland",
+    "Estonia",
+    "Latvia",
+    "Germany",
+    "Italy"
+   ],
+   "region": "Europe",
+   "titles": [
+    "Queen of Sweden",
+    "Grand Princess of Finland",
+    "Duchess of Estonia, Livonia and Karelia"
+   ],
+   "faith": "Lutheranism, then Roman Catholicism",
+   "personality": {
+    "traits": [
+     "brilliant",
+     "restless",
+     "unconventional",
+     "extravagant"
+    ],
+    "temperament": "She was raised as a prince because her father ordered it, rode and shot and swore like one, and read ten hours a day. She brought Descartes to Stockholm and he died of the winter. She would not marry, would not stay Lutheran and would not stay queen; she abdicated at twenty-seven, rode to Rome in men's clothes, converted, and spent the rest of her life collecting paintings, manuscripts and debts. She is one of four women buried in St Peter's.",
+    "agenda_tie": "Her agenda, Minerva of the North, likes leaders with many Great Works and wonders and dislikes those with few; she stripped Prague's castle for her library."
+   },
+   "bio_codex": "Christina was born in Stockholm in December 1626, the only surviving child of Gustavus Adolphus, who was killed at Lützen when she was six. She was educated as a king's heir and took the government in 1644 at eighteen, during the last years of the Thirty Years' War, which the Peace of Westphalia ended in 1648 with Sweden a great power. She made her court a university, bringing Descartes, Grotius, Salmasius and Vossius to Stockholm and filling the castle with the libraries and galleries her armies had taken from Prague. In June 1654 she abdicated in favour of her cousin Charles Gustav, left Sweden within days, and in 1655 was received into the Catholic Church at Innsbruck. She settled in Rome, founded the academy that became the Arcadia, patronised Scarlatti and Corelli and Bernini, intrigued for the crowns of Naples and Poland, and had her equerry Monaldeschi executed at Fontainebleau for betraying her. She died in Rome in 1689.",
+   "legacy": "She gave up a crown to keep her mind her own and made Rome's greatest private collection with Sweden's spoils.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "Gathering Storm"
+  },
+  {
+   "slug": "kupe",
+   "name": "Kupe",
+   "wikipedia_title": "Kupe",
+   "era": {
+    "label": "Medieval",
+    "span": "traditionally c. 10th to 13th century",
+    "century": "Māori tradition; no fixed date"
+   },
+   "dates": {
+    "born": null,
+    "died": null,
+    "reign_start": null,
+    "reign_end": null,
+    "display": "legendary navigator of Māori tradition",
+    "historicity": "legendary; the settlement of Aotearoa c. 1250 to 1300 is historical"
+   },
+   "polity": "Hawaiki (the ancestral Polynesian homeland); Aotearoa (New Zealand)",
+   "modern_countries": [
+    "New Zealand",
+    "French Polynesia",
+    "Cook Islands"
+   ],
+   "region": "Oceania",
+   "titles": [
+    "Navigator",
+    "Discoverer of Aotearoa",
+    "Rangatira of the Matahourua"
+   ],
+   "faith": "Māori religion (atua; Tangaroa, Tāne)",
+   "personality": {
+    "traits": [
+     "far-seeing",
+     "daring",
+     "pursuing",
+     "naming"
+    ],
+    "temperament": "The traditions differ by iwi, but they agree on the ocean. He left Hawaiki in the canoe Matahourua, chasing a great octopus that had stolen his people's bait, or fleeing a quarrel over a woman, and found a long white cloud on the horizon that his wife named Aotearoa. He sailed its coasts and named its places, Castlepoint, Mana, the Hokianga where he turned for home. He went back to Hawaiki with the sailing directions. He did not return.",
+    "agenda_tie": "His agenda, Kaitiakitanga, likes leaders who keep their land's appeal high and dislikes those who strip it; his descendants are the guardians of the land he found."
+   },
+   "bio_codex": "Kupe is the navigator credited in many Māori traditions with the discovery of Aotearoa. The stories place his homeland in Hawaiki, the ancestral land of Polynesian memory, and give him a double-hulled voyaging canoe, the Matahourua, a wife Kuramārōtini, and a companion or rival, Ngake. He is said to have followed the long-tailed cuckoo south, found the islands empty of people, named the coasts and the harbours, fought the octopus of Muturangi in Cook Strait, and sailed home with the star path, the Hokianga-nui-a-Kupe, the great returning place of Kupe, marking where he left. Later voyages of the great fleet followed his directions. Archaeology dates the first settlement of New Zealand to about 1250 to 1300 CE, the last large landmass on Earth to be settled by people, and the wayfinding by stars, swells and birds that the tradition describes is how it was done. Kupe's name is on the land in a dozen places and on no stone.",
+   "legacy": "He found the last empty land on Earth and left the directions so that others could.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "Gathering Storm"
+  },
+  {
+   "slug": "lady-six-sky",
+   "name": "Lady Six Sky",
+   "wikipedia_title": "Lady Six Sky",
+   "era": {
+    "label": "Classical",
+    "span": "r. 682 to c. 741 CE",
+    "century": "7th and 8th centuries"
+   },
+   "dates": {
+    "born": null,
+    "died": "741",
+    "reign_start": "682",
+    "reign_end": "741",
+    "display": "r. 682 to 741 (at Naranjo)",
+    "historicity": "historical; from Maya inscriptions"
+   },
+   "polity": "Naranjo, a Maya city-state (Sa'al kingdom)",
+   "modern_countries": [
+    "Guatemala",
+    "Belize"
+   ],
+   "region": "North America",
+   "titles": [
+    "Ix Wak Chan Ajaw",
+    "Queen of Naranjo",
+    "Princess of Dos Pilas"
+   ],
+   "faith": "Maya religion",
+   "personality": {
+    "traits": [
+     "commanding",
+     "dynastic",
+     "warlike",
+     "enduring"
+    ],
+    "temperament": "The stelae of Naranjo show her standing on a bound captive, in the pose and dress of a king, and name her Ix Wak Chan Ajaw, Lady Six Sky. She came from Dos Pilas at nineteen to restart a dynasty that war had ended, never took the royal title, and ruled through a son she had at five years old crowned. For forty years the inscriptions record her wars. No other Maya woman left so many monuments.",
+    "agenda_tie": "Her agenda, Solitary, likes leaders who settle away from her and dislikes those who settle near her capital; Naranjo's wars were all with its neighbours."
+   },
+   "bio_codex": "Wak Chanil Ajaw was a daughter of the king of Dos Pilas, a branch of the Tikal royal line allied to Calakmul, and in August 682 CE she arrived at Naranjo, a city in the Petén whose ruling house had been destroyed in war with Caracol. She took the government without the title of ajaw, performed the rituals of a king, and in 693 installed her five-year-old son K'ahk' Tiliw Chan Chaak on the throne. The monuments of the next decades record campaigns against Ucanal, Yaxha, Tuubal and others, a string of victories that rebuilt Naranjo's standing in the lowlands. Her stelae show her trampling captives, a pose otherwise reserved for male rulers, and record her bloodletting rites at the turning of the calendar. She outlived her son, who died in 728, and governed on into old age. Her last recorded date is 741. The Maya collapse took Naranjo within a century and a half of her death.",
+   "legacy": "She rebuilt a destroyed kingdom from the throne she never claimed and left more monuments than any Maya queen.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "New Frontier Pass: Maya & Gran Colombia Pack"
+  },
+  {
+   "slug": "lautaro",
+   "name": "Lautaro",
+   "wikipedia_title": "Lautaro",
+   "era": {
+    "label": "Renaissance",
+    "span": "c. 1534 to 1557",
+    "century": "16th century"
+   },
+   "dates": {
+    "born": "c. 1534",
+    "died": "1557",
+    "reign_start": "1553",
+    "reign_end": "1557",
+    "display": "Toqui of the Mapuche 1553 to 1557",
+    "historicity": "historical"
+   },
+   "polity": "Mapuche confederation of the Araucanía",
+   "modern_countries": [
+    "Chile",
+    "Argentina"
+   ],
+   "region": "South America",
+   "titles": [
+    "Toqui (war leader) of the Mapuche",
+    "Leftraru"
+   ],
+   "faith": "Mapuche religion",
+   "personality": {
+    "traits": [
+     "observant",
+     "inventive",
+     "unforgiving",
+     "young"
+    ],
+    "temperament": "He was taken as a boy to be a Spanish officer's groom and spent three years watching horses, muskets and the way the invaders fought. Then he went home and taught his people to fight back in relays, to lure cavalry into ground that horses could not cross, and to ride the horses they captured. He killed the governor who had owned him. He was twenty-three when a surprise attack at dawn ended him, and the war he started lasted three hundred years.",
+    "agenda_tie": "His agenda, Spirit of Tucapel, likes leaders who keep their cities loyal and dislikes those who lose them; he fought the Spanish for the land itself."
+   },
+   "bio_codex": "Lautaro, Leftraru in Mapudungun, was captured around 1546 at the age of about eleven and served Pedro de Valdivia, conqueror and governor of Chile, as a page and groom. He escaped in 1550 or 1551 with a knowledge of Spanish horsemanship, armour and tactics. The Mapuche elected him toqui in 1553. At Tucapel in December of that year he attacked Valdivia's column in waves, exhausting the Spanish horse, destroyed it, and killed Valdivia. At Marihueñu in 1554 he destroyed a second army and burned Concepción, and burned it again in 1555. In 1556 he marched north on Santiago itself, through plague and famine, and in April 1557, camped on the Mataquito river, was surprised at dawn by Francisco de Villagra's cavalry and killed with most of his men. His head was displayed in Santiago. The Arauco War he began did not end until the 1880s, and Chile named warships, streets and a lodge of independence after him.",
+   "legacy": "He learned the invaders' war as their servant and turned it on them, and the Mapuche held their land for three centuries after.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "Rise and Fall"
+  },
+  {
+   "slug": "ludwig-ii",
+   "name": "Ludwig II",
+   "wikipedia_title": "Ludwig II of Bavaria",
+   "era": {
+    "label": "Industrial",
+    "span": "1845 to 1886",
+    "century": "19th century"
+   },
+   "dates": {
+    "born": "1845",
+    "died": "1886",
+    "reign_start": "1864",
+    "reign_end": "1886",
+    "display": "r. 1864 to 1886",
+    "historicity": "historical"
+   },
+   "polity": "Kingdom of Bavaria (within the German Empire from 1871)",
+   "modern_countries": [
+    "Germany",
+    "Austria"
+   ],
+   "region": "Europe",
+   "titles": [
+    "King of Bavaria",
+    "Count Palatine of the Rhine",
+    "Duke of Franconia and Swabia"
+   ],
+   "faith": "Roman Catholicism",
+   "personality": {
+    "traits": [
+     "dreaming",
+     "reclusive",
+     "obsessive",
+     "generous"
+    ],
+    "temperament": "He came to the throne at eighteen, tall and handsome, and within weeks had summoned Wagner, whose debts he paid and whose operas he staged for himself alone. He withdrew from Munich and from people, slept by day, drove through the mountains at night in a gilded sleigh, and built castles he never finished and could not afford: Neuschwanstein on its crag, Linderhof with its grotto, Herrenchiemsee copied from Versailles. His ministers had him declared insane. He drowned in a lake the next day with the doctor who had certified him.",
+    "agenda_tie": "His agenda, Dreamer of the Mountain, likes leaders who build wonders and dislikes those who let their cities fall into disrepair; he built three castles and bankrupted himself."
+   },
+   "bio_codex": "Ludwig became king of Bavaria in March 1864 on his father's sudden death. He was eighteen, unprepared, and devoted to Richard Wagner, whom he brought to Munich and financed through Tristan, Die Meistersinger and the building of Bayreuth. Bavaria fought on Austria's side in 1866 and lost; in 1870 Ludwig's letter proposing the Prussian king as German emperor, written at Bismarck's dictation in exchange for a secret pension, made Bavaria a state within the German Empire. He withdrew from government and from the capital. From 1869 he built Neuschwanstein, from 1874 Linderhof, from 1878 Herrenchiemsee, borrowing against the civil list until his debts reached fourteen million marks and his ministers, fearing he would sell Bavaria to pay them, had him deposed as insane on 10 June 1886. On 13 June he was found dead in the shallows of Lake Starnberg with Dr Gudden, his examiner. The castles he built on credit are now Bavaria's largest source of tourist income.",
+   "legacy": "He ruined a treasury on castles for an audience of one, and the castles now pay for Bavaria.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "Leader Pass: Great Builders Pack"
+  },
+  {
+   "slug": "mansa-musa",
+   "name": "Mansa Musa",
+   "wikipedia_title": "Mansa Musa",
+   "era": {
+    "label": "Medieval",
+    "span": "c. 1280 to c. 1337",
+    "century": "14th century"
+   },
+   "dates": {
+    "born": "c. 1280",
+    "died": "c. 1337",
+    "reign_start": "1312",
+    "reign_end": "c. 1337",
+    "display": "r. 1312 to c. 1337",
+    "historicity": "historical"
+   },
+   "polity": "Mali Empire",
+   "modern_countries": [
+    "Mali",
+    "Senegal",
+    "Mauritania",
+    "Guinea",
+    "Niger",
+    "Burkina Faso",
+    "Gambia"
+   ],
+   "region": "Africa",
+   "titles": [
+    "Mansa (Emperor) of Mali",
+    "Lord of the Mines of Wangara",
+    "Musa I"
+   ],
+   "faith": "Sunni Islam",
+   "personality": {
+    "traits": [
+     "pious",
+     "munificent",
+     "orderly",
+     "unhurried"
+    ],
+    "temperament": "He went to Mecca in 1324 with sixty thousand people and a hundred camels of gold, gave so much away in Cairo that the price of gold fell for a decade, and came back with architects and scholars. Arab writers who met him describe a man of dignity and few words who kept a hall of silent audience and would not be seen to eat. His empire ran on salt from the north and gold from the south and the law of the Quran at every stop between.",
+    "agenda_tie": "His agenda, Gold and Salt, likes leaders who send him trade routes and dislikes those who do not; the whole of Mali was built on the caravans."
+   },
+   "bio_codex": "Musa came to the throne of Mali in 1312 when his predecessor Abu Bakr II sailed into the Atlantic with a fleet and did not come back, or so Musa told the Egyptians. Mali already held the gold fields of Bambuk and Bure and the salt mines of Taghaza; Musa extended it to Gao and Timbuktu and governed it through provincial governors and a standing army. In 1324 he made the pilgrimage to Mecca by way of Cairo, where his spending in gold dust and gifts flooded the market and depressed the metal's value for years; the chronicler al-Umari recorded it a dozen years later from witnesses. He returned with the Andalusian architect al-Sahili and with Maliki jurists, built the Djinguereber mosque at Timbuktu and the great mosque at Gao, and made Timbuktu a centre of learning. The Catalan Atlas of 1375 shows him seated on a throne in the middle of Africa holding a nugget. He died around 1337. His wealth is beyond estimate, which is why it is called the greatest in history.",
+   "legacy": "He took so much gold to Mecca that Cairo's markets did not recover for years, and he came back with scholars.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "Gathering Storm"
+  },
+  {
+   "slug": "matthias-corvinus",
+   "name": "Matthias Corvinus",
+   "wikipedia_title": "Matthias Corvinus",
+   "era": {
+    "label": "Renaissance",
+    "span": "1443 to 1490",
+    "century": "15th century"
+   },
+   "dates": {
+    "born": "1443",
+    "died": "1490",
+    "reign_start": "1458",
+    "reign_end": "1490",
+    "display": "r. 1458 to 1490",
+    "historicity": "historical"
+   },
+   "polity": "Kingdom of Hungary (and Croatia, Bohemia in part, Austria)",
+   "modern_countries": [
+    "Hungary",
+    "Slovakia",
+    "Romania",
+    "Croatia",
+    "Austria",
+    "Czech Republic",
+    "Serbia"
+   ],
+   "region": "Europe",
+   "titles": [
+    "King of Hungary and Croatia",
+    "King of Bohemia (disputed)",
+    "Duke of Austria",
+    "Matthias the Just"
+   ],
+   "faith": "Roman Catholicism",
+   "personality": {
+    "traits": [
+     "learned",
+     "wily",
+     "ambitious",
+     "heavy-handed"
+    ],
+    "temperament": "He was elected king at fourteen by nobles on the frozen Danube, having spent the previous year as a prisoner in Prague, and he spent the next thirty-two years making sure no noble could do to him what they had done to his brother. He built the first standing army in Europe since Rome, the Black Army, and paid for it by taxing everyone. He collected the second largest library in Christendom, married an Italian, and took Vienna. Hungarian folklore made him the just king who walked among the poor in disguise.",
+    "agenda_tie": "His agenda, Raven King, likes leaders who levy city-state troops and dislikes those who hold the city-states he wants; the Black Army was mostly mercenary."
+   },
+   "bio_codex": "Mátyás Hunyadi was the younger son of János Hunyadi, the general who had held the Turks at Belgrade, and was elected king of Hungary in January 1458 after his elder brother had been executed by the previous king. He was fifteen. He broke the magnates who had elected him, reformed the courts and the tax system, and from about 1462 built the Black Army, a permanent force of some twenty to thirty thousand paid soldiers, largely Bohemian and German mercenaries, with artillery and a Danube flotilla. He fought the Ottomans at Jajce and Šabac but chose not to pursue a war of reconquest; he fought instead to the west, took Moravia and Silesia from Bohemia, and in 1485 captured Vienna and most of Lower Austria from the Emperor Frederick III. His court at Buda and Visegrád was the first Renaissance court north of the Alps, and his Bibliotheca Corviniana held some two thousand codices. He died in Vienna in April 1490, leaving a bastard son the nobles refused; the army was disbanded, and Hungary lost Mohács within forty years.",
+   "legacy": "He raised Europe's first standing army since Rome and the greatest library north of Italy, and both were gone within a generation of his death.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "Gathering Storm"
+  },
+  {
+   "slug": "menelik-ii",
+   "name": "Menelik II",
+   "wikipedia_title": "Menelik II",
+   "era": {
+    "label": "Industrial",
+    "span": "1844 to 1913",
+    "century": "19th century"
+   },
+   "dates": {
+    "born": "1844",
+    "died": "1913",
+    "reign_start": "1889",
+    "reign_end": "1913",
+    "display": "r. 1889 to 1913 as Emperor (King of Shewa from 1866)",
+    "historicity": "historical"
+   },
+   "polity": "Ethiopian Empire",
+   "modern_countries": [
+    "Ethiopia",
+    "Eritrea"
+   ],
+   "region": "Africa",
+   "titles": [
+    "Emperor of Ethiopia (Negusa Nagast)",
+    "King of Shewa",
+    "Conquering Lion of the Tribe of Judah"
+   ],
+   "faith": "Ethiopian Orthodox Tewahedo Christianity",
+   "personality": {
+    "traits": [
+     "shrewd",
+     "patient",
+     "modernising",
+     "implacable at Adwa"
+    ],
+    "temperament": "He spent ten years as a hostage of the emperor who had killed his father, escaped, and waited twenty more to take the crown. He bought rifles from every European power that would sell them and let each one think he was its client. When Italy claimed a treaty made Ethiopia its protectorate he denounced the Italian text, marched north with a hundred thousand men, and at Adwa destroyed the only European army ever beaten decisively by an African one in the age of empire. He then built a railway, a bank, a school and a telephone.",
+    "agenda_tie": "His agenda, Mountain Lion, likes leaders who settle on hills and dislikes those who settle in his highlands; Ethiopia's independence was its mountains."
+   },
+   "bio_codex": "Sahle Maryam was born in 1844, heir to the kingdom of Shewa, and was held at the court of Emperor Tewodros II from 1855 to 1865, when he escaped and took his father's throne. He expanded Shewa south and east, founded Addis Ababa in 1886, and was crowned emperor of Ethiopia in 1889 as Menelik II on the death of Yohannes IV. That year he signed the Treaty of Wuchale with Italy; the Italian text made Ethiopia a protectorate, the Amharic did not, and when Rome insisted he repudiated it in 1893. At Adwa on 1 March 1896 his army of about a hundred thousand destroyed an Italian force of seventeen thousand, and Italy recognised Ethiopia's full independence by the treaty of October. He then doubled the empire's territory by conquest in the south, conquests that his subjects there remember as such, and brought in the Djibouti railway, the first bank, the first modern school, electricity and the telephone. A stroke left him incapable from 1909; he died in December 1913.",
+   "legacy": "He beat a European army at Adwa and kept Ethiopia the one African state that was never a colony.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "New Frontier Pass: Ethiopia Pack"
+  },
+  {
+   "slug": "montezuma",
+   "name": "Montezuma",
+   "wikipedia_title": "Moctezuma I",
+   "era": {
+    "label": "Renaissance",
+    "span": "c. 1398 to 1469",
+    "century": "15th century"
+   },
+   "dates": {
+    "born": "c. 1398",
+    "died": "1469",
+    "reign_start": "1440",
+    "reign_end": "1469",
+    "display": "r. 1440 to 1469 (Moctezuma I Ilhuicamina)",
+    "historicity": "historical; Civ VI's Montezuma draws on both Moctezuma I and II"
+   },
+   "polity": "Aztec Empire (Triple Alliance), Tenochtitlan",
+   "modern_countries": [
+    "Mexico"
+   ],
+   "region": "North America",
+   "titles": [
+    "Huey Tlatoani of Tenochtitlan",
+    "Ilhuicamina (He Who Shoots Arrows at the Sky)",
+    "Moctezuma Ilhuicamina"
+   ],
+   "faith": "Aztec religion (Huitzilopochtli, Tlaloc)",
+   "personality": {
+    "traits": [
+     "expansive",
+     "ceremonial",
+     "severe",
+     "building"
+    ],
+    "temperament": "The game's Montezuma, with his feathers and his hunger for luxuries, is a composite, but the conqueror who built the empire was the first of the name. Moctezuma Ilhuicamina took the Triple Alliance beyond the Valley of Mexico, codified its laws, decreed the sumptuary rules that told each rank what it could wear, and after famine instituted the flower wars that fed the temples with captives. He raised the Great Temple and built the aqueduct from Chapultepec. The captives are part of the record, not a footnote.",
+    "agenda_tie": "His agenda, Tribute, wants the luxuries his neighbours have and resents those who hold them; the Aztec state ran on tribute lists."
+   },
+   "bio_codex": "Moctezuma Ilhuicamina was born around 1398, the son of the tlatoani Huitzilihuitl, and was elected ruler of Tenochtitlan in 1440 after serving his half-brother Itzcoatl as general and chief adviser. With Nezahualcoyotl of Texcoco he pushed the Triple Alliance south across the mountains into Morelos and east to the Gulf coast, bringing Chalco, Cuauhnahuac and the Huastec cities under tribute. The great famine of 1450 to 1454 nearly broke the city; afterwards he and his adviser Tlacaelel formalised the xochiyaoyotl, the flower wars with Tlaxcala and Huexotzinco fought to take prisoners for sacrifice. He rebuilt the Templo Mayor, built the dike of Nezahualcoyotl across the lake against floods, laid the aqueduct from Chapultepec, founded the botanical garden at Huaxtepec and issued the sumptuary laws that ordered Aztec society by dress. He died in 1469. His great-grandson Moctezuma II, who received Cortés, carried the name to its end.",
+   "legacy": "He made Tenochtitlan an empire and gave it the laws, the temple and the wars that defined it until the Spanish came.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "Aztec Civilization Pack (free, Base Game)"
+  },
+  {
+   "slug": "nzinga-mbande",
+   "name": "Nzinga Mbande",
+   "wikipedia_title": "Nzinga of Ndongo and Matamba",
+   "era": {
+    "label": "Renaissance",
+    "span": "c. 1583 to 1663",
+    "century": "17th century"
+   },
+   "dates": {
+    "born": "c. 1583",
+    "died": "1663",
+    "reign_start": "1624",
+    "reign_end": "1663",
+    "display": "r. 1624 to 1663 (Ndongo; Matamba from 1631)",
+    "historicity": "historical"
+   },
+   "polity": "Kingdoms of Ndongo and Matamba",
+   "modern_countries": [
+    "Angola"
+   ],
+   "region": "Africa",
+   "titles": [
+    "Ngola of Ndongo",
+    "Queen of Matamba",
+    "Ana de Sousa (baptismal name)"
+   ],
+   "faith": "Mbundu religion; baptised Catholic 1622, returned to the Church 1656",
+   "personality": {
+    "traits": [
+     "diplomatic",
+     "warlike",
+     "adaptive",
+     "long-reigning"
+    ],
+    "temperament": "At her first negotiation with the Portuguese governor in Luanda she was offered no chair, so a servant knelt and she sat on his back for the meeting. She was baptised when it helped, allied with the Dutch when it helped, led her soldiers in person into her sixties, and kept the Portuguese out of Matamba for thirty years. Her brother's murder, which she may have arranged, and the Imbangala alliance, with its sacrifices, are in the record beside the resistance.",
+    "agenda_tie": "Her agenda, Decolonization, likes leaders who keep their cities on their home continent and dislikes those who settle on hers; she fought Portugal's colony for forty years."
+   },
+   "bio_codex": "Nzinga was born about 1583, a daughter of the ngola of Ndongo, a Mbundu kingdom inland from the Portuguese colony at Luanda. In 1622 she represented her brother at Luanda and negotiated a treaty that recognised Ndongo's independence; she was baptised Ana de Sousa there. When her brother died in 1624, by her hand according to some accounts, she took the throne. The Portuguese broke the treaty and drove her out in 1626; she allied with the Imbangala war bands, took the kingdom of Matamba in 1631, and from there fought Portugal for thirty years, allying with the Dutch during their occupation of Luanda from 1641 to 1648 and defeating a Portuguese army at Ngoleme in 1644. She made peace in 1656, returned to the Church with Capuchin missionaries at her court, and governed Matamba until her death in December 1663 at about eighty. Angola's independence movement took her as a founding figure three centuries later.",
+   "legacy": "She held the Portuguese at the edge of Angola for forty years with every alliance the age offered, and died a queen at eighty.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "Leader Pass: Great Negotiators Pack"
+  },
+  {
+   "slug": "pachacuti",
+   "name": "Pachacuti",
+   "wikipedia_title": "Pachacuti",
+   "era": {
+    "label": "Renaissance",
+    "span": "c. 1418 to 1471",
+    "century": "15th century"
+   },
+   "dates": {
+    "born": "c. 1418",
+    "died": "1471",
+    "reign_start": "1438",
+    "reign_end": "1471",
+    "display": "r. 1438 to 1471",
+    "historicity": "historical; from Spanish-era chronicles of Inca oral history"
+   },
+   "polity": "Inca Empire (Tawantinsuyu)",
+   "modern_countries": [
+    "Peru",
+    "Bolivia",
+    "Ecuador",
+    "Chile",
+    "Argentina"
+   ],
+   "region": "South America",
+   "titles": [
+    "Sapa Inca",
+    "Pachacuti Inca Yupanqui",
+    "Earth-shaker"
+   ],
+   "faith": "Inca religion (Inti, Viracocha)",
+   "personality": {
+    "traits": [
+     "visionary",
+     "organising",
+     "relentless",
+     "reforming"
+    ],
+    "temperament": "His name means he who overturns the world, and the chroniclers say he took it after the day the Chanka came for Cusco and his father and elder brother fled. He stayed, won, and remade everything: the city in the shape of a puma, the sun temple sheathed in gold, the roads, the storehouses, the census, the calendar, Machu Picchu as his estate. He moved whole peoples across the mountains to break resistance. He retired and let his son conquer.",
+    "agenda_tie": "His agenda, Sapa Inca, likes leaders who stay off his continent and dislikes those who settle on it; Tawantinsuyu meant the four quarters of the world."
+   },
+   "bio_codex": "Cusi Yupanqui was a younger son of the Inca Viracocha, ruler of the small Cusco kingdom in the Andes. When the Chanka confederation attacked Cusco around 1438 and his father withdrew, he led the defence, won, and took the throne and the name Pachacuti. In thirty years he turned Cusco into Tawantinsuyu, conquering the Titicaca basin, the central highlands and the coast, and sending his son Topa Inca north to Quito. He rebuilt Cusco in stone, raised the Coricancha to the sun, and ordered the terraces, storehouses, roads and way stations that let the state move armies and grain across four thousand kilometres of mountain. He resettled conquered peoples as mitimaes far from home, fixed the quipu records and the labour tax, and built the royal estate at Machu Picchu. He gave up the campaigns to his son around 1463 and died in Cusco in 1471. Sixty years later Pizarro's men found the empire he had made and took it in two years.",
+   "legacy": "He turned a mountain town into the largest empire in the Americas and built the roads that are still there.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "Gathering Storm"
+  },
+  {
+   "slug": "pedro-ii",
+   "name": "Pedro II",
+   "wikipedia_title": "Pedro II of Brazil",
+   "era": {
+    "label": "Industrial",
+    "span": "1825 to 1891",
+    "century": "19th century"
+   },
+   "dates": {
+    "born": "1825",
+    "died": "1891",
+    "reign_start": "1831",
+    "reign_end": "1889",
+    "display": "r. 1831 to 1889 (deposed)",
+    "historicity": "historical"
+   },
+   "polity": "Empire of Brazil",
+   "modern_countries": [
+    "Brazil",
+    "Uruguay"
+   ],
+   "region": "South America",
+   "titles": [
+    "Emperor of Brazil",
+    "Perpetual Defender of Brazil",
+    "Dom Pedro II"
+   ],
+   "faith": "Roman Catholicism",
+   "personality": {
+    "traits": [
+     "scholarly",
+     "dutiful",
+     "liberal",
+     "tired"
+    ],
+    "temperament": "He became emperor at five when his father sailed for Portugal, and he was crowned at fourteen because the regents could not keep order. He spoke a dozen languages, corresponded with Darwin, Pasteur and Victor Hugo, sat in the front row at Wagner's Bayreuth, and visited Alexander Graham Bell's stall at Philadelphia and said, my God, it talks. He freed the slaves by proxy and was deposed by the army a year later. He died in a Paris hotel with a pillow of Brazilian earth.",
+    "agenda_tie": "His agenda, Magnanimous, likes leaders who recruit Great People and does not begrudge them; he spent his reign among scientists and poets."
+   },
+   "bio_codex": "Pedro de Alcântara was born in Rio de Janeiro in December 1825 and became emperor of Brazil in April 1831 at the age of five when his father, Pedro I, abdicated. A troubled regency ended with his early majority in 1840. For the next forty-nine years he governed a constitutional monarchy larger than Europe, with a parliament, a free press and a court that imported science and opera; he founded institutes, schools and observatories and travelled abroad three times, the first Brazilian ruler to do so. He fought Paraguay in the War of the Triple Alliance from 1864 to 1870 at great cost. He pushed the abolition of slavery by degrees, the free womb law of 1871 and the Golden Law of 1888 signed by his daughter Isabel while he was in Europe. The planters who had lost their slaves and the officers who wanted a republic deposed him on 15 November 1889; he went into exile without resistance and died in Paris in December 1891. Brazil brought his body home in 1921.",
+   "legacy": "He ruled Brazil for half a century as a scholar-emperor, ended slavery, and was sent into exile for it.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "Base Game"
+  },
+  {
+   "slug": "pericles",
+   "name": "Pericles",
+   "wikipedia_title": "Pericles",
+   "era": {
+    "label": "Classical",
+    "span": "c. 495 to 429 BCE",
+    "century": "5th century BCE"
+   },
+   "dates": {
+    "born": "c. 495 BCE",
+    "died": "429 BCE",
+    "reign_start": "461 BCE",
+    "reign_end": "429 BCE",
+    "display": "leading statesman of Athens c. 461 to 429 BCE",
+    "historicity": "historical"
+   },
+   "polity": "Athenian democracy and the Delian League",
+   "modern_countries": [
+    "Greece",
+    "Turkey"
+   ],
+   "region": "Europe",
+   "titles": [
+    "Strategos of Athens",
+    "Leader of the democratic faction",
+    "First Citizen (Thucydides)"
+   ],
+   "faith": "Greek polytheism",
+   "personality": {
+    "traits": [
+     "eloquent",
+     "reserved",
+     "incorruptible",
+     "proud"
+    ],
+    "temperament": "Thucydides, who heard him, said Athens under him was in name a democracy and in fact the rule of its first citizen. He was elected general fifteen years running and never took a bribe. He kept one friend's circle, Anaxagoras, Phidias, Aspasia, and spoke in public rarely, so that each speech landed. The comic poets called him the onion-head for the shape of his skull and the Olympian for his thunder. He buried two sons in the plague before it took him.",
+    "agenda_tie": "His agenda, Delian League, likes leaders who leave the city-states he holds alone and dislikes those who compete for them; the League was Athens' empire."
+   },
+   "bio_codex": "Pericles was born around 495 BCE to Xanthippus, the victor of Mycale, and Agariste of the Alcmaeonid house. He entered politics in the 460s, prosecuted Cimon, backed the reforms of Ephialtes that stripped the Areopagus, and after Ephialtes was murdered in 461 led the democratic party for thirty years. He had the citizens paid for jury service, limited citizenship to those born of two Athenians, moved the treasury of the Delian League from Delos to Athens in 454 and spent it on the Parthenon, the Propylaea and the Odeon. He made peace with Persia and a thirty-year truce with Sparta, planted colonies, and put down Samos. When the truce broke in 431 he brought the whole population inside the Long Walls and let Attica burn, trusting the fleet. The plague of 430 killed a quarter of the city, including his sons; the assembly fined him, re-elected him, and in 429 the plague killed him. The war he started lasted twenty-seven years and Athens lost it.",
+   "legacy": "He led Athens for thirty years, built the Parthenon with the League's money, and began the war that ended Athenian power.",
+   "quote": {
+    "text": "Our constitution is called a democracy because power is in the hands not of a minority but of the whole people.",
+    "source": "Thucydides, History of the Peloponnesian War 2.37, the Funeral Oration"
+   },
+   "expansion_origin": "Base Game"
+  },
+  {
+   "slug": "peter",
+   "name": "Peter",
+   "wikipedia_title": "Peter the Great",
+   "era": {
+    "label": "Renaissance",
+    "span": "1672 to 1725",
+    "century": "17th and 18th centuries"
+   },
+   "dates": {
+    "born": "1672",
+    "died": "1725",
+    "reign_start": "1682",
+    "reign_end": "1725",
+    "display": "r. 1682 to 1725 (sole rule from 1696; Emperor from 1721)",
+    "historicity": "historical"
+   },
+   "polity": "Tsardom of Russia; Russian Empire from 1721",
+   "modern_countries": [
+    "Russia",
+    "Estonia",
+    "Latvia",
+    "Finland",
+    "Ukraine"
+   ],
+   "region": "Europe",
+   "titles": [
+    "Tsar of All Russia",
+    "Emperor of All Russia",
+    "Peter I",
+    "The Great"
+   ],
+   "faith": "Russian Orthodox Christianity",
+   "personality": {
+    "traits": [
+     "colossal",
+     "curious",
+     "violent",
+     "unresting"
+    ],
+    "temperament": "He stood over two metres tall, worked as a ship's carpenter in Holland under a false name, pulled teeth as a hobby, drank with a mock synod of drunkards, and shaved the beards off his nobles with his own hand. He built a capital on a swamp and ordered his subjects into it. He had his son tortured to death for treason. He learned everything he could from the West and used it against everyone who stood in his way, which included most of Russia.",
+    "agenda_tie": "His agenda, Westernizer, likes leaders who lead him in science and culture and dislikes those behind him; he went to Europe to learn and came back to force it."
+   },
+   "bio_codex": "Peter Alexeyevich was born in 1672 and proclaimed tsar at ten, jointly with his half-brother Ivan and under the regency of his half-sister Sophia, whom he overthrew in 1689. He took Azov from the Turks in 1696 and in 1697 travelled through Europe incognito, working in the Dutch and English shipyards and recruiting engineers. He came home to crush the streltsy revolt with mass executions and to force Western dress, the Julian calendar and a beard tax on the boyars. In 1700 he went to war with Sweden; after the defeat at Narva he rebuilt the army on European lines, founded St Petersburg on the Neva marsh in 1703, and at Poltava in 1709 destroyed Charles XII's army. The peace of Nystad in 1721 gave Russia the Baltic coast and Peter the title of emperor. He built the navy, the Senate, the Table of Ranks, the Academy of Sciences and the first Russian newspaper. His son Alexei died under interrogation in 1718. Peter died in February 1725, at fifty-two, without naming an heir.",
+   "legacy": "He dragged Russia into Europe by the beard and built its capital on a marsh with the bones of the men who dug it.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "Base Game"
+  },
+  {
+   "slug": "philip-ii",
+   "name": "Philip II",
+   "wikipedia_title": "Philip II of Spain",
+   "era": {
+    "label": "Renaissance",
+    "span": "1527 to 1598",
+    "century": "16th century"
+   },
+   "dates": {
+    "born": "1527",
+    "died": "1598",
+    "reign_start": "1556",
+    "reign_end": "1598",
+    "display": "r. 1556 to 1598 (King of Portugal from 1580)",
+    "historicity": "historical"
+   },
+   "polity": "Spanish Empire (Spain, Portugal, the Netherlands, Naples, Sicily, Milan, the Americas, the Philippines)",
+   "modern_countries": [
+    "Spain",
+    "Portugal",
+    "Netherlands",
+    "Belgium",
+    "Italy",
+    "Mexico",
+    "Peru",
+    "Philippines"
+   ],
+   "region": "Europe",
+   "titles": [
+    "King of Spain",
+    "King of Portugal",
+    "King of Naples and Sicily",
+    "Duke of Milan",
+    "Lord of the Netherlands",
+    "King consort of England"
+   ],
+   "faith": "Roman Catholicism",
+   "personality": {
+    "traits": [
+     "devout",
+     "secretive",
+     "industrious",
+     "inflexible"
+    ],
+    "temperament": "He governed the first empire on which the sun never set from a desk, reading and annotating every dispatch himself, in a monastery-palace he built in the hills above Madrid with his bedroom opening onto the high altar. He married four times, lost Elizabeth of England to heresy and the Netherlands to revolt, bankrupted the treasury four times, and sent an Armada that the wind destroyed. He wore black and distrusted everyone, including, with reason, his secretaries.",
+    "agenda_tie": "His agenda, Counter Reformer, likes leaders who follow his religion and will not tolerate those who spread another into his cities; the Spanish Inquisition was his instrument."
+   },
+   "bio_codex": "Philip was born at Valladolid in 1527, the son of the Emperor Charles V, and was raised to rule from childhood. His father gave him Naples and Milan, then the Netherlands, then in 1556 Spain and the Indies. He had married Mary I of England in 1554 and was king consort there until her death in 1558. He won at Saint-Quentin, built El Escorial from 1563 as palace, monastery and tomb, and from 1568 fought the revolt of the Netherlands that his taxation and his heresy laws had provoked; the Duke of Alba's Council of Blood executed over a thousand. His fleet beat the Turks at Lepanto in 1571. In 1580 he took the Portuguese crown by inheritance and arms. In 1588 he sent the Armada against Elizabeth and lost a third of it. He defaulted on his debts in 1557, 1560, 1575 and 1596, the silver of Potosí notwithstanding. He died at El Escorial in September 1598 after fifty-three days of illness, having governed for forty-two years with a pen.",
+   "legacy": "He ruled the first global empire from a desk in a monastery and bankrupted it four times in the service of his faith.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "Base Game"
+  },
+  {
+   "slug": "qin-shi-huang",
+   "name": "Qin Shi Huang",
+   "wikipedia_title": "Qin Shi Huang",
+   "era": {
+    "label": "Ancient",
+    "span": "259 to 210 BCE",
+    "century": "3rd century BCE"
+   },
+   "dates": {
+    "born": "259 BCE",
+    "died": "210 BCE",
+    "reign_start": "247 BCE",
+    "reign_end": "210 BCE",
+    "display": "King of Qin 247 to 221 BCE; First Emperor 221 to 210 BCE",
+    "historicity": "historical"
+   },
+   "polity": "State of Qin; the Qin dynasty, first unified Chinese empire",
+   "modern_countries": [
+    "China"
+   ],
+   "region": "East Asia",
+   "titles": [
+    "First Emperor of Qin (Shi Huangdi)",
+    "King of Qin",
+    "Ying Zheng"
+   ],
+   "faith": "Chinese state religion; Legalism in governance; sought immortality through alchemy",
+   "personality": {
+    "traits": [
+     "totalising",
+     "suspicious",
+     "monumental",
+     "afraid of death"
+    ],
+    "temperament": "He took the title huangdi, august sovereign, because king was no longer large enough. He standardised the script, the axle width, the weights and the coinage, burned the books that disagreed with him and, the histories say, buried the scholars who wrote them. He survived three assassination attempts and stopped sleeping in the same palace twice. He sent expeditions for the elixir of life and drank mercury for it. He was buried under a mountain with an army of clay.",
+    "agenda_tie": "His agenda, Wall of 10,000 Li, dislikes leaders who build more wonders than he does; his tomb complex employed seven hundred thousand labourers."
+   },
+   "bio_codex": "Ying Zheng was born in 259 BCE at Handan, a hostage prince's son, and became king of Qin at thirteen in 247. He took the government at twenty-two, dismissed his regent Lü Buwei, and with the Legalist minister Li Si and the generals Wang Jian and Meng Tian destroyed the six rival kingdoms one by one between 230 and 221 BCE. He proclaimed himself Shi Huangdi, First Emperor, abolished the feudal states for thirty-six commanderies, unified the writing system, the currency, the measures and the width of cart axles, built roads and canals, and joined the northern walls into a single frontier against the Xiongnu. In 213 he had the histories and classics of the other states burned; in 212, by Sima Qian's account, he had four hundred and sixty scholars buried alive. He toured his empire five times seeking immortality from magicians and died on the fifth tour, in 210 BCE, probably of the mercury he took. His dynasty fell four years later. His tomb at Lintong, guarded by eight thousand terracotta soldiers, has not been opened.",
+   "legacy": "He made one China out of seven kingdoms and one script out of many, and his dynasty outlived him by four years.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "Base Game"
+  },
+  {
+   "slug": "robert-the-bruce",
+   "name": "Robert the Bruce",
+   "wikipedia_title": "Robert the Bruce",
+   "era": {
+    "label": "Medieval",
+    "span": "1274 to 1329",
+    "century": "14th century"
+   },
+   "dates": {
+    "born": "1274",
+    "died": "1329",
+    "reign_start": "1306",
+    "reign_end": "1329",
+    "display": "r. 1306 to 1329",
+    "historicity": "historical"
+   },
+   "polity": "Kingdom of Scotland",
+   "modern_countries": [
+    "United Kingdom",
+    "Ireland"
+   ],
+   "region": "Europe",
+   "titles": [
+    "King of Scots",
+    "Earl of Carrick",
+    "Lord of Annandale"
+   ],
+   "faith": "Roman Catholicism (excommunicated 1306 to 1328)",
+   "personality": {
+    "traits": [
+     "persevering",
+     "hard",
+     "chivalrous",
+     "political"
+    ],
+    "temperament": "He changed sides three times in the wars with Edward I before he killed his rival John Comyn at the altar of Greyfriars in Dumfries and had himself crowned six weeks later. He lost two battles in a year, lost three brothers to the executioner, and spent a winter in hiding, where the spider is said to have taught him to try again. He won by burning castles rather than holding them and by choosing the one battle he could win. He died of leprosy, or something like it, and asked that his heart be carried to the Holy Land.",
+    "agenda_tie": "His agenda, Flower of Scotland, dislikes leaders who declare war on his neighbours and will fight for them; he spent his reign fighting for one."
+   },
+   "bio_codex": "Robert Bruce was born in 1274, heir to the earldom of Carrick and the Bruce claim to the Scottish throne that Edward I of England had rejected in favour of John Balliol. He served Edward, then Wallace, then Edward again. On 10 February 1306 he met John Comyn, his rival claimant, in the church of the Greyfriars at Dumfries and killed him, and on 25 March was crowned at Scone. He was beaten at Methven and Dalry that summer and fled to the western isles while Edward hanged his supporters and imprisoned his wife and daughter. From 1307 he fought a guerrilla war, recovered the north, and razed every castle he took. Edward I died marching against him. On 23 and 24 June 1314 at Bannockburn he destroyed Edward II's army, twice his size, in the marshes below Stirling. The Declaration of Arbroath in 1320 told the pope that Scotland would never be subject to England; the treaty of Edinburgh in 1328 made England agree. He died at Cardross in June 1329.",
+   "legacy": "He took a crown by murder, lost everything, and won it back at Bannockburn so completely that England signed.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "Rise and Fall"
+  },
+  {
+   "slug": "saladin",
+   "name": "Saladin",
+   "wikipedia_title": "Saladin",
+   "era": {
+    "label": "Medieval",
+    "span": "1137 to 1193",
+    "century": "12th century"
+   },
+   "dates": {
+    "born": "1137",
+    "died": "1193",
+    "reign_start": "1174",
+    "reign_end": "1193",
+    "display": "Sultan of Egypt from 1171; Sultan of Egypt and Syria 1174 to 1193",
+    "historicity": "historical"
+   },
+   "polity": "Ayyubid Sultanate (Egypt, Syria, Upper Mesopotamia, Hejaz, Yemen)",
+   "modern_countries": [
+    "Egypt",
+    "Syria",
+    "Iraq",
+    "Jordan",
+    "Lebanon",
+    "Israel",
+    "Saudi Arabia",
+    "Yemen"
+   ],
+   "region": "Middle East",
+   "titles": [
+    "Sultan of Egypt and Syria",
+    "Al-Malik an-Nasir",
+    "Salah ad-Din Yusuf ibn Ayyub"
+   ],
+   "faith": "Sunni Islam",
+   "personality": {
+    "traits": [
+     "generous",
+     "patient",
+     "devout",
+     "chivalrous by repute"
+    ],
+    "temperament": "A Kurdish soldier's son who did not want Egypt and was sent there by his uncle, he found himself vizier of a Shia caliphate and quietly ended it. He gave away so much that his treasury held one gold piece when he died. He took Jerusalem without a massacre, ransomed the poor, and let the Christians leave with their goods; the crusaders had killed everyone in it eighty-eight years before. He sent Richard the Lionheart fruit and snow when he was ill and two horses when his was killed. He had the Templars and Hospitallers beheaded after Hattin.",
+    "agenda_tie": "His agenda, Ayyubid Dynasty, likes leaders who follow his religion and dislikes those who hold cities of another faith near him; he spent his life gathering Islam's lands against the crusaders."
+   },
+   "bio_codex": "Yusuf ibn Ayyub was born at Tikrit in 1137 or 1138 and rose in the service of Nur ad-Din of Damascus. Sent to Egypt with his uncle Shirkuh in 1164, he succeeded him as vizier to the Fatimid caliph in 1169 and in 1171 abolished the Fatimid caliphate, restoring Egypt to Sunni allegiance. On Nur ad-Din's death in 1174 he took Damascus, then Aleppo in 1183 and Mosul in 1186, uniting the Muslim lands around the crusader kingdom for the first time. On 4 July 1187 at the Horns of Hattin he destroyed the army of Jerusalem, and on 2 October the city surrendered on terms. The Third Crusade followed; Richard of England retook Acre and beat him at Arsuf, but could not take Jerusalem, and the treaty of 1192 left it in Saladin's hands with the coast to the Franks. He died in Damascus on 4 March 1193 and was buried beside the Umayyad mosque. Dante put him in Limbo among the virtuous pagans, the only Muslim ruler Europe chose to admire.",
+   "legacy": "He united Egypt and Syria, retook Jerusalem without a massacre, and died with one gold coin in the treasury.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "Base Game"
+  },
+  {
+   "slug": "seondeok",
+   "name": "Seondeok",
+   "wikipedia_title": "Queen Seondeok of Silla",
+   "era": {
+    "label": "Medieval",
+    "span": "r. 632 to 647",
+    "century": "7th century"
+   },
+   "dates": {
+    "born": null,
+    "died": "647",
+    "reign_start": "632",
+    "reign_end": "647",
+    "display": "r. 632 to 647",
+    "historicity": "historical"
+   },
+   "polity": "Kingdom of Silla, Korea",
+   "modern_countries": [
+    "South Korea",
+    "North Korea"
+   ],
+   "region": "East Asia",
+   "titles": [
+    "Queen of Silla",
+    "Seongjo Hwanggo",
+    "First reigning queen of Korea"
+   ],
+   "faith": "Buddhism",
+   "personality": {
+    "traits": [
+     "perceptive",
+     "patient",
+     "learned",
+     "resolute under siege"
+    ],
+    "temperament": "The Samguk Sagi gives her three prophecies: that a painted peony had no scent because the Chinese had sent no butterflies, that frogs croaking at a jade gate meant soldiers hiding in a valley, and the day of her own death. She built the oldest observatory still standing in East Asia and a nine-storey wooden pagoda meant to subdue nine enemies. A rebellion rose against her in her last year for being a woman; she died while it was being put down.",
+    "agenda_tie": "Her agenda, Cheomseongdae, likes leaders who invest in science and dislikes those who lag; she built an observatory before she built walls."
+   },
+   "bio_codex": "Deokman was the eldest daughter of King Jinpyeong of Silla, who died in 632 without a son, and she succeeded him under the rule that only those of the sacred bone rank could reign. Silla was the smallest of the three Korean kingdoms and at war with both Baekje and Goguryeo; she sent students and envoys to Tang China, secured its alliance, and raised the general Kim Yu-sin and the statesman Kim Chunchu who would, under her successors, unify the peninsula. She built the Cheomseongdae observatory at Gyeongju, a bottle-shaped tower of 362 stones that still stands, the Hwangnyongsa nine-storey pagoda, the tallest wooden structure in Asia until the Mongols burned it, and the temple of Bunhwangsa. In 647 the noble Bidam rebelled, declaring that a woman could not rule; Kim Yu-sin crushed the rising, and Seondeok died in the same month, on the day she had foretold. Her cousin Jindeok, a second queen, followed her.",
+   "legacy": "She ruled a kingdom at war with both its neighbours, built the oldest observatory in Asia, and set up the men who unified Korea.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "Rise and Fall"
+  },
+  {
+   "slug": "shaka",
+   "name": "Shaka",
+   "wikipedia_title": "Shaka",
+   "era": {
+    "label": "Industrial",
+    "span": "c. 1787 to 1828",
+    "century": "19th century"
+   },
+   "dates": {
+    "born": "c. 1787",
+    "died": "1828",
+    "reign_start": "1816",
+    "reign_end": "1828",
+    "display": "r. c. 1816 to 1828",
+    "historicity": "historical"
+   },
+   "polity": "Zulu Kingdom",
+   "modern_countries": [
+    "South Africa"
+   ],
+   "region": "Africa",
+   "titles": [
+    "King of the Zulu",
+    "Shaka kaSenzangakhona",
+    "iNkosi"
+   ],
+   "faith": "Zulu religion (ancestors, uNkulunkulu)",
+   "personality": {
+    "traits": [
+     "innovative",
+     "disciplined",
+     "merciless",
+     "grief-maddened"
+    ],
+    "temperament": "He was an illegitimate son driven out with his mother, and he came back with a short stabbing spear and a new way of fighting. He drilled his regiments barefoot over thorns, forbade them to marry, and ordered the enemy's wounded killed and his own cowards executed on the field. He built a kingdom of a quarter of a million in a decade. When his mother died he ordered the nation to mourn for a year without crops or milk, and had thousands killed for not weeping enough. His half-brothers stabbed him.",
+    "agenda_tie": "His agenda, Paramount Chief, likes leaders who form corps and armies and dislikes those with scattered units; the impi fought as a single body."
+   },
+   "bio_codex": "Shaka was born around 1787 to Senzangakhona, chief of the small Zulu clan, and Nandi, a Langeni woman, in a union his father's people did not recognise. Mother and son were driven out and he grew up among the Mthethwa, where he became a soldier of Dingiswayo. He took the Zulu chieftaincy about 1816 with Dingiswayo's backing and replaced the throwing spear with the iklwa, a short stabbing blade, replaced sandals with bare feet for speed, and organised his men into age regiments with the bull-horn formation of a centre and two enveloping wings. By 1824 he ruled from the Pongola to the Tugela and his wars had set the whole interior in motion, the mfecane, which emptied and remade southern Africa. He received the first British traders at Port Natal and sent envoys to the Cape. His mother Nandi died in 1827 and his grief became terror. On 22 September 1828 his half-brothers Dingane and Mhlangana murdered him at his kraal. Dingane took the kingdom.",
+   "legacy": "He made a clan of a few thousand into a nation and an army, and the shock of it reorganised half a continent.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "Rise and Fall"
+  },
+  {
+   "slug": "simon-bolivar",
+   "name": "Simón Bolívar",
+   "wikipedia_title": "Simón Bolívar",
+   "era": {
+    "label": "Industrial",
+    "span": "1783 to 1830",
+    "century": "19th century"
+   },
+   "dates": {
+    "born": "1783",
+    "died": "1830",
+    "reign_start": "1819",
+    "reign_end": "1830",
+    "display": "President of Gran Colombia 1819 to 1830",
+    "historicity": "historical"
+   },
+   "polity": "Gran Colombia (Venezuela, Colombia, Ecuador, Panama); Peru; Bolivia",
+   "modern_countries": [
+    "Venezuela",
+    "Colombia",
+    "Ecuador",
+    "Panama",
+    "Peru",
+    "Bolivia"
+   ],
+   "region": "South America",
+   "titles": [
+    "El Libertador",
+    "President of Gran Colombia",
+    "President of Peru",
+    "Dictator of Peru"
+   ],
+   "faith": "Roman Catholicism; deist by conviction",
+   "personality": {
+    "traits": [
+     "eloquent",
+     "tireless",
+     "visionary",
+     "disillusioned"
+    ],
+    "temperament": "He was a rich orphan who swore on a hill in Rome to free his country and spent the fortune doing it. He crossed the Andes in winter with an army in rags, lost and won and lost again, and freed six countries. He wrote the constitution of Bolivia with a president for life and watched the republics he made turn on each other and on him. He said that he who serves a revolution ploughs the sea. He died of tuberculosis on the way to exile, forty-seven, with his boots and shirt borrowed.",
+    "agenda_tie": "His agenda, Campaña Admirable, likes leaders who keep their units close to home and dislikes those who send armies near his borders; his wars were liberations and he read any other army as an invasion."
+   },
+   "bio_codex": "Simón Bolívar was born in Caracas in 1783 to one of the richest families in Venezuela, orphaned by nine, and educated by the republican tutor Simón Rodríguez and in Europe. He joined the junta that deposed the Spanish governor in 1810 and, after the first republic fell, led the Admirable Campaign of 1813 that retook Caracas. He was driven out again in 1814, wrote the Jamaica Letter from exile, returned with Haitian help in 1816, and in 1819 crossed the flooded llanos and the Andes to beat the Spanish at Boyacá and take Bogotá. He proclaimed Gran Colombia and won Venezuela at Carabobo in 1821; Sucre won Ecuador at Pichincha in 1822; Bolívar won Peru at Junín in 1824 and Sucre finished it at Ayacucho. Upper Peru became Bolivia in his name in 1825. The union then came apart: Venezuela seceded, an assassination attempt in 1828 nearly killed him, and in 1830 he resigned and set out for Europe. He died at Santa Marta on 17 December 1830.",
+   "legacy": "He freed six nations from Spain and lived to see them refuse the union he had built for them.",
+   "quote": {
+    "text": "He who serves a revolution ploughs the sea.",
+    "source": "Letter to General Juan José Flores, 9 November 1830"
+   },
+   "expansion_origin": "New Frontier Pass: Maya & Gran Colombia Pack"
+  },
+  {
+   "slug": "suleiman",
+   "name": "Suleiman",
+   "wikipedia_title": "Suleiman the Magnificent",
+   "era": {
+    "label": "Renaissance",
+    "span": "1494 to 1566",
+    "century": "16th century"
+   },
+   "dates": {
+    "born": "1494",
+    "died": "1566",
+    "reign_start": "1520",
+    "reign_end": "1566",
+    "display": "r. 1520 to 1566",
+    "historicity": "historical"
+   },
+   "polity": "Ottoman Empire",
+   "modern_countries": [
+    "Turkey",
+    "Hungary",
+    "Iraq",
+    "Egypt",
+    "Greece",
+    "Serbia",
+    "Bulgaria",
+    "Romania",
+    "Syria",
+    "Algeria"
+   ],
+   "region": "Middle East",
+   "titles": [
+    "Sultan of the Ottoman Empire",
+    "Caliph",
+    "Kanuni (the Lawgiver)",
+    "Padishah"
+   ],
+   "faith": "Sunni Islam",
+   "personality": {
+    "traits": [
+     "magnificent",
+     "lawgiving",
+     "poetic",
+     "jealous"
+    ],
+    "temperament": "Europe called him the Magnificent and his own people called him the Lawgiver, and he was both: he besieged Vienna and he wrote the code that ran the empire for three centuries. He wrote poetry under the name Muhibbi, the lover, much of it to Hürrem, the slave he freed and married against every custom. He had his friend Ibrahim strangled, his son Mustafa strangled in front of him, and died in his tent at the siege of Szigetvár, which was kept from the army until the fortress fell.",
+    "agenda_tie": "His agenda, Lawgiver, likes leaders with large standing militaries and dislikes those who do not match him; the Janissaries were the first modern standing army in Europe."
+   },
+   "bio_codex": "Suleiman succeeded his father Selim I in September 1520, at twenty-five, as sultan of an empire that already held Syria and Egypt. He took Belgrade in 1521 and Rhodes from the Knights in 1522, destroyed the Hungarian army at Mohács in 1526 and killed its king, and in 1529 besieged Vienna and failed in the autumn rain. He took Baghdad from the Safavids in 1534 and most of Hungary in 1541, and his admiral Barbarossa made the Mediterranean an Ottoman sea. He rewrote the kanun, the secular law of the empire, settled the taxes and the land system, built the Süleymaniye with Sinan and rebuilt the walls of Jerusalem. He married Hürrem, a Ruthenian slave, and had his eldest son Mustafa executed in 1553 on suspicion of treason. He died on 6 September 1566, in the night, in his tent before Szigetvár, at seventy-one. The empire never again had a reign like his.",
+   "legacy": "He ruled the Ottoman Empire for forty-six years at its height, besieged Vienna, and wrote the laws that outlived his line.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "Gathering Storm"
+  },
+  {
+   "slug": "tamar",
+   "name": "Tamar",
+   "wikipedia_title": "Tamar of Georgia",
+   "era": {
+    "label": "Medieval",
+    "span": "c. 1160 to 1213",
+    "century": "12th century"
+   },
+   "dates": {
+    "born": "c. 1160",
+    "died": "1213",
+    "reign_start": "1184",
+    "reign_end": "1213",
+    "display": "r. 1184 to 1213",
+    "historicity": "historical"
+   },
+   "polity": "Kingdom of Georgia",
+   "modern_countries": [
+    "Georgia",
+    "Armenia",
+    "Turkey",
+    "Azerbaijan",
+    "Russia"
+   ],
+   "region": "Europe",
+   "titles": [
+    "King of Kings and Queen of Queens of Georgia",
+    "Mepe (King)",
+    "Saint Tamar"
+   ],
+   "faith": "Georgian Orthodox Christianity",
+   "personality": {
+    "traits": [
+     "devout",
+     "gracious",
+     "firm",
+     "victorious through others"
+    ],
+    "temperament": "The chronicle of her reign calls her mepe, king, and says the nobles who made her accept a council made her accept a husband too, a Russian prince who drank and rebelled and was sent away twice. Her second husband, an Alan prince raised at her court, won her wars. She is painted in the monasteries with a long face and a long crown, and the poet Rustaveli dedicated The Knight in the Panther's Skin to her. The Church made her a saint.",
+    "agenda_tie": "Her agenda, Glory of the World, likes leaders who send envoys to the city-states she protects and dislikes those who take them; Georgia's golden age was an age of protectorates."
+   },
+   "bio_codex": "Tamar was crowned co-ruler by her father George III in 1178, against the opposition of the nobles, and succeeded him in 1184. The aristocracy forced her to dismiss her father's ministers, accept a council, and marry Yuri Bogolyubsky of Vladimir, whom she divorced for drunkenness in 1187 and whose two rebellions she defeated. She married David Soslan, an Alan prince, in 1189, and with him and the brothers Zakare and Ivane Mkhargrdzeli as generals won at Shamkor in 1195 and Basiani in 1203 over the Muslim rulers of Azerbaijan and Anatolia, took Kars, and in 1204 set her kinsman Alexios Komnenos on the throne of Trebizond as a client of Georgia. Her realm ran from the Black Sea to the Caspian and from the Caucasus to Erzurum. Churches, monasteries, the cave city of Vardzia and the epic of Rustaveli belong to her reign. She died in January 1213; her burial place was hidden and has not been found.",
+   "legacy": "She ruled Georgia at the height of its power as king in title and queen in fact, and the Church made her a saint.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "Rise and Fall"
+  },
+  {
+   "slug": "teddy-roosevelt",
+   "name": "Teddy Roosevelt",
+   "wikipedia_title": "Theodore Roosevelt",
+   "era": {
+    "label": "Modern",
+    "span": "1858 to 1919",
+    "century": "20th century"
+   },
+   "dates": {
+    "born": "1858",
+    "died": "1919",
+    "reign_start": "1901",
+    "reign_end": "1909",
+    "display": "President of the United States 1901 to 1909",
+    "historicity": "historical"
+   },
+   "polity": "United States of America",
+   "modern_countries": [
+    "United States",
+    "Panama",
+    "Cuba"
+   ],
+   "region": "North America",
+   "titles": [
+    "President of the United States",
+    "Vice President",
+    "Governor of New York",
+    "Colonel of the Rough Riders"
+   ],
+   "faith": "Dutch Reformed; attended Episcopal services",
+   "personality": {
+    "traits": [
+     "strenuous",
+     "moralising",
+     "expansive",
+     "delighted"
+    ],
+    "temperament": "He was an asthmatic child who built his body by will, a rancher, a police commissioner, a historian, a colonel who charged up a hill in Cuba, and a president at forty-two because an anarchist shot the one before him. He broke trusts, dug a canal, sent a fleet around the world, won a Nobel Prize for ending a war, and set aside 230 million acres of the public land. He was shot in the chest in 1912 and gave the speech anyway. He wanted to be in every fight, and he usually was.",
+    "agenda_tie": "His agenda, Big Stick, likes leaders who keep the peace on his continent and dislikes those who start wars on it; the Roosevelt Corollary claimed the hemisphere."
+   },
+   "bio_codex": "Theodore Roosevelt was born in New York in 1858, entered the state assembly at twenty-three, lost his wife and mother on the same day in 1884, and went to the Dakota Badlands to ranch. He came back to reform the civil service and the New York police, resigned from the Navy Department in 1898 to raise the Rough Riders, and rode up San Juan Heights into the governorship of New York and the vice-presidency. McKinley's assassination made him president in September 1901. He broke up Northern Securities, mediated the coal strike, took Panama and began the canal, brokered the peace between Russia and Japan at Portsmouth, and used the Antiquities Act and the Forest Service to protect more land than any president before or since, including five national parks. He left office in 1909, hunted in Africa, split the Republicans in 1912 as a Progressive, took a bullet in the chest in Milwaukee and finished his speech, explored an unmapped river in Brazil, and died in his sleep in January 1919.",
+   "legacy": "He made the presidency a bully pulpit and the national parks a national habit, and he never once stood still.",
+   "quote": {
+    "text": "Speak softly and carry a big stick; you will go far.",
+    "source": "Speech at the Minnesota State Fair, 2 September 1901, quoting what he called a West African proverb"
+   },
+   "expansion_origin": "Base Game"
+  },
+  {
+   "slug": "tokugawa",
+   "name": "Tokugawa",
+   "wikipedia_title": "Tokugawa Ieyasu",
+   "era": {
+    "label": "Renaissance",
+    "span": "1543 to 1616",
+    "century": "17th century"
+   },
+   "dates": {
+    "born": "1543",
+    "died": "1616",
+    "reign_start": "1603",
+    "reign_end": "1616",
+    "display": "Shogun 1603 to 1605; retired shogun (ōgosho) to 1616",
+    "historicity": "historical"
+   },
+   "polity": "Tokugawa shogunate, Japan",
+   "modern_countries": [
+    "Japan"
+   ],
+   "region": "East Asia",
+   "titles": [
+    "Shogun",
+    "Sei-i Taishōgun",
+    "Ōgosho",
+    "Tōshō Daigongen (deified)"
+   ],
+   "faith": "Jōdo Buddhism; deified as a Shinto kami after death",
+   "personality": {
+    "traits": [
+     "patient",
+     "calculating",
+     "frugal",
+     "final"
+    ],
+    "temperament": "He spent his childhood as a hostage, his youth as a vassal of Nobunaga and his middle age as a vassal of Hideyoshi, and he waited. The Japanese proverb has Nobunaga pound the rice, Hideyoshi knead the dough, and Ieyasu eat the cake. He won the one battle that mattered, took the title of shogun, retired in two years so that his son's succession would be unquestioned, and then destroyed the last Toyotomi heir at Osaka. He wrote that life is like walking a long road with a heavy load, and that patience is the root of all quiet.",
+    "agenda_tie": "His agenda, Sakoku, likes leaders who keep their trade and settlers away from his lands and dislikes those who send them near; his heirs closed Japan for two centuries."
+   },
+   "bio_codex": "Matsudaira Takechiyo was born at Okazaki in 1543 and spent twelve years as a hostage of the Imagawa and Oda clans. He allied with Oda Nobunaga in 1561, took the name Tokugawa Ieyasu in 1567, survived his one great defeat at Mikatagahara in 1573, and after Nobunaga's death in 1582 submitted to Toyotomi Hideyoshi, who moved him to the Kanto plain in 1590, where he built Edo. On Hideyoshi's death in 1598 he was the most powerful of the regents for the child heir, and on 21 October 1600 at Sekigahara he destroyed the western coalition in a single day. The emperor named him shogun in 1603. He abdicated in 1605 for his son Hidetada and governed from Sunpu, regulated the daimyo and the court, took control of foreign trade, began the suppression of Christianity, and in 1614 and 1615 besieged and burned Osaka Castle, ending the Toyotomi. He died in June 1616 and was enshrined at Nikkō as a god. His house ruled Japan until 1868.",
+   "legacy": "He waited forty years for one battle, won it in a day, and founded a peace that lasted two hundred and fifty years.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "Leader Pass: Great Negotiators Pack"
+  },
+  {
+   "slug": "tomyris",
+   "name": "Tomyris",
+   "wikipedia_title": "Tomyris",
+   "era": {
+    "label": "Ancient",
+    "span": "fl. 530 BCE",
+    "century": "6th century BCE"
+   },
+   "dates": {
+    "born": null,
+    "died": null,
+    "reign_start": null,
+    "reign_end": "after 530 BCE",
+    "display": "fl. c. 530 BCE",
+    "historicity": "semi-legendary; known from Herodotus"
+   },
+   "polity": "Massagetae, a Scythian people east of the Caspian",
+   "modern_countries": [
+    "Kazakhstan",
+    "Uzbekistan",
+    "Turkmenistan"
+   ],
+   "region": "Central Asia",
+   "titles": [
+    "Queen of the Massagetae"
+   ],
+   "faith": "Scythian religion (sun worship; horse sacrifice)",
+   "personality": {
+    "traits": [
+     "proud",
+     "direct",
+     "vengeful",
+     "honour-bound"
+    ],
+    "temperament": "Herodotus says Cyrus asked for her hand and she understood he was asking for her kingdom. She offered him a fair fight on either side of the river. He took her son by a trick, a feast with wine left for the Massagetae to find; the son killed himself in captivity. She sent Cyrus a message that she would give him his fill of blood, beat his army, and put his head in a skin of it. Herodotus had heard several versions and chose that one as the most credible.",
+    "agenda_tie": "Her agenda, Backstab Averse, likes leaders who keep their word and hates those who betray friends; Cyrus broke a parley to take her son."
+   },
+   "bio_codex": "Tomyris was queen of the Massagetae, a nomadic people of the steppe east of the Caspian Sea and beyond the Araxes, around 530 BCE. Herodotus, writing a century later, says that Cyrus the Great, having taken Babylon, sought to marry her and was refused, bridged the river to invade, and on Croesus's advice left a camp stocked with wine as a trap. The Massagetae under her son Spargapises took the camp, drank, and were captured; Spargapises killed himself. Tomyris then met Cyrus in the hardest battle, Herodotus says, that barbarians ever fought, and the Persians were destroyed and Cyrus killed. She filled a skin with human blood and put his head in it. Other ancient writers give Cyrus other deaths, and no Persian record describes his end. The Massagetae left kurgans, horse burials and gold across the steppe, but no writing, and Tomyris survives only in the history of her enemies' enemies.",
+   "legacy": "She is the queen who, in the only account that survives, killed the greatest king of her age for the death of her son.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "Base Game"
+  },
+  {
+   "slug": "trajan",
+   "name": "Trajan",
+   "wikipedia_title": "Trajan",
+   "era": {
+    "label": "Classical",
+    "span": "53 to 117 CE",
+    "century": "2nd century CE"
+   },
+   "dates": {
+    "born": "53",
+    "died": "117",
+    "reign_start": "98",
+    "reign_end": "117",
+    "display": "r. 98 to 117",
+    "historicity": "historical"
+   },
+   "polity": "Roman Empire",
+   "modern_countries": [
+    "Italy",
+    "Romania",
+    "Iraq",
+    "Jordan",
+    "Turkey",
+    "Spain",
+    "Syria"
+   ],
+   "region": "Europe",
+   "titles": [
+    "Emperor of Rome",
+    "Imperator Caesar Nerva Traianus Augustus",
+    "Optimus Princeps",
+    "Dacicus",
+    "Parthicus"
+   ],
+   "faith": "Roman state religion",
+   "personality": {
+    "traits": [
+     "soldierly",
+     "generous",
+     "straightforward",
+     "expansionist"
+    ],
+    "temperament": "The Senate voted him the title Optimus, the best, and for a thousand years prayed that each new emperor be luckier than Augustus and better than Trajan. He was the first emperor born outside Italy, a career soldier adopted by an old man who needed the army's loyalty. He marched with his men, founded a welfare fund for poor children, built a harbour, a forum, a market and a column, and took the empire to its largest extent. He was fond of wine and of boys and the historians note both without heat.",
+    "agenda_tie": "His agenda, Optimus Princeps, likes leaders who expand and dislikes those with small empires; Rome under him reached its widest borders."
+   },
+   "bio_codex": "Marcus Ulpius Traianus was born in 53 CE at Italica in Spain, the son of a consul, and commanded legions on the Rhine and the Danube. Nerva adopted him in 97 to secure the army and died in January 98; Trajan took the throne without entering Rome for a year. He fought two wars against Decebalus of Dacia, in 101 to 102 and 105 to 106, destroying the kingdom and taking its gold mines, and told the story in the spiral relief of his column. He annexed Nabataea in 106. He spent the Dacian treasure on the Forum of Trajan, Trajan's Market, the baths on the Esquiline, the harbour at Portus and roads and bridges across the provinces, and he set up the alimenta to feed poor children in Italy. In 113 he went east, took Armenia and in 116 marched down the Tigris to the Persian Gulf, the only Roman to see it. Revolts behind him forced a withdrawal; he died at Selinus in Cilicia in August 117. Hadrian, named heir on the deathbed, gave the east back.",
+   "legacy": "He took Rome to its greatest size and built so well in the capital that the Senate called him the best of all princes.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "Base Game"
+  },
+  {
+   "slug": "victoria",
+   "name": "Victoria",
+   "wikipedia_title": "Queen Victoria",
+   "era": {
+    "label": "Industrial",
+    "span": "1819 to 1901",
+    "century": "19th century"
+   },
+   "dates": {
+    "born": "1819",
+    "died": "1901",
+    "reign_start": "1837",
+    "reign_end": "1901",
+    "display": "r. 1837 to 1901 (Empress of India from 1876)",
+    "historicity": "historical"
+   },
+   "polity": "United Kingdom of Great Britain and Ireland; the British Empire",
+   "modern_countries": [
+    "United Kingdom",
+    "India",
+    "Canada",
+    "Australia",
+    "New Zealand",
+    "South Africa",
+    "Ireland"
+   ],
+   "region": "Europe",
+   "titles": [
+    "Queen of the United Kingdom of Great Britain and Ireland",
+    "Empress of India",
+    "Defender of the Faith"
+   ],
+   "faith": "Anglicanism",
+   "personality": {
+    "traits": [
+     "dutiful",
+     "opinionated",
+     "mourning",
+     "imperial"
+    ],
+    "temperament": "She was eighteen and five feet tall when they woke her to tell her she was queen, and she asked to be left alone for an hour. She married her cousin Albert, bore nine children, and when he died at forty-two wore black for the remaining forty years. She disliked Gladstone and adored Disraeli, who made her an empress. She wrote two thousand five hundred words a day in her journal and most of Europe's royal houses descend from her. She reigned longer than any British monarch before her and the age took her name.",
+    "agenda_tie": "Her agenda, Sun Never Sets, likes leaders who settle on her continent and dislikes those who keep her from new ones; the empire covered a quarter of the land."
+   },
+   "bio_codex": "Alexandrina Victoria was born at Kensington Palace in 1819 and succeeded her uncle William IV on 20 June 1837, the last of the Hanoverians in Britain. She married Prince Albert of Saxe-Coburg in 1840 and governed with him, through the Chartists, the Irish famine, the Great Exhibition of 1851 and the Crimean War, until his death in December 1861. She withdrew from public life for a decade and the republican press grew; Disraeli drew her out and had her proclaimed Empress of India in 1876. Her reign saw the vote extended three times, the railways built, the Indian Mutiny and the Crown's assumption of India, the scramble for Africa and the Boer War. Her Golden and Diamond Jubilees in 1887 and 1897 were the empire's own festivals. She died at Osborne on 22 January 1901 at eighty-one, having reigned sixty-three years, with her grandson the German Kaiser at her bedside.",
+   "legacy": "She reigned for sixty-three years over a quarter of the world and lent her name to the age.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "Base Game"
+  },
+  {
+   "slug": "wilfrid-laurier",
+   "name": "Wilfrid Laurier",
+   "wikipedia_title": "Wilfrid Laurier",
+   "era": {
+    "label": "Modern",
+    "span": "1841 to 1919",
+    "century": "20th century"
+   },
+   "dates": {
+    "born": "1841",
+    "died": "1919",
+    "reign_start": "1896",
+    "reign_end": "1911",
+    "display": "Prime Minister of Canada 1896 to 1911",
+    "historicity": "historical"
+   },
+   "polity": "Dominion of Canada",
+   "modern_countries": [
+    "Canada"
+   ],
+   "region": "North America",
+   "titles": [
+    "Prime Minister of Canada",
+    "Leader of the Liberal Party",
+    "Knight Grand Cross of St Michael and St George"
+   ],
+   "faith": "Roman Catholicism",
+   "personality": {
+    "traits": [
+     "conciliatory",
+     "eloquent",
+     "sunny",
+     "patient"
+    ],
+    "temperament": "He called it the sunny way, the policy of persuasion over coercion, and he used it for fifteen years to hold a country of two languages and two faiths together through a school crisis, a South African war and a naval bill. He was the first French Canadian prime minister and the first to be knighted. He said the twentieth century would belong to Canada and filled the prairies to make it true. He lost power over free trade with the United States and died still leading the opposition.",
+    "agenda_tie": "His agenda, The Last Best West, likes leaders who settle tundra and dislikes those who ignore it; he settled the prairies with a million immigrants."
+   },
+   "bio_codex": "Henri-Charles-Wilfrid Laurier was born at Saint-Lin, Canada East, in 1841, trained in law at McGill, and entered the Commons in 1874. He led the Liberal Party from 1887, won the 1896 election on the Manitoba Schools question, and governed for fifteen years, the longest unbroken term in Canadian history. His immigration minister Clifford Sifton opened the prairies to two million settlers from Britain, the United States and eastern Europe; Alberta and Saskatchewan became provinces in 1905; the Grand Trunk Pacific was begun; the wheat economy was built. He sent volunteers, not conscripts, to the Boer War, created a Canadian navy in 1910 that satisfied neither the imperialists nor the Quebec nationalists, and in 1911 lost the election over reciprocity, a free trade treaty with Washington. He opposed conscription in 1917 and held Quebec for the Liberals while losing the rest. He died in Ottawa in February 1919 and fifty thousand people followed the coffin.",
+   "legacy": "He governed Canada for fifteen years by persuasion, filled the West, and said the century would be Canada's.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "Gathering Storm"
+  },
+  {
+   "slug": "yongle",
+   "name": "Yongle",
+   "wikipedia_title": "Yongle Emperor",
+   "era": {
+    "label": "Renaissance",
+    "span": "1360 to 1424",
+    "century": "15th century"
+   },
+   "dates": {
+    "born": "1360",
+    "died": "1424",
+    "reign_start": "1402",
+    "reign_end": "1424",
+    "display": "r. 1402 to 1424",
+    "historicity": "historical"
+   },
+   "polity": "Ming dynasty, China",
+   "modern_countries": [
+    "China",
+    "Vietnam",
+    "Mongolia"
+   ],
+   "region": "East Asia",
+   "titles": [
+    "Yongle Emperor",
+    "Emperor of the Great Ming",
+    "Zhu Di",
+    "Prince of Yan"
+   ],
+   "faith": "Chinese state religion; patron of Buddhism and Taoism",
+   "personality": {
+    "traits": [
+     "usurping",
+     "grandiose",
+     "energetic",
+     "ruthless"
+    ],
+    "temperament": "He took the throne from his nephew in a three-year civil war and had the scholar who refused to write the accession edict executed with his family to the tenth degree, nine hundred people. He then moved the capital to Beijing and built the Forbidden City, sent Zheng He's treasure fleets to Africa, commissioned an encyclopaedia of eleven thousand volumes, invaded Vietnam and led five campaigns into Mongolia in person. He died on the last one. The Ming kept his capital and burned his fleet.",
+    "agenda_tie": "His agenda, Treasure Fleet, likes leaders whose trade routes bring him gold and dislikes those who send none; the fleets sailed to collect tribute."
+   },
+   "bio_codex": "Zhu Di was the fourth son of the Hongwu Emperor, founder of the Ming, and was made Prince of Yan at Beijing to hold the northern frontier against the Mongols. When his father died in 1398 the throne passed to a grandson, the Jianwen Emperor, who began to strip the princes of their power. Zhu Di rebelled in 1399 and in 1402 took Nanjing; his nephew vanished in the palace fire. He took the reign name Yongle, perpetual happiness, and purged the court. From 1406 he built the Forbidden City and in 1421 moved the capital to Beijing, reopened the Grand Canal to feed it, and raised the Porcelain Tower at Nanjing. He sent the eunuch admiral Zheng He on six voyages with fleets of three hundred ships to Southeast Asia, India, Arabia and East Africa. He annexed Vietnam in 1407, commissioned the Yongle Encyclopaedia, and led five expeditions into the steppe, dying on the return from the last in August 1424. His grandson ended the voyages.",
+   "legacy": "He seized the throne, built Beijing, and sent the largest fleet the world had seen to Africa; his heirs kept the city and sank the fleet.",
+   "quote": {
+    "text": null,
+    "source": null
+   },
+   "expansion_origin": "Leader Pass: Rulers of China Pack"
+  }
+ ]
+}

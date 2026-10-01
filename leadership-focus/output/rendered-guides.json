@@ -10,6 +10,7 @@
       "conversion": "Permanent",
       "condition_cost": "None",
       "convert_by": 80,
+      "condition_check": "the window is open",
       "era_role": {
         "ancient_classical": "Primary aggressor. The War-Cart window is the entire identity.",
         "medieval_renaissance": "Digester. Turning captured cities into functional infrastructure.",
@@ -48,7 +49,7 @@
             "Turn 1: identify the target. Gilgamesh's window is short enough that target selection cannot wait for scouting to finish.",
             "Turns 1-15: scout toward the target only. Exploration away from the target is a luxury this shape cannot afford.",
             "Turns 10-30: production goes to the units or charges the window will consume. Infrastructure that pays back after 80 is deferred.",
-            "Pre-window checkpoint: confirm None is satisfied and units are within striking distance, not at home."
+            "Pre-window checkpoint: confirm the window is open, and that units are within striking distance, not at home."
           ]
         },
         {
@@ -81,7 +82,7 @@
           "steps": [
             "Amenity and loyalty audit on every acquired city before any new construction.",
             "Infrastructure catch-up: the arming phase deliberately skipped this, and the bill comes due now.",
-            "Choose a victory path. Gilgamesh has no leader-specific direction from here; Generic wide empire. Leader ability contributes nothing."
+            "Choose a victory path. From here the era leads and the kit follows. Generic wide empire. Leader ability contributes nothing."
           ]
         }
       ],
@@ -146,6 +147,7 @@
       "conversion": "Permanent",
       "condition_cost": "Nubian Pyramids want desert-adjacent placement",
       "convert_by": 100,
+      "condition_check": "the condition is met: Nubian Pyramids want desert-adjacent placement",
       "era_role": {
         "ancient_classical": "Simultaneous aggressor and district engine. Rare double role.",
         "medieval_renaissance": "Infrastructure snowball off permanently cheaper districts.",
@@ -242,7 +244,7 @@
             "Turn 1: identify the target. Amanitore's window is short enough that target selection cannot wait for scouting to finish.",
             "Turns 1-15: scout toward the target only. Exploration away from the target is a luxury this shape cannot afford.",
             "Turns 10-30: production goes to the units or charges the window will consume. Infrastructure that pays back after 100 is deferred.",
-            "Pre-window checkpoint: confirm Nubian Pyramids want desert-adjacent placement is satisfied and units are within striking distance, not at home."
+            "Pre-window checkpoint: confirm the condition is met: Nubian Pyramids want desert-adjacent placement, and that units are within striking distance, not at home."
           ]
         },
         {
@@ -275,7 +277,7 @@
           "steps": [
             "Amenity and loyalty audit on every acquired city before any new construction.",
             "Infrastructure catch-up: the arming phase deliberately skipped this, and the bill comes due now.",
-            "Choose a victory path. Amanitore has no leader-specific direction from here; Strong generic empire; the military identity is long gone."
+            "Choose a victory path. From here the era leads and the kit follows. Strong generic empire; the military identity is long gone."
           ]
         }
       ]
@@ -325,6 +327,7 @@
       "conversion": "Permanent",
       "condition_cost": "Combat strength scales with luxury variety, so needs wide territory",
       "convert_by": 90,
+      "condition_check": "the condition is met: Combat strength scales with luxury variety, so needs wide territory",
       "era_role": {
         "ancient_classical": "Raider harvesting Builders rather than territory.",
         "medieval_renaissance": "Wide empire with a luxury-scaled army.",
@@ -363,7 +366,7 @@
             "Turn 1: identify the target. Montezuma's window is short enough that target selection cannot wait for scouting to finish.",
             "Turns 1-15: scout toward the target only. Exploration away from the target is a luxury this shape cannot afford.",
             "Turns 10-30: production goes to the units or charges the window will consume. Infrastructure that pays back after 90 is deferred.",
-            "Pre-window checkpoint: confirm Combat strength scales with luxury variety, so needs wide territory is satisfied and units are within striking distance, not at home."
+            "Pre-window checkpoint: confirm the condition is met: Combat strength scales with luxury variety, so needs wide territory, and that units are within striking distance, not at home."
           ]
         },
         {
@@ -396,7 +399,7 @@
           "steps": [
             "Amenity and loyalty audit on every acquired city before any new construction.",
             "Infrastructure catch-up: the arming phase deliberately skipped this, and the bill comes due now.",
-            "Choose a victory path. Montezuma has no leader-specific direction from here; Luxury combat bonus diluted by inflated base strength values."
+            "Choose a victory path. From here the era leads and the kit follows. Luxury combat bonus diluted by inflated base strength values."
           ]
         }
       ],
@@ -462,6 +465,7 @@
       "conversion": "Expiring",
       "condition_cost": "None",
       "convert_by": 85,
+      "condition_check": "the window is open",
       "era_role": {
         "ancient_classical": "Swarm. Peak power.",
         "medieval_renaissance": "Still cavalry, no longer dominant.",
@@ -500,7 +504,7 @@
             "Turn 1: identify the target. Tomyris's window is short enough that target selection cannot wait for scouting to finish.",
             "Turns 1-15: scout toward the target only. Exploration away from the target is a luxury this shape cannot afford.",
             "Turns 10-30: production goes to the units or charges the window will consume. Infrastructure that pays back after 85 is deferred.",
-            "Pre-window checkpoint: confirm None is satisfied and units are within striking distance, not at home."
+            "Pre-window checkpoint: confirm the window is open, and that units are within striking distance, not at home."
           ]
         },
         {
@@ -533,7 +537,7 @@
           "steps": [
             "Amenity and loyalty audit on every acquired city before any new construction.",
             "Infrastructure catch-up: the arming phase deliberately skipped this, and the bill comes due now.",
-            "Choose a victory path. Tomyris has no leader-specific direction from here; Ability contributes nothing."
+            "Choose a victory path. From here the era leads and the kit follows. Ability contributes nothing."
           ]
         }
       ],
@@ -598,6 +602,7 @@
       "conversion": "Permanent",
       "condition_cost": "None",
       "convert_by": "n/a",
+      "condition_check": "the window is open",
       "era_role": {
         "ancient_classical": "Accelerated settling. Settlers and Builders move faster than anyone's.",
         "medieval_renaissance": "Fast wars with stacked Comandante Generals.",
@@ -725,6 +730,7 @@
       "conversion": "Conditional",
       "condition_cost": "Must stay at war to keep the engine running",
       "convert_by": "n/a",
+      "condition_check": "the condition is met: Must stay at war to keep the engine running",
       "era_role": {
         "ancient_classical": "Encampment build-out and first wars.",
         "medieval_renaissance": "Peak. Continuous war with no domestic penalty.",
@@ -865,6 +871,7 @@
       "conversion": "Permanent",
       "condition_cost": "Requires a continuous supply of things to kill",
       "convert_by": "n/a",
+      "condition_check": "the condition is met: Requires a continuous supply of things to kill",
       "era_role": {
         "ancient_classical": "Barbarian farming into an early civic lead.",
         "medieval_renaissance": "Culture lead cashed into governments and policy cards ahead of schedule.",
@@ -1000,6 +1007,7 @@
       "conversion": "Conditional",
       "condition_cost": "Bonus only holds while units stay clustered",
       "convert_by": 95,
+      "condition_check": "the condition is met: Bonus only holds while units stay clustered",
       "era_role": {
         "ancient_classical": "Clustered rush at maximum effectiveness.",
         "medieval_renaissance": "Falls off as fronts widen and clustering becomes a liability.",
@@ -1038,7 +1046,7 @@
             "Turn 1: identify the target. Ambiorix's window is short enough that target selection cannot wait for scouting to finish.",
             "Turns 1-15: scout toward the target only. Exploration away from the target is a luxury this shape cannot afford.",
             "Turns 10-30: production goes to the units or charges the window will consume. Infrastructure that pays back after 95 is deferred.",
-            "Pre-window checkpoint: confirm Bonus only holds while units stay clustered is satisfied and units are within striking distance, not at home."
+            "Pre-window checkpoint: confirm the condition is met: Bonus only holds while units stay clustered, and that units are within striking distance, not at home."
           ]
         },
         {
@@ -1071,7 +1079,7 @@
           "steps": [
             "Amenity and loyalty audit on every acquired city before any new construction.",
             "Infrastructure catch-up: the arming phase deliberately skipped this, and the bill comes due now.",
-            "Choose a victory path. Ambiorix has no leader-specific direction from here; Nothing."
+            "Choose a victory path. From here the era leads and the kit follows. Nothing."
           ]
         }
       ],
@@ -1137,6 +1145,7 @@
       "conversion": "Permanent",
       "condition_cost": "Genuinely weak until Mercenaries",
       "convert_by": "n/a",
+      "condition_check": "the condition is met: Genuinely weak until Mercenaries",
       "era_role": {
         "ancient_classical": "Genuinely weak. Survival phase with no leader-specific advantage.",
         "medieval_renaissance": "Peak. Corps snowball with auto-upgrade on capture.",
@@ -1269,6 +1278,7 @@
       "conversion": "Expiring",
       "condition_cost": "Surprise War diplomatic and grievance penalties",
       "convert_by": 90,
+      "condition_check": "the condition is met: Surprise War diplomatic and grievance penalties",
       "era_role": {
         "ancient_classical": "Surprise war bursts against unprepared neighbors.",
         "medieval_renaissance": "Same pattern, higher grievance cost.",
@@ -1307,7 +1317,7 @@
             "Turn 1: identify the target. Cyrus's window is short enough that target selection cannot wait for scouting to finish.",
             "Turns 1-15: scout toward the target only. Exploration away from the target is a luxury this shape cannot afford.",
             "Turns 10-30: production goes to the units or charges the window will consume. Infrastructure that pays back after 90 is deferred.",
-            "Pre-window checkpoint: confirm Surprise War diplomatic and grievance penalties is satisfied and units are within striking distance, not at home."
+            "Pre-window checkpoint: confirm the condition is met: Surprise War diplomatic and grievance penalties, and that units are within striking distance, not at home."
           ]
         },
         {
@@ -1340,7 +1350,7 @@
           "steps": [
             "Amenity and loyalty audit on every acquired city before any new construction.",
             "Infrastructure catch-up: the arming phase deliberately skipped this, and the bill comes due now.",
-            "Choose a victory path. Cyrus has no leader-specific direction from here; Ten turns no longer crosses the distances involved."
+            "Choose a victory path. From here the era leads and the kit follows. Ten turns no longer crosses the distances involved."
           ]
         }
       ],
@@ -1405,6 +1415,7 @@
       "conversion": "Permanent",
       "condition_cost": "Requires trade route setup before each target",
       "convert_by": "n/a",
+      "condition_check": "the condition is met: Requires trade route setup before each target",
       "era_role": {
         "ancient_classical": "Horsemen pressure and trade route positioning.",
         "medieval_renaissance": "Peak. Knights and Keshigs with captured cavalry compounding.",
@@ -1530,6 +1541,7 @@
       "conversion": "Expiring",
       "condition_cost": "Only fires on Wars of Territorial Expansion, so needs an adjacent target",
       "convert_by": 100,
+      "condition_check": "the condition is met: Only fires on Wars of Territorial Expansion, so needs an adjacent target",
       "era_role": {
         "ancient_classical": "Largely dormant. The casus belli is not available immediately.",
         "medieval_renaissance": "Peak, in narrow bursts against adjacent targets.",
@@ -1661,6 +1673,7 @@
       "conversion": "Conditional",
       "condition_cost": "Coastal-heavy map dependency",
       "convert_by": "n/a",
+      "condition_check": "the condition is met: Coastal-heavy map dependency",
       "era_role": {
         "ancient_classical": "Longship raiding as primary income.",
         "medieval_renaissance": "Still raiding, with diminishing returns per coast.",
@@ -1801,6 +1814,7 @@
       "conversion": "Conditional",
       "condition_cost": "Ongoing gold and envoy spend; levied units are rented, not owned",
       "convert_by": "n/a",
+      "condition_check": "the condition is met: Ongoing gold and envoy spend; levied units are rented, not owned",
       "era_role": {
         "ancient_classical": "Envoy and gold economy. Not yet a military civ.",
         "medieval_renaissance": "Peak. Levied proxy armies at full effect.",
@@ -1941,6 +1955,7 @@
       "conversion": "Permanent",
       "condition_cost": "Nothing early, which is also the problem",
       "convert_by": "n/a",
+      "condition_check": "the condition is met: Nothing early, which is also the problem",
       "era_role": {
         "ancient_classical": "Ordinary civ. No leader advantage. Survive and develop.",
         "medieval_renaissance": "Begins to matter as siege becomes relevant.",
@@ -2064,6 +2079,7 @@
       "conversion": "Conditional",
       "condition_cost": "Depends entirely on other civs entering Golden Ages",
       "convert_by": "n/a",
+      "condition_check": "the condition is met: Depends entirely on other civs entering Golden Ages",
       "era_role": {
         "ancient_classical": "Dormant. No Golden Ages exist to punish yet.",
         "medieval_renaissance": "Opportunistic spoiler against whoever is ahead.",
@@ -2198,6 +2214,7 @@
       "conversion": "Permanent",
       "condition_cost": "None",
       "convert_by": "n/a",
+      "condition_check": "the window is open",
       "era_role": {
         "ancient_classical": "Aggressive settling with free culture in every city.",
         "medieval_renaissance": "Compounding civic lead from accumulated Monuments.",
@@ -2325,6 +2342,7 @@
       "conversion": "Permanent",
       "condition_cost": "Tight city spacing; rewards planning discipline",
       "convert_by": "n/a",
+      "condition_check": "the condition is met: Tight city spacing; rewards planning discipline",
       "era_role": {
         "ancient_classical": "Tight city placement and the first district clusters.",
         "medieval_renaissance": "Peak. Compact high-yield complexes across every city.",
@@ -2454,6 +2472,7 @@
       "conversion": "Permanent",
       "condition_cost": "Builder charges spent on wonders are charges not spent on improvements",
       "convert_by": 110,
+      "condition_check": "the condition is met: Builder charges spent on wonders are charges not spent on improvements",
       "era_role": {
         "ancient_classical": "Builder spam converting charges directly into Wonders.",
         "medieval_renaissance": "Ability expired. Living off the wonders already banked.",
@@ -2492,7 +2511,7 @@
             "Turn 1: identify the target. Qin Shi Huang's window is short enough that target selection cannot wait for scouting to finish.",
             "Turns 1-15: scout toward the target only. Exploration away from the target is a luxury this shape cannot afford.",
             "Turns 10-30: production goes to the units or charges the window will consume. Infrastructure that pays back after 110 is deferred.",
-            "Pre-window checkpoint: confirm Builder charges spent on wonders are charges not spent on improvements is satisfied and units are within striking distance, not at home."
+            "Pre-window checkpoint: confirm the condition is met: Builder charges spent on wonders are charges not spent on improvements, and that units are within striking distance, not at home."
           ]
         },
         {
@@ -2525,7 +2544,7 @@
           "steps": [
             "Amenity and loyalty audit on every acquired city before any new construction.",
             "Infrastructure catch-up: the arming phase deliberately skipped this, and the bill comes due now.",
-            "Choose a victory path. Qin Shi Huang has no leader-specific direction from here; Ordinary civ with an unusually good wonder collection."
+            "Choose a victory path. From here the era leads and the kit follows. Ordinary civ with an unusually good wonder collection."
           ]
         }
       ],
@@ -2590,6 +2609,7 @@
       "conversion": "Permanent",
       "condition_cost": "Extra district needs population and production to actually fill",
       "convert_by": "n/a",
+      "condition_check": "the condition is met: Extra district needs population and production to actually fill",
       "era_role": {
         "ancient_classical": "City-state bullying and expansion. Ability not yet leveraged.",
         "medieval_renaissance": "Hansa clusters begin compounding.",
@@ -2717,6 +2737,7 @@
       "conversion": "Permanent",
       "condition_cost": "Mountain terrain dependency; dead start without it",
       "convert_by": "n/a",
+      "condition_check": "the condition is met: Mountain terrain dependency; dead start without it",
       "era_role": {
         "ancient_classical": "Mountain settling. Slow but structurally sound.",
         "medieval_renaissance": "High-population fortified cities coming online.",
@@ -2851,6 +2872,7 @@
       "conversion": "Expiring",
       "condition_cost": "Requires being attacked, which you do not control",
       "convert_by": "n/a",
+      "condition_check": "the condition is met: Requires being attacked, which you do not control",
       "era_role": {
         "ancient_classical": "Passive. Appeal-aware settling with no active ability use.",
         "medieval_renaissance": "Baiting aggression to trigger production bursts.",
@@ -3024,6 +3046,7 @@
       "conversion": "Permanent",
       "condition_cost": "Iron and coal access; percentage bonuses need an existing base to multiply",
       "convert_by": "n/a",
+      "condition_check": "the condition is met: Iron and coal access; percentage bonuses need an existing base to multiply",
       "era_role": {
         "ancient_classical": "Ordinary civ. No leader advantage whatsoever.",
         "medieval_renaissance": "Still ordinary. Building the base the bonus will later multiply.",
@@ -3147,6 +3170,7 @@
       "conversion": "Permanent",
       "condition_cost": "Districts only on Woods, Rainforest, or Marsh. Severe placement restriction.",
       "convert_by": "n/a",
+      "condition_check": "the condition is met: Districts only on Woods, Rainforest, or Marsh. Severe placement restriction.",
       "era_role": {
         "ancient_classical": "Constrained development. District placement is the dominant concern.",
         "medieval_renaissance": "Defensive fortress with strong terrain-based culture.",
@@ -3276,6 +3300,7 @@
       "conversion": "Permanent",
       "condition_cost": "Hard 6-tile expansion ceiling; penalties outside it",
       "convert_by": "n/a",
+      "condition_check": "the condition is met: Hard 6-tile expansion ceiling; penalties outside it",
       "era_role": {
         "ancient_classical": "Precise tight settling inside the radius.",
         "medieval_renaissance": "Efficient compact core outperforming its size.",
@@ -3405,6 +3430,7 @@
       "conversion": "Permanent",
       "condition_cost": "Continent-locked; overseas cities are actively bad",
       "convert_by": "n/a",
+      "condition_check": "the condition is met: Continent-locked; overseas cities are actively bad",
       "era_role": {
         "ancient_classical": "Claim the home continent quickly.",
         "medieval_renaissance": "Consolidated continental empire with stacked yields.",
@@ -3534,6 +3560,7 @@
       "conversion": "Permanent",
       "condition_cost": "Seowon isolation forfeits all district adjacency stacking",
       "convert_by": "n/a",
+      "condition_check": "the condition is met: Seowon isolation forfeits all district adjacency stacking",
       "era_role": {
         "ancient_classical": "Hill-sited Seowons producing reliable science immediately.",
         "medieval_renaissance": "Steady, unspectacular science lead.",
@@ -3663,6 +3690,7 @@
       "conversion": "Conditional",
       "condition_cost": "Base per-turn Science permanently halved",
       "convert_by": 120,
+      "condition_check": "the condition is met: Base per-turn Science permanently halved",
       "era_role": {
         "ancient_classical": "Explosive. Eurekas convert to whole technologies.",
         "medieval_renaissance": "Eurekas thin out while the halved base science starts hurting.",
@@ -3701,7 +3729,7 @@
             "Turn 1: identify the target. Hammurabi's window is short enough that target selection cannot wait for scouting to finish.",
             "Turns 1-15: scout toward the target only. Exploration away from the target is a luxury this shape cannot afford.",
             "Turns 10-30: production goes to the units or charges the window will consume. Infrastructure that pays back after 120 is deferred.",
-            "Pre-window checkpoint: confirm Base per-turn Science permanently halved is satisfied and units are within striking distance, not at home."
+            "Pre-window checkpoint: confirm the condition is met: Base per-turn Science permanently halved, and that units are within striking distance, not at home."
           ]
         },
         {
@@ -3734,7 +3762,7 @@
           "steps": [
             "Amenity and loyalty audit on every acquired city before any new construction.",
             "Infrastructure catch-up: the arming phase deliberately skipped this, and the bill comes due now.",
-            "Choose a victory path. Hammurabi has no leader-specific direction from here; Actively behind. The penalty outlives the benefit."
+            "Choose a victory path. From here the era leads and the kit follows. Actively behind. The penalty outlives the benefit."
           ]
         }
       ],
@@ -3799,6 +3827,7 @@
       "conversion": "Conditional",
       "condition_cost": "Permanent Ecstatic amenity upkeep across the whole empire",
       "convert_by": "n/a",
+      "condition_check": "the condition is met: Permanent Ecstatic amenity upkeep across the whole empire",
       "era_role": {
         "ancient_classical": "Amenity infrastructure build-up before any bonus exists.",
         "medieval_renaissance": "Bonuses live, conditional on maintaining Ecstatic.",
@@ -3933,6 +3962,7 @@
       "conversion": "Permanent",
       "condition_cost": "Cannot chop; forfeits the standard production-acceleration lever",
       "convert_by": "n/a",
+      "condition_check": "the condition is met: Cannot chop; forfeits the standard production-acceleration lever",
       "era_role": {
         "ancient_classical": "Appeal-preserving settlement. Slow, deliberate.",
         "medieval_renaissance": "Preserves and appeal yields compounding.",
@@ -4065,6 +4095,7 @@
       "conversion": "Permanent",
       "condition_cost": "No chopping, plus an ocean start with no immediate settle",
       "convert_by": "n/a",
+      "condition_check": "the condition is met: No chopping, plus an ocean start with no immediate settle",
       "era_role": {
         "ancient_classical": "Ocean opening, then coastal settling on high-appeal land.",
         "medieval_renaissance": "Pristine terrain yields compounding.",
@@ -4192,6 +4223,7 @@
       "conversion": "Conditional",
       "condition_cost": "Ongoing envoy investment; suzerainty can be taken from you",
       "convert_by": "n/a",
+      "condition_check": "the condition is met: Ongoing envoy investment; suzerainty can be taken from you",
       "era_role": {
         "ancient_classical": "Envoy accumulation and early culture districts.",
         "medieval_renaissance": "Multiplier at full effect across a growing culture base.",
@@ -4326,6 +4358,7 @@
       "conversion": "Permanent",
       "condition_cost": "River and floodplain dependency",
       "convert_by": "n/a",
+      "condition_check": "the condition is met: River and floodplain dependency",
       "era_role": {
         "ancient_classical": "River and floodplain settling with early Food and Culture.",
         "medieval_renaissance": "Appeal advantage compounding into culture.",
@@ -4453,6 +4486,7 @@
       "conversion": "Permanent",
       "condition_cost": "Rainforest dependency; must not clear it",
       "convert_by": "n/a",
+      "condition_check": "the condition is met: Rainforest dependency; must not clear it",
       "era_role": {
         "ancient_classical": "Rainforest-adjacent district placement.",
         "medieval_renaissance": "Great Person accumulation accelerating.",
@@ -4592,6 +4626,7 @@
       "conversion": "Conditional",
       "condition_cost": "Requires deliberately leaving Wonders unfinished, locking up production",
       "convert_by": "n/a",
+      "condition_check": "the condition is met: Requires deliberately leaving Wonders unfinished, locking up production",
       "era_role": {
         "ancient_classical": "Nothing meaningful.",
         "medieval_renaissance": "Peak. Half-built Wonders as a culture engine.",
@@ -4726,6 +4761,7 @@
       "conversion": "Permanent",
       "condition_cost": "None mechanically, but no early-game identity at all",
       "convert_by": "n/a",
+      "condition_check": "the condition is met: None mechanically, but no early-game identity at all",
       "era_role": {
         "ancient_classical": "No leader advantage. Survive and develop normally.",
         "medieval_renaissance": "Still nothing active. Great Person groundwork only.",
@@ -4849,6 +4885,7 @@
       "conversion": "Permanent",
       "condition_cost": "None",
       "convert_by": "n/a",
+      "condition_check": "the window is open",
       "era_role": {
         "ancient_classical": "Free spy and early diplomatic visibility.",
         "medieval_renaissance": "Espionage economy plus combat visibility bonuses.",
@@ -4976,6 +5013,7 @@
       "conversion": "Permanent",
       "condition_cost": "Tundra start; the terrain bonus is survival, not growth",
       "convert_by": "n/a",
+      "condition_check": "the condition is met: Tundra start; the terrain bonus is survival, not growth",
       "era_role": {
         "ancient_classical": "Tundra survival. Low output, low risk.",
         "medieval_renaissance": "Still low output. Building toward the late spike.",
@@ -5099,6 +5137,7 @@
       "conversion": "Permanent",
       "condition_cost": "Needs a large Great Work stockpile before anything happens",
       "convert_by": "n/a",
+      "condition_check": "the condition is met: Needs a large Great Work stockpile before anything happens",
       "era_role": {
         "ancient_classical": "Great Work accumulation with no visible effect.",
         "medieval_renaissance": "Pressure beginning to register on border cities.",
@@ -5237,6 +5276,7 @@
       "conversion": "Permanent",
       "condition_cost": "Tundra dependency",
       "convert_by": "n/a",
+      "condition_check": "the condition is met: Tundra dependency",
       "era_role": {
         "ancient_classical": "Tundra Lavras generating early Faith.",
         "medieval_renaissance": "Great Writers, Artists, and Musicians accumulating rapidly.",
@@ -5368,6 +5408,7 @@
       "conversion": "Permanent",
       "condition_cost": "River dependency",
       "convert_by": "n/a",
+      "condition_check": "the condition is met: River dependency",
       "era_role": {
         "ancient_classical": "River Holy Sites providing Food, Housing, and Faith at once.",
         "medieval_renaissance": "Population engine compounding.",
@@ -5495,6 +5536,7 @@
       "conversion": "Permanent",
       "condition_cost": "None",
       "convert_by": "n/a",
+      "condition_check": "the window is open",
       "era_role": {
         "ancient_classical": "Skip the Faith race entirely. Campuses and expansion.",
         "medieval_renaissance": "Religion arrives; Madrasa science comes online.",
@@ -5622,6 +5664,7 @@
       "conversion": "Conditional",
       "condition_cost": "Must stay at peace; scales with other civs founding religions",
       "convert_by": "n/a",
+      "condition_check": "the condition is met: Must stay at peace; scales with other civs founding religions",
       "era_role": {
         "ancient_classical": "Exploration and first contact. Faith scales with civs met.",
         "medieval_renaissance": "Passive Faith accumulating from peaceful relations.",
@@ -5756,6 +5799,7 @@
       "conversion": "Permanent",
       "condition_cost": "Hill settling requirement",
       "convert_by": "n/a",
+      "condition_check": "the condition is met: Hill settling requirement",
       "era_role": {
         "ancient_classical": "Hill settling and early Faith generation.",
         "medieval_renaissance": "Faith converting into Science and Culture simultaneously.",
@@ -5883,6 +5927,7 @@
       "conversion": "Permanent",
       "condition_cost": "Water-heavy map required; dead on continents",
       "convert_by": "n/a",
+      "condition_check": "the condition is met: Water-heavy map required; dead on continents",
       "era_role": {
         "ancient_classical": "Coastal Faith generation from improvements.",
         "medieval_renaissance": "Peak. Faith-purchased Jong armadas.",
@@ -6014,6 +6059,7 @@
       "conversion": "Permanent",
       "condition_cost": "Guaranteed diplomatic hostility from every neighbor",
       "convert_by": "n/a",
+      "condition_check": "the condition is met: Guaranteed diplomatic hostility from every neighbor",
       "era_role": {
         "ancient_classical": "Early Encampments stealing border tiles.",
         "medieval_renaissance": "Peak. Forced conversion and territorial pressure.",
@@ -6145,6 +6191,7 @@
       "conversion": "Permanent",
       "condition_cost": "Requires founding a religion AND spreading it to the target first",
       "convert_by": "n/a",
+      "condition_check": "the condition is met: Requires founding a religion AND spreading it to the target first",
       "era_role": {
         "ancient_classical": "Religion rush. No military advantage yet.",
         "medieval_renaissance": "Peak. Cavalry ignoring walls against converted cities.",
@@ -6281,6 +6328,7 @@
       "conversion": "Conditional",
       "condition_cost": "Bonus only applies against differently-faithed civs",
       "convert_by": "n/a",
+      "condition_check": "the condition is met: Bonus only applies against differently-faithed civs",
       "era_role": {
         "ancient_classical": "Religion founding. No combat advantage yet.",
         "medieval_renaissance": "Peak. Conquistadors against differently-faithed neighbors.",
@@ -6412,6 +6460,7 @@
       "conversion": "Conditional",
       "condition_cost": "Envoy and wall investment; Golden Age chain breaks if an era is missed",
       "convert_by": "n/a",
+      "condition_check": "the condition is met: Envoy and wall investment; Golden Age chain breaks if an era is missed",
       "era_role": {
         "ancient_classical": "Walls and envoy investment. Slow start.",
         "medieval_renaissance": "Golden Age chaining at full effect.",
@@ -6546,6 +6595,7 @@
       "conversion": "Permanent",
       "condition_cost": "Severe Production penalty and desert dependency",
       "convert_by": "n/a",
+      "condition_check": "the condition is met: Severe Production penalty and desert dependency",
       "era_role": {
         "ancient_classical": "Desert settling with weak production and growing Gold.",
         "medieval_renaissance": "Purchasing infrastructure faster than rivals can build it.",
@@ -6680,6 +6730,7 @@
       "conversion": "Permanent",
       "condition_cost": "Project turns spent reaching pop thresholds are turns not spent building",
       "convert_by": "n/a",
+      "condition_check": "the condition is met: Project turns spent reaching pop thresholds are turns not spent building",
       "era_role": {
         "ancient_classical": "Growth infrastructure. No bonus active yet.",
         "medieval_renaissance": "Cities crossing the threshold; yields step up sharply.",
@@ -6811,6 +6862,7 @@
       "conversion": "Permanent",
       "condition_cost": "Coastal settling; capital relocation has a real opportunity cost",
       "convert_by": "n/a",
+      "condition_check": "the condition is met: Coastal settling; capital relocation has a real opportunity cost",
       "era_role": {
         "ancient_classical": "Coastal settling and early forward positions.",
         "medieval_renaissance": "Loyalty-free expansion onto new continents.",
@@ -6945,6 +6997,7 @@
       "conversion": "Permanent",
       "condition_cost": "International trade heavily penalized; forfeits foreign trade income entirely",
       "convert_by": "n/a",
+      "condition_check": "the condition is met: International trade heavily penalized; forfeits foreign trade income entirely",
       "era_role": {
         "ancient_classical": "Establishing the capital cluster and first internal routes.",
         "medieval_renaissance": "Domestic route yields stacking.",
@@ -7072,6 +7125,7 @@
       "conversion": "Conditional",
       "condition_cost": "Water map plus coastal foreign cities that must actually exist and stay reachable",
       "convert_by": "n/a",
+      "condition_check": "the condition is met: Water map plus coastal foreign cities that must actually exist and stay reachable",
       "era_role": {
         "ancient_classical": "Exploration and first contact with coastal civs.",
         "medieval_renaissance": "Feitorias and high-yield foreign routes.",

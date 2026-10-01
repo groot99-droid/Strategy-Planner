@@ -172,6 +172,9 @@ function main() {
       conversion: tags.conversion,
       condition_cost: tags.condition_cost,
       convert_by: tags.convert_by ?? 'n/a',
+      condition_check: (!tags.condition_cost || /^none$/i.test(tags.condition_cost))
+        ? 'the window is open'
+        : `the condition is met: ${tags.condition_cost}`,
       era_role: caveats.era_role,
       caveats: caveats.caveats,
       guide_requirements: caveats.guide_must_account_for

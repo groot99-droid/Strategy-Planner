@@ -1,0 +1,875 @@
+[
+ {
+  "id": "hero-alexander",
+  "out": "docs/images/heroes/alexander.jpg",
+  "width": 1280,
+  "search": "Alexander Mosaic Battle of Issus Pompeii",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Alexander Mosaic Battle of Issus Pompeii"
+ },
+ {
+  "id": "hero-amanitore",
+  "out": "docs/images/heroes/amanitore.jpg",
+  "width": 1280,
+  "search": "Meroe pyramids Sudan",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Meroe pyramids Sudan"
+ },
+ {
+  "id": "hero-ambiorix",
+  "out": "docs/images/heroes/ambiorix.jpg",
+  "width": 1280,
+  "search": "Tongeren Ambiorix statue",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Tongeren Ambiorix statue"
+ },
+ {
+  "id": "hero-ba-trieu",
+  "out": "docs/images/heroes/ba-trieu.jpg",
+  "width": 1280,
+  "search": "Ba Trieu temple Thanh Hoa",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Ba Trieu temple Thanh Hoa"
+ },
+ {
+  "id": "hero-basil-ii",
+  "out": "docs/images/heroes/basil-ii.jpg",
+  "width": 1280,
+  "search": "Hagia Sophia interior Istanbul",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Hagia Sophia interior Istanbul"
+ },
+ {
+  "id": "hero-catherine-de-medici",
+  "out": "docs/images/heroes/catherine-de-medici.jpg",
+  "width": 1280,
+  "search": "Chateau de Chenonceau",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Chateau de Chenonceau"
+ },
+ {
+  "id": "hero-chandragupta",
+  "out": "docs/images/heroes/chandragupta.jpg",
+  "width": 1280,
+  "search": "Sanchi Great Stupa",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Sanchi Great Stupa"
+ },
+ {
+  "id": "hero-cleopatra",
+  "out": "docs/images/heroes/cleopatra.jpg",
+  "width": 1280,
+  "search": "Dendera temple Cleopatra Caesarion relief",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Dendera temple Cleopatra Caesarion relief"
+ },
+ {
+  "id": "hero-cyrus",
+  "out": "docs/images/heroes/cyrus.jpg",
+  "width": 1280,
+  "search": "Tomb of Cyrus Pasargadae",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Tomb of Cyrus Pasargadae"
+ },
+ {
+  "id": "hero-dido",
+  "out": "docs/images/heroes/dido.jpg",
+  "width": 1280,
+  "search": "Carthage ruins Byrsa hill",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Carthage ruins Byrsa hill"
+ },
+ {
+  "id": "hero-eleanor-of-aquitaine",
+  "out": "docs/images/heroes/eleanor-of-aquitaine.jpg",
+  "width": 1280,
+  "search": "Fontevraud Abbey effigies Eleanor",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Fontevraud Abbey effigies Eleanor"
+ },
+ {
+  "id": "hero-frederick-barbarossa",
+  "out": "docs/images/heroes/frederick-barbarossa.jpg",
+  "width": 1280,
+  "search": "Kyffhauser Barbarossa monument",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Kyffhauser Barbarossa monument"
+ },
+ {
+  "id": "hero-gandhi",
+  "out": "docs/images/heroes/gandhi.jpg",
+  "width": 1280,
+  "search": "Gandhi Salt March 1930",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Gandhi Salt March 1930"
+ },
+ {
+  "id": "hero-genghis-khan",
+  "out": "docs/images/heroes/genghis-khan.jpg",
+  "width": 1280,
+  "search": "Genghis Khan equestrian statue Tsonjin Boldog",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Genghis Khan equestrian statue Tsonjin Boldog"
+ },
+ {
+  "id": "hero-gilgamesh",
+  "out": "docs/images/heroes/gilgamesh.jpg",
+  "width": 1280,
+  "search": "Uruk Warka ruins",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Uruk Warka ruins"
+ },
+ {
+  "id": "hero-gitarja",
+  "out": "docs/images/heroes/gitarja.jpg",
+  "width": 1280,
+  "search": "Trowulan Bajang Ratu gate Majapahit",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Trowulan Bajang Ratu gate Majapahit"
+ },
+ {
+  "id": "hero-gorgo",
+  "out": "docs/images/heroes/gorgo.jpg",
+  "width": 1280,
+  "search": "Sparta ancient theatre Taygetus",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Sparta ancient theatre Taygetus"
+ },
+ {
+  "id": "hero-hammurabi",
+  "out": "docs/images/heroes/hammurabi.jpg",
+  "width": 1280,
+  "search": "Code of Hammurabi stele Louvre",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Code of Hammurabi stele Louvre"
+ },
+ {
+  "id": "hero-harald-hardrada",
+  "out": "docs/images/heroes/harald-hardrada.jpg",
+  "width": 1280,
+  "search": "Battle of Stamford Bridge Arbo painting",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Battle of Stamford Bridge Arbo painting"
+ },
+ {
+  "id": "hero-hojo-tokimune",
+  "out": "docs/images/heroes/hojo-tokimune.jpg",
+  "width": 1280,
+  "search": "Moko Shurai Ekotoba Mongol invasion scroll",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Moko Shurai Ekotoba Mongol invasion scroll"
+ },
+ {
+  "id": "hero-jadwiga",
+  "out": "docs/images/heroes/jadwiga.jpg",
+  "width": 1280,
+  "search": "Wawel Cathedral Krakow",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Wawel Cathedral Krakow"
+ },
+ {
+  "id": "hero-jayavarman-vii",
+  "out": "docs/images/heroes/jayavarman-vii.jpg",
+  "width": 1280,
+  "search": "Bayon temple faces Angkor Thom",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Bayon temple faces Angkor Thom"
+ },
+ {
+  "id": "hero-joao-iii",
+  "out": "docs/images/heroes/joao-iii.jpg",
+  "width": 1280,
+  "search": "Jeronimos Monastery Lisbon cloister",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Jeronimos Monastery Lisbon cloister"
+ },
+ {
+  "id": "hero-john-curtin",
+  "out": "docs/images/heroes/john-curtin.jpg",
+  "width": 1280,
+  "search": "Old Parliament House Canberra",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Old Parliament House Canberra"
+ },
+ {
+  "id": "hero-kristina",
+  "out": "docs/images/heroes/kristina.jpg",
+  "width": 1280,
+  "search": "Uppsala Castle Sweden",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Uppsala Castle Sweden"
+ },
+ {
+  "id": "hero-kupe",
+  "out": "docs/images/heroes/kupe.jpg",
+  "width": 1280,
+  "search": "waka taua Maori war canoe",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "waka taua Maori war canoe"
+ },
+ {
+  "id": "hero-lady-six-sky",
+  "out": "docs/images/heroes/lady-six-sky.jpg",
+  "width": 1280,
+  "search": "Tikal Great Plaza Temple",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Tikal Great Plaza Temple"
+ },
+ {
+  "id": "hero-lautaro",
+  "out": "docs/images/heroes/lautaro.jpg",
+  "width": 1280,
+  "search": "Villarrica volcano Araucania",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Villarrica volcano Araucania"
+ },
+ {
+  "id": "hero-ludwig-ii",
+  "out": "docs/images/heroes/ludwig-ii.jpg",
+  "width": 1280,
+  "search": "Neuschwanstein Castle",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Neuschwanstein Castle"
+ },
+ {
+  "id": "hero-mansa-musa",
+  "out": "docs/images/heroes/mansa-musa.jpg",
+  "width": 1280,
+  "search": "Great Mosque of Djenne",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Great Mosque of Djenne"
+ },
+ {
+  "id": "hero-matthias-corvinus",
+  "out": "docs/images/heroes/matthias-corvinus.jpg",
+  "width": 1280,
+  "search": "Buda Castle Budapest Danube",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Buda Castle Budapest Danube"
+ },
+ {
+  "id": "hero-menelik-ii",
+  "out": "docs/images/heroes/menelik-ii.jpg",
+  "width": 1280,
+  "search": "Battle of Adwa painting",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Battle of Adwa painting"
+ },
+ {
+  "id": "hero-montezuma",
+  "out": "docs/images/heroes/montezuma.jpg",
+  "width": 1280,
+  "search": "Templo Mayor Tenochtitlan Mexico City",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Templo Mayor Tenochtitlan Mexico City"
+ },
+ {
+  "id": "hero-nzinga-mbande",
+  "out": "docs/images/heroes/nzinga-mbande.jpg",
+  "width": 1280,
+  "search": "Nzinga Mbande statue Luanda",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Nzinga Mbande statue Luanda"
+ },
+ {
+  "id": "hero-pachacuti",
+  "out": "docs/images/heroes/pachacuti.jpg",
+  "width": 1280,
+  "search": "Machu Picchu",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Machu Picchu"
+ },
+ {
+  "id": "hero-pedro-ii",
+  "out": "docs/images/heroes/pedro-ii.jpg",
+  "width": 1280,
+  "search": "Petropolis Imperial Museum palace",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Petropolis Imperial Museum palace"
+ },
+ {
+  "id": "hero-pericles",
+  "out": "docs/images/heroes/pericles.jpg",
+  "width": 1280,
+  "search": "Parthenon Acropolis Athens",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Parthenon Acropolis Athens"
+ },
+ {
+  "id": "hero-peter",
+  "out": "docs/images/heroes/peter.jpg",
+  "width": 1280,
+  "search": "Peterhof Grand Cascade",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Peterhof Grand Cascade"
+ },
+ {
+  "id": "hero-philip-ii",
+  "out": "docs/images/heroes/philip-ii.jpg",
+  "width": 1280,
+  "search": "El Escorial monastery",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "El Escorial monastery"
+ },
+ {
+  "id": "hero-qin-shi-huang",
+  "out": "docs/images/heroes/qin-shi-huang.jpg",
+  "width": 1280,
+  "search": "Terracotta Army Xi'an pit",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Terracotta Army Xi'an pit"
+ },
+ {
+  "id": "hero-robert-the-bruce",
+  "out": "docs/images/heroes/robert-the-bruce.jpg",
+  "width": 1280,
+  "search": "Bannockburn Robert the Bruce statue",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Bannockburn Robert the Bruce statue"
+ },
+ {
+  "id": "hero-saladin",
+  "out": "docs/images/heroes/saladin.jpg",
+  "width": 1280,
+  "search": "Citadel of Saladin Cairo",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Citadel of Saladin Cairo"
+ },
+ {
+  "id": "hero-seondeok",
+  "out": "docs/images/heroes/seondeok.jpg",
+  "width": 1280,
+  "search": "Cheomseongdae Gyeongju",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Cheomseongdae Gyeongju"
+ },
+ {
+  "id": "hero-shaka",
+  "out": "docs/images/heroes/shaka.jpg",
+  "width": 1280,
+  "search": "Isandlwana hill battlefield",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Isandlwana hill battlefield"
+ },
+ {
+  "id": "hero-simon-bolivar",
+  "out": "docs/images/heroes/simon-bolivar.jpg",
+  "width": 1280,
+  "search": "Battle of Boyaca painting",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Battle of Boyaca painting"
+ },
+ {
+  "id": "hero-suleiman",
+  "out": "docs/images/heroes/suleiman.jpg",
+  "width": 1280,
+  "search": "Suleymaniye Mosque Istanbul",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Suleymaniye Mosque Istanbul"
+ },
+ {
+  "id": "hero-tamar",
+  "out": "docs/images/heroes/tamar.jpg",
+  "width": 1280,
+  "search": "Vardzia cave monastery",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Vardzia cave monastery"
+ },
+ {
+  "id": "hero-teddy-roosevelt",
+  "out": "docs/images/heroes/teddy-roosevelt.jpg",
+  "width": 1280,
+  "search": "Theodore Roosevelt John Muir Glacier Point Yosemite",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Theodore Roosevelt John Muir Glacier Point Yosemite"
+ },
+ {
+  "id": "hero-tokugawa",
+  "out": "docs/images/heroes/tokugawa.jpg",
+  "width": 1280,
+  "search": "Nikko Toshogu shrine",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Nikko Toshogu shrine"
+ },
+ {
+  "id": "hero-tomyris",
+  "out": "docs/images/heroes/tomyris.jpg",
+  "width": 1280,
+  "search": "Scythian gold pectoral Tovsta Mohyla",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Scythian gold pectoral Tovsta Mohyla"
+ },
+ {
+  "id": "hero-trajan",
+  "out": "docs/images/heroes/trajan.jpg",
+  "width": 1280,
+  "search": "Trajan's Column Rome",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Trajan's Column Rome"
+ },
+ {
+  "id": "hero-victoria",
+  "out": "docs/images/heroes/victoria.jpg",
+  "width": 1280,
+  "search": "Crystal Palace Great Exhibition 1851",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Crystal Palace Great Exhibition 1851"
+ },
+ {
+  "id": "hero-wilfrid-laurier",
+  "out": "docs/images/heroes/wilfrid-laurier.jpg",
+  "width": 1280,
+  "search": "Parliament Hill Ottawa Centre Block",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Parliament Hill Ottawa Centre Block"
+ },
+ {
+  "id": "hero-yongle",
+  "out": "docs/images/heroes/yongle.jpg",
+  "width": 1280,
+  "search": "Forbidden City Hall of Supreme Harmony",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Forbidden City Hall of Supreme Harmony"
+ },
+ {
+  "id": "wonder-cliffs-of-dover",
+  "out": "docs/images/wonders/cliffs-of-dover.jpg",
+  "width": 1280,
+  "search": "White Cliffs of Dover",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "White Cliffs of Dover"
+ },
+ {
+  "id": "wonder-crater-lake",
+  "out": "docs/images/wonders/crater-lake.jpg",
+  "width": 1280,
+  "search": "Crater Lake Oregon Wizard Island",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Crater Lake Oregon Wizard Island"
+ },
+ {
+  "id": "wonder-dead-sea",
+  "out": "docs/images/wonders/dead-sea.jpg",
+  "width": 1280,
+  "search": "Dead Sea shore Israel Jordan",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Dead Sea shore Israel Jordan"
+ },
+ {
+  "id": "wonder-galapagos-islands",
+  "out": "docs/images/wonders/galapagos-islands.jpg",
+  "width": 1280,
+  "search": "Galapagos Islands landscape",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Galapagos Islands landscape"
+ },
+ {
+  "id": "wonder-great-barrier-reef",
+  "out": "docs/images/wonders/great-barrier-reef.jpg",
+  "width": 1280,
+  "search": "Great Barrier Reef aerial",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Great Barrier Reef aerial"
+ },
+ {
+  "id": "wonder-mount-everest",
+  "out": "docs/images/wonders/mount-everest.jpg",
+  "width": 1280,
+  "search": "Mount Everest north face",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Mount Everest north face"
+ },
+ {
+  "id": "wonder-mount-kilimanjaro",
+  "out": "docs/images/wonders/mount-kilimanjaro.jpg",
+  "width": 1280,
+  "search": "Mount Kilimanjaro Amboseli",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Mount Kilimanjaro Amboseli"
+ },
+ {
+  "id": "wonder-pantanal",
+  "out": "docs/images/wonders/pantanal.jpg",
+  "width": 1280,
+  "search": "Pantanal wetland Brazil",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Pantanal wetland Brazil"
+ },
+ {
+  "id": "wonder-piopiotahi",
+  "out": "docs/images/wonders/piopiotahi.jpg",
+  "width": 1280,
+  "search": "Milford Sound Mitre Peak",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Milford Sound Mitre Peak"
+ },
+ {
+  "id": "wonder-torres-del-paine",
+  "out": "docs/images/wonders/torres-del-paine.jpg",
+  "width": 1280,
+  "search": "Torres del Paine towers",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Torres del Paine towers"
+ },
+ {
+  "id": "wonder-tsingy-de-bemaraha",
+  "out": "docs/images/wonders/tsingy-de-bemaraha.jpg",
+  "width": 1280,
+  "search": "Tsingy de Bemaraha",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Tsingy de Bemaraha"
+ },
+ {
+  "id": "wonder-yosemite",
+  "out": "docs/images/wonders/yosemite.jpg",
+  "width": 1280,
+  "search": "Yosemite Valley Tunnel View",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Yosemite Valley Tunnel View"
+ },
+ {
+  "id": "wonder-eyjafjallajokull",
+  "out": "docs/images/wonders/eyjafjallajokull.jpg",
+  "width": 1280,
+  "search": "Eyjafjallajokull eruption 2010",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Eyjafjallajokull eruption 2010"
+ },
+ {
+  "id": "wonder-giants-causeway",
+  "out": "docs/images/wonders/giants-causeway.jpg",
+  "width": 1280,
+  "search": "Giant's Causeway basalt columns",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Giant's Causeway basalt columns"
+ },
+ {
+  "id": "wonder-lysefjord",
+  "out": "docs/images/wonders/lysefjord.jpg",
+  "width": 1280,
+  "search": "Lysefjord Preikestolen",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Lysefjord Preikestolen"
+ },
+ {
+  "id": "wonder-uluru",
+  "out": "docs/images/wonders/uluru.jpg",
+  "width": 1280,
+  "search": "Uluru Ayers Rock sunset",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Uluru Ayers Rock sunset"
+ },
+ {
+  "id": "wonder-ha-long-bay",
+  "out": "docs/images/wonders/ha-long-bay.jpg",
+  "width": 1280,
+  "search": "Ha Long Bay karst",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Ha Long Bay karst"
+ },
+ {
+  "id": "wonder-delicate-arch",
+  "out": "docs/images/wonders/delicate-arch.jpg",
+  "width": 1280,
+  "search": "Delicate Arch Arches National Park",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Delicate Arch Arches National Park"
+ },
+ {
+  "id": "wonder-eye-of-the-sahara",
+  "out": "docs/images/wonders/eye-of-the-sahara.jpg",
+  "width": 1280,
+  "search": "Richat Structure satellite",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Richat Structure satellite"
+ },
+ {
+  "id": "wonder-lake-retba",
+  "out": "docs/images/wonders/lake-retba.jpg",
+  "width": 1280,
+  "search": "Lake Retba pink lake Senegal",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Lake Retba pink lake Senegal"
+ },
+ {
+  "id": "wonder-matterhorn",
+  "out": "docs/images/wonders/matterhorn.jpg",
+  "width": 1280,
+  "search": "Matterhorn Zermatt",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Matterhorn Zermatt"
+ },
+ {
+  "id": "wonder-roraima",
+  "out": "docs/images/wonders/roraima.jpg",
+  "width": 1280,
+  "search": "Mount Roraima tepui",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Mount Roraima tepui"
+ },
+ {
+  "id": "wonder-ubsunur-hollow",
+  "out": "docs/images/wonders/ubsunur-hollow.jpg",
+  "width": 1280,
+  "search": "Uvs Nuur basin",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Uvs Nuur basin"
+ },
+ {
+  "id": "wonder-zhangye-danxia",
+  "out": "docs/images/wonders/zhangye-danxia.jpg",
+  "width": 1280,
+  "search": "Zhangye Danxia rainbow mountains",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Zhangye Danxia rainbow mountains"
+ },
+ {
+  "id": "wonder-chocolate-hills",
+  "out": "docs/images/wonders/chocolate-hills.jpg",
+  "width": 1280,
+  "search": "Chocolate Hills Bohol",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Chocolate Hills Bohol"
+ },
+ {
+  "id": "wonder-gobustan",
+  "out": "docs/images/wonders/gobustan.jpg",
+  "width": 1280,
+  "search": "Gobustan petroglyphs",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Gobustan petroglyphs"
+ },
+ {
+  "id": "wonder-ik-kil",
+  "out": "docs/images/wonders/ik-kil.jpg",
+  "width": 1280,
+  "search": "Ik Kil cenote",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Ik Kil cenote"
+ },
+ {
+  "id": "wonder-mato-tipila",
+  "out": "docs/images/wonders/mato-tipila.jpg",
+  "width": 1280,
+  "search": "Devils Tower Wyoming",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Devils Tower Wyoming"
+ },
+ {
+  "id": "wonder-mount-vesuvius",
+  "out": "docs/images/wonders/mount-vesuvius.jpg",
+  "width": 1280,
+  "search": "Mount Vesuvius from Naples",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Mount Vesuvius from Naples"
+ },
+ {
+  "id": "wonder-pamukkale",
+  "out": "docs/images/wonders/pamukkale.jpg",
+  "width": 1280,
+  "search": "Pamukkale travertine terraces",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Pamukkale travertine terraces"
+ },
+ {
+  "id": "wonder-sahara-el-beyda",
+  "out": "docs/images/wonders/sahara-el-beyda.jpg",
+  "width": 1280,
+  "search": "White Desert Farafra Egypt",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "White Desert Farafra Egypt"
+ },
+ {
+  "id": "wonder-bermuda-triangle",
+  "out": "docs/images/wonders/bermuda-triangle.jpg",
+  "width": 1280,
+  "search": "Bermuda coast turquoise sea",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Bermuda coast turquoise sea"
+ },
+ {
+  "id": "wonder-fountain-of-youth",
+  "out": "docs/images/wonders/fountain-of-youth.jpg",
+  "width": 1280,
+  "search": "Florida spring crystal clear water",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Florida spring crystal clear water"
+ },
+ {
+  "id": "wonder-paititi",
+  "out": "docs/images/wonders/paititi.jpg",
+  "width": 1280,
+  "search": "Andean cloud forest Peru Manu",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Andean cloud forest Peru Manu"
+ },
+ {
+  "id": "section-barbarians",
+  "out": "docs/images/sections/barbarians.jpg",
+  "width": 1920,
+  "search": "Invasion of the Barbarians Ulpiano Checa",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Invasion of the Barbarians Ulpiano Checa"
+ },
+ {
+  "id": "section-eras",
+  "out": "docs/images/sections/eras.jpg",
+  "width": 1920,
+  "search": "Thomas Cole Course of Empire Consummation",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Thomas Cole Course of Empire Consummation"
+ },
+ {
+  "id": "section-city-states",
+  "out": "docs/images/sections/city-states.jpg",
+  "width": 1920,
+  "search": "Canaletto Grand Canal Venice",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Canaletto Grand Canal Venice"
+ },
+ {
+  "id": "section-pantheons",
+  "out": "docs/images/sections/pantheons.jpg",
+  "width": 1920,
+  "search": "Stonehenge sunset",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Stonehenge sunset"
+ },
+ {
+  "id": "section-quiz",
+  "out": "docs/images/sections/quiz.jpg",
+  "width": 1920,
+  "search": "Raphael School of Athens",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Raphael School of Athens"
+ },
+ {
+  "id": "section-credits",
+  "out": "docs/images/sections/credits.jpg",
+  "width": 1920,
+  "search": "Library of Celsus Ephesus",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Library of Celsus Ephesus"
+ },
+ {
+  "id": "wonder-kakadu",
+  "out": "docs/images/wonders/kakadu.jpg",
+  "width": 1280,
+  "search": "Kakadu National Park wetland",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Kakadu National Park wetland"
+ },
+ {
+  "id": "wonder-pinnacles",
+  "out": "docs/images/wonders/pinnacles.jpg",
+  "width": 1280,
+  "search": "Pinnacles Desert Nambung",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "Pinnacles Desert Nambung"
+ },
+ {
+  "id": "wonder-vinland",
+  "out": "docs/images/wonders/vinland.jpg",
+  "width": 1280,
+  "search": "L'Anse aux Meadows Norse site",
+  "orient": "landscape",
+  "min_width": 1200,
+  "caption": "L'Anse aux Meadows Norse site"
+ }
+]

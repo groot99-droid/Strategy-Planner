@@ -41,7 +41,7 @@ Reach the window with everything already staged. Nothing in this phase is option
 - Turn 1: identify the target. Montezuma's window is short enough that target selection cannot wait for scouting to finish.
 - Turns 1-15: scout toward the target only. Exploration away from the target is a luxury this shape cannot afford.
 - Turns 10-30: production goes to the units or charges the window will consume. Infrastructure that pays back after 90 is deferred.
-- Pre-window checkpoint: confirm Combat strength scales with luxury variety, so needs wide territory is satisfied and units are within striking distance, not at home.
+- Pre-window checkpoint: confirm the condition is met: Combat strength scales with luxury variety, so needs wide territory, and that units are within striking distance, not at home.
 
 ### Phase 2 — Window
 *Turns: roughly 30 to 90*
@@ -60,7 +60,7 @@ Stabilize what was taken. This phase is longer than both prior phases combined a
 
 - Amenity and loyalty audit on every acquired city before any new construction.
 - Infrastructure catch-up: the arming phase deliberately skipped this, and the bill comes due now.
-- Choose a victory path. Montezuma has no leader-specific direction from here; Luxury combat bonus diluted by inflated base strength values.
+- Choose a victory path. From here the era leads and the kit follows. Luxury combat bonus diluted by inflated base strength values.
 
 ### Abort branch
 **Trigger:** Window closed with no permanent gain, or three stalled turns before the midpoint.
