@@ -1,0 +1,3669 @@
+{
+ "affinities": [
+  {
+   "slug": "alexander",
+   "start_bias": [],
+   "bias_source": "xml (none)",
+   "terrain_notes": [
+    {
+     "terrain": "plains-hills",
+     "why": "Production for Hypaspists and Hetairoi before the window opens"
+    },
+    {
+     "terrain": "grassland",
+     "why": "Growth for the cities you keep"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "giants-causeway",
+     "why": "+5 strength on an army that never tires"
+    },
+    {
+     "slug": "dead-sea",
+     "why": "A full heal between sieges"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "god-of-the-forge",
+     "why": "Classical units 25% faster"
+    },
+    {
+     "slug": "religious-settlements",
+     "why": "A free city before the war"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Militaristic",
+     "why": "Unit production and Kabul's double experience"
+    }
+   ],
+   "barbarian_stance": "Clear the camps on the road to the first target with the army you were building anyway; never detour for one. Macedon's units gain no war weariness, so barbarians are free experience on the march.",
+   "victory_lean": [
+    "Domination"
+   ],
+   "rivals": [
+    {
+     "slug": "gandhi",
+     "why": "Gandhi hates warmongers"
+    },
+    {
+     "slug": "pericles",
+     "why": "Pericles wants the city-states Alexander will levy"
+    }
+   ]
+  },
+  {
+   "slug": "amanitore",
+   "start_bias": [
+    {
+     "terrain": "desert",
+     "tier": 2
+    },
+    {
+     "terrain": "desert-hills",
+     "tier": 2
+    }
+   ],
+   "bias_source": "xml",
+   "terrain_notes": [
+    {
+     "terrain": "desert",
+     "why": "Nubian Pyramids go on desert and desert hills and feed every adjacent district"
+    },
+    {
+     "terrain": "floodplains",
+     "why": "A Nile start gives the food the desert cannot"
+    },
+    {
+     "terrain": "plains-hills",
+     "why": "Mines for the Pítati Archer rush"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "eye-of-the-sahara",
+     "why": "Desert tiles that pay"
+    },
+    {
+     "slug": "lake-retba",
+     "why": "Desert coast with gold and culture"
+    },
+    {
+     "slug": "sahara-el-beyda",
+     "why": "Four desert tiles of gold"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "desert-folklore",
+     "why": "Holy Site faith from the sand"
+    },
+    {
+     "slug": "lady-of-the-reeds-and-marshes",
+     "why": "Production from floodplains"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Militaristic",
+     "why": "Archers and ranged production"
+    },
+    {
+     "type": "Religious",
+     "why": "Faith for the pyramids' districts"
+    }
+   ],
+   "barbarian_stance": "Pítati Archers outrange every early raider; one per city and the camps become experience. Clear what can see you, keep the rest for the archers to level on.",
+   "victory_lean": [
+    "Domination",
+    "Science"
+   ],
+   "rivals": [
+    {
+     "slug": "cleopatra",
+     "why": "Two Nile civilizations want the same river"
+    },
+    {
+     "slug": "gilgamesh",
+     "why": "Both want early conquest and camps"
+    }
+   ]
+  },
+  {
+   "slug": "ambiorix",
+   "start_bias": [
+    {
+     "terrain": "grassland-hills",
+     "tier": 3
+    },
+    {
+     "terrain": "plains-hills",
+     "tier": 3
+    }
+   ],
+   "bias_source": "est",
+   "terrain_notes": [
+    {
+     "terrain": "grassland-hills",
+     "why": "Oppidum needs hills or strategic resources, and mines give culture to Gaul"
+    },
+    {
+     "terrain": "woods",
+     "why": "Chop for Gaesatae and keep woods for the +1 Culture from mines"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "chocolate-hills",
+     "why": "Four mineable hills in one place"
+    },
+    {
+     "slug": "gobustan",
+     "why": "Culture and production on hills"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "god-of-craftsmen",
+     "why": "Production from improved Iron and Horses"
+    },
+    {
+     "slug": "religious-idols",
+     "why": "Faith from the mines Gaul builds anyway"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Militaristic",
+     "why": "Gaesatae production"
+    },
+    {
+     "type": "Industrial",
+     "why": "Mines and workshops"
+    }
+   ],
+   "barbarian_stance": "Gaesatae fight stronger units at a bonus; barbarian swordsmen are what they were built for. Clear camps aggressively in the first forty turns and bank the culture from the mines you build behind them.",
+   "victory_lean": [
+    "Domination",
+    "Culture"
+   ],
+   "rivals": [
+    {
+     "slug": "gorgo",
+     "why": "Both farm the same camps"
+    },
+    {
+     "slug": "frederick-barbarossa",
+     "why": "Germany's Hansa and Gaul's Oppidum want the same hills"
+    }
+   ]
+  },
+  {
+   "slug": "ba-trieu",
+   "start_bias": [
+    {
+     "terrain": "woods",
+     "tier": 3
+    },
+    {
+     "terrain": "rainforest",
+     "tier": 3
+    },
+    {
+     "terrain": "marsh",
+     "tier": 3
+    }
+   ],
+   "bias_source": "est",
+   "terrain_notes": [
+    {
+     "terrain": "woods",
+     "why": "Districts only on woods, rainforest or marsh: the kit is the map"
+    },
+    {
+     "terrain": "rainforest",
+     "why": "Thành gives culture per adjacent district; rainforest keeps the Campus adjacency too"
+    },
+    {
+     "terrain": "marsh",
+     "why": "Marsh can hold Vietnamese districts and nothing else"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "ha-long-bay",
+     "why": "Vietnam's own bay with food and culture"
+    },
+    {
+     "slug": "pantanal",
+     "why": "Marsh with culture"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "goddess-of-the-harvest",
+     "why": "Chopping is still worth faith when the district placement is fixed"
+    },
+    {
+     "slug": "river-goddess",
+     "why": "Amenities and housing where the land is awkward"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Cultural",
+     "why": "Thành culture compounds"
+    },
+    {
+     "type": "Militaristic",
+     "why": "Voi Chiến production"
+    }
+   ],
+   "barbarian_stance": "Vietnamese units gain strength and movement on woods, rainforest and marsh; barbarians that walk into your forest die there. Clear the camps in your own terrain; ignore the ones on the plains.",
+   "victory_lean": [
+    "Culture",
+    "Domination"
+   ],
+   "rivals": [
+    {
+     "slug": "pedro-ii",
+     "why": "Both settle the rainforest"
+    },
+    {
+     "slug": "qin-shi-huang",
+     "why": "Qin resents Vietnam's wonders and districts"
+    }
+   ]
+  },
+  {
+   "slug": "basil-ii",
+   "start_bias": [],
+   "bias_source": "est",
+   "terrain_notes": [
+    {
+     "terrain": "grassland",
+     "why": "Growth for the Hippodrome's free cavalry"
+    },
+    {
+     "terrain": "plains-hills",
+     "why": "Production for Dromons and Tagma"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "dead-sea",
+     "why": "Healing beside a Holy Site war"
+    },
+    {
+     "slug": "mount-everest",
+     "why": "Faith on three mountains"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "god-of-war",
+     "why": "Faith from every kill near a Holy Site"
+    },
+    {
+     "slug": "god-of-healing",
+     "why": "A field hospital for the Tagma"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Religious",
+     "why": "Faith funds the religious war"
+    },
+    {
+     "type": "Militaristic",
+     "why": "Hippodrome units"
+    }
+   ],
+   "barbarian_stance": "Byzantine units gain strength against cities of other religions; barbarians have none, so clear camps for safety and keep the army for the holy war.",
+   "victory_lean": [
+    "Domination",
+    "Religion"
+   ],
+   "rivals": [
+    {
+     "slug": "saladin",
+     "why": "Rival religions on the same border"
+    },
+    {
+     "slug": "philip-ii",
+     "why": "Philip punishes any other religion"
+    }
+   ]
+  },
+  {
+   "slug": "catherine-de-medici",
+   "start_bias": [
+    {
+     "terrain": "grassland",
+     "tier": 5
+    },
+    {
+     "terrain": "plains",
+     "tier": 5
+    },
+    {
+     "terrain": "river",
+     "tier": 3
+    }
+   ],
+   "bias_source": "xml (France: river)",
+   "terrain_notes": [
+    {
+     "terrain": "grassland",
+     "why": "Chateaux go beside rivers and wonders, on grassland and plains"
+    },
+    {
+     "terrain": "plains-hills",
+     "why": "Production for the wonder race that feeds the Chateau"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "gobustan",
+     "why": "Culture that turns into early civics"
+    },
+    {
+     "slug": "pantanal",
+     "why": "Four tiles of culture and food"
+    },
+    {
+     "slug": "cliffs-of-dover",
+     "why": "Culture and gold on a coast"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "goddess-of-festivals",
+     "why": "Culture from plantations"
+    },
+    {
+     "slug": "monument-to-the-gods",
+     "why": "Faster early wonders for Chateaux to sit beside"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Cultural",
+     "why": "Kumasi's culture from trade"
+    },
+    {
+     "type": "Industrial",
+     "why": "Brussels' wonder production"
+    }
+   ],
+   "barbarian_stance": "France has no early military bonus. Walls by turn thirty, Discipline slotted, one archer per city, and spies later instead of swords. Clear only what threatens the capital.",
+   "victory_lean": [
+    "Culture",
+    "Diplomatic"
+   ],
+   "rivals": [
+    {
+     "slug": "pericles",
+     "why": "Both chase the same Cultural city-states"
+    },
+    {
+     "slug": "eleanor-of-aquitaine",
+     "why": "Two French courts, one culture race"
+    }
+   ]
+  },
+  {
+   "slug": "chandragupta",
+   "start_bias": [],
+   "bias_source": "xml (none)",
+   "terrain_notes": [
+    {
+     "terrain": "plains",
+     "why": "Production for Varu elephants"
+    },
+    {
+     "terrain": "grassland",
+     "why": "Stepwells need farms and Holy Sites nearby"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "mount-everest",
+     "why": "Faith for India's religious side"
+    },
+    {
+     "slug": "tsingy-de-bemaraha",
+     "why": "Science and culture when the war is done"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "god-of-the-forge",
+     "why": "Varu faster"
+    },
+    {
+     "slug": "religious-settlements",
+     "why": "A free city before the territorial war"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Militaristic",
+     "why": "Elephant production"
+    },
+    {
+     "type": "Scientific",
+     "why": "Nalanda's Mahavihara"
+    }
+   ],
+   "barbarian_stance": "Arthashastra gives extra movement and strength after a territorial war declaration, not against barbarians. Clear camps early with Varu as practice, then turn them on the neighbour.",
+   "victory_lean": [
+    "Domination"
+   ],
+   "rivals": [
+    {
+     "slug": "gandhi",
+     "why": "Gandhi condemns the warmonger"
+    },
+    {
+     "slug": "cyrus",
+     "why": "Both plan the same surprise war"
+    }
+   ]
+  },
+  {
+   "slug": "cleopatra",
+   "start_bias": [
+    {
+     "terrain": "floodplains",
+     "tier": 2
+    },
+    {
+     "terrain": "river",
+     "tier": 5
+    }
+   ],
+   "bias_source": "xml (Egypt)",
+   "terrain_notes": [
+    {
+     "terrain": "floodplains",
+     "why": "Egypt builds districts and wonders on floodplains and takes no flood damage"
+    },
+    {
+     "terrain": "desert",
+     "why": "Sphinxes and Desert Folklore turn the sand to faith and culture"
+    },
+    {
+     "terrain": "grassland",
+     "why": "River grassland for the growth the floodplains start"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "sahara-el-beyda",
+     "why": "Gold in the desert"
+    },
+    {
+     "slug": "pantanal",
+     "why": "Growth and culture"
+    },
+    {
+     "slug": "eye-of-the-sahara",
+     "why": "Late desert science"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "lady-of-the-reeds-and-marshes",
+     "why": "Production from floodplains, the Egyptian engine"
+    },
+    {
+     "slug": "monument-to-the-gods",
+     "why": "Wonders 15% faster on top of Iteru"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Industrial",
+     "why": "Brussels for the wonder race"
+    },
+    {
+     "type": "Trade",
+     "why": "Trade routes to Egypt pay her and her partner"
+    }
+   ],
+   "barbarian_stance": "Egypt's Maryannu Chariot Archers run down raiders on open floodplains; use them to clear the two nearest camps and then park them. Wonders are the plan, not camps.",
+   "victory_lean": [
+    "Culture",
+    "Diplomatic"
+   ],
+   "rivals": [
+    {
+     "slug": "amanitore",
+     "why": "Nubia on the same river"
+    },
+    {
+     "slug": "qin-shi-huang",
+     "why": "The wonder race"
+    }
+   ]
+  },
+  {
+   "slug": "cyrus",
+   "start_bias": [],
+   "bias_source": "xml (none)",
+   "terrain_notes": [
+    {
+     "terrain": "plains-hills",
+     "why": "Production for Immortals and the surprise war"
+    },
+    {
+     "terrain": "grassland",
+     "why": "Pairidaeza wants flat tiles beside districts"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "dead-sea",
+     "why": "Heal the army mid-war"
+    },
+    {
+     "slug": "giants-causeway",
+     "why": "+5 for the Immortals"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "god-of-the-forge",
+     "why": "Immortals faster"
+    },
+    {
+     "slug": "religious-settlements",
+     "why": "A free city to start wide"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Militaristic",
+     "why": "Kabul's double experience for a surprise war"
+    },
+    {
+     "type": "Trade",
+     "why": "Persian trade routes pay more"
+    }
+   ],
+   "barbarian_stance": "The surprise war bonus applies to civilizations, not camps. Clear the camps between you and the target in the first twenty turns so the Immortals march through quiet ground.",
+   "victory_lean": [
+    "Domination",
+    "Culture"
+   ],
+   "rivals": [
+    {
+     "slug": "alexander",
+     "why": "The Persian war is Alexander's whole agenda"
+    },
+    {
+     "slug": "gorgo",
+     "why": "Sparta hates the surprise"
+    }
+   ]
+  },
+  {
+   "slug": "dido",
+   "start_bias": [
+    {
+     "terrain": "coast",
+     "tier": 2
+    }
+   ],
+   "bias_source": "xml (Phoenicia)",
+   "terrain_notes": [
+    {
+     "terrain": "coast",
+     "why": "The Cothon and coastal cities on the home continent keep full loyalty"
+    },
+    {
+     "terrain": "grassland",
+     "why": "Growth for the coastal settler pump"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "bermuda-triangle",
+     "why": "Science and ship movement"
+    },
+    {
+     "slug": "lake-retba",
+     "why": "Desert coast gold"
+    },
+    {
+     "slug": "lysefjord",
+     "why": "Promoted navy"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "god-of-the-sea",
+     "why": "Production from fishing boats"
+    },
+    {
+     "slug": "religious-settlements",
+     "why": "Another free coastal city"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Trade",
+     "why": "Venice, Hunza and Mogadishu multiply the Cothon's routes"
+    },
+    {
+     "type": "Industrial",
+     "why": "Auckland's shallow water production"
+    }
+   ],
+   "barbarian_stance": "Coastal camps spawn galleys that pillage fishing boats. One Bireme on patrol handles them; inland camps are ignored unless a scout has seen your city.",
+   "victory_lean": [
+    "Science",
+    "Diplomatic"
+   ],
+   "rivals": [
+    {
+     "slug": "harald-hardrada",
+     "why": "Harald raids coasts"
+    },
+    {
+     "slug": "joao-iii",
+     "why": "Portugal competes for every coast"
+    }
+   ]
+  },
+  {
+   "slug": "eleanor-of-aquitaine",
+   "start_bias": [
+    {
+     "terrain": "river",
+     "tier": 3
+    }
+   ],
+   "bias_source": "xml (France) / none (England)",
+   "terrain_notes": [
+    {
+     "terrain": "grassland",
+     "why": "Great Works in Theater Squares pressure neighbours; growth keeps them loyal"
+    },
+    {
+     "terrain": "plains-hills",
+     "why": "Production for the buildings that hold Great Works"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "cliffs-of-dover",
+     "why": "Culture and gold on the English coast"
+    },
+    {
+     "slug": "piopiotahi",
+     "why": "Culture pressure from a pretty coast"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "goddess-of-festivals",
+     "why": "Culture from plantations"
+    },
+    {
+     "slug": "divine-spark",
+     "why": "Great Writers and Artists sooner"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Cultural",
+     "why": "Kumasi and Antananarivo"
+    },
+    {
+     "type": "Militaristic",
+     "why": "Preslav's loyalty per Encampment building"
+    }
+   ],
+   "barbarian_stance": "Eleanor's power is loyalty pressure that needs a stable core. Walls, one archer per city, and leave the camps alone unless they threaten a Theater Square.",
+   "victory_lean": [
+    "Culture"
+   ],
+   "rivals": [
+    {
+     "slug": "catherine-de-medici",
+     "why": "Two French courts"
+    },
+    {
+     "slug": "victoria",
+     "why": "The English crown she once held"
+    }
+   ]
+  },
+  {
+   "slug": "frederick-barbarossa",
+   "start_bias": [],
+   "bias_source": "xml (none)",
+   "terrain_notes": [
+    {
+     "terrain": "plains-hills",
+     "why": "Mines beside the Hansa"
+    },
+    {
+     "terrain": "grassland",
+     "why": "Commercial Hubs and farms around the Hansa triangle"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "chocolate-hills",
+     "why": "Mineable hills in a cluster"
+    },
+    {
+     "slug": "mount-vesuvius",
+     "why": "Production and soil"
+    },
+    {
+     "slug": "zhangye-danxia",
+     "why": "Great Merchants"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "god-of-craftsmen",
+     "why": "Production from improved strategics"
+    },
+    {
+     "slug": "city-patron-goddess",
+     "why": "Faster first districts in every city"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Industrial",
+     "why": "Johannesburg and Mexico City"
+    },
+    {
+     "type": "Militaristic",
+     "why": "An extra military slot means more cards for conquest of city-states"
+    }
+   ],
+   "barbarian_stance": "Germany's bonus against city-states does not apply to camps. Clear the nearest two with the extra military policy card slot funding a second warrior, then build.",
+   "victory_lean": [
+    "Science",
+    "Domination"
+   ],
+   "rivals": [
+    {
+     "slug": "pericles",
+     "why": "Pericles protects the city-states Frederick conquers"
+    },
+    {
+     "slug": "ambiorix",
+     "why": "Gaul wants the same hills"
+    }
+   ]
+  },
+  {
+   "slug": "gandhi",
+   "start_bias": [],
+   "bias_source": "xml (none)",
+   "terrain_notes": [
+    {
+     "terrain": "grassland",
+     "why": "Growth and Stepwells for the religious push"
+    },
+    {
+     "terrain": "mountains",
+     "why": "Holy Site adjacency"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "mount-everest",
+     "why": "Faith and religious movement"
+    },
+    {
+     "slug": "dead-sea",
+     "why": "Faith and culture"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "god-of-healing",
+     "why": "Defensive faith"
+    },
+    {
+     "slug": "fertility-rites",
+     "why": "Growth with a free Builder"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Religious",
+     "why": "Jerusalem's pressure, Yerevan's apostles"
+    },
+    {
+     "type": "Scientific",
+     "why": "Geneva's peace bonus"
+    }
+   ],
+   "barbarian_stance": "Gandhi has no war weariness and double it for enemies, but that is a war tool. Clear camps with archers behind walls and keep faith for missionaries.",
+   "victory_lean": [
+    "Religion",
+    "Diplomatic"
+   ],
+   "rivals": [
+    {
+     "slug": "alexander",
+     "why": "The warmonger"
+    },
+    {
+     "slug": "philip-ii",
+     "why": "The rival faith"
+    }
+   ]
+  },
+  {
+   "slug": "genghis-khan",
+   "start_bias": [
+    {
+     "terrain": "grassland",
+     "tier": 5
+    },
+    {
+     "terrain": "plains",
+     "tier": 5
+    }
+   ],
+   "bias_source": "xml (Mongolia: Horses T2)",
+   "terrain_notes": [
+    {
+     "terrain": "grassland",
+     "why": "Horses and pastures; the Ordu trains cavalry faster"
+    },
+    {
+     "terrain": "plains",
+     "why": "Open ground for the Keshig"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "ubsunur-hollow",
+     "why": "The steppe wonder, faith and food"
+    },
+    {
+     "slug": "zhangye-danxia",
+     "why": "Great Generals for the cavalry"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "god-of-the-open-sky",
+     "why": "Culture from pastures"
+    },
+    {
+     "slug": "god-of-craftsmen",
+     "why": "Production from Horses"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Militaristic",
+     "why": "Kabul and Wolin"
+    },
+    {
+     "type": "Scientific",
+     "why": "Hattusa's strategic resources"
+    }
+   ],
+   "barbarian_stance": "Mongolian cavalry captures enemy cavalry; a Rover Clan is a unit vendor. Hire early in Clans mode, clear camps for experience, and never let a camp sit between the Ordu and the target.",
+   "victory_lean": [
+    "Domination"
+   ],
+   "rivals": [
+    {
+     "slug": "tomyris",
+     "why": "Two steppe horse civilizations"
+    },
+    {
+     "slug": "gorgo",
+     "why": "Sparta hates retreat and Genghis never attacks without the advantage"
+    }
+   ]
+  },
+  {
+   "slug": "gilgamesh",
+   "start_bias": [
+    {
+     "terrain": "river",
+     "tier": 3
+    }
+   ],
+   "bias_source": "xml (Sumeria)",
+   "terrain_notes": [
+    {
+     "terrain": "grassland",
+     "why": "Ziggurats need flat tiles beside rivers"
+    },
+    {
+     "terrain": "plains",
+     "why": "War-Cart production"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "giants-causeway",
+     "why": "War-Carts with +5"
+    },
+    {
+     "slug": "dead-sea",
+     "why": "Heal the War-Carts between captures"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "god-of-the-forge",
+     "why": "War-Carts faster"
+    },
+    {
+     "slug": "initiation-rites",
+     "why": "Faith per camp cleared on top of Epic Quest"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Militaristic",
+     "why": "Akkad breaks walls the War-Carts cannot"
+    },
+    {
+     "type": "Scientific",
+     "why": "Ziggurat science plus Geneva after the war"
+    }
+   ],
+   "barbarian_stance": "Epic Quest pays a tribal-village reward for every outpost. Clear every camp a War-Cart can reach in the first forty turns, then stop hunting and start taking cities.",
+   "victory_lean": [
+    "Domination",
+    "Science"
+   ],
+   "rivals": [
+    {
+     "slug": "gorgo",
+     "why": "Both farm camps"
+    },
+    {
+     "slug": "cleopatra",
+     "why": "Cleopatra wants the strong army on her side, not against her"
+    }
+   ]
+  },
+  {
+   "slug": "gitarja",
+   "start_bias": [
+    {
+     "terrain": "coast",
+     "tier": 2
+    }
+   ],
+   "bias_source": "xml (Indonesia)",
+   "terrain_notes": [
+    {
+     "terrain": "coast",
+     "why": "Kampungs on coast and lake tiles; faith buys the Jong"
+    },
+    {
+     "terrain": "lake",
+     "why": "Lakes count for the Kampung"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "ha-long-bay",
+     "why": "Food and production at sea"
+    },
+    {
+     "slug": "great-barrier-reef",
+     "why": "Reef food and science"
+    },
+    {
+     "slug": "crater-lake",
+     "why": "Five faith on a lake"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "god-of-the-sea",
+     "why": "Production from fishing boats"
+    },
+    {
+     "slug": "earth-goddess",
+     "why": "Coastal appeal faith"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Religious",
+     "why": "Valletta buys walls with faith; Yerevan's apostles"
+    },
+    {
+     "type": "Industrial",
+     "why": "Auckland's shallow water"
+    }
+   ],
+   "barbarian_stance": "Coastal camps spawn ships that pillage Kampungs. A Jong on patrol by the Medieval era; before that, one quadrireme. Inland camps are someone else's problem.",
+   "victory_lean": [
+    "Religion",
+    "Culture"
+   ],
+   "rivals": [
+    {
+     "slug": "kupe",
+     "why": "Two sea civilizations, one ocean"
+    },
+    {
+     "slug": "dido",
+     "why": "Coastal city competition"
+    }
+   ]
+  },
+  {
+   "slug": "gorgo",
+   "start_bias": [
+    {
+     "terrain": "grassland-hills",
+     "tier": 3
+    },
+    {
+     "terrain": "plains-hills",
+     "tier": 3
+    },
+    {
+     "terrain": "desert-hills",
+     "tier": 3
+    },
+    {
+     "terrain": "tundra-hills",
+     "tier": 3
+    }
+   ],
+   "bias_source": "xml (Greece)",
+   "terrain_notes": [
+    {
+     "terrain": "grassland-hills",
+     "why": "The Acropolis needs a hill"
+    },
+    {
+     "terrain": "plains-hills",
+     "why": "Hoplite production"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "giants-causeway",
+     "why": "Hoplites with +5"
+    },
+    {
+     "slug": "gobustan",
+     "why": "Culture on hills"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "initiation-rites",
+     "why": "Faith per camp, on top of the culture per kill"
+    },
+    {
+     "slug": "god-of-the-forge",
+     "why": "Hoplites faster"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Cultural",
+     "why": "Greek envoy slots make every Cultural city-state cheap"
+    },
+    {
+     "type": "Militaristic",
+     "why": "Kabul's experience"
+    }
+   ],
+   "barbarian_stance": "Every barbarian kill is Culture. Leave one camp alive in range of a defended city and let the Hoplites farm it; clear the second camp, because two in range is a siege.",
+   "victory_lean": [
+    "Culture",
+    "Domination"
+   ],
+   "rivals": [
+    {
+     "slug": "pericles",
+     "why": "The other Greek leader wants the same city-states"
+    },
+    {
+     "slug": "genghis-khan",
+     "why": "Gorgo despises those who retreat"
+    }
+   ]
+  },
+  {
+   "slug": "hammurabi",
+   "start_bias": [
+    {
+     "terrain": "river",
+     "tier": 3
+    }
+   ],
+   "bias_source": "est (Babylon)",
+   "terrain_notes": [
+    {
+     "terrain": "grassland",
+     "why": "River cities for the Palgum"
+    },
+    {
+     "terrain": "plains-hills",
+     "why": "Production to hard-build what Eurekas unlock early"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "tsingy-de-bemaraha",
+     "why": "Science adjacency"
+    },
+    {
+     "slug": "zhangye-danxia",
+     "why": "Great People to compensate for the science penalty"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "river-goddess",
+     "why": "Amenities on river Holy Sites"
+    },
+    {
+     "slug": "lady-of-the-reeds-and-marshes",
+     "why": "Floodplains production"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Scientific",
+     "why": "Geneva and Taruga offset the Science malus"
+    },
+    {
+     "type": "Industrial",
+     "why": "Production to build what Eurekas give"
+    }
+   ],
+   "barbarian_stance": "Each Eureka completes its technology; killing a barbarian with a slinger, then an archer, is a free Archery and a free Machinery. Farm the first camp deliberately for Eurekas, then clear it.",
+   "victory_lean": [
+    "Science",
+    "Domination"
+   ],
+   "rivals": [
+    {
+     "slug": "seondeok",
+     "why": "The science race"
+    },
+    {
+     "slug": "gilgamesh",
+     "why": "Two Mesopotamian rivers"
+    }
+   ]
+  },
+  {
+   "slug": "harald-hardrada",
+   "start_bias": [
+    {
+     "terrain": "coast",
+     "tier": 3
+    },
+    {
+     "terrain": "woods",
+     "tier": 5
+    }
+   ],
+   "bias_source": "xml (Norway)",
+   "terrain_notes": [
+    {
+     "terrain": "coast",
+     "why": "Longships heal in neutral water and coastal raiding pays"
+    },
+    {
+     "terrain": "woods",
+     "why": "Stave Church faith from woods and production for ships"
+    },
+    {
+     "terrain": "tundra",
+     "why": "Norway starts cold; Dance of the Aurora fixes it"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "lysefjord",
+     "why": "Promoted Longships"
+    },
+    {
+     "slug": "eyjafjallajokull",
+     "why": "Food on tundra coast"
+    },
+    {
+     "slug": "vinland",
+     "why": "The Norse wonder"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "god-of-the-sea",
+     "why": "Production from fishing boats"
+    },
+    {
+     "slug": "dance-of-the-aurora",
+     "why": "Tundra Holy Sites"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Industrial",
+     "why": "Auckland and Cardiff"
+    },
+    {
+     "type": "Militaristic",
+     "why": "Wolin's admiral points"
+    }
+   ],
+   "barbarian_stance": "Coastal camps spawn galleys that pillage Norway's boats. The first Longship clears them and raids back; inland camps are cleared only if they can see a city.",
+   "victory_lean": [
+    "Domination",
+    "Religion"
+   ],
+   "rivals": [
+    {
+     "slug": "dido",
+     "why": "Coast competition"
+    },
+    {
+     "slug": "kupe",
+     "why": "Two sea civilizations"
+    }
+   ]
+  },
+  {
+   "slug": "hojo-tokimune",
+   "start_bias": [
+    {
+     "terrain": "coast",
+     "tier": 3
+    }
+   ],
+   "bias_source": "est (Japan)",
+   "terrain_notes": [
+    {
+     "terrain": "coast",
+     "why": "Districts on coast get Meiji adjacency and Samurai defend the shore"
+    },
+    {
+     "terrain": "plains-hills",
+     "why": "Production for the Electronics Factory later"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "ha-long-bay",
+     "why": "Defensive bonus and food at sea"
+    },
+    {
+     "slug": "great-barrier-reef",
+     "why": "Reef science"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "city-patron-goddess",
+     "why": "Districts faster in every new city"
+    },
+    {
+     "slug": "god-of-the-sea",
+     "why": "Coastal production"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Industrial",
+     "why": "Auckland for coastal production"
+    },
+    {
+     "type": "Cultural",
+     "why": "Nan Madol for coastal districts"
+    }
+   ],
+   "barbarian_stance": "Divine Wind gives +5 strength on coast and shallow water; coastal camps die to Samurai. Clear every camp on the coast, walls on the inland cities.",
+   "victory_lean": [
+    "Culture",
+    "Science"
+   ],
+   "rivals": [
+    {
+     "slug": "tokugawa",
+     "why": "The other Japanese leader"
+    },
+    {
+     "slug": "harald-hardrada",
+     "why": "Harald raids the coast Hojo defends"
+    }
+   ]
+  },
+  {
+   "slug": "jadwiga",
+   "start_bias": [],
+   "bias_source": "xml (none)",
+   "terrain_notes": [
+    {
+     "terrain": "grassland-hills",
+     "why": "Sukiennice and Winged Hussars need production; hills beside the Holy Site"
+    },
+    {
+     "terrain": "woods",
+     "why": "Holy Site faith from woods"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "mato-tipila",
+     "why": "Faith adjacency"
+    },
+    {
+     "slug": "delicate-arch",
+     "why": "Faith on every neighbour"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "stone-circles",
+     "why": "Faith from quarries"
+    },
+    {
+     "slug": "religious-idols",
+     "why": "Faith from mines"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Religious",
+     "why": "Valletta and Armagh"
+    },
+    {
+     "type": "Militaristic",
+     "why": "An extra military slot for Hussar cards"
+    }
+   ],
+   "barbarian_stance": "Culture bombs from Encampments and Forts steal land, not camps. Clear the nearest camps, then use the Encampment's border push to claim their ground.",
+   "victory_lean": [
+    "Religion",
+    "Culture"
+   ],
+   "rivals": [
+    {
+     "slug": "philip-ii",
+     "why": "Two Catholic monarchs, one faith"
+    },
+    {
+     "slug": "frederick-barbarossa",
+     "why": "The German border"
+    }
+   ]
+  },
+  {
+   "slug": "jayavarman-vii",
+   "start_bias": [
+    {
+     "terrain": "river",
+     "tier": 3
+    }
+   ],
+   "bias_source": "xml (Khmer)",
+   "terrain_notes": [
+    {
+     "terrain": "rainforest",
+     "why": "Prasat and Sacred Path turn rainforest into faith"
+    },
+    {
+     "terrain": "grassland",
+     "why": "Aqueducts give food and faith to the Khmer"
+    },
+    {
+     "terrain": "floodplains",
+     "why": "Baray-fed farms"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "mount-everest",
+     "why": "Faith and movement for missionaries"
+    },
+    {
+     "slug": "ha-long-bay",
+     "why": "Khmer food"
+    },
+    {
+     "slug": "pantanal",
+     "why": "Growth"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "sacred-path",
+     "why": "Rainforest Holy Sites"
+    },
+    {
+     "slug": "river-goddess",
+     "why": "Amenities on river Holy Sites"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Religious",
+     "why": "Jerusalem and Yerevan"
+    },
+    {
+     "type": "Cultural",
+     "why": "Relics from Kandy fill the Prasat"
+    }
+   ],
+   "barbarian_stance": "The Domrey is a siege unit that moves and shoots; it also deletes a camp from range. Clear the two nearest with the first Domrey and keep faith for the religion.",
+   "victory_lean": [
+    "Religion",
+    "Culture"
+   ],
+   "rivals": [
+    {
+     "slug": "gitarja",
+     "why": "Southeast Asian neighbours with rival faiths"
+    },
+    {
+     "slug": "basil-ii",
+     "why": "Religious rival"
+    }
+   ]
+  },
+  {
+   "slug": "joao-iii",
+   "start_bias": [
+    {
+     "terrain": "coast",
+     "tier": 2
+    }
+   ],
+   "bias_source": "est (Portugal)",
+   "terrain_notes": [
+    {
+     "terrain": "coast",
+     "why": "Portugal trades only with coastal cities; the Navigation School and Feitoria want harbours"
+    },
+    {
+     "terrain": "ocean",
+     "why": "Nau and Carracks cross it first"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "bermuda-triangle",
+     "why": "Ship movement"
+    },
+    {
+     "slug": "lysefjord",
+     "why": "Promoted navy"
+    },
+    {
+     "slug": "lake-retba",
+     "why": "Coast gold"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "god-of-the-sea",
+     "why": "Production from fishing boats"
+    },
+    {
+     "slug": "religious-settlements",
+     "why": "Another coastal city"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Trade",
+     "why": "Venice, Mogadishu and Hunza"
+    },
+    {
+     "type": "Industrial",
+     "why": "Auckland"
+    }
+   ],
+   "barbarian_stance": "Portugal's wealth is at sea and so are its raiders. One Nau per coast clears the galleys; land camps are cleared only when a scout has seen a city.",
+   "victory_lean": [
+    "Science",
+    "Diplomatic"
+   ],
+   "rivals": [
+    {
+     "slug": "dido",
+     "why": "Coastal trade rival"
+    },
+    {
+     "slug": "philip-ii",
+     "why": "The Iberian neighbour"
+    }
+   ]
+  },
+  {
+   "slug": "john-curtin",
+   "start_bias": [
+    {
+     "terrain": "coast",
+     "tier": 3
+    }
+   ],
+   "bias_source": "xml (Australia)",
+   "terrain_notes": [
+    {
+     "terrain": "coast",
+     "why": "Coastal cities get housing; Outback Stations on flat land"
+    },
+    {
+     "terrain": "grassland",
+     "why": "Appeal-driven district yields need farmland between"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "great-barrier-reef",
+     "why": "Australia's reef"
+    },
+    {
+     "slug": "uluru",
+     "why": "Appeal at its highest"
+    },
+    {
+     "slug": "kakadu",
+     "why": "The scenario wetland"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "earth-goddess",
+     "why": "Faith from the appeal Australia builds anyway"
+    },
+    {
+     "slug": "god-of-the-sea",
+     "why": "Coastal production"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Industrial",
+     "why": "Auckland"
+    },
+    {
+     "type": "Cultural",
+     "why": "Nan Madol"
+    }
+   ],
+   "barbarian_stance": "Curtin's production bonus comes from being declared on. Let the camps be the practice army; clear them with the free production when a neighbour declares.",
+   "victory_lean": [
+    "Science",
+    "Culture"
+   ],
+   "rivals": [
+    {
+     "slug": "victoria",
+     "why": "The imperial parent"
+    },
+    {
+     "slug": "kupe",
+     "why": "The Pacific neighbour"
+    }
+   ]
+  },
+  {
+   "slug": "kristina",
+   "start_bias": [],
+   "bias_source": "xml (none)",
+   "terrain_notes": [
+    {
+     "terrain": "grassland",
+     "why": "Growth for the Great Works the Queen's Bibliotheque holds"
+    },
+    {
+     "terrain": "plains-hills",
+     "why": "Production for the Open-Air Museum"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "gobustan",
+     "why": "Culture"
+    },
+    {
+     "slug": "tsingy-de-bemaraha",
+     "why": "Culture and science"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "divine-spark",
+     "why": "Great Writers and Artists"
+    },
+    {
+     "slug": "god-of-craftsmen",
+     "why": "Production from the Nobel economy's mines"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Cultural",
+     "why": "Antananarivo rewards every Great Person"
+    },
+    {
+     "type": "Scientific",
+     "why": "Bologna's Great Person points"
+    }
+   ],
+   "barbarian_stance": "Sweden has no early military edge. Walls and one archer per city; clear camps only when they threaten a Theater Square.",
+   "victory_lean": [
+    "Culture",
+    "Diplomatic"
+   ],
+   "rivals": [
+    {
+     "slug": "catherine-de-medici",
+     "why": "Culture race"
+    },
+    {
+     "slug": "peter",
+     "why": "The Baltic rival"
+    }
+   ]
+  },
+  {
+   "slug": "kupe",
+   "start_bias": [
+    {
+     "terrain": "ocean",
+     "tier": 1
+    }
+   ],
+   "bias_source": "special: starts at sea",
+   "terrain_notes": [
+    {
+     "terrain": "coast",
+     "why": "The Marae and fishing boats; appeal on every shore"
+    },
+    {
+     "terrain": "woods",
+     "why": "Woods give production and the Māori cannot harvest them"
+    },
+    {
+     "terrain": "rainforest",
+     "why": "Unimproved rainforest yields extra for the Māori"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "piopiotahi",
+     "why": "The Māori wonder"
+    },
+    {
+     "slug": "bermuda-triangle",
+     "why": "Science and movement"
+    },
+    {
+     "slug": "great-barrier-reef",
+     "why": "Reef food"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "god-of-the-sea",
+     "why": "The Māori reflex"
+    },
+    {
+     "slug": "earth-goddess",
+     "why": "Faith from appeal"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Industrial",
+     "why": "Auckland"
+    },
+    {
+     "type": "Cultural",
+     "why": "Nan Madol and Rapa Nui"
+    }
+   ],
+   "barbarian_stance": "Kupe lands late and alone; the first camp near the landing is the first threat. Toa warriors clear it; after that, keep ships on patrol and let inland camps be.",
+   "victory_lean": [
+    "Culture"
+   ],
+   "rivals": [
+    {
+     "slug": "gitarja",
+     "why": "Island rivals"
+    },
+    {
+     "slug": "harald-hardrada",
+     "why": "Harald raids Māori shores"
+    }
+   ]
+  },
+  {
+   "slug": "lady-six-sky",
+   "start_bias": [],
+   "bias_source": "xml (none)",
+   "terrain_notes": [
+    {
+     "terrain": "plains",
+     "why": "Observatories need plantations and farms within six tiles of the capital"
+    },
+    {
+     "terrain": "rainforest",
+     "why": "Campus adjacency from rainforest"
+    },
+    {
+     "terrain": "grassland",
+     "why": "Farms for the Mayan housing"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "ik-kil",
+     "why": "The Mayan cenote: half-price districts"
+    },
+    {
+     "slug": "roraima",
+     "why": "Science adjacency"
+    },
+    {
+     "slug": "fountain-of-youth",
+     "why": "Science and faith near the capital"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "sacred-path",
+     "why": "Rainforest faith"
+    },
+    {
+     "slug": "goddess-of-the-harvest",
+     "why": "Chops in the jungle"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Scientific",
+     "why": "Mitla's growth with a Campus"
+    },
+    {
+     "type": "Religious",
+     "why": "La Venta's heads"
+    }
+   ],
+   "barbarian_stance": "Cities within six tiles of the capital get +10% yields and units near the capital +5 strength; camps outside that ring are a distraction. Clear the inner ring, ignore the rest.",
+   "victory_lean": [
+    "Science"
+   ],
+   "rivals": [
+    {
+     "slug": "montezuma",
+     "why": "Mesoamerican neighbours"
+    },
+    {
+     "slug": "pachacuti",
+     "why": "Mountain science rival"
+    }
+   ]
+  },
+  {
+   "slug": "lautaro",
+   "start_bias": [
+    {
+     "terrain": "mountains",
+     "tier": 3
+    }
+   ],
+   "bias_source": "xml (Mapuche)",
+   "terrain_notes": [
+    {
+     "terrain": "mountains",
+     "why": "Chemamull on high-appeal tiles beside mountains"
+    },
+    {
+     "terrain": "grassland-hills",
+     "why": "Production and defence"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "torres-del-paine",
+     "why": "The Mapuche wonder"
+    },
+    {
+     "slug": "matterhorn",
+     "why": "Hill fighting"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "earth-goddess",
+     "why": "Faith from appeal, which the Chemamull also uses"
+    },
+    {
+     "slug": "god-of-the-forge",
+     "why": "Malón Raiders faster"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Militaristic",
+     "why": "Kabul's experience for the loyalty war"
+    },
+    {
+     "type": "Cultural",
+     "why": "Chemamull culture"
+    }
+   ],
+   "barbarian_stance": "The Toqui's experience bonus is against civilizations in a Golden Age, not camps. Clear camps for safety with Malón Raiders and keep the loyalty war for the neighbour.",
+   "victory_lean": [
+    "Domination",
+    "Culture"
+   ],
+   "rivals": [
+    {
+     "slug": "pachacuti",
+     "why": "Andean neighbours"
+    },
+    {
+     "slug": "simon-bolivar",
+     "why": "Gran Colombia's loyalty pressure"
+    }
+   ]
+  },
+  {
+   "slug": "ludwig-ii",
+   "start_bias": [],
+   "bias_source": "est",
+   "terrain_notes": [
+    {
+     "terrain": "plains-hills",
+     "why": "Production for wonders"
+    },
+    {
+     "terrain": "grassland",
+     "why": "Culture from Great Works and wonders beside each other"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "ik-kil",
+     "why": "Half-price wonders"
+    },
+    {
+     "slug": "chocolate-hills",
+     "why": "Production"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "monument-to-the-gods",
+     "why": "Wonders faster"
+    },
+    {
+     "slug": "divine-spark",
+     "why": "Great Artists for the castles"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Industrial",
+     "why": "Brussels"
+    },
+    {
+     "type": "Cultural",
+     "why": "Kumasi"
+    }
+   ],
+   "barbarian_stance": "Ludwig builds castles, not armies. Walls first, Discipline, and clear the nearest camp with the Hansa-funded warriors before the first wonder.",
+   "victory_lean": [
+    "Culture"
+   ],
+   "rivals": [
+    {
+     "slug": "qin-shi-huang",
+     "why": "The wonder race"
+    },
+    {
+     "slug": "frederick-barbarossa",
+     "why": "The other German leader"
+    }
+   ]
+  },
+  {
+   "slug": "mansa-musa",
+   "start_bias": [
+    {
+     "terrain": "desert",
+     "tier": 1
+    },
+    {
+     "terrain": "desert-hills",
+     "tier": 1
+    }
+   ],
+   "bias_source": "xml (Mali)",
+   "terrain_notes": [
+    {
+     "terrain": "desert",
+     "why": "Sahel Merchants and the Suguba want desert; production is the price"
+    },
+    {
+     "terrain": "floodplains",
+     "why": "Food beside the desert"
+    },
+    {
+     "terrain": "desert-hills",
+     "why": "Mines in the one place Mali can build them"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "sahara-el-beyda",
+     "why": "Sixteen gold"
+    },
+    {
+     "slug": "eye-of-the-sahara",
+     "why": "Desert tiles that pay"
+    },
+    {
+     "slug": "lake-retba",
+     "why": "Desert coast gold"
+    },
+    {
+     "slug": "paititi",
+     "why": "Trade route gold"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "desert-folklore",
+     "why": "Faith from desert Holy Sites"
+    },
+    {
+     "slug": "religious-idols",
+     "why": "Faith from desert mines"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Trade",
+     "why": "Venice, Hunza and Samarkand"
+    },
+    {
+     "type": "Religious",
+     "why": "Chinguetti's trade faith"
+    }
+   ],
+   "barbarian_stance": "Mali cannot build a cheap army; it buys one. Walls bought with gold in every city, Mandekalu Cavalry to escort traders, and camps left alone unless a trader route crosses them.",
+   "victory_lean": [
+    "Religion",
+    "Diplomatic"
+   ],
+   "rivals": [
+    {
+     "slug": "saladin",
+     "why": "Desert faith rival"
+    },
+    {
+     "slug": "amanitore",
+     "why": "Desert neighbours"
+    }
+   ]
+  },
+  {
+   "slug": "matthias-corvinus",
+   "start_bias": [
+    {
+     "terrain": "river",
+     "tier": 3
+    },
+    {
+     "terrain": "geothermal-fissure",
+     "tier": 5
+    }
+   ],
+   "bias_source": "xml (Hungary)",
+   "terrain_notes": [
+    {
+     "terrain": "grassland",
+     "why": "Thermal Baths and river districts across from the city centre"
+    },
+    {
+     "terrain": "geothermal-fissure",
+     "why": "Hungary's bias; Fire Goddess and the Thermal Bath"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "matterhorn",
+     "why": "Hill strength for levied armies"
+    },
+    {
+     "slug": "pamukkale",
+     "why": "Amenities for a levied empire"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "fire-goddess",
+     "why": "Faith from fissures"
+    },
+    {
+     "slug": "religious-settlements",
+     "why": "A free city"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Militaristic",
+     "why": "Levied units get +2 Movement and +5 Strength"
+    },
+    {
+     "type": "Industrial",
+     "why": "Buildings for the levied army's cities"
+    }
+   ],
+   "barbarian_stance": "Hungary's army is borrowed from city-states. Protect the nearest city-state from camps, levy its units when a camp threatens, and keep your own production for buildings.",
+   "victory_lean": [
+    "Domination",
+    "Diplomatic"
+   ],
+   "rivals": [
+    {
+     "slug": "pericles",
+     "why": "Both want the city-states"
+    },
+    {
+     "slug": "suleiman",
+     "why": "The Ottoman border"
+    }
+   ]
+  },
+  {
+   "slug": "menelik-ii",
+   "start_bias": [
+    {
+     "terrain": "grassland-hills",
+     "tier": 3
+    },
+    {
+     "terrain": "plains-hills",
+     "tier": 3
+    }
+   ],
+   "bias_source": "est (Ethiopia)",
+   "terrain_notes": [
+    {
+     "terrain": "grassland-hills",
+     "why": "Cities on hills get +15% yields; Rock-Hewn Churches on hills"
+    },
+    {
+     "terrain": "plains-hills",
+     "why": "Production and defence on high ground"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "mount-kilimanjaro",
+     "why": "Food beside Ethiopian hills"
+    },
+    {
+     "slug": "delicate-arch",
+     "why": "Faith on hills"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "religious-idols",
+     "why": "Faith from hill mines"
+    },
+    {
+     "slug": "stone-circles",
+     "why": "Faith from quarries"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Religious",
+     "why": "Kandy's relics feed Ethiopian culture"
+    },
+    {
+     "type": "Militaristic",
+     "why": "Oromo Cavalry production"
+    }
+   ],
+   "barbarian_stance": "Ethiopian units on hills gain strength; settle hills and let the camps attack uphill. Clear with Oromo Cavalry once two cities stand.",
+   "victory_lean": [
+    "Religion",
+    "Culture"
+   ],
+   "rivals": [
+    {
+     "slug": "saladin",
+     "why": "Faith rival to the north"
+    },
+    {
+     "slug": "mansa-musa",
+     "why": "West African neighbour"
+    }
+   ]
+  },
+  {
+   "slug": "montezuma",
+   "start_bias": [],
+   "bias_source": "est (Aztec)",
+   "terrain_notes": [
+    {
+     "terrain": "grassland",
+     "why": "Tlachtli and luxuries around a lake capital"
+    },
+    {
+     "terrain": "lake",
+     "why": "The Aztec capital sat on one"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "fountain-of-youth",
+     "why": "Eagle Warriors that heal"
+    },
+    {
+     "slug": "pamukkale",
+     "why": "Amenities for the army"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "god-of-the-forge",
+     "why": "Eagle Warriors faster"
+    },
+    {
+     "slug": "religious-settlements",
+     "why": "A free city"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Industrial",
+     "why": "Buenos Aires makes bonus resources amenities"
+    },
+    {
+     "type": "Militaristic",
+     "why": "Kabul"
+    }
+   ],
+   "barbarian_stance": "Eagle Warriors capture barbarians as Builders. Every camp is a labour supply: fight the raiders, not the camp, until the Builders are banked, then clear it.",
+   "victory_lean": [
+    "Domination"
+   ],
+   "rivals": [
+    {
+     "slug": "lady-six-sky",
+     "why": "Mesoamerican neighbours"
+    },
+    {
+     "slug": "gandhi",
+     "why": "The warmonger's critic"
+    }
+   ]
+  },
+  {
+   "slug": "nzinga-mbande",
+   "start_bias": [
+    {
+     "terrain": "rainforest",
+     "tier": 2
+    },
+    {
+     "terrain": "woods",
+     "tier": 2
+    }
+   ],
+   "bias_source": "xml (Kongo)",
+   "terrain_notes": [
+    {
+     "terrain": "rainforest",
+     "why": "Kongo's bias; Mbanza replaces the Neighborhood inside woods and rainforest"
+    },
+    {
+     "terrain": "woods",
+     "why": "Chop nothing: the Mbanza needs the trees"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "tsingy-de-bemaraha",
+     "why": "Culture and science"
+    },
+    {
+     "slug": "roraima",
+     "why": "Rainforest adjacency"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "goddess-of-festivals",
+     "why": "Culture from plantations"
+    },
+    {
+     "slug": "sacred-path",
+     "why": "Faith from rainforest Holy Sites"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Cultural",
+     "why": "Kumasi"
+    },
+    {
+     "type": "Religious",
+     "why": "Relics and artifacts feed Kongo"
+    }
+   ],
+   "barbarian_stance": "Cities on the home continent gain yields; the capital's neighbourhood is the empire. Clear camps on the home continent and let the rest be.",
+   "victory_lean": [
+    "Culture",
+    "Diplomatic"
+   ],
+   "rivals": [
+    {
+     "slug": "mansa-musa",
+     "why": "West African neighbour"
+    },
+    {
+     "slug": "philip-ii",
+     "why": "Philip cannot abide Kongo's refusal to found a religion"
+    }
+   ]
+  },
+  {
+   "slug": "pachacuti",
+   "start_bias": [
+    {
+     "terrain": "mountains",
+     "tier": 3
+    }
+   ],
+   "bias_source": "xml (Inca)",
+   "terrain_notes": [
+    {
+     "terrain": "mountains",
+     "why": "Terrace Farms, the Qhapaq Ñan, and citizens working mountain tiles"
+    },
+    {
+     "terrain": "grassland-hills",
+     "why": "Terrace Farms on hills beside mountains"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "torres-del-paine",
+     "why": "Doubled Terrace Farms"
+    },
+    {
+     "slug": "mount-kilimanjaro",
+     "why": "Food beside a mountain"
+    },
+    {
+     "slug": "matterhorn",
+     "why": "Hill fighting"
+    },
+    {
+     "slug": "mount-everest",
+     "why": "Three mountains of faith"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "earth-goddess",
+     "why": "Mountain appeal"
+    },
+    {
+     "slug": "stone-circles",
+     "why": "Faith from quarries in the hills"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Religious",
+     "why": "Nazca's lines"
+    },
+    {
+     "type": "Industrial",
+     "why": "Production for the mountain cities"
+    }
+   ],
+   "barbarian_stance": "Mountains block raiders as well as settlers. Settle in the valleys, hold the passes with Warak'aq, and clear only the camps that share your valley.",
+   "victory_lean": [
+    "Science",
+    "Culture"
+   ],
+   "rivals": [
+    {
+     "slug": "lautaro",
+     "why": "Andean neighbours"
+    },
+    {
+     "slug": "lady-six-sky",
+     "why": "Science rival"
+    }
+   ]
+  },
+  {
+   "slug": "pedro-ii",
+   "start_bias": [
+    {
+     "terrain": "rainforest",
+     "tier": 2
+    }
+   ],
+   "bias_source": "xml (Brazil)",
+   "terrain_notes": [
+    {
+     "terrain": "rainforest",
+     "why": "Brazil's bias; Street Carnival and rainforest adjacency"
+    },
+    {
+     "terrain": "grassland",
+     "why": "Plantations in the jungle for the Carnival"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "pantanal",
+     "why": "Brazil's wetland"
+    },
+    {
+     "slug": "roraima",
+     "why": "Rainforest science"
+    },
+    {
+     "slug": "paititi",
+     "why": "Gold near the Amazon"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "goddess-of-festivals",
+     "why": "Culture from plantations"
+    },
+    {
+     "slug": "divine-spark",
+     "why": "Great People, Brazil's whole kit"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Cultural",
+     "why": "Antananarivo"
+    },
+    {
+     "type": "Scientific",
+     "why": "Bologna"
+    }
+   ],
+   "barbarian_stance": "Brazil peaks late and has nothing early. Walls, Discipline, Minas Geraes much later. Clear only the camp that sees the capital.",
+   "victory_lean": [
+    "Culture",
+    "Science"
+   ],
+   "rivals": [
+    {
+     "slug": "simon-bolivar",
+     "why": "South American rivals"
+    },
+    {
+     "slug": "catherine-de-medici",
+     "why": "Culture race"
+    }
+   ]
+  },
+  {
+   "slug": "pericles",
+   "start_bias": [
+    {
+     "terrain": "grassland-hills",
+     "tier": 3
+    },
+    {
+     "terrain": "plains-hills",
+     "tier": 3
+    },
+    {
+     "terrain": "desert-hills",
+     "tier": 3
+    },
+    {
+     "terrain": "tundra-hills",
+     "tier": 3
+    }
+   ],
+   "bias_source": "xml (Greece)",
+   "terrain_notes": [
+    {
+     "terrain": "grassland-hills",
+     "why": "The Acropolis on a hill"
+    },
+    {
+     "terrain": "plains-hills",
+     "why": "Hoplite production"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "gobustan",
+     "why": "Culture"
+    },
+    {
+     "slug": "tsingy-de-bemaraha",
+     "why": "Culture and science"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "god-of-the-open-sky",
+     "why": "Culture from pastures"
+    },
+    {
+     "slug": "divine-spark",
+     "why": "Great People for the Acropolis"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Cultural",
+     "why": "Every Cultural city-state gives Pericles culture"
+    },
+    {
+     "type": "Scientific",
+     "why": "Geneva in peace"
+    }
+   ],
+   "barbarian_stance": "Pericles does not need camps. Walls, an archer, and envoys; levy a Militaristic city-state if a raid gets serious.",
+   "victory_lean": [
+    "Culture",
+    "Diplomatic"
+   ],
+   "rivals": [
+    {
+     "slug": "gorgo",
+     "why": "The other Greek leader"
+    },
+    {
+     "slug": "frederick-barbarossa",
+     "why": "Germany conquers the city-states Pericles courts"
+    }
+   ]
+  },
+  {
+   "slug": "peter",
+   "start_bias": [
+    {
+     "terrain": "tundra",
+     "tier": 3
+    },
+    {
+     "terrain": "tundra-hills",
+     "tier": 3
+    }
+   ],
+   "bias_source": "xml (Russia)",
+   "terrain_notes": [
+    {
+     "terrain": "tundra",
+     "why": "The Lavra, Dance of the Aurora, and extra territory per city"
+    },
+    {
+     "terrain": "tundra-hills",
+     "why": "Mines where nothing else grows"
+    },
+    {
+     "terrain": "woods",
+     "why": "Production in the cold"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "ubsunur-hollow",
+     "why": "Tundra faith"
+    },
+    {
+     "slug": "eyjafjallajokull",
+     "why": "Food on tundra coast"
+    },
+    {
+     "slug": "torres-del-paine",
+     "why": "Doubled tundra tiles"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "dance-of-the-aurora",
+     "why": "Tundra Holy Sites, the Russian reflex"
+    },
+    {
+     "slug": "goddess-of-the-hunt",
+     "why": "Furs and deer"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Religious",
+     "why": "Kandy and Valletta"
+    },
+    {
+     "type": "Scientific",
+     "why": "Geneva"
+    }
+   ],
+   "barbarian_stance": "Tundra fog is where camps live. Scout north before the second settler; clear the camps that see your cities with Cossacks later and archers now.",
+   "victory_lean": [
+    "Religion",
+    "Culture"
+   ],
+   "rivals": [
+    {
+     "slug": "harald-hardrada",
+     "why": "The northern neighbour"
+    },
+    {
+     "slug": "kristina",
+     "why": "The Baltic rival"
+    }
+   ]
+  },
+  {
+   "slug": "philip-ii",
+   "start_bias": [
+    {
+     "terrain": "coast",
+     "tier": 3
+    }
+   ],
+   "bias_source": "xml (Spain)",
+   "terrain_notes": [
+    {
+     "terrain": "coast",
+     "why": "Missions and Conquistadors on other continents"
+    },
+    {
+     "terrain": "plains-hills",
+     "why": "Production for the fleet"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "delicate-arch",
+     "why": "Faith"
+    },
+    {
+     "slug": "dead-sea",
+     "why": "Faith and healing"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "god-of-war",
+     "why": "Faith from kills in the religious war"
+    },
+    {
+     "slug": "god-of-the-forge",
+     "why": "Conquistadors faster"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Religious",
+     "why": "Jerusalem, Fez and Granada"
+    },
+    {
+     "type": "Militaristic",
+     "why": "Valletta"
+    }
+   ],
+   "barbarian_stance": "Spain's bonus against cities of other religions does not touch camps. Clear the nearest with the first warriors and spend faith on missionaries, not on more warriors.",
+   "victory_lean": [
+    "Religion",
+    "Domination"
+   ],
+   "rivals": [
+    {
+     "slug": "basil-ii",
+     "why": "Two religious conquerors"
+    },
+    {
+     "slug": "gandhi",
+     "why": "Gandhi has no state religion to convert"
+    }
+   ]
+  },
+  {
+   "slug": "qin-shi-huang",
+   "start_bias": [],
+   "bias_source": "xml (none)",
+   "terrain_notes": [
+    {
+     "terrain": "plains-hills",
+     "why": "Production for wonders; the Great Wall on the border"
+    },
+    {
+     "terrain": "grassland",
+     "why": "Growth under the wonders"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "ik-kil",
+     "why": "Half-price wonders"
+    },
+    {
+     "slug": "zhangye-danxia",
+     "why": "Chinese wonder with Great General points"
+    },
+    {
+     "slug": "chocolate-hills",
+     "why": "Production"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "monument-to-the-gods",
+     "why": "Wonders faster on top of Builder charges"
+    },
+    {
+     "slug": "goddess-of-the-harvest",
+     "why": "Chops into wonders"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Industrial",
+     "why": "Brussels"
+    },
+    {
+     "type": "Cultural",
+     "why": "Ayutthaya's culture from buildings"
+    }
+   ],
+   "barbarian_stance": "Crouching Tigers behind the Great Wall make camps harmless. Clear the camp that sees the capital and then stop; the Builders are for wonders.",
+   "victory_lean": [
+    "Culture",
+    "Science"
+   ],
+   "rivals": [
+    {
+     "slug": "yongle",
+     "why": "The other Chinese leader"
+    },
+    {
+     "slug": "cleopatra",
+     "why": "The wonder race"
+    }
+   ]
+  },
+  {
+   "slug": "robert-the-bruce",
+   "start_bias": [],
+   "bias_source": "est (Scotland)",
+   "terrain_notes": [
+    {
+     "terrain": "grassland-hills",
+     "why": "Golf Courses and happy cities on hills"
+    },
+    {
+     "terrain": "coast",
+     "why": "Scotland's historical coast"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "cliffs-of-dover",
+     "why": "Culture and gold"
+    },
+    {
+     "slug": "giants-causeway",
+     "why": "The Celtic coast"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "stone-circles",
+     "why": "Faith from quarries"
+    },
+    {
+     "slug": "goddess-of-the-hunt",
+     "why": "Camps in the highlands"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Industrial",
+     "why": "Production for happy cities"
+    },
+    {
+     "type": "Scientific",
+     "why": "Geneva"
+    }
+   ],
+   "barbarian_stance": "Scotland's science comes from happy cities, and a raided city is not happy. Walls early, Highlanders much later; clear the camps within sight and leave the rest.",
+   "victory_lean": [
+    "Science"
+   ],
+   "rivals": [
+    {
+     "slug": "victoria",
+     "why": "The English crown"
+    },
+    {
+     "slug": "eleanor-of-aquitaine",
+     "why": "Loyalty pressure from the south"
+    }
+   ]
+  },
+  {
+   "slug": "saladin",
+   "start_bias": [],
+   "bias_source": "xml (none)",
+   "terrain_notes": [
+    {
+     "terrain": "desert",
+     "why": "Desert Folklore and the Madrasa"
+    },
+    {
+     "terrain": "floodplains",
+     "why": "Food for the desert cities"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "dead-sea",
+     "why": "Faith and healing"
+    },
+    {
+     "slug": "delicate-arch",
+     "why": "Faith"
+    },
+    {
+     "slug": "sahara-el-beyda",
+     "why": "Gold"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "desert-folklore",
+     "why": "Desert Holy Sites"
+    },
+    {
+     "slug": "god-of-war",
+     "why": "Faith from kills"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Religious",
+     "why": "Jerusalem, Chinguetti, Fez"
+    },
+    {
+     "type": "Scientific",
+     "why": "Madrasa science plus Geneva"
+    }
+   ],
+   "barbarian_stance": "Arabia always gets a Great Prophet; the army can wait. Mamluks heal every turn; use them to clear camps late and missionaries early.",
+   "victory_lean": [
+    "Religion",
+    "Science"
+   ],
+   "rivals": [
+    {
+     "slug": "basil-ii",
+     "why": "Religious rival"
+    },
+    {
+     "slug": "philip-ii",
+     "why": "Religious rival"
+    }
+   ]
+  },
+  {
+   "slug": "seondeok",
+   "start_bias": [
+    {
+     "terrain": "grassland-hills",
+     "tier": 3
+    },
+    {
+     "terrain": "plains-hills",
+     "tier": 3
+    },
+    {
+     "terrain": "desert-hills",
+     "tier": 3
+    },
+    {
+     "terrain": "tundra-hills",
+     "tier": 3
+    }
+   ],
+   "bias_source": "xml (Korea)",
+   "terrain_notes": [
+    {
+     "terrain": "grassland-hills",
+     "why": "The Seowon on a hill with no district beside it"
+    },
+    {
+     "terrain": "plains-hills",
+     "why": "Production for the Hwacha"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "galapagos-islands",
+     "why": "Coastal science"
+    },
+    {
+     "slug": "great-barrier-reef",
+     "why": "Reef science"
+    },
+    {
+     "slug": "yosemite",
+     "why": "Science adjacency"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "divine-spark",
+     "why": "Scientists"
+    },
+    {
+     "slug": "stone-circles",
+     "why": "Faith from hill quarries"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Scientific",
+     "why": "Geneva, Bologna, Mitla"
+    },
+    {
+     "type": "Industrial",
+     "why": "Production for Seowons"
+    }
+   ],
+   "barbarian_stance": "Korea builds science, not soldiers. Walls, one archer per city, and Hwacha later. Clear only what can see the capital.",
+   "victory_lean": [
+    "Science"
+   ],
+   "rivals": [
+    {
+     "slug": "hammurabi",
+     "why": "The science race"
+    },
+    {
+     "slug": "tokugawa",
+     "why": "The Japanese neighbour"
+    }
+   ]
+  },
+  {
+   "slug": "shaka",
+   "start_bias": [],
+   "bias_source": "est (Zulu)",
+   "terrain_notes": [
+    {
+     "terrain": "grassland",
+     "why": "Growth for the corps"
+    },
+    {
+     "terrain": "plains-hills",
+     "why": "Ikanda production"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "giants-causeway",
+     "why": "Impi with +5"
+    },
+    {
+     "slug": "pamukkale",
+     "why": "Amenities for conquered cities"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "god-of-the-forge",
+     "why": "Impi faster"
+    },
+    {
+     "slug": "initiation-rites",
+     "why": "Faith from camps"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Militaristic",
+     "why": "Kabul, Akkad"
+    },
+    {
+     "type": "Industrial",
+     "why": "Johannesburg"
+    }
+   ],
+   "barbarian_stance": "Impi corps promote faster and the Ikanda shortens the road. Camps are the training ground: clear every one in reach before the first war.",
+   "victory_lean": [
+    "Domination"
+   ],
+   "rivals": [
+    {
+     "slug": "gandhi",
+     "why": "The critic"
+    },
+    {
+     "slug": "menelik-ii",
+     "why": "The African neighbour"
+    }
+   ]
+  },
+  {
+   "slug": "simon-bolivar",
+   "start_bias": [],
+   "bias_source": "est (Gran Colombia)",
+   "terrain_notes": [
+    {
+     "terrain": "rainforest",
+     "why": "Gran Colombian hills and jungle; the Hacienda"
+    },
+    {
+     "terrain": "plains-hills",
+     "why": "Production for Llaneros"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "roraima",
+     "why": "Gran Colombia's tepui"
+    },
+    {
+     "slug": "fountain-of-youth",
+     "why": "Healing veterans"
+    },
+    {
+     "slug": "paititi",
+     "why": "Gold"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "god-of-the-forge",
+     "why": "Llaneros faster"
+    },
+    {
+     "slug": "goddess-of-festivals",
+     "why": "Plantation culture"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Militaristic",
+     "why": "Kabul"
+    },
+    {
+     "type": "Cultural",
+     "why": "Caguana"
+    }
+   ],
+   "barbarian_stance": "Every unit moves +1; camps are cleared before anyone else reaches them. Clear aggressively, bank the experience, and keep the Comandante Generales for wars.",
+   "victory_lean": [
+    "Domination"
+   ],
+   "rivals": [
+    {
+     "slug": "pedro-ii",
+     "why": "South American rivals"
+    },
+    {
+     "slug": "lautaro",
+     "why": "The southern neighbour"
+    }
+   ]
+  },
+  {
+   "slug": "suleiman",
+   "start_bias": [],
+   "bias_source": "xml (none)",
+   "terrain_notes": [
+    {
+     "terrain": "plains-hills",
+     "why": "Production for the Grand Bazaar's siege army"
+    },
+    {
+     "terrain": "grassland",
+     "why": "Growth for conquered cities that keep their amenities"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "pamukkale",
+     "why": "Ottoman ground, amenities"
+    },
+    {
+     "slug": "dead-sea",
+     "why": "Healing"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "god-of-the-forge",
+     "why": "Janissaries later; early units now"
+    },
+    {
+     "slug": "religious-settlements",
+     "why": "A free city"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Militaristic",
+     "why": "Ngazargamu's cheap purchases"
+    },
+    {
+     "type": "Trade",
+     "why": "Zanzibar's amenities"
+    }
+   ],
+   "barbarian_stance": "Ottoman siege units are for walls, not camps. Clear the nearest two with warriors and build the Barbary Corsairs to keep the coast clean.",
+   "victory_lean": [
+    "Domination"
+   ],
+   "rivals": [
+    {
+     "slug": "matthias-corvinus",
+     "why": "The Hungarian frontier"
+    },
+    {
+     "slug": "tamar",
+     "why": "The Georgian frontier"
+    }
+   ]
+  },
+  {
+   "slug": "tamar",
+   "start_bias": [
+    {
+     "terrain": "grassland-hills",
+     "tier": 3
+    },
+    {
+     "terrain": "plains-hills",
+     "tier": 3
+    }
+   ],
+   "bias_source": "est (Georgia)",
+   "terrain_notes": [
+    {
+     "terrain": "grassland-hills",
+     "why": "Tsikhe walls on hills; Georgia's mountain kingdom"
+    },
+    {
+     "terrain": "mountains",
+     "why": "Holy Site adjacency and faith for Strength in Unity"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "mount-everest",
+     "why": "Faith on mountains"
+    },
+    {
+     "slug": "delicate-arch",
+     "why": "Faith"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "religious-idols",
+     "why": "Faith from mountain mines"
+    },
+    {
+     "slug": "stone-circles",
+     "why": "Faith from quarries"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Religious",
+     "why": "Yerevan and Valletta; envoys from Georgia's protectorate wars count double"
+    },
+    {
+     "type": "Militaristic",
+     "why": "Khevsur on hills"
+    }
+   ],
+   "barbarian_stance": "Khevsur fight at +7 on hills; settle them and let camps attack uphill. Clear with the first Khevsur and keep faith for Golden Age walls.",
+   "victory_lean": [
+    "Religion",
+    "Diplomatic"
+   ],
+   "rivals": [
+    {
+     "slug": "suleiman",
+     "why": "The Ottoman frontier"
+    },
+    {
+     "slug": "basil-ii",
+     "why": "Byzantine faith rival"
+    }
+   ]
+  },
+  {
+   "slug": "teddy-roosevelt",
+   "start_bias": [],
+   "bias_source": "xml (none)",
+   "terrain_notes": [
+    {
+     "terrain": "mountains",
+     "why": "Appeal for National Parks and the Rough Rider bonus on the home continent"
+    },
+    {
+     "terrain": "woods",
+     "why": "Appeal and production"
+    },
+    {
+     "terrain": "grassland",
+     "why": "Film Studios in big cities"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "yosemite",
+     "why": "Roosevelt's park"
+    },
+    {
+     "slug": "mato-tipila",
+     "why": "Appeal and production"
+    },
+    {
+     "slug": "uluru",
+     "why": "Maximum appeal"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "earth-goddess",
+     "why": "Faith from appeal"
+    },
+    {
+     "slug": "goddess-of-the-hunt",
+     "why": "Camps in the woods"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Cultural",
+     "why": "Rapa Nui and Nan Madol"
+    },
+    {
+     "type": "Industrial",
+     "why": "Production for parks and studios"
+    }
+   ],
+   "barbarian_stance": "Units on the home continent get +5 strength; camps on it are easy. Clear everything on the home continent, ignore everything off it.",
+   "victory_lean": [
+    "Culture",
+    "Diplomatic"
+   ],
+   "rivals": [
+    {
+     "slug": "victoria",
+     "why": "The imperial parent"
+    },
+    {
+     "slug": "wilfrid-laurier",
+     "why": "The northern neighbour"
+    }
+   ]
+  },
+  {
+   "slug": "tokugawa",
+   "start_bias": [
+    {
+     "terrain": "coast",
+     "tier": 3
+    }
+   ],
+   "bias_source": "est (Japan)",
+   "terrain_notes": [
+    {
+     "terrain": "coast",
+     "why": "Districts on coast; domestic trade routes pay more"
+    },
+    {
+     "terrain": "plains-hills",
+     "why": "Production for the Electronics Factory"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "ha-long-bay",
+     "why": "Defence and food at sea"
+    },
+    {
+     "slug": "great-barrier-reef",
+     "why": "Reef science"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "city-patron-goddess",
+     "why": "Districts faster"
+    },
+    {
+     "slug": "god-of-the-sea",
+     "why": "Coastal production"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Trade",
+     "why": "Muscat for amenities with Commercial Hubs"
+    },
+    {
+     "type": "Industrial",
+     "why": "Auckland"
+    }
+   ],
+   "barbarian_stance": "Tokugawa's bonuses are domestic; a raid breaks the trade routes that pay him. Walls and Samurai on the coast, and every camp within five tiles cleared.",
+   "victory_lean": [
+    "Culture",
+    "Science"
+   ],
+   "rivals": [
+    {
+     "slug": "hojo-tokimune",
+     "why": "The other Japanese leader"
+    },
+    {
+     "slug": "yongle",
+     "why": "The Chinese neighbour"
+    }
+   ]
+  },
+  {
+   "slug": "tomyris",
+   "start_bias": [
+    {
+     "terrain": "grassland",
+     "tier": 5
+    },
+    {
+     "terrain": "plains",
+     "tier": 5
+    }
+   ],
+   "bias_source": "xml (Scythia: Horses T2)",
+   "terrain_notes": [
+    {
+     "terrain": "grassland",
+     "why": "Horses and Kurgans on flat land"
+    },
+    {
+     "terrain": "plains",
+     "why": "Open ground for Saka Horse Archers"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "ubsunur-hollow",
+     "why": "The steppe wonder"
+    },
+    {
+     "slug": "zhangye-danxia",
+     "why": "Great Generals"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "god-of-the-open-sky",
+     "why": "Culture from pastures"
+    },
+    {
+     "slug": "god-of-craftsmen",
+     "why": "Production from Horses"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Militaristic",
+     "why": "Kabul"
+    },
+    {
+     "type": "Religious",
+     "why": "Faith from Kurgans buys more"
+    }
+   ],
+   "barbarian_stance": "Scythian units heal on kills and strike wounded enemies harder. Every camp is a free promotion and free healing; clear all of them with the two-for-one horsemen.",
+   "victory_lean": [
+    "Domination"
+   ],
+   "rivals": [
+    {
+     "slug": "genghis-khan",
+     "why": "Steppe rivals"
+    },
+    {
+     "slug": "cyrus",
+     "why": "Tomyris killed Cyrus in the record; the game remembers"
+    }
+   ]
+  },
+  {
+   "slug": "trajan",
+   "start_bias": [],
+   "bias_source": "xml (none)",
+   "terrain_notes": [
+    {
+     "terrain": "grassland",
+     "why": "Roads and Baths for a wide empire"
+    },
+    {
+     "terrain": "plains-hills",
+     "why": "Legion production"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "mount-vesuvius",
+     "why": "Rome's volcano"
+    },
+    {
+     "slug": "pamukkale",
+     "why": "Amenities for forty cities"
+    },
+    {
+     "slug": "chocolate-hills",
+     "why": "Production"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "religious-settlements",
+     "why": "Another free city"
+    },
+    {
+     "slug": "city-patron-goddess",
+     "why": "Monuments then districts"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Industrial",
+     "why": "Buenos Aires and Mexico City"
+    },
+    {
+     "type": "Militaristic",
+     "why": "Preslav's loyalty"
+    }
+   ],
+   "barbarian_stance": "Rome expands faster than it defends. Each new city gets a Legion escort; the Legion clears the camp that was there and builds the fort.",
+   "victory_lean": [
+    "Domination",
+    "Science"
+   ],
+   "rivals": [
+    {
+     "slug": "cleopatra",
+     "why": "Rome and Egypt"
+    },
+    {
+     "slug": "alexander",
+     "why": "Two conquerors"
+    }
+   ]
+  },
+  {
+   "slug": "victoria",
+   "start_bias": [
+    {
+     "terrain": "coal",
+     "tier": 5
+    },
+    {
+     "terrain": "iron",
+     "tier": 5
+    }
+   ],
+   "bias_source": "xml (England)",
+   "terrain_notes": [
+    {
+     "terrain": "coast",
+     "why": "Royal Navy Dockyards and the overseas empire"
+    },
+    {
+     "terrain": "grassland-hills",
+     "why": "Coal and iron under the hills"
+    },
+    {
+     "terrain": "plains-hills",
+     "why": "Workshop of the World production"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "cliffs-of-dover",
+     "why": "England's wonder"
+    },
+    {
+     "slug": "yosemite",
+     "why": "Overseas park"
+    },
+    {
+     "slug": "bermuda-triangle",
+     "why": "Fleet movement"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "god-of-craftsmen",
+     "why": "Production from Coal and Iron"
+    },
+    {
+     "slug": "god-of-the-sea",
+     "why": "Coastal production"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Industrial",
+     "why": "Cardiff and Johannesburg"
+    },
+    {
+     "type": "Trade",
+     "why": "Trade routes to England's colonies"
+    }
+   ],
+   "barbarian_stance": "England's free units come with each new continent, not each camp. Clear the home camps with the first warriors and let the Sea Dogs handle the coast.",
+   "victory_lean": [
+    "Science",
+    "Domination"
+   ],
+   "rivals": [
+    {
+     "slug": "teddy-roosevelt",
+     "why": "The colony"
+    },
+    {
+     "slug": "john-curtin",
+     "why": "The colony"
+    }
+   ]
+  },
+  {
+   "slug": "wilfrid-laurier",
+   "start_bias": [
+    {
+     "terrain": "tundra",
+     "tier": 1
+    },
+    {
+     "terrain": "tundra-hills",
+     "tier": 1
+    },
+    {
+     "terrain": "snow",
+     "tier": 5
+    },
+    {
+     "terrain": "snow-hills",
+     "tier": 5
+    }
+   ],
+   "bias_source": "xml (Canada)",
+   "terrain_notes": [
+    {
+     "terrain": "tundra",
+     "why": "Farms on tundra, Mounties, and cheaper tundra tiles"
+    },
+    {
+     "terrain": "snow",
+     "why": "Canada settles beside it"
+    },
+    {
+     "terrain": "woods",
+     "why": "Lumber and the hockey rink"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "eyjafjallajokull",
+     "why": "Tundra food"
+    },
+    {
+     "slug": "ubsunur-hollow",
+     "why": "Tundra faith"
+    },
+    {
+     "slug": "vinland",
+     "why": "The Canadian wonder"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "goddess-of-the-hunt",
+     "why": "Furs and deer in the north"
+    },
+    {
+     "slug": "dance-of-the-aurora",
+     "why": "Tundra Holy Sites"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Cultural",
+     "why": "Vilnius with alliances"
+    },
+    {
+     "type": "Trade",
+     "why": "Cahokia"
+    }
+   ],
+   "barbarian_stance": "Canada cannot declare surprise wars and cannot be surprise-attacked, which barbarians ignore. Scout the tundra early, walls in every city, and Mounties later.",
+   "victory_lean": [
+    "Diplomatic",
+    "Culture"
+   ],
+   "rivals": [
+    {
+     "slug": "teddy-roosevelt",
+     "why": "The southern neighbour"
+    },
+    {
+     "slug": "victoria",
+     "why": "The crown"
+    }
+   ]
+  },
+  {
+   "slug": "yongle",
+   "start_bias": [],
+   "bias_source": "xml (none)",
+   "terrain_notes": [
+    {
+     "terrain": "plains-hills",
+     "why": "Production and the Great Wall"
+    },
+    {
+     "terrain": "grassland",
+     "why": "Growth for the Lijia's yields-to-gold conversion"
+    }
+   ],
+   "natural_wonders": [
+    {
+     "slug": "zhangye-danxia",
+     "why": "Chinese wonder with Great Merchants"
+    },
+    {
+     "slug": "ik-kil",
+     "why": "Half-price projects"
+    },
+    {
+     "slug": "chocolate-hills",
+     "why": "Production"
+    }
+   ],
+   "pantheons": [
+    {
+     "slug": "city-patron-goddess",
+     "why": "Districts in every city"
+    },
+    {
+     "slug": "monument-to-the-gods",
+     "why": "Wonders"
+    }
+   ],
+   "city_state_priority": [
+    {
+     "type": "Trade",
+     "why": "Venice and Bandar Brunei"
+    },
+    {
+     "type": "Industrial",
+     "why": "Hong Kong for projects"
+    }
+   ],
+   "barbarian_stance": "Yongle's cities convert yields to gold and buy what they need. Buy walls in the border cities, clear the camp that sees the capital, and use Crouching Tigers behind the wall.",
+   "victory_lean": [
+    "Science",
+    "Culture"
+   ],
+   "rivals": [
+    {
+     "slug": "qin-shi-huang",
+     "why": "The other Chinese leader"
+    },
+    {
+     "slug": "tokugawa",
+     "why": "The eastern neighbour"
+    }
+   ]
+  }
+ ],
+ "notes": "start_bias tiers follow Civilization VI's scale: 1 strongest, 5 weakest. bias_source 'xml' means the Gathering Storm XML dump posted on CivFanatics; 'est' means estimated from the kit where the dump was silent."
+}

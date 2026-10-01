@@ -1,0 +1,5010 @@
+{
+ "roster": {
+  "count": 54,
+  "byCategory": {
+   "military": 16,
+   "production": 10,
+   "science": 3,
+   "culture": 10,
+   "faith": 10,
+   "gold": 5
+  },
+  "byEra": {
+   "Ancient": 9,
+   "Classical": 7,
+   "Medieval": 15,
+   "Renaissance": 13,
+   "Industrial": 6,
+   "Modern": 4
+  },
+  "byRegion": {
+   "Middle East": 5,
+   "Africa": 7,
+   "North America": 4,
+   "Central Asia": 2,
+   "South America": 4,
+   "Europe": 20,
+   "South Asia": 2,
+   "East Asia": 5,
+   "Oceania": 2,
+   "Southeast Asia": 3
+  },
+  "generated": "2026-10-01"
+ },
+ "wonders": {
+  "overview": "A natural wonder is a feature the map was born with. It cannot be built, bought or moved. Discovering one is a historic moment, settling beside one raises the appeal of every neighbouring tile, and a handful of them bend the rules of the game outright. Thirty-seven exist across the base game and its packs; a standard map seeds four to six of them.",
+  "wonders": [
+   {
+    "slug": "bermuda-triangle",
+    "name": "Bermuda Triangle",
+    "tiles": 3,
+    "passable": true,
+    "terrain": "Ocean, off a coast",
+    "effect": "+5 Science to adjacent tiles. +5 Appeal to each wonder tile. Naval units that end a turn on the wonder gain +1 Movement for the rest of the game and are teleported to a random ocean tile.",
+    "yields": {
+     "science": 5,
+     "appeal": 5
+    },
+    "expansion": "Maya & Gran Colombia Pack",
+    "real_world": {
+     "location": "Western North Atlantic, between Bermuda, Miami and Puerto Rico",
+     "country": "International waters",
+     "lat": 25,
+     "lon": -71,
+     "description": "A loosely drawn stretch of sea between Bermuda, Florida and Puerto Rico, named in 1964 by a magazine writer and never by a chart. The ships and aircraft said to vanish there are lost at the ordinary rate for busy water crossed by hurricanes and the Gulf Stream. The wonder is the legend, not the place. The map keeps it anyway."
+    },
+    "strategy": [
+     "A Campus on the shore beside it is among the strongest science districts in the game.",
+     "The teleport is a gamble: a scout ship can cross the world in a turn, or land beside an enemy fleet.",
+     "Coastal civilizations with a Harbor plan should settle it before anyone else sails past."
+    ],
+    "leaders": [
+     {
+      "slug": "kupe",
+      "why": "Starts at sea and values high-appeal coast"
+     },
+     {
+      "slug": "harald-hardrada",
+      "why": "Naval movement compounds with Viking Longships"
+     },
+     {
+      "slug": "seondeok",
+      "why": "Science from a coastal Campus"
+     }
+    ],
+    "image": "images/wonders/bermuda-triangle.jpg",
+    "imageCredit": "wonder-bermuda-triangle"
+   },
+   {
+    "slug": "chocolate-hills",
+    "name": "Chocolate Hills",
+    "tiles": 4,
+    "passable": true,
+    "terrain": "Grassland or Plains hills",
+    "effect": "+1 Food, +1 Science and +2 Production on each wonder tile. +2 Appeal to adjacent tiles.",
+    "yields": {
+     "food": 1,
+     "science": 1,
+     "production": 2,
+     "appeal": 2
+    },
+    "expansion": "Gathering Storm",
+    "real_world": {
+     "location": "Bohol",
+     "country": "Philippines",
+     "lat": 9.83,
+     "lon": 124.17,
+     "description": "More than a thousand conical mounds of marine limestone, grass-covered and turning brown in the dry season, spread across the centre of Bohol. They are the eroded remains of a coral reef lifted from the sea and cut by rain over a million years. Local tales give them to giants and to a grieving giant's tears."
+    },
+    "strategy": [
+     "Four workable tiles with mixed yields: a city that holds all of them is a production city from the first turn.",
+     "The hills take mines and districts; it is one of the few wonders you can build on."
+    ],
+    "leaders": [
+     {
+      "slug": "frederick-barbarossa",
+      "why": "Production for a Hansa economy"
+     },
+     {
+      "slug": "qin-shi-huang",
+      "why": "Early production feeds wonder rushing"
+     },
+     {
+      "slug": "trajan",
+      "why": "A wide empire wants every productive hill"
+     }
+    ],
+    "image": "images/wonders/chocolate-hills.jpg",
+    "imageCredit": "wonder-chocolate-hills"
+   },
+   {
+    "slug": "cliffs-of-dover",
+    "name": "Cliffs of Dover",
+    "tiles": 2,
+    "passable": true,
+    "terrain": "Coastal land",
+    "effect": "+2 Food, +3 Gold and +3 Culture on each wonder tile. +2 Appeal to adjacent tiles.",
+    "yields": {
+     "food": 2,
+     "gold": 3,
+     "culture": 3,
+     "appeal": 2
+    },
+    "expansion": "Base Game",
+    "real_world": {
+     "location": "Kent, English Channel coast",
+     "country": "United Kingdom",
+     "lat": 51.13,
+     "lon": 1.35,
+     "description": "A wall of chalk, the pressed shells of sea creatures laid down when this was a warm shallow sea, rising white above the narrowest crossing of the Channel. For two thousand years it has been the first thing an invader saw and the last thing an exile remembered. Caesar looked at it and sailed on."
+    },
+    "strategy": [
+     "Work both tiles early: culture at turn ten is worth a civic.",
+     "Seaside Resorts next to it late in the game turn the appeal into tourism."
+    ],
+    "leaders": [
+     {
+      "slug": "victoria",
+      "why": "Coastal England, culture and gold together"
+     },
+     {
+      "slug": "eleanor-of-aquitaine",
+      "why": "Culture that becomes loyalty pressure"
+     },
+     {
+      "slug": "robert-the-bruce",
+      "why": "Scotland wants happy, productive coastal cities"
+     }
+    ],
+    "image": "images/wonders/cliffs-of-dover.jpg",
+    "imageCredit": "wonder-cliffs-of-dover"
+   },
+   {
+    "slug": "crater-lake",
+    "name": "Crater Lake",
+    "tiles": 1,
+    "passable": true,
+    "terrain": "Lake tile among hills",
+    "effect": "+1 Science and +5 Faith on the wonder tile. Provides fresh water. +2 Appeal to adjacent tiles.",
+    "yields": {
+     "science": 1,
+     "faith": 5,
+     "appeal": 2
+    },
+    "expansion": "Base Game",
+    "real_world": {
+     "location": "Cascade Range, Oregon",
+     "country": "United States",
+     "lat": 42.94,
+     "lon": -122.1,
+     "description": "The caldera of Mount Mazama, which destroyed itself in an eruption about 7,700 years ago, filled by rain and snow alone to the deepest lake in the United States. No river feeds it and none leaves it. The Klamath people keep the memory of the mountain's fall in story. The water is a blue that photographs do not quite hold."
+    },
+    "strategy": [
+     "Five faith on one tile before the first Holy Site exists: a free pantheon and a head start on a religion.",
+     "Fresh water means the city beside it starts with full housing."
+    ],
+    "leaders": [
+     {
+      "slug": "gitarja",
+      "why": "Faith buys naval units"
+     },
+     {
+      "slug": "peter",
+      "why": "Early faith accelerates the Lavra"
+     },
+     {
+      "slug": "jadwiga",
+      "why": "A faith economy from the first turns"
+     }
+    ],
+    "image": "images/wonders/crater-lake.jpg",
+    "imageCredit": "wonder-crater-lake"
+   },
+   {
+    "slug": "dead-sea",
+    "name": "Dead Sea",
+    "tiles": 2,
+    "passable": true,
+    "terrain": "Lake tiles in desert or plains",
+    "effect": "+2 Culture and +2 Faith on each wonder tile. Units adjacent to it heal fully in one turn. +2 Appeal to adjacent tiles.",
+    "yields": {
+     "culture": 2,
+     "faith": 2,
+     "appeal": 2
+    },
+    "expansion": "Base Game",
+    "real_world": {
+     "location": "Jordan Rift Valley",
+     "country": "Israel, Jordan and the West Bank",
+     "lat": 31.5,
+     "lon": 35.5,
+     "description": "The lowest land surface on Earth, a salt lake four hundred metres below the sea with water ten times saltier than the ocean. Nothing swims in it. Herod built a fortress above it and the Essenes hid scrolls in its caves. It is shrinking by a metre a year as the Jordan is drawn off upstream."
+    },
+    "strategy": [
+     "The full heal is a military tool: stage a wounded army beside it and attack again next turn.",
+     "Two tiles of culture and faith suit a religious civilization that also wants early civics."
+    ],
+    "leaders": [
+     {
+      "slug": "saladin",
+      "why": "Faith and a healing station on the desert frontier"
+     },
+     {
+      "slug": "cyrus",
+      "why": "A healed army keeps the surprise war rolling"
+     },
+     {
+      "slug": "basil-ii",
+      "why": "Faith feeds Tagma and the heal supports the push"
+     }
+    ],
+    "image": "images/wonders/dead-sea.jpg",
+    "imageCredit": "wonder-dead-sea"
+   },
+   {
+    "slug": "delicate-arch",
+    "name": "Delicate Arch",
+    "tiles": 1,
+    "passable": false,
+    "terrain": "Desert hills",
+    "effect": "+1 Gold and +2 Faith to adjacent tiles. +2 Appeal to adjacent tiles.",
+    "yields": {
+     "gold": 1,
+     "faith": 2,
+     "appeal": 2
+    },
+    "expansion": "Rise and Fall",
+    "real_world": {
+     "location": "Arches National Park, Utah",
+     "country": "United States",
+     "lat": 38.74,
+     "lon": -109.5,
+     "description": "A freestanding sandstone arch, sixteen metres tall, left when the softer rock around it washed away over a hundred thousand years. It stands alone on a bowl of slickrock with the La Sal mountains behind it. Utah stamps it on its licence plates. Erosion will take it too, in a time nobody can set."
+    },
+    "strategy": [
+     "Ring it with Holy Site and farms: every adjacent tile gets faith for free.",
+     "Impassable, so it also closes a desert approach to the city."
+    ],
+    "leaders": [
+     {
+      "slug": "mansa-musa",
+      "why": "Desert faith and gold on the same tiles"
+     },
+     {
+      "slug": "saladin",
+      "why": "Faith adjacency for the Holy Site"
+     },
+     {
+      "slug": "philip-ii",
+      "why": "Faith to fund the Inquisition"
+     }
+    ],
+    "image": "images/wonders/delicate-arch.jpg",
+    "imageCredit": "wonder-delicate-arch"
+   },
+   {
+    "slug": "eye-of-the-sahara",
+    "name": "Eye of the Sahara",
+    "tiles": 3,
+    "passable": true,
+    "terrain": "Desert",
+    "effect": "+1 Production on each wonder tile. After researching Flight, +3 Science and +1 Production on each wonder tile. +2 Appeal to adjacent tiles.",
+    "yields": {
+     "production": 1,
+     "science": 3,
+     "appeal": 2
+    },
+    "expansion": "Rise and Fall",
+    "real_world": {
+     "location": "Adrar Plateau, Mauritania",
+     "country": "Mauritania",
+     "lat": 21.12,
+     "lon": -11.4,
+     "description": "The Richat Structure, a bullseye of concentric ridges forty kilometres across in the western Sahara, is an uplifted dome of ancient rock peeled open by erosion, not a crater. From the ground it is nothing, a few low rings of stone. From orbit it is the one landmark astronauts named for themselves. Flight reveals it; so the game says."
+    },
+    "strategy": [
+     "Weak until Flight, then a three-tile science field in the desert.",
+     "Settle it early for the appeal and the desert faith pantheon, and wait."
+    ],
+    "leaders": [
+     {
+      "slug": "mansa-musa",
+      "why": "Desert tiles that finally pay"
+     },
+     {
+      "slug": "amanitore",
+      "why": "Nubian desert start"
+     },
+     {
+      "slug": "cleopatra",
+      "why": "Desert adjacency for a late science push"
+     }
+    ],
+    "image": "images/wonders/eye-of-the-sahara.jpg",
+    "imageCredit": "wonder-eye-of-the-sahara"
+   },
+   {
+    "slug": "eyjafjallajokull",
+    "name": "Eyjafjallajökull",
+    "tiles": 2,
+    "passable": false,
+    "terrain": "Tundra or snow mountains near coast",
+    "effect": "+1 Culture and +2 Food to adjacent tiles. +2 Appeal to adjacent tiles.",
+    "yields": {
+     "culture": 1,
+     "food": 2,
+     "appeal": 2
+    },
+    "expansion": "Vikings Scenario Pack",
+    "real_world": {
+     "location": "Southern Iceland",
+     "country": "Iceland",
+     "lat": 63.63,
+     "lon": -19.62,
+     "description": "A volcano under a glacier, named for the island glacier it wears. Its 2010 eruption melted the ice above it into floods and threw ash high enough to close the skies of Europe for six days. The farms below were buried and dug out again, as they have been after every eruption since settlement."
+    },
+    "strategy": [
+     "Food on tundra is rare; a city beside it grows where tundra cities starve.",
+     "The culture is a small bonus for Norway, whose coast it favours."
+    ],
+    "leaders": [
+     {
+      "slug": "harald-hardrada",
+      "why": "Tundra coast is Norway's home"
+     },
+     {
+      "slug": "peter",
+      "why": "Russia settles tundra by design"
+     },
+     {
+      "slug": "wilfrid-laurier",
+      "why": "Canada's tundra bias and farms"
+     }
+    ],
+    "image": "images/wonders/eyjafjallajokull.jpg",
+    "imageCredit": "wonder-eyjafjallajokull"
+   },
+   {
+    "slug": "fountain-of-youth",
+    "name": "Fountain of Youth",
+    "tiles": 1,
+    "passable": true,
+    "terrain": "Grassland or plains with woods or marsh",
+    "effect": "+4 Science and +4 Faith to adjacent tiles. Provides fresh water. Units that end a turn adjacent gain the Youth promotion: +10 healing per turn for the rest of the game. +2 Appeal to adjacent tiles.",
+    "yields": {
+     "science": 4,
+     "faith": 4,
+     "appeal": 2
+    },
+    "expansion": "Maya & Gran Colombia Pack",
+    "real_world": {
+     "location": "Legend places it in Florida or Bimini",
+     "country": "United States (legendary)",
+     "lat": 29.9,
+     "lon": -81.3,
+     "description": "A spring that restores youth, hunted by Juan Ponce de León according to a story told decades after his death and never by him. Florida's clear limestone springs, a hundred of them pouring out cold water, are the nearest real thing. The wonder sits on the map as the legend the Spanish carried, not the land they found."
+    },
+    "strategy": [
+     "The promotion is permanent: cycle every new unit past it before marching.",
+     "Science and faith on every neighbour makes it one of the best city sites in the game."
+    ],
+    "leaders": [
+     {
+      "slug": "simon-bolivar",
+      "why": "Healing veterans with a Comandante General"
+     },
+     {
+      "slug": "montezuma",
+      "why": "Eagle Warriors that heal every turn"
+     },
+     {
+      "slug": "lady-six-sky",
+      "why": "Science adjacency near the capital"
+     }
+    ],
+    "image": "images/wonders/fountain-of-youth.jpg",
+    "imageCredit": "wonder-fountain-of-youth"
+   },
+   {
+    "slug": "galapagos-islands",
+    "name": "Galápagos Islands",
+    "tiles": 2,
+    "passable": false,
+    "terrain": "Coast",
+    "effect": "+2 Science to adjacent tiles. +2 Appeal to adjacent tiles.",
+    "yields": {
+     "science": 2,
+     "appeal": 2
+    },
+    "expansion": "Base Game",
+    "real_world": {
+     "location": "Eastern Pacific, 900 km off Ecuador",
+     "country": "Ecuador",
+     "lat": -0.78,
+     "lon": -91,
+     "description": "A volcanic archipelago on the equator, cold-watered by the Humboldt Current, where finches, tortoises and iguanas evolved apart on each island. Darwin spent five weeks here in 1835 and understood it only later. The islands are a national park and a laboratory; the line between the two is thin."
+    },
+    "strategy": [
+     "A coastal Campus beside it gets science from the sea.",
+     "Pair with Great Barrier Reef or Reef tiles for a research harbour."
+    ],
+    "leaders": [
+     {
+      "slug": "seondeok",
+      "why": "Science first, always"
+     },
+     {
+      "slug": "kupe",
+      "why": "Coastal appeal and science"
+     },
+     {
+      "slug": "john-curtin",
+      "why": "Australian coastal Campuses"
+     }
+    ],
+    "image": "images/wonders/galapagos-islands.jpg",
+    "imageCredit": "wonder-galapagos-islands"
+   },
+   {
+    "slug": "giants-causeway",
+    "name": "Giant's Causeway",
+    "tiles": 2,
+    "passable": false,
+    "terrain": "Coastal land",
+    "effect": "+1 Culture to adjacent tiles. Land units that end a turn adjacent gain +5 Combat Strength permanently. +2 Appeal to adjacent tiles.",
+    "yields": {
+     "culture": 1,
+     "appeal": 2
+    },
+    "expansion": "Vikings Scenario Pack",
+    "real_world": {
+     "location": "County Antrim, Northern Ireland",
+     "country": "United Kingdom",
+     "lat": 55.24,
+     "lon": -6.51,
+     "description": "Forty thousand basalt columns, most of them six-sided, stepping down into the North Channel. They cooled from a lava flow sixty million years ago and cracked as they shrank, the way mud cracks in a dry pond. The legend has the giant Finn McCool building a road to Scotland to fight a rival. The columns look built."
+    },
+    "strategy": [
+     "Walk every military unit past it: +5 strength is a full era of technology.",
+     "Culture is small; the wonder is a military asset."
+    ],
+    "leaders": [
+     {
+      "slug": "gilgamesh",
+      "why": "War-Carts that hit even harder"
+     },
+     {
+      "slug": "shaka",
+      "why": "Impi corps with a permanent edge"
+     },
+     {
+      "slug": "alexander",
+      "why": "A tireless army made stronger"
+     }
+    ],
+    "image": "images/wonders/giants-causeway.jpg",
+    "imageCredit": "wonder-giants-causeway"
+   },
+   {
+    "slug": "gobustan",
+    "name": "Gobustan",
+    "tiles": 3,
+    "passable": true,
+    "terrain": "Desert or plains near hills",
+    "effect": "+1 Production and +3 Culture on each wonder tile. +2 Appeal to adjacent tiles.",
+    "yields": {
+     "production": 1,
+     "culture": 3,
+     "appeal": 2
+    },
+    "expansion": "Gathering Storm",
+    "real_world": {
+     "location": "Near Baku",
+     "country": "Azerbaijan",
+     "lat": 40.1,
+     "lon": 49.38,
+     "description": "A rock plateau above the Caspian carrying six thousand carvings of hunters, boats, bulls and dancers cut over forty thousand years, with mud volcanoes bubbling beside it. A Roman legion left its name on a stone here, the easternmost Latin inscription known. The place has been recording people for longer than writing."
+    },
+    "strategy": [
+     "Nine culture from three tiles is a Theater Square before the civic that allows one.",
+     "Work all three and the first Golden Age almost writes itself."
+    ],
+    "leaders": [
+     {
+      "slug": "pericles",
+      "why": "Culture compounds with city-state envoys"
+     },
+     {
+      "slug": "catherine-de-medici",
+      "why": "Early culture into early civics"
+     },
+     {
+      "slug": "kristina",
+      "why": "Culture to fill the Queen's Bibliotheque"
+     }
+    ],
+    "image": "images/wonders/gobustan.jpg",
+    "imageCredit": "wonder-gobustan"
+   },
+   {
+    "slug": "great-barrier-reef",
+    "name": "Great Barrier Reef",
+    "tiles": 2,
+    "passable": true,
+    "terrain": "Coast",
+    "effect": "+3 Food and +2 Science on each wonder tile. Counts as a Reef for Campus adjacency. +2 Appeal to adjacent tiles.",
+    "yields": {
+     "food": 3,
+     "science": 2,
+     "appeal": 2
+    },
+    "expansion": "Base Game",
+    "real_world": {
+     "location": "Coral Sea, off Queensland",
+     "country": "Australia",
+     "lat": -18.29,
+     "lon": 147.7,
+     "description": "The largest structure living things have ever built, 2,300 kilometres of coral visible from orbit, raised by billions of polyps over the last ten thousand years on the drowned shelf of an older reef. Half its coral has died since 1995 in heat waves. It is still the largest. The game gives it food and science; the sea gives it less each year."
+    },
+    "strategy": [
+     "Two workable sea tiles that feed and research at once: a coastal capital site.",
+     "Campus adjacency from a wonder is rare; place the Campus to touch both tiles."
+    ],
+    "leaders": [
+     {
+      "slug": "john-curtin",
+      "why": "Australia's own coast, with appeal bonuses"
+     },
+     {
+      "slug": "seondeok",
+      "why": "Reef adjacency for the Seowon"
+     },
+     {
+      "slug": "kupe",
+      "why": "Food and appeal on the shore"
+     }
+    ],
+    "image": "images/wonders/great-barrier-reef.jpg",
+    "imageCredit": "wonder-great-barrier-reef"
+   },
+   {
+    "slug": "ha-long-bay",
+    "name": "Ha Long Bay",
+    "tiles": 2,
+    "passable": true,
+    "terrain": "Coast",
+    "effect": "+3 Food, +1 Production and +1 Culture on each wonder tile. Units defending on it gain +15 Combat Strength. +2 Appeal to adjacent tiles.",
+    "yields": {
+     "food": 3,
+     "production": 1,
+     "culture": 1,
+     "appeal": 2
+    },
+    "expansion": "Khmer and Indonesia Civilization & Scenario Pack",
+    "real_world": {
+     "location": "Gulf of Tonkin",
+     "country": "Vietnam",
+     "lat": 20.91,
+     "lon": 107.18,
+     "description": "Nearly two thousand limestone islands rise from a shallow green bay, towers of karst hollowed by caves and hung with vegetation. The name means descending dragon; the legend has dragons spitting jewels that became the islands to block invaders. Fishing villages float between them. Ships from the Chinese fleet were lost here twice."
+    },
+    "strategy": [
+     "Food and production on sea tiles is unusual: an island city here grows and builds.",
+     "The defensive bonus makes a naval chokepoint worth holding."
+    ],
+    "leaders": [
+     {
+      "slug": "ba-trieu",
+      "why": "Vietnam's own coast and culture"
+     },
+     {
+      "slug": "gitarja",
+      "why": "Indonesian sea-city economy"
+     },
+     {
+      "slug": "jayavarman-vii",
+      "why": "Food for Khmer growth"
+     }
+    ],
+    "image": "images/wonders/ha-long-bay.jpg",
+    "imageCredit": "wonder-ha-long-bay"
+   },
+   {
+    "slug": "ik-kil",
+    "name": "Ik-Kil",
+    "tiles": 1,
+    "passable": false,
+    "terrain": "Grassland, plains or rainforest, inland",
+    "effect": "+50% Production toward wonders and districts in the adjacent city tiles' districts. +2 Appeal to adjacent tiles.",
+    "yields": {
+     "appeal": 2
+    },
+    "expansion": "Gathering Storm",
+    "real_world": {
+     "location": "Yucatán, near Chichén Itzá",
+     "country": "Mexico",
+     "lat": 20.66,
+     "lon": -88.56,
+     "description": "A cenote, a sinkhole in the limestone of the Yucatán opening forty metres down to still water, with roots and vines hanging the whole height of the shaft. The Maya drew water and offered bones and jade into pools like this one. Swimmers go down a carved stair now. The water is clear enough to see the dark."
+    },
+    "strategy": [
+     "A city whose districts touch it builds wonders at half the cost. Plan the district ring before founding.",
+     "One of the strongest production wonders for a wonder-hungry leader."
+    ],
+    "leaders": [
+     {
+      "slug": "qin-shi-huang",
+      "why": "Wonders at half price on top of Builder charges"
+     },
+     {
+      "slug": "lady-six-sky",
+      "why": "Maya homeland; districts near the capital"
+     },
+     {
+      "slug": "ludwig-ii",
+      "why": "Ludwig wants every wonder he can afford"
+     }
+    ],
+    "image": "images/wonders/ik-kil.jpg",
+    "imageCredit": "wonder-ik-kil"
+   },
+   {
+    "slug": "kakadu",
+    "name": "Kakadu",
+    "tiles": 4,
+    "passable": true,
+    "terrain": "Grassland or marsh near coast",
+    "effect": "+2 Food and +2 Culture on each wonder tile. +2 Appeal to adjacent tiles.",
+    "yields": {
+     "food": 2,
+     "culture": 2,
+     "appeal": 2
+    },
+    "expansion": "Australia Civilization & Scenario Pack (scenario)",
+    "real_world": {
+     "location": "Northern Territory",
+     "country": "Australia",
+     "lat": -12.67,
+     "lon": 132.8,
+     "description": "Floodplains, escarpment and wetland the size of Wales, home to Bininj and Mungguy people for at least sixty-five thousand years. Rock shelters carry paintings in the X-ray style showing the bones inside the fish. Crocodiles own the rivers in the wet season. It is a national park held jointly with its traditional owners."
+    },
+    "strategy": [
+     "Four tiles of food and culture: settle on the coast edge and work the lot.",
+     "Available only in the Outback Tycoon scenario in most installs; check your map."
+    ],
+    "leaders": [
+     {
+      "slug": "john-curtin",
+      "why": "Australia's wonder"
+     },
+     {
+      "slug": "kupe",
+      "why": "Coastal growth and culture"
+     }
+    ],
+    "image": "images/wonders/kakadu.jpg",
+    "imageCredit": "wonder-kakadu"
+   },
+   {
+    "slug": "lake-retba",
+    "name": "Lake Retba",
+    "tiles": 2,
+    "passable": true,
+    "terrain": "Lake near desert coast",
+    "effect": "+1 Production, +2 Gold and +2 Culture on each wonder tile. +2 Appeal to adjacent tiles.",
+    "yields": {
+     "production": 1,
+     "gold": 2,
+     "culture": 2,
+     "appeal": 2
+    },
+    "expansion": "Rise and Fall",
+    "real_world": {
+     "location": "Cap-Vert peninsula, near Dakar",
+     "country": "Senegal",
+     "lat": 14.84,
+     "lon": -17.23,
+     "description": "A pink lake. Salt-loving algae colour the water strawberry in the dry season, and men stand chest-deep gathering salt with poles, skin greased with shea butter against the brine. The Paris-Dakar rally finished on its shore for years. The pink fades and returns with the wind and the heat."
+    },
+    "strategy": [
+     "Gold and culture from a lake: a trade city that also pushes civics.",
+     "Desert coast is harsh; the lake gives the settler a reason to stop."
+    ],
+    "leaders": [
+     {
+      "slug": "mansa-musa",
+      "why": "Desert gold at home"
+     },
+     {
+      "slug": "dido",
+      "why": "Coastal trade and culture"
+     },
+     {
+      "slug": "amanitore",
+      "why": "Nubian desert river cities"
+     }
+    ],
+    "image": "images/wonders/lake-retba.jpg",
+    "imageCredit": "wonder-lake-retba"
+   },
+   {
+    "slug": "lysefjord",
+    "name": "Lysefjord",
+    "tiles": 3,
+    "passable": false,
+    "terrain": "Coastal mountains",
+    "effect": "+1 Production on each wonder tile. Naval units that end a turn adjacent gain a free promotion. +2 Appeal to adjacent tiles.",
+    "yields": {
+     "production": 1,
+     "appeal": 2
+    },
+    "expansion": "Vikings Scenario Pack",
+    "real_world": {
+     "location": "Rogaland",
+     "country": "Norway",
+     "lat": 59,
+     "lon": 6.3,
+     "description": "A fjord forty kilometres long and a kilometre deep in places, walled by granite that the ice cut and left. Preikestolen, the Pulpit Rock, hangs six hundred metres above the water with a flat top the size of a tennis court. The light in the name is the pale stone. Boats look like splinters beneath it."
+    },
+    "strategy": [
+     "Every new ship sails past for a promotion: a fleet built here starts a rank ahead.",
+     "Norway's natural harbour; settle it and build the Stave Church beside it."
+    ],
+    "leaders": [
+     {
+      "slug": "harald-hardrada",
+      "why": "Longships promoted on launch"
+     },
+     {
+      "slug": "kristina",
+      "why": "Nordic coast production"
+     },
+     {
+      "slug": "dido",
+      "why": "A promoted navy for a trading empire"
+     }
+    ],
+    "image": "images/wonders/lysefjord.jpg",
+    "imageCredit": "wonder-lysefjord"
+   },
+   {
+    "slug": "mato-tipila",
+    "name": "Mato Tipila",
+    "tiles": 1,
+    "passable": false,
+    "terrain": "Grassland or plains",
+    "effect": "+1 Production and +1 Faith to adjacent tiles. +2 Appeal to adjacent tiles.",
+    "yields": {
+     "production": 1,
+     "faith": 1,
+     "appeal": 2
+    },
+    "expansion": "Gathering Storm",
+    "real_world": {
+     "location": "Black Hills region, Wyoming",
+     "country": "United States",
+     "lat": 44.59,
+     "lon": -104.72,
+     "description": "A column of igneous rock 265 metres high, grooved like a bundle of pillars, standing over the plains at the edge of the Black Hills. The Lakota, Kiowa, Cheyenne and others hold it sacred and keep ceremonies there in June. The English name, Devils Tower, is a mistranslation that stuck. The columns are the same cooling fractures as the Causeway, stood on end."
+    },
+    "strategy": [
+     "Faith and production on six neighbouring tiles: a Holy Site site and a wonder site in one.",
+     "Impassable; it anchors a defensive line on open plains."
+    ],
+    "leaders": [
+     {
+      "slug": "teddy-roosevelt",
+      "why": "Appeal, a National Park, and a home wonder"
+     },
+     {
+      "slug": "jadwiga",
+      "why": "Faith adjacency for Poland's Holy Sites"
+     },
+     {
+      "slug": "pachacuti",
+      "why": "Mountain-like adjacency without the mountain"
+     }
+    ],
+    "image": "images/wonders/mato-tipila.jpg",
+    "imageCredit": "wonder-mato-tipila"
+   },
+   {
+    "slug": "matterhorn",
+    "name": "Matterhorn",
+    "tiles": 1,
+    "passable": false,
+    "terrain": "Mountains",
+    "effect": "+1 Culture to adjacent tiles. Land units that end a turn adjacent gain the Alpine Training promotion: +3 Combat Strength on hills and faster movement over them. +2 Appeal to adjacent tiles.",
+    "yields": {
+     "culture": 1,
+     "appeal": 2
+    },
+    "expansion": "Rise and Fall",
+    "real_world": {
+     "location": "Pennine Alps, on the Swiss-Italian border",
+     "country": "Switzerland and Italy",
+     "lat": 45.98,
+     "lon": 7.66,
+     "description": "A pyramid of rock on the border of two countries, carved by four glaciers into four faces that meet at a point 4,478 metres up. It was climbed in 1865 by Whymper's party, and four of them died on the way down when a rope broke. The mountain's shape is on chocolate wrappers. The rope is in a museum in Zermatt."
+    },
+    "strategy": [
+     "Hill-fighting bonus for every unit that visits: valuable in rough terrain wars.",
+     "Culture adjacency suits a Theater Square beside the mountain."
+    ],
+    "leaders": [
+     {
+      "slug": "pachacuti",
+      "why": "Inca armies on mountains and hills"
+     },
+     {
+      "slug": "matthias-corvinus",
+      "why": "Levied units made stronger on hills"
+     },
+     {
+      "slug": "lautaro",
+      "why": "Mapuche warriors fighting in the hills"
+     }
+    ],
+    "image": "images/wonders/matterhorn.jpg",
+    "imageCredit": "wonder-matterhorn"
+   },
+   {
+    "slug": "mount-everest",
+    "name": "Mount Everest",
+    "tiles": 3,
+    "passable": false,
+    "terrain": "Mountains",
+    "effect": "+1 Faith to adjacent tiles. Religious units that end a turn adjacent gain the Altitude Training promotion: ignore hill movement costs. +2 Appeal to adjacent tiles.",
+    "yields": {
+     "faith": 1,
+     "appeal": 2
+    },
+    "expansion": "Base Game",
+    "real_world": {
+     "location": "Mahalangur Himal, on the Nepal-China border",
+     "country": "Nepal and China",
+     "lat": 27.99,
+     "lon": 86.93,
+     "description": "Chomolungma to the Tibetans, Sagarmatha to the Nepalis, Everest to the surveyors who measured it from India and named it for a man who never saw it. The summit, 8,849 metres, is marine limestone from a vanished sea floor. Hillary and Tenzing stood on it in 1953. Several hundred people have died trying."
+    },
+    "strategy": [
+     "Three mountain tiles of faith and appeal for a Holy Site ringed by farms.",
+     "Missionaries that cross hills freely spread faster through rough country."
+    ],
+    "leaders": [
+     {
+      "slug": "pachacuti",
+      "why": "Mountains are food and faith for the Inca"
+     },
+     {
+      "slug": "jayavarman-vii",
+      "why": "Faith and appeal for Khmer Holy Sites"
+     },
+     {
+      "slug": "gandhi",
+      "why": "Faith with no war penalty"
+     }
+    ],
+    "image": "images/wonders/mount-everest.jpg",
+    "imageCredit": "wonder-mount-everest"
+   },
+   {
+    "slug": "mount-kilimanjaro",
+    "name": "Mount Kilimanjaro",
+    "tiles": 1,
+    "passable": false,
+    "terrain": "Mountains",
+    "effect": "+2 Food to adjacent tiles. +2 Appeal to adjacent tiles.",
+    "yields": {
+     "food": 2,
+     "appeal": 2
+    },
+    "expansion": "Base Game",
+    "real_world": {
+     "location": "Kilimanjaro Region",
+     "country": "Tanzania",
+     "lat": -3.07,
+     "lon": 37.35,
+     "description": "The highest mountain in Africa and the tallest freestanding one on Earth, a dormant volcano of three cones rising almost six kilometres from the savanna. Its glaciers are old and going. The slopes hold five climates between farmland and ice. Caravans and climbers have walked up through all of them."
+    },
+    "strategy": [
+     "Food on six tiles beside a mountain: the city grows faster than its neighbours and keeps the mountain adjacency.",
+     "Place the Campus or Holy Site to touch it and keep the farms around the rest."
+    ],
+    "leaders": [
+     {
+      "slug": "menelik-ii",
+      "why": "Ethiopian hills and faith beside the mountain"
+     },
+     {
+      "slug": "pachacuti",
+      "why": "Terrace Farms stacked around a mountain"
+     },
+     {
+      "slug": "amanitore",
+      "why": "Growth for a Nubian core"
+     }
+    ],
+    "image": "images/wonders/mount-kilimanjaro.jpg",
+    "imageCredit": "wonder-mount-kilimanjaro"
+   },
+   {
+    "slug": "roraima",
+    "name": "Mount Roraima",
+    "tiles": 4,
+    "passable": false,
+    "terrain": "Mountains in rainforest or grassland",
+    "effect": "+1 Science and +1 Faith to adjacent tiles. +2 Appeal to adjacent tiles.",
+    "yields": {
+     "science": 1,
+     "faith": 1,
+     "appeal": 2
+    },
+    "expansion": "Rise and Fall",
+    "real_world": {
+     "location": "Where Venezuela, Brazil and Guyana meet",
+     "country": "Venezuela, Brazil and Guyana",
+     "lat": 5.14,
+     "lon": -60.76,
+     "description": "A table mountain of sandstone two billion years old, its walls four hundred metres sheer, its top a plateau of rain, quartz and plants found nowhere else. Clouds sit on it most days. The Pemon call it the mother of waters; three rivers begin there. Conan Doyle put his dinosaurs on a mountain like it."
+    },
+    "strategy": [
+     "Four impassable tiles with science and faith on every neighbour: a Campus and a Holy Site can both touch it.",
+     "Rainforest around it feeds Campus adjacency too."
+    ],
+    "leaders": [
+     {
+      "slug": "simon-bolivar",
+      "why": "Gran Colombia's own highland"
+     },
+     {
+      "slug": "pedro-ii",
+      "why": "Brazilian rainforest adjacency"
+     },
+     {
+      "slug": "lady-six-sky",
+      "why": "Science near the Maya capital"
+     }
+    ],
+    "image": "images/wonders/roraima.jpg",
+    "imageCredit": "wonder-roraima"
+   },
+   {
+    "slug": "mount-vesuvius",
+    "name": "Mount Vesuvius",
+    "tiles": 1,
+    "passable": false,
+    "terrain": "Volcano near coast",
+    "effect": "+1 Production to adjacent tiles while dormant. Erupts more often and more violently than other volcanoes, destroying improvements but leaving tiles enriched with volcanic soil. +2 Appeal to adjacent tiles.",
+    "yields": {
+     "production": 1,
+     "appeal": 2
+    },
+    "expansion": "Gathering Storm",
+    "real_world": {
+     "location": "Bay of Naples, Campania",
+     "country": "Italy",
+     "lat": 40.82,
+     "lon": 14.43,
+     "description": "The volcano that buried Pompeii and Herculaneum under ash and surge in 79 CE, with Pliny the Elder dead on the shore trying to rescue friends by boat. It has erupted some thirty times since, last in 1944, and three million people live on its flanks. The soil it makes grows the best tomatoes in Italy. That is the bargain."
+    },
+    "strategy": [
+     "The richest soil in the game, paid for in rebuilt improvements. Keep Builders nearby.",
+     "Do not place districts on the tiles that burn; farms and mines are cheap to replace."
+    ],
+    "leaders": [
+     {
+      "slug": "trajan",
+      "why": "Rome lives beside it; volcanic soil feeds the legions"
+     },
+     {
+      "slug": "frederick-barbarossa",
+      "why": "Production with a risk a Hansa empire can absorb"
+     },
+     {
+      "slug": "pachacuti",
+      "why": "Terrace Farms rebuilt on enriched soil"
+     }
+    ],
+    "image": "images/wonders/mount-vesuvius.jpg",
+    "imageCredit": "wonder-mount-vesuvius"
+   },
+   {
+    "slug": "paititi",
+    "name": "Paititi",
+    "tiles": 3,
+    "passable": false,
+    "terrain": "Rainforest hills or mountains",
+    "effect": "+2 Culture and +3 Gold to adjacent tiles. The owning city's International Trade Routes gain +4 Gold. +2 Appeal to adjacent tiles.",
+    "yields": {
+     "culture": 2,
+     "gold": 3,
+     "appeal": 2
+    },
+    "expansion": "Maya & Gran Colombia Pack",
+    "real_world": {
+     "location": "Legend places it east of the Andes, in Peru, Bolivia or Brazil",
+     "country": "Peru (legendary)",
+     "lat": -12.5,
+     "lon": -70.5,
+     "description": "The lost city of the Inca, said to hold the gold carried away from Cusco when Pizarro came, somewhere in the cloud forest where the Andes drop into the Amazon. Expeditions still go looking. A Jesuit letter of 1600 is the oldest witness. The map treats it as found; the forest has not agreed."
+    },
+    "strategy": [
+     "Gold on every neighbouring tile and richer trade routes: a Commercial Hub site without equal.",
+     "Impassable in rough jungle; settle on the near side and route traders through the city."
+    ],
+    "leaders": [
+     {
+      "slug": "mansa-musa",
+      "why": "Trade route gold on top of Mali's own"
+     },
+     {
+      "slug": "dido",
+      "why": "International trade from a cothon city"
+     },
+     {
+      "slug": "pachacuti",
+      "why": "Inca legend, Inca gold"
+     }
+    ],
+    "image": "images/wonders/paititi.jpg",
+    "imageCredit": "wonder-paititi"
+   },
+   {
+    "slug": "pamukkale",
+    "name": "Pamukkale",
+    "tiles": 2,
+    "passable": false,
+    "terrain": "Hills near rivers",
+    "effect": "+1 Amenity to the city that owns it, and +1 more with an Entertainment Complex in that city. +2 Appeal to adjacent tiles.",
+    "yields": {
+     "appeal": 2
+    },
+    "expansion": "Gathering Storm",
+    "real_world": {
+     "location": "Denizli Province",
+     "country": "Turkey",
+     "lat": 37.92,
+     "lon": 29.12,
+     "description": "A hillside of white travertine terraces, pools stepped down the slope like a frozen waterfall, built by hot spring water dropping its limestone as it cools. The Greeks built Hierapolis on top and bathed in it for a thousand years; the Romans added a theatre. The name means cotton castle. Walking on it is done barefoot, by rule."
+    },
+    "strategy": [
+     "Amenities are the quiet constraint of a wide empire; a wonder that supplies them is a growth engine.",
+     "Pair with an Entertainment Complex and the city never riots."
+    ],
+    "leaders": [
+     {
+      "slug": "suleiman",
+      "why": "Ottoman wonder on Anatolian ground, and amenities for conquered cities"
+     },
+     {
+      "slug": "montezuma",
+      "why": "Amenities fuel the Aztec army"
+     },
+     {
+      "slug": "trajan",
+      "why": "A wide empire that needs contentment"
+     }
+    ],
+    "image": "images/wonders/pamukkale.jpg",
+    "imageCredit": "wonder-pamukkale"
+   },
+   {
+    "slug": "pantanal",
+    "name": "Pantanal",
+    "tiles": 4,
+    "passable": true,
+    "terrain": "Marsh in grassland or plains",
+    "effect": "+2 Food and +2 Culture on each wonder tile. +2 Appeal to adjacent tiles.",
+    "yields": {
+     "food": 2,
+     "culture": 2,
+     "appeal": 2
+    },
+    "expansion": "Base Game",
+    "real_world": {
+     "location": "Mato Grosso and Mato Grosso do Sul",
+     "country": "Brazil, Bolivia and Paraguay",
+     "lat": -17.5,
+     "lon": -57,
+     "description": "The largest tropical wetland on Earth, a plain the size of a country that floods every summer and drains every winter, with jaguars, caiman and ten million of its namesake birds. Cattle ranches have worked it for two centuries. Fire reached deep into it in 2020. It drains, in the end, into the Paraguay River."
+    },
+    "strategy": [
+     "Four tiles that feed and civilise a city at once, and all of them workable.",
+     "Marsh takes no districts; keep the wonder for citizens and build around it."
+    ],
+    "leaders": [
+     {
+      "slug": "pedro-ii",
+      "why": "Brazil's own wetland, with rainforest beside it"
+     },
+     {
+      "slug": "catherine-de-medici",
+      "why": "Culture for an early civic lead"
+     },
+     {
+      "slug": "cleopatra",
+      "why": "Growth for the river cities"
+     }
+    ],
+    "image": "images/wonders/pantanal.jpg",
+    "imageCredit": "wonder-pantanal"
+   },
+   {
+    "slug": "pinnacles",
+    "name": "Pinnacles",
+    "tiles": 1,
+    "passable": false,
+    "terrain": "Desert",
+    "effect": "+1 Science and +1 Culture to adjacent tiles. +2 Appeal to adjacent tiles.",
+    "yields": {
+     "science": 1,
+     "culture": 1,
+     "appeal": 2
+    },
+    "expansion": "Australia Civilization & Scenario Pack (scenario)",
+    "real_world": {
+     "location": "Nambung National Park, Western Australia",
+     "country": "Australia",
+     "lat": -30.6,
+     "lon": 115.16,
+     "description": "Thousands of limestone spires standing in yellow sand north of Perth, some a few centimetres, some four metres, the remains of shell-sand cemented by rain and then uncovered by wind. Dutch sailors took them for a ruined city from the sea. Kangaroos graze between them at dusk."
+    },
+    "strategy": [
+     "Modest yields; the appeal matters more to a leader who banks on National Parks.",
+     "Scenario-only in most games; treat it as a bonus if it appears."
+    ],
+    "leaders": [
+     {
+      "slug": "john-curtin",
+      "why": "Australian appeal into district yields"
+     },
+     {
+      "slug": "teddy-roosevelt",
+      "why": "Appeal for a National Park"
+     }
+    ],
+    "image": "images/wonders/pinnacles.jpg",
+    "imageCredit": "wonder-pinnacles"
+   },
+   {
+    "slug": "piopiotahi",
+    "name": "Piopiotahi",
+    "tiles": 3,
+    "passable": false,
+    "terrain": "Coastal mountains",
+    "effect": "+1 Culture and +1 Gold to adjacent tiles. +2 Appeal to adjacent tiles.",
+    "yields": {
+     "culture": 1,
+     "gold": 1,
+     "appeal": 2
+    },
+    "expansion": "Base Game",
+    "real_world": {
+     "location": "Fiordland, South Island",
+     "country": "New Zealand",
+     "lat": -44.67,
+     "lon": 167.93,
+     "description": "Milford Sound, a fjord cut by ice into the south-western corner of Aotearoa, where Mitre Peak rises a mile straight out of the water and it rains two days in three. The Māori name recalls the piopio, a thrush now extinct, and the legend of Māui. Kipling called it the eighth wonder of the world. Cruise boats go under the waterfalls."
+    },
+    "strategy": [
+     "Three impassable coastal tiles that raise appeal for a Seaside Resort coast.",
+     "Culture and gold are small; the wonder is a tourism site."
+    ],
+    "leaders": [
+     {
+      "slug": "kupe",
+      "why": "Māori homeland; appeal is Kupe's whole plan"
+     },
+     {
+      "slug": "teddy-roosevelt",
+      "why": "A National Park on the fjord"
+     },
+     {
+      "slug": "eleanor-of-aquitaine",
+      "why": "Culture pressure from a pretty coast"
+     }
+    ],
+    "image": "images/wonders/piopiotahi.jpg",
+    "imageCredit": "wonder-piopiotahi"
+   },
+   {
+    "slug": "sahara-el-beyda",
+    "name": "Sahara el Beyda",
+    "tiles": 4,
+    "passable": true,
+    "terrain": "Desert",
+    "effect": "+1 Science, +1 Culture and +4 Gold on each wonder tile. +2 Appeal to adjacent tiles.",
+    "yields": {
+     "science": 1,
+     "culture": 1,
+     "gold": 4,
+     "appeal": 2
+    },
+    "expansion": "Gathering Storm",
+    "real_world": {
+     "location": "Farafra depression, Western Desert",
+     "country": "Egypt",
+     "lat": 27.3,
+     "lon": 28.2,
+     "description": "The White Desert, a floor of chalk north of Farafra oasis where wind has carved the rock into mushrooms, chickens and ships, bone-white against the sand. The chalk is ancient sea bed. Bedouin camp among the shapes and tourists sleep under them. At dawn the whole plain is pink for ten minutes."
+    },
+    "strategy": [
+     "Sixteen gold from four desert tiles that otherwise yield nothing: settle it and the treasury fixes itself.",
+     "Desert Folklore turns the surrounding tiles to faith as well."
+    ],
+    "leaders": [
+     {
+      "slug": "mansa-musa",
+      "why": "Gold on desert, Mali's native ground"
+     },
+     {
+      "slug": "cleopatra",
+      "why": "Egyptian desert made useful"
+     },
+     {
+      "slug": "saladin",
+      "why": "Gold to fund a faith empire"
+     }
+    ],
+    "image": "images/wonders/sahara-el-beyda.jpg",
+    "imageCredit": "wonder-sahara-el-beyda"
+   },
+   {
+    "slug": "torres-del-paine",
+    "name": "Torres del Paine",
+    "tiles": 2,
+    "passable": false,
+    "terrain": "Mountains in tundra or grassland",
+    "effect": "Doubles the base terrain yields of adjacent tiles. +2 Appeal to adjacent tiles.",
+    "yields": {
+     "appeal": 2,
+     "other": "doubles adjacent base yields"
+    },
+    "expansion": "Base Game",
+    "real_world": {
+     "location": "Magallanes Region, Patagonia",
+     "country": "Chile",
+     "lat": -50.94,
+     "lon": -73.41,
+     "description": "Three granite towers standing over a glacial lake at the southern end of the Andes, blue-black and sheer, with the Patagonian wind coming off the ice field behind them at a hundred kilometres an hour. Paine means blue in the Tehuelche tongue. The park burned twice from campers' stoves; the towers did not notice."
+    },
+    "strategy": [
+     "The best growth wonder in the game: a grassland hill beside it yields four food and two production before any improvement.",
+     "Settle so that as many farmed and mined tiles as possible touch it."
+    ],
+    "leaders": [
+     {
+      "slug": "pachacuti",
+      "why": "Terrace Farms doubled against a mountain"
+     },
+     {
+      "slug": "peter",
+      "why": "Tundra tiles finally worth working"
+     },
+     {
+      "slug": "lautaro",
+      "why": "Mapuche homeland; raw tile yields for an early army"
+     }
+    ],
+    "image": "images/wonders/torres-del-paine.jpg",
+    "imageCredit": "wonder-torres-del-paine"
+   },
+   {
+    "slug": "tsingy-de-bemaraha",
+    "name": "Tsingy de Bemaraha",
+    "tiles": 1,
+    "passable": false,
+    "terrain": "Grassland or plains",
+    "effect": "+1 Science and +1 Culture to adjacent tiles. +2 Appeal to adjacent tiles.",
+    "yields": {
+     "science": 1,
+     "culture": 1,
+     "appeal": 2
+    },
+    "expansion": "Base Game",
+    "real_world": {
+     "location": "Melaky Region, western Madagascar",
+     "country": "Madagascar",
+     "lat": -18.67,
+     "lon": 44.75,
+     "description": "A forest of limestone needles, grey and knife-edged, cut by rain into a labyrinth of canyons a hundred metres deep where lemurs cross on the points. Tsingy means where one cannot walk barefoot. Caves beneath it hold rivers. Nothing about the place was shaped for people and people go anyway."
+    },
+    "strategy": [
+     "Science and culture on six neighbours: a Campus and a Theater Square can share the adjacency.",
+     "Small but steady; worth a city when nothing better is near."
+    ],
+    "leaders": [
+     {
+      "slug": "nzinga-mbande",
+      "why": "Africa-coded start; culture and science for Kongo growth"
+     },
+     {
+      "slug": "kristina",
+      "why": "Culture adjacency for Great Works"
+     },
+     {
+      "slug": "hammurabi",
+      "why": "Science adjacency for Eureka-driven research"
+     }
+    ],
+    "image": "images/wonders/tsingy-de-bemaraha.jpg",
+    "imageCredit": "wonder-tsingy-de-bemaraha"
+   },
+   {
+    "slug": "ubsunur-hollow",
+    "name": "Ubsunur Hollow",
+    "tiles": 4,
+    "passable": true,
+    "terrain": "Tundra or steppe near lake",
+    "effect": "+1 Food, +1 Production and +2 Faith on each wonder tile. +2 Appeal to adjacent tiles.",
+    "yields": {
+     "food": 1,
+     "production": 1,
+     "faith": 2,
+     "appeal": 2
+    },
+    "expansion": "Rise and Fall",
+    "real_world": {
+     "location": "Uvs Nuur basin, on the Mongolia-Russia border",
+     "country": "Mongolia and Russia",
+     "lat": 50.3,
+     "lon": 92.7,
+     "description": "A closed basin around a shallow salt lake where every Central Asian landscape meets inside one horizon: glacier, taiga, steppe, dune and marsh. Snow leopards hunt the mountains and argali the ridges. Scythian kurgans and standing stones mark the grass. Winter reaches minus fifty; summer reaches forty. Herders move with both."
+    },
+    "strategy": [
+     "Faith on tundra, with food and production to work it: a northern Holy Site city.",
+     "Four workable tiles suit a wide, faith-led civilization."
+    ],
+    "leaders": [
+     {
+      "slug": "genghis-khan",
+      "why": "Mongolian steppe, faith and horses"
+     },
+     {
+      "slug": "peter",
+      "why": "Russian tundra faith"
+     },
+     {
+      "slug": "tomyris",
+      "why": "Scythian steppe homeland"
+     }
+    ],
+    "image": "images/wonders/ubsunur-hollow.jpg",
+    "imageCredit": "wonder-ubsunur-hollow"
+   },
+   {
+    "slug": "uluru",
+    "name": "Uluru",
+    "tiles": 1,
+    "passable": false,
+    "terrain": "Desert",
+    "effect": "+2 Faith and +2 Culture to adjacent tiles. +4 Appeal to adjacent tiles.",
+    "yields": {
+     "faith": 2,
+     "culture": 2,
+     "appeal": 4
+    },
+    "expansion": "Australia Civilization & Scenario Pack",
+    "real_world": {
+     "location": "Northern Territory",
+     "country": "Australia",
+     "lat": -25.34,
+     "lon": 131.04,
+     "description": "A single mass of red sandstone rising 348 metres from the desert and running kilometres further underground, which changes colour through the day as the light moves. It is sacred to the Anangu, whose law covers its caves and springs, and climbing was closed in 2019 at their asking. The rock is older than animals with bones."
+    },
+    "strategy": [
+     "The highest appeal bonus of any wonder: every neighbouring tile becomes resort or park material.",
+     "Faith and culture adjacency make the desert city a religious centre."
+    ],
+    "leaders": [
+     {
+      "slug": "john-curtin",
+      "why": "Australian appeal doubled into district yields"
+     },
+     {
+      "slug": "teddy-roosevelt",
+      "why": "A National Park in the desert"
+     },
+     {
+      "slug": "kupe",
+      "why": "Appeal is the whole Māori plan"
+     }
+    ],
+    "image": "images/wonders/uluru.jpg",
+    "imageCredit": "wonder-uluru"
+   },
+   {
+    "slug": "vinland",
+    "name": "Vinland",
+    "tiles": 3,
+    "passable": false,
+    "terrain": "Coast, northern",
+    "effect": "+1 Culture and +1 Gold to adjacent Ocean tiles. +2 Appeal to adjacent tiles.",
+    "yields": {
+     "culture": 1,
+     "gold": 1,
+     "appeal": 2
+    },
+    "expansion": "Vikings Scenario Pack (scenario)",
+    "real_world": {
+     "location": "L'Anse aux Meadows, Newfoundland",
+     "country": "Canada",
+     "lat": 51.6,
+     "lon": -55.53,
+     "description": "The Vinland of the sagas, grape-land, where Leif Erikson wintered around the year 1000. The one Norse site found in the Americas is a cluster of turf houses at the northern tip of Newfoundland, with iron rivets and a bronze pin in the ground. The grapes were further south, or were a story. The houses are real."
+    },
+    "strategy": [
+     "Appears only in the Vikings scenario in most games.",
+     "Ocean tiles with gold and culture reward a harbour city that works the sea."
+    ],
+    "leaders": [
+     {
+      "slug": "harald-hardrada",
+      "why": "The Norse wonder"
+     },
+     {
+      "slug": "wilfrid-laurier",
+      "why": "Canadian coast"
+     }
+    ],
+    "image": "images/wonders/vinland.jpg",
+    "imageCredit": "wonder-vinland"
+   },
+   {
+    "slug": "yosemite",
+    "name": "Yosemite",
+    "tiles": 2,
+    "passable": false,
+    "terrain": "Mountains or hills with woods",
+    "effect": "+1 Science and +1 Gold on adjacent tiles (+1 Food too in Gathering Storm). +2 Appeal to adjacent tiles.",
+    "yields": {
+     "science": 1,
+     "gold": 1,
+     "food": 1,
+     "appeal": 2
+    },
+    "expansion": "Base Game",
+    "real_world": {
+     "location": "Sierra Nevada, California",
+     "country": "United States",
+     "lat": 37.75,
+     "lon": -119.6,
+     "description": "A glacial valley a mile deep with granite walls, El Capitan and Half Dome among them, and waterfalls that run full in May and dry by August. Lincoln signed the grant protecting it in 1864, in the middle of a war. Muir walked Roosevelt through it in 1903 and the national parks followed. The Ahwahneechee were removed to make it empty."
+    },
+    "strategy": [
+     "Science and gold on every neighbour, and the appeal that national parks are made of.",
+     "Settle it with woods around; the Campus and the park can share the valley."
+    ],
+    "leaders": [
+     {
+      "slug": "teddy-roosevelt",
+      "why": "The park that began the parks; Roosevelt's own wonder"
+     },
+     {
+      "slug": "seondeok",
+      "why": "Science adjacency for the Seowon"
+     },
+     {
+      "slug": "wilfrid-laurier",
+      "why": "Canada's National Parks from appeal"
+     }
+    ],
+    "image": "images/wonders/yosemite.jpg",
+    "imageCredit": "wonder-yosemite"
+   },
+   {
+    "slug": "zhangye-danxia",
+    "name": "Zhangye Danxia",
+    "tiles": 3,
+    "passable": false,
+    "terrain": "Desert or plains hills",
+    "effect": "+2 Great General points and +2 Great Merchant points per turn to the player who owns at least one tile. +2 Appeal to adjacent tiles.",
+    "yields": {
+     "appeal": 2,
+     "other": "+2 Great General and +2 Great Merchant points per turn"
+    },
+    "expansion": "Rise and Fall",
+    "real_world": {
+     "location": "Gansu Province",
+     "country": "China",
+     "lat": 38.9,
+     "lon": 100.1,
+     "description": "Striped mountains, red, gold, ochre and green, laid down as sandstone and minerals over twenty-four million years and tilted upright by the collision that raised the Himalayas. The Silk Road passed beneath them at Zhangye. The colours are strongest after rain. Boardwalks keep tourists off the stripes."
+    },
+    "strategy": [
+     "Great People points without a district: the first Great General of the game is usually yours.",
+     "Settle for the appeal and the points; the tiles themselves are impassable."
+    ],
+    "leaders": [
+     {
+      "slug": "qin-shi-huang",
+      "why": "Chinese wonder, and a Great General for the Crouching Tiger"
+     },
+     {
+      "slug": "genghis-khan",
+      "why": "Great Generals for the Keshig"
+     },
+     {
+      "slug": "yongle",
+      "why": "Great Merchants for the treasure fleets"
+     }
+    ],
+    "image": "images/wonders/zhangye-danxia.jpg",
+    "imageCredit": "wonder-zhangye-danxia"
+   }
+  ]
+ },
+ "barbarians": {
+  "overview": "Barbarians are the map's own army. They have no capital, no diplomacy and no victory condition; they exist to punish an empty frontier. An outpost appears in the fog, sends out a scout, and if that scout sees one of your cities the outpost begins to spawn raiders aimed at it. Every leader on this roster meets them in the first thirty turns, and the shape of that meeting is part of the leader's shape.",
+  "mechanics": [
+   {
+    "title": "Outposts spawn in the dark",
+    "text": "A new outpost can appear on any land tile that no civilization can see, at least a few tiles from the nearest city. Fog is the condition. A scout or a city's sight line that covers the empty ground between you and the horizon is the cheapest defence in the game."
+   },
+   {
+    "title": "The scout decides the raid",
+    "text": "Each outpost sends a Scout first. If it reaches a tile where it can see your city, it turns and runs home, and the outpost switches from spawning scouts to spawning raiders pointed at that city. Kill the scout before it gets home and the raid never starts. A warrior parked on the approach is worth more than walls."
+   },
+   {
+    "title": "Raiders keep pace with the world",
+    "text": "Barbarian units are drawn from the technology of the most advanced civilization on the map, not yours. A backward empire is raided by swordsmen while it fields slingers. Outposts near Horses produce cavalry; outposts on the coast produce galleys and quadriremes that pillage fishing boats and harbours."
+   },
+   {
+    "title": "Pillage, capture, never hold",
+    "text": "Raiders pillage improvements and districts for gold and heal from it. They can capture Builders and Settlers and take them home to the outpost. They can take a city that has no walls and no defender, but they cannot keep one: a captured city is razed. Walls and one ranged unit end most raids."
+   },
+   {
+    "title": "Clearing an outpost",
+    "text": "Dispersing an outpost grants gold, a unit's worth of experience, and an Era Score moment if the outpost sat within a few tiles of your border. Sumeria takes a tribal-village reward as well. The rule for everyone else: clear what can see you, leave what cannot, and never march past one on the way to a war."
+   },
+   {
+    "title": "Difficulty changes the pressure",
+    "text": "On higher difficulties outposts spawn sooner and raiders come in larger groups with combat bonuses. The Discipline policy card (+5 Combat Strength against barbarians) is a first-civic pick for most leaders on Emperor and above, and Survey lets scouts earn experience faster so they live long enough to matter."
+   },
+   {
+    "title": "Experience farming",
+    "text": "A unit that holds a chokepoint against barbarian waves earns promotions it would otherwise wait eras for. Gorgo turns every kill into Culture. The limit is one outpost left alive near one defended city; two outposts in range is a siege, not a farm."
+   }
+  ],
+  "clans_mode": {
+   "name": "Barbarian Clans",
+   "introduced": "Free February 2021 update, released alongside the New Frontier Pass (Vietnam and Kublai Khan pack cycle). Optional game mode.",
+   "overview": "Clans mode gives each outpost a people, a specialty and a path. Every clan is one of seven types that decides where it appears and what it builds. Instead of only fighting them, you can pay them: to leave, to attack someone else, to sell you a unit, or to return a captured Builder. Dealings with a clan move it along a progress bar toward becoming a city-state, with walls and envoys and a suzerain bonus of its own.",
+   "clans": [
+    {
+     "name": "Chariot Clan",
+     "spawns": "Desert near Horses",
+     "units": "Mounted and light cavalry, occasional ranged",
+     "notes": "Fast raiders that outrun early infantry; hold them with spearmen on hills."
+    },
+    {
+     "name": "Flatland Clan",
+     "spawns": "Open terrain away from woods and hills",
+     "units": "Melee and ranged",
+     "notes": "The ordinary warband. Walls and archers are enough."
+    },
+    {
+     "name": "Hills Clan",
+     "spawns": "Open terrain with hills",
+     "units": "Melee",
+     "notes": "Tough on defence; their outpost on a hill takes a siege to clear."
+    },
+    {
+     "name": "Jungle Clan",
+     "spawns": "Rainforest near Ivory",
+     "units": "Light and heavy cavalry, ranged",
+     "notes": "Heavy cavalry early is rare; a Jungle Clan can field a Heavy Chariot before anyone else."
+    },
+    {
+     "name": "Rover Clan",
+     "spawns": "Open terrain near Horses, away from woods",
+     "units": "Mounted light and heavy cavalry",
+     "notes": "The cavalry that Scythia and Mongolia hire; the clan to hire from if you want horsemen without the Horses."
+    },
+    {
+     "name": "Seafaring Clan",
+     "spawns": "Coastal tiles",
+     "units": "Anti-cavalry, naval melee and naval ranged",
+     "notes": "Galleys that pillage fishing boats. Hire a quadrireme early and you have a navy before Shipbuilding."
+    },
+    {
+     "name": "Woodland Clan",
+     "spawns": "Woods and rainforest",
+     "units": "Ranged in abundance, with melee",
+     "notes": "Archers in woods are the raid that takes a city; answer with your own ranged behind walls."
+    }
+   ],
+   "interactions": [
+    {
+     "action": "Disperse",
+     "effect": "Destroy the outpost. Ends the clan, grants gold and experience, and the Era Score moment if it was near your border."
+    },
+    {
+     "action": "Raid",
+     "effect": "Take gold from the clan every ten turns and move its city-state progress backward. The clan spawns a unit to push you out."
+    },
+    {
+     "action": "Bribe",
+     "effect": "Pay gold and the clan stops attacking you for a period. The cost rises with the number of cities you own, and the deal advances the clan toward becoming a city-state."
+    },
+    {
+     "action": "Hire",
+     "effect": "Buy one of the clan's units at a discount. A cooldown follows each purchase. Hiring also advances conversion."
+    },
+    {
+     "action": "Incite",
+     "effect": "Pay the clan to raid a civilization or city-state you have met. Incitement slows the clan's conversion."
+    },
+    {
+     "action": "Ransom",
+     "effect": "Pay to recover a captured Builder or Settler. Ransom slows conversion."
+    }
+   ],
+   "conversion": "A clan's progress bar fills with time and with bribes and hires, and empties with raids, incitement and ransoms. When it fills, the outpost becomes a new city-state with walls, and the clan can no longer be hired. Players who want a friendly city-state on their flank feed the bar; players who want a quiet border starve it. A dispersed clan never converts."
+  },
+  "strategy_by_curve": {
+   "Spike": "Barbarians are the first enemy and the first prize. Clear the outposts that can see you in the first fifteen turns with the units you were building anyway, take the experience, and do not let a raid cost you the turns the window needs. Gilgamesh and Tomyris profit from each camp; nobody else should hunt them past the border.",
+   "Ramp": "Build one archer and one warrior per city and hold the approaches while the economy comes up. A raid that pillages a district sets a Ramp back a dozen turns. Scout the fog on every side by turn twenty so no outpost can send a scout you have not seen.",
+   "Bloom": "A Bloom leader has nothing to spend and the most to lose. Walls in every city by the time the first outpost's raiders arrive, Discipline slotted, and a standing ranged unit per city. Treat barbarians as weather: not fought, survived.",
+   "Flat": "Clear what is near and ignore what is far. Flat kits do not need the experience and cannot afford the detour. In Clans mode, bribe once if a raid would hit a growing city, and let the clan convert into a city-state you can then win."
+  },
+  "leader_notes": [
+   {
+    "slug": "gilgamesh",
+    "note": "Epic Quest pays a tribal-village reward for every outpost cleared. Leave camps alive only until a War-Cart is free to take them; the reward is real but so is the raid."
+   },
+   {
+    "slug": "gorgo",
+    "note": "Every barbarian killed is Culture. One defended camp in range of the capital is a civic engine; two is a siege."
+   },
+   {
+    "slug": "tomyris",
+    "note": "Scythian units heal on kills and strike wounded enemies harder. Barbarian waves are free healing and free experience for the Saka Horse Archers."
+   },
+   {
+    "slug": "genghis-khan",
+    "note": "Mongolia's cavalry wants Horses; in Clans mode a Rover Clan is a unit vendor. Hire early, convert late."
+   },
+   {
+    "slug": "shaka",
+    "note": "Impi corps promote fast and the Ikanda shortens the path. Camps are the training ground before the first real war."
+   },
+   {
+    "slug": "lautaro",
+    "note": "Malón Raiders and the Toqui's extra experience against civilizations in a Golden Age do not apply to barbarians; clear camps for safety, not profit."
+   },
+   {
+    "slug": "amanitore",
+    "note": "Pítati Archers outrange early raiders; one per city makes barbarians a non-event for Nubia."
+   },
+   {
+    "slug": "montezuma",
+    "note": "Eagle Warriors can capture barbarian units as Builders. A raid on the Aztecs is a labour supply."
+   },
+   {
+    "slug": "harald-hardrada",
+    "note": "Coastal outposts spawn galleys that pillage Norway's fishing boats. A Longship on patrol early is cheaper than rebuilding boats."
+   },
+   {
+    "slug": "peter",
+    "note": "Russia settles tundra, and tundra fog is where outposts live. Scout the north before the second city, not after."
+   }
+  ],
+  "image": "images/sections/barbarians.jpg",
+  "sources": [
+   "https://gamerant.com/civilization-6-all-barbarian-clan-types/",
+   "https://www.pcgamesn.com/civilization-vi/barbarian-update-patch-notes",
+   "https://forums.civfanatics.com/threads/barbarian-clans-game-mode-discussion.667535/"
+  ],
+  "imageCredit": "section-barbarians"
+ },
+ "eras": {
+  "overview": "The game runs through eight world eras, each entered when the world's technology or civics reach the threshold. With Rise and Fall, your own Era Score decides whether the next era is a Dark, Normal, Golden or Heroic Age for you, and each age opens a Dedication that sets the tone of the next era. A leader's power curve is a statement about which eras the kit is loud in.",
+  "eras": [
+   {
+    "slug": "ancient",
+    "name": "Ancient",
+    "order": 1,
+    "years": "4000 BCE to 1000 BCE",
+    "standard_turns": "1 to about 60",
+    "key_techs": [
+     "Pottery",
+     "Animal Husbandry",
+     "Mining",
+     "Bronze Working",
+     "Writing",
+     "Astrology",
+     "Irrigation",
+     "Archery"
+    ],
+    "key_civics": [
+     "Code of Laws",
+     "Craftsmanship",
+     "Foreign Trade",
+     "Early Empire",
+     "State Workforce",
+     "Military Tradition",
+     "Mysticism"
+    ],
+    "signature_units": [
+     "Warrior",
+     "Slinger",
+     "Scout",
+     "Archer",
+     "Spearman",
+     "Heavy Chariot",
+     "Galley"
+    ],
+    "wonders": [
+     "Stonehenge",
+     "Pyramids",
+     "Hanging Gardens",
+     "Oracle",
+     "Great Bath",
+     "Etemenanki"
+    ],
+    "what_matters": "Settle the second and third city, find the pantheon, scout the fog, and decide which of your neighbours is prey. Every Spike kit is at full volume here and every Bloom kit is waiting.",
+    "curves_at_peak": [
+     "Spike"
+    ]
+   },
+   {
+    "slug": "classical",
+    "name": "Classical",
+    "order": 2,
+    "years": "1000 BCE to 500 CE",
+    "standard_turns": "about 60 to 110",
+    "key_techs": [
+     "Currency",
+     "Horseback Riding",
+     "Iron Working",
+     "Shipbuilding",
+     "Mathematics",
+     "Construction",
+     "Engineering",
+     "Celestial Navigation"
+    ],
+    "key_civics": [
+     "Political Philosophy",
+     "Drama and Poetry",
+     "Games and Recreation",
+     "Theology",
+     "Military Training",
+     "Defensive Tactics",
+     "Recorded History"
+    ],
+    "signature_units": [
+     "Swordsman",
+     "Horseman",
+     "Catapult",
+     "Quadrireme",
+     "Apostle",
+     "Missionary"
+    ],
+    "wonders": [
+     "Colosseum",
+     "Great Library",
+     "Great Lighthouse",
+     "Mahabodhi Temple",
+     "Petra",
+     "Terracotta Army",
+     "Apadana",
+     "Jebel Barkal",
+     "Temple of Artemis",
+     "Colossus"
+    ],
+    "what_matters": "The first government, the first religion, the first real army. Political Philosophy arrives and the empire gets its shape. A Spike that has not converted by the end of this era has expired.",
+    "curves_at_peak": [
+     "Spike",
+     "Ramp"
+    ]
+   },
+   {
+    "slug": "medieval",
+    "name": "Medieval",
+    "order": 3,
+    "years": "500 to 1350",
+    "standard_turns": "about 110 to 160",
+    "key_techs": [
+     "Apprenticeship",
+     "Machinery",
+     "Education",
+     "Military Tactics",
+     "Stirrups",
+     "Castles",
+     "Military Engineering"
+    ],
+    "key_civics": [
+     "Feudalism",
+     "Civil Service",
+     "Mercenaries",
+     "Medieval Faires",
+     "Guilds",
+     "Divine Right",
+     "Naval Tradition"
+    ],
+    "signature_units": [
+     "Knight",
+     "Crossbowman",
+     "Pikeman",
+     "Trebuchet",
+     "Man-At-Arms"
+    ],
+    "wonders": [
+     "Alhambra",
+     "Angkor Wat",
+     "Chichen Itza",
+     "Hagia Sophia",
+     "Kilwa Kisiwani",
+     "Machu Picchu",
+     "Meenakshi Temple",
+     "Mont St. Michel",
+     "University of Sankore"
+    ],
+    "what_matters": "Feudalism doubles Builder charges and the district economy comes online. Most Ramp kits peak here: the Hansa, the Seowon, the Chateau all pay now. Monarchy or Merchant Republic is the government that decides the next hundred turns.",
+    "curves_at_peak": [
+     "Ramp"
+    ]
+   },
+   {
+    "slug": "renaissance",
+    "name": "Renaissance",
+    "order": 4,
+    "years": "1350 to 1700",
+    "standard_turns": "about 160 to 210",
+    "key_techs": [
+     "Gunpowder",
+     "Printing",
+     "Astronomy",
+     "Cartography",
+     "Mass Production",
+     "Banking",
+     "Metal Casting",
+     "Square Rigging"
+    ],
+    "key_civics": [
+     "Humanism",
+     "Diplomatic Service",
+     "Exploration",
+     "Reformed Church",
+     "Mercantilism",
+     "The Enlightenment"
+    ],
+    "signature_units": [
+     "Musketman",
+     "Bombard",
+     "Caravel",
+     "Frigate",
+     "Privateer"
+    ],
+    "wonders": [
+     "Forbidden City",
+     "Great Zimbabwe",
+     "Potala Palace",
+     "Venetian Arsenal",
+     "Taj Mahal",
+     "Casa de Contratación",
+     "St. Basil's Cathedral"
+    ],
+    "what_matters": "Cartography opens the oceans and Gunpowder ends the medieval army. Exploration brings the second wave of settling. Culture kits begin to turn Great Works into tourism.",
+    "curves_at_peak": [
+     "Ramp",
+     "Flat"
+    ]
+   },
+   {
+    "slug": "industrial",
+    "name": "Industrial",
+    "order": 5,
+    "years": "1700 to 1900",
+    "standard_turns": "about 210 to 260",
+    "key_techs": [
+     "Industrialization",
+     "Scientific Theory",
+     "Military Science",
+     "Ballistics",
+     "Economics",
+     "Sanitation",
+     "Steam Power",
+     "Rifling"
+    ],
+    "key_civics": [
+     "Civil Engineering",
+     "Nationalism",
+     "Opera and Ballet",
+     "Natural History",
+     "Scorched Earth",
+     "Colonialism"
+    ],
+    "signature_units": [
+     "Field Cannon",
+     "Cavalry",
+     "Line Infantry",
+     "Ironclad"
+    ],
+    "wonders": [
+     "Big Ben",
+     "Bolshoi Theatre",
+     "Hermitage",
+     "Oxford University",
+     "Ruhr Valley",
+     "Statue of Liberty",
+     "Panama Canal"
+    ],
+    "what_matters": "Factories and power plants multiply production across six tiles. Nationalism allows corps and armies. Bloom kits wake up: this is where Pedro's Great People, Victoria's redcoats and Roosevelt's parks start paying.",
+    "curves_at_peak": [
+     "Bloom",
+     "Flat"
+    ]
+   },
+   {
+    "slug": "modern",
+    "name": "Modern",
+    "order": 6,
+    "years": "1900 to 1945",
+    "standard_turns": "about 260 to 300",
+    "key_techs": [
+     "Flight",
+     "Radio",
+     "Replaceable Parts",
+     "Electricity",
+     "Chemistry",
+     "Refining",
+     "Steel",
+     "Combustion"
+    ],
+    "key_civics": [
+     "Ideology",
+     "Mobilization",
+     "Mass Media",
+     "Totalitarianism",
+     "Class Struggle",
+     "Suffrage",
+     "Capitalism"
+    ],
+    "signature_units": [
+     "Infantry",
+     "Artillery",
+     "Tank",
+     "Biplane",
+     "Battleship",
+     "Submarine"
+    ],
+    "wonders": [
+     "Broadway",
+     "Cristo Redentor",
+     "Eiffel Tower",
+     "Kremlin",
+     "Golden Gate Bridge"
+    ],
+    "what_matters": "Ideology picks the final government and the final policy slots. Flight makes natural wonders and appeal into tourism. Oil and the units that burn it decide late wars.",
+    "curves_at_peak": [
+     "Bloom"
+    ]
+   },
+   {
+    "slug": "atomic",
+    "name": "Atomic",
+    "order": 7,
+    "years": "1945 to 1980",
+    "standard_turns": "about 300 to 340",
+    "key_techs": [
+     "Advanced Flight",
+     "Rocketry",
+     "Nuclear Fission",
+     "Synthetic Materials",
+     "Plastics",
+     "Computers",
+     "Combined Arms"
+    ],
+    "key_civics": [
+     "Cold War",
+     "Professional Sports",
+     "Rapid Deployment",
+     "Space Race",
+     "Cultural Hegemony"
+    ],
+    "signature_units": [
+     "Mechanized Infantry",
+     "Helicopter",
+     "Jet Fighter",
+     "Rocket Artillery",
+     "Nuclear Submarine",
+     "Aircraft Carrier"
+    ],
+    "wonders": [
+     "Amundsen-Scott Research Station",
+     "Biosphère",
+     "Estádio do Maracanã",
+     "Sydney Opera House"
+    ],
+    "what_matters": "Nuclear weapons, space projects and rock bands. Victories are being closed, not opened. A leader without a banked advantage is a spectator.",
+    "curves_at_peak": [
+     "Bloom"
+    ]
+   },
+   {
+    "slug": "information",
+    "name": "Information",
+    "order": 8,
+    "years": "1980 onward",
+    "standard_turns": "about 340 to 500",
+    "key_techs": [
+     "Satellites",
+     "Robotics",
+     "Nanotechnology",
+     "Composites",
+     "Stealth Technology",
+     "Telecommunications",
+     "Guidance Systems"
+    ],
+    "key_civics": [
+     "Globalization",
+     "Social Media",
+     "Environmentalism",
+     "Near Future Governance",
+     "Distributed Sovereignty"
+    ],
+    "signature_units": [
+     "Modern Armor",
+     "Jet Bomber",
+     "Giant Death Robot",
+     "Missile Cruiser",
+     "Drone"
+    ],
+    "wonders": [
+     "Hubble Space Telescope"
+    ],
+    "what_matters": "The last era. Exoplanet expeditions, world congress resolutions and tourism counts decide the end. Everything here is cashing a cheque written two hundred turns ago.",
+    "curves_at_peak": [
+     "Bloom"
+    ]
+   }
+  ],
+  "ages": {
+   "era_score": "Era Score comes from Historic Moments: things you do for the first time, or first in the world. Each moment is worth one to four points. Common ones in the first two eras: meeting a new civilization (1), discovering a natural wonder (1, or 3 if first in the world), clearing a barbarian outpost near your border (1 to 2), founding a pantheon or religion (1 to 3), building a district with a high adjacency bonus (1), training your first unique unit (2), building a wonder (3 to 4), becoming the first suzerain of a city-state (2), and settling a city on a new continent or in tundra, desert or snow (1).",
+   "thresholds": "Each era has a Dark Age threshold and a Golden Age threshold, twelve points apart. At the start of the Classical era the Normal threshold is about twelve points, rising every era by the number of cities you own and by five for each previous Golden Age, and falling by five for each previous Dark Age. Below the lower line the next era is Dark; above the upper line it is Golden; between is Normal. Thresholds are shown on the Era progress panel, and they are personal: a wide empire pays more for its Golden Age than a tall one.",
+   "golden": "A Golden Age grants loyalty across the empire and the stronger version of your chosen Dedication for the whole era. Players who hoard moments for one era (first wonder, first religion, three outposts cleared, a natural wonder found) can reach Golden from Ancient, and the Monumentality dedication turns that Golden Age into free settlers and builders bought with Faith.",
+   "heroic": "A Golden Age earned directly after a Dark Age is a Heroic Age. It grants three Dedications instead of one. Deliberately taking a Dark Age in the Classical era to set up a Heroic Medieval is a known line, worth it only if the loyalty penalty of the Dark Age will not cost you a city.",
+   "dark": "A Dark Age applies a loyalty penalty to every city, strongest at the fringes and near foreign borders. It also unlocks the Dark Age policy cards, which are strong and expensive: Isolationism (+2 Food and Production on domestic trade routes, no new settlers), Twilight Valor (+5 melee strength, no healing outside borders), Monasticism (Holy Sites give science, culture reduced), Inquisition, Letters of Marque, Robber Barons, Collectivism and others by era. A Dark Age with full walls and a compact empire is survivable; a Dark Age with a far-flung city next to a Golden-Age neighbour loses the city.",
+   "loyalty": "Golden Age: +1 Loyalty pressure in every city. Normal: none. Dark: cities lose loyalty each turn in proportion to how far they sit from your centre and how close to a stronger neighbour. A city at zero loyalty revolts into a Free City and may join whoever presses hardest on it.",
+   "dedications": [
+    {
+     "name": "Monumentality",
+     "eras": [
+      "Classical",
+      "Medieval",
+      "Renaissance"
+     ],
+     "normal": "Era Score from building specialty districts.",
+     "golden": "Builders and Settlers can be bought with Faith; civilian units gain +2 Movement; Builders and Settlers cost 30% less Gold."
+    },
+    {
+     "name": "Pen, Brush and Voice",
+     "eras": [
+      "Classical",
+      "Medieval"
+     ],
+     "normal": "Era Score from Inspirations and Great Work buildings.",
+     "golden": "+1 Culture per specialty district; Inspirations give 10% more Civic progress."
+    },
+    {
+     "name": "Free Inquiry",
+     "eras": [
+      "Classical",
+      "Medieval"
+     ],
+     "normal": "Era Score from Eurekas and science buildings.",
+     "golden": "Commercial Hubs and Harbors yield Science equal to their Gold adjacency; Eurekas give 10% more progress."
+    },
+    {
+     "name": "Exodus of the Evangelists",
+     "eras": [
+      "Classical",
+      "Medieval",
+      "Renaissance"
+     ],
+     "normal": "Era Score from converting cities to your religion.",
+     "golden": "Missionaries and Apostles gain +2 Movement and more charges; +4 Great Prophet points per turn."
+    },
+    {
+     "name": "Hic Sunt Dracones",
+     "eras": [
+      "Renaissance",
+      "Industrial",
+      "Modern"
+     ],
+     "normal": "Era Score from discovering continents and wonders and from naval kills.",
+     "golden": "Cities founded on other continents start with +3 Population and +2 Loyalty per turn; naval units +2 Movement."
+    },
+    {
+     "name": "Reform the Coinage",
+     "eras": [
+      "Renaissance",
+      "Industrial",
+      "Modern"
+     ],
+     "normal": "Era Score from unplundered Trade Routes.",
+     "golden": "Traders cannot be plundered; +3 Gold on international routes."
+    },
+    {
+     "name": "Heartbeat of Steam",
+     "eras": [
+      "Industrial",
+      "Modern"
+     ],
+     "normal": "Era Score from Industrial-era buildings.",
+     "golden": "+10% Production toward Industrial-era and later wonders; Campuses give Production equal to their Science adjacency."
+    },
+    {
+     "name": "To Arms!",
+     "eras": [
+      "Industrial",
+      "Modern",
+      "Atomic",
+      "Information"
+     ],
+     "normal": "Era Score from destroying enemy corps and armies.",
+     "golden": "+15% Production toward military units; the Golden Age casus belli."
+    },
+    {
+     "name": "Bodyguard of Lies",
+     "eras": [
+      "Atomic",
+      "Information"
+     ],
+     "normal": "Era Score from successful spy missions.",
+     "golden": "Spies establish instantly and operate 25% faster."
+    },
+    {
+     "name": "Sky and Stars",
+     "eras": [
+      "Atomic",
+      "Information"
+     ],
+     "normal": "Era Score from Aerodrome buildings and Great People.",
+     "golden": "Air units earn double experience; Aluminum mines +2 per turn; Eurekas for Flight-line techs."
+    },
+    {
+     "name": "Wish You Were Here",
+     "eras": [
+      "Atomic",
+      "Information"
+     ],
+     "normal": "Era Score from Archaeologists finding artifacts.",
+     "golden": "Wonder tourism +50%; National Parks produce double Tourism."
+    },
+    {
+     "name": "Automaton Warfare",
+     "eras": [
+      "Information"
+     ],
+     "normal": "Era Score from Giant Death Robot kills (Gathering Storm).",
+     "golden": "A free Giant Death Robot in the capital and +1 Uranium per turn from mines."
+    }
+   ]
+  },
+  "image": "images/sections/eras.jpg",
+  "sources": [
+   "https://www.thegamer.com/civilization-6-complete-guide-to-era-score-golden-dark-heroic-age/",
+   "https://www.digitaltrends.com/gaming/civ-vi-rise-and-fall-ages-guide/",
+   "https://forums.civfanatics.com/threads/era-score-for-ages-question.628177/"
+  ],
+  "imageCredit": "section-eras"
+ },
+ "cityStates": {
+  "overview": "City-states are the small powers of the map: one city each, no victory of their own, and a bonus for whoever earns their loyalty. You earn it with envoys. One envoy opens the type bonus, three and six deepen it, and the player with the most envoys (at least three) is suzerain, gaining the city's unique bonus, its resources, and the right to levy its army for gold. A city-state can also be conquered, which ends its bonuses for everyone and angers the rest.",
+  "envoy_rules": "Envoys come from civics (most civics in the first three eras grant one), from policy cards (Diplomatic League doubles the first envoy; Charismatic Leader and Gunboat Diplomacy add more), from completing a city-state's quest, from the Apadana and Kilwa Kisiwani wonders, from Amani the governor, and from alliance levels. Suzerainty needs the most envoys and at least three; a tie leaves the city without a suzerain. Envoys sent to a city-state at war with you are lost; envoys never expire otherwise. The AI competes hardest for Scientific and Industrial cities; Religious and Cultural ones are often cheap.",
+  "types": [
+   {
+    "type": "Scientific",
+    "color": "#2E7CF6",
+    "bonus_1": "+2 Science in the Capital",
+    "bonus_3": "+2 Science in every Library",
+    "bonus_6": "+2 Science in every University",
+    "members": [
+     "Anshan",
+     "Bologna",
+     "Fez",
+     "Geneva",
+     "Hattusa",
+     "Mitla",
+     "Nalanda",
+     "Taruga"
+    ]
+   },
+   {
+    "type": "Cultural",
+    "color": "#B14BD8",
+    "bonus_1": "+2 Culture in the Capital",
+    "bonus_3": "+2 Culture in every Amphitheater",
+    "bonus_6": "+2 Culture in every Art Museum and Archaeological Museum",
+    "members": [
+     "Antananarivo",
+     "Ayutthaya",
+     "Caguana",
+     "Kumasi",
+     "Mohenjo-Daro",
+     "Nan Madol",
+     "Rapa Nui",
+     "Vilnius"
+    ]
+   },
+   {
+    "type": "Religious",
+    "color": "#E7C24A",
+    "bonus_1": "+2 Faith in the Capital",
+    "bonus_3": "+2 Faith in every Shrine",
+    "bonus_6": "+2 Faith in every Temple",
+    "members": [
+     "Armagh",
+     "Chinguetti",
+     "Jerusalem",
+     "Kandy",
+     "La Venta",
+     "Nazca",
+     "Vatican City",
+     "Yerevan"
+    ]
+   },
+   {
+    "type": "Industrial",
+    "color": "#E0772B",
+    "bonus_1": "+2 Production in the Capital when producing wonders, buildings and districts",
+    "bonus_3": "+2 Production in every Workshop",
+    "bonus_6": "+2 Production in every Factory",
+    "members": [
+     "Auckland",
+     "Brussels",
+     "Buenos Aires",
+     "Cardiff",
+     "Hong Kong",
+     "Johannesburg",
+     "Mexico City",
+     "Singapore"
+    ]
+   },
+   {
+    "type": "Militaristic",
+    "color": "#D23A3A",
+    "bonus_1": "+2 Production in the Capital when producing units",
+    "bonus_3": "+2 Production in every Barracks and Stable",
+    "bonus_6": "+2 Production in every Armory",
+    "members": [
+     "Akkad",
+     "Granada",
+     "Kabul",
+     "Lahore",
+     "Ngazargamu",
+     "Preslav",
+     "Valletta",
+     "Wolin"
+    ]
+   },
+   {
+    "type": "Trade",
+    "color": "#2FA36B",
+    "bonus_1": "+4 Gold in the Capital",
+    "bonus_3": "+4 Gold in every Market",
+    "bonus_6": "+4 Gold in every Bank",
+    "members": [
+     "Bandar Brunei",
+     "Cahokia",
+     "Hunza",
+     "Mogadishu",
+     "Muscat",
+     "Samarkand",
+     "Venice",
+     "Zanzibar"
+    ]
+   }
+  ],
+  "city_states": [
+   {
+    "slug": "anshan",
+    "name": "Anshan",
+    "type": "Scientific",
+    "suzerain_bonus": "+2 Science from each Great Work of Writing; +1 Science from each Relic and Artifact.",
+    "expansion": "Gathering Storm",
+    "real_world": "An Elamite capital in the Zagros foothills of Iran, one of the oldest cities in the world.",
+    "best_for": [
+     "kristina",
+     "pericles"
+    ]
+   },
+   {
+    "slug": "bologna",
+    "name": "Bologna",
+    "type": "Scientific",
+    "suzerain_bonus": "Districts with a building provide +1 Great Person point of their type.",
+    "expansion": "Gathering Storm",
+    "real_world": "Home of the oldest continuously operating university in Europe, founded in 1088.",
+    "best_for": [
+     "pedro-ii",
+     "seondeok"
+    ]
+   },
+   {
+    "slug": "fez",
+    "name": "Fez",
+    "type": "Scientific",
+    "suzerain_bonus": "Converting a city with a religious unit for the first time earns 20 Science per Population.",
+    "expansion": "Gathering Storm",
+    "real_world": "Morocco's medieval capital; its Qarawiyyin mosque-university dates to 859.",
+    "best_for": [
+     "philip-ii",
+     "saladin"
+    ]
+   },
+   {
+    "slug": "geneva",
+    "name": "Geneva",
+    "type": "Scientific",
+    "suzerain_bonus": "+15% Science in all cities whenever you are not at war with any civilization.",
+    "expansion": "Base Game",
+    "real_world": "Calvin's republic on Lake Geneva, later the seat of the Red Cross and the League of Nations.",
+    "best_for": [
+     "seondeok",
+     "gandhi",
+     "hammurabi"
+    ]
+   },
+   {
+    "slug": "hattusa",
+    "name": "Hattusa",
+    "type": "Scientific",
+    "suzerain_bonus": "Provides 2 of each Strategic resource per turn that you have revealed but not improved.",
+    "expansion": "Base Game",
+    "real_world": "Capital of the Hittite empire in central Anatolia, abandoned around 1200 BCE.",
+    "best_for": [
+     "genghis-khan",
+     "suleiman",
+     "frederick-barbarossa"
+    ]
+   },
+   {
+    "slug": "mitla",
+    "name": "Mitla",
+    "type": "Scientific",
+    "suzerain_bonus": "City growth rate is 15% higher in cities with a Campus.",
+    "expansion": "Maya & Gran Colombia Pack",
+    "real_world": "A Zapotec religious centre in Oaxaca, famous for its geometric stone mosaics.",
+    "best_for": [
+     "lady-six-sky",
+     "seondeok"
+    ]
+   },
+   {
+    "slug": "nalanda",
+    "name": "Nalanda",
+    "type": "Scientific",
+    "suzerain_bonus": "Builders can build the Mahavihara improvement: +2 Science and +1 Housing, more with adjacent Holy Sites and Campuses.",
+    "expansion": "Rise and Fall",
+    "real_world": "A Buddhist monastic university in Bihar that taught for seven centuries until the twelfth.",
+    "best_for": [
+     "chandragupta",
+     "gandhi"
+    ]
+   },
+   {
+    "slug": "taruga",
+    "name": "Taruga",
+    "type": "Scientific",
+    "suzerain_bonus": "+5% Science in all cities for each different improved Strategic resource they have.",
+    "expansion": "Gathering Storm",
+    "real_world": "An Iron Age site of the Nok culture in Nigeria, where iron was smelted by 500 BCE.",
+    "best_for": [
+     "hammurabi",
+     "robert-the-bruce"
+    ]
+   },
+   {
+    "slug": "antananarivo",
+    "name": "Antananarivo",
+    "type": "Cultural",
+    "suzerain_bonus": "+2% Culture for each Great Person ever earned, up to 30%.",
+    "expansion": "Rise and Fall",
+    "real_world": "Capital of the Merina kingdom and of Madagascar, set on twelve hills.",
+    "best_for": [
+     "pedro-ii",
+     "kristina"
+    ]
+   },
+   {
+    "slug": "ayutthaya",
+    "name": "Ayutthaya",
+    "type": "Cultural",
+    "suzerain_bonus": "Gain Culture equal to 10% of the construction cost when finishing buildings.",
+    "expansion": "Gathering Storm",
+    "real_world": "The Siamese capital for four centuries, sacked by Burma in 1767.",
+    "best_for": [
+     "qin-shi-huang",
+     "ludwig-ii"
+    ]
+   },
+   {
+    "slug": "caguana",
+    "name": "Caguana",
+    "type": "Cultural",
+    "suzerain_bonus": "Builders can build the Batey improvement: Culture, more beside Bonus resources and Entertainment Complexes.",
+    "expansion": "Maya & Gran Colombia Pack",
+    "real_world": "A Taíno ceremonial centre in Puerto Rico with stone-lined ball courts.",
+    "best_for": [
+     "montezuma",
+     "simon-bolivar"
+    ]
+   },
+   {
+    "slug": "kumasi",
+    "name": "Kumasi",
+    "type": "Cultural",
+    "suzerain_bonus": "Trade Routes to any city-state provide +2 Culture and +1 Gold for every specialty district in the origin city.",
+    "expansion": "Base Game",
+    "real_world": "Capital of the Ashanti empire, seat of the Golden Stool.",
+    "best_for": [
+     "eleanor-of-aquitaine",
+     "catherine-de-medici",
+     "pericles"
+    ]
+   },
+   {
+    "slug": "mohenjo-daro",
+    "name": "Mohenjo-Daro",
+    "type": "Cultural",
+    "suzerain_bonus": "All your cities have full Housing from water, as if next to a river.",
+    "expansion": "Base Game",
+    "real_world": "A planned city of the Indus Valley civilization, with drains and a great bath, around 2500 BCE.",
+    "best_for": [
+     "trajan",
+     "mansa-musa"
+    ]
+   },
+   {
+    "slug": "nan-madol",
+    "name": "Nan Madol",
+    "type": "Cultural",
+    "suzerain_bonus": "Districts on or next to Coast or Lake tiles provide +2 Culture.",
+    "expansion": "Base Game",
+    "real_world": "A city of basalt islets built on a reef in Pohnpei, Micronesia.",
+    "best_for": [
+     "kupe",
+     "gitarja",
+     "victoria"
+    ]
+   },
+   {
+    "slug": "rapa-nui",
+    "name": "Rapa Nui",
+    "type": "Cultural",
+    "suzerain_bonus": "Builders can build the Moai improvement: Culture, more beside other Moai and the coast.",
+    "expansion": "Gathering Storm",
+    "real_world": "Easter Island, whose moai statues watched the sea from the thirteenth century.",
+    "best_for": [
+     "kupe",
+     "john-curtin"
+    ]
+   },
+   {
+    "slug": "vilnius",
+    "name": "Vilnius",
+    "type": "Cultural",
+    "suzerain_bonus": "At the highest active Alliance level all Theater Squares get +50% adjacency.",
+    "expansion": "Rise and Fall",
+    "real_world": "Capital of the Grand Duchy of Lithuania, joined to Poland under Jadwiga's marriage.",
+    "best_for": [
+     "jadwiga",
+     "wilfrid-laurier"
+    ]
+   },
+   {
+    "slug": "armagh",
+    "name": "Armagh",
+    "type": "Religious",
+    "suzerain_bonus": "Builders can build the Monastery improvement: +2 Faith, more when adjacent to Holy Sites.",
+    "expansion": "Rise and Fall",
+    "real_world": "The ecclesiastical capital of Ireland, Saint Patrick's seat.",
+    "best_for": [
+     "jadwiga",
+     "basil-ii"
+    ]
+   },
+   {
+    "slug": "chinguetti",
+    "name": "Chinguetti",
+    "type": "Religious",
+    "suzerain_bonus": "Trade Routes receive +1 Faith for every follower of your religion in the destination.",
+    "expansion": "Gathering Storm",
+    "real_world": "A caravan town and library city at the edge of the Sahara in Mauritania.",
+    "best_for": [
+     "mansa-musa",
+     "saladin"
+    ]
+   },
+   {
+    "slug": "jerusalem",
+    "name": "Jerusalem",
+    "type": "Religious",
+    "suzerain_bonus": "Cities with Holy Sites exert pressure as if they were Holy Cities.",
+    "expansion": "Base Game",
+    "real_world": "The holy city of three faiths, taken and retaken for three thousand years.",
+    "best_for": [
+     "saladin",
+     "philip-ii",
+     "jayavarman-vii"
+    ]
+   },
+   {
+    "slug": "kandy",
+    "name": "Kandy",
+    "type": "Religious",
+    "suzerain_bonus": "Receive a Relic every time you discover a natural wonder, and +50% Faith from Relics.",
+    "expansion": "Base Game",
+    "real_world": "The last capital of the Sinhalese kings in Sri Lanka, home of the Temple of the Tooth.",
+    "best_for": [
+     "kupe",
+     "menelik-ii",
+     "peter"
+    ]
+   },
+   {
+    "slug": "la-venta",
+    "name": "La Venta",
+    "type": "Religious",
+    "suzerain_bonus": "Builders can build the Colossal Head improvement: +2 Faith, more beside woods and rainforest.",
+    "expansion": "Base Game",
+    "real_world": "An Olmec centre in Tabasco, Mexico, where the colossal basalt heads were carved.",
+    "best_for": [
+     "lady-six-sky",
+     "montezuma"
+    ]
+   },
+   {
+    "slug": "nazca",
+    "name": "Nazca",
+    "type": "Religious",
+    "suzerain_bonus": "Builders can build the Nazca Line improvement: Faith to adjacent tiles, more on desert.",
+    "expansion": "Gathering Storm",
+    "real_world": "The desert of southern Peru where the geoglyphs were drawn between 500 BCE and 500 CE.",
+    "best_for": [
+     "pachacuti",
+     "amanitore"
+    ]
+   },
+   {
+    "slug": "vatican-city",
+    "name": "Vatican City",
+    "type": "Religious",
+    "suzerain_bonus": "Activating a Great Person spreads 400 religious pressure to cities within 10 tiles.",
+    "expansion": "Base Game",
+    "real_world": "The sovereign seat of the papacy, the smallest state in the world.",
+    "best_for": [
+     "philip-ii",
+     "pedro-ii"
+    ]
+   },
+   {
+    "slug": "yerevan",
+    "name": "Yerevan",
+    "type": "Religious",
+    "suzerain_bonus": "Apostles can choose any promotion instead of a random one.",
+    "expansion": "Base Game",
+    "real_world": "Capital of Armenia, the first state to adopt Christianity, in 301.",
+    "best_for": [
+     "tamar",
+     "basil-ii",
+     "gitarja"
+    ]
+   },
+   {
+    "slug": "auckland",
+    "name": "Auckland",
+    "type": "Industrial",
+    "suzerain_bonus": "Shallow water tiles provide +1 Production, +2 from the Industrial era.",
+    "expansion": "Base Game",
+    "real_world": "New Zealand's largest city, built on an isthmus between two harbours.",
+    "best_for": [
+     "kupe",
+     "harald-hardrada",
+     "john-curtin"
+    ]
+   },
+   {
+    "slug": "brussels",
+    "name": "Brussels",
+    "type": "Industrial",
+    "suzerain_bonus": "+15% Production toward wonders.",
+    "expansion": "Base Game",
+    "real_world": "Capital of Belgium and of the European Union.",
+    "best_for": [
+     "qin-shi-huang",
+     "ludwig-ii",
+     "cleopatra"
+    ]
+   },
+   {
+    "slug": "buenos-aires",
+    "name": "Buenos Aires",
+    "type": "Industrial",
+    "suzerain_bonus": "Bonus resources behave like Luxury resources, providing 1 Amenity per type.",
+    "expansion": "Base Game",
+    "real_world": "Argentina's port capital on the Río de la Plata.",
+    "best_for": [
+     "trajan",
+     "montezuma",
+     "matthias-corvinus"
+    ]
+   },
+   {
+    "slug": "cardiff",
+    "name": "Cardiff",
+    "type": "Industrial",
+    "suzerain_bonus": "Cities receive +2 Power for every Harbor building.",
+    "expansion": "Gathering Storm",
+    "real_world": "The Welsh capital, once the busiest coal port in the world.",
+    "best_for": [
+     "victoria",
+     "harald-hardrada"
+    ]
+   },
+   {
+    "slug": "hong-kong",
+    "name": "Hong Kong",
+    "type": "Industrial",
+    "suzerain_bonus": "+20% Production toward city projects.",
+    "expansion": "Base Game",
+    "real_world": "A trading port on the South China coast, British from 1842 to 1997.",
+    "best_for": [
+     "seondeok",
+     "yongle"
+    ]
+   },
+   {
+    "slug": "johannesburg",
+    "name": "Johannesburg",
+    "type": "Industrial",
+    "suzerain_bonus": "+1 Production per improved resource type in each city, +2 after Industrialization.",
+    "expansion": "Gathering Storm",
+    "real_world": "South Africa's gold-rush city, founded in 1886 on the Witwatersrand.",
+    "best_for": [
+     "frederick-barbarossa",
+     "shaka",
+     "victoria"
+    ]
+   },
+   {
+    "slug": "mexico-city",
+    "name": "Mexico City",
+    "type": "Industrial",
+    "suzerain_bonus": "Regional effects from Industrial Zones, Water Parks and Entertainment Complexes reach 3 tiles farther.",
+    "expansion": "Gathering Storm",
+    "real_world": "Built by the Spanish on the ruins of Tenochtitlan.",
+    "best_for": [
+     "frederick-barbarossa",
+     "trajan"
+    ]
+   },
+   {
+    "slug": "singapore",
+    "name": "Singapore",
+    "type": "Industrial",
+    "suzerain_bonus": "+2 Production in each city for each foreign civilization it has a Trade Route to.",
+    "expansion": "Gathering Storm",
+    "real_world": "A port city-state at the tip of the Malay peninsula.",
+    "best_for": [
+     "dido",
+     "mansa-musa",
+     "joao-iii"
+    ]
+   },
+   {
+    "slug": "akkad",
+    "name": "Akkad",
+    "type": "Militaristic",
+    "suzerain_bonus": "Melee and anti-cavalry attacks do full damage to city Walls.",
+    "expansion": "Gathering Storm",
+    "real_world": "Sargon's capital in Mesopotamia, the first empire, its site still unfound.",
+    "best_for": [
+     "gilgamesh",
+     "shaka",
+     "alexander"
+    ]
+   },
+   {
+    "slug": "granada",
+    "name": "Granada",
+    "type": "Militaristic",
+    "suzerain_bonus": "Builders can build the Alcázar improvement: Culture and defence.",
+    "expansion": "Rise and Fall",
+    "real_world": "The last Muslim kingdom in Spain, surrendered in 1492.",
+    "best_for": [
+     "philip-ii",
+     "saladin"
+    ]
+   },
+   {
+    "slug": "kabul",
+    "name": "Kabul",
+    "type": "Militaristic",
+    "suzerain_bonus": "Units receive double experience from battles they initiate.",
+    "expansion": "Base Game",
+    "real_world": "Capital of Afghanistan, on the road between Persia and India.",
+    "best_for": [
+     "shaka",
+     "alexander",
+     "tomyris",
+     "cyrus"
+    ]
+   },
+   {
+    "slug": "lahore",
+    "name": "Lahore",
+    "type": "Militaristic",
+    "suzerain_bonus": "Cities can train Nihang units, bought with Faith and promoted on their own tree.",
+    "expansion": "Gathering Storm",
+    "real_world": "Capital of the Sikh empire under Ranjit Singh, now in Pakistan.",
+    "best_for": [
+     "basil-ii",
+     "philip-ii"
+    ]
+   },
+   {
+    "slug": "ngazargamu",
+    "name": "Ngazargamu",
+    "type": "Militaristic",
+    "suzerain_bonus": "Land combat and support units are 20% cheaper to buy with Gold for each Encampment building in the city.",
+    "expansion": "Gathering Storm",
+    "real_world": "Capital of the Kanem-Bornu empire near Lake Chad.",
+    "best_for": [
+     "mansa-musa",
+     "suleiman"
+    ]
+   },
+   {
+    "slug": "preslav",
+    "name": "Preslav",
+    "type": "Militaristic",
+    "suzerain_bonus": "+2 Loyalty per turn in cities for each Encampment building.",
+    "expansion": "Base Game",
+    "real_world": "Capital of the First Bulgarian Empire in its golden age.",
+    "best_for": [
+     "eleanor-of-aquitaine",
+     "trajan",
+     "montezuma"
+    ]
+   },
+   {
+    "slug": "valletta",
+    "name": "Valletta",
+    "type": "Militaristic",
+    "suzerain_bonus": "City Center and Encampment buildings can be bought with Faith; walls are cheaper.",
+    "expansion": "Base Game",
+    "real_world": "The fortress capital the Knights of St John built on Malta after the siege of 1565.",
+    "best_for": [
+     "jadwiga",
+     "peter",
+     "philip-ii",
+     "gitarja"
+    ]
+   },
+   {
+    "slug": "wolin",
+    "name": "Wolin",
+    "type": "Militaristic",
+    "suzerain_bonus": "Great General points for land kills and Great Admiral points for naval kills against major or minor civilizations.",
+    "expansion": "Gathering Storm",
+    "real_world": "A Viking-age trading town on the Baltic coast of Poland.",
+    "best_for": [
+     "harald-hardrada",
+     "genghis-khan"
+    ]
+   },
+   {
+    "slug": "bandar-brunei",
+    "name": "Bandar Brunei",
+    "type": "Trade",
+    "suzerain_bonus": "Trading Posts in foreign cities give +1 Gold to Trade Routes passing through or ending there.",
+    "expansion": "Gathering Storm",
+    "real_world": "The sultanate's capital on the north coast of Borneo.",
+    "best_for": [
+     "dido",
+     "yongle"
+    ]
+   },
+   {
+    "slug": "cahokia",
+    "name": "Cahokia",
+    "type": "Trade",
+    "suzerain_bonus": "Builders can build the Cahokia Mounds improvement: Gold, Food and Housing.",
+    "expansion": "Gathering Storm",
+    "real_world": "The largest city north of Mexico before Columbus, a mound city on the Mississippi.",
+    "best_for": [
+     "teddy-roosevelt",
+     "wilfrid-laurier"
+    ]
+   },
+   {
+    "slug": "hunza",
+    "name": "Hunza",
+    "type": "Trade",
+    "suzerain_bonus": "Trade Routes generate +1 Gold for every 5 tiles they travel.",
+    "expansion": "Gathering Storm",
+    "real_world": "A mountain principality on the Silk Road in northern Pakistan.",
+    "best_for": [
+     "mansa-musa",
+     "dido",
+     "joao-iii"
+    ]
+   },
+   {
+    "slug": "mogadishu",
+    "name": "Mogadishu",
+    "type": "Trade",
+    "suzerain_bonus": "Traders are immune to plunder on water tiles.",
+    "expansion": "Gathering Storm",
+    "real_world": "A Somali port that traded with Arabia, Persia and China for a thousand years.",
+    "best_for": [
+     "joao-iii",
+     "dido"
+    ]
+   },
+   {
+    "slug": "muscat",
+    "name": "Muscat",
+    "type": "Trade",
+    "suzerain_bonus": "+1 Amenity in cities with a Commercial Hub.",
+    "expansion": "Gathering Storm",
+    "real_world": "Oman's capital, a port on the Gulf of Oman held by Portugal in the sixteenth century.",
+    "best_for": [
+     "mansa-musa",
+     "tokugawa"
+    ]
+   },
+   {
+    "slug": "samarkand",
+    "name": "Samarkand",
+    "type": "Trade",
+    "suzerain_bonus": "Builders can build the Trading Dome improvement: Gold, more on Commercial Hub adjacency.",
+    "expansion": "Gathering Storm",
+    "real_world": "Timur's capital on the Silk Road, with the Registan at its heart.",
+    "best_for": [
+     "mansa-musa",
+     "genghis-khan"
+    ]
+   },
+   {
+    "slug": "venice",
+    "name": "Venice",
+    "type": "Trade",
+    "suzerain_bonus": "Trade Routes to foreign cities earn +1 Gold for each Luxury at the destination.",
+    "expansion": "Gathering Storm",
+    "real_world": "The maritime republic that ruled the eastern Mediterranean trade for five centuries.",
+    "best_for": [
+     "dido",
+     "joao-iii",
+     "yongle"
+    ]
+   },
+   {
+    "slug": "zanzibar",
+    "name": "Zanzibar",
+    "type": "Trade",
+    "suzerain_bonus": "Receive the Cinnamon and Cloves luxuries, 6 Amenities each, available nowhere else.",
+    "expansion": "Base Game",
+    "real_world": "The spice island off Tanzania, seat of the Omani sultans.",
+    "best_for": [
+     "trajan",
+     "montezuma",
+     "suleiman"
+    ]
+   }
+  ],
+  "strategy": [
+   "Spend the first three envoys on one city-state, not one each: suzerainty is the prize and three is the threshold.",
+   "A Scientific or Industrial city-state next to the AI will be contested; a Religious or Cultural one will usually be yours for six envoys all game.",
+   "Levy a city-state's army when a war is already won on paper and you need bodies, or when a militaristic neighbour is about to take the city-state itself.",
+   "Quests are free envoys. Check them every ten turns; most are things you were about to do.",
+   "A city-state that a rival conquers stops paying everyone. Gorgo, Pericles and Suleiman all want the Kumasi or Valletta on their border alive."
+  ],
+  "image": "images/sections/city-states.jpg",
+  "sources": [
+   "https://eatyourburger.neocities.org/civ6/abilities/city-states/",
+   "https://gamerant.com/civilization-6-best-city-states-to-suzerain/"
+  ],
+  "imageCredit": "section-city-states"
+ },
+ "pantheons": {
+  "overview": "A pantheon is the first belief, bought with the first twenty-five Faith and held for the whole game. One per civilization, chosen from a list that empties as rivals pick. It affects only your own cities and never leaves them, which is why the right pantheon is the one that matches the ground you settled, not the one that sounds strongest.",
+  "pantheons": [
+   {
+    "slug": "city-patron-goddess",
+    "name": "City Patron Goddess",
+    "effect": "+25% Production toward districts in cities without a specialty district.",
+    "terrain_tags": [
+     "none"
+    ],
+    "category": "production",
+    "best_for": [
+     "trajan",
+     "hojo-tokimune",
+     "victoria"
+    ],
+    "note": "Every new city builds its first district faster; strongest for wide, fast-settling empires."
+   },
+   {
+    "slug": "dance-of-the-aurora",
+    "name": "Dance of the Aurora",
+    "effect": "Holy Site districts get +1 Faith for each adjacent Tundra tile.",
+    "terrain_tags": [
+     "tundra",
+     "tundra-hills"
+    ],
+    "category": "faith",
+    "best_for": [
+     "peter",
+     "wilfrid-laurier",
+     "harald-hardrada"
+    ],
+    "note": "Russia's pantheon in all but name: the Lavra stacks it on top of its own tundra bonus."
+   },
+   {
+    "slug": "desert-folklore",
+    "name": "Desert Folklore",
+    "effect": "Holy Site districts get +1 Faith for each adjacent Desert tile.",
+    "terrain_tags": [
+     "desert",
+     "desert-hills"
+    ],
+    "category": "faith",
+    "best_for": [
+     "saladin",
+     "mansa-musa",
+     "amanitore"
+    ],
+    "note": "Turns a desert start into a faith start. Combine with Petra for the best desert city in the game."
+   },
+   {
+    "slug": "divine-spark",
+    "name": "Divine Spark",
+    "effect": "+1 Great Person point from Holy Sites (Prophet), Campuses with a Library (Scientist) and Theater Squares with an Amphitheater (Writer).",
+    "terrain_tags": [
+     "none"
+    ],
+    "category": "great-people",
+    "best_for": [
+     "pedro-ii",
+     "kristina",
+     "seondeok"
+    ],
+    "note": "A quiet pantheon that compounds; pick it when the land offers nothing to exploit."
+   },
+   {
+    "slug": "earth-goddess",
+    "name": "Earth Goddess",
+    "effect": "+1 Faith from tiles with Breathtaking Appeal.",
+    "terrain_tags": [
+     "mountains",
+     "coast",
+     "woods"
+    ],
+    "category": "faith",
+    "best_for": [
+     "kupe",
+     "teddy-roosevelt",
+     "pachacuti"
+    ],
+    "note": "Strong wherever mountains, coast and woods raise appeal; weak in flat farmland."
+   },
+   {
+    "slug": "fertility-rites",
+    "name": "Fertility Rites",
+    "effect": "City growth rate +10%, and a free Builder in the city that founded the pantheon.",
+    "terrain_tags": [
+     "none"
+    ],
+    "category": "growth",
+    "best_for": [
+     "cleopatra",
+     "jayavarman-vii",
+     "gitarja"
+    ],
+    "note": "The free Builder is worth more than the growth. A default when nothing else fits."
+   },
+   {
+    "slug": "fire-goddess",
+    "name": "Fire Goddess",
+    "effect": "+2 Faith from Geothermal Fissures and Volcanic Soil (Gathering Storm).",
+    "terrain_tags": [
+     "geothermal-fissure",
+     "volcanic-soil",
+     "volcano"
+    ],
+    "category": "faith",
+    "best_for": [
+     "matthias-corvinus",
+     "trajan",
+     "lautaro"
+    ],
+    "note": "Only worth it with two or more fissures or volcanoes in reach of the capital."
+   },
+   {
+    "slug": "god-of-craftsmen",
+    "name": "God of Craftsmen",
+    "effect": "+1 Production from improved Strategic resources.",
+    "terrain_tags": [
+     "none"
+    ],
+    "category": "production",
+    "best_for": [
+     "frederick-barbarossa",
+     "genghis-khan",
+     "tomyris"
+    ],
+    "note": "Horses, Iron and Niter mines all count; a cavalry civilization with Horses in the capital takes it."
+   },
+   {
+    "slug": "god-of-healing",
+    "name": "God of Healing",
+    "effect": "+30 healing for units adjacent to a Holy Site.",
+    "terrain_tags": [
+     "none"
+    ],
+    "category": "military",
+    "best_for": [
+     "basil-ii",
+     "philip-ii",
+     "gandhi"
+    ],
+    "note": "A defensive pantheon for a faith civilization; the Holy Site becomes a field hospital."
+   },
+   {
+    "slug": "god-of-the-forge",
+    "name": "God of the Forge",
+    "effect": "+25% Production toward Ancient and Classical era military units.",
+    "terrain_tags": [
+     "none"
+    ],
+    "category": "military",
+    "best_for": [
+     "gilgamesh",
+     "alexander",
+     "cyrus",
+     "montezuma"
+    ],
+    "note": "The Spike pantheon: faster War-Carts, faster Hypaspists, faster everything the window needs."
+   },
+   {
+    "slug": "god-of-the-open-sky",
+    "name": "God of the Open Sky",
+    "effect": "+1 Culture from Pastures.",
+    "terrain_tags": [
+     "grassland",
+     "plains"
+    ],
+    "category": "culture",
+    "best_for": [
+     "tomyris",
+     "genghis-khan",
+     "shaka"
+    ],
+    "note": "Scythia and Mongolia start among horses and sheep; the pastures pay civics from turn ten."
+   },
+   {
+    "slug": "god-of-the-sea",
+    "name": "God of the Sea",
+    "effect": "+1 Production from Fishing Boats.",
+    "terrain_tags": [
+     "coast",
+     "ocean",
+     "reef"
+    ],
+    "category": "production",
+    "best_for": [
+     "harald-hardrada",
+     "kupe",
+     "dido",
+     "gitarja"
+    ],
+    "note": "Coastal cities with four or more sea resources build like inland ones. The Māori take it by reflex."
+   },
+   {
+    "slug": "god-of-war",
+    "name": "God of War",
+    "effect": "Bonus Faith equal to 50% of the Combat Strength of each enemy unit killed within 8 tiles of a Holy Site.",
+    "terrain_tags": [
+     "none"
+    ],
+    "category": "military",
+    "best_for": [
+     "basil-ii",
+     "philip-ii",
+     "saladin"
+    ],
+    "note": "A war of religion pays twice. Build the Holy Site on the border the war will cross."
+   },
+   {
+    "slug": "goddess-of-festivals",
+    "name": "Goddess of Festivals",
+    "effect": "+1 Culture from Plantations.",
+    "terrain_tags": [
+     "rainforest",
+     "grassland",
+     "plains"
+    ],
+    "category": "culture",
+    "best_for": [
+     "pedro-ii",
+     "nzinga-mbande",
+     "catherine-de-medici"
+    ],
+    "note": "Bananas, cocoa, sugar, silk, dyes, spices: a rainforest start with plantations is a culture start."
+   },
+   {
+    "slug": "goddess-of-the-harvest",
+    "name": "Goddess of the Harvest",
+    "effect": "Harvesting a resource or removing a feature grants Faith equal to the yield gained.",
+    "terrain_tags": [
+     "woods",
+     "rainforest",
+     "marsh"
+    ],
+    "category": "faith",
+    "best_for": [
+     "qin-shi-huang",
+     "hojo-tokimune",
+     "lady-six-sky"
+    ],
+    "note": "Chop a forest, bank the faith. Strong with Magnus and extra Builder charges."
+   },
+   {
+    "slug": "goddess-of-the-hunt",
+    "name": "Goddess of the Hunt",
+    "effect": "+1 Food and +1 Production from Camps.",
+    "terrain_tags": [
+     "woods",
+     "tundra",
+     "rainforest"
+    ],
+    "category": "growth",
+    "best_for": [
+     "wilfrid-laurier",
+     "peter",
+     "robert-the-bruce"
+    ],
+    "note": "Furs, deer, truffles and ivory; a northern start with three camps grows on it."
+   },
+   {
+    "slug": "initiation-rites",
+    "name": "Initiation Rites",
+    "effect": "+50 Faith for each Barbarian Outpost cleared, and the unit that clears it heals fully.",
+    "terrain_tags": [
+     "none"
+    ],
+    "category": "faith",
+    "best_for": [
+     "gilgamesh",
+     "tomyris",
+     "shaka"
+    ],
+    "note": "For leaders who were going to clear the camps anyway. Expires with the camps."
+   },
+   {
+    "slug": "lady-of-the-reeds-and-marshes",
+    "name": "Lady of the Reeds and Marshes",
+    "effect": "+2 Production from Marsh, Oasis and Desert Floodplains.",
+    "terrain_tags": [
+     "marsh",
+     "oasis",
+     "floodplains"
+    ],
+    "category": "production",
+    "best_for": [
+     "cleopatra",
+     "amanitore",
+     "hammurabi"
+    ],
+    "note": "A Nile start with floodplains on both banks builds wonders on this alone."
+   },
+   {
+    "slug": "monument-to-the-gods",
+    "name": "Monument to the Gods",
+    "effect": "+15% Production toward Ancient and Classical era wonders.",
+    "terrain_tags": [
+     "none"
+    ],
+    "category": "production",
+    "best_for": [
+     "qin-shi-huang",
+     "ludwig-ii",
+     "cleopatra"
+    ],
+    "note": "The wonder-rusher's pantheon; it stops paying after the Classical era."
+   },
+   {
+    "slug": "oral-tradition",
+    "name": "Oral Tradition",
+    "effect": "+1 Culture from Plantations (Gathering Storm: from Bananas, Citrus, Cotton, Dyes, Silk, Spices and Sugar plantations).",
+    "terrain_tags": [
+     "rainforest",
+     "grassland",
+     "plains"
+    ],
+    "category": "culture",
+    "best_for": [
+     "gitarja",
+     "jayavarman-vii",
+     "pedro-ii"
+    ],
+    "note": "Overlaps with Goddess of Festivals by expansion; take whichever your version offers for your resources."
+   },
+   {
+    "slug": "religious-idols",
+    "name": "Religious Idols",
+    "effect": "+2 Faith from Mines over Luxury and Bonus resources.",
+    "terrain_tags": [
+     "grassland-hills",
+     "plains-hills",
+     "desert-hills"
+    ],
+    "category": "faith",
+    "best_for": [
+     "jadwiga",
+     "tamar",
+     "menelik-ii"
+    ],
+    "note": "Hills full of silver, gems and copper become a faith economy without a Holy Site."
+   },
+   {
+    "slug": "religious-settlements",
+    "name": "Religious Settlements",
+    "effect": "Border expansion rate +15%, and a free Settler in the city that founded the pantheon.",
+    "terrain_tags": [
+     "none"
+    ],
+    "category": "growth",
+    "best_for": [
+     "trajan",
+     "hojo-tokimune",
+     "matthias-corvinus"
+    ],
+    "note": "A free Settler is a free city. Taken first in most multiplayer games; take it if it is still there."
+   },
+   {
+    "slug": "river-goddess",
+    "name": "River Goddess",
+    "effect": "+2 Amenities and +2 Housing to cities whose Holy Site is adjacent to a river.",
+    "terrain_tags": [
+     "grassland",
+     "plains",
+     "floodplains"
+    ],
+    "category": "growth",
+    "best_for": [
+     "hammurabi",
+     "ba-trieu",
+     "eleanor-of-aquitaine"
+    ],
+    "note": "Two amenities per city is a whole Entertainment Complex; plan every Holy Site on a river bank."
+   },
+   {
+    "slug": "sacred-path",
+    "name": "Sacred Path",
+    "effect": "Holy Site districts get +1 Faith for each adjacent Rainforest tile.",
+    "terrain_tags": [
+     "rainforest"
+    ],
+    "category": "faith",
+    "best_for": [
+     "jayavarman-vii",
+     "lady-six-sky",
+     "nzinga-mbande"
+    ],
+    "note": "The Khmer pantheon: rainforest Holy Sites stack with the Prasat."
+   },
+   {
+    "slug": "stone-circles",
+    "name": "Stone Circles",
+    "effect": "+2 Faith from Quarries.",
+    "terrain_tags": [
+     "grassland-hills",
+     "plains-hills",
+     "desert"
+    ],
+    "category": "faith",
+    "best_for": [
+     "robert-the-bruce",
+     "jadwiga",
+     "pachacuti"
+    ],
+    "note": "Stone, marble and gypsum in the capital's ring make this the fastest road to a religion."
+   }
+  ],
+  "image": "images/sections/pantheons.jpg",
+  "sources": [
+   "https://www.thegamer.com/civilization-6-best-pantheons/",
+   "https://gamerant.com/civilization-6-best-pantheons-ranked/"
+  ],
+  "imageCredit": "section-pantheons"
+ },
+ "terrain": {
+  "overview": "Every tile on the map is a terrain, sometimes carrying a feature. Terrain sets the base yields, the movement cost and what can be built; features add to or replace them. A city's first fifteen turns are decided by the six tiles around the settler. Each leader on this roster has ground that suits the kit, and the start bias is the game telling you where it expects the kit to be played.",
+  "terrain": [
+   {
+    "slug": "grassland",
+    "name": "Grassland",
+    "kind": "terrain",
+    "yields": {
+     "food": 2
+    },
+    "movement_cost": 1,
+    "defense": 0,
+    "appeal": "none",
+    "passable": true,
+    "districts": true,
+    "expansion": "Base Game",
+    "notes": "The most forgiving ground in the game. Farms stack food, and a grassland river is where most capitals want to be. Low production is the cost: pair it with hills or woods.",
+    "image": "images/terrain/grassland.jpg"
+   },
+   {
+    "slug": "grassland-hills",
+    "name": "Grassland Hills",
+    "kind": "terrain",
+    "yields": {
+     "food": 2,
+     "production": 1
+    },
+    "movement_cost": 2,
+    "defense": 3,
+    "appeal": "none",
+    "passable": true,
+    "districts": true,
+    "expansion": "Base Game",
+    "notes": "Food and production on one tile, a defensive bonus and a mine site. The best single tile to settle on: a city on a hill sees further and shoots further.",
+    "image": "images/terrain/grassland-hills.jpg"
+   },
+   {
+    "slug": "plains",
+    "name": "Plains",
+    "kind": "terrain",
+    "yields": {
+     "food": 1,
+     "production": 1
+    },
+    "movement_cost": 1,
+    "defense": 0,
+    "appeal": "none",
+    "passable": true,
+    "districts": true,
+    "expansion": "Base Game",
+    "notes": "Balanced yields that favour building over growing. Plains with wheat or a river make a production capital; bare plains make a slow one.",
+    "image": "images/terrain/plains.jpg"
+   },
+   {
+    "slug": "plains-hills",
+    "name": "Plains Hills",
+    "kind": "terrain",
+    "yields": {
+     "food": 1,
+     "production": 2
+    },
+    "movement_cost": 2,
+    "defense": 3,
+    "appeal": "none",
+    "passable": true,
+    "districts": true,
+    "expansion": "Base Game",
+    "notes": "The production tile. A capital on plains hills builds its first settler five turns sooner. Mines on these win the wonder race.",
+    "image": "images/terrain/plains-hills.jpg"
+   },
+   {
+    "slug": "desert",
+    "name": "Desert",
+    "kind": "terrain",
+    "yields": {},
+    "movement_cost": 1,
+    "defense": 0,
+    "appeal": "none",
+    "passable": true,
+    "districts": true,
+    "expansion": "Base Game",
+    "notes": "Nothing, until something makes it pay: Desert Folklore, Petra, floodplains, Mali's Suguba or Nubia's pyramids. Desert cities need a river or an oasis to exist and a plan to matter.",
+    "image": "images/terrain/desert.jpg"
+   },
+   {
+    "slug": "desert-hills",
+    "name": "Desert Hills",
+    "kind": "terrain",
+    "yields": {
+     "production": 1
+    },
+    "movement_cost": 2,
+    "defense": 3,
+    "appeal": "none",
+    "passable": true,
+    "districts": true,
+    "expansion": "Base Game",
+    "notes": "A mine site in the sand. Petra turns these into the best tiles in the game; without it they are defensible and poor.",
+    "image": "images/terrain/desert-hills.jpg"
+   },
+   {
+    "slug": "tundra",
+    "name": "Tundra",
+    "kind": "terrain",
+    "yields": {
+     "food": 1
+    },
+    "movement_cost": 1,
+    "defense": 0,
+    "appeal": "none",
+    "passable": true,
+    "districts": true,
+    "expansion": "Base Game",
+    "notes": "One food and nothing else, but furs, deer and the Dance of the Aurora pantheon live here. Russia and Canada are built to settle it; everyone else settles it last.",
+    "image": "images/terrain/tundra.jpg"
+   },
+   {
+    "slug": "tundra-hills",
+    "name": "Tundra Hills",
+    "kind": "terrain",
+    "yields": {
+     "food": 1,
+     "production": 1
+    },
+    "movement_cost": 2,
+    "defense": 3,
+    "appeal": "none",
+    "passable": true,
+    "districts": true,
+    "expansion": "Base Game",
+    "notes": "A hill in the cold. With a Lavra beside it and a mine on it, Russia makes a city here that an ordinary empire could not feed.",
+    "image": "images/terrain/tundra-hills.jpg"
+   },
+   {
+    "slug": "snow",
+    "name": "Snow",
+    "kind": "terrain",
+    "yields": {},
+    "movement_cost": 1,
+    "defense": 0,
+    "appeal": "none",
+    "passable": true,
+    "districts": true,
+    "expansion": "Base Game",
+    "notes": "No yields. A tile to cross, not to work. Oil appears under it late, and Canada can farm beside it; no one else should settle within three tiles of it.",
+    "image": "images/terrain/snow.jpg"
+   },
+   {
+    "slug": "snow-hills",
+    "name": "Snow Hills",
+    "kind": "terrain",
+    "yields": {
+     "production": 1
+    },
+    "movement_cost": 2,
+    "defense": 3,
+    "appeal": "none",
+    "passable": true,
+    "districts": true,
+    "expansion": "Base Game",
+    "notes": "One production on a frozen hill. Mines are possible; cities are not worth it unless the Amundsen-Scott station or a late strategic resource is the aim.",
+    "image": "images/terrain/snow-hills.jpg"
+   },
+   {
+    "slug": "mountains",
+    "name": "Mountains",
+    "kind": "terrain",
+    "yields": {},
+    "movement_cost": "impassable",
+    "defense": 0,
+    "appeal": "+1 to adjacent tiles",
+    "passable": false,
+    "districts": false,
+    "expansion": "Base Game",
+    "notes": "Impassable until Mountain Tunnels, but the best neighbour a district can have: +1 Science to an adjacent Campus, +1 Faith to a Holy Site, and the Inca farm them directly with Terrace Farms. Aqueducts draw fresh water from them.",
+    "image": "images/terrain/mountains.jpg"
+   },
+   {
+    "slug": "coast",
+    "name": "Coast",
+    "kind": "terrain",
+    "yields": {
+     "food": 1,
+     "gold": 1
+    },
+    "movement_cost": 1,
+    "defense": 0,
+    "appeal": "+1 to adjacent land (Breathtaking coast later makes resorts)",
+    "passable": true,
+    "districts": false,
+    "expansion": "Base Game",
+    "notes": "Harbors, fishing boats, sea trade and the Great Lighthouse. A coastal capital grows slower on land but reaches the world sooner. Shallow water takes Harbors; ocean does not.",
+    "image": "images/terrain/coast.jpg"
+   },
+   {
+    "slug": "ocean",
+    "name": "Ocean",
+    "kind": "terrain",
+    "yields": {
+     "food": 1
+    },
+    "movement_cost": 1,
+    "defense": 0,
+    "appeal": "none",
+    "passable": true,
+    "districts": false,
+    "expansion": "Base Game",
+    "notes": "Deep water, impassable to ships until Cartography. One food and whales, fish or oil. Auckland and the Māori make it productive; for most it is distance.",
+    "image": "images/terrain/ocean.jpg"
+   },
+   {
+    "slug": "lake",
+    "name": "Lake",
+    "kind": "terrain",
+    "yields": {
+     "food": 1,
+     "gold": 1
+    },
+    "movement_cost": 1,
+    "defense": 0,
+    "appeal": "+1 to adjacent tiles",
+    "passable": true,
+    "districts": false,
+    "expansion": "Base Game",
+    "notes": "Fresh water without a river: a city on a lake starts with the housing a river gives. Lakes raise appeal and take fishing boats. Nan Madol counts them as coast for its bonus.",
+    "image": "images/terrain/lake.jpg"
+   },
+   {
+    "slug": "woods",
+    "name": "Woods",
+    "kind": "feature",
+    "yields": {
+     "production": 1
+    },
+    "movement_cost": 2,
+    "defense": 3,
+    "appeal": "+1 to adjacent tiles",
+    "passable": true,
+    "districts": true,
+    "expansion": "Base Game",
+    "notes": "Production on any terrain, a defensive bonus, lumber mills later, and a chop worth thirty or more production now. Holy Sites gain faith from woods; Campuses do not. Woods regrow with Conservation.",
+    "image": "images/terrain/woods.jpg"
+   },
+   {
+    "slug": "rainforest",
+    "name": "Rainforest",
+    "kind": "feature",
+    "yields": {
+     "food": 1,
+     "production": 1
+    },
+    "movement_cost": 2,
+    "defense": 3,
+    "appeal": "-1 to adjacent tiles",
+    "passable": true,
+    "districts": true,
+    "expansion": "Base Game",
+    "notes": "Food and production with a movement penalty and a hit to appeal. Campuses gain science from rainforest, the Khmer Prasat and Sacred Path gain faith from it, and Brazil's Street Carnival gets its culture from the plantations in it. Chop it or keep it; do not ignore it.",
+    "image": "images/terrain/rainforest.jpg"
+   },
+   {
+    "slug": "marsh",
+    "name": "Marsh",
+    "kind": "feature",
+    "yields": {
+     "food": 1
+    },
+    "movement_cost": 2,
+    "defense": -2,
+    "appeal": "-1 to adjacent tiles",
+    "passable": true,
+    "districts": false,
+    "expansion": "Base Game",
+    "notes": "Slow, weak and ugly, until the Lady of the Reeds and Marshes turns each one into two production. Marsh cannot hold a district; clear it with a Builder once Irrigation is known, or plant rice in it.",
+    "image": "images/terrain/marsh.jpg"
+   },
+   {
+    "slug": "floodplains",
+    "name": "Floodplains",
+    "kind": "feature",
+    "yields": {
+     "food": 3
+    },
+    "movement_cost": 2,
+    "defense": -2,
+    "appeal": "-1 to adjacent tiles",
+    "passable": true,
+    "districts": true,
+    "expansion": "Base Game (grassland and plains floodplains added in Gathering Storm)",
+    "notes": "Three food on desert, and floods that pillage improvements and then leave the soil richer. Egypt builds districts on them for free of the flood risk. A Nile start is the best farmland in the game once a dam holds the river.",
+    "image": "images/terrain/floodplains.jpg"
+   },
+   {
+    "slug": "oasis",
+    "name": "Oasis",
+    "kind": "feature",
+    "yields": {
+     "food": 3,
+     "gold": 1
+    },
+    "movement_cost": 1,
+    "defense": 0,
+    "appeal": "+1 to adjacent tiles",
+    "passable": true,
+    "districts": false,
+    "expansion": "Base Game",
+    "notes": "The one reason to settle open desert: fresh water and three food on a single tile. Cities beside an oasis start with full housing. Cannot hold a district or a farm.",
+    "image": "images/terrain/oasis.jpg"
+   },
+   {
+    "slug": "reef",
+    "name": "Reef",
+    "kind": "feature",
+    "yields": {
+     "food": 1,
+     "production": 1
+    },
+    "movement_cost": 2,
+    "defense": 3,
+    "appeal": "+1 to adjacent tiles",
+    "passable": true,
+    "districts": false,
+    "expansion": "Base Game",
+    "notes": "A sea tile with production. Campuses gain +1 Science from each adjacent reef, and ships defending on one get a bonus. The Great Barrier Reef counts as reef for every purpose.",
+    "image": "images/terrain/reef.jpg"
+   },
+   {
+    "slug": "ice",
+    "name": "Ice",
+    "kind": "feature",
+    "yields": {},
+    "movement_cost": "impassable",
+    "defense": 0,
+    "appeal": "none",
+    "passable": false,
+    "districts": false,
+    "expansion": "Base Game",
+    "notes": "Impassable sea ice at the poles, which recedes as the world warms in Gathering Storm. It blocks naval routes until the Industrial era melts a passage. Nothing lives here but the Amundsen-Scott station.",
+    "image": "images/terrain/ice.jpg"
+   },
+   {
+    "slug": "geothermal-fissure",
+    "name": "Geothermal Fissure",
+    "kind": "feature",
+    "yields": {
+     "science": 1
+    },
+    "movement_cost": 1,
+    "defense": 0,
+    "appeal": "+1 to adjacent tiles",
+    "passable": true,
+    "districts": false,
+    "expansion": "Gathering Storm",
+    "notes": "A vent of heat that a Geothermal Plant can turn into clean power late in the game, and that Hungary's start bias seeks out. Fire Goddess gives it faith. Rare, and worth planning a city around.",
+    "image": "images/terrain/geothermal-fissure.jpg"
+   },
+   {
+    "slug": "volcano",
+    "name": "Volcano",
+    "kind": "feature",
+    "yields": {},
+    "movement_cost": "impassable",
+    "defense": 0,
+    "appeal": "+1 to adjacent tiles (+2 when active)",
+    "passable": false,
+    "districts": false,
+    "expansion": "Gathering Storm",
+    "notes": "A mountain that erupts. Each eruption pillages the ring around it and leaves volcanic soil behind, richer than what was there. Cities two tiles away take the gift and skip most of the damage. Rapa Nui's start bias puts it beside one.",
+    "image": "images/terrain/volcano.jpg"
+   },
+   {
+    "slug": "volcanic-soil",
+    "name": "Volcanic Soil",
+    "kind": "feature",
+    "yields": {
+     "food": 1,
+     "production": 1
+    },
+    "movement_cost": 1,
+    "defense": 0,
+    "appeal": "none",
+    "passable": true,
+    "districts": true,
+    "expansion": "Gathering Storm",
+    "notes": "What an eruption leaves: extra food and production on top of the terrain beneath, stacking with each eruption up to a limit. The reason to settle near a volcano and the reason to keep a Builder close.",
+    "image": "images/terrain/volcanic-soil.jpg"
+   }
+  ],
+  "glossary": [
+   {
+    "term": "Hills",
+    "text": "Any terrain can be hilly. Hills add +1 Production, cost 2 Movement, give defenders +3 Combat Strength, and let a city see and shoot one tile further. Mines go on hills."
+   },
+   {
+    "term": "Rivers",
+    "text": "A river runs along tile edges, not through tiles. It gives fresh water (housing), +1 Gold to a Commercial Hub adjacent to it, +2 to a Commercial Hub adjacent to a river and a Harbor, and crossing one mid-attack costs the attacker combat strength. Floods along rivers in Gathering Storm pillage and then enrich."
+   },
+   {
+    "term": "Appeal",
+    "text": "A tile's attractiveness, from -4 to +4 and beyond. Mountains, coast, woods, natural wonders and Holy Sites raise it; rainforest, marsh, floodplains, mines and Industrial Zones lower it. Breathtaking appeal (4+) allows National Parks and Seaside Resorts, feeds Earth Goddess faith, and grows Neighborhood housing."
+   },
+   {
+    "term": "Adjacency",
+    "text": "A district's bonus from its neighbours. Campus: mountains, reefs, rainforest, other districts. Holy Site: mountains, woods, natural wonders, districts. Industrial Zone: mines, quarries, aqueducts, dams. Commercial Hub: rivers, harbors, districts. Theater Square: wonders, districts. A +3 adjacency district is a historic moment."
+   },
+   {
+    "term": "Start bias",
+    "text": "Each civilization has terrain it is more likely to start near, in tiers from 1 (strongest) to 5 (weakest). It is a probability, not a promise: Russia usually starts near tundra, Mali near desert, Norway near coast, the Inca near mountains, and a bad roll can give any of them a grassland start."
+   }
+  ],
+  "sources": [
+   "https://forums.civfanatics.com/threads/gathering-storm-start-biases-from-xml-file.642006/",
+   "https://steamcommunity.com/sharedfiles/filedetails/?id=1688993712"
+  ]
+ },
+ "credits": [
+  {
+   "id": "hero-alexander",
+   "file": "images/heroes/alexander.jpg",
+   "caption": "Alexander Mosaic Battle of Issus Pompeii",
+   "commons_title": "File:Alexander the Great mosaic.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Alexander_the_Great_mosaic.jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Unknown author",
+   "description": "Alexander Mosaic (detail), House of the Faun, Pompeii",
+   "original_width": 2560,
+   "original_height": 1536
+  },
+  {
+   "id": "hero-amanitore",
+   "file": "images/heroes/amanitore.jpg",
+   "caption": "The pyramids of Meroë, Sudan",
+   "commons_title": "File:Amanitore pyramid.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Amanitore_pyramid.jpg",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "",
+   "author": "The original uploader was Lassi at Hungarian Wikipedia.",
+   "description": "Amanitore pyramid. N1",
+   "original_width": 2816,
+   "original_height": 2120
+  },
+  {
+   "id": "hero-ambiorix",
+   "file": "images/heroes/ambiorix.jpg",
+   "caption": "Tongeren Ambiorix statue",
+   "commons_title": "File:Tongres ambiorix.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Tongres_ambiorix.jpg",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Velvet",
+   "description": "Statue of Ambiorix in Tongeren.",
+   "original_width": 3591,
+   "original_height": 2640
+  },
+  {
+   "id": "hero-ba-trieu",
+   "file": "images/heroes/ba-trieu.jpg",
+   "caption": "The temple of Bà Triệu, Thanh Hóa",
+   "commons_title": "File:Ba trieu cuoi voi.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Ba_trieu_cuoi_voi.jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "",
+   "description": "Dong Ho painting \"Mrs. Trieu rides an elephant\"",
+   "original_width": 1920,
+   "original_height": 2442
+  },
+  {
+   "id": "hero-basil-ii",
+   "file": "images/heroes/basil-ii.jpg",
+   "caption": "The Byzantine victory at Kleidion, Madrid Skylitzes",
+   "commons_title": "File:The Chronicle of Ioannis Skylitzis Bulagar Defeat.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:The_Chronicle_of_Ioannis_Skylitzis_Bulagar_Defeat.jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "",
+   "description": "",
+   "original_width": 1180,
+   "original_height": 533
+  },
+  {
+   "id": "hero-catherine-de-medici",
+   "file": "images/heroes/catherine-de-medici.jpg",
+   "caption": "The Brazilian ball for Henry II and Catherine at Rouen, 1550",
+   "commons_title": "File:Brazilian ball for Henry II in Rouen October 1 1550.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Brazilian_ball_for_Henry_II_in_Rouen_October_1_1550.jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Anonymous French painter",
+   "description": "Brazilian_ball_for_Henry_II_in_Rouen_October_1_1550",
+   "original_width": 3002,
+   "original_height": 1872
+  },
+  {
+   "id": "hero-chandragupta",
+   "file": "images/heroes/chandragupta.jpg",
+   "caption": "Sanchi Great Stupa",
+   "commons_title": "File:Stupa 1, Sanchi 02.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Stupa_1,_Sanchi_02.jpg",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Bernard Gagnon",
+   "description": "West torana, Stupa 1, Sanchi, India",
+   "original_width": 4953,
+   "original_height": 3302
+  },
+  {
+   "id": "hero-cleopatra",
+   "file": "images/heroes/cleopatra.jpg",
+   "caption": "The Meeting of Antony and Cleopatra, Lawrence Alma-Tadema, 1885",
+   "commons_title": "File:Sir Lawrence Alma-Tadema - The Meeting of Antony and Cleopatra.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Sir_Lawrence_Alma-Tadema_-_The_Meeting_of_Antony_and_Cleopatra.jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Lawrence Alma-Tadema",
+   "description": "لقاء أنطوني وكليوباترا، 41 ق.م.(لوحة بالألوان الزيتية للرسام لورينس تديما)",
+   "original_width": 4000,
+   "original_height": 2838
+  },
+  {
+   "id": "hero-cyrus",
+   "file": "images/heroes/cyrus.jpg",
+   "caption": "The tomb of Cyrus at Pasargadae",
+   "commons_title": "File:Pasargad Tomb Cyrus3.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Pasargad_Tomb_Cyrus3.jpg",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "",
+   "author": "Bernd81",
+   "description": "This is a photo of a monument in Iran identified by the ID",
+   "original_width": 5996,
+   "original_height": 4000
+  },
+  {
+   "id": "hero-dido",
+   "file": "images/heroes/dido.jpg",
+   "caption": "The Meeting of Dido and Aeneas, Nathaniel Dance-Holland, 1766",
+   "commons_title": "File:Sir Nathaniel Dance-Holland - The Meeting of Dido and Aeneas - Google Art Project.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Sir_Nathaniel_Dance-Holland_-_The_Meeting_of_Dido_and_Aeneas_-_Google_Art_Project.jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Nathaniel Dance-Holland",
+   "description": "",
+   "original_width": 2396,
+   "original_height": 1689
+  },
+  {
+   "id": "hero-eleanor-of-aquitaine",
+   "file": "images/heroes/eleanor-of-aquitaine.jpg",
+   "caption": "The effigies of Eleanor and Henry II at Fontevraud",
+   "commons_title": "File:Church of Fontevraud Abbey Eleanor of Aquitaine effigy.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Church_of_Fontevraud_Abbey_Eleanor_of_Aquitaine_effigy.jpg",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "",
+   "author": "Adam Bishop",
+   "description": "Recumbant statue of Eleanor of Aquitaine in the church of Fontevraud Abbey",
+   "original_width": 1920,
+   "original_height": 1080
+  },
+  {
+   "id": "hero-frederick-barbarossa",
+   "file": "images/heroes/frederick-barbarossa.jpg",
+   "caption": "Barbarossa's drowning in the Saleph, Saxon World Chronicle",
+   "commons_title": "File:Emporer Frederic I death.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Emporer_Frederic_I_death.jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "",
+   "description": "",
+   "original_width": 3196,
+   "original_height": 2395
+  },
+  {
+   "id": "hero-gandhi",
+   "file": "images/heroes/gandhi.jpg",
+   "caption": "Gandhi Salt March 1930",
+   "commons_title": "File:Marche sel.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Marche_sel.jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Yann (talk)",
+   "description": "Gandhi during the Salt March, March 1930.",
+   "original_width": 3496,
+   "original_height": 2348
+  },
+  {
+   "id": "hero-genghis-khan",
+   "file": "images/heroes/genghis-khan.jpg",
+   "caption": "The Genghis Khan equestrian statue at Tsonjin Boldog",
+   "commons_title": "File:Dschingis Khan in Zonjin Boldog 02.JPG",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Dschingis_Khan_in_Zonjin_Boldog_02.JPG",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Brücke-Osteuropa",
+   "description": "Dschingis Khan in Zonjin Boldog near Ulan Bator",
+   "original_width": 3328,
+   "original_height": 1872
+  },
+  {
+   "id": "hero-gilgamesh",
+   "file": "images/heroes/gilgamesh.jpg",
+   "caption": "Gilgamesh wrestling animals, Shara Temple vase, Tell Agrab",
+   "commons_title": "File:Gilgamesh in a Sculptured Vase, Shara Temple, Tell Agrab, Iraq.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Gilgamesh_in_a_Sculptured_Vase,_Shara_Temple,_Tell_Agrab,_Iraq.jpg",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "",
+   "author": "Osama Shukir Muhammed Amin FRCP(Glasg)",
+   "description": "Sculptured vase. This stone piece is carved with a scene depicting Gilgamesh wrestling two bulls. Two lions also appear. From the Shara temple at Tell Agrab, Diyala Region, Iraq. Early Dynastic period, 2600-2370 BCE. On display at the Iraq Museum in Baghdad, Iraq.",
+   "original_width": 5452,
+   "original_height": 3479
+  },
+  {
+   "id": "hero-gitarja",
+   "file": "images/heroes/gitarja.jpg",
+   "caption": "Bajang Ratu gate at Trowulan, the Majapahit capital",
+   "commons_title": "File:Eksotika Candi Bajang Ratu.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Eksotika_Candi_Bajang_Ratu.jpg",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "",
+   "author": "Ivuvisual",
+   "description": "Candi Bajang Ratu merupakan salah satu candi peninggalan kerajaan Majapahit, yang tepatnya berada di desa Temon, Kecamatan Trowulan, Mojokerto, Jawa Timur. Berdasarkan namanya, Bajang Ratu diambil dari bahasa jawa yaitu asal kata bajang dan ratu, bajang sendiri artinya kerdil, jadi bajang ratu maksu",
+   "original_width": 2905,
+   "original_height": 1937
+  },
+  {
+   "id": "hero-gorgo",
+   "file": "images/heroes/gorgo.jpg",
+   "caption": "The theatre of ancient Sparta below Mount Taygetus",
+   "commons_title": "File:Menelaion.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Menelaion.jpg",
+   "licence": "CC BY-SA 2.5",
+   "licence_url": "",
+   "author": "Heinz Schmitz",
+   "description": "Das Menelaion bei Sparta",
+   "original_width": 1579,
+   "original_height": 1050
+  },
+  {
+   "id": "hero-hammurabi",
+   "file": "images/heroes/hammurabi.jpg",
+   "caption": "The Code of Hammurabi stele, Louvre",
+   "commons_title": "File:Votive monument to Hammurabi BM 22454 n01.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Votive_monument_to_Hammurabi_BM_22454_n01.jpg",
+   "licence": "CC BY 2.5",
+   "licence_url": "",
+   "author": "Marie-Lan Nguyen",
+   "description": "",
+   "original_width": 2606,
+   "original_height": 2607
+  },
+  {
+   "id": "hero-harald-hardrada",
+   "file": "images/heroes/harald-hardrada.jpg",
+   "caption": "Battle of Stamford Bridge Arbo painting",
+   "commons_title": "File:Arbo - Battle of Stamford Bridge (1870).jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Arbo_-_Battle_of_Stamford_Bridge_(1870).jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Peter Nicolai Arbo",
+   "description": "The Battle of Stamford Bridge",
+   "original_width": 6016,
+   "original_height": 4000
+  },
+  {
+   "id": "hero-hojo-tokimune",
+   "file": "images/heroes/hojo-tokimune.jpg",
+   "caption": "Moko Shurai Ekotoba Mongol invasion scroll",
+   "commons_title": "File:Mōko Shūrai Ekotoba Mongol Invasion Mitsui Sukenaga.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:M%C5%8Dko_Sh%C5%ABrai_Ekotoba_Mongol_Invasion_Mitsui_Sukenaga.jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Tosa Nagataka",
+   "description": "The Battle of Bun'ei (at the Battle of Torikai-Gata, 1274), the samurai Mitsui Sukenaga of the Takezaki clan (right) fires arrows at fleeing Mongolian soldiers of the Allied Forces of the Mongol Empire.",
+   "original_width": 9419,
+   "original_height": 3176
+  },
+  {
+   "id": "hero-jadwiga",
+   "file": "images/heroes/jadwiga.jpg",
+   "caption": "Wawel Cathedral Krakow",
+   "commons_title": "File:Krakow - Wawel Cathedral from balloon - 2.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Krakow_-_Wawel_Cathedral_from_balloon_-_2.jpg",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Ingo Mehling",
+   "description": "Krakow - Wawel Cathedral from captive balloon",
+   "original_width": 5715,
+   "original_height": 3821
+  },
+  {
+   "id": "hero-jayavarman-vii",
+   "file": "images/heroes/jayavarman-vii.jpg",
+   "caption": "Bayon temple faces Angkor Thom",
+   "commons_title": "File:Faces on Prasat Bayon - Angkor Thom (6208401646).jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Faces_on_Prasat_Bayon_-_Angkor_Thom_(6208401646).jpg",
+   "licence": "CC BY 2.0",
+   "licence_url": "https://creativecommons.org/licenses/by/2.0",
+   "author": "Jorge Láscar from Australia",
+   "description": "Angkor Thom (Khmer: \"Great City\"), located in present day Cambodia, was the last and most enduring capital city of the Khmer empire. It was established in the late twelfth century by king Jayavarman VII. It covers an area of 9 km², within which are located several monuments from earlier eras as well",
+   "original_width": 4288,
+   "original_height": 2848
+  },
+  {
+   "id": "hero-joao-iii",
+   "file": "images/heroes/joao-iii.jpg",
+   "caption": "Auto-da-fé at the Terreiro do Paço, Lisbon",
+   "commons_title": "File:Saint Francis Xavier taking leave of King John III (1635) - José Avelar Rebelo.png",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Saint_Francis_Xavier_taking_leave_of_King_John_III_(1635)_-_José_Avelar_Rebelo.png",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "José de Avelar Rebelo",
+   "description": "\"Saint Francis Xavier taking leave of King John III\", dated 1635, by José de Avelar Rebelo. The painting represents St. Francis Xavier taking leave of King John III of Portugal, right before his departure to India on the 9th of April 1541. The Jesuit is knelt before the king while he extends his han",
+   "original_width": 1340,
+   "original_height": 1280
+  },
+  {
+   "id": "hero-john-curtin",
+   "file": "images/heroes/john-curtin.jpg",
+   "caption": "John Curtin with General MacArthur",
+   "commons_title": "File:Curtinmacarthur.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Curtinmacarthur.jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "",
+   "description": "",
+   "original_width": 1065,
+   "original_height": 750
+  },
+  {
+   "id": "hero-kristina",
+   "file": "images/heroes/kristina.jpg",
+   "caption": "Christina of Sweden on horseback, Sébastien Bourdon, 1653",
+   "commons_title": "File:Christina barberini.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Christina_barberini.jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Filippo Gagliardi / Filippo Lauri",
+   "description": "The Festivities in Honor of Queen Christina of Sweden in the Courtyard of Palazzo Barberini, 28 February 1656.",
+   "original_width": 4932,
+   "original_height": 3341
+  },
+  {
+   "id": "hero-kupe",
+   "file": "images/heroes/kupe.jpg",
+   "caption": "The Kupe group statue on the Wellington waterfront",
+   "commons_title": "File:Motukiore Island Hokianga Aotearoa New Zealand.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Motukiore_Island_Hokianga_Aotearoa_New_Zealand.jpg",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "",
+   "author": "LawrieM",
+   "description": "Legend has it that Kupe arrived with the Kiore / Polynesian Rat on board. He wanted a safe, secure location to confine the kiore until the human voyagers could establish themselves. Motukiore Island seemed ideal as it was at hand and sheltered.",
+   "original_width": 4608,
+   "original_height": 3456
+  },
+  {
+   "id": "hero-lady-six-sky",
+   "file": "images/heroes/lady-six-sky.jpg",
+   "caption": "The ruins of Naranjo, Petén",
+   "commons_title": "File:Sitio el naranjo 2.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Sitio_el_naranjo_2.jpg",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "",
+   "author": "Rudy Canales",
+   "description": "fotografia de las estructuras en proceso de restauración sitio arqueologico el naranjo saal Melchor de Mencos Peten, Guatemala",
+   "original_width": 3264,
+   "original_height": 2448
+  },
+  {
+   "id": "hero-lautaro",
+   "file": "images/heroes/lautaro.jpg",
+   "caption": "The young Lautaro, Pedro Subercaseaux, 1946",
+   "commons_title": "File:El joven Lautaro - P. Subercaseaux.PNG",
+   "source_url": "https://commons.wikimedia.org/wiki/File:El_joven_Lautaro_-_P._Subercaseaux.PNG",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Pedro Subercaseaux",
+   "description": "Triptych of \"The Young Lautaro\" by Pedro Subercaseaux",
+   "original_width": 1500,
+   "original_height": 625
+  },
+  {
+   "id": "hero-ludwig-ii",
+   "file": "images/heroes/ludwig-ii.jpg",
+   "caption": "Neuschwanstein Castle",
+   "commons_title": "File:Schloss Neuschwanstein 2013.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Schloss_Neuschwanstein_2013.jpg",
+   "licence": "CC BY-SA 3.0 de",
+   "licence_url": "",
+   "author": "Thomas Wolf, www.foto-tw.de",
+   "description": "Dvorac Neuschwanstein u Schwangauu, Bavarska, Njemačka.",
+   "original_width": 5979,
+   "original_height": 4468
+  },
+  {
+   "id": "hero-mansa-musa",
+   "file": "images/heroes/mansa-musa.jpg",
+   "caption": "The Djinguereber Mosque at Timbuktu, commissioned by Mansa Musa",
+   "commons_title": "File:Mansa Moussa on the map of Angelino Dulcert.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Mansa_Moussa_on_the_map_of_Angelino_Dulcert.jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Angelino Dulcert",
+   "description": "Map by Angelino Dulcert",
+   "original_width": 2186,
+   "original_height": 1662
+  },
+  {
+   "id": "hero-matthias-corvinus",
+   "file": "images/heroes/matthias-corvinus.jpg",
+   "caption": "King Matthias's arrival in Buda, Henrik Weber",
+   "commons_title": "File:Benczúr Gyula – A diadalmas Mátyás.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Benczúr_Gyula_–_A_diadalmas_Mátyás.jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Gyula Benczúr",
+   "description": "The triumphant Matthias",
+   "original_width": 1200,
+   "original_height": 553
+  },
+  {
+   "id": "hero-menelik-ii",
+   "file": "images/heroes/menelik-ii.jpg",
+   "caption": "Menelik II at the head of his army after Adwa",
+   "commons_title": "File:Menelik at the head of his army.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Menelik_at_the_head_of_his_army.jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "AnonymousUnknown author",
+   "description": "Menelik II leading his army before the Battle of Adwa",
+   "original_width": 1502,
+   "original_height": 640
+  },
+  {
+   "id": "hero-montezuma",
+   "file": "images/heroes/montezuma.jpg",
+   "caption": "Moctezuma I, fifth tlatoani of Tenochtitlan, in a colonial codex",
+   "commons_title": "File:Moctezuma I, the Fifth Aztec King.png",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Moctezuma_I,_the_Fifth_Aztec_King.png",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Juan de Tovar",
+   "description": "Coronation",
+   "original_width": 1348,
+   "original_height": 1024
+  },
+  {
+   "id": "hero-nzinga-mbande",
+   "file": "images/heroes/nzinga-mbande.jpg",
+   "caption": "Queen Nzinga negotiating with the Portuguese governor, 1657",
+   "commons_title": "File:Queen Nzinga 1657.png",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Queen_Nzinga_1657.png",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "",
+   "description": "",
+   "original_width": 1438,
+   "original_height": 953
+  },
+  {
+   "id": "hero-pachacuti",
+   "file": "images/heroes/pachacuti.jpg",
+   "caption": "The Inca-Chanka war, Mural of the History of Cusco",
+   "commons_title": "File:Inka Chanka war on Mural of the History of Cusco.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Inka_Chanka_war_on_Mural_of_the_History_of_Cusco.jpg",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "",
+   "author": "AgainErick",
+   "description": "Scene of the Inka Chanka war on Mural of the History of Cusco by Juan Bravo",
+   "original_width": 1385,
+   "original_height": 1306
+  },
+  {
+   "id": "hero-pedro-ii",
+   "file": "images/heroes/pedro-ii.jpg",
+   "caption": "Pedro II opening the General Assembly, Pedro Américo, 1872",
+   "commons_title": "File:Pedro II of Brazil in Egypt 1871.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Pedro_II_of_Brazil_in_Egypt_1871.jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "M. Delie & E. Bechard",
+   "description": "Seated in chairs, from left to right: Auguste Mariette, Dona Josefina da Fonseca Costa, lady-in-waiting of the Empress, Luís Pedreira do Couto Ferraz, Baron and later Vicount of Bom Retiro, Empress Teresa Cristina, an unidentified man and Emperor Dom Pedro II of Brazil, surrounded by local Egyptians",
+   "original_width": 1344,
+   "original_height": 992
+  },
+  {
+   "id": "hero-pericles",
+   "file": "images/heroes/pericles.jpg",
+   "caption": "The Acropolis at Athens, Leo von Klenze, 1846",
+   "commons_title": "File:Akropolis by Leo von Klenze.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Akropolis_by_Leo_von_Klenze.jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Leo von Klenze",
+   "description": "",
+   "original_width": 1486,
+   "original_height": 1018
+  },
+  {
+   "id": "hero-peter",
+   "file": "images/heroes/peter.jpg",
+   "caption": "Peter I at the Battle of Poltava, mosaic by Lomonosov",
+   "commons_title": "File:Lomonosov Poltava 1762 1764.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Lomonosov_Poltava_1762_1764.jpg",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "",
+   "author": "Serge Lachinov (обработка для wiki)",
+   "description": "Battle of Poltava. M. Lomonosov's mosaic. Academy of Sciences. S.-Petersburg. 1762–1764",
+   "original_width": 2980,
+   "original_height": 2063
+  },
+  {
+   "id": "hero-philip-ii",
+   "file": "images/heroes/philip-ii.jpg",
+   "caption": "The Spanish Armada in battle with English warships, late 16th century",
+   "commons_title": "File:Invincible Armada.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Invincible_Armada.jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "anonymous",
+   "description": "English ships and the Spanish Armada, August 1588.\nThe painting may have been a design for a tapestry, or if not is laid out like one, and is dateable to the years immediately following the event. The composition appears less like a painting than as a formal design in a mannered style but no other c",
+   "original_width": 2500,
+   "original_height": 1956
+  },
+  {
+   "id": "hero-qin-shi-huang",
+   "file": "images/heroes/qin-shi-huang.jpg",
+   "caption": "The Terracotta Army of the First Emperor",
+   "commons_title": "File:51714-Terracota-Army.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:51714-Terracota-Army.jpg",
+   "licence": "CC BY 2.0",
+   "licence_url": "",
+   "author": "xiquinhosilva",
+   "description": "Terracotta Army in Xi'an, China",
+   "original_width": 3000,
+   "original_height": 1987
+  },
+  {
+   "id": "hero-robert-the-bruce",
+   "file": "images/heroes/robert-the-bruce.jpg",
+   "caption": "Bruce addresses his troops at Bannockburn, Cassell's History of England",
+   "commons_title": "File:Battle of Bannockburn - Bruce addresses troops.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Battle_of_Bannockburn_-_Bruce_addresses_troops.jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Edmund Blair Leighton",
+   "description": "Bannockburn: Bruce Reviewing His Troops Before the Battle. Note: This is a very anachronistic image; kilts like this did not exist in Bruce's time period, but date to around 1690s–1720s. This image should probably not be used to illustrate Wikipedia articles about Bruce or the Battle of Baccnockburn",
+   "original_width": 2352,
+   "original_height": 1720
+  },
+  {
+   "id": "hero-saladin",
+   "file": "images/heroes/saladin.jpg",
+   "caption": "The Citadel of Saladin, Cairo",
+   "commons_title": "File:Citadel of Salah El.Din.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Citadel_of_Salah_El.Din.jpg",
+   "licence": "CC BY-SA 2.0",
+   "licence_url": "",
+   "author": "Ahmed Al.Badawy from Cairo, Egypt",
+   "description": "الطريق المؤدي لباب العزب في قلعة صلاح الدين الأيوبي ويظهر في الخلفية جامع محمد علي باشا الشهير",
+   "original_width": 3161,
+   "original_height": 2351
+  },
+  {
+   "id": "hero-seondeok",
+   "file": "images/heroes/seondeok.jpg",
+   "caption": "Cheomseongdae observatory, Gyeongju",
+   "commons_title": "File:선덕여왕릉01.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:선덕여왕릉01.jpg",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "",
+   "author": "Posiguy",
+   "description": "선덕여왕릉",
+   "original_width": 3648,
+   "original_height": 2736
+  },
+  {
+   "id": "hero-shaka",
+   "file": "images/heroes/shaka.jpg",
+   "caption": "The Battle of Isandlwana, 1879",
+   "commons_title": "File:Isandhlwana.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Isandhlwana.jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Charles Edwin Fripp",
+   "description": "Battle of Isandhlwana (1879) Natal, South Africa",
+   "original_width": 1200,
+   "original_height": 748
+  },
+  {
+   "id": "hero-simon-bolivar",
+   "file": "images/heroes/simon-bolivar.jpg",
+   "caption": "Bolívar and Santander at the Congress of Cúcuta, 1821",
+   "commons_title": "File:Equestrian portrait of Simón Bolívar.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Equestrian_portrait_of_Simón_Bolívar.jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "José Hilarión Ibarra (fl.1825-1854)",
+   "description": "",
+   "original_width": 1104,
+   "original_height": 1540
+  },
+  {
+   "id": "hero-suleiman",
+   "file": "images/heroes/suleiman.jpg",
+   "caption": "The courtyard of the Süleymaniye Mosque, Istanbul",
+   "commons_title": "File:Cour mosquee Suleymaniye Istanbul.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Cour_mosquee_Suleymaniye_Istanbul.jpg",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "",
+   "author": "Myrabella",
+   "description": "La cour de la mosquée Süleymaniye à Istanbul, en Turquie.",
+   "original_width": 3301,
+   "original_height": 2840
+  },
+  {
+   "id": "hero-tamar",
+   "file": "images/heroes/tamar.jpg",
+   "caption": "The cave monastery of Vardzia",
+   "commons_title": "File:Vardzia Cave Monastery 05.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Vardzia_Cave_Monastery_05.jpg",
+   "licence": "CC BY 4.0",
+   "licence_url": "",
+   "author": "Bernard Gagnon",
+   "description": "Ensemble monastique de Vardzia, Géorgie",
+   "original_width": 4720,
+   "original_height": 3147
+  },
+  {
+   "id": "hero-teddy-roosevelt",
+   "file": "images/heroes/teddy-roosevelt.jpg",
+   "caption": "Colonel Roosevelt and the Rough Riders on Kettle Hill, 1898",
+   "commons_title": "File:TR San Juan Hill 1898.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:TR_San_Juan_Hill_1898.jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Unknown source",
+   "description": "Col Theodore Roosevelt stands triumphant on San Juan Hill, Cuba after his \"Rough Riders\" captured this hill and its sister Kettle Hill during the Spanish American War. Theodore Roosevelt Association and Library of Congress as well as Public Domain",
+   "original_width": 1144,
+   "original_height": 925
+  },
+  {
+   "id": "hero-tokugawa",
+   "file": "images/heroes/tokugawa.jpg",
+   "caption": "Edo Castle from a 17th-century painting",
+   "commons_title": "File:Edo P detail.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Edo_P_detail.jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Unknown author",
+   "description": "Part of the left screen of a pair of six-panel folding screens, \"View of Edo\" (Edo zu), from the 17th century. Upper middle of first panel, left screen. Central enceinte of Edo Castle, Castle Tower, Bairinzaka, Hirakawaguchi Gate.",
+   "original_width": 1470,
+   "original_height": 997
+  },
+  {
+   "id": "hero-tomyris",
+   "file": "images/heroes/tomyris.jpg",
+   "caption": "The Head of Cyrus Brought to Queen Tomyris, Peter Paul Rubens",
+   "commons_title": "File:Head of Cyrus Brought to Queen Tomyris, Peter Paul Rubens.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Head_of_Cyrus_Brought_to_Queen_Tomyris,_Peter_Paul_Rubens.jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Peter Paul Rubens",
+   "description": "",
+   "original_width": 2352,
+   "original_height": 1339
+  },
+  {
+   "id": "hero-trajan",
+   "file": "images/heroes/trajan.jpg",
+   "caption": "Trajan's Column, Rome",
+   "commons_title": "File:Remains of the Trajan's Bridge on the right bank of Danube, Serbia (27251575447).jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Remains_of_the_Trajan's_Bridge_on_the_right_bank_of_Danube,_Serbia_(27251575447).jpg",
+   "licence": "CC BY-SA 2.0",
+   "licence_url": "",
+   "author": "Carole Raddato from FRANKFURT, Germany",
+   "description": "Remains of the Trajan's Bridge on the right bank of Danube, Serbia",
+   "original_width": 4928,
+   "original_height": 3264
+  },
+  {
+   "id": "hero-victoria",
+   "file": "images/heroes/victoria.jpg",
+   "caption": "The Family of Queen Victoria, Laurits Tuxen, 1887",
+   "commons_title": "File:The Family of Queen Victoria (Tuxen).jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:The_Family_of_Queen_Victoria_(Tuxen).jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Laurits Tuxen",
+   "description": "Queen Victoria is sitting in the Green Drawing Room at Windsor Castle, surrounded by members of her family.",
+   "original_width": 1500,
+   "original_height": 1105
+  },
+  {
+   "id": "hero-wilfrid-laurier",
+   "file": "images/heroes/wilfrid-laurier.jpg",
+   "caption": "Laurier at the 1902 Colonial Conference",
+   "commons_title": "File:1902 Colonial Conference.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:1902_Colonial_Conference.jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Unknown photographer",
+   "description": "Delegates attending the 1902 Colonial Conference in London.\nFront row left-right: Sir Robert Bond (Premier of Newfoundland), Richard Seddon (Prime Minister of New Zealand), Sir Wilfrid Laurier (Prime Minister of Canada), Joseph Chamberlain (Secretary of State for the Colonies (Chairman)), Sir Edmond",
+   "original_width": 2320,
+   "original_height": 1544
+  },
+  {
+   "id": "hero-yongle",
+   "file": "images/heroes/yongle.jpg",
+   "caption": "The Forbidden City from Jingshan",
+   "commons_title": "File:景山公园 (19687188164) - panorama.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:景山公园_(19687188164)_-_panorama.jpg",
+   "licence": "CC BY-SA 2.0",
+   "licence_url": "",
+   "author": "Han Zheng",
+   "description": "View the Forbidden City from Jingshan Park",
+   "original_width": 5400,
+   "original_height": 1703
+  },
+  {
+   "id": "section-barbarians",
+   "file": "images/sections/barbarians.jpg",
+   "caption": "Arminius at the Battle of the Teutoburg Forest, 9 CE, painted by Peter Janssen in 1873",
+   "commons_title": "File:Hermann (Arminius) at the battle of the Teutoburg Forest in 9 CE by Peter Jannsen, 1873, with painting creases and damage removed.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Hermann_(Arminius)_at_the_battle_of_the_Teutoburg_Forest_in_9_CE_by_Peter_Jannsen,_1873,_with_painting_creases_and_damage_removed.jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Peter Janssen",
+   "description": "\"Der siegreich vordringende Hermann\" (\"The Victorious Advancing Hermann\"), by Peter Janssen, completed in 1873, depicting Hermann (Arminius) at the Battle of the Teutoburg Forest in 9 CE. With painting creases and damage removed.",
+   "original_width": 1519,
+   "original_height": 1224
+  },
+  {
+   "id": "section-city-states",
+   "file": "images/sections/city-states.jpg",
+   "caption": "The Bucintoro returning to the Molo, Canaletto",
+   "commons_title": "File:Canaletto - Bucentaur's return to the pier by the Palazzo Ducale - Google Art Project.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Canaletto_-_Bucentaur's_return_to_the_pier_by_the_Palazzo_Ducale_-_Google_Art_Project.jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Canaletto",
+   "description": "",
+   "original_width": 30000,
+   "original_height": 20857
+  },
+  {
+   "id": "section-credits",
+   "file": "images/sections/credits.jpg",
+   "caption": "The Library of Celsus, Ephesus",
+   "commons_title": "File:Celsus Library, Ephesus.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Celsus_Library,_Ephesus.jpg",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "",
+   "author": "Austrian Archaeological Institute",
+   "description": "Celsus Library, Ephesus",
+   "original_width": 3861,
+   "original_height": 2574
+  },
+  {
+   "id": "section-eras",
+   "file": "images/sections/eras.jpg",
+   "caption": "The Course of Empire: The Consummation of Empire, Thomas Cole, 1836",
+   "commons_title": "File:Cole Thomas The Consummation The Course of the Empire 1836.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Cole_Thomas_The_Consummation_The_Course_of_the_Empire_1836.jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Thomas Cole",
+   "description": "",
+   "original_width": 7784,
+   "original_height": 5277
+  },
+  {
+   "id": "section-pantheons",
+   "file": "images/sections/pantheons.jpg",
+   "caption": "Stonehenge",
+   "commons_title": "File:Stonehenge2007 07 30.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Stonehenge2007_07_30.jpg",
+   "licence": "CC BY 2.0",
+   "licence_url": "",
+   "author": "garethwiscombe",
+   "description": "Stonehenge",
+   "original_width": 2816,
+   "original_height": 2112
+  },
+  {
+   "id": "section-quiz",
+   "file": "images/sections/quiz.jpg",
+   "caption": "The School of Athens, Raphael",
+   "commons_title": "File:\"The School of Athens\" by Raffaello Sanzio da Urbino.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:\"The_School_of_Athens\"_by_Raffaello_Sanzio_da_Urbino.jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Raphael",
+   "description": "Italian:  Scuola di AteneThe School of Athenstitle QS:P1476,it:\"Scuola di Atene\"label QS:Lit,\"Scuola di Atene\"label QS:Les,\"La escuela de Atenas\"label QS:Lfr,\"L'École d'Athènes\"label QS:Lar,\"مدرسة أثينا\"label QS:Len,\"The School of Athens\"label QS:Lel,\"Η Σχολή των Αθηνών\"",
+   "original_width": 3820,
+   "original_height": 2964
+  },
+  {
+   "id": "wonder-bermuda-triangle",
+   "file": "images/wonders/bermuda-triangle.jpg",
+   "caption": "Grumman Avengers in formation, 1942, the aircraft type lost as Flight 19 in 1945",
+   "commons_title": "File:Grumman TBF-1 Avengers of VGS-29 in flight over Norfolk, Virginia (USA), on 1 September 1942 (80-G-427475).jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Grumman_TBF-1_Avengers_of_VGS-29_in_flight_over_Norfolk,_Virginia_(USA),_on_1_September_1942_(80-G-427475).jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Lt. Comdr. Horace Bristol, U.S. Navy photo 80-G-427475",
+   "description": "Five U.S. Navy Grumman TBF-1 Avengers from Escort Scouting Squadron 29 (VGS-29) flying in formation over Norfolk, Virginia (USA), on 1 September 1942.\nVGS-29 was established on 20 May 1942. It was redesignated Composite Squadron 29 (VC-29) on 1 March 1943 and Torpedo Squadron 29 (VT-29) on 1 Decembe",
+   "original_width": 2490,
+   "original_height": 2001
+  },
+  {
+   "id": "wonder-chocolate-hills",
+   "file": "images/wonders/chocolate-hills.jpg",
+   "caption": "The Chocolate Hills from Sagbayan Peak, Bohol",
+   "commons_title": "File:Chocolate Hills from Sagbayan Peak.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Chocolate_Hills_from_Sagbayan_Peak.jpg",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "",
+   "author": "Francisco M. Pajares, Jr.",
+   "description": "View of the Chocolate Hills from Sagbayan Peak in Bohol",
+   "original_width": 3600,
+   "original_height": 2400
+  },
+  {
+   "id": "wonder-cliffs-of-dover",
+   "file": "images/wonders/cliffs-of-dover.jpg",
+   "caption": "The White Cliffs of Dover",
+   "commons_title": "File:White Cliffs of Dover 02.JPG",
+   "source_url": "https://commons.wikimedia.org/wiki/File:White_Cliffs_of_Dover_02.JPG",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "",
+   "author": "Immanuel Giel",
+   "description": "White Cliffs of Dover",
+   "original_width": 2048,
+   "original_height": 1536
+  },
+  {
+   "id": "wonder-crater-lake",
+   "file": "images/wonders/crater-lake.jpg",
+   "caption": "Crater Lake and Wizard Island, Oregon",
+   "commons_title": "File:Crater Lake Panorama, Aug 2013.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Crater_Lake_Panorama,_Aug_2013.jpg",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "",
+   "author": "Epmatsw",
+   "description": "Panorama photo of Crater Lake, Oregon, USA taken in early August 2013.",
+   "original_width": 6592,
+   "original_height": 2480
+  },
+  {
+   "id": "wonder-dead-sea",
+   "file": "images/wonders/dead-sea.jpg",
+   "caption": "The Dead Sea at sunrise, seen from Masada",
+   "commons_title": "File:Dead Sea Sunrise.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Dead_Sea_Sunrise.jpg",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "",
+   "author": "Grauesel",
+   "description": "Sonnenaufgang am Toten Meer",
+   "original_width": 1620,
+   "original_height": 1072
+  },
+  {
+   "id": "wonder-delicate-arch",
+   "file": "images/wonders/delicate-arch.jpg",
+   "caption": "Delicate Arch at sunset, Utah",
+   "commons_title": "File:Delicate arch sunset.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Delicate_arch_sunset.jpg",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "",
+   "author": "Palacemusic",
+   "description": "Sunset at Delicate Arch (Arches National Park, Utah).",
+   "original_width": 2592,
+   "original_height": 1944
+  },
+  {
+   "id": "wonder-eye-of-the-sahara",
+   "file": "images/wonders/eye-of-the-sahara.jpg",
+   "caption": "The Richat Structure from the International Space Station",
+   "commons_title": "File:Richat Structure ISS030-E-12516.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Richat_Structure_ISS030-E-12516.jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "NASA",
+   "description": "The Richat Structure of Mauritania has captured the attention of astronauts for about as long as NASA has sent humans into orbit around Earth. This circular geologic feature is thought to be caused by an uplifted dome—geologists would classify it as a domed anticline—that has been eroded to expose t",
+   "original_width": 4288,
+   "original_height": 2848
+  },
+  {
+   "id": "wonder-eyjafjallajokull",
+   "file": "images/wonders/eyjafjallajokull.jpg",
+   "caption": "Eyjafjallajökull from Þórsmörk, Iceland",
+   "commons_title": "File:Þórsmörk Eyjafjallajökull 1 Iceland (cropped).jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Þórsmörk_Eyjafjallajökull_1_Iceland_(cropped).jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "TommyBee",
+   "description": "Aerial view of Eyjafjallajökull glacier in Iceland",
+   "original_width": 2048,
+   "original_height": 1536
+  },
+  {
+   "id": "wonder-fountain-of-youth",
+   "file": "images/wonders/fountain-of-youth.jpg",
+   "caption": "The Fountain of Youth, Lucas Cranach the Elder, 1546",
+   "commons_title": "File:Lucas Cranach - Der Jungbrunnen (Gemäldegalerie Berlin).jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Lucas_Cranach_-_Der_Jungbrunnen_(Gemäldegalerie_Berlin).jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Lucas Cranach the Elder",
+   "description": "Fountain of Youth",
+   "original_width": 10380,
+   "original_height": 6719
+  },
+  {
+   "id": "wonder-galapagos-islands",
+   "file": "images/wonders/galapagos-islands.jpg",
+   "caption": "North Seymour Island, Galápagos",
+   "commons_title": "File:North Seymour Island in the Galapagos about to land on shore photo by Alvaro Sevilla Design.JPG",
+   "source_url": "https://commons.wikimedia.org/wiki/File:North_Seymour_Island_in_the_Galapagos_about_to_land_on_shore_photo_by_Alvaro_Sevilla_Design.JPG",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "",
+   "author": "David Adam Kess",
+   "description": "Professional photographer David Adam Kess took this photograph before going ashore to North Seymour Island in the Galapagos.\nhttp://en.wikipedia.org/wiki/North_Seymour_Island",
+   "original_width": 4000,
+   "original_height": 3000
+  },
+  {
+   "id": "wonder-giants-causeway",
+   "file": "images/wonders/giants-causeway.jpg",
+   "caption": "The Giant's Causeway, County Antrim",
+   "commons_title": "File:Causeway-code poet-4.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Causeway-code_poet-4.jpg",
+   "licence": "CC BY-SA 2.0",
+   "licence_url": "",
+   "author": "code poet on flickr.",
+   "description": "Giant's Causeway, Co. Antrim, Northern Ireland.",
+   "original_width": 2048,
+   "original_height": 1536
+  },
+  {
+   "id": "wonder-gobustan",
+   "file": "images/wonders/gobustan.jpg",
+   "caption": "Rock carvings at Gobustan, Azerbaijan",
+   "commons_title": "File:Gobustan Azerbaijan 01.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Gobustan_Azerbaijan_01.jpg",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "",
+   "author": "Abu Zarr",
+   "description": "Gobustan, Azerbaijan 2008",
+   "original_width": 2816,
+   "original_height": 2112
+  },
+  {
+   "id": "wonder-great-barrier-reef",
+   "file": "images/wonders/great-barrier-reef.jpg",
+   "caption": "The Great Barrier Reef from the air",
+   "commons_title": "File:Part of Great Barrier Reef from Helicopter.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Part_of_Great_Barrier_Reef_from_Helicopter.jpg",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "",
+   "author": "",
+   "description": "",
+   "original_width": 1632,
+   "original_height": 1232
+  },
+  {
+   "id": "wonder-ha-long-bay",
+   "file": "images/wonders/ha-long-bay.jpg",
+   "caption": "Hạ Long Bay, Vietnam",
+   "commons_title": "File:Ha Long Bay in 2019.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Ha_Long_Bay_in_2019.jpg",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "",
+   "author": "Taewangkorea",
+   "description": "This image was taken by me at Titov Island of Ha Long Bay in July 2019.",
+   "original_width": 3251,
+   "original_height": 2280
+  },
+  {
+   "id": "wonder-ik-kil",
+   "file": "images/wonders/ik-kil.jpg",
+   "caption": "The cenote of Ik Kil, Yucatán",
+   "commons_title": "File:Cenote en Chichén Itzá, Yucatán, México.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Cenote_en_Chichén_Itzá,_Yucatán,_México.jpg",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "",
+   "author": "Luis Miguel Bugallo Sánchez",
+   "description": "The Ik Kil cenote, close to Chichén Itzá, México",
+   "original_width": 1666,
+   "original_height": 1250
+  },
+  {
+   "id": "wonder-kakadu",
+   "file": "images/wonders/kakadu.jpg",
+   "caption": "Kakadu wetlands, Northern Territory",
+   "commons_title": "File:Kakadu Mamukala DSC03562.JPG",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Kakadu_Mamukala_DSC03562.JPG",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "",
+   "author": "",
+   "description": "",
+   "original_width": 2272,
+   "original_height": 1704
+  },
+  {
+   "id": "wonder-lake-retba",
+   "file": "images/wonders/lake-retba.jpg",
+   "caption": "Lake Retba, the pink lake of Senegal",
+   "commons_title": "File:Lac Rose in Senegal.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Lac_Rose_in_Senegal.jpg",
+   "licence": "CC BY-SA 2.0",
+   "licence_url": "",
+   "author": "Arnault",
+   "description": "Site privilégié pour l'arrivée du Paris/Dakar, le lac rose possède 390g de sel par litre d'eau",
+   "original_width": 2048,
+   "original_height": 1536
+  },
+  {
+   "id": "wonder-lysefjord",
+   "file": "images/wonders/lysefjord.jpg",
+   "caption": "The Lysefjord, Rogaland",
+   "commons_title": "File:Panorama of Lysefjord.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Panorama_of_Lysefjord.jpg",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "",
+   "author": "Carsten Steger",
+   "description": "Panorama of Lysefjord with Preikestolen at the right of the image",
+   "original_width": 15370,
+   "original_height": 5336
+  },
+  {
+   "id": "wonder-mato-tipila",
+   "file": "images/wonders/mato-tipila.jpg",
+   "caption": "Mato Tipila, Devils Tower, Wyoming",
+   "commons_title": "File:Devils Tower CROP.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Devils_Tower_CROP.jpg",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "",
+   "description": "",
+   "original_width": 2100,
+   "original_height": 1400
+  },
+  {
+   "id": "wonder-matterhorn",
+   "file": "images/wonders/matterhorn.jpg",
+   "caption": "The Matterhorn from the Domhütte",
+   "commons_title": "File:Matterhorn from Domhütte - 2.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Matterhorn_from_Domhütte_-_2.jpg",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "",
+   "author": "Photo: chil, on Camptocamp.org\nDerivative work:Zacharie Grossen",
+   "description": "The Matterhorn seen from the Domhütte (Valais). Elevation points from Swisstopo.",
+   "original_width": 1610,
+   "original_height": 1073
+  },
+  {
+   "id": "wonder-mount-everest",
+   "file": "images/wonders/mount-everest.jpg",
+   "caption": "Mount Everest from Gokyo Ri",
+   "commons_title": "File:Mt. Everest from Gokyo Ri November 5, 2012.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Mt._Everest_from_Gokyo_Ri_November_5,_2012.jpg",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "",
+   "author": "Rdevany",
+   "description": "Digital photograph of Mount Everest taken at an elevation of 5,300 meter from Gokyo Ri, Khumbu, Nepal",
+   "original_width": 3157,
+   "original_height": 2104
+  },
+  {
+   "id": "wonder-mount-kilimanjaro",
+   "file": "images/wonders/mount-kilimanjaro.jpg",
+   "caption": "Kilimanjaro from Amboseli",
+   "commons_title": "File:Kilimanjaro from Amboseli.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Kilimanjaro_from_Amboseli.jpg",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "",
+   "author": "Sergey Pesterev",
+   "description": "View of Kilimanjaro from Amboseli National Park, Kenya.",
+   "original_width": 3043,
+   "original_height": 2036
+  },
+  {
+   "id": "wonder-mount-vesuvius",
+   "file": "images/wonders/mount-vesuvius.jpg",
+   "caption": "Vesuvius over Naples from Castel Sant'Elmo",
+   "commons_title": "File:Naples from the Castello Sant Elmo with Abbazia San Martino the port and the Vesuv.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Naples_from_the_Castello_Sant_Elmo_with_Abbazia_San_Martino_the_port_and_the_Vesuv.jpg",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "",
+   "author": "This Photo was taken by Wolfgang Moroder.  \n\nFeel free to use my photos, but please mention me as the author and send me a  message. \n\n\n\nThis image is not in th",
+   "description": "Vista del golfo di Napoli dal Castello Sant Elmo e con la  Certosa di San Martino in primo piano.",
+   "original_width": 7360,
+   "original_height": 4912
+  },
+  {
+   "id": "wonder-paititi",
+   "file": "images/wonders/paititi.jpg",
+   "caption": "The Manu river in the Peruvian cloud forest, where legend places Paititi",
+   "commons_title": "File:Manu riverbank.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Manu_riverbank.jpg",
+   "licence": "CC BY-SA 2.5",
+   "licence_url": "",
+   "author": "As578",
+   "description": "View of riverbank in Manu National Park, Madre de Dios, Peru",
+   "original_width": 1500,
+   "original_height": 1024
+  },
+  {
+   "id": "wonder-pamukkale",
+   "file": "images/wonders/pamukkale.jpg",
+   "caption": "The travertine terraces of Pamukkale",
+   "commons_title": "File:PamukkaleView.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:PamukkaleView.jpg",
+   "licence": "CC BY-SA 2.0",
+   "licence_url": "",
+   "author": "Casal Partiu",
+   "description": "Panoramic view of Pamukkale",
+   "original_width": 2048,
+   "original_height": 683
+  },
+  {
+   "id": "wonder-pantanal",
+   "file": "images/wonders/pantanal.jpg",
+   "caption": "The Pantanal, Mato Grosso",
+   "commons_title": "File:Pantanal, Mato Grosso, Brasil.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Pantanal,_Mato_Grosso,_Brasil.jpg",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "",
+   "author": "Filipefrazao",
+   "description": "Vista aérea do Pantanal",
+   "original_width": 4417,
+   "original_height": 2950
+  },
+  {
+   "id": "wonder-pinnacles",
+   "file": "images/wonders/pinnacles.jpg",
+   "caption": "The Pinnacles, Nambung National Park",
+   "commons_title": "File:Pinnacles pano 2005-08-26.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Pinnacles_pano_2005-08-26.jpg",
+   "licence": "CC BY-SA 2.5",
+   "licence_url": "",
+   "author": "No machine-readable author provided. Neilcreek~commonswiki assumed (based on copyright claims).",
+   "description": "Partial panorama of the Pinnacles in the Pinnacles Desert \n\ntaken by myself (Neil Creek). http://neilcreek.com\nCapture date: 26th August 2005.",
+   "original_width": 1000,
+   "original_height": 500
+  },
+  {
+   "id": "wonder-piopiotahi",
+   "file": "images/wonders/piopiotahi.jpg",
+   "caption": "Piopiotahi, Milford Sound",
+   "commons_title": "File:Milford Sound (New Zealand).JPG",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Milford_Sound_(New_Zealand).JPG",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "",
+   "author": "Maros M r a z (Maros)",
+   "description": "Mitre Peak, Milford Sound, New Zealand",
+   "original_width": 4878,
+   "original_height": 1766
+  },
+  {
+   "id": "wonder-roraima",
+   "file": "images/wonders/roraima.jpg",
+   "caption": "Mount Roraima",
+   "commons_title": "File:Panorámica del Tepuy Roraima.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Panorámica_del_Tepuy_Roraima.jpg",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "",
+   "author": "Carlos Santos Colorado",
+   "description": "Roraima. Bolívar, Venezuela.",
+   "original_width": 2439,
+   "original_height": 1230
+  },
+  {
+   "id": "wonder-sahara-el-beyda",
+   "file": "images/wonders/sahara-el-beyda.jpg",
+   "caption": "The White Desert near Farafra",
+   "commons_title": "File:White Desert, Egypt.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:White_Desert,_Egypt.jpg",
+   "licence": "CC BY 4.0",
+   "licence_url": "",
+   "author": "Vyacheslav Argenberg",
+   "description": "The bizarre rock formations, some rocks look like animals, mushrooms, trees, and some have totally ethereal shapes. White Desert is a site of cliffs, dunes and large white chalk rock formations, created through erosion by wind and sand. White Desert, part of Saharan Libyan Desert, some 30 km to the ",
+   "original_width": 3072,
+   "original_height": 2048
+  },
+  {
+   "id": "wonder-torres-del-paine",
+   "file": "images/wonders/torres-del-paine.jpg",
+   "caption": "Torres del Paine and the Cuernos del Paine",
+   "commons_title": "File:Cuernos del Paine in Torres del Paine National Park.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Cuernos_del_Paine_in_Torres_del_Paine_National_Park.jpg",
+   "licence": "CC BY-SA 2.0",
+   "licence_url": "",
+   "author": "Pedro Szekely from Los Angeles, USA",
+   "description": "View Cuernos del Paine from lake Pehoé",
+   "original_width": 5184,
+   "original_height": 3888
+  },
+  {
+   "id": "wonder-tsingy-de-bemaraha",
+   "file": "images/wonders/tsingy-de-bemaraha.jpg",
+   "caption": "The stone forest of Tsingy de Bemaraha",
+   "commons_title": "File:Big Tsingy, Madagascar (24082669822).jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Big_Tsingy,_Madagascar_(24082669822).jpg",
+   "licence": "CC BY-SA 2.0",
+   "licence_url": "",
+   "author": "Rod Waddington",
+   "description": "Karst limestone",
+   "original_width": 4123,
+   "original_height": 2843
+  },
+  {
+   "id": "wonder-ubsunur-hollow",
+   "file": "images/wonders/ubsunur-hollow.jpg",
+   "caption": "Uvs Nuur, the Ubsunur Hollow",
+   "commons_title": "File:Uvs núr.JPG",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Uvs_núr.JPG",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "",
+   "author": "Original uploader was Jan Sysel at cs.wikipedia",
+   "description": "mongolské jezero Uvs núr",
+   "original_width": 1600,
+   "original_height": 1200
+  },
+  {
+   "id": "wonder-uluru",
+   "file": "images/wonders/uluru.jpg",
+   "caption": "Uluru",
+   "commons_title": "File:ULURU.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:ULURU.jpg",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "",
+   "author": "Ek2030372672",
+   "description": "Uluru/Ayers rock",
+   "original_width": 2048,
+   "original_height": 1536
+  },
+  {
+   "id": "wonder-vinland",
+   "file": "images/wonders/vinland.jpg",
+   "caption": "Reconstructed Norse buildings at L'Anse aux Meadows",
+   "commons_title": "File:Authentic Viking recreation.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Authentic_Viking_recreation.jpg",
+   "licence": "CC BY 2.0",
+   "licence_url": "",
+   "author": "Dylan Kereluk from White Rock, Canada",
+   "description": "Authentic Viking recreation, Newfoundland, CanadaJuly 17 - 30, 2003",
+   "original_width": 2272,
+   "original_height": 1704
+  },
+  {
+   "id": "wonder-yosemite",
+   "file": "images/wonders/yosemite.jpg",
+   "caption": "Yosemite Valley from Tunnel View",
+   "commons_title": "File:Tunnel View, Yosemite Valley, Yosemite NP - Diliff.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Tunnel_View,_Yosemite_Valley,_Yosemite_NP_-_Diliff.jpg",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "",
+   "author": "Diliff",
+   "description": "View of the valley of Yosemite (from Tunnel View) in the Yosemite National Park, California, USA",
+   "original_width": 6000,
+   "original_height": 3916
+  },
+  {
+   "id": "wonder-zhangye-danxia",
+   "file": "images/wonders/zhangye-danxia.jpg",
+   "caption": "The coloured strata of Zhangye Danxia",
+   "commons_title": "File:Colourful mountains of the Zhangye National Geopark.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Colourful_mountains_of_the_Zhangye_National_Geopark.jpg",
+   "licence": "CC BY-SA 2.0",
+   "licence_url": "",
+   "author": "Terry Wu",
+   "description": "DSC02868",
+   "original_width": 6000,
+   "original_height": 4000
+  }
+ ],
+ "terrainTiles": {
+  "note": "The 24 terrain tiles under images/terrain/ were generated for this site with Higgsfield (FLUX.2) on 2026-10-01 and are not Firaxis assets."
+ }
+}

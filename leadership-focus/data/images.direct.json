@@ -1,0 +1,1216 @@
+[
+ {
+  "id": "hero-amanitore",
+  "out": "docs/images/heroes/amanitore.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Nubia_pyramids1.JPG",
+   "File:Amanitore_pyramid.jpg",
+   "File:Aegyptisches_Museum_Berlin_InvNr7261_20080313_Barkenuntersatz_Natakamani_Amanitore_aus_Wad_Ban_Naga_1.jpg"
+  ],
+  "caption": "The pyramids of Meroë, Sudan"
+ },
+ {
+  "id": "hero-ba-trieu",
+  "out": "docs/images/heroes/ba-trieu.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Den-tho-ba-trieu.jpg",
+   "File:Ba_trieu_cuoi_voi.jpg",
+   "File:Newone_-_tượng_Bà_Triệu_núi_Nưa.jpg"
+  ],
+  "caption": "The temple of Bà Triệu, Thanh Hóa"
+ },
+ {
+  "id": "hero-basil-ii",
+  "out": "docs/images/heroes/basil-ii.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:The_Chronicle_of_Ioannis_Skylitzis_Bulagar_Defeat.jpg",
+   "File:Roman_triumph,_Basil_II.jpg",
+   "File:BattlePhokasSkleros.jpg"
+  ],
+  "caption": "The Byzantine victory at Kleidion, Madrid Skylitzes"
+ },
+ {
+  "id": "hero-cyrus",
+  "out": "docs/images/heroes/cyrus.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Pasargad_Tomb_Cyrus3.jpg",
+   "File:Defeat_of_Croesus_546_BCE.jpg",
+   "File:Cyrus_Cylinder.jpg"
+  ],
+  "caption": "The tomb of Cyrus at Pasargadae"
+ },
+ {
+  "id": "hero-dido",
+  "out": "docs/images/heroes/dido.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Sir_Nathaniel_Dance-Holland_-_The_Meeting_of_Dido_and_Aeneas_-_Google_Art_Project.jpg",
+   "File:Pompeii_—_Dido_abandoned.jpg",
+   "File:Guercino_Morte_di_Didone.jpg"
+  ],
+  "caption": "The Meeting of Dido and Aeneas, Nathaniel Dance-Holland, 1766"
+ },
+ {
+  "id": "hero-eleanor-of-aquitaine",
+  "out": "docs/images/heroes/eleanor-of-aquitaine.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Gisant_alienor_d_aquitaine_et_henri2.jpg",
+   "File:Fontevraud3.jpg",
+   "File:Church_of_Fontevraud_Abbey_Eleanor_of_Aquitaine_effigy.jpg"
+  ],
+  "caption": "The effigies of Eleanor and Henry II at Fontevraud"
+ },
+ {
+  "id": "hero-frederick-barbarossa",
+  "out": "docs/images/heroes/frederick-barbarossa.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Emporer_Frederic_I_death.jpg",
+   "File:Barbarossaleuchter.jpg",
+   "File:Friedrich_I._Barbarossa_(Christian_Siedentopf,_1847).jpg",
+   "File:Friedrich-barbarossa-und-soehne-welfenchronik_1-1000x1540.jpg"
+  ],
+  "caption": "Barbarossa's drowning in the Saleph, Saxon World Chronicle"
+ },
+ {
+  "id": "hero-genghis-khan",
+  "out": "docs/images/heroes/genghis-khan.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Dschingis_Khan_in_Zonjin_Boldog_02.JPG",
+   "File:OnonRiver.jpg",
+   "File:Bataille_entre_mongols_&_chinois_(1211).jpeg",
+   "File:Monument_to_Genghis_Khan.jpg"
+  ],
+  "caption": "The Genghis Khan equestrian statue at Tsonjin Boldog"
+ },
+ {
+  "id": "hero-gilgamesh",
+  "out": "docs/images/heroes/gilgamesh.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Gilgamesh_in_a_Sculptured_Vase,_Shara_Temple,_Tell_Agrab,_Iraq.jpg",
+   "File:Tablet_V_of_the_Epic_of_Gilgamesh.JPG",
+   "File:British_Museum_Flood_Tablet.jpg",
+   "File:Hero_lion_Dur-Sharrukin_Louvre_AO19862.jpg"
+  ],
+  "caption": "Gilgamesh wrestling animals, Shara Temple vase, Tell Agrab"
+ },
+ {
+  "id": "hero-gitarja",
+  "out": "docs/images/heroes/gitarja.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Eksotika_Candi_Bajang_Ratu.jpg",
+   "File:Wringin_Lawang,_Trowulan.jpg",
+   "File:Candi_Tikus.jpg",
+   "File:Parvati_Majapahit_1.JPG",
+   "File:MET_DT5002.jpg"
+  ],
+  "caption": "Bajang Ratu gate at Trowulan, the Majapahit capital"
+ },
+ {
+  "id": "hero-hammurabi",
+  "out": "docs/images/heroes/hammurabi.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:P1050763_Louvre_code_Hammurabi_face_rwk.JPG",
+   "File:F0182_Louvre_Code_Hammourabi_Bas-relief_Sb8_rwk.jpg",
+   "File:Votive_monument_to_Hammurabi_BM_22454_n01.jpg"
+  ],
+  "caption": "The Code of Hammurabi stele, Louvre"
+ },
+ {
+  "id": "hero-joao-iii",
+  "out": "docs/images/heroes/joao-iii.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Inquisicao.jpg",
+   "File:Saint_Francis_Xavier_taking_leave_of_King_John_III_(1635)_-_José_Avelar_Rebelo.png",
+   "File:D._João_III_-_Cristovao_Lopes.jpg"
+  ],
+  "caption": "Auto-da-fé at the Terreiro do Paço, Lisbon"
+ },
+ {
+  "id": "hero-john-curtin",
+  "out": "docs/images/heroes/john-curtin.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Curtinmacarthur.jpg",
+   "File:John_Curtin_austerity_speech_SLNSW_1942.jpg",
+   "File:Aust-ww2-japan.jpg",
+   "File:JohnCurtin.jpg"
+  ],
+  "caption": "John Curtin with General MacArthur"
+ },
+ {
+  "id": "hero-kristina",
+  "out": "docs/images/heroes/kristina.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Cristina_de_Suecia_a_caballo_(Bourdon).jpg",
+   "File:Christina_barberini.jpg",
+   "File:Christina_of_Sweden's_abdication_1654.jpg",
+   "File:Swedish_queen_Drottning_Kristina_portrait_by_Sébastien_Bourdon_stor.jpg"
+  ],
+  "caption": "Christina of Sweden on horseback, Sébastien Bourdon, 1653"
+ },
+ {
+  "id": "hero-kupe",
+  "out": "docs/images/heroes/kupe.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Kupe_Group_Statue.jpg",
+   "File:KupeWheke.jpg",
+   "File:Motukiore_Island_Hokianga_Aotearoa_New_Zealand.jpg",
+   "File:Kupe_Statue.jpg"
+  ],
+  "caption": "The Kupe group statue on the Wellington waterfront"
+ },
+ {
+  "id": "hero-lady-six-sky",
+  "out": "docs/images/heroes/lady-six-sky.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Sitio_el_naranjo_2.jpg",
+   "File:Sitio_el_naranjo_1.jpg",
+   "File:MUNAE_Stela_6.jpg",
+   "File:MA_D367_Maya_stela_24,_Naranjo,_Guatemala.jpg",
+   "File:Lady_Wak_Chanil_Ajaw's_name_glyphs.jpg"
+  ],
+  "caption": "The ruins of Naranjo, Petén"
+ },
+ {
+  "id": "hero-lautaro",
+  "out": "docs/images/heroes/lautaro.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:El_joven_Lautaro_-_P._Subercaseaux.PNG",
+   "File:Lautaro_Cañete.jpg"
+  ],
+  "caption": "The young Lautaro, Pedro Subercaseaux, 1946"
+ },
+ {
+  "id": "hero-ludwig-ii",
+  "out": "docs/images/heroes/ludwig-ii.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Schloss_Neuschwanstein_2013.jpg",
+   "File:Neuschwanstein_Castle_LOC_print.jpg",
+   "File:Gemälde_-_Nächtliche_Schlittenfahrt_König_Ludwigs_II_-_R_Wenig_-_um_1880.jpg",
+   "File:Schloss_Herrenchiemsee_Parkseite_Westen.jpg"
+  ],
+  "caption": "Neuschwanstein Castle"
+ },
+ {
+  "id": "hero-mansa-musa",
+  "out": "docs/images/heroes/mansa-musa.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Djingareiber_cour.jpg",
+   "File:Catalan_Atlas_BNF_Sheet_6_Mansa_Musa_(cropped).jpg",
+   "File:Mansa_Moussa_on_the_map_of_Angelino_Dulcert.jpg"
+  ],
+  "caption": "The Djinguereber Mosque at Timbuktu, commissioned by Mansa Musa"
+ },
+ {
+  "id": "hero-matthias-corvinus",
+  "out": "docs/images/heroes/matthias-corvinus.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:King-Matej-arrival-in-Buda-color.jpg",
+   "File:Benczúr_Gyula_–_A_diadalmas_Mátyás.jpg",
+   "File:Mátyás_budai_vára.jpg",
+   "File:Visegrad_1480_korul.jpg"
+  ],
+  "caption": "King Matthias's arrival in Buda, Henrik Weber"
+ },
+ {
+  "id": "hero-menelik-ii",
+  "out": "docs/images/heroes/menelik-ii.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Menelik_at_the_head_of_his_army.jpg",
+   "File:Menelik_-_Adoua-2_(cropped).jpg",
+   "File:Menelik_II_inspecting_railway.jpg",
+   "File:Menelik_II_in_coronation_garb,_Emperor_of_Ethiopia.jpg"
+  ],
+  "caption": "Menelik II at the head of his army after Adwa"
+ },
+ {
+  "id": "hero-montezuma",
+  "out": "docs/images/heroes/montezuma.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Moctezuma_I,_the_Fifth_Aztec_King.png",
+   "File:Huehuemoteuczoma_mendoza.jpg"
+  ],
+  "caption": "Moctezuma I, fifth tlatoani of Tenochtitlan, in a colonial codex"
+ },
+ {
+  "id": "hero-nzinga-mbande",
+  "out": "docs/images/heroes/nzinga-mbande.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Queen_Nzinga_1657.png",
+   "File:Nzingambande.jpg",
+   "File:Ann_Zingha.jpg"
+  ],
+  "caption": "Queen Nzinga negotiating with the Portuguese governor, 1657"
+ },
+ {
+  "id": "hero-pachacuti",
+  "out": "docs/images/heroes/pachacuti.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Inka_Chanka_war_on_Mural_of_the_History_of_Cusco.jpg",
+   "File:Palacio_Inka_del_Kusikancha.jpg",
+   "File:Pachacuti's_palace,_Vitcos.jpg",
+   "File:Cusco,_Peru_(36844785722).jpg"
+  ],
+  "caption": "The Inca-Chanka war, Mural of the History of Cusco"
+ },
+ {
+  "id": "hero-pedro-ii",
+  "out": "docs/images/heroes/pedro-ii.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Pedro_Américo_-_D._Pedro_II_na_abertura_da_Assembléia_Geral.jpg",
+   "File:Pedro_II_of_Brazil_in_Egypt_1871.jpg",
+   "File:Familia_imperial_1861.jpg",
+   "File:Pedro_II_of_Brazil_by_Nadar.jpg"
+  ],
+  "caption": "Pedro II opening the General Assembly, Pedro Américo, 1872"
+ },
+ {
+  "id": "hero-pericles",
+  "out": "docs/images/heroes/pericles.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Akropolis_by_Leo_von_Klenze.jpg",
+   "File:Discurso_funebre_pericles.PNG",
+   "File:1868_Lawrence_Alma-Tadema_-_Phidias_Showing_the_Frieze_of_the_Parthenon_to_his_Friends.jpg",
+   "File:Parthenon_from_south.jpg"
+  ],
+  "caption": "The Acropolis at Athens, Leo von Klenze, 1846"
+ },
+ {
+  "id": "hero-peter",
+  "out": "docs/images/heroes/peter.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Lomonosov_Poltava_1762_1764.jpg",
+   "File:Петр_I_при_Красной_горке_Айвазовский.jpg",
+   "File:Hlebovskiy_AssamPriPetrGRM.jpg",
+   "File:Peter_benois.jpg"
+  ],
+  "caption": "Peter I at the Battle of Poltava, mosaic by Lomonosov"
+ },
+ {
+  "id": "hero-gorgo",
+  "out": "docs/images/heroes/gorgo.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Ancient_sparta_theater.jpg",
+   "File:Jean-Pierre_Saint-Ours_-_Gericht_über_die_Neugeborenen_Spartas_-_2358_-_Bavarian_State_Painting_Collections.jpg",
+   "File:Menelaion.jpg"
+  ],
+  "caption": "The theatre of ancient Sparta below Mount Taygetus"
+ },
+ {
+  "id": "hero-philip-ii",
+  "out": "docs/images/heroes/philip-ii.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Invincible_Armada.jpg",
+   "File:Naval_Battle_of_Lepanto.jpg",
+   "File:Philip_II_of_Spain_berating_William_the_Silent_Prince_of_Orange_by_Cornelis_Kruseman.jpg",
+   "File:Portrait_of_Philip_II_of_Spain_by_Sofonisba_Anguissola_-_002b.jpg"
+  ],
+  "caption": "The Spanish Armada in battle with English warships, late 16th century"
+ },
+ {
+  "id": "hero-qin-shi-huang",
+  "out": "docs/images/heroes/qin-shi-huang.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:51714-Terracota-Army.jpg",
+   "File:Terra_Cotta_Warriors,_Guardians_of_China's_First_Emperor_1.jpg",
+   "File:Terracotta_warriors_museum.JPG",
+   "File:Tomb_of_the_First_Emperor_Qin_Shi_Huang_Di,_Xi'an,_China_-_panoramio.jpg"
+  ],
+  "caption": "The Terracotta Army of the First Emperor"
+ },
+ {
+  "id": "hero-robert-the-bruce",
+  "out": "docs/images/heroes/robert-the-bruce.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Battle_of_Bannockburn_-_Bruce_addresses_troops.jpg",
+   "File:A_Chronicle_of_England_-_Page_283_-_Bruce_Kills_Sir_Henry_Bohun.jpg",
+   "File:Turnberry_Castle.jpg",
+   "File:Robert_the_Bruce,_Edinburgh_Castle.jpg"
+  ],
+  "caption": "Bruce addresses his troops at Bannockburn, Cassell's History of England"
+ },
+ {
+  "id": "hero-saladin",
+  "out": "docs/images/heroes/saladin.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Citadel_of_Salah_El.Din.jpg",
+   "File:Saladin_the_Victorious.jpg",
+   "File:Citadel_of_Aleppo.jpg",
+   "File:L'armée_de_Saladin.jpg"
+  ],
+  "caption": "The Citadel of Saladin, Cairo"
+ },
+ {
+  "id": "hero-seondeok",
+  "out": "docs/images/heroes/seondeok.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Korea-Gyeongju-Cheomseongdae-02.jpg",
+   "File:선덕여왕릉01.jpg",
+   "File:Korea-Gyeongju-Bunhwangsa_seoktap-04.jpg"
+  ],
+  "caption": "Cheomseongdae observatory, Gyeongju"
+ },
+ {
+  "id": "hero-shaka",
+  "out": "docs/images/heroes/shaka.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Isandhlwana.jpg",
+   "File:The_Last_Of_The_24th.jpg",
+   "File:LL1882_pg279_ZULU_SOLDIERS_AND_KRAAL.jpg",
+   "File:View_Of_the_Isandlwana_Battlefield.jpg",
+   "File:Zulumustersm.jpg",
+   "File:Zuluisandoob3.jpg",
+   "File:KingShaka.jpg"
+  ],
+  "caption": "The Battle of Isandlwana, 1879"
+ },
+ {
+  "id": "hero-simon-bolivar",
+  "out": "docs/images/heroes/simon-bolivar.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Congreso_de_Cúcuta.jpg",
+   "File:Equestrian_portrait_of_Simón_Bolívar.jpg",
+   "File:Muerte_de_Simón_Bolívar.png",
+   "File:Portrait_of_Simón_Bolívar_by_Arturo_Michelena.jpg"
+  ],
+  "caption": "Bolívar and Santander at the Congress of Cúcuta, 1821"
+ },
+ {
+  "id": "hero-suleiman",
+  "out": "docs/images/heroes/suleiman.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Cour_mosquee_Suleymaniye_Istanbul.jpg",
+   "File:Battle_of_Mohacs_1526.png",
+   "File:Johann_Peter_Krafft_005.jpg",
+   "File:Suleiman_the_Magnificent_receives_an_Ambassador.jpg"
+  ],
+  "caption": "The courtyard of the Süleymaniye Mosque, Istanbul"
+ },
+ {
+  "id": "hero-tamar",
+  "out": "docs/images/heroes/tamar.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Vardzia_Cave_Monastery_05.jpg",
+   "File:Gelati_Monastery_1.jpg",
+   "File:Vepkhistkaosani_zichy.jpg",
+   "File:King_George_III_and_his_daughter_Queen_Tamar.jpg"
+  ],
+  "caption": "The cave monastery of Vardzia"
+ },
+ {
+  "id": "hero-teddy-roosevelt",
+  "out": "docs/images/heroes/teddy-roosevelt.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:TR_San_Juan_Hill_1898.jpg",
+   "File:President_Theodore_Roosevelt_Driving_Through_the_Wawona_Tunnel_Tree,_in_Yellowstone_National_Park_(14994749857).jpg",
+   "File:Theodore_Roosevelt_with_hunting_suit_and_rifle_3a24199u_original.jpg",
+   "File:Theodore_Roosevelt_by_John_Singer_Sargent,_1903.jpg"
+  ],
+  "caption": "Colonel Roosevelt and the Rough Riders on Kettle Hill, 1898"
+ },
+ {
+  "id": "hero-tokugawa",
+  "out": "docs/images/heroes/tokugawa.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Edo_P_detail.jpg",
+   "File:Sekigahara_Tokugawa's_Final_Encampment.jpg",
+   "File:Okazakijo2.JPG",
+   "File:Shogun-Tokugawa-Ieyasu.png"
+  ],
+  "caption": "Edo Castle from a 17th-century painting"
+ },
+ {
+  "id": "hero-tomyris",
+  "out": "docs/images/heroes/tomyris.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Head_of_Cyrus_Brought_to_Queen_Tomyris,_Peter_Paul_Rubens.jpg",
+   "File:Preti,_Mattia_-_Queen_Tomyris_Receiving_the_Head_of_Cyrus,_King_of_Persia_-_1670-72.jpg",
+   "File:Queen_Tomyris_learns_that_her_son_Spargapises_has_been_taken_alive_by_Cyrus,_by_Jan_Moy_(1535-1550).jpg",
+   "File:Tomyris-Castagno.jpg"
+  ],
+  "caption": "The Head of Cyrus Brought to Queen Tomyris, Peter Paul Rubens"
+ },
+ {
+  "id": "hero-trajan",
+  "out": "docs/images/heroes/trajan.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Trajan's_Column_HD.jpg",
+   "File:Remains_of_the_Trajan's_Bridge_on_the_right_bank_of_Danube,_Serbia_(27251575447).jpg",
+   "File:La_justice_de_Trajan.jpg",
+   "File:UlpiaTraianaSarmizegetusa.jpg"
+  ],
+  "caption": "Trajan's Column, Rome"
+ },
+ {
+  "id": "hero-victoria",
+  "out": "docs/images/heroes/victoria.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:The_Family_of_Queen_Victoria_(Tuxen).jpg",
+   "File:Victoriatothrone.jpg",
+   "File:Victoria_Marriage01.jpg",
+   "File:Queen_Victoria_-_Winterhalter_1859.jpg"
+  ],
+  "caption": "The Family of Queen Victoria, Laurits Tuxen, 1887"
+ },
+ {
+  "id": "hero-wilfrid-laurier",
+  "out": "docs/images/heroes/wilfrid-laurier.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:1902_Colonial_Conference.jpg",
+   "File:Laurier_automobile2.png",
+   "File:Sir_Wilfrid_Laurier_durant_son_dernier_voyage_dans_l'Ouest_canadien.jpg",
+   "File:Sir_Wilfrid_Laurier_c._1897.jpg"
+  ],
+  "caption": "Laurier at the 1902 Colonial Conference"
+ },
+ {
+  "id": "hero-yongle",
+  "out": "docs/images/heroes/yongle.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:景山公园_(19687188164)_-_panorama.jpg",
+   "File:20090528_Beijing_Forbidden_City_7745.jpg",
+   "File:Nanjing_Treasure_Boat_-_P1070978.JPG",
+   "File:Tribute_Giraffe_with_Attendant.jpg"
+  ],
+  "caption": "The Forbidden City from Jingshan"
+ },
+ {
+  "id": "wonder-chocolate-hills",
+  "out": "docs/images/wonders/chocolate-hills.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Chocolate_Hills_from_Sagbayan_Peak.jpg",
+   "File:Bohol_-_Bohol1917.jpg",
+   "File:Chocolate_Hills_Bohol.JPG"
+  ],
+  "caption": "The Chocolate Hills from Sagbayan Peak, Bohol"
+ },
+ {
+  "id": "wonder-cliffs-of-dover",
+  "out": "docs/images/wonders/cliffs-of-dover.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:White_Cliffs_of_Dover_02.JPG",
+   "File:Dover989.JPG",
+   "File:Cliffs_of_Dover_erosion.jpg"
+  ],
+  "caption": "The White Cliffs of Dover"
+ },
+ {
+  "id": "wonder-crater-lake",
+  "out": "docs/images/wonders/crater-lake.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Crater_Lake_Panorama,_Aug_2013.jpg",
+   "File:Crater_Lake_National_Park_(2023).jpg",
+   "File:Crater_Lake_Panorama_Spring_2016.jpg"
+  ],
+  "caption": "Crater Lake and Wizard Island, Oregon"
+ },
+ {
+  "id": "wonder-dead-sea",
+  "out": "docs/images/wonders/dead-sea.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Dead_Sea_Sunrise.jpg",
+   "File:Dead_Sea,_Jordanian_Shore.jpg",
+   "File:Deadsea_panorama.jpg",
+   "File:Dead_Sea_beach_00.JPG"
+  ],
+  "caption": "The Dead Sea at sunrise, seen from Masada"
+ },
+ {
+  "id": "wonder-delicate-arch",
+  "out": "docs/images/wonders/delicate-arch.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Delicate_arch_sunset.jpg",
+   "File:Cloudy_Sunset_at_Delicate_Arch_(8520706358).jpg"
+  ],
+  "caption": "Delicate Arch at sunset, Utah"
+ },
+ {
+  "id": "wonder-eye-of-the-sahara",
+  "out": "docs/images/wonders/eye-of-the-sahara.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Richat_Structure_ISS030-E-12516.jpg",
+   "File:ASTER_Richat.jpg",
+   "File:Richat_Structure_-_SRTM.jpg"
+  ],
+  "caption": "The Richat Structure from the International Space Station"
+ },
+ {
+  "id": "wonder-eyjafjallajokull",
+  "out": "docs/images/wonders/eyjafjallajokull.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Þórsmörk_Eyjafjallajökull_1_Iceland_(cropped).jpg",
+   "File:Eyjafjallajokull_Gigjokull_in_ash.jpg",
+   "File:Iceland_Eyjafjallajökull_from_Sólheimajökull.JPG",
+   "File:Fimmvorduhals_2010_03_27_dawn.jpg"
+  ],
+  "caption": "Eyjafjallajökull from Þórsmörk, Iceland"
+ },
+ {
+  "id": "wonder-galapagos-islands",
+  "out": "docs/images/wonders/galapagos-islands.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:North_Seymour_Island_in_the_Galapagos_about_to_land_on_shore_photo_by_Alvaro_Sevilla_Design.JPG",
+   "File:Galapagos2007--12--08-23-07.JPG",
+   "File:Galapagos_Islands_astronaut_photo_from_ISS_2020.jpg",
+   "File:Lobo_marino_(Zalophus_californianus_wollebaeki),_Punta_Pitt,_isla_de_San_Cristóbal,_islas_Galápagos,_Ecuador,_2015-07-24,_DD_11.JPG"
+  ],
+  "caption": "North Seymour Island, Galápagos"
+ },
+ {
+  "id": "wonder-giants-causeway",
+  "out": "docs/images/wonders/giants-causeway.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Causeway-code_poet-4.jpg",
+   "File:Giant's_Causeway_(14).JPG",
+   "File:The_Chimney_Stacks,_Giants_Causeway,_County_Antrim.jpg"
+  ],
+  "caption": "The Giant's Causeway, County Antrim"
+ },
+ {
+  "id": "wonder-gobustan",
+  "out": "docs/images/wonders/gobustan.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Gobustan_Azerbaijan_01.jpg",
+   "File:Gobustan_2.jpg",
+   "File:Qobustan_giriş_qayası_2026_(1).jpg"
+  ],
+  "caption": "Rock carvings at Gobustan, Azerbaijan"
+ },
+ {
+  "id": "wonder-great-barrier-reef",
+  "out": "docs/images/wonders/great-barrier-reef.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Part_of_Great_Barrier_Reef_from_Helicopter.jpg",
+   "File:Arlington-Reef-2018-aerial-view-Luka-Peternel.jpg",
+   "File:Heron_Island.jpg",
+   "File:ISS-45_StoryOfWater,_Great_Barrier_Reef,_Australia.jpg"
+  ],
+  "caption": "The Great Barrier Reef from the air"
+ },
+ {
+  "id": "wonder-ha-long-bay",
+  "out": "docs/images/wonders/ha-long-bay.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Ha_Long_Bay_in_2019.jpg",
+   "File:Halong_Bay,_Rock_formations_in_fog.jpg",
+   "File:Limestone_Cliffs-Halong_Bay_Vietnam-Andres_Larin.jpg"
+  ],
+  "caption": "Hạ Long Bay, Vietnam"
+ },
+ {
+  "id": "wonder-ik-kil",
+  "out": "docs/images/wonders/ik-kil.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Cenote_en_Chichén_Itzá,_Yucatán,_México.jpg",
+   "File:Cenote-ik-kil.png",
+   "File:Mexico_cave_steps.jpg"
+  ],
+  "caption": "The cenote of Ik Kil, Yucatán"
+ },
+ {
+  "id": "wonder-kakadu",
+  "out": "docs/images/wonders/kakadu.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Kakadu_Mamukala_DSC03562.JPG",
+   "File:Yellow_Waters_Billabong_July_2001.JPG",
+   "File:Maguk_Gorge.jpg",
+   "File:Termite_cathedral_mounds_in_a_bushfire_blackened_tropical_savanna.jpg",
+   "File:Kakadu_YellowWaters_Croc.jpg",
+   "File:Kakadu_brumbies.jpg",
+   "File:Kakadu_2411.jpg",
+   "File:Mamukala.jpg",
+   "File:Kakadu_2431.jpg",
+   "File:Kakadu_2432.jpg"
+  ],
+  "caption": "Kakadu wetlands, Northern Territory"
+ },
+ {
+  "id": "wonder-lake-retba",
+  "out": "docs/images/wonders/lake-retba.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Lac_Rose_in_Senegal.jpg",
+   "File:Lake_Retba_(Lac_Rose),_worker_is_digging_the_salt_in_the_lake.jpg",
+   "File:RetbaLakeShore.jpg"
+  ],
+  "caption": "Lake Retba, the pink lake of Senegal"
+ },
+ {
+  "id": "wonder-lysefjord",
+  "out": "docs/images/wonders/lysefjord.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Panorama_of_Lysefjord.jpg",
+   "File:LysebotnViewFromAbovePreikestolen.jpg",
+   "File:Lysefjorden_air.jpg",
+   "File:Lysefjord.jpg"
+  ],
+  "caption": "The Lysefjord, Rogaland"
+ },
+ {
+  "id": "wonder-mato-tipila",
+  "out": "docs/images/wonders/mato-tipila.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Devils_Tower_CROP.jpg",
+   "File:Devils_Tower_Darton_1900.jpg",
+   "File:Belle_Fourche_River_19A.JPG",
+   "File:DevilsTowerCloseupByPhilKonstantin.jpg"
+  ],
+  "caption": "Mato Tipila, Devils Tower, Wyoming"
+ },
+ {
+  "id": "wonder-matterhorn",
+  "out": "docs/images/wonders/matterhorn.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Matterhorn_from_Domhütte_-_2.jpg",
+   "File:2007_Matterhorn.jpg",
+   "File:Matterhorn_from_Klein_Matterhorn.jpg",
+   "File:PanoramaMatter.jpg"
+  ],
+  "caption": "The Matterhorn from the Domhütte"
+ },
+ {
+  "id": "wonder-mount-everest",
+  "out": "docs/images/wonders/mount-everest.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Mt._Everest_from_Gokyo_Ri_November_5,_2012.jpg",
+   "File:Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg",
+   "File:Mount_Everest_morning.jpg"
+  ],
+  "caption": "Mount Everest from Gokyo Ri"
+ },
+ {
+  "id": "wonder-mount-kilimanjaro",
+  "out": "docs/images/wonders/mount-kilimanjaro.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Kilimanjaro_from_Amboseli.jpg",
+   "File:Elephants_at_Amboseli_national_park_against_Mount_Kilimanjaro.jpg",
+   "File:The_Kibo_and_Mawenzi_Cones_of_Mt._Kilimanjaro.jpg"
+  ],
+  "caption": "Kilimanjaro from Amboseli"
+ },
+ {
+  "id": "wonder-bermuda-triangle",
+  "out": "docs/images/wonders/bermuda-triangle.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Gulfstream1.jpg",
+   "File:Grumman_TBF-1_Avengers_of_VGS-29_in_flight_over_Norfolk,_Virginia_(USA),_on_1_September_1942_(80-G-427475).jpg",
+   "File:Atlantic_hurricane_tracks.jpg"
+  ],
+  "caption": "Grumman Avengers in formation, 1942, the aircraft type lost as Flight 19 in 1945"
+ },
+ {
+  "id": "wonder-fountain-of-youth",
+  "out": "docs/images/wonders/fountain-of-youth.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Lucas_Cranach_-_Der_Jungbrunnen_(Gemäldegalerie_Berlin).jpg",
+   "File:Ponce_de_León.jpg",
+   "File:French_-_Mirror_Cover_with_the_Fountain_of_Youth_-_Walters_71170.jpg"
+  ],
+  "caption": "The Fountain of Youth, Lucas Cranach the Elder, 1546"
+ },
+ {
+  "id": "wonder-roraima",
+  "out": "docs/images/wonders/roraima.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Panorámica_del_Tepuy_Roraima.jpg",
+   "File:Mount_Roraima,_Venezuela_(12371474504).jpg",
+   "File:Roraima3_(79).JPG",
+   "File:Schomburgk_Twelve_Views_Roraima.jpg"
+  ],
+  "caption": "Mount Roraima"
+ },
+ {
+  "id": "wonder-mount-vesuvius",
+  "out": "docs/images/wonders/mount-vesuvius.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Naples_from_the_Castello_Sant_Elmo_with_Abbazia_San_Martino_the_port_and_the_Vesuv.jpg",
+   "File:Joseph_Wright_of_Derby_-_Vesuvius_from_Portici.jpg",
+   "File:Vesuvius_volcano_in_Italy_20110808_aerial_view_1.jpg",
+   "File:Pompeii&Vesuvius.JPG"
+  ],
+  "caption": "Vesuvius over Naples from Castel Sant'Elmo"
+ },
+ {
+  "id": "wonder-pamukkale",
+  "out": "docs/images/wonders/pamukkale.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:PamukkaleView.jpg",
+   "File:TR_Pamukkale_White_Terraces_asv2020-02_img16.jpg",
+   "File:Pamukkale_56.jpg",
+   "File:Pamukkale,_Denizli_2026_68.jpg"
+  ],
+  "caption": "The travertine terraces of Pamukkale"
+ },
+ {
+  "id": "wonder-pantanal",
+  "out": "docs/images/wonders/pantanal.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Pantanal,_Mato_Grosso,_Brasil.jpg",
+   "File:Pantanal,_south-central_South_America_5170.jpg",
+   "File:4987_Pantanal_jaguar_JF.jpg"
+  ],
+  "caption": "The Pantanal, Mato Grosso"
+ },
+ {
+  "id": "wonder-pinnacles",
+  "out": "docs/images/wonders/pinnacles.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Pinnacles_pano_2005-08-26.jpg",
+   "File:Pinnacles_gnangarra-60.jpg",
+   "File:Pinnacle3.JPG"
+  ],
+  "caption": "The Pinnacles, Nambung National Park"
+ },
+ {
+  "id": "wonder-piopiotahi",
+  "out": "docs/images/wonders/piopiotahi.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Milford_Sound_(New_Zealand).JPG",
+   "File:MitrePeakNZ.jpg",
+   "File:Milford_Sound_Cliffs_Towering_Above.jpg",
+   "File:Dolphins_in_Milford_Sound,_New_Zealand.jpg"
+  ],
+  "caption": "Piopiotahi, Milford Sound"
+ },
+ {
+  "id": "wonder-sahara-el-beyda",
+  "out": "docs/images/wonders/sahara-el-beyda.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:White_Desert,_Egypt.jpg",
+   "File:White_Desert,_Rock_formations_in_desert_landscape,_Egypt.jpg",
+   "File:White_Desert,_Rock_formations_in_desert_landscape_2,_Egypt.jpg",
+   "File:Kalksteinfelsen-limestonerock.jpg"
+  ],
+  "caption": "The White Desert near Farafra"
+ },
+ {
+  "id": "wonder-torres-del-paine",
+  "out": "docs/images/wonders/torres-del-paine.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Torres_del_Paine_y_cuernos_del_Paine,_montaje.jpg",
+   "File:Cuernos_del_Paine_in_Torres_del_Paine_National_Park.jpg",
+   "File:Mirador_Base_de_Las_Torres.jpg",
+   "File:TDP2_Stevage.jpg"
+  ],
+  "caption": "Torres del Paine and the Cuernos del Paine"
+ },
+ {
+  "id": "wonder-tsingy-de-bemaraha",
+  "out": "docs/images/wonders/tsingy-de-bemaraha.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Big_Tsingy,_Madagascar_(24082669822).jpg",
+   "File:Bemaraha_Tsingy,_Madagascar.jpg",
+   "File:Grand_Tsingy_01.JPG",
+   "File:Big_Tsingy,_Madagascar_(20915441580).jpg",
+   "File:GrandeTsingy.jpg",
+   "File:Madagascar_tsingy_Igor_Sid.jpg",
+   "File:Grand_Tsingy_03.JPG"
+  ],
+  "caption": "The stone forest of Tsingy de Bemaraha"
+ },
+ {
+  "id": "wonder-ubsunur-hollow",
+  "out": "docs/images/wonders/ubsunur-hollow.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Uvs_núr.JPG",
+   "File:Uvs-Nuur_Hollow,_Mongolia,_Russia,_Landsat-7_CROP.jpg",
+   "File:Great_Lakes_Depression,_Mongolia_and_Russia,_Terra-MODIS,_2001-10-15.jpg"
+  ],
+  "caption": "Uvs Nuur, the Ubsunur Hollow"
+ },
+ {
+  "id": "wonder-uluru",
+  "out": "docs/images/wonders/uluru.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:ULURU.jpg",
+   "File:Uluru_from_above_Iss049e010638_lrg.jpg",
+   "File:TreesUpUluru.JPG",
+   "File:Lasseter_Highway1437.jpg"
+  ],
+  "caption": "Uluru"
+ },
+ {
+  "id": "wonder-vinland",
+  "out": "docs/images/wonders/vinland.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Authentic_Viking_recreation.jpg",
+   "File:LanseAuxMeadows_LargeBuilding.JPG",
+   "File:L'AnseAuxMeadowsModel.jpg"
+  ],
+  "caption": "Reconstructed Norse buildings at L'Anse aux Meadows"
+ },
+ {
+  "id": "wonder-yosemite",
+  "out": "docs/images/wonders/yosemite.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Tunnel_View,_Yosemite_Valley,_Yosemite_NP_-_Diliff.jpg",
+   "File:Panoramic_Overview_from_Glacier_Point_over_Yosemite_Valley_2013_Alternative.jpg",
+   "File:Yosemite_Falls_and_Half_Dome.jpg"
+  ],
+  "caption": "Yosemite Valley from Tunnel View"
+ },
+ {
+  "id": "wonder-zhangye-danxia",
+  "out": "docs/images/wonders/zhangye-danxia.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Colourful_mountains_of_the_Zhangye_National_Geopark.jpg",
+   "File:Zhangye_National_Geopark_5.jpg",
+   "File:Colorful_strata_(Zhangye_National_Geopark).jpg",
+   "File:Striated_rocks_in_Zhangye_National_Geopark.jpg"
+  ],
+  "caption": "The coloured strata of Zhangye Danxia"
+ },
+ {
+  "id": "section-barbarians",
+  "out": "docs/images/sections/barbarians.jpg",
+  "width": 1920,
+  "orient": "landscape",
+  "min_width": 1200,
+  "titles": [
+   "File:Otto_Albert_Koch_Varusschlacht_1909.jpg",
+   "File:Hermann_(Arminius)_at_the_battle_of_the_Teutoburg_Forest_in_9_CE_by_Peter_Jannsen,_1873,_with_painting_creases_and_damage_removed.jpg",
+   "File:Hermannsschlacht_(1813).jpg",
+   "File:Kalkriese_Turmblick.JPG",
+   "File:Ulpiano_Checa_La_invasión_de_los_bárbaros.jpg"
+  ],
+  "caption": "Arminius at the Battle of the Teutoburg Forest, 9 CE, painted by Peter Janssen in 1873"
+ },
+ {
+  "id": "section-eras",
+  "out": "docs/images/sections/eras.jpg",
+  "width": 1920,
+  "orient": "landscape",
+  "min_width": 1200,
+  "titles": [
+   "File:Cole_Thomas_The_Consummation_The_Course_of_the_Empire_1836.jpg",
+   "File:Cole_Thomas_The_Course_of_Empire_Destruction_1836.jpg"
+  ],
+  "caption": "The Course of Empire: The Consummation of Empire, Thomas Cole, 1836"
+ },
+ {
+  "id": "section-city-states",
+  "out": "docs/images/sections/city-states.jpg",
+  "width": 1920,
+  "orient": "landscape",
+  "min_width": 1200,
+  "titles": [
+   "File:Canaletto_-_Bucentaur's_return_to_the_pier_by_the_Palazzo_Ducale_-_Google_Art_Project.jpg",
+   "File:View_of_the_entrance_to_the_Arsenal_by_Canaletto,_1732.jpg",
+   "File:Canal,_Giovanni_Antonio_-_Reception_of_the_French_Ambassador_in_Venice_-_Hermitage.jpg"
+  ],
+  "caption": "The Bucintoro returning to the Molo, Canaletto"
+ },
+ {
+  "id": "section-pantheons",
+  "out": "docs/images/sections/pantheons.jpg",
+  "width": 1920,
+  "orient": "landscape",
+  "min_width": 1200,
+  "titles": [
+   "File:Stonehenge2007_07_30.jpg",
+   "File:Stonehenge_Lucas_de_Heere.jpg"
+  ],
+  "caption": "Stonehenge"
+ },
+ {
+  "id": "section-quiz",
+  "out": "docs/images/sections/quiz.jpg",
+  "width": 1920,
+  "orient": "landscape",
+  "min_width": 1200,
+  "titles": [
+   "File:\"The_School_of_Athens\"_by_Raffaello_Sanzio_da_Urbino.jpg"
+  ],
+  "caption": "The School of Athens, Raphael"
+ },
+ {
+  "id": "section-credits",
+  "out": "docs/images/sections/credits.jpg",
+  "width": 1920,
+  "orient": "landscape",
+  "min_width": 1200,
+  "titles": [
+   "File:Celsus_Library,_Ephesus.jpg",
+   "File:Ephesus_Celsus_Library_Façade.jpg",
+   "File:Celsus_library_in_ephesus.jpg"
+  ],
+  "caption": "The Library of Celsus, Ephesus"
+ },
+ {
+  "id": "wonder-paititi",
+  "out": "docs/images/wonders/paititi.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Manu_riverbank.jpg",
+   "File:Manu_National_Park-71.jpg",
+   "File:Coq-of-the-Rock.jpg"
+  ],
+  "caption": "The Manu river in the Peruvian cloud forest, where legend places Paititi"
+ },
+ {
+  "id": "hero-cleopatra",
+  "out": "docs/images/heroes/cleopatra.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Sir_Lawrence_Alma-Tadema_-_The_Meeting_of_Antony_and_Cleopatra.jpg",
+   "File:Cleopatra_and_Caesar_by_Jean-Leon-Gerome.jpg",
+   "File:Roman_Wall_painting_from_the_House_of_Giuseppe_II,_Pompeii,_1st_century_AD,_death_of_Sophonisba,_but_more_likely_Cleopatra_VII_of_Egypt_consuming_poison.jpg"
+  ],
+  "caption": "The Meeting of Antony and Cleopatra, Lawrence Alma-Tadema, 1885"
+ },
+ {
+  "id": "hero-catherine-de-medici",
+  "out": "docs/images/heroes/catherine-de-medici.jpg",
+  "width": 1280,
+  "orient": "landscape",
+  "min_width": 1000,
+  "titles": [
+   "File:Brazilian_ball_for_Henry_II_in_Rouen_October_1_1550.jpg",
+   "File:Henri_&_Catherine.jpg",
+   "File:Caron-Antoine-triumph-of-winter.jpg",
+   "File:François_Dubois_-_Massacre_de_la_Saint-Barthélemy_(détail).jpg"
+  ],
+  "caption": "The Brazilian ball for Henry II and Catherine at Rouen, 1550"
+ }
+]
