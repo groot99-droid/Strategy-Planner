@@ -12,6 +12,7 @@ import json, re, sys, time, html, subprocess, urllib.request, urllib.parse, path
 import xml.etree.ElementTree as ET
 
 UA = "LeadershipFocusSiteBot/0.2 (https://github.com/groot99-droid/Strategy-Planner)"
+STANDARD_WIDTHS = (320, 640, 800, 1024, 1280, 2560)
 OK_LICENCE = re.compile(r"^(Public domain|CC0|PDM|CC BY(-SA)? \d(\.\d)?|CC-BY(-SA)?-\d(\.\d)?|CC BY-SA|CC BY|Attribution)", re.I)
 
 def get(url, retries=10):
@@ -61,7 +62,10 @@ def acceptable(m, entry, strict_orient=True):
 def download(m, entry, root):
     out = root / entry["out"]; out.parent.mkdir(parents=True, exist_ok=True)
     raw = out.with_suffix(".download")
-    w = entry.get("width", 1280)
+    # Asking for a width at or above the original redirects to the unscaled file, which upload.wikimedia.org
+    # throttles far harder than a rendered thumbnail. Always ask for a standard thumbnail width below the original.
+    want = entry.get("width", 1280)
+    w = max([s for s in STANDARD_WIDTHS if s <= want and s < m["width"]] or [STANDARD_WIDTHS[0]])
     url = "https://commons.wikimedia.org/wiki/Special:FilePath/" + urllib.parse.quote(m["name"]) + f"?width={w}"
     raw.write_bytes(get(url))
     subprocess.run(["convert", str(raw) + "[0]", "-auto-orient", "-strip", "-resize", f"{w}x{w}>", "-quality", str(entry.get("quality", 82)), str(out)], check=True)
