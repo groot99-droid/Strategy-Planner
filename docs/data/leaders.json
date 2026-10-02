@@ -884,7 +884,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Domination",
+   "secondary": "Religion",
+   "confidence": "medium",
+   "one_line": "Two pairs of Horsemen and two pairs of Saka Horse Archers leave the capital by turn 32 and take the nearest capital before it has Walls. Everything after turn 85 is a wide empire paid for by Kurgan Faith, and the kit never produces another yield.",
+   "updated": "2026-10-02",
+   "version": 1,
+   "file": "data/plans/tomyris.json",
+   "phases": 5,
+   "boosts": 64
+  },
   "slug": "tomyris",
   "name": "Tomyris",
   "persona": null,
@@ -2011,7 +2021,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Domination",
+   "secondary": "Culture",
+   "confidence": "medium",
+   "one_line": "Six Gaesatae in a two-deep block with two Archers behind them take the nearest capital before turn 60 and its second city before turn 95, while every unit trained pays Culture and every Mine behind the army pays more. After turn 95 the block disperses into garrisons and Gaul becomes the Culture civilization its Mines and Oppida were always building.",
+   "updated": "2026-10-02",
+   "version": 1,
+   "file": "data/plans/ambiorix.json",
+   "phases": 5,
+   "boosts": 65
+  },
   "slug": "ambiorix",
   "name": "Ambiorix",
   "persona": null,
@@ -2555,7 +2575,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Domination",
+   "secondary": "Culture",
+   "confidence": "medium",
+   "one_line": "Stage four Immortals, two Archers and a Battering Ram on the target's border, declare the Surprise War on turn 46, and take the capital inside the ten turns of +2 Movement. A second ten-turn burst before turn 90 takes a second city or a second neighbour; after that the grievances are the ceiling and Persia is a domestic trade and Pairidaeza Culture civilization.",
+   "updated": "2026-10-02",
+   "version": 1,
+   "file": "data/plans/cyrus.json",
+   "phases": 5,
+   "boosts": 72
+  },
   "slug": "cyrus",
   "name": "Cyrus",
   "persona": null,
@@ -3120,7 +3150,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Domination",
+   "secondary": "Religion",
+   "confidence": "medium",
+   "one_line": "Settle toward the nearest neighbour, bank four Varu and a Ram-and-Swordsman team before Military Training, then declare a War of Territorial Expansion and take two cities in the ten turns the +5 and +2 Movement last. Repeat on the next neighbour while Varu still outclass the field; after turn 100 India is a Stepwell and Dharma civ that holds what it took.",
+   "updated": "2026-10-02",
+   "version": 1,
+   "file": "data/plans/chandragupta.json",
+   "phases": 5,
+   "boosts": 51
+  },
   "slug": "chandragupta",
   "name": "Chandragupta",
   "persona": null,
@@ -3686,7 +3726,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Domination",
+   "secondary": "Diplomatic",
+   "confidence": "medium",
+   "one_line": "Build Gold and Envoys across the river while city-states build the soldiers, then rent their armies at Castles with Black Army riding inside them and take cities you keep. If no neighbour is in reach, the same Envoys are a Diplomatic game.",
+   "updated": "2026-10-02",
+   "version": 1,
+   "file": "data/plans/matthias-corvinus.json",
+   "phases": 5,
+   "boosts": 69
+  },
   "slug": "matthias-corvinus",
   "name": "Matthias Corvinus",
   "persona": null,
@@ -4253,7 +4303,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Culture",
+   "secondary": "Domination",
+   "confidence": "medium",
+   "one_line": "Govern every city for Toqui's Culture and experience, carpet the mountain Appeal with Chemamull, and keep a cavalry force ready so that whenever a neighbour enters a Golden Age you ride in, kill inside their borders, and let the Loyalty do the conquering.",
+   "updated": "2026-10-02",
+   "version": 1,
+   "file": "data/plans/lautaro.json",
+   "phases": 5,
+   "boosts": 74
+  },
   "slug": "lautaro",
   "name": "Lautaro",
   "persona": null,
@@ -5073,7 +5133,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Culture",
+   "secondary": "Science",
+   "confidence": "high",
+   "one_line": "Every Builder after the second is wonder fuel: four charges at 15% each is most of an Ancient or Classical wonder, and six to eight of them stand in your cities by turn 110. After that the ability is spent and China is a Culture civilization living in the most permanent assets in the game.",
+   "updated": "2026-10-02",
+   "version": 1,
+   "file": "data/plans/qin-shi-huang.json",
+   "phases": 5,
+   "boosts": 75
+  },
   "slug": "qin-shi-huang",
   "name": "Qin Shi Huang",
   "persona": null,
@@ -5340,7 +5410,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Science",
+   "secondary": "Domination",
+   "confidence": "medium",
+   "one_line": "Settle wide, give every city a Commercial Hub and a Hansa before it has the population to deserve them, decide by turn 60 whether the extra Military slot buys a city-state and a neighbour or just the escorts, and point the Production at Campuses and a Spaceport.",
+   "updated": "2026-10-02",
+   "version": 1,
+   "file": "data/plans/frederick-barbarossa.json",
+   "phases": 5,
+   "boosts": 81
+  },
   "slug": "frederick-barbarossa",
   "name": "Frederick Barbarossa",
   "persona": null,
@@ -5612,7 +5692,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Science",
+   "secondary": "Culture",
+   "confidence": "medium",
+   "one_line": "Settle in the mountains, feed each city with Terrace Farms and domestic Trade Routes, put a Campus against three mountain faces in every city, and let the tallest cities on the map carry a Science game that Machu Picchu and mountain Universities accelerate.",
+   "updated": "2026-10-02",
+   "version": 1,
+   "file": "data/plans/pachacuti.json",
+   "phases": 5,
+   "boosts": 75
+  },
   "slug": "pachacuti",
   "name": "Pachacuti",
   "persona": null,
@@ -5894,7 +5984,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Science",
+   "secondary": "Culture",
+   "confidence": "medium",
+   "one_line": "Settle the coast and the Appeal, put a Campus on every Breathtaking tile, keep a queue of expensive things ready in every city, and whenever someone declares on you or you liberate a city, spend the ten or twenty turns of double Production on that queue and nothing else.",
+   "updated": "2026-10-02",
+   "version": 1,
+   "file": "data/plans/john-curtin.json",
+   "phases": 5,
+   "boosts": 81
+  },
   "slug": "john-curtin",
   "name": "John Curtin",
   "persona": null,
@@ -6482,7 +6582,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Culture",
+   "secondary": "Science",
+   "confidence": "medium",
+   "one_line": "Audit the features before every settle, pin a Theater Square on Woods, a Campus on Rainforest and a Thành on Marsh in each city before the first Builder arrives, chop nothing that is pinned, and let the terrain Culture plus the Thành's Tourism after Flight carry a Culture game nobody can invade.",
+   "updated": "2026-10-02",
+   "version": 1,
+   "file": "data/plans/ba-trieu.json",
+   "phases": 5,
+   "boosts": 79
+  },
   "slug": "ba-trieu",
   "name": "Ba Trieu",
   "persona": null,
@@ -6755,7 +6865,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Science",
+   "secondary": "Culture",
+   "confidence": "high",
+   "one_line": "Plant the capital where eight cities fit inside six tiles, settle all of them by turn 70 on Farms and Plantations rather than rivers, put an Observatory beside the Plantations in every one, and let a compact empire at +10% to everything out-research rivals twice its size.",
+   "updated": "2026-10-02",
+   "version": 1,
+   "file": "data/plans/lady-six-sky.json",
+   "phases": 5,
+   "boosts": 76
+  },
   "slug": "lady-six-sky",
   "name": "Lady Six Sky",
   "persona": null,
@@ -8095,7 +8215,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Culture",
+   "secondary": "Diplomatic",
+   "confidence": "medium",
+   "one_line": "Settle beside mountains, woods and coast, never chop, mine or dig a quarry where it lowers Appeal, let the Breathtaking tiles pay Science and Culture from turn 20, decide by turn 60 whether the Culture goes to Tourism or the Wildcard Favor goes to the World Congress, and close with National Parks, Film Studios and Rock Bands.",
+   "updated": "2026-10-02",
+   "version": 1,
+   "file": "data/plans/teddy-roosevelt.json",
+   "phases": 5,
+   "boosts": 71
+  },
   "slug": "teddy-roosevelt",
   "name": "Teddy Roosevelt",
   "persona": "Bull Moose",
@@ -8367,7 +8497,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Culture",
+   "secondary": "Science",
+   "confidence": "medium",
+   "one_line": "Sail for five turns and no more, land on a wooded coast, never clear a feature, put a Harbor and then a Theater Square with a Marae in every coastal city, decide by turn 60 whether the feature Culture goes to Tourism or the coastal Campuses, and close with Flight-era Marae Tourism, National Parks and Seaside Resorts.",
+   "updated": "2026-10-02",
+   "version": 1,
+   "file": "data/plans/kupe.json",
+   "phases": 5,
+   "boosts": 76
+  },
   "slug": "kupe",
   "name": "Kupe",
   "persona": null,
@@ -10832,7 +10972,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Culture",
+   "secondary": "Religion",
+   "confidence": "high",
+   "one_line": "Win the Dance of the Aurora race by turn 15, put a half-price Lavra on tundra in every city, and let its Shrine, Temple and worship building make Great Writers, Artists and Musicians faster than any Theater Square can. Trade with whoever is ahead of you until you are not, then spend two hundred turns of banked Great Works on Tourism.",
+   "updated": "2026-10-02",
+   "version": 1,
+   "file": "data/plans/peter.json",
+   "phases": 5,
+   "boosts": 65
+  },
   "slug": "peter",
   "name": "Peter",
   "persona": null,
@@ -11661,7 +11811,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Religion",
+   "secondary": "Diplomatic",
+   "confidence": "medium",
+   "one_line": "Meet every civilization before turn 60, never fire the first shot, found a religion before the Classical era ends, and spend the Faith that other people's religions pay you on Apostles sent back into their lands. If few religions get founded, the same peace record wins the World Congress instead.",
+   "updated": "2026-10-02",
+   "version": 1,
+   "file": "data/plans/gandhi.json",
+   "phases": 5,
+   "boosts": 59
+  },
   "slug": "gandhi",
   "name": "Gandhi",
   "persona": null,
@@ -12190,7 +12350,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Religion",
+   "secondary": "Culture",
+   "confidence": "medium",
+   "one_line": "Settle every city on the coast, put a Holy Site on the water in each, found the religion by turn 60 and bank the Faith. At Mercantilism buy a Jong fleet with it, own the sea, and carry the Apostles to every coastal city under its guns; take the one coastal Holy City whose religion contests yours.",
+   "updated": "2026-10-02",
+   "version": 1,
+   "file": "data/plans/gitarja.json",
+   "phases": 5,
+   "boosts": 63
+  },
   "slug": "gitarja",
   "name": "Gitarja",
   "persona": null,
@@ -13285,7 +13455,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Diplomatic",
+   "secondary": "Religion",
+   "confidence": "medium",
+   "one_line": "Keep the Era Score above the Golden Age line every era, found a religion and carry it into the city-states, and let every envoy count twice until Georgia is suzerain of half the map. The Faith and the suzerainties then win the World Congress; if the chain breaks, the same religion still wins on its own.",
+   "updated": "2026-10-02",
+   "version": 1,
+   "file": "data/plans/tamar.json",
+   "phases": 5,
+   "boosts": 60
+  },
   "slug": "tamar",
   "name": "Tamar",
   "persona": null,
@@ -13563,7 +13743,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Religion",
+   "secondary": "Diplomatic",
+   "confidence": "medium",
+   "one_line": "Settle the desert, send every Trade Route abroad, buy every building with Gold and every Suguba building with Faith, and never put a unit or a building in the Production queue. The desert City Centers and Desert Folklore pay the Apostles; the Gold pays everything else, including the votes if the religion stalls.",
+   "updated": "2026-10-02",
+   "version": 1,
+   "file": "data/plans/mansa-musa.json",
+   "phases": 5,
+   "boosts": 58
+  },
   "slug": "mansa-musa",
   "name": "Mansa Musa",
   "persona": null,
@@ -14124,7 +14314,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Science",
+   "secondary": "Diplomatic",
+   "confidence": "medium",
+   "one_line": "Settle every coast on the home continent as fast as the Cothon can pump Settlers, because none of those cities can ever flip, then take the pump overseas and move the capital only when the second continent holds more of your cities than the first. Twelve Harbors and twelve Campuses win the Science race by weight.",
+   "updated": "2026-10-02",
+   "version": 1,
+   "file": "data/plans/dido.json",
+   "phases": 5,
+   "boosts": 62
+  },
   "slug": "dido",
   "name": "Dido",
   "persona": null,

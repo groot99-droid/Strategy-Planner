@@ -1,0 +1,480 @@
+{
+  "slug": "tamar",
+  "shape": "Monitor",
+  "secondary_shape": null,
+  "version": 1,
+  "updated": "2026-10-02",
+  "assumptions": {
+    "ruleset": "Gathering Storm with every expansion and the Leader Pass",
+    "speed": "Standard",
+    "difficulty": "Emperor",
+    "map": "Continents or Pangaea, standard size, 8 civilizations, with Georgia's hills start bias honoured",
+    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. Tamar's single persona is planned here. Era boundaries are assumed near turns 60, 105, 150, 195 and 240; read the Era screen for the real ones, because the checkpoints are tied to the boundary, not the turn."
+  },
+  "verdict": {
+    "victory": "Diplomatic",
+    "secondary": "Religion",
+    "confidence": "medium",
+    "one_line": "Keep the Era Score above the Golden Age line every era, found a religion and carry it into the city-states, and let every envoy count twice until Georgia is suzerain of half the map. The Faith and the suzerainties then win the World Congress; if the chain breaks, the same religion still wins on its own.",
+    "why": "Glory of the World, Kingdom and Faith makes an envoy to a city-state that follows your religion count as two, which is the cheapest path to suzerainty in the game and therefore to Diplomatic Favor, city-state yields and levies. That only works if the city-states follow your religion, so a religion is the means and must be founded early. Strength in Unity pays a Normal-Age Dedication bonus on top of the Golden Age one, so every Golden Age is worth more to Georgia than to anyone else and a missed one costs more too; the plan therefore watches Era Score as its one number. The Protectorate War doubles Faith for ten turns when it can be declared, and the Tsikhe makes every Renaissance city a Faith source behind the strongest walls available. Religion is the fallback because the Faith engine runs whether or not the Congress goes your way."
+  },
+  "map_check": {
+    "must_have": [
+      "Hills around the capital and the second city, for Khevsur fighting ground, Mines under Religious Idols and Holy Site adjacency from the mountains behind them.",
+      "At least two city-states within fifteen tiles by turn 40, because the doubled envoys are worth nothing without targets."
+    ],
+    "prefer": [
+      "A mountain range within two tiles of the capital for a Holy Site at plus three or better; the religion must be founded early.",
+      "Religious city-states among the neighbours: Yerevan, Jerusalem and Armagh all follow your religion quickly and pay back in Apostles and pressure.",
+      "A coast within reach of the second or third city for Kilwa Kisiwani and the Apadana, which are the two envoy wonders."
+    ],
+    "no_go": "A flat start with no hills in two rings and no mountains in sight, with the nearest city-state more than twenty tiles away. The Khevsur, the Holy Site plan and the envoy doubling are all weak at once, and Georgia is then a Walls civilization with nothing to put behind them.",
+    "fallback": "Move the Settler up to two turns toward hills or a mountain. If city-states are scarce, keep the Era Score loop, which works on any map, and run the Religion branch from the start: Holy Sites, Religious Idols, Monumentality Settlers in every Golden Age, and Apostles into the nearest civilizations rather than into city-states. The Diplomatic branch returns if Cartography reveals city-states overseas."
+  },
+  "kit_levers": [
+    { "source": "leader_ability", "name": "Glory of the World, Kingdom and Faith", "buys": "Envoys sent to city-states that follow Georgia's majority religion count as two, and declaring a Protectorate War doubles Faith output for ten turns.", "exploit": "Convert city-states before sending envoys to them; one envoy becomes two and suzerainty costs half. The Protectorate War is an opportunity, not a plan: when a city-state you hold three envoys in is attacked, the war is declared for the Faith and fought from behind walls, and the ten turns are spent buying Apostles, Settlers and Builders." },
+    { "source": "civ_ability", "name": "Strength in Unity", "buys": "Dedications made at the start of a Golden or Heroic Age also grant their Normal Age Era Score bonus, and Walls are built faster.", "exploit": "Every Golden Age is a double Dedication: Monumentality buys Builders and Settlers with Faith and also feeds the next era's score, so one Golden Age tends to produce the next. The cheaper Walls are the defensive doctrine and the Engineering, Castles-era and Siege Tactics-era Era Score, and they are what lets Georgia refuse every war." },
+    { "source": "unique_unit", "name": "Khevsur", "buys": "A Man-At-Arms replacement that fights much better on Hills and ignores the Hills movement penalty.", "exploit": "Two Khevsur on the hills between your cities are the whole Medieval army; they are built at Apprenticeship, placed where an invader must climb to reach them, and never march far off the hills. Their first training is also an Era Score moment." },
+    { "source": "unique_infrastructure", "name": "Tsikhe", "buys": "A Renaissance Walls replacement with higher Outer Defense Strength, Faith, and Tourism later.", "exploit": "Every city gets a Tsikhe as soon as Siege Tactics is in, under the Walls Production bonus. It is Faith in a city that has no Holy Site, defence that ends the question of invasion, and Tourism that costs nothing once Conservation arrives." },
+    { "source": "agenda", "name": "Narikala Fortress", "buys": "AI Tamar builds the strongest Walls available and dislikes civilizations that leave their cities undefended.", "exploit": "Irrelevant to your own play, except that an AI Tamar on the map will be a Faith and city-state rival with impregnable cities; do not plan a war against her, and out-envoy her instead." }
+  ],
+  "shape_block": {
+    "monitor": {
+      "watched_stat": "Your Era Score against the Golden Age threshold shown on the Era screen, together with the number of turns left in the current era",
+      "check_every": "five turns from turn 10, every turn once fewer than fifteen turns remain in the era, and the turn any Historic Moment notification arrives",
+      "bands": {
+        "green": { "test": "Era Score already at or above the Golden Age threshold, or within three points of it with more than twenty turns of the era left.", "response": "No action. Keep the current build, bank Faith for the Monumentality purchases the next Golden Age allows, and save cheap Historic Moments (a first district type, a Great Person recruit) for the next era if the threshold is already met." },
+        "amber": { "test": "More than three points below the Golden Age threshold with twenty or fewer turns left in the era, or on course to clear only the Normal Age line.", "response": "Act now while points are cheap: finish a first-of-its-kind district or building, recruit the Great Person you are closest to, send a Trader to a city-state, clear the barbarian camp near your border, settle the Settler you were holding on a new terrain or beside a natural wonder, or train the first Khevsur. Count the points each of these pays and queue enough of them to cross the line with two turns to spare." },
+        "red": { "test": "Below the Golden Age threshold with fewer than eight turns left and no reachable moment that closes the gap, or below the Dark Age threshold at any point.", "response": "The chain is about to break. Take the Normal Age and choose the Dedication whose Normal bonus pays Era Score for what you are already doing (Free Inquiry for a Campus empire, Monumentality for a district empire), so the next era's score starts high. Below the Dark Age line, choose a Dark Age policy that fits and plan the Heroic Age that follows, which Strength in Unity makes a triple Dedication." }
+      },
+      "second_watch": { "stat": "City-states in which you hold three or more envoys, and whether any of them, or any ally, has been declared war on this turn", "why": "A city-state under attack is the Protectorate War trigger, which doubles Faith for ten turns, and a city-state lost to conquest is suzerainty, Favor and a converted follower gone at once. Both have to be seen the turn they happen; the plan keeps a Khevsur pair and the Faith reserve ready for either." },
+      "off_period_plan": "Most turns are off-period: no Golden Age pending, no ally attacked. Then the build is Walls in every city under the Production bonus, a Holy Site and Shrine in each, envoys into the city-states that already follow your religion, and Missionaries into the ones that do not yet. This is the plan, not filler; it is what makes the next Golden Age and the next suzerainty."
+    }
+  },
+  "phases": [
+    {
+      "id": "setup",
+      "name": "Setup",
+      "turns": { "from": 1, "to": 25 },
+      "era": "ancient",
+      "objective": "Settle on or beside hills with mountains behind, meet the nearest city-states, found the pantheon, and bank the first Era Score moments so the Classical transition is a Golden Age rather than a hope.",
+      "build_order": [
+        { "item": "Scout", "why": "City-states met early are envoys spent early and Political Philosophy's Inspiration; a natural wonder found is Era Score and the Astrology Eureka." },
+        { "item": "Warrior", "why": "Escorts the Settler and finishes the camp scout; the first camp cleared near a city is a moment." },
+        { "item": "Settler", "why": "Second city on hills with a mountain Holy Site tile; settled on a new terrain type if one is near, which is Era Score." },
+        { "item": "Slinger", "why": "Archery Eureka and the capital's ranged defender while Walls go up." },
+        { "item": "Monument", "why": "Culture to Mysticism, Political Philosophy and Theology on time." },
+        { "item": "Builder", "why": "Mines on hills for The Wheel and Religious Idols Faith; a Quarry for Masonry and Stone Circles if that pantheon is taken." },
+        { "item": "Ancient Walls", "why": "In the capital under the Walls bonus; Engineering Eureka and Era Score for the first Walls." },
+        { "item": "Holy Site", "why": "Started at the end of the phase; first district is State Workforce and an Era Score moment." }
+      ],
+      "research": [
+        { "id": "tech:mining", "note": "Mines on the hills; the pantheon pays per Mine." },
+        { "id": "tech:astrology", "note": "Holy Site; Eureka if the Scout finds a natural wonder." },
+        { "id": "tech:masonry", "note": "Ancient Walls; Eureka from a Quarry." },
+        { "id": "tech:writing", "note": "Eureka from the first civilization met; Campus later." },
+        { "id": "tech:bronze-working", "note": "Three barbarian kills; Iron reveal and the Spearman for Military Tactics." }
+      ],
+      "civics": [
+        { "id": "civic:code-of-laws", "note": "God King for the pantheon, Discipline against camps." },
+        { "id": "civic:craftsmanship", "note": "Inspiration from three improvements; Ilkum for Builders." },
+        { "id": "civic:foreign-trade", "note": "The first Trade Route, which goes to a city-state for the moment and the envoy quest." },
+        { "id": "civic:mysticism", "note": "Inspiration from the pantheon; Diplomatic League and Revelation." }
+      ],
+      "policies": [
+        { "card": "God King", "slot": "economic", "from": "civic:code-of-laws", "why": "Faith for the pantheon by turn 20 and the first Faith toward a Prophet." },
+        { "card": "Discipline", "slot": "military", "from": "civic:code-of-laws", "why": "Warrior and Slinger clear the camp near the capital without losses." },
+        { "card": "Ilkum", "slot": "economic", "from": "civic:craftsmanship", "why": "Builders faster; Mines are Faith under Religious Idols." }
+      ],
+      "districts": [
+        { "district": "holy-site", "city": "capital", "note": "On the mountain adjacency tile; the religion and the first district moment." }
+      ],
+      "pantheon": { "slug": "religious-idols", "why": "Faith from Mines on Luxury and Bonus resources, which a hills start builds anyway; the religion must be founded before the Great Prophets run out.", "alternative": "stone-circles" },
+      "wonders": [],
+      "governors": [],
+      "city_states": [
+        { "type": "Religious", "why": "The first envoy goes to the nearest Religious city-state; it will follow your religion first and its envoys double soonest." },
+        { "slug": "valletta", "why": "Walls cheaper and City Center buildings bought with Faith; the Walls doctrine made cheaper still." }
+      ],
+      "great_people": [],
+      "checkpoints": [
+        { "turn": 25, "test": "Two city-states met, pantheon founded, Ancient Walls up in the capital, second city settled or the Settler walking, Era Score at five or better?", "pass": "Enter the standing loop; read the Era screen every five turns.", "fail": "Era Score under five: the Classical transition is at risk, so the Holy Site goes ahead of the second Settler and the Scout keeps looking for a natural wonder. No city-states met: send the Warrior out as a second explorer." }
+      ],
+      "tasks": [
+        { "id": "setup-settle-hills", "turn": 1, "text": "Settle on a hill with a mountain within two tiles; move at most two turns to get there." },
+        { "id": "setup-first-read", "turn": 10, "text": "Open the Era screen, write down the Golden Age threshold for the Classical transition and the current score, and keep the two numbers beside each other for the rest of the game." },
+        { "id": "setup-pantheon", "turn": 18, "text": "Found Religious Idols, or Stone Circles if the capital has two Stone tiles." },
+        { "id": "setup-walls", "turn": 22, "text": "Ancient Walls finished in the capital under the Walls bonus; Engineering Eureka collected." },
+        { "id": "setup-second-city", "turn": 25, "text": "Second city settled on hills with its own mountain Holy Site tile; on a new terrain type if one is within reach for the Era Score." }
+      ]
+    },
+    {
+      "id": "first-age",
+      "name": "First Golden Age",
+      "turns": { "from": 26, "to": 90 },
+      "era": "classical",
+      "objective": "Cross the Golden Age line at the Classical transition, found the religion, grow to four walled cities with Holy Sites, and start converting the nearest city-states so the doubled envoys begin paying before the Medieval era.",
+      "build_order": [
+        { "item": "Shrine", "why": "In the capital and second city; the Great Prophet points that found the religion." },
+        { "item": "Settler", "why": "Third and fourth cities on hills; every new city is Walls, a Holy Site and a Tsikhe later." },
+        { "item": "Trader", "why": "To a city-state: Currency Eureka, an Era Score moment for the first route, and the envoy quest." },
+        { "item": "Ancient Walls", "why": "In every new city under the bonus; the Walls doctrine is also the Era Score doctrine." },
+        { "item": "Holy Site", "why": "Second and third cities; Mathematics counts three specialty districts." },
+        { "item": "Spearman", "why": "One, for the Military Tactics Eureka at a camp and the anti-cavalry gap before the Khevsur." },
+        { "item": "Missionary", "why": "Faith-bought the turn the religion is founded; the first city-state converted is the first doubled envoy." },
+        { "item": "Campus", "why": "In the capital after the Holy Sites; Recorded History and the Science Georgia otherwise lacks." }
+      ],
+      "research": [
+        { "id": "tech:wheel", "note": "A Mine on a resource gives the Eureka; Water Mill and Mathematics path." },
+        { "id": "tech:currency", "note": "The first Trade Route gives the Eureka; Commercial Hub for more routes and Great Merchants." },
+        { "id": "tech:engineering", "note": "Free Eureka from Ancient Walls; the Aqueduct and the Great Wall are not needed, Military Engineering is." },
+        { "id": "tech:construction", "note": "Water Mill in a river city; Games and Recreation follows." },
+        { "id": "tech:mathematics", "note": "Holy Site, Campus and Commercial Hub give the Eureka; Apprenticeship path to the Khevsur." },
+        { "id": "tech:military-tactics", "note": "The Spearman's camp kill; it is on the way to Apprenticeship." },
+        { "id": "tech:apprenticeship", "note": "Three Mines on the hills give the Eureka; Khevsur unlock here." }
+      ],
+      "civics": [
+        { "id": "civic:early-empire", "note": "Colonization for the Settlers; Inspiration at six population." },
+        { "id": "civic:state-workforce", "note": "Free Inspiration from the first Holy Site; Corvee is not needed." },
+        { "id": "civic:political-philosophy", "note": "Classical Republic for Great Person points and Amenities; Inspiration from three city-states met." },
+        { "id": "civic:theology", "note": "Found the religion; Scripture doubles Holy Site adjacency." },
+        { "id": "civic:defensive-tactics", "note": "Limes and Bastions; Inspiration if anyone declares on you, which Walls make unlikely." },
+        { "id": "civic:games-and-recreation", "note": "Free Inspiration from Construction; Colosseum is not planned." }
+      ],
+      "policies": [
+        { "card": "Diplomatic League", "slot": "diplomatic", "from": "civic:mysticism", "why": "The first envoy to each city-state counts as two; stacked with the religion doubling, one envoy is three steps toward suzerainty." },
+        { "card": "Revelation", "slot": "wildcard", "from": "civic:mysticism", "why": "Great Prophet points; the religion must come before the city-states are converted by someone else." },
+        { "card": "Colonization", "slot": "economic", "from": "civic:early-empire", "why": "Settlers at half the cost for cities three and four." },
+        { "card": "Classical Republic", "slot": "wildcard", "from": "civic:political-philosophy", "why": "The government: Great Person points toward the Prophet and Amenities for walled hill cities." },
+        { "card": "Limes", "slot": "military", "from": "civic:defensive-tactics", "why": "Walls at double speed on top of the civ bonus; every new city is walled in a few turns." },
+        { "card": "Scripture", "slot": "economic", "from": "civic:theology", "why": "Doubled Holy Site adjacency from the mountains." }
+      ],
+      "districts": [
+        { "district": "holy-site", "city": "second and third cities", "note": "Each beside a mountain; each with a Shrine before anything else." },
+        { "district": "campus", "city": "capital", "note": "Beside a mountain if one is free; the Science catch-up begins here." },
+        { "district": "commercial-hub", "city": "the river or coastal city", "note": "A second Trade Route to a city-state; Great Merchant points for The Enlightenment later." }
+      ],
+      "pantheon": { "slug": "religious-idols", "why": "Already founded; this phase spends its Faith on the first Missionaries." },
+      "wonders": [
+        { "name": "Apadana", "why": "Two envoys for every wonder built in the city, and the wonder itself is an Era Score moment.", "skip_if": "No coastal city exists by turn 60, or a rival's progress notification appears before it is half built." },
+        { "name": "Mahabodhi Temple", "why": "Two free Apostles, which are four city-state conversions with Dharma-less charges, and Faith.", "skip_if": "No Woods tile is adjacent to a Holy Site, or a rival Faith civilization has started it." }
+      ],
+      "governors": [
+        { "governor": "amani", "promotion": "Emissary", "city": "the city-state you are closest to suzerainty of", "why": "Two envoys where they count double; suzerainty by turn 70 is Era Score and Favor." },
+        { "governor": "moksha", "promotion": "Patron Saint", "city": "capital", "why": "Missionaries and Apostles bought here start promoted; the capital is the religious depot." }
+      ],
+      "city_states": [
+        { "slug": "yerevan", "why": "Chosen Apostle promotions; Proselytizer on demand for city-states another religion reached first." },
+        { "slug": "jerusalem", "why": "Holy Sites exert pressure as Holy Cities, which converts nearby city-states without a Missionary." },
+        { "type": "Militaristic", "why": "Three envoys for Barracks and Stable Production is cheap here; Valletta and Preslav both fit the Walls doctrine." }
+      ],
+      "great_people": [
+        { "class": "great-prophet", "why": "Non-negotiable: two Shrines, Revelation, and a Holy Site project if a rival is close." }
+      ],
+      "checkpoints": [
+        { "turn": 55, "test": "Era Score at or above the Golden Age threshold for the Classical transition, religion founded or the Prophet within ten turns, three cities walled?", "pass": "Take the Golden Age with Monumentality; Faith-buy two Builders and a Settler in the first five turns of it.", "fail": "Below the line with five turns left: run the amber response until it crosses. If it cannot, take Monumentality in the Normal Age anyway for the Era Score it pays on districts, and plan a Heroic Age if the Dark Age line was also missed." },
+        { "turn": 90, "test": "Religion founded, four walled cities, two city-states following your religion, and suzerain of at least one?", "pass": "Enter the chain phase; the Medieval transition is the next line.", "fail": "No religion: the envoy doubling is off for the game, so take the Diplomatic League route alone and put the verdict's weight on Walls, Favor and alliances. No converted city-state: Missionaries before any building." }
+      ],
+      "tasks": [
+        { "id": "first-age-trader", "turn": 30, "text": "First Trader to the nearest city-state: Currency Eureka, an Era Score moment and progress on its envoy quest." },
+        { "id": "first-age-moment-list", "turn": 35, "text": "Write the list of Era Score moments still available this era (first district types, first wonder, first Great Person, suzerainty, a camp cleared near a city) with their point values, and tick them off as they happen." },
+        { "id": "first-age-shrines", "turn": 45, "text": "Shrines in both Holy Sites; Revelation slotted; Holy Site project if a rival is within one Prophet of the last slot." },
+        { "id": "first-age-dedication", "turn": 60, "text": "At the transition choose Monumentality in a Golden Age (Faith-bought Builders and Settlers, plus its Normal Age score bonus through Strength in Unity); choose Free Inquiry instead if the empire is Campus-heavy." },
+        { "id": "first-age-religion", "turn": 75, "text": "Found the religion: Founder belief Cross-Cultural Dialogue or Tithe, follower belief Work Ethic for the mountain Holy Sites, Worship building Stupa or Wat." },
+        { "id": "first-age-first-convert", "turn": 85, "text": "First city-state converted by a Patron Saint Missionary; then send it every envoy earned until suzerainty." }
+      ]
+    },
+    {
+      "id": "chain",
+      "name": "Chain the ages",
+      "turns": { "from": 91, "to": 160 },
+      "era": "medieval",
+      "objective": "Hold the Golden Age chain through the Medieval and Renaissance transitions, put Medieval Walls and then Tsikhe in every city, field the Khevsur pair, and convert and envoy enough city-states that Georgia is suzerain of four by turn 160.",
+      "build_order": [
+        { "item": "Khevsur", "why": "Two at Apprenticeship; the first is an Era Score moment and the pair holds every hill pass." },
+        { "item": "Medieval Walls", "why": "In every city once Castles is in; the bonus and Limes make them a few turns each." },
+        { "item": "Temple", "why": "In every Holy Site city; Divine Right's Inspiration and Apostles need them." },
+        { "item": "Apostle", "why": "Faith-bought in waves of three toward the city-states another religion reached first." },
+        { "item": "Settler", "why": "Fifth and sixth cities, Faith-bought under Monumentality in a Golden Age." },
+        { "item": "Market", "why": "Two for Guilds; Gold for the envoy-wonder cities and unit upgrades." },
+        { "item": "Aqueduct", "why": "Capital; Military Engineering Eureka and Housing for the Civil Service Inspiration." },
+        { "item": "Library", "why": "Both Campus cities; Universities for Printing follow." }
+      ],
+      "research": [
+        { "id": "tech:castles", "note": "Free Eureka from a Tier 2 government; Medieval Walls everywhere." },
+        { "id": "tech:military-engineering", "note": "Aqueduct Eureka; Military Engineers are not needed, the path to Siege Tactics is." },
+        { "id": "tech:machinery", "note": "Three Archers; Crossbowmen behind the Khevsur and Kilwa Kisiwani." },
+        { "id": "tech:education", "note": "Universities; Eureka from a Great Scientist if one is cheap." },
+        { "id": "tech:stirrups", "note": "Free Eureka from Feudalism; on the path to Siege Tactics." },
+        { "id": "tech:siege-tactics", "note": "Tsikhe unlock; Eureka from two Trebuchets, which this plan does not build, so unboosted." }
+      ],
+      "civics": [
+        { "id": "civic:feudalism", "note": "Six Farms; Serfdom for the Builders Monumentality does not cover." },
+        { "id": "civic:civil-service", "note": "A ten-population capital; Meritocracy." },
+        { "id": "civic:divine-right", "note": "Two Temples give the Inspiration; Monarchy is the government for a walled empire." },
+        { "id": "civic:guilds", "note": "Two Markets; Banking Eureka." },
+        { "id": "civic:medieval-faires", "note": "Four Trade Routes, all to city-states for the envoy quests." },
+        { "id": "civic:exploration", "note": "Only on the way to Diplomatic Service; Inspiration from two Caravels only on a coastal map." }
+      ],
+      "policies": [
+        { "card": "Monarchy", "slot": "wildcard", "from": "civic:divine-right", "why": "The government: Housing from the Walls every city already has and Influence points toward envoys." },
+        { "card": "Serfdom", "slot": "economic", "from": "civic:feudalism", "why": "Builder charges for the Mines and Farms between Golden Ages." },
+        { "card": "Charismatic Leader", "slot": "diplomatic", "from": "civic:political-philosophy", "why": "Influence toward envoys, each worth two in a converted city-state." },
+        { "card": "Meritocracy", "slot": "economic", "from": "civic:civil-service", "why": "Culture per district; the civics path to Diplomatic Service is long." },
+        { "card": "Limes", "slot": "military", "from": "civic:defensive-tactics", "why": "Medieval Walls and then Tsikhe at double speed; swapped out between Walls builds." }
+      ],
+      "districts": [
+        { "district": "aqueduct", "city": "capital", "note": "Housing and the Military Engineering Eureka." },
+        { "district": "commercial-hub", "city": "capital", "note": "Two Markets for Guilds; Gold for envoy wonders." },
+        { "district": "government-plaza", "city": "capital", "note": "Audience Chamber with Monarchy; Governors in every city." },
+        { "district": "harbor", "city": "the coastal city", "note": "Only if a coast exists; Kilwa Kisiwani wants a coastal city and so does Cartography." }
+      ],
+      "wonders": [
+        { "name": "Kilwa Kisiwani", "why": "Fifteen percent of every yield type for each kind of city-state you are suzerain of; it is the suzerainty engine's payout.", "skip_if": "No coastal city with Production exists, or Machinery lands after turn 150." },
+        { "name": "Mont St. Michel", "why": "Every Apostle gets Martyr; relics are Faith and Tourism for the Tsikhe cities.", "skip_if": "No floodplains or marsh tile sits beside a Holy Site, or Divine Right lands after turn 150." }
+      ],
+      "governors": [
+        { "governor": "amani", "promotion": "Prestige", "city": "the city-state you are closest to suzerainty of", "why": "Moved every time a suzerainty is secured; two doubled envoys each time." },
+        { "governor": "victor", "promotion": "Garrison Commander", "city": "the border city", "why": "Combat Strength and Loyalty where the Khevsur stand." },
+        { "governor": "pingala", "promotion": "Librarian", "city": "capital", "why": "The Science that a Walls and Faith plan otherwise forgets." }
+      ],
+      "city_states": [
+        { "slug": "preslav", "why": "Loyalty per Encampment building and a Militaristic suzerainty for Kilwa Kisiwani." },
+        { "slug": "armagh", "why": "Monasteries beside Holy Sites; Faith in every city and a Religious suzerainty that converts itself." },
+        { "type": "Scientific", "why": "A Scientific suzerainty is Kilwa Science and a Science catch-up; Geneva fits the no-war doctrine." }
+      ],
+      "great_people": [
+        { "class": "great-general", "why": "An Era Score moment and Movement for the Khevsur pair; Classical and Medieval Generals come cheap to a civilization at peace." },
+        { "class": "great-scientist", "why": "Education Eureka and a Great Person moment; take whichever is nearest." },
+        { "class": "great-merchant", "why": "Envoys and Trade Route capacity; both are doubled envoys in the end." }
+      ],
+      "checkpoints": [
+        { "turn": 100, "test": "Era Score at or above the Golden Age threshold for the Medieval transition, Medieval Walls in two cities, suzerain of two city-states?", "pass": "Take the Golden Age with Monumentality or Exodus of the Evangelists if the Apostle waves are the bottleneck.", "fail": "Below the line: amber response, and the Khevsur's first training and a Great General recruit are the two moments nearest to hand. Suzerain of fewer than two: Amani and every envoy to the converted city-state until it falls." },
+        { "turn": 150, "test": "Era Score at or above the Golden Age threshold for the Renaissance transition, religion in four city-states, suzerain of four, Siege Tactics within ten turns?", "pass": "Enter the protectorate phase; Tsikhe in every city is the first job of it.", "fail": "A Normal Age here breaks the chain: take Free Inquiry or Monumentality for the Normal Age score bonus and treat the Industrial transition as the restart. Fewer than four suzerainties: Kilwa Kisiwani and the Apostle waves before any Science building." }
+      ],
+      "tasks": [
+        { "id": "chain-khevsur", "turn": 95, "text": "First Khevsur trained the turn Apprenticeship lands; note the Era Score moment and station the pair on the hills between the border city and the nearest neighbour." },
+        { "id": "chain-walls-audit", "turn": 110, "text": "Every city has Ancient Walls and the two border cities have Medieval Walls; Limes slotted during the builds and swapped out after." },
+        { "id": "chain-apostle-wave", "turn": 120, "text": "Three Apostles bought in the Patron Saint capital and sent to the two nearest city-states that follow another religion; envoys follow the conversion." },
+        { "id": "chain-four-routes", "turn": 130, "text": "Four Trade Routes running, all to city-states with open quests; Medieval Faires Inspiration collected." },
+        { "id": "chain-suzerainty-audit", "turn": 140, "text": "List every city-state, its religion, your envoys against the leader's, and the gap; send the next envoys where one doubled envoy flips suzerainty." },
+        { "id": "chain-dedication-two", "turn": 150, "text": "At the Renaissance transition choose the Dedication whose Normal Age half pays for what the next era builds: Monumentality if Settlers remain to be bought, Exodus of the Evangelists if the Apostle waves continue." }
+      ]
+    },
+    {
+      "id": "protectorate",
+      "name": "Tsikhe and the Protectorate",
+      "turns": { "from": 161, "to": 230 },
+      "era": "renaissance",
+      "objective": "Put a Tsikhe in every city, reach Diplomatic Service so the Protectorate War can be declared the next time a protected city-state is attacked, convert the remaining city-states, and bank the alliances and Favor that the Diplomatic branch will spend after turn 230.",
+      "build_order": [
+        { "item": "Tsikhe", "why": "In every city the turn Siege Tactics lands; Faith, defence and later Tourism under the Walls bonus." },
+        { "item": "University", "why": "Two for the Printing Eureka; Science to stay within an era of the leaders." },
+        { "item": "Apostle", "why": "Waves of three, Proselytizer from Yerevan, into the last city-states and the nearest civilization's border cities." },
+        { "item": "Crossbowman", "why": "Upgraded from the Archers; the garrison behind the Tsikhe while the Khevsur hold the hills." },
+        { "item": "Bank", "why": "Two for Economics; Gold buys the Favor a vote is short by." },
+        { "item": "Theater Square", "why": "In the capital; Culture to Diplomatic Service and The Enlightenment on time, and the Tourism the Tsikhe later feeds." }
+      ],
+      "research": [
+        { "id": "tech:siege-tactics", "note": "Tsikhe; researched unboosted if the Trebuchet Eureka was skipped." },
+        { "id": "tech:printing", "note": "Two Universities give the Eureka." },
+        { "id": "tech:banking", "note": "Free Eureka from Guilds; Banks." },
+        { "id": "tech:astronomy", "note": "University beside a mountain; Potala Palace and the Colonialism Inspiration." },
+        { "id": "tech:gunpowder", "note": "Musketmen behind the Tsikhe; Eureka from an Armory only if an Encampment was built." },
+        { "id": "tech:cartography", "note": "Two Harbors only on a coastal map; overseas city-states are more doubled envoys." }
+      ],
+      "civics": [
+        { "id": "civic:diplomatic-service", "note": "The Protectorate War casus belli unlocks here; Inspiration from forming an alliance." },
+        { "id": "civic:reformed-church", "note": "Six cities following the religion; Theocracy for Faith purchases." },
+        { "id": "civic:mercantilism", "note": "A Great Merchant gives the Inspiration; on the path to The Enlightenment." },
+        { "id": "civic:the-enlightenment", "note": "Three Great People; Rationalism and Scientific Theory's Eureka." },
+        { "id": "civic:humanism", "note": "Earn a Great Artist if one is cheap; otherwise unboosted on the path." }
+      ],
+      "policies": [
+        { "card": "Theocracy", "slot": "wildcard", "from": "civic:reformed-church", "why": "The government: Faith purchases cheaper and religious units stronger, with a diplomatic slot kept." },
+        { "card": "Religious Orders", "slot": "economic", "from": "civic:reformed-church", "why": "An extra spread charge on every Apostle wave." },
+        { "card": "Gunboat Diplomacy", "slot": "diplomatic", "from": "civic:diplomatic-service", "why": "Diplomatic Favor every turn once the Diplomatic branch is live." },
+        { "card": "Rationalism", "slot": "economic", "from": "civic:the-enlightenment", "why": "Campus buildings pay Science in the two tall cities." }
+      ],
+      "districts": [
+        { "district": "theater-square", "city": "capital", "note": "Culture for the late civics; Tsikhe Tourism has somewhere to go." },
+        { "district": "holy-site", "city": "every city without one", "note": "Every city a Faith source for Theocracy purchases." }
+      ],
+      "wonders": [
+        { "name": "Potala Palace", "why": "An extra diplomatic policy slot and Diplomatic Favor; it must sit beside a mountain, which Georgia has.", "skip_if": "No hill tile adjacent to a mountain is free in a Production city, or Astronomy lands after turn 220." }
+      ],
+      "governors": [
+        { "governor": "amani", "promotion": "Foreign Investor", "city": "the richest suzerainty", "why": "Doubled yields from the city-state's tiles and continued envoy pressure." },
+        { "governor": "moksha", "promotion": "Divine Architect", "city": "capital", "why": "Districts bought with the Protectorate War's doubled Faith when it comes." }
+      ],
+      "city_states": [
+        { "slug": "vatican-city", "why": "Great Person activations spread pressure ten tiles; a Great Merchant in a border city converts the city-state beside it." },
+        { "type": "Religious", "why": "Suzerainty of every Religious city-state: pressure, Temple Faith and Favor." },
+        { "type": "Cultural", "why": "A Cultural suzerainty is a new Kilwa type and Culture toward Diplomatic Service." }
+      ],
+      "great_people": [
+        { "class": "great-merchant", "why": "Mercantilism's Inspiration and envoys; the Diplomatic branch's cheapest unit." },
+        { "class": "great-engineer", "why": "Production for Universities and the Potala Palace in cities with none." }
+      ],
+      "checkpoints": [
+        { "turn": 195, "test": "Era Score at or above the Golden Age threshold for the Industrial transition, Tsikhe in every city, suzerain of five or more, Diplomatic Service reached?", "pass": "Take the Golden Age; choose Monumentality one last time if Settlers remain, otherwise the Dedication that fits the branch.", "fail": "Below the line: the Tsikhe builds and a Great Person recruit are the nearest moments. Suzerain of fewer than five: Apostles and envoys before Universities. Diplomatic Service missing: Culture buildings in the capital before anything else." },
+        { "turn": 230, "test": "Is Georgia suzerain of half the city-states with Favor accumulating and two alliances, or is the religion the majority in half the civilizations?", "pass": "Commit: Diplomatic through the World Congress and Favor purchases, or Religion through Apostle waves under Theocracy.", "fail": "Neither: a Score game. Keep the chain running for the yields, keep the Tsikhe Tourism, and build Science and Culture." }
+      ],
+      "tasks": [
+        { "id": "protectorate-tsikhe", "turn": 170, "text": "Tsikhe finished in every city within fifteen turns of Siege Tactics, Limes slotted for the builds." },
+        { "id": "protectorate-diplomatic-service", "turn": 185, "text": "Diplomatic Service reached and an alliance formed with the strongest religion founder; the Protectorate War casus belli is now available." },
+        { "id": "protectorate-trigger-drill", "turn": 190, "text": "The next time a city-state you hold three envoys in is declared war on, declare the Protectorate War the same turn, spend the ten turns of doubled Faith on Apostles and Settlers, and defend from behind the Tsikhe rather than marching." },
+        { "id": "protectorate-universities", "turn": 200, "text": "Two Universities built; Printing Eureka collected." },
+        { "id": "protectorate-favor-audit", "turn": 220, "text": "Count Diplomatic Favor per turn from suzerainties, government and alliances against the leading rival's; the gap is the Gold to spend on Favor before the next Congress." },
+        { "id": "protectorate-branch", "turn": 230, "text": "Choose the branch, Diplomatic or Religion, and write it down." }
+      ]
+    },
+    {
+      "id": "close",
+      "name": "Close",
+      "turns": { "from": 231, "to": null },
+      "era": "industrial",
+      "objective": "Finish the chosen branch: Diplomatic Victory points from the World Congress bought with Favor the suzerainties and alliances produce, or the religion carried into the last civilizations by Theocracy Apostles, with the Golden Age chain kept running for the yields either way.",
+      "build_order": [
+        { "item": "Apostle", "why": "Religion branch: the last waves into the largest unconverted civilizations." },
+        { "item": "Stock Exchange", "why": "Diplomatic branch: Gold buys Favor from every ally each turn." },
+        { "item": "Factory", "why": "Both branches: Industrial Zones in the two best Production cities." },
+        { "item": "Research Lab", "why": "Keep Science close enough that no rival wins before the last vote or conversion." },
+        { "item": "Field Cannon", "why": "Two behind the Tsikhe for Scorched Earth's Inspiration and the only defence upgrade the plan needs." }
+      ],
+      "research": [
+        { "id": "tech:scientific-theory", "note": "Free Eureka from The Enlightenment." },
+        { "id": "tech:industrialization", "note": "Two Workshops; Factories." },
+        { "id": "tech:economics", "note": "Two Banks give the Eureka; Stock Exchanges for Capitalism and Favor Gold." }
+      ],
+      "civics": [
+        { "id": "civic:civil-engineering", "note": "Seven different specialty districts; Public Works." },
+        { "id": "civic:conservation", "note": "Tsikhe Tourism turns on here; Inspiration from a Neighborhood on a Breathtaking hill." },
+        { "id": "civic:capitalism", "note": "Two Stock Exchanges; the Gold that buys Favor." }
+      ],
+      "policies": [
+        { "card": "Public Works", "slot": "economic", "from": "civic:civil-engineering", "why": "Builder charges and speed for the last Mines and Farms." },
+        { "card": "Gunboat Diplomacy", "slot": "diplomatic", "from": "civic:diplomatic-service", "why": "Favor every turn for the Congress votes." }
+      ],
+      "districts": [
+        { "district": "industrial-zone", "city": "the two best Production cities", "note": "Workshops and Factories; Power for the Research Labs." },
+        { "district": "neighborhood", "city": "capital", "note": "On a Breathtaking hill for Conservation's Inspiration; Housing past the Walls." }
+      ],
+      "wonders": [
+        { "name": "Statue of Liberty", "why": "Diplomatic Favor every turn for the branch that needs it.", "skip_if": "No coastal city in range, or the Religion branch was chosen." }
+      ],
+      "governors": [
+        { "governor": "amani", "promotion": "Prestige", "city": "the newest suzerainty", "why": "Holds suzerainty against a rival's late envoy push." }
+      ],
+      "city_states": [
+        { "type": "Industrial", "why": "An Industrial suzerainty is Kilwa Production for the last buildings and another Favor." }
+      ],
+      "great_people": [
+        { "class": "great-merchant", "why": "A late Great Merchant buys the Favor or the envoys a vote is short by." }
+      ],
+      "checkpoints": [
+        { "turn": 280, "test": "Diplomatic: two or more Diplomatic Victory points banked and Favor income above every rival? Religion: dominant in all but one civilization?", "pass": "Continue to the end; no further decisions.", "fail": "Convert to Score: keep the chain for the yields, stop buying Apostles or Favor, and spend on Science and Culture buildings." }
+      ],
+      "tasks": [
+        { "id": "close-favor-buy", "turn": 245, "text": "Diplomatic branch: buy Favor from every ally each turn the Gold allows and bank it for the Diplomatic Victory resolution in the next Congress." },
+        { "id": "close-last-wave", "turn": 250, "text": "Religion branch: a six-Apostle wave under Theocracy into the largest civilization not yet converted." },
+        { "id": "close-review", "turn": 280, "text": "Review the turn 280 checkpoint and either continue or declare the game a Score game." }
+      ]
+    }
+  ],
+  "boosts": [
+    { "id": "tech:astrology", "fit": "cheap", "when": "setup", "how": "The Scout follows the mountain line where natural wonders sit." },
+    { "id": "tech:writing", "fit": "free", "when": "setup", "how": "The Scout meets the first civilization." },
+    { "id": "tech:masonry", "fit": "cheap", "when": "setup", "how": "The first Builder Quarries Stone near the hill capital." },
+    { "id": "tech:archery", "fit": "cheap", "when": "setup", "how": "The Slinger finishes a barbarian scout near the capital." },
+    { "id": "tech:bronze-working", "fit": "cheap", "when": "setup", "how": "Three barbarian kills at the camp nearest the capital with Warrior and Slinger." },
+    { "id": "tech:wheel", "fit": "free", "when": "first-age", "how": "A Mine on a resource hill, which Religious Idols wants anyway." },
+    { "id": "tech:irrigation", "fit": "cheap", "when": "first-age", "how": "Farm a Wheat or Rice in the river city." },
+    { "id": "tech:currency", "fit": "free", "when": "first-age", "how": "The first Trade Route to a city-state." },
+    { "id": "tech:engineering", "fit": "free", "when": "first-age", "how": "Ancient Walls in the capital in the setup phase." },
+    { "id": "tech:construction", "fit": "cheap", "when": "first-age", "how": "A Water Mill in the river city." },
+    { "id": "tech:mathematics", "fit": "cheap", "when": "first-age", "how": "Holy Site, Campus and Commercial Hub make three specialty districts by turn 80." },
+    { "id": "tech:military-tactics", "fit": "cheap", "when": "first-age", "how": "One Spearman kill at a camp; it is on the Khevsur path." },
+    { "id": "tech:apprenticeship", "fit": "free", "when": "first-age", "how": "Three Mines on the hills around the first two cities." },
+    { "id": "tech:horseback-riding", "fit": "costly", "when": "first-age", "how": "A Pasture only if Horses or Sheep sit in the first ring; otherwise unboosted." },
+    { "id": "tech:iron-working", "fit": "skip", "when": null, "how": "No Swordsmen; the Khevsur need no Iron and arrive at Apprenticeship." },
+    { "id": "tech:sailing", "fit": "costly", "when": "first-age", "how": "A coastal city only if the third site is on the coast for Kilwa Kisiwani." },
+    { "id": "tech:celestial-navigation", "fit": "costly", "when": "chain", "how": "Two Fishing Boats only if the coastal city exists." },
+    { "id": "tech:castles", "fit": "free", "when": "chain", "how": "Any Tier 2 government; Monarchy is the plan's." },
+    { "id": "tech:military-engineering", "fit": "cheap", "when": "chain", "how": "The capital Aqueduct, built for Housing anyway." },
+    { "id": "tech:machinery", "fit": "cheap", "when": "chain", "how": "Three Archers across the border cities before upgrading them." },
+    { "id": "tech:education", "fit": "costly", "when": "chain", "how": "A Great Scientist only if one is cheap; usually researched unboosted." },
+    { "id": "tech:stirrups", "fit": "free", "when": "chain", "how": "Feudalism is on the civic path." },
+    { "id": "tech:siege-tactics", "fit": "skip", "when": null, "how": "Two Trebuchets is a detour for a civilization that never besieges; research it unboosted for the Tsikhe." },
+    { "id": "tech:buttress", "fit": "costly", "when": "chain", "how": "Only if the Apadana or Mahabodhi Temple was finished." },
+    { "id": "tech:printing", "fit": "cheap", "when": "protectorate", "how": "Two Universities in the Campus cities." },
+    { "id": "tech:banking", "fit": "free", "when": "protectorate", "how": "Guilds is on the civic path." },
+    { "id": "tech:astronomy", "fit": "cheap", "when": "protectorate", "how": "A University beside a mountain; the Campus was sited for it." },
+    { "id": "tech:gunpowder", "fit": "costly", "when": "protectorate", "how": "An Armory needs an Encampment this plan does not otherwise build." },
+    { "id": "tech:cartography", "fit": "costly", "when": "protectorate", "how": "Two Harbors only on a coastal map." },
+    { "id": "tech:mass-production", "fit": "cheap", "when": "protectorate", "how": "A Lumber Mill on any Woods tile." },
+    { "id": "tech:scientific-theory", "fit": "free", "when": "close", "how": "The Enlightenment is on the civic path." },
+    { "id": "tech:industrialization", "fit": "cheap", "when": "close", "how": "Two Workshops in the Industrial Zones." },
+    { "id": "tech:economics", "fit": "cheap", "when": "close", "how": "Two Banks in the Commercial Hub cities." },
+    { "id": "tech:sanitation", "fit": "cheap", "when": "close", "how": "Two Neighborhoods in the tallest cities." },
+    { "id": "civic:craftsmanship", "fit": "free", "when": "setup", "how": "Three improvements from the first Builder." },
+    { "id": "civic:foreign-trade", "fit": "costly", "when": "setup", "how": "A second continent only if the Scout finds a land bridge; otherwise unboosted." },
+    { "id": "civic:military-tradition", "fit": "cheap", "when": "setup", "how": "Clearing the camp nearest the capital with Warrior and Slinger; it is also an Era Score moment." },
+    { "id": "civic:mysticism", "fit": "free", "when": "setup", "how": "Founding the pantheon by turn 20." },
+    { "id": "civic:state-workforce", "fit": "free", "when": "first-age", "how": "The first Holy Site is the first district." },
+    { "id": "civic:early-empire", "fit": "free", "when": "first-age", "how": "Six population across the first two cities." },
+    { "id": "civic:political-philosophy", "fit": "free", "when": "first-age", "how": "Three city-states met by the Scout; they are the envoy targets anyway." },
+    { "id": "civic:theology", "fit": "cheap", "when": "first-age", "how": "Founding the religion." },
+    { "id": "civic:games-and-recreation", "fit": "free", "when": "first-age", "how": "Researching Construction." },
+    { "id": "civic:defensive-tactics", "fit": "costly", "when": "first-age", "how": "Being declared on; Walls make it unlikely, but the Inspiration is taken if it happens." },
+    { "id": "civic:drama-and-poetry", "fit": "costly", "when": "first-age", "how": "Only if the Apadana or Mahabodhi Temple lands." },
+    { "id": "civic:recorded-history", "fit": "cheap", "when": "chain", "how": "Two Campuses, in the capital and the second city." },
+    { "id": "civic:military-training", "fit": "skip", "when": null, "how": "No Encampment in a plan that fights only from its own hills." },
+    { "id": "civic:feudalism", "fit": "cheap", "when": "chain", "how": "Six Farms across four cities." },
+    { "id": "civic:civil-service", "fit": "cheap", "when": "chain", "how": "The capital reaches ten population with the Aqueduct." },
+    { "id": "civic:divine-right", "fit": "free", "when": "chain", "how": "Two Temples in the Holy Site cities." },
+    { "id": "civic:guilds", "fit": "cheap", "when": "chain", "how": "Two Markets, in the capital and the Commercial Hub city." },
+    { "id": "civic:medieval-faires", "fit": "free", "when": "chain", "how": "Four Trade Routes to city-states for their quests." },
+    { "id": "civic:mercenaries", "fit": "skip", "when": null, "how": "Eight land units is more army than a walled Georgia keeps." },
+    { "id": "civic:exploration", "fit": "costly", "when": "chain", "how": "Two Caravels only on a coastal map; otherwise unboosted on the path to Diplomatic Service." },
+    { "id": "civic:naval-tradition", "fit": "skip", "when": null, "how": "A Quadrireme kill is a naval detour this plan does not take." },
+    { "id": "civic:diplomatic-service", "fit": "cheap", "when": "protectorate", "how": "An alliance with the strongest religion founder." },
+    { "id": "civic:reformed-church", "fit": "free", "when": "protectorate", "how": "Six cities following the religion by turn 160." },
+    { "id": "civic:mercantilism", "fit": "cheap", "when": "protectorate", "how": "A Great Merchant from the Commercial Hubs." },
+    { "id": "civic:the-enlightenment", "fit": "cheap", "when": "protectorate", "how": "Three Great People: the Prophet, a General and a Merchant." },
+    { "id": "civic:humanism", "fit": "costly", "when": "protectorate", "how": "A Great Artist only if the Theater Square makes one cheap." },
+    { "id": "civic:colonialism", "fit": "free", "when": "protectorate", "how": "Researching Astronomy." },
+    { "id": "civic:civil-engineering", "fit": "free", "when": "close", "how": "Seven different specialty districts across six cities." },
+    { "id": "civic:conservation", "fit": "cheap", "when": "close", "how": "A Neighborhood on a Breathtaking hill beside the mountains." },
+    { "id": "civic:capitalism", "fit": "cheap", "when": "close", "how": "Two Stock Exchanges in the Commercial Hub cities." },
+    { "id": "civic:scorched-earth", "fit": "cheap", "when": "close", "how": "Two Field Cannons as the garrison upgrade." }
+  ],
+  "decision_triggers": [
+    { "name": "A protected city-state is attacked", "if": "A civilization declares war on a city-state you hold three or more envoys in, and Diplomatic Service is reached.", "then": "Declare the Protectorate War the same turn. Spend the ten turns of doubled Faith on Apostles, Settlers and Builders, defend from behind the Tsikhe, and make peace when the Faith window closes unless the aggressor is already losing." },
+    { "name": "Golden Age line slipping", "if": "Era Score is more than three points below the threshold with twenty turns left in the era.", "then": "Run the amber response: a first-of-type district, the nearest Great Person, a Trader to a city-state, a Settler on new terrain, the first Khevsur. Queue enough moments to cross with two turns to spare." },
+    { "name": "City-state converted by someone else", "if": "A city-state you are courting falls to another religion's majority.", "then": "One Proselytizer Apostle from Yerevan before the next envoy; an envoy sent while it follows another religion counts once, not twice." },
+    { "name": "Chain broken", "if": "A Normal Age was taken at a transition.", "then": "Choose the Dedication whose Normal Age bonus pays Era Score for what you already build, open the Era screen the turn after, and treat the next transition as the restart; do not change the verdict over one break." }
+  ],
+  "abort": {
+    "trigger": "Two consecutive Normal or Dark Ages with the religion in fewer than three city-states and suzerainty of none by turn 160.",
+    "actions": [
+      "Stop spending envoys where they count once; keep them for the alliances and the Congress votes that need no religion.",
+      "Rebuild as a generic walled Faith civilization around the Holy Sites, Tsikhe and Universities already standing, and target Religion against the nearest civilizations rather than the city-states.",
+      "Keep the Khevsur pair and the Tsikhe; a Georgia that failed its chain is still the hardest civilization on the map to invade."
+    ]
+  },
+  "fail_state": "The Industrial era arrives after two broken chains, with the religion in Georgia's own cities and nowhere else, envoys scattered across city-states that follow other faiths, no Protectorate War ever declared because Diplomatic Service came too late, and six beautifully walled cities an era behind in Science with nothing to protect.",
+  "common_mistakes": [
+    "Sending envoys before the city-state follows your religion. The same envoy counts twice after one Missionary; sent first, it counts once forever.",
+    "Spending Era Score moments early in an era that is already won. A first district type or a Great Person recruit held to the next era is a free start on the next threshold.",
+    "Treating the Protectorate War as the plan. It needs Diplomatic Service and an attack on a protected city-state you do not control; the Walls, the religion and the envoys are the plan, and the war is a windfall.",
+    "Building Walls without Limes or outside the Golden Age Monumentality window and calling it the civ bonus. The bonus stacks; used alone it still costs turns every city could spend on a Holy Site.",
+    "Marching the Khevsur off the hills. On flat ground they are a Man-At-Arms that cost the same; on hills they are the reason nobody attacks."
+  ],
+  "sources": [
+    "Civilization VI Civilopedia, Gathering Storm ruleset (Georgia, Tamar, Khevsur, Tsikhe, Strength in Unity, Glory of the World, Kingdom and Faith).",
+    "The civ-info text gives Tamar Faith from combat victories and a Protectorate War at Theology; the Gathering Storm Civilopedia gives neither. The plan follows the game: doubled Faith for ten turns after a Protectorate War, which is a casus belli from the Diplomatic Service civic, and envoys counting double in city-states that follow Georgia's majority religion.",
+    "Boost objectives cross-checked against civilization6planner.com tech-tree and civics-tree pages, 2026-10-01.",
+    "Leadership Focus tags, caveats and Monitor supplement for Tamar in this repository."
+  ]
+}

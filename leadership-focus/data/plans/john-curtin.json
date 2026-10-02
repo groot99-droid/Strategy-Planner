@@ -1,0 +1,554 @@
+{
+  "slug": "john-curtin",
+  "shape": "Monitor",
+  "secondary_shape": "Linear",
+  "version": 1,
+  "updated": "2026-10-02",
+  "assumptions": {
+    "ruleset": "Gathering Storm with every expansion and the Leader Pass",
+    "speed": "Standard",
+    "difficulty": "Emperor",
+    "map": "Continents or Pangaea, standard size, 8 civilizations, with the Australia coastal start bias honoured",
+    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. John Curtin's single persona is planned here. Citadel of Civilization is read as the game plays it: double Production for ten turns after a war is declared on you, and for twenty turns after you liberate a city. The Monitor is the burst; the Linear block underneath is the ordinary empire the burst is spent on."
+  },
+  "verdict": {
+    "victory": "Science",
+    "secondary": "Culture",
+    "confidence": "medium",
+    "one_line": "Settle the coast and the Appeal, put a Campus on every Breathtaking tile, keep a queue of expensive things ready in every city, and whenever someone declares on you or you liberate a city, spend the ten or twenty turns of double Production on that queue and nothing else.",
+    "why": "Land Down Under is an unconditional Science and Housing kit: coastal cities grow three Housing taller, and a Campus on a Breathtaking coast or mountain tile yields three extra Science before a Library exists, which no other civilization gets. That is the Linear half, and it points at Science because Campuses on Appeal are the cheapest district yield in the game. Citadel of Civilization is the Monitor half: a burst of double Production that you do not schedule, because it fires when a rival declares on you or when you free a city, and that lasts ten or twenty turns whether or not you have anything to build. The plan's whole discipline is the pre-queued list of expensive builds, Spaceport projects included, that a burst is dumped into, and the defensive floor that keeps baiting a declaration from costing a city. Culture is the fallback because the same Appeal pays Theater Squares and National Parks, and the Outback Stations and Great Barrier Reef are a Tourism map if the Science race is lost."
+  },
+  "map_check": {
+    "must_have": [
+      "A coastal capital, or coast within one Settler move, so the Housing and the Harbor are there from the start.",
+      "At least two Breathtaking or Charming tiles within the capital's first two rings for the Campus and the Commercial Hub, which means Woods, mountains, coast or a natural wonder nearby."
+    ],
+    "prefer": [
+      "A land neighbour within fifteen tiles who can be provoked into declaring; an island start makes the Monitor half nearly silent.",
+      "Flat grassland or plains for Pastures and Outback Stations between the cities; a Pasture also Culture Bombs the tiles around it.",
+      "Great Barrier Reef, Uluru or Kakadu in reach: Astrology's Eureka and a ring of Breathtaking district tiles.",
+      "A Militaristic neighbour who eats city-states, since each liberation is a twenty-turn burst."
+    ],
+    "no_go": "A landlocked start with no coast within three moves and flat featureless land with no Appeal. The Housing, the Harbor and the district yields are all off, and the Production burst has nothing cheap to feed; Australia is then a plain civilization with a good Infantry.",
+    "fallback": "Move the Settler up to two turns toward coast or toward Woods and hills. If neither appears, keep the Linear half as a normal Science game with Campuses beside mountains where they exist, and keep the burst discipline anyway: the queue list and the defensive floor cost nothing. Drop baiting entirely on an island; a burst nobody can trigger is not worth a weak army."
+  },
+  "kit_levers": [
+    { "source": "leader_ability", "name": "Citadel of Civilization", "buys": "Double Production in every city for ten turns after a war is declared on you, and for twenty turns after you liberate a city.", "exploit": "The plan never starts a war of its own except a War of Liberation, keeps a written queue of the most expensive item each city could build so a burst is spent inside two turns of landing, and keeps the army just strong enough that a declaration costs the aggressor units rather than you a city. A liberated city-state is the best burst in the game: twenty turns, and the city-state's Envoys come with it." },
+    { "source": "civ_ability", "name": "Land Down Under", "buys": "Extra Housing in coastal cities, Pastures that Culture Bomb the tiles around them, and extra yields on Campuses, Commercial Hubs, Holy Sites and Theater Squares placed on Charming or Breathtaking tiles.", "exploit": "Every city is coastal or beside a Breathtaking cluster, every Campus goes on the highest-Appeal tile in reach rather than the best adjacency, Builders never chop the Woods that make tiles Breathtaking, and the first Pasture in each new city is placed where its Culture Bomb steals the most tiles from a neighbour or a city-state border." },
+    { "source": "unique_unit", "name": "Digger", "buys": "An Infantry replacement that fights harder on land beside water and outside your own borders.", "exploit": "The late-game defensive floor and the liberation force: four Diggers on a coastal front hold any Industrial-era landing, and the same four landed beside a captured city-state free it. They are built during a burst and never before Replaceable Parts." },
+    { "source": "unique_infrastructure", "name": "Outback Station", "buys": "A tile improvement from Guilds that turns flat grassland, plains and desert into Food, Production and Housing, growing with Steam Power and Rapid Deployment and with adjacent Pastures.", "exploit": "The land between the coastal cities that no district wants becomes Outback Stations in clusters beside Pastures, which is Housing and Production for cities whose districts sit on the pretty tiles. A burst is the time to buy the Builders that lay them." },
+    { "source": "agenda", "name": "Perpetually on Guard", "buys": "AI Curtin seeks Defensive Pacts, likes liberators and dislikes anyone who keeps conquered cities.", "exploit": "Irrelevant to your own play except as a reminder of the shape: an AI Curtin on the map will liberate the city-state your neighbour took before you do, and the twenty-turn burst goes to him." }
+  ],
+  "shape_block": {
+    "monitor": {
+      "watched_stat": "Whether a Citadel of Civilization burst is running and how many turns it has left, read from the leader ability tooltip, alongside the threat status of every neighbour: denouncements, grievances against you, and units massing on your border",
+      "check_every": "turn while a burst is running, and every five turns otherwise from turn 25, with the diplomacy screen read at every era boundary for who is likely to declare",
+      "bands": {
+        "green": { "test": "A burst is running with three or more turns left, and every city is building an item from its written queue that will finish inside the burst or carry most of its cost.", "response": "No action beyond the queue: wonders, districts, Universities, Spaceport projects. Do not switch a city to units unless an enemy unit is adjacent to it; the Walls and the standing force are what the burst was baited behind." },
+        "amber": { "test": "No burst is running, and either a neighbour has denounced you or massed four or more units on the border, or a neighbour has captured a city-state you could reach, or a running burst has three turns or fewer left with a city still on a cheap item.", "response": "Act now while the burst is still ahead of you: write or refresh the queue in every city, put Walls and one ranged unit in the border cities, and if a city-state was captured, move the liberation force and take the War of Liberation Casus Belli at Diplomatic Service. If the burst is ending, switch the cheap city to the most expensive queued item so the remaining turns carry into it." },
+        "red": { "test": "No war has been declared on you for sixty turns, no neighbour can reach you by land or has the navy to land, and no captured city-state exists within reach.", "response": "The ability is off and this is the Linear plan alone: play the Science game on the Appeal Campuses without baiting anyone, keep the army at the defensive floor and no larger, and spend what would have gone on bait on Campuses and Harbors. Re-read the band at every era boundary; a new neighbour or a captured city-state turns it amber." }
+      },
+      "second_watch": { "stat": "The written burst queue: the single most expensive item each city could start today, kept on a note and refreshed every ten turns", "why": "A burst with nothing queued is a burst wasted; the ten turns do not wait while the player decides. The queue is the response capacity, and it goes stale as techs land, so it is refreshed on a schedule rather than when the war arrives." },
+      "off_period_plan": "Most of the game is the off period, and it is the Linear block below: Settlers to eight coastal or Breathtaking cities by turn 100, a Campus on the highest-Appeal tile in each, Harbors and Commercial Hubs for the Trade Routes, Universities before Markets, Outback Stations between the cities, and the queue list refreshed every ten turns. The defensive floor is Walls in every border city, two ranged units per border city and a Harbor-born navy of two ships per coast; it is never larger than that, because a visibly strong Australia is never declared on."
+    }
+  },
+  "secondary_shape_block": {
+    "linear": {
+      "direction": {
+        "options": [
+          { "victory": "Science", "when_it_fits": "Two or more Breathtaking Campus tiles are in hand by turn 80 and a mountain or reef cluster promises more. Appeal Campuses out-yield any Library-era rival, the coastal Housing keeps the cities growing into Universities, and every burst from the Industrial era on is a Spaceport project finished in half the turns. This is the default." },
+          { "victory": "Culture", "when_it_fits": "Great Barrier Reef, Uluru or a long Breathtaking coast is inside your borders by turn 80 and a Cultural city-state is held. The same Appeal pays Theater Squares, and the coast becomes Seaside Resorts and National Parks; choose it only when the Science map is thin and the Appeal map is thick." }
+        ],
+        "choose_by": 80,
+        "commit_test": "By turn 120 the second district in every city is the same kind: a Campus with a Library queued for Science, or a Theater Square with an Amphitheater for Culture. If the cities show a mix, the direction has not been chosen, and the next burst will be spent on whatever happened to be queued."
+      }
+    }
+  },
+  "phases": [
+    {
+      "id": "setup",
+      "name": "Setup",
+      "turns": { "from": 1, "to": 25 },
+      "era": "ancient",
+      "objective": "Settle on the coast beside the best Appeal, find the neighbours and note which one is aggressive, found the pantheon, write the first burst queue, and have the second city founded on the coast toward the likeliest aggressor.",
+      "build_order": [
+        { "item": "Scout", "why": "Find the neighbours and the natural wonder; the watched stat needs a neighbour and Astrology's Eureka wants Uluru or the Reef." },
+        { "item": "Slinger", "why": "Archery Eureka on a barbarian Scout and the first unit of the defensive floor." },
+        { "item": "Settler", "why": "Second city on the coast toward the likeliest aggressor; it is the bait and the border." },
+        { "item": "Warrior", "why": "A second body for the camp nearest the capital; Bronze Working needs three kills." },
+        { "item": "Monument", "why": "Culture to Early Empire and Political Philosophy; Governors and the Culture Bomb Pastures both need the civics." },
+        { "item": "Builder", "why": "Fishing Boats for Celestial Navigation, a Pasture that Culture Bombs the border, a Mine for The Wheel; three improvements is Craftsmanship." },
+        { "item": "Settler", "why": "Third city on the coast the other way, beside Woods or a mountain for the Campus Appeal." }
+      ],
+      "research": [
+        { "id": "tech:animal-husbandry", "note": "Pastures are the Culture Bomb; no boost to collect." },
+        { "id": "tech:sailing", "note": "Eureka free from the coastal capital; Galleys for Shipbuilding and the Harbor line." },
+        { "id": "tech:astrology", "note": "Eureka if the Scout finds the Reef, Uluru or any wonder; a Holy Site on a Breathtaking tile is Faith the plan can use." },
+        { "id": "tech:writing", "note": "Eureka free from the first civilization met; the first Campus goes on the most Breathtaking tile, not the best adjacency." },
+        { "id": "tech:mining", "note": "Mines on the hills the Campuses do not want; no boost to collect." },
+        { "id": "tech:wheel", "note": "A Mine on a resource hill gives the Eureka." }
+      ],
+      "civics": [
+        { "id": "civic:code-of-laws", "note": "God King for the pantheon and Discipline for the camps." },
+        { "id": "civic:craftsmanship", "note": "Inspiration from the first Builder's three improvements." },
+        { "id": "civic:foreign-trade", "note": "The first Trade Route is Currency's Eureka; Inspiration on a Continents map when the Scout crosses." },
+        { "id": "civic:early-empire", "note": "Colonization for the coastal Settlers; Inspiration at six population, which coastal Housing reaches early." }
+      ],
+      "policies": [
+        { "card": "God King", "slot": "economic", "from": "civic:code-of-laws", "why": "Faith for the pantheon by turn 20, then swapped for Colonization." },
+        { "card": "Discipline", "slot": "military", "from": "civic:code-of-laws", "why": "Warriors and the Slinger beat the camp units; the kills are Bronze Working." }
+      ],
+      "districts": [
+        { "district": "campus", "city": "capital", "note": "On the most Breathtaking tile within two rings, chosen on turn 1 and built after the second Settler; the Appeal yield beats the mountain adjacency." }
+      ],
+      "pantheon": { "slug": "earth-goddess", "why": "Faith from every Breathtaking tile, which Australia settles beside anyway; the Faith buys Builders in a Golden Age, Naturalists for the Culture branch and Rock Bands later.", "alternative": "god-of-the-sea" },
+      "wonders": [],
+      "governors": [],
+      "city_states": [
+        { "type": "Scientific", "why": "The first Envoy into any Scientific city-state is Science in the capital while the Campus is still a plan." },
+        { "slug": "auckland", "why": "Production on shallow water in every coastal city, which is every city." }
+      ],
+      "great_people": [],
+      "checkpoints": [
+        { "turn": 25, "test": "Two coastal cities, the pantheon founded, the neighbours met with the likeliest aggressor named, and the first burst queue written for both cities?", "pass": "Enter the expansion phase; read the diplomacy screen every five turns from here.", "fail": "If no neighbour is met, build a second Scout before the third Settler; the Monitor cannot watch nobody. If the queue is unwritten, write it now: it is a note, not a build." }
+      ],
+      "tasks": [
+        { "id": "setup-settle-coast", "turn": 1, "text": "Settle on the coast with Woods, hills or a mountain in the first two rings; move at most two turns to get there. Note the two highest-Appeal tiles before ending the turn." },
+        { "id": "setup-find-aggressor", "turn": 5, "text": "Send the Scout inland; the nearest civilization met with a warlike agenda or a Militaristic bias is the neighbour the second city faces." },
+        { "id": "setup-pantheon", "turn": 20, "text": "Found Earth Goddess, or God of the Sea if fewer than four Breathtaking tiles sit within reach of the first two cities." },
+        { "id": "setup-first-queue", "turn": 22, "text": "Write the first burst queue: the most expensive item each city could start, which at this point is a Settler or the Campus. The habit matters more than the content." },
+        { "id": "setup-second-city", "turn": 25, "text": "Second city settled on the coast toward the likeliest aggressor, with its first Pasture placed to Culture Bomb toward their border." }
+      ]
+    },
+    {
+      "id": "expand",
+      "name": "Expand",
+      "turns": { "from": 26, "to": 80 },
+      "era": "classical",
+      "objective": "Settle six coastal or Breathtaking cities with a Campus on the best Appeal tile in each, build the defensive floor in the border cities, write and refresh the burst queue every ten turns, and choose the Linear direction by turn 80 from what the Appeal map actually gave.",
+      "build_order": [
+        { "item": "Campus", "why": "Capital first, on the Breathtaking tile; three Science before a Library and two Campuses is Recorded History." },
+        { "item": "Settler", "why": "Fourth, fifth and sixth cities, every one coastal or beside a Breathtaking cluster." },
+        { "item": "Harbor", "why": "In the capital; the Trade Route, Celestial Navigation's Lighthouse Housing and the Great Admiral points." },
+        { "item": "Ancient Walls", "why": "In the border city facing the aggressor; Engineering Eureka and the floor that makes baiting safe." },
+        { "item": "Archer", "why": "Two in the border city; the floor is two ranged units behind Walls, not an army." },
+        { "item": "Library", "why": "In every Campus; the Science is the Linear plan and Education's University comes next." },
+        { "item": "Trader", "why": "Currency Eureka; routes to the border cities are Loyalty and Food." },
+        { "item": "Water Mill", "why": "If a city is on a river; Construction Eureka and growth." }
+      ],
+      "research": [
+        { "id": "tech:celestial-navigation", "note": "Two Fishing Boats give the Eureka; Harbors in every city." },
+        { "id": "tech:currency", "note": "Eureka from the first Trade Route; Commercial Hubs on Charming tiles." },
+        { "id": "tech:bronze-working", "note": "Three barbarian kills; Iron reveal and the Encampment the plan does not build." },
+        { "id": "tech:archery", "note": "The Slinger kill gives the Eureka; the two Archers of the floor." },
+        { "id": "tech:horseback-riding", "note": "A Pasture gives the Eureka free, since every city places one to Culture Bomb." },
+        { "id": "tech:masonry", "note": "A Quarry if stone exists; Ancient Walls in the border city." },
+        { "id": "tech:engineering", "note": "The border city's Walls give the Eureka." },
+        { "id": "tech:mathematics", "note": "Campus, Harbor and Commercial Hub make three specialty districts by turn 60." },
+        { "id": "tech:shipbuilding", "note": "Two Galleys give the Eureka; two ships per coast are the naval floor." },
+        { "id": "tech:apprenticeship", "note": "Three Mines on hills the Campuses do not want; Industrial Zones later." },
+        { "id": "tech:construction", "note": "A Water Mill in a river city if there is one; otherwise unboosted on the way to Education." }
+      ],
+      "civics": [
+        { "id": "civic:state-workforce", "note": "Free Inspiration from the first Campus; the Governor title goes to Pingala." },
+        { "id": "civic:mysticism", "note": "Free Inspiration from the pantheon; Inspiration is the Great Scientist card." },
+        { "id": "civic:political-philosophy", "note": "Classical Republic for the Great Person points and Amenities; Inspiration from three city-states met." },
+        { "id": "civic:recorded-history", "note": "Two Campuses give the Inspiration; Natural Philosophy and a Governor title." },
+        { "id": "civic:games-and-recreation", "note": "Free Inspiration from Construction if a Water Mill was built." },
+        { "id": "civic:defensive-tactics", "note": "Being declared on gives the Inspiration and starts the first burst; Bastions for the border cities and a Governor title." },
+        { "id": "civic:military-tradition", "note": "Clearing a camp gives the Inspiration; the card slots are not needed." },
+        { "id": "civic:drama-and-poetry", "note": "Inspiration if a wonder is finished; Theater Squares on Appeal tiles if the Culture direction is chosen." }
+      ],
+      "policies": [
+        { "card": "Colonization", "slot": "economic", "from": "civic:early-empire", "why": "Settlers at half cost for six coastal cities." },
+        { "card": "Classical Republic", "slot": "wildcard", "from": "civic:political-philosophy", "why": "The government: Great Scientist points and Amenities for a district-heavy coast." },
+        { "card": "Natural Philosophy", "slot": "economic", "from": "civic:recorded-history", "why": "Doubles Campus adjacency; with the Appeal yield on top the Campuses are the Science." },
+        { "card": "Inspiration", "slot": "wildcard", "from": "civic:mysticism", "why": "Great Scientist points per Campus; Education's Eureka is the first Scientist." },
+        { "card": "Bastions", "slot": "military", "from": "civic:defensive-tactics", "why": "City defence and ranged strength in the border cities, which is the whole defensive floor for the price of a card." }
+      ],
+      "districts": [
+        { "district": "campus", "city": "every city", "note": "On the highest-Appeal tile in reach; Breathtaking is three Science, Charming is one, before any adjacency." },
+        { "district": "harbor", "city": "capital and the second coastal city", "note": "Trade Routes, Housing and the Cartography Eureka at two." },
+        { "district": "commercial-hub", "city": "the city with a Charming river or coast tile", "note": "Gold for Builders and the queue; the Appeal yield applies here too." }
+      ],
+      "pantheon": { "slug": "earth-goddess", "why": "Already founded; the Breathtaking Campus tiles this phase builds are the Faith." },
+      "wonders": [
+        { "name": "Great Library", "why": "Great Scientist points and two Eurekas per Classical Great Scientist; it is the first item on the capital's burst queue the moment Recorded History lands.", "skip_if": "Any rival finishes Recorded History before you, or no burst has fired by turn 70 and the capital's Production is under 15." }
+      ],
+      "governors": [
+        { "governor": "pingala", "promotion": "Researcher", "city": "capital", "why": "Science per citizen in the city with the Breathtaking Campus; Grants is the second promotion." },
+        { "governor": "victor", "promotion": "Garrison Commander", "city": "the border city facing the aggressor", "why": "A bait city must hold; Victor is the floor's third unit." }
+      ],
+      "city_states": [
+        { "slug": "auckland", "why": "Production on shallow water in six coastal cities." },
+        { "type": "Scientific", "why": "Science in every Campus with a building; Geneva's bonus is off during the wars the plan invites, so prefer Mitla or Hattusa." },
+        { "slug": "nan-madol", "why": "Culture from coastal districts, which this empire builds anyway; the Culture direction's first Envoys." }
+      ],
+      "great_people": [
+        { "class": "great-scientist", "why": "Education's Eureka and two free boosts per Classical Scientist; Inspiration and the Appeal Campuses win the race." },
+        { "class": "great-admiral", "why": "A Classical Great Admiral retired for a free promotion or kept for the naval floor; two Galleys with him hold a coast." }
+      ],
+      "checkpoints": [
+        { "turn": 55, "test": "Four cities, two Campuses standing on Charming or better tiles, Walls and two Archers in the border city, and the queue refreshed at least three times?", "pass": "Continue; the response capacity exists before the first declaration.", "fail": "If the Campuses sit on plain tiles, the Appeal was ignored: the next two go on Breathtaking tiles whatever the adjacency. If the border city is unwalled, nothing else is built there until it is; bait without a floor is a lost city." },
+        { "turn": 80, "test": "Six cities, a Campus in each, the direction chosen and written down, and either a first burst spent on the queue or the diplomacy screen showing who will provide one?", "pass": "Enter the bait phase with the direction fixed.", "fail": "If no direction is written, write it now from the Appeal map: Science unless the Reef or Uluru is yours. If a burst came and went on Settlers and Warriors, the queue was not read; put a wonder at the top of the capital's queue and keep it there." }
+      ],
+      "tasks": [
+        { "id": "expand-first-campus", "turn": 35, "text": "Capital Campus finished on the Breathtaking tile; read its yield before the Library and note how much came from Appeal." },
+        { "id": "expand-queue-habit", "turn": 40, "text": "Refresh the burst queue in every city: the most expensive item available today. Repeat every ten turns for the rest of the game." },
+        { "id": "expand-floor", "turn": 50, "text": "Ancient Walls, two Archers and Victor in the border city facing the aggressor; a Galley on each coast." },
+        { "id": "expand-republic", "turn": 55, "text": "Political Philosophy reached; Classical Republic adopted with Natural Philosophy and Inspiration slotted." },
+        { "id": "expand-sixth-city", "turn": 75, "text": "Sixth city settled on the coast; its Pasture placed to Culture Bomb the tiles a neighbour or city-state would otherwise claim." },
+        { "id": "expand-direction", "turn": 80, "text": "Write the direction down: Science or Culture, from the Appeal map. Every second district from here is the same kind." }
+      ]
+    },
+    {
+      "id": "bait",
+      "name": "Bait and burst",
+      "turns": { "from": 81, "to": 160 },
+      "era": "medieval",
+      "objective": "Invite the declarations the burst needs without losing a city: a modest visible army behind good Walls, no Defensive Pact with the likeliest aggressor, a forward Culture Bomb or two, and the War of Liberation Casus Belli at Diplomatic Service for any city-state a neighbour takes. Every burst goes to Universities, wonders and districts from the queue.",
+      "build_order": [
+        { "item": "University", "why": "In every Campus; two is Printing and the Appeal Science compounds through them. First item on every queue." },
+        { "item": "Medieval Walls", "why": "In the border cities; the aggressor must find Walls they cannot take with Swordsmen." },
+        { "item": "Crossbowman", "why": "Upgrade the Archers; the floor keeps pace with the aggressor's era, never ahead of it." },
+        { "item": "Aqueduct", "why": "In the capital; Military Engineering Eureka and Housing for a city that is already tall." },
+        { "item": "Market", "why": "Two for Guilds, which is also the Outback Station civic." },
+        { "item": "Builder", "why": "Outback Stations in clusters beside Pastures on the flat land between the cities." },
+        { "item": "Kilwa Kisiwani", "why": "A queue wonder: Scientific and Industrial suzerain bonuses amplified in every city." },
+        { "item": "Caravel", "why": "Two for Exploration's Inspiration; the naval floor for a coastal empire that invites attack." }
+      ],
+      "research": [
+        { "id": "tech:education", "note": "The first Great Scientist gives the Eureka; Universities are the first queue item everywhere." },
+        { "id": "tech:military-engineering", "note": "The capital Aqueduct gives the Eureka; Forts on the border later." },
+        { "id": "tech:castles", "note": "Free Eureka from a Tier 2 government; Medieval Walls are a tech away and the floor needs them." },
+        { "id": "tech:machinery", "note": "Three Archers give the Eureka; Crossbowmen for the border cities." },
+        { "id": "tech:cartography", "note": "Two Harbors give the Eureka; Caravels for the coast." },
+        { "id": "tech:printing", "note": "Two Universities give the Eureka; Science in every city." },
+        { "id": "tech:astronomy", "note": "A University beside a mountain if a Campus touches one; Colonialism's Inspiration either way." },
+        { "id": "tech:banking", "note": "Free Eureka from Guilds; Banks later if Gold is short." },
+        { "id": "tech:mass-production", "note": "A Lumber Mill on Woods the Campuses do not need; Shipyards for Steam Power." },
+        { "id": "tech:stirrups", "note": "Free Eureka from Feudalism; on the way to nothing this plan builds, but it is on the Science path." },
+        { "id": "tech:gunpowder", "note": "An Armory needs an Encampment the plan does not build; unboosted, for Musketmen in the border cities." }
+      ],
+      "civics": [
+        { "id": "civic:feudalism", "note": "Six Farms give the Inspiration; Serfdom for the Outback Station Builders." },
+        { "id": "civic:civil-service", "note": "The capital at ten population gives the Inspiration early; coastal Housing does it." },
+        { "id": "civic:guilds", "note": "Two Markets give the Inspiration; the Outback Station unlocks here and this is the civic priority of the phase." },
+        { "id": "civic:medieval-faires", "note": "Four Trade Routes running give the Inspiration." },
+        { "id": "civic:diplomatic-service", "note": "The first alliance gives the Inspiration; the War of Liberation Casus Belli lives here and is the twenty-turn burst." },
+        { "id": "civic:exploration", "note": "Two Caravels give the Inspiration; Merchant Republic for the Trade Routes." },
+        { "id": "civic:mercenaries", "note": "Eight land units is more than the floor; unboosted if it is wanted at all." },
+        { "id": "civic:humanism", "note": "A Great Artist only on the Culture direction; otherwise unboosted on the way to The Enlightenment." },
+        { "id": "civic:the-enlightenment", "note": "Three Great People give the Inspiration; Rationalism and the Scientific Theory Eureka." }
+      ],
+      "policies": [
+        { "card": "Serfdom", "slot": "economic", "from": "civic:feudalism", "why": "Builders with extra charges for the Outback Station clusters." },
+        { "card": "Merchant Republic", "slot": "wildcard", "from": "civic:exploration", "why": "The government: Trade Routes and Gold, and the Castles Eureka on the way." },
+        { "card": "Professional Army", "slot": "military", "from": "civic:mercenaries", "why": "Half-price upgrades keep the floor current with the aggressor's era without building new units." },
+        { "card": "Town Charters", "slot": "economic", "from": "civic:guilds", "why": "Commercial Hub adjacency doubled on the Charming river tiles; Gold for the queue." },
+        { "card": "Wisselbanken", "slot": "diplomatic", "from": "civic:diplomatic-service", "why": "Routes to suzerain city-states earn more and build alliance points; the alliance you want is with the aggressor's other neighbour." }
+      ],
+      "districts": [
+        { "district": "aqueduct", "city": "capital", "note": "Housing for a tall coastal city and the Military Engineering Eureka." },
+        { "district": "theater-square", "city": "the two cities with spare Breathtaking tiles", "note": "On Appeal tiles, where they yield Culture before an Amphitheater; both directions want some Culture for the civics." },
+        { "district": "industrial-zone", "city": "the two best Production cities", "note": "Workshops for Industrialization; Factories power the queue in the peak phase." },
+        { "district": "harbor", "city": "every coastal city without one", "note": "Shipyards for Steam Power; Housing and Trade Routes." }
+      ],
+      "wonders": [
+        { "name": "Kilwa Kisiwani", "why": "Suzerain bonuses of two Scientific or Industrial city-states amplified across the empire, and it is expensive, which is what a queue item should be.", "skip_if": "Machinery lands after turn 150, or you are suzerain of fewer than two city-states at turn 130." },
+        { "name": "Forbidden City", "why": "A second wildcard slot for Rationalism and a Great Person card both; another queue wonder.", "skip_if": "China is on the map, or Printing lands after turn 170." }
+      ],
+      "governors": [
+        { "governor": "pingala", "promotion": "Grants", "city": "capital", "why": "Great Scientist points doubled in the city with the most districts; the Education and Great Library races." },
+        { "governor": "victor", "promotion": "Embrasure", "city": "the border city", "why": "Ranged strength and defence; the bait city must bleed the aggressor, not fall." },
+        { "governor": "liang", "promotion": "Zoning Commissioner", "city": "the newest city", "note": "District Production in the city whose Appeal tiles are ready before its Production is.", "why": "District Production in the city whose Appeal tiles are ready before its Production is." },
+        { "governor": "amani", "promotion": "Emissary", "city": "a city-state beside the aggressor", "why": "Her Envoys keep the suzerainty that makes a captured city-state yours to liberate." }
+      ],
+      "city_states": [
+        { "type": "Scientific", "why": "Two Scientific suzerainties for Kilwa Kisiwani and Science in every Campus building." },
+        { "type": "Militaristic", "why": "Cheaper upgrades for the floor, and a Militaristic city-state beside the aggressor is the one he captures first." },
+        { "slug": "cardiff", "why": "Power from Harbor buildings once the Factories need it." }
+      ],
+      "great_people": [
+        { "class": "great-scientist", "why": "Every Medieval and Renaissance Scientist; the free techs are the Science race and the Appeal Campuses win them." },
+        { "class": "great-engineer", "why": "An Engineer that finishes a queue wonder during a burst is two bursts in one." },
+        { "class": "great-admiral", "why": "The naval floor for a coast that invites attack; retire for Combat Strength when no war is on." }
+      ],
+      "checkpoints": [
+        { "turn": 120, "test": "At least one burst spent entirely on queue items since turn 80, Universities in four cities, Medieval Walls in both border cities, and Diplomatic Service reached with a liberation target noted if one exists?", "pass": "Continue; the loop is running and the Linear plan is on schedule.", "fail": "If no burst has fired, the floor is too visible: let the army fall one era behind the aggressor's, settle one more city toward him, and decline his Defensive Pact. If a burst was spent on units, the queue was not kept; refresh it now and put a wonder at the top." },
+        { "turn": 160, "test": "Six Universities, Outback Stations in three clusters, the direction confirmed by the second districts, and no city lost?", "pass": "Enter the peak; every burst from here is a Spaceport-era item.", "fail": "A city lost means the floor failed: liberate it with the Casus Belli for the twenty-turn burst and raise the floor one era. If the direction drifted, the commit test failed; pick the one the Universities or Amphitheaters already say and stop building the other." }
+      ],
+      "tasks": [
+        { "id": "bait-universities", "turn": 90, "text": "Universities queued at the top of every Campus city; the next burst finishes them all." },
+        { "id": "bait-walls", "turn": 100, "text": "Medieval Walls in both border cities; Crossbowmen behind them; the aggressor must see Walls and a small army, in that order." },
+        { "id": "bait-no-pact", "turn": 105, "text": "Decline any Defensive Pact or alliance with the likeliest aggressor; ally the civilization on his other side instead." },
+        { "id": "bait-outback", "turn": 115, "text": "Guilds reached; two Builders under Serfdom laying Outback Stations in clusters beside the Pastures." },
+        { "id": "bait-liberation", "turn": 130, "text": "Diplomatic Service reached; if a neighbour holds a captured city-state within reach, stage four units and two ships and declare the War of Liberation. Twenty turns of double Production begin the turn the city is freed." },
+        { "id": "bait-first-burst-audit", "turn": 150, "text": "After the first burst ends, count what it built against the queue. Anything not on the list is the next refresh's lesson." }
+      ]
+    },
+    {
+      "id": "peak",
+      "name": "Peak",
+      "turns": { "from": 161, "to": 240 },
+      "era": "industrial",
+      "objective": "The bursts are at their most valuable: every one goes to Research Labs, Factories, the Industrial wonders and then the Spaceport, while the Diggers and Medieval-era Walls upgraded to Renaissance ones keep the invitations cheap. Science leads the table by turn 240, or Tourism does on the Culture direction.",
+      "build_order": [
+        { "item": "Workshop", "why": "Two for Industrialization; Factories power every later queue item." },
+        { "item": "Shipyard", "why": "Two for Steam Power; Production in coastal cities that have Harbors already." },
+        { "item": "Research Lab", "why": "The Nuclear Program Inspiration and the Science; first on the queue the turn Chemistry lands." },
+        { "item": "Neighborhood", "why": "Two for Sanitation; the first on a Breathtaking tile is Conservation, which a Breathtaking empire has to spare." },
+        { "item": "Oxford University", "why": "A queue wonder: two free techs and Science in the Campus city." },
+        { "item": "Digger", "why": "Four at Replaceable Parts, in a burst; the coastal floor and the liberation force for the rest of the game." },
+        { "item": "Spaceport", "why": "In the best Production city, on the queue from Rocketry; a burst finishes it in half the turns." },
+        { "item": "Ruhr Valley", "why": "A queue wonder: Production per Mine and Quarry in the Spaceport city." }
+      ],
+      "research": [
+        { "id": "tech:industrialization", "note": "Two Workshops give the Eureka; Factories and Coal." },
+        { "id": "tech:scientific-theory", "note": "Free Eureka from The Enlightenment; Oxford University and Research Grants." },
+        { "id": "tech:steam-power", "note": "Two Shipyards give the Eureka; Outback Stations grow with it." },
+        { "id": "tech:sanitation", "note": "Two Neighborhoods give the Eureka; Housing for cities past fifteen." },
+        { "id": "tech:economics", "note": "Two Banks if Gold is short; otherwise unboosted on the way to Flight." },
+        { "id": "tech:steel", "note": "An Ironclad from a Shipyard and a Coal Mine give the Eureka; Eiffel Tower and the Digger line." },
+        { "id": "tech:replaceable-parts", "note": "Three Line Infantry give the Eureka; the Digger unlocks here." },
+        { "id": "tech:flight", "note": "Owning Oxford, Ruhr Valley or any Industrial wonder gives the Eureka." },
+        { "id": "tech:chemistry", "note": "Alliance level two with the aggressor's other neighbour gives the Eureka; Research Labs." },
+        { "id": "tech:electricity", "note": "Two Privateers from the Shipyards give the Eureka; Power for the Labs and Factories." },
+        { "id": "tech:radio", "note": "A National Park on a Breathtaking cluster gives the Eureka; Amundsen-Scott and the Culture direction's Tourism." },
+        { "id": "tech:combustion", "note": "An Artifact gives the Eureka if an Archaeological Museum was built; otherwise unboosted." }
+      ],
+      "civics": [
+        { "id": "civic:colonialism", "note": "Researching Astronomy gave the Inspiration; on the way to the Industrial governments." },
+        { "id": "civic:civil-engineering", "note": "Seven district types is close for an empire with Campus, Harbor, Commercial Hub, Theater Square, Industrial Zone, Aqueduct and Neighborhood." },
+        { "id": "civic:nationalism", "note": "The War of Liberation was declared with a Casus Belli, so the Inspiration is free." },
+        { "id": "civic:urbanization", "note": "A city of fifteen gives the Inspiration; coastal Housing gets there." },
+        { "id": "civic:conservation", "note": "A Neighborhood on a Breathtaking tile gives the Inspiration; National Parks on the Culture direction." },
+        { "id": "civic:natural-history", "note": "An Archaeological Museum on the Culture direction; unboosted on Science." },
+        { "id": "civic:mass-media", "note": "Radio gives the Inspiration; Broadcast Centers." },
+        { "id": "civic:ideology", "note": "Democracy for Gold and Tourism; no Inspiration exists." },
+        { "id": "civic:capitalism", "note": "Two Stock Exchanges give the Inspiration if Gold is the bottleneck." },
+        { "id": "civic:class-struggle", "note": "Three Factories give the Inspiration free once the Industrial Zones have them." },
+        { "id": "civic:nuclear-program", "note": "The first Research Lab gives the Inspiration; on the way to Space Race." }
+      ],
+      "policies": [
+        { "card": "Rationalism", "slot": "economic", "from": "civic:the-enlightenment", "why": "Science from Campus buildings in tall coastal cities; the Spaceport is paid for here." },
+        { "card": "Democracy", "slot": "wildcard", "from": "civic:ideology", "why": "The Tier 3 government for a peaceful builder; Computers' Eureka comes with it." },
+        { "card": "Five-Year Plan", "slot": "economic", "from": "civic:class-struggle", "why": "Campus and Industrial Zone adjacency doubled, if Communism is chosen instead for the Production." },
+        { "card": "International Space Agency", "slot": "diplomatic", "from": "civic:nuclear-program", "why": "Science per Scientific suzerainty; the Envoys from liberated city-states pay here." },
+        { "card": "Levee en Masse", "slot": "military", "from": "civic:mobilization", "why": "Maintenance down on the Diggers and the naval floor if Mobilization is reached." }
+      ],
+      "districts": [
+        { "district": "industrial-zone", "city": "the two best Production cities", "note": "Factories and a Power Plant; one of these is the Spaceport city." },
+        { "district": "neighborhood", "city": "capital and the two largest cities", "note": "On Breathtaking tiles; the first is Conservation and all are Sanitation." },
+        { "district": "spaceport", "city": "the best Production city with Magnus", "note": "Queued from Rocketry; a burst finishes it and the first project." },
+        { "district": "preserve", "city": "a city with a Breathtaking cluster the districts did not take", "note": "Culture direction mainly; Appeal for the Seaside Resorts and Earth Goddess Faith on both." }
+      ],
+      "wonders": [
+        { "name": "Oxford University", "why": "Two free technologies and Science in the Campus city; expensive and therefore a burst wonder.", "skip_if": "Scientific Theory lands after turn 210, or a rival Science civilization has it half built." },
+        { "name": "Ruhr Valley", "why": "Production per Mine and Quarry in the Spaceport city; it halves every later project.", "skip_if": "The Spaceport city has fewer than four Mines in range, or Industrialization lands after turn 200." },
+        { "name": "Eiffel Tower", "why": "Two Appeal on every tile: more Breathtaking Campus and Theater Square yields, more Faith, and the Culture direction's whole coast turns into Resorts.", "skip_if": "Steel is more than twenty turns away at turn 220, or France is ahead in Science." }
+      ],
+      "governors": [
+        { "governor": "magnus", "promotion": "Vertical Integration", "city": "the Spaceport city", "why": "Factory Production shared into the city that runs every project." },
+        { "governor": "pingala", "promotion": "Space Initiative", "city": "the Spaceport city", "why": "Moved out of the capital at Rocketry; Space Race projects a third faster on top of a burst." },
+        { "governor": "reyna", "promotion": "Contractor", "city": "the newest or liberated city", "why": "Buy its Campus and Library outright so it joins the Science inside five turns." }
+      ],
+      "city_states": [
+        { "type": "Scientific", "why": "Science per suzerainty under International Space Agency." },
+        { "type": "Industrial", "why": "Production in the Spaceport city; Hong Kong's project bonus if it is on the map." },
+        { "slug": "auckland", "why": "Shallow water Production doubles from the Industrial era; every coastal city feels it." }
+      ],
+      "great_people": [
+        { "class": "great-scientist", "why": "Industrial and Modern Scientists are free techs toward Rocketry; Darwin on the Reef or Uluru is two Eurekas." },
+        { "class": "great-engineer", "why": "Any Engineer that finishes Oxford or Ruhr during a burst; later ones are Spaceport Production." },
+        { "class": "great-admiral", "why": "An Industrial Great Admiral and two Ironclads are the coastal floor against anyone who lands." }
+      ],
+      "checkpoints": [
+        { "turn": 200, "test": "Research Labs in three cities, Factories in both Industrial Zones, one burst since turn 160 spent on queue items, and Science per turn in the top two?", "pass": "Continue; the Spaceport goes on the queue at Rocketry.", "fail": "If Science trails three or more rivals, Rationalism and Research Grants in every Campus city and check the Campus tiles' Appeal; a Mine or a Quarry beside one may have dropped it. If no burst fired, the floor is too strong; let it slip one era." },
+        { "turn": 240, "test": "Spaceport built or inside ten turns, Diggers standing, and no rival with a launch already made? On the Culture direction, Tourism rising against every rival but one?", "pass": "Enter the close; every burst is a project.", "fail": "Behind in Science but ahead in Culture and Appeal: switch the verdict to Culture now, National Parks and Seaside Resorts on the coast, and keep the Spaceport as the Score floor." }
+      ],
+      "tasks": [
+        { "id": "peak-factories", "turn": 170, "text": "Two Workshops and two Shipyards built; Industrialization and Steam Power Eurekas collected; Outback Stations re-read for the Steam Power bonus." },
+        { "id": "peak-labs", "turn": 195, "text": "Chemistry researched; Research Labs at the top of every Campus city's queue for the next burst." },
+        { "id": "peak-diggers", "turn": 215, "text": "Replaceable Parts researched; four Diggers built in one burst and parked in the two coastal border cities." },
+        { "id": "peak-spaceport", "turn": 225, "text": "Rocketry researched; Spaceport queued in the Magnus city with Pingala moved there and Space Initiative taken." },
+        { "id": "peak-queue-audit", "turn": 235, "text": "Refresh every queue so that the next burst, whenever it lands, finds a project or a Lab at the top and nothing cheaper." }
+      ]
+    },
+    {
+      "id": "close",
+      "name": "Close",
+      "turns": { "from": 241, "to": null },
+      "era": "modern",
+      "objective": "Finish the Science victory with every burst poured into Space Race projects, Diggers and the navy holding the coast against the rivals who declare on the leader, and a last War of Liberation if a neighbour obliges; or on the Culture direction, Rock Bands and Resorts on the Appeal coast.",
+      "build_order": [
+        { "item": "Launch Earth Satellite", "why": "The first project; a burst finishes it in half the turns, and the next burst is the Moon Landing." },
+        { "item": "Power Plant", "why": "Coal or Oil in the Industrial Zones; the Refining Eureka and Power for the Labs." },
+        { "item": "Digger", "why": "A second four if a rival lands; the coastal bonus makes them the best defenders the plan has." },
+        { "item": "Rock Band", "why": "Culture direction only; Faith-bought on Earth Goddess." },
+        { "item": "Seaside Resort", "why": "Culture direction: every Breathtaking coast tile beside the Harbors." }
+      ],
+      "research": [
+        { "id": "tech:computers", "note": "Democracy gave the Eureka; the Science rises with it." },
+        { "id": "tech:plastics", "note": "An Oil Well on Oil gives the Eureka; Offshore Platforms on the coast." },
+        { "id": "tech:refining", "note": "A Coal Power Plant gives the Eureka; Oil Power Plants for the Spaceport city." },
+        { "id": "tech:satellites", "note": "Two Broadcast Centers give the Eureka; the Earth Satellite project needs the tech." },
+        { "id": "tech:robotics", "note": "Free Eureka from Globalization if it is reached; the Moon Landing needs it." },
+        { "id": "tech:nanotechnology", "note": "A Mine on Aluminum gives the Eureka; the Mars projects need it." }
+      ],
+      "civics": [
+        { "id": "civic:space-race", "note": "The Spaceport gives the Inspiration free; Integrated Space Cell." },
+        { "id": "civic:globalization", "note": "Two Airports give the Inspiration; the Robotics Eureka comes from researching the civic." },
+        { "id": "civic:professional-sports", "note": "Two Entertainment Complexes give the Inspiration; Amenities in a tall coastal empire." },
+        { "id": "civic:environmentalism", "note": "Two Solar Farms give the Inspiration; Power without Coal for the last projects." },
+        { "id": "civic:cultural-heritage", "note": "Culture direction: a themed building gives the Inspiration." }
+      ],
+      "policies": [
+        { "card": "Integrated Space Cell", "slot": "military", "from": "civic:space-race", "why": "Space Race projects faster in the Spaceport city; stacked on a burst it is a project in a handful of turns." },
+        { "card": "Heritage Tourism", "slot": "economic", "from": "civic:cultural-heritage", "why": "Culture direction: Tourism from Great Works doubled." },
+        { "card": "Online Communities", "slot": "economic", "from": "civic:social-media", "why": "Culture direction: Tourism to civilizations you trade with." }
+      ],
+      "districts": [],
+      "wonders": [],
+      "governors": [
+        { "governor": "victor", "promotion": "Embrasure", "city": "whichever coastal city a rival lands beside", "why": "The leader in Science is the one everyone declares on, which is also the burst the plan wants." }
+      ],
+      "city_states": [],
+      "great_people": [
+        { "class": "great-scientist", "why": "Atomic and Information Scientists are free techs toward the last projects." },
+        { "class": "great-engineer", "why": "Modern Engineers add Production to Space Race projects directly." }
+      ],
+      "checkpoints": [
+        { "turn": 290, "test": "Earth Satellite launched and the Moon Landing inside fifteen turns with a burst likely, or on the Culture direction Visitors above every rival's domestic tourists but one?", "pass": "Continue to the end; no further decisions.", "fail": "Convert to Score: keep the Spaceport projects running for the points, stop baiting, and spend Gold on buildings in every city." }
+      ],
+      "tasks": [
+        { "id": "close-satellite", "turn": 250, "text": "Earth Satellite project at the top of the Spaceport queue; if a burst is running, nothing else in that city until it launches." },
+        { "id": "close-last-liberation", "turn": 260, "text": "If any neighbour holds a captured city within reach of the Diggers, declare the War of Liberation; twenty turns of double Production is the Moon Landing." },
+        { "id": "close-review", "turn": 290, "text": "Review the turn 290 checkpoint and either continue or declare the game a Score game." }
+      ]
+    }
+  ],
+  "boosts": [
+    { "id": "tech:sailing", "fit": "free", "when": "setup", "how": "The coastal capital triggers it on settle." },
+    { "id": "tech:astrology", "fit": "cheap", "when": "setup", "how": "The Scout finds the Reef, Uluru or whichever wonder the coast hides." },
+    { "id": "tech:writing", "fit": "free", "when": "setup", "how": "The Scout meets the first civilization while finding the aggressor." },
+    { "id": "tech:wheel", "fit": "cheap", "when": "setup", "how": "A Mine on a resource hill the Campus does not want." },
+    { "id": "tech:irrigation", "fit": "cheap", "when": "setup", "how": "A Farm on a Wheat or Rice beside the capital." },
+    { "id": "tech:celestial-navigation", "fit": "free", "when": "expand", "how": "Two Fishing Boats from the first Builder." },
+    { "id": "tech:currency", "fit": "free", "when": "expand", "how": "The first Trader runs a route to the border city." },
+    { "id": "tech:bronze-working", "fit": "cheap", "when": "expand", "how": "Three barbarian kills at the camp nearest the capital." },
+    { "id": "tech:archery", "fit": "cheap", "when": "expand", "how": "The Slinger finishes a barbarian Scout." },
+    { "id": "tech:horseback-riding", "fit": "free", "when": "expand", "how": "Every city places a Pasture for the Culture Bomb." },
+    { "id": "tech:masonry", "fit": "cheap", "when": "expand", "how": "A Quarry on stone; the Walls need Masonry anyway." },
+    { "id": "tech:engineering", "fit": "cheap", "when": "expand", "how": "Ancient Walls in the border city, which the floor requires." },
+    { "id": "tech:mathematics", "fit": "free", "when": "expand", "how": "Campus, Harbor and Commercial Hub by turn 60." },
+    { "id": "tech:shipbuilding", "fit": "cheap", "when": "expand", "how": "Two Galleys, one per coast, which is the naval floor." },
+    { "id": "tech:apprenticeship", "fit": "cheap", "when": "expand", "how": "Three Mines on hills away from the Campus tiles." },
+    { "id": "tech:construction", "fit": "costly", "when": "expand", "how": "A Water Mill only if a city sits on a river." },
+    { "id": "tech:iron-working", "fit": "skip", "when": null, "how": "" },
+    { "id": "tech:military-tactics", "fit": "skip", "when": null, "how": "" },
+    { "id": "tech:education", "fit": "cheap", "when": "bait", "how": "The first Great Scientist, which Inspiration and the Appeal Campuses win." },
+    { "id": "tech:military-engineering", "fit": "cheap", "when": "bait", "how": "The capital Aqueduct." },
+    { "id": "tech:castles", "fit": "free", "when": "bait", "how": "Merchant Republic is a Tier 2 government." },
+    { "id": "tech:machinery", "fit": "cheap", "when": "bait", "how": "Three Archers across the two border cities." },
+    { "id": "tech:cartography", "fit": "free", "when": "bait", "how": "Two Harbors by the end of the expansion phase." },
+    { "id": "tech:printing", "fit": "free", "when": "bait", "how": "Two Universities, which are the first queue item everywhere." },
+    { "id": "tech:astronomy", "fit": "cheap", "when": "bait", "how": "A University beside a mountain if a Campus touches one." },
+    { "id": "tech:banking", "fit": "free", "when": "bait", "how": "Guilds is the Outback Station civic." },
+    { "id": "tech:mass-production", "fit": "cheap", "when": "bait", "how": "A Lumber Mill on Woods away from the Appeal tiles." },
+    { "id": "tech:stirrups", "fit": "free", "when": "bait", "how": "Feudalism is on the civic path." },
+    { "id": "tech:gunpowder", "fit": "costly", "when": "bait", "how": "An Armory needs an Encampment the floor does not include." },
+    { "id": "tech:buttress", "fit": "cheap", "when": "bait", "how": "Owning the Great Library or Kilwa Kisiwani." },
+    { "id": "tech:square-rigging", "fit": "skip", "when": null, "how": "" },
+    { "id": "tech:metal-casting", "fit": "skip", "when": null, "how": "" },
+    { "id": "tech:siege-tactics", "fit": "skip", "when": null, "how": "" },
+    { "id": "tech:industrialization", "fit": "cheap", "when": "peak", "how": "Two Workshops in the Industrial Zones." },
+    { "id": "tech:scientific-theory", "fit": "free", "when": "peak", "how": "The Enlightenment is on the civic path." },
+    { "id": "tech:steam-power", "fit": "cheap", "when": "peak", "how": "Two Shipyards in Harbor cities." },
+    { "id": "tech:sanitation", "fit": "cheap", "when": "peak", "how": "Two Neighborhoods on Breathtaking tiles." },
+    { "id": "tech:economics", "fit": "costly", "when": "peak", "how": "Two Banks only if Gold is short." },
+    { "id": "tech:steel", "fit": "cheap", "when": "peak", "how": "An Ironclad from a Shipyard and a Mine on Coal." },
+    { "id": "tech:replaceable-parts", "fit": "costly", "when": "peak", "how": "Three Line Infantry only if the floor is upgraded that far before the Diggers." },
+    { "id": "tech:flight", "fit": "cheap", "when": "peak", "how": "Owning Oxford University or Ruhr Valley." },
+    { "id": "tech:chemistry", "fit": "cheap", "when": "peak", "how": "Alliance level two with the aggressor's other neighbour." },
+    { "id": "tech:electricity", "fit": "costly", "when": "peak", "how": "Two Privateers from the Shipyards; usually unboosted." },
+    { "id": "tech:radio", "fit": "cheap", "when": "peak", "how": "A National Park on a Breathtaking cluster after Conservation." },
+    { "id": "tech:combustion", "fit": "costly", "when": "peak", "how": "An Artifact only on the Culture direction." },
+    { "id": "tech:rifling", "fit": "skip", "when": null, "how": "" },
+    { "id": "tech:military-science", "fit": "skip", "when": null, "how": "" },
+    { "id": "tech:computers", "fit": "free", "when": "close", "how": "Democracy is a Tier 3 government." },
+    { "id": "tech:plastics", "fit": "cheap", "when": "close", "how": "An Oil Well on any Oil inside the borders." },
+    { "id": "tech:refining", "fit": "cheap", "when": "close", "how": "A Coal Power Plant in the Spaceport city." },
+    { "id": "tech:satellites", "fit": "cheap", "when": "close", "how": "Two Broadcast Centers in the Theater Square cities." },
+    { "id": "tech:robotics", "fit": "costly", "when": "close", "how": "Globalization is a late civic; usually unboosted." },
+    { "id": "tech:nanotechnology", "fit": "cheap", "when": "close", "how": "A Mine on Aluminum, which the projects need anyway." },
+    { "id": "civic:craftsmanship", "fit": "free", "when": "setup", "how": "Three improvements from the first Builder." },
+    { "id": "civic:foreign-trade", "fit": "cheap", "when": "setup", "how": "The Scout or a Galley sights a second continent." },
+    { "id": "civic:early-empire", "fit": "free", "when": "setup", "how": "Six population across two coastal cities with the Housing bonus." },
+    { "id": "civic:state-workforce", "fit": "free", "when": "expand", "how": "The capital Campus is the first district." },
+    { "id": "civic:mysticism", "fit": "free", "when": "expand", "how": "Founding Earth Goddess." },
+    { "id": "civic:political-philosophy", "fit": "cheap", "when": "expand", "how": "Three city-states met by the Scout and the Galleys." },
+    { "id": "civic:recorded-history", "fit": "free", "when": "expand", "how": "Two Campuses on Appeal tiles by turn 55." },
+    { "id": "civic:games-and-recreation", "fit": "costly", "when": "expand", "how": "Researching Construction, which this plan reaches late." },
+    { "id": "civic:defensive-tactics", "fit": "free", "when": "expand", "how": "The first declaration of war against you, which is the whole point." },
+    { "id": "civic:military-tradition", "fit": "cheap", "when": "expand", "how": "Clearing the camp nearest the capital." },
+    { "id": "civic:drama-and-poetry", "fit": "cheap", "when": "expand", "how": "Finishing the Great Library." },
+    { "id": "civic:theology", "fit": "skip", "when": null, "how": "" },
+    { "id": "civic:military-training", "fit": "skip", "when": null, "how": "" },
+    { "id": "civic:feudalism", "fit": "cheap", "when": "bait", "how": "Six Farms across six cities." },
+    { "id": "civic:civil-service", "fit": "free", "when": "bait", "how": "The capital reaches ten population on coastal Housing." },
+    { "id": "civic:guilds", "fit": "cheap", "when": "bait", "how": "Two Markets in the Commercial Hubs." },
+    { "id": "civic:medieval-faires", "fit": "cheap", "when": "bait", "how": "Four Trade Routes running from the Harbors." },
+    { "id": "civic:diplomatic-service", "fit": "cheap", "when": "bait", "how": "An alliance with the aggressor's other neighbour." },
+    { "id": "civic:exploration", "fit": "cheap", "when": "bait", "how": "Two Caravels upgraded from the Galleys." },
+    { "id": "civic:mercenaries", "fit": "costly", "when": "bait", "how": "Eight land units is above the floor; met only during a liberation war." },
+    { "id": "civic:humanism", "fit": "costly", "when": "bait", "how": "A Great Artist only on the Culture direction." },
+    { "id": "civic:the-enlightenment", "fit": "cheap", "when": "bait", "how": "Three Great People across Scientists and Admirals." },
+    { "id": "civic:naval-tradition", "fit": "skip", "when": null, "how": "" },
+    { "id": "civic:divine-right", "fit": "skip", "when": null, "how": "" },
+    { "id": "civic:reformed-church", "fit": "skip", "when": null, "how": "" },
+    { "id": "civic:colonialism", "fit": "free", "when": "peak", "how": "Researching Astronomy." },
+    { "id": "civic:civil-engineering", "fit": "cheap", "when": "peak", "how": "Seven district types; the Neighborhood is usually the seventh." },
+    { "id": "civic:nationalism", "fit": "cheap", "when": "peak", "how": "The War of Liberation is a Casus Belli." },
+    { "id": "civic:urbanization", "fit": "cheap", "when": "peak", "how": "The capital reaches fifteen population." },
+    { "id": "civic:conservation", "fit": "free", "when": "peak", "how": "A Neighborhood on a Breathtaking tile." },
+    { "id": "civic:natural-history", "fit": "costly", "when": "peak", "how": "An Archaeological Museum only on the Culture direction." },
+    { "id": "civic:mass-media", "fit": "cheap", "when": "peak", "how": "Researching Radio after a National Park." },
+    { "id": "civic:capitalism", "fit": "costly", "when": "peak", "how": "Two Stock Exchanges only if Gold is the bottleneck." },
+    { "id": "civic:class-struggle", "fit": "cheap", "when": "peak", "how": "Three Factories across the Industrial Zones." },
+    { "id": "civic:nuclear-program", "fit": "free", "when": "peak", "how": "The first Research Lab." },
+    { "id": "civic:mobilization", "fit": "skip", "when": null, "how": "" },
+    { "id": "civic:space-race", "fit": "free", "when": "close", "how": "Building the Spaceport." },
+    { "id": "civic:globalization", "fit": "costly", "when": "close", "how": "Two Airports; rarely worth it before the launch." },
+    { "id": "civic:professional-sports", "fit": "cheap", "when": "close", "how": "Two Entertainment Complexes for Amenities." },
+    { "id": "civic:environmentalism", "fit": "cheap", "when": "close", "how": "Two Solar Farms for clean Power." },
+    { "id": "civic:cultural-heritage", "fit": "costly", "when": "close", "how": "A themed building only on the Culture direction." }
+  ],
+  "decision_triggers": [
+    { "name": "Burst lands", "if": "A rival declares war on you, or a city is liberated.", "then": "The same turn, set every city to the top item on its written queue; wonders, Universities and Spaceport projects first. Units only in a city with an enemy adjacent. Read the turns remaining every turn and switch to the most expensive item when a cheap one finishes." },
+    { "name": "City-state captured", "if": "A neighbour captures a city-state within reach of four land units and two ships.", "then": "Take the War of Liberation Casus Belli at Diplomatic Service, stage the force, free the city, and spend the twenty turns on the queue. The city-state's gratitude is Envoys; the burst is the point." },
+    { "name": "Nobody will declare", "if": "No war has been declared on you by turn 140 and the aggressor has a Defensive Pact with you or a strong army of your own to look at.", "then": "Cancel the pact at renewal, let the army fall an era behind his, and settle one more city toward his border with a Pasture Culture Bomb. If he still will not, the band is red and the Linear plan alone is the game." },
+    { "name": "Burst with an empty queue", "if": "A burst lands and a city's queue is stale or empty.", "then": "Put the most expensive available building in that city at the top this turn, even if it is not ideal; a burst spent on a Granary is still better than one spent on nothing. Then refresh every other queue before ending the turn." }
+  ],
+  "abort": {
+    "trigger": "No war has been declared on you and no city-state has been capturable by turn 180, and the diplomacy screen shows no neighbour able to reach you.",
+    "actions": [
+      "Stop baiting: raise the army to a normal defensive size and sign the Defensive Pacts the agenda wants, since the bait is costing Settlers and buying nothing.",
+      "Play the Linear plan as the whole game: Appeal Campuses, Universities, Research Labs and the Spaceport on ordinary Production.",
+      "Keep the queue habit anyway; a late declaration from a Science rival still doubles the Moon Landing."
+    ]
+  },
+  "fail_state": "The Industrial era arrives with two bursts spent on Warriors and Granaries because nothing expensive was queued, a border city lost to the aggressor the bait invited because its Walls were never built, and Campuses on plain grassland because the Appeal was ignored for adjacency. Australia is then a mid-table Science civilization with good Housing and a story about the burst that was wasted.",
+  "common_mistakes": [
+    "Spending a burst on units. Ten turns of double Production is a University in every city; the Walls and ranged units were supposed to be there before the declaration.",
+    "Placing a Campus for its adjacency instead of its Appeal. A Breathtaking tile yields three Science before any building; a mountain gives one.",
+    "Keeping a strong army because the plan invites war. A visibly strong Australia is never declared on; the floor is Walls and ranged units, not a field army.",
+    "Letting the queue go stale. Techs land, the most expensive item changes, and a burst that arrives on turn 141 finds a Monument at the top of a list written on turn 100.",
+    "Chopping Woods for early Production. The Woods were the Appeal, and the Appeal was the kit."
+  ],
+  "sources": [
+    "Civilization VI Civilopedia, Gathering Storm ruleset (Australia, John Curtin, Digger, Outback Station, War of Liberation Casus Belli).",
+    "Boost objectives cross-checked against civilization6planner.com tech-tree and civics-tree pages, 2026-10-01.",
+    "Leadership Focus tags, caveats, Monitor template and the Linear alt-shape supplement for John Curtin in this repository."
+  ]
+}

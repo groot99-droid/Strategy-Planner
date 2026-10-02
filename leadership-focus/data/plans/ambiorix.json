@@ -1,0 +1,502 @@
+{
+  "slug": "ambiorix",
+  "shape": "Countdown",
+  "secondary_shape": null,
+  "version": 1,
+  "updated": "2026-10-02",
+  "assumptions": {
+    "ruleset": "Gathering Storm with every expansion and the Leader Pass",
+    "speed": "Standard",
+    "difficulty": "Emperor",
+    "map": "Pangaea or Continents, standard size, 8 civilizations",
+    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. Ambiorix's single persona is planned here. The Gaesatae is treated as the game has it: a 60 Production Warrior replacement at 20 Strength with +10 against units of higher base Strength and +5 against districts; the Oppidum as an Industrial Zone replacement unlocked at Iron Working."
+  },
+  "verdict": {
+    "victory": "Domination",
+    "secondary": "Culture",
+    "confidence": "medium",
+    "one_line": "Six Gaesatae in a two-deep block with two Archers behind them take the nearest capital before turn 60 and its second city before turn 95, while every unit trained pays Culture and every Mine behind the army pays more. After turn 95 the block disperses into garrisons and Gaul becomes the Culture civilization its Mines and Oppida were always building.",
+    "why": "King of the Eburones gives melee, anti-cavalry and ranged units +2 Combat Strength for every adjacent friendly combat unit, so a Gaesatae in the middle of a block of six fights at 28 or 30 before promotions, against Emperor neighbours fielding 20 Strength Warriors and 15 Strength Slingers until roughly turn 60. The same ability pays Culture worth a fifth of each unit's Production cost, so the army that takes the city also buys Political Philosophy and Oligarchy. The window closes twice: when the target finishes Ancient Walls, which a Gaesatae block with a Battering Ram still handles, and when it fields Catapults and three Archers, which punish exactly the clustering the bonus demands. That second closing is why the deadline is turn 95 and why nothing in the plan keeps the block together afterwards. Hallstatt Culture turns every Mine into Culture and a culture bomb, and the Oppidum is a Classical Industrial Zone, so the digest phase has a Culture engine and the Production to build it, which is why the secondary is Culture and not Science."
+  },
+  "map_check": {
+    "must_have": [
+      "A rival capital reachable by land within roughly 12 tiles, found by turn 10.",
+      "Hills within the capital's first two rings: three Mines by turn 20 are the Culture, the Craftsmanship Inspiration and the Agoge card that the whole arming phase runs on."
+    ],
+    "prefer": [
+      "Hills or Woods on the approach, since the block moves one tile a turn anyway and the cover protects it from Slingers.",
+      "Stone or a strategic resource beside a hill ring for the Oppidum's adjacency.",
+      "Two Barbarian camps within reach; Gaesatae fight Barbarian Spearmen and Swordsmen at a bonus and the camps pay Military Tradition and Bronze Working.",
+      "Chocolate Hills or Gobustan: four mineable tiles in one place is a Culture city from turn 30."
+    ],
+    "no_go": "An island or peninsula start with no land neighbour, or flat grassland with no hill within three tiles of the capital. The first denies the window; the second denies the Mines that make Gaul different from a Warrior rush.",
+    "fallback": "If no capital is within reach by turn 12, settle three hill cities, mine every hill, build Oppida at Iron Working and play Gaul as a Culture civilization: Theater Squares two tiles out beside the Mines, Monuments bought with the unit Culture, and a Domination deadline moved to the Medieval era against a city-state or a second-ring neighbour with Men-At-Arms in the same block."
+  },
+  "kit_levers": [
+    { "source": "leader_ability", "name": "King of the Eburones", "buys": "Culture equal to a fifth of the Production cost of every non-civilian unit trained, and +2 Combat Strength for melee, anti-cavalry and ranged units per adjacent friendly combat unit.", "exploit": "Two levers in one. The Culture means the arming phase is also the civic plan: six Gaesatae and two Archers are about 100 Culture, which is Military Tradition and most of Early Empire. The Strength means formation is a step, not a habit: the block moves as one, every unit ends its turn touching at least two others, and the unit that attacks is the one with the most neighbours. Cavalry and siege get neither bonus, so the army is Gaesatae, Spearmen and Archers only." },
+    { "source": "civ_ability", "name": "Hallstatt Culture", "buys": "Mines give +1 Culture, give adjacency to every district beside them and culture-bomb unowned tiles; specialty districts cannot sit beside the City Center and get no adjacency from other districts.", "exploit": "Mine every hill before farming anything. Each Mine is Culture, a border push toward the target, and adjacency for the Theater Square or Campus placed two tiles out beside it. Plan every city as a ring: City Center, a ring of Mines and Farms, then the districts in the second ring touching the Mines. Never put two districts side by side; they gain nothing from each other." },
+    { "source": "unique_unit", "name": "Gaesatae", "buys": "A 60 Production Warrior at 20 Strength with +10 against units of higher base Strength and +5 against districts, available from turn 1.", "exploit": "The +10 means the target's Swordsmen and Horsemen are the units it wants to meet, and the +5 means it chews a city's defences without a Ram until Walls appear. Six of them under Agoge and God of the Forge are the army; the extra 20 Production over a Warrior is paid back as 12 Culture each. Upgrade them to Men-At-Arms only under Professional Army; until then they garrison." },
+    { "source": "unique_infrastructure", "name": "Oppidum", "buys": "An Industrial Zone replacement at Iron Working instead of Apprenticeship, cheaper, with a ranged attack and defence of its own and a major adjacency from Quarries and strategic resources.", "exploit": "The first one goes up in the forward city the turn Iron Working lands, two tiles out beside a Quarry or the Iron Mine, and it is a fortress on the border and the Production for the replacement Gaesatae. Building the first one also unlocks Apprenticeship, which skips a Medieval technology outright. Every city gets one in the digest phase; two Workshops in them are the Industrialization Eureka." },
+    { "source": "agenda", "name": "Scourge of Rome", "buys": "Ambiorix admires leaders with large standing armies and looks down on those with few units.", "exploit": "Irrelevant to your own play except as a warning that an AI Ambiorix on the map will like you for the block and dislike you the turn you disband it. Keep the garrisons after turn 95 and he stays a friend; he is a useful Military Alliance in the Culture game." }
+  ],
+  "shape_block": {
+    "countdown": {
+      "deadline_turn": 95,
+      "midpoint_turn": 60,
+      "target_selection": "On turn 1, send the starting Gaesatae along the hill line the start shows; the Scout follows the valley. The target is the nearest rival capital by land within 12 tiles, chosen by turn 10 and not changed afterwards. Prefer a capital with hills on your side of it, where the block can sit in cover two tiles out, and whose owner fields Swordsmen or Horsemen rather than Archers, because the Gaesatae bonus is against higher base Strength and the formation bonus is against melee. Two things close this window and neither is the turn number: Ancient Walls, which the Ram handles, and the target's first Catapult or third Archer, which the block cannot. When the banner shows Engineering-era units, the window is over whatever the turn says.",
+      "what_counts_as_converted": "Cities you hold at turn 95: the target capital and at least one more of its cities, each with positive Loyalty, a Monument and three Mines around it, plus an Oppidum built in the forward city. Culture banked from training, kills, pillage, promotions and the size of the block do not count; nor does a Great General. Twelve units at turn 95 and no city is the fail state, and the Culture they paid for was spent on civics the empire cannot use.",
+      "after_window": "At turn 95 the block disperses whatever the count. One Gaesatae garrisons each city, two stand on the border Oppidum, the rest are disbanded if Gold is negative and otherwise upgraded under Professional Army later. Clustering now attracts Catapults, Crossbowmen and later Bombards and Field Cannons, so no unit stands beside another outside a city again until the Modern era. Production turns to Monuments, Mines, Oppida with Workshops, and Theater Squares two tiles out beside the Mines; the rest of the game is a Culture civilization with an unusually good Production base, and any later war is one that an ally has started or a neighbour has invited by falling an era behind."
+    }
+  },
+  "phases": [
+    {
+      "id": "arm",
+      "name": "Arm",
+      "turns": { "from": 1, "to": 30 },
+      "era": "ancient",
+      "objective": "Pick the target on turn 1, mine three hills for Culture and Craftsmanship, found the pantheon, clear the camps on the road with the first Gaesatae, and have six Gaesatae and two Archers in a two-deep block within five tiles of the target capital by turn 30 while it still has no Walls and no Catapult.",
+      "build_order": [
+        { "item": "Scout", "why": "Finds the target and the camps in the first ten turns; the Gaesatae is too slow to scout and too valuable to lose." },
+        { "item": "Gaesatae", "why": "Second Gaesatae; two clear the first camp together with the +2 from standing side by side and pay 24 Culture between them." },
+        { "item": "Slinger", "why": "Archery Eureka on the first camp Scout; upgrades to the Archer that stands behind the block." },
+        { "item": "Settler", "why": "The second city goes toward the target, on hills, as the forward base where the Oppidum goes and the block heals." },
+        { "item": "Builder", "why": "Three Mines on the capital's hills: Craftsmanship's Inspiration, 3 Culture a turn and a border bomb toward the target." },
+        { "item": "Gaesatae", "why": "Third and fourth, under Agoge once Craftsmanship lands; 40 Production each and 12 Culture back." },
+        { "item": "Gaesatae", "why": "Fifth and sixth; six is a block of two rows where every unit touches at least two others. Seven is a Monument not built." },
+        { "item": "Archer", "why": "Second Archer; two stand in the back row, touching three Gaesatae each, and shoot at 25 plus the formation bonus." },
+        { "item": "Battering Ram", "why": "Behind Masonry, queued in the forward city the turn the target's banner shows Walls; Gaesatae can carry it." }
+      ],
+      "research": [
+        { "id": "tech:mining", "note": "First: Mines are the Culture, the Craftsmanship Inspiration and the border push, and Bronze Working hangs off it." },
+        { "id": "tech:bronze-working", "note": "Eureka from three Barbarian kills the Gaesatae make at the first camp; reveals Iron and opens Iron Working for the Oppidum." },
+        { "id": "tech:archery", "note": "Eureka from a Slinger kill at the camp; two Archers in the back row." },
+        { "id": "tech:masonry", "note": "Battering Ram for the Walls and the Quarry the Oppidum wants beside it; Eureka from the Quarry." },
+        { "id": "tech:animal-husbandry", "note": "Cheap, reveals Horses so the Oppidum can sit beside them, and a Pasture gives Horseback Riding for free later." }
+      ],
+      "civics": [
+        { "id": "civic:code-of-laws", "note": "Discipline for the camp fights and Urban Planning for the capital." },
+        { "id": "civic:craftsmanship", "note": "Agoge is the point: +50% toward Ancient and Classical melee, anti-cavalry and ranged. Inspiration from the three Mines." },
+        { "id": "civic:military-tradition", "note": "Inspiration free from the first camp cleared; the Great General points and later the Raid card." }
+      ],
+      "policies": [
+        { "card": "Discipline", "slot": "military", "from": "civic:code-of-laws", "why": "+5 Strength against Barbarians while two Gaesatae clear the first camp." },
+        { "card": "Urban Planning", "slot": "economic", "from": "civic:code-of-laws", "why": "+1 Production in the capital, which is building nothing but units." },
+        { "card": "Agoge", "slot": "military", "from": "civic:craftsmanship", "why": "+50% Production toward Ancient and Classical melee, anti-cavalry and ranged units; the third to sixth Gaesatae and both Archers come out in two thirds of the turns." }
+      ],
+      "districts": [],
+      "pantheon": { "slug": "god-of-the-forge", "why": "+25% Production toward Ancient and Classical military units stacks with Agoge on every Gaesatae and Archer.", "alternative": "religious-idols" },
+      "wonders": [],
+      "governors": [],
+      "city_states": [
+        { "type": "Militaristic", "why": "The first envoy goes to any Militaristic city-state met near the target: +2 Production toward units in the capital." },
+        { "slug": "akkad", "why": "Full damage to Walls from melee attacks makes the Gaesatae's +5 against districts work on Walled cities too; worth three envoys the moment it is met." }
+      ],
+      "great_people": [],
+      "checkpoints": [
+        { "turn": 30, "test": "Six Gaesatae and two Archers in a two-deep block within five tiles of the target capital, Gold per turn positive, and the target banner shows no Walls and no Catapult?", "pass": "Declare on turn 31 with a Surprise War; the grievances are the price of the window and there is no Casus Belli this early.", "fail": "If the block is short, finish it before marching; staging after the declaration is spent from the window. If Gold is negative, disband the Scout, not a Gaesatae. If the target already has Walls, bring the Ram; if it already fields a Catapult, swap to its second city or the next nearest capital." }
+      ],
+      "tasks": [
+        { "id": "arm-pick-target", "turn": 1, "text": "Settle in place or one tile toward hills, then send the starting Gaesatae along the hill line; the target is whichever rival capital it or the Scout finds first within 12 tiles." },
+        { "id": "arm-three-mines", "turn": 14, "text": "Three Mines on the capital's hills with the first Builder, on the side facing the target so the culture bomb pushes the border that way; Craftsmanship's Inspiration and Agoge the turn it completes." },
+        { "id": "arm-first-camp", "turn": 15, "text": "Clear the nearest camp with two Gaesatae standing side by side and the Slinger behind; Slinger kill for Archery, three kills for Bronze Working, the camp for Military Tradition." },
+        { "id": "arm-forward-city", "turn": 19, "text": "Settle the second city on hills between the capital and the target; it is where the Oppidum goes and where the block heals." },
+        { "id": "arm-pantheon", "turn": 21, "text": "Found God of the Forge with the first 25 Faith." },
+        { "id": "arm-stage", "turn": 30, "text": "Move the block to within five tiles of the target capital in Hills or Woods, two rows of three Gaesatae with the Archers behind, every unit touching at least two others, and write down the Gold per turn." }
+      ]
+    },
+    {
+      "id": "window",
+      "name": "Window",
+      "turns": { "from": 31, "to": 95 },
+      "era": "classical",
+      "objective": "Take the target capital and one more of its cities before turn 95 with the block kept intact every turn, build the first Oppidum in the forward city the turn Iron Working lands, and hold each capture with a Gaesatae and a Monument, while the home cities build nothing that pays back after the deadline except Settlers, Builders and Mines.",
+      "build_order": [
+        { "item": "Monument", "why": "In every captured city the turn it is taken; Loyalty before anything else." },
+        { "item": "Gaesatae", "why": "Replace losses only; the block is six and a seventh breaks the two-row shape." },
+        { "item": "Spearman", "why": "One, when the target fields Horsemen; it takes the formation bonus and the Military Tactics Eureka comes from its first kill." },
+        { "item": "Oppidum", "why": "In the forward city the turn Iron Working lands, two tiles out beside the Quarry or the Iron; it is the border fort and the Production for replacements." },
+        { "item": "Settler", "why": "Third Gaulish city with Colonization, on hills, while the block is away." },
+        { "item": "Builder", "why": "Mines around the captures and the third city; Culture, border bombs and the Apprenticeship road." },
+        { "item": "Trader", "why": "Capital to the forward city for the Currency Eureka and a road the block marches on." }
+      ],
+      "research": [
+        { "id": "tech:wheel", "note": "Free Eureka from the first Mine on a resource; Engineering hangs off it." },
+        { "id": "tech:writing", "note": "Eureka free from meeting the target; the Campus comes after the war, two tiles out beside Mines." },
+        { "id": "tech:iron-working", "note": "The Oppidum; Eureka from mining the Iron Bronze Working revealed, which Gaul does anyway." },
+        { "id": "tech:currency", "note": "Eureka from the first Trade Route; the Commercial Hub pays unit maintenance." },
+        { "id": "tech:horseback-riding", "note": "Free Eureka from a Pasture; needed only so the Oppidum can sit beside improved Horses." },
+        { "id": "tech:construction", "note": "Water Mill in the capital for the Eureka; and the turn the target researches it is the turn its Catapults start, which is the real deadline." }
+      ],
+      "civics": [
+        { "id": "civic:early-empire", "note": "Colonization for the third city; Inspiration free at six population, and the unit Culture pays most of the civic." },
+        { "id": "civic:state-workforce", "note": "Conscription the turn it lands; eight units is eight Gold a turn without it. Inspiration from the Oppidum." },
+        { "id": "civic:foreign-trade", "note": "Trade Routes for roads; Inspiration only if a second continent is in sight." },
+        { "id": "civic:political-philosophy", "note": "Oligarchy; the unit Culture gets here by turn 45, and the Inspiration is three city-states the block meets on the march." },
+        { "id": "civic:mysticism", "note": "Free Inspiration from the pantheon; on the way to Drama and Poetry, which the Culture game wants." },
+        { "id": "civic:defensive-tactics", "note": "Free Inspiration when the target's friend declares on you after the first capture; Bastions if the captures are counter-attacked." }
+      ],
+      "policies": [
+        { "card": "Agoge", "slot": "military", "from": "civic:craftsmanship", "why": "Kept until the last replacement is built, then swapped for Conscription." },
+        { "card": "Conscription", "slot": "military", "from": "civic:state-workforce", "why": "One Gold per unit per turn off a nine-unit army is the difference between positive and negative income." },
+        { "card": "Colonization", "slot": "economic", "from": "civic:early-empire", "why": "The third city at half Settler cost while the block does the conquering." },
+        { "card": "Oligarchy", "slot": "wildcard", "from": "civic:political-philosophy", "why": "The government: +4 Strength on every Gaesatae, Spearman and Archer, on top of the formation bonus, and faster experience. Classical Republic is wrong here." }
+      ],
+      "districts": [
+        { "district": "oppidum", "city": "the forward city", "note": "Two tiles from the City Center beside a Quarry or strategic resource; the ranged attack covers the road and the first one unlocks Apprenticeship." }
+      ],
+      "pantheon": { "slug": "god-of-the-forge", "why": "Already founded; replacement Gaesatae and the Spearman benefit." },
+      "wonders": [
+        { "name": "Statue of Zeus", "why": "Free Spearmen, Archers and a Battering Ram, every one of which takes the formation bonus, and +50% toward anti-cavalry; it is a second block for the price of one wonder.", "skip_if": "The first capture has not happened by turn 60, no flat tile sits beside an Encampment, or a rival is more than half done, which the Wonders tab shows." }
+      ],
+      "governors": [
+        { "governor": "magnus", "promotion": "Provision", "city": "capital", "why": "The third-city Settler leaves without costing population while the capital is also replacing units." },
+        { "governor": "victor", "promotion": "Garrison Commander", "city": "the captured capital", "why": "Loyalty and Strength in the city most likely to flip or be retaken; move him with each new capture." }
+      ],
+      "city_states": [
+        { "slug": "akkad", "why": "Suzerainty before the second siege if it is on the map; melee attacks then ignore Walls and the Ram stays home." },
+        { "type": "Militaristic", "why": "Levy its army if the target has rebuilt and the block is below half strength; the levied units stand beside the block and feed the bonus too." }
+      ],
+      "great_people": [
+        { "class": "great-general", "why": "A Classical Great General gives Gaesatae, Spearmen and Archers +5 Strength and +1 Movement within two tiles, which on a block that moves one tile a turn is the whole march; one is worth three more Gaesatae." }
+      ],
+      "checkpoints": [
+        { "turn": 60, "test": "Midpoint: is the target capital taken, or at least under siege with its defenders dead in the field and no Catapult on its banner?", "pass": "Continue to the second city; audit Amenities and Loyalty in the capture before moving on.", "fail": "Reduce scope now: one city instead of two. If the capital is behind Walls with a Catapult shooting the block, take the weakest second city of the same owner instead, and make peace the turn it falls. Partial conversion beats total expiry." },
+        { "turn": 95, "test": "Deadline: two captured cities held with positive Loyalty, an Oppidum in the forward city, and Gold per turn still positive?", "pass": "Stop conquering. Disperse the block into garrisons, enter the digest phase and make peace on any terms that keep the cities.", "fail": "Abort branch: peace now, disperse the block the same turn, disband every unit beyond one per city and two on the Oppidum, and run the digest phase on the empire you have." }
+      ],
+      "tasks": [
+        { "id": "window-declare", "turn": 31, "text": "Declare the Surprise War with the block already adjacent in cover; Archers shoot first, the Gaesatae with the most neighbours attacks, and nobody ends the turn alone. Walls are a clock, Catapults are the clock." },
+        { "id": "window-formation", "turn": 32, "text": "Every turn of the war, before ending it: count neighbours on each unit. Any Gaesatae touching fewer than two friends moves back into the block instead of attacking. The block advances one row at a time, never in single file through Woods." },
+        { "id": "window-first-city", "turn": 45, "text": "Capture the target capital with a Gaesatae. Keep it; never raze a capital. Monument and a Gaesatae garrison the same turn." },
+        { "id": "window-audit", "turn": 46, "text": "After every capture, before anything else: check Amenities and Loyalty, move Victor in, and buy a Monument if Loyalty is negative. Repeat per capture, not on a schedule." },
+        { "id": "window-oppidum", "turn": 52, "text": "Oppidum started in the forward city the turn Iron Working lands, two tiles out beside the Quarry; Apprenticeship unlocks when it finishes and State Workforce's Inspiration comes with it." },
+        { "id": "window-stop", "turn": 95, "text": "Write down the number of cities held. Whatever it is, make peace this turn, spread the units one per city, and move production to Monuments, Mines and Oppida." }
+      ]
+    },
+    {
+      "id": "digest",
+      "name": "Digest",
+      "turns": { "from": 96, "to": 160 },
+      "era": "medieval",
+      "objective": "Stabilize the captured cities, pay the infrastructure bill the arming phase skipped, mine every hill in the empire, put an Oppidum with a Workshop in every city, lay the first Theater Squares two tiles out beside the Mines, and form the alliance that keeps the dispersed garrisons from ever needing to be a block again.",
+      "build_order": [
+        { "item": "Monument", "why": "In any city still without one; Loyalty first, and the Culture game starts here." },
+        { "item": "Granary", "why": "Housing in cities that were pillaged on the way in and have no fresh water improvements." },
+        { "item": "Builder", "why": "A Mine on every hill before any Farm; Culture, Apprenticeship's three Mines and a border push against the former owner." },
+        { "item": "Oppidum", "why": "In the captured capital and the third city; cheaper than an Industrial Zone and already available." },
+        { "item": "Workshop", "why": "Two Workshops in the Oppida give Industrialization; the Production base for the Culture build." },
+        { "item": "Theater Square", "why": "Capital first, two tiles out touching three Mines; Amphitheater for the Great Writer points." },
+        { "item": "Commercial Hub", "why": "Capital, on the river, two tiles out; Markets for Guilds and Gold for the garrisons' upkeep." },
+        { "item": "Campus", "why": "One, in the captured capital beside Mines; Gaul has no Science and needs a Library somewhere." },
+        { "item": "Trader", "why": "Routes from the captures to the capital for roads, Food and the Medieval Faires Inspiration." }
+      ],
+      "research": [
+        { "id": "tech:apprenticeship", "note": "Unlocked outright by the first Oppidum; if it was not, three Mines give the Eureka on turn one of the phase." },
+        { "id": "tech:engineering", "note": "Ancient Walls in the captured capital give the Eureka; Aqueducts for Housing." },
+        { "id": "tech:mathematics", "note": "Oppidum, Theater Square and Commercial Hub are three specialty districts; Petra is not for Gaul but Apprenticeship's line is." },
+        { "id": "tech:irrigation", "note": "Farm a Wheat or Rice tile for the Eureka; the Farms come after the Mines." },
+        { "id": "tech:military-tactics", "note": "The Spearman's first kill in the window gave the Eureka; Pikemen for the garrisons." },
+        { "id": "tech:stirrups", "note": "Free Eureka from Feudalism; on the way to Castles and Men-At-Arms' upgrade path." },
+        { "id": "tech:castles", "note": "Free Eureka from Monarchy; Men-At-Arms replace the Gaesatae garrisons under Professional Army." },
+        { "id": "tech:education", "note": "Eureka from the first Great Scientist the one Library attracts; Universities." },
+        { "id": "tech:military-engineering", "note": "An Aqueduct in the capital gives the Eureka; Niter reveal and a second Oppidum adjacency." }
+      ],
+      "civics": [
+        { "id": "civic:games-and-recreation", "note": "Free Inspiration from researching Construction; Entertainment Complexes for a wide empire." },
+        { "id": "civic:drama-and-poetry", "note": "Inspiration from the Statue of Zeus if it was built; Theater Squares and Aesthetics either way." },
+        { "id": "civic:military-training", "note": "One Encampment in the forward city for the Inspiration and Great General points; it also protects the Oppidum's flank." },
+        { "id": "civic:recorded-history", "note": "Two Campuses is costly for Gaul; usually unboosted. Natural Philosophy is not needed; the civic is on the way to Humanism." },
+        { "id": "civic:feudalism", "note": "Six Farms once the hills are mined; Serfdom Builders and the free Stirrups Eureka." },
+        { "id": "civic:civil-service", "note": "The capital reaches ten population with Granary and Aqueduct." },
+        { "id": "civic:guilds", "note": "Two Markets; the Banking Eureka and Craftsmen for the Oppida." },
+        { "id": "civic:mercenaries", "note": "Eight land units is the army you already have; Professional Army halves the Men-At-Arms upgrades." },
+        { "id": "civic:divine-right", "note": "Monarchy for the Housing and the Castles Eureka; two Temples is a detour Gaul does not take, so unboosted." }
+      ],
+      "policies": [
+        { "card": "Conscription", "slot": "military", "from": "civic:state-workforce", "why": "Stays in until the garrisons are upgraded; the digest phase is a Gold phase." },
+        { "card": "Serfdom", "slot": "economic", "from": "civic:feudalism", "why": "Five-charge Builders mine every hill around every captured city in one trip." },
+        { "card": "Craftsmen", "slot": "economic", "from": "civic:guilds", "why": "Oppidum adjacency doubled; a Quarry and an Iron Mine beside one is a Classical Factory." },
+        { "card": "Aesthetics", "slot": "economic", "from": "civic:drama-and-poetry", "why": "Theater Square adjacency doubled; three Mines beside one pays like a wonder." },
+        { "card": "Professional Army", "slot": "military", "from": "civic:mercenaries", "why": "Gaesatae to Men-At-Arms at half the Gold; do not upgrade before this card is in." },
+        { "card": "Monarchy", "slot": "wildcard", "from": "civic:divine-right", "why": "The Tier 2 government: Housing from Walls in captures that have them, Influence for envoys, and the Castles Eureka." }
+      ],
+      "districts": [
+        { "district": "oppidum", "city": "every city without one", "note": "Two tiles out beside a Quarry or strategic resource; Workshops for Industrialization and Culture from the Mines around it." },
+        { "district": "theater-square", "city": "capital and the captured capital", "note": "Two tiles out touching three Mines; Amphitheaters and the Culture that reaches Humanism on time." },
+        { "district": "commercial-hub", "city": "capital", "note": "River adjacency two tiles out; Markets for Guilds and Trade Route capacity for the captures." },
+        { "district": "campus", "city": "the captured capital", "note": "Beside Mines; the one Library that attracts the Great Scientist for Education." },
+        { "district": "aqueduct", "city": "capital", "note": "Housing to ten population for Civil Service and the Military Engineering Eureka; Aqueducts may sit beside the City Center." }
+      ],
+      "wonders": [
+        { "name": "Colosseum", "why": "+2 Amenities and +2 Culture to every city within six tiles covers the captures that have none.", "skip_if": "The captured cities are more than six tiles from any city that could build it, or Games and Recreation lands after turn 130." },
+        { "name": "Kilwa Kisiwani", "why": "+15% to every yield from city-state types you are suzerain of; with Militaristic and Industrial suzerainties it is the best wonder for this empire.", "skip_if": "No coastal city exists, or you hold fewer than two suzerainties by turn 150." }
+      ],
+      "governors": [
+        { "governor": "pingala", "promotion": "Grants", "city": "capital", "why": "Great Writer and Great Artist points in the Theater Square city; the Culture engine's Great People." },
+        { "governor": "amani", "promotion": "Emissary", "city": "the captured capital", "why": "Two envoys and Loyalty pressure outward in the city nearest the former owner." },
+        { "governor": "liang", "promotion": "Zoning Commissioner", "city": "the third city", "why": "Districts at +20% in a city building an Oppidum and a Theater Square from nothing." }
+      ],
+      "city_states": [
+        { "type": "Industrial", "why": "Three envoys for Production in every Workshop, and every city has one in its Oppidum." },
+        { "slug": "ayutthaya", "why": "Culture worth a tenth of every building finished; a wide empire catching up on buildings pays itself in Culture." }
+      ],
+      "great_people": [
+        { "class": "great-general", "why": "A Medieval Great General retires into Strength for the Men-At-Arms if an ally's war is joined later; otherwise retire him for the Culture." },
+        { "class": "great-writer", "why": "The first Amphitheaters attract one; two Great Works of Writing in the capital are the Culture game's first Tourism." }
+      ],
+      "checkpoints": [
+        { "turn": 125, "test": "Every captured city at positive Loyalty with a Monument and three Mines, an Oppidum in three cities, and Gold per turn positive with no unit standing beside another?", "pass": "Continue; start the Theater Squares and the Commercial Hub.", "fail": "A city at negative Loyalty is the only emergency: Victor, a Monument purchase, and an Entertainment Complex before any Theater Square. If Gold is negative, disband the unpromoted garrisons first. If units are still clustered, spread them this turn; a Catapult finds a block before a player does." },
+        { "turn": 160, "test": "Two Workshops built, two Theater Squares with Amphitheaters, Education researched, and a Declared Friendship with the civilization beyond the old target?", "pass": "Enter the build phase and propose the alliance.", "fail": "If Workshops are missing, the Oppida are next in every queue. If no friendship exists, denounce nobody and send a delegation to every civilization you have met. If the Theater Squares are late, the Culture game is a Score game until they exist." }
+      ],
+      "tasks": [
+        { "id": "digest-loyalty-audit", "turn": 97, "text": "Audit Amenities and Loyalty in every captured city; Monument, Granary and Victor before anything else is queued." },
+        { "id": "digest-disperse", "turn": 98, "text": "Confirm no two units stand adjacent outside a city; the formation bonus is over and a block is now a target for every Catapult and Crossbowman the neighbours field." },
+        { "id": "digest-mine-everything", "turn": 110, "text": "A Mine on every hill in every city; count the Culture on the city screen and keep a Builder moving until the hills are done." },
+        { "id": "digest-oppida", "turn": 130, "text": "An Oppidum with a Workshop in three cities; Industrialization Eureka collected." },
+        { "id": "digest-friendship", "turn": 140, "text": "Declare Friendship with the civilization on the far side of the old target; it is the alliance the Culture game hides behind." },
+        { "id": "digest-men-at-arms", "turn": 155, "text": "Upgrade the garrison Gaesatae to Men-At-Arms under Professional Army; disband any you cannot afford to upgrade." }
+      ]
+    },
+    {
+      "id": "build",
+      "name": "Build the Culture engine",
+      "turns": { "from": 161, "to": 240 },
+      "era": "renaissance",
+      "objective": "Form a Cultural Alliance, put an Art Museum or Archaeological Museum in every Theater Square, chop and mine the Oppida into Factories, and decide by turn 240 whether the Culture lead closes the game or an ally's war against a neighbour an era behind is worth two more cities taken with Musketmen that never stand together.",
+      "build_order": [
+        { "item": "Amphitheater", "why": "Every Theater Square; Great Writer points and the slots the Great Works fill." },
+        { "item": "Art Museum", "why": "Capital and captured capital; Opera and Ballet's Inspiration and the themed-building Tourism." },
+        { "item": "Archaeological Museum", "why": "The third city; Natural History's Inspiration and Archaeologists for Artifacts." },
+        { "item": "University", "why": "In the one Campus; a Culture game still needs Flight and Radio on time." },
+        { "item": "Factory", "why": "In every Oppidum; Class Struggle's Inspiration at three and the Production for wonders." },
+        { "item": "Market", "why": "Second Market for Guilds if it is not done, then Banks." },
+        { "item": "Trader", "why": "Routes to the ally for Alliance points, Gold, and the Mercantilism line." }
+      ],
+      "research": [
+        { "id": "tech:printing", "note": "Two Universities is costly for a one-Campus empire; usually unboosted. Needed for the Culture multiplier and Oxford." },
+        { "id": "tech:banking", "note": "Free Eureka from Guilds; Banks for Economics." },
+        { "id": "tech:gunpowder", "note": "An Armory in the Encampment city; Musketmen for the garrisons." },
+        { "id": "tech:industrialization", "note": "Two Workshops in the Oppida gave the Eureka in the digest phase; Factories and Coal." },
+        { "id": "tech:scientific-theory", "note": "Free Eureka from The Enlightenment." },
+        { "id": "tech:mass-production", "note": "A Lumber Mill on any Woods tile gives the Eureka; Shipyards are not for Gaul but Industrialization sits behind it." },
+        { "id": "tech:economics", "note": "Two Banks; Stock Exchanges later and the Capitalism Inspiration." }
+      ],
+      "civics": [
+        { "id": "civic:medieval-faires", "note": "Four Trade Routes from the captures; Inspiration free once the Traders are running." },
+        { "id": "civic:humanism", "note": "Inspiration from the first Great Artist, which the Art Museums attract; Art Museums and Grand Opera." },
+        { "id": "civic:diplomatic-service", "note": "Forming the Cultural Alliance gives the Inspiration; it is also the point of the phase." },
+        { "id": "civic:the-enlightenment", "note": "Three Great People earned by now; Rationalism for the one University." },
+        { "id": "civic:civil-engineering", "note": "Seven different specialty districts across a wide empire; Public Works for Builders." },
+        { "id": "civic:nationalism", "note": "Only if the alliance war is joined; the Inspiration comes from a Casus Belli, and joining an ally's war is one." },
+        { "id": "civic:opera-and-ballet", "note": "The first Art Museum gives the Inspiration; Grand Opera doubles Theater Square buildings." },
+        { "id": "civic:natural-history", "note": "The Archaeological Museum gives the Inspiration; Archaeologists and the Combustion Eureka." }
+      ],
+      "policies": [
+        { "card": "Grand Opera", "slot": "economic", "from": "civic:opera-and-ballet", "why": "+100% Culture from Theater Square buildings; the whole Culture engine doubled." },
+        { "card": "Craftsmen", "slot": "economic", "from": "civic:guilds", "why": "Oppidum adjacency doubled while the Factories go up." },
+        { "card": "Town Charters", "slot": "economic", "from": "civic:guilds", "why": "Commercial Hub adjacency doubled; Gold for Great Works and museum purchases." },
+        { "card": "Merchant Republic", "slot": "wildcard", "from": "civic:exploration", "why": "The Tier 2 government for the Culture branch: two extra Trade Routes and purchase discounts; Monarchy stays only if a war is being joined." }
+      ],
+      "districts": [
+        { "district": "theater-square", "city": "every city without one", "note": "Two tiles out touching Mines; a Culture empire needs one per city." },
+        { "district": "oppidum", "city": "any city still without one", "note": "Factories for Class Struggle and the Production the wonders need." },
+        { "district": "entertainment-complex", "city": "the captured capital", "note": "Amenities for a wide empire; two give Professional Sports later." }
+      ],
+      "wonders": [
+        { "name": "Forbidden City", "why": "An extra wildcard slot for Grand Opera and a military card at once.", "skip_if": "Printing arrives after turn 200 or a Culture civilization is already building it." },
+        { "name": "Bolshoi Theatre", "why": "Two free civics and Great Writer and Musician slots in a Theater Square city.", "skip_if": "Opera and Ballet lands after turn 230 or a rival is more than half done." },
+        { "name": "Hermitage", "why": "Four Great Work of Art slots and +3 Great Artist points; the Art Museums fill it.", "skip_if": "No Theater Square has an Art Museum by turn 220, or the Culture branch is not the one chosen." }
+      ],
+      "governors": [
+        { "governor": "pingala", "promotion": "Curator", "city": "capital", "why": "+100% Tourism from Great Works in the city that holds most of them." },
+        { "governor": "magnus", "promotion": "Industrialist", "city": "the best Oppidum city", "why": "Factory and Power Plant yields for the wonders the Culture branch builds." },
+        { "governor": "reyna", "promotion": "Tax Collector", "city": "the Commercial Hub city", "why": "Gold to buy the museums and Great Works the Theater Squares want." }
+      ],
+      "city_states": [
+        { "type": "Cultural", "why": "Three envoys for Culture in every Amphitheater; the AI contests these less than Scientific ones." },
+        { "slug": "kumasi", "why": "Culture and Gold on every Trade Route to a city-state for each district in the origin city; a wide empire of Oppida and Theater Squares runs six routes to it." }
+      ],
+      "great_people": [
+        { "class": "great-artist", "why": "The Humanism Inspiration and three Great Works of Art per Artist; Art Museums and the Hermitage fill with them." },
+        { "class": "great-writer", "why": "Two Great Works of Writing per Writer; the cheapest Tourism in the game while the museums go up." },
+        { "class": "great-engineer", "why": "A Renaissance Great Engineer finishes the Forbidden City or Bolshoi from an Oppidum city." }
+      ],
+      "checkpoints": [
+        { "turn": 200, "test": "A Cultural Alliance active, four Theater Squares with Amphitheaters, two museums, and three Factories?", "pass": "Continue; the Culture base is what both branches need.", "fail": "No alliance means no cheap wars and no Open Borders Tourism: fall back to Culture entirely and offer Open Borders to everyone. Fewer than four Theater Squares means the captures still lack them; build them before any wonder." },
+        { "turn": 240, "test": "Is your Culture per turn in the top two and your Tourism rising against the leading civilization, or is an ally at war with a neighbour whose cities you can reach with Musketmen and Bombards an era behind you?", "pass": "Commit: close by Culture with Open Borders, Rock Bands and National Parks, or join the ally's war for two more cities with units that never stand adjacent in the open.", "fail": "Neither: the game is a Score game. Build Theater Squares and Campuses everywhere and stop paying for units beyond the garrisons." }
+      ],
+      "tasks": [
+        { "id": "build-alliance", "turn": 170, "text": "Form a Cultural Alliance with the Declared Friend; Diplomatic Service's Inspiration and later the Chemistry Eureka both come from it." },
+        { "id": "build-museums", "turn": 195, "text": "Two Art Museums and one Archaeological Museum built; Opera and Ballet and Natural History Inspirations collected." },
+        { "id": "build-factories", "turn": 210, "text": "Three Factories in the Oppida; Class Struggle Inspiration collected." },
+        { "id": "build-theme", "turn": 225, "text": "Theme one Art Museum with three Great Works of the same type and era, bought or swapped; the Cultural Heritage Inspiration and doubled Tourism." },
+        { "id": "build-branch", "turn": 240, "text": "Choose the branch: Culture to the end, or join the ally's war for two reachable cities. Write the decision down." }
+      ]
+    },
+    {
+      "id": "close",
+      "name": "Close",
+      "turns": { "from": 241, "to": null },
+      "era": "industrial",
+      "objective": "Finish the chosen branch: Open Borders with everyone, Rock Bands, National Parks and Seaside Resorts until visiting tourists pass every rival's domestic count, or join the ally's wars one after another with Field Cannons and Infantry that hold formation only inside a city.",
+      "build_order": [
+        { "item": "Broadcast Center", "why": "Culture branch: every Theater Square; Great Musician slots and the Satellites Eureka at two." },
+        { "item": "Research Lab", "why": "Both branches: the one Campus city needs Radio, Flight and Computers on time." },
+        { "item": "Field Cannon", "why": "Domination branch: two for Scorched Earth and the siege line for Renaissance Walls." },
+        { "item": "Military Academy", "why": "Domination branch: Corps and Armies for the last sieges and the Mobilization Inspiration." },
+        { "item": "Rock Band", "why": "Culture branch: bought with Faith from the Religious Idols Mines if the pantheon was changed, otherwise from Holy Site purchases." },
+        { "item": "Neighborhood", "why": "Housing for the wide empire; two give the Sanitation Eureka." }
+      ],
+      "research": [
+        { "id": "tech:rifling", "note": "A Mine on the Niter Military Engineering revealed; Field Cannons and the Musketman garrisons." },
+        { "id": "tech:refining", "note": "A Coal Power Plant in the best Oppidum gives the Eureka; Power for the Factories and Broadcast Centers." },
+        { "id": "tech:sanitation", "note": "Two Neighborhoods; Housing in the captured capitals." },
+        { "id": "tech:flight", "note": "Owning Bolshoi or the Hermitage gives the Eureka; Flight is the Tourism multiplier for wonders." },
+        { "id": "tech:combustion", "note": "An Artifact extracted by the Archaeologist gives the Eureka; Natural Parks and the Radio line are beside it." },
+        { "id": "tech:radio", "note": "A National Park on a Breathtaking tile gives the Eureka; the Mass Media Inspiration follows." }
+      ],
+      "civics": [
+        { "id": "civic:scorched-earth", "note": "Two Field Cannons; the Inspiration is free on the Domination branch." },
+        { "id": "civic:mobilization", "note": "Three Corps; Levee en Masse for the maintenance on the Domination branch." },
+        { "id": "civic:class-struggle", "note": "Three Factories in the Oppida; Communism for the Production or Democracy for the Tourism." },
+        { "id": "civic:urbanization", "note": "A fifteen-population capital; Neighborhoods." },
+        { "id": "civic:mass-media", "note": "Free Inspiration from Radio; Broadcast Centers and Online Communities." },
+        { "id": "civic:cultural-heritage", "note": "The themed museum gives the Inspiration; Heritage Tourism and the Ideology Culture bomb." },
+        { "id": "civic:professional-sports", "note": "Two Entertainment Complexes; Stadiums for Amenities in a wide empire." }
+      ],
+      "policies": [
+        { "card": "Heritage Tourism", "slot": "economic", "from": "civic:cultural-heritage", "why": "Culture branch: +100% Tourism from Great Works, which is most of Gaul's Tourism." },
+        { "card": "Online Communities", "slot": "diplomatic", "from": "civic:mass-media", "why": "Culture branch: +50% Tourism to civilizations you trade with; Kumasi's routes count." },
+        { "card": "Levee en Masse", "slot": "military", "from": "civic:mobilization", "why": "Domination branch: unit maintenance down while the last army is fielded." },
+        { "card": "Democracy", "slot": "wildcard", "from": "civic:suffrage", "why": "Culture branch government: the diplomatic slots for Online Communities and the Tourism bonus; Communism only on the Domination branch." }
+      ],
+      "districts": [
+        { "district": "neighborhood", "city": "capital and the captured capital", "note": "Housing; two give the Sanitation Eureka, and one on a Breathtaking tile gives Conservation." },
+        { "district": "preserve", "city": "the city with the most Mountains or Woods", "note": "Culture branch: appeal for a National Park and the Radio Eureka." }
+      ],
+      "wonders": [
+        { "name": "Eiffel Tower", "why": "+2 Appeal to every tile in the empire, which turns mined hills back into National Park and Seaside Resort country.", "skip_if": "Steam Power arrives after turn 280 or a Culture civilization is already building it." },
+        { "name": "Cristo Redentor", "why": "Tourism from Relics and Seaside Resorts unaffected by Ideology, and it hides the empire's lack of Great Musicians.", "skip_if": "The Domination branch is chosen, or no Hills tile is free in a high-Production city." }
+      ],
+      "governors": [
+        { "governor": "pingala", "promotion": "Curator", "city": "capital", "why": "Culture branch: the Tourism multiplier stays where the Great Works are." },
+        { "governor": "victor", "promotion": "Embrasure", "city": "the newest capture", "why": "Domination branch: each capital holds while the army moves on." }
+      ],
+      "city_states": [
+        { "type": "Cultural", "why": "Six envoys for Culture in every Art Museum and Archaeological Museum." },
+        { "slug": "antananarivo", "why": "Culture per Great Person ever earned, up to 30%; a Culture empire has earned twenty by now." }
+      ],
+      "great_people": [
+        { "class": "great-musician", "why": "Culture branch: three Great Works of Music per Musician are the strongest late Tourism; Broadcast Centers attract them." },
+        { "class": "great-general", "why": "Domination branch: an Industrial Great General gives Field Cannons and Infantry +5 Strength; the only formation they are allowed is his aura." }
+      ],
+      "checkpoints": [
+        { "turn": 300, "test": "Culture branch: visiting tourists above the domestic tourists of every civilization but one, or Domination branch: two capitals taken since turn 240 in allied wars?", "pass": "Continue to the end; no further decisions.", "fail": "Convert to Score: keep the garrisons, stop new military, and spend on Theater Squares, Campuses and city-state envoys." }
+      ],
+      "tasks": [
+        { "id": "close-open-borders", "turn": 245, "text": "Culture branch: Open Borders with every civilization you are not at war with, and a Trade Route to each; Online Communities slotted." },
+        { "id": "close-join-war", "turn": 250, "text": "Domination branch: the moment the ally declares or is declared on, join under the alliance and send Field Cannons and Musketmen at the nearest enemy capital, two tiles apart until they are inside the city." },
+        { "id": "close-national-park", "turn": 265, "text": "Culture branch: a National Park on four Breathtaking tiles with a Naturalist bought with Faith; Radio Eureka collected." },
+        { "id": "close-rock-bands", "turn": 285, "text": "Culture branch: a Rock Band bought with Faith every ten turns, sent to the civilization whose domestic tourists are highest." },
+        { "id": "close-review", "turn": 300, "text": "Review the turn 300 checkpoint and either continue or declare the game a Score game." }
+      ]
+    }
+  ],
+  "boosts": [
+    { "id": "tech:bronze-working", "fit": "free", "when": "arm", "how": "Three Barbarian kills at the first camp the two Gaesatae clear." },
+    { "id": "tech:archery", "fit": "cheap", "when": "arm", "how": "A Slinger kill on the first camp's Scout before the Gaesatae finish it." },
+    { "id": "tech:masonry", "fit": "cheap", "when": "arm", "how": "A Quarry on Stone near the forward city; the Oppidum wants it beside it anyway." },
+    { "id": "tech:writing", "fit": "free", "when": "arm", "how": "Meeting the target civilization on the way to it." },
+    { "id": "tech:wheel", "fit": "free", "when": "window", "how": "The first Builder's Mines land on a resource hill; Gaul mines everything." },
+    { "id": "tech:iron-working", "fit": "cheap", "when": "window", "how": "A Mine on the Iron Bronze Working revealed, which the Oppidum wants beside it." },
+    { "id": "tech:currency", "fit": "cheap", "when": "window", "how": "The first Trader runs to the forward city." },
+    { "id": "tech:horseback-riding", "fit": "free", "when": "window", "how": "A Pasture on any Horses, Sheep or Cattle." },
+    { "id": "tech:construction", "fit": "cheap", "when": "window", "how": "A Water Mill in the river capital after the first capture." },
+    { "id": "tech:apprenticeship", "fit": "free", "when": "digest", "how": "The first Oppidum unlocks the technology outright; failing that, three Mines, which Gaul has by turn 20." },
+    { "id": "tech:engineering", "fit": "cheap", "when": "digest", "how": "Ancient Walls in the captured capital." },
+    { "id": "tech:mathematics", "fit": "cheap", "when": "digest", "how": "Oppidum, Theater Square and Commercial Hub are three specialty districts." },
+    { "id": "tech:irrigation", "fit": "cheap", "when": "digest", "how": "Farm a Wheat or Rice tile once the hills are mined." },
+    { "id": "tech:military-tactics", "fit": "cheap", "when": "digest", "how": "The one Spearman in the block kills a wounded Horseman during the window." },
+    { "id": "tech:stirrups", "fit": "free", "when": "digest", "how": "Feudalism is on the civic path." },
+    { "id": "tech:castles", "fit": "free", "when": "digest", "how": "Monarchy is the Tier 2 government the plan adopts." },
+    { "id": "tech:education", "fit": "cheap", "when": "digest", "how": "The first Great Scientist from the one Library and Pingala's early turns there." },
+    { "id": "tech:military-engineering", "fit": "cheap", "when": "digest", "how": "The capital Aqueduct." },
+    { "id": "tech:buttress", "fit": "cheap", "when": "digest", "how": "Owning the Statue of Zeus or the Colosseum." },
+    { "id": "tech:printing", "fit": "costly", "when": "build", "how": "Two Universities, which a one-Campus empire has to build a second Campus for." },
+    { "id": "tech:banking", "fit": "free", "when": "build", "how": "Guilds is on the civic path." },
+    { "id": "tech:gunpowder", "fit": "cheap", "when": "build", "how": "An Armory in the forward city's Encampment." },
+    { "id": "tech:industrialization", "fit": "free", "when": "digest", "how": "Two Workshops in the Oppida, which exist a full era before anyone else's Industrial Zones." },
+    { "id": "tech:scientific-theory", "fit": "free", "when": "build", "how": "The Enlightenment is on the civic path." },
+    { "id": "tech:mass-production", "fit": "cheap", "when": "build", "how": "A Lumber Mill on any Woods tile the Mines did not take." },
+    { "id": "tech:economics", "fit": "cheap", "when": "build", "how": "Two Banks in the Commercial Hub cities." },
+    { "id": "tech:rifling", "fit": "cheap", "when": "close", "how": "A Mine on the Niter Military Engineering revealed." },
+    { "id": "tech:refining", "fit": "cheap", "when": "close", "how": "A Coal Power Plant in the best Oppidum." },
+    { "id": "tech:sanitation", "fit": "cheap", "when": "close", "how": "Two Neighborhoods in the two biggest cities." },
+    { "id": "tech:flight", "fit": "cheap", "when": "close", "how": "Owning Bolshoi, the Hermitage or any Industrial wonder the Culture branch builds." },
+    { "id": "tech:combustion", "fit": "cheap", "when": "close", "how": "An Artifact extracted by the Archaeologist the Archaeological Museum trains." },
+    { "id": "tech:radio", "fit": "cheap", "when": "close", "how": "A National Park on the Culture branch." },
+    { "id": "tech:computers", "fit": "free", "when": "close", "how": "Any Tier 3 government." },
+    { "id": "civic:craftsmanship", "fit": "free", "when": "arm", "how": "Three Mines from the first Builder." },
+    { "id": "civic:military-tradition", "fit": "free", "when": "arm", "how": "The first camp cleared on the road to the target." },
+    { "id": "civic:foreign-trade", "fit": "costly", "when": "window", "how": "Only if a second continent is in sight of the block; otherwise unboosted." },
+    { "id": "civic:early-empire", "fit": "free", "when": "window", "how": "Six population across the first two cities." },
+    { "id": "civic:state-workforce", "fit": "free", "when": "window", "how": "The first Oppidum in the forward city." },
+    { "id": "civic:mysticism", "fit": "free", "when": "window", "how": "Founding God of the Forge in the arming phase." },
+    { "id": "civic:political-philosophy", "fit": "cheap", "when": "window", "how": "Three city-states met by the Scout and the block on the march." },
+    { "id": "civic:defensive-tactics", "fit": "free", "when": "window", "how": "The target or its friend declares war on you after the first capture." },
+    { "id": "civic:games-and-recreation", "fit": "free", "when": "digest", "how": "Researching Construction." },
+    { "id": "civic:drama-and-poetry", "fit": "cheap", "when": "digest", "how": "The Statue of Zeus or the Colosseum, whichever is finished first." },
+    { "id": "civic:military-training", "fit": "cheap", "when": "digest", "how": "The Encampment in the forward city." },
+    { "id": "civic:recorded-history", "fit": "costly", "when": "digest", "how": "Two Campuses, which this empire builds one of; usually unboosted." },
+    { "id": "civic:feudalism", "fit": "cheap", "when": "digest", "how": "Six Farms across four cities after the hills are mined." },
+    { "id": "civic:civil-service", "fit": "cheap", "when": "digest", "how": "The capital reaches ten population with Granary and Aqueduct." },
+    { "id": "civic:guilds", "fit": "cheap", "when": "digest", "how": "Two Markets, capital and captured capital." },
+    { "id": "civic:mercenaries", "fit": "free", "when": "digest", "how": "Eight land units is the army left over from the window." },
+    { "id": "civic:divine-right", "fit": "costly", "when": "digest", "how": "Two Temples, which need two Holy Sites this plan does not build." },
+    { "id": "civic:medieval-faires", "fit": "cheap", "when": "build", "how": "Four Trade Routes from the captures to the capital and Kumasi." },
+    { "id": "civic:humanism", "fit": "cheap", "when": "build", "how": "The first Great Artist the Art Museums attract." },
+    { "id": "civic:diplomatic-service", "fit": "free", "when": "build", "how": "Forming the Cultural Alliance is the point of the phase." },
+    { "id": "civic:the-enlightenment", "fit": "cheap", "when": "build", "how": "Three Great People: a Great General, a Great Writer and one more." },
+    { "id": "civic:civil-engineering", "fit": "cheap", "when": "build", "how": "Seven different specialty districts across the wide empire." },
+    { "id": "civic:nationalism", "fit": "cheap", "when": "build", "how": "Joining an ally's war is a Casus Belli." },
+    { "id": "civic:opera-and-ballet", "fit": "cheap", "when": "build", "how": "The first Art Museum in the capital." },
+    { "id": "civic:natural-history", "fit": "cheap", "when": "build", "how": "The Archaeological Museum in the third city." },
+    { "id": "civic:scorched-earth", "fit": "cheap", "when": "close", "how": "Two Field Cannons on the Domination branch." },
+    { "id": "civic:mobilization", "fit": "cheap", "when": "close", "how": "Three Corps on the Domination branch." },
+    { "id": "civic:class-struggle", "fit": "cheap", "when": "close", "how": "Three Factories in the Oppida." },
+    { "id": "civic:urbanization", "fit": "cheap", "when": "close", "how": "A fifteen-population capital with Aqueduct and Neighborhood." },
+    { "id": "civic:mass-media", "fit": "free", "when": "close", "how": "Researching Radio on the Culture branch." },
+    { "id": "civic:cultural-heritage", "fit": "cheap", "when": "close", "how": "The themed Art Museum from the build phase." },
+    { "id": "civic:professional-sports", "fit": "cheap", "when": "close", "how": "Two Entertainment Complexes in the captured cities." }
+  ],
+  "decision_triggers": [
+    { "name": "Catapult on the target", "if": "The target's banner or the field shows a Catapult, or three Archers stand on its Walls, before the first capture.", "then": "The block is now a target. Do not sit it beside the city. Take the second city of the same owner instead, with the block arriving and attacking the same turn, or make peace for whatever city they will cede. Clustering has stopped paying." },
+    { "name": "Walls on the target", "if": "The target capital's banner shows Ancient Walls before the block arrives.", "then": "Bring the Battering Ram carried by a Gaesatae; the +5 against districts and the formation bonus still apply. If Akkad is on the map, buy suzerainty first and leave the Ram." },
+    { "name": "Gold under zero", "if": "Gold per turn goes negative after the fourth Gaesatae, even with Conscription.", "then": "No new units until it is positive, whatever Culture they would pay; the Culture is a side effect, not a reason. Sell a luxury, run a second Trader, or disband the Scout and the Slinger." },
+    { "name": "Three stalled turns", "if": "For three consecutive turns during the window the target city is no closer to falling: Walls intact, defenders replaced, no Gaesatae with more than two neighbours able to attack.", "then": "Reduce scope the same turn. Take the weakest city of the same owner instead, or make peace for whatever city they will cede. Do not wait for the midpoint." },
+    { "name": "Ally at war", "if": "After turn 200 an ally is attacked by, or attacks, a civilization an era behind you whose cities are within ten tiles of your border.", "then": "Join the same turn, with Musketmen and Bombards that move two tiles apart and meet only inside the captured city; two more cities for the Culture engine, and the Nationalism Inspiration for free." }
+  ],
+  "abort": {
+    "trigger": "Turn 95 with no city captured, or three stalled turns before turn 60 with the target behind Walls and a Catapult in the field.",
+    "actions": [
+      "Make peace immediately on any terms that cost no city; the grievances are already paid and prolonging the war buys nothing.",
+      "Disperse the block the same turn and disband every unit beyond one per city and two on the Oppidum; the maintenance is pure loss and the formation bonus is now a liability.",
+      "Run the digest phase on the empire you have: Mines on every hill, Oppida with Workshops, Theater Squares two tiles out, and a Declared Friendship with the strongest neighbour so the next war is one you join."
+    ]
+  },
+  "fail_state": "Turn 95 with nine units standing in a block a Catapult shells every turn, the neighbour behind Walls with Archers and a Spearman line, no city taken, Culture spent on civics with no districts to use them, and grievances with every civilization you have met. Gaul is then a three-city civ a full era behind, with a unit-training Culture bonus that only pays when it builds the army it cannot afford.",
+  "common_mistakes": [
+    "Scouting the whole continent before choosing a target. The window is sixty turns and the target must be chosen from what the starting Gaesatae and the Scout see.",
+    "Treating the formation as a habit instead of a step. A Gaesatae that ends its turn alone fights at 20; one touching three friends fights at 26 before Oligarchy. Count neighbours every turn of the war.",
+    "Building units for the Culture. King of the Eburones pays a fifth of the cost back as Culture, which means four fifths is still spent and the maintenance arrives every turn; a tenth Gaesatae is a Monument not built.",
+    "Putting a district beside the City Center or beside another district. Hallstatt Culture forbids the first and refuses adjacency for the second; every Gaulish district sits two tiles out touching Mines.",
+    "Keeping the block together after turn 95. Catapults, Crossbowmen, Bombards and later aircraft are built to punish exactly that; after the window no two units stand adjacent outside a city until the Modern era.",
+    "Counting kills, Culture and a Great General as progress. Only cities held at turn 95 and the Oppidum in the forward city count; a famous army with nothing to show is the fail state."
+  ],
+  "sources": [
+    "Civilization VI Civilopedia, Gathering Storm ruleset with the New Frontier Pass (Gaul, Ambiorix, Gaesatae, Oppidum, King of the Eburones, Hallstatt Culture). The Oppidum is treated as the game has it: unlocked at Iron Working, with its own ranged attack and defence, and granting the Apprenticeship technology when the first one is completed.",
+    "King of the Eburones is taken as +2 Combat Strength per adjacent friendly combat unit for melee, anti-cavalry and ranged units, and Culture equal to 20% of a trained non-civilian unit's Production cost; cavalry, siege and naval units receive neither.",
+    "Gathering Storm rule that Battering Rams and Siege Towers apply to melee and anti-cavalry units, which Gaesatae are.",
+    "Boost objectives cross-checked against civilization6planner.com tech-tree and civics-tree pages, 2026-10-02.",
+    "Leadership Focus tags, caveats and the Countdown template for Ambiorix in this repository."
+  ]
+}

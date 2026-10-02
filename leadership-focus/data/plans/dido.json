@@ -1,0 +1,1629 @@
+{
+  "slug": "dido",
+  "shape": "Monitor",
+  "secondary_shape": null,
+  "version": 1,
+  "updated": "2026-10-02",
+  "assumptions": {
+    "ruleset": "Gathering Storm with every expansion and the Leader Pass",
+    "speed": "Standard",
+    "difficulty": "Emperor",
+    "map": "Continents or Small Continents, standard size, 8 civilizations, with Phoenicia's coastal start bias honoured",
+    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. Dido's single persona is planned here. The capital move is a scheduled decision at the turn 200 checkpoint with stated prerequisites, not something done the first time an overseas city wobbles."
+  },
+  "verdict": {
+    "victory": "Science",
+    "secondary": "Diplomatic",
+    "confidence": "medium",
+    "one_line": "Settle every coast on the home continent as fast as the Cothon can pump Settlers, because none of those cities can ever flip, then take the pump overseas and move the capital only when the second continent holds more of your cities than the first. Twelve Harbors and twelve Campuses win the Science race by weight.",
+    "why": "Mediterranean Colonies gives every coastal city on the capital's continent full Loyalty no matter who sits next to it, which removes the only thing that normally stops forward settling, and it moves Settlers faster and farther when embarked. The Cothon makes Settlers and ships half again as fast in every coastal city, so the Settler pump is distributed rather than a capital bottleneck. Founder of Carthage adds Trade Route capacity per Government Plaza building and faster districts in that city, and lets the capital be moved to any Cothon city, which is how the Loyalty guarantee is carried to a second continent once the empire there is worth protecting. The product is width: many coastal cities with a Harbor and a Campus each, Trade Routes from every one, and the Science that width produces. Diplomatic is the fallback because a wide coastal empire with many Harbors is also many Trade Routes to city-states, many suzerainties and much Favor."
+  },
+  "map_check": {
+    "must_have": [
+      "A coastal capital, or coast within one Settler move of the start; everything in the kit is coastal.",
+      "At least four coastal city sites on the home continent within twelve tiles of the capital, including ones a rival will contest, because contested coast is exactly where the Loyalty guarantee pays."
+    ],
+    "prefer": [
+      "A second continent's coast within reach of an embarked Settler by turn 90, so the overseas phase has somewhere to go.",
+      "Grassland or floodplains behind the coast for the growth the Settler pump needs; Phoenician cities are production-poor and must be food-rich.",
+      "Reef, Fish and Crabs for God of the Sea Production and the Celestial Navigation Eureka."
+    ],
+    "no_go": "A landlocked start with no coast within two Settler moves, or an inland sea with no second landmass on it. The Cothon, the Bireme, the embarked Settler bonus and the capital move are all off, and Phoenicia is then a generic civilization with a free Writing Eureka.",
+    "fallback": "Move the Settler up to two turns toward coast. If there is still none, settle, send the second Settler to the nearest coast and build the Cothon there, and plan the capital move to that city at the turn 120 checkpoint instead of turn 200; the Loyalty guarantee then covers the coast where the empire actually grows. If the sea is closed, stay on one continent, settle every coast on it, and run the Science plan without the overseas phase."
+  },
+  "kit_levers": [
+    {
+      "source": "leader_ability",
+      "name": "Founder of Carthage",
+      "buys": "Extra Trade Route capacity for each Government Plaza building, faster districts in the Government Plaza city, and a Move Capital project in any city with a Cothon.",
+      "exploit": "The Government Plaza goes down early in the capital and every tier of it is a Trade Route; the capital builds districts half again as fast and uses it to be the first city with a Campus, Harbor and Commercial Hub. The Move Capital project is held as the response to the red band, with prerequisites, and is never run on impulse."
+    },
+    {
+      "source": "civ_ability",
+      "name": "Mediterranean Colonies",
+      "buys": "Coastal cities on the same continent as the capital have maximum Loyalty, embarked Settlers move faster and see farther at lower cost, and the Writing Eureka is free.",
+      "exploit": "Every city site on the home continent's coast is settleable regardless of neighbours, so the Settler pump goes to the contested coast first and the safe coast second. The embarked Settler bonus is why the overseas phase starts in the Medieval era rather than the Renaissance."
+    },
+    {
+      "source": "unique_unit",
+      "name": "Bireme",
+      "buys": "A faster, stronger Galley that keeps nearby Traders from being plundered and is cheaper to build.",
+      "exploit": "Two Biremes clear the coastal camps for Bronze Working and Military Tradition, trigger the Shipbuilding Eureka by existing, and then escort the Settlers and Traders along the coast. One Bireme beside a Trader is the whole anti-plunder plan."
+    },
+    {
+      "source": "unique_infrastructure",
+      "name": "Cothon",
+      "buys": "A Harbor replacement with a Production bonus toward Settlers and naval units, full healing for ships in one turn, and the Move Capital project.",
+      "exploit": "The first district in every coastal city after the capital's Campus, because it is a Settler pump wherever it stands, a Trade Route, and the only place the capital can move to. Every city with a Cothon is a candidate capital, which is the plan's insurance."
+    },
+    {
+      "source": "agenda",
+      "name": "Sicilian Wars",
+      "buys": "AI Dido settles coasts herself and dislikes rivals with many coastal cities.",
+      "exploit": "Irrelevant to your own play, except that an AI Dido on the map will resent your empire from the first coastal city and should be treated as the one neighbour the Loyalty guarantee cannot pacify; keep a Bireme pair near her."
+    }
+  ],
+  "shape_block": {
+    "monitor": {
+      "watched_stat": "Loyalty per turn in every city not on the capital's continent, read from the Loyalty lens, and the projected Loyalty of each planned overseas site before the Settler lands",
+      "check_every": "five turns on the home continent where nothing coastal can flip, and every turn for every overseas city from the turn its Settler embarks",
+      "bands": {
+        "green": {
+          "test": "No overseas city exists, or every overseas city is at plus three Loyalty per turn or better and every planned site projects positive.",
+          "response": "No action. Keep the Settler pump running from the Cothon cities, send the next Settler to the next contested home coast or the next overseas site, and keep Production on Campuses and Harbors."
+        },
+        "amber": {
+          "test": "Any overseas city between zero and plus three Loyalty per turn, or a planned overseas site projecting negative Loyalty, or an overseas city's neighbour has just grown or gained a Governor.",
+          "response": "Act now while the fix is one building: buy a Monument there, move Amani or Victor in, run Bread and Circuses in the nearest home city with an Entertainment Complex, garrison a unit, and if a second overseas city is amber at the same time, start the Move Capital prerequisites checklist below rather than more buildings. Do not settle the projected-negative site yet; settle the one beside it that projects positive and let its pressure fix the first."
+        },
+        "red": {
+          "test": "Any overseas city at negative Loyalty per turn, or two overseas cities amber for ten turns with the fixes exhausted.",
+          "response": "Either move the capital or stop expanding on that continent. Move it only if the prerequisites hold: the overseas Cothon city has a Cothon and six or more population, the overseas coastal cities outnumber the home coastal cities or will within twenty turns, and every home coastal city has at least eight population or a Governor so it holds without the guarantee. If they do not hold, pull the Settlers back to the home coast and accept the overseas city may flip; a lost size-three city is cheaper than a capital move the home continent cannot survive."
+        }
+      },
+      "second_watch": {
+        "stat": "Grievances from each neighbour you have forward-settled beside, and the count of coastal cities the leading rival holds",
+        "why": "The Loyalty guarantee does not stop a neighbour from declaring war over a city settled on their border, and the forward-settling budget is the plan's diplomatic price. Dido's own agenda is the warning: the rival with the most coastal cities is the one who will come for yours."
+      },
+      "off_period_plan": "Before any overseas city exists, which is roughly the first ninety turns, the loop watches nothing and the plan is the standard coastal build: Settler from every Cothon city until the home coast is full, a Campus and Cothon in each, the Government Plaza in the capital, Trade Routes to the city-states, and two Biremes on patrol. Production is the weakness of a coastal empire, so Builders Mine every hill and the Industrial Zones go in the two cities that have any."
+    }
+  },
+  "phases": [
+    {
+      "id": "setup",
+      "name": "Setup",
+      "turns": {
+        "from": 1,
+        "to": 25
+      },
+      "era": "ancient",
+      "objective": "Settle on the coast, found the pantheon, launch two Biremes against the coastal camps, and have the second and third cities on the home coast with the Cothon started in the capital by turn 25, because the Settler pump is the first district and everything after it compounds.",
+      "build_order": [
+        {
+          "item": "Scout",
+          "why": "Finds the coast in both directions and the first city sites; Writing is already boosted, Astrology needs a natural wonder."
+        },
+        {
+          "item": "Settler",
+          "why": "Second city on the nearest contested coast; it cannot flip, so it goes where a rival would otherwise settle."
+        },
+        {
+          "item": "Slinger",
+          "why": "Archery Eureka on the first barbarian scout and a garrison while the ships are out."
+        },
+        {
+          "item": "Bireme",
+          "why": "Clears the nearest coastal camp and escorts the next Settler; cheaper than a Galley and stronger."
+        },
+        {
+          "item": "Bireme",
+          "why": "Two trigger the Shipbuilding Eureka and let one patrol while one escorts."
+        },
+        {
+          "item": "Monument",
+          "why": "Culture to Early Empire and Political Philosophy; Colonization is the card the pump runs on."
+        },
+        {
+          "item": "Settler",
+          "why": "Third city on the next coast; Early Empire's Inspiration comes from the population anyway."
+        },
+        {
+          "item": "Cothon",
+          "why": "Started at Celestial Navigation in the capital; every Settler after it is faster."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:sailing",
+          "note": "Free Eureka from the coastal capital; Biremes and embarked Settlers."
+        },
+        {
+          "id": "tech:writing",
+          "note": "Eureka is free from Mediterranean Colonies; Campus in the capital under the district bonus."
+        },
+        {
+          "id": "tech:mining",
+          "note": "Mines on the few hills a coastal empire has; Production is the weakness."
+        },
+        {
+          "id": "tech:celestial-navigation",
+          "note": "Cothon unlock; Eureka from two Fishing Boats from the first Builder."
+        },
+        {
+          "id": "tech:bronze-working",
+          "note": "Three barbarian kills from the Biremes at the coastal camp."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:code-of-laws",
+          "note": "God King for the pantheon, Discipline for the Biremes at the camp."
+        },
+        {
+          "id": "civic:foreign-trade",
+          "note": "Maritime Industries for the Biremes; Inspiration if a Bireme sights a second continent, which the plan wants to know anyway."
+        },
+        {
+          "id": "civic:early-empire",
+          "note": "Colonization is the Settler pump's card; Inspiration at six population."
+        }
+      ],
+      "policies": [
+        {
+          "card": "God King",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "Faith for God of the Sea by turn 20."
+        },
+        {
+          "card": "Discipline",
+          "slot": "military",
+          "from": "civic:code-of-laws",
+          "why": "Biremes and the Slinger clear the camps without losses."
+        },
+        {
+          "card": "Maritime Industries",
+          "slot": "military",
+          "from": "civic:foreign-trade",
+          "why": "Biremes cheaper still; two are enough, so it is swapped out after."
+        },
+        {
+          "card": "Colonization",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "Settlers at half the cost on top of the Cothon bonus; the pump."
+        }
+      ],
+      "districts": [
+        {
+          "district": "cothon",
+          "city": "capital",
+          "note": "First district at Celestial Navigation; the Settler bonus from here on."
+        }
+      ],
+      "pantheon": {
+        "slug": "god-of-the-sea",
+        "why": "Production from Fishing Boats in an empire whose cities are all coastal and short of Production.",
+        "alternative": "religious-settlements"
+      },
+      "wonders": [],
+      "governors": [],
+      "city_states": [
+        {
+          "slug": "auckland",
+          "why": "Production on shallow water tiles turns every coastal city into a Production city; the first envoy goes here if it is met."
+        },
+        {
+          "type": "Trade",
+          "why": "Gold in the capital from the first envoy and a route destination the Biremes can escort to."
+        }
+      ],
+      "great_people": [],
+      "checkpoints": [
+        {
+          "turn": 25,
+          "test": "Two Biremes afloat, the nearest coastal camp cleared, three cities settled or walking, Cothon started in the capital?",
+          "pass": "Enter the standing loop; nothing can flip yet, so the loop is the Settler pump until an overseas Settler embarks.",
+          "fail": "Fewer than three cities: the second Bireme waits and the Settler goes first. Cothon not started: Celestial Navigation before anything else, because the pump is the plan."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "setup-settle-coast",
+          "turn": 1,
+          "text": "Settle on the coast with a hill or river in range; move at most two turns to get there."
+        },
+        {
+          "id": "setup-scout-coast",
+          "turn": 5,
+          "text": "Send the Scout along the coast in one direction and the first Bireme along it in the other; mark every coastal site and every rival capital."
+        },
+        {
+          "id": "setup-forward-site",
+          "turn": 12,
+          "text": "Pick the second city site on the coast nearest a rival; it cannot flip, so it is the one a rival would otherwise take."
+        },
+        {
+          "id": "setup-pantheon",
+          "turn": 18,
+          "text": "Found God of the Sea, or Religious Settlements if the Faith comes late and the free Settler is worth more."
+        },
+        {
+          "id": "setup-first-camp",
+          "turn": 22,
+          "text": "Clear the nearest coastal camp with the Biremes for Bronze Working and Military Tradition."
+        },
+        {
+          "id": "setup-third-city",
+          "turn": 25,
+          "text": "Third Settler out of the capital toward the next coast; Colonization slotted."
+        }
+      ]
+    },
+    {
+      "id": "home-coast",
+      "name": "Fill the home coast",
+      "turns": {
+        "from": 26,
+        "to": 90
+      },
+      "era": "classical",
+      "objective": "Settle every coastal site on the home continent, contested first, until six or more cities each have a Cothon and a Campus started, with the Government Plaza in the capital, Trade Routes to the city-states, and the first overseas site scouted by a Bireme.",
+      "build_order": [
+        {
+          "item": "Settler",
+          "why": "From every Cothon city, one after another, until the home coast is full; none of them can flip."
+        },
+        {
+          "item": "Cothon",
+          "why": "In every new city as its first district; the pump spreads and Cartography counts two Harbors."
+        },
+        {
+          "item": "Campus",
+          "why": "In the capital under the Founder of Carthage bonus, then in every city with a mountain or reef adjacency; the verdict is Science."
+        },
+        {
+          "item": "Builder",
+          "why": "Fishing Boats everywhere, Mines on every hill, three improvements for Craftsmanship."
+        },
+        {
+          "item": "Government Plaza",
+          "why": "Capital; every tier is a Trade Route under Founder of Carthage."
+        },
+        {
+          "item": "Trader",
+          "why": "Currency Eureka and Gold; routes to city-states under Bireme escort."
+        },
+        {
+          "item": "Library",
+          "why": "In the capital and the first Campus city; Recorded History and the Science."
+        },
+        {
+          "item": "Water Mill",
+          "why": "In the river city for the Construction Eureka and growth."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:currency",
+          "note": "Eureka from the first route; Commercial Hubs in the two river cities."
+        },
+        {
+          "id": "tech:shipbuilding",
+          "note": "Free Eureka from two Biremes; embarked Settlers cross ocean and the Mediterranean Colonies bonus carries them."
+        },
+        {
+          "id": "tech:masonry",
+          "note": "Ancient Walls in the forward city; a Quarry gives the Eureka if Stone is near."
+        },
+        {
+          "id": "tech:wheel",
+          "note": "A Mine on a resource; Water Mill and the path to Mathematics."
+        },
+        {
+          "id": "tech:construction",
+          "note": "Water Mill in a river city; Games and Recreation follows."
+        },
+        {
+          "id": "tech:mathematics",
+          "note": "Cothon, Campus and Government Plaza count as three specialty districts."
+        },
+        {
+          "id": "tech:apprenticeship",
+          "note": "Three Mines; the Production a coastal empire lacks."
+        },
+        {
+          "id": "tech:cartography",
+          "note": "Two Cothons give the Eureka early; ocean crossing for the overseas phase, taken at the end of this phase."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:craftsmanship",
+          "note": "Three improvements; Ilkum for the Builders."
+        },
+        {
+          "id": "civic:state-workforce",
+          "note": "Free Inspiration from the first Cothon; the Government Plaza unlocks here."
+        },
+        {
+          "id": "civic:mysticism",
+          "note": "Free Inspiration from the pantheon; on the way to Political Philosophy."
+        },
+        {
+          "id": "civic:political-philosophy",
+          "note": "Classical Republic for Amenities in a wide empire; Inspiration from three city-states met by sea."
+        },
+        {
+          "id": "civic:military-tradition",
+          "note": "Inspiration from the first camp the Biremes cleared; it unlocks nothing the plan needs beyond the path."
+        },
+        {
+          "id": "civic:recorded-history",
+          "note": "Two Campuses give the Inspiration; Natural Philosophy doubles Campus adjacency."
+        },
+        {
+          "id": "civic:games-and-recreation",
+          "note": "Free Inspiration from Construction; Entertainment Complex in the central city for Bread and Circuses later."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Colonization",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "The pump's card; slotted until the home coast is full."
+        },
+        {
+          "card": "Land Surveyors",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "Cheaper tile purchases in new cities so each works a sea resource from its first turn."
+        },
+        {
+          "card": "Classical Republic",
+          "slot": "wildcard",
+          "from": "civic:political-philosophy",
+          "why": "The government: Amenities for a wide empire and Great Person points."
+        },
+        {
+          "card": "Natural Philosophy",
+          "slot": "economic",
+          "from": "civic:recorded-history",
+          "why": "Doubled Campus adjacency; it replaces Colonization when the home coast is full."
+        },
+        {
+          "card": "Urban Planning",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "Production in every city of an empire that has little."
+        }
+      ],
+      "districts": [
+        {
+          "district": "cothon",
+          "city": "every new city",
+          "note": "First district everywhere; Settler pump and Trade Route."
+        },
+        {
+          "district": "campus",
+          "city": "capital and every city with adjacency",
+          "note": "The Science verdict is built here; Recorded History at two."
+        },
+        {
+          "district": "government-plaza",
+          "city": "capital",
+          "note": "Ancestral Hall for free Builders in new cities; each tier is a route."
+        },
+        {
+          "district": "commercial-hub",
+          "city": "the river city",
+          "note": "Markets for Guilds; more routes."
+        }
+      ],
+      "pantheon": {
+        "slug": "god-of-the-sea",
+        "why": "Already founded; this phase spends its Production on Settlers."
+      },
+      "wonders": [
+        {
+          "name": "Great Lighthouse",
+          "why": "Movement for every naval unit and Great Admiral points; the Biremes and the overseas Settlers both use it.",
+          "skip_if": "A rival has Celestial Navigation before you or the capital Cothon is not finished by turn 50."
+        },
+        {
+          "name": "Colossus",
+          "why": "A free Trade Route and Gold on the capital's coast; routes are the Science carriers later.",
+          "skip_if": "Shipbuilding arrives after turn 70 or a Trade or Gold civilization is on the map."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "magnus",
+          "promotion": "Provision",
+          "city": "the best Cothon city",
+          "why": "Settlers without population loss in the city that pumps them hardest."
+        },
+        {
+          "governor": "pingala",
+          "promotion": "Librarian",
+          "city": "capital",
+          "why": "Science in the first Campus city; Researcher follows."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "nan-madol",
+          "why": "Culture from every coastal district, and every district in this empire is coastal."
+        },
+        {
+          "slug": "mogadishu",
+          "why": "Traders immune to plunder at sea; the Biremes can then escort Settlers instead."
+        },
+        {
+          "type": "Scientific",
+          "why": "Three envoys for Library Science in every city; the verdict is Science."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-admiral",
+          "why": "Classical Great Admirals retire for a free promotion or Combat Strength on the Biremes, and the points come from the Cothons anyway."
+        },
+        {
+          "class": "great-scientist",
+          "why": "The Education Eureka and Science; the capital Campus should win the first."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 50,
+          "test": "Five cities, three Cothons, the Government Plaza started, and no rival city on a coast you wanted?",
+          "pass": "Continue the pump; the Campuses go in behind the Cothons.",
+          "fail": "Fewer than five cities: Magnus with Provision and Colonization are both in, so the Cothon cities build Settlers back to back and nothing else. A rival took a coast: settle beside them anyway, the city cannot flip."
+        },
+        {
+          "turn": 90,
+          "test": "Home coast full or six or more cities, two Campuses with Libraries, Cartography in hand or within ten turns, first overseas site scouted?",
+          "pass": "Enter the overseas phase; the first embarked Settler sails with a Bireme.",
+          "fail": "No overseas site scouted: send both Biremes out now; the Loyalty loop has nothing to watch until one is found. Cartography far off: Shipbuilding alone crosses coast, so pick a site on a nearby island or the continent's coast."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "home-coast-pump",
+          "turn": 30,
+          "text": "Every city with a Cothon builds a Settler as its first item after the Cothon; Colonization stays slotted until the home coast is full."
+        },
+        {
+          "id": "home-coast-contested-first",
+          "turn": 35,
+          "text": "Settle the two sites nearest rivals before the safe ones; the Loyalty guarantee is wasted on a city nobody would pressure."
+        },
+        {
+          "id": "home-coast-plaza",
+          "turn": 45,
+          "text": "Government Plaza down in the capital; Ancestral Hall chosen for the free Builder in each new city."
+        },
+        {
+          "id": "home-coast-grievance-budget",
+          "turn": 50,
+          "text": "Write the forward-settling budget: which neighbour you have settled beside, their grievances against you, and the one neighbour you will not provoke further this era."
+        },
+        {
+          "id": "home-coast-campuses",
+          "turn": 65,
+          "text": "Two Campuses with Libraries; Recorded History Inspiration collected; Natural Philosophy replaces Colonization when the coast is full."
+        },
+        {
+          "id": "home-coast-scout-overseas",
+          "turn": 80,
+          "text": "One Bireme crosses to the nearest other landmass and marks three coastal sites with their projected Loyalty."
+        }
+      ]
+    },
+    {
+      "id": "overseas",
+      "name": "Overseas",
+      "turns": {
+        "from": 91,
+        "to": 160
+      },
+      "era": "medieval",
+      "objective": "Plant three or more coastal cities on the second continent with a Cothon in the first of them, hold their Loyalty with Governors and Monuments while the home continent cannot flip, and build Universities and Harbors behind so the Science and the routes keep pace with the width.",
+      "build_order": [
+        {
+          "item": "Settler",
+          "why": "From the Cothon cities nearest the crossing; embarked they move faster and see farther."
+        },
+        {
+          "item": "Monument",
+          "why": "First build in every overseas city; Loyalty is the watched stat."
+        },
+        {
+          "item": "Cothon",
+          "why": "In the first overseas city; it is the capital candidate and the overseas Settler pump."
+        },
+        {
+          "item": "University",
+          "why": "Two for the Printing Eureka in the home Campus cities; the Science verdict."
+        },
+        {
+          "item": "Entertainment Complex",
+          "why": "In the central home city; Bread and Circuses is the amber response for the overseas cities within range of nothing else."
+        },
+        {
+          "item": "Market",
+          "why": "Two for Guilds; more routes."
+        },
+        {
+          "item": "Quadrireme",
+          "why": "One ranged ship with the Biremes for the Naval Tradition Inspiration and to keep rival Galleys off the crossing."
+        },
+        {
+          "item": "Aqueduct",
+          "why": "Capital; Military Engineering Eureka and Housing for Civil Service."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:education",
+          "note": "Universities; Eureka from the first Great Scientist."
+        },
+        {
+          "id": "tech:celestial-navigation",
+          "note": "Already in; listed for the Harbors in overseas cities, which are Cothons."
+        },
+        {
+          "id": "tech:military-engineering",
+          "note": "Aqueduct Eureka; Armories are not needed."
+        },
+        {
+          "id": "tech:castles",
+          "note": "Free Eureka from a Tier 2 government; Medieval Walls in the forward city."
+        },
+        {
+          "id": "tech:machinery",
+          "note": "Three Archers; Crossbowmen in the overseas cities."
+        },
+        {
+          "id": "tech:mass-production",
+          "note": "A Lumber Mill; Shipyards in the Cothons and the Venetian Arsenal question."
+        },
+        {
+          "id": "tech:astronomy",
+          "note": "A University beside a mountain if a Campus has one; Colonialism Inspiration."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:feudalism",
+          "note": "Six Farms; Serfdom for the Builders."
+        },
+        {
+          "id": "civic:naval-tradition",
+          "note": "Naval Infrastructure doubles Cothon adjacency; Inspiration from a Quadrireme kill."
+        },
+        {
+          "id": "civic:civil-service",
+          "note": "A ten-population capital; Meritocracy."
+        },
+        {
+          "id": "civic:guilds",
+          "note": "Two Markets; Banking Eureka."
+        },
+        {
+          "id": "civic:medieval-faires",
+          "note": "Four routes running; this empire has many more."
+        },
+        {
+          "id": "civic:exploration",
+          "note": "Two Caravels give the Inspiration; Merchant Republic for the routes."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Naval Infrastructure",
+          "slot": "economic",
+          "from": "civic:naval-tradition",
+          "why": "Doubled Cothon adjacency in every city."
+        },
+        {
+          "card": "Meritocracy",
+          "slot": "economic",
+          "from": "civic:civil-service",
+          "why": "Culture per district in a district-heavy wide empire."
+        },
+        {
+          "card": "Serfdom",
+          "slot": "economic",
+          "from": "civic:feudalism",
+          "why": "Builder charges for the Fishing Boats and Mines in every new city."
+        },
+        {
+          "card": "Merchant Republic",
+          "slot": "wildcard",
+          "from": "civic:exploration",
+          "why": "The government: route capacity and the economic slots a wide empire fills."
+        },
+        {
+          "card": "Colonization",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "Re-slotted for the overseas Settler run, then out again."
+        }
+      ],
+      "districts": [
+        {
+          "district": "cothon",
+          "city": "the first overseas city",
+          "note": "The capital candidate; a Settler pump on the new continent."
+        },
+        {
+          "district": "entertainment-complex",
+          "city": "the central home city",
+          "note": "Bread and Circuses reaches six tiles; Amenities for the wide empire."
+        },
+        {
+          "district": "aqueduct",
+          "city": "capital",
+          "note": "Housing and the Military Engineering Eureka."
+        },
+        {
+          "district": "campus",
+          "city": "every overseas city with adjacency",
+          "note": "The Science verdict continues overseas."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Kilwa Kisiwani",
+          "why": "Yield bonuses for every city-state type you are suzerain of; a Harbor-heavy empire with many routes earns many suzerainties.",
+          "skip_if": "Machinery lands after turn 150, or no coastal city has the Production to finish it inside twenty turns."
+        },
+        {
+          "name": "Venetian Arsenal",
+          "why": "Two ships for one; the overseas crossing needs escorts and the Great Admiral points are free.",
+          "skip_if": "Mass Production lands after turn 150, or no war threatens the crossing."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "amani",
+          "promotion": "Emissary",
+          "city": "the first overseas city",
+          "why": "Loyalty from a Governor and envoys toward the nearest city-state; she moves to whichever overseas city is amber."
+        },
+        {
+          "governor": "victor",
+          "promotion": "Garrison Commander",
+          "city": "the most pressured overseas city",
+          "why": "Loyalty and Combat Strength where a neighbour's pressure is strongest."
+        },
+        {
+          "governor": "liang",
+          "promotion": "Zoning Commissioner",
+          "city": "the overseas Cothon city",
+          "why": "Districts faster in the city that must become a capital candidate."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "hunza",
+          "why": "Gold per five tiles on routes that now cross an ocean."
+        },
+        {
+          "slug": "venice",
+          "why": "Gold per luxury at the destination on the many foreign routes."
+        },
+        {
+          "type": "Cultural",
+          "why": "Culture for the long civic path to Colonialism and the Loyalty it brings; a Cultural suzerainty is also Favor."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-scientist",
+          "why": "Education Eureka and Science; the capital Campus under the district bonus wins the race."
+        },
+        {
+          "class": "great-admiral",
+          "why": "Medieval Great Admirals escort the crossing and retire into Combat Strength on the Biremes and Quadriremes."
+        },
+        {
+          "class": "great-merchant",
+          "why": "Route capacity and Gold; a wide empire can run every route it is given."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 120,
+          "test": "Two overseas cities settled, both with Monuments, both at positive Loyalty per turn, the overseas Cothon started?",
+          "pass": "Continue; the third overseas city and the Universities at home.",
+          "fail": "An overseas city amber or red: run the band response, and if two are amber at once start the Move Capital prerequisites checklist. None settled: the crossing is the problem, so a Great Lighthouse or Quadrireme escort before anything else."
+        },
+        {
+          "turn": 160,
+          "test": "Three overseas cities, overseas Cothon finished, two Universities at home, Printing Eureka collected, every overseas city green?",
+          "pass": "Enter the decide phase; the capital question is answered at turn 200.",
+          "fail": "Overseas cities amber for ten turns with the fixes exhausted: the red response applies, and the capital move decision comes forward to turn 170. Universities missing: the Science verdict is slipping, so Libraries and Universities before more Settlers."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "overseas-first-landing",
+          "turn": 95,
+          "text": "First overseas Settler lands with a Bireme beside it on the site that projects the best Loyalty; Monument bought the turn it is founded."
+        },
+        {
+          "id": "overseas-first-read",
+          "turn": 100,
+          "text": "First formal read of the Loyalty lens for the overseas city: write the per-turn number, the neighbour pressing on it, and which band it sits in."
+        },
+        {
+          "id": "overseas-cothon",
+          "turn": 115,
+          "text": "Cothon started in the first overseas city; it is the capital candidate and must be the first district there."
+        },
+        {
+          "id": "overseas-bread-circuses",
+          "turn": 125,
+          "text": "Entertainment Complex finished in the central home city; run Bread and Circuses once to learn its reach and cost before an overseas city needs it."
+        },
+        {
+          "id": "overseas-universities",
+          "turn": 140,
+          "text": "Two Universities built in the home Campus cities; Printing Eureka collected."
+        },
+        {
+          "id": "overseas-prerequisites",
+          "turn": 150,
+          "text": "Write the Move Capital prerequisites checklist with current values: overseas Cothon city population, overseas coastal city count against home, and each home coastal city's population and Governor."
+        }
+      ]
+    },
+    {
+      "id": "decide",
+      "name": "Decide the capital",
+      "turns": {
+        "from": 161,
+        "to": 230
+      },
+      "era": "renaissance",
+      "objective": "Answer the capital question by turn 200 against the stated prerequisites, run the Move Capital project if they hold and not otherwise, take Colonialism for the overseas Loyalty and growth, and turn the width into Science with Research alliances, Universities everywhere and the first Industrial Zones.",
+      "build_order": [
+        {
+          "item": "University",
+          "why": "In every Campus city; the Science verdict is width times buildings."
+        },
+        {
+          "item": "Shipyard",
+          "why": "Two for the Steam Power Eureka and Production in the Cothon cities."
+        },
+        {
+          "item": "Settler",
+          "why": "Fourth and fifth overseas cities from the overseas Cothon, each watched from the turn it embarks."
+        },
+        {
+          "item": "Workshop",
+          "why": "Two for Industrialization in the two cities with hills; Industrial Zones where Production exists."
+        },
+        {
+          "item": "Bank",
+          "why": "Two for Economics; Gold to buy Monuments and Granaries overseas the turn a city is founded."
+        },
+        {
+          "item": "Caravel",
+          "why": "Two upgraded from Biremes for the Exploration Inspiration and the crossing's escort."
+        },
+        {
+          "item": "Move Capital project",
+          "why": "Only if the turn 200 prerequisites hold; it runs in the overseas Cothon city."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:printing",
+          "note": "Two Universities give the Eureka; collected in the previous phase or now."
+        },
+        {
+          "id": "tech:banking",
+          "note": "Free Eureka from Guilds; Banks."
+        },
+        {
+          "id": "tech:square-rigging",
+          "note": "Frigates for the crossing if a rival navy appears; Eureka from a Musketman kill only in a defensive war."
+        },
+        {
+          "id": "tech:scientific-theory",
+          "note": "Free Eureka from The Enlightenment; Research Grants in every Campus."
+        },
+        {
+          "id": "tech:industrialization",
+          "note": "Two Workshops; Factories in the two Production cities."
+        },
+        {
+          "id": "tech:steam-power",
+          "note": "Two Shipyards give the Eureka; Ironclads for the crossing's defence."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:colonialism",
+          "note": "Colonial Offices for overseas growth and Loyalty; Inspiration from Astronomy."
+        },
+        {
+          "id": "civic:diplomatic-service",
+          "note": "A Research alliance gives the Inspiration and the Science."
+        },
+        {
+          "id": "civic:the-enlightenment",
+          "note": "Three Great People; Rationalism."
+        },
+        {
+          "id": "civic:mercantilism",
+          "note": "A Great Merchant gives the Inspiration; Triangular Trade for the many routes."
+        },
+        {
+          "id": "civic:reformed-church",
+          "note": "Only on the path; no religion is planned, so unboosted."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Colonial Offices",
+          "slot": "diplomatic",
+          "from": "civic:colonialism",
+          "why": "Growth and Loyalty in cities off the capital's continent, whichever continent that is after turn 200."
+        },
+        {
+          "card": "Rationalism",
+          "slot": "economic",
+          "from": "civic:the-enlightenment",
+          "why": "Campus buildings pay more Science in the tall home cities."
+        },
+        {
+          "card": "Triangular Trade",
+          "slot": "economic",
+          "from": "civic:mercantilism",
+          "why": "Gold and Faith on every one of the many routes."
+        },
+        {
+          "card": "Naval Infrastructure",
+          "slot": "economic",
+          "from": "civic:naval-tradition",
+          "why": "Doubled Cothon adjacency, kept until the slots are needed for Science."
+        }
+      ],
+      "districts": [
+        {
+          "district": "industrial-zone",
+          "city": "the two cities with hills",
+          "note": "Workshops for Industrialization; the only Production the empire will have."
+        },
+        {
+          "district": "campus",
+          "city": "every city without one",
+          "note": "The verdict is width; every city gets a Campus and a Library at least."
+        },
+        {
+          "district": "commercial-hub",
+          "city": "the second river city",
+          "note": "Banks for Economics; routes."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Casa de Contratacion",
+          "why": "Governor titles and yields in cities off the capital's continent; it is written for an empire like this one.",
+          "skip_if": "Cartography-era Production is short in every city, or the capital question was decided against moving and few cities sit overseas."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "amani",
+          "promotion": "Prestige",
+          "city": "the newest overseas city",
+          "why": "Loyalty outward from the newest city, which is always the weakest."
+        },
+        {
+          "governor": "pingala",
+          "promotion": "Researcher",
+          "city": "capital",
+          "why": "Science per population in the tallest city, wherever the capital ends up."
+        },
+        {
+          "governor": "reyna",
+          "promotion": "Harbormaster",
+          "city": "the best Cothon city",
+          "why": "Doubled Cothon adjacency Gold and cheaper tile purchases in a coastal empire."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "geneva",
+          "why": "Science in every city while not at war, which a Loyalty-immune empire can usually arrange."
+        },
+        {
+          "slug": "cardiff",
+          "why": "Power from every Harbor building once Factories and Universities want it."
+        },
+        {
+          "type": "Scientific",
+          "why": "Six envoys for University Science in every city."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-scientist",
+          "why": "Every Renaissance Great Scientist is Science the width multiplies."
+        },
+        {
+          "class": "great-merchant",
+          "why": "Routes and Gold; the Mercantilism Inspiration."
+        },
+        {
+          "class": "great-engineer",
+          "why": "Production for the Universities in cities that have none."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 200,
+          "test": "Move Capital prerequisites: overseas Cothon city at six or more population, overseas coastal cities equal to or more than home coastal cities (or will be within twenty turns), every home coastal city at eight or more population or holding a Governor?",
+          "pass": "Run the Move Capital project in the overseas Cothon city and re-read every home city's Loyalty the turn it completes; Colonial Offices now covers the home continent.",
+          "fail": "Do not move. Keep the capital where it is, stop settling that continent beyond what the Governors can hold, and put the Settlers on islands or the home continent's remaining coast instead."
+        },
+        {
+          "turn": 230,
+          "test": "Ten or more cities, Universities in six, Science per turn in the top two, Research alliance running?",
+          "pass": "Enter the close with the spaceport city chosen.",
+          "fail": "Science outside the top two: the width is not converted, so Universities and Research Grants in every city before any Settler, and Rationalism in."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "decide-colonialism",
+          "turn": 165,
+          "text": "Colonialism reached on the back of Astronomy; Colonial Offices slotted for every city off the capital's continent."
+        },
+        {
+          "id": "decide-shipyards",
+          "turn": 180,
+          "text": "Two Shipyards built in the Cothon cities; Steam Power Eureka collected."
+        },
+        {
+          "id": "decide-checklist",
+          "turn": 195,
+          "text": "Fill in the Move Capital prerequisites checklist with the current numbers five turns before the decision; if one is short, name the fix and whether it lands by turn 200."
+        },
+        {
+          "id": "decide-capital",
+          "turn": 200,
+          "text": "Decide the capital against the checklist and write the decision down; if moving, start the project this turn and queue Monuments in the home cities that lose the guarantee."
+        },
+        {
+          "id": "decide-research-alliance",
+          "turn": 210,
+          "text": "Research alliance with the civilization furthest ahead in Science that is not a neighbour you forward-settled."
+        },
+        {
+          "id": "decide-spaceport-city",
+          "turn": 230,
+          "text": "Choose the spaceport city: the one with the most hills and an Industrial Zone, not the capital unless it is both."
+        }
+      ]
+    },
+    {
+      "id": "close",
+      "name": "Close",
+      "turns": {
+        "from": 231,
+        "to": null
+      },
+      "era": "industrial",
+      "objective": "Convert twelve coastal cities into a Science victory: Research Labs everywhere, Power from Coal and then Hydroelectric Dams, the spaceport city fed by every Industrial Zone's regional bonus, and the overseas cities held green by Colonial Offices and the Governors until the last launch.",
+      "build_order": [
+        {
+          "item": "Factory",
+          "why": "In every Industrial Zone; the regional bonus feeds the spaceport city."
+        },
+        {
+          "item": "Research Lab",
+          "why": "In every Campus city as soon as it unlocks; the verdict is width times buildings."
+        },
+        {
+          "item": "Coal Power Plant",
+          "why": "Refining Eureka and Power for the Labs and Factories."
+        },
+        {
+          "item": "Spaceport",
+          "why": "In the chosen city at Rocketry; Space Race Inspiration."
+        },
+        {
+          "item": "Ironclad",
+          "why": "Two for the crossing's defence; a Loyalty-immune empire is still invadable by sea."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:electricity",
+          "note": "Two Privateers from the Shipyards give the Eureka; Power."
+        },
+        {
+          "id": "tech:steel",
+          "note": "An Ironclad plus a Coal Mine; Battleships if a rival navy threatens."
+        },
+        {
+          "id": "tech:refining",
+          "note": "A Coal Power Plant gives the Eureka; the path to Plastics and the spaceport."
+        },
+        {
+          "id": "tech:chemistry",
+          "note": "Alliance level 2 with the Research ally; Research Labs."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:civil-engineering",
+          "note": "Seven different specialty districts across twelve cities; Public Works."
+        },
+        {
+          "id": "civic:urbanization",
+          "note": "A fifteen-population capital; Neighborhoods."
+        },
+        {
+          "id": "civic:capitalism",
+          "note": "Two Stock Exchanges in the Commercial Hub cities."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Rationalism",
+          "slot": "economic",
+          "from": "civic:the-enlightenment",
+          "why": "Science from Campus buildings in every city."
+        },
+        {
+          "card": "Colonial Offices",
+          "slot": "diplomatic",
+          "from": "civic:colonialism",
+          "why": "Loyalty and growth off the capital's continent until the end."
+        },
+        {
+          "card": "Public Works",
+          "slot": "economic",
+          "from": "civic:civil-engineering",
+          "why": "Builder charges for the Mines and Lumber Mills the Industrial Zones want."
+        }
+      ],
+      "districts": [
+        {
+          "district": "spaceport",
+          "city": "the chosen Production city",
+          "note": "At Rocketry; every Industrial Zone within six tiles feeds it."
+        },
+        {
+          "district": "neighborhood",
+          "city": "the two tallest cities",
+          "note": "Housing; Sanitation Eureka at two."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Ruhr Valley",
+          "why": "Production in the spaceport city if it has a river and an Industrial Zone; it is the one Production wonder this empire can use.",
+          "skip_if": "The spaceport city has no river, or Industrialization lands after turn 260."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "magnus",
+          "promotion": "Vertical Integration",
+          "city": "the spaceport city",
+          "why": "Every Factory and Power Plant in range counts toward the projects."
+        },
+        {
+          "governor": "amani",
+          "promotion": "Prestige",
+          "city": "the weakest overseas city",
+          "why": "Loyalty held until the last launch."
+        }
+      ],
+      "city_states": [
+        {
+          "type": "Industrial",
+          "why": "Six envoys for Factory Production in every city; the space projects are Production."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-scientist",
+          "why": "Industrial and Modern Great Scientists are free technologies toward the spaceport."
+        },
+        {
+          "class": "great-engineer",
+          "why": "Space project Production in the chosen city."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 280,
+          "test": "Spaceport built, Research Labs in six cities, Science per turn first or second, every overseas city green?",
+          "pass": "Continue to the launches; no further decisions.",
+          "fail": "Science third or worse: the Diplomatic branch takes over with the suzerainties and Favor the Harbors earned, and the Spaceport continues as insurance."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "close-labs",
+          "turn": 245,
+          "text": "Research Labs in every Campus city with a University; Power from the Coal Plant covering them."
+        },
+        {
+          "id": "close-spaceport",
+          "turn": 260,
+          "text": "Spaceport finished in the chosen city; Space Race Inspiration collected; Magnus with Vertical Integration there."
+        },
+        {
+          "id": "close-review",
+          "turn": 280,
+          "text": "Review the turn 280 checkpoint and either continue to the launches or switch the weight to the Diplomatic branch."
+        }
+      ]
+    }
+  ],
+  "boosts": [
+    {
+      "id": "tech:sailing",
+      "fit": "free",
+      "when": "setup",
+      "how": "The coastal capital triggers it on settle."
+    },
+    {
+      "id": "tech:writing",
+      "fit": "free",
+      "when": "setup",
+      "how": "Mediterranean Colonies starts the game with it unlocked."
+    },
+    {
+      "id": "tech:astrology",
+      "fit": "cheap",
+      "when": "setup",
+      "how": "Coastal scouting with a Bireme finds natural wonders along the shore."
+    },
+    {
+      "id": "tech:archery",
+      "fit": "cheap",
+      "when": "setup",
+      "how": "The Slinger finishes a barbarian scout near the capital."
+    },
+    {
+      "id": "tech:bronze-working",
+      "fit": "cheap",
+      "when": "setup",
+      "how": "Three barbarian kills from the Biremes at the coastal camp."
+    },
+    {
+      "id": "tech:celestial-navigation",
+      "fit": "free",
+      "when": "setup",
+      "how": "Two Fishing Boats from the first Builder; God of the Sea wants them anyway."
+    },
+    {
+      "id": "tech:shipbuilding",
+      "fit": "free",
+      "when": "home-coast",
+      "how": "Owning two Biremes is the opening build order."
+    },
+    {
+      "id": "tech:currency",
+      "fit": "free",
+      "when": "home-coast",
+      "how": "The first Trader runs a route to a city-state."
+    },
+    {
+      "id": "tech:masonry",
+      "fit": "costly",
+      "when": "home-coast",
+      "how": "A Quarry only if Stone sits beside a city; otherwise unboosted before Walls in the forward city."
+    },
+    {
+      "id": "tech:wheel",
+      "fit": "cheap",
+      "when": "home-coast",
+      "how": "The first Builder Mines a resource hill."
+    },
+    {
+      "id": "tech:irrigation",
+      "fit": "cheap",
+      "when": "home-coast",
+      "how": "Farm a Wheat or Rice in the grassland behind the coast."
+    },
+    {
+      "id": "tech:construction",
+      "fit": "cheap",
+      "when": "home-coast",
+      "how": "A Water Mill in the river city."
+    },
+    {
+      "id": "tech:mathematics",
+      "fit": "free",
+      "when": "home-coast",
+      "how": "Cothon, Campus and Government Plaza make three specialty districts early."
+    },
+    {
+      "id": "tech:apprenticeship",
+      "fit": "cheap",
+      "when": "home-coast",
+      "how": "Three Mines on the hills behind the coast."
+    },
+    {
+      "id": "tech:cartography",
+      "fit": "free",
+      "when": "home-coast",
+      "how": "Two Cothons are built by turn 60."
+    },
+    {
+      "id": "tech:horseback-riding",
+      "fit": "costly",
+      "when": "home-coast",
+      "how": "A Pasture only if Horses or Sheep sit in a city's first ring."
+    },
+    {
+      "id": "tech:iron-working",
+      "fit": "skip",
+      "when": null,
+      "how": "No Swordsmen; the army is ships and the cities cannot flip."
+    },
+    {
+      "id": "tech:engineering",
+      "fit": "cheap",
+      "when": "home-coast",
+      "how": "Ancient Walls in the forward city nearest the most aggrieved neighbour."
+    },
+    {
+      "id": "tech:education",
+      "fit": "cheap",
+      "when": "overseas",
+      "how": "The capital Campus under the district bonus wins the first Great Scientist."
+    },
+    {
+      "id": "tech:military-engineering",
+      "fit": "cheap",
+      "when": "overseas",
+      "how": "The capital Aqueduct, built for Housing anyway."
+    },
+    {
+      "id": "tech:castles",
+      "fit": "free",
+      "when": "overseas",
+      "how": "Any Tier 2 government; Merchant Republic is the plan's."
+    },
+    {
+      "id": "tech:machinery",
+      "fit": "cheap",
+      "when": "overseas",
+      "how": "Three Archers across the overseas cities before upgrading them."
+    },
+    {
+      "id": "tech:mass-production",
+      "fit": "cheap",
+      "when": "overseas",
+      "how": "A Lumber Mill on Woods behind the coast."
+    },
+    {
+      "id": "tech:astronomy",
+      "fit": "cheap",
+      "when": "overseas",
+      "how": "A University beside a mountain in whichever Campus has one."
+    },
+    {
+      "id": "tech:stirrups",
+      "fit": "free",
+      "when": "overseas",
+      "how": "Feudalism is on the civic path."
+    },
+    {
+      "id": "tech:military-tactics",
+      "fit": "skip",
+      "when": null,
+      "how": "A Spearman kill is a land detour for an empire that fights at sea."
+    },
+    {
+      "id": "tech:buttress",
+      "fit": "cheap",
+      "when": "overseas",
+      "how": "The Great Lighthouse or Colossus from the home-coast phase."
+    },
+    {
+      "id": "tech:printing",
+      "fit": "cheap",
+      "when": "decide",
+      "how": "Two Universities in the home Campus cities."
+    },
+    {
+      "id": "tech:banking",
+      "fit": "free",
+      "when": "decide",
+      "how": "Guilds is on the civic path."
+    },
+    {
+      "id": "tech:square-rigging",
+      "fit": "costly",
+      "when": "decide",
+      "how": "A Musketman kill only in a defensive war; usually unboosted."
+    },
+    {
+      "id": "tech:scientific-theory",
+      "fit": "free",
+      "when": "decide",
+      "how": "The Enlightenment is on the civic path."
+    },
+    {
+      "id": "tech:industrialization",
+      "fit": "cheap",
+      "when": "decide",
+      "how": "Two Workshops in the two hill cities."
+    },
+    {
+      "id": "tech:steam-power",
+      "fit": "free",
+      "when": "decide",
+      "how": "Two Shipyards in Cothon cities that already have the adjacency."
+    },
+    {
+      "id": "tech:economics",
+      "fit": "cheap",
+      "when": "decide",
+      "how": "Two Banks in the Commercial Hub cities."
+    },
+    {
+      "id": "tech:gunpowder",
+      "fit": "costly",
+      "when": "decide",
+      "how": "An Armory needs an Encampment this plan does not otherwise build."
+    },
+    {
+      "id": "tech:electricity",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Privateers from the Shipyards."
+    },
+    {
+      "id": "tech:steel",
+      "fit": "cheap",
+      "when": "close",
+      "how": "An Ironclad for the crossing plus a Coal Mine in a hill city."
+    },
+    {
+      "id": "tech:refining",
+      "fit": "cheap",
+      "when": "close",
+      "how": "A Coal Power Plant in the spaceport city's Industrial Zone."
+    },
+    {
+      "id": "tech:chemistry",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Alliance level 2 with the Research ally formed at turn 210."
+    },
+    {
+      "id": "tech:sanitation",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Neighborhoods in the two tallest cities."
+    },
+    {
+      "id": "civic:craftsmanship",
+      "fit": "free",
+      "when": "home-coast",
+      "how": "Three improvements from the first Builder."
+    },
+    {
+      "id": "civic:foreign-trade",
+      "fit": "cheap",
+      "when": "setup",
+      "how": "A Bireme sights the second continent while scouting the overseas sites."
+    },
+    {
+      "id": "civic:military-tradition",
+      "fit": "free",
+      "when": "home-coast",
+      "how": "The first coastal camp cleared by the Biremes."
+    },
+    {
+      "id": "civic:state-workforce",
+      "fit": "free",
+      "when": "home-coast",
+      "how": "The capital Cothon, which is also the first district."
+    },
+    {
+      "id": "civic:early-empire",
+      "fit": "free",
+      "when": "setup",
+      "how": "Six population across the first three cities."
+    },
+    {
+      "id": "civic:mysticism",
+      "fit": "free",
+      "when": "home-coast",
+      "how": "Founding God of the Sea in the setup phase."
+    },
+    {
+      "id": "civic:political-philosophy",
+      "fit": "cheap",
+      "when": "home-coast",
+      "how": "Three city-states met by the Biremes along the coast."
+    },
+    {
+      "id": "civic:recorded-history",
+      "fit": "free",
+      "when": "home-coast",
+      "how": "Two Campuses, in the capital and the first adjacency city."
+    },
+    {
+      "id": "civic:games-and-recreation",
+      "fit": "free",
+      "when": "home-coast",
+      "how": "Researching Construction for the Water Mill."
+    },
+    {
+      "id": "civic:drama-and-poetry",
+      "fit": "costly",
+      "when": "home-coast",
+      "how": "Only if the Great Lighthouse or Colossus is built."
+    },
+    {
+      "id": "civic:theology",
+      "fit": "skip",
+      "when": null,
+      "how": "No religion is planned; research it unboosted on the path."
+    },
+    {
+      "id": "civic:defensive-tactics",
+      "fit": "cheap",
+      "when": "home-coast",
+      "how": "A forward-settled neighbour declares war; the city cannot flip, so the Inspiration is the main cost."
+    },
+    {
+      "id": "civic:military-training",
+      "fit": "skip",
+      "when": null,
+      "how": "No Encampment in an empire whose army is at sea."
+    },
+    {
+      "id": "civic:feudalism",
+      "fit": "cheap",
+      "when": "overseas",
+      "how": "Six Farms in the grassland behind the home coast."
+    },
+    {
+      "id": "civic:naval-tradition",
+      "fit": "cheap",
+      "when": "overseas",
+      "how": "One Quadrireme kill against a rival Galley or a camp ship on the crossing."
+    },
+    {
+      "id": "civic:civil-service",
+      "fit": "cheap",
+      "when": "overseas",
+      "how": "The capital reaches ten population with the Aqueduct."
+    },
+    {
+      "id": "civic:guilds",
+      "fit": "cheap",
+      "when": "overseas",
+      "how": "Two Markets in the river cities."
+    },
+    {
+      "id": "civic:medieval-faires",
+      "fit": "free",
+      "when": "overseas",
+      "how": "Four routes is a fraction of what the Cothons and Government Plaza allow."
+    },
+    {
+      "id": "civic:exploration",
+      "fit": "free",
+      "when": "overseas",
+      "how": "Two Caravels upgraded from Biremes."
+    },
+    {
+      "id": "civic:mercenaries",
+      "fit": "skip",
+      "when": null,
+      "how": "Eight land units is an army this plan never fields."
+    },
+    {
+      "id": "civic:colonialism",
+      "fit": "free",
+      "when": "decide",
+      "how": "Researching Astronomy."
+    },
+    {
+      "id": "civic:diplomatic-service",
+      "fit": "cheap",
+      "when": "decide",
+      "how": "A Research alliance with the Science leader."
+    },
+    {
+      "id": "civic:the-enlightenment",
+      "fit": "cheap",
+      "when": "decide",
+      "how": "Three Great People: an Admiral, a Scientist and a Merchant."
+    },
+    {
+      "id": "civic:mercantilism",
+      "fit": "cheap",
+      "when": "decide",
+      "how": "A Great Merchant from the Commercial Hubs."
+    },
+    {
+      "id": "civic:civil-engineering",
+      "fit": "free",
+      "when": "close",
+      "how": "Seven different specialty districts across twelve cities."
+    },
+    {
+      "id": "civic:urbanization",
+      "fit": "cheap",
+      "when": "close",
+      "how": "A fifteen-population capital with the Aqueduct and a Neighborhood."
+    },
+    {
+      "id": "civic:capitalism",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Stock Exchanges in the Commercial Hub cities."
+    },
+    {
+      "id": "civic:reformed-church",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    }
+  ],
+  "decision_triggers": [
+    {
+      "name": "Two overseas cities amber",
+      "if": "Two overseas cities sit between zero and plus three Loyalty per turn at the same time.",
+      "then": "Stop adding buildings and start the Move Capital prerequisites checklist; buildings fix one city, the capital move fixes the continent. Settle no further overseas city until the decision is made."
+    },
+    {
+      "name": "Rival settles a home coast",
+      "if": "A rival Settler is walking toward a coastal site on the home continent you have not yet taken.",
+      "then": "Send the nearest Settler there now, even beside their city; yours cannot flip and theirs can. Add the grievance to the budget."
+    },
+    {
+      "name": "Neighbour declares over forward settling",
+      "if": "A neighbour you settled beside declares war.",
+      "then": "Hold the forward city with Walls and a Bireme pair; it cannot flip, so the only risk is capture. Make peace at the first offer and do not settle beside that neighbour again this era."
+    },
+    {
+      "name": "Capital moved",
+      "if": "The Move Capital project completes.",
+      "then": "Re-read every home coastal city's Loyalty the same turn; the guarantee now covers the other continent. Colonial Offices, Monuments and a Governor go to any home city that dropped below plus three."
+    }
+  ],
+  "abort": {
+    "trigger": "Two overseas cities have flipped or been lost, the capital move prerequisites have not been met by turn 220, and the home coast is full.",
+    "actions": [
+      "Stop settling overseas; the Loyalty guarantee is not reaching there and the Governors are spent.",
+      "Rebuild as a one-continent coastal Science civilization around the Cothons, Campuses and Universities already standing, with islands as the only new sites.",
+      "Keep the Bireme and Caravel pairs; a coastal empire that stopped growing is still a coastal empire to raid."
+    ]
+  },
+  "fail_state": "The Industrial era arrives with a capital moved on impulse at turn 130 to a size-four overseas city, three home coastal cities flipped to the neighbours they were settled beside, the overseas colonies still amber because the Governors went home to stop the bleeding, and a Science rate that twelve Campuses were supposed to produce coming from six. Phoenicia is then a scattered coastal civilization with grievances on two continents and a Palace in the wrong place.",
+  "common_mistakes": [
+    "Moving the capital the first time an overseas city goes amber. The move strips the guarantee from every home coastal city at once; it is a continent-scale decision with prerequisites, not a Loyalty fix.",
+    "Settling the safe coast before the contested coast. The Loyalty guarantee is worth nothing on a city nobody would pressure; spend it where a rival would otherwise settle.",
+    "Treating coastal cities as Production cities. They are Food, Gold and Science; the two cities with hills carry every Industrial Zone and the spaceport, and are chosen for that on turn 1.",
+    "Running Traders without a Bireme in reach. The Bireme's plunder protection is the whole anti-piracy plan; a plundered route is Science and Gold lost for thirty turns.",
+    "Forgetting that only coastal cities are covered. An inland city on the home continent flips like anyone else's; if one is settled, it gets a Monument and a Governor like an overseas city."
+  ],
+  "sources": [
+    "Civilization VI Civilopedia, Gathering Storm ruleset (Phoenicia, Dido, Bireme, Cothon, Founder of Carthage, Mediterranean Colonies).",
+    "Boost objectives cross-checked against civilization6planner.com tech-tree and civics-tree pages, 2026-10-01.",
+    "Leadership Focus tags, caveats and Monitor supplement for Dido in this repository."
+  ]
+}

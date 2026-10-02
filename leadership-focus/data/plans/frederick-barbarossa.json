@@ -1,0 +1,528 @@
+{
+  "slug": "frederick-barbarossa",
+  "shape": "Linear",
+  "secondary_shape": null,
+  "version": 1,
+  "updated": "2026-10-02",
+  "assumptions": {
+    "ruleset": "Gathering Storm with every expansion and the Leader Pass",
+    "speed": "Standard",
+    "difficulty": "Emperor",
+    "map": "Continents or Pangaea, standard size, 8 civilizations",
+    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. Frederick Barbarossa has one persona and that is the one planned here."
+  },
+  "verdict": {
+    "victory": "Science",
+    "secondary": "Domination",
+    "confidence": "medium",
+    "one_line": "Settle wide, give every city a Commercial Hub and a Hansa before it has the population to deserve them, decide by turn 60 whether the extra Military slot buys a city-state and a neighbour or just the escorts, and point the Production at Campuses and a Spaceport.",
+    "why": "Free Imperial Cities lets a German city build one district more than its population allows, and the Hansa is the cheapest and best-placed Production district in the game, so a four-population German city can already hold a Commercial Hub, a Hansa and a Campus while a rival city of the same size holds one district. That is Production and district count, and neither points anywhere by itself; the Production has to be spent on something that ends the game. Science is the default because a Hansa in every city builds Campuses, Universities and the three Spaceport projects faster than any other kit, and nothing in it expires. Domination is the second direction and not Culture because the extra Military policy slot and the +7 against city-states are real from turn one, a weak city-state within reach is a free second city, and the same Hansas then build the siege line. Nothing German makes Great Works or Tourism cheaper."
+  },
+  "map_check": {
+    "must_have": [
+      "Land for seven or more cities, each with a river or flat tiles where a Commercial Hub, a Hansa and an Aqueduct can sit in a cluster.",
+      "Hills and resources near the city sites, since the Hansa takes adjacency from every resource and the Mines pay Apprenticeship."
+    ],
+    "prefer": [
+      "A city-state within eight tiles of the capital with no Walls by turn 30, for the Domination opening.",
+      "Chocolate Hills, Mount Vesuvius or Zhangye Danxia in reach; mineable hills and Great Merchant points feed the Hansa economy.",
+      "Hattusa or Johannesburg on the map; strategic resources and Production per improved resource type both multiply through many cities."
+    ],
+    "no_go": "A small island or a start boxed in to three cities. The extra district and the Hansa are paid per city, and three cities is three Hansas and a kit that has finished growing by turn 80.",
+    "fallback": "If the land runs out early, take the Domination direction at turn 60: the nearest city-state falls to four Warriors and two Archers at 44 effective strength, and a neighbour's cities become German cities with their own extra district the turn they are captured."
+  },
+  "kit_levers": [
+    { "source": "leader_ability", "name": "Holy Roman Emperor", "buys": "One extra Military policy slot in every government from turn one, and +7 Combat Strength for units attacking city-states.", "exploit": "The spare Military slot holds Discipline and Agoge at once in the Ancient era, Conscription and Feudal Contract later, so the escorts and the garrison cost nothing in queue time. The +7 turns a weak city-state within eight tiles into a second city at turn 30; take it or send envoys, never both, because the agenda and the grievances make the two routes exclusive." },
+    { "source": "civ_ability", "name": "Free Imperial Cities", "buys": "Every German city can build one specialty district beyond the population limit: two at one population, three at four, four at seven.", "exploit": "Found a city and queue a Commercial Hub and a Hansa before it has grown at all; rivals wait until four population for their second district. The extra slot is only worth the Production and the citizens to fill it, so the plan grows cities with Aqueducts and Farms as hard as it builds districts, and tracks the district count per city at every checkpoint." },
+    { "source": "unique_infrastructure", "name": "Hansa", "buys": "An Industrial Zone replacement at half cost with +2 adjacency from each adjacent Commercial Hub, +1 from every adjacent resource of any kind and the normal Aqueduct, Dam and Canal bonuses.", "exploit": "Plan the Commercial Hub and the Hansa together before either is placed: the Hub on the river, the Hansa touching the Hub, the Aqueduct and two or three resource tiles. A +6 Hansa at turn 90 is normal and the Workshop and Factory double it. Craftsmen and Five-Year Plan double the adjacency again, which is where the Spaceport projects come from." },
+    { "source": "unique_unit", "name": "U-Boat", "buys": "A cheaper Submarine with extra sight and a Combat Strength bonus on Ocean tiles, unlocked at Electricity.", "exploit": "Only the Domination direction on a water map uses it: a pack of six U-Boats clears a rival's navy from the deep water and screens the Battleships that take the coastal capitals. On the Science direction it is a cheap coast guard and nothing more." },
+    { "source": "agenda", "name": "Iron Crown", "buys": "Frederick dislikes civilizations that become suzerains of city-states or conquer them.", "exploit": "Only matters for AI Frederick: keep envoys out of the city-states near him and he stays friendly, which is a free alliance for the Chemistry Eureka on the Science direction." }
+  ],
+  "shape_block": {
+    "linear": {
+      "direction": {
+        "options": [
+          { "victory": "Science", "when_it_fits": "Seven or more city sites are settled or claimed by turn 60 and no city-state or rival capital is both close and weak. A Commercial Hub, a Hansa and a Campus in every city, Universities in all of them by turn 150, and the Hansa Production spent on Research Labs and the Spaceport out-researches any normal empire; nothing in the kit expires on this path." },
+          { "victory": "Domination", "when_it_fits": "A city-state within eight tiles has no Walls at turn 30, or a rival capital is within twelve tiles at turn 50. The +7 takes the city-state with four Warriors and two Archers, the extra Military slot keeps the army cheap, and the Hansas build Trebuchets and Knights for the neighbour by turn 110. The empire that results is the Science empire with three more cities; if the first window is missed the option waits for Bombards." },
+          { "victory": "Culture", "when_it_fits": "Two Cultural city-states are met early and the capital lands two Classical wonders off a +4 Hansa. The Production builds Theater Squares and wonders fast, but nothing German makes Great Works, Tourism or Rock Bands cheaper, so take this only when the map has already handed over the pieces and the Science rivals are too far ahead to catch." }
+        ],
+        "choose_by": 60,
+        "commit_test": "At turn 100 count the districts: if the three largest cities each hold a Commercial Hub, a Hansa and a Campus with a Library, the direction is Science and it is being spent. If the Hansas exist but the Campuses do not, or the army sits at six Warriors with no city taken, the extra district is being banked and the plan has failed its own test."
+      }
+    }
+  },
+  "phases": [
+    {
+      "id": "found",
+      "name": "Settle and size up the city-states",
+      "turns": { "from": 1, "to": 45 },
+      "era": "ancient",
+      "objective": "Found three cities on sites where a Commercial Hub, a Hansa and an Aqueduct can touch, fill the extra Military slot from turn one, find every city-state within eight tiles and decide at turn 30 whether the nearest one is a target or an envoy destination.",
+      "build_order": [
+        { "item": "Scout", "why": "Finds the city-states the decision needs and the second continent; Writing on the first meeting." },
+        { "item": "Warrior", "why": "Under Discipline and Agoge in the two Military slots, two Warriors clear the nearest camp for Bronze Working and escort the Settler." },
+        { "item": "Settler", "why": "The second city by turn 18; every German city is worth two districts at one population." },
+        { "item": "Slinger", "why": "Archery Eureka on a camp scout; upgrades to the Archer the city-state siege needs." },
+        { "item": "Builder", "why": "A Mine for The Wheel, a Quarry for Masonry and a Farm on a resource; the Mines are Hansa adjacency later." },
+        { "item": "Settler", "why": "Third city on a river with hills around it; Colonization is slotted by now." },
+        { "item": "Warrior", "why": "Third Warrior for the city-state option; it upgrades to a Swordsman at Iron Working." },
+        { "item": "Monument", "why": "Only in the capital, after the second Settler; the Culture pays Political Philosophy by turn 55." }
+      ],
+      "research": [
+        { "id": "tech:mining", "note": "Mines for The Wheel and Apprenticeship, and the resources the Hansa will touch." },
+        { "id": "tech:bronze-working", "note": "Three camp kills from the Warriors; Iron Working behind it for the Swordsmen." },
+        { "id": "tech:archery", "note": "Slinger kill at the first camp; Archers are the city-state siege." },
+        { "id": "tech:writing", "note": "The Scout meets a rival; the Campus is the Science direction." },
+        { "id": "tech:wheel", "note": "A Mine on a resource; Water Mills in the river cities." },
+        { "id": "tech:masonry", "note": "A Quarry gives the Eureka; Ancient Walls for the Engineering Eureka." }
+      ],
+      "civics": [
+        { "id": "civic:code-of-laws", "note": "Discipline and Survey fill both Military slots; God King for the pantheon." },
+        { "id": "civic:craftsmanship", "note": "Three improvements from the first Builder; Agoge replaces Survey." },
+        { "id": "civic:foreign-trade", "note": "A second continent if the Scout finds one; the first Trade Route." },
+        { "id": "civic:early-empire", "note": "Six population across two cities; Colonization for the third and fourth Settlers." },
+        { "id": "civic:state-workforce", "note": "The first district gives the Inspiration; Corvee is not for Germany, but Conscription is." },
+        { "id": "civic:military-tradition", "note": "First camp cleared; on the way to Political Philosophy." }
+      ],
+      "policies": [
+        { "card": "Discipline", "slot": "military", "from": "civic:code-of-laws", "why": "Warriors beat camp units while escorting; the first of the two Military slots." },
+        { "card": "Survey", "slot": "military", "from": "civic:code-of-laws", "why": "The second Military slot has nothing better until Agoge; the Scout levels off the camps it finds." },
+        { "card": "God King", "slot": "economic", "from": "civic:code-of-laws", "why": "City Patron Goddess by turn 25; swap for Colonization the turn after." },
+        { "card": "Agoge", "slot": "military", "from": "civic:craftsmanship", "why": "Warriors, Slingers and Archers at half cost; the city-state option is built on it." },
+        { "card": "Colonization", "slot": "economic", "from": "civic:early-empire", "why": "Settlers at half cost until seven cities stand." }
+      ],
+      "districts": [
+        { "district": "commercial-hub", "city": "capital", "note": "Placed on the river at one or two population; the Hansa site beside it is reserved and left unimproved." }
+      ],
+      "pantheon": { "slug": "city-patron-goddess", "why": "Every city builds its first district a quarter faster, and a German city builds two before anyone else builds one.", "alternative": "god-of-craftsmen" },
+      "wonders": [],
+      "governors": [],
+      "city_states": [
+        { "type": "Militaristic", "why": "If the nearest city-state is Militaristic and weak it is the capture target; if it is far, its first envoy is Production toward units." },
+        { "type": "Industrial", "why": "Production toward districts in the capital at one envoy, which the capital spends on a Hansa." }
+      ],
+      "great_people": [],
+      "checkpoints": [
+        { "turn": 30, "test": "Two cities founded, three Warriors and a Slinger alive, the pantheon taken, and every city-state within eight tiles known with its Walls status?", "pass": "Decide the city-state now: no Walls and within eight tiles means it is taken by turn 45; otherwise the envoys go there and the army escorts Settlers.", "fail": "A second city after turn 25 means the Settler sat behind the Monument; move it up. No city-state found means the Scout went the wrong way; a Warrior goes the other." },
+        { "turn": 45, "test": "Three cities, the capital Commercial Hub placed, a city-state taken or three envoys sent, and the second Military slot holding a real card?", "pass": "Enter the Hansa phase; the direction decision is fifteen turns away.", "fail": "Two cities with the third Settler walking is acceptable. A Military slot holding Survey at turn 45 means the extra slot is being wasted; Agoge or Conscription goes in today." }
+      ],
+      "tasks": [
+        { "id": "found-settle-capital", "turn": 1, "text": "Settle on the spot or one move to a river; the Commercial Hub wants the river and the Hansa wants the Hub." },
+        { "id": "found-two-slots", "turn": 3, "text": "Fill both Military slots the turn Code of Laws lands; an empty slot is the ability unused." },
+        { "id": "found-scout-city-states", "turn": 12, "text": "Scout every city-state within eight tiles and note whether it has Walls; this number is the turn 30 decision." },
+        { "id": "found-second-city", "turn": 18, "text": "Second city founded on a river with hills; queue a Commercial Hub at one population to prove the extra district works." },
+        { "id": "found-city-state-decision", "turn": 30, "text": "Write down bully or envoys for the nearest city-state. Taking it means four Warriors and two Archers by turn 40; envoys means three sent before turn 50." },
+        { "id": "found-third-city", "turn": 42, "text": "Third city founded; the capital Commercial Hub is placed and the Hansa tile beside it is marked." }
+      ]
+    },
+    {
+      "id": "hansa",
+      "name": "Hansa triangles and the decision",
+      "turns": { "from": 46, "to": 105 },
+      "era": "classical",
+      "objective": "Reach seven cities, place a Commercial Hub and a Hansa in each as soon as it is founded, build the capital's Campus and Aqueduct, take Oligarchy or Classical Republic, and decide by turn 60 whether the army marches on a neighbour or escorts Settlers and Builders.",
+      "build_order": [
+        { "item": "Settler", "why": "Cities four through seven; every one is two districts at one population." },
+        { "item": "Hansa", "why": "Beside the capital's Commercial Hub and the Aqueduct site; +4 or better before the Workshop." },
+        { "item": "Trader", "why": "Currency Eureka; a domestic route to the capital carries Production from the Hansa city." },
+        { "item": "Campus", "why": "Capital and the two Mountain cities; the third district of a four-population German city." },
+        { "item": "Aqueduct", "why": "Capital first: Housing for the citizens the districts need and +2 Hansa adjacency." },
+        { "item": "Archer", "why": "Three for Machinery; the city-state siege or the Settler escort." },
+        { "item": "Water Mill", "why": "Construction Eureka and Production in the river cities." },
+        { "item": "Swordsman", "why": "Domination direction: four with a Battering Ram for the neighbour's nearest city." }
+      ],
+      "research": [
+        { "id": "tech:currency", "note": "First Trade Route gives the Eureka; Commercial Hubs come before Hansas." },
+        { "id": "tech:iron-working", "note": "An Iron Mine gives the Eureka; Swordsmen on the Domination direction." },
+        { "id": "tech:apprenticeship", "note": "Three Mines; the Hansa unlocks here, so this is the first Medieval tech by turn 80." },
+        { "id": "tech:construction", "note": "Water Mill gives the Eureka; the Colosseum is a wide-empire wonder." },
+        { "id": "tech:mathematics", "note": "Three specialty districts in one empire; a German capital has them by turn 70." },
+        { "id": "tech:engineering", "note": "Ancient Walls in a border city; Aqueducts for the Hansas." },
+        { "id": "tech:horseback-riding", "note": "A Pasture gives the Eureka; Horsemen scout the target." },
+        { "id": "tech:machinery", "note": "Three Archers; Crossbowmen hold the border." }
+      ],
+      "civics": [
+        { "id": "civic:mysticism", "note": "Pantheon gives the Inspiration." },
+        { "id": "civic:political-philosophy", "note": "Three city-states met; Oligarchy on the Domination direction, Classical Republic otherwise, and both carry the extra Military slot." },
+        { "id": "civic:games-and-recreation", "note": "Construction gives the Inspiration; Entertainment Complexes for seven cities." },
+        { "id": "civic:recorded-history", "note": "Two Campuses; Natural Philosophy is the Science direction's first spend." },
+        { "id": "civic:military-training", "note": "An Encampment on the Domination direction only." },
+        { "id": "civic:drama-and-poetry", "note": "A wonder gives the Inspiration; otherwise unboosted on the way to Theology and Feudalism." }
+      ],
+      "policies": [
+        { "card": "Oligarchy", "slot": "wildcard", "from": "civic:political-philosophy", "why": "Domination direction: +4 Combat Strength on Swordsmen and three Military slots in total." },
+        { "card": "Classical Republic", "slot": "wildcard", "from": "civic:political-philosophy", "why": "Science direction: Amenities and Great Person points for seven cities, and still two Military slots." },
+        { "card": "Conscription", "slot": "military", "from": "civic:state-workforce", "why": "The spare Military slot pays the army's upkeep so the Gold buys Builders." },
+        { "card": "Natural Philosophy", "slot": "economic", "from": "civic:recorded-history", "why": "Science direction: doubled Campus adjacency in every city." },
+        { "card": "Caravansaries", "slot": "economic", "from": "civic:foreign-trade", "why": "Gold on the routes that feed the Hansa cities." }
+      ],
+      "districts": [
+        { "district": "commercial-hub", "city": "every city, on the river, as the first district", "note": "Placed at one population; the Hansa tile touching it is left for turn 80." },
+        { "district": "hansa", "city": "every city, touching the Commercial Hub", "note": "Resources on the other sides; Aqueduct on a third. Half-cost, so it finishes in eight turns in a new city." },
+        { "district": "campus", "city": "capital and the Mountain cities", "note": "The third district; the extra slot means it is placed at four population, not seven." },
+        { "district": "aqueduct", "city": "capital and any river city", "note": "Housing for the citizens and +2 Hansa adjacency; Military Engineering Eureka." }
+      ],
+      "pantheon": { "slug": "city-patron-goddess", "why": "Already founded; it pays on the first Commercial Hub in every new city." },
+      "wonders": [
+        { "name": "Pyramids", "why": "An extra charge on every Builder across seven cities' Mines.", "skip_if": "No desert or floodplain tile near the capital, or a rival has Masonry well before you." },
+        { "name": "Colosseum", "why": "Amenities and Culture to every city within six tiles of a dense German core.", "skip_if": "The capital is not central, or Construction lands after turn 95." }
+      ],
+      "governors": [
+        { "governor": "magnus", "promotion": "Provision", "city": "capital", "why": "Settlers four through seven without losing the population the districts need." },
+        { "governor": "pingala", "promotion": "Researcher", "city": "the best Campus city", "why": "Science direction: Science per population where the first University goes." }
+      ],
+      "city_states": [
+        { "slug": "hattusa", "why": "Two of every unrevealed strategic resource per turn; Iron for Swordsmen and Niter later without a Mine." },
+        { "type": "Scientific", "why": "Science direction: Science in every Library at three envoys across seven cities." }
+      ],
+      "great_people": [
+        { "class": "great-merchant", "why": "Gold and a Trade Route; Mercantilism Inspiration later." },
+        { "class": "great-general", "why": "Domination direction: one Classical Great General on four Swordsmen takes the first city." }
+      ],
+      "checkpoints": [
+        { "turn": 60, "test": "Direction written down: Domination with a named rival within twelve tiles or a city-state already taken, Science, or Culture with its preconditions met? Five cities, each with a Commercial Hub placed?", "pass": "Queues switch to the direction's list; the Hansas are queued the turn Apprenticeship lands.", "fail": "No direction at turn 60 is the shape's failure. Decide by distance: a rival capital within twelve tiles with no Walls is Domination, anything else is Science. Fewer than four Commercial Hubs means cities are growing before they build; queue the Hub in every city today." },
+        { "turn": 105, "test": "Seven cities, a government, a Hansa in four cities at +3 or better, Campuses in three, and the queues showing the direction: Swordsmen and a Ram at the border, or Libraries everywhere?", "pass": "Enter the compounding phase.", "fail": "Six cities and three Hansas is acceptable. A Hansa at +1 means it was placed before the Commercial Hub; swap the order in every later city. Queues showing a bit of each is drift; cut the half that is not the direction." }
+      ],
+      "tasks": [
+        { "id": "hansa-decide", "turn": 60, "text": "Write the direction down: Domination against a named rival, Science, or Culture. Everything after this turn is built toward it." },
+        { "id": "hansa-government", "turn": 62, "text": "Adopt Oligarchy or Classical Republic the turn Political Philosophy lands and fill the Military slots." },
+        { "id": "hansa-first-hansa", "turn": 82, "text": "First Hansa placed beside the capital's Commercial Hub and Aqueduct; confirm the adjacency reads +4 or better before confirming." },
+        { "id": "hansa-war", "turn": 90, "text": "Domination direction: four Swordsmen, two Archers and a Battering Ram take the neighbour's nearest city before Medieval Walls." },
+        { "id": "hansa-campuses", "turn": 95, "text": "Science direction: Campuses in the capital and two Mountain cities with Libraries queued." },
+        { "id": "hansa-seventh-city", "turn": 105, "text": "Seventh city founded; after this, settle only where a Hub and a Hansa can touch." }
+      ]
+    },
+    {
+      "id": "compound",
+      "name": "Workshops, Universities and the first audit",
+      "turns": { "from": 106, "to": 170 },
+      "era": "medieval",
+      "objective": "Put a Workshop in every Hansa and a University in every Campus, take Craftsmen and Guilds for the doubled adjacency, hold the Medieval Faires and Civil Engineering Inspirations, and pass the era checkpoint that asks whether the extra district is being filled or merely placed.",
+      "build_order": [
+        { "item": "Workshop", "why": "Two for Industrialization; every Hansa gets one." },
+        { "item": "University", "why": "Two for Printing; one in every Campus on the Science direction." },
+        { "item": "Market", "why": "Two for Guilds; Craftsmen doubles every Hansa afterward." },
+        { "item": "Builder", "why": "Six Farms for Feudalism, Lumber Mills for Mass Production, Mines on every resource beside a Hansa." },
+        { "item": "Trader", "why": "Four routes for Medieval Faires; domestic routes carry Food into the Hansa cities." },
+        { "item": "Entertainment Complex", "why": "Arenas for the cities the Colosseum does not reach; a wide Germany dies of Amenities." },
+        { "item": "Trebuchet", "why": "Domination direction: two for Siege Tactics and the neighbour's walled cities." },
+        { "item": "Theater Square", "why": "Culture direction: every city; otherwise the capital only, for the Great Writer slots." }
+      ],
+      "research": [
+        { "id": "tech:education", "note": "A Great Scientist gives the Eureka; Universities." },
+        { "id": "tech:military-engineering", "note": "The capital Aqueduct gave the Eureka; Niter is revealed here." },
+        { "id": "tech:castles", "note": "Tier 2 government gives the Eureka; Walls on the border." },
+        { "id": "tech:banking", "note": "Guilds gives the Eureka; Banks in the Commercial Hubs." },
+        { "id": "tech:printing", "note": "Two Universities; the Science direction's core." },
+        { "id": "tech:mass-production", "note": "A Lumber Mill; on the way to Industrialization." },
+        { "id": "tech:astronomy", "note": "A University beside a Mountain; the Colonialism Inspiration." },
+        { "id": "tech:siege-tactics", "note": "Two Trebuchets on the Domination direction; unboosted otherwise." },
+        { "id": "tech:stirrups", "note": "Feudalism gives the Eureka; Knights for the Domination direction." }
+      ],
+      "civics": [
+        { "id": "civic:feudalism", "note": "Six Farms; Serfdom for the Builders and Feudal Contract in the spare Military slot." },
+        { "id": "civic:civil-service", "note": "The capital at ten population under its Aqueduct; Meritocracy." },
+        { "id": "civic:guilds", "note": "Two Markets; Craftsmen doubles the Hansas." },
+        { "id": "civic:medieval-faires", "note": "Four Trade Routes; Commercial Hubs in seven cities make this free." },
+        { "id": "civic:mercenaries", "note": "Eight land units on the Domination direction; Professional Army." },
+        { "id": "civic:exploration", "note": "Unboosted unless coastal; Merchant Republic for the Science direction." },
+        { "id": "civic:diplomatic-service", "note": "An alliance gives the Inspiration; the Chemistry Eureka comes from the same alliance." },
+        { "id": "civic:the-enlightenment", "note": "Three Great People; Rationalism and the Scientific Theory Eureka." },
+        { "id": "civic:mercantilism", "note": "A Great Merchant; Triangular Trade on seven routes." }
+      ],
+      "policies": [
+        { "card": "Craftsmen", "slot": "economic", "from": "civic:guilds", "why": "Doubled Hansa adjacency in seven cities; the single biggest card in the plan." },
+        { "card": "Serfdom", "slot": "economic", "from": "civic:feudalism", "why": "Builders with extra charges for the Mines around every Hansa." },
+        { "card": "Feudal Contract", "slot": "military", "from": "civic:feudalism", "why": "The spare Military slot builds Crossbowmen and Pikemen at half cost for the garrison or the war." },
+        { "card": "Merchant Republic", "slot": "wildcard", "from": "civic:exploration", "why": "Science direction: two Economic slots for Craftsmen and Natural Philosophy, and more Trade Routes." },
+        { "card": "Monarchy", "slot": "wildcard", "from": "civic:divine-right", "why": "Domination direction: Housing from Walls and a third Military slot." },
+        { "card": "Rationalism", "slot": "economic", "from": "civic:the-enlightenment", "why": "Science direction: Campus buildings doubled in the cities the Aqueducts have grown past fifteen." }
+      ],
+      "districts": [
+        { "district": "hansa", "city": "every city founded since turn 80", "note": "Still placed second, touching the Commercial Hub; a Workshop goes in the turn it finishes." },
+        { "district": "campus", "city": "every city on the Science direction", "note": "The extra slot means a six-population city holds Hub, Hansa and Campus." },
+        { "district": "entertainment-complex", "city": "the city central to the far end of the empire", "note": "Arena Amenities reach six tiles; the Colosseum covers the core." },
+        { "district": "encampment", "city": "the city nearest the rival", "note": "Domination direction: Great General points and a Military Academy later." }
+      ],
+      "wonders": [
+        { "name": "Kilwa Kisiwani", "why": "Two suzerainties become +15% yields in every one of seven cities.", "skip_if": "No coastal city, or fewer than two suzerainties at turn 130." },
+        { "name": "Forbidden City", "why": "An extra Wildcard slot; it holds Rationalism beside Craftsmen on the Science direction.", "skip_if": "Printing lands after turn 165 or a Culture civilization has it queued." }
+      ],
+      "governors": [
+        { "governor": "liang", "promotion": "Zoning Commissioner", "city": "the newest city", "note": "Moves every twenty turns.", "why": "Faster districts in the city still building its Hub and Hansa." },
+        { "governor": "victor", "promotion": "Garrison Commander", "city": "the captured city", "why": "Domination direction: Loyalty and Combat Strength where the counterattack comes." },
+        { "governor": "reyna", "promotion": "Tax Collector", "city": "the capital", "why": "Gold from the city at the centre of seven Commercial Hubs." }
+      ],
+      "city_states": [
+        { "slug": "johannesburg", "why": "Production per improved resource type in every city; the resources beside the Hansas count twice." },
+        { "type": "Scientific", "why": "Science direction: six envoys for Science in every University." }
+      ],
+      "great_people": [
+        { "class": "great-scientist", "why": "The Education Eureka and University boosts." },
+        { "class": "great-engineer", "why": "District and wonder Production in the Hansa capital." },
+        { "class": "great-merchant", "why": "Mercantilism Inspiration and Trade Routes for Medieval Faires." }
+      ],
+      "checkpoints": [
+        { "turn": 135, "test": "Era checkpoint. Is the extra district being filled? Every city should hold at least two districts and the three largest at least three with buildings in them; the last four civics should be on the direction's path. Domination: a second city taken since turn 105? Science: Universities in three cities?", "pass": "Continue; queue Workshops wherever a Hansa lacks one.", "fail": "Cities with two empty districts and five population are the characteristic failure: stop placing districts there and grow them with Farms, an Aqueduct and a domestic Food route. Civics taken because they were next is the banked-bonus failure; reroute the tree today. Domination with nothing taken since turn 105 has closed until Bombards; switch to Science while the Campus build is cheap." },
+        { "turn": 170, "test": "Seven or more cities, a Workshop in every Hansa, two Universities, two Markets, Craftsmen slotted, and the direction still reachable?", "pass": "Enter the Industrial phase.", "fail": "If Amenities are negative in three cities, stop everything else for Arenas and luxuries. If Craftsmen is not slotted, the Hansas are running at half; slot it today. If the direction is unreachable, pivot now; the flat curve makes it affordable." }
+      ],
+      "tasks": [
+        { "id": "compound-civic-audit", "turn": 110, "text": "Audit the civic tree: the next four civics are the direction's. If not, re-pick now." },
+        { "id": "compound-workshops", "turn": 125, "text": "Two Workshops built in the two best Hansas; Industrialization Eureka collected." },
+        { "id": "compound-craftsmen", "turn": 130, "text": "Guilds landed and Craftsmen slotted; every Hansa adjacency reads double." },
+        { "id": "compound-universities", "turn": 140, "text": "Two Universities built; Printing Eureka collected." },
+        { "id": "compound-district-count", "turn": 150, "text": "District audit per city: any city with an empty district and under six population gets a Farm triangle and a domestic Food route before its next district." },
+        { "id": "compound-amenity-audit", "turn": 165, "text": "Amenity audit of every city; Arenas or luxuries wherever a city is below zero." }
+      ]
+    },
+    {
+      "id": "industrial",
+      "name": "Peak industrial output",
+      "turns": { "from": 171, "to": 235 },
+      "era": "industrial",
+      "objective": "Put a Factory and a Power Plant in every Hansa, land Ruhr Valley, and spend the Production on the direction's close: Research Labs and a Spaceport site, or Bombards and Cuirassiers for a second capital, and pass the era checkpoint asking whether the direction is still reachable.",
+      "build_order": [
+        { "item": "Factory", "why": "Three for Class Struggle; the regional Production reaches every city within six tiles of a Hansa." },
+        { "item": "Coal Power Plant", "why": "Refining Eureka and Power for the Factories and Research Labs." },
+        { "item": "Bank", "why": "Two for Economics; Stock Exchanges later." },
+        { "item": "Neighborhood", "why": "Two for Sanitation; the Aqueducts run out at fifteen population." },
+        { "item": "Research Lab", "why": "Science direction: the lead is converted here." },
+        { "item": "Bombard", "why": "Domination direction: Renaissance Walls fall to two Bombards and Musketmen." },
+        { "item": "Military Academy", "why": "Domination direction: Corps for Mobilization and a third Military slot's worth of units." }
+      ],
+      "research": [
+        { "id": "tech:industrialization", "note": "Two Workshops gave the Eureka; Factories and Coal." },
+        { "id": "tech:scientific-theory", "note": "The Enlightenment gave the Eureka; Research Labs." },
+        { "id": "tech:economics", "note": "Two Banks; Stock Exchanges." },
+        { "id": "tech:sanitation", "note": "Two Neighborhoods; Housing past the Aqueducts." },
+        { "id": "tech:rifling", "note": "A Niter Mine; Musketmen on the Domination direction and Niter for the Bombards." },
+        { "id": "tech:refining", "note": "A Coal Power Plant; Oil and the Power Plants that follow." },
+        { "id": "tech:electricity", "note": "Two Privateers only on a water map; the U-Boat is behind it." },
+        { "id": "tech:steam-power", "note": "Two Shipyards only if coastal; otherwise on the way to Electricity." }
+      ],
+      "civics": [
+        { "id": "civic:civil-engineering", "note": "Seven district types, which seven German cities reach by accident; Public Works." },
+        { "id": "civic:nationalism", "note": "Casus Belli war on the Domination direction; unboosted otherwise." },
+        { "id": "civic:urbanization", "note": "A fifteen-population Aqueduct city; Neighborhoods." },
+        { "id": "civic:colonialism", "note": "Astronomy gives the Inspiration." },
+        { "id": "civic:natural-history", "note": "An Archaeological Museum on the Culture direction; the Conservation line otherwise." },
+        { "id": "civic:scorched-earth", "note": "Two Field Cannons on the Domination direction." }
+      ],
+      "policies": [
+        { "card": "Public Works", "slot": "economic", "from": "civic:civil-engineering", "why": "Builders faster across seven cities for the Neighborhoods and the Coal Mines." },
+        { "card": "Free Market", "slot": "economic", "from": "civic:the-enlightenment", "why": "Commercial Hub buildings doubled; the Gold buys Research Labs in the small cities." },
+        { "card": "Grand Armee", "slot": "military", "from": "civic:nationalism", "why": "Domination direction: Bombards and Cuirassiers faster in the spare Military slot." },
+        { "card": "Five-Year Plan", "slot": "economic", "from": "civic:class-struggle", "why": "Hansa and Campus adjacency doubled once Class Struggle lands; it replaces Craftsmen." }
+      ],
+      "districts": [
+        { "district": "neighborhood", "city": "the two largest cities", "note": "Sanitation Eureka; place them on low-appeal tiles beside the Hansa." },
+        { "district": "spaceport", "city": "the best Hansa city", "note": "Science direction: the site is reserved now, two tiles from the Hansa so the Factory reaches it." }
+      ],
+      "wonders": [
+        { "name": "Ruhr Valley", "why": "Production per Mine and a flat bonus in the Spaceport city; the German wonder.", "skip_if": "No river Hansa, or Industrialization lands after turn 215." },
+        { "name": "Oxford University", "why": "Science direction: two free techs and Great Scientist points.", "skip_if": "Scientific Theory lands after turn 210 or a Science civilization already has it." }
+      ],
+      "governors": [
+        { "governor": "magnus", "promotion": "Vertical Integration", "city": "the Ruhr Valley city", "why": "Production from every Factory and Power Plant within range in the Spaceport city." },
+        { "governor": "pingala", "promotion": "Grants", "city": "the best Campus city", "why": "Great Person points toward the Great Scientists the Spaceport needs." }
+      ],
+      "city_states": [
+        { "slug": "mexico-city", "why": "Regional effects reach three tiles farther; the Factories and Arenas cover the whole empire." },
+        { "type": "Industrial", "why": "Production in every Factory at six envoys." }
+      ],
+      "great_people": [
+        { "class": "great-engineer", "why": "Production toward Ruhr Valley or the Spaceport." },
+        { "class": "great-scientist", "why": "Research Lab boosts and the late Eurekas." }
+      ],
+      "checkpoints": [
+        { "turn": 200, "test": "Era checkpoint. Is the chosen direction still reachable? Science: Research Labs in three cities and the Science rate first among met civilizations. Domination: a second capital taken since turn 170. Culture: Tourism rising against the top rival's Culture.", "pass": "Continue; the close is thirty-five turns away.", "fail": "A direction out of reach at turn 200 is pivoted, not forced. Seven Hansas with Factories can switch to Science from any other direction and still finish; switch today and reserve the Spaceport site." },
+        { "turn": 235, "test": "Spaceport started, or a third capital in reach of Artillery, or Tourism within reach of the top rival?", "pass": "Enter the close.", "fail": "None: the game is a Score game; keep building Science and Culture in every city, which seven cities with Hansas do well." }
+      ],
+      "tasks": [
+        { "id": "industrial-factories", "turn": 185, "text": "Three Factories built with Coal Power Plants beside them; Class Struggle Inspiration and Refining Eureka collected." },
+        { "id": "industrial-ruhr", "turn": 195, "text": "Ruhr Valley finished in the best river Hansa city." },
+        { "id": "industrial-bombards", "turn": 200, "text": "Domination direction: two Bombards and four Musketmen take the second capital under a Casus Belli." },
+        { "id": "industrial-research-labs", "turn": 215, "text": "Science direction: Research Labs in three cities." },
+        { "id": "industrial-spaceport-site", "turn": 230, "text": "Spaceport district started in the Ruhr Valley city." }
+      ]
+    },
+    {
+      "id": "close",
+      "name": "Close",
+      "turns": { "from": 236, "to": null },
+      "era": "modern",
+      "objective": "Finish the direction with the whole empire's Production: the three Spaceport projects with Power and Great Scientists, the last capitals with Artillery, Infantry and U-Boats on the water, or Film-era Tourism from Museums and Seaside Resorts.",
+      "build_order": [
+        { "item": "Spaceport", "why": "Science direction: the projects start the turn it finishes." },
+        { "item": "Artillery", "why": "Domination direction: Urban Defenses fall to Artillery and Infantry." },
+        { "item": "U-Boat", "why": "Domination direction on a water map: six clear the rival navy and screen the Battleships." },
+        { "item": "Aerodrome", "why": "Two for Synthetic Materials; Bombers for the last sieges or defence." },
+        { "item": "Stock Exchange", "why": "Two for Capitalism; Gold to buy the last buildings." },
+        { "item": "Broadcast Center", "why": "Culture direction: Great Work of Music slots and Tourism." }
+      ],
+      "research": [
+        { "id": "tech:replaceable-parts", "note": "Three Line Infantry on the Domination direction; Infantry to garrison." },
+        { "id": "tech:flight", "note": "Ruhr Valley gives the Eureka; Aerodromes." },
+        { "id": "tech:chemistry", "note": "Alliance level 2; Research Labs." },
+        { "id": "tech:plastics", "note": "An Oil Well; Oil for Power and Tanks." },
+        { "id": "tech:computers", "note": "Tier 3 government; the Science direction's last multiplier." },
+        { "id": "tech:steel", "note": "An Ironclad and a Coal Mine; Battleships on the Domination direction." },
+        { "id": "tech:combined-arms", "note": "Three Armies on the Domination direction." }
+      ],
+      "civics": [
+        { "id": "civic:ideology", "note": "No Inspiration; the gate to Tier 3 governments." },
+        { "id": "civic:class-struggle", "note": "Three Factories; Communism and Five-Year Plan." },
+        { "id": "civic:suffrage", "note": "Four Sewers across seven cities; Democracy." },
+        { "id": "civic:space-race", "note": "The Spaceport; International Space Agency." },
+        { "id": "civic:capitalism", "note": "Two Stock Exchanges." },
+        { "id": "civic:mobilization", "note": "Three Corps on the Domination direction; Levee en Masse." }
+      ],
+      "policies": [
+        { "card": "International Space Agency", "slot": "diplomatic", "from": "civic:space-race", "why": "Science per suzerainty; Hattusa, Johannesburg and Mexico City are held." },
+        { "card": "Levee en Masse", "slot": "military", "from": "civic:mobilization", "why": "Domination direction: cheaper upkeep on the Artillery, Infantry and U-Boat corps." },
+        { "card": "Heritage Tourism", "slot": "economic", "from": "civic:cultural-heritage", "why": "Culture direction: Tourism from Great Works doubled." }
+      ],
+      "districts": [
+        { "district": "aerodrome", "city": "the two Hansa cities nearest the border", "note": "Synthetic Materials Eureka." }
+      ],
+      "wonders": [],
+      "governors": [
+        { "governor": "pingala", "promotion": "Space Initiative", "city": "the Spaceport city", "why": "Production toward the three projects." }
+      ],
+      "city_states": [],
+      "great_people": [
+        { "class": "great-scientist", "why": "The Atomic and Information Great Scientists are the only boosts for Rocketry and Nuclear Fission." },
+        { "class": "great-engineer", "why": "Project Production in the Spaceport city." },
+        { "class": "great-admiral", "why": "Domination direction on water: the U-Boat pack moves and fights harder under one." }
+      ],
+      "checkpoints": [
+        { "turn": 280, "test": "Science: Moon Landing done and the Mars projects running? Domination: a capital taken since turn 235? Culture: Tourism above two rivals' Culture?", "pass": "Continue to the end.", "fail": "Convert to Score; seven cities with four districts each score well, and the plan stops paying for anything that does not add to it." }
+      ],
+      "tasks": [
+        { "id": "close-moon", "turn": 255, "text": "Science direction: Moon Landing project started with Power in the Spaceport city." },
+        { "id": "close-artillery", "turn": 255, "text": "Domination direction: four Artillery and four Infantry under a Great General at the next capital, U-Boats clearing the water." },
+        { "id": "close-tourism", "turn": 260, "text": "Culture direction: Broadcast Centers in the three Theater Square cities and Seaside Resorts on any coast." },
+        { "id": "close-review", "turn": 280, "text": "Review the turn 280 checkpoint and continue or declare the game a Score game." }
+      ]
+    }
+  ],
+  "boosts": [
+    { "id": "tech:bronze-working", "fit": "cheap", "when": "found", "how": "Three camp kills from the two Discipline Warriors before turn 30." },
+    { "id": "tech:archery", "fit": "cheap", "when": "found", "how": "The Slinger finishes a camp scout the Warriors have wounded." },
+    { "id": "tech:masonry", "fit": "cheap", "when": "found", "how": "A Quarry from the first Builder where Stone or Marble sits." },
+    { "id": "tech:wheel", "fit": "cheap", "when": "found", "how": "The first Builder mines a resource hill that the Hansa will touch later." },
+    { "id": "tech:writing", "fit": "free", "when": "found", "how": "The Scout meets the first rival civilization." },
+    { "id": "tech:irrigation", "fit": "cheap", "when": "found", "how": "A Farm on Wheat or Rice from the first Builder." },
+    { "id": "tech:astrology", "fit": "costly", "when": "found", "how": "Only if the Scout happens on a natural wonder." },
+    { "id": "tech:sailing", "fit": "cheap", "when": "found", "how": "A coastal second or third city if the coast is close." },
+    { "id": "tech:currency", "fit": "free", "when": "hansa", "how": "The first Trader runs a domestic route to the second city." },
+    { "id": "tech:iron-working", "fit": "cheap", "when": "hansa", "how": "A Mine on the Iron the second Builder reaches; the Hansa wants it adjacent anyway." },
+    { "id": "tech:apprenticeship", "fit": "free", "when": "hansa", "how": "Three Mines on the resources around the first two Hansa sites." },
+    { "id": "tech:construction", "fit": "cheap", "when": "hansa", "how": "A Water Mill in a river city." },
+    { "id": "tech:mathematics", "fit": "free", "when": "hansa", "how": "Commercial Hub, Campus and Hansa in the capital by turn 85; the extra slot makes this early." },
+    { "id": "tech:engineering", "fit": "cheap", "when": "hansa", "how": "Ancient Walls in the city nearest the rival." },
+    { "id": "tech:horseback-riding", "fit": "cheap", "when": "hansa", "how": "A Pasture on Horses or Sheep." },
+    { "id": "tech:machinery", "fit": "cheap", "when": "hansa", "how": "Three Archers built under Agoge in the spare Military slot." },
+    { "id": "tech:shipbuilding", "fit": "skip", "when": null, "how": "" },
+    { "id": "tech:celestial-navigation", "fit": "skip", "when": null, "how": "" },
+    { "id": "tech:military-tactics", "fit": "costly", "when": "hansa", "how": "A Spearman kill only if a camp or the war offers one." },
+    { "id": "tech:education", "fit": "cheap", "when": "compound", "how": "The first Great Scientist from three Campuses." },
+    { "id": "tech:military-engineering", "fit": "free", "when": "compound", "how": "The capital Aqueduct built for the Hansa adjacency." },
+    { "id": "tech:castles", "fit": "free", "when": "compound", "how": "Any Tier 2 government at Medieval Faires or Divine Right." },
+    { "id": "tech:banking", "fit": "free", "when": "compound", "how": "Guilds is on the civic path for Craftsmen." },
+    { "id": "tech:printing", "fit": "cheap", "when": "compound", "how": "Two Universities in the best Campus cities." },
+    { "id": "tech:mass-production", "fit": "cheap", "when": "compound", "how": "One Lumber Mill on Woods beside a Hansa." },
+    { "id": "tech:astronomy", "fit": "cheap", "when": "compound", "how": "A University in the Mountain-adjacent Campus." },
+    { "id": "tech:stirrups", "fit": "free", "when": "compound", "how": "Feudalism is on the civic path for Serfdom." },
+    { "id": "tech:siege-tactics", "fit": "costly", "when": "compound", "how": "Two Trebuchets only on the Domination direction." },
+    { "id": "tech:buttress", "fit": "cheap", "when": "compound", "how": "The Colosseum or Kilwa Kisiwani counts as a Classical or later wonder." },
+    { "id": "tech:gunpowder", "fit": "costly", "when": "compound", "how": "An Armory only on the Domination direction's Encampment." },
+    { "id": "tech:metal-casting", "fit": "costly", "when": "compound", "how": "Two Crossbowmen under Feudal Contract on the Domination direction." },
+    { "id": "tech:industrialization", "fit": "free", "when": "industrial", "how": "Two Workshops in the first two Hansas." },
+    { "id": "tech:scientific-theory", "fit": "free", "when": "industrial", "how": "The Enlightenment is on the civic path." },
+    { "id": "tech:economics", "fit": "cheap", "when": "industrial", "how": "Two Banks in the Commercial Hubs that touch the Hansas." },
+    { "id": "tech:sanitation", "fit": "cheap", "when": "industrial", "how": "Two Neighborhoods in the largest cities." },
+    { "id": "tech:rifling", "fit": "cheap", "when": "industrial", "how": "A Mine on Niter, which Hattusa makes unnecessary but the Hansa adjacency still wants." },
+    { "id": "tech:refining", "fit": "free", "when": "industrial", "how": "The first Coal Power Plant beside a Factory." },
+    { "id": "tech:electricity", "fit": "costly", "when": "industrial", "how": "Two Privateers only on a water map with the Domination direction." },
+    { "id": "tech:steam-power", "fit": "costly", "when": "industrial", "how": "Two Shipyards only if two cities are coastal." },
+    { "id": "tech:ballistics", "fit": "skip", "when": null, "how": "" },
+    { "id": "tech:military-science", "fit": "costly", "when": "industrial", "how": "A Knight kill only on the Domination direction." },
+    { "id": "tech:replaceable-parts", "fit": "costly", "when": "close", "how": "Three Line Infantry only on the Domination direction." },
+    { "id": "tech:flight", "fit": "cheap", "when": "close", "how": "Ruhr Valley or Oxford University." },
+    { "id": "tech:chemistry", "fit": "cheap", "when": "close", "how": "Alliance level 2 with the Diplomatic Service ally." },
+    { "id": "tech:plastics", "fit": "cheap", "when": "close", "how": "An Oil Well on the first Oil found." },
+    { "id": "tech:computers", "fit": "free", "when": "close", "how": "Any Tier 3 government after Ideology." },
+    { "id": "tech:steel", "fit": "costly", "when": "close", "how": "An Ironclad and a Coal Mine only on the Domination direction with coast." },
+    { "id": "tech:combined-arms", "fit": "costly", "when": "close", "how": "Three Armies only on the Domination direction." },
+    { "id": "tech:synthetic-materials", "fit": "cheap", "when": "close", "how": "Two Aerodromes in the border Hansa cities." },
+    { "id": "civic:craftsmanship", "fit": "free", "when": "found", "how": "Three improvements from the first Builder." },
+    { "id": "civic:early-empire", "fit": "free", "when": "found", "how": "Six population across the first two cities." },
+    { "id": "civic:foreign-trade", "fit": "costly", "when": "found", "how": "A second continent only if the Scout reaches one." },
+    { "id": "civic:state-workforce", "fit": "free", "when": "found", "how": "The capital Commercial Hub, placed at two population." },
+    { "id": "civic:military-tradition", "fit": "free", "when": "found", "how": "The first camp the Discipline Warriors clear." },
+    { "id": "civic:mysticism", "fit": "free", "when": "hansa", "how": "City Patron Goddess founded in the first phase." },
+    { "id": "civic:political-philosophy", "fit": "cheap", "when": "hansa", "how": "Three city-states met by the Scout and a Warrior." },
+    { "id": "civic:military-training", "fit": "costly", "when": "hansa", "how": "An Encampment only on the Domination direction." },
+    { "id": "civic:games-and-recreation", "fit": "free", "when": "hansa", "how": "Researching Construction for the Water Mill." },
+    { "id": "civic:recorded-history", "fit": "cheap", "when": "hansa", "how": "Two Campuses, in the capital and the best Mountain city." },
+    { "id": "civic:drama-and-poetry", "fit": "cheap", "when": "hansa", "how": "The Pyramids or the Colosseum off a Hansa." },
+    { "id": "civic:defensive-tactics", "fit": "skip", "when": null, "how": "" },
+    { "id": "civic:theology", "fit": "skip", "when": null, "how": "" },
+    { "id": "civic:feudalism", "fit": "cheap", "when": "compound", "how": "Six Farms across seven cities, which the Aqueduct cities want anyway." },
+    { "id": "civic:civil-service", "fit": "free", "when": "compound", "how": "The capital at ten population under its Aqueduct." },
+    { "id": "civic:guilds", "fit": "cheap", "when": "compound", "how": "Two Markets in the Commercial Hubs that touch the Hansas." },
+    { "id": "civic:medieval-faires", "fit": "free", "when": "compound", "how": "Four Trade Routes from seven Commercial Hubs." },
+    { "id": "civic:mercenaries", "fit": "costly", "when": "compound", "how": "Eight land units only on the Domination direction." },
+    { "id": "civic:divine-right", "fit": "skip", "when": null, "how": "" },
+    { "id": "civic:exploration", "fit": "skip", "when": null, "how": "" },
+    { "id": "civic:humanism", "fit": "costly", "when": "compound", "how": "A Great Artist only on the Culture direction." },
+    { "id": "civic:diplomatic-service", "fit": "cheap", "when": "compound", "how": "An alliance with the civilization that is not the target." },
+    { "id": "civic:the-enlightenment", "fit": "cheap", "when": "compound", "how": "Three Great People across the game." },
+    { "id": "civic:mercantilism", "fit": "cheap", "when": "compound", "how": "A Great Merchant from seven Commercial Hubs." },
+    { "id": "civic:reformed-church", "fit": "skip", "when": null, "how": "" },
+    { "id": "civic:civil-engineering", "fit": "free", "when": "industrial", "how": "Seven district types across seven cities with an extra slot each." },
+    { "id": "civic:nationalism", "fit": "costly", "when": "industrial", "how": "A Casus Belli war only on the Domination direction." },
+    { "id": "civic:urbanization", "fit": "cheap", "when": "industrial", "how": "An Aqueduct city at fifteen population." },
+    { "id": "civic:colonialism", "fit": "free", "when": "industrial", "how": "Researching Astronomy for the University Eureka." },
+    { "id": "civic:natural-history", "fit": "costly", "when": "industrial", "how": "An Archaeological Museum only on the Culture direction." },
+    { "id": "civic:scorched-earth", "fit": "costly", "when": "industrial", "how": "Two Field Cannons only on the Domination direction." },
+    { "id": "civic:opera-and-ballet", "fit": "costly", "when": "industrial", "how": "An Art Museum only on the Culture direction." },
+    { "id": "civic:class-struggle", "fit": "free", "when": "close", "how": "Three Factories in the Hansas, which every direction builds." },
+    { "id": "civic:suffrage", "fit": "cheap", "when": "close", "how": "Four Sewers across seven cities." },
+    { "id": "civic:space-race", "fit": "cheap", "when": "close", "how": "The Spaceport on the Science direction." },
+    { "id": "civic:capitalism", "fit": "cheap", "when": "close", "how": "Two Stock Exchanges in the Commercial Hubs." },
+    { "id": "civic:mobilization", "fit": "costly", "when": "close", "how": "Three Corps only on the Domination direction." },
+    { "id": "civic:cultural-heritage", "fit": "costly", "when": "close", "how": "A themed Museum only on the Culture direction." },
+    { "id": "civic:nuclear-program", "fit": "cheap", "when": "close", "how": "The first Research Lab on the Science direction." },
+    { "id": "civic:professional-sports", "fit": "cheap", "when": "close", "how": "Two Entertainment Complexes from the Amenity audits." }
+  ],
+  "decision_triggers": [
+    { "name": "City-state in reach", "if": "At turn 30 a city-state within eight tiles has no Walls and no suzerain with an army nearby.", "then": "Take it: four Warriors and two Archers under Discipline and Agoge attack at an effective 44, and it is a second city with its own extra district by turn 45. Send no envoys there first; they are lost on the declaration." },
+    { "name": "Neighbour in Swordsman range", "if": "At turn 50 a rival capital is within twelve tiles and has no Walls.", "then": "Choose Domination at turn 60. Four Swordsmen, two Archers and a Battering Ram under Oligarchy take it by turn 95; the captured city gets a Commercial Hub and a Hansa like any German city and the empire continues as the Science empire afterward." },
+    { "name": "Empty districts", "if": "At any checkpoint a city holds two or more districts with no building and fewer than six population.", "then": "The extra district is being placed and not filled. Stop placing districts in that city, build an Aqueduct and a Farm triangle, run a domestic Food route into it, and resume districts at six population." },
+    { "name": "Civics drifting", "if": "At any era checkpoint the last three civics were not on the chosen direction's path.", "then": "The Production is being banked. Re-pick the civic queue today toward the direction's government and policies, and note it as a near-miss on the plan." },
+    { "name": "Amenities first", "if": "Three or more cities show negative Amenities.", "then": "Stop settling, build Arenas, buy a luxury, and send envoys to an Industrial or Trade city-state with an Amenity bonus. A wide Germany's limit is happiness, not land." }
+  ],
+  "abort": {
+    "trigger": "Turn 150 with no direction committed: no city taken, no Campus in half the cities, no Theater Square outside the capital, and a civic tree picked in order.",
+    "actions": [
+      "Pick the direction the empire is already closest to; with seven Hansas that is almost always Science. Commit fully; Linear leaders lose by drifting, not by collapsing.",
+      "Reroute the civic queue to Recorded History, The Enlightenment and Class Struggle today.",
+      "Put a Campus in every city without one before any other district, and a Workshop in every Hansa without one."
+    ]
+  },
+  "fail_state": "Turn 200 with eight comfortable cities, a Commercial Hub and a Hansa in every one, Production first in the world and nothing to show for it: no capital taken, Campuses in three cities, no Spaceport site, and half the districts standing empty in six-population cities. Germany has out-built the map and converted none of it, and the extra district has nothing left to add.",
+  "common_mistakes": [
+    "Placing the Hansa before the Commercial Hub. The +2 from the Hub is the biggest single adjacency and the Hub must exist first; a Hansa placed early and alone reads +1 for the rest of the game.",
+    "Leaving the second Military slot empty or holding Survey into the Classical era. The slot is the leader ability; Agoge, Conscription and Feudal Contract live in it.",
+    "Placing the extra district in a city that cannot staff it. Three districts at four population is allowed, not useful, until the Aqueduct and the Farms arrive.",
+    "Sending envoys to the city-state you then attack. Frederick's +7 and his envoys are exclusive; decide at turn 30 and do one.",
+    "Treating the Production lead as a score. It builds Campuses and a Spaceport or it builds Bombards; if the queues are wonders and Monuments, it is building nothing."
+  ],
+  "sources": [
+    "Civilization VI Civilopedia, Gathering Storm ruleset (Germany, Frederick Barbarossa, Hansa, U-Boat, Free Imperial Cities).",
+    "Boost objectives cross-checked against civilization6planner.com tech-tree and civics-tree pages, 2026-10-01.",
+    "Leadership Focus tags, caveats, Linear template and the Linear_Trajan worked example in this repository."
+  ]
+}

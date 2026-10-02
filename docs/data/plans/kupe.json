@@ -1,0 +1,1825 @@
+{
+  "leader": "Kupe",
+  "civilization": "Māori",
+  "generated": "2026-10-02",
+  "slug": "kupe",
+  "shape": "Linear",
+  "secondary_shape": null,
+  "version": 1,
+  "updated": "2026-10-02",
+  "assumptions": {
+    "ruleset": "Gathering Storm with every expansion and the Leader Pass",
+    "speed": "Standard",
+    "difficulty": "Emperor",
+    "map": "Continents, Island Plates or Archipelago, standard size, 8 civilizations",
+    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. Kupe has one persona and that is the one planned here. The plan starts at sea: turn 1 is the first turn of the voyage, not the first turn of a city."
+  },
+  "verdict": {
+    "victory": "Culture",
+    "secondary": "Science",
+    "confidence": "medium",
+    "one_line": "Sail for five turns and no more, land on a wooded coast, never clear a feature, put a Harbor and then a Theater Square with a Marae in every coastal city, decide by turn 60 whether the feature Culture goes to Tourism or the coastal Campuses, and close with Flight-era Marae Tourism, National Parks and Seaside Resorts.",
+    "why": "Mana pays Production on every unimproved Woods and Rainforest tile and forbids harvesting them, Kupe's Voyage pays Science and Culture while the canoe looks for land and hands the first city a Builder and a citizen, and the Marae pays Culture and Faith on every feature tile in the city and Tourism on each of them after Flight. That is an empire that keeps its terrain and is paid for keeping it, and the Culture it produces buys nothing by itself; the terrain has to become a direction. Culture is the default because the Marae, the Fishing Boat culture bombs and the untouched Woods are already the Tourism engine, with National Parks and Seaside Resorts on the same high-Appeal coast and nothing in the kit expiring. Science is the second direction and not Religion because the Voyage's Science, the coastal Campuses beside Reefs and the Production from Woods build Universities well, while a Religion needs a Great Prophet before turn 100 that a leader who lands on turn 6 rarely earns."
+  },
+  "map_check": {
+    "must_have": [
+      "A coast with Woods or Rainforest within five turns of sailing; the canoe moves four or five tiles a turn and land further than that costs more growth than the voyage pays.",
+      "Hills or sea resources beside the landing site, since the city cannot chop and the Production comes from unimproved features and Fishing Boats."
+    ],
+    "prefer": [
+      "Reef or the Great Barrier Reef for the Campus adjacency and God of the Sea Production.",
+      "Piopiotahi or Bermuda Triangle in sight of the coast; a natural wonder is Appeal and a park.",
+      "Nan Madol, Rapa Nui or Auckland on the map; coastal Culture and shallow-water Production fit every Maori city.",
+      "A second landmass within ten tiles, so the Foreign Trade Inspiration and the second wave of cities both arrive early."
+    ],
+    "no_go": "Open ocean with no coast in sight after six turns, or a landing with bare flat grassland and no features. The Marae pays per feature tile and Mana pays per unimproved Woods; a featureless coast makes the Maori a late-landing civilization with a cheap Amphitheater.",
+    "fallback": "If the first coast is poor, land anyway by turn 8 and treat the first city as a Harbor port: the Fishing Boats bomb the coast, the free Builder improves the sea, and the second and third Settlers sail to the wooded coast the Scout ship finds; a Maori Settler crosses ocean from the first turn and loses nothing to the water."
+  },
+  "kit_levers": [
+    {
+      "source": "leader_ability",
+      "name": "Kupe's Voyage",
+      "buys": "The game starts embarked on Ocean with +2 Science and +2 Culture per turn until the first city is founded, which then gets a free Builder and +1 Population, and the Palace gives +3 Housing and +1 Amenity.",
+      "exploit": "Spend four or five turns looking and then land; every turn at sea pays four yields and costs a turn of growth, Production and the pantheon race, and the trade turns against you around turn 6. The free Builder puts Fishing Boats on two sea resources the turn after landing, which is Food, a culture bomb and the Celestial Navigation Eureka at once; the extra Housing lets the capital grow to eight before it needs anything."
+    },
+    {
+      "source": "civ_ability",
+      "name": "Mana",
+      "buys": "Sailing and Shipbuilding known from turn one, Ocean movement from the start, embarked units with extra Combat Strength and Movement, +1 Production on unimproved Woods and Rainforest, Fishing Boats that give extra Food and claim adjacent tiles, and no harvesting or feature removal.",
+      "exploit": "Woods are Production tiles without a Builder and Rainforest beside a Marae is Culture and Faith too, so the plan improves the sea and the flat land and leaves every feature standing. Fishing Boats on the border claim the tiles beside them, which is how a coastal city takes a Reef or a wonder tile from a rival. A Settler on a Galley reaches the second landmass before anyone else has a boat."
+    },
+    {
+      "source": "unique_infrastructure",
+      "name": "Marae",
+      "buys": "An Amphitheater replacement with no maintenance and no Great Work slots that gives +1 Culture and +1 Faith to every tile with a passable feature in the city, and +2 Tourism on each of them after Flight.",
+      "exploit": "A Theater Square and a Marae in every city as the second district, placed so the city works its Woods, Rainforest, Marsh and Reef tiles. Eight cities with six feature tiles each is close to fifty Culture and fifty Faith for no upkeep, and after Flight the same tiles are a hundred Tourism. The Faith buys Naturalists and Rock Bands, since the Maori earn no Great Writers and the Writing slots do not exist."
+    },
+    {
+      "source": "unique_unit",
+      "name": "Toa",
+      "buys": "A Swordsman replacement that needs no Iron, weakens adjacent enemy units with the Haka, and can build the Pa fort on Hills.",
+      "exploit": "Four Toa are the whole Classical army: they clear the camp near the landing, a Pa on the hill between the capital and the nearest rival holds the border, and the Haka makes an enemy stack lose a fight it should win. No Iron Mine is needed, which matters for a civilization that cannot mine a wooded hill."
+    },
+    {
+      "source": "agenda",
+      "name": "Kaitiakitanga",
+      "buys": "Kupe likes civilizations that keep their features and build National Parks and dislikes those that harvest and clear.",
+      "exploit": "Only matters for AI Kupe: an empire that never chops keeps him friendly for the whole game, which is an alliance for the Chemistry Eureka and an open border for the Tourism."
+    }
+  ],
+  "shape_block": {
+    "linear": {
+      "direction": {
+        "options": [
+          {
+            "victory": "Culture",
+            "when_it_fits": "Five coastal cities with four or more feature tiles each are founded by turn 60 and a Theater Square is placed in the capital. The Marae in every city, Great Artists and Musicians in the Museums the Marae does not replace, National Parks on the untouched Woods and Seaside Resorts on the Breathtaking coast turn the terrain into Tourism; after Flight every Marae tile adds two more. Nothing in the kit expires on this path."
+          },
+          {
+            "victory": "Science",
+            "when_it_fits": "The coast holds Reefs or the Great Barrier Reef and the Culture rivals are already two eras ahead at turn 60. Coastal Campuses beside Reefs read +3 or better, the Harbors pay the Gold, the Woods pay the Production for Universities and the Spaceport, and the Marae Culture reaches Rationalism early. The Voyage's early Science is a head start and nothing more; take this when the map has handed over the Reefs."
+          },
+          {
+            "victory": "Religion",
+            "when_it_fits": "A Great Prophet is still available at turn 90 and the Marae Faith can buy him with Faith patronage. Fifty Faith a turn from eight Marae buys Apostles faster than any Holy Site civilization and the coastal cities are reachable by religious units on Galleys; but the Prophet usually is gone, so take this only when the Great People screen shows one left and no rival within forty points of him."
+          }
+        ],
+        "choose_by": 60,
+        "commit_test": "At turn 100 count the Theater Squares: if four cities hold one with a Marae finished and the Faith is being spent on Builders or banked for Naturalists, the direction is Culture and it is being spent. If the cities hold Harbors and nothing else and the Culture buys civics in tree order, the terrain is being kept and not converted, and the plan has failed its own test."
+      }
+    }
+  },
+  "phases": [
+    {
+      "id": "voyage",
+      "name": "Five turns at sea, then a wooded coast",
+      "turns": {
+        "from": 1,
+        "to": 40
+      },
+      "era": "ancient",
+      "objective": "Land by turn 6 on a coast with Woods or Rainforest and a sea resource, spend the free Builder on Fishing Boats, found the second city by turn 25 on the same or the next coast, take God of the Sea, and clear the one camp near the landing with Warriors before the Toa exist.",
+      "build_order": [
+        {
+          "item": "Scout",
+          "why": "Finds the second coast and the rival the Writing Eureka needs; it embarks from turn one and loses nothing to water."
+        },
+        {
+          "item": "Warrior",
+          "why": "A second Warrior clears the camp near the landing with the first; Bronze Working from the kills."
+        },
+        {
+          "item": "Settler",
+          "why": "Second city by turn 25 on the next wooded coast; it sails there on its own."
+        },
+        {
+          "item": "Slinger",
+          "why": "Archery Eureka on a camp scout; the garrison while the Warriors escort."
+        },
+        {
+          "item": "Galley",
+          "why": "Escorts the Settler on the water and clears the Barbarian Quadriremes that find a coastal capital; Shipbuilding is already known."
+        },
+        {
+          "item": "Monument",
+          "why": "The Culture to reach Drama and Poetry and the Marae by turn 65."
+        },
+        {
+          "item": "Settler",
+          "why": "Third city; Colonization is slotted and the capital has eight Housing from the Palace."
+        },
+        {
+          "item": "Builder",
+          "why": "A second Builder for Fishing Boats on every sea resource and Farms on the flat land; nothing on a feature."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:astrology",
+          "note": "A natural wonder seen from the canoe gives the Eureka; the Holy Site is the Faith supplement, not the engine."
+        },
+        {
+          "id": "tech:writing",
+          "note": "The Scout meets a rival; a coastal Campus beside a Reef is the Science direction."
+        },
+        {
+          "id": "tech:bronze-working",
+          "note": "Three camp kills from the Warriors near the landing."
+        },
+        {
+          "id": "tech:archery",
+          "note": "Slinger kill at the first camp."
+        },
+        {
+          "id": "tech:celestial-navigation",
+          "note": "Two Fishing Boats from the free Builder; Harbors are the first district in every city."
+        },
+        {
+          "id": "tech:irrigation",
+          "note": "A Farm on a flat resource; Farms are the one land improvement this plan builds early."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:code-of-laws",
+          "note": "God King for the pantheon; Discipline for the camp."
+        },
+        {
+          "id": "civic:foreign-trade",
+          "note": "The canoe usually sees a second continent before landing; Maritime Industries."
+        },
+        {
+          "id": "civic:craftsmanship",
+          "note": "Three improvements from the free Builder: two Fishing Boats and a Farm."
+        },
+        {
+          "id": "civic:early-empire",
+          "note": "Six population across two cities; the Palace Housing makes the capital grow fast."
+        },
+        {
+          "id": "civic:mysticism",
+          "note": "Pantheon gives the Inspiration."
+        },
+        {
+          "id": "civic:state-workforce",
+          "note": "The first Harbor gives the Inspiration."
+        }
+      ],
+      "policies": [
+        {
+          "card": "God King",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "God of the Sea by turn 28 even with a late landing; swap it out the turn after."
+        },
+        {
+          "card": "Discipline",
+          "slot": "military",
+          "from": "civic:code-of-laws",
+          "why": "Two Warriors beat the camp near the landing before it spawns a Quadrireme."
+        },
+        {
+          "card": "Maritime Industries",
+          "slot": "military",
+          "from": "civic:foreign-trade",
+          "why": "Galleys at half cost; the Settler escorts and the camp-ship hunters."
+        },
+        {
+          "card": "Colonization",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "Settlers at half cost until six coastal cities stand."
+        }
+      ],
+      "districts": [
+        {
+          "district": "harbor",
+          "city": "capital",
+          "note": "The first district: Production and Food for a city that cannot chop, and Housing for a coast with no river."
+        }
+      ],
+      "pantheon": {
+        "slug": "god-of-the-sea",
+        "why": "Production from every Fishing Boat, and the Maori put a Fishing Boat on every sea tile they can reach; it is the land Production the chop would have been.",
+        "alternative": "earth-goddess"
+      },
+      "wonders": [],
+      "governors": [],
+      "city_states": [
+        {
+          "type": "Industrial",
+          "why": "Production toward districts in a capital that cannot chop; Auckland later is Production on every shallow tile."
+        },
+        {
+          "type": "Cultural",
+          "why": "Culture in the capital at one envoy, and Nan Madol later pays every coastal district."
+        }
+      ],
+      "great_people": [],
+      "checkpoints": [
+        {
+          "turn": 8,
+          "test": "Capital founded on a coast with at least two Woods or Rainforest tiles and one sea resource in its rings, and the free Builder already working?",
+          "pass": "Fishing Boats on the two best sea tiles, then a Farm; the Scout keeps sailing.",
+          "fail": "Still at sea on turn 8 means the search went too far; land on the next coast with any feature at all and let the second Settler find the better one. Landed with no sea resource means the Builder does Farms and the Harbor goes first anyway."
+        },
+        {
+          "turn": 40,
+          "test": "Two cities founded on coasts with features, the pantheon taken, the landing camp cleared, and no feature removed anywhere?",
+          "pass": "Enter the shore phase; the direction decision is twenty turns away.",
+          "fail": "One city with the second Settler on a Galley is acceptable. A pantheon after turn 35 means the Monument is missing; buy it. A camp alive beside the capital is Quadriremes in ten turns; the two Warriors and the Galley clear it now."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "voyage-land",
+          "turn": 5,
+          "text": "Land by turn 6 on a coast with Woods or Rainforest and a sea resource; move the Scout and the Warrior ahead on turns 1 to 4 to see two coasts, then settle the better."
+        },
+        {
+          "id": "voyage-fishing-boats",
+          "turn": 7,
+          "text": "Free Builder: two Fishing Boats on the sea resources, then a Farm on flat land; Celestial Navigation and Craftsmanship collected."
+        },
+        {
+          "id": "voyage-clear-camp",
+          "turn": 20,
+          "text": "Both Warriors clear the camp nearest the capital before it launches a Quadrireme."
+        },
+        {
+          "id": "voyage-second-city",
+          "turn": 25,
+          "text": "Second city founded on a wooded coast by Settler on a Galley; confirm the Fishing Boat range claims a tile the city did not own."
+        },
+        {
+          "id": "voyage-pantheon",
+          "turn": 28,
+          "text": "Found God of the Sea, or Earth Goddess if the coast is a line of Breathtaking cliffs and the sea resources are few."
+        },
+        {
+          "id": "voyage-no-clear",
+          "turn": 30,
+          "text": "Check every Builder order against the feature rule: Fishing Boats, Farms, Pastures and Camps only; nothing that would remove Woods, Rainforest or Marsh, which the game will refuse anyway."
+        }
+      ]
+    },
+    {
+      "id": "shore",
+      "name": "Harbors, Theater Squares and the decision",
+      "turns": {
+        "from": 41,
+        "to": 100
+      },
+      "era": "classical",
+      "objective": "Reach six coastal cities on two landmasses, put a Harbor and then a Theater Square with a Marae in each, hold the border with Toa and a Pa, take Classical Republic, and decide by turn 60 whether the feature Culture goes to Tourism or the Reef Campuses.",
+      "build_order": [
+        {
+          "item": "Settler",
+          "why": "Cities three through six, each on a coast with four or more feature tiles; they sail where they need to."
+        },
+        {
+          "item": "Harbor",
+          "why": "First district in every city: Production, Food and Gold without an Appeal cost; two by turn 90 for Cartography."
+        },
+        {
+          "item": "Theater Square",
+          "why": "Second district in every city; placed so the Marae's city works its feature tiles."
+        },
+        {
+          "item": "Marae",
+          "why": "The turn Drama and Poetry lands: Culture and Faith on every feature tile in the city, no upkeep."
+        },
+        {
+          "item": "Toa",
+          "why": "Four at Iron Working with no Iron: the camp clearers and the Pa builders on the border hill."
+        },
+        {
+          "item": "Trader",
+          "why": "Currency Eureka; a domestic route carries Production into a new coastal city."
+        },
+        {
+          "item": "Campus",
+          "why": "The capital, beside the Reef or coast: Recorded History and the Science direction."
+        },
+        {
+          "item": "Lighthouse",
+          "why": "Housing and Food in every Harbor city; Great Admiral points for the Mausoleum later."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:currency",
+          "note": "First Trade Route gives the Eureka; Commercial Hubs come third, after the Theater Square."
+        },
+        {
+          "id": "tech:iron-working",
+          "note": "Unboosted unless an Iron hill is bare; the Toa needs no Iron, only the tech."
+        },
+        {
+          "id": "tech:masonry",
+          "note": "A Quarry on a bare Stone hill; Ancient Walls for the coastal capital."
+        },
+        {
+          "id": "tech:mathematics",
+          "note": "Harbor, Theater Square and Campus in the capital by turn 85."
+        },
+        {
+          "id": "tech:construction",
+          "note": "A Water Mill in a river city if any; otherwise unboosted on the way to Mass Production."
+        },
+        {
+          "id": "tech:horseback-riding",
+          "note": "A Pasture gives the Eureka; Pastures keep the features around them."
+        },
+        {
+          "id": "tech:apprenticeship",
+          "note": "Three Mines on bare hills only; a wooded hill cannot be mined by the Maori."
+        },
+        {
+          "id": "tech:engineering",
+          "note": "Ancient Walls in the capital; Barbarian Quadriremes and Harald both come by sea."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:political-philosophy",
+          "note": "Three city-states met by the Scout ship; Classical Republic for the Amenities and Great Person points."
+        },
+        {
+          "id": "civic:drama-and-poetry",
+          "note": "The Marae unlocks here; a wonder gives the Inspiration, otherwise it is the first unboosted civic and worth it."
+        },
+        {
+          "id": "civic:military-tradition",
+          "note": "First camp cleared; on the path to Political Philosophy."
+        },
+        {
+          "id": "civic:games-and-recreation",
+          "note": "Construction gives the Inspiration."
+        },
+        {
+          "id": "civic:recorded-history",
+          "note": "Two Campuses on the Science direction; otherwise unboosted on the way to Humanism."
+        },
+        {
+          "id": "civic:naval-tradition",
+          "note": "A Quadrireme kill against a Barbarian ship; Harbors get a Culture adjacency card and Great Admiral points."
+        },
+        {
+          "id": "civic:theology",
+          "note": "Unboosted unless a religion is bought; on the way to Reformed Church and Humanism's neighbours."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Classical Republic",
+          "slot": "wildcard",
+          "from": "civic:political-philosophy",
+          "why": "Amenities and Great Person points for six coastal cities; the Artists and Musicians start here."
+        },
+        {
+          "card": "Aesthetics",
+          "slot": "economic",
+          "from": "civic:drama-and-poetry",
+          "why": "Doubled Theater Square adjacency in every city; a Theater Square beside a Harbor and a wonder reads well."
+        },
+        {
+          "card": "Caravansaries",
+          "slot": "economic",
+          "from": "civic:foreign-trade",
+          "why": "Gold on the routes that carry Production between the islands."
+        },
+        {
+          "card": "Agoge",
+          "slot": "military",
+          "from": "civic:craftsmanship",
+          "why": "Toa at half cost; four of them hold the Classical era."
+        },
+        {
+          "card": "Diplomatic League",
+          "slot": "diplomatic",
+          "from": "civic:political-philosophy",
+          "why": "First envoy doubled to Nan Madol, Rapa Nui and Auckland."
+        }
+      ],
+      "districts": [
+        {
+          "district": "harbor",
+          "city": "every city, as the first district",
+          "note": "Beside a sea resource for adjacency; the Lighthouse follows."
+        },
+        {
+          "district": "theater-square",
+          "city": "every city, as the second district",
+          "note": "The Marae pays per feature tile in the city, so the district goes on a bare tile and the features stay."
+        },
+        {
+          "district": "campus",
+          "city": "capital, beside the Reef",
+          "note": "The Science supplement; every city on the Science direction."
+        },
+        {
+          "district": "encampment",
+          "city": "none",
+          "note": "The Pa on a Hill is the fort; an Encampment lowers Appeal and the Toa do not need it."
+        }
+      ],
+      "pantheon": {
+        "slug": "god-of-the-sea",
+        "why": "Already founded; every new Fishing Boat is Production and a claimed tile."
+      },
+      "wonders": [
+        {
+          "name": "Great Lighthouse",
+          "why": "Movement for the Galleys and Settlers and Great Admiral points in a Harbor capital.",
+          "skip_if": "The capital Harbor is not placed by turn 60, or a naval civilization has it queued."
+        },
+        {
+          "name": "Temple of Artemis",
+          "why": "Housing and Amenities from Camps and Pastures, which this plan builds instead of Mines.",
+          "skip_if": "No Camps or Pastures within four tiles of the capital."
+        },
+        {
+          "name": "Mausoleum at Halicarnassus",
+          "why": "Coastal, and the Great Admirals and Engineers it empowers are the Great People a Maori empire earns.",
+          "skip_if": "No coastal flat tile beside the capital Harbor, or Construction lands after turn 95."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "liang",
+          "promotion": "Aquaculture",
+          "city": "capital",
+          "why": "Fisheries on the coast tiles the Fishing Boats cannot reach; Food and Production without a feature touched."
+        },
+        {
+          "governor": "magnus",
+          "promotion": "Provision",
+          "city": "capital",
+          "note": "Never Groundbreaker; there is nothing to chop.",
+          "why": "Settlers three through six without losing the population the Marae tiles need."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "nan-madol",
+          "why": "Culture from every district on or beside Coast, which in a Maori empire is every district."
+        },
+        {
+          "slug": "auckland",
+          "why": "Production on shallow water tiles for cities that cannot chop."
+        },
+        {
+          "slug": "rapa-nui",
+          "why": "Moai on the coast are Culture that needs no feature removed."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-admiral",
+          "why": "Harbors earn them; a Classical Great Admiral is Movement and strength for the Settler fleet."
+        },
+        {
+          "class": "great-artist",
+          "why": "The first Great Artist is the Humanism Inspiration; the Maori earn no Writers, so the Artists come first."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 60,
+          "test": "Direction written down: Culture with four cities on feature coasts and a Theater Square placed, Science with a Reef Campus, or Religion with a Prophet still on the board? Is Classical Republic adopted?",
+          "pass": "Queues switch to the direction's list; Theater Squares in every city on Culture, Campuses on Science.",
+          "fail": "No direction at turn 60 is the shape's failure. Decide by counting feature tiles inside the borders: twenty or more is Culture, fewer with a Reef is Science. Political Philosophy late means a Monument is missing somewhere."
+        },
+        {
+          "turn": 100,
+          "test": "Six cities on two landmasses, a Harbor in each, a Marae in three, four Toa and a Pa on the border hill, and the queues showing the direction?",
+          "pass": "Enter the Marae phase.",
+          "fail": "Five cities and two Marae is acceptable. No Marae at turn 100 means Drama and Poetry was skipped for a tree civic; it is the next civic today. No Pa means the border is open to the first Swordsman stack; build it this turn."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "shore-decide",
+          "turn": 60,
+          "text": "Write the direction down: Culture, Science or Religion. Everything after this turn is built toward it."
+        },
+        {
+          "id": "shore-government",
+          "turn": 62,
+          "text": "Adopt Classical Republic the turn Political Philosophy lands; Aesthetics the turn Drama and Poetry lands."
+        },
+        {
+          "id": "shore-first-marae",
+          "turn": 70,
+          "text": "First Marae built in the capital's Theater Square; count the Culture and Faith it adds against the feature tiles in the city screen."
+        },
+        {
+          "id": "shore-toa-pa",
+          "turn": 80,
+          "text": "Four Toa built under Agoge; one builds a Pa on the hill between the capital and the nearest rival."
+        },
+        {
+          "id": "shore-second-landmass",
+          "turn": 85,
+          "text": "Fourth or fifth city founded on the second landmass by Settler and Galley; its Fishing Boats claim the coast."
+        },
+        {
+          "id": "shore-sixth-city",
+          "turn": 100,
+          "text": "Sixth city founded; after this, settle only where four or more feature tiles sit inside the first two rings."
+        }
+      ]
+    },
+    {
+      "id": "marae",
+      "name": "A Marae in every city and the first audit",
+      "turns": {
+        "from": 101,
+        "to": 170
+      },
+      "era": "medieval",
+      "objective": "Finish a Marae in every city, add Art Museums and the Great Artists the Marae cannot hold, build Lumber Mills only where the Mass Production Eureka needs one, reach Humanism and The Enlightenment, bank the Faith for Naturalists, and pass the era checkpoint that asks whether the feature Culture is being turned into a Tourism engine or merely counted.",
+      "build_order": [
+        {
+          "item": "Marae",
+          "why": "Every Theater Square without one; the Culture and Faith scale with the city count."
+        },
+        {
+          "item": "Art Museum",
+          "why": "Three cities: the Great Artist slots the Marae lacks and the Opera and Ballet Inspiration."
+        },
+        {
+          "item": "Settler",
+          "why": "Cities seven and eight on whatever feature coast remains; the Marae pays per city."
+        },
+        {
+          "item": "University",
+          "why": "Two for Printing; Science must reach Flight before turn 200 for the Marae Tourism."
+        },
+        {
+          "item": "Shipyard",
+          "why": "Two for Steam Power; Production in Harbor cities that cannot chop."
+        },
+        {
+          "item": "Caravel",
+          "why": "Two for Exploration; they find the last coasts and the Culture rivals' Tourism screens."
+        },
+        {
+          "item": "Market",
+          "why": "Two for Guilds; the Gold buys the Builders and later the Rock Bands when Faith runs short."
+        },
+        {
+          "item": "Builder",
+          "why": "Fishing Boats on every new sea tile, Farms on flat land, one Lumber Mill for the Eureka."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:cartography",
+          "note": "Two Harbors gave the Eureka; Caravels and the ocean for the last Settlers."
+        },
+        {
+          "id": "tech:mass-production",
+          "note": "One Lumber Mill on a Woods tile that keeps the Woods; the rest stay unimproved for Mana."
+        },
+        {
+          "id": "tech:education",
+          "note": "A Great Scientist gives the Eureka; Universities."
+        },
+        {
+          "id": "tech:printing",
+          "note": "Two Universities; Science for Flight."
+        },
+        {
+          "id": "tech:astronomy",
+          "note": "A University beside a Mountain if a city has one; otherwise unboosted."
+        },
+        {
+          "id": "tech:banking",
+          "note": "Guilds gives the Eureka; Banks."
+        },
+        {
+          "id": "tech:castles",
+          "note": "Tier 2 government gives the Eureka."
+        },
+        {
+          "id": "tech:military-engineering",
+          "note": "An Aqueduct in a river city, or unboosted; Niter for the Musketmen that replace the Toa."
+        },
+        {
+          "id": "tech:square-rigging",
+          "note": "A Musketman kill against a camp; Frigates guard eight coastal cities."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:humanism",
+          "note": "A Great Artist gives the Inspiration; Art Museums."
+        },
+        {
+          "id": "civic:feudalism",
+          "note": "Six Farms on the flat land; Serfdom."
+        },
+        {
+          "id": "civic:civil-service",
+          "note": "The capital at ten population under its Palace Housing and Lighthouse."
+        },
+        {
+          "id": "civic:guilds",
+          "note": "Two Markets."
+        },
+        {
+          "id": "civic:exploration",
+          "note": "Two Caravels; Merchant Republic."
+        },
+        {
+          "id": "civic:mercenaries",
+          "note": "Eight land units only if a neighbour arms; otherwise unboosted on the way to Nationalism's neighbours."
+        },
+        {
+          "id": "civic:diplomatic-service",
+          "note": "An alliance gives the Inspiration and the Chemistry Eureka."
+        },
+        {
+          "id": "civic:the-enlightenment",
+          "note": "Three Great People from the Theater Squares and Harbors; Free Market."
+        },
+        {
+          "id": "civic:medieval-faires",
+          "note": "Four Trade Routes between the islands."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Merchant Republic",
+          "slot": "wildcard",
+          "from": "civic:exploration",
+          "why": "Two Economic slots for Aesthetics and Frescoes, and more Trade Routes for the islands."
+        },
+        {
+          "card": "Frescoes",
+          "slot": "economic",
+          "from": "civic:humanism",
+          "why": "Great Artist points; the Museums fill before Cultural Heritage."
+        },
+        {
+          "card": "Serfdom",
+          "slot": "economic",
+          "from": "civic:feudalism",
+          "why": "Builders with extra charges for Fishing Boats and Farms."
+        },
+        {
+          "card": "Naval Infrastructure",
+          "slot": "economic",
+          "from": "civic:naval-tradition",
+          "why": "Doubled Harbor adjacency in eight Harbor cities."
+        },
+        {
+          "card": "Town Charters",
+          "slot": "economic",
+          "from": "civic:guilds",
+          "why": "Science direction: doubled Commercial Hub adjacency where the Hubs exist."
+        }
+      ],
+      "districts": [
+        {
+          "district": "theater-square",
+          "city": "cities seven and eight",
+          "note": "The Marae goes in the turn it finishes."
+        },
+        {
+          "district": "commercial-hub",
+          "city": "capital and the largest second-landmass city",
+          "note": "Markets for Guilds; the Trade Route count for the islands."
+        },
+        {
+          "district": "campus",
+          "city": "every Reef city on the Science direction",
+          "note": "Reef adjacency and the University for Printing."
+        },
+        {
+          "district": "entertainment-complex",
+          "city": "the city central to the second landmass",
+          "note": "Amenities for eight cities and +1 Appeal around it."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Chichen Itza",
+          "why": "Culture and Production on every Rainforest tile, which the Maori keep anyway.",
+          "skip_if": "Fewer than four Rainforest tiles inside the borders."
+        },
+        {
+          "name": "Kilwa Kisiwani",
+          "why": "Coastal, and two suzerainties become +15% yields in every one of eight cities.",
+          "skip_if": "Fewer than two suzerainties at turn 140."
+        },
+        {
+          "name": "Colossus",
+          "why": "A Trade Route and Gold in a Harbor capital; the Great Admiral points add up.",
+          "skip_if": "Shipbuilding is known from turn one, so skip only if a rival has it queued by turn 110."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Connoisseur",
+          "city": "capital",
+          "why": "Culture per population in the Marae capital; Curator comes with Flight."
+        },
+        {
+          "governor": "reyna",
+          "promotion": "Harbormaster",
+          "city": "the largest Harbor city",
+          "why": "Doubled Harbor adjacency and Gold where the Lighthouse and Shipyard stand."
+        },
+        {
+          "governor": "amani",
+          "promotion": "Emissary",
+          "city": "the contested Cultural city-state",
+          "why": "Holds Nan Madol or Rapa Nui against a rival's envoys."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "antananarivo",
+          "why": "Culture per Great Person ever earned, up to 30%; the Admirals count too."
+        },
+        {
+          "type": "Industrial",
+          "why": "Production in every Workshop at three envoys, for the Industrial Zones the Science direction builds."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-artist",
+          "why": "The Art Museums are the only Great Work slots this kit has besides Music."
+        },
+        {
+          "class": "great-admiral",
+          "why": "Harbors and Shipyards earn them; some grant Great Works or Gold."
+        },
+        {
+          "class": "great-engineer",
+          "why": "Wonder Production in a capital with no chops."
+        },
+        {
+          "class": "great-scientist",
+          "why": "Science direction: University boosts and the Education Eureka."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 135,
+          "test": "Era checkpoint. Is the feature Culture being spent? A Marae in six cities, two Art Museums with Artists in them, the last four civics on the direction's path, and the Faith banked toward 2,000 for Naturalists or spent on the Science direction's Builders. Science: Universities in three Reef cities?",
+          "pass": "Continue; queue the last Marae and the Shipyards.",
+          "fail": "Civics taken because they were next is the banked-bonus failure; reroute the tree today. Faith spent on Missionaries with no Religion direction is the same failure; stop. Fewer than four Marae means Theater Squares came after Commercial Hubs; swap the order in every city."
+        },
+        {
+          "turn": 170,
+          "test": "Eight cities, a Marae in each, three Art Museums, two Universities, two Shipyards, and the direction still reachable?",
+          "pass": "Enter the Flight phase.",
+          "fail": "Seven cities and six Marae is acceptable. Science last among met civilizations means Flight arrives after turn 220; buy Libraries and hold a Scientific suzerainty for ten turns. If the direction is unreachable, pivot now; the flat curve makes it affordable."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "marae-civic-audit",
+          "turn": 105,
+          "text": "Audit the civic tree: the next four civics are the direction's. If not, re-pick now."
+        },
+        {
+          "id": "marae-every-city",
+          "turn": 130,
+          "text": "A Marae in every city founded before turn 100; count the empire Faith against the Naturalist price."
+        },
+        {
+          "id": "marae-art-museums",
+          "turn": 145,
+          "text": "Art Museums in three cities with at least two Great Artists placed; Humanism and Opera and Ballet collected."
+        },
+        {
+          "id": "marae-caravels",
+          "turn": 150,
+          "text": "Two Caravels built; Exploration collected and the last feature coasts mapped for cities seven and eight."
+        },
+        {
+          "id": "marae-park-sites",
+          "turn": 160,
+          "text": "Mark the National Park sites: four-tile diamonds of Charming or better Woods, Rainforest or coast, all in one city, with no Fishing Boat or Farm on them."
+        },
+        {
+          "id": "marae-shipyards",
+          "turn": 168,
+          "text": "Two Shipyards built in the largest Harbor cities; Steam Power Eureka collected."
+        }
+      ]
+    },
+    {
+      "id": "flight",
+      "name": "Flight, Parks and Resorts",
+      "turns": {
+        "from": 171,
+        "to": 240
+      },
+      "era": "industrial",
+      "objective": "Reach Flight so every Marae tile pays Tourism, reach Conservation and buy a Naturalist for every marked site with the banked Faith, put Seaside Resorts on every Breathtaking coast at Radio, land the Eiffel Tower, and pass the era checkpoint asking whether Tourism is now rising faster than the top rival's Culture.",
+      "build_order": [
+        {
+          "item": "Naturalist",
+          "why": "Bought with Faith the turn Conservation lands; one National Park per marked site."
+        },
+        {
+          "item": "Seaside Resort",
+          "why": "Every Breathtaking coastal flat tile the turn Radio lands; the Maori coast is full of them."
+        },
+        {
+          "item": "Broadcast Center",
+          "why": "Great Musician slots and Tourism in the three Art Museum cities."
+        },
+        {
+          "item": "Archaeological Museum",
+          "why": "One city: Natural History Inspiration and an Artifact for Combustion."
+        },
+        {
+          "item": "Industrial Zone",
+          "why": "One or two, on the inland side: Factories whose regional Production reaches six tiles of coast."
+        },
+        {
+          "item": "Neighborhood",
+          "why": "One on a Breathtaking tile for Conservation, then low-appeal ones for Sanitation."
+        },
+        {
+          "item": "Frigate",
+          "why": "Four to guard eight coastal cities while the Parks are built; Privateers for Electricity if the Science direction wants it."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:industrialization",
+          "note": "Two Workshops, or unboosted; the Eiffel Tower and Factories."
+        },
+        {
+          "id": "tech:scientific-theory",
+          "note": "The Enlightenment gave the Eureka."
+        },
+        {
+          "id": "tech:steam-power",
+          "note": "Two Shipyards gave the Eureka; Ironclads and the Steel line."
+        },
+        {
+          "id": "tech:flight",
+          "note": "The Eiffel Tower or any Industrial wonder gives the Eureka; every Marae tile pays +2 Tourism from this tech, so it is the phase's goal."
+        },
+        {
+          "id": "tech:radio",
+          "note": "A National Park gives the Eureka; Seaside Resorts unlock here."
+        },
+        {
+          "id": "tech:sanitation",
+          "note": "Two Neighborhoods."
+        },
+        {
+          "id": "tech:economics",
+          "note": "Two Banks; Gold for Naturalists when the Faith is short."
+        },
+        {
+          "id": "tech:combustion",
+          "note": "An Artifact from the Archaeologist."
+        },
+        {
+          "id": "tech:electricity",
+          "note": "Two Privateers from the Shipyards; Power for the Broadcast Centers."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:natural-history",
+          "note": "An Archaeological Museum gives the Inspiration; Conservation is behind it."
+        },
+        {
+          "id": "civic:urbanization",
+          "note": "A fifteen-population city; Neighborhoods."
+        },
+        {
+          "id": "civic:conservation",
+          "note": "A Neighborhood on a Breathtaking tile gives the Inspiration; Naturalists unlock here and Mana's Woods Production rises."
+        },
+        {
+          "id": "civic:opera-and-ballet",
+          "note": "An Art Museum gave the Inspiration; Grand Opera."
+        },
+        {
+          "id": "civic:civil-engineering",
+          "note": "Seven district types; Public Works."
+        },
+        {
+          "id": "civic:mass-media",
+          "note": "Radio gives the Inspiration; on the way to Ideology."
+        },
+        {
+          "id": "civic:colonialism",
+          "note": "Astronomy gives the Inspiration if it was researched; otherwise unboosted."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Grand Opera",
+          "slot": "economic",
+          "from": "civic:opera-and-ballet",
+          "why": "Doubled Theater Square buildings; the Marae has no upkeep and the Museums double."
+        },
+        {
+          "card": "Public Works",
+          "slot": "economic",
+          "from": "civic:civil-engineering",
+          "why": "Builders faster for the Seaside Resorts and Neighborhoods."
+        },
+        {
+          "card": "Free Market",
+          "slot": "economic",
+          "from": "civic:the-enlightenment",
+          "why": "Commercial Hub buildings doubled; the Gold buys Naturalists at 1,000 or more."
+        },
+        {
+          "card": "Rationalism",
+          "slot": "economic",
+          "from": "civic:the-enlightenment",
+          "why": "Science direction: Campus buildings doubled in the Reef cities past fifteen population."
+        }
+      ],
+      "districts": [
+        {
+          "district": "neighborhood",
+          "city": "the largest city, on a Breathtaking tile first",
+          "note": "Conservation Inspiration; later ones inland for Sanitation."
+        },
+        {
+          "district": "industrial-zone",
+          "city": "one or two inland-side cities",
+          "note": "Two tiles from any park site; the Factory's regional reach is the point."
+        },
+        {
+          "district": "spaceport",
+          "city": "the best Production city",
+          "note": "Science direction only: the site is reserved now."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Eiffel Tower",
+          "why": "+2 Appeal to every tile in the empire: the Charming coast becomes Breathtaking and every Resort, Park and Earth-Goddess tile grows at once.",
+          "skip_if": "Never skip it on the Culture direction; if a rival finishes it first, build Cristo Redentor instead."
+        },
+        {
+          "name": "Hermitage",
+          "why": "Four Great Artist slots; the Museums are full by now.",
+          "skip_if": "Fewer than three Great Artists earned by turn 200."
+        },
+        {
+          "name": "Oxford University",
+          "why": "Science direction: two free techs and Great Scientist points.",
+          "skip_if": "The Culture direction is chosen, or Scientific Theory lands after turn 215."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Curator",
+          "city": "the capital",
+          "why": "Doubled Tourism from Great Works and the wonders in the city with the most of both."
+        },
+        {
+          "governor": "moksha",
+          "promotion": "Bishop",
+          "city": "the city with a Holy Site, or the largest Marae city",
+          "why": "Faith toward the Naturalists when every Faith point is a park tile."
+        },
+        {
+          "governor": "liang",
+          "promotion": "Parks and Recreation",
+          "city": "the city with the most park sites",
+          "why": "City Parks on the tiles the diamonds leave over."
+        }
+      ],
+      "city_states": [
+        {
+          "type": "Religious",
+          "why": "Faith in every Temple at six envoys if any city built one; otherwise the envoys go to Industrial."
+        },
+        {
+          "slug": "kumasi",
+          "why": "Culture and Gold on routes to city-states for every district in the origin city."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-musician",
+          "why": "Music is the highest Tourism per Great Work and the Broadcast Centers hold it."
+        },
+        {
+          "class": "great-artist",
+          "why": "Themed Museums are the Cultural Heritage Inspiration."
+        },
+        {
+          "class": "great-engineer",
+          "why": "Gustave Eiffel and the Industrial Engineers finish the Eiffel Tower."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 205,
+          "test": "Era checkpoint. Is the chosen direction still reachable? Culture: Flight researched and the Marae Tourism showing, Conservation landed, two National Parks, the Eiffel Tower built or within ten turns, and Tourism rising against the top rival's Culture. Science: Universities in six cities and the Science rate first among met civilizations.",
+          "pass": "Continue; the close is thirty-five turns away.",
+          "fail": "A direction out of reach at turn 205 is pivoted, not forced. A Culture empire with eight Harbor cities and Universities switches to Science and still finishes; switch today and reserve the Spaceport site. No Park by turn 205 means the sites were improved; remove the improvements and buy the Naturalist."
+        },
+        {
+          "turn": 240,
+          "test": "Four National Parks, Seaside Resorts on every Breathtaking coast, Broadcast Centers in three cities, Flight researched, and Tourism above the second-weakest rival's Culture?",
+          "pass": "Enter the close.",
+          "fail": "Two Parks and three Resorts is acceptable if Flight and the Eiffel Tower are done. None of it means the Faith went elsewhere; stop buying anything but Naturalists until the sites are filled."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "flight-archaeologist",
+          "turn": 180,
+          "text": "Archaeological Museum built and the Archaeologist digging; Natural History and Combustion collected."
+        },
+        {
+          "id": "flight-flight",
+          "turn": 195,
+          "text": "Flight researched; open the Tourism screen and confirm every Marae city's Tourism rose by two per feature tile."
+        },
+        {
+          "id": "flight-conservation",
+          "turn": 200,
+          "text": "Conservation landed; the first Naturalist bought with Faith the same turn and walked to the best marked site."
+        },
+        {
+          "id": "flight-eiffel",
+          "turn": 205,
+          "text": "Eiffel Tower under construction in the Industrial Zone city with every Great Engineer charge on it."
+        },
+        {
+          "id": "flight-resorts",
+          "turn": 215,
+          "text": "Radio landed; Seaside Resorts on every Breathtaking coastal flat tile in every city."
+        },
+        {
+          "id": "flight-fourth-park",
+          "turn": 235,
+          "text": "Fourth National Park founded; check that the Earth-Goddess and Marae tiles beside it rose in the Appeal lens."
+        }
+      ]
+    },
+    {
+      "id": "close",
+      "name": "Close",
+      "turns": {
+        "from": 241,
+        "to": null
+      },
+      "era": "modern",
+      "objective": "Finish the direction: Rock Bands bought with the Marae Faith and sent at the rivals with the most Culture, Computers and Online Communities for the Tourism multipliers, Cristo Redentor for the Resorts, or the three Spaceport projects on the Science direction.",
+      "build_order": [
+        {
+          "item": "Rock Band",
+          "why": "Bought with Faith at any Holy Site or Theater Square city; the Culture direction's close."
+        },
+        {
+          "item": "Broadcast Center",
+          "why": "Every remaining Theater Square city for the Music slots and the Tourism."
+        },
+        {
+          "item": "Stock Exchange",
+          "why": "Two for Capitalism; Gold for the last Rock Bands."
+        },
+        {
+          "item": "Sewer",
+          "why": "Four for Suffrage; Democracy's Great People Culture."
+        },
+        {
+          "item": "Spaceport",
+          "why": "Science direction: the projects start the turn it finishes."
+        },
+        {
+          "item": "Aerodrome",
+          "why": "Two for Synthetic Materials; Fighters over eight coastal cities."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:computers",
+          "note": "Tier 3 government gives the Eureka; +25% Tourism, the biggest late multiplier."
+        },
+        {
+          "id": "tech:chemistry",
+          "note": "Alliance level 2; Research Labs."
+        },
+        {
+          "id": "tech:plastics",
+          "note": "An Oil Well on the first offshore Oil; Oil for Power and the Science direction."
+        },
+        {
+          "id": "tech:replaceable-parts",
+          "note": "Unboosted; Infantry to garrison a Culture empire under threat."
+        },
+        {
+          "id": "tech:synthetic-materials",
+          "note": "Two Aerodromes."
+        },
+        {
+          "id": "tech:steel",
+          "note": "An Ironclad from the Steam Power Shipyards and a Coal Mine on a bare hill; Battleships guard the coast."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:ideology",
+          "note": "No Inspiration; the gate to Tier 3 governments."
+        },
+        {
+          "id": "civic:suffrage",
+          "note": "Four Sewers; Democracy."
+        },
+        {
+          "id": "civic:cultural-heritage",
+          "note": "A themed Art Museum; Heritage Tourism."
+        },
+        {
+          "id": "civic:social-media",
+          "note": "Telecommunications gives the Inspiration if a Great Scientist supplies it; Online Communities."
+        },
+        {
+          "id": "civic:environmentalism",
+          "note": "Two Solar Farms on flat land; it pays the Preserves and Parks' neighbours."
+        },
+        {
+          "id": "civic:space-race",
+          "note": "Science direction: the Spaceport."
+        },
+        {
+          "id": "civic:capitalism",
+          "note": "Two Stock Exchanges."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Democracy",
+          "slot": "wildcard",
+          "from": "civic:suffrage",
+          "why": "Culture from Great People and three Economic slots for the Tourism cards."
+        },
+        {
+          "card": "Heritage Tourism",
+          "slot": "economic",
+          "from": "civic:cultural-heritage",
+          "why": "Tourism from Great Works doubled across the Museums and Broadcast Centers."
+        },
+        {
+          "card": "Online Communities",
+          "slot": "economic",
+          "from": "civic:social-media",
+          "why": "Tourism toward civilizations with a Trade Route to them raised by half; one route to every rival."
+        },
+        {
+          "card": "International Space Agency",
+          "slot": "diplomatic",
+          "from": "civic:space-race",
+          "why": "Science direction: Science per suzerainty; Nan Madol, Auckland and Rapa Nui are held."
+        }
+      ],
+      "districts": [
+        {
+          "district": "aerodrome",
+          "city": "the two Industrial Zone cities",
+          "note": "Inland side; Synthetic Materials Eureka."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Cristo Redentor",
+          "why": "Doubled Tourism from Seaside Resorts, which a Maori coast has in dozens, and no Tourism penalty from rivals' governments.",
+          "skip_if": "Fewer than four Seaside Resorts, or Mass Media lands after turn 260."
+        },
+        {
+          "name": "Golden Gate Bridge",
+          "why": "Appeal and Tourism on the coast beside the Resorts.",
+          "skip_if": "No two land tiles across a one-tile strait in a coastal city."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Curator",
+          "city": "capital",
+          "why": "Stays for the last fifty turns on the Culture direction; Space Initiative on the Science direction."
+        }
+      ],
+      "city_states": [],
+      "great_people": [
+        {
+          "class": "great-musician",
+          "why": "Music is the highest Tourism per Great Work and the Broadcast Centers hold it."
+        },
+        {
+          "class": "great-scientist",
+          "why": "Science direction: the Atomic and Information Great Scientists are the only boosts for Rocketry and Nuclear Fission."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 285,
+          "test": "Culture: Tourism above three rivals' Culture with the last rival within reach of Rock Bands? Science: Moon Landing done and the Mars projects running?",
+          "pass": "Continue to the end; Rock Bands at the last rival or Power on the Spaceport.",
+          "fail": "Convert to the other direction if it is closer; otherwise Score, which eight cities with Marae, Parks and Resorts do well."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "close-democracy",
+          "turn": 250,
+          "text": "Democracy adopted; Heritage Tourism and Grand Opera in the Economic slots."
+        },
+        {
+          "id": "close-rock-bands",
+          "turn": 260,
+          "text": "Rock Bands bought with the Marae Faith and sent at the rival whose Culture is highest; they cross the ocean on their own."
+        },
+        {
+          "id": "close-trade-routes",
+          "turn": 265,
+          "text": "One Trade Route to every rival civilization for Online Communities."
+        },
+        {
+          "id": "close-moon",
+          "turn": 265,
+          "text": "Science direction: Moon Landing project started with Power in the Spaceport city."
+        },
+        {
+          "id": "close-review",
+          "turn": 285,
+          "text": "Review the turn 285 checkpoint and continue or declare the game a Score game."
+        }
+      ]
+    }
+  ],
+  "boosts": [
+    {
+      "id": "tech:astrology",
+      "fit": "cheap",
+      "when": "voyage",
+      "how": "A natural wonder seen from the canoe or by the Scout ship in the first twenty turns."
+    },
+    {
+      "id": "tech:writing",
+      "fit": "free",
+      "when": "voyage",
+      "how": "The Scout ship meets the first rival civilization."
+    },
+    {
+      "id": "tech:bronze-working",
+      "fit": "cheap",
+      "when": "voyage",
+      "how": "Three camp kills from the two Warriors at the landing camp."
+    },
+    {
+      "id": "tech:archery",
+      "fit": "cheap",
+      "when": "voyage",
+      "how": "The Slinger finishes a camp scout the Warriors wounded."
+    },
+    {
+      "id": "tech:celestial-navigation",
+      "fit": "free",
+      "when": "voyage",
+      "how": "Two Fishing Boats from the free Builder on the landing turn."
+    },
+    {
+      "id": "tech:irrigation",
+      "fit": "free",
+      "when": "voyage",
+      "how": "The free Builder's third charge on a flat Wheat or Rice."
+    },
+    {
+      "id": "tech:masonry",
+      "fit": "cheap",
+      "when": "shore",
+      "how": "A Quarry on a bare Stone hill; a wooded hill cannot be quarried."
+    },
+    {
+      "id": "tech:wheel",
+      "fit": "cheap",
+      "when": "shore",
+      "how": "A Mine on a bare resource hill."
+    },
+    {
+      "id": "tech:currency",
+      "fit": "free",
+      "when": "shore",
+      "how": "The first Trader runs a route between the first two cities."
+    },
+    {
+      "id": "tech:iron-working",
+      "fit": "costly",
+      "when": "shore",
+      "how": "A Mine on bare Iron; the Toa does not need it, so usually unboosted."
+    },
+    {
+      "id": "tech:mathematics",
+      "fit": "free",
+      "when": "shore",
+      "how": "Harbor, Theater Square and Campus in the capital."
+    },
+    {
+      "id": "tech:construction",
+      "fit": "costly",
+      "when": "shore",
+      "how": "A Water Mill only if a city sits on a river."
+    },
+    {
+      "id": "tech:horseback-riding",
+      "fit": "cheap",
+      "when": "shore",
+      "how": "A Pasture on Sheep or Horses."
+    },
+    {
+      "id": "tech:apprenticeship",
+      "fit": "costly",
+      "when": "shore",
+      "how": "Three Mines on bare hills only, which a wooded coast rarely has."
+    },
+    {
+      "id": "tech:engineering",
+      "fit": "cheap",
+      "when": "shore",
+      "how": "Ancient Walls in the capital against the Quadriremes."
+    },
+    {
+      "id": "tech:machinery",
+      "fit": "costly",
+      "when": "shore",
+      "how": "Three Archers only if a neighbour arms; the Toa are the army."
+    },
+    {
+      "id": "tech:military-tactics",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:cartography",
+      "fit": "free",
+      "when": "marae",
+      "how": "Two Harbors, which every Maori city builds first."
+    },
+    {
+      "id": "tech:mass-production",
+      "fit": "cheap",
+      "when": "marae",
+      "how": "One Lumber Mill on a Woods tile; the Woods stay and the rest stay unimproved."
+    },
+    {
+      "id": "tech:education",
+      "fit": "cheap",
+      "when": "marae",
+      "how": "The first Great Scientist from the Reef Campus."
+    },
+    {
+      "id": "tech:printing",
+      "fit": "cheap",
+      "when": "marae",
+      "how": "Two Universities in the Reef Campus cities."
+    },
+    {
+      "id": "tech:astronomy",
+      "fit": "costly",
+      "when": "marae",
+      "how": "A University beside a Mountain only if a city has one."
+    },
+    {
+      "id": "tech:banking",
+      "fit": "free",
+      "when": "marae",
+      "how": "Guilds is on the civic path."
+    },
+    {
+      "id": "tech:castles",
+      "fit": "free",
+      "when": "marae",
+      "how": "Any Tier 2 government at Exploration."
+    },
+    {
+      "id": "tech:military-engineering",
+      "fit": "costly",
+      "when": "marae",
+      "how": "An Aqueduct only in a river city; usually unboosted."
+    },
+    {
+      "id": "tech:square-rigging",
+      "fit": "cheap",
+      "when": "marae",
+      "how": "A Musketman kill against a camp or a Barbarian landing."
+    },
+    {
+      "id": "tech:stirrups",
+      "fit": "free",
+      "when": "marae",
+      "how": "Feudalism is on the civic path."
+    },
+    {
+      "id": "tech:buttress",
+      "fit": "free",
+      "when": "marae",
+      "how": "Any Classical or later wonder; the Great Lighthouse or Mausoleum counts."
+    },
+    {
+      "id": "tech:industrialization",
+      "fit": "costly",
+      "when": "flight",
+      "how": "Two Workshops in a plan with one or two Industrial Zones."
+    },
+    {
+      "id": "tech:scientific-theory",
+      "fit": "free",
+      "when": "flight",
+      "how": "The Enlightenment is on the civic path."
+    },
+    {
+      "id": "tech:steam-power",
+      "fit": "free",
+      "when": "flight",
+      "how": "Two Shipyards in the Harbor cities."
+    },
+    {
+      "id": "tech:flight",
+      "fit": "cheap",
+      "when": "flight",
+      "how": "The Eiffel Tower or any Industrial-era wonder."
+    },
+    {
+      "id": "tech:radio",
+      "fit": "free",
+      "when": "flight",
+      "how": "The first National Park on the untouched Woods."
+    },
+    {
+      "id": "tech:sanitation",
+      "fit": "cheap",
+      "when": "flight",
+      "how": "Two Neighborhoods, the first on a Breathtaking tile."
+    },
+    {
+      "id": "tech:economics",
+      "fit": "cheap",
+      "when": "flight",
+      "how": "Two Banks in the Commercial Hubs."
+    },
+    {
+      "id": "tech:combustion",
+      "fit": "cheap",
+      "when": "flight",
+      "how": "The Archaeologist extracts one Artifact."
+    },
+    {
+      "id": "tech:electricity",
+      "fit": "cheap",
+      "when": "flight",
+      "how": "Two Privateers from the Shipyards that already exist."
+    },
+    {
+      "id": "tech:rifling",
+      "fit": "costly",
+      "when": "flight",
+      "how": "A Niter Mine only on a bare hill."
+    },
+    {
+      "id": "tech:computers",
+      "fit": "free",
+      "when": "close",
+      "how": "Democracy is a Tier 3 government."
+    },
+    {
+      "id": "tech:chemistry",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Alliance level 2 with the Diplomatic Service ally."
+    },
+    {
+      "id": "tech:plastics",
+      "fit": "cheap",
+      "when": "close",
+      "how": "An Oil Well on offshore Oil, which a coastal empire usually finds."
+    },
+    {
+      "id": "tech:replaceable-parts",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:synthetic-materials",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Aerodromes on the inland side."
+    },
+    {
+      "id": "tech:steel",
+      "fit": "costly",
+      "when": "close",
+      "how": "An Ironclad and a Coal Mine on a bare hill."
+    },
+    {
+      "id": "civic:foreign-trade",
+      "fit": "free",
+      "when": "voyage",
+      "how": "The canoe or the Scout ship sees a second continent before turn 20."
+    },
+    {
+      "id": "civic:craftsmanship",
+      "fit": "free",
+      "when": "voyage",
+      "how": "Three improvements from the free Builder on the landing turn."
+    },
+    {
+      "id": "civic:early-empire",
+      "fit": "free",
+      "when": "voyage",
+      "how": "Six population across two cities; the Palace Housing grows the capital fast."
+    },
+    {
+      "id": "civic:mysticism",
+      "fit": "free",
+      "when": "voyage",
+      "how": "God of the Sea founded by turn 28."
+    },
+    {
+      "id": "civic:state-workforce",
+      "fit": "free",
+      "when": "voyage",
+      "how": "The capital's Harbor is the first district and triggers the Inspiration by itself."
+    },
+    {
+      "id": "civic:military-tradition",
+      "fit": "free",
+      "when": "shore",
+      "how": "The landing camp cleared by the Warriors."
+    },
+    {
+      "id": "civic:political-philosophy",
+      "fit": "cheap",
+      "when": "shore",
+      "how": "Three city-states met by the Scout ship along the coasts."
+    },
+    {
+      "id": "civic:drama-and-poetry",
+      "fit": "cheap",
+      "when": "shore",
+      "how": "The Great Lighthouse or Temple of Artemis; otherwise taken unboosted for the Marae."
+    },
+    {
+      "id": "civic:games-and-recreation",
+      "fit": "free",
+      "when": "shore",
+      "how": "Researching Construction on the way to Mass Production."
+    },
+    {
+      "id": "civic:recorded-history",
+      "fit": "costly",
+      "when": "shore",
+      "how": "Two Campuses only on the Science direction."
+    },
+    {
+      "id": "civic:naval-tradition",
+      "fit": "cheap",
+      "when": "shore",
+      "how": "A Quadrireme kill against a Barbarian ship, which the coast supplies."
+    },
+    {
+      "id": "civic:theology",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:military-training",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:humanism",
+      "fit": "free",
+      "when": "marae",
+      "how": "The first Great Artist from the Theater Squares; no Writers compete for the points."
+    },
+    {
+      "id": "civic:feudalism",
+      "fit": "cheap",
+      "when": "marae",
+      "how": "Six Farms on the flat land of eight cities."
+    },
+    {
+      "id": "civic:civil-service",
+      "fit": "free",
+      "when": "marae",
+      "how": "The capital at ten population under the Palace Housing and Lighthouse."
+    },
+    {
+      "id": "civic:guilds",
+      "fit": "cheap",
+      "when": "marae",
+      "how": "Two Markets in the two Commercial Hubs."
+    },
+    {
+      "id": "civic:exploration",
+      "fit": "cheap",
+      "when": "marae",
+      "how": "Two Caravels from the Harbor cities."
+    },
+    {
+      "id": "civic:mercenaries",
+      "fit": "costly",
+      "when": "marae",
+      "how": "Eight land units only if a neighbour arms."
+    },
+    {
+      "id": "civic:diplomatic-service",
+      "fit": "cheap",
+      "when": "marae",
+      "how": "An alliance with the civilization across the water."
+    },
+    {
+      "id": "civic:the-enlightenment",
+      "fit": "free",
+      "when": "marae",
+      "how": "Three Great People from the Theater Squares and Harbors."
+    },
+    {
+      "id": "civic:medieval-faires",
+      "fit": "free",
+      "when": "marae",
+      "how": "Four Trade Routes between the islands."
+    },
+    {
+      "id": "civic:divine-right",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:mercantilism",
+      "fit": "cheap",
+      "when": "marae",
+      "how": "A Great Merchant from the two Commercial Hubs."
+    },
+    {
+      "id": "civic:natural-history",
+      "fit": "cheap",
+      "when": "flight",
+      "how": "One Archaeological Museum."
+    },
+    {
+      "id": "civic:urbanization",
+      "fit": "cheap",
+      "when": "flight",
+      "how": "A Lighthouse city at fifteen population."
+    },
+    {
+      "id": "civic:conservation",
+      "fit": "cheap",
+      "when": "flight",
+      "how": "One Neighborhood on a Breathtaking coastal tile."
+    },
+    {
+      "id": "civic:opera-and-ballet",
+      "fit": "free",
+      "when": "flight",
+      "how": "The first Art Museum."
+    },
+    {
+      "id": "civic:civil-engineering",
+      "fit": "cheap",
+      "when": "flight",
+      "how": "Seven district types once the Industrial Zone and Entertainment Complex exist."
+    },
+    {
+      "id": "civic:mass-media",
+      "fit": "free",
+      "when": "flight",
+      "how": "Researching Radio for the Seaside Resorts."
+    },
+    {
+      "id": "civic:colonialism",
+      "fit": "costly",
+      "when": "flight",
+      "how": "Researching Astronomy, which this plan reaches late."
+    },
+    {
+      "id": "civic:suffrage",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Four Sewers across eight cities."
+    },
+    {
+      "id": "civic:cultural-heritage",
+      "fit": "free",
+      "when": "close",
+      "how": "A themed Art Museum from three Great Artists."
+    },
+    {
+      "id": "civic:social-media",
+      "fit": "costly",
+      "when": "close",
+      "how": "Telecommunications only if a Great Scientist supplies it."
+    },
+    {
+      "id": "civic:environmentalism",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Solar Farms on flat tiles the Parks do not need."
+    },
+    {
+      "id": "civic:space-race",
+      "fit": "costly",
+      "when": "close",
+      "how": "The Spaceport only on the Science direction."
+    },
+    {
+      "id": "civic:capitalism",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Stock Exchanges in the Commercial Hubs."
+    }
+  ],
+  "decision_triggers": [
+    {
+      "name": "Still at sea on turn 6",
+      "if": "No coast with Woods, Rainforest or a sea resource is in sight at the end of turn 6.",
+      "then": "Land on the next coast of any kind on turn 7 or 8. The four yields per turn no longer cover the lost growth, the pantheon race and the camp spawns; the second and third Settlers go to the better coast the Scout ship finds."
+    },
+    {
+      "name": "Reef coast",
+      "if": "The landing or the second city has a Reef or the Great Barrier Reef in its rings.",
+      "then": "Place a Campus beside it before the Theater Square in that one city and weigh Science at turn 60; a +3 Reef Campus with the Voyage's early Science is the one case where the Science direction starts ahead."
+    },
+    {
+      "name": "Prophet still available",
+      "if": "At turn 90 the Great People screen shows a Great Prophet unclaimed and the Marae Faith is above 1,000.",
+      "then": "Buy him with Faith patronage, found the religion in the capital's Holy Site or a Marae city with one, and take Reliquaries or Work Ethic; the Religion direction opens and the Apostles sail."
+    },
+    {
+      "name": "Civics drifting",
+      "if": "At any era checkpoint the last three civics were not on the chosen direction's path.",
+      "then": "The feature Culture is being banked. Re-pick the civic queue today toward Humanism, Opera and Ballet, Conservation and Suffrage, and note it as a near-miss on the plan."
+    },
+    {
+      "name": "Raiders on the coast",
+      "if": "A Barbarian Quadrireme or a rival fleet appears within three tiles of a city without Walls.",
+      "then": "Ancient Walls in that city this turn, a Galley or Quadrireme from the nearest Harbor, and the Toa to the Pa. Eight coastal cities are eight landing sites and Harald in particular comes early."
+    }
+  ],
+  "abort": {
+    "trigger": "Turn 150 with no direction committed: Marae in two cities, no Art Museum, Faith spent on nothing, and a civic tree picked in order.",
+    "actions": [
+      "Pick the direction the empire is already closest to; with eight coastal cities and Harbors that is Culture if the Marae exist and Science if the Campuses do. Commit fully; Linear leaders lose by drifting, not by collapsing.",
+      "Reroute the civic queue to Humanism, The Enlightenment, Natural History and Conservation today.",
+      "Put a Theater Square and a Marae in every city without one before any other district, and mark the park sites."
+    ]
+  },
+  "fail_state": "Turn 200 with eight pretty coastal cities, every Woods standing, Harbors in all of them, Faith at 3,000 and nothing to show for it: Marae in three cities, no Art Museum, no National Park, Tourism below every rival's Culture, and the Culture spent on whatever civic came next. The Maori have kept the land and converted none of it, and the ability has nothing left to add.",
+  "common_mistakes": [
+    "Sailing past turn 8 looking for the perfect coast. The Voyage pays four yields a turn and the city it delays loses more than that in growth, Production and the pantheon; land by turn 6 and let the Settlers correct the site.",
+    "Building the Theater Square third. The Marae is the kit; a Commercial Hub before it is a city that pays nothing for its features for forty turns.",
+    "Expecting Great Writers. The Maori earn none; the Culture path is Artists, Musicians, Marae Tourism after Flight, Parks and Resorts, and the Writing slots in Amphitheaters do not exist for the Marae.",
+    "Mining the only hills. A wooded or jungled hill cannot be mined by the Maori, so the Production is Fishing Boats, Harbors, unimproved Woods and domestic routes; a Builder sent to a wooded hill wastes the charge.",
+    "Treating the feature Culture as a score. It buys civics; if the civics are not Humanism, Conservation and Suffrage, it buys nothing."
+  ],
+  "sources": [
+    "Civilization VI Civilopedia, Gathering Storm ruleset (Maori, Kupe, Mana, Kupe's Voyage, Marae, Toa, Pa, National Park, Seaside Resort).",
+    "Boost objectives cross-checked against civilization6planner.com tech-tree and civics-tree pages, 2026-10-01.",
+    "Leadership Focus tags, caveats, Linear template and the Linear_Trajan worked example in this repository. The civ-info text omits that the Maori earn no Great Writers; this plan follows the game."
+  ]
+}

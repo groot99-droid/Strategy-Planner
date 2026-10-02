@@ -1,0 +1,502 @@
+{
+  "slug": "peter",
+  "shape": "Gate",
+  "secondary_shape": null,
+  "version": 1,
+  "updated": "2026-10-02",
+  "assumptions": {
+    "ruleset": "Gathering Storm with every expansion and the Leader Pass",
+    "speed": "Standard",
+    "difficulty": "Emperor",
+    "map": "Continents or Pangaea, standard size, 8 civilizations, a tundra start from Russia's bias",
+    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. Peter has a single persona and it is planned here. The gate is a pantheon and a district, not a turn: Dance of the Aurora is contested and must be yours, and the first Lavra on tundra is what spends it. Every turn number in the first phase is a pace check on that race."
+  },
+  "verdict": {
+    "victory": "Culture",
+    "secondary": "Religion",
+    "confidence": "high",
+    "one_line": "Win the Dance of the Aurora race by turn 15, put a half-price Lavra on tundra in every city, and let its Shrine, Temple and worship building make Great Writers, Artists and Musicians faster than any Theater Square can. Trade with whoever is ahead of you until you are not, then spend two hundred turns of banked Great Works on Tourism.",
+    "why": "The Lavra is a Holy Site at half the Production that gives two Great Prophet points instead of one and, through its buildings, Great Writer, Artist and Musician points no other Holy Site gives; with Dance of the Aurora every tundra tile beside it is Faith and Mother Russia already pays Faith and Production on tundra tiles that would otherwise feed nothing. That is a Great Person engine built on land nobody else wants, and Great Works are permanent, which is why the verdict is Culture and not the Religion the Faith first suggests. The Grand Embassy covers the weakness of a tundra economy by paying Science and Culture from Trade Routes to civilizations ahead of you, which on Emperor is every civilization until the Medieval era. Religion is the second verdict because the same Lavras found one early and the Faith buys the Great People the Lavras do not finish; it is not the first because tundra cities cannot grow the Holy Site ring a Religion win needs."
+  },
+  "map_check": {
+    "must_have": [
+      "Tundra within the capital's work radius and at least two more tundra city sites within ten tiles; Mother Russia and Dance of the Aurora both pay per tundra tile and nothing else in the kit pays at all.",
+      "25 Faith reachable by turn 15: two worked tundra tiles plus God King, or a tundra Lavra site that can be placed by turn 20 if a rival is racing the same pantheon."
+    ],
+    "prefer": [
+      "Mountains or Woods beside the tundra Lavra sites, so adjacency reaches +3 or more before the pantheon is counted.",
+      "A river or a lake for the one city that has to grow to ten population for Civil Service; tundra does not feed it.",
+      "Deer, Furs or Fish nearby for the Food and Gold that tundra lacks, and for a Builder's three improvements.",
+      "A more advanced neighbour within Trade Route range by turn 30 for The Grand Embassy."
+    ],
+    "no_go": "A warm start with no tundra within reach of the first three cities and no tundra start bias in play, where Dance of the Aurora has nothing to touch, the Lavra is merely a cheap Holy Site, and the extra territory of Mother Russia claims grassland anyone could have worked. Russia is then an ordinary civ with a good district and this plan does not apply.",
+    "fallback": "Without tundra, play Russia as a cheap-Holy-Site Culture civ: a Lavra in every city for the Great Person points alone, Religious Settlements or Earth Goddess instead of the Aurora, Work Ethic as the Follower belief for Production, Theater Squares early, and the Grand Embassy Trade Routes as the Science. Expect the Great Prophet ten turns later and the Culture win twenty turns later than this plan."
+  },
+  "kit_levers": [
+    { "source": "leader_ability", "name": "The Grand Embassy", "buys": "One Science or Culture from every Trade Route to a civilization more advanced than Russia, for each three technologies or civics it is ahead.", "exploit": "On Emperor every rival is ahead until the Medieval era, so the first four Trade Routes go to the most advanced civilization you have met, not to your own cities. Re-check the destination each time a route ends: the yield falls as you catch up, and the moment it is zero the route goes home for Food." },
+    { "source": "civ_ability", "name": "Mother Russia", "buys": "Extra territory the turn a city is founded, +1 Faith and +1 Production from tundra tiles, no Blizzard damage to your units and extra Blizzard damage to enemies inside your borders.", "exploit": "Found cities on tundra on purpose: the extra ring reaches the mountain or the Woods the Lavra wants without a Culture purchase, and every tundra tile is a worked Mine or Lumber Mill with Faith attached. Fight defensive wars at home in winter; the Blizzards are yours." },
+    { "source": "unique_infrastructure", "name": "Lavra", "buys": "A Holy Site at half the Production, two Great Prophet points, and Great Writer, Artist and Musician points from its Shrine, Temple and worship building; the city's borders grow by a tile each time a Great Person is used in it.", "exploit": "A Lavra in every city before anything but a Monument, a Shrine in each before turn 50 and a Temple in each before turn 100. Activate Great Writers and Artists in the Lavra city whose border you want pushed, so the tile the Great Person adds is the Woods or mountain the next Lavra needed." },
+    { "source": "unique_unit", "name": "Cossack", "buys": "A Cavalry replacement at Military Science that is stronger than the Cavalry, gains +5 Combat Strength in or beside your own territory, and can move after attacking.", "exploit": "The home guard of a Culture civ, not an invasion unit: four Cossacks inside your borders with the territory bonus and the Blizzards stop any Industrial war on you without a single Encampment. Build them the turn Military Science lands and keep them home." },
+    { "source": "agenda", "name": "Westernizer", "buys": "Peter likes civilizations ahead of him in technology and civics and dislikes those behind.", "exploit": "Irrelevant to your own play, but AI Peter on the same map will like you only while you lead; a backward Russia next door is a friend, a leading one is the civilization he denounces first." }
+  ],
+  "shape_block": {
+    "gate": {
+      "gate_condition": "Dance of the Aurora is founded by you, before any rival takes it, AND the first Lavra is placed on a tundra tile with at least +3 adjacency. The pantheon is the race and the Lavra is what spends it; a pantheon with no Lavra is a number on the religion screen, and a Lavra under another pantheon is a cheap Holy Site. The strategy is open when both hold and the Lavra's Faith is the empire's income.",
+      "fastest_path": ["civic:code-of-laws", "tech:astrology", "civic:foreign-trade", "civic:mysticism"],
+      "estimated_arrival": { "from": 15, "to": 35 },
+      "staging": [
+        "25 Faith banked by turn 15: God King slotted the turn Code of Laws lands and two tundra tiles worked from turn 1, so no rival with a Faith bias beats you to the Aurora.",
+        "The capital's Lavra tile chosen on turn 1: tundra, beside a mountain or two Woods, inside the extra ring Mother Russia gave you, and left unimproved.",
+        "Astrology researched first, before Mining, so the Lavra can be queued the turn the pantheon is picked.",
+        "A second tundra city site found by the Scout within ten tiles, with its own Lavra tile, and the Settler started by turn 15.",
+        "The most advanced civilization you have met noted as the first Trade Route destination for The Grand Embassy, and Foreign Trade queued after Code of Laws.",
+        "A Slinger and a Warrior standing, because the tundra fog is where camps sit and the Lavra city has no walls for sixty turns."
+      ],
+      "late_gate": "If Dance of the Aurora is gone when your 25 Faith arrive (a rival took it before turn 15), take Earth Goddess if the tundra has Woods and coast for Breathtaking tiles, or Religious Settlements for the free tile ring, and keep every other step: the Lavra still costs half, still makes two Prophet points and still carries the Great Writer and Artist line, and Mother Russia's tundra Faith still runs. The religion comes ten turns later and the Faith is a third lower, so Work Ethic becomes the Follower belief rather than a Tourism one, and the Theater Square comes forward to the Classical era to fill the Culture the Aurora would have paid. If the Lavra itself is late (no Astrology by turn 25), the Faith race is already lost for the Prophet: build Stonehenge if Stone is beside the capital, and if not, accept that the religion is bought with the second Prophet and plan Culture without a Founder belief.",
+      "closing_window": "The far deadline is the Great Prophet: on Emperor the last one is claimed by roughly turn 90, and a Russia with two Lavras and Shrines should have hers by turn 55. After it the Lavras' lead is in Writers, Artists and Musicians, and that lead ends when the Culture civilizations build Art Museums and Broadcast Centers in the Industrial and Modern eras and out-point a Temple. So the Great Works have to be banked before turn 200: eight Writings, six Paintings or Sculptures, four Music. The Grand Embassy has its own soft close: once Russia is level with its trade partners it pays nothing, which should happen by the Renaissance; that is the plan working, not failing, and the routes go home then."
+    }
+  },
+  "phases": [
+    {
+      "id": "race",
+      "name": "The pantheon race",
+      "turns": { "from": 1, "to": 25 },
+      "era": "ancient",
+      "objective": "State the gate on turn 1, settle on tundra beside a Lavra tile, work tundra and slot God King for 25 Faith by turn 15, take Dance of the Aurora, research Astrology first and place the first Lavra, and have the second tundra city's Settler out before the phase ends.",
+      "build_order": [
+        { "item": "Scout", "why": "Finds the second tundra site, the nearest camp in the fog and the most advanced neighbour for The Grand Embassy; a natural wonder on the way is the Astrology Eureka." },
+        { "item": "Slinger", "why": "The tundra camps find a Lavra city with no walls; the Archery Eureka is the first barbarian it kills." },
+        { "item": "Settler", "why": "Second city on tundra beside a mountain or Woods, before the Monument; every Lavra after the first is a Settler first." },
+        { "item": "Lavra", "why": "Half-price Holy Site on the tundra tile chosen on turn 1; it is the gate's second half and the Prophet clock starts when it stands." },
+        { "item": "Warrior", "why": "Escort for the Settler and the second half of the camp clears for Bronze Working." },
+        { "item": "Monument", "why": "Culture for Foreign Trade and Early Empire; the Lavra pays no Culture until its Shrine makes a Writer." },
+        { "item": "Builder", "why": "Mine a tundra hill, improve Deer or Furs, farm whatever grows: three improvements for Craftsmanship and the first Food the tundra has." },
+        { "item": "Shrine", "why": "The first Great Prophet point beyond the district's two and the Great Writer point that starts the Culture engine." }
+      ],
+      "research": [
+        { "id": "tech:astrology", "note": "First, before Mining: the Lavra is the gate. Eureka if the Scout passes a natural wonder, which tundra scouting often does." },
+        { "id": "tech:mining", "note": "Tundra hills are Mines with Faith on them under Mother Russia." },
+        { "id": "tech:animal-husbandry", "note": "Camps on Deer and Furs are the only Food and Gold on most tundra." },
+        { "id": "tech:pottery", "note": "Granary in the capital; tundra cities need every Housing they can buy." }
+      ],
+      "civics": [
+        { "id": "civic:code-of-laws", "note": "God King the turn it lands; the extra Faith is the margin in the pantheon race." },
+        { "id": "civic:foreign-trade", "note": "The first Trader and The Grand Embassy; Inspiration if the Scout reaches a second continent." },
+        { "id": "civic:craftsmanship", "note": "Three improved tiles; Ilkum for the Builders tundra needs." }
+      ],
+      "policies": [
+        { "card": "God King", "slot": "economic", "from": "civic:code-of-laws", "why": "One more Faith a turn is the difference between the Aurora on turn 13 and watching Norway or Canada take it." },
+        { "card": "Discipline", "slot": "military", "from": "civic:code-of-laws", "why": "The Slinger and Warrior beat the tundra camp units." }
+      ],
+      "districts": [
+        { "district": "lavra", "city": "capital", "note": "On tundra, beside a mountain or two Woods, inside the extra ring; +3 adjacency or better before the Aurora is counted." }
+      ],
+      "pantheon": { "slug": "dance-of-the-aurora", "why": "+1 Faith on the Lavra for every adjacent tundra tile; with Mother Russia's own tundra Faith it makes a +6 Holy Site out of land that grows nothing.", "alternative": "earth-goddess" },
+      "wonders": [],
+      "governors": [],
+      "city_states": [
+        { "type": "Religious", "why": "The first envoy buys Faith in the capital, which is the pantheon race and the Prophet race both." }
+      ],
+      "great_people": [],
+      "checkpoints": [
+        { "turn": 15, "test": "Gate check, first half: 25 Faith banked or one turn away, Dance of the Aurora still unclaimed, and Astrology researched?", "pass": "Take the Aurora this turn and queue the Lavra on the chosen tile; the gate's second half is a build, not a race.", "fail": "Aurora taken: run the late-gate plan, Earth Goddess or Religious Settlements, and do not delay the Lavra for it. Faith short: God King is missing or no tundra tile is worked; fix the tile assignment by hand this turn." },
+        { "turn": 25, "test": "Gate check, second half: the first Lavra standing on tundra at +3 or better, the second city settled or its Settler moving, and a Trade Route partner identified?", "pass": "Enter the Lavra phase; the strategy is open.", "fail": "Lavra not started: the capital built Settlers first, which is forgivable only if two tundra cities now stand. Put the Lavra first in both and keep the Scout looking for a third site." }
+      ],
+      "tasks": [
+        { "id": "race-state-gate", "turn": 1, "text": "Write the gate down: Dance of the Aurora before anyone else, then a Lavra on tundra. Settle on or beside tundra, mark the Lavra tile, and work a tundra tile from turn 1." },
+        { "id": "race-god-king", "turn": 6, "text": "Slot God King the turn Code of Laws lands; check the Faith per turn against the 25 needed by turn 15." },
+        { "id": "race-scout-tundra", "turn": 8, "text": "Scout the tundra for the second city site with its own mountain or Woods, the nearest camp, and the first civilization." },
+        { "id": "race-pantheon", "turn": 14, "text": "Found Dance of the Aurora; if it is gone, Earth Goddess or Religious Settlements the same turn, never a turn later." },
+        { "id": "race-first-lavra", "turn": 22, "text": "First Lavra placed on the chosen tundra tile; Shrine queued behind it." }
+      ]
+    },
+    {
+      "id": "lavras",
+      "name": "A Lavra in every city",
+      "turns": { "from": 26, "to": 70 },
+      "era": "classical",
+      "objective": "Settle four tundra cities each with a Lavra and a Shrine, found the religion with the first Great Prophet before turn 60, run every Trade Route to the most advanced civilization met, and keep a Slinger line against the tundra camps while the Faith builds the Settlers the tundra cannot feed.",
+      "build_order": [
+        { "item": "Settler", "why": "Third and fourth tundra cities; each is another Lavra, another ring of extra tiles and another two Prophet points." },
+        { "item": "Lavra", "why": "In every new city before the Monument; half price and the Faith starts at once under the Aurora." },
+        { "item": "Shrine", "why": "In every Lavra; Prophet points and the first Great Writer point." },
+        { "item": "Trader", "why": "Two Traders to the most advanced civilization met; The Grand Embassy pays more than a domestic route ever would at this stage." },
+        { "item": "Granary", "why": "Housing in tundra cities that have no fresh water and no Farms." },
+        { "item": "Archer", "why": "Upgrade the Slinger and add one per border city; tundra camps spawn Horsemen that pillage Lavras." },
+        { "item": "Monument", "why": "In every city; Early Empire, Political Philosophy and Drama and Poetry are what the Culture pays for." },
+        { "item": "Builder", "why": "Lumber Mills on tundra Woods and Mines on tundra hills; each is Production, Faith and a step toward Apprenticeship and Mass Production." }
+      ],
+      "research": [
+        { "id": "tech:writing", "note": "A Campus in the one river city; Eureka free from meeting the first civilization." },
+        { "id": "tech:bronze-working", "note": "Lumber Mills come later, but the Woods reveal and the camp kills happen now; Eureka from three barbarian kills." },
+        { "id": "tech:archery", "note": "Archers behind the Lavras; Eureka from the Slinger kill." },
+        { "id": "tech:irrigation", "note": "Farm the one wheat or rice the river city has; Eureka from farming a resource." },
+        { "id": "tech:currency", "note": "Commercial Hub in the capital for a second Trade Route; Eureka free from the first route." },
+        { "id": "tech:wheel", "note": "Water Mill in the river city; Eureka from the first Mine." },
+        { "id": "tech:masonry", "note": "Stonehenge needs it and Ancient Walls in the border city; Eureka from a Quarry." }
+      ],
+      "civics": [
+        { "id": "civic:early-empire", "note": "Colonization for the third and fourth Settler; six population across two cities is the Inspiration, which tundra reaches slowly." },
+        { "id": "civic:mysticism", "note": "Free Inspiration from the pantheon; Holy Site adjacency and the step to Theology." },
+        { "id": "civic:state-workforce", "note": "Free Inspiration from the first Lavra; Corvee and the step to Political Philosophy." },
+        { "id": "civic:political-philosophy", "note": "Classical Republic for the Great Person points and the extra wildcard; three city-states met is the Inspiration." },
+        { "id": "civic:theology", "note": "Founded religion is the Inspiration; Scripture and the Temple path." },
+        { "id": "civic:drama-and-poetry", "note": "Theater Squares and the Great Works slots the Lavra's Writers will need; Inspiration if Stonehenge is built." }
+      ],
+      "policies": [
+        { "card": "Colonization", "slot": "economic", "from": "civic:early-empire", "why": "Settlers at half price while Faith buys nothing yet." },
+        { "card": "Classical Republic", "slot": "wildcard", "from": "civic:political-philosophy", "why": "The government: +15% Great Person points on every Lavra and an Amenity in the cities that are tundra and small." },
+        { "card": "Scripture", "slot": "economic", "from": "civic:theology", "why": "+100% Holy Site adjacency; the Aurora's +4 on a Lavra becomes +8." },
+        { "card": "Inspiration", "slot": "wildcard", "from": "civic:mysticism", "why": "Great Writer points when the Shrines are the only source; swap out once Temples stand." }
+      ],
+      "districts": [
+        { "district": "lavra", "city": "every city", "note": "On tundra, beside mountains or Woods, before any other district." },
+        { "district": "commercial-hub", "city": "capital", "note": "A second Trade Route for The Grand Embassy; Markets later for Guilds." }
+      ],
+      "pantheon": { "slug": "dance-of-the-aurora", "why": "Already founded; this phase places the Lavras that spend it." },
+      "wonders": [
+        { "name": "Stonehenge", "why": "A free Great Prophet the turn it finishes, which is the religion forty turns early and leaves the Lavras' own points for the next Prophet race nobody else is running.", "skip_if": "No Stone is adjacent to a flat tile in the capital, or Masonry lands after turn 40; a rival with a Faith bias on the map makes it a coin flip and the Lavras found the religion anyway." }
+      ],
+      "governors": [
+        { "governor": "magnus", "promotion": "Provision", "city": "capital", "why": "Settlers do not cost population in a capital that grows one citizen every eight turns." },
+        { "governor": "pingala", "promotion": "Librarian", "city": "the river city", "why": "Science and Culture where the population actually grows; his Grants promotion comes next for the Lavra points." }
+      ],
+      "city_states": [
+        { "slug": "kandy", "why": "A Relic for every natural wonder found and Faith per Relic; tundra scouting finds wonders, and Relics are Tourism Russia stores for free." },
+        { "slug": "geneva", "why": "+15% Science in every city while not at war, which a Culture civ on tundra never is." },
+        { "slug": "antananarivo", "why": "+2% Culture for every Great Person ever earned; nobody earns more than a Lavra empire." }
+      ],
+      "great_people": [
+        { "class": "great-prophet", "why": "The religion must be founded by turn 60; four Lavras with Shrines make it, and Faith buys the last points if a rival is close." },
+        { "class": "great-writer", "why": "The first Writer arrives from Shrine points alone; activate him in the Lavra city whose border needs a tile." }
+      ],
+      "checkpoints": [
+        { "turn": 45, "test": "Three cities each with a Lavra, two Shrines, two Trade Routes running to a more advanced civilization, and Great Prophet points on pace for turn 60?", "pass": "Queue the fourth Settler and start the Theater Square in the river city.", "fail": "Prophet points behind: Faith-buy nothing else and run the Holy Site prayer project in the capital until he lands. Routes going home: re-aim them at the leader in Science; the Embassy pays nothing from your own cities." },
+        { "turn": 70, "test": "Religion founded with a Founder belief and Work Ethic or Reliquaries as Follower, four cities, four Lavras, and Drama and Poetry done?", "pass": "Enter the banking phase; Temples and Theater Squares now.", "fail": "No religion: the last Prophet is slipping; buy him with Faith if within 100 Faith, otherwise take Stonehenge off the list and play Culture without a Founder belief, which this plan survives. Fewer than four cities: Colonization and Magnus until there are." }
+      ],
+      "tasks": [
+        { "id": "lavras-first-route", "turn": 30, "text": "First Trader to the most advanced civilization met; note the Science and Culture per turn it pays and re-check at every route end." },
+        { "id": "lavras-third-city", "turn": 38, "text": "Third tundra city settled with its Lavra tile beside a mountain or Woods; Lavra queued first." },
+        { "id": "lavras-shrines", "turn": 45, "text": "Shrines in three Lavras; the Writer and Prophet points both come from them." },
+        { "id": "lavras-fourth-city", "turn": 55, "text": "Fourth city settled under Colonization; the Scout has found a fifth site for later." },
+        { "id": "lavras-religion", "turn": 60, "text": "Found the religion: a Founder belief that pays per city following it, Work Ethic for Production or Reliquaries if Kandy is yours, and Choral Music as the Enhancer later." }
+      ]
+    },
+    {
+      "id": "bank",
+      "name": "Bank the Great People",
+      "turns": { "from": 71, "to": 130 },
+      "era": "medieval",
+      "objective": "Put a Temple in every Lavra and a worship building after the Enhancer, build Theater Squares with Amphitheaters for the Writings the Lavras now produce every twenty turns, reach Reformed Church for St. Basil's, and keep the Grand Embassy routes running until the day they pay nothing.",
+      "build_order": [
+        { "item": "Temple", "why": "In every Lavra; Great Artist points and the Divine Right Inspiration at two." },
+        { "item": "Theater Square", "why": "In the capital and the river city; the slots the Writers' works go into and the Great Writer points that double the Lavras'." },
+        { "item": "Amphitheater", "why": "Two Writing slots each; a Writer with nowhere to put his work is wasted." },
+        { "item": "Worship building", "why": "Cathedral, Meeting House or whatever the Enhancer gave; it carries the Lavra's Great Musician point." },
+        { "item": "Aqueduct", "why": "In the river city; Housing toward ten population for Civil Service and the Military Engineering Eureka." },
+        { "item": "Market", "why": "Two for Guilds and a third Trade Route; more Embassy routes while they still pay." },
+        { "item": "Ancient Walls", "why": "Border cities; a Culture civ on Emperor is a target between turns 80 and 120." },
+        { "item": "Lumber Mill", "why": "On tundra Woods; Production, Faith under Mother Russia, and the Mass Production Eureka." }
+      ],
+      "research": [
+        { "id": "tech:apprenticeship", "note": "Three Mines on tundra hills give the Eureka; Production in cities that have little." },
+        { "id": "tech:mathematics", "note": "Lavra, Commercial Hub and Theater Square are three specialty districts." },
+        { "id": "tech:education", "note": "Universities; the Lavras make no Scientist so expect to pay full price." },
+        { "id": "tech:construction", "note": "Water Mill Eureka in the river city; Games and Recreation's Inspiration." },
+        { "id": "tech:military-engineering", "note": "The river city's Aqueduct; nothing else needed." },
+        { "id": "tech:castles", "note": "Free Eureka from Classical Republic; Medieval Walls on the border." },
+        { "id": "tech:mass-production", "note": "Lumber Mill on tundra Woods; Shipyards are irrelevant, but Mass Production leads on." }
+      ],
+      "civics": [
+        { "id": "civic:games-and-recreation", "note": "Inspiration from Construction; Entertainment Complex later and the step to Defensive Tactics." },
+        { "id": "civic:feudalism", "note": "Six Farms is hard on tundra; take it late and unboosted unless the river city farms it. Serfdom for the Builders." },
+        { "id": "civic:civil-service", "note": "The river city at ten; the step to Guilds and Divine Right." },
+        { "id": "civic:divine-right", "note": "Two Temples give the Inspiration for free; Monarchy is not needed, but Reformed Church is behind it." },
+        { "id": "civic:guilds", "note": "Two Markets; a third route and the Banking Eureka." },
+        { "id": "civic:reformed-church", "note": "Six cities following your religion; St. Basil's Cathedral is here and it is Russia's wonder." },
+        { "id": "civic:humanism", "note": "Inspiration free from the first Great Artist; Art Museums and the Hermitage path." }
+      ],
+      "policies": [
+        { "card": "Serfdom", "slot": "economic", "from": "civic:feudalism", "why": "Builders with extra charges for Lumber Mills, Mines and the Farms Feudalism wants." },
+        { "card": "Scripture", "slot": "economic", "from": "civic:theology", "why": "Still the best card in the empire; every Lavra is at +6 or more." },
+        { "card": "Literary Tradition", "slot": "wildcard", "from": "civic:drama-and-poetry", "why": "+2 Great Writer points per Theater Square, on top of the Lavra Shrines." },
+        { "card": "Monarchy", "slot": "wildcard", "from": "civic:divine-right", "why": "Only if a neighbour is hostile: Housing from Walls and a military slot; Classical Republic otherwise." }
+      ],
+      "districts": [
+        { "district": "theater-square", "city": "capital and the river city", "note": "Beside the Lavra where the adjacency allows; Amphitheaters first." },
+        { "district": "aqueduct", "city": "the river city", "note": "Housing to ten population for Civil Service." },
+        { "district": "campus", "city": "the river city", "note": "The one Science district; the Embassy covers the rest until the Renaissance." }
+      ],
+      "pantheon": { "slug": "dance-of-the-aurora", "why": "Still paying; Scripture doubles it." },
+      "wonders": [
+        { "name": "St. Basil's Cathedral", "why": "Three Relic slots, more Tourism from Relics, and every tundra tile in its city gains Food, Production and Culture; it is the one wonder built for Russia.", "skip_if": "Reformed Church lands after turn 150, or the capital has no tundra tile free beside its city center." },
+        { "name": "Mahabodhi Temple", "why": "Two free Apostles for the Religion second verdict and Faith on a Lavra beside Woods, which every Lavra is.", "skip_if": "Theology arrives after turn 100, or the religion was not founded." }
+      ],
+      "governors": [
+        { "governor": "pingala", "promotion": "Grants", "city": "capital", "why": "+100% Great Person points in the city with the oldest Lavra and both Theater Square buildings." },
+        { "governor": "moksha", "promotion": "Bishop", "city": "the second Lavra city", "why": "Faith-bought Temples and worship buildings in the city whose Production cannot afford them." },
+        { "governor": "liang", "promotion": "Zoning Commissioner", "city": "the river city", "why": "Districts faster where three of them are going up." }
+      ],
+      "city_states": [
+        { "slug": "ayutthaya", "why": "Culture from every building completed, and the Lavras are four buildings each." },
+        { "slug": "yerevan", "why": "Apostle promotions chosen, not rolled, for the Religion second verdict." },
+        { "type": "Cultural", "why": "Any Cultural city-state's envoys add Culture per Amphitheater and Museum." }
+      ],
+      "great_people": [
+        { "class": "great-writer", "why": "One every twenty turns from here; the works go into the Amphitheaters and the activations push Lavra borders." },
+        { "class": "great-artist", "why": "Temples start the points; the first Artist is the Humanism Inspiration." },
+        { "class": "great-prophet", "why": "Only if the religion was missed; otherwise the Lavras' Prophet points are spent, and the Faith buys Writers." }
+      ],
+      "checkpoints": [
+        { "turn": 100, "test": "Four Temples, two Theater Squares with Amphitheaters, two Writings slotted, Humanism within ten turns, and the river city at ten population?", "pass": "Start St. Basil's the turn Reformed Church lands and queue the worship buildings.", "fail": "Writers with no slots: Amphitheaters before anything else, a Great Work in a Palace slot is fine for ten turns, not fifty. River city small: Aqueduct and Granary first, Civil Service waits." },
+        { "turn": 130, "test": "Six cities following the religion, St. Basil's started or built, four Great Works banked, a Great Artist earned, and the Embassy routes paying less than two a turn each?", "pass": "Send the routes home for Food and enter the Culture phase; the Lavras have done their job and the Theater Squares take over.", "fail": "Fewer than four works: Pingala's Grants is missing or the Temples are; fix both. Routes still paying three or more: you are behind in Science, keep them out and put the river city on Universities." }
+      ],
+      "tasks": [
+        { "id": "bank-temples", "turn": 80, "text": "Temples in four Lavras; Divine Right Inspiration collected and Great Artist points running." },
+        { "id": "bank-theater", "turn": 90, "text": "Theater Squares in the capital and the river city with Amphitheaters queued; Literary Tradition slotted." },
+        { "id": "bank-worship", "turn": 105, "text": "Worship building in every Lavra after the Enhancer belief; the Musician points start." },
+        { "id": "bank-walls", "turn": 110, "text": "Ancient Walls in the two border cities and an Archer pair in each; a Culture civ at turn 110 is a target." },
+        { "id": "bank-basils", "turn": 125, "text": "St. Basil's Cathedral started in the capital the turn Reformed Church lands; Kandy's Relics go into it." },
+        { "id": "bank-routes-home", "turn": 130, "text": "Check every Embassy route; any paying under two a turn goes home for Food and Production." }
+      ]
+    },
+    {
+      "id": "culture",
+      "name": "Spend the bank",
+      "turns": { "from": 131, "to": 200 },
+      "era": "industrial",
+      "objective": "Turn the banked Great Works into Tourism: Art Museums themed with the Lavras' Artists, the Hermitage, Archaeologists for the Relic and Artifact slots, Cossacks at home against the Industrial war, and Open Borders and Trade Routes to every civilization so the Tourism lands where it counts.",
+      "build_order": [
+        { "item": "Art Museum", "why": "Three slots each in two Theater Squares; the Opera and Ballet Inspiration and the themes that double Tourism." },
+        { "item": "Archaeological Museum", "why": "In the third Theater Square; Natural History's Inspiration and Artifacts to fill it." },
+        { "item": "Archaeologist", "why": "Three Artifacts theme a museum; the Combustion Eureka is the first one." },
+        { "item": "Cossack", "why": "Four, the turn Military Science lands, kept inside the borders where they are at +5 and the Blizzards fight for you." },
+        { "item": "University", "why": "Two for Printing; Science close enough that Computers and Rock Bands arrive on time." },
+        { "item": "Workshop", "why": "Two for Industrialization; Factories power the museums' cities." },
+        { "item": "Neighborhood", "why": "Two on Breathtaking tundra for Sanitation and Conservation; Housing the cities finally need." }
+      ],
+      "research": [
+        { "id": "tech:printing", "note": "Two Universities; the Science catch-up and the Tourism from Printing itself." },
+        { "id": "tech:astronomy", "note": "A University beside a tundra mountain gives the Eureka; the Colonialism Inspiration comes from researching it." },
+        { "id": "tech:banking", "note": "Free Eureka from Guilds; Banks for Economics if Gold is short." },
+        { "id": "tech:industrialization", "note": "Two Workshops; Factories and Coal." },
+        { "id": "tech:military-science", "note": "Cossacks; the Eureka is a Knight kill, which this plan rarely has, so pay for it." },
+        { "id": "tech:scientific-theory", "note": "Free Eureka from The Enlightenment; Research Grants and the way to Radio." },
+        { "id": "tech:sanitation", "note": "Two Neighborhoods on tundra; Housing the Lavra cities never had." }
+      ],
+      "civics": [
+        { "id": "civic:the-enlightenment", "note": "Three Great People is long done; Rationalism and Free Market." },
+        { "id": "civic:opera-and-ballet", "note": "An Art Museum gives the Inspiration; the Bolshoi is here." },
+        { "id": "civic:natural-history", "note": "Archaeological Museum gives the Inspiration; Archaeologists and the Hermitage." },
+        { "id": "civic:civil-engineering", "note": "Seven district types across the empire; Public Works for the Neighborhoods." },
+        { "id": "civic:colonialism", "note": "Astronomy gives the Inspiration; the step to Nationalism is not needed, the step to Natural History is." },
+        { "id": "civic:conservation", "note": "A Neighborhood on Breathtaking tundra beside Woods; National Parks and Naturalists bought with the Faith." },
+        { "id": "civic:diplomatic-service", "note": "An alliance with the civilization you traded with for a hundred turns; Open Borders and a Cultural Alliance." }
+      ],
+      "policies": [
+        { "card": "Grand Opera", "slot": "wildcard", "from": "civic:opera-and-ballet", "why": "+2 Great Writer, Artist and Musician points per Theater Square building; the Lavras' points plus these outpace any Culture civ." },
+        { "card": "Charismatic Leader", "slot": "diplomatic", "from": "civic:political-philosophy", "why": "Two more Influence a turn for the Cultural city-state envoys until Online Communities exists." },
+        { "card": "Rationalism", "slot": "economic", "from": "civic:the-enlightenment", "why": "Science from the Universities in the two cities big enough to use it." },
+        { "card": "Natural Philosophy", "slot": "economic", "from": "civic:recorded-history", "why": "Campus adjacency doubled in the river city." }
+      ],
+      "districts": [
+        { "district": "theater-square", "city": "a third city", "note": "Archaeological Museum here; the first two hold Art Museums." },
+        { "district": "industrial-zone", "city": "capital", "note": "Workshop and Factory; the Production the Hermitage and Bolshoi need." },
+        { "district": "neighborhood", "city": "capital and the river city", "note": "On Breathtaking tundra; Sanitation and Conservation Inspirations." }
+      ],
+      "wonders": [
+        { "name": "Hermitage", "why": "Four Great Artist slots in one building; Russia's Artists have nowhere else to go once two Art Museums are full.", "skip_if": "Natural History lands after turn 190, or no river tile is free in a Theater Square city." },
+        { "name": "Bolshoi Theatre", "why": "Two free civics and Writing and Music slots; the civics are the Tourism ones you would otherwise buy.", "skip_if": "Opera and Ballet lands after turn 185, or a Culture civilization already has Printing and a Theater Square city on a river." }
+      ],
+      "governors": [
+        { "governor": "pingala", "promotion": "Curator", "city": "capital", "why": "+100% Tourism from Great Works in the city holding most of them." },
+        { "governor": "reyna", "promotion": "Forestry Management", "city": "the Woods tundra city", "why": "Gold from unimproved Woods and appeal for the National Park and the Neighborhood." },
+        { "governor": "victor", "promotion": "Garrison Commander", "city": "the border city", "why": "The Cossacks' +5 in territory stacks with his +5 in borders." }
+      ],
+      "city_states": [
+        { "slug": "antananarivo", "why": "Every Great Person earned is 2% Culture forever; keep the suzerainty with Faith-bought envoys through Amani if needed." },
+        { "type": "Cultural", "why": "Culture per Museum and the Diplomatic Victory point the suzerainties add." }
+      ],
+      "great_people": [
+        { "class": "great-artist", "why": "Three works of one era from one Artist theme a museum; the Lavra Temples and Grand Opera make one every fifteen turns." },
+        { "class": "great-musician", "why": "The worship buildings' points; Music goes into Broadcast Centers and the Bolshoi." },
+        { "class": "great-writer", "why": "Still arriving; later Writers go into the Bolshoi and the Amphitheaters of new cities." }
+      ],
+      "checkpoints": [
+        { "turn": 165, "test": "Two themed Art Museums, the Hermitage started, three Archaeologists working, four Cossacks home, and Tourism per turn above the weakest rival's Culture?", "pass": "Continue; queue the Bolshoi and start the National Park.", "fail": "Museums unthemed: stop building Artists' works into them at random and move works between slots; theming is half the Tourism. Tourism below every rival's Culture: Open Borders with everyone and a Trade Route to each civilization before anything else." },
+        { "turn": 200, "test": "Twelve or more Great Works banked, the Hermitage built, a National Park, Conservation done, and Tourism dominant over at least two civilizations?", "pass": "Enter the close; Computers and Rock Bands finish it.", "fail": "Fewer than two civilizations dominated: the Culture leader is the problem, not your Tourism; ally them, trade with them and send the Rock Bands to them first. If a war has taken a city, the Cossacks were not built; build them now." }
+      ],
+      "tasks": [
+        { "id": "culture-museums", "turn": 140, "text": "Art Museums in both Theater Squares; move the banked Paintings and Sculptures so each museum holds three of one era." },
+        { "id": "culture-cossacks", "turn": 150, "text": "Four Cossacks the turn Military Science lands; station them inside the borders of the two border cities." },
+        { "id": "culture-archaeologists", "turn": 160, "text": "Three Archaeologists from the Archaeological Museum; Artifacts for the museum and the Combustion Eureka." },
+        { "id": "culture-hermitage", "turn": 175, "text": "Hermitage started in the river city; the Artists the museums cannot hold go here." },
+        { "id": "culture-open-borders", "turn": 180, "text": "Open Borders and a Trade Route to every civilization; Tourism needs a door into each." },
+        { "id": "culture-national-park", "turn": 195, "text": "A Naturalist bought with Faith and a National Park on four Breathtaking tundra tiles; the Radio Eureka comes with it." }
+      ]
+    },
+    {
+      "id": "close",
+      "name": "Tourism to the end",
+      "turns": { "from": 201, "to": null },
+      "era": "modern",
+      "objective": "Finish the Culture win: Broadcast Centers for the Music, Computers for the Tourism multiplier, Rock Bands bought with the Lavras' Faith and sent to the civilization with the most domestic tourists, and a Diplomatic or Religion fallback if a rival's Culture outruns your Tourism.",
+      "build_order": [
+        { "item": "Broadcast Center", "why": "Music slots and Tourism in every Theater Square city." },
+        { "item": "Rock Band", "why": "Faith-bought in the Lavra cities, two at a time, aimed at the Culture leader." },
+        { "item": "Ski Resort", "why": "On tundra mountains with Professional Sports; Tourism from the land nobody else wanted." },
+        { "item": "Research Lab", "why": "Science close enough to reach Computers and Social Media before the Culture leader's Tourism rises." },
+        { "item": "Stadium", "why": "Amenities for the cities the Neighborhoods grew." }
+      ],
+      "research": [
+        { "id": "tech:radio", "note": "National Park gives the Eureka; Broadcast Centers." },
+        { "id": "tech:computers", "note": "A Tier 3 government gives the Eureka; +25% Tourism for the rest of the game." },
+        { "id": "tech:flight", "note": "An Industrial wonder gives the Eureka; Tourism from improvements." },
+        { "id": "tech:chemistry", "note": "Alliance level 2 with the old trade partner; Research Labs." }
+      ],
+      "civics": [
+        { "id": "civic:mass-media", "note": "Radio gives the Inspiration; the step to Social Media and the Tier 3 government." },
+        { "id": "civic:cultural-heritage", "note": "A themed building gives the Inspiration; Heritage Tourism and the Open-Air Museum slot." },
+        { "id": "civic:professional-sports", "note": "Two Entertainment Complexes; Ski Resorts on the tundra mountains." },
+        { "id": "civic:social-media", "note": "Online Communities; Telecommunications' research is the Inspiration and arrives with the Labs." }
+      ],
+      "policies": [
+        { "card": "Heritage Tourism", "slot": "economic", "from": "civic:cultural-heritage", "why": "+100% Tourism from Great Works; the bank doubles." },
+        { "card": "Online Communities", "slot": "diplomatic", "from": "civic:social-media", "why": "+50% Tourism to civilizations you trade with, and you trade with all of them." },
+        { "card": "Satellite Broadcasts", "slot": "economic", "from": "civic:mass-media", "why": "+200% Tourism from Music, which the worship buildings and Bolshoi hold." }
+      ],
+      "districts": [
+        { "district": "entertainment-complex", "city": "two tundra cities", "note": "Professional Sports Inspiration and the Ski Resorts behind it." }
+      ],
+      "wonders": [
+        { "name": "Eiffel Tower", "why": "+2 Appeal on every tile; more Breathtaking tundra for Neighborhoods, Parks and Ski Resorts.", "skip_if": "Steel lands after turn 230, or the Culture leader is already building it." }
+      ],
+      "governors": [
+        { "governor": "pingala", "promotion": "Curator", "city": "capital", "why": "Still the Tourism governor." },
+        { "governor": "amani", "promotion": "Prestige", "city": "a city near the Culture leader", "why": "Loyalty outward and envoys for the Cultural city-states." }
+      ],
+      "city_states": [
+        { "type": "Cultural", "why": "Keep every Cultural suzerainty; each is Culture and a Diplomatic Victory point if the fallback is needed." }
+      ],
+      "great_people": [
+        { "class": "great-musician", "why": "Music is the highest Tourism per work under Satellite Broadcasts; the worship buildings still make the points." }
+      ],
+      "checkpoints": [
+        { "turn": 250, "test": "Tourism dominant over every civilization but one, Computers researched, Heritage Tourism and Online Communities slotted, and two Rock Bands on the road to the last holdout?", "pass": "Continue to the end; no further decisions.", "fail": "Two or more civilizations not dominated: Rock Bands to the one with the most domestic tourists, every Faith into them, and check that Open Borders is still in place. If the Culture leader is out of reach, count the Diplomatic Favor and the suzerainties for the Diplomatic fallback." }
+      ],
+      "tasks": [
+        { "id": "close-broadcast", "turn": 210, "text": "Broadcast Centers in three Theater Squares; the Music moved into them." },
+        { "id": "close-computers", "turn": 230, "text": "Computers researched with the Tier 3 government Eureka; +25% Tourism on." },
+        { "id": "close-rock-bands", "turn": 240, "text": "Two Rock Bands bought with Faith in the Lavra cities and sent to the civilization with the most domestic tourists." },
+        { "id": "close-review", "turn": 250, "text": "Review the turn 250 checkpoint; continue, or pivot the Faith to Apostles and the suzerainties to Diplomatic Favor." }
+      ]
+    }
+  ],
+  "boosts": [
+    { "id": "tech:astrology", "fit": "cheap", "when": "race", "how": "The Scout passes a natural wonder on the tundra; research it first anyway." },
+    { "id": "tech:writing", "fit": "free", "when": "lavras", "how": "The Scout meets the first civilization." },
+    { "id": "tech:archery", "fit": "cheap", "when": "lavras", "how": "The Slinger kills the first barbarian from the tundra camp." },
+    { "id": "tech:bronze-working", "fit": "cheap", "when": "lavras", "how": "Three barbarian kills clearing the tundra camp with the Warrior and the Archer." },
+    { "id": "tech:irrigation", "fit": "cheap", "when": "lavras", "how": "Farm the one wheat or rice the river city has." },
+    { "id": "tech:wheel", "fit": "free", "when": "lavras", "how": "The first Builder mines a tundra hill with a resource." },
+    { "id": "tech:masonry", "fit": "cheap", "when": "lavras", "how": "A Quarry on the Stone that Stonehenge also wants." },
+    { "id": "tech:currency", "fit": "free", "when": "lavras", "how": "The first Embassy Trade Route." },
+    { "id": "tech:sailing", "fit": "skip", "when": null, "how": "" },
+    { "id": "tech:horseback-riding", "fit": "cheap", "when": "lavras", "how": "A Pasture on Sheep or Horses if the tundra has either." },
+    { "id": "tech:iron-working", "fit": "skip", "when": null, "how": "" },
+    { "id": "tech:construction", "fit": "cheap", "when": "bank", "how": "A Water Mill in the river city." },
+    { "id": "tech:engineering", "fit": "cheap", "when": "bank", "how": "Ancient Walls in the border city, which the plan builds anyway." },
+    { "id": "tech:mathematics", "fit": "free", "when": "bank", "how": "Lavra, Commercial Hub and Theater Square are three specialty districts." },
+    { "id": "tech:apprenticeship", "fit": "free", "when": "bank", "how": "Three Mines on tundra hills, each paying Faith under Mother Russia." },
+    { "id": "tech:education", "fit": "costly", "when": "bank", "how": "A Great Scientist, which Lavras do not make; buy one with Faith only if the Prophet is already in." },
+    { "id": "tech:military-engineering", "fit": "cheap", "when": "bank", "how": "The river city's Aqueduct." },
+    { "id": "tech:castles", "fit": "free", "when": "bank", "how": "Classical Republic is a Tier 2 government." },
+    { "id": "tech:mass-production", "fit": "free", "when": "bank", "how": "A Lumber Mill on tundra Woods." },
+    { "id": "tech:military-tactics", "fit": "skip", "when": null, "how": "" },
+    { "id": "tech:stirrups", "fit": "free", "when": "bank", "how": "Feudalism is on the civic path, late but unavoidable." },
+    { "id": "tech:machinery", "fit": "costly", "when": "bank", "how": "Three Archers only if a neighbour forces it; otherwise pay." },
+    { "id": "tech:buttress", "fit": "free", "when": "bank", "how": "Stonehenge or Mahabodhi is a Classical-or-later wonder you own." },
+    { "id": "tech:banking", "fit": "free", "when": "culture", "how": "Guilds is on the civic path." },
+    { "id": "tech:printing", "fit": "cheap", "when": "culture", "how": "Two Universities, river city and capital." },
+    { "id": "tech:astronomy", "fit": "cheap", "when": "culture", "how": "A University beside one of the tundra mountains the Lavras already use." },
+    { "id": "tech:gunpowder", "fit": "skip", "when": null, "how": "" },
+    { "id": "tech:cartography", "fit": "skip", "when": null, "how": "" },
+    { "id": "tech:industrialization", "fit": "cheap", "when": "culture", "how": "Two Workshops in the Industrial Zones." },
+    { "id": "tech:scientific-theory", "fit": "free", "when": "culture", "how": "The Enlightenment is on the civic path." },
+    { "id": "tech:military-science", "fit": "costly", "when": "culture", "how": "A Knight kill, which a Culture civ rarely has; pay for the Cossacks' tech." },
+    { "id": "tech:sanitation", "fit": "cheap", "when": "culture", "how": "Two Neighborhoods on Breathtaking tundra." },
+    { "id": "tech:economics", "fit": "costly", "when": "culture", "how": "Two Banks if the Gold runs short for Rock Bands later." },
+    { "id": "tech:flight", "fit": "free", "when": "close", "how": "The Hermitage or Bolshoi is an Industrial wonder." },
+    { "id": "tech:radio", "fit": "cheap", "when": "close", "how": "The National Park on Breathtaking tundra." },
+    { "id": "tech:chemistry", "fit": "cheap", "when": "close", "how": "Alliance level 2 with the civilization the Embassy traded with." },
+    { "id": "tech:combustion", "fit": "cheap", "when": "culture", "how": "The first Artifact an Archaeologist digs." },
+    { "id": "tech:computers", "fit": "free", "when": "close", "how": "Any Tier 3 government." },
+    { "id": "tech:replaceable-parts", "fit": "skip", "when": null, "how": "" },
+    { "id": "tech:steel", "fit": "skip", "when": null, "how": "" },
+    { "id": "civic:craftsmanship", "fit": "free", "when": "race", "how": "Mine, Camp and a third tile from the first Builder." },
+    { "id": "civic:foreign-trade", "fit": "costly", "when": "race", "how": "A second continent sighted; research it plain unless the Scout is lucky." },
+    { "id": "civic:military-tradition", "fit": "cheap", "when": "lavras", "how": "The tundra camp cleared by the Warrior and Archer." },
+    { "id": "civic:state-workforce", "fit": "free", "when": "lavras", "how": "The first Lavra is the first district." },
+    { "id": "civic:early-empire", "fit": "cheap", "when": "lavras", "how": "Six population across two tundra cities, slower than elsewhere but by turn 40." },
+    { "id": "civic:mysticism", "fit": "free", "when": "lavras", "how": "The pantheon won in the race." },
+    { "id": "civic:political-philosophy", "fit": "cheap", "when": "lavras", "how": "Three city-states met by the Scout." },
+    { "id": "civic:drama-and-poetry", "fit": "cheap", "when": "lavras", "how": "Stonehenge, or Mahabodhi later if Stonehenge was skipped." },
+    { "id": "civic:theology", "fit": "free", "when": "lavras", "how": "Founding the religion." },
+    { "id": "civic:games-and-recreation", "fit": "free", "when": "bank", "how": "Researching Construction for the Water Mill." },
+    { "id": "civic:recorded-history", "fit": "costly", "when": "bank", "how": "Two Campuses, which this plan builds one of; take it late for Natural Philosophy." },
+    { "id": "civic:military-training", "fit": "skip", "when": null, "how": "" },
+    { "id": "civic:defensive-tactics", "fit": "cheap", "when": "bank", "how": "A neighbour declares on a Culture civ sooner or later." },
+    { "id": "civic:feudalism", "fit": "costly", "when": "bank", "how": "Six Farms on tundra; only the river city can make them." },
+    { "id": "civic:civil-service", "fit": "cheap", "when": "bank", "how": "The river city at ten population with the Aqueduct." },
+    { "id": "civic:divine-right", "fit": "free", "when": "bank", "how": "Two Temples in the Lavras." },
+    { "id": "civic:guilds", "fit": "cheap", "when": "bank", "how": "Two Markets, capital and the river city." },
+    { "id": "civic:medieval-faires", "fit": "cheap", "when": "bank", "how": "Four Trade Routes running, which the Embassy wants anyway." },
+    { "id": "civic:mercenaries", "fit": "skip", "when": null, "how": "" },
+    { "id": "civic:humanism", "fit": "free", "when": "bank", "how": "The first Great Artist from the Lavra Temples." },
+    { "id": "civic:reformed-church", "fit": "free", "when": "bank", "how": "Six cities following your religion; your own five and one neighbour's." },
+    { "id": "civic:diplomatic-service", "fit": "cheap", "when": "culture", "how": "An alliance with the old trade partner." },
+    { "id": "civic:the-enlightenment", "fit": "free", "when": "culture", "how": "Three Great People were earned by turn 90." },
+    { "id": "civic:mercantilism", "fit": "costly", "when": "culture", "how": "A Great Merchant, which a Market or two may produce by accident." },
+    { "id": "civic:exploration", "fit": "skip", "when": null, "how": "" },
+    { "id": "civic:civil-engineering", "fit": "cheap", "when": "culture", "how": "Seven district types: Lavra, Commercial Hub, Theater Square, Campus, Aqueduct, Industrial Zone, Neighborhood." },
+    { "id": "civic:opera-and-ballet", "fit": "free", "when": "culture", "how": "The first Art Museum." },
+    { "id": "civic:natural-history", "fit": "free", "when": "culture", "how": "The Archaeological Museum in the third Theater Square." },
+    { "id": "civic:colonialism", "fit": "cheap", "when": "culture", "how": "Researching Astronomy." },
+    { "id": "civic:urbanization", "fit": "cheap", "when": "culture", "how": "The river city at fifteen with Neighborhoods and a Sewer." },
+    { "id": "civic:nationalism", "fit": "skip", "when": null, "how": "" },
+    { "id": "civic:conservation", "fit": "cheap", "when": "culture", "how": "A Neighborhood on a Breathtaking tundra tile beside Woods and a mountain." },
+    { "id": "civic:mass-media", "fit": "cheap", "when": "close", "how": "Researching Radio after the National Park." },
+    { "id": "civic:cultural-heritage", "fit": "free", "when": "close", "how": "A themed Art Museum." },
+    { "id": "civic:professional-sports", "fit": "cheap", "when": "close", "how": "Two Entertainment Complexes for the Ski Resorts." },
+    { "id": "civic:social-media", "fit": "costly", "when": "close", "how": "Telecommunications has no Eureka of its own; research it when the Labs stand." },
+    { "id": "civic:capitalism", "fit": "skip", "when": null, "how": "" },
+    { "id": "civic:class-struggle", "fit": "skip", "when": null, "how": "" }
+  ],
+  "decision_triggers": [
+    { "name": "Aurora taken", "if": "A rival founds Dance of the Aurora before your 25 Faith arrive.", "then": "Earth Goddess the same turn if the tundra has Woods or coast for Breathtaking tiles, Religious Settlements otherwise. Do not delay the Lavra; it still costs half and still makes the Great People. Expect the religion ten turns later and bring the Theater Square forward." },
+    { "name": "Embassy route pays nothing", "if": "A Trade Route to the chosen partner shows zero Science and Culture from The Grand Embassy.", "then": "You have caught up with that civilization; good. Re-aim the Trader at whoever now leads in technologies, and when nobody is three ahead, send every route home for Food and Production." },
+    { "name": "Last Prophet slipping", "if": "By turn 55 the Great Prophet screen shows a rival within ten points of the last Prophet and you are not.", "then": "Faith-buy the remaining points if under 150 Faith, run the Holy Site prayer project in two Lavras, and if he still goes, drop the Religion second verdict and put the Faith into Writers and Artists from here on; Culture does not need the religion." },
+    { "name": "Industrial war on a Culture civ", "if": "A neighbour with Musketmen or better declares on you between turns 120 and 180.", "then": "Four Cossacks and Medieval Walls, fought inside your own borders where the +5 and the Blizzards apply; take no cities, make peace at the first offer, and keep the museums building. Collect the Defensive Tactics Inspiration if it is still open." }
+  ],
+  "abort": {
+    "trigger": "The Aurora is lost, the first Lavra is not placed by turn 35, and a rival with a Faith bias has already claimed the first Prophet while a neighbour is settling the tundra sites you scouted.",
+    "actions": [
+      "Do not chase the religion; the Faith race is over and Lavra points spent on it buy nothing a Writer would not.",
+      "Keep every Lavra for its Great Writer and Artist points, take Work Ethic from whatever religion reaches you, and play the Theater Square Culture plan from the Classical era with the Embassy routes as the Science.",
+      "If the tundra sites are gone too, settle whatever land remains for the Mother Russia ring, and expect a Score or late Culture finish rather than a turn 250 win."
+    ]
+  },
+  "fail_state": "The pantheon race was lost to a rival at turn 14 and the Lavra was built at turn 50 as an afterthought; the religion never came, the Writers had no Amphitheaters to fill, the Trade Routes ran to Russia's own cities and paid nothing, and at turn 200 Russia was a small tundra civ with four Great Works and no Tourism. The gate was never properly opened, and the pre-gate turns produced nothing the Culture plan could use.",
+  "common_mistakes": [
+    "Researching Mining first because the start has hills. Astrology first: the Lavra is the gate, and a Lavra at turn 30 instead of turn 20 is a Prophet race lost.",
+    "Sending the first Trade Routes to your own cities for Food. The Grand Embassy pays only from routes to more advanced civilizations, and on Emperor that is everyone.",
+    "Earning Great Writers before building slots for them. An Amphitheater in two cities by turn 90, or the Writers sit in the Palace and the Tourism never starts.",
+    "Activating Great People in the capital out of habit. Each one grows a Lavra city's border by a tile; use them where the next Woods or mountain is.",
+    "Treating the first 25 turns as a waiting room. The race is won by working a tundra tile on turn 1 and slotting God King on the turn it exists, and lost by anything else."
+  ],
+  "sources": [
+    "Civilization VI Civilopedia, Gathering Storm ruleset (Russia, Peter, Lavra, Cossack; Mother Russia gives extra territory on founding and +1 Faith and +1 Production on tundra with Blizzard immunity; The Grand Embassy pays one Science or Culture per three technologies or civics a trade partner is ahead; the Lavra costs half, gives two Great Prophet points, Great Writer, Artist and Musician points from its buildings, and a border tile per Great Person activated). The civ-info text describes the Cossack as stronger against wounded units; in the game its bonuses are +5 Combat Strength in or adjacent to friendly territory and moving after attacking, and the plan follows the game.",
+    "Boost objectives cross-checked against civilization6planner.com tech-tree and civics-tree pages, 2026-10-01.",
+    "Leadership Focus tags, caveats and Gate supplement for Peter in this repository; the Gate template sets the pantheon race as the condition, with a fallback pantheon, a food strategy and the Faith split as required elements."
+  ]
+}

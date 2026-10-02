@@ -1,0 +1,1495 @@
+{
+  "leader": "Gandhi",
+  "civilization": "India",
+  "generated": "2026-10-02",
+  "slug": "gandhi",
+  "shape": "Monitor",
+  "secondary_shape": null,
+  "version": 1,
+  "updated": "2026-10-02",
+  "assumptions": {
+    "ruleset": "Gathering Storm with every expansion and the Leader Pass",
+    "speed": "Standard",
+    "difficulty": "Emperor",
+    "map": "Continents or Pangaea, standard size, 8 civilizations; every extra civilization on the map is extra Satyagraha income",
+    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. Gandhi's single persona is planned here. Satyagraha is read as the Gathering Storm version: Faith per met civilization that has founded a religion and is at peace with India, and double war weariness for anyone fighting India."
+  },
+  "verdict": {
+    "victory": "Religion",
+    "secondary": "Diplomatic",
+    "confidence": "medium",
+    "one_line": "Meet every civilization before turn 60, never fire the first shot, found a religion before the Classical era ends, and spend the Faith that other people's religions pay you on Apostles sent back into their lands. If few religions get founded, the same peace record wins the World Congress instead.",
+    "why": "Satyagraha pays Faith for every met civilization that has founded a religion and is not at war with India, so the income is set by contacts and by peace, neither of which costs Production. On an eight-civilization map that is commonly three to five contributors by the Medieval era, which is a Holy Site's worth of Faith for free in every city at once. Dharma turns the usual cost of a religious game on its head: foreign religions arriving in Indian cities are Amenities and follower beliefs rather than a threat, so India never spends Faith on Inquisitors at home and its Trade Routes carry pressure outward. The Stepwell keeps a tall empire fed and adds Faith beside Holy Sites. Diplomatic is the fallback because the same peaceful record builds alliances and Diplomatic Favor, and because a map where few rivals found religions caps the Faith but not the friendships."
+  },
+  "map_check": {
+    "must_have": [
+      "At least three rival civilizations reachable by land or coast before turn 60, because an unmet civilization pays nothing.",
+      "A Holy Site tile with two or more adjacency points (mountain, woods, river or natural wonder) within the capital's first two rings."
+    ],
+    "prefer": [
+      "Grassland river land for Farms with Stepwells between them; the Stepwell's Food bonus comes from adjacent Farms.",
+      "Religious city-states within reach, since Jerusalem and Yerevan multiply the spread and Faith-bought Apostles.",
+      "A natural wonder in sight of the capital for the Astrology Eureka and Holy Site adjacency; Mount Everest or the Dead Sea are the best cases."
+    ],
+    "no_go": "An isolated start with no contact possible before Cartography, or a game set up with so few civilizations that fewer than three religions can exist. Satyagraha then pays almost nothing for most of the game and India is a tall growth civilization with a Horseman that costs more.",
+    "fallback": "If the continent holds only one or two rivals, build a Harbor and a Galley by turn 50 and meet the rest by sea; the Faith starts the turn you meet them. If religions stay scarce, keep the Holy Sites and Stepwells, found your own religion for the follower beliefs, and turn the peaceful record into a Diplomatic game: alliances with every religion founder, suzerainty of the Religious city-states, and Favor banked for the World Congress."
+  },
+  "kit_levers": [
+    {
+      "source": "leader_ability",
+      "name": "Satyagraha",
+      "buys": "Faith every turn for each met civilization that has founded a religion and is at peace with India, and double war weariness for any civilization fighting India.",
+      "exploit": "The income is a count, so the plan treats early exploration as income generation and every peace treaty as a yield. Meet everyone, let them found their religions, and never be the one who declares. The war weariness half means a defensive war is survivable; it is never a reason to start one."
+    },
+    {
+      "source": "civ_ability",
+      "name": "Dharma",
+      "buys": "Indian cities receive the follower beliefs of every religion present, an Amenity for each religion with followers in the city, extra spreads on Missionaries, and stronger religious pressure through Trade Routes.",
+      "exploit": "Open the borders and let foreign Missionaries in; each religion that arrives is an Amenity and another follower belief for free. Never buy an Inquisitor for home use. Send Trade Routes to the cities you want converted, and spend Missionaries where their extra charges finish a conversion an Apostle would be wasted on."
+    },
+    {
+      "source": "unique_unit",
+      "name": "Varu",
+      "buys": "A Horseman replacement that lowers the Combat Strength of adjacent enemy units and needs no Horses.",
+      "exploit": "Two Varu behind Walls are the whole defensive army until Crossbowmen. They are built after the first Pasture gives the Horseback Riding Eureka and are never used to open a war; their job is to make an invading neighbour quit early so the Satyagraha count recovers."
+    },
+    {
+      "source": "unique_infrastructure",
+      "name": "Stepwell",
+      "buys": "A Builder improvement with Housing and Food, more Food beside Farms and Faith beside a Holy Site, that grows with later civics and technologies.",
+      "exploit": "Every Holy Site gets a Stepwell on an adjacent flat tile and every Farm triangle gets one in the middle. It is how a tall Indian city reaches ten and fifteen population for Civil Service and Urbanization without an Aqueduct in every city."
+    },
+    {
+      "source": "agenda",
+      "name": "Peacekeeper",
+      "buys": "AI Gandhi likes leaders who keep the peace and dislikes warmongers.",
+      "exploit": "Irrelevant to your own play, except that an AI Gandhi on the map is the easiest alliance on it and a religion founder who will almost never war with you; he is a permanent contributor to your count."
+    }
+  ],
+  "shape_block": {
+    "monitor": {
+      "watched_stat": "The Satyagraha count: met civilizations that have founded a religion and are at peace with India, read from the Faith tooltip on the top bar, with each contributor's current relationship and grievance level beside it",
+      "check_every": "turn for the war and peace status of each contributor; every five turns for the count itself, and immediately whenever a Denouncement, a demand or a Casus Belli notification arrives",
+      "bands": {
+        "green": {
+          "test": "Every met religion founder is at peace with India, nobody has Denounced you in the last ten turns, and the count is at least three after turn 100 (or still rising before it).",
+          "response": "No action. Keep the current build, keep sending delegations and embassies, and spend the Faith on Missionaries and Apostles rather than banking it."
+        },
+        "amber": {
+          "test": "A religion founder has Denounced India or is showing troops on your border; or a contributor's grievances against you are rising because your Apostles are working their Holy City; or the count has not grown in thirty turns while unmet civilizations remain.",
+          "response": "Act now while it is cheap. Send a delegation or an embassy and propose Friendship; gift a luxury; pull Apostles out of that civilization's Holy City and work their other cities instead; stop any forward Settler aimed at them. If the count is stalled, pay for the contact: a Galley or a second Scout toward the unmet half of the map, or an Open Borders trade with a civilization whose land blocks the way."
+        },
+        "red": {
+          "test": "India is at war with a religion founder, or the count is one or zero after turn 120.",
+          "response": "If at war, the ability for that civilization is off until peace: hold the border with Walls, Archers and Varu, take no cities, and offer peace the turn it becomes available; their doubled war weariness makes them accept. If the count is simply low, the Faith plan has no fuel: shift the Faith you have into your own religion's spread and move the verdict to the Diplomatic branch at the next checkpoint."
+        }
+      },
+      "second_watch": {
+        "stat": "Religions founded worldwide against the map's cap (five on an eight-civilization map), and the Great Prophet points race while slots remain",
+        "why": "Each religion founded anywhere is a potential five Faith per turn for India, and the last Great Prophet slot is the last chance to found your own. If founders are slow, the count's ceiling is low and the plan must lean on its own religion and the Diplomatic branch rather than wait."
+      },
+      "off_period_plan": "Before contacts and religions exist, and whenever the count is low, exploration is the plan rather than a preliminary: two Scouts and later a Galley, because every contact is income. At home the build is Stepwells beside Holy Sites and Farms, a Holy Site and Shrine in every city, Campuses in the two best cities, and Trade Routes to foreign coastal cities, which carry religious pressure out and pay Science back."
+    }
+  },
+  "phases": [
+    {
+      "id": "setup",
+      "name": "Setup",
+      "turns": {
+        "from": 1,
+        "to": 25
+      },
+      "era": "ancient",
+      "objective": "Settle beside Holy Site adjacency, put two Scouts on the map because contacts are income, found a pantheon and a second city, and start the first Holy Site before turn 25 so the Great Prophet race is entered early.",
+      "build_order": [
+        {
+          "item": "Scout",
+          "why": "The first contact is Writing and the first Satyagraha contributor; Scouts are the economy of this phase."
+        },
+        {
+          "item": "Scout",
+          "why": "A second Scout in the other direction; Political Philosophy needs three city-states met and every civilization met is Faith later."
+        },
+        {
+          "item": "Warrior",
+          "why": "Escorts the Settler and finishes barbarian scouts near the capital."
+        },
+        {
+          "item": "Settler",
+          "why": "Second city on a river with hills or a mountain for its own Holy Site."
+        },
+        {
+          "item": "Monument",
+          "why": "Culture to Mysticism and Political Philosophy; Revelation is the Great Prophet card."
+        },
+        {
+          "item": "Builder",
+          "why": "Farm a Wheat or Rice for Irrigation, Mine a hill for The Wheel, and a Quarry if Stone is near for Masonry."
+        },
+        {
+          "item": "Slinger",
+          "why": "Archery Eureka on a barbarian scout and the capital's first ranged defender."
+        },
+        {
+          "item": "Holy Site",
+          "why": "Started at the end of the phase in the capital; State Workforce Inspiration and the Great Prophet points begin here."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:astrology",
+          "note": "First research; the Holy Site is the whole early game. Eureka if a Scout finds a natural wonder."
+        },
+        {
+          "id": "tech:pottery",
+          "note": "Granary and the path to Irrigation and Writing."
+        },
+        {
+          "id": "tech:mining",
+          "note": "Mines for The Wheel and Apprenticeship later."
+        },
+        {
+          "id": "tech:irrigation",
+          "note": "Stepwells unlock here; Eureka from farming a resource."
+        },
+        {
+          "id": "tech:writing",
+          "note": "Eureka from the first contact; Campus in the capital in the next phase."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:code-of-laws",
+          "note": "God King for the pantheon by turn 20, Discipline against camps."
+        },
+        {
+          "id": "civic:craftsmanship",
+          "note": "Inspiration from the first Builder's three improvements; Ilkum for Builders."
+        },
+        {
+          "id": "civic:foreign-trade",
+          "note": "The first Trade Route; Inspiration if a Scout reaches a second continent."
+        },
+        {
+          "id": "civic:mysticism",
+          "note": "Inspiration from the pantheon; Revelation for Great Prophet points."
+        }
+      ],
+      "policies": [
+        {
+          "card": "God King",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "Faith for the pantheon before the AI takes the good ones."
+        },
+        {
+          "card": "Discipline",
+          "slot": "military",
+          "from": "civic:code-of-laws",
+          "why": "Warrior and Slinger win against camp units without losses."
+        },
+        {
+          "card": "Ilkum",
+          "slot": "economic",
+          "from": "civic:craftsmanship",
+          "why": "Builders faster once the pantheon is in; Stepwells are the growth plan."
+        }
+      ],
+      "districts": [
+        {
+          "district": "holy-site",
+          "city": "capital",
+          "note": "On the best adjacency tile with a flat tile beside it for a Stepwell; started before turn 25."
+        }
+      ],
+      "pantheon": {
+        "slug": "fertility-rites",
+        "why": "Growth in every city and a free Builder for the first Stepwell; India's game is tall and the Faith comes from Satyagraha, not the pantheon.",
+        "alternative": "river-goddess"
+      },
+      "wonders": [],
+      "governors": [],
+      "city_states": [
+        {
+          "type": "Religious",
+          "why": "The first envoy goes to any Religious city-state met; Faith in the capital and later in every Shrine."
+        },
+        {
+          "slug": "geneva",
+          "why": "Fifteen percent Science whenever India is not at war, which is the plan's whole doctrine."
+        }
+      ],
+      "great_people": [],
+      "checkpoints": [
+        {
+          "turn": 25,
+          "test": "Two civilizations met, pantheon founded, second city settled or the Settler walking, Holy Site started?",
+          "pass": "Enter the standing loop; begin reading the count every five turns.",
+          "fail": "If fewer than two civilizations are met, the Scouts went the wrong way: send the Warrior out as a third explorer and plan a Galley at Sailing. If the Holy Site is not started, it goes ahead of the second Settler."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "setup-settle-adjacency",
+          "turn": 1,
+          "text": "Settle within one move of a river with a mountain or woods tile in the second ring for the Holy Site; do not move more than two turns."
+        },
+        {
+          "id": "setup-scouts-out",
+          "turn": 6,
+          "text": "Both Scouts moving in opposite directions along rivers and coasts; note every civilization and city-state met with the turn it was met."
+        },
+        {
+          "id": "setup-pantheon",
+          "turn": 18,
+          "text": "Found Fertility Rites, or River Goddess if the capital's Holy Site sits on a river."
+        },
+        {
+          "id": "setup-first-stepwell",
+          "turn": 22,
+          "text": "Research Irrigation and place the first Stepwell on a flat tile between two Farms or beside the planned Holy Site."
+        },
+        {
+          "id": "setup-second-city",
+          "turn": 25,
+          "text": "Settle the second city on a river with its own Holy Site tile; it is the second Shrine for the Great Prophet race."
+        }
+      ]
+    },
+    {
+      "id": "contacts",
+      "name": "Contacts and the religion",
+      "turns": {
+        "from": 26,
+        "to": 90
+      },
+      "era": "classical",
+      "objective": "Meet every civilization reachable by land, grow to four cities with a Holy Site and Shrine in each, found the religion before the Great Prophet slots run out, and build the Walls and Varu that let India refuse every war without losing one.",
+      "build_order": [
+        {
+          "item": "Shrine",
+          "why": "In the capital and second city; the Great Prophet points that found the religion."
+        },
+        {
+          "item": "Settler",
+          "why": "Third city toward the richest unmet direction; contacts and Faith both."
+        },
+        {
+          "item": "Trader",
+          "why": "Currency Eureka, and later the pressure carrier Dharma strengthens."
+        },
+        {
+          "item": "Holy Site",
+          "why": "Second and third cities; Mathematics counts three specialty districts across the empire."
+        },
+        {
+          "item": "Builder",
+          "why": "Stepwells beside the Holy Sites, Farms between them, and a Pasture for the Varu Eureka."
+        },
+        {
+          "item": "Ancient Walls",
+          "why": "In the capital and the border city; Engineering Eureka and the proof that a war against India is not worth starting."
+        },
+        {
+          "item": "Varu",
+          "why": "Two, after the Pasture; the defensive army until Crossbowmen."
+        },
+        {
+          "item": "Campus",
+          "why": "In the capital once the Holy Sites are up; Recorded History needs two, and Science is the plan's quiet weakness."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:horseback-riding",
+          "note": "Varu; Eureka from the first Pasture."
+        },
+        {
+          "id": "tech:currency",
+          "note": "Eureka from the first Trade Route; Commercial Hub later for more routes."
+        },
+        {
+          "id": "tech:masonry",
+          "note": "Ancient Walls in the capital and the border city; Eureka from a Quarry."
+        },
+        {
+          "id": "tech:bronze-working",
+          "note": "Three barbarian kills with the Slinger and Warrior; Encampment is not needed, but Iron reveal is."
+        },
+        {
+          "id": "tech:wheel",
+          "note": "Mine a resource; Water Mill and the path to Mathematics."
+        },
+        {
+          "id": "tech:construction",
+          "note": "Water Mill in a river city gives the Eureka; Games and Recreation follows."
+        },
+        {
+          "id": "tech:mathematics",
+          "note": "Three specialty districts: Holy Site, Campus and Commercial Hub."
+        },
+        {
+          "id": "tech:engineering",
+          "note": "Ancient Walls give the Eureka; Aqueduct access for the capital later."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:early-empire",
+          "note": "Colonization for the third and fourth Settler; Inspiration at six population."
+        },
+        {
+          "id": "civic:state-workforce",
+          "note": "Free Inspiration from the first Holy Site; Corvee is not needed, the Government Plaza is."
+        },
+        {
+          "id": "civic:political-philosophy",
+          "note": "Classical Republic; Inspiration from three city-states met by the Scouts."
+        },
+        {
+          "id": "civic:theology",
+          "note": "Founded religion gives the Inspiration; Scripture doubles Holy Site adjacency."
+        },
+        {
+          "id": "civic:drama-and-poetry",
+          "note": "Theater Square later for the Culture the civic path needs; Inspiration only if a wonder lands."
+        },
+        {
+          "id": "civic:games-and-recreation",
+          "note": "Free Inspiration from Construction; Entertainment Complex not needed because Dharma Amenities cover it."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Revelation",
+          "slot": "wildcard",
+          "from": "civic:mysticism",
+          "why": "Great Prophet points; the religion must be founded before the slots are gone."
+        },
+        {
+          "card": "Colonization",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "Settlers at half the cost for cities three and four."
+        },
+        {
+          "card": "Charismatic Leader",
+          "slot": "diplomatic",
+          "from": "civic:political-philosophy",
+          "why": "Influence toward envoys for the Religious city-states."
+        },
+        {
+          "card": "Classical Republic",
+          "slot": "wildcard",
+          "from": "civic:political-philosophy",
+          "why": "The government: Amenities and Great Person points for a tall peaceful empire."
+        },
+        {
+          "card": "Scripture",
+          "slot": "economic",
+          "from": "civic:theology",
+          "why": "Doubled Holy Site adjacency; the own-religion Faith on top of Satyagraha."
+        }
+      ],
+      "districts": [
+        {
+          "district": "holy-site",
+          "city": "second and third cities",
+          "note": "Each with a Shrine before anything else; each with a Stepwell on an adjacent flat tile."
+        },
+        {
+          "district": "campus",
+          "city": "capital",
+          "note": "Beside a mountain if one is in range; the Science catch-up starts here."
+        },
+        {
+          "district": "commercial-hub",
+          "city": "the river city",
+          "note": "A second Trade Route, which is a second pressure carrier."
+        }
+      ],
+      "pantheon": {
+        "slug": "fertility-rites",
+        "why": "Already founded; this phase spends the growth on Shrines and Settlers."
+      },
+      "wonders": [
+        {
+          "name": "Mahabodhi Temple",
+          "why": "Two free Apostles the turn it completes and Faith; it is a wonder that spreads your religion for you.",
+          "skip_if": "No Woods tile adjacent to a Holy Site is available, or a rival's progress notification appears before you have started it."
+        },
+        {
+          "name": "Temple of Artemis",
+          "why": "Amenities and Housing for a tall capital with Farms and Camps around it.",
+          "skip_if": "No Camp resource within range, or any rival is already building it."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "moksha",
+          "promotion": "Patron Saint",
+          "city": "capital",
+          "why": "Apostles and Missionaries bought here start with a promotion; the capital is the religious depot."
+        },
+        {
+          "governor": "pingala",
+          "promotion": "Librarian",
+          "city": "second city",
+          "why": "The Science that a Faith plan otherwise forgets; Campus city."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "jerusalem",
+          "why": "Holy Sites exert pressure as Holy Cities; with Dharma Trade Routes this converts neighbours without an Apostle."
+        },
+        {
+          "slug": "yerevan",
+          "why": "Chosen Apostle promotions: Proselytizer and Debater on demand."
+        },
+        {
+          "type": "Scientific",
+          "why": "Three envoys for Library Science; India will be behind in Science and this is the cheap fix."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-prophet",
+          "why": "Non-negotiable: two Shrines, Revelation and a Holy Site project if the race is close."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 50,
+          "test": "Four civilizations met, three cities, two Shrines, and the count at least one?",
+          "pass": "Continue; queue the Holy Site project in the capital if a rival is within two Great Prophets of the last slot.",
+          "fail": "Fewer than four contacts: build a Galley or trade Open Borders for passage. Fewer than two Shrines: the religion is at risk, so Shrines before Settlers until the Prophet is secured."
+        },
+        {
+          "turn": 90,
+          "test": "Religion founded, four cities, Walls in the border city, and no war declared on India?",
+          "pass": "Enter the spread phase; aim the first Missionaries at the nearest contributor's border cities.",
+          "fail": "No religion: take the Diplomatic branch seriously from here and spend Faith on Monumentality-style purchases instead. A war under way: hold, make peace at the first offer, and resume."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "contacts-delegations",
+          "turn": 28,
+          "text": "Send a delegation to every civilization met the turn it becomes available; it is the cheapest grievance insurance in the game."
+        },
+        {
+          "id": "contacts-first-read",
+          "turn": 30,
+          "text": "First formal read of the count: list every met civilization, whether it has founded a religion, and its relationship; this list is the watched stat from now on."
+        },
+        {
+          "id": "contacts-pasture-varu",
+          "turn": 40,
+          "text": "Pasture a Horse or Sheep for the Horseback Riding Eureka, then two Varu for the border city."
+        },
+        {
+          "id": "contacts-holy-sites",
+          "turn": 55,
+          "text": "Holy Sites placed in the second and third cities with a Stepwell beside each; Shrines bought with Gold if the Prophet race is close."
+        },
+        {
+          "id": "contacts-found-religion",
+          "turn": 80,
+          "text": "Found the religion. Follower belief Feed the World or Work Ethic; Founder belief Tithe or Cross-Cultural Dialogue; Worship building Gurdwara for the Food and Housing."
+        },
+        {
+          "id": "contacts-open-borders",
+          "turn": 85,
+          "text": "Offer Open Borders to every neighbour with a religion; their Missionaries walking in are Amenities and follower beliefs for you."
+        }
+      ]
+    },
+    {
+      "id": "spread",
+      "name": "Spread",
+      "turns": {
+        "from": 91,
+        "to": 160
+      },
+      "era": "medieval",
+      "objective": "Carry the religion into the cities of the civilizations already paying you, using Dharma's extra Missionary spreads and Trade Route pressure first and Apostles second, while Temples, Stepwells and the first Universities build the tall empire that holds the peace.",
+      "build_order": [
+        {
+          "item": "Temple",
+          "why": "In every Holy Site city; Divine Right needs two, and Apostles need a Temple to be bought."
+        },
+        {
+          "item": "Missionary",
+          "why": "Faith-bought in the Patron Saint capital; with the extra spreads one Missionary converts a small foreign city alone."
+        },
+        {
+          "item": "Apostle",
+          "why": "Two per target civilization, Proselytizer from Yerevan when the target already follows another faith."
+        },
+        {
+          "item": "Aqueduct",
+          "why": "Capital first; Military Engineering Eureka and the Housing a fifteen-population city needs."
+        },
+        {
+          "item": "Library",
+          "why": "In both Campus cities; Education and Universities for Printing follow."
+        },
+        {
+          "item": "Medieval Walls",
+          "why": "In the border city once Castles is in; the Walls are why nobody declares."
+        },
+        {
+          "item": "Settler",
+          "why": "Fifth and sixth cities if land remains; each new Holy Site is another pressure source."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:apprenticeship",
+          "note": "Three Mines across the empire; Production for the Temples."
+        },
+        {
+          "id": "tech:military-engineering",
+          "note": "Aqueduct Eureka; nothing military is built from it."
+        },
+        {
+          "id": "tech:education",
+          "note": "Universities; Eureka if a Great Scientist is earned, otherwise unboosted."
+        },
+        {
+          "id": "tech:castles",
+          "note": "Free Eureka from a Tier 2 government; Medieval Walls on the border."
+        },
+        {
+          "id": "tech:machinery",
+          "note": "Crossbowmen to replace the Archers; Eureka from three Archers."
+        },
+        {
+          "id": "tech:buttress",
+          "note": "Hagia Sophia; Eureka from any Classical wonder, otherwise a detour."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:feudalism",
+          "note": "Six Farms is automatic for a Stepwell empire; Serfdom for the Builders."
+        },
+        {
+          "id": "civic:divine-right",
+          "note": "Two Temples give the Inspiration; Monarchy if Walls need Housing, otherwise stay in Classical Republic."
+        },
+        {
+          "id": "civic:civil-service",
+          "note": "A ten-population capital with Stepwells; Meritocracy for Culture per district."
+        },
+        {
+          "id": "civic:guilds",
+          "note": "Two Markets; Banking Eureka and a Great Merchant."
+        },
+        {
+          "id": "civic:medieval-faires",
+          "note": "Four Trade Routes running, all to foreign coastal cities carrying pressure."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Serfdom",
+          "slot": "economic",
+          "from": "civic:feudalism",
+          "why": "Extra Builder charges for Stepwells and Farms."
+        },
+        {
+          "card": "Meritocracy",
+          "slot": "economic",
+          "from": "civic:civil-service",
+          "why": "Culture per district in a district-heavy tall empire."
+        },
+        {
+          "card": "Scripture",
+          "slot": "economic",
+          "from": "civic:theology",
+          "why": "Keeps the own-religion Faith doubled while Satyagraha scales with contacts."
+        },
+        {
+          "card": "Charismatic Leader",
+          "slot": "diplomatic",
+          "from": "civic:political-philosophy",
+          "why": "Envoys toward suzerainty of Jerusalem and Yerevan."
+        }
+      ],
+      "districts": [
+        {
+          "district": "aqueduct",
+          "city": "capital",
+          "note": "Housing and the Military Engineering Eureka."
+        },
+        {
+          "district": "campus",
+          "city": "second city",
+          "note": "Recorded History Inspiration at two Campuses; Universities for Printing."
+        },
+        {
+          "district": "commercial-hub",
+          "city": "capital",
+          "note": "Two Markets for Guilds; a third Trade Route."
+        },
+        {
+          "district": "government-plaza",
+          "city": "capital",
+          "note": "Audience Chamber for a tall empire with Governors in every city."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Hagia Sophia",
+          "why": "An extra spread charge on every Missionary and Apostle; with Dharma it is the most efficient spread multiplier India can own.",
+          "skip_if": "Buttress arrives after turn 140 or a rival Faith civilization has started it."
+        },
+        {
+          "name": "Mont St. Michel",
+          "why": "Every Apostle gets Martyr; relics from Debaters lost in theological combat become Faith and Tourism.",
+          "skip_if": "No floodplains or marsh tile is available beside a Holy Site, or the Divine Right civic lands after turn 150."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "moksha",
+          "promotion": "Divine Architect",
+          "city": "capital",
+          "why": "Districts bought with Faith when the count is green and the Faith outruns the Apostle targets."
+        },
+        {
+          "governor": "amani",
+          "promotion": "Emissary",
+          "city": "the city nearest Jerusalem or Yerevan",
+          "why": "Two envoys toward suzerainty and loyalty pressure outward."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "jerusalem",
+          "why": "Suzerainty by now; every Holy Site city pressures its neighbours like a Holy City."
+        },
+        {
+          "slug": "kandy",
+          "why": "Relics on natural wonder discoveries and Faith from them; the Scouts and Traders find wonders anyway."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-scientist",
+          "why": "Education Eureka and the Science the Faith plan otherwise lacks; take whichever is cheap."
+        },
+        {
+          "class": "great-merchant",
+          "why": "Extra Trade Route capacity means another pressure carrier."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 120,
+          "test": "Religion in six cities, Temples in two, count at least three, and no active war?",
+          "pass": "Continue; send the first Apostle pair to the nearest contributor's border cities.",
+          "fail": "Religion in fewer than six cities: Missionaries before any building. Count under three with civilizations still unmet: a Caravel at Cartography is the next purchase. A war: hold and make peace at the first offer."
+        },
+        {
+          "turn": 160,
+          "test": "Your religion the majority in two foreign civilizations' border cities, and Universities started in two Campus cities?",
+          "pass": "Enter the carry phase with Reformed Church and Theocracy.",
+          "fail": "Majority nowhere abroad means the targets were too big: switch to their small cities and city-states and bring Hagia Sophia's extra charge before trying capitals again."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "spread-temples",
+          "turn": 100,
+          "text": "Temples in the capital and second city; Divine Right Inspiration collected; first Apostles bought in the Patron Saint capital."
+        },
+        {
+          "id": "spread-missionary-targets",
+          "turn": 105,
+          "text": "Send the first two Missionaries to the nearest contributor's smallest cities; one Missionary with the Dharma extra spreads takes a size-four city alone."
+        },
+        {
+          "id": "spread-grievance-check",
+          "turn": 115,
+          "text": "Before any Apostle enters a civilization's Holy City, read their grievance line against you; if it is already rising, work their other cities instead."
+        },
+        {
+          "id": "spread-aqueduct",
+          "turn": 125,
+          "text": "Capital Aqueduct finished; Military Engineering Eureka collected; capital on course for fifteen population by Urbanization."
+        },
+        {
+          "id": "spread-four-routes",
+          "turn": 140,
+          "text": "Four Trade Routes running to foreign coastal cities you want converted; Medieval Faires Inspiration collected."
+        },
+        {
+          "id": "spread-count-audit",
+          "turn": 150,
+          "text": "Full audit of the count: which founders are not yet contributing, why (unmet, at war, or no religion), and the cheapest fix for each written down."
+        }
+      ]
+    },
+    {
+      "id": "carry",
+      "name": "Carry the faith",
+      "turns": {
+        "from": 161,
+        "to": 230
+      },
+      "era": "renaissance",
+      "objective": "Make the religion the majority in half the civilizations with Theocracy-priced Apostles, Religious Orders and the Hagia Sophia charge, while the Universities, alliances and suzerainties bank the Diplomatic branch in case the last two conversions are refused.",
+      "build_order": [
+        {
+          "item": "Apostle",
+          "why": "Six at a time under Theocracy; Proselytizer for cities with another majority, Debater for theological combat."
+        },
+        {
+          "item": "University",
+          "why": "Two for the Printing Eureka; Science to stay within an era of the leaders."
+        },
+        {
+          "item": "Gurdwara",
+          "why": "Or whichever Worship building was chosen; Faith and Food in every Holy Site city."
+        },
+        {
+          "item": "Market",
+          "why": "Second Market for Guilds if not yet; Banks for Economics."
+        },
+        {
+          "item": "Crossbowman",
+          "why": "Replace the Archers; the border holds without a war."
+        },
+        {
+          "item": "Theater Square",
+          "why": "In the capital; the Culture to reach Reformed Church and The Enlightenment on time."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:printing",
+          "note": "Two Universities give the Eureka; Science catch-up."
+        },
+        {
+          "id": "tech:banking",
+          "note": "Free Eureka from Guilds; Banks for Economics."
+        },
+        {
+          "id": "tech:astronomy",
+          "note": "University beside a mountain if the Campus is sited for it; Colonialism Inspiration."
+        },
+        {
+          "id": "tech:cartography",
+          "note": "Two Harbors only on a coastal map; otherwise unboosted for the contacts a Caravel can still make."
+        },
+        {
+          "id": "tech:gunpowder",
+          "note": "Musketmen for the Walls; Eureka from an Armory only if an Encampment exists."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:reformed-church",
+          "note": "Six cities following the religion gives the Inspiration; Theocracy and Religious Orders."
+        },
+        {
+          "id": "civic:diplomatic-service",
+          "note": "Form an alliance for the Inspiration; alliances are the Diplomatic branch."
+        },
+        {
+          "id": "civic:the-enlightenment",
+          "note": "Three Great People; Rationalism and the Scientific Theory Eureka."
+        },
+        {
+          "id": "civic:humanism",
+          "note": "Earn a Great Artist if one is cheap; otherwise unboosted on the way to The Enlightenment."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Theocracy",
+          "slot": "wildcard",
+          "from": "civic:reformed-church",
+          "why": "The government: Faith purchases cheaper and religious units stronger."
+        },
+        {
+          "card": "Religious Orders",
+          "slot": "economic",
+          "from": "civic:reformed-church",
+          "why": "Another spread charge on top of Dharma and Hagia Sophia."
+        },
+        {
+          "card": "Simultaneum",
+          "slot": "economic",
+          "from": "civic:reformed-church",
+          "why": "Faith from Holy Site buildings in tall cities; swapped with Religious Orders between Apostle waves."
+        },
+        {
+          "card": "Rationalism",
+          "slot": "economic",
+          "from": "civic:the-enlightenment",
+          "why": "Campus buildings in tall cities pay Science the plan needs."
+        }
+      ],
+      "districts": [
+        {
+          "district": "theater-square",
+          "city": "capital",
+          "note": "Culture for the late civics; Great Writers if they are cheap."
+        },
+        {
+          "district": "holy-site",
+          "city": "every city without one",
+          "note": "Every city a pressure source and a Simultaneum building set."
+        }
+      ],
+      "wonders": [],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Researcher",
+          "city": "capital",
+          "why": "Science per population in the tallest city."
+        },
+        {
+          "governor": "moksha",
+          "promotion": "Grand Inquisitor",
+          "city": "capital",
+          "why": "Stronger religious units in theological combat near the capital if a rival Faith civilization pushes back."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "vatican-city",
+          "why": "Great Person activations spread pressure across ten tiles; a Great Scientist in a border city converts it."
+        },
+        {
+          "type": "Religious",
+          "why": "Six envoys for Temple Faith in every city; suzerainty of all of them is also Diplomatic Favor."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-scientist",
+          "why": "Science and, with Vatican City, religious pressure on activation."
+        },
+        {
+          "class": "great-engineer",
+          "why": "Production for the Universities in cities that have none."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 200,
+          "test": "Religion the majority in three or more civilizations, count at least four, two alliances formed?",
+          "pass": "Continue the Apostle waves; the last two civilizations are the hardest and get the Debaters.",
+          "fail": "Majority in fewer than three: audit which civilization has a Faith engine stronger than yours and leave it for last; take the small civilizations and city-states first. Fewer than two alliances: send the embassies now, the Diplomatic branch needs them."
+        },
+        {
+          "turn": 230,
+          "test": "Is the religion dominant in half the civilizations, or are Favor and alliances strong enough for a World Congress run?",
+          "pass": "Commit: the Religion close with Apostle waves, or the Diplomatic close with Favor banked and Statue of Liberty-era wonders watched.",
+          "fail": "Neither: the game is a Score game. Keep the peace, keep the Faith for Builders and Settlers, and build Science and Culture."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "carry-theocracy",
+          "turn": 165,
+          "text": "Adopt Theocracy and slot Religious Orders; buy the first six-Apostle wave in the capital."
+        },
+        {
+          "id": "carry-universities",
+          "turn": 180,
+          "text": "Two Universities built; Printing Eureka collected."
+        },
+        {
+          "id": "carry-alliances",
+          "turn": 190,
+          "text": "Religious alliance with the strongest contributor and a Cultural or Research alliance with the second; Diplomatic Service Inspiration collected."
+        },
+        {
+          "id": "carry-last-targets",
+          "turn": 215,
+          "text": "Name the two civilizations whose religion is hardest to displace and send Debaters there first to break their Apostles."
+        },
+        {
+          "id": "carry-branch",
+          "turn": 230,
+          "text": "Choose the branch, Religion or Diplomatic, and write it down."
+        }
+      ]
+    },
+    {
+      "id": "close",
+      "name": "Close",
+      "turns": {
+        "from": 231,
+        "to": null
+      },
+      "era": "industrial",
+      "objective": "Finish the chosen branch: the religion carried into the last holdouts by Apostle waves under Theocracy, or the World Congress won with Favor from alliances, suzerainties and a peaceful record nobody can match.",
+      "build_order": [
+        {
+          "item": "Apostle",
+          "why": "Religion branch: the last waves, Proselytizer-promoted, escorted by Crossbowmen or Field Cannons."
+        },
+        {
+          "item": "Guru",
+          "why": "Religion branch: heals the Apostle stack in theological combat with a rival Faith civilization."
+        },
+        {
+          "item": "Bank",
+          "why": "Both branches: Economics Eureka and Gold to buy Diplomatic Favor from allies."
+        },
+        {
+          "item": "Factory",
+          "why": "Industrial Zones in the two best Production cities; the rest of the game's buildings."
+        },
+        {
+          "item": "Research Lab",
+          "why": "Keep Science close enough that no rival wins before the last conversion or vote."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:scientific-theory",
+          "note": "Free Eureka from The Enlightenment; Research Grants and the Industrial economy."
+        },
+        {
+          "id": "tech:industrialization",
+          "note": "Two Workshops; Factories and Coal power."
+        },
+        {
+          "id": "tech:economics",
+          "note": "Two Banks give the Eureka; Stock Exchanges and Favor purchases."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:civil-engineering",
+          "note": "Seven different specialty districts is automatic for a tall empire; Public Works."
+        },
+        {
+          "id": "civic:urbanization",
+          "note": "A fifteen-population Stepwell capital gives the Inspiration; Neighborhoods."
+        },
+        {
+          "id": "civic:natural-history",
+          "note": "Archaeological Museum for Culture; Artifacts for Combustion."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Gunboat Diplomacy",
+          "slot": "diplomatic",
+          "from": "civic:diplomatic-service",
+          "why": "Diplomatic branch: Favor every turn from the fleet you otherwise never build."
+        },
+        {
+          "card": "Public Works",
+          "slot": "economic",
+          "from": "civic:civil-engineering",
+          "why": "Builder charges and speed for the last Stepwells and Farms."
+        }
+      ],
+      "districts": [
+        {
+          "district": "industrial-zone",
+          "city": "the two best Production cities",
+          "note": "Workshops and Factories; Power for the Research Labs."
+        },
+        {
+          "district": "neighborhood",
+          "city": "capital",
+          "note": "Housing past the Stepwell cap; Sanitation Eureka at two."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Statue of Liberty",
+          "why": "Diplomatic branch: Diplomatic Favor every turn and a Settler bonus on top.",
+          "skip_if": "No coastal city in range of it, or the Religion branch was chosen."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "amani",
+          "promotion": "Prestige",
+          "city": "a border city",
+          "why": "Loyalty outward and envoy influence for the suzerainties the Diplomatic branch counts."
+        }
+      ],
+      "city_states": [
+        {
+          "type": "Religious",
+          "why": "Suzerainty of every Religious city-state is both pressure and Favor."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-merchant",
+          "why": "Gold and envoys; a late Great Merchant buys the Favor a vote is short by."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 280,
+          "test": "Religion: dominant in all but one civilization? Diplomatic: ten or more Favor per turn and two World Congress points banked?",
+          "pass": "Continue to the end; no further decisions.",
+          "fail": "Convert to Score: stop buying Apostles, keep the peace, and spend on Science and Culture buildings."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "close-last-wave",
+          "turn": 245,
+          "text": "Religion branch: a six-Apostle wave with a Guru into the last civilization not yet converted; Debaters first to clear their Apostles."
+        },
+        {
+          "id": "close-favor",
+          "turn": 250,
+          "text": "Diplomatic branch: buy Favor from every ally each turn the Gold allows and bank it for the Diplomatic Victory resolution."
+        },
+        {
+          "id": "close-review",
+          "turn": 280,
+          "text": "Review the turn 280 checkpoint and either continue or declare the game a Score game."
+        }
+      ]
+    }
+  ],
+  "boosts": [
+    {
+      "id": "tech:astrology",
+      "fit": "cheap",
+      "when": "setup",
+      "how": "Two Scouts find a natural wonder more often than one; research Astrology late enough for them to try."
+    },
+    {
+      "id": "tech:irrigation",
+      "fit": "free",
+      "when": "setup",
+      "how": "The first Builder Farms a Wheat or Rice; Stepwells unlock here."
+    },
+    {
+      "id": "tech:writing",
+      "fit": "free",
+      "when": "setup",
+      "how": "The first civilization met by either Scout triggers it."
+    },
+    {
+      "id": "tech:archery",
+      "fit": "cheap",
+      "when": "setup",
+      "how": "The Slinger finishes a barbarian scout near the capital."
+    },
+    {
+      "id": "tech:masonry",
+      "fit": "cheap",
+      "when": "contacts",
+      "how": "A Quarry on Stone near the capital; Walls are the defensive doctrine."
+    },
+    {
+      "id": "tech:wheel",
+      "fit": "cheap",
+      "when": "setup",
+      "how": "The first Builder Mines a resource hill."
+    },
+    {
+      "id": "tech:bronze-working",
+      "fit": "cheap",
+      "when": "contacts",
+      "how": "Three barbarian kills from camps near the capital with Slinger and Warrior."
+    },
+    {
+      "id": "tech:sailing",
+      "fit": "costly",
+      "when": "contacts",
+      "how": "Only if a city is settled on the coast to reach unmet civilizations by sea."
+    },
+    {
+      "id": "tech:horseback-riding",
+      "fit": "cheap",
+      "when": "contacts",
+      "how": "A Pasture on Horses or Sheep from the second Builder; the Varu follows."
+    },
+    {
+      "id": "tech:currency",
+      "fit": "free",
+      "when": "contacts",
+      "how": "The first Trader runs a route to the second city."
+    },
+    {
+      "id": "tech:construction",
+      "fit": "cheap",
+      "when": "contacts",
+      "how": "A Water Mill in the river capital."
+    },
+    {
+      "id": "tech:mathematics",
+      "fit": "cheap",
+      "when": "contacts",
+      "how": "Holy Site, Campus and Commercial Hub make three specialty districts by turn 80."
+    },
+    {
+      "id": "tech:engineering",
+      "fit": "free",
+      "when": "contacts",
+      "how": "Ancient Walls in the capital are built anyway."
+    },
+    {
+      "id": "tech:iron-working",
+      "fit": "skip",
+      "when": null,
+      "how": "No Swordsmen are built; research it unboosted if the path needs it."
+    },
+    {
+      "id": "tech:celestial-navigation",
+      "fit": "costly",
+      "when": "contacts",
+      "how": "Two Fishing Boats only if a coastal city exists; otherwise unboosted."
+    },
+    {
+      "id": "tech:shipbuilding",
+      "fit": "skip",
+      "when": null,
+      "how": "No navy is planned; a single Galley for contacts does not need it."
+    },
+    {
+      "id": "tech:apprenticeship",
+      "fit": "cheap",
+      "when": "spread",
+      "how": "Three Mines on hills across the first three cities."
+    },
+    {
+      "id": "tech:military-engineering",
+      "fit": "cheap",
+      "when": "spread",
+      "how": "The capital Aqueduct, built for Housing anyway."
+    },
+    {
+      "id": "tech:education",
+      "fit": "costly",
+      "when": "spread",
+      "how": "A Great Scientist only if one is cheap; usually researched unboosted."
+    },
+    {
+      "id": "tech:castles",
+      "fit": "free",
+      "when": "spread",
+      "how": "Any Tier 2 government on the way to Theocracy."
+    },
+    {
+      "id": "tech:machinery",
+      "fit": "cheap",
+      "when": "spread",
+      "how": "Three Archers across the border cities before upgrading them."
+    },
+    {
+      "id": "tech:stirrups",
+      "fit": "free",
+      "when": "spread",
+      "how": "Feudalism is on the civic path."
+    },
+    {
+      "id": "tech:military-tactics",
+      "fit": "costly",
+      "when": "spread",
+      "how": "A Spearman kill at a camp only if one wanders near; otherwise unboosted."
+    },
+    {
+      "id": "tech:buttress",
+      "fit": "costly",
+      "when": "spread",
+      "how": "Only if Mahabodhi Temple or Temple of Artemis was finished; Hagia Sophia is worth the detour."
+    },
+    {
+      "id": "tech:printing",
+      "fit": "cheap",
+      "when": "carry",
+      "how": "Two Universities in the two Campus cities."
+    },
+    {
+      "id": "tech:banking",
+      "fit": "free",
+      "when": "carry",
+      "how": "Guilds is on the civic path."
+    },
+    {
+      "id": "tech:astronomy",
+      "fit": "cheap",
+      "when": "carry",
+      "how": "A University beside a mountain if the capital Campus touches one."
+    },
+    {
+      "id": "tech:cartography",
+      "fit": "costly",
+      "when": "carry",
+      "how": "Two Harbors only on a coastal map."
+    },
+    {
+      "id": "tech:gunpowder",
+      "fit": "costly",
+      "when": "carry",
+      "how": "An Armory needs an Encampment this plan does not otherwise build."
+    },
+    {
+      "id": "tech:mass-production",
+      "fit": "cheap",
+      "when": "carry",
+      "how": "A Lumber Mill on any Woods tile."
+    },
+    {
+      "id": "tech:scientific-theory",
+      "fit": "free",
+      "when": "close",
+      "how": "The Enlightenment is on the civic path."
+    },
+    {
+      "id": "tech:industrialization",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Workshops in the Industrial Zones."
+    },
+    {
+      "id": "tech:economics",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Banks in the Commercial Hub cities."
+    },
+    {
+      "id": "tech:sanitation",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Neighborhoods in the tallest cities."
+    },
+    {
+      "id": "tech:chemistry",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Alliance level 2 with a long-standing ally; the Diplomatic branch does this anyway."
+    },
+    {
+      "id": "tech:combustion",
+      "fit": "cheap",
+      "when": "close",
+      "how": "One Artifact from an Archaeologist after Natural History."
+    },
+    {
+      "id": "civic:craftsmanship",
+      "fit": "free",
+      "when": "setup",
+      "how": "Three improvements from the first Builder."
+    },
+    {
+      "id": "civic:foreign-trade",
+      "fit": "costly",
+      "when": "setup",
+      "how": "A second continent only if a Scout reaches a land bridge; otherwise unboosted."
+    },
+    {
+      "id": "civic:mysticism",
+      "fit": "free",
+      "when": "setup",
+      "how": "Founding the pantheon by turn 20."
+    },
+    {
+      "id": "civic:military-tradition",
+      "fit": "costly",
+      "when": "contacts",
+      "how": "Clearing a camp with the Warrior and Slinger if one sits beside the capital; not chased."
+    },
+    {
+      "id": "civic:state-workforce",
+      "fit": "free",
+      "when": "contacts",
+      "how": "The first Holy Site is the first district."
+    },
+    {
+      "id": "civic:early-empire",
+      "fit": "free",
+      "when": "contacts",
+      "how": "Six population across two Fertility Rites cities."
+    },
+    {
+      "id": "civic:political-philosophy",
+      "fit": "free",
+      "when": "contacts",
+      "how": "Three city-states met by the two Scouts."
+    },
+    {
+      "id": "civic:theology",
+      "fit": "cheap",
+      "when": "contacts",
+      "how": "Founding the religion."
+    },
+    {
+      "id": "civic:games-and-recreation",
+      "fit": "free",
+      "when": "contacts",
+      "how": "Researching Construction."
+    },
+    {
+      "id": "civic:drama-and-poetry",
+      "fit": "costly",
+      "when": "contacts",
+      "how": "Only if Mahabodhi Temple or Temple of Artemis lands."
+    },
+    {
+      "id": "civic:defensive-tactics",
+      "fit": "costly",
+      "when": "contacts",
+      "how": "Being declared on triggers it; the plan never wants that, but takes the Inspiration if it happens."
+    },
+    {
+      "id": "civic:military-training",
+      "fit": "skip",
+      "when": null,
+      "how": "No Encampment is built in a plan that never declares a war."
+    },
+    {
+      "id": "civic:recorded-history",
+      "fit": "cheap",
+      "when": "spread",
+      "how": "Two Campuses, in the capital and the second city."
+    },
+    {
+      "id": "civic:feudalism",
+      "fit": "free",
+      "when": "spread",
+      "how": "Six Farms around the Stepwells."
+    },
+    {
+      "id": "civic:divine-right",
+      "fit": "free",
+      "when": "spread",
+      "how": "Two Temples in the Holy Site cities."
+    },
+    {
+      "id": "civic:civil-service",
+      "fit": "free",
+      "when": "spread",
+      "how": "A ten-population Stepwell capital."
+    },
+    {
+      "id": "civic:guilds",
+      "fit": "cheap",
+      "when": "spread",
+      "how": "Two Markets in the Commercial Hub cities."
+    },
+    {
+      "id": "civic:medieval-faires",
+      "fit": "free",
+      "when": "spread",
+      "how": "Four Trade Routes to foreign coastal cities are the pressure plan."
+    },
+    {
+      "id": "civic:mercenaries",
+      "fit": "skip",
+      "when": null,
+      "how": "Eight land units is more army than a peaceful India keeps."
+    },
+    {
+      "id": "civic:reformed-church",
+      "fit": "free",
+      "when": "carry",
+      "how": "Six cities following the religion by turn 160."
+    },
+    {
+      "id": "civic:diplomatic-service",
+      "fit": "cheap",
+      "when": "carry",
+      "how": "A Religious alliance with the strongest contributor."
+    },
+    {
+      "id": "civic:the-enlightenment",
+      "fit": "cheap",
+      "when": "carry",
+      "how": "Three Great People: the Prophet, a Scientist and a Merchant."
+    },
+    {
+      "id": "civic:humanism",
+      "fit": "costly",
+      "when": "carry",
+      "how": "A Great Artist only if the Theater Square makes one cheap."
+    },
+    {
+      "id": "civic:exploration",
+      "fit": "skip",
+      "when": null,
+      "how": "Two Caravels is a naval detour this plan does not take."
+    },
+    {
+      "id": "civic:civil-engineering",
+      "fit": "free",
+      "when": "close",
+      "how": "Seven different specialty districts across a tall district-heavy empire."
+    },
+    {
+      "id": "civic:urbanization",
+      "fit": "free",
+      "when": "close",
+      "how": "A fifteen-population capital with Stepwells and an Aqueduct."
+    },
+    {
+      "id": "civic:natural-history",
+      "fit": "cheap",
+      "when": "close",
+      "how": "An Archaeological Museum in the capital Theater Square."
+    },
+    {
+      "id": "civic:colonialism",
+      "fit": "free",
+      "when": "carry",
+      "how": "Researching Astronomy."
+    }
+  ],
+  "decision_triggers": [
+    {
+      "name": "A founder Denounces you",
+      "if": "A civilization that is paying Satyagraha Denounces India or its grievances against you rise two turns running.",
+      "then": "Treat it as amber: delegation or embassy, a luxury gift, Apostles out of their Holy City, and no Settler toward them. The five Faith per turn is worth more than the city you would have converted this decade."
+    },
+    {
+      "name": "War declared on India",
+      "if": "Any civilization declares war, with or without a Casus Belli.",
+      "then": "Do not take cities. Hold with Walls, Archers and Varu, let the doubled war weariness work, and accept the first reasonable peace. Resume Apostles into their cities only after ten turns of peace."
+    },
+    {
+      "name": "Religions scarce",
+      "if": "By turn 120 fewer than three religions exist on the map, or the count is two or lower with everyone met.",
+      "then": "Move the verdict to Diplomatic at the turn 160 checkpoint: alliances with every founder, suzerainty of the Religious city-states, Gunboat Diplomacy later, and Faith spent on Builders and Settlers through Monumentality rather than banked."
+    },
+    {
+      "name": "Foreign religion arrives",
+      "if": "A rival's Missionary converts one of your cities.",
+      "then": "Do nothing. Dharma gives you its follower belief and an Amenity; your own majority returns through pressure. Only act if your Holy City itself loses majority, and then with one Apostle, not an Inquisitor."
+    }
+  ],
+  "abort": {
+    "trigger": "The count has sat at one or zero for fifteen turns after turn 120 with every reachable civilization met, or India has been at war with two founders for fifteen turns with no peace on offer.",
+    "actions": [
+      "Stop spending Faith on spread; buy Builders and Settlers with it under Monumentality, or districts with Moksha's Divine Architect.",
+      "Rebuild as a tall generic civilization around the Stepwells, Campuses and Universities already standing, and target Science or Score.",
+      "Keep the Walls and Crossbowmen; a peaceful record that failed still makes India a soft-looking target."
+    ]
+  },
+  "fail_state": "The Industrial era arrives with India at war with half its neighbours, the Satyagraha count at zero, a religion in six home cities and nowhere else, and a tall empire that spent its Faith on Inquisitors it never needed. India is then a growth civilization an era behind in Science with a cavalry unit nobody fears.",
+  "common_mistakes": [
+    "Treating exploration as scouting instead of income. A civilization met on turn 30 pays Faith for two hundred turns; one met on turn 130 pays for a hundred.",
+    "Buying Inquisitors to clear foreign religions from Indian cities. Dharma makes those religions Amenities and follower beliefs; the Inquisitor throws both away.",
+    "Working a contributor's Holy City with Apostles while their grievances are already rising. The converted city is worth less than the five Faith per turn the war costs.",
+    "Declaring a war because the enemy would suffer double war weariness. The ability rewards India for being attacked, not for attacking; the first shot zeroes that civilization's Faith.",
+    "Skipping the Campuses because the Faith is good. Satyagraha pays Faith, not Science, and a Religion game that falls two eras behind loses to a spaceship."
+  ],
+  "sources": [
+    "Civilization VI Civilopedia, Gathering Storm ruleset (India, Gandhi, Varu, Stepwell, Satyagraha, Dharma).",
+    "The civ-info text says Satyagraha pays bonus Faith; the plan uses the Gathering Storm value of 5 Faith per qualifying civilization, and reads Dharma's extra Missionary spreads and Trade Route pressure as the September 2019 update describes them. Verify the exact spread count in the Civilopedia.",
+    "Boost objectives cross-checked against civilization6planner.com tech-tree and civics-tree pages, 2026-10-01.",
+    "Leadership Focus tags, caveats and Monitor supplement for Gandhi in this repository."
+  ]
+}

@@ -1,0 +1,1676 @@
+{
+  "slug": "pachacuti",
+  "shape": "Front-Load",
+  "secondary_shape": null,
+  "version": 1,
+  "updated": "2026-10-02",
+  "assumptions": {
+    "ruleset": "Gathering Storm with every expansion and the Leader Pass",
+    "speed": "Standard",
+    "difficulty": "Emperor",
+    "map": "Continents or Pangaea, standard size, 8 civilizations",
+    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. Pachacuti's single persona is planned here. The shape is Front-Load because the whole kit is mountains, the capital cannot be moved once planted, and every later city is either in the range or ordinary; the decisions that cap the game are made before the second Settler leaves."
+  },
+  "verdict": {
+    "victory": "Science",
+    "secondary": "Culture",
+    "confidence": "medium",
+    "one_line": "Settle in the mountains, feed each city with Terrace Farms and domestic Trade Routes, put a Campus against three mountain faces in every city, and let the tallest cities on the map carry a Science game that Machu Picchu and mountain Universities accelerate.",
+    "why": "Mit'a lets citizens work Mountains for two Production each, and Terrace Farms beside those mountains give the Food that lets a city work them; together they make the mountain city the tallest city type in the game, and tall cities with mountain-adjacent Campuses are Science. Qhapaq Ñan turns every domestic Trade Route into Food, so the range feeds itself without rivers or coast. Astronomy's Eureka comes from a University beside a Mountain, which every Inca Campus has, and Machu Picchu is a Classical wonder built on a mountain the Inca already work. Culture is the fallback because the same high-appeal mountain tiles make National Parks and Earth Goddess Faith; Domination is not in the kit because mountains slow your own armies as much as the enemy's."
+  },
+  "map_check": {
+    "must_have": [
+      "A mountain range within three tiles of the start: at least three Mountain tiles workable from the capital, and hills touching them for Terrace Farms.",
+      "Room for four more cities along the same range, each with two or more Mountains in its first two rings, within domestic Trade Route range of the capital."
+    ],
+    "prefer": [
+      "Hills beside the mountains rather than flat land: a Terrace Farm goes on a hill, and a hill next to two mountains is a four-Food tile from the first Builder.",
+      "Fresh water or a lake in the range for the capital's Aqueduct, which adds Production to every adjacent Terrace Farm.",
+      "Torres del Paine or Mount Kilimanjaro in the range; both double or feed Terrace Farms and raise appeal for Earth Goddess.",
+      "A second valley across a pass, so a Qhapaq Ñan can join two clusters and the empire keeps growing after turn 80."
+    ],
+    "no_go": "No Mountain tile within four tiles of the start and no range visible on the horizon. Without mountains Mit'a does nothing, Terrace Farms are plain Farms, and Qhapaq Ñan is a Food trickle; the Inca are then a civ with a late Skirmisher and no ability.",
+    "fallback": "If a range is visible but five or more tiles away, walk the Settler up to three turns toward it and settle on the first hill touching a Mountain; a late capital in the range beats an early one outside it. If nothing is visible by turn 4, settle in place, play a generic Campus-and-Commercial-Hub Science game, and say plainly that the kit is off; send the first two Settlers toward whatever mountains the Scout finds so that cities two and three carry the ability even if the capital does not."
+  },
+  "kit_levers": [
+    {
+      "source": "leader_ability",
+      "name": "Qhapaq Ñan",
+      "buys": "Domestic Trade Routes carry extra Food for every Mountain tile adjacent to the origin city, and from Foreign Trade onward Builders can place the Qhapaq Ñan on Mountain tiles, a tunnel that moves units through the range and yields Food from the mountains beside it.",
+      "exploit": "Every Trade Route this empire runs is domestic until the Industrial era: a route from a six-mountain city carries six Food and nothing a foreign route offers compares. The capital is sited to touch as many mountains as the map allows because it is the origin of the first three routes. The Qhapaq Ñan is laid across the pass between the two valleys so the second cluster is inside the empire's road net and not behind a wall."
+    },
+    {
+      "source": "civ_ability",
+      "name": "Mit'a",
+      "buys": "Citizens can work Mountain tiles for Production, and each Terrace Farm adjacent to a Mountain gains Food from it, so a mountain city feeds and builds itself from terrain other civilizations cannot use.",
+      "exploit": "The Terrace Farm cluster is pinned before the first Builder moves: hills that touch two or more mountains, arranged so an Aqueduct tile can touch several of them. Citizens work Terrace Farms first for growth and Mountains second for Production; a 15-population mountain city at turn 120 works four mountains and seven Terrace Farms and out-builds a river capital."
+    },
+    {
+      "source": "unique_unit",
+      "name": "Warak'aq",
+      "buys": "A Skirmisher replacement that can attack a second time in the same turn if it still has Movement, which doubles its damage against anything that wanders into the valley.",
+      "exploit": "Two of them per pass from Machinery onward are the whole defence: parked on a hill behind the mountain gap, each gets two shots before a Knight reaches the city. They are not an invasion force; the plan builds four and upgrades them, nothing more."
+    },
+    {
+      "source": "unique_infrastructure",
+      "name": "Terrace Farm",
+      "buys": "A hill improvement that gives Food, Housing, extra Food for each adjacent Mountain, and Production from an adjacent Aqueduct and from neighbouring Terrace Farms.",
+      "exploit": "The improvement decides city placement, not the other way round: a site is good if its first two rings hold four hills touching mountains. The Aqueduct is placed where it touches the most Terrace Farms, not where it is prettiest. Feudalism's Farm count and Serfdom's extra charges are spent on these before any Mine."
+    },
+    {
+      "source": "agenda",
+      "name": "Sapa Inca",
+      "buys": "Pachacuti likes leaders who leave the mountains alone and dislikes those who settle beside them.",
+      "exploit": "Irrelevant to your own play. An AI Pachacuti on the map will resent any city of yours that touches a range; if he is a neighbour, settle your mountain cities first and his opinion follows."
+    }
+  ],
+  "shape_block": {
+    "front_load": {
+      "turn_zero": [
+        "Before the Settler moves: count the Mountain tiles within two rings of the start and the hills that touch them. Three mountains and two such hills is a go. Fewer than three mountains in sight means the fallback: walk toward the nearest visible range for up to three turns, or settle and run the plan from cities two and three.",
+        "Before the Settler moves: pick the tile that touches the most mountains while leaving the best mountain-adjacent hills free for Terrace Farms. The City Center cannot sit on a Mountain, and a center that uses up the one hill beside the range costs a four-Food tile for the game.",
+        "Before the Settler moves: pin the capital's Campus on the tile with the most mountain faces, the Aqueduct beside the Terrace hills, and the Holy Site or Theater Square second. The Campus tile is the one decision that cannot be improved later.",
+        "By turn 10: draw the range. Every city site along it within Trade Route range of the capital, each with its Campus tile and its Terrace cluster marked, and the pass where the Qhapaq Ñan will go. Cities one through six are decided now; the Scout only confirms them."
+      ],
+      "ceiling": "Six to eight cities along one or two ranges, each reaching 15 to 20 population on Terrace Farms and domestic Food, each with a Campus at +3 or more from mountains alone. That is a Science victory around turn 270 on Emperor from Universities beside mountains, Rationalism in every city, and Spaceport projects in the two tallest. Early Production is the cap: a mountain city builds its first districts slowly, so the plan supplements it with Mines on the Terrace-free hills and the Ancestral Hall's Builders. The empire is tall and compact, not wide; it cannot out-settle a flat neighbour and does not try.",
+      "irreversibles": [
+        {
+          "decision": "Capital tile: how many mountains it touches sets the Food on every domestic Trade Route for the game, and the Campus tile beside it sets the capital's Science.",
+          "by_turn": 3
+        },
+        {
+          "decision": "Terrace Farm cluster and Aqueduct tile pinned in the capital. A Mine or a district on a hill that touches two mountains removes a Terrace Farm for good.",
+          "by_turn": 8
+        },
+        {
+          "decision": "The range map: cities two through six, each on a hill touching mountains, each with its Campus tile named. A city founded off the range for its river has no Mit'a Production and feeds no route.",
+          "by_turn": 20
+        },
+        {
+          "decision": "Which pass gets the Qhapaq Ñan and which Builder lays it; the second valley is either joined by turn 60 or settled 30 turns later than the plan needs.",
+          "by_turn": 60
+        }
+      ],
+      "settle_map_rule": "Draw every city before the second Settler is produced. A site qualifies if it sits on a hill or flat tile touching at least two Mountains, has four or more hills touching Mountains in its first two rings for Terrace Farms, and lies within domestic Trade Route range of the capital or of a city already drawn. Mark the Campus tile for each site as the one with the most mountain faces and the Aqueduct tile as the one touching the most Terrace hills. A river or coast is a bonus and never a reason; a site with a river and one mountain is skipped for a dry site with three. Cities six and seven may be beyond a pass; they are drawn now, with the Qhapaq Ñan tile that reaches them, so the first Builder in the second valley knows where it is going."
+    }
+  },
+  "phases": [
+    {
+      "id": "assess",
+      "name": "Assess and commit",
+      "turns": {
+        "from": 1,
+        "to": 20
+      },
+      "era": "ancient",
+      "objective": "Settle against the range, pin the Campus, the Aqueduct and the Terrace Farm cluster, draw the range map for cities two through six, found the pantheon, and have the second Settler out and the first Terrace Farms built by turn 20. The twenty turns that decide the game.",
+      "build_order": [
+        {
+          "item": "Scout",
+          "why": "Walks the range both ways to confirm the drawn sites, finds the pass for the Qhapaq Ñan, meets the first civilization for Writing."
+        },
+        {
+          "item": "Warrior",
+          "why": "A second Warrior to escort the Settler through the valley and clear the one camp that shares it."
+        },
+        {
+          "item": "Builder",
+          "why": "Three Terrace Farms on the pinned hills before anything else; Craftsmanship fires on the third, and the Food makes the Settler affordable."
+        },
+        {
+          "item": "Settler",
+          "why": "City two on the range, the next site along; it is the second origin of a domestic route and the first city Magnus will not have to feed."
+        },
+        {
+          "item": "Slinger",
+          "why": "Archery from the first barbarian kill, and a ranged unit in the pass while the Warriors are away."
+        },
+        {
+          "item": "Monument",
+          "why": "Culture for Early Empire and Political Philosophy; a mountain capital grows faster than it builds, and Culture keeps pace."
+        },
+        {
+          "item": "Settler",
+          "why": "City three toward the second valley, so the Qhapaq Ñan has somewhere to go."
+        },
+        {
+          "item": "Campus",
+          "why": "On the pinned tile the turn Writing lands; three mountain faces is +3 before any building."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:pottery",
+          "note": "First, for the Terrace Farm and the Granary; the Builder is waiting on it."
+        },
+        {
+          "id": "tech:mining",
+          "note": "Mines on the hills the Terrace map leaves free; the Production supplement a mountain start needs."
+        },
+        {
+          "id": "tech:writing",
+          "note": "Free from the first civilization met; the Campus on its pinned tile."
+        },
+        {
+          "id": "tech:astrology",
+          "note": "Holy Site for Earth Goddess Faith; Eureka if the Scout finds a natural wonder in the range, which mountain maps often hold."
+        },
+        {
+          "id": "tech:archery",
+          "note": "A Slinger kill at the camp; the pass needs one Archer."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:code-of-laws",
+          "note": "God King for the pantheon, Discipline for the camp."
+        },
+        {
+          "id": "civic:craftsmanship",
+          "note": "Free from the three Terrace Farms; Ilkum for the Builders this plan runs on."
+        },
+        {
+          "id": "civic:foreign-trade",
+          "note": "The Qhapaq Ñan improvement and the first Trader; Inspiration only if the Scout crosses to a second continent."
+        }
+      ],
+      "policies": [
+        {
+          "card": "God King",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "Earth Goddess by turn 22 before any Holy Site exists."
+        },
+        {
+          "card": "Discipline",
+          "slot": "military",
+          "from": "civic:code-of-laws",
+          "why": "Two Warriors and a Slinger clear the valley camp for Military Tradition and Bronze Working."
+        },
+        {
+          "card": "Ilkum",
+          "slot": "economic",
+          "from": "civic:craftsmanship",
+          "why": "Builders 30% faster; every city needs four Terrace Farms before it is a city."
+        }
+      ],
+      "districts": [
+        {
+          "district": "campus",
+          "city": "capital",
+          "note": "Pinned on the tile with the most mountain faces; placed the turn Writing lands and built after the second Settler."
+        }
+      ],
+      "pantheon": {
+        "slug": "earth-goddess",
+        "why": "Mountains raise the appeal of every tile beside them to Breathtaking; a mountain capital has six or more such tiles, and the Faith buys the Great Scientists this plan is short of points for.",
+        "alternative": "stone-circles"
+      },
+      "wonders": [],
+      "governors": [],
+      "city_states": [
+        {
+          "type": "Scientific",
+          "why": "The first envoy is Science in the capital toward the Campus techs."
+        }
+      ],
+      "great_people": [],
+      "checkpoints": [
+        {
+          "turn": 8,
+          "test": "Capital settled touching three or more Mountains, Campus and Aqueduct tiles pinned, the Terrace cluster marked, and the Builder working?",
+          "pass": "Continue; draw the range map before the Settler finishes.",
+          "fail": "Fewer than three mountains: run the fallback and plan to carry the kit in cities two and three. Terrace hills unpinned: pin them this turn, before the Builder places a Mine on one."
+        },
+        {
+          "turn": 20,
+          "test": "Three Terrace Farms built, the second Settler out toward a drawn site, the pantheon founded or one turn away, and cities two through six drawn with Campus tiles named?",
+          "pass": "Enter the range phase and follow the map.",
+          "fail": "No map yet: draw it this turn, before the Settler moves. A Mine on a Terrace hill: leave it, strike the hill from the cluster, and pin a replacement."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "assess-settle-range",
+          "turn": 1,
+          "text": "Settle on the tile touching the most Mountains that leaves the mountain-adjacent hills free; move at most three turns toward a visible range."
+        },
+        {
+          "id": "assess-pin-capital",
+          "turn": 3,
+          "text": "Pin the Campus on the most-mountain tile, the Aqueduct beside the Terrace hills, and mark every hill touching two Mountains as a Terrace Farm."
+        },
+        {
+          "id": "assess-scout-range",
+          "turn": 6,
+          "text": "Scout along the range both ways; mark the pass, the camps, and the sites that match the drawn map."
+        },
+        {
+          "id": "assess-terrace-farms",
+          "turn": 12,
+          "text": "First Builder places three Terrace Farms on the pinned hills; Craftsmanship collected on the third."
+        },
+        {
+          "id": "assess-range-map",
+          "turn": 15,
+          "text": "Draw cities two through six along the range, each with its Campus tile and Terrace cluster named, and the Qhapaq Ñan tile across the pass."
+        },
+        {
+          "id": "assess-pantheon",
+          "turn": 20,
+          "text": "Found Earth Goddess, or Stone Circles if the valley holds two Stone quarries and little appeal."
+        }
+      ]
+    },
+    {
+      "id": "range",
+      "name": "Settle the range",
+      "turns": {
+        "from": 21,
+        "to": 80
+      },
+      "era": "classical",
+      "objective": "Cities two through five on the drawn sites, Terrace Farms in each before its first district, a domestic Trade Route from every city back to the capital, the first Aqueduct, Machu Picchu on a mountain the capital works, and the Qhapaq Ñan across the pass. Low decision density; the work is following the range map.",
+      "build_order": [
+        {
+          "item": "Settler",
+          "why": "Cities four and five on the range; Colonization and Magnus Provision in the capital."
+        },
+        {
+          "item": "Builder",
+          "why": "Four Terrace Farms per new city before any district; Ancestral Hall gives one free in each."
+        },
+        {
+          "item": "Trader",
+          "why": "One per city, every route domestic to the capital; Currency on the first, Medieval Faires at four."
+        },
+        {
+          "item": "Campus",
+          "why": "On the pinned mountain tile in every city as the first district; Recorded History at two."
+        },
+        {
+          "item": "Aqueduct",
+          "why": "Capital first, touching the Terrace cluster: Production on each adjacent Terrace Farm and the Military Engineering Eureka."
+        },
+        {
+          "item": "Library",
+          "why": "Capital and city two; the Great Scientist points for Education."
+        },
+        {
+          "item": "Machu Picchu",
+          "why": "On a mountain the capital works; mountain adjacency for Commercial Hubs, Theater Squares and Industrial Zones in every city."
+        },
+        {
+          "item": "Commercial Hub",
+          "why": "Capital, beside a mountain once Machu Picchu stands; the second Trade Route slot and the Market for Guilds."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:bronze-working",
+          "note": "Three camp kills by the Warriors in the valley; reveals Iron for the Warak'aq's cousins."
+        },
+        {
+          "id": "tech:irrigation",
+          "note": "A Farm on a resource beside the capital; Terrace Farms do not need it but the Wheat does."
+        },
+        {
+          "id": "tech:masonry",
+          "note": "A Quarry on the hill Stone; Ancient Walls in the pass city only."
+        },
+        {
+          "id": "tech:currency",
+          "note": "Free from the first domestic route; the Commercial Hub."
+        },
+        {
+          "id": "tech:wheel",
+          "note": "A Mine on a resource hill outside the Terrace cluster."
+        },
+        {
+          "id": "tech:engineering",
+          "note": "Machu Picchu; Eureka from Ancient Walls in the pass city."
+        },
+        {
+          "id": "tech:mathematics",
+          "note": "Campus, Holy Site and Commercial Hub in the capital by turn 60 is free."
+        },
+        {
+          "id": "tech:construction",
+          "note": "A Water Mill if the capital has a river; otherwise unboosted on the way to Machu Picchu's Buttress."
+        },
+        {
+          "id": "tech:apprenticeship",
+          "note": "Three Mines on the hills the Terrace map left free."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:state-workforce",
+          "note": "Free from the capital Campus."
+        },
+        {
+          "id": "civic:early-empire",
+          "note": "Six population comes fast on Terrace Farms; Colonization."
+        },
+        {
+          "id": "civic:mysticism",
+          "note": "Free from the pantheon."
+        },
+        {
+          "id": "civic:military-tradition",
+          "note": "The valley camp cleared; Agoge is not needed, the card is a slot filler."
+        },
+        {
+          "id": "civic:political-philosophy",
+          "note": "Classical Republic; three city-states met by the Scout along the range."
+        },
+        {
+          "id": "civic:drama-and-poetry",
+          "note": "Inspiration from Machu Picchu; Theater Squares beside mountains later."
+        },
+        {
+          "id": "civic:recorded-history",
+          "note": "Two Campuses by turn 60; Natural Philosophy."
+        },
+        {
+          "id": "civic:games-and-recreation",
+          "note": "Free from Construction."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Colonization",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "Settlers at half cost for cities four and five on the range."
+        },
+        {
+          "card": "Classical Republic",
+          "slot": "wildcard",
+          "from": "civic:political-philosophy",
+          "why": "Great Person points toward the first Great Scientist and Amenities for cities that will grow past ten."
+        },
+        {
+          "card": "Caravansaries",
+          "slot": "economic",
+          "from": "civic:foreign-trade",
+          "why": "Gold on the domestic routes that otherwise carry only Food; Builders are bought with it."
+        },
+        {
+          "card": "Natural Philosophy",
+          "slot": "economic",
+          "from": "civic:recorded-history",
+          "why": "Doubles Campus adjacency, and every Campus here is +3 or more from mountains."
+        }
+      ],
+      "districts": [
+        {
+          "district": "campus",
+          "city": "every city",
+          "note": "First district, on the pinned mountain tile."
+        },
+        {
+          "district": "aqueduct",
+          "city": "capital, then city two",
+          "note": "Touching the Terrace cluster; Production on every adjacent Terrace Farm."
+        },
+        {
+          "district": "commercial-hub",
+          "city": "capital",
+          "note": "Beside a mountain after Machu Picchu; the second route."
+        },
+        {
+          "district": "holy-site",
+          "city": "capital",
+          "note": "Beside mountains for the adjacency; Earth Goddess Faith buys Great Scientists later."
+        }
+      ],
+      "pantheon": {
+        "slug": "earth-goddess",
+        "why": "Already founded; it pays on every Breathtaking tile beside the range as the borders grow."
+      },
+      "wonders": [
+        {
+          "name": "Machu Picchu",
+          "why": "Built on a mountain the capital already works; mountain adjacency for Commercial Hubs, Theater Squares and Industrial Zones in every city, which in this empire is every district.",
+          "skip_if": "Engineering lands after turn 75 or no Mountain tile inside the capital's borders is free of a planned Qhapaq Ñan."
+        },
+        {
+          "name": "Pyramids",
+          "why": "An extra charge on every Builder, and this empire places four Terrace Farms per city for 200 turns.",
+          "skip_if": "No flat Desert tile inside the first two cities, or a rival shows Masonry before you."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "magnus",
+          "promotion": "Provision",
+          "city": "capital",
+          "why": "Settlers four and five without losing the population the Terrace Farms grew."
+        },
+        {
+          "governor": "liang",
+          "promotion": "Zoning Commissioner",
+          "city": "city two",
+          "why": "Districts faster in the city with the least Production; the Builder title comes next."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "nazca",
+          "why": "Nazca Lines give Faith to adjacent tiles; on a mountain city's spare flat tiles they stack with Earth Goddess."
+        },
+        {
+          "type": "Industrial",
+          "why": "Production toward districts in the capital; the mountain start is slow to build and this is the supplement."
+        },
+        {
+          "type": "Scientific",
+          "why": "Science in Libraries at three envoys."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-scientist",
+          "why": "The first Classical one is the Education Eureka; the Campuses here earn points from turn 40."
+        },
+        {
+          "class": "great-engineer",
+          "why": "A Classical Great Engineer with wonder charges finishes Machu Picchu in a slow capital."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 50,
+          "test": "Four cities on the range, four Terrace Farms in each, a domestic route from every city, and the capital Campus and Aqueduct built?",
+          "pass": "Continue; city five, Machu Picchu and the Qhapaq Ñan.",
+          "fail": "A city off the range: it stays, but it feeds a route and gets no Campus until the range cities have theirs. No Aqueduct: build it before the Commercial Hub; the Terrace Production is the point."
+        },
+        {
+          "turn": 80,
+          "test": "Five cities, Machu Picchu built or within five turns, the Qhapaq Ñan laid across the pass, two Libraries, and Natural Philosophy slotted?",
+          "pass": "Enter the tall phase.",
+          "fail": "Machu Picchu lost: take the Buttress Eureka from the Pyramids or any later wonder and move on. No Qhapaq Ñan: the second valley is settled by walking round; the plan slows by 20 turns and says so."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "range-city-two-three",
+          "turn": 28,
+          "text": "Cities two and three settled on their drawn sites; Terrace Farms pinned in each before the first Builder arrives."
+        },
+        {
+          "id": "range-routes",
+          "turn": 40,
+          "text": "A Trader in every city running to the capital; count the Food per route and write it beside the city on the map."
+        },
+        {
+          "id": "range-aqueduct",
+          "turn": 50,
+          "text": "Capital Aqueduct built touching the Terrace cluster; Military Engineering Eureka collected."
+        },
+        {
+          "id": "range-qhapaq-nan",
+          "turn": 60,
+          "text": "A Builder lays the Qhapaq Ñan on the pass tile drawn at turn 15; the second valley is now one move from the first."
+        },
+        {
+          "id": "range-machu-picchu",
+          "turn": 75,
+          "text": "Machu Picchu finished on a worked mountain; Commercial Hub placed beside a mountain the same turn."
+        }
+      ]
+    },
+    {
+      "id": "tall",
+      "name": "Grow tall",
+      "turns": {
+        "from": 81,
+        "to": 150
+      },
+      "era": "medieval",
+      "objective": "The range cities pass twelve population on Terrace Farms and domestic Food, Universities go up beside mountains for Astronomy, Aqueducts touch every Terrace cluster, the second valley is settled through the pass, and four Warak'aq hold the two gaps. The empire stops growing in cities and starts growing in people.",
+      "build_order": [
+        {
+          "item": "Settler",
+          "why": "Cities six and seven in the second valley, through the Qhapaq Ñan; the last cities this plan founds."
+        },
+        {
+          "item": "University",
+          "why": "Every Campus touches a mountain, so the first University is the Astronomy Eureka and two are Printing."
+        },
+        {
+          "item": "Aqueduct",
+          "why": "Every city with a Terrace cluster; Housing for 15 population and Production on the farms."
+        },
+        {
+          "item": "Warak'aq",
+          "why": "Four, two per pass; they attack twice and nothing crosses a mountain gap past them."
+        },
+        {
+          "item": "Market",
+          "why": "Two for Guilds; Banking free."
+        },
+        {
+          "item": "Theater Square",
+          "why": "Capital, beside a mountain with Machu Picchu's adjacency; Great Works for the Culture fallback and Humanism."
+        },
+        {
+          "item": "Industrial Zone",
+          "why": "The two most mountainous cities, beside mountains and the Aqueduct; Workshops for Industrialization."
+        },
+        {
+          "item": "Temple",
+          "why": "Capital only; Faith accumulates for Great Scientists at the Grand Master's Chapel rate without one."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:education",
+          "note": "The first Great Scientist from the mountain Campuses."
+        },
+        {
+          "id": "tech:astronomy",
+          "note": "Free: the first University sits beside a Mountain. Research it the turn the Eureka fires."
+        },
+        {
+          "id": "tech:military-engineering",
+          "note": "Free from the capital Aqueduct; Niter."
+        },
+        {
+          "id": "tech:machinery",
+          "note": "Warak'aq; Eureka only if three Archers were built, which this plan builds two of."
+        },
+        {
+          "id": "tech:castles",
+          "note": "Free from the Tier 2 government."
+        },
+        {
+          "id": "tech:buttress",
+          "note": "Free from Machu Picchu."
+        },
+        {
+          "id": "tech:printing",
+          "note": "Two Universities."
+        },
+        {
+          "id": "tech:mass-production",
+          "note": "A Lumber Mill on the valley Woods."
+        },
+        {
+          "id": "tech:banking",
+          "note": "Free from Guilds."
+        },
+        {
+          "id": "tech:industrialization",
+          "note": "Two Workshops in the mountain Industrial Zones."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:feudalism",
+          "note": "Six Farms; Terrace Farms are the count. Serfdom."
+        },
+        {
+          "id": "civic:civil-service",
+          "note": "Free: the capital passes ten population before turn 90 on Terrace Food."
+        },
+        {
+          "id": "civic:guilds",
+          "note": "Two Markets; the Mbanza is not ours, but Banking's Eureka is."
+        },
+        {
+          "id": "civic:medieval-faires",
+          "note": "Free from four domestic routes."
+        },
+        {
+          "id": "civic:divine-right",
+          "note": "Monarchy for Housing from Walls; two Temples only if Faith is wanted for Great Scientists."
+        },
+        {
+          "id": "civic:humanism",
+          "note": "A Great Artist from the capital Theater Square, or unboosted; the way to The Enlightenment."
+        },
+        {
+          "id": "civic:diplomatic-service",
+          "note": "A Research Alliance with the nearest Science civ."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Serfdom",
+          "slot": "economic",
+          "from": "civic:feudalism",
+          "why": "Builders with extra charges; the second valley needs sixteen Terrace Farms."
+        },
+        {
+          "card": "Meritocracy",
+          "slot": "economic",
+          "from": "civic:civil-service",
+          "why": "Culture per district while the Culture fallback is still open."
+        },
+        {
+          "card": "Monarchy",
+          "slot": "wildcard",
+          "from": "civic:divine-right",
+          "why": "Housing from the Walls the pass cities build, and the Castles Eureka."
+        },
+        {
+          "card": "Craftsmen",
+          "slot": "economic",
+          "from": "civic:guilds",
+          "why": "Doubles Industrial Zone adjacency in the two cities built beside mountains and Aqueducts."
+        }
+      ],
+      "districts": [
+        {
+          "district": "industrial-zone",
+          "city": "the two most mountainous cities",
+          "note": "Beside mountains and the Aqueduct for Machu Picchu's adjacency; Workshops first."
+        },
+        {
+          "district": "theater-square",
+          "city": "capital",
+          "note": "Beside a mountain; the Culture fallback lives here."
+        },
+        {
+          "district": "aqueduct",
+          "city": "every city",
+          "note": "Touching the Terrace cluster."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Kilwa Kisiwani",
+          "why": "Suzerainty of two Scientific city-states adds 15% Science empire-wide, on top of their Library and University bonuses.",
+          "skip_if": "No coastal city exists or Machinery lands after turn 130; it needs a coast and this empire may not have one."
+        },
+        {
+          "name": "Great Zimbabwe",
+          "why": "A Commercial Hub wonder for the Gold that buys Great Scientists; needs Cattle and a Commercial Hub beside it.",
+          "skip_if": "No Cattle inside a Commercial Hub city's borders or Banking after turn 140."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Researcher",
+          "city": "capital",
+          "why": "Science per citizen in the tallest city on the map; Grants next for the Great Scientist points."
+        },
+        {
+          "governor": "liang",
+          "promotion": "Aquaculture",
+          "city": "the lake or coastal city if one exists",
+          "why": "Fisheries for Food where Terrace hills are few; otherwise she stays on Zoning Commissioner in the newest city."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "geneva",
+          "why": "15% Science while at peace, and this empire is never at war."
+        },
+        {
+          "slug": "bologna",
+          "why": "Great Person points per district with a building; Great Scientists arrive a third faster."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-scientist",
+          "why": "Every one; buy with Faith and Gold when the points are short. The Medieval ones give Science from Universities, which every city has beside a mountain."
+        },
+        {
+          "class": "great-engineer",
+          "why": "Those with Production charges go to the Spaceport cities later; keep the points flowing from the Workshops."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 115,
+          "test": "Universities in three cities, Astronomy collected free, four Warak'aq in the passes, capital past twelve population, and city six founded in the second valley?",
+          "pass": "Continue; Industrial Zones and the second Aqueducts.",
+          "fail": "Capital under ten population means the Terrace cluster is unfinished or a Mine took a Terrace hill: a Serfdom Builder fixes the first; the second is written off. No sixth city: the pass was not opened; settle it by walking and accept the delay."
+        },
+        {
+          "turn": 150,
+          "test": "Seven cities, Science top two, two Industrial Zones with Workshops, every city with an Aqueduct, and a Research Alliance running?",
+          "pass": "Enter the Industrial phase; the empire is finished and the rest is Science.",
+          "fail": "Science below third: the Campuses are fine and the population is not; Terrace Farms are missing somewhere. Count them city by city before building anything else."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "tall-universities",
+          "turn": 95,
+          "text": "First University beside a mountain; Astronomy's Eureka collected and the tech taken immediately for the Great Scientist bonus."
+        },
+        {
+          "id": "tall-warakaq",
+          "turn": 110,
+          "text": "Four Warak'aq built and parked on hills behind the two passes."
+        },
+        {
+          "id": "tall-second-valley",
+          "turn": 120,
+          "text": "Cities six and seven settled through the Qhapaq Ñan, Terrace Farms pinned the turn each is founded."
+        },
+        {
+          "id": "tall-industrial-zones",
+          "turn": 140,
+          "text": "Both Industrial Zones placed beside mountains and an Aqueduct; Workshops queued."
+        }
+      ]
+    },
+    {
+      "id": "live",
+      "name": "Live inside the ceiling",
+      "turns": {
+        "from": 151,
+        "to": 220
+      },
+      "era": "industrial",
+      "objective": "Convert height into Science: Factories and Power in the mountain Industrial Zones, Research Labs on every Campus, Rationalism everywhere, Great Scientists bought with the Faith Earth Goddess banked, and a National Park in the capital's mountains for the Culture that keeps the civics tree moving. Choose the two Spaceport cities now.",
+      "build_order": [
+        {
+          "item": "Factory",
+          "why": "Both Industrial Zones; the Production that the Spaceport projects will eat."
+        },
+        {
+          "item": "Research Lab",
+          "why": "Every Campus; the Science victory is built here."
+        },
+        {
+          "item": "Coal Power Plant",
+          "why": "One, in the Industrial Zone with Coal nearby; Power for the Research Labs and Factories."
+        },
+        {
+          "item": "Bank",
+          "why": "Two for Economics; Gold buys Great Scientists."
+        },
+        {
+          "item": "Neighborhood",
+          "why": "Two, on Breathtaking mountain-side tiles; Sanitation and Conservation in one build and Housing for 20 population."
+        },
+        {
+          "item": "Naturalist",
+          "why": "Bought with Faith for the National Park in the capital's mountains; Radio's Eureka and Culture."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:scientific-theory",
+          "note": "Free from The Enlightenment; Research Grants."
+        },
+        {
+          "id": "tech:economics",
+          "note": "Two Banks."
+        },
+        {
+          "id": "tech:sanitation",
+          "note": "Two Neighborhoods."
+        },
+        {
+          "id": "tech:refining",
+          "note": "The Coal Power Plant."
+        },
+        {
+          "id": "tech:radio",
+          "note": "The National Park in the mountains; the appeal is already there."
+        },
+        {
+          "id": "tech:chemistry",
+          "note": "Research Alliance at level 2; Research Labs."
+        },
+        {
+          "id": "tech:flight",
+          "note": "Machu Picchu is not Industrial; Kilwa or Great Zimbabwe is not either. Build one Industrial wonder or take it unboosted."
+        },
+        {
+          "id": "tech:electricity",
+          "note": "Unboosted; this empire has no Privateers. Power for the Labs."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:the-enlightenment",
+          "note": "Three Great People long done; Rationalism."
+        },
+        {
+          "id": "civic:civil-engineering",
+          "note": "Seven district types; Public Works."
+        },
+        {
+          "id": "civic:colonialism",
+          "note": "Free: Astronomy was researched a century ago."
+        },
+        {
+          "id": "civic:urbanization",
+          "note": "Free: the capital passed fifteen population on Terrace Farms."
+        },
+        {
+          "id": "civic:conservation",
+          "note": "A Neighborhood on a Breathtaking tile beside the mountains; National Parks."
+        },
+        {
+          "id": "civic:natural-history",
+          "note": "An Archaeological Museum in the capital Theater Square, or unboosted on the way to Conservation."
+        },
+        {
+          "id": "civic:mass-media",
+          "note": "Free from Radio."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Rationalism",
+          "slot": "economic",
+          "from": "civic:the-enlightenment",
+          "why": "Science from Campus buildings; every Campus here has +3 adjacency and sits in a city past fifteen population, so it gets the full bonus."
+        },
+        {
+          "card": "Free Market",
+          "slot": "economic",
+          "from": "civic:the-enlightenment",
+          "why": "Gold from Commercial Hub buildings to buy Great Scientists and Spaceport Production later."
+        },
+        {
+          "card": "Public Works",
+          "slot": "economic",
+          "from": "civic:civil-engineering",
+          "why": "Builders with extra charges for the last Terrace Farms and the Mines on Coal and Aluminum."
+        }
+      ],
+      "districts": [
+        {
+          "district": "neighborhood",
+          "city": "capital and city two",
+          "note": "On Breathtaking tiles beside the mountains; Housing past twenty."
+        },
+        {
+          "district": "spaceport",
+          "city": "the two tallest Industrial Zone cities",
+          "note": "Placed now, built at Rocketry; the choice is made here so the Factories go where the projects will run."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Oxford University",
+          "why": "Two free techs and Science in the tallest Campus city; it needs a University beside flat land.",
+          "skip_if": "Scientific Theory lands after turn 200 or a Science rival has Oxford's Production lead."
+        },
+        {
+          "name": "Ruhr Valley",
+          "why": "Production per Mine and Quarry in the Industrial Zone city; the mountain cities have Mines on every spare hill.",
+          "skip_if": "No river beside an Industrial Zone, which a mountain empire may not have."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Space Initiative",
+          "city": "the Spaceport city",
+          "why": "Space projects 30% faster where he sits; he moves to the Spaceport city at Rocketry."
+        },
+        {
+          "governor": "reyna",
+          "promotion": "Forestry Management",
+          "city": "the National Park city",
+          "why": "Appeal on the tiles beside the Park and Gold from the Woods."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "geneva",
+          "why": "Keep the 15%; the empire never declares war."
+        },
+        {
+          "slug": "johannesburg",
+          "why": "Production per improved resource type in every city; mountain cities have Stone, Iron and Coal in their hills."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-scientist",
+          "why": "Industrial and Modern ones give Eurekas and Science; every one is bought if the points fall short."
+        },
+        {
+          "class": "great-engineer",
+          "why": "Those with Production toward wonders go to Oxford; those with Power go to the Spaceport city."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 185,
+          "test": "Both Factories built, Research Labs in four cities, Rationalism slotted, and Science first or second?",
+          "pass": "Continue to the close.",
+          "fail": "Science third or lower: the Labs are missing, not the Campuses. Buy them with Gold in the two tallest cities and move Pingala to Grants."
+        },
+        {
+          "turn": 220,
+          "test": "National Park founded, two Spaceport tiles placed, Power in every Lab city, and Chemistry collected?",
+          "pass": "Enter the close.",
+          "fail": "No Power: a second Coal plant or the Cardiff route; unpowered Labs are half Labs. Spaceport tiles unplaced: place them this turn on flat land beside the Factories."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "live-factories",
+          "turn": 165,
+          "text": "Factories in both mountain Industrial Zones and a Coal Power Plant beside one; Refining's Eureka collected."
+        },
+        {
+          "id": "live-national-park",
+          "turn": 190,
+          "text": "Naturalist bought with Faith; National Park founded on four Breathtaking mountain-side tiles in the capital."
+        },
+        {
+          "id": "live-labs",
+          "turn": 205,
+          "text": "Research Labs in every Campus city; Chemistry collected from the level 2 Research Alliance."
+        },
+        {
+          "id": "live-spaceport-choice",
+          "turn": 215,
+          "text": "Spaceport tiles placed in the two tallest Industrial Zone cities; nothing else is queued on those tiles."
+        }
+      ]
+    },
+    {
+      "id": "close",
+      "name": "Close",
+      "turns": {
+        "from": 221,
+        "to": null
+      },
+      "era": "modern",
+      "objective": "Finish Science: Spaceports in the two tallest cities, the satellite, the Moon landing and the Mars colony run from Factories and Power Plants with Great Engineers and Gold on top, Computers and the Tier 3 government, and the Exoplanet Expedition launched with Lasers for the terrestrial laser station. The four Warak'aq become four Machine Guns and nothing else is built for war.",
+      "build_order": [
+        {
+          "item": "Spaceport",
+          "why": "In both chosen cities; Rocketry's turn."
+        },
+        {
+          "item": "Launch Earth Satellite",
+          "why": "The first project, in the taller city; Mars projects follow in both."
+        },
+        {
+          "item": "Oil Power Plant",
+          "why": "Advanced Ballistics Eureka and Power when the Coal runs short."
+        },
+        {
+          "item": "Laboratory projects",
+          "why": "Campus Research Grants in cities with no Spaceport; Great Scientist points and Science."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:computers",
+          "note": "Free from the Tier 3 government."
+        },
+        {
+          "id": "tech:plastics",
+          "note": "An Oil Well on the nearest Oil; Power."
+        },
+        {
+          "id": "tech:advanced-ballistics",
+          "note": "The Oil Power Plant."
+        },
+        {
+          "id": "tech:nanotechnology",
+          "note": "A Mine on Aluminum; the hills have it."
+        },
+        {
+          "id": "tech:nuclear-fusion",
+          "note": "A Nuclear Power Plant if Uranium is in the hills; otherwise unboosted for the Exoplanet Expedition."
+        },
+        {
+          "id": "tech:robotics",
+          "note": "Globalization's Inspiration is two Airports, which this plan does not build; Robotics is taken unboosted."
+        },
+        {
+          "id": "tech:satellites",
+          "note": "Two Broadcast Centers, in the capital and city two; the Launch Earth Satellite project."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:space-race",
+          "note": "Free from the first Spaceport; Integrated Space Cell."
+        },
+        {
+          "id": "civic:nuclear-program",
+          "note": "A Research Lab; Science from the Nuclear Program card."
+        },
+        {
+          "id": "civic:capitalism",
+          "note": "Two Stock Exchanges; Gold for the last Great Engineers."
+        },
+        {
+          "id": "civic:class-struggle",
+          "note": "Three Factories; Five-Year Plan."
+        },
+        {
+          "id": "civic:social-media",
+          "note": "Free from Telecommunications."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Integrated Space Cell",
+          "slot": "military",
+          "from": "civic:space-race",
+          "why": "Space projects 15% faster in cities with a Military Academy or Encampment; the pass cities have Encampments."
+        },
+        {
+          "card": "Five-Year Plan",
+          "slot": "economic",
+          "from": "civic:class-struggle",
+          "why": "Campus and Industrial Zone adjacency doubled; every one of ours is beside mountains."
+        },
+        {
+          "card": "International Space Agency",
+          "slot": "diplomatic",
+          "from": "civic:nuclear-program",
+          "why": "Science per city-state you are suzerain of; Geneva, Bologna and Johannesburg are three."
+        }
+      ],
+      "districts": [],
+      "wonders": [],
+      "governors": [
+        {
+          "governor": "magnus",
+          "promotion": "Vertical Integration",
+          "city": "the second Spaceport city",
+          "why": "Production from every Industrial Zone within six tiles; the two zones were placed to overlap."
+        }
+      ],
+      "city_states": [],
+      "great_people": [
+        {
+          "class": "great-engineer",
+          "why": "Every Modern or Atomic one with a space project charge; bought with Gold the turn it appears."
+        },
+        {
+          "class": "great-scientist",
+          "why": "The Atomic ones give Science per Campus building; take every one until the Expedition launches."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 260,
+          "test": "Satellite launched, Moon landing in progress, Computers in, both Spaceports powered, and the Exoplanet Expedition reachable before turn 300?",
+          "pass": "Mars projects in both cities, then the Expedition; no further decisions.",
+          "fail": "A Science rival ahead on the projects: trade for their Great Works, buy Great Engineers with every Gold, and put Magnus on Vertical Integration in the laggard Spaceport."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "close-spaceports",
+          "turn": 230,
+          "text": "Spaceports built in both chosen cities; Space Race Inspiration collected on the first."
+        },
+        {
+          "id": "close-satellite",
+          "turn": 245,
+          "text": "Launch Earth Satellite complete; Moon landing queued the same turn."
+        },
+        {
+          "id": "close-garrison",
+          "turn": 250,
+          "text": "Warak'aq upgraded to Machine Guns in the passes; nothing else built for war."
+        }
+      ]
+    }
+  ],
+  "boosts": [
+    {
+      "id": "tech:sailing",
+      "fit": "costly",
+      "when": "assess",
+      "how": "Only if a range city happens to sit on the coast."
+    },
+    {
+      "id": "tech:astrology",
+      "fit": "cheap",
+      "when": "assess",
+      "how": "Mountain maps seed natural wonders; the Scout walks the range and usually finds one."
+    },
+    {
+      "id": "tech:irrigation",
+      "fit": "cheap",
+      "when": "range",
+      "how": "A Farm on the Wheat or Rice beside the capital."
+    },
+    {
+      "id": "tech:archery",
+      "fit": "cheap",
+      "when": "assess",
+      "how": "The Slinger finishes a barbarian at the valley camp."
+    },
+    {
+      "id": "tech:writing",
+      "fit": "free",
+      "when": "assess",
+      "how": "The Scout meets the first civilization."
+    },
+    {
+      "id": "tech:masonry",
+      "fit": "cheap",
+      "when": "range",
+      "how": "A Quarry on the hill Stone outside the Terrace cluster."
+    },
+    {
+      "id": "tech:bronze-working",
+      "fit": "cheap",
+      "when": "range",
+      "how": "Three camp kills by the Warriors in the valley."
+    },
+    {
+      "id": "tech:wheel",
+      "fit": "free",
+      "when": "range",
+      "how": "The first Mine on a resource hill."
+    },
+    {
+      "id": "tech:celestial-navigation",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:currency",
+      "fit": "free",
+      "when": "range",
+      "how": "The first domestic Trade Route is the leader ability."
+    },
+    {
+      "id": "tech:horseback-riding",
+      "fit": "costly",
+      "when": "range",
+      "how": "A Pasture only if Horses or Sheep sit in a valley."
+    },
+    {
+      "id": "tech:iron-working",
+      "fit": "cheap",
+      "when": "range",
+      "how": "A Mine on the Iron the hills usually hold."
+    },
+    {
+      "id": "tech:shipbuilding",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:mathematics",
+      "fit": "free",
+      "when": "range",
+      "how": "Campus, Holy Site and Commercial Hub in the capital."
+    },
+    {
+      "id": "tech:construction",
+      "fit": "costly",
+      "when": "range",
+      "how": "A Water Mill only if the capital has a river."
+    },
+    {
+      "id": "tech:engineering",
+      "fit": "cheap",
+      "when": "range",
+      "how": "Ancient Walls in the pass city."
+    },
+    {
+      "id": "tech:military-tactics",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:buttress",
+      "fit": "free",
+      "when": "tall",
+      "how": "Machu Picchu is a Classical wonder."
+    },
+    {
+      "id": "tech:apprenticeship",
+      "fit": "free",
+      "when": "range",
+      "how": "Three Mines on the hills the Terrace map left free."
+    },
+    {
+      "id": "tech:stirrups",
+      "fit": "free",
+      "when": "tall",
+      "how": "Feudalism is on the civic path."
+    },
+    {
+      "id": "tech:machinery",
+      "fit": "costly",
+      "when": "tall",
+      "how": "Three Archers is one more than the passes need; usually unboosted."
+    },
+    {
+      "id": "tech:education",
+      "fit": "cheap",
+      "when": "tall",
+      "how": "The first Great Scientist from the mountain Campuses."
+    },
+    {
+      "id": "tech:military-engineering",
+      "fit": "free",
+      "when": "tall",
+      "how": "The capital Aqueduct beside the Terrace cluster."
+    },
+    {
+      "id": "tech:castles",
+      "fit": "free",
+      "when": "tall",
+      "how": "Monarchy is a Tier 2 government."
+    },
+    {
+      "id": "tech:cartography",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:mass-production",
+      "fit": "cheap",
+      "when": "tall",
+      "how": "A Lumber Mill on the valley Woods."
+    },
+    {
+      "id": "tech:banking",
+      "fit": "free",
+      "when": "tall",
+      "how": "Guilds is on the civic path."
+    },
+    {
+      "id": "tech:gunpowder",
+      "fit": "costly",
+      "when": "tall",
+      "how": "An Armory in a pass Encampment only if one is built."
+    },
+    {
+      "id": "tech:printing",
+      "fit": "cheap",
+      "when": "tall",
+      "how": "Two Universities beside mountains."
+    },
+    {
+      "id": "tech:astronomy",
+      "fit": "free",
+      "when": "tall",
+      "how": "The first University is adjacent to a Mountain, because every Campus is."
+    },
+    {
+      "id": "tech:metal-casting",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:industrialization",
+      "fit": "cheap",
+      "when": "tall",
+      "how": "Two Workshops in the mountain Industrial Zones."
+    },
+    {
+      "id": "tech:scientific-theory",
+      "fit": "free",
+      "when": "live",
+      "how": "The Enlightenment is on the civic path."
+    },
+    {
+      "id": "tech:economics",
+      "fit": "cheap",
+      "when": "live",
+      "how": "Two Banks in the Commercial Hubs."
+    },
+    {
+      "id": "tech:sanitation",
+      "fit": "cheap",
+      "when": "live",
+      "how": "Two Neighborhoods on the mountain-side tiles."
+    },
+    {
+      "id": "tech:rifling",
+      "fit": "costly",
+      "when": "live",
+      "how": "A Mine on Niter only if the hills hold it."
+    },
+    {
+      "id": "tech:refining",
+      "fit": "cheap",
+      "when": "live",
+      "how": "The first Coal Power Plant."
+    },
+    {
+      "id": "tech:radio",
+      "fit": "cheap",
+      "when": "live",
+      "how": "A National Park on the Breathtaking tiles beside the capital's mountains."
+    },
+    {
+      "id": "tech:chemistry",
+      "fit": "cheap",
+      "when": "live",
+      "how": "A Research Alliance at level 2."
+    },
+    {
+      "id": "tech:flight",
+      "fit": "costly",
+      "when": "live",
+      "how": "An Industrial-era wonder, which this plan builds only if Ruhr Valley fits."
+    },
+    {
+      "id": "tech:electricity",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:steel",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:combustion",
+      "fit": "costly",
+      "when": "live",
+      "how": "An Artifact only if the capital Theater Square gets an Archaeological Museum."
+    },
+    {
+      "id": "tech:plastics",
+      "fit": "cheap",
+      "when": "close",
+      "how": "An Oil Well on the nearest Oil."
+    },
+    {
+      "id": "tech:computers",
+      "fit": "free",
+      "when": "close",
+      "how": "Any Tier 3 government."
+    },
+    {
+      "id": "tech:advanced-ballistics",
+      "fit": "cheap",
+      "when": "close",
+      "how": "The Oil Power Plant."
+    },
+    {
+      "id": "tech:satellites",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Broadcast Centers in the capital and city two."
+    },
+    {
+      "id": "tech:nanotechnology",
+      "fit": "cheap",
+      "when": "close",
+      "how": "A Mine on Aluminum in the hills."
+    },
+    {
+      "id": "tech:nuclear-fusion",
+      "fit": "costly",
+      "when": "close",
+      "how": "A Nuclear Power Plant only if Uranium is inside the borders."
+    },
+    {
+      "id": "tech:robotics",
+      "fit": "costly",
+      "when": "close",
+      "how": "Globalization needs two Airports; usually unboosted."
+    },
+    {
+      "id": "civic:craftsmanship",
+      "fit": "free",
+      "when": "assess",
+      "how": "Three Terrace Farms from the first Builder."
+    },
+    {
+      "id": "civic:foreign-trade",
+      "fit": "costly",
+      "when": "assess",
+      "how": "Only if the Scout reaches a second continent; the civic is taken early regardless for the Qhapaq Ñan."
+    },
+    {
+      "id": "civic:military-tradition",
+      "fit": "cheap",
+      "when": "range",
+      "how": "The valley camp cleared by the Warriors."
+    },
+    {
+      "id": "civic:state-workforce",
+      "fit": "free",
+      "when": "range",
+      "how": "The capital Campus, the first district."
+    },
+    {
+      "id": "civic:early-empire",
+      "fit": "free",
+      "when": "range",
+      "how": "Six population across the first two cities on Terrace Food."
+    },
+    {
+      "id": "civic:mysticism",
+      "fit": "free",
+      "when": "range",
+      "how": "The pantheon founded by turn 22."
+    },
+    {
+      "id": "civic:political-philosophy",
+      "fit": "cheap",
+      "when": "range",
+      "how": "Three city-states met by the Scout along the range."
+    },
+    {
+      "id": "civic:drama-and-poetry",
+      "fit": "cheap",
+      "when": "range",
+      "how": "Machu Picchu or the Pyramids."
+    },
+    {
+      "id": "civic:games-and-recreation",
+      "fit": "free",
+      "when": "range",
+      "how": "Researching Construction."
+    },
+    {
+      "id": "civic:recorded-history",
+      "fit": "free",
+      "when": "range",
+      "how": "Two Campuses as first districts."
+    },
+    {
+      "id": "civic:military-training",
+      "fit": "costly",
+      "when": "tall",
+      "how": "An Encampment in a pass city only if a neighbour is hostile."
+    },
+    {
+      "id": "civic:theology",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:defensive-tactics",
+      "fit": "costly",
+      "when": "range",
+      "how": "Only if a neighbour declares on you."
+    },
+    {
+      "id": "civic:feudalism",
+      "fit": "cheap",
+      "when": "tall",
+      "how": "Six Farms: the Terrace Farms count, and the plan has twelve by turn 60."
+    },
+    {
+      "id": "civic:civil-service",
+      "fit": "free",
+      "when": "tall",
+      "how": "The capital passes ten population on Terrace Food."
+    },
+    {
+      "id": "civic:guilds",
+      "fit": "cheap",
+      "when": "tall",
+      "how": "Markets in the capital and city two."
+    },
+    {
+      "id": "civic:medieval-faires",
+      "fit": "free",
+      "when": "tall",
+      "how": "Four domestic Trade Routes running by turn 70."
+    },
+    {
+      "id": "civic:divine-right",
+      "fit": "costly",
+      "when": "tall",
+      "how": "Two Temples only if the Faith is wanted; the capital has one."
+    },
+    {
+      "id": "civic:mercenaries",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:humanism",
+      "fit": "costly",
+      "when": "tall",
+      "how": "A Great Artist from the one Theater Square; often unboosted."
+    },
+    {
+      "id": "civic:diplomatic-service",
+      "fit": "cheap",
+      "when": "tall",
+      "how": "A Research Alliance with the nearest Science civ."
+    },
+    {
+      "id": "civic:the-enlightenment",
+      "fit": "free",
+      "when": "live",
+      "how": "Three Great People by the Medieval era."
+    },
+    {
+      "id": "civic:civil-engineering",
+      "fit": "cheap",
+      "when": "live",
+      "how": "Seven district types; the Theater Square and an Entertainment Complex make it."
+    },
+    {
+      "id": "civic:colonialism",
+      "fit": "free",
+      "when": "live",
+      "how": "Astronomy was researched in the Medieval era."
+    },
+    {
+      "id": "civic:urbanization",
+      "fit": "free",
+      "when": "live",
+      "how": "The capital at fifteen population."
+    },
+    {
+      "id": "civic:conservation",
+      "fit": "cheap",
+      "when": "live",
+      "how": "A Neighborhood on a Breathtaking mountain-side tile."
+    },
+    {
+      "id": "civic:natural-history",
+      "fit": "costly",
+      "when": "live",
+      "how": "An Archaeological Museum in the capital if the Theater Square has the Production spare."
+    },
+    {
+      "id": "civic:mass-media",
+      "fit": "free",
+      "when": "live",
+      "how": "Researching Radio for the National Park."
+    },
+    {
+      "id": "civic:capitalism",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Stock Exchanges."
+    },
+    {
+      "id": "civic:class-struggle",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Three Factories; the third in the second valley."
+    },
+    {
+      "id": "civic:nuclear-program",
+      "fit": "free",
+      "when": "close",
+      "how": "The first Research Lab."
+    },
+    {
+      "id": "civic:space-race",
+      "fit": "free",
+      "when": "close",
+      "how": "The first Spaceport."
+    },
+    {
+      "id": "civic:social-media",
+      "fit": "free",
+      "when": "close",
+      "how": "Researching Telecommunications."
+    },
+    {
+      "id": "civic:professional-sports",
+      "fit": "costly",
+      "when": "close",
+      "how": "Two Entertainment Complexes only if Amenities demand them."
+    }
+  ],
+  "decision_triggers": [
+    {
+      "name": "A site has a river and one mountain",
+      "if": "The next drawn site is dry with three mountains and a better-looking river site with one mountain sits two tiles away.",
+      "then": "Take the dry site. The Aqueduct and the Terrace Farms supply the Housing and the Food; the river supplies nothing Mit'a does not, and a one-mountain city feeds a one-Food route."
+    },
+    {
+      "name": "An army enters the valley",
+      "if": "A rival force appears at a pass before turn 150.",
+      "then": "Do not build Walls in the inner cities. Two Warak'aq on the hill behind the gap fire twice each per turn; the pass city's own ranged attack finishes what they leave. Pillaged Terrace Farms are repaired by the next Builder."
+    },
+    {
+      "name": "Production stalls",
+      "if": "At turn 60 the capital takes more than twelve turns per district.",
+      "then": "Expected for a mountain start and already planned for: switch two citizens from Terrace Farms to Mountains, buy a Builder for Mines on the spare hills, and send an envoy to the Industrial city-state. Do not chop; there is nothing to chop."
+    },
+    {
+      "name": "The second valley is contested",
+      "if": "A rival Settler is seen heading for the sites beyond the pass before the Qhapaq Ñan is laid.",
+      "then": "Send the next Settler through on foot with a Warrior and settle the far site first; the pass is laid afterward. Losing the valley caps the empire at five cities; walking costs ten turns."
+    }
+  ],
+  "abort": {
+    "trigger": "Turn 20 with a capital touching fewer than two Mountains and no range reached by city two, or turn 80 with three or more cities off the range.",
+    "actions": [
+      "Say plainly that the Inca are an ordinary civ this game and stop planning Terrace clusters that do not exist.",
+      "Play a generic Science game: Campuses by whatever adjacency the land gives, Commercial Hubs for Gold, Rationalism, and the Spaceport in the best Production city.",
+      "Keep the domestic Trade Route habit anyway; even one or two mountains at a city is Food nobody else gets."
+    ]
+  },
+  "fail_state": "Turn 120 with six cities at eight population, Mines on the hills that should have been Terrace Farms, Campuses placed beside rivers for the Commercial Hub rather than against the mountains, and the second valley settled by a rival. The decisions that caused it were made before turn 20 and no improvement or district can be moved.",
+  "common_mistakes": [
+    "Mining a hill that touches two Mountains because the city needs Production now. That hill is a four-Food Terrace Farm for the game; the Production comes from working the Mountain beside it.",
+    "Running foreign Trade Routes for Gold. The leader ability is on domestic routes only; a six-mountain origin city sends six Food, which is a Granary and a half per route.",
+    "Settling beside the river instead of against the range. Mit'a and Qhapaq Ñan do nothing for a river city; the Aqueduct gives the Housing the river would have.",
+    "Placing the Campus where the Commercial Hub wants to be. The Campus takes the tile with the most mountain faces, always; the Commercial Hub gets Machu Picchu's adjacency later.",
+    "Building an army to use the Warak'aq. It attacks twice because it is a pass guard; four of them is the whole military and the mountains do the rest."
+  ],
+  "sources": [
+    "Civilization VI Civilopedia, Gathering Storm ruleset (Inca, Pachacuti, Terrace Farm, Qhapaq Ñan, Warak'aq, Machu Picchu).",
+    "Where the civ-info text differs from the game, the game is followed: the Warak'aq's edge is a second attack per turn when it has Movement left, not higher Ranged Strength; Mit'a's mountain Production is a flat yield and the plan does not rely on an Industrial-era increase; Terrace Farms count toward the Feudalism Inspiration as Farms.",
+    "Boost objectives cross-checked against civilization6planner.com tech-tree and civics-tree pages, 2026-10-01.",
+    "Leadership Focus tags, caveats and Front-Load template for Pachacuti in this repository."
+  ]
+}
