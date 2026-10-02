@@ -1,0 +1,1606 @@
+{
+  "leader": "Basil II",
+  "civilization": "Byzantium",
+  "generated": "2026-10-02",
+  "slug": "basil-ii",
+  "shape": "Gate",
+  "secondary_shape": null,
+  "version": 1,
+  "updated": "2026-10-02",
+  "assumptions": {
+    "ruleset": "Gathering Storm with every expansion and the Leader Pass",
+    "speed": "Standard",
+    "difficulty": "Emperor",
+    "map": "Continents or Pangaea, standard size, 8 civilizations",
+    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. Basil II has a single persona and it is planned here. The gate has two halves and neither is a turn: a religion founded, then that religion made the majority in the city the cavalry will attack. The Tagma at Divine Right is the peak of the post-gate phase, not the gate itself, because Porphyrogennetos already applies to Horsemen and Knights the turn the target converts."
+  },
+  "verdict": {
+    "victory": "Domination",
+    "secondary": "Religion",
+    "confidence": "high",
+    "one_line": "Found a religion, walk a Missionary into the nearest rival's border city, and the moment it converts, ride Horsemen and Knights through its Walls as if they were not there. Every kill spreads the religion to the next city, so the war converts its own next target.",
+    "why": "Porphyrogennetos lets heavy and light cavalry deal full damage to cities and Walls that follow Byzantium's religion, which removes the one thing that stops a cavalry rush in this game. Taxis adds +3 Combat Strength per Holy City following that religion and spreads it to nearby cities on every kill, so a war against a converted city converts the cities behind it as it goes, and Crusade as the Enhancer belief puts +10 on top near every converted city. The kit does nothing until the religion exists and has reached the target, which is why the first seventy turns are a Prophet race and a Missionary walk, and nothing in it converts anyone in a different way; a cavalry army with no converted target is just cavalry. Religion is the second route because the same Holy Sites, Prophet points and kill-spread already push the religion across every neighbour, and a Byzantium that has conquered two civs usually holds the majority in three more."
+  },
+  "map_check": {
+    "must_have": [
+      "A rival city within roughly 12 tiles of the capital by land, so a Missionary can reach it in five turns with an escort and Horsemen can follow.",
+      "Horses within the first three cities, or a Militaristic city-state to buy them from; Horsemen are the first post-gate army and Tagma and Knights need them as well."
+    ],
+    "prefer": [
+      "A Holy Site spot with mountains, woods or a river for Faith, since the religion must come before the AI takes the last Prophet.",
+      "Grassland and a river for the growth the Hippodrome's free cavalry and the Encampment city need.",
+      "A second rival on the same landmass within 20 tiles, so the kill-spread has somewhere to flow after the first war.",
+      "Coast for Dromons if the first target is coastal; a Dromon's range makes a coastal siege cheap."
+    ],
+    "no_go": "An island start with every rival across ocean. Missionaries cannot cross until Cartography without a Harbor route, cavalry embarks at a crawl, and a Dromon fleet cannot convert anyone. The gate opens and there is nothing to ride at.",
+    "fallback": "Isolated, play Byzantium as a Faith civilization: Holy Sites with the Taxis Prophet points, a religion with Crusade kept for a later landing, Dromons to clear the coast, and Apostles sent by Harbor for a Religion victory. Keep one Encampment and a Hippodrome for the free Tagma in case a rival lands first."
+  },
+  "kit_levers": [
+    {
+      "source": "leader_ability",
+      "name": "Porphyrogénnētos",
+      "buys": "Heavy and light cavalry deal full damage to cities and their Walls when the city follows Byzantium's religion, and the Divine Right civic unlocks the Tagma.",
+      "exploit": "This is the gate and the war in one line. Convert the target city before the first Horseman reaches it and the Walls stop mattering; attack a city of another faith and the cavalry bounces like anyone else's. So the plan checks the target's majority religion every turn of the siege and sends a Missionary before any unit."
+    },
+    {
+      "source": "civ_ability",
+      "name": "Taxis",
+      "buys": "+3 Combat Strength and +3 Religious Strength for every Holy City following Byzantium's religion, its own included; defeating an enemy unit spreads the religion to nearby cities; and Holy Sites earn extra Great Prophet points.",
+      "exploit": "The Prophet points make the religion race winnable on Emperor without Stonehenge. The kill-spread means the first war against a converted city converts the cities behind it while you fight, so target the nearest city first and let the kills choose the second. Converting a rival Holy City is worth +3 on every unit; aim the Apostles there."
+    },
+    {
+      "source": "unique_unit",
+      "name": "Tagma",
+      "buys": "A Medieval heavy cavalry unit on the Knight line, unlocked by the Divine Right civic rather than a technology, that gives friendly land and religious units within one tile +4 Combat or Religious Strength.",
+      "exploit": "One Tagma beside each Knight pair and each Apostle: the Knights hit harder and the Apostles win theological combat on the way to the target. It arrives from a civic, so the Culture of the Prophet race is also the Culture of the peak unit, and a Hippodrome built after Divine Right spawns one free."
+    },
+    {
+      "source": "unique_unit",
+      "name": "Dromon",
+      "buys": "A Quadrireme replacement with Range 2 and extra strength against units.",
+      "exploit": "Two of them are the Shipbuilding Eureka and the Naval Tradition Inspiration, and when the first target is coastal they strip its defenders from two tiles away while the cavalry closes. Not built at all on an inland map."
+    },
+    {
+      "source": "unique_infrastructure",
+      "name": "Hippodrome",
+      "buys": "An Entertainment Complex replacement that costs less, gives extra Amenities, and spawns a free heavy cavalry unit of the best kind you can build each time the district or one of its buildings is completed.",
+      "exploit": "Build it after Divine Right, never before, so the free unit is a Tagma and not a Heavy Chariot; then the Arena and later the Zoo each pay another. A conquered empire needs the Amenities anyway, so every Hippodrome is a cavalry unit the war did not have to pay for."
+    },
+    {
+      "source": "agenda",
+      "name": "Divine Guardian",
+      "buys": "Basil likes civilizations that follow his religion and dislikes those that follow another.",
+      "exploit": "Irrelevant to your own play except as a warning: AI Basil on the same map will convert your border and then ride at it. Keep an Inquisitor in the border city nearest him and never let his religion become your majority anywhere."
+    }
+  ],
+  "shape_block": {
+    "gate": {
+      "gate_condition": "Two halves, both required: Byzantium has founded a religion, and that religion is the majority in the specific rival city the cavalry will attack first. Not a turn number: the first half is a Great Prophet, the second is a Missionary that survived the walk, and the plan declares nothing until the religion lens shows the target city in your colour.",
+      "fastest_path": [
+        "tech:astrology",
+        "civic:code-of-laws",
+        "civic:foreign-trade",
+        "civic:mysticism",
+        "tech:horseback-riding",
+        "tech:bronze-working"
+      ],
+      "estimated_arrival": {
+        "from": 55,
+        "to": 80
+      },
+      "staging": [
+        "A religion founded with Crusade as the Enhancer planned (bought with the second Apostle or the Mahabodhi pair) and a Founder belief that pays per converted city.",
+        "The target chosen: the nearest rival city by road, not its capital unless the capital is nearest, with Ancient Walls or none and a majority religion that is not an enhanced rival faith.",
+        "Two Missionaries bought, one on the road with a Warrior escort and one in reserve, because the first one dies to a barbarian or a theological hit about one game in three.",
+        "Six Horsemen under Maneuver and Agoge, promoted once on camps, parked in the Encampment city with a Battering Ram for any city that converts late and keeps Walls that matter.",
+        "A second Holy Site city with a Shrine, so the Faith keeps buying Missionaries during the war and the Taxis Prophet points stay flowing.",
+        "Horses pastured and Iron revealed; Stirrups queued so the Horsemen upgrade to Knights in the field under Professional Army.",
+        "Oligarchy adopted, a Casus Belli available (Holy War once the target's civ has converted one of your cities, or a Formal War from a denouncement five turns old)."
+      ],
+      "late_gate": "If no Great Prophet by turn 70, run Holy Site Prayers in both cities without pause, keep Revelation slotted, buy the second Shrine with Gold and send Moksha to the capital; do not send Horsemen at an unconverted city in the meantime, they lose to Walls like everyone else's. If the religion exists but the target refuses to convert because a rival faith is enhanced there, switch targets to the rival's nearest city without a majority religion, or send an Apostle with Proselytizer instead of a Missionary. If the last Prophet goes to another civ, the gate is closed: adopt the religion that spreads into you, keep the cavalry for defence, and play the Dromon and Hippodrome economy toward Score or a late Domination with Cuirassiers, which do not need the gate.",
+      "closing_window": "Parity arrives in two forms. Militarily, Renaissance Walls and Musketmen, roughly turns 150 to 180 on Emperor: full damage to Walls still applies, but a Tagma at Knight strength against a 55-strength Musketman behind Renaissance Walls is no longer a two-turn siege, and Cuirassiers at Military Science put everyone's cavalry back on even terms. Religiously, enhanced rival faiths with Inquisitors, roughly turns 120 to 150: a target you convert can be converted back mid-siege, and the bonus vanishes with the majority. Two civs' capitals should be taken before the first Musketman appears on a rival border, and every captured city should hold your religion with a Holy Site or Inquisitor before the rivals enhance. Check the rival tech tab for Gunpowder and the religion lens for Inquisitors every ten turns from the gate onward."
+    }
+  },
+  "phases": [
+    {
+      "id": "found",
+      "name": "Found and find the target",
+      "turns": {
+        "from": 1,
+        "to": 30
+      },
+      "era": "ancient",
+      "objective": "State the two-part gate on turn 1, settle on a Holy Site spot, scout the nearest rival city and the road to it, pasture Horses, found God of War, and have Astrology in and the first Holy Site placed before turn 30.",
+      "build_order": [
+        {
+          "item": "Scout",
+          "why": "Find the nearest rival city and the road, river or hills between you; the Missionary and the Horsemen both take that road."
+        },
+        {
+          "item": "Warrior",
+          "why": "Second melee unit for the first camp and the Bronze Working kills; it later escorts the Missionary."
+        },
+        {
+          "item": "Slinger",
+          "why": "Archery Eureka on a barbarian scout, then an Archer that stays home while the cavalry rides."
+        },
+        {
+          "item": "Settler",
+          "why": "Second city on the road toward the target, two or three tiles short of their border, with Horses in range if any exist."
+        },
+        {
+          "item": "Holy Site",
+          "why": "The first half of the gate; Taxis makes every Holy Site worth more Prophet points than anyone else's."
+        },
+        {
+          "item": "Monument",
+          "why": "Culture to Mysticism, then to Drama and Poetry and Theology for Divine Right; the Tagma is a civic."
+        },
+        {
+          "item": "Builder",
+          "why": "Pasture the Horses for Horseback Riding, mine a hill for The Wheel, farm a resource for Irrigation."
+        },
+        {
+          "item": "Shrine",
+          "why": "Faith for the Missionaries and the second Prophet point; Holy Site Prayers starts when it is done."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:astrology",
+          "note": "First. The Holy Site is half the gate. Eureka only if the Scout finds a natural wonder."
+        },
+        {
+          "id": "tech:animal-husbandry",
+          "note": "Reveals Horses and lets the Builder pasture them; Horseback Riding is behind it."
+        },
+        {
+          "id": "tech:horseback-riding",
+          "note": "Horsemen, the first post-gate army; Eureka from the Pasture."
+        },
+        {
+          "id": "tech:bronze-working",
+          "note": "The Encampment the Horsemen stage in; Eureka from three barbarian kills."
+        },
+        {
+          "id": "tech:writing",
+          "note": "Free Eureka from meeting the first civ; the Campus comes late in this plan."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:code-of-laws",
+          "note": "God King for the pantheon; Discipline for the camps."
+        },
+        {
+          "id": "civic:foreign-trade",
+          "note": "On the path to Mysticism; the first Trader gives Currency."
+        },
+        {
+          "id": "civic:mysticism",
+          "note": "Revelation for Prophet points; Inspiration free from the pantheon."
+        },
+        {
+          "id": "civic:craftsmanship",
+          "note": "Agoge for the Horsemen's escorts; Military Tradition and Maneuver behind it."
+        }
+      ],
+      "policies": [
+        {
+          "card": "God King",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "The pantheon by turn 20, and Faith toward the first Missionary."
+        },
+        {
+          "card": "Discipline",
+          "slot": "military",
+          "from": "civic:code-of-laws",
+          "why": "Warriors and the Slinger beat camp units for the Bronze Working Eureka."
+        },
+        {
+          "card": "Revelation",
+          "slot": "wildcard",
+          "from": "civic:mysticism",
+          "why": "Two Great Prophet points a turn on top of the Taxis points; the first half of the gate is a race."
+        }
+      ],
+      "districts": [
+        {
+          "district": "holy-site",
+          "city": "capital",
+          "note": "First district; State Workforce Inspiration and the Prophet points. Beside mountains or woods if the start allows."
+        }
+      ],
+      "pantheon": {
+        "slug": "god-of-war",
+        "why": "Faith equal to half the Combat Strength of every enemy unit killed within 8 tiles of a Holy Site; the holy war pays for its own Missionaries. God of Healing if the Holy Site will sit on the frontier and the war will be defensive first.",
+        "alternative": "god-of-healing"
+      },
+      "wonders": [
+        {
+          "name": "Stonehenge",
+          "why": "A free Great Prophet is the first half of the gate on the spot; it must be built beside Stone.",
+          "skip_if": "No Stone in the capital's first ring, or Taxis is already putting Byzantium first on the Prophet screen by turn 25; the Holy Site is the surer route."
+        }
+      ],
+      "governors": [],
+      "city_states": [
+        {
+          "type": "Religious",
+          "why": "The first envoy is +2 Faith in the capital, a Shrine before the Shrine."
+        },
+        {
+          "type": "Militaristic",
+          "why": "Production on units in the capital, and a place to buy Horses if the land has none."
+        }
+      ],
+      "great_people": [],
+      "checkpoints": [
+        {
+          "turn": 30,
+          "test": "Astrology in, the capital Holy Site placed, a pantheon founded, Horses pastured or located, and the nearest rival city and its road known?",
+          "pass": "Start Holy Site Prayers the turn the Shrine completes; settle the second city toward the target; enter the prophet phase.",
+          "fail": "No Horses located: the second city goes wherever Horses are, even away from the target; a Byzantium without Horses is a Religion civ. No rival found: the second Warrior scouts; the Missionary cannot be aimed blind."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "found-state-gate",
+          "turn": 1,
+          "text": "Write both halves of the gate down: religion founded, then the target city converted. Settle with a Holy Site spot in the first ring."
+        },
+        {
+          "id": "found-scout-target",
+          "turn": 6,
+          "text": "Scout toward the nearest rival; record its nearest city, its Walls status, its majority religion and the road to it."
+        },
+        {
+          "id": "found-first-camp",
+          "turn": 15,
+          "text": "Clear the nearest camp with two Warriors and the Slinger for Military Tradition and the Bronze Working kills; God of War pays Faith for each kill once the Holy Site stands."
+        },
+        {
+          "id": "found-pantheon",
+          "turn": 20,
+          "text": "Found God of War, or God of Healing if the Holy Site is on the border."
+        },
+        {
+          "id": "found-holy-site",
+          "turn": 24,
+          "text": "Place the capital Holy Site; start the Shrine as soon as the district completes."
+        },
+        {
+          "id": "found-horses",
+          "turn": 28,
+          "text": "Pasture the Horses; Horseback Riding Eureka collected and the Horsemen are a build away."
+        }
+      ]
+    },
+    {
+      "id": "prophet",
+      "name": "Prophet and Missionary",
+      "turns": {
+        "from": 31,
+        "to": 70
+      },
+      "era": "classical",
+      "objective": "Earn the Great Prophet, found the religion, buy two Missionaries and walk one into the target city under escort, while the Encampment city builds six Horsemen under Maneuver and a Ram, so the gate check at turn 70 finds the target converted and the army staged.",
+      "build_order": [
+        {
+          "item": "Shrine",
+          "why": "Second city too; two Shrines double the Prayers and the Faith for Missionaries."
+        },
+        {
+          "item": "Holy Site",
+          "why": "Second city; the Taxis Prophet points and the second Missionary source."
+        },
+        {
+          "item": "Encampment",
+          "why": "In the forward city; the Horsemen stage here, and it is the Military Training Inspiration and a Great General point."
+        },
+        {
+          "item": "Horseman",
+          "why": "Six under Maneuver; promote them on camps and keep them home until the target converts."
+        },
+        {
+          "item": "Settler",
+          "why": "Third city; a conquest needs a core to pay for it."
+        },
+        {
+          "item": "Ancient Walls",
+          "why": "In the forward city; the target's civ will see the Missionary coming and may declare first."
+        },
+        {
+          "item": "Battering Ram",
+          "why": "One, for the case where the target converts and then flips back mid-siege; it keeps the Horsemen honest against Walls that count."
+        },
+        {
+          "item": "Trader",
+          "why": "Currency Eureka and a route to the forward city."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:archery",
+          "note": "One Archer per city for the floor; Eureka from the Slinger kill."
+        },
+        {
+          "id": "tech:mining",
+          "note": "Mines for Production and the Wheel Eureka."
+        },
+        {
+          "id": "tech:wheel",
+          "note": "Heavy Chariots are not the plan, but Construction and Engineering are behind it."
+        },
+        {
+          "id": "tech:masonry",
+          "note": "Walls in the forward city; Eureka from a Quarry."
+        },
+        {
+          "id": "tech:currency",
+          "note": "Commercial Hub for the Gold the upgrades need; Eureka from the Trader."
+        },
+        {
+          "id": "tech:iron-working",
+          "note": "Iron for Knights later; a Swordsman or two as the melee line."
+        },
+        {
+          "id": "tech:engineering",
+          "note": "Eureka free from the Walls; the Ram and Medieval Walls at home."
+        },
+        {
+          "id": "tech:stirrups",
+          "note": "Knights. Queue it so the Horsemen upgrade the turn Feudalism gives the Eureka."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:military-tradition",
+          "note": "Maneuver: half again as fast on Horsemen. Inspiration from the first camp."
+        },
+        {
+          "id": "civic:state-workforce",
+          "note": "Inspiration free from the Holy Site; Conscription for the six Horsemen."
+        },
+        {
+          "id": "civic:early-empire",
+          "note": "Colonization for the third Settler; six population is the Inspiration."
+        },
+        {
+          "id": "civic:political-philosophy",
+          "note": "Oligarchy. Three city-states met."
+        },
+        {
+          "id": "civic:drama-and-poetry",
+          "note": "On the Divine Right path; the Inspiration needs a wonder, so it is usually researched plain."
+        },
+        {
+          "id": "civic:theology",
+          "note": "Inspiration free on founding; Scripture and the path to Divine Right."
+        },
+        {
+          "id": "civic:military-training",
+          "note": "Inspiration from the Encampment; Strategos for the General the Knights want."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Maneuver",
+          "slot": "military",
+          "from": "civic:military-tradition",
+          "why": "Half again as fast on every Horseman; six of them is the staged army."
+        },
+        {
+          "card": "Revelation",
+          "slot": "wildcard",
+          "from": "civic:mysticism",
+          "why": "Stays slotted until the Prophet arrives."
+        },
+        {
+          "card": "Colonization",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "The third Settler at half price while the Encampment city builds Horsemen."
+        },
+        {
+          "card": "Oligarchy",
+          "slot": "wildcard",
+          "from": "civic:political-philosophy",
+          "why": "The government: +4 Combat Strength on melee and anti-cavalry, faster experience, and the Legacy card later."
+        },
+        {
+          "card": "Scripture",
+          "slot": "economic",
+          "from": "civic:theology",
+          "why": "Holy Site adjacency doubled; the Faith buys the Missionaries and the first Apostle."
+        }
+      ],
+      "districts": [
+        {
+          "district": "holy-site",
+          "city": "second city",
+          "note": "Second Prophet point source and second Missionary source."
+        },
+        {
+          "district": "encampment",
+          "city": "forward city",
+          "note": "The staging post; Walls, Barracks and the Military Training Inspiration."
+        }
+      ],
+      "pantheon": {
+        "slug": "god-of-war",
+        "why": "Already founded; the camps cleared by Horsemen within 8 tiles of a Holy Site pay the Missionary Faith."
+      },
+      "wonders": [
+        {
+          "name": "Mahabodhi Temple",
+          "why": "Two free Apostles the turn it completes: one enhances with Crusade, one converts the target's Holy City. Woods beside a Holy Site.",
+          "skip_if": "Theology lands after turn 75, or no Holy Site has an adjacent woods tile."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "moksha",
+          "promotion": "Bishop",
+          "city": "capital",
+          "why": "Religious units adjacent to the city win theological combat; the Missionaries start their walk from here."
+        },
+        {
+          "governor": "victor",
+          "promotion": "Garrison Commander",
+          "city": "forward city",
+          "why": "+5 Combat Strength inside the borders where the Horsemen stage and the first retaliation lands."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "kabul",
+          "why": "Double experience from battles you start; the Horsemen reach their second promotion in the first war."
+        },
+        {
+          "slug": "yerevan",
+          "why": "Apostles choose their promotion: Proselytizer for a target that already has a religion."
+        },
+        {
+          "slug": "fez",
+          "why": "Converting a city with a religious unit for the first time earns 20 Science per Population; the Missionary walk pays Science too."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-prophet",
+          "why": "Half the gate. Two Holy Sites, two Shrines, Revelation and Prayers; Taxis makes Byzantium the favourite."
+        },
+        {
+          "class": "great-general",
+          "why": "A Classical General with six Horsemen is +5 and +1 Movement; Strategos and the Encampment make the points."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 50,
+          "test": "Religion founded or the Prophet within five turns, two Holy Sites with Shrines, the Encampment placed, and three Horsemen standing?",
+          "pass": "Buy the first Missionary the turn the religion exists; send it with a Warrior along the scouted road.",
+          "fail": "Prophet behind: Prayers in both cities and buy the second Shrine. Horsemen behind: Maneuver and the Encampment city builds nothing else. Target's road blocked by a camp: clear it with the Horsemen first, God of War pays for it."
+        },
+        {
+          "turn": 70,
+          "test": "Gate check: is the religion founded AND does the target city show it as majority AND are six Horsemen, a Ram and a General staged in the forward city?",
+          "pass": "Declare with the Casus Belli and ride this turn; enter the holy war.",
+          "fail": "Religion founded, target not converted: do not declare; a second Missionary, or an Apostle with Proselytizer if a rival faith holds the city. Target converted, army short: convert nothing else and finish the Horsemen; a converted target un-attacked for ten turns usually stays converted. Religion missing: late-gate plan."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "prophet-prayers",
+          "turn": 33,
+          "text": "Holy Site Prayers in the capital the turn the Shrine completes; the second city follows."
+        },
+        {
+          "id": "prophet-encampment",
+          "turn": 40,
+          "text": "Encampment placed in the forward city; Military Training Inspiration collected and the Horsemen queue starts."
+        },
+        {
+          "id": "prophet-found",
+          "turn": 52,
+          "text": "Found the religion: Church Property or Tithe as Founder, a Follower belief for Faith or Food, and Crusade written down as the Enhancer."
+        },
+        {
+          "id": "prophet-missionary-walk",
+          "turn": 56,
+          "text": "First Missionary bought and on the road with a Warrior escort; second Missionary bought and held."
+        },
+        {
+          "id": "prophet-convert-target",
+          "turn": 63,
+          "text": "Target city converted: check the religion lens shows your colour as its majority; note how many followers of the old faith remain."
+        },
+        {
+          "id": "prophet-stage",
+          "turn": 68,
+          "text": "Six Horsemen, a Ram and the General in the forward city; denounce the target's civ so a Formal War is available at the gate check."
+        }
+      ]
+    },
+    {
+      "id": "holywar",
+      "name": "The holy war",
+      "turns": {
+        "from": 71,
+        "to": 130
+      },
+      "era": "medieval",
+      "objective": "Take the converted target and the cities the kill-spread converts behind it with Horsemen that become Knights and then Tagma, reach Divine Right for the Tagma and the first Hippodrome, enhance with Crusade, and hold every capture with your religion and a garrison before any rival enhances.",
+      "build_order": [
+        {
+          "item": "Missionary",
+          "why": "One ahead of each new target; the kill-spread starts conversions and a Missionary finishes them."
+        },
+        {
+          "item": "Apostle",
+          "why": "Enhance with Crusade first; then Proselytizer Apostles for cities holding a rival faith, with a Tagma beside them for +4 Religious Strength."
+        },
+        {
+          "item": "Knight",
+          "why": "Upgrade the Horsemen under Professional Army the turn Stirrups lands; new Knights only until Divine Right, then Tagma."
+        },
+        {
+          "item": "Tagma",
+          "why": "One per Knight pair and one per Apostle; the aura is the point, so never stack two."
+        },
+        {
+          "item": "Hippodrome",
+          "why": "Built only after Divine Right, in the capital; the district spawns a free Tagma and the Arena another."
+        },
+        {
+          "item": "Monument",
+          "why": "First build in every capture; Loyalty before anything."
+        },
+        {
+          "item": "Commercial Hub",
+          "why": "Capital; Market for the Gold the upgrades eat."
+        },
+        {
+          "item": "Aqueduct",
+          "why": "Capital; Military Engineering Eureka and the Housing for Civil Service."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:mathematics",
+          "note": "Holy Site, Encampment and Commercial Hub are three districts; the Eureka is free."
+        },
+        {
+          "id": "tech:apprenticeship",
+          "note": "Three Mines; the Production the Tagma run on."
+        },
+        {
+          "id": "tech:military-tactics",
+          "note": "A Spearman kill; Pikemen hold captures against the counter-attack."
+        },
+        {
+          "id": "tech:machinery",
+          "note": "Three Archers; Crossbowmen behind the cavalry finish defenders."
+        },
+        {
+          "id": "tech:military-engineering",
+          "note": "Aqueduct Eureka; Siege Towers for the rare city that flips back with Medieval Walls."
+        },
+        {
+          "id": "tech:castles",
+          "note": "Free from Oligarchy; Medieval Walls in the captures."
+        },
+        {
+          "id": "tech:construction",
+          "note": "Water Mill; Games and Recreation for the Hippodrome's Arena is behind it."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:divine-right",
+          "note": "The Tagma. Two Temples is the Inspiration and the Holy Site cities want them anyway; Chivalry and Monarchy."
+        },
+        {
+          "id": "civic:defensive-tactics",
+          "note": "Inspiration free when the target's civ or its ally declares; Limitanei for the captures."
+        },
+        {
+          "id": "civic:feudalism",
+          "note": "Six Farms; the Stirrups Eureka comes with it, so Knights arrive the same turn."
+        },
+        {
+          "id": "civic:games-and-recreation",
+          "note": "Inspiration from Construction; the Hippodrome and its Arena."
+        },
+        {
+          "id": "civic:mercenaries",
+          "note": "Eight land units is the army; Professional Army for Horsemen to Knights at half price."
+        },
+        {
+          "id": "civic:civil-service",
+          "note": "Capital at ten population; Retainers for Amenities in garrisoned captures."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Chivalry",
+          "slot": "military",
+          "from": "civic:divine-right",
+          "why": "Half again as fast on every Tagma and Knight."
+        },
+        {
+          "card": "Professional Army",
+          "slot": "military",
+          "from": "civic:mercenaries",
+          "why": "Horsemen to Knights at half price the turn Stirrups lands."
+        },
+        {
+          "card": "Limitanei",
+          "slot": "military",
+          "from": "civic:defensive-tactics",
+          "why": "Loyalty from the garrison in every capture."
+        },
+        {
+          "card": "Monarchy",
+          "slot": "wildcard",
+          "from": "civic:divine-right",
+          "why": "The government once the empire is wide: Housing from Walls and three military slots for Chivalry, Professional Army and Limitanei."
+        }
+      ],
+      "districts": [
+        {
+          "district": "entertainment-complex",
+          "city": "capital",
+          "note": "The Hippodrome, placed only after Divine Right so the free unit is a Tagma. Amenities for the conquered core."
+        },
+        {
+          "district": "commercial-hub",
+          "city": "capital",
+          "note": "Market and Trade Routes; the upgrade budget."
+        },
+        {
+          "district": "holy-site",
+          "city": "first capture",
+          "note": "Every capture holds the religion with its own pressure; a converted capture that flips loses the cavalry bonus against its neighbours."
+        }
+      ],
+      "pantheon": {
+        "slug": "god-of-war",
+        "why": "Already founded; every kill in the war within 8 tiles of a Holy Site is Faith, and the captures' Holy Sites extend the radius."
+      },
+      "wonders": [
+        {
+          "name": "Hagia Sophia",
+          "why": "An extra charge on every Missionary and Apostle, beside a Holy Site; each religious unit converts one more city ahead of the cavalry.",
+          "skip_if": "Buttress lands after turn 120 or a rival Faith civ already has it."
+        },
+        {
+          "name": "Alhambra",
+          "why": "An extra military slot and Great General points, on hills beside the Encampment.",
+          "skip_if": "No hill free beside the Encampment, or Castles lands after turn 125."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "victor",
+          "promotion": "Embrasure",
+          "city": "the newest capture",
+          "why": "Move him with the front; each capture holds while the cavalry rides on."
+        },
+        {
+          "governor": "moksha",
+          "promotion": "Divine Architect",
+          "city": "newest capture",
+          "why": "Buy its Holy Site with Faith the turn it is taken; the religion holds and the Taxis points grow."
+        },
+        {
+          "governor": "magnus",
+          "promotion": "Provision",
+          "city": "capital",
+          "why": "Settlers for the land the war opens without losing population."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "kabul",
+          "why": "Double experience; the Knights become Tagma escorts with two promotions."
+        },
+        {
+          "slug": "jerusalem",
+          "why": "Every Holy Site city exerts pressure as a Holy City; converted targets stay converted."
+        },
+        {
+          "slug": "valletta",
+          "why": "Walls bought with Faith in each capture the turn it falls."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-general",
+          "why": "A Medieval General per stack; the second front needs its own."
+        },
+        {
+          "class": "great-prophet",
+          "why": "None remains after the first; the Taxis points still count toward Theology-era Great People for The Enlightenment."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 95,
+          "test": "First target taken, two cities behind it converted by the kill-spread, Stirrups in and the Horsemen upgraded, and Divine Right within ten turns?",
+          "pass": "Ride at the next converted city; Missionary ahead of any that is only half converted.",
+          "fail": "Target still standing at 95 means it flipped back mid-siege or was never majority: check the lens, send the reserve Missionary, and pull the cavalry out of Walls range until it reads your colour. Divine Right far away: Monuments and Pingala; Knights carry the war until then."
+        },
+        {
+          "turn": 130,
+          "test": "One civ's capital taken, four or more captures holding your religion, Divine Right done, the first Hippodrome built with its free Tagma, and no rival enhanced with Inquisitors on your border?",
+          "pass": "Enter the Hippodrome phase: Theocracy, the second civ, and Faith-bought Tagma.",
+          "fail": "A rival with Inquisitors means the religious window is closing: Inquisitors in every capture, Apostles with Proselytizer to the second target, and no new war until its target reads your colour. No capital taken: it had Medieval Walls when it flipped back; bring Siege Towers and finish it before anything else."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "holywar-declare",
+          "turn": 71,
+          "text": "Declare with the Casus Belli and ride; the Horsemen hit the converted target's Walls at full damage, the General adjacent, the Archers on the defenders."
+        },
+        {
+          "id": "holywar-first-capture",
+          "turn": 78,
+          "text": "Take the target; garrison one unit, Monument first, Victor moved in, Faith-buy its Holy Site under Divine Architect."
+        },
+        {
+          "id": "holywar-crusade",
+          "turn": 85,
+          "text": "Enhance with Crusade using the first Apostle; +10 Combat Strength near every converted city from here on."
+        },
+        {
+          "id": "holywar-knights",
+          "turn": 92,
+          "text": "Stirrups in with Feudalism; upgrade every Horseman to a Knight under Professional Army in the field."
+        },
+        {
+          "id": "holywar-tagma",
+          "turn": 110,
+          "text": "Divine Right done: two Tagma from the Encampment city under Chivalry, one beside each Knight pair; place the capital Hippodrome now."
+        },
+        {
+          "id": "holywar-capital",
+          "turn": 125,
+          "text": "Take the first civ's capital; the kill-spread has converted it, confirm on the lens the turn before the assault."
+        }
+      ]
+    },
+    {
+      "id": "hippodrome",
+      "name": "Hippodromes and the second civ",
+      "turns": {
+        "from": 131,
+        "to": 190
+      },
+      "era": "renaissance",
+      "objective": "Run Theocracy to buy Tagma and Apostles with Faith, build a Hippodrome with an Arena in every large city for free cavalry and Amenities, convert and take the second civ's capital before Musketmen and Renaissance Walls, and keep every capture in your religion against the rivals' Inquisitors.",
+      "build_order": [
+        {
+          "item": "Hippodrome",
+          "why": "Every city of eight or more population; the district and the Arena each spawn a free Tagma, and the captures need the Amenities."
+        },
+        {
+          "item": "Arena",
+          "why": "In each Hippodrome; a second free cavalry unit and the Amenities to stop revolt in captures."
+        },
+        {
+          "item": "Apostle",
+          "why": "Proselytizer pairs for the second civ's cities, with a Tagma beside them; Theocracy makes them cheap."
+        },
+        {
+          "item": "Inquisitor",
+          "why": "One per capture the turn a rival enhances; the AI aims at the cities you converted by force."
+        },
+        {
+          "item": "Tagma",
+          "why": "Bought with Faith under Theocracy; built with Chivalry otherwise, until Military Science replaces them."
+        },
+        {
+          "item": "Trebuchet",
+          "why": "Two, for any city that flips back behind Medieval Walls; also the Siege Tactics Eureka."
+        },
+        {
+          "item": "University",
+          "why": "Two for Printing; the Science this plan deferred."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:siege-tactics",
+          "note": "Two Trebuchets give it; Renaissance Walls at home and a fallback against a flipped city."
+        },
+        {
+          "id": "tech:gunpowder",
+          "note": "An Armory in the Encampment; Musketmen as the garrison line."
+        },
+        {
+          "id": "tech:metal-casting",
+          "note": "Two Crossbowmen; Pike and Shot for the captures."
+        },
+        {
+          "id": "tech:printing",
+          "note": "Two Universities; the Science catch-up."
+        },
+        {
+          "id": "tech:banking",
+          "note": "Free from Guilds; Banks for the army's upkeep."
+        },
+        {
+          "id": "tech:military-science",
+          "note": "Cuirassiers replace the Tagma; the Eureka is a Knight kill, which the Knights make all war."
+        },
+        {
+          "id": "tech:astronomy",
+          "note": "A University beside a mountain; Colonialism's Inspiration."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:reformed-church",
+          "note": "Six cities following, long since true; Theocracy and Wars of Religion."
+        },
+        {
+          "id": "civic:guilds",
+          "note": "Two Markets; Banking Eureka and the Gold."
+        },
+        {
+          "id": "civic:exploration",
+          "note": "On the way to Reformed Church; two Caravels if the second civ is coastal."
+        },
+        {
+          "id": "civic:nationalism",
+          "note": "Holy War Casus Belli against the second civ is the Inspiration; Corps for the Tagma."
+        },
+        {
+          "id": "civic:medieval-faires",
+          "note": "Four Trade Routes from the Markets; Triangular Trade for Gold and Faith."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Theocracy",
+          "slot": "wildcard",
+          "from": "civic:reformed-church",
+          "why": "The government: Faith buys Tagma and Apostles at a discount, and +5 Religious Strength on the Apostles the Tagma already boost."
+        },
+        {
+          "card": "Wars of Religion",
+          "slot": "military",
+          "from": "civic:reformed-church",
+          "why": "+4 Combat Strength against the second civ while its majority is still another faith."
+        },
+        {
+          "card": "Chivalry",
+          "slot": "military",
+          "from": "civic:divine-right",
+          "why": "Still half again as fast on Tagma until Military Science."
+        },
+        {
+          "card": "Retainers",
+          "slot": "military",
+          "from": "civic:civil-service",
+          "why": "Amenities in garrisoned captures, stacked with the Hippodromes."
+        }
+      ],
+      "districts": [
+        {
+          "district": "entertainment-complex",
+          "city": "every city of eight population or more",
+          "note": "Hippodromes; the free Tagma and the Amenities."
+        },
+        {
+          "district": "campus",
+          "city": "capital and the first capital taken",
+          "note": "Universities for Printing; late by design."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Mont St. Michel",
+          "why": "Every Apostle gets Martyr as well; the Apostles lost to the second civ's Inquisitors come back as Relics. Floodplains or Marsh.",
+          "skip_if": "No Floodplains or Marsh owned, or Divine Right landed after turn 120."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "moksha",
+          "promotion": "Patron Saint",
+          "city": "Holy City",
+          "why": "Apostles bought here carry an extra promotion; Proselytizer and Debater together."
+        },
+        {
+          "governor": "victor",
+          "promotion": "Embrasure",
+          "city": "wherever the front is",
+          "why": "Still the front-line governor."
+        },
+        {
+          "governor": "amani",
+          "promotion": "Emissary",
+          "city": "a capture near a city-state",
+          "why": "Hold Kabul and Jerusalem while every civ you have fought courts them."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "yerevan",
+          "why": "Chosen promotions; Proselytizer every time against an enhanced faith."
+        },
+        {
+          "slug": "akkad",
+          "why": "Full damage to Walls from melee and anti-cavalry too, so Pikemen can finish what the Tagma start."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-general",
+          "why": "A Renaissance General keeps the Tagma at +5 against Musketmen for the last sieges."
+        },
+        {
+          "class": "great-merchant",
+          "why": "Gold and envoys; the Markets make the points without trying."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 160,
+          "test": "Theocracy adopted, three Hippodromes with Arenas, the second civ's nearest cities converted, and no capture flipped?",
+          "pass": "Declare on the second civ with Holy War and ride; Apostles two turns ahead of the cavalry.",
+          "fail": "Captures flipping means rival Inquisitors: Inquisitors in every capture and Citadel of God on the Holy City before any new war. Second civ not converting: Proselytizer Apostle pairs with a Tagma each; if its faith is enhanced with Defender of the Faith, pick a third civ."
+        },
+        {
+          "turn": 190,
+          "test": "Two capitals held, the cavalry still Tagma-strength against the defenders you face, and no rival with Musketmen behind Renaissance Walls on your front?",
+          "pass": "Enter the close: Cuirassiers, Corps and the third capital.",
+          "fail": "Musketmen and Renaissance Walls on the front mean the military window has closed: stop declaring, hold the two civs' land, and win on Religion with Apostles and the Hippodrome Faith economy, or on Score if the religion is contested."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "hippodrome-theocracy",
+          "turn": 135,
+          "text": "Adopt Theocracy the turn Reformed Church lands; Wars of Religion and Chivalry in the military slots."
+        },
+        {
+          "id": "hippodrome-three",
+          "turn": 145,
+          "text": "Three Hippodromes with Arenas done; six free Tagma collected and parked on the second civ's border."
+        },
+        {
+          "id": "hippodrome-convert-second",
+          "turn": 152,
+          "text": "Two Proselytizer Apostles with a Tagma beside them convert the second civ's two nearest cities; confirm on the lens."
+        },
+        {
+          "id": "hippodrome-second-war",
+          "turn": 160,
+          "text": "Declare with Holy War and ride; the kill-spread carries the religion to the cities behind the first two."
+        },
+        {
+          "id": "hippodrome-inquisitors",
+          "turn": 170,
+          "text": "Inquisitor stationed in every capture and the Holy City the turn any rival enhances."
+        },
+        {
+          "id": "hippodrome-second-capital",
+          "turn": 185,
+          "text": "Second civ's capital converted by the kill-spread and taken before its Renaissance Walls complete."
+        }
+      ]
+    },
+    {
+      "id": "close",
+      "name": "Cuirassiers and the close",
+      "turns": {
+        "from": 191,
+        "to": null
+      },
+      "era": "industrial",
+      "objective": "Upgrade the Tagma to Cuirassiers and form Corps, convert and take the remaining capitals while your religion still holds the majority in them, keep the captured empire loyal and amused through Hippodromes, and if a capital cannot be converted or reached, close on Religion with the Apostles the Faith economy keeps buying.",
+      "build_order": [
+        {
+          "item": "Cuirassier",
+          "why": "Upgraded Tagma under Professional Army; full damage to converted cities still applies to heavy cavalry."
+        },
+        {
+          "item": "Apostle",
+          "why": "Three per remaining civ with Proselytizer, escorted; the religion must hold the capital before the Cuirassiers arrive."
+        },
+        {
+          "item": "Bombard",
+          "why": "Two behind the Cuirassiers for any capital that flips back behind Renaissance Walls."
+        },
+        {
+          "item": "Zoo",
+          "why": "In each Hippodrome; another free heavy cavalry unit and regional Amenities."
+        },
+        {
+          "item": "Workshop",
+          "why": "Two for Industrialization; Factories for the last campaign."
+        },
+        {
+          "item": "Renaissance Walls",
+          "why": "In border captures facing any civ still at war with you."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:industrialization",
+          "note": "Two Workshops; the Production for the last war."
+        },
+        {
+          "id": "tech:scientific-theory",
+          "note": "Free from The Enlightenment; the Science this plan deferred all game."
+        },
+        {
+          "id": "tech:economics",
+          "note": "Two Banks; the upkeep of a cavalry empire."
+        },
+        {
+          "id": "tech:ballistics",
+          "note": "Two Forts from Military Engineers on the last border; Field Cannons behind the Cuirassiers."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:the-enlightenment",
+          "note": "Three Great People, long since earned; Rationalism and Free Market."
+        },
+        {
+          "id": "civic:mobilization",
+          "note": "Three Corps of Cuirassiers give it; Armies for the last capital."
+        },
+        {
+          "id": "civic:colonialism",
+          "note": "Astronomy gives the Inspiration; Native Conquest if a capital is overseas."
+        },
+        {
+          "id": "civic:scorched-earth",
+          "note": "Two Field Cannons; Total War for the final sieges."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Grand Armee",
+          "slot": "military",
+          "from": "civic:nationalism",
+          "why": "Industrial units faster; Cuirassiers and Field Cannons."
+        },
+        {
+          "card": "Professional Army",
+          "slot": "military",
+          "from": "civic:mercenaries",
+          "why": "Tagma to Cuirassiers at half price the turn Military Science lands."
+        },
+        {
+          "card": "Retainers",
+          "slot": "military",
+          "from": "civic:civil-service",
+          "why": "Amenities in the garrisoned captures that are now most of the empire."
+        }
+      ],
+      "districts": [
+        {
+          "district": "industrial-zone",
+          "city": "capital and the best Production capture",
+          "note": "Workshops and Factories; the last war's Production."
+        },
+        {
+          "district": "entertainment-complex",
+          "city": "any capture of eight population without one",
+          "note": "Hippodromes still spawn cavalry and the Amenities keep the empire from revolt."
+        }
+      ],
+      "wonders": [],
+      "governors": [
+        {
+          "governor": "moksha",
+          "promotion": "Citadel of God",
+          "city": "Holy City",
+          "why": "The Holy City ignores foreign pressure and theological combat; the Taxis anchor cannot be lost."
+        },
+        {
+          "governor": "reyna",
+          "promotion": "Tax Collector",
+          "city": "capital",
+          "why": "Gold for the Cuirassier upgrades once Theocracy's Faith is on Apostles."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "vatican-city",
+          "why": "Every Great Person activated spreads 400 pressure within ten tiles; the last capital is usually inside that from a capture."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-general",
+          "why": "An Industrial General for the Cuirassier Corps against Renaissance Walls."
+        },
+        {
+          "class": "great-merchant",
+          "why": "Gold for upgrades, and each activation is Vatican City pressure on the last capital."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 240,
+          "test": "Three or more capitals held, every capture at positive Loyalty, and the remaining capitals following your religion or converting?",
+          "pass": "Continue capital by capital; no further decisions.",
+          "fail": "A capital that will not convert by turn 240 is taken with Bombards and Armies like any other civ's, or left: switch to Religion if your majority already covers most civs, or hold what is taken for Score."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "close-cuirassiers",
+          "turn": 195,
+          "text": "Military Science in; every Tagma upgraded to a Cuirassier under Professional Army and paired into Corps."
+        },
+        {
+          "id": "close-loyalty-audit",
+          "turn": 200,
+          "text": "Audit Loyalty and Amenities in every capture; Zoo in the largest Hippodrome, Inquisitors where any rival faith is above a third."
+        },
+        {
+          "id": "close-third-capital",
+          "turn": 220,
+          "text": "Third capital converted by Apostles and the kill-spread, then taken with Cuirassier Corps and two Bombards."
+        },
+        {
+          "id": "close-finish",
+          "turn": 250,
+          "text": "Last reachable capital taken, or the Religion victory closed with Apostle waves from the Hippodrome Faith economy."
+        }
+      ]
+    }
+  ],
+  "boosts": [
+    {
+      "id": "tech:writing",
+      "fit": "free",
+      "when": "found",
+      "how": "The Scout meets the first rival while finding the target."
+    },
+    {
+      "id": "tech:archery",
+      "fit": "cheap",
+      "when": "prophet",
+      "how": "The Slinger finishes a barbarian scout at the first camp."
+    },
+    {
+      "id": "tech:bronze-working",
+      "fit": "cheap",
+      "when": "found",
+      "how": "Three barbarian kills clearing the first camp."
+    },
+    {
+      "id": "tech:wheel",
+      "fit": "free",
+      "when": "prophet",
+      "how": "The first Builder mines a resource hill."
+    },
+    {
+      "id": "tech:masonry",
+      "fit": "cheap",
+      "when": "prophet",
+      "how": "A Quarry on stone near the capital, which the Walls want anyway."
+    },
+    {
+      "id": "tech:astrology",
+      "fit": "costly",
+      "when": "found",
+      "how": "Only if the Scout finds a natural wonder; research it first regardless."
+    },
+    {
+      "id": "tech:sailing",
+      "fit": "costly",
+      "when": "prophet",
+      "how": "Only if a city sits on the coast and Dromons are wanted."
+    },
+    {
+      "id": "tech:irrigation",
+      "fit": "cheap",
+      "when": "prophet",
+      "how": "Farm the first wheat or rice; the Feudalism Farms start here."
+    },
+    {
+      "id": "tech:currency",
+      "fit": "free",
+      "when": "prophet",
+      "how": "The first Trader to the forward city."
+    },
+    {
+      "id": "tech:horseback-riding",
+      "fit": "free",
+      "when": "found",
+      "how": "The Pasture on the Horses the whole plan rides."
+    },
+    {
+      "id": "tech:iron-working",
+      "fit": "cheap",
+      "when": "prophet",
+      "how": "Mine the Iron the Knights and Tagma need."
+    },
+    {
+      "id": "tech:shipbuilding",
+      "fit": "costly",
+      "when": "holywar",
+      "how": "Two Dromons only on a coastal map."
+    },
+    {
+      "id": "tech:construction",
+      "fit": "cheap",
+      "when": "holywar",
+      "how": "A Water Mill in a river city."
+    },
+    {
+      "id": "tech:engineering",
+      "fit": "free",
+      "when": "prophet",
+      "how": "Ancient Walls in the forward city are staging."
+    },
+    {
+      "id": "tech:mathematics",
+      "fit": "free",
+      "when": "holywar",
+      "how": "Holy Site, Encampment and Commercial Hub are three specialty districts."
+    },
+    {
+      "id": "tech:military-tactics",
+      "fit": "cheap",
+      "when": "holywar",
+      "how": "One Spearman kill at a camp or in the war."
+    },
+    {
+      "id": "tech:apprenticeship",
+      "fit": "cheap",
+      "when": "holywar",
+      "how": "Three Mines across three cities."
+    },
+    {
+      "id": "tech:stirrups",
+      "fit": "free",
+      "when": "prophet",
+      "how": "Feudalism is on the civic path; the Knights arrive with it."
+    },
+    {
+      "id": "tech:machinery",
+      "fit": "cheap",
+      "when": "holywar",
+      "how": "Three Archers across the home cities."
+    },
+    {
+      "id": "tech:military-engineering",
+      "fit": "cheap",
+      "when": "holywar",
+      "how": "The capital Aqueduct."
+    },
+    {
+      "id": "tech:castles",
+      "fit": "free",
+      "when": "holywar",
+      "how": "Oligarchy is a Tier 2 government."
+    },
+    {
+      "id": "tech:education",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:buttress",
+      "fit": "costly",
+      "when": "holywar",
+      "how": "Only if Mahabodhi Temple or another Classical wonder was built."
+    },
+    {
+      "id": "tech:banking",
+      "fit": "free",
+      "when": "hippodrome",
+      "how": "Guilds is on the civic path."
+    },
+    {
+      "id": "tech:gunpowder",
+      "fit": "cheap",
+      "when": "hippodrome",
+      "how": "An Armory in the Encampment city."
+    },
+    {
+      "id": "tech:metal-casting",
+      "fit": "cheap",
+      "when": "hippodrome",
+      "how": "Two Crossbowmen upgraded from the Archers."
+    },
+    {
+      "id": "tech:printing",
+      "fit": "costly",
+      "when": "hippodrome",
+      "how": "Two Universities in Campuses built late."
+    },
+    {
+      "id": "tech:siege-tactics",
+      "fit": "cheap",
+      "when": "hippodrome",
+      "how": "Two Trebuchets behind the Tagma for flipped cities."
+    },
+    {
+      "id": "tech:military-science",
+      "fit": "free",
+      "when": "hippodrome",
+      "how": "A Knight kill, which the Knights make every turn of the first war."
+    },
+    {
+      "id": "tech:astronomy",
+      "fit": "costly",
+      "when": "hippodrome",
+      "how": "A University beside a mountain if a Campus allows."
+    },
+    {
+      "id": "tech:cartography",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:industrialization",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Workshops in the Industrial Zones."
+    },
+    {
+      "id": "tech:scientific-theory",
+      "fit": "free",
+      "when": "close",
+      "how": "The Enlightenment is on the civic path."
+    },
+    {
+      "id": "tech:economics",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Banks in the Commercial Hub cities."
+    },
+    {
+      "id": "tech:ballistics",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Forts from Military Engineers on the last border."
+    },
+    {
+      "id": "civic:craftsmanship",
+      "fit": "free",
+      "when": "found",
+      "how": "Three improved tiles from the first Builder."
+    },
+    {
+      "id": "civic:foreign-trade",
+      "fit": "costly",
+      "when": "found",
+      "how": "A second continent is rarely in reach; research it plain on the way to Mysticism."
+    },
+    {
+      "id": "civic:military-tradition",
+      "fit": "free",
+      "when": "prophet",
+      "how": "The first camp cleared by the Warriors."
+    },
+    {
+      "id": "civic:state-workforce",
+      "fit": "free",
+      "when": "prophet",
+      "how": "The capital Holy Site is the first district."
+    },
+    {
+      "id": "civic:early-empire",
+      "fit": "free",
+      "when": "prophet",
+      "how": "Six population across the first two cities."
+    },
+    {
+      "id": "civic:mysticism",
+      "fit": "free",
+      "when": "found",
+      "how": "The pantheon founded by turn 20."
+    },
+    {
+      "id": "civic:political-philosophy",
+      "fit": "cheap",
+      "when": "prophet",
+      "how": "Three city-states met by the Scout and the second Warrior."
+    },
+    {
+      "id": "civic:drama-and-poetry",
+      "fit": "costly",
+      "when": "prophet",
+      "how": "Only if Stonehenge or Mahabodhi Temple was built; usually researched plain on the Divine Right path."
+    },
+    {
+      "id": "civic:military-training",
+      "fit": "free",
+      "when": "prophet",
+      "how": "The forward Encampment the Horsemen stage in."
+    },
+    {
+      "id": "civic:theology",
+      "fit": "free",
+      "when": "prophet",
+      "how": "Founding the religion is half the gate."
+    },
+    {
+      "id": "civic:games-and-recreation",
+      "fit": "cheap",
+      "when": "holywar",
+      "how": "Researching Construction for the Water Mill."
+    },
+    {
+      "id": "civic:defensive-tactics",
+      "fit": "free",
+      "when": "holywar",
+      "how": "The target's civ or its ally declares on you during the war."
+    },
+    {
+      "id": "civic:recorded-history",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:naval-tradition",
+      "fit": "costly",
+      "when": "holywar",
+      "how": "A Dromon kill only on a coastal map."
+    },
+    {
+      "id": "civic:feudalism",
+      "fit": "cheap",
+      "when": "holywar",
+      "how": "Six Farms across three cities."
+    },
+    {
+      "id": "civic:civil-service",
+      "fit": "cheap",
+      "when": "holywar",
+      "how": "The capital at ten population with its Aqueduct."
+    },
+    {
+      "id": "civic:mercenaries",
+      "fit": "free",
+      "when": "holywar",
+      "how": "Eight land units is the army in the field."
+    },
+    {
+      "id": "civic:divine-right",
+      "fit": "free",
+      "when": "holywar",
+      "how": "Two Temples in the Holy Site cities, built for the Faith anyway."
+    },
+    {
+      "id": "civic:guilds",
+      "fit": "cheap",
+      "when": "hippodrome",
+      "how": "Two Markets, capital and first capture."
+    },
+    {
+      "id": "civic:medieval-faires",
+      "fit": "cheap",
+      "when": "hippodrome",
+      "how": "Four Trade Routes once two Markets stand."
+    },
+    {
+      "id": "civic:reformed-church",
+      "fit": "free",
+      "when": "hippodrome",
+      "how": "Six cities following your religion, most of them captures."
+    },
+    {
+      "id": "civic:exploration",
+      "fit": "costly",
+      "when": "hippodrome",
+      "how": "Two Caravels only if the second civ is coastal."
+    },
+    {
+      "id": "civic:humanism",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:mercantilism",
+      "fit": "cheap",
+      "when": "hippodrome",
+      "how": "The first Great Merchant from the Markets."
+    },
+    {
+      "id": "civic:the-enlightenment",
+      "fit": "free",
+      "when": "close",
+      "how": "The Prophet, two Generals and a Merchant are more than three Great People."
+    },
+    {
+      "id": "civic:nationalism",
+      "fit": "free",
+      "when": "hippodrome",
+      "how": "The Holy War Casus Belli against the second civ."
+    },
+    {
+      "id": "civic:colonialism",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Researching Astronomy."
+    },
+    {
+      "id": "civic:mobilization",
+      "fit": "free",
+      "when": "close",
+      "how": "Three Cuirassier Corps formed under Nationalism."
+    },
+    {
+      "id": "civic:scorched-earth",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Field Cannons behind the Cuirassiers."
+    },
+    {
+      "id": "civic:urbanization",
+      "fit": "costly",
+      "when": "close",
+      "how": "A city at fifteen population; the capital may get there."
+    }
+  ],
+  "decision_triggers": [
+    {
+      "name": "Target flips back mid-siege",
+      "if": "The religion lens shows the city under attack has lost your majority while the cavalry is at its Walls.",
+      "then": "Pull every cavalry unit out of the city's range this turn; it now takes Walls damage like anyone's. Send the reserve Missionary or a Proselytizer Apostle with a Tagma beside it, and resume the assault only when the lens reads your colour again. A Ram and Pikemen can finish a city of one population in the meantime."
+    },
+    {
+      "name": "Missionary killed on the walk",
+      "if": "The first Missionary dies to a barbarian or a rival Apostle before reaching the target.",
+      "then": "Send the reserve Missionary with two escorts along a different approach and clear the camp that killed the first with the Horsemen; God of War pays the Faith for the third Missionary if one is needed. The gate is late by five turns, not closed."
+    },
+    {
+      "name": "Rival Holy City in reach",
+      "if": "A rival's Holy City lies within eight tiles of your border and its majority can be converted by two Apostles.",
+      "then": "Convert it before anything else: a converted Holy City is +3 Combat Strength on every Byzantine unit, and taking it afterwards removes the rival's founder income and makes the next conversions permanent."
+    },
+    {
+      "name": "Last Great Prophet gone",
+      "if": "The Great Prophet screen shows none left and Byzantium has no religion.",
+      "then": "The gate is closed. Stop Prayers, adopt the religion that reaches your cities, keep the Horsemen as a defensive line, and play the Hippodrome and Dromon economy toward a conventional Cuirassier war or Score. Porphyrogennetos still works for cities following whatever religion spreads to you, if that religion's owner is not the target."
+    },
+    {
+      "name": "Musketmen on the front",
+      "if": "A rival on your front has Gunpowder and Renaissance Walls on the city you intended next.",
+      "then": "The military window is closing on that civ. Take its smaller cities that converted and lack Renaissance Walls, bring Bombards for the capital or leave it, and shift the Faith to Apostles for a Religion close."
+    }
+  ],
+  "abort": {
+    "trigger": "The religion is founded after turn 85, the target has not converted, and the target's civ already fields Knights and Medieval Walls with an enhanced religion of its own.",
+    "actions": [
+      "Do not ride at an unconverted city; a cavalry stack against Medieval Walls without the bonus loses the army the next fifty turns depend on.",
+      "Finish staging at the slower pace: convert the rival's smallest border city with an Apostle pair and a Tagma, take that one, and let the kill-spread work inward from there.",
+      "If no city of theirs will convert, pick the other neighbour, or play the Hippodrome and Faith economy for a Religion victory with Dromons and Walls as the defence."
+    ]
+  },
+  "fail_state": "Declared on a city that had not converted, or whose majority flipped back the turn before, and lost the Horsemen to Walls like any other civ, or waited on the Prophet until turn 90 and found the last one taken, then spent the Medieval era with Knights that hit nothing harder than anyone else's and a Hippodrome spawning Heavy Chariots. Both halves of the gate were treated as one, the second half was never checked, and the kit never fired.",
+  "common_mistakes": [
+    "Declaring the turn the religion is founded. The religion is half the gate; the cavalry bonus needs the target city's majority, which is a Missionary walk away.",
+    "Not checking the religion lens every turn of a siege. A rival Missionary or the city's own pressure can flip the majority back, and the Walls bite again the same turn.",
+    "Building the Hippodrome before Divine Right. The free unit is the best heavy cavalry you can build, and a Heavy Chariot is not what the plan wanted.",
+    "Stacking two Tagma. The aura does not stack; one Tagma beside each Knight pair and each Apostle covers twice the army.",
+    "Sending one Missionary with no escort. It dies to a barbarian or a theological hit about one game in three, and the second Missionary should already be bought when it does."
+  ],
+  "sources": [
+    "Civilization VI Civilopedia, Gathering Storm ruleset with the New Frontier Pass (Byzantium, Basil II, Tagma, Dromon, Hippodrome). The civ-info text says the Tagma is unlocked by researching Divine Right; Divine Right is a civic, and this plan treats it as one. Whether the Tagma formally replaces the Knight is not asserted here; it sits on the Knight line and upgrades to a Cuirassier.",
+    "Civilopedia: Porphyrogennetos gives heavy and light cavalry full damage against cities and Walls following Byzantium's religion; Taxis gives +3 Combat and Religious Strength per Holy City following it, spreads the religion to nearby cities on a kill, and adds Great Prophet points to Holy Sites.",
+    "Boost objectives cross-checked against civilization6planner.com tech-tree and civics-tree pages, 2026-10-01.",
+    "Leadership Focus tags, caveats and Gate supplement for Basil II in this repository; the caveats require the spread step to be planned as logistics with a per-turn faith check during the war."
+  ]
+}

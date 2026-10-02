@@ -1,0 +1,1882 @@
+{
+  "leader": "Cleopatra",
+  "civilization": "Egypt",
+  "generated": "2026-10-02",
+  "slug": "cleopatra",
+  "shape": "Linear",
+  "secondary_shape": null,
+  "version": 1,
+  "updated": "2026-10-02",
+  "assumptions": {
+    "ruleset": "Gathering Storm with every expansion and the Leader Pass",
+    "speed": "Standard",
+    "difficulty": "Emperor",
+    "map": "Continents or Pangaea, standard size, 8 civilizations",
+    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. The Ptolemaic persona of Cleopatra (Arrival of Hapi, from the Rulers of the Sahara pack) is planned here, not the base Mediterranean's Bride persona."
+  },
+  "verdict": {
+    "victory": "Culture",
+    "secondary": "Science",
+    "confidence": "medium",
+    "one_line": "Settle every city on a river with Floodplains in its first ring, build wonders and districts on the Floodplains at river speed, and decide by turn 70 whether the Appeal the Floodplains now give becomes a National Park and Seaside Resort Culture game or a Campus-in-every-river-city Science game.",
+    "why": "Arrival of Hapi puts +1 Food and +1 Culture on every resource that sits on Floodplains and turns the Floodplains' Appeal penalty into a bonus for the tiles around them, and Iteru lets Egypt build districts and wonders on those same Floodplains fifteen percent faster. That is Food, Culture, Production and Appeal in the same river valley, but none of it points anywhere: a comfortable, fast-growing, wonder-filled empire is exactly what a Linear leader produces when no direction is chosen. Culture is the default because the Sphinx makes Faith and Culture from turn 30 and Tourism after Flight, the wonders are Tourism, and inverted Appeal is what National Parks and Seaside Resorts are bought with. Science is the second direction because the same river Production builds a Campus in every city and Etemenanki pays Science on every Floodplain, which no other civilization can match."
+  },
+  "map_check": {
+    "must_have": [
+      "A river with at least four Floodplains tiles within two tiles of the capital site, or one within one Settler move of it.",
+      "Rivers for at least five of the first six city sites; a dry Egyptian city has neither Iteru nor Arrival of Hapi."
+    ],
+    "prefer": [
+      "Desert beside the river for the Pyramids, Petra and Desert Folklore, and Hills or Woods beside the Floodplains that the inverted Appeal will lift to Breathtaking.",
+      "Sahara el-Beyda or Pantanal in reach; both sit on Egyptian terrain and lift Appeal further.",
+      "Horses near the capital so the Maryannu Chariot Archer is built rather than skipped.",
+      "A coastline within reach of the third or fourth city for Seaside Resorts on the Culture direction."
+    ],
+    "no_go": "A start with no river within two Settler moves, or a river with no Floodplains on it. Iteru's placement rule and Production bonus and Arrival of Hapi's Food, Culture and Appeal are all off, and Egypt is then a plain civilization with a Chariot Archer.",
+    "fallback": "Move the Settler up to two turns to the nearest river. If the river has no Floodplains, play Egypt as a river wonder civilization anyway: Iteru still speeds every river-adjacent district and wonder, so take the Culture direction on wonders and Sphinxes beside them, and settle every later city on whatever Floodplains the Scout finds, even far out."
+  },
+  "kit_levers": [
+    {
+      "source": "leader_ability",
+      "name": "Arrival of Hapi",
+      "buys": "Resources on Floodplains yield an extra Food and an extra Culture, and Floodplains in Egyptian territory give the tiles beside them +1 Appeal instead of the usual -1.",
+      "exploit": "Settle so the Floodplains and their resources are in the first ring and improve every resource on them, because each one is a Farm or Plantation that also pays Culture. The Appeal flip is the late half of the kit: the Hills, Woods and coast beside the river reach Charming and Breathtaking, which is where the Neighborhoods, Seaside Resorts and National Parks go after turn 170."
+    },
+    {
+      "source": "civ_ability",
+      "name": "Iteru",
+      "buys": "Districts and wonders adjacent to a river are built fifteen percent faster, and Floodplains do not block the placement of districts or wonders.",
+      "exploit": "Every district in every city goes on a river tile, Floodplains first, so the bonus applies to every build and the Farms stay on the dry land. Wonders that need Floodplains or desert, the Pyramids, Great Bath and Etemenanki, are Egypt's before anyone else can place them. Keep one or two Floodplains unimproved beside the City Center for the Theater Square and Campus later."
+    },
+    {
+      "source": "unique_unit",
+      "name": "Maryannu Chariot Archer",
+      "buys": "A Heavy Chariot replacement that shoots at range, with extra Movement when it starts its turn on flat terrain, available at The Wheel.",
+      "exploit": "Two of them clear the two nearest camps for Bronze Working and Military Tradition and escort the Settlers, then park as the garrison the wonder cities need against an early war. It is the only military the plan builds before Crossbowmen; it is not a conquest unit and the plan does not pretend it is."
+    },
+    {
+      "source": "unique_infrastructure",
+      "name": "Sphinx",
+      "buys": "A Builder improvement that gives Faith and Culture, more Faith beside a wonder, extra Culture at Natural History, Tourism after Flight, and Appeal to the tiles around it.",
+      "exploit": "One Sphinx beside every wonder and on every desert or hill tile that will not be farmed, never adjacent to another Sphinx. They are the Faith that buys the pantheon, Naturalists and Rock Bands, and after Flight each is a Tourism tile on top of the wonder beside it."
+    },
+    {
+      "source": "agenda",
+      "name": "Basilike Ge",
+      "buys": "Cleopatra likes civilizations with high Food output and dislikes those with low Food output.",
+      "exploit": "Only matters when an AI Cleopatra shares the map: a Floodplains empire keeps her friendly, which frees a Culture game from needing an army on that border."
+    }
+  ],
+  "shape_block": {
+    "linear": {
+      "direction": {
+        "options": [
+          {
+            "victory": "Culture",
+            "when_it_fits": "Five river cities with Floodplains by turn 70, two Ancient or Classical wonders already landed, and Hills, Woods or coast beside the Floodplains that the inverted Appeal has lifted to Charming. Wonders are Tourism, Sphinxes are Tourism after Flight, and the Appeal flip is exactly what National Parks and Seaside Resorts need; nothing in the kit expires on this path."
+          },
+          {
+            "victory": "Science",
+            "when_it_fits": "The river valley is long and the land is wide but has little desert and no coast, or a Science civilization is on the map and the wonder race is being lost. Iteru builds a Campus in every river city at river speed, Floodplain Food grows them past fifteen population, and Etemenanki pays Science on every Floodplain and Marsh tile in the empire."
+          },
+          {
+            "victory": "Diplomatic",
+            "when_it_fits": "Only when the wonder race has already handed over Mahabodhi Temple, Potala Palace and Apadana by turn 150 and three or more suzerainties are held. The Favor comes from the wonders, not the kit, so this is a direction the map offers rather than one Egypt makes."
+          }
+        ],
+        "choose_by": 70,
+        "commit_test": "At turn 100 look at what the river Production built since turn 70: Theater Squares with Amphitheaters and a Sphinx beside every wonder for Culture, or a Campus with a Library in every city and Etemenanki queued for Science. If the queues show wonders chosen because they were available, the bonus is being banked and the plan has failed its own test."
+      }
+    }
+  },
+  "phases": [
+    {
+      "id": "nile",
+      "name": "Settle the river",
+      "turns": {
+        "from": 1,
+        "to": 40
+      },
+      "era": "ancient",
+      "objective": "Found three cities on the river with Floodplains in their first ring, improve every Floodplains resource for the Food and Culture, take the pantheon, land the first wonder on a Floodplain, and scout the whole river for the sites the rest of the game will use.",
+      "build_order": [
+        {
+          "item": "Scout",
+          "why": "Follows the river both ways to find the Floodplains sites and a rival for Writing; the Scout is the map check."
+        },
+        {
+          "item": "Warrior",
+          "why": "Second Warrior escorts the first Settler and holds the capital while the Chariots are away."
+        },
+        {
+          "item": "Settler",
+          "why": "Second city on the river with Floodplains in the first ring, four to six tiles out; every Egyptian bonus is paid per river city."
+        },
+        {
+          "item": "Builder",
+          "why": "Farms on Floodplains resources for Irrigation and the Arrival of Hapi Food and Culture; a Mine for The Wheel."
+        },
+        {
+          "item": "Maryannu Chariot Archer",
+          "why": "Clears the nearest camp for Military Tradition and Bronze Working, then escorts the third Settler."
+        },
+        {
+          "item": "Monument",
+          "why": "Culture to reach Early Empire and State Workforce on time; Corvee is the first wonder card."
+        },
+        {
+          "item": "Settler",
+          "why": "Third river city; the Floodplains sites are claimed before a neighbour takes them."
+        },
+        {
+          "item": "Pyramids",
+          "why": "On a Floodplain or desert tile beside the river with Corvee slotted; an extra charge on every Builder for the whole game."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:pottery",
+          "note": "Granary for Housing and the Great Bath later; Irrigation and Writing are behind it."
+        },
+        {
+          "id": "tech:irrigation",
+          "note": "A Farm on a Floodplains resource gives the Eureka; Farms are the Food and Culture of the kit."
+        },
+        {
+          "id": "tech:mining",
+          "note": "A Mine for The Wheel and the Chariots."
+        },
+        {
+          "id": "tech:writing",
+          "note": "The Scout meets a rival; Etemenanki and the Campus unlock here."
+        },
+        {
+          "id": "tech:wheel",
+          "note": "The Maryannu Chariot Archer; a Mine on a resource gives the Eureka."
+        },
+        {
+          "id": "tech:masonry",
+          "note": "The Pyramids; a Quarry gives the Eureka if Stone sits by the river."
+        },
+        {
+          "id": "tech:bronze-working",
+          "note": "Three camp kills from the Chariots; Iron reveal and the Encampment if a neighbour forces one."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:code-of-laws",
+          "note": "God King for the pantheon and Discipline for the escorts."
+        },
+        {
+          "id": "civic:craftsmanship",
+          "note": "Three improvements from the first Builder; Ilkum for the Builders every Sphinx needs."
+        },
+        {
+          "id": "civic:foreign-trade",
+          "note": "The first Trade Route and Caravansaries; Inspiration only if the Scout crosses to a second continent."
+        },
+        {
+          "id": "civic:state-workforce",
+          "note": "The first district gives the Inspiration; Corvee is the wonder card from here to Divine Right."
+        },
+        {
+          "id": "civic:early-empire",
+          "note": "Six population across two Floodplains cities arrives early; Colonization for the third and fourth Settler."
+        }
+      ],
+      "policies": [
+        {
+          "card": "God King",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "The pantheon by turn 22; swap it out the turn after."
+        },
+        {
+          "card": "Discipline",
+          "slot": "military",
+          "from": "civic:code-of-laws",
+          "why": "Warriors and Chariots beat camp units while escorting Settlers."
+        },
+        {
+          "card": "Ilkum",
+          "slot": "economic",
+          "from": "civic:craftsmanship",
+          "why": "Builders faster; every Floodplains resource and every Sphinx is a Builder charge."
+        },
+        {
+          "card": "Corvee",
+          "slot": "economic",
+          "from": "civic:state-workforce",
+          "why": "Fifteen percent more toward Ancient and Classical wonders, on top of Iteru."
+        }
+      ],
+      "districts": [],
+      "pantheon": {
+        "slug": "lady-of-the-reeds-and-marshes",
+        "why": "Two Production on every Desert Floodplain, Marsh and Oasis; the Floodplains the plan settles on become the Production that builds the wonders.",
+        "alternative": "monument-to-the-gods"
+      },
+      "wonders": [
+        {
+          "name": "Pyramids",
+          "why": "An extra charge on every Builder; the Sphinxes and Floodplains Farms are all Builder charges, and Egypt places it on Floodplains before anyone else can.",
+          "skip_if": "No desert or Floodplains tile within the capital's first two rings, or a rival finishes Masonry before turn 30."
+        },
+        {
+          "name": "Great Bath",
+          "why": "Housing and an Amenity in the capital, and it sits on Floodplains, which only Egypt can fill this early.",
+          "skip_if": "The Pyramids are still building at turn 40 or the capital has fewer than two Floodplains tiles free."
+        }
+      ],
+      "governors": [],
+      "city_states": [
+        {
+          "slug": "brussels",
+          "why": "Fifteen percent more toward wonders on top of Iteru and Corvee; three envoys here is the wonder race."
+        },
+        {
+          "type": "Industrial",
+          "why": "The first envoy is Production toward districts in the capital, which is building a wonder and a Settler at once."
+        }
+      ],
+      "great_people": [],
+      "checkpoints": [
+        {
+          "turn": 22,
+          "test": "Two cities on the river with Floodplains in the first ring, the pantheon taken, two Floodplains resources farmed, and a rival located?",
+          "pass": "Keep the river chain going; the third Settler is in the queue.",
+          "fail": "A second city after turn 22 means the Settler came too late; move the third Settler ahead of the Monument. No Floodplains resource farmed means the Builder went to the wrong tiles; the Farms go on the Floodplains resources first, whatever the yields say."
+        },
+        {
+          "turn": 40,
+          "test": "Three river cities, the Pyramids finished or within five turns, and every river site for cities four to six marked on the map?",
+          "pass": "Enter the wonder phase; the direction decision is thirty turns away.",
+          "fail": "Two cities is acceptable with the third Settler walking. The Pyramids lost to a rival means Corvee was not slotted or the tile was not beside the river; put the Great Bath there instead and move on. No sites marked means the Scout stopped early; send a Chariot along the river now."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "nile-settle-floodplains",
+          "turn": 1,
+          "text": "Settle on a river tile with at least three Floodplains in the first ring; move up to two turns to get one."
+        },
+        {
+          "id": "nile-scout-river",
+          "turn": 6,
+          "text": "Send the Scout along the river in the direction of the most Floodplains and note every site with Floodplains and a free desert or hill tile for a Sphinx."
+        },
+        {
+          "id": "nile-farm-resources",
+          "turn": 15,
+          "text": "First Builder: Farms on the Floodplains resources for Irrigation and Arrival of Hapi, then a Mine on a resource for The Wheel."
+        },
+        {
+          "id": "nile-pantheon",
+          "turn": 22,
+          "text": "Found Lady of the Reeds and Marshes, or Monument to the Gods if the Floodplains are grassland rather than desert."
+        },
+        {
+          "id": "nile-second-city",
+          "turn": 20,
+          "text": "Second city founded on the river with Floodplains in the first ring; confirm its Floodplains resource is in the first ring before settling."
+        },
+        {
+          "id": "nile-pyramids",
+          "turn": 38,
+          "text": "Pyramids placed on a Floodplains or desert tile adjacent to the river with Corvee slotted; the Sphinx goes beside it the turn it finishes."
+        }
+      ]
+    },
+    {
+      "id": "wonders",
+      "name": "Wonders and the decision",
+      "turns": {
+        "from": 41,
+        "to": 100
+      },
+      "era": "classical",
+      "objective": "Grow to six river cities, land two or three Classical wonders on the Floodplains with a Sphinx beside each, take a government, and decide by turn 70 whether the river Production builds Theater Squares for Culture or a Campus in every city for Science; by turn 100 the queues show which.",
+      "build_order": [
+        {
+          "item": "Settler",
+          "why": "Cities four through six on the river; the Floodplains sites the Scout marked are claimed before the Classical era ends."
+        },
+        {
+          "item": "Builder",
+          "why": "Sphinxes beside the Pyramids and Great Bath, Farms for Feudalism, a Quarry or Pasture for the Eurekas; with the Pyramids every Builder has four charges."
+        },
+        {
+          "item": "Etemenanki",
+          "why": "On a Floodplain beside the river; Science and Production on every Floodplain and Marsh in the city and Science on them everywhere, which is the Science direction's whole argument."
+        },
+        {
+          "item": "Temple of Artemis",
+          "why": "Housing and Amenities from Camps and Pastures across six river cities; Culture direction or Science direction alike.",
+          "skip": false
+        },
+        {
+          "item": "Theater Square",
+          "why": "Culture direction: on a river tile in the capital and the two best wonder cities, Amphitheaters for the Great Writer slots."
+        },
+        {
+          "item": "Campus",
+          "why": "Science direction: on a river tile in every city; Culture direction: the capital only, for Recorded History and a Great Scientist."
+        },
+        {
+          "item": "Trader",
+          "why": "The Currency Eureka and Gold; a domestic route to the newest city for its Food."
+        },
+        {
+          "item": "Water Mill",
+          "why": "Every city is on a river; the Construction Eureka and Production in the capital."
+        },
+        {
+          "item": "Maryannu Chariot Archer",
+          "why": "A second one only if a neighbour is close; otherwise two Archers hold the border."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:astrology",
+          "note": "Holy Site for the Faith the Sphinxes start; Eureka if the Scout found a natural wonder."
+        },
+        {
+          "id": "tech:currency",
+          "note": "The first Trade Route gives the Eureka; a Commercial Hub in the capital for Gold and the Great Merchant later."
+        },
+        {
+          "id": "tech:horseback-riding",
+          "note": "A Pasture gives the Eureka; the Chariots upgrade along this line."
+        },
+        {
+          "id": "tech:construction",
+          "note": "The Water Mill gives the Eureka; the Colosseum is a wide-empire wonder."
+        },
+        {
+          "id": "tech:mathematics",
+          "note": "Three specialty districts by turn 80, which river Production reaches easily."
+        },
+        {
+          "id": "tech:engineering",
+          "note": "Ancient Walls in the border city; Petra and the Great Wall are behind it."
+        },
+        {
+          "id": "tech:apprenticeship",
+          "note": "Three Mines across six cities; Industrial Zones beside the river later."
+        },
+        {
+          "id": "tech:iron-working",
+          "note": "A Mine on Iron if any is near; otherwise unboosted on the way to Machinery."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:mysticism",
+          "note": "The pantheon gives the Inspiration; the Oracle is a Faith and Great Person wonder for a Sphinx empire."
+        },
+        {
+          "id": "civic:military-tradition",
+          "note": "The first camp cleared by a Chariot gives the Inspiration; on the path to Political Philosophy."
+        },
+        {
+          "id": "civic:political-philosophy",
+          "note": "Three city-states met; Autocracy for the wonders or Classical Republic for the Great People."
+        },
+        {
+          "id": "civic:drama-and-poetry",
+          "note": "The Pyramids gave the Inspiration; Aesthetics and Theater Squares are the Culture direction's first spend."
+        },
+        {
+          "id": "civic:games-and-recreation",
+          "note": "Construction gives the Inspiration; Entertainment Complexes for six growing cities."
+        },
+        {
+          "id": "civic:recorded-history",
+          "note": "Two Campuses give the Inspiration; Natural Philosophy is the Science direction's first spend."
+        },
+        {
+          "id": "civic:theology",
+          "note": "Only if a Great Prophet arrives from the Oracle and a Holy Site; otherwise researched unboosted for Scripture and the Temple line."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Autocracy",
+          "slot": "wildcard",
+          "from": "civic:political-philosophy",
+          "why": "Wonder Production and a Culture bonus in the capital; the government for the Culture direction until Monarchy."
+        },
+        {
+          "card": "Classical Republic",
+          "slot": "wildcard",
+          "from": "civic:political-philosophy",
+          "why": "Science direction: Great Person points and Amenities for six growing cities."
+        },
+        {
+          "card": "Colonization",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "Settlers at half cost for cities four through six."
+        },
+        {
+          "card": "Aesthetics",
+          "slot": "economic",
+          "from": "civic:drama-and-poetry",
+          "why": "Culture direction: doubled Theater Square adjacency, which wonders on the river give."
+        },
+        {
+          "card": "Natural Philosophy",
+          "slot": "economic",
+          "from": "civic:recorded-history",
+          "why": "Science direction: doubled Campus adjacency in every river city."
+        }
+      ],
+      "districts": [
+        {
+          "district": "theater-square",
+          "city": "capital and the two best wonder cities",
+          "note": "Culture direction; on a river tile beside the wonders for adjacency and Iteru."
+        },
+        {
+          "district": "campus",
+          "city": "every city on the Science direction, the capital only on Culture",
+          "note": "On a river tile; Etemenanki's Science comes from the Floodplains regardless."
+        },
+        {
+          "district": "holy-site",
+          "city": "the city with the most desert",
+          "note": "A Shrine and a Temple; the Faith the Sphinxes make needs a place to spend it, and Scripture later."
+        },
+        {
+          "district": "commercial-hub",
+          "city": "capital",
+          "note": "On the river for the adjacency; Markets for Guilds and the Trade Route count."
+        }
+      ],
+      "pantheon": {
+        "slug": "lady-of-the-reeds-and-marshes",
+        "why": "Already founded; this phase spends the Floodplains Production on wonders."
+      },
+      "wonders": [
+        {
+          "name": "Etemenanki",
+          "why": "Science and Production on every Floodplains and Marsh tile in its city and Science on them in every city; the only Science wonder that scales with Egyptian terrain.",
+          "skip_if": "The capital has fewer than four Floodplains tiles, or Writing arrives after turn 50 and a rival has it queued."
+        },
+        {
+          "name": "Temple of Artemis",
+          "why": "Housing and Amenities from every Camp and Pasture within four tiles across a dense river empire.",
+          "skip_if": "No Camp resource within reach of a river city, or Astrology lands after turn 70."
+        },
+        {
+          "name": "Oracle",
+          "why": "Great Person points from districts and Faith from the Sphinx city; patronage of Great Writers and Engineers at a discount.",
+          "skip_if": "No Hills tile beside the river in a city with a Holy Site, or a Culture civilization has it queued by turn 60."
+        },
+        {
+          "name": "Hanging Gardens",
+          "why": "Growth in every city on top of Floodplains Food; the Science direction wants fifteen-population cities.",
+          "skip_if": "Science is not the direction, or Irrigation lands after turn 45."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "magnus",
+          "promotion": "Provision",
+          "city": "capital",
+          "why": "Settlers four through six without losing population while the capital also builds wonders."
+        },
+        {
+          "governor": "liang",
+          "promotion": "Zoning Commissioner",
+          "city": "the second wonder city",
+          "why": "Faster districts and wonders where Iteru is already paying."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "brussels",
+          "why": "Suzerainty here with three envoys is the Classical wonder race won."
+        },
+        {
+          "slug": "antananarivo",
+          "why": "Culture per Great Person earned; the wonders bring Great Engineers and Writers."
+        },
+        {
+          "type": "Trade",
+          "why": "Trade routes into an Egyptian city pay the partner too; a Trade city-state is an early friend and Gold."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-engineer",
+          "why": "Every Classical Great Engineer is a wonder finished early in a city that already builds them fifteen percent faster."
+        },
+        {
+          "class": "great-writer",
+          "why": "Culture direction: the Amphitheaters fill from turn 80 and the Humanism Inspiration follows."
+        },
+        {
+          "class": "great-scientist",
+          "why": "Science direction: the Education Eureka and a Campus boost."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 70,
+          "test": "Direction written down: Culture with two wonders landed and Charming tiles beside the Floodplains, Science with a Campus site chosen on a river tile in every city, or Diplomatic with its preconditions met? And are the next three civics on that direction's path?",
+          "pass": "Queues switch to the direction's list; Theater Squares or Campuses accordingly.",
+          "fail": "No direction at turn 70 is the shape's failure. Decide by terrain: desert, hills or coast beside the Floodplains is Culture, a long grassland river with no coast is Science. If the civics chosen since turn 40 serve neither, the Culture lead is being banked; put the next civic on the direction's path today."
+        },
+        {
+          "turn": 100,
+          "test": "Six river cities, a government, three wonders with a Sphinx beside each, and the queues showing the direction: Theater Squares with Amphitheaters in three cities, or a Campus with a Library in every city?",
+          "pass": "Enter the compounding phase.",
+          "fail": "Five cities and a government is acceptable; fewer means Settlers until six. Wonders chosen because they were available rather than for the direction is drift; cut the next wonder that does not serve it. A wonder with no Sphinx beside it is a Builder charge unspent."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "wonders-sphinx-ring",
+          "turn": 45,
+          "text": "A Sphinx beside the Pyramids and beside the Great Bath, never adjacent to another Sphinx; the Faith buys the Oracle's Great People later."
+        },
+        {
+          "id": "wonders-etemenanki",
+          "turn": 55,
+          "text": "Etemenanki started on a Floodplain in the capital; it is the Science direction's argument and a Great Engineer target on either direction."
+        },
+        {
+          "id": "wonders-decide",
+          "turn": 70,
+          "text": "Write the direction down: Culture, Science or Diplomatic. Everything after this turn is built toward it."
+        },
+        {
+          "id": "wonders-government",
+          "turn": 72,
+          "text": "Adopt Autocracy for Culture or Classical Republic for Science the turn Political Philosophy lands."
+        },
+        {
+          "id": "wonders-sixth-city",
+          "turn": 90,
+          "text": "Sixth river city founded; after this, settle only sites with Floodplains in the first ring."
+        },
+        {
+          "id": "wonders-direction-queues",
+          "turn": 100,
+          "text": "Audit every city's queue: Theater Square or Campus on a river tile in each, and no wonder that does not serve the direction."
+        }
+      ]
+    },
+    {
+      "id": "appeal",
+      "name": "Appeal into Culture",
+      "turns": {
+        "from": 101,
+        "to": 170
+      },
+      "era": "medieval",
+      "objective": "Turn the inverted Appeal and the wonder Faith into the direction's engine: Amphitheaters, Art Museums and Medieval wonders with Gothic Architecture on the Culture direction, Universities and Etemenanki Science on the Science direction, while every city passes ten population on Floodplains Food and the era checkpoint asks whether the bonus is being spent.",
+      "build_order": [
+        {
+          "item": "Aqueduct",
+          "why": "In the capital for the Military Engineering Eureka and Housing past the Great Bath; on a river tile for Iteru."
+        },
+        {
+          "item": "Amphitheater",
+          "why": "Culture direction: Great Writer slots in three Theater Squares; Humanism's Great Artist comes from them."
+        },
+        {
+          "item": "University",
+          "why": "Two for the Printing Eureka on either direction; one in every Campus on Science."
+        },
+        {
+          "item": "Market",
+          "why": "Two for Guilds; Commercial Hubs on the river feed the Trade Routes Medieval Faires wants."
+        },
+        {
+          "item": "Builder",
+          "why": "Six Farms for Feudalism arrive from the Floodplains alone; Sphinxes beside every new wonder."
+        },
+        {
+          "item": "Temple",
+          "why": "Two for Divine Right and the Gothic Architecture wonder card."
+        },
+        {
+          "item": "Crossbowman",
+          "why": "Four to hold a wonder empire that has built nothing else military since the Chariots."
+        },
+        {
+          "item": "Entertainment Complex",
+          "why": "Arenas for Amenities in six cities growing past ten population."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:military-engineering",
+          "note": "The Aqueduct gives the Eureka; Petra and the Great Wall sit on this line."
+        },
+        {
+          "id": "tech:education",
+          "note": "A Great Scientist from the capital Campus gives the Eureka; Universities."
+        },
+        {
+          "id": "tech:machinery",
+          "note": "Three Archers upgraded from the Chariots give the Eureka; Crossbowmen are the garrison."
+        },
+        {
+          "id": "tech:castles",
+          "note": "A Tier 2 government gives the Eureka; Alhambra and Walls for Monarchy."
+        },
+        {
+          "id": "tech:banking",
+          "note": "Guilds gives the Eureka; Banks for Economics."
+        },
+        {
+          "id": "tech:printing",
+          "note": "Two Universities give the Eureka; Science either way."
+        },
+        {
+          "id": "tech:astronomy",
+          "note": "A University beside a Mountain if any river city has one; the Colonialism Inspiration."
+        },
+        {
+          "id": "tech:mass-production",
+          "note": "A Lumber Mill on the Woods beside the Floodplains, before Conservation makes them worth keeping."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:feudalism",
+          "note": "Six Farms arrive from the Floodplains alone; Serfdom for the Sphinx Builders."
+        },
+        {
+          "id": "civic:civil-service",
+          "note": "The capital passes ten population on Floodplains Food; Meritocracy for Culture per district."
+        },
+        {
+          "id": "civic:guilds",
+          "note": "Two Markets; the Banking Eureka."
+        },
+        {
+          "id": "civic:divine-right",
+          "note": "Two Temples give the Inspiration; Gothic Architecture is the Medieval and Renaissance wonder card."
+        },
+        {
+          "id": "civic:medieval-faires",
+          "note": "Four Trade Routes across six cities; Triangular Trade later."
+        },
+        {
+          "id": "civic:humanism",
+          "note": "A Great Artist from the Amphitheaters on the Culture direction; Art Museums."
+        },
+        {
+          "id": "civic:diplomatic-service",
+          "note": "An alliance gives the Inspiration and the Chemistry Eureka later; the Diplomatic direction starts here."
+        },
+        {
+          "id": "civic:the-enlightenment",
+          "note": "Three Great People, which the wonders and Oracle bring early; Rationalism and the Scientific Theory Eureka."
+        },
+        {
+          "id": "civic:exploration",
+          "note": "Unboosted unless a coastal city builds Caravels; Merchant Republic for the Science direction."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Gothic Architecture",
+          "slot": "economic",
+          "from": "civic:divine-right",
+          "why": "Fifteen percent more toward Medieval and Renaissance wonders on top of Iteru; replaces Corvee the turn it is available."
+        },
+        {
+          "card": "Meritocracy",
+          "slot": "economic",
+          "from": "civic:civil-service",
+          "why": "Culture per district in an empire that puts three or four districts in every river city."
+        },
+        {
+          "card": "Serfdom",
+          "slot": "economic",
+          "from": "civic:feudalism",
+          "why": "Builders with extra charges for Sphinxes and Floodplains Farms, stacked with the Pyramids."
+        },
+        {
+          "card": "Monarchy",
+          "slot": "wildcard",
+          "from": "civic:divine-right",
+          "why": "Culture direction: Housing from Walls and an extra Military slot for a wonder empire that needs a garrison."
+        },
+        {
+          "card": "Merchant Republic",
+          "slot": "wildcard",
+          "from": "civic:exploration",
+          "why": "Science direction: two Economic slots and Trade Routes for Universities bought with Gold."
+        },
+        {
+          "card": "Rationalism",
+          "slot": "economic",
+          "from": "civic:the-enlightenment",
+          "why": "Science direction: Campus buildings doubled in cities that Floodplains Food has grown past the population bar."
+        }
+      ],
+      "districts": [
+        {
+          "district": "aqueduct",
+          "city": "capital",
+          "note": "Military Engineering Eureka and Housing; on the river tile beside the City Center."
+        },
+        {
+          "district": "theater-square",
+          "city": "every city on the Culture direction",
+          "note": "On a river tile; Amphitheaters now, Art Museums at Humanism."
+        },
+        {
+          "district": "campus",
+          "city": "every city on the Science direction",
+          "note": "Universities for Printing and Astronomy; Etemenanki's Science is on the Floodplains regardless."
+        },
+        {
+          "district": "entertainment-complex",
+          "city": "the city central to the river chain",
+          "note": "Arena Amenities reach six tiles; the Colosseum covers the near end if it was built."
+        },
+        {
+          "district": "commercial-hub",
+          "city": "two river cities",
+          "note": "Markets for Guilds and the Trade Route count for Medieval Faires."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Petra",
+          "why": "Food, Gold and Production on every desert tile in a desert river city; Egypt usually has one.",
+          "skip_if": "No city with four or more desert tiles that are not Floodplains, or Mathematics lands after turn 120."
+        },
+        {
+          "name": "Alhambra",
+          "why": "An extra Military slot and Amenities; Culture direction under Monarchy wants both.",
+          "skip_if": "No Hills tile beside an Encampment in any city, which in a wonder empire with no Encampment is usual; then skip it without regret."
+        },
+        {
+          "name": "Great Library",
+          "why": "Science direction: Great Scientist points and a free Eureka per Great Scientist; Writing slots for Culture.",
+          "skip_if": "Recorded History lands after turn 110, or a Science civilization has it queued."
+        },
+        {
+          "name": "Chichen Itza",
+          "why": "Culture and Production on Rainforest tiles if the river runs through any.",
+          "skip_if": "Fewer than four Rainforest tiles in one river city."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Connoisseur",
+          "city": "capital",
+          "why": "Culture per population in the biggest Floodplains city; Curator later for the Tourism."
+        },
+        {
+          "governor": "liang",
+          "promotion": "Zoning Commissioner",
+          "city": "the best wonder city",
+          "why": "Faster wonders where Gothic Architecture and Iteru already stack."
+        },
+        {
+          "governor": "amani",
+          "promotion": "Emissary",
+          "city": "a city near two city-states",
+          "why": "Envoys toward Brussels and Antananarivo; the Diplomatic direction needs her Prestige line."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "kumasi",
+          "why": "Culture per specialty district on Trade Routes to city-states; a four-district river city pays well."
+        },
+        {
+          "type": "Cultural",
+          "why": "Culture in every Amphitheater at three envoys on the Culture direction."
+        },
+        {
+          "type": "Scientific",
+          "why": "Science direction: Science in every University at six envoys."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-engineer",
+          "why": "Medieval Great Engineers finish the Renaissance wonders early; patronize with the Sphinx Faith."
+        },
+        {
+          "class": "great-artist",
+          "why": "Culture direction: the Humanism Inspiration and the first Art Museum's Great Works."
+        },
+        {
+          "class": "great-scientist",
+          "why": "The Education Eureka and University boosts on either direction."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 135,
+          "test": "Era checkpoint. Is the bonus being spent? The last four civics should be on the direction's path, the Wildcard slot should hold the direction's government, and the wonder Faith should have bought at least one Great Person. Culture: Amphitheaters in three cities and two Great Works. Science: Universities in four cities.",
+          "pass": "Continue; queue the Renaissance wonders and Art Museums or more Universities.",
+          "fail": "Civics taken because they were next is the banked-bonus failure; reroute the tree today. Faith sitting above five hundred unspent is the same failure in a different currency; patronize a Great Engineer or Writer this turn."
+        },
+        {
+          "turn": 170,
+          "test": "Six cities past ten population, two Universities, two Markets, two Temples, four Medieval or Renaissance wonders, and the direction still reachable?",
+          "pass": "Enter the Appeal phase; Conservation is the next civic to aim at.",
+          "fail": "If Amenities are negative in two cities, stop everything else for Arenas and luxuries. If the Culture direction has fewer than four Great Works at turn 170, pivot to Science while the Campuses are cheap; the flat curve makes the pivot affordable."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "appeal-civic-audit",
+          "turn": 105,
+          "text": "Audit the civic tree: the next four civics are the direction's; Divine Right is on the list either way for Gothic Architecture."
+        },
+        {
+          "id": "appeal-aqueduct",
+          "turn": 115,
+          "text": "Aqueduct finished in the capital on a river tile; Military Engineering Eureka collected."
+        },
+        {
+          "id": "appeal-universities",
+          "turn": 130,
+          "text": "Two Universities built; Printing Eureka collected."
+        },
+        {
+          "id": "appeal-gothic-swap",
+          "turn": 125,
+          "text": "Swap Corvee for Gothic Architecture the turn Divine Right lands; two Temples for its Inspiration first."
+        },
+        {
+          "id": "appeal-mark-parks",
+          "turn": 150,
+          "text": "Walk every city's tiles and mark the Charming and Breathtaking Hills, Woods and coast beside the Floodplains; those are the National Park and Seaside Resort sites, and they are not to be improved from here."
+        },
+        {
+          "id": "appeal-great-works",
+          "turn": 165,
+          "text": "Culture direction: four Great Works placed and the Amphitheaters full; Science direction: Universities in every Campus."
+        }
+      ]
+    },
+    {
+      "id": "parks",
+      "name": "Parks and resorts",
+      "turns": {
+        "from": 171,
+        "to": 240
+      },
+      "era": "industrial",
+      "objective": "Spend the inverted Appeal: Conservation, Naturalists bought with Sphinx Faith for National Parks on the Breathtaking ring around the Floodplains, Seaside Resorts on any Breathtaking coast after Radio, Eiffel Tower for two more Appeal everywhere, and Museums with Archaeologists; or on the Science direction Research Labs, Oxford and a Spaceport site; and pass the era checkpoint asking whether the direction is still reachable.",
+      "build_order": [
+        {
+          "item": "Archaeological Museum",
+          "why": "Culture direction: Natural History Inspiration and Artifacts for the Combustion Eureka; three Artifacts theme on their own."
+        },
+        {
+          "item": "Art Museum",
+          "why": "Culture direction: Opera and Ballet Inspiration and the Great Artist works from Humanism."
+        },
+        {
+          "item": "Workshop",
+          "why": "Two for Industrialization; Industrial Zones on a river tile away from the park ring."
+        },
+        {
+          "item": "Neighborhood",
+          "why": "Two for Sanitation, one on a Breathtaking tile for Conservation; the inverted Appeal makes both free."
+        },
+        {
+          "item": "Bank",
+          "why": "Two for Economics; Gold buys the Naturalists the Faith cannot."
+        },
+        {
+          "item": "Research Lab",
+          "why": "Science direction: the lead is converted here; Culture direction: the capital only."
+        },
+        {
+          "item": "Naturalist",
+          "why": "Bought with Faith at Conservation; one National Park per city with a Breathtaking four-tile diamond on the ring beside the Floodplains."
+        },
+        {
+          "item": "Factory",
+          "why": "Three for Class Struggle, with Power Plants; placed where the smoke does not touch the park ring."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:industrialization",
+          "note": "Two Workshops give the Eureka; Factories and Coal."
+        },
+        {
+          "id": "tech:scientific-theory",
+          "note": "The Enlightenment gave the Eureka; Research Labs."
+        },
+        {
+          "id": "tech:economics",
+          "note": "Two Banks; Stock Exchanges."
+        },
+        {
+          "id": "tech:sanitation",
+          "note": "Two Neighborhoods; Housing past the Aqueducts."
+        },
+        {
+          "id": "tech:steam-power",
+          "note": "Eiffel Tower unlocks here; unboosted unless a coastal city builds two Shipyards."
+        },
+        {
+          "id": "tech:flight",
+          "note": "Any Industrial wonder gives the Eureka; Sphinx Tourism and wonder Tourism both begin here."
+        },
+        {
+          "id": "tech:radio",
+          "note": "A National Park gives the Eureka; Seaside Resorts and the Mass Media Inspiration."
+        },
+        {
+          "id": "tech:chemistry",
+          "note": "Alliance level 2 with the Diplomatic Service ally; Research Labs."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:civil-engineering",
+          "note": "Seven district types, which six river cities with Aqueducts and Entertainment reach; Skyscrapers is the Industrial wonder card."
+        },
+        {
+          "id": "civic:colonialism",
+          "note": "Astronomy gives the Inspiration."
+        },
+        {
+          "id": "civic:urbanization",
+          "note": "A Floodplains city at fifteen population; Neighborhoods."
+        },
+        {
+          "id": "civic:natural-history",
+          "note": "An Archaeological Museum gives the Inspiration; extra Culture on every Sphinx."
+        },
+        {
+          "id": "civic:opera-and-ballet",
+          "note": "An Art Museum gives the Inspiration; Grand Opera."
+        },
+        {
+          "id": "civic:conservation",
+          "note": "A Neighborhood on a Breathtaking tile gives the Inspiration, and the inverted Appeal makes one available in every city; Naturalists and National Parks."
+        },
+        {
+          "id": "civic:nationalism",
+          "note": "Unboosted; on the way to Mobilization only for the defensive Corps a wonder empire needs."
+        },
+        {
+          "id": "civic:mass-media",
+          "note": "Radio gives the Inspiration; Broadcast Centers."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Skyscrapers",
+          "slot": "economic",
+          "from": "civic:civil-engineering",
+          "why": "Fifteen percent more toward Industrial and later wonders; replaces Gothic Architecture."
+        },
+        {
+          "card": "Grand Opera",
+          "slot": "economic",
+          "from": "civic:opera-and-ballet",
+          "why": "Culture direction: Theater Square buildings doubled."
+        },
+        {
+          "card": "Public Works",
+          "slot": "economic",
+          "from": "civic:civil-engineering",
+          "why": "Builders faster for the Neighborhoods, Mines and last Sphinxes."
+        },
+        {
+          "card": "Free Market",
+          "slot": "economic",
+          "from": "civic:the-enlightenment",
+          "why": "Science direction: Commercial Hub buildings doubled; the Gold buys Research Labs."
+        },
+        {
+          "card": "Five-Year Plan",
+          "slot": "economic",
+          "from": "civic:class-struggle",
+          "why": "Science direction: Campus and Industrial Zone adjacency doubled once Class Struggle lands."
+        }
+      ],
+      "districts": [
+        {
+          "district": "neighborhood",
+          "city": "every city with a Breathtaking tile outside the park ring",
+          "note": "Sanitation Eureka from two; Conservation Inspiration from the first on Breathtaking; Housing for the Floodplains Food."
+        },
+        {
+          "district": "industrial-zone",
+          "city": "the two best Production cities",
+          "note": "On a river tile for Iteru, placed so the Factory and Power Plant do not sit beside the National Park sites."
+        },
+        {
+          "district": "preserve",
+          "city": "a city whose park ring is Woods or Hills",
+          "note": "A Grove on the Breathtaking ring gives Culture and Faith and lifts Appeal further; the Sanctuary later."
+        },
+        {
+          "district": "spaceport",
+          "city": "the best Production river city",
+          "note": "Science direction: the site is reserved now."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Eiffel Tower",
+          "why": "Two more Appeal on every tile in the empire, which pushes the whole river ring to Breathtaking and makes every coast a Resort.",
+          "skip_if": "Steam Power lands after turn 225, or a Culture civilization has it queued and is ahead on Production."
+        },
+        {
+          "name": "Hermitage",
+          "why": "Culture direction: six Great Work of Art slots in one Theater Square city.",
+          "skip_if": "Fewer than three Great Artists expected before turn 240, or Natural History lands after turn 220."
+        },
+        {
+          "name": "Ruhr Valley",
+          "why": "Science direction: Production per Mine and a flat bonus in the Spaceport city.",
+          "skip_if": "No river Industrial Zone in the Spaceport city, or Industrialization lands after turn 220."
+        },
+        {
+          "name": "Oxford University",
+          "why": "Science direction: two free techs and Great Scientist points.",
+          "skip_if": "Scientific Theory lands after turn 215 or a Science civilization already has it."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "liang",
+          "promotion": "Parks and Recreation",
+          "city": "the city with the most Breathtaking tiles",
+          "why": "City Parks for Culture and Amenities on the Appeal the Floodplains give; her Water Works line can wait."
+        },
+        {
+          "governor": "pingala",
+          "promotion": "Curator",
+          "city": "capital",
+          "why": "Culture direction: Tourism from the wonders and Great Works doubled in the capital."
+        },
+        {
+          "governor": "reyna",
+          "promotion": "Forestry Management",
+          "city": "a city whose park ring is Woods",
+          "why": "Gold from unimproved features and Appeal on the tiles beside them; the park ring stays unimproved anyway."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "antananarivo",
+          "why": "Culture per Great Person earned, up to thirty percent; a wonder empire has earned many by now."
+        },
+        {
+          "slug": "zanzibar",
+          "why": "Two luxuries nobody else has; Amenities for cities growing past fifteen population."
+        },
+        {
+          "type": "Cultural",
+          "why": "Six envoys for Culture in every Art Museum on the Culture direction."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-artist",
+          "why": "Culture direction: Art Museums and Hermitage slots; the Tourism per work."
+        },
+        {
+          "class": "great-musician",
+          "why": "Culture direction: Broadcast Centers after Mass Media; Music is the highest Tourism per slot."
+        },
+        {
+          "class": "great-engineer",
+          "why": "Eiffel Tower early is two Appeal on every tile a turn sooner."
+        },
+        {
+          "class": "great-scientist",
+          "why": "Science direction: Research Lab boosts and the late Eurekas."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 205,
+          "test": "Era checkpoint. Is the chosen direction still reachable? Culture: Conservation adopted, two National Parks founded on the ring beside the Floodplains, Museums in three cities, and Tourism rising against the top rival's Culture. Science: Research Labs in three cities and the Science rate first among met civilizations.",
+          "pass": "Continue; Eiffel Tower and the Resorts are next.",
+          "fail": "A direction out of reach at turn 205 is pivoted, not forced. A six-city river empire with Universities everywhere can switch to Science from Culture and still finish; switch today and reserve the Spaceport site. No park at turn 205 means the park ring was improved; find the one four-tile diamond that is still Breathtaking and unimproved and buy the Naturalist for it."
+        },
+        {
+          "turn": 240,
+          "test": "Eiffel Tower built or lost, three National Parks, Seaside Resorts on every Breathtaking coast tile, and Tourism within reach of the top rival? Or a Spaceport started?",
+          "pass": "Enter the close.",
+          "fail": "Neither: the game is a Score game; a wonder empire with Floodplains Food scores well, and the plan stops paying for anything that does not add to it."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "parks-museums",
+          "turn": 185,
+          "text": "Culture direction: Archaeological Museums in two cities and an Art Museum in the capital; Natural History and Opera and Ballet Inspirations collected."
+        },
+        {
+          "id": "parks-conservation",
+          "turn": 195,
+          "text": "Conservation adopted; the first Neighborhood went on a Breathtaking tile for its Inspiration."
+        },
+        {
+          "id": "parks-first-park",
+          "turn": 205,
+          "text": "First Naturalist bought with Faith and the first National Park founded on the Breathtaking diamond beside the capital's Floodplains; Radio Eureka collected."
+        },
+        {
+          "id": "parks-eiffel",
+          "turn": 220,
+          "text": "Eiffel Tower started on a river tile with Skyscrapers slotted; a Great Engineer on it if one is held."
+        },
+        {
+          "id": "parks-resorts",
+          "turn": 230,
+          "text": "Seaside Resorts on every Breathtaking coast tile after Radio; Science direction: Spaceport started instead."
+        },
+        {
+          "id": "parks-factories",
+          "turn": 235,
+          "text": "Three Factories with Power Plants, placed off the park ring; Class Struggle Inspiration collected."
+        }
+      ]
+    },
+    {
+      "id": "close",
+      "name": "Close",
+      "turns": {
+        "from": 241,
+        "to": null
+      },
+      "era": "modern",
+      "objective": "Finish the direction: Rock Bands bought with Sphinx Faith sent at the rivals with the most Culture, Broadcast Centers and Cristo Redentor for the Resorts and Relics, Open Borders and trade with every civilization for the Tourism multiplier; or the three Spaceport projects with Power and Great Scientists; or the Favor from Potala, Mahabodhi and the suzerainties spent on every World Congress vote.",
+      "build_order": [
+        {
+          "item": "Broadcast Center",
+          "why": "Culture direction: Great Work of Music slots and Tourism in the three Theater Square cities."
+        },
+        {
+          "item": "Rock Band",
+          "why": "Culture direction: bought with Faith every time the Faith reaches the cost; sent at the two civilizations whose Culture is highest."
+        },
+        {
+          "item": "Spaceport",
+          "why": "Science direction: the projects start the turn it finishes."
+        },
+        {
+          "item": "Stock Exchange",
+          "why": "Two for Capitalism; Gold buys the last Museums or Research Labs."
+        },
+        {
+          "item": "Sewer",
+          "why": "Four for Suffrage across six Floodplains cities that have long passed fifteen population."
+        },
+        {
+          "item": "Aerodrome",
+          "why": "Two for Synthetic Materials, and Fighters to hold a wonder empire against a late war."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:combustion",
+          "note": "An Artifact extracted on the Culture direction gives the Eureka; Oil for Power."
+        },
+        {
+          "id": "tech:plastics",
+          "note": "An Oil Well on the first Oil found; Oil Power that does not need Coal beside the parks."
+        },
+        {
+          "id": "tech:computers",
+          "note": "A Tier 3 government gives the Eureka; the Tourism multiplier from Computers is the Culture direction's last lever."
+        },
+        {
+          "id": "tech:electricity",
+          "note": "Unboosted; Power for the Broadcast Centers and Research Labs."
+        },
+        {
+          "id": "tech:synthetic-materials",
+          "note": "Two Aerodromes; Fighters for defence."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:ideology",
+          "note": "No Inspiration; the gate to Tier 3 governments."
+        },
+        {
+          "id": "civic:class-struggle",
+          "note": "Three Factories; Communism for the Science direction."
+        },
+        {
+          "id": "civic:suffrage",
+          "note": "Four Sewers; Democracy for the Culture or Diplomatic direction."
+        },
+        {
+          "id": "civic:capitalism",
+          "note": "Two Stock Exchanges."
+        },
+        {
+          "id": "civic:cultural-heritage",
+          "note": "A themed Museum, which three Artifacts of one era give; Heritage Tourism."
+        },
+        {
+          "id": "civic:professional-sports",
+          "note": "Two Entertainment Complexes; Stadiums and Sports Media."
+        },
+        {
+          "id": "civic:social-media",
+          "note": "Researching Telecommunications gives the Inspiration; Online Communities."
+        },
+        {
+          "id": "civic:environmentalism",
+          "note": "Two Solar Farms give the Inspiration; clean Power beside the parks."
+        },
+        {
+          "id": "civic:space-race",
+          "note": "Science direction: the Spaceport gives the Inspiration."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Heritage Tourism",
+          "slot": "economic",
+          "from": "civic:cultural-heritage",
+          "why": "Culture direction: Tourism from Great Works doubled."
+        },
+        {
+          "card": "Online Communities",
+          "slot": "economic",
+          "from": "civic:social-media",
+          "why": "Culture direction: fifty percent more Tourism to every civilization you trade with; one route to each."
+        },
+        {
+          "card": "International Space Agency",
+          "slot": "diplomatic",
+          "from": "civic:space-race",
+          "why": "Science direction: Science per suzerainty; Brussels and Antananarivo are held."
+        },
+        {
+          "card": "Satellite Broadcasts",
+          "slot": "economic",
+          "from": "civic:cultural-heritage",
+          "why": "Culture direction: Tourism from Great Works of Music doubled in the Broadcast Center cities."
+        }
+      ],
+      "districts": [
+        {
+          "district": "aerodrome",
+          "city": "the two Industrial Zone cities",
+          "note": "Synthetic Materials Eureka and Fighters for defence."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Cristo Redentor",
+          "why": "Culture direction: Seaside Resort Tourism is not reduced by rival Culture and Relic Tourism is doubled.",
+          "skip_if": "No Seaside Resorts were placed and no Relics are held, or Mass Media lands after turn 260."
+        },
+        {
+          "name": "Golden Gate Bridge",
+          "why": "Culture direction: Appeal and Tourism on a coastal canal city; a Resort coast nearby doubles the return.",
+          "skip_if": "No coastal city with a Canal site, or Combustion lands after turn 270."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Space Initiative",
+          "city": "the Spaceport city",
+          "why": "Science direction: Production toward the three projects."
+        },
+        {
+          "governor": "reyna",
+          "promotion": "Contractor",
+          "city": "capital",
+          "why": "Culture direction: districts bought with Gold in the cities that still lack a Broadcast Center."
+        }
+      ],
+      "city_states": [],
+      "great_people": [
+        {
+          "class": "great-musician",
+          "why": "Culture direction: every Great Musician is three Music works and the highest Tourism per slot."
+        },
+        {
+          "class": "great-scientist",
+          "why": "Science direction: the Atomic and Information Great Scientists are the only boosts for Rocketry and Nuclear Fission."
+        },
+        {
+          "class": "great-engineer",
+          "why": "Project Production in the Spaceport city, or Cristo Redentor finished a turn sooner."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 285,
+          "test": "Culture: Tourism above two rivals' Culture and Rock Bands on the road to the third? Science: Moon Landing done and the Mars projects running? Diplomatic: within four Victory Points with Favor banked for the next Congress?",
+          "pass": "Continue to the end; no further decisions.",
+          "fail": "Convert to Score; a six-city empire with a wonder in every one and Floodplains Food in all of them scores well, and the plan stops paying for anything that does not add to it."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "close-broadcast",
+          "turn": 250,
+          "text": "Culture direction: Broadcast Centers in the three Theater Square cities and Online Communities slotted with a Trade Route to every civilization."
+        },
+        {
+          "id": "close-rock-bands",
+          "turn": 260,
+          "text": "Culture direction: a Rock Band bought with Faith every time the Faith allows, sent at the two highest-Culture civilizations with Open Borders."
+        },
+        {
+          "id": "close-moon",
+          "turn": 260,
+          "text": "Science direction: Moon Landing project started with Power in the Spaceport city."
+        },
+        {
+          "id": "close-review",
+          "turn": 285,
+          "text": "Review the turn 285 checkpoint and continue or declare the game a Score game."
+        }
+      ]
+    }
+  ],
+  "boosts": [
+    {
+      "id": "tech:irrigation",
+      "fit": "free",
+      "when": "nile",
+      "how": "The first Builder farms a Floodplains resource."
+    },
+    {
+      "id": "tech:writing",
+      "fit": "free",
+      "when": "nile",
+      "how": "The Scout meets the first rival along the river."
+    },
+    {
+      "id": "tech:wheel",
+      "fit": "cheap",
+      "when": "nile",
+      "how": "The first Builder mines a resource hill after the Floodplains Farms."
+    },
+    {
+      "id": "tech:masonry",
+      "fit": "cheap",
+      "when": "nile",
+      "how": "A Quarry on Stone or Marble beside the river; usually there is one."
+    },
+    {
+      "id": "tech:bronze-working",
+      "fit": "cheap",
+      "when": "nile",
+      "how": "Three camp kills from the Chariot Archers at the two nearest camps."
+    },
+    {
+      "id": "tech:archery",
+      "fit": "costly",
+      "when": "nile",
+      "how": "A Slinger kill only if a Slinger is built; the plan builds Chariots instead."
+    },
+    {
+      "id": "tech:astrology",
+      "fit": "costly",
+      "when": "wonders",
+      "how": "Only if the Scout happens on a natural wonder along the river."
+    },
+    {
+      "id": "tech:currency",
+      "fit": "free",
+      "when": "wonders",
+      "how": "The first Trader runs a route to the second city."
+    },
+    {
+      "id": "tech:horseback-riding",
+      "fit": "cheap",
+      "when": "wonders",
+      "how": "A Pasture on the Horses the Chariots need or on Sheep."
+    },
+    {
+      "id": "tech:construction",
+      "fit": "free",
+      "when": "wonders",
+      "how": "A Water Mill in the capital; every city is on a river."
+    },
+    {
+      "id": "tech:mathematics",
+      "fit": "free",
+      "when": "wonders",
+      "how": "Theater Square or Campus, Holy Site and Commercial Hub by turn 80 at river speed."
+    },
+    {
+      "id": "tech:engineering",
+      "fit": "cheap",
+      "when": "wonders",
+      "how": "Ancient Walls in the city nearest a neighbour."
+    },
+    {
+      "id": "tech:apprenticeship",
+      "fit": "cheap",
+      "when": "wonders",
+      "how": "Three Mines across six cities on the hills beside the river."
+    },
+    {
+      "id": "tech:iron-working",
+      "fit": "costly",
+      "when": "wonders",
+      "how": "A Mine on Iron only if one sits by a river city; otherwise unboosted."
+    },
+    {
+      "id": "tech:military-engineering",
+      "fit": "free",
+      "when": "appeal",
+      "how": "The capital Aqueduct, which Floodplains growth needs anyway."
+    },
+    {
+      "id": "tech:education",
+      "fit": "cheap",
+      "when": "appeal",
+      "how": "The first Great Scientist from the capital Campus and the Oracle points."
+    },
+    {
+      "id": "tech:machinery",
+      "fit": "cheap",
+      "when": "appeal",
+      "how": "Three Archers upgraded from the Chariots and Slingers held as garrison."
+    },
+    {
+      "id": "tech:castles",
+      "fit": "free",
+      "when": "appeal",
+      "how": "Any Tier 2 government."
+    },
+    {
+      "id": "tech:stirrups",
+      "fit": "free",
+      "when": "appeal",
+      "how": "Feudalism is on the civic path."
+    },
+    {
+      "id": "tech:buttress",
+      "fit": "free",
+      "when": "appeal",
+      "how": "Any Classical wonder, which this empire has two of by turn 100."
+    },
+    {
+      "id": "tech:banking",
+      "fit": "free",
+      "when": "appeal",
+      "how": "Guilds is on the civic path."
+    },
+    {
+      "id": "tech:printing",
+      "fit": "cheap",
+      "when": "appeal",
+      "how": "Two Universities in the capital and the second Campus city."
+    },
+    {
+      "id": "tech:astronomy",
+      "fit": "costly",
+      "when": "appeal",
+      "how": "A University beside a Mountain only if a river city has one."
+    },
+    {
+      "id": "tech:mass-production",
+      "fit": "costly",
+      "when": "appeal",
+      "how": "A Lumber Mill on Woods outside the park ring; the Woods beside the Floodplains stay unimproved."
+    },
+    {
+      "id": "tech:gunpowder",
+      "fit": "costly",
+      "when": "appeal",
+      "how": "An Armory only if an Encampment was forced by a neighbour."
+    },
+    {
+      "id": "tech:metal-casting",
+      "fit": "cheap",
+      "when": "appeal",
+      "how": "Two Crossbowmen are the garrison this empire builds anyway."
+    },
+    {
+      "id": "tech:industrialization",
+      "fit": "cheap",
+      "when": "parks",
+      "how": "Two Workshops in the river Industrial Zones."
+    },
+    {
+      "id": "tech:scientific-theory",
+      "fit": "free",
+      "when": "parks",
+      "how": "The Enlightenment is on the civic path."
+    },
+    {
+      "id": "tech:economics",
+      "fit": "cheap",
+      "when": "parks",
+      "how": "Two Banks in the Commercial Hub cities."
+    },
+    {
+      "id": "tech:sanitation",
+      "fit": "free",
+      "when": "parks",
+      "how": "Two Neighborhoods, which fifteen-population Floodplains cities need anyway."
+    },
+    {
+      "id": "tech:flight",
+      "fit": "free",
+      "when": "parks",
+      "how": "Any Industrial wonder; Eiffel Tower or Ruhr Valley."
+    },
+    {
+      "id": "tech:radio",
+      "fit": "free",
+      "when": "parks",
+      "how": "The first National Park on the ring beside the Floodplains."
+    },
+    {
+      "id": "tech:chemistry",
+      "fit": "cheap",
+      "when": "parks",
+      "how": "Alliance level 2 with the Diplomatic Service ally."
+    },
+    {
+      "id": "tech:steam-power",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:refining",
+      "fit": "costly",
+      "when": "parks",
+      "how": "A Coal Power Plant only in a city with no park ring; Oil Power is preferred."
+    },
+    {
+      "id": "tech:combustion",
+      "fit": "cheap",
+      "when": "close",
+      "how": "An Artifact from the first Archaeologist on the Culture direction."
+    },
+    {
+      "id": "tech:plastics",
+      "fit": "cheap",
+      "when": "close",
+      "how": "An Oil Well on the first Oil found."
+    },
+    {
+      "id": "tech:computers",
+      "fit": "free",
+      "when": "close",
+      "how": "Any Tier 3 government."
+    },
+    {
+      "id": "tech:electricity",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:synthetic-materials",
+      "fit": "costly",
+      "when": "close",
+      "how": "Two Aerodromes only if a late war threatens the wonder cities."
+    },
+    {
+      "id": "civic:craftsmanship",
+      "fit": "free",
+      "when": "nile",
+      "how": "Three improvements from the first Builder."
+    },
+    {
+      "id": "civic:foreign-trade",
+      "fit": "costly",
+      "when": "nile",
+      "how": "A second continent only if the Scout reaches one."
+    },
+    {
+      "id": "civic:state-workforce",
+      "fit": "free",
+      "when": "nile",
+      "how": "The first district, usually the Holy Site or Theater Square at river speed."
+    },
+    {
+      "id": "civic:early-empire",
+      "fit": "free",
+      "when": "nile",
+      "how": "Six population across two Floodplains cities arrives before turn 30."
+    },
+    {
+      "id": "civic:mysticism",
+      "fit": "free",
+      "when": "wonders",
+      "how": "Lady of the Reeds and Marshes."
+    },
+    {
+      "id": "civic:military-tradition",
+      "fit": "cheap",
+      "when": "wonders",
+      "how": "The first camp the Chariot Archer clears."
+    },
+    {
+      "id": "civic:political-philosophy",
+      "fit": "cheap",
+      "when": "wonders",
+      "how": "Three city-states met by the Scout and a Chariot."
+    },
+    {
+      "id": "civic:drama-and-poetry",
+      "fit": "free",
+      "when": "wonders",
+      "how": "The Pyramids or the Great Bath."
+    },
+    {
+      "id": "civic:games-and-recreation",
+      "fit": "free",
+      "when": "wonders",
+      "how": "Researching Construction."
+    },
+    {
+      "id": "civic:recorded-history",
+      "fit": "cheap",
+      "when": "wonders",
+      "how": "Two Campuses, in the capital and the Etemenanki city."
+    },
+    {
+      "id": "civic:theology",
+      "fit": "costly",
+      "when": "wonders",
+      "how": "Founding a religion only if the Oracle and a Holy Site bring a Great Prophet."
+    },
+    {
+      "id": "civic:military-training",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:defensive-tactics",
+      "fit": "cheap",
+      "when": "wonders",
+      "how": "A wonder empire with Chariots for an army gets declared on; take the Inspiration when it happens."
+    },
+    {
+      "id": "civic:feudalism",
+      "fit": "free",
+      "when": "appeal",
+      "how": "Six Farms on Floodplains across three cities by turn 60."
+    },
+    {
+      "id": "civic:civil-service",
+      "fit": "free",
+      "when": "appeal",
+      "how": "The capital at ten population on Floodplains Food and the Great Bath."
+    },
+    {
+      "id": "civic:guilds",
+      "fit": "cheap",
+      "when": "appeal",
+      "how": "Two Markets in the Commercial Hub cities."
+    },
+    {
+      "id": "civic:divine-right",
+      "fit": "cheap",
+      "when": "appeal",
+      "how": "Two Temples in the Holy Site cities; Gothic Architecture is worth the detour."
+    },
+    {
+      "id": "civic:medieval-faires",
+      "fit": "cheap",
+      "when": "appeal",
+      "how": "Four Trade Routes from six cities."
+    },
+    {
+      "id": "civic:humanism",
+      "fit": "cheap",
+      "when": "appeal",
+      "how": "A Great Artist from three Amphitheaters on the Culture direction."
+    },
+    {
+      "id": "civic:diplomatic-service",
+      "fit": "cheap",
+      "when": "appeal",
+      "how": "An alliance with the civilization that likes a high-Food neighbour."
+    },
+    {
+      "id": "civic:the-enlightenment",
+      "fit": "free",
+      "when": "appeal",
+      "how": "Three Great People from the wonders and the Oracle before turn 150."
+    },
+    {
+      "id": "civic:exploration",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:mercantilism",
+      "fit": "costly",
+      "when": "appeal",
+      "how": "A Great Merchant from two Commercial Hubs, usually late."
+    },
+    {
+      "id": "civic:civil-engineering",
+      "fit": "free",
+      "when": "parks",
+      "how": "Seven district types across six river cities with Aqueducts and an Entertainment Complex."
+    },
+    {
+      "id": "civic:colonialism",
+      "fit": "free",
+      "when": "parks",
+      "how": "Researching Astronomy."
+    },
+    {
+      "id": "civic:urbanization",
+      "fit": "free",
+      "when": "parks",
+      "how": "A Floodplains city at fifteen population."
+    },
+    {
+      "id": "civic:natural-history",
+      "fit": "cheap",
+      "when": "parks",
+      "how": "An Archaeological Museum in the capital Theater Square."
+    },
+    {
+      "id": "civic:opera-and-ballet",
+      "fit": "cheap",
+      "when": "parks",
+      "how": "An Art Museum in the second Theater Square city."
+    },
+    {
+      "id": "civic:conservation",
+      "fit": "free",
+      "when": "parks",
+      "how": "The first Neighborhood on a Breathtaking tile; inverted Appeal gives every city one."
+    },
+    {
+      "id": "civic:nationalism",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:mass-media",
+      "fit": "free",
+      "when": "parks",
+      "how": "Researching Radio after the first National Park."
+    },
+    {
+      "id": "civic:class-struggle",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Three Factories in the Industrial Zones."
+    },
+    {
+      "id": "civic:suffrage",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Four Sewers across six large cities."
+    },
+    {
+      "id": "civic:capitalism",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Stock Exchanges."
+    },
+    {
+      "id": "civic:cultural-heritage",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Three Artifacts of one era in an Archaeological Museum."
+    },
+    {
+      "id": "civic:professional-sports",
+      "fit": "cheap",
+      "when": "close",
+      "how": "A second Entertainment Complex in the far river city."
+    },
+    {
+      "id": "civic:social-media",
+      "fit": "free",
+      "when": "close",
+      "how": "Researching Telecommunications."
+    },
+    {
+      "id": "civic:environmentalism",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Solar Farms on desert outside the park ring."
+    },
+    {
+      "id": "civic:space-race",
+      "fit": "cheap",
+      "when": "close",
+      "how": "The Spaceport on the Science direction."
+    }
+  ],
+  "decision_triggers": [
+    {
+      "name": "Desert, hills or coast beside the Floodplains",
+      "if": "At turn 60 the first three cities have Hills, Woods, desert or coast adjacent to their Floodplains and two wonders are landed.",
+      "then": "Choose Culture at turn 70. The Appeal those tiles gain is the National Park and Seaside Resort ground, and the wonders are already Tourism."
+    },
+    {
+      "name": "Long grassland river",
+      "if": "At turn 60 the river runs through grassland with no desert or coast and a Science civilization is on the map.",
+      "then": "Choose Science at turn 70. A Campus on a river tile in every city at river speed and Etemenanki on the Floodplains out-researches the wonder race you would lose."
+    },
+    {
+      "name": "Wonder chosen because it was there",
+      "if": "A wonder is queued that serves neither the direction nor an Eureka or Inspiration on the path.",
+      "then": "Cancel it. Iteru makes every wonder tempting; the plan builds the ones the direction uses, and the Production goes to a Theater Square, a Campus or a Settler instead."
+    },
+    {
+      "name": "Park ring improved",
+      "if": "A Builder improves a Hills or Woods tile beside the Floodplains after turn 150.",
+      "then": "Stop; pillage-and-repair does not remove an improvement. Mark the remaining Breathtaking diamond in that city and keep every tile in it unimproved until the Naturalist arrives."
+    },
+    {
+      "name": "Neighbour at the door",
+      "if": "A rival moves four or more units toward a wonder city before turn 120.",
+      "then": "Buy Ancient Walls and two Archers in that city with the wonder Gold, slot Bastions, and keep the Chariots on the river between the cities. The Defensive Tactics Inspiration is the consolation."
+    }
+  ],
+  "abort": {
+    "trigger": "Turn 150 with no direction committed: no Theater Square outside the capital, no Campus outside the capital, wonders chosen by availability, and a civic tree picked in order.",
+    "actions": [
+      "Pick the direction the empire is already closest to; with six river cities and four wonders that is almost always Culture. Commit fully; Linear leaders lose by drifting, not by collapsing.",
+      "Reroute the civic queue to Humanism, Natural History and Conservation today, and put a Theater Square on a river tile in every city without one.",
+      "Mark the Breathtaking ring beside every city's Floodplains and stop improving it; the Parks are still reachable at turn 200 if the ring is intact."
+    ]
+  },
+  "fail_state": "Turn 200 with six comfortable river cities past fifteen population, five wonders, Faith banked in the thousands and nothing pointed anywhere: Theater Squares in two cities, Campuses in two, the Breathtaking ring beside the Floodplains farmed over, and the Culture lead spent on whatever civic came next. Egypt has out-grown and out-built the map and converted none of it, and the Appeal flip that was the late half of the kit has nothing left to land on.",
+  "common_mistakes": [
+    "Settling off the river for a better-looking site. A dry Egyptian city has neither Iteru nor Arrival of Hapi; it is a plain city with a worse start.",
+    "Farming the Floodplains and leaving the resources on them unimproved. The Food and Culture of the leader ability are on the resources, not the plain Floodplains.",
+    "Building districts on the dry land to save the Floodplains for Farms. Iteru's placement rule and Production bonus are for the Floodplains; the Farms go on the dry land.",
+    "Improving the Hills and Woods beside the Floodplains after turn 150. That ring is the National Park ground the Appeal flip was for, and a Mine on it is a park lost.",
+    "Treating the wonder list as the plan. Iteru makes every wonder tempting; the plan builds the ones the chosen direction uses and the rest are Settlers and districts not built.",
+    "Letting Sphinx Faith sit. It patronizes Great Engineers and Writers, buys Naturalists at Conservation and Rock Bands at the end; a Faith balance in the thousands is a banked bonus."
+  ],
+  "sources": [
+    "Civilization VI Civilopedia, Gathering Storm ruleset with the Leader Pass (Egypt, Cleopatra (Ptolemaic), Arrival of Hapi, Iteru, Maryannu Chariot Archer, Sphinx).",
+    "Boost objectives cross-checked against civilization6planner.com tech-tree and civics-tree pages, 2026-10-01.",
+    "Leadership Focus tags, caveats, Linear template and the Linear_Trajan worked example in this repository.",
+    "The civ-info caveat that Egyptian Floodplains still take flood damage conflicts with the Gathering Storm Civilopedia as read here, where Iteru keeps Egyptian districts and improvements from flood damage; the plan follows the game and does not schedule Dams for damage control, only for the Flood Barrier later if sea level matters."
+  ]
+}

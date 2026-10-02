@@ -1,0 +1,1798 @@
+{
+  "leader": "Kristina",
+  "civilization": "Sweden",
+  "generated": "2026-10-02",
+  "slug": "kristina",
+  "shape": "Dead-Phase",
+  "secondary_shape": null,
+  "version": 1,
+  "updated": "2026-10-02",
+  "assumptions": {
+    "ruleset": "Gathering Storm with every expansion and the Leader Pass",
+    "speed": "Standard",
+    "difficulty": "Emperor",
+    "map": "Continents or Pangaea, standard size, 8 civilizations",
+    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. Kristina has one persona and it is planned here; Sweden is only ever led by Kristina."
+  },
+  "verdict": {
+    "victory": "Culture",
+    "secondary": "Diplomatic",
+    "confidence": "medium",
+    "one_line": "Play a plain wide builder for 140 turns that banks Great Writers, Great Works and Great Person points with nothing to show for them, then fill Art Museums, Archaeological Museums and the Hermitage and let every one of them theme itself the turn its last slot fills.",
+    "why": "Minerva of the North does one thing: a building with three or more Great Work slots, or a wonder with two or more, is themed automatically once it is full. Theming doubles a museum's Culture and Tourism, and in an ordinary game almost no Archaeological Museum and few Art Museums are ever themed because the matching rule is too strict. Sweden skips the rule, so from Humanism and Natural History onward every full museum pays double, and the Queen's Bibliothèque is a six-slot building that themes itself in the Government Plaza. None of that exists before the Renaissance: Amphitheaters hold two works and never theme, and the Carolean is a Pike and Shot. The dormant phase therefore builds the Great People engine and stores the works; the payoff phase displays them. Nobel Prize makes the same empire a Diplomatic Favor machine, 50 Favor per Great Person recruited plus Favor from the three Nobel competitions, which is why Diplomatic is the fallback and why the World Congress is never ignored."
+  },
+  "map_check": {
+    "must_have": [
+      "Room for six cities by turn 90 without fighting for it; the plan has no early military edge and every Theater Square and Campus needs a city to stand in.",
+      "At least two neighbours met by turn 60 with Culture of their own: the Tourism victory needs rivals to out-tour and trade routes and Open Borders to tour them."
+    ],
+    "prefer": [
+      "A mix of Grassland, Plains, Tundra or Desert within the first six city sites: the Open-Air Museum pays per distinct terrain type Swedish cities stand on.",
+      "Rivers and mountains for Campus and Theater Square adjacency, and Woods on hills near the capital for Appeal and the Breathtaking Neighborhood that boosts Conservation.",
+      "Antananarivo or Bologna on the map: Culture per Great Person recruited, or an extra Great Person point from every district with a building."
+    ],
+    "no_go": "An isolated start where no rival is met by turn 60 and no second continent is in reach, or a cramped start that leaves room for three cities. The Tourism has no audience and the Great Person engine has no districts to run on.",
+    "fallback": "If isolated, keep the dormant phase as written and take Cartography and Exploration early so Caravels find the audience; the museums still theme themselves whenever the works arrive. If the land is cramped, settle tighter at four tiles apart, put Theater Squares in every city and Campuses in only two, and lean on Diplomatic Favor from Great People and the World Congress for the Diplomatic fallback."
+  },
+  "kit_levers": [
+    {
+      "source": "leader_ability",
+      "name": "Minerva of the North",
+      "buys": "Buildings with three or more Great Work slots and wonders with two or more slots are themed automatically when full, and the Government Plaza can hold the Queen's Bibliothèque, a six-slot Great Work building with two slots each for Writing, Art and Music that also yields Great Writer, Artist and Musician points.",
+      "exploit": "The Bibliothèque goes up in the dormant phase as the first storage, since six slots theme themselves once full. Every Art Museum, Archaeological Museum, Hermitage and Broadway is filled to the last slot before the next one is started, because a full building is a themed building and a half-full one is an ordinary one. Great Works are never sold and never traded away."
+    },
+    {
+      "source": "civ_ability",
+      "name": "Nobel Prize",
+      "buys": "Extra Great Engineer points from Factories and Great Scientist points from Universities, 50 Diplomatic Favor every time a Great Person is recruited, and three Nobel Prize competitions in the World Congress from the Industrial era.",
+      "exploit": "Universities in every Campus during the staging phase, Factories in four cities during activation: the Great People they recruit are the Favor the Diplomatic fallback runs on and The Enlightenment's Inspiration. The Nobel competitions are entered every time they appear; Sweden's own Great Person rate wins them more often than not."
+    },
+    {
+      "source": "unique_unit",
+      "name": "Carolean",
+      "buys": "A Pike and Shot replacement with extra Movement that gains Combat Strength for each Movement point left unspent when it attacks, and bonus strength against cavalry.",
+      "exploit": "The Renaissance defensive floor and nothing more: four Caroleans behind Medieval Walls stop the Knights and Musketmen the AI brings at turn 130, and they upgrade to the Garde-less Line Infantry later. Not an invasion plan."
+    },
+    {
+      "source": "unique_infrastructure",
+      "name": "Open-Air Museum",
+      "buys": "An improvement from Conservation, one per city, not on hills, with Culture and Tourism for every distinct terrain type Swedish cities are founded on and Loyalty for its city.",
+      "exploit": "The dormant phase founds cities on Grassland, Plains, Tundra and Desert deliberately, so by Conservation the count is four or five. Then every city builds one on its flattest unimproved tile the turn the civic lands; eight cities is eight museums, each paying the same full amount."
+    },
+    {
+      "source": "agenda",
+      "name": "Bibliophile",
+      "buys": "Kristina likes leaders who leave Great Works for her to collect and dislikes those who compete for them.",
+      "exploit": "Irrelevant to your own play, except as a reminder that an AI Kristina on the same map will dislike a Culture player; trade her the Great Works you cannot slot rather than selling them for Gold, and she stays friendly."
+    }
+  ],
+  "shape_block": {
+    "dead_phase": {
+      "activation_turn": 140,
+      "flatness_statement": "Kristina has no leader advantage for the first 140 turns. That is expected and it is correct: the auto-theming needs buildings with three slots, and the first of those, the Art Museum, comes with Humanism around turn 130; the Open-Air Museum comes with Conservation; the Nobel competitions start in the Industrial era; and the Carolean is a Pike and Shot. The Queen's Bibliothèque is the only piece of the kit that exists before turn 100, and it is a storage room until it is full. Do not judge this leader before turn 140 and do not switch strategies at turn 60 because the curve looks flat. Sweden is a plain wide builder until Humanism, and the plan below is the plain wide game, played to survive and to bank Great People.",
+      "stockpile": [
+        "Great Works: eight or more Great Works of Writing and Art held by turn 140, in Amphitheaters, the Great Library and the Queen's Bibliothèque, so the first two Art Museums fill and theme on the turn they are built.",
+        "Great Person points: Theater Squares with Amphitheaters in six cities and Campuses with Universities in four by turn 130, under Divine Spark, Literary Tradition and Pingala's Grants, so a Great Writer or Artist arrives every ten turns.",
+        "The Queen's Bibliothèque built in the Government Plaza and full, or within two works of full, by turn 140.",
+        "Terrain variety: cities founded on at least four distinct terrain types among Grassland, Plains, Tundra, Desert and Snow, counted and written down, for the Open-Air Museums.",
+        "A Culture rate of 80 or more per turn and Humanism within five turns at turn 140, with a Medieval Walls and Carolean floor in the two border cities."
+      ],
+      "progress_markers": [
+        "City count: 4 by turn 45, 6 by turn 90, 8 by turn 140.",
+        "Culture per turn: 10 by turn 50, 35 by turn 90, 80 by turn 140.",
+        "Great Works held: 1 by turn 60, 4 by turn 100, 8 by turn 140.",
+        "Theater Squares with Amphitheaters: 2 by turn 75, 4 by turn 110, 6 by turn 140.",
+        "Great People recruited: 2 by turn 90, 6 by turn 140, with 300 Diplomatic Favor banked from them."
+      ],
+      "activation_test": "At turn 140 answer four questions: Is Humanism adopted or within five turns? Are eight Great Works held? Are six Theater Squares with Amphitheaters and four Universities standing? Is the Queen's Bibliothèque built and within two works of full? Four yes answers mean the kit is on and the activation phase begins. Any no means the dormant phase continues for up to ten turns to fix exactly that item; a no that cannot be fixed by turn 150 means the abort branch."
+    }
+  },
+  "phases": [
+    {
+      "id": "settle",
+      "name": "Dormant: settle",
+      "turns": {
+        "from": 1,
+        "to": 45
+      },
+      "era": "ancient",
+      "objective": "Four cities by turn 45 on at least three distinct terrain types, a Slinger or Archer in each, the nearest barbarian camps cleared, and a pantheon founded. The leader gives nothing here and the plan does not pretend otherwise; this is the generic strong opening, with one twist: each city site is also judged by the terrain it stands on, for an improvement that arrives 150 turns later.",
+      "build_order": [
+        {
+          "item": "Scout",
+          "why": "Find the neighbours and the terrain; Writing comes from the first meeting and the Tourism victory needs an audience."
+        },
+        {
+          "item": "Warrior",
+          "why": "Second escort for the Settlers and the first camp clearance; Bronze Working needs three barbarian kills."
+        },
+        {
+          "item": "Settler",
+          "why": "The second city at turn 15 to 18 on a different terrain type from the capital, by a river for the Theater Square."
+        },
+        {
+          "item": "Slinger",
+          "why": "Archery Eureka on the first barbarian scout, then an Archer in the capital; the defensive floor starts here."
+        },
+        {
+          "item": "Settler",
+          "why": "Third city on the third terrain type, toward the nearest neighbour so the border is where the Walls go."
+        },
+        {
+          "item": "Monument",
+          "why": "Culture is the clock of this whole plan; the Monument is the first Culture building and the only one for 40 turns."
+        },
+        {
+          "item": "Builder",
+          "why": "Three improvements for Craftsmanship, a Mine for The Wheel, a Quarry for Masonry."
+        },
+        {
+          "item": "Settler",
+          "why": "Fourth city by turn 45 under Colonization; the Great Person engine needs cities to put districts in."
+        },
+        {
+          "item": "Warrior",
+          "why": "One more body before the Classical era; a four-city empire with three units invites a surprise war."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:animal-husbandry",
+          "note": "Reveals Horses and improves the Camps; the Goddess of the Hunt is not the pantheon, but the Food matters."
+        },
+        {
+          "id": "tech:mining",
+          "note": "Mines on hills for Production, which Theater Squares cost a great deal of."
+        },
+        {
+          "id": "tech:bronze-working",
+          "note": "Reveals Iron and unlocks the Encampment this plan does not build; Eureka from three barbarian kills."
+        },
+        {
+          "id": "tech:archery",
+          "note": "Archers are the defensive floor; Eureka from a Slinger kill."
+        },
+        {
+          "id": "tech:writing",
+          "note": "Campus; Eureka from meeting the first civilization."
+        },
+        {
+          "id": "tech:masonry",
+          "note": "Ancient Walls in the border cities and the Pyramids; Eureka from a Quarry."
+        },
+        {
+          "id": "tech:currency",
+          "note": "Commercial Hub in the capital; the Gold that buys Amphitheaters later. Eureka from the first Trade Route."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:code-of-laws",
+          "note": "Discipline and God King; the pantheon by turn 25."
+        },
+        {
+          "id": "civic:craftsmanship",
+          "note": "Agoge for the defensive units; Inspiration from three improved tiles."
+        },
+        {
+          "id": "civic:foreign-trade",
+          "note": "Trade Routes; Inspiration only if the Scout finds a second continent."
+        },
+        {
+          "id": "civic:early-empire",
+          "note": "Colonization and the first Governor Title; Inspiration at six Population."
+        },
+        {
+          "id": "civic:mysticism",
+          "note": "Free Inspiration from the pantheon; the Inspiration card for Great Scientist points and the road to Drama and Poetry."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Discipline",
+          "slot": "military",
+          "from": "civic:code-of-laws",
+          "why": "Warriors and Slingers beat camp units while the empire has nothing else."
+        },
+        {
+          "card": "God King",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "The pantheon arrives by turn 25 without a Holy Site."
+        },
+        {
+          "card": "Agoge",
+          "slot": "military",
+          "from": "civic:craftsmanship",
+          "why": "Archers faster; the floor is cheap to build now and expensive to rebuild later."
+        },
+        {
+          "card": "Colonization",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "Settlers at half the cost for cities three and four."
+        }
+      ],
+      "districts": [
+        {
+          "district": "campus",
+          "city": "capital",
+          "note": "Placed after Writing beside mountains or a reef; the first district is the State Workforce Inspiration and the first Great Scientist points."
+        }
+      ],
+      "pantheon": {
+        "slug": "divine-spark",
+        "why": "An extra Great Person point from every Campus with a Library and every Theater Square with an Amphitheater: the stockpile this leader lives on, started at turn 25.",
+        "alternative": "god-of-craftsmen"
+      },
+      "wonders": [],
+      "governors": [
+        {
+          "governor": "magnus",
+          "promotion": "Provision",
+          "city": "capital",
+          "why": "The first title at Early Empire; the capital builds Settlers five and six without losing Population."
+        }
+      ],
+      "city_states": [
+        {
+          "type": "Cultural",
+          "why": "An early envoy buys Culture in the capital, and Culture is the clock; Antananarivo later pays Culture per Great Person."
+        },
+        {
+          "type": "Scientific",
+          "why": "Science in the capital; Bologna later gives an extra Great Person point from every district with a building."
+        }
+      ],
+      "great_people": [],
+      "checkpoints": [
+        {
+          "turn": 25,
+          "test": "Two cities settled on two different terrain types, an Archer or Slinger in each, and no barbarian camp within six tiles of either?",
+          "pass": "Third Settler goes out toward the nearest neighbour onto a third terrain type.",
+          "fail": "Delay the third Settler one build: a second Slinger or a Warrior clears the camp first. A city lost here is not recoverable in a Dead-Phase plan."
+        },
+        {
+          "turn": 45,
+          "test": "Four cities, the pantheon founded, Early Empire reached, and Culture at 8 or more per turn?",
+          "pass": "Enter the build phase; Walls go into the two border cities next.",
+          "fail": "Three cities is acceptable if the fourth Settler is in production; two cities means the land is poor and the fallback applies: settle tighter and plan Theater Squares in every city."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "settle-capital",
+          "turn": 1,
+          "text": "Settle on or beside hills with fresh water; move at most one turn. Note the terrain type under the city; it is the first of the Open-Air Museum's count."
+        },
+        {
+          "id": "settle-scout-terrain",
+          "turn": 8,
+          "text": "Send the Scout toward the nearest rival and note where Grassland becomes Plains, Tundra or Desert; the next three cities each go on a different one."
+        },
+        {
+          "id": "settle-pantheon",
+          "turn": 25,
+          "text": "Found Divine Spark, or God of Craftsmen if the capital has three or more hill resources and no river for a Theater Square."
+        },
+        {
+          "id": "settle-third-city",
+          "turn": 32,
+          "text": "Found the third city toward the nearest rival on the third terrain type. This is the border city; the Walls and the Caroleans go here later."
+        },
+        {
+          "id": "settle-fourth-city",
+          "turn": 45,
+          "text": "Found the fourth city; mark the next four sites on the map now, each on a river or beside a mountain, and write the terrain types down."
+        }
+      ]
+    },
+    {
+      "id": "build",
+      "name": "Dormant: build",
+      "turns": {
+        "from": 46,
+        "to": 90
+      },
+      "era": "classical",
+      "objective": "Six cities by turn 75, Campuses with Libraries in the two best, Theater Squares in the capital and the second city, the Government Plaza with the Queen's Bibliothèque in the capital, the Great Library if it is open, Ancient Walls and an Archer in the two border cities, and the first Great Writer recruited. Still no leader advantage; the markers to watch are cities, Culture, districts and the first Great Work.",
+      "build_order": [
+        {
+          "item": "Settler",
+          "why": "Cities five and six on the fourth and fifth terrain types; the Great Person engine is per district and districts are per city."
+        },
+        {
+          "item": "Ancient Walls",
+          "why": "In the two border cities; the Engineering Eureka and the only thing that stops a Classical rush."
+        },
+        {
+          "item": "Campus",
+          "why": "Capital and second city; Science is a progress marker, and Nobel Prize pays on the Universities later."
+        },
+        {
+          "item": "Library",
+          "why": "Both Campuses; Divine Spark pays its extra Great Scientist point here and the Recorded History Inspiration needs two."
+        },
+        {
+          "item": "Government Plaza",
+          "why": "Capital; the Queen's Bibliothèque goes here and nowhere else, and the Audience Chamber's Governor Title is Pingala's Grants."
+        },
+        {
+          "item": "Theater Square",
+          "why": "Capital and second city after Drama and Poetry; the Amphitheater is the first Great Work storage and the Great Writer points."
+        },
+        {
+          "item": "Queen's Bibliothèque",
+          "why": "Capital's Government Plaza: six slots and Great Writer, Artist and Musician points; it themes itself when full and it is the first piece of the kit."
+        },
+        {
+          "item": "Commercial Hub",
+          "why": "Capital; the Trade Route pays for the Settlers and the Market is the Guilds Inspiration."
+        },
+        {
+          "item": "Trader",
+          "why": "Currency Eureka and Gold; the dormant phase runs on Gold more than Production."
+        },
+        {
+          "item": "Water Mill",
+          "why": "In a river city for the Construction Eureka and growth."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:irrigation",
+          "note": "Farms on the resources six cities sit on; Eureka from farming one."
+        },
+        {
+          "id": "tech:iron-working",
+          "note": "Mine the Iron the Scout found; Swordsmen are the floor if a neighbour comes early."
+        },
+        {
+          "id": "tech:construction",
+          "note": "Water Mill Eureka; Entertainment Complex later and the Games and Recreation Inspiration."
+        },
+        {
+          "id": "tech:engineering",
+          "note": "Aqueducts for Housing in cities that will hold many districts; Eureka from Ancient Walls."
+        },
+        {
+          "id": "tech:mathematics",
+          "note": "Campus, Theater Square and Commercial Hub make three specialty districts for the Eureka."
+        },
+        {
+          "id": "tech:apprenticeship",
+          "note": "Three Mines; the Production the Theater Squares are built from."
+        },
+        {
+          "id": "tech:horseback-riding",
+          "note": "A Pasture on the Horses; Horsemen are the mobile half of the floor."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:state-workforce",
+          "note": "Inspiration from the first district; Government Plaza."
+        },
+        {
+          "id": "civic:political-philosophy",
+          "note": "Classical Republic and the second Governor Title, which is Pingala."
+        },
+        {
+          "id": "civic:drama-and-poetry",
+          "note": "Theater Squares, Amphitheaters, Literary Tradition and the Queen's Bibliothèque; the civic the dormant phase is built around."
+        },
+        {
+          "id": "civic:games-and-recreation",
+          "note": "Free Inspiration from Construction; Entertainment Complex for the Amenities six cities need."
+        },
+        {
+          "id": "civic:recorded-history",
+          "note": "Two Campuses give the Inspiration; the Great Library and Natural Philosophy."
+        },
+        {
+          "id": "civic:defensive-tactics",
+          "note": "Bastions and Limes; Inspiration if a neighbour declares on you, which they may."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Classical Republic",
+          "slot": "wildcard",
+          "from": "civic:political-philosophy",
+          "why": "The dormant government: Amenities and +15% Great Person points for a builder whose whole plan is Great People."
+        },
+        {
+          "card": "Colonization",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "Settlers five and six at half price."
+        },
+        {
+          "card": "Literary Tradition",
+          "slot": "wildcard",
+          "from": "civic:drama-and-poetry",
+          "why": "+2 Great Writer points per turn; the first Great Works of Writing are the stockpile."
+        },
+        {
+          "card": "Inspiration",
+          "slot": "wildcard",
+          "from": "civic:mysticism",
+          "why": "+2 Great Scientist points per turn while the Wildcard slot is free; Great People are Favor under Nobel Prize."
+        },
+        {
+          "card": "Bastions",
+          "slot": "military",
+          "from": "civic:defensive-tactics",
+          "why": "Combat Strength and ranged strength for the walled border cities; the floor costs no Production."
+        }
+      ],
+      "districts": [
+        {
+          "district": "campus",
+          "city": "capital and second city",
+          "note": "Mountain or reef adjacency; Libraries by turn 75 for the Recorded History Inspiration."
+        },
+        {
+          "district": "theater-square",
+          "city": "capital and second city",
+          "note": "Beside the Government Plaza or a wonder for adjacency; Amphitheaters hold the first Great Works of Writing."
+        },
+        {
+          "district": "government-plaza",
+          "city": "capital",
+          "note": "Audience Chamber for the Governor Title and Housing; the Queen's Bibliothèque is built here the turn Drama and Poetry lands."
+        },
+        {
+          "district": "commercial-hub",
+          "city": "capital",
+          "note": "River adjacency; the Market is the first of two for Guilds."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Great Library",
+          "why": "Two Great Work of Writing slots that theme themselves under Minerva of the North, plus Great Scientist points and free Eurekas; it is the first wonder the kit actually uses.",
+          "skip_if": "A rival shows Recorded History ten turns before you, or no Campus is placed by turn 60."
+        },
+        {
+          "name": "Pyramids",
+          "why": "A free Builder and an extra charge on every Builder for an empire that will improve every tile for Appeal later.",
+          "skip_if": "No flat Desert tile within the capital's workable radius, or a rival shows Masonry ten turns before you."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Grants",
+          "city": "capital",
+          "why": "Second title: +100% Great Person points in the capital, where the Campus, Theater Square and Bibliothèque all sit. He never leaves this city."
+        },
+        {
+          "governor": "magnus",
+          "promotion": "Provision",
+          "city": "capital",
+          "why": "Kept through the Settler builds, then moved to the second-best Production city."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "antananarivo",
+          "why": "+2 Culture for every Great Person recruited, for the rest of the game; this empire recruits more than any other."
+        },
+        {
+          "slug": "bologna",
+          "why": "Every district with a building gives an extra Great Person point of its type; six cities of districts is six extra points per turn."
+        },
+        {
+          "type": "Cultural",
+          "why": "Culture in every Amphitheater at three envoys; the clock."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-writer",
+          "why": "The first Great Writer around turn 80 is two Great Works of Writing in the capital Amphitheater; the stockpile starts here."
+        },
+        {
+          "class": "great-scientist",
+          "why": "The first Classical Great Scientist is the Education Eureka, 50 Favor under Nobel Prize, and a Library's worth of Science."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 65,
+          "test": "Five cities, both border cities walled, Drama and Poetry adopted, and the Government Plaza placed?",
+          "pass": "Queue the Queen's Bibliothèque in the Government Plaza and the Theater Square in the capital.",
+          "fail": "If the walls are missing, build them before anything else: a Classical declaration against an unwalled border city ends the plan. If Drama and Poetry is late, Culture is the clock that slipped: Monuments in every city before the next district."
+        },
+        {
+          "turn": 90,
+          "test": "Six cities, two Libraries, two Amphitheaters, the Bibliothèque built, one Great Work held, Culture at 35 or more?",
+          "pass": "Enter the staging phase; Universities and four more Theater Squares are next.",
+          "fail": "Five cities and 28 Culture is still inside the plan. Fewer than five cities or Culture under 20 means Humanism slips to 150 and the activation test moves with it; do not shorten the stockpile to hit the date."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "build-walls-border",
+          "turn": 52,
+          "text": "Ancient Walls finished in both border cities, with an Archer behind each."
+        },
+        {
+          "id": "build-campuses",
+          "turn": 60,
+          "text": "Campuses placed in the capital and second city; Libraries queued."
+        },
+        {
+          "id": "build-pingala",
+          "turn": 66,
+          "text": "Appoint Pingala in the capital with the Political Philosophy title; Grants is his first promotion, taken with the Government Plaza's title."
+        },
+        {
+          "id": "build-theater-squares",
+          "turn": 72,
+          "text": "Drama and Poetry in: Theater Squares placed in the capital and second city; Literary Tradition slotted the same turn."
+        },
+        {
+          "id": "build-bibliotheque",
+          "turn": 80,
+          "text": "Queen's Bibliothèque finished in the Government Plaza; it is the storage every Great Work goes into until the Art Museums exist."
+        },
+        {
+          "id": "build-sixth-city",
+          "turn": 85,
+          "text": "Sixth city founded on a terrain type not yet counted; write the count of distinct types down. Four or more is the target for Conservation."
+        }
+      ]
+    },
+    {
+      "id": "stage",
+      "name": "Dormant: stage",
+      "turns": {
+        "from": 91,
+        "to": 140
+      },
+      "era": "renaissance",
+      "objective": "Arrive at turn 140 with Humanism in hand or five turns away, eight Great Works held, six Theater Squares with Amphitheaters, four Universities paying Nobel Prize points, the Bibliothèque within two works of full, 300 Favor banked, and Medieval Walls with Caroleans in the border cities. The leader still gives nothing visible; this phase builds the stockpile the payoff displays.",
+      "build_order": [
+        {
+          "item": "Theater Square",
+          "why": "Cities three to six; the Great Writer points and the Amphitheater storage that fill the first Art Museums' neighbours."
+        },
+        {
+          "item": "Amphitheater",
+          "why": "In every Theater Square: two Writing slots each, +1 Great Writer point, and Divine Spark's extra point."
+        },
+        {
+          "item": "University",
+          "why": "Four of them: Nobel Prize's extra Great Scientist points, the Printing Eureka at two, and the Science that keeps Humanism on time."
+        },
+        {
+          "item": "Market",
+          "why": "Second Market for the Guilds Inspiration; the Gold that buys Amphitheaters in the slow cities."
+        },
+        {
+          "item": "Aqueduct",
+          "why": "Capital; Military Engineering Eureka and Housing for a city carrying four districts."
+        },
+        {
+          "item": "Medieval Walls",
+          "why": "Border cities; the Renaissance is when the AI brings Knights and Crossbowmen."
+        },
+        {
+          "item": "Carolean",
+          "why": "Four of them at Metal Casting in the two border cities; the Renaissance floor, and they hit harder standing still behind Walls than anything the AI lands."
+        },
+        {
+          "item": "Entertainment Complex",
+          "why": "Capital; Amenities for eight cities, and the Colosseum site if it is open."
+        },
+        {
+          "item": "Apadana",
+          "why": "Capital, beside the Theater Square: two Great Work of Art slots that theme under Minerva of the North and two envoys per wonder built in the city."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:machinery",
+          "note": "Crossbowmen; Eureka from three Archers, which the floor already has."
+        },
+        {
+          "id": "tech:education",
+          "note": "Universities; Eureka from the Classical Great Scientist, which Nobel Prize and Divine Spark make early."
+        },
+        {
+          "id": "tech:military-engineering",
+          "note": "Eureka from the capital Aqueduct; on the way to Castles and the Medieval Walls."
+        },
+        {
+          "id": "tech:stirrups",
+          "note": "Free Eureka from Feudalism; Knights for a mobile floor if the border gets busy."
+        },
+        {
+          "id": "tech:castles",
+          "note": "Free Eureka from a Tier 2 government; Medieval Walls in the border cities."
+        },
+        {
+          "id": "tech:metal-casting",
+          "note": "The Carolean; Eureka from two Crossbowmen, which the floor has by turn 120."
+        },
+        {
+          "id": "tech:banking",
+          "note": "Free Eureka from Guilds; Banks for the Economics Eureka later."
+        },
+        {
+          "id": "tech:printing",
+          "note": "Two Universities; the Science that keeps the clock, and the Forbidden City."
+        },
+        {
+          "id": "tech:astronomy",
+          "note": "A University beside a mountain, which the capital Campus has; the Colonialism Inspiration comes free from researching it."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:theology",
+          "note": "Unboosted and taken only for the path to Divine Right and Reformed Church; no religion is founded."
+        },
+        {
+          "id": "civic:feudalism",
+          "note": "Six Farms; Serfdom for the Builders that improve every tile for Appeal."
+        },
+        {
+          "id": "civic:civil-service",
+          "note": "A ten-Population city; Meritocracy is +1 Culture per district in every city."
+        },
+        {
+          "id": "civic:guilds",
+          "note": "Two Markets; the Banking Eureka comes free."
+        },
+        {
+          "id": "civic:medieval-faires",
+          "note": "Four Trade Routes running; Aesthetics doubles Theater Square adjacency."
+        },
+        {
+          "id": "civic:divine-right",
+          "note": "Monarchy for the Housing from Walls and the Castles Eureka; unboosted without Temples."
+        },
+        {
+          "id": "civic:exploration",
+          "note": "Merchant Republic if Gold is short; two Caravels only on a coastal map."
+        },
+        {
+          "id": "civic:humanism",
+          "note": "The activation civic: Art Museums, Frescoes and the Taj Mahal. Inspiration from a Great Artist, which Pingala's Grants on a Theater Square city brings around turn 125. Target turn 138 to 145."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Serfdom",
+          "slot": "economic",
+          "from": "civic:feudalism",
+          "why": "Builders with extra charges: Farms for the Inspiration, Mines for Apprenticeship, and Woods left standing for Appeal."
+        },
+        {
+          "card": "Meritocracy",
+          "slot": "economic",
+          "from": "civic:civil-service",
+          "why": "+1 Culture per specialty district in every city; twelve districts is twelve Culture."
+        },
+        {
+          "card": "Aesthetics",
+          "slot": "economic",
+          "from": "civic:medieval-faires",
+          "why": "Double Theater Square adjacency; every Theater Square sits beside a wonder or the Government Plaza for this card."
+        },
+        {
+          "card": "Monarchy",
+          "slot": "wildcard",
+          "from": "civic:divine-right",
+          "why": "The staging government: Housing from Walls, an extra military slot for the floor, and the Castles Eureka."
+        },
+        {
+          "card": "Literary Tradition",
+          "slot": "wildcard",
+          "from": "civic:drama-and-poetry",
+          "why": "Kept through the staging phase; Great Writers are the stockpile."
+        }
+      ],
+      "districts": [
+        {
+          "district": "theater-square",
+          "city": "cities three to six",
+          "note": "Beside a wonder or the Government Plaza for Aesthetics; Amphitheaters in every one by turn 125."
+        },
+        {
+          "district": "campus",
+          "city": "third and fourth cities",
+          "note": "Universities in four Campuses by turn 130 for Nobel Prize's Great Scientist points."
+        },
+        {
+          "district": "aqueduct",
+          "city": "capital",
+          "note": "Military Engineering Eureka and Housing for a four-district capital."
+        },
+        {
+          "district": "entertainment-complex",
+          "city": "capital",
+          "note": "Amenities for eight cities; the Arena is the Professional Sports count later."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Apadana",
+          "why": "Two Great Work of Art slots that theme themselves and two envoys for every wonder built in the capital afterward; the envoys are Favor and suzerainties.",
+          "skip_if": "The capital is not coastal or has no flat tile beside the Theater Square, or Political Philosophy lands after turn 100."
+        },
+        {
+          "name": "Kilwa Kisiwani",
+          "why": "+15% Culture and every other yield type for each city-state type you are suzerain of; Antananarivo and Bologna are two.",
+          "skip_if": "No coastal flat tile in a district city, or Machinery lands after turn 115."
+        },
+        {
+          "name": "Forbidden City",
+          "why": "An extra Wildcard slot for a plan that wants Literary Tradition, Frescoes and the government card at once.",
+          "skip_if": "A Culture rival has Printing before you, or the capital has no flat tile beside its City Center."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Connoisseur",
+          "city": "capital",
+          "why": "Third title: +1 Culture per Citizen in the capital, on top of Grants. He is the Culture clock."
+        },
+        {
+          "governor": "amani",
+          "promotion": "Prestige",
+          "city": "Antananarivo or Bologna",
+          "why": "Two extra envoys for the suzerainty that matters most; Prestige later holds Loyalty in the border cities."
+        },
+        {
+          "governor": "liang",
+          "promotion": "Zoning Commissioner",
+          "city": "the newest city",
+          "why": "Districts 20% faster in the city that is behind on its Theater Square."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "antananarivo",
+          "why": "Keep suzerainty; the Culture per Great Person compounds through the whole staging phase."
+        },
+        {
+          "slug": "bologna",
+          "why": "Keep suzerainty; the extra Great Person point per district is the stockpile."
+        },
+        {
+          "type": "Scientific",
+          "why": "Science in every University at six envoys; Humanism's date depends on Science as much as Culture."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-writer",
+          "why": "Every Medieval and Renaissance Great Writer: two works each into the Amphitheaters and the Bibliothèque. Buy one with Gold when Patronage allows."
+        },
+        {
+          "class": "great-artist",
+          "why": "The first Great Artist is the Humanism Inspiration and three works for the Apadana and Bibliothèque; Grants in the capital brings it around turn 125."
+        },
+        {
+          "class": "great-scientist",
+          "why": "Nobel Prize's Universities bring them fast; each is 50 Favor and Science toward Humanism's techs."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 115,
+          "test": "Four Theater Squares with Amphitheaters, two Universities, four Great Works held, Medieval Walls in the border cities, and Culture at 55 or more?",
+          "pass": "Queue Universities three and four and the last two Theater Squares; Caroleans at Metal Casting.",
+          "fail": "Fewer than four works means the Great Writer rate is too low: Grants on Pingala now if it is not, Literary Tradition slotted, and a Great Writer bought with Gold under Patronage the moment one is affordable."
+        },
+        {
+          "turn": 140,
+          "test": "Run the activation test: Humanism in or five turns out, eight Great Works held, six Amphitheaters and four Universities standing, the Bibliothèque within two works of full?",
+          "pass": "The kit is on. Enter the activation phase and place Art Museums in the four best Theater Squares the turn Humanism lands.",
+          "fail": "Fix the single missing item for up to ten turns. If two or more are missing at turn 150, the abort branch applies and the empire plays for Diplomatic Favor."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "stage-amphitheaters",
+          "turn": 100,
+          "text": "Amphitheaters finished in four Theater Squares; every Great Work of Writing so far placed in them, none sold."
+        },
+        {
+          "id": "stage-universities",
+          "turn": 110,
+          "text": "Two Universities built; Printing Eureka collected and Nobel Prize's Great Scientist points running."
+        },
+        {
+          "id": "stage-walls",
+          "turn": 118,
+          "text": "Medieval Walls finished in both border cities under Limes; Castles Eureka collected from Monarchy."
+        },
+        {
+          "id": "stage-caroleans",
+          "turn": 126,
+          "text": "Metal Casting in: four Caroleans built across the two border cities. Park them inside the Walls and never march them out of their own territory."
+        },
+        {
+          "id": "stage-great-artist",
+          "turn": 130,
+          "text": "First Great Artist recruited in the capital under Grants; Humanism Inspiration collected and its three works placed in the Apadana and the Bibliothèque."
+        },
+        {
+          "id": "stage-write-order",
+          "turn": 138,
+          "text": "Write the activation build order: Art Museums in the four best Theater Squares, Frescoes slotted, Archaeological Museums in the other two, the Hermitage in the capital. Nothing else is queued until it is done."
+        }
+      ]
+    },
+    {
+      "id": "activate",
+      "name": "Activation: the museums",
+      "turns": {
+        "from": 141,
+        "to": 190
+      },
+      "era": "industrial",
+      "objective": "Switch every Phase A habit off. Art Museums in four Theater Squares and Archaeological Museums in two, each filled to the last slot and themed the turn it fills; the Hermitage in the capital; Archaeologists out the turn Natural History lands; Open-Air Museums in every city at Conservation; Factories in four cities for Nobel Prize's Great Engineers; and the first Nobel competition won. Tourism climbs from 20 to 150 across this phase.",
+      "build_order": [
+        {
+          "item": "Art Museum",
+          "why": "Four of them: three Art slots each, auto-themed when full, +1 Great Artist point each, and the Opera and Ballet Inspiration from the first."
+        },
+        {
+          "item": "Archaeological Museum",
+          "why": "Two of them: three Artifact slots each, which an ordinary civilization almost never themes and Sweden always does. The Natural History Inspiration from the first."
+        },
+        {
+          "item": "Archaeologist",
+          "why": "One per Archaeological Museum; three Artifacts each from the antiquity sites and shipwrecks the whole map now shows."
+        },
+        {
+          "item": "Hermitage",
+          "why": "Capital: four Great Work of Art slots that theme themselves and +3 Great Artist points; the single biggest Tourism building this kit has."
+        },
+        {
+          "item": "Factory",
+          "why": "Four Industrial Zones with Factories: Nobel Prize's extra Great Engineer points, the Class Struggle Inspiration at three, and Production for the wonders."
+        },
+        {
+          "item": "Open-Air Museum",
+          "why": "One per city on its flattest unimproved tile the turn Conservation lands; Culture and Tourism per terrain type, which the settle phase counted."
+        },
+        {
+          "item": "Neighborhood",
+          "why": "One on a Breathtaking tile for the Conservation Inspiration; a second for Sanitation."
+        },
+        {
+          "item": "University",
+          "why": "Every remaining Campus; Great Scientists are Favor and the Science keeps the Culture techs coming."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:industrialization",
+          "note": "Factories for Nobel Prize's Great Engineer points; Eureka from two Workshops."
+        },
+        {
+          "id": "tech:scientific-theory",
+          "note": "Free Eureka from The Enlightenment; Research Grants."
+        },
+        {
+          "id": "tech:economics",
+          "note": "Two Banks; Stock Exchanges later and Gold for Patronage."
+        },
+        {
+          "id": "tech:sanitation",
+          "note": "Two Neighborhoods, one of which Conservation wants anyway."
+        },
+        {
+          "id": "tech:flight",
+          "note": "The Hermitage is an Industrial wonder; Flight gives Tourism from every wonder you own and the Eiffel Tower."
+        },
+        {
+          "id": "tech:combustion",
+          "note": "Free Eureka from the first Artifact extracted; on the path to Electricity."
+        },
+        {
+          "id": "tech:radio",
+          "note": "National Parks give the Eureka; Radio gives Tourism from the Parks and leads to Mass Media."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:the-enlightenment",
+          "note": "Three Great People earned long ago; Rationalism and the Scientific Theory Eureka."
+        },
+        {
+          "id": "civic:diplomatic-service",
+          "note": "Form an alliance; Cultural Alliances give Tourism, and Favor from alliances feeds the Diplomatic fallback."
+        },
+        {
+          "id": "civic:natural-history",
+          "note": "Archaeological Museums and the Hermitage; Inspiration from the first Archaeological Museum."
+        },
+        {
+          "id": "civic:opera-and-ballet",
+          "note": "Bolshoi Theatre, two more slots that theme themselves; Inspiration from the first Art Museum."
+        },
+        {
+          "id": "civic:civil-engineering",
+          "note": "Seven district types; Public Works for the Builders that improve Appeal."
+        },
+        {
+          "id": "civic:conservation",
+          "note": "Open-Air Museums, National Parks and Naturalists; Inspiration from a Neighborhood on a Breathtaking tile."
+        },
+        {
+          "id": "civic:urbanization",
+          "note": "A 15-Population city; the second Neighborhood for Sanitation."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Frescoes",
+          "slot": "wildcard",
+          "from": "civic:humanism",
+          "why": "+2 Great Artist points per turn; four Art Museums and the Hermitage are 15 slots to fill."
+        },
+        {
+          "card": "Aesthetics",
+          "slot": "economic",
+          "from": "civic:medieval-faires",
+          "why": "Kept; the Theater Squares with museums pay double adjacency."
+        },
+        {
+          "card": "Rationalism",
+          "slot": "economic",
+          "from": "civic:the-enlightenment",
+          "why": "Campus buildings doubled in the big Campus cities; Great Scientists are Favor."
+        },
+        {
+          "card": "Merchant Republic",
+          "slot": "wildcard",
+          "from": "civic:exploration",
+          "why": "The activation government: two Economic slots, Gold toward purchases, and Patronage for Great Writers and Artists."
+        },
+        {
+          "card": "Charismatic Leader",
+          "slot": "diplomatic",
+          "from": "civic:political-philosophy",
+          "why": "Faster envoys; suzerainties are Favor and Kilwa's percentage."
+        }
+      ],
+      "districts": [
+        {
+          "district": "theater-square",
+          "city": "cities seven and eight",
+          "note": "Eight Theater Squares by turn 180; every one gets a museum."
+        },
+        {
+          "district": "industrial-zone",
+          "city": "the four best Production cities",
+          "note": "Factories for Nobel Prize's Great Engineer points and the wonders."
+        },
+        {
+          "district": "neighborhood",
+          "city": "capital, on a Breathtaking tile",
+          "note": "The Conservation Inspiration; the Woods left standing since turn 50 are why the tile is Breathtaking."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Hermitage",
+          "why": "Four Great Work of Art slots that theme themselves and Great Artist points; the Tourism of two themed Art Museums in one building.",
+          "skip_if": "Natural History lands after turn 175 or a Culture rival has it placed; take the Bolshoi Theatre first instead."
+        },
+        {
+          "name": "Bolshoi Theatre",
+          "why": "Two slots that theme under Minerva of the North and two free civics; placed beside a Theater Square for Aesthetics.",
+          "skip_if": "Opera and Ballet arrives after turn 180, or the Hermitage is still under construction in the same city."
+        },
+        {
+          "name": "Taj Mahal",
+          "why": "An extra Era Score per Historic Moment, which keeps the Golden Ages that Exodus of the Evangelists does not need but Heartbeat of Steam does.",
+          "skip_if": "Humanism arrives after turn 150 or no river-adjacent flat tile is free in a district city."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Curator",
+          "city": "capital",
+          "why": "Fourth title: +100% Tourism from Great Works in the capital, which holds the Bibliothèque, the Hermitage and an Art Museum."
+        },
+        {
+          "governor": "reyna",
+          "promotion": "Forestry Management",
+          "city": "the National Park city",
+          "why": "Culture from unimproved Woods and Appeal; Harbormaster later if the city is coastal."
+        },
+        {
+          "governor": "amani",
+          "promotion": "Emissary",
+          "city": "a border city",
+          "why": "Loyalty in the border city while every Production is a museum; moved from the city-state once the suzerainty is safe."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "antananarivo",
+          "why": "Culture per Great Person; this phase recruits one every six turns."
+        },
+        {
+          "slug": "kumasi",
+          "why": "Culture from every Trade Route to a city-state and Gold; the Trade Routes to the audience also carry Tourism."
+        },
+        {
+          "type": "Cultural",
+          "why": "Culture in every Art and Archaeological Museum at six envoys."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-artist",
+          "why": "Every one: three works each into the Art Museums and the Hermitage; the plan buys them with Gold under Patronage when the points are short."
+        },
+        {
+          "class": "great-musician",
+          "why": "Industrial Great Musicians fill the Bibliothèque's Music slots and the Bolshoi; Broadway later."
+        },
+        {
+          "class": "great-engineer",
+          "why": "Nobel Prize's Factories bring them; each is 50 Favor and a charge toward the Hermitage or the Eiffel Tower."
+        },
+        {
+          "class": "great-merchant",
+          "why": "A Great Merchant's Gold buys a Great Artist under Patronage; the Mercantilism Inspiration is a side effect."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 160,
+          "test": "Four Art Museums placed with two full and themed, one Archaeological Museum with an Archaeologist out, the Hermitage under construction, and Tourism over 40?",
+          "pass": "Queue the Open-Air Museums for Conservation and the Factories; Natural History's Archaeologists go to the farthest sites first.",
+          "fail": "No themed museum by turn 160 means the works are spread, not concentrated: move every work into the two best Art Museums with the Great Works screen until each is full, and leave the others empty. A full museum beats two half-full ones twice over."
+        },
+        {
+          "turn": 190,
+          "test": "Six themed museums, the Hermitage built, Open-Air Museums in six cities, a Nobel competition entered, and Tourism over 150?",
+          "pass": "Enter the payoff phase; the Computers and Social Media clock starts.",
+          "fail": "Four themed museums and 100 Tourism at turn 190 is still a Culture game, 20 turns slower. Fewer than that means the dormant phase was too thin: the plan continues but the victory becomes Diplomatic, bought with the Favor the Great People banked."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "activate-art-museums",
+          "turn": 143,
+          "text": "Humanism in: Art Museums placed in the four best Theater Squares; Frescoes slotted; every held Great Work of Art moved into the first museum until it is full and themed."
+        },
+        {
+          "id": "activate-archaeologists",
+          "turn": 152,
+          "text": "Natural History in: Archaeological Museums in two Theater Squares, an Archaeologist from each the turn it finishes, sent to the farthest antiquity sites before rivals dig them."
+        },
+        {
+          "id": "activate-hermitage",
+          "turn": 158,
+          "text": "Hermitage started in the capital; every Great Engineer charge and Gold purchase goes toward it until it stands."
+        },
+        {
+          "id": "activate-factories",
+          "turn": 165,
+          "text": "Three Factories built; Class Struggle Inspiration collected and Nobel Prize's Great Engineer points running."
+        },
+        {
+          "id": "activate-open-air",
+          "turn": 178,
+          "text": "Conservation in: an Open-Air Museum placed in every city on its flattest unimproved tile this turn; a Naturalist bought with Faith for the first National Park."
+        },
+        {
+          "id": "activate-nobel",
+          "turn": 185,
+          "text": "Enter the first Nobel Prize competition the World Congress offers; the Favor and Culture it awards are the leader's own prize."
+        }
+      ]
+    },
+    {
+      "id": "payoff",
+      "name": "Payoff: the tour",
+      "turns": {
+        "from": 191,
+        "to": null
+      },
+      "era": "modern",
+      "objective": "Run hot. Broadcast Centers in every Theater Square, Broadway and the Sydney Opera House themed the turn they fill, two National Parks, Computers and Social Media for the Tourism multipliers, Rock Bands from Cold War onward at the two rivals with the most domestic Tourists, and Open Borders with everyone. There is no time for a second build-out; every city builds Culture buildings, Tourism projects or Rock Bands, and the Diplomatic Favor is spent on the World Congress only if the Culture race is lost.",
+      "build_order": [
+        {
+          "item": "Broadcast Center",
+          "why": "Every Theater Square: a Music slot, Culture, and the Satellites Eureka at two."
+        },
+        {
+          "item": "Broadway",
+          "why": "Three Great Work of Music slots that theme themselves; the Great Musicians the Bibliothèque started are placed here."
+        },
+        {
+          "item": "Rock Band",
+          "why": "Faith-bought from Cold War onward, Music Festival or Indie promotions, sent to the civilization with the most domestic Tourists."
+        },
+        {
+          "item": "Naturalist",
+          "why": "Faith-bought for the second National Park on four hexes of Breathtaking Woods and Tundra."
+        },
+        {
+          "item": "Research Lab",
+          "why": "Four of them; Science must reach Computers and Telecommunications before the Culture race closes."
+        },
+        {
+          "item": "Sydney Opera House",
+          "why": "Three Music slots that theme themselves and Culture on the coast; a Great Musician every ten turns fills it.",
+          "skip_if": ""
+        },
+        {
+          "item": "Stock Exchange",
+          "why": "Two for the Capitalism Inspiration; Gold buys the last Great Artists under Patronage."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:electricity",
+          "note": "Power for the Broadcast Centers; Eureka from two Privateers only on a coastal map."
+        },
+        {
+          "id": "tech:chemistry",
+          "note": "Research Labs; Eureka from alliance level 2 with the Cultural Alliance partner."
+        },
+        {
+          "id": "tech:computers",
+          "note": "+25% Tourism and Culture; Eureka from a Tier 3 government."
+        },
+        {
+          "id": "tech:satellites",
+          "note": "Two Broadcast Centers; reveals the map for the last Archaeologists."
+        },
+        {
+          "id": "tech:telecommunications",
+          "note": "Social Media's Inspiration and Online Communities; no Eureka, so it is researched flat or with a Great Scientist."
+        },
+        {
+          "id": "tech:plastics",
+          "note": "Seaside Resorts on coastal Breathtaking tiles; Eureka from an Oil Well."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:mass-media",
+          "note": "Free Inspiration from Radio; Broadcast Centers and Heritage Tourism's path."
+        },
+        {
+          "id": "civic:ideology",
+          "note": "Democracy for the Tourism and the Gold, or Communism if Production is the bottleneck."
+        },
+        {
+          "id": "civic:capitalism",
+          "note": "Two Stock Exchanges; Market Economy later."
+        },
+        {
+          "id": "civic:cultural-heritage",
+          "note": "Free Inspiration from a themed building, which this empire has had since turn 150; Heritage Tourism doubles Tourism from Great Works."
+        },
+        {
+          "id": "civic:cold-war",
+          "note": "Rock Bands; the Inspiration needs Nuclear Fission, which a Great Scientist may give."
+        },
+        {
+          "id": "civic:professional-sports",
+          "note": "Two Entertainment Complexes; Stadiums for Amenities and Tourism."
+        },
+        {
+          "id": "civic:social-media",
+          "note": "Online Communities for +50% Tourism to civilizations you have Trade Routes with; Inspiration from Telecommunications."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Heritage Tourism",
+          "slot": "economic",
+          "from": "civic:cultural-heritage",
+          "why": "+100% Tourism from Great Works; the themed museums already pay double and this doubles them again."
+        },
+        {
+          "card": "Online Communities",
+          "slot": "economic",
+          "from": "civic:social-media",
+          "why": "+50% Tourism toward civilizations you trade with; a Trade Route to every rival is kept running."
+        },
+        {
+          "card": "Satellite Broadcasts",
+          "slot": "economic",
+          "from": "civic:cultural-heritage",
+          "why": "+200% Tourism from Great Works of Music; Broadway, the Opera House and the Bibliothèque's Music slots."
+        },
+        {
+          "card": "Democracy",
+          "slot": "wildcard",
+          "from": "civic:ideology",
+          "why": "The payoff government: Gold toward purchases and Tourism from the Theater Squares' projects."
+        }
+      ],
+      "districts": [
+        {
+          "district": "theater-square",
+          "city": "any city without one",
+          "note": "A Broadcast Center in every city by turn 220."
+        },
+        {
+          "district": "entertainment-complex",
+          "city": "a second city",
+          "note": "Two for the Professional Sports Inspiration; Stadiums are Amenities for a 20-city tour."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Broadway",
+          "why": "Three Music slots that theme themselves and Culture; with Satellite Broadcasts the themed set is the biggest single Tourism source left.",
+          "skip_if": "Mass Media arrives after turn 230 or a Culture rival has it placed."
+        },
+        {
+          "name": "Eiffel Tower",
+          "why": "+2 Appeal on every tile in the empire: more Breathtaking tiles for National Parks and Seaside Resorts.",
+          "skip_if": "Steam Power is researched after turn 210 or the capital Industrial Zone is not free."
+        },
+        {
+          "name": "Sydney Opera House",
+          "why": "Three Music slots that theme themselves; on the coast of a Theater Square city.",
+          "skip_if": "No coastal city with a Theater Square, or Radio arrives after turn 240."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Curator",
+          "city": "capital",
+          "why": "Stays; every Great Work in the capital pays double Tourism."
+        },
+        {
+          "governor": "reyna",
+          "promotion": "Harbormaster",
+          "city": "the coastal Opera House city",
+          "why": "Gold and Culture from the coastal tiles; Seaside Resorts sit here."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "antananarivo",
+          "why": "Culture per Great Person to the last turn."
+        },
+        {
+          "slug": "nan-madol",
+          "why": "Culture from every coastal district; the Opera House city and the Harbors."
+        },
+        {
+          "type": "Trade",
+          "why": "Gold for Patronage and the Rock Bands when Faith runs short."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-musician",
+          "why": "Three works each into Broadway, the Opera House and the Bibliothèque's two Music slots; every Modern Great Musician is taken."
+        },
+        {
+          "class": "great-artist",
+          "why": "Any left fill the last Art Museum and the Bolshoi; bought with Gold under Patronage."
+        },
+        {
+          "class": "great-engineer",
+          "why": "Nobel Prize's Factories keep them coming; each is Favor and a charge toward Broadway."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 230,
+          "test": "Tourism over 300, Computers researched, two National Parks, Broadway built, and visiting Tourists ahead of the domestic Tourists of at least half the civilizations?",
+          "pass": "Rock Bands at the two rivals with the most domestic Tourists; the race is a matter of turns.",
+          "fail": "Behind at turn 230 means the audience is the problem, not the output: Open Borders with everyone, a Trade Route to every rival, Online Communities, and Rock Bands bought every ten turns. Spend Favor in the World Congress on Tourism resolutions."
+        },
+        {
+          "turn": 280,
+          "test": "Visiting Tourists ahead of every civilization's domestic Tourists, or within one Rock Band tour of it?",
+          "pass": "Continue to the end; no further decisions.",
+          "fail": "Convert to Diplomatic: the Favor from 30 Great People and the Nobel competitions buys Diplomatic Victory points in every World Congress session, and the Statue of Liberty if it is open."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "payoff-broadcast",
+          "turn": 200,
+          "text": "Broadcast Centers queued in every Theater Square; Satellites Eureka collected at two."
+        },
+        {
+          "id": "payoff-broadway",
+          "turn": 212,
+          "text": "Broadway started in the capital or the best Theater Square city; the Great Musicians held so far placed there the turn it finishes."
+        },
+        {
+          "id": "payoff-second-park",
+          "turn": 220,
+          "text": "Second National Park founded by a Faith-bought Naturalist; Radio Eureka long since collected from the first."
+        },
+        {
+          "id": "payoff-rock-bands",
+          "turn": 235,
+          "text": "Cold War in: a Rock Band bought with Faith every ten turns and sent to the civilization with the most domestic Tourists; Music Festival promotion first."
+        },
+        {
+          "id": "payoff-review",
+          "turn": 280,
+          "text": "Review the turn 280 checkpoint and either continue the tour or spend the Favor on Diplomatic Victory points."
+        }
+      ]
+    }
+  ],
+  "boosts": [
+    {
+      "id": "tech:archery",
+      "fit": "cheap",
+      "when": "settle",
+      "how": "The Slinger finishes a barbarian scout near the capital."
+    },
+    {
+      "id": "tech:writing",
+      "fit": "free",
+      "when": "settle",
+      "how": "The Scout meets the first civilization."
+    },
+    {
+      "id": "tech:bronze-working",
+      "fit": "cheap",
+      "when": "settle",
+      "how": "Three barbarian kills while clearing the nearest camp."
+    },
+    {
+      "id": "tech:masonry",
+      "fit": "cheap",
+      "when": "settle",
+      "how": "The first Builder quarries Stone."
+    },
+    {
+      "id": "tech:wheel",
+      "fit": "free",
+      "when": "settle",
+      "how": "The first Builder mines a resource hill."
+    },
+    {
+      "id": "tech:currency",
+      "fit": "free",
+      "when": "build",
+      "how": "The first Trader runs its route."
+    },
+    {
+      "id": "tech:astrology",
+      "fit": "costly",
+      "when": "settle",
+      "how": "Only if the Scout happens on a natural wonder; no Holy Sites are built."
+    },
+    {
+      "id": "tech:irrigation",
+      "fit": "cheap",
+      "when": "build",
+      "how": "Farm a Wheat or Rice beside the capital."
+    },
+    {
+      "id": "tech:horseback-riding",
+      "fit": "cheap",
+      "when": "build",
+      "how": "A Pasture on the Horses the capital has."
+    },
+    {
+      "id": "tech:iron-working",
+      "fit": "cheap",
+      "when": "build",
+      "how": "Mine the Iron the Scout found."
+    },
+    {
+      "id": "tech:construction",
+      "fit": "cheap",
+      "when": "build",
+      "how": "A Water Mill in a river city."
+    },
+    {
+      "id": "tech:engineering",
+      "fit": "free",
+      "when": "build",
+      "how": "Ancient Walls in the border cities are the defensive floor anyway."
+    },
+    {
+      "id": "tech:mathematics",
+      "fit": "free",
+      "when": "build",
+      "how": "Campus, Theater Square and Commercial Hub by turn 85."
+    },
+    {
+      "id": "tech:apprenticeship",
+      "fit": "cheap",
+      "when": "build",
+      "how": "Three Mines across six cities."
+    },
+    {
+      "id": "tech:machinery",
+      "fit": "free",
+      "when": "stage",
+      "how": "Three Archers from the defensive floor."
+    },
+    {
+      "id": "tech:education",
+      "fit": "free",
+      "when": "stage",
+      "how": "The Classical Great Scientist arrives early under Divine Spark and Grants."
+    },
+    {
+      "id": "tech:military-engineering",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "The capital Aqueduct."
+    },
+    {
+      "id": "tech:stirrups",
+      "fit": "free",
+      "when": "stage",
+      "how": "Feudalism is on the civic path."
+    },
+    {
+      "id": "tech:castles",
+      "fit": "free",
+      "when": "stage",
+      "how": "Monarchy is a Tier 2 government."
+    },
+    {
+      "id": "tech:metal-casting",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "Two Crossbowmen upgraded from the floor's Archers."
+    },
+    {
+      "id": "tech:banking",
+      "fit": "free",
+      "when": "stage",
+      "how": "Guilds is on the civic path."
+    },
+    {
+      "id": "tech:printing",
+      "fit": "free",
+      "when": "stage",
+      "how": "Two Universities are Nobel Prize's own stockpile step."
+    },
+    {
+      "id": "tech:astronomy",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "The capital University sits beside the mountain its Campus was placed for."
+    },
+    {
+      "id": "tech:industrialization",
+      "fit": "cheap",
+      "when": "activate",
+      "how": "Two Workshops in the Industrial Zones."
+    },
+    {
+      "id": "tech:scientific-theory",
+      "fit": "free",
+      "when": "activate",
+      "how": "The Enlightenment is on the civic path."
+    },
+    {
+      "id": "tech:economics",
+      "fit": "cheap",
+      "when": "activate",
+      "how": "Two Banks in the Commercial Hub cities."
+    },
+    {
+      "id": "tech:sanitation",
+      "fit": "cheap",
+      "when": "activate",
+      "how": "Two Neighborhoods, one of them the Breathtaking one Conservation wants."
+    },
+    {
+      "id": "tech:flight",
+      "fit": "free",
+      "when": "activate",
+      "how": "The Hermitage is an Industrial wonder."
+    },
+    {
+      "id": "tech:combustion",
+      "fit": "free",
+      "when": "activate",
+      "how": "The first Archaeologist extracts an Artifact."
+    },
+    {
+      "id": "tech:radio",
+      "fit": "free",
+      "when": "activate",
+      "how": "The first National Park from a Faith-bought Naturalist."
+    },
+    {
+      "id": "tech:electricity",
+      "fit": "costly",
+      "when": "payoff",
+      "how": "Two Privateers only on a coastal map; usually researched flat."
+    },
+    {
+      "id": "tech:chemistry",
+      "fit": "cheap",
+      "when": "payoff",
+      "how": "Alliance level 2 with the Cultural Alliance partner."
+    },
+    {
+      "id": "tech:computers",
+      "fit": "free",
+      "when": "payoff",
+      "how": "Democracy is a Tier 3 government."
+    },
+    {
+      "id": "tech:satellites",
+      "fit": "free",
+      "when": "payoff",
+      "how": "Two Broadcast Centers in the Theater Squares."
+    },
+    {
+      "id": "tech:plastics",
+      "fit": "cheap",
+      "when": "payoff",
+      "how": "An Oil Well on the first Oil tile in the borders."
+    },
+    {
+      "id": "civic:craftsmanship",
+      "fit": "free",
+      "when": "settle",
+      "how": "Three improvements from the first Builder."
+    },
+    {
+      "id": "civic:foreign-trade",
+      "fit": "costly",
+      "when": "settle",
+      "how": "Only if the Scout reaches a second continent."
+    },
+    {
+      "id": "civic:early-empire",
+      "fit": "free",
+      "when": "settle",
+      "how": "Six Population across the first two cities."
+    },
+    {
+      "id": "civic:mysticism",
+      "fit": "free",
+      "when": "settle",
+      "how": "Founding the pantheon."
+    },
+    {
+      "id": "civic:military-tradition",
+      "fit": "cheap",
+      "when": "settle",
+      "how": "The Warriors clear the nearest camp."
+    },
+    {
+      "id": "civic:state-workforce",
+      "fit": "free",
+      "when": "build",
+      "how": "The first Campus in the capital."
+    },
+    {
+      "id": "civic:political-philosophy",
+      "fit": "cheap",
+      "when": "build",
+      "how": "Three city-states met by the Scout."
+    },
+    {
+      "id": "civic:drama-and-poetry",
+      "fit": "costly",
+      "when": "build",
+      "how": "Only if the Pyramids or the Great Library finish before the civic; usually researched flat."
+    },
+    {
+      "id": "civic:games-and-recreation",
+      "fit": "free",
+      "when": "build",
+      "how": "Researching Construction."
+    },
+    {
+      "id": "civic:recorded-history",
+      "fit": "free",
+      "when": "build",
+      "how": "Two Campuses by turn 75."
+    },
+    {
+      "id": "civic:defensive-tactics",
+      "fit": "cheap",
+      "when": "build",
+      "how": "Any neighbour declaring on you; it happens to a walled builder more often than not."
+    },
+    {
+      "id": "civic:theology",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:feudalism",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "Six Farms across six cities."
+    },
+    {
+      "id": "civic:civil-service",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "The capital reaches ten Population behind the Aqueduct."
+    },
+    {
+      "id": "civic:guilds",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "Markets in the capital and the second city."
+    },
+    {
+      "id": "civic:medieval-faires",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "Four Trade Routes from two Commercial Hubs and a Harbor if coastal."
+    },
+    {
+      "id": "civic:divine-right",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:exploration",
+      "fit": "costly",
+      "when": "stage",
+      "how": "Two Caravels only on a coastal map."
+    },
+    {
+      "id": "civic:humanism",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "The first Great Artist, from Theater Square points under Grants in the capital."
+    },
+    {
+      "id": "civic:the-enlightenment",
+      "fit": "free",
+      "when": "activate",
+      "how": "Three Great People were recruited before turn 100."
+    },
+    {
+      "id": "civic:diplomatic-service",
+      "fit": "cheap",
+      "when": "activate",
+      "how": "An alliance with the friendliest Culture neighbour."
+    },
+    {
+      "id": "civic:natural-history",
+      "fit": "free",
+      "when": "activate",
+      "how": "The first Archaeological Museum is in the activation build order."
+    },
+    {
+      "id": "civic:opera-and-ballet",
+      "fit": "free",
+      "when": "activate",
+      "how": "The first Art Museum is in the activation build order."
+    },
+    {
+      "id": "civic:civil-engineering",
+      "fit": "free",
+      "when": "activate",
+      "how": "Campus, Theater Square, Commercial Hub, Government Plaza, Entertainment Complex, Aqueduct and Industrial Zone are seven."
+    },
+    {
+      "id": "civic:conservation",
+      "fit": "cheap",
+      "when": "activate",
+      "how": "A Neighborhood on the Breathtaking tile beside the capital's Woods."
+    },
+    {
+      "id": "civic:urbanization",
+      "fit": "cheap",
+      "when": "activate",
+      "how": "The capital reaches 15 Population with the Aqueduct and Neighborhood."
+    },
+    {
+      "id": "civic:class-struggle",
+      "fit": "cheap",
+      "when": "activate",
+      "how": "Three Factories for Nobel Prize's Great Engineer points."
+    },
+    {
+      "id": "civic:mass-media",
+      "fit": "free",
+      "when": "payoff",
+      "how": "Research Radio first; the Inspiration follows at no extra cost."
+    },
+    {
+      "id": "civic:capitalism",
+      "fit": "cheap",
+      "when": "payoff",
+      "how": "Two Stock Exchanges in the Bank cities."
+    },
+    {
+      "id": "civic:cultural-heritage",
+      "fit": "free",
+      "when": "payoff",
+      "how": "Every full museum has been themed since turn 150."
+    },
+    {
+      "id": "civic:cold-war",
+      "fit": "costly",
+      "when": "payoff",
+      "how": "Nuclear Fission only if a Great Scientist gives it; usually researched flat."
+    },
+    {
+      "id": "civic:professional-sports",
+      "fit": "cheap",
+      "when": "payoff",
+      "how": "A second Entertainment Complex."
+    },
+    {
+      "id": "civic:social-media",
+      "fit": "free",
+      "when": "payoff",
+      "how": "Researching Telecommunications, which Online Communities needs anyway."
+    },
+    {
+      "id": "civic:distributed-sovereignty",
+      "fit": "free",
+      "when": "payoff",
+      "how": "The first Rock Band bought at Cold War."
+    }
+  ],
+  "decision_triggers": [
+    {
+      "name": "Early neighbour war",
+      "if": "A neighbour declares on a walled border city before turn 130.",
+      "then": "Defend inside the Walls with Archers, Crossbowmen and then Caroleans, and take the Defensive Tactics Inspiration. Do not counter-invade; a war that costs a Settler costs a Theater Square, and nothing in this kit gets better at fighting."
+    },
+    {
+      "name": "Works spread thin",
+      "if": "At any point after Humanism two museums are half full and none is themed.",
+      "then": "Open the Great Works screen and move every work into one museum until it is full; Minerva of the North themes the full one on the spot. Leave the other empty until the next Great Person. A themed museum pays double; two half-full ones pay once."
+    },
+    {
+      "name": "Nobel competition offered",
+      "if": "The World Congress offers a Nobel Prize competition.",
+      "then": "Enter it every time; the Culture, Favor and Great Person points on offer favour the civilization with the most Great People, which is this one. Skip only the Peace Prize if you are not at the top of the Favor table."
+    },
+    {
+      "name": "Culture race lost",
+      "if": "At turn 230 a rival's domestic Tourists are more than double your visiting Tourists there and rising.",
+      "then": "Switch to Diplomatic: the Favor from thirty Great People buys Diplomatic Victory points in every Congress, the Statue of Liberty and Mahabodhi Temple if they are open, and the Nobel Peace Prize is entered for its Favor."
+    }
+  ],
+  "abort": {
+    "trigger": "Turn 150 with two or more of the activation items missing (no Humanism, fewer than four Great Works held, fewer than four Amphitheaters, no Bibliothèque), or a city lost during the dormant phase that was not retaken.",
+    "actions": [
+      "Stop placing Theater Squares in cities that cannot reach an Amphitheater in ten turns; the auto-theming needs museums, and a museum with nothing to put in it is an ordinary building.",
+      "The leader ability is now decorative. Say so and stop planning around it; Sweden is a wide builder with Universities and Factories that recruit Great People, and that is still a civilization.",
+      "Play the empire for Diplomatic Favor: Nobel Prize's 50 Favor per Great Person, suzerainties with Charismatic Leader and Amani, Diplomatic Quarter with a Consulate, and every Congress vote spent on Diplomatic Victory points."
+    ]
+  },
+  "fail_state": "Turn 150 with Humanism researched and nothing to display: two Amphitheaters holding three Great Works, no Bibliothèque because the Government Plaza went to a Warlord's Throne, Universities unbuilt, and six cities at seven Population whose Theater Squares were never placed. Or, more simply, a border city lost at turn 70 to a Classical rush the walls were never built against. Both are dormant-phase failures that only show at activation.",
+  "common_mistakes": [
+    "Judging the leader at turn 60. The curve is flat by design; switching to a different plan there throws away the Great Person engine that is half built.",
+    "Selling or trading Great Works for Gold in the dormant phase because they sit in Amphitheaters doing little. Every one is a museum slot filled at turn 145, and a full museum is a themed museum.",
+    "Spreading Great Works across every museum for the Culture of each slot. Minerva of the North pays only on full buildings; fill one, then the next.",
+    "Skipping Walls in the border cities because nothing has happened yet. A Dead-Phase leader with no walls is the most common elimination on the roster.",
+    "Taking the Carolean as an invitation to a Renaissance war. It is a floor unit; the Theater Squares are the point, and a war costs the Settlers and Builders that build them.",
+    "Building the Queen's Bibliothèque last because the Government Plaza's tier buildings look better. It is six slots that theme themselves and the only piece of the kit that exists before turn 130."
+  ],
+  "sources": [
+    "Civilization VI Civilopedia, Gathering Storm ruleset (Sweden, Kristina, Minerva of the North, Nobel Prize, Queen's Bibliothèque, Carolean, Open-Air Museum).",
+    "Boost objectives cross-checked against civilization6planner.com tech-tree and civics-tree pages, 2026-10-01.",
+    "Leadership Focus tags, caveats and Dead-Phase supplement for Kristina in this repository.",
+    "Where the civ-info text differs from the game, the game is followed: the Queen's Bibliothèque gives Great Work slots and Great Writer, Artist and Musician points; it does not itself grant a Governor Title or a policy slot, those come from the Government Plaza's ordinary tier buildings. The Open-Air Museum's Culture and Tourism are per distinct terrain type under Swedish cities, up to five. The civic that unlocks the Bibliothèque (Drama and Poetry here) and the Carolean's exact Combat Strength per unused Movement point should be confirmed in the Civilopedia; the plan's timing does not depend on either."
+  ]
+}

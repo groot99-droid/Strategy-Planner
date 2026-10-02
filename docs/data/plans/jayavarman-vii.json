@@ -1,0 +1,1823 @@
+{
+  "leader": "Jayavarman VII",
+  "civilization": "Khmer",
+  "generated": "2026-10-02",
+  "slug": "jayavarman-vii",
+  "shape": "Linear",
+  "secondary_shape": null,
+  "version": 1,
+  "updated": "2026-10-02",
+  "assumptions": {
+    "ruleset": "Gathering Storm with every expansion and the Leader Pass",
+    "speed": "Standard",
+    "difficulty": "Emperor",
+    "map": "Continents or Pangaea, standard size, 8 civilizations",
+    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. Jayavarman VII has one persona and that is the one planned here."
+  },
+  "verdict": {
+    "victory": "Religion",
+    "secondary": "Culture",
+    "confidence": "medium",
+    "one_line": "Put a Holy Site on the river in every city before anything else, because for Khmer it is Food, Housing, Faith and a free border all at once, then choose by turn 70 whether that Faith buys Apostles, Relic-filled Prasats and Theater Squares, or Campuses in cities that have grown past fifteen population.",
+    "why": "Monasteries of the King makes a Khmer Holy Site beside a river the best district in the game: a major adjacency from the river, Food equal to the whole adjacency bonus, Housing, and a Culture Bomb that claims the tiles around it for free. Grand Barays then make the Aqueduct a Faith and Amenity building that feeds the Farms beside it. That is a population engine, and population is an input, not a direction: a twelve-city empire of fifteen-population cities with Faith to spare wins nothing unless the Faith and the people are pointed at something. Religion is the default because the Faith is already there, the Prasat gives every fallen Missionary a Relic, and a religion founded by turn 80 with Feed the World or Work Ethic compounds the same engine. Culture is the second direction because Relics are Culture and Tourism and big cities fill Theater Squares; Science is third because the same cities take Campuses, but nothing in the kit makes Science cheaper."
+  },
+  "map_check": {
+    "must_have": [
+      "A river beside the capital site, or one within one Settler move, with a tile for the Holy Site that touches the river and at least one Mountain, Woods or Rainforest.",
+      "Rivers for at least five of the first six city sites; a Khmer Holy Site off the river is a plain Holy Site with no Housing and a quarter of the Food."
+    ],
+    "prefer": [
+      "Rainforest or Woods along the river for Sacred Path or extra Holy Site adjacency, and flat land beside the river for the Aqueduct's Farms.",
+      "Mount Everest, Pantanal or Ha Long Bay in reach; Faith, Food and Movement for Missionaries.",
+      "Two Religious city-states met before turn 60, Jerusalem or Yerevan above all.",
+      "A neighbour who founds a religion early and spreads it slowly; a convert target is better than an empty map for the Religion direction."
+    ],
+    "no_go": "A start with no river within two Settler moves and none visible from the capital's rings. Monasteries of the King gives nothing without a river, the Grand Barays Aqueduct needs fresh water, and Khmer is then a civilization with an elephant Trebuchet.",
+    "fallback": "Move the Settler up to two turns to the nearest river; a Khmer capital off the river loses more than two turns cost. If the whole region is dry, settle beside a lake or Mountain for the Aqueduct's Faith and Amenity, build a Holy Site anyway for the Culture Bomb, and send the second and third Settlers to whatever river the Scout finds, even eight tiles out."
+  },
+  "kit_levers": [
+    {
+      "source": "leader_ability",
+      "name": "Monasteries of the King",
+      "buys": "Holy Sites get a major adjacency bonus from rivers, give Housing when built on a river, produce Food equal to their total adjacency bonus, and claim the unowned tiles around them when completed.",
+      "exploit": "The Holy Site is the first district in every city and it goes on the river tile with the most adjacency, because every point of adjacency is also a point of Food. The Culture Bomb means a city can be settled four tiles from a neighbour and still own the land between; settle toward the contested tiles and let the Holy Site take them."
+    },
+    {
+      "source": "civ_ability",
+      "name": "Grand Barays",
+      "buys": "Aqueducts give Faith and an Amenity on top of their Housing, and Farms adjacent to an Aqueduct get extra Food.",
+      "exploit": "Every city plans its Aqueduct tile before its second district, with three or four flat tiles beside it kept for Farms. The Military Engineering Eureka comes from the first one, the Amenity carries cities past the size other empires stall at, and the Faith is paid without a Shrine."
+    },
+    {
+      "source": "unique_unit",
+      "name": "Domrey",
+      "buys": "A Trebuchet replacement that can move and fire in the same turn and exerts zone of control.",
+      "exploit": "Two of them trigger the Siege Tactics Eureka by existing and delete camps from range without being touched; on the Religion direction they are the army that keeps a Faith empire from being an easy war, and under a Great General they take a Walled city that is persecuting your Missionaries."
+    },
+    {
+      "source": "unique_infrastructure",
+      "name": "Prasat",
+      "buys": "A Temple replacement with a Relic slot, whose Missionaries receive the Martyr promotion so they leave a Relic when killed in theological combat.",
+      "exploit": "Build it in every Holy Site city and buy Missionaries from the Prasat cities only; a Missionary lost in combat is a Relic in the slot, which is Faith, Culture and Tourism. Reliquaries as the follower belief triples all of it, which is why the plan fights theological battles it would otherwise avoid."
+    },
+    {
+      "source": "agenda",
+      "name": "An End to Suffering",
+      "buys": "Jayavarman likes civilizations with Holy Sites and high average city population and dislikes those without.",
+      "exploit": "Only matters for an AI Jayavarman on the map: a Khmer empire of its own kind keeps him friendly, which spares the Religion direction a rival Faith on one border."
+    }
+  ],
+  "shape_block": {
+    "linear": {
+      "direction": {
+        "options": [
+          {
+            "victory": "Religion",
+            "when_it_fits": "A religion is founded by turn 80 with a worship building and a spread belief still available, two Religious city-states are met, and at least one neighbour has no religion of its own by turn 70. Khmer Faith from river Holy Sites and Aqueducts buys Apostles without a Shrine economy, the Prasat turns losses into Relics, and nothing in the kit expires on this path."
+          },
+          {
+            "victory": "Culture",
+            "when_it_fits": "Three or more Relics are held by turn 100 or Kandy is suzerained, and the river cities have Rainforest or Woods for Theater Square adjacency. Relics in Prasats and Mont St. Michel are Tourism from the Medieval era, fifteen-population cities fill Amphitheaters and Museums, and the Faith buys Rock Bands at the end; this is the direction to take when the religion race was lost to an earlier founder."
+          },
+          {
+            "victory": "Science",
+            "when_it_fits": "Only when no religion could be founded and no Relics are in hand at turn 100. The population engine fills a Campus in every city and the Aqueduct Amenities keep them growing, but nothing in the kit makes Science cheaper, so take this only when the Faith has nowhere else to go."
+          }
+        ],
+        "choose_by": 70,
+        "commit_test": "At turn 100 look at what the Faith bought since turn 70: Apostles and Prasats with Missionaries in the field for Religion, Theater Squares beside the Holy Sites and Relics in every Prasat slot for Culture, or Campuses with Libraries in every city for Science. If the Faith balance is above eight hundred and nothing was bought, the engine is running and the plan is not."
+      }
+    }
+  },
+  "phases": [
+    {
+      "id": "rivers",
+      "name": "Holy Sites on the river",
+      "turns": {
+        "from": 1,
+        "to": 45
+      },
+      "era": "ancient",
+      "objective": "Settle three cities on rivers, put a Holy Site on the river tile with the most adjacency in each as the first district, take the pantheon from the first Holy Site's Faith, and have the capital at six population before any other empire reaches four.",
+      "build_order": [
+        {
+          "item": "Scout",
+          "why": "Follows the river to find the Holy Site sites and a rival for Writing; the river map is the whole plan."
+        },
+        {
+          "item": "Warrior",
+          "why": "Second Warrior escorts the first Settler and holds the capital while the Slinger clears a camp."
+        },
+        {
+          "item": "Holy Site",
+          "why": "On the river tile with the most Mountain, Woods or Rainforest adjacency; Food, Housing, Faith and the Culture Bomb from one district, and the State Workforce Inspiration."
+        },
+        {
+          "item": "Settler",
+          "why": "Second river city four to six tiles out toward the contested land; its Holy Site will claim the tiles between."
+        },
+        {
+          "item": "Slinger",
+          "why": "Archery Eureka on a camp scout and a defender while the Warriors escort."
+        },
+        {
+          "item": "Builder",
+          "why": "Farms on the flat tiles the Aqueduct will touch, a Mine for The Wheel, a Quarry for Masonry."
+        },
+        {
+          "item": "Monument",
+          "why": "Culture to reach Early Empire and Mysticism on time; the Holy Site Food makes Early Empire arrive early."
+        },
+        {
+          "item": "Settler",
+          "why": "Third river city; Colonization is slotted by now and the capital has Housing to spare."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:astrology",
+          "note": "First; the Holy Site is the first district in every city. Eureka if the Scout finds a natural wonder."
+        },
+        {
+          "id": "tech:pottery",
+          "note": "Granary for Housing while the Holy Site builds; Irrigation and Writing are behind it."
+        },
+        {
+          "id": "tech:mining",
+          "note": "A Mine for The Wheel and Apprenticeship; Bronze Working next."
+        },
+        {
+          "id": "tech:irrigation",
+          "note": "A Farm on a resource gives the Eureka; the Farms beside the Aqueduct are the Food engine's second half."
+        },
+        {
+          "id": "tech:writing",
+          "note": "The Scout meets a rival; a Campus later on the Science direction."
+        },
+        {
+          "id": "tech:bronze-working",
+          "note": "Three camp kills from the Warriors and Slinger; Iron reveal and an Encampment only if forced."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:code-of-laws",
+          "note": "God King for the pantheon and Discipline for the escorts."
+        },
+        {
+          "id": "civic:craftsmanship",
+          "note": "Three improvements from the first Builder; Ilkum for the Builders the Farms need."
+        },
+        {
+          "id": "civic:foreign-trade",
+          "note": "The first Trade Route; Inspiration only if the Scout crosses to a second continent."
+        },
+        {
+          "id": "civic:state-workforce",
+          "note": "The first Holy Site gives the Inspiration early; Corvee only if a wonder is wanted."
+        },
+        {
+          "id": "civic:early-empire",
+          "note": "Six population across two cities arrives early on Holy Site Food; Colonization for the third and fourth Settler."
+        },
+        {
+          "id": "civic:mysticism",
+          "note": "The pantheon gives the Inspiration; the Holy Site adjacency civic and the Oracle."
+        }
+      ],
+      "policies": [
+        {
+          "card": "God King",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "The pantheon by turn 18 with the Holy Site's Faith; swap it out the turn after."
+        },
+        {
+          "card": "Discipline",
+          "slot": "military",
+          "from": "civic:code-of-laws",
+          "why": "Warriors beat camp units while escorting Settlers."
+        },
+        {
+          "card": "Ilkum",
+          "slot": "economic",
+          "from": "civic:craftsmanship",
+          "why": "Builders faster; the Aqueduct Farms are all Builder charges."
+        },
+        {
+          "card": "Colonization",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "Settlers at half cost for cities three through six."
+        }
+      ],
+      "districts": [
+        {
+          "district": "holy-site",
+          "city": "every city, first",
+          "note": "On the river tile with the most Mountain, Woods or Rainforest adjacency; every adjacency point is Faith and Food, and the Culture Bomb claims the ring."
+        }
+      ],
+      "pantheon": {
+        "slug": "river-goddess",
+        "why": "Two Amenities and two Housing in every city whose Holy Site touches a river, which for Khmer is every city; the population engine's ceiling is lifted before it is reached.",
+        "alternative": "sacred-path"
+      },
+      "wonders": [],
+      "governors": [],
+      "city_states": [
+        {
+          "type": "Religious",
+          "why": "The first envoy is Faith in the capital, and the type bonus at three envoys is Faith in every Shrine and Temple; the Prasat counts."
+        },
+        {
+          "slug": "jerusalem",
+          "why": "Every Holy Site city exerts pressure as a Holy City; on the Religion direction it is the spread engine, and the Culture Bomb puts Holy Sites on every border."
+        }
+      ],
+      "great_people": [],
+      "checkpoints": [
+        {
+          "turn": 25,
+          "test": "Capital Holy Site finished on the river with three or more adjacency, the pantheon taken, the second city founded on a river, and the capital at five population?",
+          "pass": "Keep the river chain going; the third Settler is in the queue.",
+          "fail": "A Holy Site after turn 25 means something was built before it; nothing is. A Holy Site with adjacency below three means the tile was chosen for the Farms rather than the Mountains and Woods; the next city's goes on adjacency first. A second city off the river is a plain city; settle the third on one."
+        },
+        {
+          "turn": 45,
+          "test": "Three river cities each with a Holy Site built or building, the capital at seven population, and every river site for cities four to six marked on the map?",
+          "pass": "Enter the Faith phase; the direction decision is twenty-five turns away.",
+          "fail": "Two cities is acceptable with the third Settler walking. A city whose Holy Site is not its first district has lost its Culture Bomb to a neighbour's border; queue it now before anything else. No sites marked means the Scout stopped early; send a Warrior along the river."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "rivers-settle-river",
+          "turn": 1,
+          "text": "Settle beside a river with a Holy Site tile that touches the river and at least one Mountain, Woods or Rainforest; move up to two turns to get one."
+        },
+        {
+          "id": "rivers-scout-river",
+          "turn": 6,
+          "text": "Send the Scout along the river both ways and mark every site where a Holy Site tile touches the river and two or more Mountains, Woods or Rainforest."
+        },
+        {
+          "id": "rivers-holy-site",
+          "turn": 20,
+          "text": "Capital Holy Site finished on the river; note the Food it gives and the tiles the Culture Bomb claimed."
+        },
+        {
+          "id": "rivers-pantheon",
+          "turn": 18,
+          "text": "Found River Goddess, or Sacred Path if the river runs through Rainforest and Amenities look easy."
+        },
+        {
+          "id": "rivers-second-city",
+          "turn": 24,
+          "text": "Second city founded on the river toward the contested land; its Holy Site is the first item in its queue."
+        },
+        {
+          "id": "rivers-aqueduct-plan",
+          "turn": 40,
+          "text": "In each city, pick the Aqueduct tile beside the City Center and the river and keep three flat tiles beside it unimproved for the Farms it will feed."
+        }
+      ]
+    },
+    {
+      "id": "faith",
+      "name": "Faith and the decision",
+      "turns": {
+        "from": 46,
+        "to": 100
+      },
+      "era": "classical",
+      "objective": "Grow to six river cities with Holy Sites, build the first Aqueducts for Faith, Amenities and Farms, earn the Great Prophet from two Shrines and found the religion with Feed the World or Work Ethic, take a government, and decide by turn 70 whether the Faith buys Apostles, Relics and Theater Squares, or Campuses; by turn 100 the queues show which.",
+      "build_order": [
+        {
+          "item": "Shrine",
+          "why": "In the capital and the second city; Great Prophet points for the religion before turn 80."
+        },
+        {
+          "item": "Settler",
+          "why": "Cities four through six on the river; the Holy Site Food means a city is at four population by the time its Settler leaves."
+        },
+        {
+          "item": "Aqueduct",
+          "why": "Capital first, beside the City Center and the river; Faith, an Amenity, Housing, the Military Engineering Eureka, and extra Food on the Farms beside it."
+        },
+        {
+          "item": "Builder",
+          "why": "Three Farms beside each Aqueduct, which is also six Farms for Feudalism; a Pasture for Horseback Riding."
+        },
+        {
+          "item": "Trader",
+          "why": "The Currency Eureka; a domestic route to the newest city for its Food and Production."
+        },
+        {
+          "item": "Water Mill",
+          "why": "Every city is on a river; the Construction Eureka and Production in the capital."
+        },
+        {
+          "item": "Archer",
+          "why": "Three Archers hold six cities against a camp or a jealous neighbour; the Machinery Eureka later."
+        },
+        {
+          "item": "Theater Square",
+          "why": "Culture direction: beside the Holy Site in the capital for adjacency; Amphitheater for the Great Writer slots."
+        },
+        {
+          "item": "Campus",
+          "why": "Science direction: in every city; Culture or Religion direction: the capital only, for Recorded History and a Great Scientist."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:currency",
+          "note": "The first Trade Route gives the Eureka; a Commercial Hub for Gold a Faith empire runs short of."
+        },
+        {
+          "id": "tech:horseback-riding",
+          "note": "A Pasture gives the Eureka; on the way to Stirrups."
+        },
+        {
+          "id": "tech:construction",
+          "note": "The Water Mill gives the Eureka; Ancient Walls and the Colosseum are behind it."
+        },
+        {
+          "id": "tech:mathematics",
+          "note": "Holy Site, Aqueduct does not count, so Theater Square or Campus and Commercial Hub make three specialty districts by turn 85."
+        },
+        {
+          "id": "tech:engineering",
+          "note": "The Aqueduct unlocks here; Ancient Walls in the border city give the Eureka."
+        },
+        {
+          "id": "tech:masonry",
+          "note": "A Quarry gives the Eureka; Walls and the Pyramids line."
+        },
+        {
+          "id": "tech:apprenticeship",
+          "note": "Three Mines across six cities; Industrial Zones later."
+        },
+        {
+          "id": "tech:archery",
+          "note": "The Slinger kill gave the Eureka; three Archers for the Machinery Eureka."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:military-tradition",
+          "note": "The first camp cleared gives the Inspiration; on the path to Political Philosophy."
+        },
+        {
+          "id": "civic:political-philosophy",
+          "note": "Three city-states met; Classical Republic for the Great Prophet points or Autocracy if a wonder matters."
+        },
+        {
+          "id": "civic:theology",
+          "note": "Founding the religion gives the Inspiration; Scripture and the Temple line, which for Khmer is the Prasat."
+        },
+        {
+          "id": "civic:games-and-recreation",
+          "note": "Construction gives the Inspiration; Entertainment Complexes for cities growing past ten."
+        },
+        {
+          "id": "civic:drama-and-poetry",
+          "note": "A wonder gives the Inspiration; Theater Squares on the Culture direction."
+        },
+        {
+          "id": "civic:recorded-history",
+          "note": "Two Campuses give the Inspiration on the Science direction; unboosted otherwise."
+        },
+        {
+          "id": "civic:defensive-tactics",
+          "note": "Being declared on gives the Inspiration; a Faith empire usually is."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Classical Republic",
+          "slot": "wildcard",
+          "from": "civic:political-philosophy",
+          "why": "Great Person points toward the Great Prophet and Amenities for six growing cities."
+        },
+        {
+          "card": "Scripture",
+          "slot": "economic",
+          "from": "civic:theology",
+          "why": "Holy Site adjacency doubled, which for Khmer is also the Food doubled; slotted from Theology to the end of the game."
+        },
+        {
+          "card": "Revelation",
+          "slot": "wildcard",
+          "from": "civic:mysticism",
+          "why": "Great Prophet points doubled until the religion is founded; swapped out the turn after."
+        },
+        {
+          "card": "Urban Planning",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "Production in every city while the Aqueducts and Holy Sites build."
+        }
+      ],
+      "districts": [
+        {
+          "district": "holy-site",
+          "city": "cities four through six, first",
+          "note": "On the river with the most adjacency; the Culture Bomb claims the border tiles."
+        },
+        {
+          "district": "aqueduct",
+          "city": "capital, then every city",
+          "note": "Beside the City Center and the river; Faith, Amenity, Housing and the Farms beside it."
+        },
+        {
+          "district": "commercial-hub",
+          "city": "capital",
+          "note": "On the river for adjacency; Markets for Guilds and the Gold that upgrades Archers."
+        },
+        {
+          "district": "theater-square",
+          "city": "capital on the Culture direction",
+          "note": "Beside the Holy Site and a wonder for adjacency; Amphitheater at Drama and Poetry."
+        },
+        {
+          "district": "campus",
+          "city": "every city on the Science direction",
+          "note": "Beside a Mountain where the Holy Site left one; the capital only on the other directions."
+        }
+      ],
+      "pantheon": {
+        "slug": "river-goddess",
+        "why": "Already founded; this phase grows the cities it lifted."
+      },
+      "wonders": [
+        {
+          "name": "Temple of Artemis",
+          "why": "Housing and Amenities from every Camp and Pasture within four tiles across a dense river empire; the Drama and Poetry Inspiration.",
+          "skip_if": "No Camp resource within four tiles of a river city, or Astrology was researched after turn 20 and a rival has it queued."
+        },
+        {
+          "name": "Mahabodhi Temple",
+          "why": "Two free Apostles the turn it finishes and Diplomatic Favor; on the Religion direction it is two Apostles a turn after the religion.",
+          "skip_if": "No Woods tile adjacent to a Holy Site, or Theology lands after turn 95."
+        },
+        {
+          "name": "Hanging Gardens",
+          "why": "Growth in every city on top of Holy Site Food; the Science direction wants fifteen-population cities.",
+          "skip_if": "Irrigation lands after turn 45 or Religion is the direction; the Production goes to Shrines."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "magnus",
+          "promotion": "Provision",
+          "city": "capital",
+          "why": "Settlers four through six without losing population while the capital also builds the Aqueduct."
+        },
+        {
+          "governor": "moksha",
+          "promotion": "Bishop",
+          "city": "the second Holy Site city",
+          "why": "Religion direction: religious units bought here spread farther and the Holy Site buildings pay more Faith."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "yerevan",
+          "why": "Apostles choose their promotion; Proselytizer and Debater on demand is the Religion direction's edge in theological combat."
+        },
+        {
+          "slug": "kandy",
+          "why": "A Relic every time a natural wonder is found and half again as much Faith from Relics; the Prasat slots fill from here on the Culture direction."
+        },
+        {
+          "type": "Religious",
+          "why": "Faith in every Shrine and Prasat at three envoys."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-prophet",
+          "why": "The religion must be founded before the Classical era ends; two Shrines with Revelation slotted get there by turn 80."
+        },
+        {
+          "class": "great-engineer",
+          "why": "A Classical Great Engineer finishes Mahabodhi Temple or the Temple of Artemis a dozen turns early."
+        },
+        {
+          "class": "great-writer",
+          "why": "Culture direction: the Amphitheater fills from turn 90."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 70,
+          "test": "Direction written down: Religion with a Great Prophet due within ten turns and a neighbour without a religion, Culture with Relics or Kandy in hand, or Science with a Campus site in every city? And are the next three civics on that direction's path?",
+          "pass": "Queues switch to the direction's list; Shrines, Theater Squares or Campuses accordingly.",
+          "fail": "No direction at turn 70 is the shape's failure. Decide by the Great Prophet counter: within ten turns of a Prophet is Religion, a Prophet already lost to the last rival founder is Culture if any Relic is held and Science if none. If the civics chosen since turn 45 serve neither, the Faith is being banked; put the next civic on the direction's path today."
+        },
+        {
+          "turn": 100,
+          "test": "Six river cities each with a Holy Site, Aqueducts in three, a religion founded with Scripture slotted, the capital at twelve population, and the queues showing the direction: Prasats and Missionaries, Theater Squares and Relics, or Campuses with Libraries?",
+          "pass": "Enter the compounding phase.",
+          "fail": "Five cities and a religion is acceptable; no religion at turn 100 means the Religion direction has closed, and the plan switches to Culture or Science today rather than waiting for a Prophet that will not come. Queues showing a bit of each is drift; cut the half that is not the direction."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "faith-shrines",
+          "turn": 55,
+          "text": "Shrines in the capital and the second city with Revelation slotted; the Great Prophet is due by turn 80."
+        },
+        {
+          "id": "faith-first-aqueduct",
+          "turn": 65,
+          "text": "Capital Aqueduct finished beside the river; Military Engineering Eureka collected and three Farms placed beside it."
+        },
+        {
+          "id": "faith-decide",
+          "turn": 70,
+          "text": "Write the direction down: Religion, Culture or Science. Everything after this turn is built toward it."
+        },
+        {
+          "id": "faith-government",
+          "turn": 72,
+          "text": "Adopt Classical Republic the turn Political Philosophy lands; Autocracy only if Mahabodhi Temple is the race."
+        },
+        {
+          "id": "faith-found-religion",
+          "turn": 80,
+          "text": "Found the religion: Feed the World or Work Ethic as follower, a founder belief that pays per follower city, and a worship building; Reliquaries if the Culture direction was chosen."
+        },
+        {
+          "id": "faith-sixth-city",
+          "turn": 95,
+          "text": "Sixth river city founded; after this, settle only sites where the Holy Site touches the river."
+        }
+      ]
+    },
+    {
+      "id": "grow",
+      "name": "The population engine",
+      "turns": {
+        "from": 101,
+        "to": 170
+      },
+      "era": "medieval",
+      "objective": "Put a Prasat in every Holy Site city, an Aqueduct with its Farms in every city, and Markets, Universities and an Entertainment Complex where the cities pass ten population; spend the Faith on the direction every turn it exceeds the cost of an Apostle, and pass the era checkpoint that asks whether the bonus is being spent or banked.",
+      "build_order": [
+        {
+          "item": "Prasat",
+          "why": "In every Holy Site city; the Relic slot and the Martyr Missionaries, and two of them give the Divine Right Inspiration."
+        },
+        {
+          "item": "Aqueduct",
+          "why": "Every remaining city; Faith, an Amenity and the Farms beside it."
+        },
+        {
+          "item": "Missionary",
+          "why": "Religion direction: bought with Faith from a Prasat city, so a loss is a Relic; sent in pairs with an Apostle."
+        },
+        {
+          "item": "Apostle",
+          "why": "Religion direction: Debater promotion from Yerevan; two Apostles and a Missionary convert a civilization's core in ten turns."
+        },
+        {
+          "item": "Market",
+          "why": "Two for Guilds; Commercial Hubs on the river feed the Trade Routes a wide empire runs."
+        },
+        {
+          "item": "University",
+          "why": "Two for Printing on any direction; one in every Campus on Science."
+        },
+        {
+          "item": "Domrey",
+          "why": "Two of them give the Siege Tactics Eureka and are the army; they delete the last camps from range."
+        },
+        {
+          "item": "Entertainment Complex",
+          "why": "Arenas for Amenities in six cities growing past twelve population; Grand Barays and River Goddess cover the rest."
+        },
+        {
+          "item": "Amphitheater",
+          "why": "Culture direction: Great Writer slots in three Theater Squares; Humanism's Great Artist comes from them."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:military-engineering",
+          "note": "The Aqueduct gave the Eureka; the Domrey unlocks here."
+        },
+        {
+          "id": "tech:education",
+          "note": "A Great Scientist from the capital Campus gives the Eureka; Universities."
+        },
+        {
+          "id": "tech:machinery",
+          "note": "Three Archers give the Eureka; Crossbowmen behind the Domreys."
+        },
+        {
+          "id": "tech:castles",
+          "note": "A Tier 2 government gives the Eureka; Medieval Walls for a Faith empire's border city."
+        },
+        {
+          "id": "tech:banking",
+          "note": "Guilds gives the Eureka; Banks."
+        },
+        {
+          "id": "tech:printing",
+          "note": "Two Universities give the Eureka; Science on any direction."
+        },
+        {
+          "id": "tech:siege-tactics",
+          "note": "Two Domreys give the Eureka by existing; nothing else on this line is needed."
+        },
+        {
+          "id": "tech:astronomy",
+          "note": "A University beside a Mountain where the Holy Site left one; the Colonialism Inspiration."
+        },
+        {
+          "id": "tech:stirrups",
+          "note": "Feudalism gives the Eureka; on the way to Printing."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:feudalism",
+          "note": "Six Farms beside the Aqueducts; Serfdom for the Builders."
+        },
+        {
+          "id": "civic:civil-service",
+          "note": "The capital passes ten population on Holy Site Food; Meritocracy for Culture per district."
+        },
+        {
+          "id": "civic:guilds",
+          "note": "Two Markets; the Banking Eureka."
+        },
+        {
+          "id": "civic:divine-right",
+          "note": "Two Prasats give the Inspiration; Monarchy for a wide Faith empire with Walls."
+        },
+        {
+          "id": "civic:medieval-faires",
+          "note": "Four Trade Routes across six cities; Triangular Trade later."
+        },
+        {
+          "id": "civic:reformed-church",
+          "note": "Six cities following the religion, which the Religion direction has by turn 130; Simultaneum and Religious Orders."
+        },
+        {
+          "id": "civic:humanism",
+          "note": "A Great Artist from the Amphitheaters on the Culture direction; Art Museums."
+        },
+        {
+          "id": "civic:the-enlightenment",
+          "note": "Three Great People, which the Prophet, an Engineer and a Writer make early; Rationalism and the Scientific Theory Eureka."
+        },
+        {
+          "id": "civic:diplomatic-service",
+          "note": "An alliance gives the Inspiration and the Chemistry Eureka later; a Religious alliance spreads the faith."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Monarchy",
+          "slot": "wildcard",
+          "from": "civic:divine-right",
+          "why": "Housing from Walls, an extra Military slot for the Domreys, and the Culture to reach Reformed Church."
+        },
+        {
+          "card": "Serfdom",
+          "slot": "economic",
+          "from": "civic:feudalism",
+          "why": "Builders with extra charges for the Farms beside every Aqueduct."
+        },
+        {
+          "card": "Religious Orders",
+          "slot": "military",
+          "from": "civic:reformed-church",
+          "why": "Religion direction: Missionaries and Apostles with an extra spread charge; each Martyr Missionary spreads more before it falls."
+        },
+        {
+          "card": "Simultaneum",
+          "slot": "economic",
+          "from": "civic:reformed-church",
+          "why": "Faith from Holy Site buildings doubled in cities with high adjacency, which for Khmer is all of them."
+        },
+        {
+          "card": "Meritocracy",
+          "slot": "economic",
+          "from": "civic:civil-service",
+          "why": "Culture per district in an empire with four districts in every river city."
+        },
+        {
+          "card": "Rationalism",
+          "slot": "economic",
+          "from": "civic:the-enlightenment",
+          "why": "Science direction: Campus buildings doubled in cities the Holy Sites have grown past the population bar."
+        }
+      ],
+      "districts": [
+        {
+          "district": "aqueduct",
+          "city": "every remaining city",
+          "note": "Faith, Amenity, Housing and the Farms; the engine is incomplete without one."
+        },
+        {
+          "district": "commercial-hub",
+          "city": "two river cities",
+          "note": "Markets for Guilds and the Trade Route count for Medieval Faires."
+        },
+        {
+          "district": "entertainment-complex",
+          "city": "the city central to the river chain",
+          "note": "Arena Amenities reach six tiles; the Aqueducts carry the rest."
+        },
+        {
+          "district": "theater-square",
+          "city": "every city on the Culture direction",
+          "note": "Beside the Holy Site; Amphitheaters now, Art Museums at Humanism."
+        },
+        {
+          "district": "campus",
+          "city": "every city on the Science direction",
+          "note": "Universities for Printing and Astronomy."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Angkor Wat",
+          "why": "A population and Housing in every city; the one wonder written for this engine, and it must sit beside an Aqueduct, which every Khmer city has.",
+          "skip_if": "Medieval Faires lands after turn 160 or a rival is already building it with Brussels."
+        },
+        {
+          "name": "Mont St. Michel",
+          "why": "Two Relic slots and every Apostle gets Martyr; on the Religion direction a lost Apostle is a Relic, on Culture the slots are Tourism.",
+          "skip_if": "No Floodplains or Marsh tile in a river city, or Divine Right lands after turn 150."
+        },
+        {
+          "name": "Hagia Sophia",
+          "why": "Religion direction: an extra spread charge on every Missionary and Apostle.",
+          "skip_if": "Religion is not the direction, or Buttress lands after turn 165 and a Religious rival has it queued."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "moksha",
+          "promotion": "Divine Architect",
+          "city": "the Prasat city nearest the convert target",
+          "why": "Religion direction: districts bought with Faith where Missionaries are already bought, and Grand Inquisitor to defend the core."
+        },
+        {
+          "governor": "liang",
+          "promotion": "Water Works",
+          "city": "the largest river city",
+          "why": "Extra Housing and an Amenity from the Aqueduct in the city that will pass fifteen population first."
+        },
+        {
+          "governor": "pingala",
+          "promotion": "Researcher",
+          "city": "the best Campus city",
+          "why": "Science direction: Science per population in a fifteen-population city."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "yerevan",
+          "why": "Six envoys here: chosen Apostle promotions are the theological war won."
+        },
+        {
+          "slug": "mohenjo-daro",
+          "why": "Full Housing from water in every city as if next to a river, for the two cities the river did not reach."
+        },
+        {
+          "type": "Cultural",
+          "why": "Culture direction: Culture in every Amphitheater at three envoys."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-prophet",
+          "why": "Only if the religion is not yet founded at turn 101; otherwise the points go to nothing and Revelation comes out."
+        },
+        {
+          "class": "great-engineer",
+          "why": "Angkor Wat finished early is a population in every city a dozen turns sooner."
+        },
+        {
+          "class": "great-artist",
+          "why": "Culture direction: the Humanism Inspiration and the first Art Museum's works."
+        },
+        {
+          "class": "great-scientist",
+          "why": "The Education Eureka and University boosts on any direction."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 135,
+          "test": "Era checkpoint. Is the Faith being spent? The balance should be below three hundred, the last four civics should be on the direction's path, and the Wildcard slot should hold the direction's government. Religion: the religion in six cities and an Apostle in the field. Culture: three Relics in Prasat slots and Amphitheaters in three cities. Science: Universities in four cities.",
+          "pass": "Continue; queue Angkor Wat and the next Prasats.",
+          "fail": "A Faith balance above eight hundred is the banked-bonus failure in its plainest form; buy Apostles, Great People or Theater Square buildings with Moksha this turn. Civics taken because they were next are the same failure; reroute the tree today."
+        },
+        {
+          "turn": 170,
+          "test": "Six cities past twelve population, an Aqueduct and a Prasat in each, two Universities, two Markets, Angkor Wat built or lost, and the direction still reachable: the religion in two civilizations' cities, or five Relics, or Universities everywhere?",
+          "pass": "Enter the spread phase.",
+          "fail": "If Amenities are negative in two cities, stop everything else for Arenas and luxuries; a Khmer city of fifteen with no Arena riots. If the religion has not left the empire by turn 170, the Religion direction is pivoted to Culture on the Relics already in hand; the flat curve makes the pivot affordable."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "grow-civic-audit",
+          "turn": 105,
+          "text": "Audit the civic tree: the next four civics are the direction's; Divine Right is on the list either way for Monarchy."
+        },
+        {
+          "id": "grow-prasats",
+          "turn": 120,
+          "text": "Prasats in the capital and the second city; Divine Right Inspiration collected and the first Missionaries bought from them."
+        },
+        {
+          "id": "grow-domreys",
+          "turn": 130,
+          "text": "Two Domreys built; Siege Tactics Eureka collected and the last camps within eight tiles deleted from range."
+        },
+        {
+          "id": "grow-faith-spend",
+          "turn": 135,
+          "text": "Faith balance below three hundred at the era checkpoint; whatever is above it buys the direction's unit or building today."
+        },
+        {
+          "id": "grow-angkor-wat",
+          "turn": 150,
+          "text": "Angkor Wat started beside the capital Aqueduct; a Great Engineer on it if one is held."
+        },
+        {
+          "id": "grow-aqueducts-all",
+          "turn": 165,
+          "text": "An Aqueduct with three Farms beside it in every city; Feudalism Inspiration collected long ago and the Food engine complete."
+        }
+      ]
+    },
+    {
+      "id": "spread",
+      "name": "Spread and convert",
+      "turns": {
+        "from": 171,
+        "to": 240
+      },
+      "era": "industrial",
+      "objective": "Convert the population engine into the direction's close: Apostles under Religious Orders and Theocracy converting one civilization at a time with Debaters in front and Martyrs behind, or Museums and Archaeologists with Relic Tourism, or Research Labs and a Spaceport site; and pass the era checkpoint asking whether the direction is still reachable.",
+      "build_order": [
+        {
+          "item": "Apostle",
+          "why": "Religion direction: four at a time, Debater and Proselytizer, bought with Faith under Theocracy's discount."
+        },
+        {
+          "item": "Inquisitor",
+          "why": "Religion direction: two at home to remove a rival faith the moment it lands in a Khmer city."
+        },
+        {
+          "item": "Workshop",
+          "why": "Two for Industrialization; Industrial Zones on the river across from the Aqueduct."
+        },
+        {
+          "item": "Neighborhood",
+          "why": "Two for Sanitation; the Aqueducts run out at fifteen population."
+        },
+        {
+          "item": "Bank",
+          "why": "Two for Economics; Gold buys Apostles when the Faith is spent."
+        },
+        {
+          "item": "Archaeological Museum",
+          "why": "Culture direction: Natural History Inspiration and Artifacts beside the Relics."
+        },
+        {
+          "item": "Research Lab",
+          "why": "Science direction: the lead is converted here; otherwise the capital only."
+        },
+        {
+          "item": "Factory",
+          "why": "Three for Class Struggle with Power Plants; the Production for the last Apostles or the Spaceport."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:industrialization",
+          "note": "Two Workshops give the Eureka; Factories."
+        },
+        {
+          "id": "tech:scientific-theory",
+          "note": "The Enlightenment gave the Eureka; Research Labs."
+        },
+        {
+          "id": "tech:economics",
+          "note": "Two Banks; Stock Exchanges."
+        },
+        {
+          "id": "tech:sanitation",
+          "note": "Two Neighborhoods; Housing past the Aqueducts."
+        },
+        {
+          "id": "tech:chemistry",
+          "note": "Alliance level 2 with the Diplomatic Service ally; Research Labs."
+        },
+        {
+          "id": "tech:flight",
+          "note": "Angkor Wat or Mont St. Michel is a Classical or later wonder but not Industrial; unboosted unless Ruhr Valley is built. Relic Tourism begins here."
+        },
+        {
+          "id": "tech:steam-power",
+          "note": "Unboosted unless a coastal city builds two Shipyards; on the way to Electricity."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:civil-engineering",
+          "note": "Seven district types, which six cities with Aqueducts, Holy Sites and Entertainment reach; Public Works."
+        },
+        {
+          "id": "civic:colonialism",
+          "note": "Astronomy gives the Inspiration."
+        },
+        {
+          "id": "civic:urbanization",
+          "note": "A fifteen-population river city, which the engine has by turn 160; Neighborhoods."
+        },
+        {
+          "id": "civic:natural-history",
+          "note": "An Archaeological Museum on the Culture direction; unboosted otherwise."
+        },
+        {
+          "id": "civic:opera-and-ballet",
+          "note": "An Art Museum on the Culture direction; unboosted otherwise."
+        },
+        {
+          "id": "civic:nationalism",
+          "note": "Unboosted; on the way to Ideology and Theocracy's successor."
+        },
+        {
+          "id": "civic:mass-media",
+          "note": "Radio gives the Inspiration; Broadcast Centers for the Culture direction."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Theocracy",
+          "slot": "wildcard",
+          "from": "civic:reformed-church",
+          "why": "Religion direction: Faith purchases discounted and religious units stronger; the government from Reformed Church to Ideology."
+        },
+        {
+          "card": "Public Works",
+          "slot": "economic",
+          "from": "civic:civil-engineering",
+          "why": "Builders faster for Neighborhoods and the last Farms."
+        },
+        {
+          "card": "Triangular Trade",
+          "slot": "economic",
+          "from": "civic:mercantilism",
+          "why": "Gold and Faith on every Trade Route; the Faith buys another Apostle."
+        },
+        {
+          "card": "Free Market",
+          "slot": "economic",
+          "from": "civic:the-enlightenment",
+          "why": "Science direction: Commercial Hub buildings doubled; the Gold buys Research Labs."
+        },
+        {
+          "card": "Grand Opera",
+          "slot": "economic",
+          "from": "civic:opera-and-ballet",
+          "why": "Culture direction: Theater Square buildings doubled."
+        }
+      ],
+      "districts": [
+        {
+          "district": "neighborhood",
+          "city": "the two largest cities",
+          "note": "Sanitation Eureka; Housing past the Aqueduct's limit."
+        },
+        {
+          "district": "industrial-zone",
+          "city": "the two best Production cities",
+          "note": "On the river across from the Aqueduct for adjacency; Workshops for Industrialization."
+        },
+        {
+          "district": "spaceport",
+          "city": "the best Production river city",
+          "note": "Science direction: the site is reserved now."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "St. Basil's Cathedral",
+          "why": "Three Relic slots and Tourism from Relics; Culture direction above all, Religion direction for the Faith.",
+          "skip_if": "No Tundra tile beside a City Center, which on a river map is usual; then skip it without regret."
+        },
+        {
+          "name": "Ruhr Valley",
+          "why": "Science direction: Production per Mine and a flat bonus in the Spaceport city; the Flight Eureka.",
+          "skip_if": "No river Industrial Zone in the Spaceport city, or Industrialization lands after turn 220."
+        },
+        {
+          "name": "Kilwa Kisiwani",
+          "why": "Two suzerainties, Yerevan and Jerusalem, become extra yields in every city.",
+          "skip_if": "No coastal city, or fewer than two suzerainties at turn 180."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "moksha",
+          "promotion": "Grand Inquisitor",
+          "city": "the border city facing the rival religion",
+          "why": "Religion direction: rival pressure cut where it arrives, so the Inquisitors stay free for the offensive."
+        },
+        {
+          "governor": "amani",
+          "promotion": "Emissary",
+          "city": "a city near the convert target",
+          "why": "Loyalty pressure outward and an envoy toward the city-states on the target's border."
+        },
+        {
+          "governor": "pingala",
+          "promotion": "Grants",
+          "city": "the best Campus city",
+          "why": "Science direction: Great Person points toward the Great Scientists the Spaceport needs."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "vatican-city",
+          "why": "Every Great Person activated spreads four hundred pressure to cities within ten tiles; a Great Prophet-era empire activates many."
+        },
+        {
+          "slug": "chinguetti",
+          "why": "Faith on every Trade Route per follower at the destination; routes to converted cities pay the next Apostle."
+        },
+        {
+          "type": "Scientific",
+          "why": "Science direction: Science in every University at six envoys."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-engineer",
+          "why": "Ruhr Valley or St. Basil's finished early; Production in the Spaceport city."
+        },
+        {
+          "class": "great-artist",
+          "why": "Culture direction: Art Museum works beside the Relics."
+        },
+        {
+          "class": "great-scientist",
+          "why": "Science direction: Research Lab boosts and the late Eurekas."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 205,
+          "test": "Era checkpoint. Is the chosen direction still reachable? Religion: the religion dominant in three civilizations and Apostles converting a fourth. Culture: six Relics placed, Museums in three cities, Tourism rising against the top rival's Culture. Science: Research Labs in three cities and the Science rate first among met civilizations.",
+          "pass": "Continue; the close is thirty-five turns away.",
+          "fail": "A direction out of reach at turn 205 is pivoted, not forced. A six-city Khmer empire of fifteen-population cities can switch to Science from either other direction and still finish; switch today and reserve the Spaceport site. On Religion with a rival faith dominant in four civilizations, the direction has closed; keep the Faith for Rock Bands and pivot to Culture."
+        },
+        {
+          "turn": 240,
+          "test": "Religion dominant in half the civilizations, or Tourism within reach of the top rival, or a Spaceport started?",
+          "pass": "Enter the close.",
+          "fail": "None: the game is a Score game; a six-city empire of large cities with Relics in every Prasat scores well, and the plan stops paying for anything that does not add to it."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "spread-theocracy",
+          "turn": 175,
+          "text": "Religion direction: adopt Theocracy and buy four Apostles with Debater and Proselytizer promotions from Yerevan."
+        },
+        {
+          "id": "spread-first-civ",
+          "turn": 195,
+          "text": "Religion direction: the first foreign civilization majority-converted; Inquisitors standing in the two Khmer border cities."
+        },
+        {
+          "id": "spread-museums",
+          "turn": 200,
+          "text": "Culture direction: Archaeological Museums in two cities and an Art Museum in the capital; Natural History and Opera and Ballet Inspirations collected."
+        },
+        {
+          "id": "spread-factories",
+          "turn": 215,
+          "text": "Three Factories with Power Plants; Class Struggle Inspiration collected."
+        },
+        {
+          "id": "spread-neighborhoods",
+          "turn": 220,
+          "text": "Two Neighborhoods in the largest cities; Sanitation Eureka collected and Urbanization long since Inspired."
+        },
+        {
+          "id": "spread-spaceport-site",
+          "turn": 235,
+          "text": "Science direction: Spaceport started in the Ruhr Valley city."
+        }
+      ]
+    },
+    {
+      "id": "close",
+      "name": "Close",
+      "turns": {
+        "from": 241,
+        "to": null
+      },
+      "era": "modern",
+      "objective": "Finish the direction: the last two civilizations converted by Apostle waves with Inquisitors holding the home cities, or Rock Bands bought with the Faith and Broadcast Centers over the Relics, or the three Spaceport projects with Power and Great Scientists.",
+      "build_order": [
+        {
+          "item": "Apostle",
+          "why": "Religion direction: waves of four at the two civilizations still unconverted, Debaters in front."
+        },
+        {
+          "item": "Rock Band",
+          "why": "Culture direction: bought with Faith every time the balance allows, sent at the two highest-Culture civilizations."
+        },
+        {
+          "item": "Broadcast Center",
+          "why": "Culture direction: Music slots and Tourism in the Theater Square cities."
+        },
+        {
+          "item": "Spaceport",
+          "why": "Science direction: the projects start the turn it finishes."
+        },
+        {
+          "item": "Sewer",
+          "why": "Four for Suffrage across six cities that passed fifteen population long ago."
+        },
+        {
+          "item": "Stock Exchange",
+          "why": "Two for Capitalism; Gold buys what the Faith does not."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:plastics",
+          "note": "An Oil Well on the first Oil found; Oil Power for the Research Labs."
+        },
+        {
+          "id": "tech:computers",
+          "note": "A Tier 3 government gives the Eureka; the Tourism multiplier on the Culture direction."
+        },
+        {
+          "id": "tech:electricity",
+          "note": "Unboosted; Power for the Broadcast Centers and Research Labs."
+        },
+        {
+          "id": "tech:combustion",
+          "note": "An Artifact extracted on the Culture direction gives the Eureka."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:ideology",
+          "note": "No Inspiration; the gate to Tier 3 governments and the end of Theocracy."
+        },
+        {
+          "id": "civic:class-struggle",
+          "note": "Three Factories; Communism for the Science direction."
+        },
+        {
+          "id": "civic:suffrage",
+          "note": "Four Sewers; Democracy for the Culture direction."
+        },
+        {
+          "id": "civic:capitalism",
+          "note": "Two Stock Exchanges."
+        },
+        {
+          "id": "civic:cultural-heritage",
+          "note": "A themed building, which three Artifacts of one era give; Heritage Tourism."
+        },
+        {
+          "id": "civic:professional-sports",
+          "note": "Two Entertainment Complexes; Stadiums for cities of twenty."
+        },
+        {
+          "id": "civic:social-media",
+          "note": "Researching Telecommunications gives the Inspiration; Online Communities."
+        },
+        {
+          "id": "civic:space-race",
+          "note": "Science direction: the Spaceport gives the Inspiration."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Heritage Tourism",
+          "slot": "economic",
+          "from": "civic:cultural-heritage",
+          "why": "Culture direction: Tourism from Great Works, Relics included, doubled."
+        },
+        {
+          "card": "Online Communities",
+          "slot": "economic",
+          "from": "civic:social-media",
+          "why": "Culture direction: fifty percent more Tourism to every civilization you trade with."
+        },
+        {
+          "card": "International Space Agency",
+          "slot": "diplomatic",
+          "from": "civic:space-race",
+          "why": "Science direction: Science per suzerainty; Yerevan, Jerusalem and Kandy are held."
+        },
+        {
+          "card": "Faith of the Masses",
+          "slot": "economic",
+          "from": "civic:ideology",
+          "why": "Religion direction: Amenities from Holy Site buildings after Theocracy ends, so the late Apostles are not paid for with riots."
+        }
+      ],
+      "districts": [],
+      "wonders": [],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Space Initiative",
+          "city": "the Spaceport city",
+          "why": "Science direction: Production toward the three projects."
+        },
+        {
+          "governor": "moksha",
+          "promotion": "Patron Saint",
+          "city": "the capital",
+          "why": "Religion direction: Apostles bought here start with an extra promotion for the final waves."
+        }
+      ],
+      "city_states": [],
+      "great_people": [
+        {
+          "class": "great-musician",
+          "why": "Culture direction: every Great Musician is three Music works and the highest Tourism per slot."
+        },
+        {
+          "class": "great-scientist",
+          "why": "Science direction: the Atomic and Information Great Scientists are the only boosts for Rocketry and Nuclear Fission."
+        },
+        {
+          "class": "great-engineer",
+          "why": "Project Production in the Spaceport city."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 285,
+          "test": "Religion: dominant in every civilization but one and Apostles beside its cities? Culture: Tourism above two rivals' Culture and Rock Bands on the road? Science: Moon Landing done and the Mars projects running?",
+          "pass": "Continue to the end; no further decisions.",
+          "fail": "Convert to Score; six cities of twenty population with a Prasat full of Relics in every one scores well, and the plan stops paying for anything that does not add to it."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "close-last-waves",
+          "turn": 255,
+          "text": "Religion direction: a wave of four Apostles at each of the last two unconverted civilizations, Inquisitors at home."
+        },
+        {
+          "id": "close-rock-bands",
+          "turn": 260,
+          "text": "Culture direction: a Rock Band bought with Faith every time the balance allows, sent at the two highest-Culture civilizations with Open Borders."
+        },
+        {
+          "id": "close-moon",
+          "turn": 260,
+          "text": "Science direction: Moon Landing project started with Power in the Spaceport city."
+        },
+        {
+          "id": "close-review",
+          "turn": 285,
+          "text": "Review the turn 285 checkpoint and continue or declare the game a Score game."
+        }
+      ]
+    }
+  ],
+  "boosts": [
+    {
+      "id": "tech:astrology",
+      "fit": "costly",
+      "when": "rivers",
+      "how": "Only if the Scout happens on a natural wonder before Astrology is researched first anyway."
+    },
+    {
+      "id": "tech:irrigation",
+      "fit": "cheap",
+      "when": "rivers",
+      "how": "A Farm on Wheat or Rice beside the river."
+    },
+    {
+      "id": "tech:writing",
+      "fit": "free",
+      "when": "rivers",
+      "how": "The Scout meets the first rival along the river."
+    },
+    {
+      "id": "tech:bronze-working",
+      "fit": "cheap",
+      "when": "rivers",
+      "how": "Three camp kills from the Warriors and the Slinger."
+    },
+    {
+      "id": "tech:archery",
+      "fit": "cheap",
+      "when": "rivers",
+      "how": "The Slinger finishes a camp scout."
+    },
+    {
+      "id": "tech:wheel",
+      "fit": "cheap",
+      "when": "rivers",
+      "how": "The first Builder mines a resource hill."
+    },
+    {
+      "id": "tech:masonry",
+      "fit": "cheap",
+      "when": "faith",
+      "how": "A Quarry on Stone beside the river."
+    },
+    {
+      "id": "tech:currency",
+      "fit": "free",
+      "when": "faith",
+      "how": "The first Trader runs a route to the second city."
+    },
+    {
+      "id": "tech:horseback-riding",
+      "fit": "cheap",
+      "when": "faith",
+      "how": "A Pasture on Horses, Sheep or Cattle."
+    },
+    {
+      "id": "tech:construction",
+      "fit": "free",
+      "when": "faith",
+      "how": "A Water Mill in the capital; every city is on a river."
+    },
+    {
+      "id": "tech:mathematics",
+      "fit": "free",
+      "when": "faith",
+      "how": "Holy Site, Commercial Hub and a Theater Square or Campus by turn 85."
+    },
+    {
+      "id": "tech:engineering",
+      "fit": "cheap",
+      "when": "faith",
+      "how": "Ancient Walls in the city nearest a neighbour."
+    },
+    {
+      "id": "tech:apprenticeship",
+      "fit": "cheap",
+      "when": "faith",
+      "how": "Three Mines across six cities on the hills beside the river."
+    },
+    {
+      "id": "tech:iron-working",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:military-engineering",
+      "fit": "free",
+      "when": "grow",
+      "how": "The capital Aqueduct, which Grand Barays builds first anyway."
+    },
+    {
+      "id": "tech:education",
+      "fit": "cheap",
+      "when": "grow",
+      "how": "The first Great Scientist from the capital Campus."
+    },
+    {
+      "id": "tech:machinery",
+      "fit": "cheap",
+      "when": "grow",
+      "how": "Three Archers are the garrison this empire builds anyway."
+    },
+    {
+      "id": "tech:castles",
+      "fit": "free",
+      "when": "grow",
+      "how": "Any Tier 2 government."
+    },
+    {
+      "id": "tech:stirrups",
+      "fit": "free",
+      "when": "grow",
+      "how": "Feudalism is on the civic path."
+    },
+    {
+      "id": "tech:banking",
+      "fit": "free",
+      "when": "grow",
+      "how": "Guilds is on the civic path."
+    },
+    {
+      "id": "tech:printing",
+      "fit": "cheap",
+      "when": "grow",
+      "how": "Two Universities in the capital and the second Campus city."
+    },
+    {
+      "id": "tech:siege-tactics",
+      "fit": "free",
+      "when": "grow",
+      "how": "Two Domreys, which the plan builds as its army."
+    },
+    {
+      "id": "tech:astronomy",
+      "fit": "cheap",
+      "when": "grow",
+      "how": "A University in the Campus beside a Mountain the Holy Site left free."
+    },
+    {
+      "id": "tech:buttress",
+      "fit": "cheap",
+      "when": "grow",
+      "how": "Temple of Artemis or Mahabodhi Temple from the Faith phase."
+    },
+    {
+      "id": "tech:military-tactics",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:mass-production",
+      "fit": "costly",
+      "when": "grow",
+      "how": "A Lumber Mill on Woods outside the Holy Site adjacency; usually unboosted."
+    },
+    {
+      "id": "tech:industrialization",
+      "fit": "cheap",
+      "when": "spread",
+      "how": "Two Workshops in the river Industrial Zones."
+    },
+    {
+      "id": "tech:scientific-theory",
+      "fit": "free",
+      "when": "spread",
+      "how": "The Enlightenment is on the civic path."
+    },
+    {
+      "id": "tech:economics",
+      "fit": "cheap",
+      "when": "spread",
+      "how": "Two Banks in the Commercial Hub cities."
+    },
+    {
+      "id": "tech:sanitation",
+      "fit": "free",
+      "when": "spread",
+      "how": "Two Neighborhoods, which fifteen-population cities need anyway."
+    },
+    {
+      "id": "tech:chemistry",
+      "fit": "cheap",
+      "when": "spread",
+      "how": "Alliance level 2 with the Diplomatic Service ally."
+    },
+    {
+      "id": "tech:flight",
+      "fit": "costly",
+      "when": "spread",
+      "how": "Ruhr Valley on the Science direction; otherwise unboosted."
+    },
+    {
+      "id": "tech:steam-power",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:plastics",
+      "fit": "cheap",
+      "when": "close",
+      "how": "An Oil Well on the first Oil found."
+    },
+    {
+      "id": "tech:computers",
+      "fit": "free",
+      "when": "close",
+      "how": "Any Tier 3 government."
+    },
+    {
+      "id": "tech:electricity",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:combustion",
+      "fit": "costly",
+      "when": "close",
+      "how": "An Artifact only on the Culture direction."
+    },
+    {
+      "id": "tech:radio",
+      "fit": "costly",
+      "when": "spread",
+      "how": "A National Park only if a Breathtaking diamond happens to exist; Khmer does not build for Appeal."
+    },
+    {
+      "id": "civic:craftsmanship",
+      "fit": "free",
+      "when": "rivers",
+      "how": "Three improvements from the first Builder."
+    },
+    {
+      "id": "civic:foreign-trade",
+      "fit": "costly",
+      "when": "rivers",
+      "how": "A second continent only if the Scout reaches one."
+    },
+    {
+      "id": "civic:state-workforce",
+      "fit": "free",
+      "when": "rivers",
+      "how": "The capital Holy Site, which is the first thing built."
+    },
+    {
+      "id": "civic:early-empire",
+      "fit": "free",
+      "when": "rivers",
+      "how": "Six population across two cities on Holy Site Food before turn 30."
+    },
+    {
+      "id": "civic:mysticism",
+      "fit": "free",
+      "when": "rivers",
+      "how": "River Goddess from the first Holy Site's Faith."
+    },
+    {
+      "id": "civic:military-tradition",
+      "fit": "cheap",
+      "when": "faith",
+      "how": "The first camp the Warriors clear."
+    },
+    {
+      "id": "civic:political-philosophy",
+      "fit": "cheap",
+      "when": "faith",
+      "how": "Three city-states met by the Scout and a Warrior."
+    },
+    {
+      "id": "civic:theology",
+      "fit": "free",
+      "when": "faith",
+      "how": "Founding the religion by turn 80."
+    },
+    {
+      "id": "civic:games-and-recreation",
+      "fit": "free",
+      "when": "faith",
+      "how": "Researching Construction."
+    },
+    {
+      "id": "civic:drama-and-poetry",
+      "fit": "cheap",
+      "when": "faith",
+      "how": "Temple of Artemis or Mahabodhi Temple."
+    },
+    {
+      "id": "civic:recorded-history",
+      "fit": "costly",
+      "when": "faith",
+      "how": "Two Campuses only on the Science direction."
+    },
+    {
+      "id": "civic:defensive-tactics",
+      "fit": "cheap",
+      "when": "faith",
+      "how": "A Faith empire with three Archers gets declared on; take the Inspiration when it happens."
+    },
+    {
+      "id": "civic:military-training",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:feudalism",
+      "fit": "free",
+      "when": "grow",
+      "how": "Six Farms beside the first two Aqueducts."
+    },
+    {
+      "id": "civic:civil-service",
+      "fit": "free",
+      "when": "grow",
+      "how": "The capital at ten population on Holy Site Food and the Aqueduct."
+    },
+    {
+      "id": "civic:guilds",
+      "fit": "cheap",
+      "when": "grow",
+      "how": "Two Markets in the Commercial Hub cities."
+    },
+    {
+      "id": "civic:divine-right",
+      "fit": "free",
+      "when": "grow",
+      "how": "Two Prasats, which every Holy Site city builds."
+    },
+    {
+      "id": "civic:medieval-faires",
+      "fit": "cheap",
+      "when": "grow",
+      "how": "Four Trade Routes from six cities."
+    },
+    {
+      "id": "civic:reformed-church",
+      "fit": "free",
+      "when": "grow",
+      "how": "Six cities following the religion, which the home empire alone provides."
+    },
+    {
+      "id": "civic:humanism",
+      "fit": "costly",
+      "when": "grow",
+      "how": "A Great Artist only on the Culture direction."
+    },
+    {
+      "id": "civic:the-enlightenment",
+      "fit": "cheap",
+      "when": "grow",
+      "how": "Three Great People: the Prophet, an Engineer and one more."
+    },
+    {
+      "id": "civic:diplomatic-service",
+      "fit": "cheap",
+      "when": "grow",
+      "how": "An alliance with a civilization that follows your religion."
+    },
+    {
+      "id": "civic:mercenaries",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:exploration",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:mercantilism",
+      "fit": "costly",
+      "when": "grow",
+      "how": "A Great Merchant from two Commercial Hubs, usually late."
+    },
+    {
+      "id": "civic:civil-engineering",
+      "fit": "free",
+      "when": "spread",
+      "how": "Seven district types across six cities with Holy Sites, Aqueducts and Entertainment."
+    },
+    {
+      "id": "civic:colonialism",
+      "fit": "free",
+      "when": "spread",
+      "how": "Researching Astronomy."
+    },
+    {
+      "id": "civic:urbanization",
+      "fit": "free",
+      "when": "spread",
+      "how": "A river city at fifteen population, which the engine reaches by turn 160."
+    },
+    {
+      "id": "civic:natural-history",
+      "fit": "costly",
+      "when": "spread",
+      "how": "An Archaeological Museum only on the Culture direction."
+    },
+    {
+      "id": "civic:opera-and-ballet",
+      "fit": "costly",
+      "when": "spread",
+      "how": "An Art Museum only on the Culture direction."
+    },
+    {
+      "id": "civic:nationalism",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:mass-media",
+      "fit": "cheap",
+      "when": "spread",
+      "how": "Researching Radio on the way to Broadcast Centers."
+    },
+    {
+      "id": "civic:conservation",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:class-struggle",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Three Factories in the Industrial Zones."
+    },
+    {
+      "id": "civic:suffrage",
+      "fit": "free",
+      "when": "close",
+      "how": "Four Sewers across six cities that need them anyway."
+    },
+    {
+      "id": "civic:capitalism",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Stock Exchanges."
+    },
+    {
+      "id": "civic:cultural-heritage",
+      "fit": "costly",
+      "when": "close",
+      "how": "Three Artifacts of one era only on the Culture direction."
+    },
+    {
+      "id": "civic:professional-sports",
+      "fit": "cheap",
+      "when": "close",
+      "how": "A second Entertainment Complex in the far river city."
+    },
+    {
+      "id": "civic:social-media",
+      "fit": "free",
+      "when": "close",
+      "how": "Researching Telecommunications."
+    },
+    {
+      "id": "civic:space-race",
+      "fit": "costly",
+      "when": "close",
+      "how": "The Spaceport only on the Science direction."
+    }
+  ],
+  "decision_triggers": [
+    {
+      "name": "Prophet within reach",
+      "if": "At turn 65 the Great Prophet counter shows a Prophet within ten turns and a neighbour has no religion.",
+      "then": "Choose Religion at turn 70. Revelation stays slotted until the Prophet lands, and the first Missionaries go at that neighbour before anyone else's do."
+    },
+    {
+      "name": "Prophets gone",
+      "if": "At turn 65 the last Great Prophet has been claimed by a rival.",
+      "then": "Choose Culture if a Relic is in hand or Kandy is met, Science if neither. Take Revelation out, put a Theater Square or a Campus beside every Holy Site, and never build another Shrine."
+    },
+    {
+      "name": "Faith sitting",
+      "if": "The Faith balance passes eight hundred at any point after turn 100.",
+      "then": "Spend it this turn: an Apostle or Missionary from a Prasat city, a Great Person patronized, or a district bought through Moksha's Divine Architect. Khmer Faith is the bonus; unspent it is banked."
+    },
+    {
+      "name": "Rival faith at the door",
+      "if": "A rival religion becomes the majority in any Khmer city.",
+      "then": "Buy an Inquisitor from the nearest Prasat city and remove it at once; Grand Inquisitor on Moksha in that city if it happens twice. A Khmer city losing its religion loses the follower belief that feeds it."
+    },
+    {
+      "name": "Missionary killed",
+      "if": "A Martyr Missionary falls in theological combat.",
+      "then": "Place the Relic in a Prasat or Mont St. Michel slot the same turn, never leave it in the queue; it is Faith, Culture and Tourism, and under Reliquaries three times each."
+    }
+  ],
+  "abort": {
+    "trigger": "Turn 150 with no direction committed: no religion or a religion in no foreign city, no Theater Square outside the capital, no Campus outside the capital, Faith above a thousand, and a civic tree picked in order.",
+    "actions": [
+      "Pick the direction the empire is already closest to; with six fifteen-population cities and a Faith bank that is Culture if any Relic is held and Science otherwise. Commit fully; Linear leaders lose by drifting, not by collapsing.",
+      "Spend the Faith bank today: Great People patronized, Theater Square or Campus buildings bought through Moksha, and nothing left above three hundred.",
+      "Reroute the civic queue to Humanism, Natural History and Conservation, or Recorded History, The Enlightenment and Class Struggle, and put the direction's district beside every Holy Site."
+    ]
+  },
+  "fail_state": "Turn 200 with six comfortable river cities of eighteen population, Holy Sites and Aqueducts in all of them, two thousand Faith in the bank, a religion in no foreign city and Prasats with empty Relic slots; Theater Squares in two cities, Campuses in two, and the civic tree picked in order. Khmer has out-grown the map and converted none of it, and the population that was the input never had a direction to feed.",
+  "common_mistakes": [
+    "Building anything before the Holy Site. The Food, Housing, Faith and Culture Bomb all come from it; a Monument first is six turns of all four lost.",
+    "Placing the Holy Site for the Farms instead of the adjacency. Every adjacency point is Faith and Food; the Farms go beside the Aqueduct, not the Holy Site.",
+    "Settling off the river because the site looked richer. A Khmer Holy Site off a river has no Housing, no major adjacency and a quarter of the Food.",
+    "Banking Faith. It buys Apostles, Great People and districts through Moksha; a balance in the thousands is the shape's failure in its plainest currency.",
+    "Avoiding theological combat to protect Missionaries. Bought from a Prasat they are Martyrs, and a fallen one is a Relic; the fight is the point.",
+    "Treating population as the plan. It is an input; a city of twenty with no Theater Square, Campus or Apostle to its name has produced nothing but Score."
+  ],
+  "sources": [
+    "Civilization VI Civilopedia, Gathering Storm ruleset with the New Frontier Pass (Khmer, Jayavarman VII, Monasteries of the King, Grand Barays, Domrey, Prasat).",
+    "Boost objectives cross-checked against civilization6planner.com tech-tree and civics-tree pages, 2026-10-01.",
+    "Leadership Focus tags, caveats, Linear template and the Linear_Trajan worked example in this repository."
+  ]
+}

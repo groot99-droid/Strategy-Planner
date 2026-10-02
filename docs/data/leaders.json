@@ -6303,7 +6303,17 @@
   }
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Science",
+   "secondary": "Domination",
+   "confidence": "medium",
+   "one_line": "Play a plain wide builder for 120 turns with an Iron Mine in every city that can have one, then put a Workshop, Factory and Coal Power Plant in every city and let 30% extra Production and +4 on every powered building carry a space race nobody else can keep pace with.",
+   "updated": "2026-10-02",
+   "version": 1,
+   "file": "data/plans/victoria.json",
+   "phases": 5,
+   "boosts": 62
+  },
   "slug": "victoria",
   "name": "Victoria",
   "persona": "Age of Steam",
@@ -7140,7 +7150,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Culture",
+   "secondary": "Religion",
+   "confidence": "high",
+   "one_line": "Read the continent lens before the Settler plants, claim every site the home continent holds and nothing beyond it, and let Nkisi turn Relics, Artifacts and sculptures into Food, Production and Gold while half-again Great Artist and Musician points fill the Palace and the Theater Squares.",
+   "updated": "2026-10-02",
+   "version": 1,
+   "file": "data/plans/nzinga-mbande.json",
+   "phases": 5,
+   "boosts": 80
+  },
   "slug": "nzinga-mbande",
   "name": "Nzinga Mbande",
   "persona": null,
@@ -7953,7 +7973,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Science",
+   "secondary": "Culture",
+   "confidence": "medium",
+   "one_line": "Count the luxuries before you count the land, settle only as many cities as you can keep Ecstatic, and let Scottish Enlightenment turn every Campus and Industrial Zone into a doubled Great Scientist and Great Engineer mint. Bannockburn is a ten-turn Production burst you take once, if a neighbour hands you the cause.",
+   "updated": "2026-10-02",
+   "version": 1,
+   "file": "data/plans/robert-the-bruce.json",
+   "phases": 5,
+   "boosts": 74
+  },
   "slug": "robert-the-bruce",
   "name": "Robert the Bruce",
   "persona": null,
@@ -8777,7 +8807,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Culture",
+   "secondary": "Diplomatic",
+   "confidence": "medium",
+   "one_line": "Build an Acropolis in every city for the Culture the multiplier needs, bank envoys and spend them where the margin is thinnest rather than where the bonus is prettiest, and keep a reserve so no suzerainty is ever lost on a rival's single envoy; the extra Wildcard slot runs the Great Person card the race needs.",
+   "updated": "2026-10-02",
+   "version": 1,
+   "file": "data/plans/pericles.json",
+   "phases": 5,
+   "boosts": 71
+  },
   "slug": "pericles",
   "name": "Pericles",
   "persona": null,
@@ -9057,7 +9097,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Culture",
+   "secondary": "Science",
+   "confidence": "medium",
+   "one_line": "Settle every city on a river with Floodplains in its first ring, build wonders and districts on the Floodplains at river speed, and decide by turn 70 whether the Appeal the Floodplains now give becomes a National Park and Seaside Resort Culture game or a Campus-in-every-river-city Science game.",
+   "updated": "2026-10-02",
+   "version": 1,
+   "file": "data/plans/cleopatra.json",
+   "phases": 5,
+   "boosts": 74
+  },
   "slug": "cleopatra",
   "name": "Cleopatra",
   "persona": "Ptolemaic",
@@ -9881,7 +9931,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Culture",
+   "secondary": "Diplomatic",
+   "confidence": "medium",
+   "one_line": "Play a plain wide builder for 140 turns that banks Great Writers, Great Works and Great Person points with nothing to show for them, then fill Art Museums, Archaeological Museums and the Hermitage and let every one of them theme itself the turn its last slot fills.",
+   "updated": "2026-10-02",
+   "version": 1,
+   "file": "data/plans/kristina.json",
+   "phases": 5,
+   "boosts": 67
+  },
   "slug": "kristina",
   "name": "Kristina",
   "persona": null,
@@ -11266,7 +11326,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Religion",
+   "secondary": "Culture",
+   "confidence": "medium",
+   "one_line": "Put a Holy Site on the river in every city before anything else, because for Khmer it is Food, Housing, Faith and a free border all at once, then choose by turn 70 whether that Faith buys Apostles, Relic-filled Prasats and Theater Squares, or Campuses in cities that have grown past fifteen population.",
+   "updated": "2026-10-02",
+   "version": 1,
+   "file": "data/plans/jayavarman-vii.json",
+   "phases": 5,
+   "boosts": 69
+  },
   "slug": "jayavarman-vii",
   "name": "Jayavarman VII",
   "persona": null,
@@ -12633,7 +12703,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Religion",
+   "secondary": "Culture",
+   "confidence": "medium",
+   "one_line": "Found a religion first, then put an Encampment on every border so each culture bomb steals a ring of tiles and converts the city that lost them. Hold the grudges with Walls, Crusade and Winged Hussars, and let Relics pay for the rest.",
+   "updated": "2026-10-02",
+   "version": 1,
+   "file": "data/plans/jadwiga.json",
+   "phases": 5,
+   "boosts": 60
+  },
   "slug": "jadwiga",
   "name": "Jadwiga",
   "persona": null,
@@ -12899,7 +12979,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Domination",
+   "secondary": "Religion",
+   "confidence": "high",
+   "one_line": "Found a religion, walk a Missionary into the nearest rival's border city, and the moment it converts, ride Horsemen and Knights through its Walls as if they were not there. Every kill spreads the religion to the next city, so the war converts its own next target.",
+   "updated": "2026-10-02",
+   "version": 1,
+   "file": "data/plans/basil-ii.json",
+   "phases": 5,
+   "boosts": 61
+  },
   "slug": "basil-ii",
   "name": "Basil II",
   "persona": null,
