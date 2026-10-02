@@ -46,18 +46,18 @@
       "source": "civ_ability",
       "name": "Founding Fathers",
       "buys": "Every Diplomatic policy slot in the current government becomes a Wildcard slot, and each Wildcard slot pays +1 Diplomatic Favor per turn.",
-      "exploit": "Classical Republic holds two Wildcards from turn 60 and Democracy holds four, so the Favor arrives without a Diplomatic Quarter. The Wildcards still take Diplomatic cards, so Diplomatic League and Merchant Confederation go in at no cost to the Economic slots; the Favor is spent on Congress votes for the Diplomatic direction or sold to AIs for the Gold that buys Naturalists."
+      "exploit": "Classical Republic holds two Wildcards from turn 60 and Democracy holds four, so the Favor arrives without a Diplomatic Quarter. The Wildcards still take Diplomatic cards, so Diplomatic League and Merchant Confederation go in at no cost to the Economic slots; the Favor is spent on Congress votes for the Diplomatic direction or sold to AIs for the Gold that buys Builders, since Naturalists are bought with Faith alone."
     },
     {
       "source": "unique_infrastructure",
       "name": "Film Studio",
       "buys": "A Broadcast Center replacement that doubles this city's Tourism pressure toward other civilizations in the Modern era and later.",
-      "exploit": "One in every Theater Square city the turn Radio lands; the Modern era is where the National Parks and Seaside Resorts come online, so the doubling applies to the whole stack. Pingala's Curator promotion in the Film Studio capital doubles it again."
+      "exploit": "One in every Theater Square city the turn Radio lands; the Modern era is where the National Parks and Seaside Resorts come online, so the doubling applies to the whole stack. Pingala's Curator promotion in the Film Studio capital doubles the Tourism from its Great Works."
     },
     {
       "source": "unique_unit",
       "name": "Rough Rider",
-      "buys": "A Cuirassier replacement with a Combat Strength bonus on Hills, lower maintenance and Culture from kills on the home continent.",
+      "buys": "A Cavalry replacement with a Combat Strength bonus on Hills, lower maintenance and Culture from kills on the home continent.",
       "exploit": "A defensive unit for this plan: four Rough Riders on the hills behind the border hold the Industrial era while the Parks are built, and every kill on the home continent is Culture. Do not build an army with them; the plan has no war."
     },
     {
@@ -208,7 +208,7 @@
           "card": "Colonization",
           "slot": "economic",
           "from": "civic:early-empire",
-          "why": "Settlers at half cost for cities three and four."
+          "why": "+50% Production toward Settlers for cities three and four."
         }
       ],
       "districts": [
@@ -319,7 +319,7 @@
         },
         {
           "item": "Campus",
-          "why": "The capital, beside a Mountain: the Science supplement and the Recorded History Inspiration."
+          "why": "The capital, beside a Mountain: the Science supplement and the first of the two Campuses the Recorded History Inspiration asks for."
         },
         {
           "item": "Archer",
@@ -340,16 +340,16 @@
           "note": "Holy Site, Preserve and Theater Square by turn 85."
         },
         {
-          "id": "tech:construction",
-          "note": "A Water Mill in a river city; the Colosseum."
-        },
-        {
           "id": "tech:horseback-riding",
           "note": "A Pasture gives the Eureka; Pastures never lower Appeal."
         },
         {
+          "id": "tech:construction",
+          "note": "A Water Mill in a river city; it inspires Games and Recreation, which brings the Colosseum."
+        },
+        {
           "id": "tech:machinery",
-          "note": "Three Archers; Lumber Mills are behind Mass Production, which is the Production plan."
+          "note": "Three Archers; Lumber Mills, the Production plan, come before Mass Production, since building one is its Eureka."
         },
         {
           "id": "tech:apprenticeship",
@@ -375,7 +375,7 @@
         },
         {
           "id": "civic:military-tradition",
-          "note": "First camp cleared; on the path to Political Philosophy."
+          "note": "First camp cleared; off the path to Political Philosophy, taken because the Inspiration is already in hand."
         },
         {
           "id": "civic:theology",
@@ -399,7 +399,7 @@
           "card": "Aesthetics",
           "slot": "economic",
           "from": "civic:drama-and-poetry",
-          "why": "Doubled Theater Square adjacency; a Theater Square beside a Preserve and a Holy Site reads +3 before the card."
+          "why": "Doubled Theater Square adjacency; a Theater Square beside a Preserve and a Holy Site reads +1 before the card."
         },
         {
           "card": "Caravansaries",
@@ -437,21 +437,21 @@
       "wonders": [
         {
           "name": "Temple of Artemis",
-          "why": "Housing and Amenities from Camps and Pastures, the improvements this plan builds instead of Mines, and +1 Appeal around it.",
+          "why": "Food and Housing in the city and Amenities from Camps and Pastures, the improvements this plan builds instead of Mines, and +1 Appeal around it.",
           "skip_if": "No Woods beside the capital's Camp sites, or a rival has it queued by turn 70."
         },
         {
           "name": "Colosseum",
           "why": "Amenities and Culture to every city within six tiles, and a wonder tile for the Culture adjacency.",
-          "skip_if": "The capital is not central, or Construction lands after turn 100."
+          "skip_if": "The capital is not central or has no Entertainment Complex to stand beside, or Games and Recreation lands after turn 100."
         }
       ],
       "governors": [
         {
           "governor": "liang",
-          "promotion": "Parks and Recreation",
+          "promotion": "Guildmaster",
           "city": "capital",
-          "why": "City Parks raise Appeal and pay Culture on tiles the plan would otherwise leave empty."
+          "why": "Every Builder trained in the capital gets an extra charge, which the no-chop plan spends on Farms, Pastures and Camps."
         },
         {
           "governor": "amani",
@@ -559,7 +559,7 @@
         },
         {
           "item": "Market",
-          "why": "Two for Guilds; the Gold buys Builders and later Naturalists when the Faith runs short."
+          "why": "Two for Guilds; the Gold buys Builders while the Faith is saved for Naturalists."
         },
         {
           "item": "Entertainment Complex",
@@ -572,12 +572,12 @@
       ],
       "research": [
         {
-          "id": "tech:mass-production",
-          "note": "A Lumber Mill gives the Eureka; Lumber Mills are the Production plan and they keep the Woods."
-        },
-        {
           "id": "tech:education",
           "note": "A Great Scientist gives the Eureka; Universities."
+        },
+        {
+          "id": "tech:mass-production",
+          "note": "A Lumber Mill gives the Eureka; Lumber Mills are the Production plan and they keep the Woods."
         },
         {
           "id": "tech:printing",
@@ -606,10 +606,6 @@
       ],
       "civics": [
         {
-          "id": "civic:humanism",
-          "note": "A Great Artist gives the Inspiration; Art Museums."
-        },
-        {
           "id": "civic:feudalism",
           "note": "Six Farms; Serfdom for the Lumber Mill Builders."
         },
@@ -622,8 +618,16 @@
           "note": "Two Markets; Town Charters."
         },
         {
+          "id": "civic:medieval-faires",
+          "note": "Four Trade Routes; the domestic Production routes make this free. Merchant Confederation unlocks here."
+        },
+        {
+          "id": "civic:humanism",
+          "note": "A Great Artist gives the Inspiration; Art Museums."
+        },
+        {
           "id": "civic:exploration",
-          "note": "Two Caravels; Merchant Republic holds two Wildcards too."
+          "note": "Two Caravels; Merchant Republic holds three Wildcards."
         },
         {
           "id": "civic:diplomatic-service",
@@ -635,11 +639,7 @@
         },
         {
           "id": "civic:mercantilism",
-          "note": "A Great Merchant; Merchant Confederation in a Wildcard."
-        },
-        {
-          "id": "civic:medieval-faires",
-          "note": "Four Trade Routes; the domestic Production routes make this free."
+          "note": "A Great Merchant; it leads to Colonialism."
         }
       ],
       "policies": [
@@ -647,7 +647,7 @@
           "card": "Merchant Republic",
           "slot": "wildcard",
           "from": "civic:exploration",
-          "why": "Two Wildcards, two Economic slots and more Trade Routes; the Favor keeps flowing."
+          "why": "Three Wildcards, two Economic slots and more Trade Routes; the Favor keeps flowing."
         },
         {
           "card": "Serfdom",
@@ -658,12 +658,12 @@
         {
           "card": "Merchant Confederation",
           "slot": "wildcard",
-          "from": "civic:mercantilism",
+          "from": "civic:medieval-faires",
           "why": "Gold per envoy in a Wildcard; the envoys are already going out for the suzerainties."
         },
         {
           "card": "Frescoes",
-          "slot": "economic",
+          "slot": "wildcard",
           "from": "civic:humanism",
           "why": "Great Artist points; the Art Museums need filling before Cultural Heritage."
         },
@@ -725,13 +725,6 @@
           "promotion": "Forestry Management",
           "city": "the city with the most Woods",
           "why": "Gold from unimproved features and +1 Appeal on the tiles beside them; the one promotion that raises Appeal for nothing."
-        },
-        {
-          "governor": "magnus",
-          "promotion": "Vertical Integration",
-          "city": "the Industrial Zone city",
-          "note": "Taken late; Groundbreaker is never taken.",
-          "why": "Production from Factories and Power Plants in a plan with no chops."
         }
       ],
       "city_states": [
@@ -855,11 +848,19 @@
       "research": [
         {
           "id": "tech:industrialization",
-          "note": "Two Workshops, or unboosted; the Eiffel Tower and the single Factory."
+          "note": "Two Workshops, or unboosted; the single Factory. The Eiffel Tower comes from Steel."
         },
         {
           "id": "tech:scientific-theory",
           "note": "The Enlightenment gave the Eureka."
+        },
+        {
+          "id": "tech:rifling",
+          "note": "Unboosted unless a Niter hill is already behind an Encampment; Rough Riders for the border."
+        },
+        {
+          "id": "tech:flight",
+          "note": "The Eiffel Tower gives the Eureka; Tourism from wonders doubles here."
         },
         {
           "id": "tech:radio",
@@ -871,22 +872,22 @@
         },
         {
           "id": "tech:economics",
-          "note": "Two Banks; Stock Exchanges and the Gold for Naturalists when Faith runs short."
-        },
-        {
-          "id": "tech:flight",
-          "note": "The Eiffel Tower gives the Eureka; Tourism from wonders doubles here."
+          "note": "Two Banks; Stock Exchanges and the Gold for Film Studios, so the Faith stays for Naturalists."
         },
         {
           "id": "tech:combustion",
           "note": "An Artifact from the Archaeologist; Tanks for the garrison."
-        },
-        {
-          "id": "tech:rifling",
-          "note": "Unboosted unless a Niter hill is already behind an Encampment; Rough Riders for the border."
         }
       ],
       "civics": [
+        {
+          "id": "civic:colonialism",
+          "note": "Astronomy gave the Inspiration."
+        },
+        {
+          "id": "civic:civil-engineering",
+          "note": "Seven district types; Public Works."
+        },
         {
           "id": "civic:natural-history",
           "note": "An Archaeological Museum gives the Inspiration; Conservation is behind it."
@@ -904,16 +905,8 @@
           "note": "An Art Museum gave the Inspiration; Grand Opera."
         },
         {
-          "id": "civic:civil-engineering",
-          "note": "Seven district types; Public Works."
-        },
-        {
           "id": "civic:mass-media",
           "note": "Radio gives the Inspiration; on the way to Ideology and Democracy."
-        },
-        {
-          "id": "civic:colonialism",
-          "note": "Astronomy gave the Inspiration."
         }
       ],
       "policies": [
@@ -933,7 +926,7 @@
           "card": "Free Market",
           "slot": "economic",
           "from": "civic:the-enlightenment",
-          "why": "Commercial Hub buildings doubled; the Gold buys Naturalists at 1,000 or more each."
+          "why": "Commercial Hub buildings doubled; the Gold buys Builders and buildings, since Naturalists are bought with Faith alone."
         },
         {
           "card": "Liberalism",
@@ -962,7 +955,7 @@
         },
         {
           "name": "Hermitage",
-          "why": "Four Great Artist slots and Culture; the Art Museums are full by now.",
+          "why": "Four Great Work of Art slots and their Tourism; the Art Museums are full by now.",
           "skip_if": "Fewer than three Great Artists earned by turn 200."
         },
         {
@@ -981,7 +974,7 @@
         {
           "governor": "moksha",
           "promotion": "Bishop",
-          "city": "the Holy Site city",
+          "city": "a Holy Site city other than the capital, which Pingala holds",
           "why": "Faith for Naturalists at a time when every Faith point is a park tile."
         },
         {
@@ -1008,7 +1001,7 @@
         },
         {
           "class": "great-musician",
-          "why": "Broadcast Center and Film Studio slots; Music is the highest Tourism per work."
+          "why": "Film Studio slots, since America builds no Broadcast Center; Music is the highest Tourism per work."
         },
         {
           "class": "great-engineer",
@@ -1074,11 +1067,11 @@
       "build_order": [
         {
           "item": "Rock Band",
-          "why": "Bought with Faith at every Holy Site; the Culture direction's close."
+          "why": "Bought with Faith in the Theater Square cities; the Culture direction's close."
         },
         {
-          "item": "Broadcast Center",
-          "why": "Film Studios already; the remaining Theater Square cities get the plain building for the Music slots."
+          "item": "Film Studio",
+          "why": "The remaining Theater Square cities; America builds the Film Studio in place of the Broadcast Center, and each holds a Music slot."
         },
         {
           "item": "Aerodrome",
@@ -1086,7 +1079,7 @@
         },
         {
           "item": "Stock Exchange",
-          "why": "Two for Capitalism; the Gold buys the last Rock Bands when the Faith is spent."
+          "why": "Two for Capitalism; the Gold buys buildings so the Faith stays for the last Rock Bands."
         },
         {
           "item": "Sewer",
@@ -1099,12 +1092,12 @@
       ],
       "research": [
         {
-          "id": "tech:computers",
-          "note": "Tier 3 government gives the Eureka; +25% Tourism, the biggest late multiplier."
+          "id": "tech:electricity",
+          "note": "Unboosted; Power for the Film Studios."
         },
         {
-          "id": "tech:electricity",
-          "note": "Unboosted; Power for the Film Studios and Broadcast Centers."
+          "id": "tech:computers",
+          "note": "Tier 3 government gives the Eureka; +25% Tourism, the biggest late multiplier."
         },
         {
           "id": "tech:chemistry",
@@ -1116,7 +1109,7 @@
         },
         {
           "id": "tech:advanced-flight",
-          "note": "Two P-51 Mustangs count as Biplanes' successors only if built; otherwise unboosted."
+          "note": "Two Biplanes, or unboosted; the P-51 Mustang unlocks here."
         },
         {
           "id": "tech:synthetic-materials",
@@ -1137,16 +1130,16 @@
           "note": "A themed Art Museum; Heritage Tourism."
         },
         {
+          "id": "civic:professional-sports",
+          "note": "Two Entertainment Complexes; Stadiums are Amenities for the last fifty turns."
+        },
+        {
           "id": "civic:social-media",
-          "note": "Telecommunications gives the Inspiration if a Great Scientist supplies it; Online Communities."
+          "note": "Researching Telecommunications gives the Inspiration; Online Communities."
         },
         {
           "id": "civic:environmentalism",
           "note": "Two Solar Farms; it is the civic that pays Tourism from Preserves and Parks' neighbours."
-        },
-        {
-          "id": "civic:professional-sports",
-          "note": "Two Entertainment Complexes; Stadiums are Amenities for the last fifty turns."
         }
       ],
       "policies": [
@@ -1160,7 +1153,7 @@
           "card": "Heritage Tourism",
           "slot": "economic",
           "from": "civic:cultural-heritage",
-          "why": "Tourism from Great Works doubled across six Theater Squares."
+          "why": "Tourism from Great Works of Art and Artifacts doubled across six Theater Squares."
         },
         {
           "card": "Online Communities",
@@ -1190,7 +1183,7 @@
       "wonders": [
         {
           "name": "Cristo Redentor",
-          "why": "Doubled Tourism from Seaside Resorts and no Tourism penalty from rivals' governments.",
+          "why": "Doubled Tourism from Seaside Resorts, and religious Tourism no longer reduced once rivals reach The Enlightenment.",
           "skip_if": "Fewer than four Seaside Resorts, or Mass Media lands after turn 260."
         },
         {
@@ -1211,6 +1204,13 @@
           "promotion": "Puppeteer",
           "city": "the contested city-state",
           "why": "Diplomatic direction: holds the suzerainties the Congress votes come from."
+        },
+        {
+          "governor": "magnus",
+          "promotion": "Vertical Integration",
+          "city": "the Industrial Zone city",
+          "note": "Taken late; Groundbreaker comes with him and is never used.",
+          "why": "Production from Factories and Power Plants in a plan with no chops."
         }
       ],
       "city_states": [],
@@ -1251,7 +1251,7 @@
         {
           "id": "close-congress",
           "turn": 275,
-          "text": "Diplomatic direction: every Favor point into the two resolutions that pay Victory Points; Culture direction: sell the Favor for the Gold that buys the last Rock Bands."
+          "text": "Diplomatic direction: every Favor point into the two resolutions that pay Victory Points; Culture direction: sell the Favor for Gold and keep the Faith for the last Rock Bands."
         },
         {
           "id": "close-review",
@@ -1428,7 +1428,7 @@
       "id": "tech:buttress",
       "fit": "free",
       "when": "works",
-      "how": "Temple of Artemis or the Colosseum counts as a Classical or later wonder."
+      "how": "The Colosseum counts as a Classical or later wonder; Temple of Artemis is Ancient and does not."
     },
     {
       "id": "tech:industrialization",
@@ -1464,7 +1464,7 @@
       "id": "tech:flight",
       "fit": "free",
       "when": "parks",
-      "how": "The Eiffel Tower counts as an Industrial-era wonder."
+      "how": "The Eiffel Tower, a Modern-era wonder, counts as Industrial era or later."
     },
     {
       "id": "tech:combustion",
@@ -1722,7 +1722,7 @@
       "id": "civic:social-media",
       "fit": "costly",
       "when": "close",
-      "how": "Telecommunications only if a Great Scientist supplies it."
+      "how": "Researching Telecommunications, an Information-era tech off the Culture path."
     },
     {
       "id": "civic:environmentalism",
@@ -1768,7 +1768,7 @@
     {
       "name": "Favor piling up",
       "if": "Diplomatic Favor passes 200 unspent on the Culture direction.",
-      "then": "Sell it to the richest AI for Gold per turn and buy Builders and Naturalists with the Gold; on the Diplomatic direction, spend it in the next Congress on whichever resolution pays Victory Points."
+      "then": "Sell it to the richest AI for Gold per turn and buy Builders with the Gold and keep the Faith for Naturalists; on the Diplomatic direction, spend it in the next Congress on whichever resolution pays Victory Points."
     },
     {
       "name": "Appeal lowered",

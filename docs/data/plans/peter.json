@@ -88,7 +88,7 @@
         "The most advanced civilization you have met noted as the first Trade Route destination for The Grand Embassy, and Foreign Trade queued after Code of Laws.",
         "A Slinger and a Warrior standing, because the tundra fog is where camps sit and the Lavra city has no walls for sixty turns."
       ],
-      "late_gate": "If Dance of the Aurora is gone when your 25 Faith arrive (a rival took it before turn 15), take Earth Goddess if the tundra has Woods and coast for Breathtaking tiles, or Religious Settlements for the free tile ring, and keep every other step: the Lavra still costs half, still makes two Prophet points and still carries the Great Writer and Artist line, and Mother Russia's tundra Faith still runs. The religion comes ten turns later and the Faith is a third lower, so Work Ethic becomes the Follower belief rather than a Tourism one, and the Theater Square comes forward to the Classical era to fill the Culture the Aurora would have paid. If the Lavra itself is late (no Astrology by turn 25), the Faith race is already lost for the Prophet: build Stonehenge if Stone is beside the capital, and if not, accept that the religion is bought with the second Prophet and plan Culture without a Founder belief.",
+      "late_gate": "If Dance of the Aurora is gone when your 25 Faith arrive (a rival took it before turn 15), take Earth Goddess if the tundra has Woods and coast for Breathtaking tiles, or Religious Settlements for the free Settler, and keep every other step: the Lavra still costs half, still makes two Prophet points and still carries the Great Writer and Artist line, and Mother Russia's tundra Faith still runs. The religion comes ten turns later and the Faith is a third lower, so Work Ethic becomes the Follower belief rather than a Tourism one, and the Theater Square comes forward to the Classical era to fill the Culture the Aurora would have paid. If the Lavra itself is late (no Astrology by turn 25), the Faith race is already lost for the Prophet: build Stonehenge if Stone is beside the capital, and if not, accept that the religion is bought with the second Prophet and plan Culture without a Founder belief.",
       "closing_window": "The far deadline is the Great Prophet: on Emperor the last one is claimed by roughly turn 90, and a Russia with two Lavras and Shrines should have hers by turn 55. After it the Lavras' lead is in Writers, Artists and Musicians, and that lead ends when the Culture civilizations build Art Museums and Broadcast Centers in the Industrial and Modern eras and out-point a Temple. So the Great Works have to be banked before turn 200: eight Writings, six Paintings or Sculptures, four Music. The Grand Embassy has its own soft close: once Russia is level with its trade partners it pays nothing, which should happen by the Renaissance; that is the plan working, not failing, and the routes go home then."
     }
   },
@@ -225,7 +225,7 @@
         },
         {
           "id": "race-god-king",
-          "turn": 6,
+          "turn": 12,
           "text": "Slot God King the turn Code of Laws lands; check the Faith per turn against the 25 needed by turn 15."
         },
         {
@@ -295,7 +295,7 @@
         },
         {
           "id": "tech:bronze-working",
-          "note": "Lumber Mills come later, but the Woods reveal and the camp kills happen now; Eureka from three barbarian kills."
+          "note": "Lumber Mills come later, but the Iron reveal and the camp kills happen now; Eureka from three barbarian kills."
         },
         {
           "id": "tech:archery",
@@ -311,11 +311,11 @@
         },
         {
           "id": "tech:wheel",
-          "note": "Water Mill in the river city; Eureka from the first Mine."
+          "note": "Water Mill in the river city; Eureka from the first Mine on a resource."
         },
         {
           "id": "tech:masonry",
-          "note": "Stonehenge needs it and Ancient Walls in the border city; Eureka from a Quarry."
+          "note": "Ancient Walls in the border city; Eureka from a Quarry."
         }
       ],
       "civics": [
@@ -336,12 +336,12 @@
           "note": "Classical Republic for the Great Person points and the extra wildcard; three city-states met is the Inspiration."
         },
         {
-          "id": "civic:theology",
-          "note": "Founded religion is the Inspiration; Scripture and the Temple path."
-        },
-        {
           "id": "civic:drama-and-poetry",
           "note": "Theater Squares and the Great Works slots the Lavra's Writers will need; Inspiration if Stonehenge is built."
+        },
+        {
+          "id": "civic:theology",
+          "note": "Founded religion is the Inspiration; Scripture and the Temple path."
         }
       ],
       "policies": [
@@ -349,13 +349,13 @@
           "card": "Colonization",
           "slot": "economic",
           "from": "civic:early-empire",
-          "why": "Settlers at half price while Faith buys nothing yet."
+          "why": "+50% Production toward Settlers while Faith buys nothing yet."
         },
         {
           "card": "Classical Republic",
           "slot": "wildcard",
           "from": "civic:political-philosophy",
-          "why": "The government: +15% Great Person points on every Lavra and an Amenity in the cities that are tundra and small."
+          "why": "The government: +15% Great Person points on every Lavra and an Amenity in every city with a district, which every Lavra city is."
         },
         {
           "card": "Scripture",
@@ -364,9 +364,9 @@
           "why": "+100% Holy Site adjacency; the Aurora's +4 on a Lavra becomes +8."
         },
         {
-          "card": "Inspiration",
+          "card": "Literary Tradition",
           "slot": "wildcard",
-          "from": "civic:mysticism",
+          "from": "civic:drama-and-poetry",
           "why": "Great Writer points when the Shrines are the only source; swap out once Temples stand."
         }
       ],
@@ -390,7 +390,7 @@
         {
           "name": "Stonehenge",
           "why": "A free Great Prophet the turn it finishes, which is the religion forty turns early and leaves the Lavras' own points for the next Prophet race nobody else is running.",
-          "skip_if": "No Stone is adjacent to a flat tile in the capital, or Masonry lands after turn 40; a rival with a Faith bias on the map makes it a coin flip and the Lavras found the religion anyway."
+          "skip_if": "No Stone is adjacent to a flat tile in the capital, or the capital cannot finish it by turn 40; a rival with a Faith bias on the map makes it a coin flip and the Lavras found the religion anyway."
         }
       ],
       "governors": [
@@ -404,7 +404,7 @@
           "governor": "pingala",
           "promotion": "Librarian",
           "city": "the river city",
-          "why": "Science and Culture where the population actually grows; his Grants promotion comes next for the Lavra points."
+          "why": "Science and Culture where the population actually grows; his Grants promotion comes after Connoisseur or Researcher, for the Lavra points."
         }
       ],
       "city_states": [
@@ -469,7 +469,7 @@
         {
           "id": "lavras-religion",
           "turn": 60,
-          "text": "Found the religion: a Founder belief that pays per city following it, Work Ethic for Production or Reliquaries if Kandy is yours, and Choral Music as the Enhancer later."
+          "text": "Found the religion: a Founder belief that pays per city following it, Work Ethic for Production or Reliquaries if Kandy is yours, and the Enhancer and the worship building later."
         }
       ]
     },
@@ -505,7 +505,7 @@
         },
         {
           "item": "Market",
-          "why": "Two for Guilds and a third Trade Route; more Embassy routes while they still pay."
+          "why": "Two for Guilds, and the second Commercial Hub they need is a third Trade Route; more Embassy routes while they still pay."
         },
         {
           "item": "Ancient Walls",
@@ -535,11 +535,11 @@
         },
         {
           "id": "tech:military-engineering",
-          "note": "The river city's Aqueduct; nothing else needed."
+          "note": "The river city's Aqueduct is the Eureka (the Aqueduct itself comes from Engineering); nothing else needed."
         },
         {
           "id": "tech:castles",
-          "note": "Free Eureka from Classical Republic; Medieval Walls on the border."
+          "note": "Eureka from a Tier 2 government such as Monarchy, which Classical Republic is not; Medieval Walls on the border."
         },
         {
           "id": "tech:mass-production",
@@ -565,7 +565,7 @@
         },
         {
           "id": "civic:guilds",
-          "note": "Two Markets; a third route and the Banking Eureka."
+          "note": "Two Markets; the second Commercial Hub is a third route, and Guilds is the Banking Eureka."
         },
         {
           "id": "civic:reformed-church",
@@ -658,7 +658,7 @@
       "city_states": [
         {
           "slug": "ayutthaya",
-          "why": "Culture from every building completed, and the Lavras are four buildings each."
+          "why": "Culture from every building completed, and the Lavras are three buildings each."
         },
         {
           "slug": "yerevan",
@@ -772,7 +772,7 @@
       "research": [
         {
           "id": "tech:printing",
-          "note": "Two Universities; the Science catch-up and the Tourism from Printing itself."
+          "note": "Two Universities; the Science catch-up."
         },
         {
           "id": "tech:astronomy",
@@ -809,16 +809,16 @@
           "note": "An Art Museum gives the Inspiration; the Bolshoi is here."
         },
         {
+          "id": "civic:colonialism",
+          "note": "Astronomy gives the Inspiration; the step to Nationalism is not needed, the step to Natural History is."
+        },
+        {
           "id": "civic:natural-history",
           "note": "Archaeological Museum gives the Inspiration; Archaeologists and the Hermitage."
         },
         {
           "id": "civic:civil-engineering",
-          "note": "Seven district types across the empire; Public Works for the Neighborhoods."
-        },
-        {
-          "id": "civic:colonialism",
-          "note": "Astronomy gives the Inspiration; the step to Nationalism is not needed, the step to Natural History is."
+          "note": "Seven district types across the empire; Public Works, and the step to Urbanization for the Neighborhoods."
         },
         {
           "id": "civic:conservation",
@@ -832,9 +832,9 @@
       "policies": [
         {
           "card": "Grand Opera",
-          "slot": "wildcard",
+          "slot": "economic",
           "from": "civic:opera-and-ballet",
-          "why": "+2 Great Writer, Artist and Musician points per Theater Square building; the Lavras' points plus these outpace any Culture civ."
+          "why": "+100% Theater Square adjacency; the Theater Squares beside the Lavras double their Culture."
         },
         {
           "card": "Charismatic Leader",
@@ -881,7 +881,7 @@
         {
           "name": "Bolshoi Theatre",
           "why": "Two free civics and Writing and Music slots; the civics are the Tourism ones you would otherwise buy.",
-          "skip_if": "Opera and Ballet lands after turn 185, or a Culture civilization already has Printing and a Theater Square city on a river."
+          "skip_if": "Opera and Ballet lands after turn 185, or the Culture leader is already building it."
         }
       ],
       "governors": [
@@ -907,17 +907,17 @@
       "city_states": [
         {
           "slug": "antananarivo",
-          "why": "Every Great Person earned is 2% Culture forever; keep the suzerainty with Faith-bought envoys through Amani if needed."
+          "why": "Every Great Person earned is 2% Culture forever; keep the suzerainty with envoys and Amani if needed."
         },
         {
           "type": "Cultural",
-          "why": "Culture per Museum and the Diplomatic Victory point the suzerainties add."
+          "why": "Culture per Museum and the Diplomatic Favor the suzerainties add."
         }
       ],
       "great_people": [
         {
           "class": "great-artist",
-          "why": "Three works of one era from one Artist theme a museum; the Lavra Temples and Grand Opera make one every fifteen turns."
+          "why": "Three works of one era from one Artist theme a museum; the Lavra Temples and the Art Museums make one every fifteen turns."
         },
         {
           "class": "great-musician",
@@ -1031,7 +1031,7 @@
         },
         {
           "id": "civic:cultural-heritage",
-          "note": "A themed building gives the Inspiration; Heritage Tourism and the Open-Air Museum slot."
+          "note": "A themed building gives the Inspiration; Heritage Tourism."
         },
         {
           "id": "civic:professional-sports",
@@ -1051,15 +1051,15 @@
         },
         {
           "card": "Online Communities",
-          "slot": "diplomatic",
+          "slot": "economic",
           "from": "civic:social-media",
           "why": "+50% Tourism to civilizations you trade with, and you trade with all of them."
         },
         {
           "card": "Satellite Broadcasts",
           "slot": "economic",
-          "from": "civic:mass-media",
-          "why": "+200% Tourism from Music, which the worship buildings and Bolshoi hold."
+          "from": "civic:space-race",
+          "why": "+200% Tourism from Music, which the Broadcast Centers and Bolshoi hold."
         }
       ],
       "districts": [
@@ -1093,7 +1093,7 @@
       "city_states": [
         {
           "type": "Cultural",
-          "why": "Keep every Cultural suzerainty; each is Culture and a Diplomatic Victory point if the fallback is needed."
+          "why": "Keep every Cultural suzerainty; each is Culture and Diplomatic Favor if the fallback is needed."
         }
       ],
       "great_people": [
@@ -1239,9 +1239,9 @@
     },
     {
       "id": "tech:castles",
-      "fit": "free",
+      "fit": "cheap",
       "when": "bank",
-      "how": "Classical Republic is a Tier 2 government."
+      "how": "Monarchy from Divine Right adopted for a few turns; Classical Republic is only Tier 1."
     },
     {
       "id": "tech:mass-production",
@@ -1269,9 +1269,9 @@
     },
     {
       "id": "tech:buttress",
-      "fit": "free",
+      "fit": "cheap",
       "when": "bank",
-      "how": "Stonehenge or Mahabodhi is a Classical-or-later wonder you own."
+      "how": "Mahabodhi or St. Basil's is a Classical-or-later wonder you own; Stonehenge is Ancient and does not count."
     },
     {
       "id": "tech:banking",
@@ -1553,7 +1553,7 @@
       "id": "civic:urbanization",
       "fit": "cheap",
       "when": "culture",
-      "how": "The river city at fifteen with Neighborhoods and a Sewer."
+      "how": "The river city at fifteen with the Aqueduct and a Sewer; the Neighborhoods themselves need Urbanization."
     },
     {
       "id": "civic:nationalism",

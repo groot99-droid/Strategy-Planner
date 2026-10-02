@@ -21,7 +21,7 @@
   "map_check": {
     "must_have": [
       "Room for six to eight cities within twelve tiles of the capital, because the settling speed is the first thing the kit buys.",
-      "Horses within the first three cities, or the Knight and Llanero line is bought with Gold rather than built."
+      "Horses within the first three cities, or the Horses the Horseman, Courser and Llanero line needs are bought from a neighbour with Gold rather than pastured."
     ],
     "prefer": [
       "A rival capital within fifteen tiles, so the first Comandante Generals have a war to be spent on.",
@@ -35,7 +35,7 @@
     {
       "source": "leader_ability",
       "name": "Campaña Admirable",
-      "buys": "A Comandante General, a Great General equivalent with a +5 Combat Strength and +1 Movement aura and a one-shot retire ability, at the start of the game and at every era change.",
+      "buys": "A Comandante General, a Great General equivalent with a +5 Combat Strength and +1 Movement aura and a one-shot retire ability, at every era change from the Classical era on.",
       "exploit": "Treat each one as a timer, not a trophy. The plan names the war, the camp or the escort each Comandante is spent on inside the era it arrives in, and uses the retire ability before the next one shows up. Two or three stacked auras on one front is the strongest buff in the game and it is free."
     },
     {
@@ -47,7 +47,7 @@
     {
       "source": "unique_unit",
       "name": "Llanero",
-      "buys": "A Cavalry replacement with lower maintenance, +4 Combat Strength for each adjacent Llanero, and a full heal when a Comandante General retires in range.",
+      "buys": "A Cavalry replacement with lower maintenance, +2 Combat Strength for each adjacent Llanero, and a full heal when a Comandante General retires in range.",
       "exploit": "Build them in pairs and move them as a block of four to six; adjacency is the whole unit. A Comandante retire in the middle of the block is a free full heal for the whole push, so the Industrial Comandante is held for exactly that moment."
     },
     {
@@ -94,7 +94,7 @@
         "to": 45
       },
       "era": "ancient",
-      "objective": "Use the extra Movement on Scouts, Settlers and Builders to found four cities by turn 45, clear every camp within reach with the first Comandante General beside the Warriors, and have Horses improved before the Classical era.",
+      "objective": "Use the extra Movement on Scouts, Settlers and Builders to found four cities by turn 45, clear every camp within reach with the Warriors and Slinger, and have Horses improved before the Classical era brings the first Comandante General.",
       "build_order": [
         {
           "item": "Scout",
@@ -102,7 +102,7 @@
         },
         {
           "item": "Warrior",
-          "why": "Second Warrior to pair with the first Comandante General; two Warriors under the aura clear camps a Spearman would struggle with."
+          "why": "Second Warrior to pair with the first; two Warriors with Discipline clear camps a Spearman would struggle with."
         },
         {
           "item": "Settler",
@@ -126,7 +126,7 @@
         },
         {
           "item": "Settler",
-          "why": "Fourth city; Colonization makes it cheap and the capital has grown back by now."
+          "why": "Fourth city; Colonization makes it quick and the capital has grown back by now."
         }
       ],
       "research": [
@@ -140,7 +140,7 @@
         },
         {
           "id": "tech:bronze-working",
-          "note": "Three camp kills under the Comandante give the Eureka; Encampments and Iron reveal."
+          "note": "Three camp kills by the Warriors give the Eureka; Encampments and Iron reveal."
         },
         {
           "id": "tech:archery",
@@ -152,7 +152,7 @@
         },
         {
           "id": "tech:wheel",
-          "note": "A Mine on any resource; Water Mill and Heavy Chariots are on the way to Currency."
+          "note": "A Mine on any resource; Water Mill and Heavy Chariots, and the road to Engineering."
         }
       ],
       "civics": [
@@ -174,7 +174,7 @@
         },
         {
           "id": "civic:military-tradition",
-          "note": "The first camp cleared under the Comandante gives the Inspiration; Maneuver is the cavalry card for the whole game."
+          "note": "The first camp cleared by the Warriors gives the Inspiration; Maneuver is the Ancient and Classical cavalry card."
         }
       ],
       "policies": [
@@ -182,7 +182,7 @@
           "card": "Discipline",
           "slot": "military",
           "from": "civic:code-of-laws",
-          "why": "Warriors under the Comandante aura and Discipline beat any camp."
+          "why": "Paired Warriors with Discipline's bonus against Barbarians beat any camp."
         },
         {
           "card": "God King",
@@ -194,7 +194,7 @@
           "card": "Colonization",
           "slot": "economic",
           "from": "civic:early-empire",
-          "why": "Settlers three and four at half cost; the sprint runs on it."
+          "why": "+50% Production toward Settlers three and four; the sprint runs on it."
         }
       ],
       "districts": [],
@@ -208,7 +208,7 @@
       "city_states": [
         {
           "type": "Militaristic",
-          "why": "Any Militaristic city-state met early takes the first envoy for cheaper Warriors and Horsemen in the capital."
+          "why": "Any Militaristic city-state met early takes the first envoy for +2 Production toward Warriors and Horsemen in the capital."
         },
         {
           "slug": "kabul",
@@ -219,15 +219,15 @@
       "checkpoints": [
         {
           "turn": 25,
-          "test": "Two cities founded, the first camp cleared with the Comandante General present, and a rival capital located?",
+          "test": "Two cities founded, the first camp cleared by the Warriors, and a rival capital located?",
           "pass": "Keep settling; queue Settler three and four back to back.",
           "fail": "If the second city is late, the Settler was walked without the Movement bonus mattering; pick a closer site. If no rival is found by turn 35, the Science direction is already likelier and the Scout should be looking for city-states instead."
         },
         {
           "turn": 45,
-          "test": "Four cities, Horses improved, and the Ancient Comandante General either retired or standing beside the next camp?",
+          "test": "Four cities, Horses improved, and a front or camp already named for the Classical Comandante General?",
           "pass": "Enter the direction phase with the Classical Comandante arriving on the era change.",
-          "fail": "Three cities is acceptable if the fourth Settler is walking; two is not, and the next thirty turns are Settlers before anything else. A Comandante still unused at the era change is the first banked bonus of the game; retire it now for whatever it offers."
+          "fail": "Three cities is acceptable if the fourth Settler is walking; two is not, and the next thirty turns are Settlers before anything else. Name the camp or front for the Classical Comandante before the era changes, so it is not the first banked bonus of the game."
         }
       ],
       "tasks": [
@@ -239,7 +239,7 @@
         {
           "id": "sprint-comandante-escort",
           "turn": 3,
-          "text": "Move the first Comandante General with the Warriors toward the nearest camp; its aura makes two Warriors enough."
+          "text": "Move the Warriors toward the nearest camp; with Discipline two Warriors are enough, and the first Comandante General only arrives with the Classical era."
         },
         {
           "id": "sprint-second-city",
@@ -346,12 +346,12 @@
           "note": "Three city-states met by the fast Scout; Oligarchy for Domination, Classical Republic for Science."
         },
         {
-          "id": "civic:military-training",
-          "note": "Encampment gives the Inspiration on the Domination branch; otherwise research it unboosted for Feudalism."
-        },
-        {
           "id": "civic:games-and-recreation",
           "note": "Construction gives the Inspiration; Entertainment Complexes later for the wide empire's Amenities."
+        },
+        {
+          "id": "civic:military-training",
+          "note": "Encampment gives the Inspiration on the Domination branch; otherwise research it unboosted for Mercenaries."
         },
         {
           "id": "civic:recorded-history",
@@ -367,7 +367,7 @@
           "card": "Oligarchy",
           "slot": "wildcard",
           "from": "civic:political-philosophy",
-          "why": "Domination branch: +4 Combat Strength on Horsemen and Swordsmen and faster experience that the no-turn-end promotion spends immediately."
+          "why": "Domination branch: +4 Combat Strength on Swordsmen and Spearmen (melee and anti-cavalry, not the Horsemen) and faster experience that the no-turn-end promotion spends immediately."
         },
         {
           "card": "Classical Republic",
@@ -379,7 +379,7 @@
           "card": "Maneuver",
           "slot": "military",
           "from": "civic:military-tradition",
-          "why": "Half-price cavalry; slotted from the first Horseman to the last Llanero."
+          "why": "Double Production on Ancient and Classical cavalry; slotted for the Horsemen, then swapped out in the Medieval era."
         },
         {
           "card": "Natural Philosophy",
@@ -419,7 +419,7 @@
         {
           "name": "Pyramids",
           "why": "An extra Builder charge on every Builder in a wide empire whose Builders already move faster.",
-          "skip_if": "No desert or floodplain tile near the capital, or Masonry lands after turn 70."
+          "skip_if": "No Desert or Desert Floodplains tile near the capital, or Masonry lands after turn 70."
         },
         {
           "name": "Terracotta Army",
@@ -437,7 +437,7 @@
         {
           "governor": "pingala",
           "promotion": "Researcher",
-          "city": "capital",
+          "city": "capital, after Magnus moves out once the last Settler is trained",
           "why": "Science branch: Science per population in the city that will hold the first University."
         }
       ],
@@ -520,7 +520,7 @@
       "build_order": [
         {
           "item": "Knight",
-          "why": "Domination branch: six Knights at Movement 5 under two Comandante auras take a Medieval Walled city with a Battering Ram or Siege Tower."
+          "why": "Domination branch: six Knights at Movement 5 under two Comandante auras take a Medieval Walled city once a Swordsman or Pikeman with a Siege Tower is through the Walls; siege support does not help cavalry."
         },
         {
           "item": "University",
@@ -554,7 +554,7 @@
         },
         {
           "id": "tech:military-engineering",
-          "note": "Aqueduct gives the Eureka; Siege Towers for Medieval Walls."
+          "note": "Aqueduct gives the Eureka; the Armory that boosts Gunpowder."
         },
         {
           "id": "tech:machinery",
@@ -596,7 +596,7 @@
         },
         {
           "id": "civic:mercenaries",
-          "note": "Eight land units is the Knight army plus escorts; Professional Army for the Knight to Llanero upgrade later."
+          "note": "Eight land units is the Knight army plus escorts; Professional Army for the Horseman to Courser to Llanero upgrades later."
         },
         {
           "id": "civic:guilds",
@@ -604,7 +604,7 @@
         },
         {
           "id": "civic:divine-right",
-          "note": "Two Temples only if a religion was founded; otherwise unboosted on the way to Monarchy."
+          "note": "Two Temples only if Holy Sites were built; otherwise unboosted on the way to Monarchy."
         },
         {
           "id": "civic:mercantilism",
@@ -620,7 +620,7 @@
           "card": "Feudal Contract",
           "slot": "military",
           "from": "civic:feudalism",
-          "why": "Domination branch: Knights and Crossbowmen at half cost while the war runs."
+          "why": "Domination branch: Crossbowmen and the melee escort at double Production while the war runs; Knights are cavalry, which it does not cover."
         },
         {
           "card": "Serfdom",
@@ -632,7 +632,7 @@
           "card": "Professional Army",
           "slot": "military",
           "from": "civic:mercenaries",
-          "why": "Half-price upgrades; Horsemen to Knights now, Knights to Llaneros in the next phase."
+          "why": "Half-price upgrades; Horsemen to Coursers now, Coursers to Llaneros in the next phase."
         },
         {
           "card": "Monarchy",
@@ -673,7 +673,7 @@
       "wonders": [
         {
           "name": "Kilwa Kisiwani",
-          "why": "Suzerainty of Kabul and one Scientific or Industrial city-state becomes +15% in every city of a wide empire.",
+          "why": "Suzerainty of Kabul and one Scientific or Industrial city-state becomes +15% of each type's yield in the Kilwa city, and two of the same type make it +15% in every city of a wide empire.",
           "skip_if": "No coastal city with Production, or fewer than two suzerainties at turn 130."
         },
         {
@@ -817,7 +817,7 @@
         },
         {
           "id": "tech:scientific-theory",
-          "note": "The Enlightenment gives the Eureka; Research Labs follow."
+          "note": "The Enlightenment gives the Eureka; the road to Chemistry and its Research Labs."
         },
         {
           "id": "tech:economics",
@@ -825,11 +825,15 @@
         },
         {
           "id": "tech:rifling",
-          "note": "A Niter Mine; Field Cannons and Infantry to hold what Llaneros take."
+          "note": "A Niter Mine; Line Infantry to hold what Llaneros take."
         },
         {
           "id": "tech:sanitation",
           "note": "Two Neighborhoods; Housing for the wide empire."
+        },
+        {
+          "id": "tech:chemistry",
+          "note": "Alliance level 2 gives the Eureka; Research Labs."
         }
       ],
       "civics": [
@@ -860,10 +864,10 @@
       ],
       "policies": [
         {
-          "card": "Grand Armee",
+          "card": "Grande Armee",
           "slot": "military",
           "from": "civic:nationalism",
-          "why": "Industrial units faster; the Llanero block is built under it."
+          "why": "Industrial melee, ranged and anti-cavalry units faster; it does not cover the Llaneros, so the Line Infantry escort is built under it."
         },
         {
           "card": "Total War",
@@ -888,7 +892,7 @@
         {
           "district": "neighborhood",
           "city": "the two largest cities",
-          "note": "Sanitation Eureka and Housing; place them on low-appeal tiles."
+          "note": "Sanitation Eureka and Housing; place them on high-appeal tiles, since their Housing rises with Appeal."
         },
         {
           "district": "spaceport",
@@ -955,7 +959,7 @@
         {
           "id": "llaneros-block",
           "turn": 185,
-          "text": "Six Llaneros built or upgraded from Knights under Professional Army, moving as one block."
+          "text": "Six Llaneros built or upgraded from Coursers under Professional Army, moving as one block."
         },
         {
           "id": "llaneros-comandante-heal",
@@ -991,7 +995,7 @@
       "build_order": [
         {
           "item": "Tank",
-          "why": "Domination branch: Llaneros upgrade into Tanks under Professional Army; the block keeps its promotions."
+          "why": "Domination branch: Tanks join the surviving Llanero block; Llaneros upgrade to Helicopters, not Tanks, so the block keeps its promotions by staying in the field."
         },
         {
           "item": "Artillery",
@@ -1018,10 +1022,6 @@
         {
           "id": "tech:flight",
           "note": "An Industrial wonder gives the Eureka; Aerodromes and the Rapid Deployment line."
-        },
-        {
-          "id": "tech:chemistry",
-          "note": "Alliance level 2 gives the Eureka; Research Labs."
         },
         {
           "id": "tech:combined-arms",
@@ -1117,7 +1117,7 @@
         {
           "id": "close-tanks",
           "turn": 255,
-          "text": "Domination branch: the Llanero block upgraded to Tanks with Artillery behind it and the Modern Comandante in range."
+          "text": "Domination branch: Tanks beside the Llanero block with Artillery behind it and the Modern Comandante in range."
         },
         {
           "id": "close-moon",
@@ -1142,13 +1142,13 @@
       "id": "tech:archery",
       "fit": "cheap",
       "when": "sprint",
-      "how": "The Slinger kills a camp scout under the Comandante aura."
+      "how": "The Slinger kills a camp scout beside the Warriors."
     },
     {
       "id": "tech:bronze-working",
       "fit": "free",
       "when": "sprint",
-      "how": "Three camp kills from the Warriors and Comandante the sprint clears camps with anyway."
+      "how": "Three camp kills from the Warriors the sprint clears camps with anyway."
     },
     {
       "id": "tech:horseback-riding",
@@ -1333,7 +1333,7 @@
     {
       "id": "tech:chemistry",
       "fit": "cheap",
-      "when": "close",
+      "when": "llaneros",
       "how": "Alliance level 2 with the ally kept out of the wars."
     },
     {
@@ -1370,7 +1370,7 @@
       "id": "civic:military-tradition",
       "fit": "free",
       "when": "sprint",
-      "how": "The first camp cleared under the Comandante."
+      "how": "The first camp cleared by the Warriors."
     },
     {
       "id": "civic:early-empire",
@@ -1448,7 +1448,7 @@
       "id": "civic:divine-right",
       "fit": "costly",
       "when": "campaign",
-      "how": "Two Temples need a religion this plan does not chase."
+      "how": "Two Temples need Holy Sites this plan does not build."
     },
     {
       "id": "civic:mercantilism",
@@ -1548,12 +1548,12 @@
     {
       "name": "Walls before the Knights",
       "if": "The first target has Medieval Walls when the Knights arrive.",
-      "then": "Bring a Siege Tower and the Comandante and keep going; cavalry with a Siege Tower ignores Walls. If the target also has Pikemen, switch to the next-weakest city and come back with Bombards."
+      "then": "Bring a Siege Tower, a Swordsman or Pikeman to use it, and the Comandante, and keep going; a Siege Tower lets melee and anti-cavalry units ignore Walls, not cavalry. If the target also has Pikemen, switch to the next-weakest city and come back with Bombards."
     },
     {
       "name": "Llanero window closing",
       "if": "The target has Infantry or Artillery before the Llanero block is six strong.",
-      "then": "Do not push. Upgrade to Tanks before attacking, or pivot the direction to Science on the Hacienda economy; the flat curve makes the pivot cheap."
+      "then": "Do not push. Bring Tanks up before attacking, or pivot the direction to Science on the Hacienda economy; the flat curve makes the pivot cheap."
     }
   ],
   "abort": {
@@ -1575,6 +1575,6 @@
   "sources": [
     "Civilization VI Civilopedia, Gathering Storm ruleset (Gran Colombia, Simon Bolivar, Comandante General, Llanero, Hacienda).",
     "Boost objectives cross-checked against civilization6planner.com tech-tree and civics-tree pages, 2026-10-01.",
-    "Leadership Focus tags, caveats and Linear template for Simon Bolivar in this repository. The civ-info text does not say that a Comandante General also arrives at the start of the game; the plan assumes it does, as the game grants one in the Ancient era."
+    "Leadership Focus tags, caveats and Linear template for Simon Bolivar in this repository. The civ-info text does not say that a Comandante General also arrives at the start of the game, and the game does not grant one: the first arrives with the Classical era."
   ]
 }

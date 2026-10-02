@@ -134,7 +134,7 @@
         },
         {
           "item": "Settler",
-          "why": "Fourth city by turn 45; Colonization makes it cheap."
+          "why": "Fourth city by turn 45; Colonization builds it half again as fast."
         },
         {
           "item": "Warrior",
@@ -208,7 +208,7 @@
           "card": "Colonization",
           "slot": "economic",
           "from": "civic:early-empire",
-          "why": "Settlers at half the cost for cities three and four."
+          "why": "+50% Production toward Settlers for cities three and four."
         }
       ],
       "districts": [
@@ -220,7 +220,7 @@
       ],
       "pantheon": {
         "slug": "god-of-the-forge",
-        "why": "+25% Production toward Ancient and Classical military units: the defensive floor and the Catapults cost a quarter less for 60 turns.",
+        "why": "+25% Production toward Ancient and Classical military units: the defensive floor and the Catapults build a quarter faster for 60 turns.",
         "alternative": "religious-settlements"
       },
       "wonders": [],
@@ -229,7 +229,7 @@
           "governor": "magnus",
           "promotion": "Provision",
           "city": "capital",
-          "why": "The first title at Early Empire; the capital builds Settlers five and six without losing Population."
+          "why": "The first title at Early Empire appoints him and the next buys Provision; the capital then builds Settlers five and six without losing Population."
         }
       ],
       "city_states": [
@@ -343,7 +343,7 @@
         },
         {
           "id": "tech:construction",
-          "note": "Water Mill Eureka; Entertainment Complex later and the Games and Recreation Inspiration."
+          "note": "Water Mill Eureka and the Games and Recreation Inspiration, which brings the Entertainment Complex."
         },
         {
           "id": "tech:engineering",
@@ -395,7 +395,7 @@
           "card": "Colonization",
           "slot": "economic",
           "from": "civic:early-empire",
-          "why": "Settlers five and six at half price."
+          "why": "Settlers five and six at +50% Production."
         },
         {
           "card": "Caravansaries",
@@ -449,8 +449,8 @@
         {
           "governor": "pingala",
           "promotion": "Researcher",
-          "city": "capital",
-          "why": "Third title: Science in the capital, which is the Gunpowder clock."
+          "city": "second city",
+          "why": "Third title appoints her and a later one buys Researcher: Science in the second Campus city, since Magnus holds the capital; Science is the Gunpowder clock."
         }
       ],
       "city_states": [
@@ -535,7 +535,7 @@
         },
         {
           "item": "Catapult",
-          "why": "Two of them, 50% faster by the civ ability; they upgrade to Bombards at Metal Casting and they are the Classical-era floor meanwhile."
+          "why": "Two of them, 50% faster by the civ ability and finished before Military Engineering makes them obsolete; they upgrade to Trebuchets at Military Engineering and to Bombards at Metal Casting, and they are the Classical-era floor meanwhile."
         },
         {
           "item": "Crossbowman",
@@ -603,7 +603,7 @@
         },
         {
           "id": "civic:divine-right",
-          "note": "Monarchy and the Castles Eureka; two Temples only if a religion happened to be founded, otherwise unboosted."
+          "note": "Monarchy and the Castles Eureka; two Temples only if Holy Sites happened to be built, otherwise unboosted."
         },
         {
           "id": "civic:mercenaries",
@@ -625,7 +625,7 @@
           "card": "Professional Army",
           "slot": "military",
           "from": "civic:mercenaries",
-          "why": "Catapults to Bombards and Archers to Crossbowmen at half price when Metal Casting lands."
+          "why": "Catapults to Trebuchets and Archers to Crossbowmen at half price, then Trebuchets to Bombards when Metal Casting lands."
         },
         {
           "card": "Monarchy",
@@ -679,7 +679,7 @@
         {
           "governor": "magnus",
           "promotion": "Black Marketeer",
-          "city": "forward city",
+          "city": "second border city",
           "why": "Only if Niter is scarce: units there cost 80% less of the strategic resource."
         }
       ],
@@ -735,7 +735,7 @@
         {
           "id": "stage-catapults",
           "turn": 98,
-          "text": "Two Catapults built in the forward city under God of the Forge and Ibrahim's Pasha bonus; park them inside the Walls."
+          "text": "Two Catapults, finished in the forward city before Military Engineering under God of the Forge and Ibrahim's Pasha bonus, upgraded to Trebuchets under Professional Army; park them inside the Walls."
         },
         {
           "id": "stage-serasker",
@@ -750,7 +750,7 @@
         {
           "id": "stage-write-order",
           "turn": 108,
-          "text": "Write the first war's build order: six Janissaries across two Encampment cities, Bombard upgrades for both Catapults, one Knight escort. Nothing else is queued until it is done."
+          "text": "Write the first war's build order: six Janissaries across two Encampment cities, Bombard upgrades for both Trebuchets, one Knight escort. Nothing else is queued until it is done."
         }
       ]
     },
@@ -770,7 +770,7 @@
         },
         {
           "item": "Bombard",
-          "why": "Upgrade both Catapults under Professional Army at Metal Casting, then build a third; half again as fast and +5 against walls, +10 more within Ibrahim's ten tiles."
+          "why": "Upgrade both Trebuchets under Professional Army at Metal Casting, then build a third; half again as fast and +5 against walls, +10 more within Ibrahim's ten tiles."
         },
         {
           "item": "Knight",
@@ -846,7 +846,7 @@
           "card": "Professional Army",
           "slot": "military",
           "from": "civic:mercenaries",
-          "why": "Catapults to Bombards, Archers to Crossbowmen, at half the Gold."
+          "why": "Trebuchets to Bombards, Archers to Crossbowmen, at half the Gold."
         },
         {
           "card": "Conscription",
@@ -897,7 +897,7 @@
           "governor": "victor",
           "promotion": "Garrison Commander",
           "city": "the captured capital",
-          "why": "Loyalty and Combat Strength in the city most likely to be retaken; the civ ability's +4 Loyalty plus Victor holds it."
+          "why": "Loyalty and Combat Strength in the city most likely to be retaken; the civ ability's +4 Loyalty plus Victor holds it. He gives the seat up to Ibrahim once the counterattack is beaten."
         }
       ],
       "city_states": [
@@ -943,7 +943,7 @@
         {
           "id": "activate-bombards",
           "turn": 118,
-          "text": "Metal Casting in: upgrade both Catapults to Bombards under Professional Army."
+          "text": "Metal Casting in: upgrade both Trebuchets to Bombards under Professional Army."
         },
         {
           "id": "activate-casus-belli",
@@ -958,7 +958,7 @@
         {
           "id": "activate-hold",
           "turn": 135,
-          "text": "Medieval Walls, Victor and a Janissary garrison in the captured capital; beat the counterattack inside its territory, where Head Falconer applies."
+          "text": "Medieval Walls, Victor and a Janissary garrison in the captured capital; beat the counterattack inside its territory, where Victor's Garrison Commander applies."
         },
         {
           "id": "activate-grand-bazaar",
@@ -979,7 +979,7 @@
       "build_order": [
         {
           "item": "Janissary",
-          "why": "From conquered cities, upgraded to Line Infantry at Replaceable Parts under Professional Army."
+          "why": "From conquered cities, upgraded to Line Infantry at Rifling under Professional Army."
         },
         {
           "item": "Field Cannon",
@@ -995,7 +995,7 @@
         },
         {
           "item": "Military Academy",
-          "why": "In the two Encampment cities: Corps and Armies without Nationalism's Gold cost, and the Totalitarianism Inspiration at three."
+          "why": "In the two Encampment cities: Corps and Armies trained directly instead of combined in the field, and the Totalitarianism Inspiration at three."
         },
         {
           "item": "Factory",
@@ -1034,12 +1034,12 @@
           "note": "Three Corps; Levee en Masse."
         },
         {
-          "id": "civic:totalitarianism",
-          "note": "Three Military Academies; Fascism if the war has four capitals left to take."
+          "id": "civic:ideology",
+          "note": "The gateway to the Modern governments the war needs: Fascism for the army at Totalitarianism, Communism for the Production at Class Struggle."
         },
         {
-          "id": "civic:ideology",
-          "note": "Choose the government the war needs: Fascism for the army, Communism for the Production."
+          "id": "civic:totalitarianism",
+          "note": "Three Military Academies; Fascism if the war has four capitals left to take."
         }
       ],
       "policies": [
@@ -1059,7 +1059,7 @@
           "card": "Levee en Masse",
           "slot": "military",
           "from": "civic:mobilization",
-          "why": "Unit maintenance halved for an army that now numbers twenty."
+          "why": "Unit maintenance two Gold less per unit for an army that now numbers twenty."
         }
       ],
       "districts": [
@@ -1074,7 +1074,7 @@
         {
           "governor": "ibrahim",
           "promotion": "Grand Vizier",
-          "city": "the newest captured capital",
+          "city": "the city nearest the next target",
           "why": "He moves with the front. The top title matters only if he is ever parked in an allied capital; keep him with the army."
         },
         {
@@ -1097,7 +1097,7 @@
       "great_people": [
         {
           "class": "great-general",
-          "why": "Industrial Great Generals keep the Infantry at +5; buy one with Gold before each war."
+          "why": "Industrial Great Generals keep the Line Infantry at +5; buy one with Gold before each war."
         }
       ],
       "checkpoints": [
@@ -1292,7 +1292,7 @@
       "id": "tech:buttress",
       "fit": "costly",
       "when": "stage",
-      "how": "Only if the Alhambra or Pyramids were built."
+      "how": "Only if the Alhambra was built; the Pyramids are Ancient and do not count."
     },
     {
       "id": "tech:metal-casting",

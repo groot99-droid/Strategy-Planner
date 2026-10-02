@@ -12,7 +12,7 @@
     "speed": "Standard",
     "difficulty": "Emperor",
     "map": "Pangaea or Continents, standard size, 8 civilizations",
-    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. Qin Shi Huang's base persona is planned here, not the Mandate of Heaven persona from the Leader Pass. The Crouching Tiger is treated as the game has it: a Medieval ranged unit at Machinery with range 1 and no resource cost, not a Field Cannon replacement."
+    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. Qin Shi Huang's base persona is planned here (the Leader Pass names it Qin (Mandate of Heaven)), not the Unifier persona the Leader Pass added. The Crouching Tiger is treated as the game has it: a Medieval ranged unit at Machinery with range 1 and no resource cost, not a Field Cannon replacement."
   },
   "verdict": {
     "victory": "Culture",
@@ -27,8 +27,8 @@
       "Room for three cities within eight tiles by turn 40, so each wonder has a city to sit in and a Builder to come from."
     ],
     "prefer": [
-      "Stone or Marble near the capital for a Quarry: Masonry's Eureka, the Pyramids and extra wonder Production from Marble.",
-      "A river or lake for the Great Bath, Hanging Gardens and Etemenanki, which few rivals rush.",
+      "Stone or Marble near the capital for a Quarry: Masonry's Eureka and, through Masonry, the Pyramids.",
+      "A river with Floodplains for the Great Bath, Hanging Gardens and Etemenanki, which few rivals rush.",
       "Desert within reach for Petra, or a Mountain for Machu Picchu; a site-locked wonder is one the AI often cannot build.",
       "Brussels within reach of the first envoys: +15% toward wonders stacks with Corvée and the pantheon.",
       "Ik-Kil or Chocolate Hills near the start: Production and Appeal for the Culture game."
@@ -98,7 +98,7 @@
         },
         {
           "item": "Builder",
-          "why": "First Builder improves: a Mine on a hill for The Wheel, a Quarry for Masonry, a Farm on a resource for Irrigation, and a fourth charge on a second Mine for Craftsmanship."
+          "why": "First Builder improves: a Mine on a resource for The Wheel, a Quarry for Masonry, a Farm on a resource for Irrigation, and a fourth charge on a second Mine for Craftsmanship."
         },
         {
           "item": "Settler",
@@ -139,6 +139,10 @@
           "note": "The Oracle needs Mysticism, not this, but the Holy Site and Stonehenge sit here; Eureka only if the Scout finds a natural wonder."
         },
         {
+          "id": "tech:animal-husbandry",
+          "note": "Archery and Horseback Riding both need it; no boost exists, so it is bought at full price while it is cheap."
+        },
+        {
           "id": "tech:archery",
           "note": "The Temple of Artemis; Eureka from the Slinger kill."
         },
@@ -161,6 +165,10 @@
           "note": "Corvée: +15% toward Ancient and Classical wonders, the one card that stays in for eighty turns. Inspiration from the first district, which is late, so it is researched unboosted."
         },
         {
+          "id": "civic:foreign-trade",
+          "note": "A Trader for Currency and roads between the three cities; Inspiration only if a second continent is in sight."
+        },
+        {
           "id": "civic:early-empire",
           "note": "Colonization for the third Settler; Inspiration free at six population."
         }
@@ -170,7 +178,7 @@
           "card": "Urban Planning",
           "slot": "economic",
           "from": "civic:code-of-laws",
-          "why": "+1 Production in the capital while it builds Builders and Settlers."
+          "why": "+1 Production in every city while it builds Builders and Settlers."
         },
         {
           "card": "God King",
@@ -201,7 +209,7 @@
         {
           "name": "Pyramids",
           "why": "A free Builder and an extra charge on every Builder for the rest of the game; it is the one wonder that makes every later wonder cheaper, so it is first in every game.",
-          "skip_if": "A rival is past half on the Wonders tab when Masonry lands, in which case the third Builder's charges go to the Great Bath instead and the Pyramids are given up, not chased."
+          "skip_if": "No city has a flat Desert or Desert Floodplains tile, or a rival is past half on the Wonders tab when Masonry lands; in either case the third Builder's charges go to the Great Bath instead and the Pyramids are given up, not chased."
         }
       ],
       "governors": [],
@@ -219,7 +227,7 @@
       "checkpoints": [
         {
           "turn": 30,
-          "test": "Masonry researched, three cities settled or the third Settler walking, Monument to the Gods founded, Ilkum and Corvée slotted, and a four-charge Builder standing on the Pyramids tile?",
+          "test": "Masonry researched, three cities settled or the third Settler walking, Monument to the Gods founded, Ilkum or Corvée in Chiefdom's one Economic slot, and a four-charge Builder standing on the Pyramids tile?",
           "pass": "Place the Pyramids and spend three charges the same turn; the window is open.",
           "fail": "If Masonry is late, spend the Builder on the Great Bath or Temple of Artemis first and come back. If the Builder is missing, nothing else is built in the capital until it exists; a Settler can wait, the Wonders tab cannot. If the pantheon is missing, slot God King back in."
         }
@@ -233,7 +241,7 @@
         {
           "id": "arm-first-builder",
           "turn": 12,
-          "text": "First Builder: Mine on a hill, Quarry on Stone, Farm on a resource, second Mine; The Wheel, Masonry, Irrigation and Craftsmanship all come from these four charges."
+          "text": "First Builder: Mine on a resource, Quarry on Stone, Farm on a resource, second Mine; The Wheel, Masonry, Irrigation and Craftsmanship all come from these four charges."
         },
         {
           "id": "arm-pantheon",
@@ -248,7 +256,7 @@
         {
           "id": "arm-third-builder",
           "turn": 30,
-          "text": "Third Builder, four charges, standing on the Pyramids tile beside a river or on Desert flat; read the Wonders tab before placing it."
+          "text": "Third Builder, four charges, standing on the Pyramids tile, flat Desert or Desert Floodplains; read the Wonders tab before placing it."
         }
       ]
     },
@@ -272,7 +280,7 @@
         },
         {
           "item": "Oracle",
-          "why": "Great Person points in every district and cheaper Great People; the Culture game's Great Writers start here."
+          "why": "Great Person points in every district of its city and cheaper Great People; the Culture game's Great Writers start here."
         },
         {
           "item": "Great Bath",
@@ -288,11 +296,11 @@
         },
         {
           "item": "Great Library",
-          "why": "Great Scientist points, two Great Work slots and a free boost from every Great Scientist; Recorded History's Inspiration needs two Campuses first."
+          "why": "Great Scientist points, two Great Work slots and the Eurekas for every Ancient and Classical technology; Recorded History's Inspiration needs two Campuses first."
         },
         {
           "item": "Terracotta Army",
-          "why": "A promotion for every land unit and Archaeologists later; on flat land beside the Encampment the Crouching Tigers will use."
+          "why": "A promotion for every current land unit and Archaeologists later; on flat land beside the Encampment the Crouching Tigers will use."
         },
         {
           "item": "Settler",
@@ -310,7 +318,7 @@
         },
         {
           "id": "tech:wheel",
-          "note": "Eureka free from the first Mine; Engineering and Machu Picchu behind it."
+          "note": "Eureka free from the first Mine on a resource; Engineering and Machu Picchu behind it."
         },
         {
           "id": "tech:currency",
@@ -318,7 +326,11 @@
         },
         {
           "id": "tech:mathematics",
-          "note": "Petra if there is Desert; Eureka from three specialty districts, which the Oracle's Holy Site, a Campus and a Commercial Hub give."
+          "note": "Petra if there is Desert; Eureka from three specialty districts, which a Campus, the Encampment and a Commercial Hub give."
+        },
+        {
+          "id": "tech:horseback-riding",
+          "note": "Eureka from a Pasture; Construction needs it, and Stirrups and Castles for the Great Wall Culture come later."
         },
         {
           "id": "tech:construction",
@@ -330,21 +342,13 @@
         },
         {
           "id": "tech:engineering",
-          "note": "Machu Picchu beside a Mountain; Eureka from Ancient Walls, or free from a wonder completion."
-        },
-        {
-          "id": "tech:horseback-riding",
-          "note": "Eureka from a Pasture; needed only to reach Stirrups and Castles for the Great Wall Culture later."
+          "note": "Machu Picchu on a Mountain; Eureka from Ancient Walls, or free from a wonder completion."
         }
       ],
       "civics": [
         {
           "id": "civic:mysticism",
           "note": "The Oracle; Inspiration free from the pantheon."
-        },
-        {
-          "id": "civic:foreign-trade",
-          "note": "A Trader for Currency and roads between the three cities; Inspiration only if a second continent is in sight."
         },
         {
           "id": "civic:political-philosophy",
@@ -403,12 +407,12 @@
         {
           "district": "holy-site",
           "city": "capital",
-          "note": "Only if Stonehenge is on the shortlist or the Faith is wanted for Monumentality later; otherwise the Oracle's own district is enough."
+          "note": "Only if the Faith is wanted for Monumentality later; neither the Oracle nor Stonehenge needs one."
         },
         {
           "district": "campus",
           "city": "capital and the second city",
-          "note": "Beside Mountains or the river; two give Recorded History and the Great Library's adjacency, and Dynastic Cycle's extra tenth pays into every Eureka."
+          "note": "Beside Mountains or Rainforest; two give Recorded History and the Great Library's adjacency, and Dynastic Cycle's extra tenth pays into every Eureka."
         },
         {
           "district": "encampment",
@@ -433,7 +437,7 @@
         },
         {
           "name": "Oracle",
-          "why": "Great Person points and cheaper Great People in every district for the whole game; the Culture engine's Great Writers and Artists start here.",
+          "why": "Great Person points and cheaper Great People from every district in its city for the whole game; the Culture engine's Great Writers and Artists start here.",
           "skip_if": "A rival is past half, or no hill is free in the capital; Etemenanki takes the charges."
         },
         {
@@ -444,17 +448,17 @@
         {
           "name": "Colosseum",
           "why": "+2 Amenities and +2 Culture to every city within six tiles, which a three-city cluster sits inside.",
-          "skip_if": "A rival is past half, or the cities are more than six tiles apart; the Great Library takes the charges."
+          "skip_if": "A rival is past half, no flat tile sits beside an Entertainment Complex, or the cities are more than six tiles apart; the Great Library takes the charges."
         },
         {
           "name": "Great Library",
-          "why": "Great Scientist points, Great Work of Writing slots and a free boost from each Great Scientist; it is Dynastic Cycle in stone.",
+          "why": "Great Scientist points, Great Work of Writing slots and the Eurekas for every Ancient and Classical technology; it is Dynastic Cycle in stone.",
           "skip_if": "No Campus has a Library by turn 85, or a rival is past half; the Mausoleum takes the charges if the coast allows."
         },
         {
           "name": "Terracotta Army",
-          "why": "A free promotion for every land unit and Archaeologists for the Culture game; the last Classical wonder the AI rushes.",
-          "skip_if": "No flat tile sits beside the Encampment, or a rival is past half; Machu Picchu takes the charges if a Mountain allows."
+          "why": "A free promotion for every current land unit and Archaeologists for the Culture game; the last Classical wonder the AI rushes.",
+          "skip_if": "No flat tile sits beside an Encampment with a Barracks or Stable, or a rival is past half; Machu Picchu takes the charges if a Mountain allows."
         },
         {
           "name": "Petra",
@@ -493,7 +497,7 @@
       "great_people": [
         {
           "class": "great-engineer",
-          "why": "Classical Great Engineers finish wonders outright; Imhotep is worth every point the Oracle gives, and he arrives in time for the Great Library or Terracotta Army."
+          "why": "Classical Great Engineers pay a large share of a wonder; Imhotep is worth every point the Oracle gives, and he arrives in time for the Great Library or Terracotta Army."
         },
         {
           "class": "great-writer",
@@ -575,7 +579,7 @@
         },
         {
           "item": "Library",
-          "why": "Both Campuses; the Great Library's Scientists need somewhere to work and Education's Eureka comes from the first."
+          "why": "Both Campuses; the Great Library's Scientists need somewhere to work and Education's Eureka comes from the first Great Scientist."
         },
         {
           "item": "Crouching Tiger",
@@ -655,7 +659,7 @@
           "card": "Serfdom",
           "slot": "economic",
           "from": "civic:feudalism",
-          "why": "Six-charge Builders with Liang and the Pyramids; the terrain catch-up takes half the Builders it would otherwise."
+          "why": "Eight-charge Builders with Liang and the Pyramids; the terrain catch-up takes half the Builders it would otherwise."
         },
         {
           "card": "Aesthetics",
@@ -691,7 +695,7 @@
         {
           "district": "campus",
           "city": "every city without one",
-          "note": "Beside Mountains or the river; the Science second line and the Great Library's Scientists."
+          "note": "Beside Mountains or Rainforest; the Science second line and the Great Library's Scientists."
         },
         {
           "district": "commercial-hub",
@@ -731,7 +735,7 @@
         {
           "governor": "liang",
           "promotion": "Zoning Commissioner",
-          "city": "capital",
+          "city": "the second wonder city",
           "why": "Districts at +20% while every city builds a Theater Square and a Campus; her extra Builder charge still pays on improvements."
         },
         {
@@ -758,11 +762,11 @@
         },
         {
           "class": "great-scientist",
-          "why": "The Great Library's points; the first one is the Education Eureka and each later one is a free boost through the Library."
+          "why": "The Great Library's points; the first one is the Education Eureka and each later one brings boosts of its own."
         },
         {
           "class": "great-engineer",
-          "why": "A Medieval Great Engineer finishes a Gothic Architecture wonder the way charges used to."
+          "why": "A Medieval Great Engineer pays a large share of a Gothic Architecture wonder the way charges used to."
         }
       ],
       "checkpoints": [
@@ -823,7 +827,7 @@
         },
         {
           "item": "Archaeological Museum",
-          "why": "The third city; Natural History's Inspiration and Archaeologists for Artifacts, with Terracotta Army's Archaeologist cheaper."
+          "why": "The third city; Natural History's Inspiration and Archaeologists for Artifacts, with Terracotta Army letting them dig without Open Borders."
         },
         {
           "item": "University",
@@ -845,7 +849,7 @@
       "research": [
         {
           "id": "tech:printing",
-          "note": "Two Universities give the Eureka; the Culture multiplier and Oxford behind it."
+          "note": "Two Universities give the Eureka; the Culture multiplier and the Forbidden City."
         },
         {
           "id": "tech:banking",
@@ -856,16 +860,16 @@
           "note": "A University beside a Mountain if any Campus has one; Colonialism's Inspiration is free from it."
         },
         {
+          "id": "tech:mass-production",
+          "note": "A Lumber Mill on any Woods tile the chops left; Industrialization sits behind it."
+        },
+        {
           "id": "tech:industrialization",
           "note": "Two Workshops; Factories and Coal."
         },
         {
           "id": "tech:scientific-theory",
           "note": "Free Eureka from The Enlightenment."
-        },
-        {
-          "id": "tech:mass-production",
-          "note": "A Lumber Mill on any Woods tile the chops left; Industrialization sits behind it."
         },
         {
           "id": "tech:economics",
@@ -898,12 +902,12 @@
           "note": "The first Art Museum gives the Inspiration; Grand Opera doubles Theater Square buildings."
         },
         {
-          "id": "civic:natural-history",
-          "note": "The Archaeological Museum gives the Inspiration; Archaeologists and the Combustion Eureka."
-        },
-        {
           "id": "civic:colonialism",
           "note": "Free Inspiration from Astronomy; on the way to the Industrial governments."
+        },
+        {
+          "id": "civic:natural-history",
+          "note": "The Archaeological Museum gives the Inspiration; Archaeologists and the Combustion Eureka."
         },
         {
           "id": "civic:urbanization",
@@ -967,7 +971,7 @@
         {
           "name": "Oxford University",
           "why": "Two free technologies and Science in a University city; the Science second line's wonder.",
-          "skip_if": "Scientific Theory arrives after turn 240 or a Science civilization is already building it."
+          "skip_if": "No Campus has a University by turn 240 or a Science civilization is already building it."
         }
       ],
       "governors": [
@@ -1007,11 +1011,11 @@
         },
         {
           "class": "great-engineer",
-          "why": "Renaissance and Industrial Great Engineers finish the Forbidden City and Oxford the way charges used to finish the Pyramids."
+          "why": "Renaissance and Industrial Great Engineers pay large shares of the Forbidden City and Oxford the way charges paid for the Pyramids."
         },
         {
           "class": "great-scientist",
-          "why": "Renaissance Great Scientists boost the Universities; the Great Library turns each into a free boost."
+          "why": "Renaissance Great Scientists boost the Universities and bring boosts of their own."
         }
       ],
       "checkpoints": [
@@ -1110,7 +1114,7 @@
         },
         {
           "id": "tech:combustion",
-          "note": "An Artifact extracted by the Archaeologist gives the Eureka; the Terracotta Army's Archaeologists are cheaper."
+          "note": "An Artifact extracted by the Archaeologist gives the Eureka; the Terracotta Army lets Archaeologists dig without Open Borders."
         },
         {
           "id": "tech:electricity",
@@ -1124,7 +1128,7 @@
         },
         {
           "id": "civic:mass-media",
-          "note": "Free Inspiration from Radio; Broadcast Centers and Online Communities."
+          "note": "Free Inspiration from Radio; Broadcast Centers."
         },
         {
           "id": "civic:cultural-heritage",
@@ -1140,7 +1144,7 @@
         },
         {
           "id": "civic:nuclear-program",
-          "note": "The first Research Lab gives the Inspiration; the Science branch's government and International Space Agency."
+          "note": "The first Research Lab gives the Inspiration; International Space Agency."
         },
         {
           "id": "civic:space-race",
@@ -1157,7 +1161,7 @@
         {
           "card": "Online Communities",
           "slot": "diplomatic",
-          "from": "civic:mass-media",
+          "from": "civic:social-media",
           "why": "Culture branch: +50% Tourism to civilizations you trade with."
         },
         {
@@ -1194,11 +1198,11 @@
         {
           "name": "Eiffel Tower",
           "why": "+2 Appeal to every tile in the empire on top of the wonders; Seaside Resorts and National Parks everywhere.",
-          "skip_if": "Steam Power arrives after turn 285 or a Culture civilization is already building it."
+          "skip_if": "Steel arrives after turn 285 or a Culture civilization is already building it."
         },
         {
           "name": "Cristo Redentor",
-          "why": "Tourism from Seaside Resorts unaffected by Ideology, and it doubles the Resort line the Appeal built.",
+          "why": "Seaside Resort Tourism doubled and religious Tourism kept after The Enlightenment; it doubles the Resort line the Appeal built.",
           "skip_if": "The Science branch is chosen, or no Hills tile is free in a high-Production city."
         }
       ],
@@ -1212,7 +1216,7 @@
         {
           "governor": "moksha",
           "promotion": "Divine Architect",
-          "city": "capital",
+          "city": "the second wonder city",
           "why": "Culture branch: districts bought with Faith from the Oracle's Holy Site and the Great Bath."
         }
       ],
@@ -1233,7 +1237,7 @@
         },
         {
           "class": "great-scientist",
-          "why": "Science branch: Modern Great Scientists are the space projects' shortcuts, and the Great Library turns each into a free boost."
+          "why": "Science branch: Modern Great Scientists are the space projects' shortcuts."
         }
       ],
       "checkpoints": [
@@ -1326,7 +1330,7 @@
       "id": "tech:mathematics",
       "fit": "cheap",
       "when": "window",
-      "how": "Holy Site, Campus and Commercial Hub are three specialty districts."
+      "how": "Campus, Encampment and Commercial Hub are three different specialty districts."
     },
     {
       "id": "tech:construction",
@@ -1462,9 +1466,9 @@
     },
     {
       "id": "tech:flight",
-      "fit": "free",
+      "fit": "cheap",
       "when": "build",
-      "how": "Owning the Forbidden City, Oxford or any Industrial wonder the plan builds."
+      "how": "Owning the Hermitage or any other Industrial wonder the plan builds."
     },
     {
       "id": "tech:gunpowder",
@@ -1553,7 +1557,7 @@
     {
       "id": "civic:foreign-trade",
       "fit": "costly",
-      "when": "window",
+      "when": "arm",
       "how": "Only if a second continent is in sight; otherwise unboosted."
     },
     {
@@ -1762,7 +1766,7 @@
     {
       "name": "Neighbour at the Great Wall",
       "if": "A neighbour masses units on the border or denounces you after turn 90.",
-      "then": "Two Crouching Tigers and a Pikeman behind the Great Wall segments before any further wonder; the Wall's defensive bonus and the Tigers' 50 Ranged Strength hold a Classical army, and Defensive Tactics' Inspiration comes free."
+      "then": "Two Crouching Tigers and a Pikeman (Archers and a Spearman before Machinery and Military Tactics) behind the Great Wall segments before any further wonder; the Wall's defensive bonus and the Tigers' 50 Ranged Strength hold a Classical army, and Defensive Tactics' Inspiration comes free."
     },
     {
       "name": "Free boost from a wonder",
@@ -1790,7 +1794,7 @@
   "sources": [
     "Civilization VI Civilopedia, Gathering Storm ruleset (China, Qin Shi Huang, Crouching Tiger, Great Wall, The First Emperor, Dynastic Cycle). The civ-info text calls the Crouching Tiger a Field Cannon replacement; in the game it is a standalone Medieval ranged unit at Machinery with range 1 and no resource cost, and the plan follows the game.",
     "The First Emperor is taken as the base persona: Builders gain one extra charge and a charge completes 15% of the original cost of an Ancient or Classical wonder. Dynastic Cycle is taken as the civ-info describes it, an extra tenth on every boost and a free Eureka and Inspiration on wonder completion.",
-    "Wonder placement rules from the Civilopedia: Great Bath and Etemenanki on Floodplains or Marsh, Petra on Desert, Machu Picchu beside a Mountain, Terracotta Army and Statue of Zeus on flat land beside an Encampment, Mausoleum on the coast, Great Library beside a Campus with a Library.",
+    "Wonder placement rules from the Civilopedia: Great Bath on Floodplains, Etemenanki on Floodplains or Marsh, Pyramids and Petra on flat Desert, Machu Picchu on a Mountain, Terracotta Army and Statue of Zeus on flat land beside an Encampment (Terracotta Army's with a Barracks or Stable), Mausoleum on the coast beside a Harbor, Great Library beside a Campus with a Library.",
     "Boost objectives cross-checked against civilization6planner.com tech-tree and civics-tree pages, 2026-10-02.",
     "Leadership Focus tags, caveats and the Countdown template for Qin Shi Huang in this repository."
   ]

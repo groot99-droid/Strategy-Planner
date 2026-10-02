@@ -203,7 +203,7 @@
           "card": "Colonization",
           "slot": "economic",
           "from": "civic:early-empire",
-          "why": "Settlers at half the cost for cities three and four."
+          "why": "+50% Production toward Settlers for cities three and four."
         }
       ],
       "districts": [
@@ -224,7 +224,7 @@
           "governor": "magnus",
           "promotion": "Provision",
           "city": "capital",
-          "why": "The first title at Early Empire; the capital builds Settlers five and six without losing Population."
+          "why": "Appointed with the first title at Early Empire and given Provision with the second, so the capital builds Settlers five and six without losing Population."
         }
       ],
       "city_states": [
@@ -354,7 +354,7 @@
         },
         {
           "id": "tech:mathematics",
-          "note": "Campus, Commercial Hub and Harbor make three specialty districts for the Eureka."
+          "note": "Campus, Commercial Hub and Royal Navy Dockyard make three specialty districts for the Eureka."
         },
         {
           "id": "tech:apprenticeship",
@@ -398,7 +398,7 @@
           "card": "Colonization",
           "slot": "economic",
           "from": "civic:early-empire",
-          "why": "Settlers five and six at half price."
+          "why": "+50% Production toward Settlers five and six."
         },
         {
           "card": "Caravansaries",
@@ -423,7 +423,7 @@
         {
           "district": "campus",
           "city": "capital and second city",
-          "note": "Mountain or reef adjacency; Libraries by turn 75 for the Recorded History Inspiration."
+          "note": "Mountain or reef adjacency; the two Campuses are the Recorded History Inspiration and Libraries follow by turn 75."
         },
         {
           "district": "commercial-hub",
@@ -457,8 +457,8 @@
         {
           "governor": "pingala",
           "promotion": "Researcher",
-          "city": "capital",
-          "why": "Second title: Science in the capital, which is the Industrialization clock."
+          "city": "second city",
+          "why": "Third title, with Researcher on the fourth: Science in the second Campus city, since Magnus already holds the capital; Science is the Industrialization clock."
         },
         {
           "governor": "magnus",
@@ -491,7 +491,7 @@
         {
           "turn": 65,
           "test": "Five cities, both border cities walled, one Iron Mine working, and Political Philosophy adopted?",
-          "pass": "Appoint Pingala in the capital; queue the Aqueduct there.",
+          "pass": "Appoint Pingala in the second city; queue the Aqueduct in the capital.",
           "fail": "If the walls are missing, build them before anything else: a Classical declaration against an unwalled border city ends the plan. If no Iron is mined, the sixth Settler goes to the Iron, wherever it is."
         },
         {
@@ -642,7 +642,7 @@
         },
         {
           "id": "civic:exploration",
-          "note": "Merchant Republic, the staging government: two Economic slots more than Monarchy and Gold for the Workshops."
+          "note": "Merchant Republic, the staging government: two Economic slots to Monarchy's one and Gold for the Workshops."
         },
         {
           "id": "civic:humanism",
@@ -660,7 +660,7 @@
           "card": "Craftsmen",
           "slot": "economic",
           "from": "civic:guilds",
-          "why": "Double Industrial Zone adjacency; slotted the turn the first Industrial Zone is placed and never removed."
+          "why": "Double Industrial Zone adjacency; slotted the turn the first Industrial Zone is placed and kept until Five-Year Plan replaces it."
         },
         {
           "card": "Merchant Republic",
@@ -700,7 +700,7 @@
       "wonders": [
         {
           "name": "Kilwa Kisiwani",
-          "why": "+15% to every yield type for each city-state type you are suzerain of; with Cardiff and a Scientific city-state that is Production and Science on the whole empire.",
+          "why": "+15% of each city-state type's yield in its own city for every type you are suzerain of, and in every city once you hold two of one type; with Cardiff and Johannesburg that is Production on the whole empire.",
           "skip_if": "No coastal flat tile in a Campus or Commercial Hub city, or Machinery lands after turn 105."
         },
         {
@@ -714,7 +714,7 @@
           "governor": "magnus",
           "promotion": "Vertical Integration",
           "city": "the best Industrial Zone city",
-          "why": "The Industrial Zone's regional buildings also count every Industrial Zone within six tiles; move him here with the third title once two Industrial Zones stand."
+          "why": "This city takes the regional bonus of every Factory and Power Plant in range instead of only one; Vertical Integration is his third promotion after Provision and Industrialist, so move him here once those titles are spent and two Industrial Zones stand."
         },
         {
           "governor": "liang",
@@ -806,7 +806,7 @@
       "build_order": [
         {
           "item": "Factory",
-          "why": "Every Industrial Zone; +10% more Production per city, and the regional bonus reaches six tiles under Vertical Integration. Three Factories are the Class Struggle Inspiration."
+          "why": "Every Industrial Zone; +10% more Production per city, and the Magnus city stacks every Factory's regional bonus under Vertical Integration. Three Factories are the Class Struggle Inspiration."
         },
         {
           "item": "Ruhr Valley",
@@ -822,7 +822,7 @@
         },
         {
           "item": "Shipyard",
-          "why": "Two of them in the Dockyard and Harbor cities for the Steam Power Eureka; Production on every water tile."
+          "why": "Two of them in the two Dockyard cities for the Steam Power Eureka; Production on every water tile."
         },
         {
           "item": "Bank",
@@ -840,7 +840,7 @@
       "research": [
         {
           "id": "tech:scientific-theory",
-          "note": "Free Eureka from The Enlightenment; Oxford University and Research Grants."
+          "note": "Free Eureka from The Enlightenment; on the path to the Industrial-era techs."
         },
         {
           "id": "tech:steam-power",
@@ -852,7 +852,7 @@
         },
         {
           "id": "tech:rifling",
-          "note": "Niter Mine Eureka if a source is in reach; Field Cannons for the floor and Niter is a strategic tile for Age of Steam either way."
+          "note": "Niter Mine Eureka if a source is in reach; Line Infantry for the floor and Niter is a strategic tile for Age of Steam either way."
         },
         {
           "id": "tech:ballistics",
@@ -886,7 +886,7 @@
         },
         {
           "id": "civic:civil-engineering",
-          "note": "Seven district types, which six cities with Aqueducts and Dams reach; Public Works for the Military Engineers and Builders."
+          "note": "Seven specialty district types; Aqueducts and Dams do not count, so an Entertainment Complex and a Theater Square or Encampment join the five already built. Public Works for the Builders."
         },
         {
           "id": "civic:colonialism",
@@ -897,12 +897,12 @@
           "note": "A 15-Population city; Neighborhoods for the Sanitation Eureka and Housing."
         },
         {
-          "id": "civic:class-struggle",
-          "note": "Three Factories give the Inspiration; Five-Year Plan is +1 Production per Industrial Zone district."
+          "id": "civic:ideology",
+          "note": "The gate to Class Struggle, which brings Communism and Five-Year Plan; Totalitarianism and Fascism instead if the Domination fallback is on."
         },
         {
-          "id": "civic:ideology",
-          "note": "Communism for Industrial Zone Production and Five-Year Plan, unless the Domination fallback is on, in which case Fascism."
+          "id": "civic:class-struggle",
+          "note": "Three Factories give the Inspiration; Communism and Five-Year Plan, which doubles Campus and Industrial Zone adjacency."
         }
       ],
       "policies": [
@@ -910,7 +910,7 @@
           "card": "Craftsmen",
           "slot": "economic",
           "from": "civic:guilds",
-          "why": "Still the single best card in the kit; doubled adjacency now flows into Factories."
+          "why": "Still the single best card in the kit; doubled adjacency now flows into Factories, until Five-Year Plan replaces it at Class Struggle."
         },
         {
           "card": "Rationalism",
@@ -922,18 +922,18 @@
           "card": "Public Works",
           "slot": "economic",
           "from": "civic:civil-engineering",
-          "why": "Builders and Military Engineers 30% cheaper with an extra charge; the Railroads are laid under this card."
+          "why": "Builders 30% faster with two extra charges; they mine the Coal and Niter while the Military Engineers lay the Railroads."
         },
         {
           "card": "Five-Year Plan",
           "slot": "economic",
           "from": "civic:class-struggle",
-          "why": "+1 Production per Industrial Zone and Campus district; eight of each is 16 Production before the percentage."
+          "why": "+100% Campus and Industrial Zone adjacency in one card, replacing Craftsmen and Natural Philosophy; eight of each district before the percentage."
         },
         {
           "card": "Communism",
           "slot": "wildcard",
-          "from": "civic:ideology",
+          "from": "civic:class-struggle",
           "why": "The payoff government: +10% Production toward buildings and wonders and more toward districts; every multiplier stacks on Age of Steam. Fascism only if the Domination branch is chosen."
         }
       ],
@@ -944,9 +944,9 @@
           "note": "Eight by turn 165; a city without one is a city the leader ability ignores."
         },
         {
-          "district": "harbor",
+          "district": "royal-navy-dockyard",
           "city": "a second coastal city",
-          "note": "A plain Harbor is still a Shipyard for the Steam Power Eureka and a Trade Route."
+          "note": "A second Royal Navy Dockyard, since England builds no plain Harbor: a second Shipyard for the Steam Power Eureka and a Trade Route."
         },
         {
           "district": "neighborhood",
@@ -962,8 +962,8 @@
         },
         {
           "name": "Oxford University",
-          "why": "Two free techs and Science per Population on a Campus; the Science half of a space race that this kit's Production will otherwise outrun.",
-          "skip_if": "Scientific Theory lands after turn 150 or a Science rival already has it placed."
+          "why": "Two free techs and extra Science in its Campus city; the Science half of a space race that this kit's Production will otherwise outrun.",
+          "skip_if": "It is not started by turn 150 or a Science rival already has it placed."
         },
         {
           "name": "Big Ben",
@@ -976,7 +976,7 @@
           "governor": "magnus",
           "promotion": "Vertical Integration",
           "city": "the best Industrial Zone city",
-          "why": "The Factory and Power Plant here reach every Industrial Zone within six tiles; place him where the most Industrial Zones overlap."
+          "why": "This city takes the regional Production of every Factory and Power Plant within six tiles, not just one; place him where the most Industrial Zones overlap."
         },
         {
           "governor": "pingala",
@@ -998,7 +998,7 @@
         },
         {
           "slug": "johannesburg",
-          "why": "+1 Production per improved resource in every city; with a Mine on every hill this is the second-best suzerainty in the game for this kit."
+          "why": "+1 Production per improved resource type in every city; with a Mine on every hill this is the second-best suzerainty in the game for this kit."
         },
         {
           "type": "Industrial",
@@ -1074,7 +1074,7 @@
         "to": null
       },
       "era": "modern",
-      "objective": "Run hot. Spaceport in the capital by turn 180, Research Labs everywhere, the Earth Satellite by turn 210 and the Moon Landing by turn 240, with the Mars projects and the Exoplanet Expedition built in two Spaceport cities at once under Pingala's Space Initiative and 30% Production per city. There is no time for a second build-out; every city builds Industrial Zone buildings, Campus buildings or space projects and nothing else.",
+      "objective": "Run hot. Spaceport in the capital by turn 180, Research Labs everywhere, the Earth Satellite by turn 210 and the Moon Landing by turn 240, with the Mars Colony and the Exoplanet Expedition built in two Spaceport cities at once under Pingala's Space Initiative and 30% Production per city. There is no time for a second build-out; every city builds Industrial Zone buildings, Campus buildings or space projects and nothing else.",
       "build_order": [
         {
           "item": "Spaceport",
@@ -1102,7 +1102,7 @@
         },
         {
           "item": "Moon Landing",
-          "why": "Second project; Culture per turn equal to a share of Science afterward keeps the civics coming."
+          "why": "Second project; a one-time burst of Culture equal to ten turns of Science keeps the civics coming."
         }
       ],
       "research": [
@@ -1162,7 +1162,7 @@
           "card": "Five-Year Plan",
           "slot": "economic",
           "from": "civic:class-struggle",
-          "why": "Kept to the end; Production per district in a sixteen-district empire."
+          "why": "Kept to the end; doubled Campus and Industrial Zone adjacency in a sixteen-district empire."
         },
         {
           "card": "Integrated Space Cell",
@@ -1187,7 +1187,7 @@
         {
           "district": "spaceport",
           "city": "capital and the Ruhr city",
-          "note": "Two Spaceports so the Mars components build in parallel."
+          "note": "Two Spaceports so the Mars Colony and the Exoplanet Expedition build in parallel."
         },
         {
           "district": "aerodrome",
@@ -1219,7 +1219,7 @@
       "city_states": [
         {
           "slug": "johannesburg",
-          "why": "Production per improved resource in every city, all the way to the Exoplanet Expedition."
+          "why": "Production per improved resource type in every city, all the way to the Exoplanet Expedition."
         },
         {
           "slug": "geneva",
@@ -1249,7 +1249,7 @@
         },
         {
           "turn": 250,
-          "test": "Moon Landing done and two of the three Mars components launched, or the Exoplanet Expedition under construction?",
+          "test": "Moon Landing done and the Mars Colony launched, or the Exoplanet Expedition under construction?",
           "pass": "Continue to the end; the Lagrange and Terrestrial Laser Stations shorten the trip.",
           "fail": "A Science rival launching ahead means the Domination branch: Artillery and Infantry from the Factories against their Spaceport city, which is the only war this kit should ever start."
         }
@@ -1278,7 +1278,7 @@
         {
           "id": "payoff-second-spaceport",
           "turn": 215,
-          "text": "Second Spaceport finished in the Ruhr city; Mars components split between the two."
+          "text": "Second Spaceport finished in the Ruhr city; the Mars Colony and the Exoplanet Expedition split between the two."
         },
         {
           "id": "payoff-review",
@@ -1431,7 +1431,7 @@
       "id": "tech:steam-power",
       "fit": "cheap",
       "when": "activate",
-      "how": "Two Shipyards in the Dockyard and the second Harbor."
+      "how": "Two Shipyards in the two Royal Navy Dockyards."
     },
     {
       "id": "tech:sanitation",
@@ -1621,9 +1621,9 @@
     },
     {
       "id": "civic:civil-engineering",
-      "fit": "free",
+      "fit": "cheap",
       "when": "activate",
-      "how": "Campus, Commercial Hub, Harbor, Industrial Zone, Aqueduct, Government Plaza and Dam are seven."
+      "how": "Campus, Commercial Hub, Royal Navy Dockyard, Industrial Zone and Government Plaza are five; an Entertainment Complex and a Theater Square or Encampment make seven, since Aqueducts and Dams are not specialty districts."
     },
     {
       "id": "civic:colonialism",

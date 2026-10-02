@@ -32,7 +32,7 @@
       "Pamukkale or Chocolate Hills in reach; Amenities and Production are what a wide Rome runs short of."
     ],
     "no_go": "A small island or a start with room for three cities. Every Roman bonus is paid per city founded; three cities is three Monuments and the kit is finished by turn 40.",
-    "fallback": "If the land is short, settle it anyway and take the Domination direction at turn 60: Legions need no Iron and the free roads move them to the border, and the neighbour's land becomes Roman cities with their own free Monuments on capture."
+    "fallback": "If the land is short, settle it anyway and take the Domination direction at turn 60: Legions need Iron, so settle toward a source, and the free roads move them to the border, and the neighbour's land becomes Roman cities with their own free Monuments on capture."
   },
   "kit_levers": [
     {
@@ -50,7 +50,7 @@
     {
       "source": "unique_unit",
       "name": "Legion",
-      "buys": "A Swordsman replacement with 40 Combat Strength that needs no Iron and carries one build charge for a Roman Fort, a road or clearing a feature.",
+      "buys": "A Swordsman replacement with 40 Combat Strength that needs Iron like the Swordsman and carries one build charge for a Roman Fort, a road or clearing a feature.",
       "exploit": "The Domination option: six Legions under Oligarchy take a Classical capital before Walls, and the charge builds a Fort on the border afterward. On the Science option two Legions escort Settlers and clear the camps, and their charges clear features for districts."
     },
     {
@@ -197,7 +197,7 @@
           "card": "Colonization",
           "slot": "economic",
           "from": "civic:early-empire",
-          "why": "Settlers at half cost; the chain runs on it until turn 80."
+          "why": "+50% Production toward Settlers; the chain runs on it until turn 80."
         }
       ],
       "districts": [],
@@ -307,7 +307,7 @@
       "research": [
         {
           "id": "tech:iron-working",
-          "note": "The Legion unlocks here; the Eureka needs an Iron Mine the Legion itself does not."
+          "note": "The Legion unlocks here; the Eureka is an Iron Mine, which the Legions need anyway."
         },
         {
           "id": "tech:currency",
@@ -319,7 +319,7 @@
         },
         {
           "id": "tech:construction",
-          "note": "Water Mill gives the Eureka; the Colosseum is a wide-empire wonder."
+          "note": "Water Mill gives the Eureka; it inspires Games and Recreation, which unlocks the Colosseum."
         },
         {
           "id": "tech:mathematics",
@@ -337,7 +337,7 @@
       "civics": [
         {
           "id": "civic:military-tradition",
-          "note": "First camp cleared gives the Inspiration; on the path to Political Philosophy."
+          "note": "First camp cleared gives the Inspiration; on the path to Military Training."
         },
         {
           "id": "civic:mysticism",
@@ -381,7 +381,7 @@
           "card": "Agoge",
           "slot": "military",
           "from": "civic:craftsmanship",
-          "why": "Legions at half cost while the army is built."
+          "why": "+50% Production toward Legions while the army is built."
         },
         {
           "card": "Natural Philosophy",
@@ -426,7 +426,7 @@
         {
           "name": "Colosseum",
           "why": "Amenities and Culture to every city within six tiles, which in a Roman chain is most of them.",
-          "skip_if": "The capital is not central to the chain, or Construction lands after turn 85."
+          "skip_if": "The capital is not central to the chain, or Games and Recreation lands after turn 85."
         }
       ],
       "governors": [
@@ -684,7 +684,7 @@
       "wonders": [
         {
           "name": "Kilwa Kisiwani",
-          "why": "Two suzerainties become +15% yields in every one of ten cities.",
+          "why": "Two suzerainties of one type become +15% of that yield in every one of ten cities.",
           "skip_if": "No coastal city, or fewer than two suzerainties at turn 130."
         },
         {
@@ -698,7 +698,7 @@
           "governor": "liang",
           "promotion": "Zoning Commissioner",
           "city": "the Industrial Zone city",
-          "why": "Faster districts in the city building the Bath, the Industrial Zone and the Workshop."
+          "why": "Faster districts in the city building the Bath and the Industrial Zone."
         },
         {
           "governor": "victor",
@@ -716,7 +716,7 @@
       "city_states": [
         {
           "slug": "mexico-city",
-          "why": "Regional effects reach three tiles farther; the Colosseum and Arenas cover the whole chain."
+          "why": "Regional effects reach three tiles farther; the Industrial Zones and Entertainment Complexes cover the whole chain."
         },
         {
           "type": "Scientific",
@@ -825,7 +825,7 @@
         },
         {
           "id": "tech:scientific-theory",
-          "note": "The Enlightenment gave the Eureka; Research Labs."
+          "note": "The Enlightenment gave the Eureka; Research Labs come later with Chemistry."
         },
         {
           "id": "tech:economics",
@@ -884,10 +884,10 @@
           "why": "Commercial Hub buildings doubled; the Gold buys Research Labs in the small cities."
         },
         {
-          "card": "Grand Armee",
+          "card": "Grande Armée",
           "slot": "military",
           "from": "civic:nationalism",
-          "why": "Domination direction: Bombards and Line Infantry faster."
+          "why": "Domination direction: Line Infantry faster; Bombards are siege and get nothing."
         },
         {
           "card": "Five-Year Plan",
@@ -917,7 +917,7 @@
         {
           "name": "Oxford University",
           "why": "Science direction: two free techs and Great Scientist points.",
-          "skip_if": "Scientific Theory lands after turn 215 or a Science civilization already has it."
+          "skip_if": "It unlocks at Education, so skip it if a Science civilization already has it."
         }
       ],
       "governors": [
@@ -925,7 +925,7 @@
           "governor": "reyna",
           "promotion": "Tax Collector",
           "city": "the Commercial Hub capital",
-          "why": "Gold from a city at the centre of ten Trade Routes."
+          "why": "Gold per citizen in the large capital at the centre of ten Trade Routes."
         },
         {
           "governor": "pingala",
@@ -1034,7 +1034,7 @@
         },
         {
           "id": "tech:flight",
-          "note": "Ruhr Valley or Oxford gives the Eureka; Aerodromes."
+          "note": "Ruhr Valley gives the Eureka, Oxford is too early to count; Aerodromes."
         },
         {
           "id": "tech:chemistry",
@@ -1203,9 +1203,9 @@
     },
     {
       "id": "tech:iron-working",
-      "fit": "costly",
+      "fit": "cheap",
       "when": "legion",
-      "how": "An Iron Mine the Legion does not need; research it unboosted if none is close."
+      "how": "An Iron Mine, which the Legions need anyway; research it unboosted if none is close."
     },
     {
       "id": "tech:currency",
@@ -1229,7 +1229,7 @@
       "id": "tech:mathematics",
       "fit": "cheap",
       "when": "legion",
-      "how": "Bath, Campus and Commercial Hub by turn 80."
+      "how": "Campus, Commercial Hub and a third specialty district by turn 80; the Bath does not count."
     },
     {
       "id": "tech:engineering",
@@ -1343,7 +1343,7 @@
       "id": "tech:flight",
       "fit": "cheap",
       "when": "close",
-      "how": "Ruhr Valley or Oxford University."
+      "how": "Ruhr Valley; Oxford University is a Renaissance wonder and does not count."
     },
     {
       "id": "tech:chemistry",
@@ -1604,7 +1604,7 @@
     "Founding cities outside trade range of the capital. They get no road and no connection, and the chain breaks there.",
     "Treating the Culture lead as a score. It buys civics; if the civics are not pointing at a victory, it buys nothing.",
     "Settling until the land ends instead of until Amenities end. Rome's real cap is happiness, and free roads carry rebellion as easily as Legions.",
-    "Waiting for Iron to build Legions. They need none; six Legions by turn 80 is the whole Domination option and it closes with Medieval Walls."
+    "Researching Iron Working with no Iron source in reach. Legions need Iron; six Legions by turn 80 is the whole Domination option and it closes with Medieval Walls."
   ],
   "sources": [
     "Civilization VI Civilopedia, Gathering Storm ruleset (Rome, Trajan, Legion, Bath).",

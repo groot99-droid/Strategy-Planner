@@ -19,7 +19,7 @@
     "secondary": "Score",
     "confidence": "high",
     "one_line": "Fence the empire with Ikandas and walls, bank eight Impi, and do nothing offensive until Mercenaries. Then pair every Impi into a Corps the same turn, take the nearest capital, and let each capture upgrade the unit that took it.",
-    "why": "Amabutho moves Corps from Nationalism to Mercenaries and Armies from Mobilization to Nationalism, which is two full eras before anyone else can field them, and gives them +5 Combat Strength on top. Isibongo makes a capture upgrade the capturing unit to a Corps or Army, so every city taken is also a free formation. Nothing in that kit helps before Mercenaries: the Impi is a cheap Pikeman and the Ikanda is a cheap Encampment, which is why the first ninety turns are a defensive economy and the verdict is Domination only once the gate opens. The kit builds no Culture, no Faith and no Science, so there is no second victory in it; Score is what a half-finished conquest becomes."
+    "why": "Amabutho moves Corps from Nationalism to Mercenaries and Armies from Mobilization to Nationalism, which puts Corps two full eras and Armies one era ahead of anyone else, and gives them +5 Combat Strength on top. Isibongo makes a capture upgrade the capturing unit to a Corps or Army, so every city taken is also a free formation. Nothing in that kit helps before Mercenaries: the Impi is a cheap Pikeman and the Ikanda is a cheap Encampment, which is why the first ninety turns are a defensive economy and the verdict is Domination only once the gate opens. The kit builds no Culture, no Faith and no Science, so there is no second victory in it; Score is what a half-finished conquest becomes."
   },
   "map_check": {
     "must_have": [
@@ -33,14 +33,14 @@
       "Iron within reach for Swordsmen as the pre-gate melee line, and Horses for the Corps that go round the flank."
     ],
     "no_go": "An island start with every rival across ocean. Corps and Armies travel on transports at the speed of the slowest embarked unit, Fleets and Armadas do not come early for the Zulu, and the auto-upgrade on capture needs land captures to compound.",
-    "fallback": "Isolated on an island, settle wide for Score with Ikandas as cheap Housing, keep Impi for defence and take the nearest city-state coast with Quadriremes. Pick up Nationalism and use Armies only if a continental rival later lands on you."
+    "fallback": "Isolated on an island, settle wide for Score with Ikandas as cheap Housing, keep Impi for defence and take the nearest city-state coast with Quadriremes and Galleys. Pick up Nationalism and use Armies only if a continental rival later lands on you."
   },
   "kit_levers": [
     {
       "source": "leader_ability",
       "name": "Amabutho",
       "buys": "Corps at the Mercenaries civic instead of Nationalism, Armies at Nationalism instead of Mobilization, and +5 Combat Strength for every Corps and Army.",
-      "exploit": "A Corps of two Impi is 41 plus 10 plus 5, which outfights a Knight in the Medieval era for less than the cost of one Knight. The plan banks eight single Impi before the civic and merges them the turn it lands, because the civic is the entire power spike and a staggered merge wastes it."
+      "exploit": "A Corps of two Impi is 35 plus 10 plus 5, which outfights a Knight in the Medieval era for less than the cost of one Knight. The plan banks eight single Impi before the civic and merges them the turn it lands, because the civic is the entire power spike and a staggered merge wastes it."
     },
     {
       "source": "civ_ability",
@@ -52,7 +52,7 @@
       "source": "unique_unit",
       "name": "Impi",
       "buys": "A Pikeman replacement at Military Tactics that costs less, pays less maintenance, earns experience faster and doubles its flanking bonus.",
-      "exploit": "Eight Impi are the Mercenaries Inspiration, the staged army and the defensive floor at once. Train them from the Ikanda city under Agoge, promote them to Echelon and Thrust on barbarians, and keep them single until the civic lands."
+      "exploit": "Eight Impi are the Mercenaries Inspiration, the staged army and the defensive floor at once. Train them from the Ikanda city under Feudal Contract, promote them to Echelon and Thrust on barbarians, and keep them single until the civic lands."
     },
     {
       "source": "unique_infrastructure",
@@ -96,8 +96,8 @@
         "A Casus Belli in hand, Reconquest, Liberation or at least a denouncement five turns old for a Formal War, so the grievances do not bring a third civ in.",
         "Oligarchy adopted and Feudal Contract slotted, with Limitanei ready to swap in once the first city is taken."
       ],
-      "late_gate": "If Mercenaries is twenty turns behind pace (not unlocked by turn 120), the Culture is the problem, not the army. Build a Monument in every city, slot Inspiration, send Pingala with Connoisseur to the capital, and buy the Amphitheater there. Do not attack with single Impi in the meantime: fight only defensively, keep clearing barbarian camps for experience, and spend the delay settling a fifth and sixth city behind the fence. If a neighbour attacks first, use the war to earn the Defensive Tactics Inspiration and promote the Impi, but do not take their cities until the civic is in; a captured city before Mercenaries is just a city.",
-      "closing_window": "Parity arrives when rivals unlock Nationalism (Corps for everyone, Industrial era, roughly turn 160 to 190 on Emperor) and Mobilization (Armies). Before that the +5 and the two-era formation lead are decisive; after it the Zulu are a normal civ with one extra point of Combat Strength and no economy. The snowball has to be rolling, meaning two or more captures and the first Armies formed under your own Nationalism, before any rival reaches Nationalism. Check the rival civics tab every ten turns from the gate onward; when the nearest rival is within one civic of Nationalism, stop widening the war and consolidate what is held."
+      "late_gate": "If Mercenaries is twenty turns behind pace (not unlocked by turn 120), the Culture is the problem, not the army. Build a Monument in every city, chase every cheap civic Inspiration, send Pingala with Connoisseur to the capital, and build a Theater Square there and buy its Amphitheater. Do not attack with single Impi in the meantime: fight only defensively, keep clearing barbarian camps for experience, and spend the delay settling a fifth and sixth city behind the fence. If a neighbour attacks first, use the war to earn the Defensive Tactics Inspiration and promote the Impi, but do not take their cities until the civic is in; a captured city before Mercenaries is just a city.",
+      "closing_window": "Parity arrives when rivals unlock Nationalism (Corps for everyone, Industrial era, roughly turn 160 to 190 on Emperor) and Mobilization (Armies). Before that the +5 and the two-era formation lead are decisive; after it the Zulu are a normal civ with five extra points of Combat Strength on its formations and no economy. The snowball has to be rolling, meaning two or more captures and the first Armies formed under your own Nationalism, before any rival reaches Nationalism. Check the rival civics tab every ten turns from the gate onward; when the nearest rival is within one civic of Nationalism, stop widening the war and consolidate what is held."
     }
   },
   "phases": [
@@ -133,7 +133,7 @@
         },
         {
           "item": "Builder",
-          "why": "Mine a hill for The Wheel and improve three tiles for Craftsmanship, the first civic on the path."
+          "why": "Mine a resource for The Wheel and improve three tiles for Craftsmanship, the first civic on the path."
         },
         {
           "item": "Warrior",
@@ -169,7 +169,7 @@
         },
         {
           "id": "civic:craftsmanship",
-          "note": "First step on the gate path; Agoge is the card every Impi is built under. Inspiration from three improved tiles."
+          "note": "First step on the gate path; Agoge speeds the Warriors, Spearmen and Archers of the floor. Inspiration from three improved tiles."
         },
         {
           "id": "civic:military-tradition",
@@ -193,13 +193,13 @@
           "card": "Agoge",
           "slot": "military",
           "from": "civic:craftsmanship",
-          "why": "Half again as fast on every melee, anti-cavalry and ranged unit from here to the Renaissance."
+          "why": "Half again as fast on every Ancient and Classical melee, anti-cavalry and ranged unit; the Medieval Impi fall outside it."
         }
       ],
       "districts": [],
       "pantheon": {
         "slug": "god-of-the-forge",
-        "why": "A quarter off every Impi, Archer and Swordsman the floor and the staged army need.",
+        "why": "A quarter more Production on every Archer, Spearman and Swordsman the floor needs; the Medieval Impi fall outside it.",
         "alternative": "initiation-rites"
       },
       "wonders": [],
@@ -279,7 +279,7 @@
         },
         {
           "item": "Commercial Hub",
-          "why": "Capital; the Trade Route pays Currency and the Market pays Guilds."
+          "why": "Capital, after Currency; a second Trade Route and the Market toward Guilds."
         },
         {
           "item": "Water Mill",
@@ -308,8 +308,16 @@
           "note": "Swordsmen as the melee line and the pre-gate Impi escort; mine the Iron."
         },
         {
+          "id": "tech:horseback-riding",
+          "note": "Construction needs it; Horsemen for pillaging and the flank; Pasture Eureka."
+        },
+        {
           "id": "tech:construction",
           "note": "Games and Recreation Inspiration comes from researching it; Terracotta Army."
+        },
+        {
+          "id": "tech:mathematics",
+          "note": "Military Tactics needs it, so it comes here; the Campus that completes the Eureka usually comes later."
         },
         {
           "id": "tech:military-tactics",
@@ -317,7 +325,7 @@
         },
         {
           "id": "tech:engineering",
-          "note": "Eureka free from Ancient Walls; Battering Rams for the post-gate siege."
+          "note": "Eureka free from Ancient Walls; Catapults and the Aqueduct."
         }
       ],
       "civics": [
@@ -357,7 +365,7 @@
           "card": "Colonization",
           "slot": "economic",
           "from": "civic:early-empire",
-          "why": "Third and fourth Settler at half price."
+          "why": "Third and fourth Settler half again as fast."
         },
         {
           "card": "Oligarchy",
@@ -386,7 +394,7 @@
       ],
       "pantheon": {
         "slug": "god-of-the-forge",
-        "why": "Already founded; this phase spends it on Archers, Spearmen and the first Impi."
+        "why": "Already founded; this phase spends it on Archers, Spearmen and Swordsmen; the Medieval Impi fall outside it."
       },
       "wonders": [
         {
@@ -445,7 +453,7 @@
           "turn": 75,
           "test": "Four cities, Impi unlocked, the first two built, Military Training and Early Empire done, and Oligarchy adopted?",
           "pass": "Enter staging: eight Impi, two Rams, a General, a target.",
-          "fail": "Count what is missing. If it is Impi, slot Agoge and Feudal Contract when it comes and build nothing else; if it is civics, Monuments and Pingala; if it is cities, accept three and stage with a smaller first target."
+          "fail": "Count what is missing. If it is Impi, slot Feudal Contract the turn Feudalism lands and build nothing else; if it is civics, Monuments and Pingala; if it is cities, accept three and stage with a smaller first target."
         }
       ],
       "tasks": [
@@ -472,7 +480,7 @@
         {
           "id": "fence-first-impi",
           "turn": 68,
-          "text": "First Impi out of the Barracks under Agoge; send it to the nearest camp with an Archer."
+          "text": "First Impi out of the Barracks; send it to the nearest camp with an Archer."
         },
         {
           "id": "fence-general",
@@ -518,20 +526,12 @@
       ],
       "research": [
         {
-          "id": "tech:horseback-riding",
-          "note": "Horsemen for pillaging and the flank; Pasture Eureka."
-        },
-        {
           "id": "tech:apprenticeship",
           "note": "Three Mines; the Production the war runs on."
         },
         {
-          "id": "tech:mathematics",
-          "note": "Ikanda, Commercial Hub and a Campus or Harbor are three districts; Military Tactics behind it is already in."
-        },
-        {
           "id": "tech:military-engineering",
-          "note": "Aqueduct Eureka; Siege Towers if Medieval Walls appear on the target."
+          "note": "Aqueduct Eureka; Trebuchets if Medieval Walls appear on the target."
         },
         {
           "id": "tech:stirrups",
@@ -545,7 +545,7 @@
         },
         {
           "id": "civic:feudalism",
-          "note": "Six Farms; Feudal Contract doubles Impi Production. The last step before the gate."
+          "note": "Six Farms; Feudal Contract adds half again to Impi Production. The last step before the gate."
         },
         {
           "id": "civic:mercenaries",
@@ -588,7 +588,7 @@
         {
           "name": "Colosseum",
           "why": "Amenities and Culture across every city within six tiles; conquered cities need both.",
-          "skip_if": "The capital is not central to the empire, or Games and Recreation lands after turn 85."
+          "skip_if": "The capital is not central to the empire, Games and Recreation lands after turn 85, or no Entertainment Complex stands beside flat land for it."
         }
       ],
       "governors": [
@@ -596,7 +596,7 @@
           "governor": "victor",
           "promotion": "Defense Logistics",
           "city": "forward city",
-          "why": "Units in the city heal fully each turn; the stack stages at full health."
+          "why": "The city cannot be put under siege, so the staging stack cannot be cut off around it."
         },
         {
           "governor": "pingala",
@@ -705,7 +705,7 @@
         },
         {
           "id": "tech:castles",
-          "note": "Free Eureka from Oligarchy; Medieval Walls at home and Alhambra."
+          "note": "Free Eureka from Monarchy; Medieval Walls at home and Alhambra."
         },
         {
           "id": "tech:siege-tactics",
@@ -714,6 +714,10 @@
         {
           "id": "tech:gunpowder",
           "note": "Armory in the Ikanda for the Eureka; Musketmen are the next upgrade of the Impi line's escorts."
+        },
+        {
+          "id": "tech:education",
+          "note": "Universities need it; no Great Scientist, so research it plain."
         },
         {
           "id": "tech:printing",
@@ -735,7 +739,7 @@
         },
         {
           "id": "civic:nationalism",
-          "note": "Armies, two eras early. Inspiration from the Casus Belli war already declared."
+          "note": "Armies, one era early. Inspiration from the Casus Belli war already declared."
         }
       ],
       "policies": [
@@ -787,8 +791,8 @@
         {
           "governor": "amani",
           "promotion": "Emissary",
-          "city": "a capture near the next rival",
-          "why": "Loyalty pressure outward on the next target's border cities."
+          "city": "Akkad",
+          "why": "Two Envoys toward the Akkad suzerainty the whole war runs on; only Amani can sit in a city-state."
         }
       ],
       "city_states": [
@@ -1064,12 +1068,12 @@
       "id": "tech:currency",
       "fit": "free",
       "when": "fence",
-      "how": "The first Trader from the Commercial Hub."
+      "how": "The first Trader from Foreign Trade, before the Commercial Hub."
     },
     {
       "id": "tech:horseback-riding",
       "fit": "cheap",
-      "when": "stage",
+      "when": "fence",
       "how": "A Pasture on Horses or Sheep."
     },
     {
@@ -1092,9 +1096,9 @@
     },
     {
       "id": "tech:mathematics",
-      "fit": "cheap",
-      "when": "stage",
-      "how": "Ikanda, Commercial Hub and Campus are three specialty districts."
+      "fit": "costly",
+      "when": "fence",
+      "how": "Ikanda, Commercial Hub and Campus are three different specialty districts; the Campus rarely stands before Military Tactics needs Mathematics."
     },
     {
       "id": "tech:military-tactics",
@@ -1130,7 +1134,7 @@
       "id": "tech:castles",
       "fit": "free",
       "when": "snowball",
-      "how": "Oligarchy is a Tier 2 government."
+      "how": "Monarchy from Divine Right is a Tier 2 government; research Castles after adopting it."
     },
     {
       "id": "tech:education",

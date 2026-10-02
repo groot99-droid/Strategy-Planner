@@ -24,7 +24,7 @@
       "Horses within the capital's second ring, or in the second city's first ring, pastured by turn 20; without Horses the army is Saka Horse Archers alone."
     ],
     "prefer": [
-      "Grassland or plains flats on the approach; the whole army moves four tiles a turn on open ground and one in Woods and Hills.",
+      "Grassland or plains flats on the approach; the whole army moves four tiles a turn on open ground and two in Woods or Hills.",
       "Two or three Barbarian camps between you and the target, each a free promotion and a full heal under Killer of Cyrus.",
       "Sheep, Cattle or Horses in clusters so Kurgans ringed by Pastures pay 3 or 4 Faith each.",
       "Kabul or another Militaristic city-state within reach of the first envoys."
@@ -33,18 +33,42 @@
     "fallback": "If no capital is within reach by turn 12, settle three cities on flat land with Pastures, lay Kurgans between them, and play Scythia as a Faith civilization: God of the Open Sky, a religion by turn 90, and the doubled cavalry kept as a cheap defensive army. The deadline then applies to the nearest city-state or a second-ring neighbour reached by road in the Medieval era with Coursers."
   },
   "kit_levers": [
-    { "source": "leader_ability", "name": "Killer of Cyrus", "buys": "+5 Combat Strength when attacking a wounded unit, and a unit heals when it kills.", "exploit": "Sequence every attack: the Saka Horse Archers wound, the Horsemen finish, and the Horseman that kills is the one that is healed for the next turn. Never open with the Horsemen. The engine runs on kills, so it needs units in the field to kill; a city with Walls and no sortie starves it, and the plan treats that as the end of the window, not a puzzle to solve." },
-    { "source": "civ_ability", "name": "People of the Steppe", "buys": "A second unit, free, every time a light cavalry unit or a Saka Horse Archer is trained.", "exploit": "Every cavalry purchase is two units, so the arming phase builds four things and fields eight. The maintenance is doubled too and arrives before the first capture, which is why the plan runs a Gold checkpoint before each wave and why Conscription goes in the turn State Workforce lands. Buying a Horseman with Gold also pays twice." },
-    { "source": "unique_unit", "name": "Saka Horse Archer", "buys": "A Classical ranged cavalry unit at Horseback Riding with 4 Movement, range 1, no Horses required, and two per purchase.", "exploit": "The half of the army the map cannot deny you. Range 1 means they shoot from the tile beside the target, so they move four, shoot and are exposed; the Horsemen stand in front of them. They are the wounding half of Killer of Cyrus and they melt Warriors and Slingers, but they do little to Walls, and they do not count as Archers for the Machinery Eureka." },
-    { "source": "unique_infrastructure", "name": "Kurgan", "buys": "A flat-land improvement at Animal Husbandry with Faith and Gold, and more Faith for each adjacent Pasture.", "exploit": "The only yield the kit leaves behind. Lay Kurgans on the flat tile a ring of Pastures surrounds, never beside another Kurgan, and the Faith founds the pantheon by turn 20 and a religion in the digest phase. From the Grand Master's Chapel onward that Faith buys Coursers and Cavalry, which also come in pairs, so a Kurgan economy is the second army." },
-    { "source": "agenda", "name": "Backstab Averse", "buys": "Tomyris likes Declared Friends and hates anyone who launches a Surprise War, above all against a friend.", "exploit": "Irrelevant to your own play, and a warning: the first war of this plan is a Surprise War at turn 33 with no Casus Belli available, so expect an AI Tomyris on the same map to denounce you for it. Declare friendship with whoever is on the far side of the target before the war; that is the ally the digest phase needs." }
+    {
+      "source": "leader_ability",
+      "name": "Killer of Cyrus",
+      "buys": "+5 Combat Strength when attacking a wounded unit, and a unit heals when it kills.",
+      "exploit": "Sequence every attack: the Saka Horse Archers wound, the Horsemen finish, and the Horseman that kills is the one that is healed for the next turn. Never open with the Horsemen. The engine runs on kills, so it needs units in the field to kill; a city with Walls and no sortie starves it, and the plan treats that as the end of the window, not a puzzle to solve."
+    },
+    {
+      "source": "civ_ability",
+      "name": "People of the Steppe",
+      "buys": "A second unit, free, every time a light cavalry unit or a Saka Horse Archer is trained.",
+      "exploit": "Every cavalry purchase is two units, so the arming phase builds four things and fields eight. The maintenance is doubled too and arrives before the first capture, which is why the plan runs a Gold checkpoint before each wave and why Conscription goes in the turn State Workforce lands. Buying a Horseman with Gold also pays twice."
+    },
+    {
+      "source": "unique_unit",
+      "name": "Saka Horse Archer",
+      "buys": "A Classical ranged cavalry unit at Horseback Riding with 4 Movement, range 1, no Horses required, and two per purchase.",
+      "exploit": "The half of the army the map cannot deny you. Range 1 means they shoot from the tile beside the target, so they move four, shoot and are exposed; the Horsemen stand in front of them. They are the wounding half of Killer of Cyrus and they melt Warriors and Slingers, but they do little to Walls, and they do not count as Archers for the Machinery Eureka."
+    },
+    {
+      "source": "unique_infrastructure",
+      "name": "Kurgan",
+      "buys": "A flat-land improvement at Animal Husbandry with Faith and Gold, and more Faith for each adjacent Pasture.",
+      "exploit": "The only yield the kit leaves behind. Lay Kurgans on the flat tile a ring of Pastures surrounds, never beside another Kurgan, and the Faith founds the pantheon by turn 20 and a religion in the digest phase. From the Grand Master's Chapel onward that Faith buys Coursers and Cavalry, which also come in pairs, so a Kurgan economy is the second army."
+    },
+    {
+      "source": "agenda",
+      "name": "Backstab Averse",
+      "buys": "Tomyris likes Declared Friends and hates anyone who launches a Surprise War, above all against a friend.",
+      "exploit": "Irrelevant to your own play, and a warning: the first war of this plan is a Surprise War at turn 33 with no Casus Belli available, so expect an AI Tomyris on the same map to denounce you for it. Declare friendship with whoever is on the far side of the target before the war; that is the ally the digest phase needs."
+    }
   ],
   "shape_block": {
     "countdown": {
       "deadline_turn": 85,
       "midpoint_turn": 55,
-      "target_selection": "On turn 1, send the Warrior along the longest stretch of flat land the start shows. The target is the nearest rival capital by land within 14 tiles, chosen by turn 10 from what the Warrior and the Scout see, and it is not changed afterwards. Prefer a capital on open ground with its second city on the near side, so the first capture is the cheaper one. If two are equally near, take the one whose owner has not reached Masonry, which its banner and the Walls it is not building will show. Walls are what close this window; the turn number is only the budget."
-      ,
+      "target_selection": "On turn 1, send the Warrior along the longest stretch of flat land the start shows. The target is the nearest rival capital by land within 14 tiles, chosen by turn 10 from what the Warrior and the Scout see, and it is not changed afterwards. Prefer a capital on open ground with its second city on the near side, so the first capture is the cheaper one. If two are equally near, take the one whose owner has not reached Masonry, which its banner and the Walls it is not building will show. Walls are what close this window; the turn number is only the budget.",
       "what_counts_as_converted": "Cities you hold at turn 85: the target capital and at least one more of its cities, each with positive Loyalty and a Monument started, or two cities of the target plus a third Scythian city settled during the window. Kills, promotions, pillage Gold and a surviving army of twelve cavalry do not count, and neither does a Great General. Twelve units at turn 85 and no city is the fail state, and the maintenance on them is the fine for it.",
       "after_window": "At turn 85 the plan stops conquering whether or not the second city fell. The Horsemen garrison the captures and are not upgraded until Professional Army. Production turns to Monuments, Granaries, Builders for Kurgans and Pastures, and a Holy Site in the capital, because the digest phase runs on Faith. The empire is wide, behind in districts and owes Gold; the rest of the game is a Faith economy that buys its second army with the Grand Master's Chapel, and any later war is a Medieval or Renaissance cavalry war against a neighbour behind on Walls, declared with a Casus Belli."
     }
@@ -53,414 +77,1484 @@
     {
       "id": "arm",
       "name": "Arm",
-      "turns": { "from": 1, "to": 32 },
+      "turns": {
+        "from": 1,
+        "to": 32
+      },
       "era": "ancient",
       "objective": "Pick the target on turn 1, pasture Horses for the Horseback Riding Eureka, clear the camps on the road for promotions and healing, found the pantheon, and have two pairs of Horsemen and two pairs of Saka Horse Archers within five tiles of the target capital by turn 32 while it still has no Walls.",
       "build_order": [
-        { "item": "Scout", "why": "Finds the target and the camps on the road to it in the first ten turns; Writing and Astrology come from it." },
-        { "item": "Warrior", "why": "Escort and the first camp clearer; later one half of a Battering Ram crew if Walls appear." },
-        { "item": "Slinger", "why": "Archery Eureka on the first camp Scout, and Archery is on the way to Horseback Riding." },
-        { "item": "Settler", "why": "The second city goes toward the target, on flats with Horses or Sheep; it is the forward base the army heals in." },
-        { "item": "Builder", "why": "Pasture on the Horses for the Horseback Riding Eureka, a Kurgan beside it, and a Mine for The Wheel." },
-        { "item": "Horseman", "why": "First pair, the turn Horseback Riding lands with Maneuver slotted; 36 Strength and 4 Movement against Warriors." },
-        { "item": "Saka Horse Archer", "why": "First pair; no Horses needed, so the second city can build these while the capital builds Horsemen." },
-        { "item": "Horseman", "why": "Second pair. Four Horsemen and four Saka Horse Archers is the army; a third Horseman pair is a Monument not built." },
-        { "item": "Saka Horse Archer", "why": "Second pair, from the forward city, finishing as the Horsemen arrive at the staging tile." }
+        {
+          "item": "Scout",
+          "why": "Finds the target and the camps on the road to it in the first ten turns; Writing and Astrology come from it."
+        },
+        {
+          "item": "Warrior",
+          "why": "Escort and the first camp clearer; later one half of a Battering Ram crew if Walls appear."
+        },
+        {
+          "item": "Slinger",
+          "why": "Archery Eureka on the first camp Scout, and Archery is on the way to Horseback Riding."
+        },
+        {
+          "item": "Settler",
+          "why": "The second city goes toward the target, on flats with Horses or Sheep; it is the forward base the army heals in."
+        },
+        {
+          "item": "Builder",
+          "why": "Pasture on the Horses for the Horseback Riding Eureka, a Kurgan beside it, and a Mine for The Wheel."
+        },
+        {
+          "item": "Horseman",
+          "why": "First pair, the turn Horseback Riding lands with Maneuver slotted; 36 Strength and 4 Movement against Warriors."
+        },
+        {
+          "item": "Saka Horse Archer",
+          "why": "First pair; no Horses needed, so the second city can build these while the capital builds Horsemen."
+        },
+        {
+          "item": "Horseman",
+          "why": "Second pair. Four Horsemen and four Saka Horse Archers is the army; a third Horseman pair is a Monument not built."
+        },
+        {
+          "item": "Saka Horse Archer",
+          "why": "Second pair, from the forward city, finishing as the Horsemen arrive at the staging tile."
+        }
       ],
       "research": [
-        { "id": "tech:animal-husbandry", "note": "First: reveals Horses, unlocks the Pasture and the Kurgan, and Horseback Riding hangs off it." },
-        { "id": "tech:archery", "note": "On the way to Horseback Riding; Eureka from a Slinger kill at the first camp." },
-        { "id": "tech:horseback-riding", "note": "The whole arming phase waits on it; the Pasture on Horses gives the Eureka for free." },
-        { "id": "tech:mining", "note": "After the cavalry tech; a Mine for The Wheel and Bronze Working behind it." },
-        { "id": "tech:bronze-working", "note": "Eureka from three Barbarian kills the army makes anyway; Iron reveal and the Encampment later." }
+        {
+          "id": "tech:animal-husbandry",
+          "note": "First: reveals Horses, unlocks the Pasture and the Kurgan, and Horseback Riding hangs off it."
+        },
+        {
+          "id": "tech:archery",
+          "note": "On the way to Horseback Riding; Eureka from a Slinger kill at the first camp."
+        },
+        {
+          "id": "tech:horseback-riding",
+          "note": "The whole arming phase waits on it; the Pasture on Horses gives the Eureka for free."
+        },
+        {
+          "id": "tech:mining",
+          "note": "After the cavalry tech; a Mine for The Wheel and Bronze Working behind it."
+        },
+        {
+          "id": "tech:bronze-working",
+          "note": "Eureka from three Barbarian kills the army makes anyway; Iron reveal and the Encampment later."
+        }
       ],
       "civics": [
-        { "id": "civic:code-of-laws", "note": "Discipline for the camp fights and God King for the pantheon." },
-        { "id": "civic:craftsmanship", "note": "Inspiration from three improvements: the Pasture, the Kurgan and the Mine." },
-        { "id": "civic:military-tradition", "note": "Maneuver is the point; the Inspiration is free from the first camp cleared." }
+        {
+          "id": "civic:code-of-laws",
+          "note": "Discipline for the camp fights and God King for the pantheon."
+        },
+        {
+          "id": "civic:craftsmanship",
+          "note": "Inspiration from three improvements: the Pasture, the Kurgan and the Mine."
+        },
+        {
+          "id": "civic:military-tradition",
+          "note": "Maneuver is the point; the Inspiration is free from the first camp cleared."
+        }
       ],
       "policies": [
-        { "card": "Discipline", "slot": "military", "from": "civic:code-of-laws", "why": "+5 Strength against Barbarians while the Warrior and Slinger clear the first camp." },
-        { "card": "God King", "slot": "economic", "from": "civic:code-of-laws", "why": "Faith for the pantheon by turn 20 before the Kurgans are down." },
-        { "card": "Maneuver", "slot": "military", "from": "civic:military-tradition", "why": "+50% Production toward Ancient and Classical cavalry; every Horseman and Saka pair comes out in two thirds of the turns." }
+        {
+          "card": "Discipline",
+          "slot": "military",
+          "from": "civic:code-of-laws",
+          "why": "+5 Strength against Barbarians while the Warrior and Slinger clear the first camp."
+        },
+        {
+          "card": "God King",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "Faith for the pantheon by turn 20 before the Kurgans are down."
+        },
+        {
+          "card": "Maneuver",
+          "slot": "military",
+          "from": "civic:military-tradition",
+          "why": "+50% Production toward Ancient and Classical cavalry; every Horseman pair comes out in two thirds of the turns. The Saka Horse Archers are ranged units and take Agoge, not Maneuver."
+        }
       ],
       "districts": [],
-      "pantheon": { "slug": "god-of-the-forge", "why": "+25% Production toward Ancient and Classical military units stacks with Maneuver on every cavalry purchase, and every purchase is two units.", "alternative": "god-of-the-open-sky" },
+      "pantheon": {
+        "slug": "god-of-the-forge",
+        "why": "+25% Production toward Ancient and Classical military units stacks with Maneuver on every cavalry purchase, and every purchase is two units.",
+        "alternative": "god-of-the-open-sky"
+      },
       "wonders": [],
       "governors": [],
       "city_states": [
-        { "slug": "kabul", "why": "Double experience from battles you start; the whole army starts every battle, and a promoted Horseman at turn 40 is the difference against the first Archer." },
-        { "type": "Militaristic", "why": "The first envoy goes to any Militaristic city-state met on the road: +2 Production toward units in the capital." }
+        {
+          "slug": "kabul",
+          "why": "Double experience from battles you start; the whole army starts every battle, and a promoted Horseman at turn 40 is the difference against the first Archer."
+        },
+        {
+          "type": "Militaristic",
+          "why": "The first envoy goes to any Militaristic city-state met on the road: +2 Production toward units in the capital."
+        }
       ],
       "great_people": [],
       "checkpoints": [
-        { "turn": 32, "test": "Four Horsemen and four Saka Horse Archers within five tiles of the target capital, Gold per turn positive after their maintenance, and the target banner shows no Walls?", "pass": "Declare on turn 33 with a Surprise War; the grievances are the price of the window and there is no Casus Belli this early.", "fail": "If the army is short, finish it before marching; staging after the declaration is spent from the window. If Gold is negative, sell a luxury or disband the Slinger, not a cavalry unit. If the target already has Walls, swap to its second city or the next nearest capital without Walls, and queue a Battering Ram for the Warriors behind Masonry." }
+        {
+          "turn": 32,
+          "test": "Four Horsemen and four Saka Horse Archers within five tiles of the target capital, Gold per turn positive after their maintenance, and the target banner shows no Walls?",
+          "pass": "Declare on turn 33 with a Surprise War; the grievances are the price of the window and there is no Casus Belli this early.",
+          "fail": "If the army is short, finish it before marching; staging after the declaration is spent from the window. If Gold is negative, sell a luxury or disband the Slinger, not a cavalry unit. If the target already has Walls, swap to its second city or the next nearest capital without Walls, and queue a Battering Ram for the Warriors behind Masonry."
+        }
       ],
       "tasks": [
-        { "id": "arm-pick-target", "turn": 1, "text": "Settle in place or one tile toward flat land, then send the Warrior along the open ground; the target is whichever rival capital it or the Scout finds first within 14 tiles." },
-        { "id": "arm-pasture-horses", "turn": 14, "text": "Pasture the Horses with the first Builder for the Horseback Riding Eureka, then lay a Kurgan on the flat tile beside the Pasture." },
-        { "id": "arm-first-camp", "turn": 16, "text": "Clear the nearest camp with the Warrior and Slinger; Slinger kill for Archery, three kills for Bronze Working, the camp for Military Tradition." },
-        { "id": "arm-forward-city", "turn": 20, "text": "Settle the second city on flats between the capital and the target; it builds the Saka Horse Archers and is where the army heals." },
-        { "id": "arm-pantheon", "turn": 21, "text": "Found God of the Forge with the first 25 Faith; slot Maneuver the turn Military Tradition completes." },
-        { "id": "arm-stage", "turn": 32, "text": "Move the eight cavalry to within five tiles of the target capital, out of its sight, Horsemen in front of the Saka Horse Archers, and write down the Gold per turn." }
+        {
+          "id": "arm-pick-target",
+          "turn": 1,
+          "text": "Settle in place or one tile toward flat land, then send the Warrior along the open ground; the target is whichever rival capital it or the Scout finds first within 14 tiles."
+        },
+        {
+          "id": "arm-pasture-horses",
+          "turn": 14,
+          "text": "Pasture the Horses with the first Builder for the Horseback Riding Eureka, then lay a Kurgan on the flat tile beside the Pasture."
+        },
+        {
+          "id": "arm-first-camp",
+          "turn": 16,
+          "text": "Clear the nearest camp with the Warrior and Slinger; Slinger kill for Archery, three kills for Bronze Working, the camp for Military Tradition."
+        },
+        {
+          "id": "arm-forward-city",
+          "turn": 20,
+          "text": "Settle the second city on flats between the capital and the target; it builds the Saka Horse Archers and is where the army heals."
+        },
+        {
+          "id": "arm-pantheon",
+          "turn": 21,
+          "text": "Found God of the Forge with the first 25 Faith; slot Maneuver the turn Military Tradition completes."
+        },
+        {
+          "id": "arm-stage",
+          "turn": 32,
+          "text": "Move the eight cavalry to within five tiles of the target capital, out of its sight, Horsemen in front of the Saka Horse Archers, and write down the Gold per turn."
+        }
       ]
     },
     {
       "id": "window",
       "name": "Window",
-      "turns": { "from": 33, "to": 85 },
+      "turns": {
+        "from": 33,
+        "to": 85
+      },
       "era": "classical",
       "objective": "Take the target capital and one more of its cities before turn 85 by wounding with Saka Horse Archers and finishing with Horsemen, holding each capture with a garrison and a Monument, while the home cities build nothing that pays back after the deadline except Settlers, Builders and the Kurgans that pay for the maintenance.",
       "build_order": [
-        { "item": "Monument", "why": "In every captured city the turn it is taken; Loyalty before anything else." },
-        { "item": "Battering Ram", "why": "The moment the target shows Walls, with two Warriors to carry it; cavalry cannot use it." },
-        { "item": "Horseman", "why": "Replace losses only, one purchase for two units; the surviving promoted pair is worth more than a new one." },
-        { "item": "Settler", "why": "Third Scythian city with Colonization, on flats with Pastures, while the army is away." },
-        { "item": "Builder", "why": "Kurgans and Pastures around the second and third cities; the Faith and Gold pay the army's upkeep." },
-        { "item": "Archer", "why": "One per captured city as the standing garrison so the cavalry can move on." },
-        { "item": "Trader", "why": "Capital to the forward city for the Currency Eureka and a road the army rides on." }
+        {
+          "item": "Monument",
+          "why": "In every captured city the turn it is taken; Loyalty before anything else."
+        },
+        {
+          "item": "Battering Ram",
+          "why": "The moment the target shows Walls, with two Warriors to carry it; cavalry cannot use it."
+        },
+        {
+          "item": "Horseman",
+          "why": "Replace losses only, one purchase for two units; the surviving promoted pair is worth more than a new one."
+        },
+        {
+          "item": "Settler",
+          "why": "Third Scythian city with Colonization, on flats with Pastures, while the army is away."
+        },
+        {
+          "item": "Builder",
+          "why": "Kurgans and Pastures around the second and third cities; the Faith and Gold pay the army's upkeep."
+        },
+        {
+          "item": "Archer",
+          "why": "One per captured city as the standing garrison so the cavalry can move on."
+        },
+        {
+          "item": "Trader",
+          "why": "Capital to the forward city for the Currency Eureka and a road the army rides on."
+        }
       ],
       "research": [
-        { "id": "tech:wheel", "note": "Eureka from the first Mine; Engineering hangs off it." },
-        { "id": "tech:writing", "note": "Eureka free from meeting the target; the capital Campus comes after the war." },
-        { "id": "tech:masonry", "note": "Battering Ram for the Warriors the moment the target shows Walls; Eureka from a Quarry if Stone is nearby." },
-        { "id": "tech:currency", "note": "Eureka from the first Trade Route; the Commercial Hub pays unit maintenance." },
-        { "id": "tech:iron-working", "note": "Mine the Iron Bronze Working revealed; Swordsmen as garrisons if the captures are threatened." },
-        { "id": "tech:construction", "note": "Water Mill in the capital for the Eureka; Siege Tower and later Amenities for a wide empire." }
+        {
+          "id": "tech:wheel",
+          "note": "Eureka from the first Mine; Engineering hangs off it."
+        },
+        {
+          "id": "tech:writing",
+          "note": "Eureka free from meeting the target; the capital Campus comes after the war."
+        },
+        {
+          "id": "tech:masonry",
+          "note": "Battering Ram for the Warriors the moment the target shows Walls; Eureka from a Quarry if Stone is nearby."
+        },
+        {
+          "id": "tech:currency",
+          "note": "Eureka from the first Trade Route; the Commercial Hub pays unit maintenance."
+        },
+        {
+          "id": "tech:iron-working",
+          "note": "Mine the Iron Bronze Working revealed; Swordsmen as garrisons if the captures are threatened."
+        },
+        {
+          "id": "tech:construction",
+          "note": "Water Mill in the capital for the Eureka; Siege Tower and later Amenities for a wide empire."
+        }
       ],
       "civics": [
-        { "id": "civic:early-empire", "note": "Colonization for the third city; Inspiration free at six population." },
-        { "id": "civic:state-workforce", "note": "Conscription the turn it lands: eight cavalry is eight Gold a turn without it. Inspiration from the first district." },
-        { "id": "civic:foreign-trade", "note": "Trade Routes for roads and Gold; Inspiration only if a second continent is in sight." },
-        { "id": "civic:political-philosophy", "note": "Oligarchy; Inspiration from three city-states, which the cavalry meet on the march." },
-        { "id": "civic:mysticism", "note": "Free Inspiration from the pantheon; the Holy Site adjacency for the digest phase." },
-        { "id": "civic:defensive-tactics", "note": "Free Inspiration when the target's friend declares on you after the first capture; Bastions if the captures are counter-attacked." }
+        {
+          "id": "civic:early-empire",
+          "note": "Colonization for the third city; Inspiration free at six population."
+        },
+        {
+          "id": "civic:state-workforce",
+          "note": "Conscription the turn it lands: eight cavalry is eight Gold a turn without it. Inspiration from the first district."
+        },
+        {
+          "id": "civic:foreign-trade",
+          "note": "Trade Routes for roads and Gold; Inspiration only if a second continent is in sight."
+        },
+        {
+          "id": "civic:political-philosophy",
+          "note": "Oligarchy; Inspiration from three city-states, which the cavalry meet on the march."
+        },
+        {
+          "id": "civic:mysticism",
+          "note": "Free Inspiration from the pantheon; Revelation for the Great Prophet race in the digest phase."
+        },
+        {
+          "id": "civic:games-and-recreation",
+          "note": "Free Inspiration from researching Construction; Entertainment Complexes for a wide empire."
+        },
+        {
+          "id": "civic:defensive-tactics",
+          "note": "Inspiration only if the target's friend declares on you after the first capture; Bastions if the captures are counter-attacked."
+        }
       ],
       "policies": [
-        { "card": "Maneuver", "slot": "military", "from": "civic:military-tradition", "why": "Kept until the last replacement pair is built, then swapped for Conscription." },
-        { "card": "Conscription", "slot": "military", "from": "civic:state-workforce", "why": "One Gold per unit per turn off a twelve-unit army is the difference between positive and negative income." },
-        { "card": "Colonization", "slot": "economic", "from": "civic:early-empire", "why": "The third city at half Settler cost while the army does the conquering." },
-        { "card": "Oligarchy", "slot": "wildcard", "from": "civic:political-philosophy", "why": "The government: +4 Strength for the Warriors and Archers and faster experience for everything; the cavalry do not get the Strength but the Ram crew does." }
+        {
+          "card": "Maneuver",
+          "slot": "military",
+          "from": "civic:military-tradition",
+          "why": "Kept until the last replacement pair is built, then swapped for Conscription."
+        },
+        {
+          "card": "Conscription",
+          "slot": "military",
+          "from": "civic:state-workforce",
+          "why": "One Gold per unit per turn off a twelve-unit army is the difference between positive and negative income."
+        },
+        {
+          "card": "Colonization",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "+50% Production toward the third city's Settler while the army does the conquering."
+        },
+        {
+          "card": "Oligarchy",
+          "slot": "wildcard",
+          "from": "civic:political-philosophy",
+          "why": "The government: +4 Strength for the Warriors and Spearmen, not the Archers, and faster experience for everything; the cavalry do not get the Strength but the Ram crew does."
+        }
       ],
       "districts": [
-        { "district": "holy-site", "city": "capital", "note": "Only after the first capture; before that every hammer is a unit. State Workforce's Inspiration comes from it and the religion comes after it." }
+        {
+          "district": "holy-site",
+          "city": "capital",
+          "note": "Only after the first capture; before that every hammer is a unit. State Workforce's Inspiration comes from it and the religion comes after it."
+        }
       ],
-      "pantheon": { "slug": "god-of-the-forge", "why": "Already founded; replacement cavalry pairs and the garrison Archers benefit." },
+      "pantheon": {
+        "slug": "god-of-the-forge",
+        "why": "Already founded; replacement cavalry pairs and the garrison Archers benefit."
+      },
       "wonders": [],
       "governors": [
-        { "governor": "magnus", "promotion": "Provision", "city": "capital", "why": "The third-city Settler leaves without costing population while the capital is also replacing units." },
-        { "governor": "victor", "promotion": "Garrison Commander", "city": "the captured capital", "why": "Loyalty and Strength in the city most likely to flip or be retaken; move him with each new capture." }
+        {
+          "governor": "magnus",
+          "promotion": "Provision",
+          "city": "capital",
+          "why": "The third-city Settler leaves without costing population while the capital is also replacing units."
+        },
+        {
+          "governor": "victor",
+          "promotion": "Garrison Commander",
+          "city": "the captured capital",
+          "why": "Loyalty and Strength in the city most likely to flip or be retaken; move him with each new capture."
+        }
       ],
       "city_states": [
-        { "slug": "kabul", "why": "Suzerainty before the second siege if it is on the map; two promotions per fight on a Horseman makes the second city cheaper than the first." },
-        { "type": "Militaristic", "why": "Levy its army if the target has rebuilt and the cavalry are below half strength; ten turns of six units is a siege." }
+        {
+          "slug": "kabul",
+          "why": "Suzerainty before the second siege if it is on the map; double experience per fight on a Horseman makes the second city cheaper than the first."
+        },
+        {
+          "type": "Militaristic",
+          "why": "Levy its army if the target has rebuilt and the cavalry are below half strength; ten turns of six units is a siege."
+        }
       ],
       "great_people": [
-        { "class": "great-general", "why": "A Classical Great General gives Horsemen and Saka Horse Archers +5 Strength and +1 Movement within two tiles; one is worth a third pair of each. Boudica or Hannibal Barca are the ones to chase." }
+        {
+          "class": "great-general",
+          "why": "A Classical Great General gives Horsemen and Saka Horse Archers +5 Strength and +1 Movement within two tiles; one is worth a third pair of each. Boudica or Hannibal Barca are the ones to chase."
+        }
       ],
       "checkpoints": [
-        { "turn": 55, "test": "Midpoint: is the target capital taken, or at least under siege with its defenders dead in the field and no Walls up?", "pass": "Continue to the second city; audit Amenities and Loyalty in the capture before moving on.", "fail": "Reduce scope now: one city instead of two. If the capital is behind Walls with no sortie, take the weakest second city of the same owner with the Ram crew, and make peace the turn it falls. Partial conversion beats total expiry." },
-        { "turn": 85, "test": "Deadline: two captured cities held with positive Loyalty, or one capital and a third Scythian city settled, and Gold per turn still positive?", "pass": "Stop conquering. Enter the digest phase and make peace on any terms that keep the cities.", "fail": "Abort branch: peace now, disband every cavalry unit beyond six, and run the digest phase on the empire you have. The next war waits for Coursers, a Casus Belli and a neighbour without Medieval Walls." }
+        {
+          "turn": 55,
+          "test": "Midpoint: is the target capital taken, or at least under siege with its defenders dead in the field and no Walls up?",
+          "pass": "Continue to the second city; audit Amenities and Loyalty in the capture before moving on.",
+          "fail": "Reduce scope now: one city instead of two. If the capital is behind Walls with no sortie, take the weakest second city of the same owner with the Ram crew, and make peace the turn it falls. Partial conversion beats total expiry."
+        },
+        {
+          "turn": 85,
+          "test": "Deadline: two captured cities held with positive Loyalty, or one capital and a third Scythian city settled, and Gold per turn still positive?",
+          "pass": "Stop conquering. Enter the digest phase and make peace on any terms that keep the cities.",
+          "fail": "Abort branch: peace now, disband every cavalry unit beyond six, and run the digest phase on the empire you have. The next war waits for Coursers, a Casus Belli and a neighbour without Medieval Walls."
+        }
       ],
       "tasks": [
-        { "id": "window-declare", "turn": 33, "text": "Declare the Surprise War with the army already adjacent; Saka Horse Archers wound the first defender, a Horseman kills it and heals. Walls are the clock, so if the banner shows them being built, hit the city the same turn." },
-        { "id": "window-first-city", "turn": 45, "text": "Capture the target capital with a Horseman. Keep it; never raze a capital. Monument and an Archer garrison the same turn." },
-        { "id": "window-audit", "turn": 46, "text": "After every capture, before anything else: check Amenities and Loyalty, move Victor in, and buy a Monument if Loyalty is negative. Repeat per capture, not on a schedule." },
-        { "id": "window-gold-check", "turn": 50, "text": "Gold and maintenance check before any replacement pair: if income is under +3 with Conscription slotted, no new cavalry; sell a luxury or run a second Trader instead." },
-        { "id": "window-second-city", "turn": 72, "text": "Take the second city with the Ram crew if it has Walls, or the levied city-state army if the cavalry are below half strength." },
-        { "id": "window-stop", "turn": 85, "text": "Write down the number of cities held. Whatever it is, make peace this turn and move production to Monuments, Granaries and a Holy Site." }
+        {
+          "id": "window-declare",
+          "turn": 33,
+          "text": "Declare the Surprise War with the army already adjacent; Saka Horse Archers wound the first defender, a Horseman kills it and heals. Walls are the clock, so if the banner shows them being built, hit the city the same turn."
+        },
+        {
+          "id": "window-first-city",
+          "turn": 45,
+          "text": "Capture the target capital with a Horseman. Keep it; never raze a capital. Monument and an Archer garrison the same turn."
+        },
+        {
+          "id": "window-audit",
+          "turn": 46,
+          "text": "After every capture, before anything else: check Amenities and Loyalty, move Victor in, and buy a Monument if Loyalty is negative. Repeat per capture, not on a schedule."
+        },
+        {
+          "id": "window-gold-check",
+          "turn": 50,
+          "text": "Gold and maintenance check before any replacement pair: if income is under +3 with Conscription slotted, no new cavalry; sell a luxury or run a second Trader instead."
+        },
+        {
+          "id": "window-second-city",
+          "turn": 72,
+          "text": "Take the second city with the Ram crew if it has Walls, or the levied city-state army if the cavalry are below half strength."
+        },
+        {
+          "id": "window-stop",
+          "turn": 85,
+          "text": "Write down the number of cities held. Whatever it is, make peace this turn and move production to Monuments, Granaries and a Holy Site."
+        }
       ]
     },
     {
       "id": "digest",
       "name": "Digest",
-      "turns": { "from": 86, "to": 150 },
+      "turns": {
+        "from": 86,
+        "to": 150
+      },
       "era": "medieval",
       "objective": "Stabilize the captured cities, pay the infrastructure bill the arming phase skipped, ring every flat city with Pastures and Kurgans, found a religion from the capital Holy Site, and reach Divine Right so the Grand Master's Chapel turns Kurgan Faith into the second army.",
       "build_order": [
-        { "item": "Monument", "why": "In any city still without one; Loyalty first." },
-        { "item": "Granary", "why": "Housing in cities that were pillaged on the way in and have no fresh water improvements." },
-        { "item": "Builder", "why": "Pastures first, Kurgans on the flat tile they surround; three charges per city before any Farm." },
-        { "item": "Holy Site", "why": "Capital first, then the captured capital; Shrines buy the Great Prophet before turn 110." },
-        { "item": "Shrine", "why": "Two Shrines and Temples give Divine Right's Inspiration and the Faith for Apostles." },
-        { "item": "Campus", "why": "Capital; Libraries for the Science a cavalry empire has none of." },
-        { "item": "Commercial Hub", "why": "Capital, on the river; Markets for Guilds and Gold for the standing army's upkeep." },
-        { "item": "Government Plaza", "why": "In the capital, for the Grand Master's Chapel at Divine Right; it is the whole Faith plan." },
-        { "item": "Trader", "why": "Routes from the captures to the capital for roads, Food and the Medieval Faires Inspiration." }
+        {
+          "item": "Monument",
+          "why": "In any city still without one; Loyalty first."
+        },
+        {
+          "item": "Granary",
+          "why": "Housing in cities that were pillaged on the way in and have no fresh water improvements."
+        },
+        {
+          "item": "Builder",
+          "why": "Pastures first, Kurgans on the flat tile they surround; three charges per city before any Farm."
+        },
+        {
+          "item": "Holy Site",
+          "why": "Capital first, then the captured capital; Shrines buy the Great Prophet before turn 110."
+        },
+        {
+          "item": "Shrine",
+          "why": "Two Shrines and Temples give Divine Right's Inspiration and the Faith for Apostles."
+        },
+        {
+          "item": "Campus",
+          "why": "Capital; Libraries for the Science a cavalry empire has none of."
+        },
+        {
+          "item": "Commercial Hub",
+          "why": "Capital, on the river; Markets for Guilds and Gold for the standing army's upkeep."
+        },
+        {
+          "item": "Government Plaza",
+          "why": "In the capital, for the Grand Master's Chapel at Divine Right; it is the whole Faith plan."
+        },
+        {
+          "item": "Trader",
+          "why": "Routes from the captures to the capital for roads, Food and the Medieval Faires Inspiration."
+        }
       ],
       "research": [
-        { "id": "tech:irrigation", "note": "Farm a Wheat or Rice tile for the Eureka; Housing for the captures." },
-        { "id": "tech:mathematics", "note": "Holy Site, Campus and Commercial Hub are three specialty districts; Apprenticeship behind it." },
-        { "id": "tech:apprenticeship", "note": "Three Mines on the hills the Kurgans do not use; Industrial Zones later." },
-        { "id": "tech:engineering", "note": "Ancient Walls in the captured capital give the Eureka; Aqueducts for Housing." },
-        { "id": "tech:stirrups", "note": "Free Eureka from Feudalism; Knights are not the plan, but Castles and Coursers are behind it." },
-        { "id": "tech:castles", "note": "Free Eureka from a Tier 2 government; the Courser, a 44 Strength light cavalry unit that also comes in pairs." },
-        { "id": "tech:education", "note": "Eureka from the first Great Scientist the Library attracts; Universities." },
-        { "id": "tech:military-engineering", "note": "An Aqueduct in the capital gives the Eureka; Niter reveal for the Renaissance." }
+        {
+          "id": "tech:irrigation",
+          "note": "Farm a Wheat or Rice tile for the Eureka; Housing for the captures."
+        },
+        {
+          "id": "tech:mathematics",
+          "note": "Holy Site, Campus and Commercial Hub are three specialty districts; Apprenticeship behind it."
+        },
+        {
+          "id": "tech:apprenticeship",
+          "note": "Three Mines on the hills the Kurgans do not use; Industrial Zones later."
+        },
+        {
+          "id": "tech:engineering",
+          "note": "Ancient Walls in the captured capital give the Eureka; Aqueducts for Housing."
+        },
+        {
+          "id": "tech:stirrups",
+          "note": "Free Eureka from Feudalism; Knights are not the plan, but it raises each Kurgan's Faith from an adjacent Pasture to +2."
+        },
+        {
+          "id": "tech:castles",
+          "note": "Free Eureka from a Tier 2 government; the Courser, a 44 Strength light cavalry unit that also comes in pairs."
+        },
+        {
+          "id": "tech:education",
+          "note": "Eureka from the first Great Scientist the Library attracts; Universities."
+        },
+        {
+          "id": "tech:military-engineering",
+          "note": "An Aqueduct in the capital gives the Eureka; Niter reveal for the Renaissance."
+        }
       ],
       "civics": [
-        { "id": "civic:games-and-recreation", "note": "Free Inspiration from researching Construction; Entertainment Complexes for a wide empire." },
-        { "id": "civic:military-training", "note": "One Encampment in the forward city for the Inspiration and Great General points." },
-        { "id": "civic:theology", "note": "Found the religion with the Great Prophet; Inspiration on founding. Take a Worship building and Crusade or Defender of the Faith." },
-        { "id": "civic:feudalism", "note": "Six Farms once the Kurgans are down; Serfdom Builders and the free Stirrups Eureka." },
-        { "id": "civic:civil-service", "note": "The capital reaches ten population with Granary and Aqueduct." },
-        { "id": "civic:divine-right", "note": "Two Temples give the Inspiration; the Grand Master's Chapel and Chivalry both come from it." },
-        { "id": "civic:mercenaries", "note": "Eight land units is the army you already have; Professional Army halves the Courser upgrades." },
-        { "id": "civic:guilds", "note": "Two Markets; the Banking Eureka and more Gold on every Kurgan." }
+        {
+          "id": "civic:military-training",
+          "note": "One Encampment in the forward city for the Inspiration and Great General points."
+        },
+        {
+          "id": "civic:theology",
+          "note": "Found the religion with the Great Prophet; Inspiration on founding. Take a Worship building and Crusade or Defender of the Faith."
+        },
+        {
+          "id": "civic:feudalism",
+          "note": "Six Farms once the Kurgans are down; Serfdom Builders and the free Stirrups Eureka."
+        },
+        {
+          "id": "civic:civil-service",
+          "note": "The capital reaches ten population with Granary and Aqueduct."
+        },
+        {
+          "id": "civic:divine-right",
+          "note": "Two Temples give the Inspiration; the Grand Master's Chapel and Chivalry both come from it."
+        },
+        {
+          "id": "civic:mercenaries",
+          "note": "Eight land units is the army you already have; Professional Army halves the Courser upgrades."
+        },
+        {
+          "id": "civic:guilds",
+          "note": "Two Markets; the Banking Eureka and Town Charters."
+        }
       ],
       "policies": [
-        { "card": "Conscription", "slot": "military", "from": "civic:state-workforce", "why": "Stays in until the army is disbanded or upgraded; the digest phase is a Gold phase." },
-        { "card": "Serfdom", "slot": "economic", "from": "civic:feudalism", "why": "Five-charge Builders lay Pastures and Kurgans around every captured city in one trip." },
-        { "card": "Professional Army", "slot": "military", "from": "civic:mercenaries", "why": "Horsemen to Coursers at half the Gold; do not upgrade before this card is in." },
-        { "card": "Scripture", "slot": "economic", "from": "civic:theology", "why": "Doubled Holy Site adjacency; the religion and the Chapel purchases both run on it." },
-        { "card": "Monarchy", "slot": "wildcard", "from": "civic:divine-right", "why": "The Tier 2 government: Housing from Walls, Influence for envoys, and a military slot more than Merchant Republic for Chivalry later." }
+        {
+          "card": "Conscription",
+          "slot": "military",
+          "from": "civic:state-workforce",
+          "why": "Stays in until the army is disbanded or upgraded; the digest phase is a Gold phase."
+        },
+        {
+          "card": "Serfdom",
+          "slot": "economic",
+          "from": "civic:feudalism",
+          "why": "Five-charge Builders lay Pastures and Kurgans around every captured city in one trip."
+        },
+        {
+          "card": "Professional Army",
+          "slot": "military",
+          "from": "civic:mercenaries",
+          "why": "Horsemen to Coursers at half the Gold; do not upgrade before this card is in."
+        },
+        {
+          "card": "Scripture",
+          "slot": "economic",
+          "from": "civic:theology",
+          "why": "Doubled Holy Site adjacency; the religion and the Chapel purchases both run on it."
+        },
+        {
+          "card": "Monarchy",
+          "slot": "wildcard",
+          "from": "civic:divine-right",
+          "why": "The Tier 2 government: Housing from Walls, Influence for envoys, and a military slot more than Merchant Republic for Chivalry later."
+        }
       ],
       "districts": [
-        { "district": "holy-site", "city": "capital and the captured capital", "note": "Beside Mountains or Woods; the religion and the Divine Right Inspiration come from here." },
-        { "district": "campus", "city": "capital", "note": "Beside Mountains if any; a cavalry empire has no Science and needs at least one." },
-        { "district": "commercial-hub", "city": "capital", "note": "River adjacency; Markets for Guilds and Trade Route capacity for the captures." },
-        { "district": "government-plaza", "city": "capital", "note": "Warlord's Throne is wrong here; the Tier 2 building is the Grand Master's Chapel and it is the reason the Plaza exists." },
-        { "district": "encampment", "city": "the forward city", "note": "Military Training Inspiration, Great General points, and a place to upgrade the cavalry under cover." }
+        {
+          "district": "holy-site",
+          "city": "capital and the captured capital",
+          "note": "Beside Mountains or Woods; the religion and the Divine Right Inspiration come from here."
+        },
+        {
+          "district": "campus",
+          "city": "capital",
+          "note": "Beside Mountains if any; a cavalry empire has no Science and needs at least one."
+        },
+        {
+          "district": "commercial-hub",
+          "city": "capital",
+          "note": "River adjacency; Markets for Guilds and Trade Route capacity for the captures."
+        },
+        {
+          "district": "government-plaza",
+          "city": "capital",
+          "note": "A Tier 1 building such as Warlord's Throne must come first because the Chapel requires one; the Tier 2 building is the Grand Master's Chapel and it is the reason the Plaza exists."
+        },
+        {
+          "district": "encampment",
+          "city": "the forward city",
+          "note": "Military Training Inspiration, Great General points, and a place to upgrade the cavalry under cover."
+        }
       ],
       "wonders": [
-        { "name": "Jebel Barkal", "why": "+4 Faith to every city within six tiles and two Iron a turn; a wide flat empire fits inside its reach.", "skip_if": "No Desert Hills tile within six tiles of three cities, or Iron Working lands after turn 110." },
-        { "name": "Colosseum", "why": "+2 Amenities to every city within six tiles covers the captures that have none.", "skip_if": "The captured cities are more than six tiles from any city that could build it, or Games and Recreation lands after turn 130." }
+        {
+          "name": "Jebel Barkal",
+          "why": "+4 Faith to every city within six tiles and two Iron a turn; a wide flat empire fits inside its reach.",
+          "skip_if": "No Desert Hills tile within six tiles of three cities, or Iron Working lands after turn 110."
+        },
+        {
+          "name": "Colosseum",
+          "why": "+2 Amenities to every city within six tiles covers the captures that have none.",
+          "skip_if": "The captured cities are more than six tiles from any city that could build it, or Games and Recreation lands after turn 130."
+        }
       ],
       "governors": [
-        { "governor": "moksha", "promotion": "Bishop", "city": "capital", "why": "Faith purchases of buildings in the Holy Site city; later the Chapel's unit purchases are cheaper where he sits." },
-        { "governor": "amani", "promotion": "Emissary", "city": "the captured capital", "why": "Two envoys and Loyalty pressure outward in the city nearest the former owner." },
-        { "governor": "pingala", "promotion": "Researcher", "city": "capital", "why": "The Science the arming phase did not buy, in the one Campus city." }
+        {
+          "governor": "moksha",
+          "promotion": "Bishop",
+          "city": "the captured capital",
+          "why": "Doubled religious pressure on the neighbouring cities, which are the former owner's; the Chapel's Faith comes from the capital's Holy Site regardless."
+        },
+        {
+          "governor": "amani",
+          "promotion": "Emissary",
+          "city": "the second captured city",
+          "why": "Loyalty pressure outward on foreign cities within nine tiles, from the city nearest the former owner."
+        },
+        {
+          "governor": "pingala",
+          "promotion": "Researcher",
+          "city": "capital",
+          "why": "The Science the arming phase did not buy, in the one Campus city."
+        }
       ],
       "city_states": [
-        { "type": "Religious", "why": "Three envoys for Faith in every Shrine; the AI rarely contests these and the Kurgan economy stacks with them." },
-        { "slug": "yerevan", "why": "Apostles with the promotion you pick; Debater or Translator makes the religion spread without a second Holy Site in every city." }
+        {
+          "type": "Religious",
+          "why": "Three envoys for Faith in every Shrine; the AI rarely contests these and the Kurgan economy stacks with them."
+        },
+        {
+          "slug": "yerevan",
+          "why": "Apostles with the promotion you pick; Debater or Translator makes the religion spread without a second Holy Site in every city."
+        }
       ],
       "great_people": [
-        { "class": "great-prophet", "why": "The religion must be founded before the Great Prophets run out around turn 120 on Emperor; Shrines in two Holy Sites and Scripture get there." },
-        { "class": "great-general", "why": "A Medieval Great General retires into Strength for the Courser line when the second war comes." }
+        {
+          "class": "great-prophet",
+          "why": "The religion must be founded before the Great Prophets run out around turn 120 on Emperor; Shrines in two Holy Sites and Scripture get there."
+        },
+        {
+          "class": "great-general",
+          "why": "A Medieval Great General retires into Strength for the Courser line when the second war comes."
+        }
       ],
       "checkpoints": [
-        { "turn": 110, "test": "Every captured city at positive Loyalty with a Monument and three Kurgans or Pastures, a religion founded, and Gold per turn positive?", "pass": "Continue; start the Government Plaza and the Commercial Hub.", "fail": "A city at negative Loyalty is the only emergency: Victor, a Monument purchase, and an Entertainment Complex before any Campus. If no religion, buy the Shrine in the second Holy Site with Faith and run Holy Site prayers. If Gold is negative, disband the unpromoted cavalry first." },
-        { "turn": 150, "test": "Divine Right unlocked, the Grand Master's Chapel built, Castles researched, and Faith per turn at 30 or more?", "pass": "Enter the second-wave phase and name the next target.", "fail": "If the Chapel is missing, it is the next build in the capital and nothing else. If Faith is under 30, two more Kurgan rings before any Theater Square. If Castles is late, the second wave is Coursers upgraded from Horsemen, not new purchases." }
+        {
+          "turn": 110,
+          "test": "Every captured city at positive Loyalty with a Monument and three Kurgans or Pastures, a religion founded, and Gold per turn positive?",
+          "pass": "Continue; start the Government Plaza and the Commercial Hub.",
+          "fail": "A city at negative Loyalty is the only emergency: Victor, a Monument purchase, and an Entertainment Complex before any Campus. If no religion, buy the Shrine in the second Holy Site with Faith and run Holy Site prayers. If Gold is negative, disband the unpromoted cavalry first."
+        },
+        {
+          "turn": 150,
+          "test": "Divine Right unlocked, the Grand Master's Chapel built, Castles researched, and Faith per turn at 30 or more?",
+          "pass": "Enter the second-wave phase and name the next target.",
+          "fail": "If the Chapel is missing, it is the next build in the capital and nothing else. If Faith is under 30, two more Kurgan rings before any Theater Square. If Castles is late, the second wave is Coursers upgraded from Horsemen, not new purchases."
+        }
       ],
       "tasks": [
-        { "id": "digest-loyalty-audit", "turn": 87, "text": "Audit Amenities and Loyalty in every captured city; Monument, Granary and Victor before anything else is queued." },
-        { "id": "digest-kurgan-rings", "turn": 100, "text": "Three Pastures with a Kurgan on the flat tile between them in every city; count the Faith on the Kurgan tooltip and keep a Builder moving until each pays 3 or more." },
-        { "id": "digest-religion", "turn": 115, "text": "Found the religion with the Great Prophet in the capital Holy Site; take Crusade if a second war is likely, Defender of the Faith if it is not." },
-        { "id": "digest-chapel", "turn": 135, "text": "Build the Grand Master's Chapel in the Government Plaza the turn Divine Right completes; from here cavalry are bought with Faith, in pairs." },
-        { "id": "digest-friendship", "turn": 140, "text": "Declare Friendship with the civilization on the far side of the old target, and send a delegation to everyone else; the second war needs a Casus Belli, not a Surprise." },
-        { "id": "digest-coursers", "turn": 150, "text": "Upgrade the surviving Horsemen to Coursers under Professional Army; disband any you cannot afford to upgrade." }
+        {
+          "id": "digest-loyalty-audit",
+          "turn": 87,
+          "text": "Audit Amenities and Loyalty in every captured city; Monument, Granary and Victor before anything else is queued."
+        },
+        {
+          "id": "digest-kurgan-rings",
+          "turn": 100,
+          "text": "Three Pastures with a Kurgan on the flat tile between them in every city; count the Faith on the Kurgan tooltip and keep a Builder moving until each pays 3 or more."
+        },
+        {
+          "id": "digest-religion",
+          "turn": 115,
+          "text": "Found the religion with the Great Prophet in the capital Holy Site; take Crusade if a second war is likely, Defender of the Faith if it is not."
+        },
+        {
+          "id": "digest-chapel",
+          "turn": 135,
+          "text": "Build the Grand Master's Chapel in the Government Plaza, after its Tier 1 building, the turn Divine Right completes; from here cavalry are bought with Faith, in pairs."
+        },
+        {
+          "id": "digest-friendship",
+          "turn": 140,
+          "text": "Declare Friendship with the civilization on the far side of the old target, and send a delegation to everyone else; the second war needs a Casus Belli, not a Surprise."
+        },
+        {
+          "id": "digest-coursers",
+          "turn": 150,
+          "text": "Upgrade the surviving Horsemen to Coursers under Professional Army; disband any you cannot afford to upgrade."
+        }
       ]
     },
     {
       "id": "second-wave",
       "name": "Second wave",
-      "turns": { "from": 151, "to": 230 },
+      "turns": {
+        "from": 151,
+        "to": 230
+      },
       "era": "renaissance",
       "objective": "Buy a second cavalry army with Kurgan Faith through the Grand Master's Chapel under Chivalry, declare a Reconquest or Protectorate war on the neighbour furthest behind on Walls, and take two more cities before Renaissance Walls and Musketmen make cavalry a losing trade; or, if no such neighbour exists, spend the Faith on Apostles and a Religion game instead.",
       "build_order": [
-        { "item": "Courser", "why": "Bought with Faith in the Chapel city under Chivalry; two per purchase, 44 Strength and 5 Movement." },
-        { "item": "Crossbowman", "why": "Two, hard-built, for the Metal Casting Eureka and because the second wave needs something that hurts Walls." },
-        { "item": "Trebuchet", "why": "Two, for Siege Tactics and for the Medieval Walls the second target will have; cavalry still cannot ram." },
-        { "item": "Temple", "why": "Second Temple for Divine Right if not done, then Apostles for the Religion branch." },
-        { "item": "University", "why": "Capital and captured capital; two give Printing and the Science a Domination endgame needs." },
-        { "item": "Market", "why": "Second Market for Guilds; Banks for Economics." },
-        { "item": "Settler", "why": "Fill any flat gap between the capital and the captures; every flat ring is another Kurgan city." }
+        {
+          "item": "Courser",
+          "why": "Bought with Faith in the Chapel city under Chivalry; two per purchase, 44 Strength and 5 Movement."
+        },
+        {
+          "item": "Crossbowman",
+          "why": "Two, hard-built, for the Metal Casting Eureka and because the second wave needs something that hurts Walls."
+        },
+        {
+          "item": "Trebuchet",
+          "why": "Two, for Siege Tactics and for the Medieval Walls the second target will have; cavalry still cannot ram."
+        },
+        {
+          "item": "Temple",
+          "why": "Second Temple for Divine Right if not done, then Apostles for the Religion branch."
+        },
+        {
+          "item": "University",
+          "why": "Capital and captured capital; two give Printing and the Science a Domination endgame needs."
+        },
+        {
+          "item": "Market",
+          "why": "Second Market for Guilds; Banks for Economics."
+        },
+        {
+          "item": "Settler",
+          "why": "Fill any flat gap between the capital and the captures; every flat ring is another Kurgan city."
+        }
       ],
       "research": [
-        { "id": "tech:printing", "note": "Two Universities give the Eureka; the Science multiplier for the rest of the game." },
-        { "id": "tech:banking", "note": "Free Eureka from Guilds; Banks and more Gold on every Kurgan." },
-        { "id": "tech:gunpowder", "note": "An Armory in the Encampment city; Musketmen for the garrisons once the cavalry move on." },
-        { "id": "tech:metal-casting", "note": "Two Crossbowmen give the Eureka; Bombards are what take Renaissance Walls when the cavalry cannot." },
-        { "id": "tech:military-science", "note": "Cavalry at 62 Strength, still in pairs; Eureka from a Knight kill only if a Knight was ever built, so usually unboosted." },
-        { "id": "tech:industrialization", "note": "Two Workshops; Factories and the Coal the endgame runs on." },
-        { "id": "tech:scientific-theory", "note": "Free Eureka from The Enlightenment; the Research Lab line." }
+        {
+          "id": "tech:printing",
+          "note": "Two Universities give the Eureka; the Science multiplier for the rest of the game."
+        },
+        {
+          "id": "tech:banking",
+          "note": "Free Eureka from Guilds; Banks and the Gold for upgrades."
+        },
+        {
+          "id": "tech:gunpowder",
+          "note": "An Armory in the Encampment city; Musketmen for the garrisons once the cavalry move on."
+        },
+        {
+          "id": "tech:metal-casting",
+          "note": "Two Crossbowmen give the Eureka; Bombards are what take Renaissance Walls when the cavalry cannot."
+        },
+        {
+          "id": "tech:military-science",
+          "note": "Cavalry at 62 Strength, still in pairs; Eureka from a Knight kill only if a Knight was ever built, so usually unboosted."
+        },
+        {
+          "id": "tech:industrialization",
+          "note": "Two Workshops; Factories and the Coal the endgame runs on."
+        },
+        {
+          "id": "tech:scientific-theory",
+          "note": "Free Eureka from The Enlightenment; the Research Lab line."
+        }
       ],
       "civics": [
-        { "id": "civic:medieval-faires", "note": "Four Trade Routes from the captures; Inspiration free once the Traders are running." },
-        { "id": "civic:reformed-church", "note": "Six cities following the religion is the Religion branch's own Inspiration; Religious Orders if Apostles are the army." },
-        { "id": "civic:diplomatic-service", "note": "Form an alliance with the Declared Friend; the Inspiration and later the Chemistry Eureka both come from it." },
-        { "id": "civic:the-enlightenment", "note": "Three Great People earned by now; Rationalism and the free Scientific Theory Eureka." },
-        { "id": "civic:nationalism", "note": "Declare the second war with a Casus Belli and the Inspiration is free; Grand Army for Corps." },
-        { "id": "civic:civil-engineering", "note": "Seven different specialty districts across a wide empire; Public Works for Builders." }
+        {
+          "id": "civic:medieval-faires",
+          "note": "Four Trade Routes from the captures; Inspiration free once the Traders are running."
+        },
+        {
+          "id": "civic:reformed-church",
+          "note": "Six cities following the religion is the Religion branch's own Inspiration; Religious Orders if Apostles are the army."
+        },
+        {
+          "id": "civic:diplomatic-service",
+          "note": "Form an alliance with the Declared Friend; the Inspiration and later the Chemistry Eureka both come from it."
+        },
+        {
+          "id": "civic:the-enlightenment",
+          "note": "Three Great People earned by now; Rationalism and the free Scientific Theory Eureka."
+        },
+        {
+          "id": "civic:nationalism",
+          "note": "Declare the second war with a Casus Belli and the Inspiration is free; Grande Armée for Corps."
+        },
+        {
+          "id": "civic:civil-engineering",
+          "note": "Seven different specialty districts across a wide empire; Public Works for Builders."
+        }
       ],
       "policies": [
-        { "card": "Chivalry", "slot": "military", "from": "civic:divine-right", "why": "+50% Production toward Medieval and Renaissance cavalry, and it lowers the Faith price in the Chapel too; the second wave is bought under it." },
-        { "card": "Scripture", "slot": "economic", "from": "civic:theology", "why": "Holy Site adjacency doubled; the Faith that buys the second army." },
-        { "card": "Town Charters", "slot": "economic", "from": "civic:guilds", "why": "Commercial Hub adjacency doubled; Gold for upgrades and Trebuchets." },
-        { "card": "Diplomatic League", "slot": "diplomatic", "from": "civic:political-philosophy", "why": "First envoy doubled into the Religious and Militaristic city-states." }
+        {
+          "card": "Chivalry",
+          "slot": "military",
+          "from": "civic:divine-right",
+          "why": "+50% Production toward Medieval and Renaissance cavalry, for the pairs built with Production; it does not lower the Faith price in the Chapel."
+        },
+        {
+          "card": "Scripture",
+          "slot": "economic",
+          "from": "civic:theology",
+          "why": "Holy Site adjacency doubled; the Faith that buys the second army."
+        },
+        {
+          "card": "Town Charters",
+          "slot": "economic",
+          "from": "civic:guilds",
+          "why": "Commercial Hub adjacency doubled; Gold for upgrades and Trebuchets."
+        },
+        {
+          "card": "Diplomatic League",
+          "slot": "diplomatic",
+          "from": "civic:political-philosophy",
+          "why": "First envoy doubled into the Religious and Militaristic city-states."
+        }
       ],
       "districts": [
-        { "district": "theater-square", "city": "capital", "note": "One, for the Culture to reach Nationalism and Ideology on time; Great Generals retire into Great Works here if nothing else." },
-        { "district": "industrial-zone", "city": "the best Production city", "note": "Beside Mines and the Aqueduct; Workshops for Industrialization." },
-        { "district": "campus", "city": "the captured capital", "note": "A second Campus for Recorded History and the second University for Printing." }
+        {
+          "district": "theater-square",
+          "city": "capital",
+          "note": "One, for the Culture to reach Nationalism and Ideology on time; Great Generals retire into Great Works here if nothing else."
+        },
+        {
+          "district": "industrial-zone",
+          "city": "the best Production city",
+          "note": "Beside Mines and the Aqueduct; Workshops for Industrialization."
+        },
+        {
+          "district": "campus",
+          "city": "the captured capital",
+          "note": "A second Campus for Recorded History and the second University for Printing."
+        }
       ],
       "wonders": [
-        { "name": "Kilwa Kisiwani", "why": "+15% to every yield from city-state types you are suzerain of; with Religious and Militaristic suzerainties it is the best wonder for this empire.", "skip_if": "No coastal city exists, or you hold fewer than two suzerainties by turn 180." },
-        { "name": "Mont St. Michel", "why": "Two Relic slots and Martyr on every Apostle; the Religion branch's wonder.", "skip_if": "The Domination branch is chosen at turn 190, or a Religion civilization has Divine Right before you." }
+        {
+          "name": "Kilwa Kisiwani",
+          "why": "+15% to every yield from city-state types you are suzerain of; with Religious and Militaristic suzerainties it is the best wonder for this empire.",
+          "skip_if": "No coastal city exists, or you hold fewer than two suzerainties by turn 180."
+        },
+        {
+          "name": "Mont St. Michel",
+          "why": "Two Relic slots and Martyr on every Apostle; the Religion branch's wonder.",
+          "skip_if": "The Domination branch is chosen at turn 190, or a Religion civilization has Divine Right before you."
+        }
       ],
       "governors": [
-        { "governor": "moksha", "promotion": "Grand Inquisitor", "city": "capital", "why": "Faith purchases cheaper where the Chapel sits, and Inquisitors if the Religion branch is taken." },
-        { "governor": "victor", "promotion": "Embrasure", "city": "the newest capture", "why": "Each capture holds while the Coursers move on; two attacks a turn from the city." },
-        { "governor": "liang", "promotion": "Zoning Commissioner", "city": "the captured capital", "why": "Districts at +20% in a city that still has none." }
+        {
+          "governor": "moksha",
+          "promotion": "Grand Inquisitor",
+          "city": "capital",
+          "why": "Stronger religious units in theological combat near the capital, for the Apostles if the Religion branch is taken."
+        },
+        {
+          "governor": "victor",
+          "promotion": "Embrasure",
+          "city": "the newest capture",
+          "why": "Each capture holds while the Coursers move on; two attacks a turn from the city."
+        },
+        {
+          "governor": "liang",
+          "promotion": "Zoning Commissioner",
+          "city": "the captured capital",
+          "why": "Districts at +20% in a city that still has only a Holy Site."
+        }
       ],
       "city_states": [
-        { "type": "Religious", "why": "Six envoys for Faith in every Temple; the Faith army scales with it." },
-        { "slug": "akkad", "why": "If it is on the map, melee attacks do full damage to Walls; the Trebuchets stay home and two Men-At-Arms carry the Ram instead." }
+        {
+          "type": "Religious",
+          "why": "Six envoys for Faith in every Temple; the Faith army scales with it."
+        },
+        {
+          "slug": "akkad",
+          "why": "If it is on the map, melee attacks do full damage to Walls; the Trebuchets stay home and two Men-At-Arms carry the Ram instead."
+        }
       ],
       "great_people": [
-        { "class": "great-general", "why": "A Renaissance Great General gives Coursers +5 Strength and +1 Movement; the second wave moves six tiles a turn under one." },
-        { "class": "great-prophet", "why": "Only if the religion was not founded in the digest phase; otherwise ignore the class." }
+        {
+          "class": "great-general",
+          "why": "A Medieval Great General gives Coursers +5 Strength and +1 Movement; the second wave moves six tiles a turn under one."
+        },
+        {
+          "class": "great-prophet",
+          "why": "Only if the religion was not founded in the digest phase; otherwise ignore the class."
+        }
       ],
       "checkpoints": [
-        { "turn": 190, "test": "Branch: is there a neighbour within ten tiles of your border whose cities show Ancient or no Walls and no Musketmen, and do you hold eight Coursers bought with Faith?", "pass": "Domination branch: declare with a Casus Belli on turn 195 and take two cities by turn 230, Trebuchets or Bombards against any Walls.", "fail": "Religion branch: spend the Faith on Apostles instead, convert the former target's cities first, and take Reformed Church. Keep four Coursers as the standing defence." },
-        { "turn": 230, "test": "Two more cities held with positive Loyalty, or the religion the majority in six cities and a second civilization converted?", "pass": "Enter the close phase on the branch you proved.", "fail": "Neither: the game is a Score game. Stop buying cavalry, keep the garrisons, and spend Faith on Holy Site buildings and Gold on Campuses." }
+        {
+          "turn": 190,
+          "test": "Branch: is there a neighbour within ten tiles of your border whose cities show Ancient or no Walls and no Musketmen, and do you hold eight Coursers bought with Faith?",
+          "pass": "Domination branch: declare with a Casus Belli on turn 195 and take two cities by turn 230, Trebuchets or Bombards against any Walls.",
+          "fail": "Religion branch: spend the Faith on Apostles instead, convert the former target's cities first, and take Reformed Church. Keep four Coursers as the standing defence."
+        },
+        {
+          "turn": 230,
+          "test": "Two more cities held with positive Loyalty, or the religion the majority in six cities and a second civilization converted?",
+          "pass": "Enter the close phase on the branch you proved.",
+          "fail": "Neither: the game is a Score game. Stop buying cavalry, keep the garrisons, and spend Faith on Holy Site buildings and Gold on Campuses."
+        }
       ],
       "tasks": [
-        { "id": "wave-faith-army", "turn": 165, "text": "Buy four Courser pairs with Faith in the Chapel city under Chivalry; each purchase is two units, so count eight before declaring." },
-        { "id": "wave-crossbows", "turn": 175, "text": "Two Crossbowmen built; Metal Casting Eureka collected and Bombards on the research path for the second target's Walls." },
-        { "id": "wave-branch", "turn": 190, "text": "Choose the branch: Domination against the neighbour behind on Walls, or Religion with the Faith. Write the decision down with the target's name." },
-        { "id": "wave-declare", "turn": 195, "text": "Domination branch: declare with Reconquest or Protectorate, never Surprise; the Coursers reach the first city in two turns on roads the Traders built." },
-        { "id": "wave-universities", "turn": 210, "text": "A University in both Campuses; Printing Eureka collected while the war runs." }
+        {
+          "id": "wave-faith-army",
+          "turn": 165,
+          "text": "Buy four Courser pairs with Faith in the Chapel city under Chivalry; each purchase is two units, so count eight before declaring."
+        },
+        {
+          "id": "wave-crossbows",
+          "turn": 175,
+          "text": "Two Crossbowmen built; Metal Casting Eureka collected and Bombards on the research path for the second target's Walls."
+        },
+        {
+          "id": "wave-branch",
+          "turn": 190,
+          "text": "Choose the branch: Domination against the neighbour behind on Walls, or Religion with the Faith. Write the decision down with the target's name."
+        },
+        {
+          "id": "wave-declare",
+          "turn": 195,
+          "text": "Domination branch: declare with Reconquest or Protectorate, never Surprise; the Coursers reach the first city in two turns on roads the Traders built."
+        },
+        {
+          "id": "wave-universities",
+          "turn": 210,
+          "text": "A University in both Campuses; Printing Eureka collected while the war runs."
+        }
       ]
     },
     {
       "id": "close",
       "name": "Close",
-      "turns": { "from": 231, "to": null },
+      "turns": {
+        "from": 231,
+        "to": null
+      },
       "era": "industrial",
       "objective": "Finish the chosen branch: Cavalry and Field Cannons bought in pairs with Faith taking the remaining reachable capitals one Casus Belli war at a time, or Apostles and Missionaries carrying the religion to a majority of civilizations while the Kurgan economy pays for both.",
       "build_order": [
-        { "item": "Cavalry", "why": "Domination branch: Coursers upgraded under Professional Army, new pairs bought with Faith; 62 Strength and 5 Movement." },
-        { "item": "Field Cannon", "why": "Domination branch: two for Scorched Earth and the siege line for Renaissance Walls." },
-        { "item": "Military Academy", "why": "Domination branch: Corps and Armies for the last sieges and the Mobilization Inspiration." },
-        { "item": "Apostle", "why": "Religion branch: bought with Faith in the capital, Debater promotion from Yerevan, three per target civilization." },
-        { "item": "Factory", "why": "Both branches: Production in the Industrial Zone and Class Struggle's Inspiration at three." },
-        { "item": "Neighborhood", "why": "Housing for the wide empire; two give the Sanitation Eureka." }
+        {
+          "item": "Cavalry",
+          "why": "Domination branch: Coursers upgraded under Professional Army, new pairs bought with Faith; 62 Strength and 5 Movement."
+        },
+        {
+          "item": "Field Cannon",
+          "why": "Domination branch: two for Scorched Earth and the siege line for Renaissance Walls."
+        },
+        {
+          "item": "Military Academy",
+          "why": "Domination branch: Corps and Armies for the last sieges and the Mobilization Inspiration."
+        },
+        {
+          "item": "Apostle",
+          "why": "Religion branch: bought with Faith in the capital, Debater promotion from Yerevan, three per target civilization."
+        },
+        {
+          "item": "Factory",
+          "why": "Both branches: Production in the Industrial Zone and Class Struggle's Inspiration at three."
+        },
+        {
+          "item": "Neighborhood",
+          "why": "Housing for the wide empire; two give the Sanitation Eureka."
+        }
       ],
       "research": [
-        { "id": "tech:rifling", "note": "A Mine on the Niter Military Engineering revealed; Field Cannons and the Musketman garrisons." },
-        { "id": "tech:ballistics", "note": "Two Forts from a Military Engineer give the Eureka; Field Cannons to Artillery if the wars run long." },
-        { "id": "tech:refining", "note": "A Coal Power Plant gives the Eureka; Power for the Factories." },
-        { "id": "tech:sanitation", "note": "Two Neighborhoods; Housing in the captured capitals." },
-        { "id": "tech:replaceable-parts", "note": "Three Line Infantry give the Eureka; Infantry garrisons that no cavalry army can retake." }
+        {
+          "id": "tech:ballistics",
+          "note": "Two Forts from a Military Engineer give the Eureka; Field Cannons, which become Artillery at Steel if the wars run long."
+        },
+        {
+          "id": "tech:rifling",
+          "note": "A Mine on the Niter Military Engineering revealed; it follows Ballistics and opens Steel."
+        },
+        {
+          "id": "tech:refining",
+          "note": "A Coal Power Plant gives the Eureka; Power for the Factories."
+        },
+        {
+          "id": "tech:sanitation",
+          "note": "Two Neighborhoods; Housing in the captured capitals."
+        },
+        {
+          "id": "tech:replaceable-parts",
+          "note": "Three Line Infantry give the Eureka; Infantry garrisons that no cavalry army can retake."
+        }
       ],
       "civics": [
-        { "id": "civic:scorched-earth", "note": "Two Field Cannons; the Inspiration is free on the Domination branch." },
-        { "id": "civic:mobilization", "note": "Three Corps; Levee en Masse for the maintenance." },
-        { "id": "civic:class-struggle", "note": "Three Factories; Fascism via Totalitarianism for the war or Communism for the build." },
-        { "id": "civic:urbanization", "note": "A fifteen-population capital; Neighborhoods." },
-        { "id": "civic:totalitarianism", "note": "Three Military Academies on the Domination branch; Fascism's +5 Strength for the last wars." }
+        {
+          "id": "civic:scorched-earth",
+          "note": "Two Field Cannons; the Inspiration is free on the Domination branch."
+        },
+        {
+          "id": "civic:urbanization",
+          "note": "A fifteen-population capital; Neighborhoods."
+        },
+        {
+          "id": "civic:mobilization",
+          "note": "Three Corps; Levee en Masse for the maintenance."
+        },
+        {
+          "id": "civic:class-struggle",
+          "note": "Three Factories; Fascism via Totalitarianism for the war or Communism for the build."
+        },
+        {
+          "id": "civic:totalitarianism",
+          "note": "Three Military Academies on the Domination branch; Fascism's +5 Strength for the last wars."
+        }
       ],
       "policies": [
-        { "card": "Levee en Masse", "slot": "military", "from": "civic:mobilization", "why": "Unit maintenance down while the last paired army is fielded." },
-        { "card": "Grand Army", "slot": "military", "from": "civic:nationalism", "why": "Corps and Armies cheaper; a pair of Cavalry becomes one Corps the turn it is bought." },
-        { "card": "Simultaneum", "slot": "economic", "from": "civic:reformed-church", "why": "Religion branch: Faith from Holy Site buildings in cities at ten population; the Apostle budget." },
-        { "card": "Theocracy", "slot": "wildcard", "from": "civic:reformed-church", "why": "Religion branch government: Faith purchases cheaper and +5 Religious Strength; the Chapel army is cheaper under it too." }
+        {
+          "card": "Levee en Masse",
+          "slot": "military",
+          "from": "civic:mobilization",
+          "why": "Unit maintenance down while the last paired army is fielded."
+        },
+        {
+          "card": "Grande Armée",
+          "slot": "military",
+          "from": "civic:nationalism",
+          "why": "Corps and Armies cheaper; a pair of Cavalry becomes one Corps the turn it is bought."
+        },
+        {
+          "card": "Simultaneum",
+          "slot": "economic",
+          "from": "civic:reformed-church",
+          "why": "Religion branch: Faith from Holy Site buildings in cities at ten population; the Apostle budget."
+        },
+        {
+          "card": "Theocracy",
+          "slot": "wildcard",
+          "from": "civic:reformed-church",
+          "why": "Religion branch government: Faith purchases cheaper and +5 Religious Strength; the Chapel army is cheaper under it too."
+        }
       ],
       "districts": [
-        { "district": "neighborhood", "city": "capital and the captured capital", "note": "Housing; two give the Sanitation Eureka." },
-        { "district": "encampment", "city": "the newest capture", "note": "Military Academies for Corps; Totalitarianism wants three." }
+        {
+          "district": "neighborhood",
+          "city": "capital and the captured capital",
+          "note": "Housing; two give the Sanitation Eureka."
+        },
+        {
+          "district": "encampment",
+          "city": "the newest capture",
+          "note": "Military Academies for Corps; Totalitarianism wants three."
+        }
       ],
       "wonders": [
-        { "name": "Terracotta Army", "why": "A free promotion for every land unit you own, which on a paired army of twelve is twelve promotions; it is still buildable this late if nobody took it.", "skip_if": "Any rival has built it, which the Wonders tab shows, or there is no flat tile beside an Encampment." }
+        {
+          "name": "Terracotta Army",
+          "why": "A free promotion for every land unit you own, which on a paired army of twelve is twelve promotions; it is still buildable this late if nobody took it.",
+          "skip_if": "Any rival has built it, which the Wonders tab shows, or there is no flat tile beside an Encampment."
+        }
       ],
       "governors": [
-        { "governor": "victor", "promotion": "Embrasure", "city": "the newest capture", "why": "Domination branch: each capital holds while the army moves on." },
-        { "governor": "moksha", "promotion": "Divine Architect", "city": "capital", "why": "Religion branch: districts bought with Faith in the Chapel city." }
+        {
+          "governor": "victor",
+          "promotion": "Embrasure",
+          "city": "the newest capture",
+          "why": "Domination branch: each capital holds while the army moves on."
+        },
+        {
+          "governor": "moksha",
+          "promotion": "Divine Architect",
+          "city": "capital",
+          "why": "Religion branch: districts bought with Faith in the Chapel city."
+        }
       ],
       "city_states": [
-        { "type": "Militaristic", "why": "Six envoys for Production in every Armory; Corps come out faster." },
-        { "type": "Religious", "why": "Religion branch: Faith in every Temple pays for the Apostles." }
+        {
+          "type": "Militaristic",
+          "why": "Six envoys for Production in every Armory; Corps come out faster."
+        },
+        {
+          "type": "Religious",
+          "why": "Religion branch: Faith in every Temple pays for the Apostles."
+        }
       ],
       "great_people": [
-        { "class": "great-general", "why": "Industrial Great Generals give Cavalry +5 Strength; a Faith-bought army under one takes Renaissance Walls with two Field Cannons." },
-        { "class": "great-prophet", "why": "Irrelevant now; let the class go." }
+        {
+          "class": "great-general",
+          "why": "Industrial Great Generals give Cavalry +5 Strength; a Faith-bought army under one takes Renaissance Walls with two Field Cannons."
+        },
+        {
+          "class": "great-prophet",
+          "why": "Irrelevant now; let the class go."
+        }
       ],
       "checkpoints": [
-        { "turn": 290, "test": "Domination branch: two capitals taken since turn 230, or Religion branch: the religion the majority in half the civilizations met?", "pass": "Continue to the end; no further decisions.", "fail": "Convert to Score: keep the garrisons, stop buying units, and spend Faith on Holy Site buildings and Gold on Campuses and Theater Squares." }
+        {
+          "turn": 290,
+          "test": "Domination branch: two capitals taken since turn 230, or Religion branch: the religion the majority in half the civilizations met?",
+          "pass": "Continue to the end; no further decisions.",
+          "fail": "Convert to Score: keep the garrisons, stop buying units, and spend Faith on Holy Site buildings and Gold on Campuses and Theater Squares."
+        }
       ],
       "tasks": [
-        { "id": "close-field-cannons", "turn": 240, "text": "Domination branch: two Field Cannons built; Scorched Earth Inspiration collected and the next capital's Walls are a four-turn job." },
-        { "id": "close-next-war", "turn": 250, "text": "Domination branch: declare the next Casus Belli war the turn the previous peace treaty allows; Cavalry pairs bought with Faith reach the border in one turn." },
-        { "id": "close-apostles", "turn": 250, "text": "Religion branch: three Apostles per target civilization, Debater promotion, converting the capital first; a Great General retires into Culture meanwhile." },
-        { "id": "close-factories", "turn": 265, "text": "Three Factories built; Class Struggle Inspiration collected and the Tier 3 government adopted for the Computers Eureka." },
-        { "id": "close-review", "turn": 290, "text": "Review the turn 290 checkpoint and either continue or declare the game a Score game." }
+        {
+          "id": "close-field-cannons",
+          "turn": 240,
+          "text": "Domination branch: two Field Cannons built; Scorched Earth Inspiration collected and the next capital's Walls are a four-turn job."
+        },
+        {
+          "id": "close-next-war",
+          "turn": 250,
+          "text": "Domination branch: declare the next Casus Belli war the turn the previous peace treaty allows; Cavalry pairs bought with Faith reach the border in one turn."
+        },
+        {
+          "id": "close-apostles",
+          "turn": 250,
+          "text": "Religion branch: three Apostles per target civilization, Debater promotion, converting the capital first; a Great General retires into Culture meanwhile."
+        },
+        {
+          "id": "close-factories",
+          "turn": 265,
+          "text": "Three Factories built; Class Struggle Inspiration collected and the Tier 3 government adopted for the Computers Eureka."
+        },
+        {
+          "id": "close-review",
+          "turn": 290,
+          "text": "Review the turn 290 checkpoint and either continue or declare the game a Score game."
+        }
       ]
     }
   ],
   "boosts": [
-    { "id": "tech:archery", "fit": "cheap", "when": "arm", "how": "A Slinger kill on the first camp's Scout; Archery is on the path to Horseback Riding anyway." },
-    { "id": "tech:horseback-riding", "fit": "free", "when": "arm", "how": "The Pasture on the capital's Horses, laid by the first Builder before turn 15." },
-    { "id": "tech:bronze-working", "fit": "free", "when": "arm", "how": "Three Barbarian kills at the first camp the Warrior, Slinger and cavalry clear." },
-    { "id": "tech:writing", "fit": "free", "when": "arm", "how": "Meeting the target civilization on the way to it." },
-    { "id": "tech:wheel", "fit": "cheap", "when": "window", "how": "The first Builder's third charge mines a resource hill." },
-    { "id": "tech:masonry", "fit": "cheap", "when": "window", "how": "A Quarry on Stone near the capital, if any; the Ram needs the tech regardless." },
-    { "id": "tech:currency", "fit": "cheap", "when": "window", "how": "The first Trader runs to the forward city." },
-    { "id": "tech:iron-working", "fit": "cheap", "when": "window", "how": "Mine the Iron that Bronze Working revealed." },
-    { "id": "tech:construction", "fit": "cheap", "when": "window", "how": "A Water Mill in the river capital after the first capture." },
-    { "id": "tech:irrigation", "fit": "cheap", "when": "digest", "how": "Farm a Wheat or Rice tile in a river city." },
-    { "id": "tech:mathematics", "fit": "cheap", "when": "digest", "how": "Holy Site, Campus and Commercial Hub are three specialty districts." },
-    { "id": "tech:apprenticeship", "fit": "cheap", "when": "digest", "how": "Three Mines on the hills the Kurgans and Pastures do not use." },
-    { "id": "tech:engineering", "fit": "cheap", "when": "digest", "how": "Ancient Walls in the captured capital." },
-    { "id": "tech:stirrups", "fit": "free", "when": "digest", "how": "Feudalism is on the civic path." },
-    { "id": "tech:castles", "fit": "free", "when": "digest", "how": "Monarchy is the Tier 2 government the plan adopts." },
-    { "id": "tech:education", "fit": "cheap", "when": "digest", "how": "The first Great Scientist from the capital Library and Pingala." },
-    { "id": "tech:military-engineering", "fit": "cheap", "when": "digest", "how": "The capital Aqueduct." },
-    { "id": "tech:military-tactics", "fit": "costly", "when": "digest", "how": "A Spearman kill, which a cavalry army rarely has a Spearman for." },
-    { "id": "tech:buttress", "fit": "cheap", "when": "second-wave", "how": "Owning Jebel Barkal or the Colosseum from the digest phase." },
-    { "id": "tech:printing", "fit": "cheap", "when": "second-wave", "how": "Two Universities, capital and captured capital." },
-    { "id": "tech:banking", "fit": "free", "when": "second-wave", "how": "Guilds is on the civic path." },
-    { "id": "tech:gunpowder", "fit": "cheap", "when": "second-wave", "how": "An Armory in the forward city's Encampment." },
-    { "id": "tech:metal-casting", "fit": "cheap", "when": "second-wave", "how": "Two Crossbowmen hard-built for the second target's Walls." },
-    { "id": "tech:siege-tactics", "fit": "cheap", "when": "second-wave", "how": "Two Trebuchets built for the same Walls." },
-    { "id": "tech:military-science", "fit": "costly", "when": "second-wave", "how": "A Knight kill, and this plan builds Coursers, not Knights; usually unboosted." },
-    { "id": "tech:industrialization", "fit": "cheap", "when": "second-wave", "how": "Two Workshops in the Industrial Zones." },
-    { "id": "tech:scientific-theory", "fit": "free", "when": "second-wave", "how": "The Enlightenment is on the civic path." },
-    { "id": "tech:mass-production", "fit": "cheap", "when": "second-wave", "how": "A Lumber Mill on any Woods tile." },
-    { "id": "tech:rifling", "fit": "cheap", "when": "close", "how": "A Mine on the Niter Military Engineering revealed." },
-    { "id": "tech:ballistics", "fit": "costly", "when": "close", "how": "Two Forts from a Military Engineer on the border; only on the Domination branch." },
-    { "id": "tech:refining", "fit": "cheap", "when": "close", "how": "A Coal Power Plant in the Industrial Zone city." },
-    { "id": "tech:sanitation", "fit": "cheap", "when": "close", "how": "Two Neighborhoods in the two biggest cities." },
-    { "id": "tech:replaceable-parts", "fit": "costly", "when": "close", "how": "Three Line Infantry as garrisons; a cavalry army has to build them on purpose." },
-    { "id": "tech:computers", "fit": "free", "when": "close", "how": "Any Tier 3 government." },
-    { "id": "civic:craftsmanship", "fit": "free", "when": "arm", "how": "Three improved tiles from the first Builder: Pasture, Kurgan and Mine." },
-    { "id": "civic:military-tradition", "fit": "free", "when": "arm", "how": "The first camp cleared on the road to the target." },
-    { "id": "civic:foreign-trade", "fit": "costly", "when": "window", "how": "Only if a second continent is in sight of the army; otherwise unboosted." },
-    { "id": "civic:early-empire", "fit": "free", "when": "window", "how": "Six population across the first two cities." },
-    { "id": "civic:state-workforce", "fit": "free", "when": "window", "how": "The capital Holy Site after the first capture." },
-    { "id": "civic:mysticism", "fit": "free", "when": "window", "how": "Founding God of the Forge in the arming phase." },
-    { "id": "civic:political-philosophy", "fit": "cheap", "when": "window", "how": "Three city-states met by the cavalry on the march." },
-    { "id": "civic:defensive-tactics", "fit": "free", "when": "window", "how": "The target or its friend declares war on you after the first capture." },
-    { "id": "civic:games-and-recreation", "fit": "free", "when": "digest", "how": "Researching Construction." },
-    { "id": "civic:military-training", "fit": "cheap", "when": "digest", "how": "The Encampment in the forward city." },
-    { "id": "civic:theology", "fit": "free", "when": "digest", "how": "Founding the religion is the point of the phase." },
-    { "id": "civic:feudalism", "fit": "cheap", "when": "digest", "how": "Six Farms across four cities after the Kurgan rings are laid." },
-    { "id": "civic:civil-service", "fit": "cheap", "when": "digest", "how": "The capital reaches ten population with Granary and Aqueduct." },
-    { "id": "civic:divine-right", "fit": "cheap", "when": "digest", "how": "Two Temples in the two Holy Sites; the Chapel needs the civic anyway." },
-    { "id": "civic:mercenaries", "fit": "free", "when": "digest", "how": "Eight land units is the army left over from the window." },
-    { "id": "civic:guilds", "fit": "cheap", "when": "digest", "how": "Two Markets, capital and captured capital." },
-    { "id": "civic:recorded-history", "fit": "costly", "when": "digest", "how": "Two Campuses, which this empire builds late; usually unboosted." },
-    { "id": "civic:drama-and-poetry", "fit": "costly", "when": "digest", "how": "Only if Jebel Barkal or the Colosseum is completed." },
-    { "id": "civic:medieval-faires", "fit": "cheap", "when": "second-wave", "how": "Four Trade Routes from the captures to the capital." },
-    { "id": "civic:reformed-church", "fit": "cheap", "when": "second-wave", "how": "Six cities following the religion, which the captures and Apostles reach." },
-    { "id": "civic:diplomatic-service", "fit": "cheap", "when": "second-wave", "how": "Forming the alliance with the Declared Friend." },
-    { "id": "civic:the-enlightenment", "fit": "cheap", "when": "second-wave", "how": "Three Great People: a Great General, a Great Prophet and one more." },
-    { "id": "civic:nationalism", "fit": "free", "when": "second-wave", "how": "The second war is declared with a Casus Belli." },
-    { "id": "civic:civil-engineering", "fit": "cheap", "when": "second-wave", "how": "Seven different specialty districts across the wide empire." },
-    { "id": "civic:colonialism", "fit": "costly", "when": "second-wave", "how": "Researching Astronomy, which this plan reaches late." },
-    { "id": "civic:scorched-earth", "fit": "cheap", "when": "close", "how": "Two Field Cannons on the Domination branch." },
-    { "id": "civic:mobilization", "fit": "cheap", "when": "close", "how": "Three Corps formed from Cavalry pairs under Grand Army." },
-    { "id": "civic:class-struggle", "fit": "cheap", "when": "close", "how": "Three Factories across the Industrial Zones." },
-    { "id": "civic:urbanization", "fit": "cheap", "when": "close", "how": "A fifteen-population capital with Aqueduct and Neighborhood." },
-    { "id": "civic:totalitarianism", "fit": "costly", "when": "close", "how": "Three Military Academies; only on the Domination branch." }
+    {
+      "id": "tech:archery",
+      "fit": "cheap",
+      "when": "arm",
+      "how": "A Slinger kill on the first camp's Scout; Archery is on the path to Horseback Riding anyway."
+    },
+    {
+      "id": "tech:horseback-riding",
+      "fit": "free",
+      "when": "arm",
+      "how": "The Pasture on the capital's Horses, laid by the first Builder before turn 15."
+    },
+    {
+      "id": "tech:bronze-working",
+      "fit": "free",
+      "when": "arm",
+      "how": "Three Barbarian kills at the first camp the Warrior, Slinger and cavalry clear."
+    },
+    {
+      "id": "tech:writing",
+      "fit": "free",
+      "when": "arm",
+      "how": "Meeting the target civilization on the way to it."
+    },
+    {
+      "id": "tech:wheel",
+      "fit": "cheap",
+      "when": "window",
+      "how": "The first Builder's third charge mines a resource hill."
+    },
+    {
+      "id": "tech:masonry",
+      "fit": "cheap",
+      "when": "window",
+      "how": "A Quarry on Stone near the capital, if any; the Ram needs the tech regardless."
+    },
+    {
+      "id": "tech:currency",
+      "fit": "cheap",
+      "when": "window",
+      "how": "The first Trader runs to the forward city."
+    },
+    {
+      "id": "tech:iron-working",
+      "fit": "cheap",
+      "when": "window",
+      "how": "Mine the Iron that Bronze Working revealed."
+    },
+    {
+      "id": "tech:construction",
+      "fit": "cheap",
+      "when": "window",
+      "how": "A Water Mill in the river capital after the first capture."
+    },
+    {
+      "id": "tech:irrigation",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "Farm a Wheat or Rice tile in a river city."
+    },
+    {
+      "id": "tech:mathematics",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "Holy Site, Campus and Commercial Hub are three specialty districts."
+    },
+    {
+      "id": "tech:apprenticeship",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "Three Mines on the hills the Kurgans and Pastures do not use."
+    },
+    {
+      "id": "tech:engineering",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "Ancient Walls in the captured capital."
+    },
+    {
+      "id": "tech:stirrups",
+      "fit": "free",
+      "when": "digest",
+      "how": "Feudalism is on the civic path."
+    },
+    {
+      "id": "tech:castles",
+      "fit": "free",
+      "when": "digest",
+      "how": "Monarchy is the Tier 2 government the plan adopts."
+    },
+    {
+      "id": "tech:education",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "The first Great Scientist from the capital Library and Pingala."
+    },
+    {
+      "id": "tech:military-engineering",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "The capital Aqueduct."
+    },
+    {
+      "id": "tech:military-tactics",
+      "fit": "costly",
+      "when": "digest",
+      "how": "A Spearman kill, which a cavalry army rarely has a Spearman for."
+    },
+    {
+      "id": "tech:buttress",
+      "fit": "cheap",
+      "when": "second-wave",
+      "how": "Owning Jebel Barkal or the Colosseum from the digest phase."
+    },
+    {
+      "id": "tech:printing",
+      "fit": "cheap",
+      "when": "second-wave",
+      "how": "Two Universities, capital and captured capital."
+    },
+    {
+      "id": "tech:banking",
+      "fit": "free",
+      "when": "second-wave",
+      "how": "Guilds is on the civic path."
+    },
+    {
+      "id": "tech:gunpowder",
+      "fit": "cheap",
+      "when": "second-wave",
+      "how": "An Armory in the forward city's Encampment."
+    },
+    {
+      "id": "tech:metal-casting",
+      "fit": "cheap",
+      "when": "second-wave",
+      "how": "Two Crossbowmen hard-built for the second target's Walls."
+    },
+    {
+      "id": "tech:siege-tactics",
+      "fit": "cheap",
+      "when": "second-wave",
+      "how": "Two Trebuchets built for the same Walls."
+    },
+    {
+      "id": "tech:military-science",
+      "fit": "costly",
+      "when": "second-wave",
+      "how": "A Knight kill, and this plan builds Coursers, not Knights; usually unboosted."
+    },
+    {
+      "id": "tech:industrialization",
+      "fit": "cheap",
+      "when": "second-wave",
+      "how": "Two Workshops in the Industrial Zones."
+    },
+    {
+      "id": "tech:scientific-theory",
+      "fit": "free",
+      "when": "second-wave",
+      "how": "The Enlightenment is on the civic path."
+    },
+    {
+      "id": "tech:mass-production",
+      "fit": "cheap",
+      "when": "second-wave",
+      "how": "A Lumber Mill on any Woods tile."
+    },
+    {
+      "id": "tech:rifling",
+      "fit": "cheap",
+      "when": "close",
+      "how": "A Mine on the Niter Military Engineering revealed."
+    },
+    {
+      "id": "tech:ballistics",
+      "fit": "costly",
+      "when": "close",
+      "how": "Two Forts from a Military Engineer on the border; only on the Domination branch."
+    },
+    {
+      "id": "tech:refining",
+      "fit": "cheap",
+      "when": "close",
+      "how": "A Coal Power Plant in the Industrial Zone city."
+    },
+    {
+      "id": "tech:sanitation",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Neighborhoods in the two biggest cities."
+    },
+    {
+      "id": "tech:replaceable-parts",
+      "fit": "costly",
+      "when": "close",
+      "how": "Three Line Infantry as garrisons; a cavalry army has to build them on purpose."
+    },
+    {
+      "id": "tech:computers",
+      "fit": "free",
+      "when": "close",
+      "how": "Any Tier 3 government."
+    },
+    {
+      "id": "civic:craftsmanship",
+      "fit": "free",
+      "when": "arm",
+      "how": "Three improved tiles from the first Builder: Pasture, Kurgan and Mine."
+    },
+    {
+      "id": "civic:military-tradition",
+      "fit": "free",
+      "when": "arm",
+      "how": "The first camp cleared on the road to the target."
+    },
+    {
+      "id": "civic:foreign-trade",
+      "fit": "costly",
+      "when": "window",
+      "how": "Only if a second continent is in sight of the army; otherwise unboosted."
+    },
+    {
+      "id": "civic:early-empire",
+      "fit": "free",
+      "when": "window",
+      "how": "Six population across the first two cities."
+    },
+    {
+      "id": "civic:state-workforce",
+      "fit": "free",
+      "when": "window",
+      "how": "The capital Holy Site after the first capture."
+    },
+    {
+      "id": "civic:mysticism",
+      "fit": "free",
+      "when": "window",
+      "how": "Founding God of the Forge in the arming phase."
+    },
+    {
+      "id": "civic:political-philosophy",
+      "fit": "cheap",
+      "when": "window",
+      "how": "Three city-states met by the cavalry on the march."
+    },
+    {
+      "id": "civic:defensive-tactics",
+      "fit": "costly",
+      "when": "window",
+      "how": "Only if the target's friend or ally declares war on you after the first capture; your own declaration does not count."
+    },
+    {
+      "id": "civic:games-and-recreation",
+      "fit": "free",
+      "when": "window",
+      "how": "Researching Construction."
+    },
+    {
+      "id": "civic:military-training",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "The Encampment in the forward city."
+    },
+    {
+      "id": "civic:theology",
+      "fit": "free",
+      "when": "digest",
+      "how": "Founding the religion is the point of the phase."
+    },
+    {
+      "id": "civic:feudalism",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "Six Farms across four cities after the Kurgan rings are laid."
+    },
+    {
+      "id": "civic:civil-service",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "The capital reaches ten population with Granary and Aqueduct."
+    },
+    {
+      "id": "civic:divine-right",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "Two Temples in the two Holy Sites; the Chapel needs the civic anyway."
+    },
+    {
+      "id": "civic:mercenaries",
+      "fit": "free",
+      "when": "digest",
+      "how": "Eight land units is the army left over from the window."
+    },
+    {
+      "id": "civic:guilds",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "Two Markets, capital and captured capital."
+    },
+    {
+      "id": "civic:recorded-history",
+      "fit": "costly",
+      "when": "digest",
+      "how": "Two Campuses, which this empire builds late; usually unboosted."
+    },
+    {
+      "id": "civic:drama-and-poetry",
+      "fit": "costly",
+      "when": "digest",
+      "how": "Only if Jebel Barkal or the Colosseum is completed."
+    },
+    {
+      "id": "civic:medieval-faires",
+      "fit": "cheap",
+      "when": "second-wave",
+      "how": "Four Trade Routes from the captures to the capital."
+    },
+    {
+      "id": "civic:reformed-church",
+      "fit": "cheap",
+      "when": "second-wave",
+      "how": "Six cities following the religion, which the captures and Apostles reach."
+    },
+    {
+      "id": "civic:diplomatic-service",
+      "fit": "cheap",
+      "when": "second-wave",
+      "how": "Forming the alliance with the Declared Friend."
+    },
+    {
+      "id": "civic:the-enlightenment",
+      "fit": "cheap",
+      "when": "second-wave",
+      "how": "Three Great People: a Great General, a Great Prophet and one more."
+    },
+    {
+      "id": "civic:nationalism",
+      "fit": "free",
+      "when": "second-wave",
+      "how": "The second war is declared with a Casus Belli."
+    },
+    {
+      "id": "civic:civil-engineering",
+      "fit": "cheap",
+      "when": "second-wave",
+      "how": "Seven different specialty districts across the wide empire."
+    },
+    {
+      "id": "civic:colonialism",
+      "fit": "costly",
+      "when": "second-wave",
+      "how": "Researching Astronomy, which this plan reaches late."
+    },
+    {
+      "id": "civic:scorched-earth",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Field Cannons on the Domination branch."
+    },
+    {
+      "id": "civic:mobilization",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Three Corps formed from Cavalry pairs under Grande Armée."
+    },
+    {
+      "id": "civic:class-struggle",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Three Factories across the Industrial Zones."
+    },
+    {
+      "id": "civic:urbanization",
+      "fit": "cheap",
+      "when": "close",
+      "how": "A fifteen-population capital with Aqueduct and Neighborhood."
+    },
+    {
+      "id": "civic:totalitarianism",
+      "fit": "costly",
+      "when": "close",
+      "how": "Three Military Academies; only on the Domination branch."
+    }
   ],
   "decision_triggers": [
-    { "name": "Walls on the target", "if": "The target capital's banner shows Ancient Walls before the cavalry arrive, or starts them during the siege.", "then": "Do not throw cavalry at it; a Saka Horse Archer does almost nothing to a wall. Bring two Warriors with a Battering Ram behind Masonry, or swap to the target's second city and take the capital later with the levied city-state army. If Akkad is on the map, buy suzerainty first." },
-    { "name": "No kills to make", "if": "For three consecutive turns no enemy unit stands outside a city for the army to wound and kill.", "then": "The heal-on-kill engine is off and the window is failing. Reduce scope the same turn: pillage the ring for Gold with Raid slotted, take the nearest city without Walls, and make peace for whatever the target will cede." },
-    { "name": "Gold under zero", "if": "Gold per turn goes negative at any point after the first pair is trained, even with Conscription.", "then": "No new cavalry until it is positive. Sell a luxury, run a second Trader, or disband the unpromoted half of the last pair; never disband a promoted unit." },
-    { "name": "No Horses", "if": "No Horses are pastured by turn 20 within the first two cities.", "then": "The army is four Saka Horse Archer pairs and two Warriors; the Warriors take the city once the Horse Archers have killed the garrison's sorties. Buy a Horseman pair with Gold the turn a Horses tile is improved." },
-    { "name": "Neighbour behind on Walls", "if": "After turn 150 a civilization within ten tiles of the border shows Ancient or no Walls and no Musketmen while you hold Faith for eight Coursers.", "then": "That is the second window. Declare with a Casus Belli, not a Surprise, and take two cities before its Walls catch up." }
+    {
+      "name": "Walls on the target",
+      "if": "The target capital's banner shows Ancient Walls before the cavalry arrive, or starts them during the siege.",
+      "then": "Do not throw cavalry at it; a Saka Horse Archer does almost nothing to a wall. Bring two Warriors with a Battering Ram behind Masonry, or swap to the target's second city and take the capital later with the levied city-state army. If Akkad is on the map, buy suzerainty first."
+    },
+    {
+      "name": "No kills to make",
+      "if": "For three consecutive turns no enemy unit stands outside a city for the army to wound and kill.",
+      "then": "The heal-on-kill engine is off and the window is failing. Reduce scope the same turn: pillage the ring for Gold, take the nearest city without Walls, and make peace for whatever the target will cede."
+    },
+    {
+      "name": "Gold under zero",
+      "if": "Gold per turn goes negative at any point after the first pair is trained, even with Conscription.",
+      "then": "No new cavalry until it is positive. Sell a luxury, run a second Trader, or disband the unpromoted half of the last pair; never disband a promoted unit."
+    },
+    {
+      "name": "No Horses",
+      "if": "No Horses are pastured by turn 20 within the first two cities.",
+      "then": "The army is four Saka Horse Archer pairs and two Warriors; the Warriors take the city once the Horse Archers have killed the garrison's sorties. Buy a Horseman pair with Gold the turn a Horses tile is improved."
+    },
+    {
+      "name": "Neighbour behind on Walls",
+      "if": "After turn 150 a civilization within ten tiles of the border shows Ancient or no Walls and no Musketmen while you hold Faith for eight Coursers.",
+      "then": "That is the second window. Declare with a Casus Belli, not a Surprise, and take two cities before its Walls catch up."
+    }
   ],
   "abort": {
     "trigger": "Turn 85 with no city captured, or three stalled turns before turn 55 with the target behind Walls and no field units to kill.",

@@ -27,7 +27,7 @@
       "Horses within the capital's second ring, or in the second city's first ring, pastured by turn 20; without Horses the army is Saka Horse Archers alone."
     ],
     "prefer": [
-      "Grassland or plains flats on the approach; the whole army moves four tiles a turn on open ground and one in Woods and Hills.",
+      "Grassland or plains flats on the approach; the whole army moves four tiles a turn on open ground and two in Woods or Hills.",
       "Two or three Barbarian camps between you and the target, each a free promotion and a full heal under Killer of Cyrus.",
       "Sheep, Cattle or Horses in clusters so Kurgans ringed by Pastures pay 3 or 4 Faith each.",
       "Kabul or another Militaristic city-state within reach of the first envoys."
@@ -177,7 +177,7 @@
           "card": "Maneuver",
           "slot": "military",
           "from": "civic:military-tradition",
-          "why": "+50% Production toward Ancient and Classical cavalry; every Horseman and Saka pair comes out in two thirds of the turns."
+          "why": "+50% Production toward Ancient and Classical cavalry; every Horseman pair comes out in two thirds of the turns. The Saka Horse Archers are ranged units and take Agoge, not Maneuver."
         }
       ],
       "districts": [],
@@ -324,11 +324,15 @@
         },
         {
           "id": "civic:mysticism",
-          "note": "Free Inspiration from the pantheon; the Holy Site adjacency for the digest phase."
+          "note": "Free Inspiration from the pantheon; Revelation for the Great Prophet race in the digest phase."
+        },
+        {
+          "id": "civic:games-and-recreation",
+          "note": "Free Inspiration from researching Construction; Entertainment Complexes for a wide empire."
         },
         {
           "id": "civic:defensive-tactics",
-          "note": "Free Inspiration when the target's friend declares on you after the first capture; Bastions if the captures are counter-attacked."
+          "note": "Inspiration only if the target's friend declares on you after the first capture; Bastions if the captures are counter-attacked."
         }
       ],
       "policies": [
@@ -348,13 +352,13 @@
           "card": "Colonization",
           "slot": "economic",
           "from": "civic:early-empire",
-          "why": "The third city at half Settler cost while the army does the conquering."
+          "why": "+50% Production toward the third city's Settler while the army does the conquering."
         },
         {
           "card": "Oligarchy",
           "slot": "wildcard",
           "from": "civic:political-philosophy",
-          "why": "The government: +4 Strength for the Warriors and Archers and faster experience for everything; the cavalry do not get the Strength but the Ram crew does."
+          "why": "The government: +4 Strength for the Warriors and Spearmen, not the Archers, and faster experience for everything; the cavalry do not get the Strength but the Ram crew does."
         }
       ],
       "districts": [
@@ -386,7 +390,7 @@
       "city_states": [
         {
           "slug": "kabul",
-          "why": "Suzerainty before the second siege if it is on the map; two promotions per fight on a Horseman makes the second city cheaper than the first."
+          "why": "Suzerainty before the second siege if it is on the map; double experience per fight on a Horseman makes the second city cheaper than the first."
         },
         {
           "type": "Militaristic",
@@ -512,7 +516,7 @@
         },
         {
           "id": "tech:stirrups",
-          "note": "Free Eureka from Feudalism; Knights are not the plan, but Castles and Coursers are behind it."
+          "note": "Free Eureka from Feudalism; Knights are not the plan, but it raises each Kurgan's Faith from an adjacent Pasture to +2."
         },
         {
           "id": "tech:castles",
@@ -528,10 +532,6 @@
         }
       ],
       "civics": [
-        {
-          "id": "civic:games-and-recreation",
-          "note": "Free Inspiration from researching Construction; Entertainment Complexes for a wide empire."
-        },
         {
           "id": "civic:military-training",
           "note": "One Encampment in the forward city for the Inspiration and Great General points."
@@ -558,7 +558,7 @@
         },
         {
           "id": "civic:guilds",
-          "note": "Two Markets; the Banking Eureka and more Gold on every Kurgan."
+          "note": "Two Markets; the Banking Eureka and Town Charters."
         }
       ],
       "policies": [
@@ -612,7 +612,7 @@
         {
           "district": "government-plaza",
           "city": "capital",
-          "note": "Warlord's Throne is wrong here; the Tier 2 building is the Grand Master's Chapel and it is the reason the Plaza exists."
+          "note": "A Tier 1 building such as Warlord's Throne must come first because the Chapel requires one; the Tier 2 building is the Grand Master's Chapel and it is the reason the Plaza exists."
         },
         {
           "district": "encampment",
@@ -636,14 +636,14 @@
         {
           "governor": "moksha",
           "promotion": "Bishop",
-          "city": "capital",
-          "why": "Faith purchases of buildings in the Holy Site city; later the Chapel's unit purchases are cheaper where he sits."
+          "city": "the captured capital",
+          "why": "Doubled religious pressure on the neighbouring cities, which are the former owner's; the Chapel's Faith comes from the capital's Holy Site regardless."
         },
         {
           "governor": "amani",
           "promotion": "Emissary",
-          "city": "the captured capital",
-          "why": "Two envoys and Loyalty pressure outward in the city nearest the former owner."
+          "city": "the second captured city",
+          "why": "Loyalty pressure outward on foreign cities within nine tiles, from the city nearest the former owner."
         },
         {
           "governor": "pingala",
@@ -705,7 +705,7 @@
         {
           "id": "digest-chapel",
           "turn": 135,
-          "text": "Build the Grand Master's Chapel in the Government Plaza the turn Divine Right completes; from here cavalry are bought with Faith, in pairs."
+          "text": "Build the Grand Master's Chapel in the Government Plaza, after its Tier 1 building, the turn Divine Right completes; from here cavalry are bought with Faith, in pairs."
         },
         {
           "id": "digest-friendship",
@@ -765,7 +765,7 @@
         },
         {
           "id": "tech:banking",
-          "note": "Free Eureka from Guilds; Banks and more Gold on every Kurgan."
+          "note": "Free Eureka from Guilds; Banks and the Gold for upgrades."
         },
         {
           "id": "tech:gunpowder",
@@ -807,7 +807,7 @@
         },
         {
           "id": "civic:nationalism",
-          "note": "Declare the second war with a Casus Belli and the Inspiration is free; Grand Army for Corps."
+          "note": "Declare the second war with a Casus Belli and the Inspiration is free; Grande Armée for Corps."
         },
         {
           "id": "civic:civil-engineering",
@@ -819,7 +819,7 @@
           "card": "Chivalry",
           "slot": "military",
           "from": "civic:divine-right",
-          "why": "+50% Production toward Medieval and Renaissance cavalry, and it lowers the Faith price in the Chapel too; the second wave is bought under it."
+          "why": "+50% Production toward Medieval and Renaissance cavalry, for the pairs built with Production; it does not lower the Faith price in the Chapel."
         },
         {
           "card": "Scripture",
@@ -874,7 +874,7 @@
           "governor": "moksha",
           "promotion": "Grand Inquisitor",
           "city": "capital",
-          "why": "Faith purchases cheaper where the Chapel sits, and Inquisitors if the Religion branch is taken."
+          "why": "Stronger religious units in theological combat near the capital, for the Apostles if the Religion branch is taken."
         },
         {
           "governor": "victor",
@@ -886,7 +886,7 @@
           "governor": "liang",
           "promotion": "Zoning Commissioner",
           "city": "the captured capital",
-          "why": "Districts at +20% in a city that still has none."
+          "why": "Districts at +20% in a city that still has only a Holy Site."
         }
       ],
       "city_states": [
@@ -902,7 +902,7 @@
       "great_people": [
         {
           "class": "great-general",
-          "why": "A Renaissance Great General gives Coursers +5 Strength and +1 Movement; the second wave moves six tiles a turn under one."
+          "why": "A Medieval Great General gives Coursers +5 Strength and +1 Movement; the second wave moves six tiles a turn under one."
         },
         {
           "class": "great-prophet",
@@ -988,12 +988,12 @@
       ],
       "research": [
         {
-          "id": "tech:rifling",
-          "note": "A Mine on the Niter Military Engineering revealed; Field Cannons and the Musketman garrisons."
+          "id": "tech:ballistics",
+          "note": "Two Forts from a Military Engineer give the Eureka; Field Cannons, which become Artillery at Steel if the wars run long."
         },
         {
-          "id": "tech:ballistics",
-          "note": "Two Forts from a Military Engineer give the Eureka; Field Cannons to Artillery if the wars run long."
+          "id": "tech:rifling",
+          "note": "A Mine on the Niter Military Engineering revealed; it follows Ballistics and opens Steel."
         },
         {
           "id": "tech:refining",
@@ -1014,16 +1014,16 @@
           "note": "Two Field Cannons; the Inspiration is free on the Domination branch."
         },
         {
+          "id": "civic:urbanization",
+          "note": "A fifteen-population capital; Neighborhoods."
+        },
+        {
           "id": "civic:mobilization",
           "note": "Three Corps; Levee en Masse for the maintenance."
         },
         {
           "id": "civic:class-struggle",
           "note": "Three Factories; Fascism via Totalitarianism for the war or Communism for the build."
-        },
-        {
-          "id": "civic:urbanization",
-          "note": "A fifteen-population capital; Neighborhoods."
         },
         {
           "id": "civic:totalitarianism",
@@ -1038,7 +1038,7 @@
           "why": "Unit maintenance down while the last paired army is fielded."
         },
         {
-          "card": "Grand Army",
+          "card": "Grande Armée",
           "slot": "military",
           "from": "civic:nationalism",
           "why": "Corps and Armies cheaper; a pair of Cavalry becomes one Corps the turn it is bought."
@@ -1395,14 +1395,14 @@
     },
     {
       "id": "civic:defensive-tactics",
-      "fit": "free",
+      "fit": "costly",
       "when": "window",
-      "how": "The target or its friend declares war on you after the first capture."
+      "how": "Only if the target's friend or ally declares war on you after the first capture; your own declaration does not count."
     },
     {
       "id": "civic:games-and-recreation",
       "fit": "free",
-      "when": "digest",
+      "when": "window",
       "how": "Researching Construction."
     },
     {
@@ -1511,7 +1511,7 @@
       "id": "civic:mobilization",
       "fit": "cheap",
       "when": "close",
-      "how": "Three Corps formed from Cavalry pairs under Grand Army."
+      "how": "Three Corps formed from Cavalry pairs under Grande Armée."
     },
     {
       "id": "civic:class-struggle",
@@ -1541,7 +1541,7 @@
     {
       "name": "No kills to make",
       "if": "For three consecutive turns no enemy unit stands outside a city for the army to wound and kill.",
-      "then": "The heal-on-kill engine is off and the window is failing. Reduce scope the same turn: pillage the ring for Gold with Raid slotted, take the nearest city without Walls, and make peace for whatever the target will cede."
+      "then": "The heal-on-kill engine is off and the window is failing. Reduce scope the same turn: pillage the ring for Gold, take the nearest city without Walls, and make peace for whatever the target will cede."
     },
     {
       "name": "Gold under zero",

@@ -33,20 +33,59 @@
     "fallback": "If the land is flat, take the Diplomatic direction at turn 60: Founding Fathers pays Favor on any map, Classical Republic and then Democracy hold four Wildcards, the Favor buys every Congress vote, and Theater Squares plus the Film Studio still give enough Culture to reach Democracy early."
   },
   "kit_levers": [
-    { "source": "leader_ability", "name": "Antiquities and Parks", "buys": "+1 Science on Breathtaking tiles adjacent to a Mountain or natural wonder, +1 Culture on Breathtaking tiles adjacent to a wonder or Woods, and +1 Appeal on every tile of a city that holds a National Park.", "exploit": "Appeal is a tile property that never decays, so every settling and improvement decision is an Appeal decision: no chopping, no Mines or Quarries beside a Breathtaking tile, Industrial Zones and Encampments on the far side of the city, Holy Sites, Theater Squares and Preserves on the near side. A National Park raises every tile in its city by one, which pushes the Charming ring to Breathtaking and turns the whole city into yield." },
-    { "source": "civ_ability", "name": "Founding Fathers", "buys": "Every Diplomatic policy slot in the current government becomes a Wildcard slot, and each Wildcard slot pays +1 Diplomatic Favor per turn.", "exploit": "Classical Republic holds two Wildcards from turn 60 and Democracy holds four, so the Favor arrives without a Diplomatic Quarter. The Wildcards still take Diplomatic cards, so Diplomatic League and Merchant Confederation go in at no cost to the Economic slots; the Favor is spent on Congress votes for the Diplomatic direction or sold to AIs for the Gold that buys Naturalists." },
-    { "source": "unique_infrastructure", "name": "Film Studio", "buys": "A Broadcast Center replacement that doubles this city's Tourism pressure toward other civilizations in the Modern era and later.", "exploit": "One in every Theater Square city the turn Radio lands; the Modern era is where the National Parks and Seaside Resorts come online, so the doubling applies to the whole stack. Pingala's Curator promotion in the Film Studio capital doubles it again." },
-    { "source": "unique_unit", "name": "Rough Rider", "buys": "A Cuirassier replacement with a Combat Strength bonus on Hills, lower maintenance and Culture from kills on the home continent.", "exploit": "A defensive unit for this plan: four Rough Riders on the hills behind the border hold the Industrial era while the Parks are built, and every kill on the home continent is Culture. Do not build an army with them; the plan has no war." },
-    { "source": "unique_unit", "name": "P-51 Mustang", "buys": "A Fighter replacement with extra range, a bonus against other fighters and faster experience.", "exploit": "Air superiority over the home continent in the last fifty turns, which is when a Culture leader is attacked. Two in the Aerodrome built for the Synthetic Materials Eureka." },
-    { "source": "agenda", "name": "Big Stick Policy", "buys": "Roosevelt likes peaceful civilizations on his continent and dislikes any that starts a war there.", "exploit": "Only matters for AI Roosevelt: no war on his continent keeps him friendly and his Favor off the market against you." }
+    {
+      "source": "leader_ability",
+      "name": "Antiquities and Parks",
+      "buys": "+1 Science on Breathtaking tiles adjacent to a Mountain or natural wonder, +1 Culture on Breathtaking tiles adjacent to a wonder or Woods, and +1 Appeal on every tile of a city that holds a National Park.",
+      "exploit": "Appeal is a tile property that never decays, so every settling and improvement decision is an Appeal decision: no chopping, no Mines or Quarries beside a Breathtaking tile, Industrial Zones and Encampments on the far side of the city, Holy Sites, Theater Squares and Preserves on the near side. A National Park raises every tile in its city by one, which pushes the Charming ring to Breathtaking and turns the whole city into yield."
+    },
+    {
+      "source": "civ_ability",
+      "name": "Founding Fathers",
+      "buys": "Every Diplomatic policy slot in the current government becomes a Wildcard slot, and each Wildcard slot pays +1 Diplomatic Favor per turn.",
+      "exploit": "Classical Republic holds two Wildcards from turn 60 and Democracy holds four, so the Favor arrives without a Diplomatic Quarter. The Wildcards still take Diplomatic cards, so Diplomatic League and Merchant Confederation go in at no cost to the Economic slots; the Favor is spent on Congress votes for the Diplomatic direction or sold to AIs for the Gold that buys Builders, since Naturalists are bought with Faith alone."
+    },
+    {
+      "source": "unique_infrastructure",
+      "name": "Film Studio",
+      "buys": "A Broadcast Center replacement that doubles this city's Tourism pressure toward other civilizations in the Modern era and later.",
+      "exploit": "One in every Theater Square city the turn Radio lands; the Modern era is where the National Parks and Seaside Resorts come online, so the doubling applies to the whole stack. Pingala's Curator promotion in the Film Studio capital doubles the Tourism from its Great Works."
+    },
+    {
+      "source": "unique_unit",
+      "name": "Rough Rider",
+      "buys": "A Cavalry replacement with a Combat Strength bonus on Hills, lower maintenance and Culture from kills on the home continent.",
+      "exploit": "A defensive unit for this plan: four Rough Riders on the hills behind the border hold the Industrial era while the Parks are built, and every kill on the home continent is Culture. Do not build an army with them; the plan has no war."
+    },
+    {
+      "source": "unique_unit",
+      "name": "P-51 Mustang",
+      "buys": "A Fighter replacement with extra range, a bonus against other fighters and faster experience.",
+      "exploit": "Air superiority over the home continent in the last fifty turns, which is when a Culture leader is attacked. Two in the Aerodrome built for the Synthetic Materials Eureka."
+    },
+    {
+      "source": "agenda",
+      "name": "Big Stick Policy",
+      "buys": "Roosevelt likes peaceful civilizations on his continent and dislikes any that starts a war there.",
+      "exploit": "Only matters for AI Roosevelt: no war on his continent keeps him friendly and his Favor off the market against you."
+    }
   ],
   "shape_block": {
     "linear": {
       "direction": {
         "options": [
-          { "victory": "Culture", "when_it_fits": "Four cities with Breathtaking tiles exist by turn 60 and a natural wonder or two mountain ranges sit inside the borders. Theater Squares, Preserves, Great Works and then National Parks, Seaside Resorts and Film Studios turn the Appeal into Tourism; the Faith from Earth Goddess buys the Naturalists and the Rock Bands. Nothing in the kit expires on this path." },
-          { "victory": "Diplomatic", "when_it_fits": "The land is flatter than hoped, or two Culture civilizations are already ahead at turn 60. Classical Republic and Democracy hold two and then four Wildcards, each paying Favor from turn 60, and the Culture from Theater Squares reaches Democracy early; three suzerainties and an alliance add more. The Favor buys the Congress and the Aid competitions, and the plan needs no Appeal at all." },
-          { "victory": "Science", "when_it_fits": "The capital sits beside a mountain range and a natural wonder and the Culture rivals are too strong to catch. The Breathtaking tiles pay Science, Campuses beside the Mountains pay more, and the Favor is sold for Gold; but nothing in the kit makes Universities or the Spaceport cheaper, so take this only when the map has handed over the mountains and the other two paths are closed." }
+          {
+            "victory": "Culture",
+            "when_it_fits": "Four cities with Breathtaking tiles exist by turn 60 and a natural wonder or two mountain ranges sit inside the borders. Theater Squares, Preserves, Great Works and then National Parks, Seaside Resorts and Film Studios turn the Appeal into Tourism; the Faith from Earth Goddess buys the Naturalists and the Rock Bands. Nothing in the kit expires on this path."
+          },
+          {
+            "victory": "Diplomatic",
+            "when_it_fits": "The land is flatter than hoped, or two Culture civilizations are already ahead at turn 60. Classical Republic and Democracy hold two and then four Wildcards, each paying Favor from turn 60, and the Culture from Theater Squares reaches Democracy early; three suzerainties and an alliance add more. The Favor buys the Congress and the Aid competitions, and the plan needs no Appeal at all."
+          },
+          {
+            "victory": "Science",
+            "when_it_fits": "The capital sits beside a mountain range and a natural wonder and the Culture rivals are too strong to catch. The Breathtaking tiles pay Science, Campuses beside the Mountains pay more, and the Favor is sold for Gold; but nothing in the kit makes Universities or the Spaceport cheaper, so take this only when the map has handed over the mountains and the other two paths are closed."
+          }
         ],
         "choose_by": 60,
         "commit_test": "At turn 100 look at the Theater Squares and the Wildcards: if three cities hold a Theater Square with an Amphitheater and the Wildcards hold Aesthetics or Diplomatic League, the direction is chosen and the Appeal is being spent. If the Breathtaking tiles pay Culture that buys civics in tree order and the Favor sits unspent at 300, the yields are being banked and the plan has failed its own test."
@@ -57,453 +96,1682 @@
     {
       "id": "appeal",
       "name": "Settle for Appeal",
-      "turns": { "from": 1, "to": 50 },
+      "turns": {
+        "from": 1,
+        "to": 50
+      },
       "era": "ancient",
       "objective": "Found three cities on sites where Mountains, Woods and Coast meet, scout for a natural wonder, take Earth Goddess, improve nothing that lowers Appeal, and have the first Breathtaking tiles paying Science and Culture by turn 30.",
       "build_order": [
-        { "item": "Scout", "why": "Finds the natural wonder and the mountain ranges the city sites need; Astrology and Writing on the way." },
-        { "item": "Warrior", "why": "Escort and camp clearing; the home continent is cleared and nothing off it is touched." },
-        { "item": "Settler", "why": "Second city by turn 20 beside the best mountain-and-woods site the Scout found." },
-        { "item": "Slinger", "why": "Archery Eureka on a camp scout and a defender while the Warriors escort." },
-        { "item": "Builder", "why": "Farms on flat resources, a Pasture and a Camp; no Mine or Quarry unless the hill is already behind an Encampment site." },
-        { "item": "Monument", "why": "The Culture to reach Mysticism and the Preserve by turn 50." },
-        { "item": "Settler", "why": "Third city on the coast with Woods behind it." },
-        { "item": "Holy Site", "why": "Capital, beside Woods and a Mountain: Earth Goddess Faith and +1 Appeal to the tiles around it." }
+        {
+          "item": "Scout",
+          "why": "Finds the natural wonder and the mountain ranges the city sites need; Astrology and Writing on the way."
+        },
+        {
+          "item": "Warrior",
+          "why": "Escort and camp clearing; the home continent is cleared and nothing off it is touched."
+        },
+        {
+          "item": "Settler",
+          "why": "Second city by turn 20 beside the best mountain-and-woods site the Scout found."
+        },
+        {
+          "item": "Slinger",
+          "why": "Archery Eureka on a camp scout and a defender while the Warriors escort."
+        },
+        {
+          "item": "Builder",
+          "why": "Farms on flat resources, a Pasture and a Camp; no Mine or Quarry unless the hill is already behind an Encampment site."
+        },
+        {
+          "item": "Monument",
+          "why": "The Culture to reach Mysticism and the Preserve by turn 50."
+        },
+        {
+          "item": "Settler",
+          "why": "Third city on the coast with Woods behind it."
+        },
+        {
+          "item": "Holy Site",
+          "why": "Capital, beside Woods and a Mountain: Earth Goddess Faith and +1 Appeal to the tiles around it."
+        }
       ],
       "research": [
-        { "id": "tech:astrology", "note": "The Scout finds a natural wonder; Holy Sites and Stonehenge are the Faith." },
-        { "id": "tech:writing", "note": "The Scout meets a rival; the Campus beside a Mountain is the Science supplement." },
-        { "id": "tech:irrigation", "note": "A Farm on a resource; Farms are the one improvement that never lowers Appeal." },
-        { "id": "tech:archery", "note": "Slinger kill at the first camp; Archers hold the border without an Encampment." },
-        { "id": "tech:bronze-working", "note": "Three camp kills; the Encampment is placed on the city's low-appeal side if ever." },
-        { "id": "tech:sailing", "note": "A coastal third city gives the Eureka; Harbors are Production that keeps Appeal." }
+        {
+          "id": "tech:astrology",
+          "note": "The Scout finds a natural wonder; Holy Sites and Stonehenge are the Faith."
+        },
+        {
+          "id": "tech:writing",
+          "note": "The Scout meets a rival; the Campus beside a Mountain is the Science supplement."
+        },
+        {
+          "id": "tech:irrigation",
+          "note": "A Farm on a resource; Farms are the one improvement that never lowers Appeal."
+        },
+        {
+          "id": "tech:archery",
+          "note": "Slinger kill at the first camp; Archers hold the border without an Encampment."
+        },
+        {
+          "id": "tech:bronze-working",
+          "note": "Three camp kills; the Encampment is placed on the city's low-appeal side if ever."
+        },
+        {
+          "id": "tech:sailing",
+          "note": "A coastal third city gives the Eureka; Harbors are Production that keeps Appeal."
+        }
       ],
       "civics": [
-        { "id": "civic:code-of-laws", "note": "God King for the pantheon; Discipline for the escorts." },
-        { "id": "civic:craftsmanship", "note": "Three improvements from the first Builder, all Farms and Pastures." },
-        { "id": "civic:foreign-trade", "note": "A second continent if the Scout finds one; the first Trade Route." },
-        { "id": "civic:early-empire", "note": "Six population across two cities; Colonization for the third Settler." },
-        { "id": "civic:mysticism", "note": "Pantheon gives the Inspiration; the Preserve and the Grove unlock here." },
-        { "id": "civic:state-workforce", "note": "The Holy Site gives the Inspiration." }
+        {
+          "id": "civic:code-of-laws",
+          "note": "God King for the pantheon; Discipline for the escorts."
+        },
+        {
+          "id": "civic:craftsmanship",
+          "note": "Three improvements from the first Builder, all Farms and Pastures."
+        },
+        {
+          "id": "civic:foreign-trade",
+          "note": "A second continent if the Scout finds one; the first Trade Route."
+        },
+        {
+          "id": "civic:early-empire",
+          "note": "Six population across two cities; Colonization for the third Settler."
+        },
+        {
+          "id": "civic:mysticism",
+          "note": "Pantheon gives the Inspiration; the Preserve and the Grove unlock here."
+        },
+        {
+          "id": "civic:state-workforce",
+          "note": "The Holy Site gives the Inspiration."
+        }
       ],
       "policies": [
-        { "card": "God King", "slot": "economic", "from": "civic:code-of-laws", "why": "Earth Goddess by turn 25; the Faith it pays buys every Naturalist later." },
-        { "card": "Discipline", "slot": "military", "from": "civic:code-of-laws", "why": "Warriors clear the home-continent camps while escorting Settlers." },
-        { "card": "Colonization", "slot": "economic", "from": "civic:early-empire", "why": "Settlers at half cost for cities three and four." }
+        {
+          "card": "God King",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "Earth Goddess by turn 25; the Faith it pays buys every Naturalist later."
+        },
+        {
+          "card": "Discipline",
+          "slot": "military",
+          "from": "civic:code-of-laws",
+          "why": "Warriors clear the home-continent camps while escorting Settlers."
+        },
+        {
+          "card": "Colonization",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "+50% Production toward Settlers for cities three and four."
+        }
       ],
       "districts": [
-        { "district": "holy-site", "city": "capital", "note": "Between Woods and a Mountain: it raises adjacent Appeal by one and pays the pantheon Faith." }
+        {
+          "district": "holy-site",
+          "city": "capital",
+          "note": "Between Woods and a Mountain: it raises adjacent Appeal by one and pays the pantheon Faith."
+        }
       ],
-      "pantheon": { "slug": "earth-goddess", "why": "Faith from every Breathtaking tile, which is the same tile the leader ability already pays; the Faith buys Naturalists and Rock Bands.", "alternative": "goddess-of-the-hunt" },
+      "pantheon": {
+        "slug": "earth-goddess",
+        "why": "Faith from every Breathtaking tile, which is the same tile the leader ability already pays; the Faith buys Naturalists and Rock Bands.",
+        "alternative": "goddess-of-the-hunt"
+      },
       "wonders": [],
       "governors": [],
       "city_states": [
-        { "type": "Cultural", "why": "Culture in the capital at one envoy, and Nan Madol or Rapa Nui later pay Culture without touching a tile." },
-        { "type": "Industrial", "why": "Production toward districts in a capital that cannot chop." }
+        {
+          "type": "Cultural",
+          "why": "Culture in the capital at one envoy, and Nan Madol or Rapa Nui later pay Culture without touching a tile."
+        },
+        {
+          "type": "Industrial",
+          "why": "Production toward districts in a capital that cannot chop."
+        }
       ],
       "great_people": [],
       "checkpoints": [
-        { "turn": 25, "test": "Two cities founded, each with a Mountain or Woods in its first ring, Earth Goddess taken, and at least one Breathtaking tile showing the ability's Science or Culture?", "pass": "Keep settling toward the mountains; Settler three is in the queue.", "fail": "No Breathtaking tile by turn 25 means the cities are on the wrong ground; the third city goes beside the natural wonder or the mountain range whatever the distance. A pantheon after turn 30 means the Holy Site came too late; buy a Monument and run God King until it lands." },
-        { "turn": 50, "test": "Three cities, the capital Holy Site built, no Mine or Quarry beside a Breathtaking tile anywhere, and Mysticism within five turns?", "pass": "Enter the Preserve phase; the direction decision is ten turns away.", "fail": "Two cities with the third Settler walking is acceptable. A Mine beside a Breathtaking tile means the Builder was automated; remove it and never automate again. Mysticism after turn 60 means the Monument is missing in a city." }
+        {
+          "turn": 25,
+          "test": "Two cities founded, each with a Mountain or Woods in its first ring, Earth Goddess taken, and at least one Breathtaking tile showing the ability's Science or Culture?",
+          "pass": "Keep settling toward the mountains; Settler three is in the queue.",
+          "fail": "No Breathtaking tile by turn 25 means the cities are on the wrong ground; the third city goes beside the natural wonder or the mountain range whatever the distance. A pantheon after turn 30 means the Holy Site came too late; buy a Monument and run God King until it lands."
+        },
+        {
+          "turn": 50,
+          "test": "Three cities, the capital Holy Site built, no Mine or Quarry beside a Breathtaking tile anywhere, and Mysticism within five turns?",
+          "pass": "Enter the Preserve phase; the direction decision is ten turns away.",
+          "fail": "Two cities with the third Settler walking is acceptable. A Mine beside a Breathtaking tile means the Builder was automated; remove it and never automate again. Mysticism after turn 60 means the Monument is missing in a city."
+        }
       ],
       "tasks": [
-        { "id": "appeal-settle-capital", "turn": 1, "text": "Settle on the spot if a Mountain or Woods is in the first ring; otherwise one move toward one, and never onto a hill beside the only Woods." },
-        { "id": "appeal-scout-wonder", "turn": 10, "text": "Scout toward mountains and coast for a natural wonder; its tiles are the first Breathtaking ground." },
-        { "id": "appeal-second-city", "turn": 20, "text": "Second city founded beside a Mountain with Woods in its ring; confirm at least one tile reads Breathtaking in the lens." },
-        { "id": "appeal-pantheon", "turn": 25, "text": "Found Earth Goddess, or Goddess of the Hunt if the woods are full of Camps and the Appeal is still Charming." },
-        { "id": "appeal-no-chop", "turn": 30, "text": "Open the Appeal lens on every Builder turn and improve nothing that lowers a Charming or Breathtaking tile." },
-        { "id": "appeal-third-city", "turn": 45, "text": "Third city founded on the coast with Woods behind it; the Coast is Appeal and the Harbor is Production." }
+        {
+          "id": "appeal-settle-capital",
+          "turn": 1,
+          "text": "Settle on the spot if a Mountain or Woods is in the first ring; otherwise one move toward one, and never onto a hill beside the only Woods."
+        },
+        {
+          "id": "appeal-scout-wonder",
+          "turn": 10,
+          "text": "Scout toward mountains and coast for a natural wonder; its tiles are the first Breathtaking ground."
+        },
+        {
+          "id": "appeal-second-city",
+          "turn": 20,
+          "text": "Second city founded beside a Mountain with Woods in its ring; confirm at least one tile reads Breathtaking in the lens."
+        },
+        {
+          "id": "appeal-pantheon",
+          "turn": 25,
+          "text": "Found Earth Goddess, or Goddess of the Hunt if the woods are full of Camps and the Appeal is still Charming."
+        },
+        {
+          "id": "appeal-no-chop",
+          "turn": 30,
+          "text": "Open the Appeal lens on every Builder turn and improve nothing that lowers a Charming or Breathtaking tile."
+        },
+        {
+          "id": "appeal-third-city",
+          "turn": 45,
+          "text": "Third city founded on the coast with Woods behind it; the Coast is Appeal and the Harbor is Production."
+        }
       ]
     },
     {
       "id": "preserve",
       "name": "Preserves and the decision",
-      "turns": { "from": 51, "to": 110 },
+      "turns": {
+        "from": 51,
+        "to": 110
+      },
       "era": "classical",
       "objective": "Reach six cities, put a Preserve and a Grove on the Breathtaking edge of the three best, a Theater Square in the capital, take Classical Republic for its two Wildcards and the first Favor, and decide by turn 60 whether the Culture goes to Tourism or the Favor goes to the Congress.",
       "build_order": [
-        { "item": "Settler", "why": "Cities four through six, each beside a Mountain, Woods or Coast." },
-        { "item": "Preserve", "why": "On the Breathtaking edge of the capital: it raises adjacent Appeal and the Grove pays Food and Faith by Appeal." },
-        { "item": "Grove", "why": "Food and Faith on the Charming and Breathtaking tiles beside the Preserve." },
-        { "item": "Theater Square", "why": "Capital, beside the Holy Site: +1 Appeal around it and the Great Writer slots." },
-        { "item": "Trader", "why": "Currency Eureka; a domestic route carries Production into a city that cannot chop." },
-        { "item": "Harbor", "why": "The coastal city: Production and Gold without an Appeal cost." },
-        { "item": "Campus", "why": "The capital, beside a Mountain: the Science supplement and the Recorded History Inspiration." },
-        { "item": "Archer", "why": "Three for Machinery; the garrison that replaces an Encampment." }
+        {
+          "item": "Settler",
+          "why": "Cities four through six, each beside a Mountain, Woods or Coast."
+        },
+        {
+          "item": "Preserve",
+          "why": "On the Breathtaking edge of the capital: it raises adjacent Appeal and the Grove pays Food and Faith by Appeal."
+        },
+        {
+          "item": "Grove",
+          "why": "Food and Faith on the Charming and Breathtaking tiles beside the Preserve."
+        },
+        {
+          "item": "Theater Square",
+          "why": "Capital, beside the Holy Site: +1 Appeal around it and the Great Writer slots."
+        },
+        {
+          "item": "Trader",
+          "why": "Currency Eureka; a domestic route carries Production into a city that cannot chop."
+        },
+        {
+          "item": "Harbor",
+          "why": "The coastal city: Production and Gold without an Appeal cost."
+        },
+        {
+          "item": "Campus",
+          "why": "The capital, beside a Mountain: the Science supplement and the first of the two Campuses the Recorded History Inspiration asks for."
+        },
+        {
+          "item": "Archer",
+          "why": "Three for Machinery; the garrison that replaces an Encampment."
+        }
       ],
       "research": [
-        { "id": "tech:currency", "note": "First Trade Route gives the Eureka; Commercial Hubs for the Gold that buys Builders." },
-        { "id": "tech:celestial-navigation", "note": "Two Fishing Boats in the coastal city; Harbors." },
-        { "id": "tech:mathematics", "note": "Holy Site, Preserve and Theater Square by turn 85." },
-        { "id": "tech:construction", "note": "A Water Mill in a river city; the Colosseum." },
-        { "id": "tech:horseback-riding", "note": "A Pasture gives the Eureka; Pastures never lower Appeal." },
-        { "id": "tech:machinery", "note": "Three Archers; Lumber Mills are behind Mass Production, which is the Production plan." },
-        { "id": "tech:apprenticeship", "note": "Three Mines on the far side of the Encampment city, or unboosted; it leads to Mass Production." }
+        {
+          "id": "tech:currency",
+          "note": "First Trade Route gives the Eureka; Commercial Hubs for the Gold that buys Builders."
+        },
+        {
+          "id": "tech:celestial-navigation",
+          "note": "Two Fishing Boats in the coastal city; Harbors."
+        },
+        {
+          "id": "tech:mathematics",
+          "note": "Holy Site, Preserve and Theater Square by turn 85."
+        },
+        {
+          "id": "tech:horseback-riding",
+          "note": "A Pasture gives the Eureka; Pastures never lower Appeal."
+        },
+        {
+          "id": "tech:construction",
+          "note": "A Water Mill in a river city; it inspires Games and Recreation, which brings the Colosseum."
+        },
+        {
+          "id": "tech:machinery",
+          "note": "Three Archers; Lumber Mills, the Production plan, come before Mass Production, since building one is its Eureka."
+        },
+        {
+          "id": "tech:apprenticeship",
+          "note": "Three Mines on the far side of the Encampment city, or unboosted; it leads to Mass Production."
+        }
       ],
       "civics": [
-        { "id": "civic:political-philosophy", "note": "Three city-states met; Classical Republic for two Wildcards and the first Favor." },
-        { "id": "civic:drama-and-poetry", "note": "A wonder gives the Inspiration; Theater Squares and Aesthetics." },
-        { "id": "civic:games-and-recreation", "note": "Construction gives the Inspiration; the Entertainment Complex raises Appeal around it." },
-        { "id": "civic:recorded-history", "note": "Two Campuses beside Mountains on the Science direction; otherwise unboosted on the way to Humanism." },
-        { "id": "civic:military-tradition", "note": "First camp cleared; on the path to Political Philosophy." },
-        { "id": "civic:theology", "note": "Unboosted unless a religion is founded; Scripture is not needed, but Reformed Church is on the path to Humanism's neighbours." }
+        {
+          "id": "civic:political-philosophy",
+          "note": "Three city-states met; Classical Republic for two Wildcards and the first Favor."
+        },
+        {
+          "id": "civic:drama-and-poetry",
+          "note": "A wonder gives the Inspiration; Theater Squares and Aesthetics."
+        },
+        {
+          "id": "civic:games-and-recreation",
+          "note": "Construction gives the Inspiration; the Entertainment Complex raises Appeal around it."
+        },
+        {
+          "id": "civic:recorded-history",
+          "note": "Two Campuses beside Mountains on the Science direction; otherwise unboosted on the way to Humanism."
+        },
+        {
+          "id": "civic:military-tradition",
+          "note": "First camp cleared; off the path to Political Philosophy, taken because the Inspiration is already in hand."
+        },
+        {
+          "id": "civic:theology",
+          "note": "Unboosted unless a religion is founded; Scripture is not needed, but Reformed Church is on the path to Humanism's neighbours."
+        }
       ],
       "policies": [
-        { "card": "Classical Republic", "slot": "wildcard", "from": "civic:political-philosophy", "why": "Two Wildcards under Founding Fathers, each paying Favor from the turn it is adopted, plus Amenities and Great Person points." },
-        { "card": "Diplomatic League", "slot": "wildcard", "from": "civic:political-philosophy", "why": "First envoy to every city-state counts double; it sits in a Wildcard and costs no Economic slot." },
-        { "card": "Aesthetics", "slot": "economic", "from": "civic:drama-and-poetry", "why": "Doubled Theater Square adjacency; a Theater Square beside a Preserve and a Holy Site reads +3 before the card." },
-        { "card": "Caravansaries", "slot": "economic", "from": "civic:foreign-trade", "why": "Gold on the routes that replace chopping as the Production source." }
+        {
+          "card": "Classical Republic",
+          "slot": "wildcard",
+          "from": "civic:political-philosophy",
+          "why": "Two Wildcards under Founding Fathers, each paying Favor from the turn it is adopted, plus Amenities and Great Person points."
+        },
+        {
+          "card": "Diplomatic League",
+          "slot": "wildcard",
+          "from": "civic:political-philosophy",
+          "why": "First envoy to every city-state counts double; it sits in a Wildcard and costs no Economic slot."
+        },
+        {
+          "card": "Aesthetics",
+          "slot": "economic",
+          "from": "civic:drama-and-poetry",
+          "why": "Doubled Theater Square adjacency; a Theater Square beside a Preserve and a Holy Site reads +1 before the card."
+        },
+        {
+          "card": "Caravansaries",
+          "slot": "economic",
+          "from": "civic:foreign-trade",
+          "why": "Gold on the routes that replace chopping as the Production source."
+        }
       ],
       "districts": [
-        { "district": "preserve", "city": "the three cities with the most Breathtaking tiles", "note": "On the Appeal edge, never between the city and its Mines; the Grove goes in the turn it finishes." },
-        { "district": "theater-square", "city": "capital, then the two largest cities", "note": "Beside the Holy Site or the Preserve for adjacency and +1 Appeal around it." },
-        { "district": "harbor", "city": "every coastal city", "note": "Production and Housing that leave Appeal untouched." },
-        { "district": "campus", "city": "capital, beside a Mountain", "note": "The Science supplement; two on the Science direction only." }
+        {
+          "district": "preserve",
+          "city": "the three cities with the most Breathtaking tiles",
+          "note": "On the Appeal edge, never between the city and its Mines; the Grove goes in the turn it finishes."
+        },
+        {
+          "district": "theater-square",
+          "city": "capital, then the two largest cities",
+          "note": "Beside the Holy Site or the Preserve for adjacency and +1 Appeal around it."
+        },
+        {
+          "district": "harbor",
+          "city": "every coastal city",
+          "note": "Production and Housing that leave Appeal untouched."
+        },
+        {
+          "district": "campus",
+          "city": "capital, beside a Mountain",
+          "note": "The Science supplement; two on the Science direction only."
+        }
       ],
-      "pantheon": { "slug": "earth-goddess", "why": "Already founded; every Preserve raises more tiles to Breathtaking and the Faith climbs with them." },
+      "pantheon": {
+        "slug": "earth-goddess",
+        "why": "Already founded; every Preserve raises more tiles to Breathtaking and the Faith climbs with them."
+      },
       "wonders": [
-        { "name": "Temple of Artemis", "why": "Housing and Amenities from Camps and Pastures, the improvements this plan builds instead of Mines, and +1 Appeal around it.", "skip_if": "No Woods beside the capital's Camp sites, or a rival has it queued by turn 70." },
-        { "name": "Colosseum", "why": "Amenities and Culture to every city within six tiles, and a wonder tile for the Culture adjacency.", "skip_if": "The capital is not central, or Construction lands after turn 100." }
+        {
+          "name": "Temple of Artemis",
+          "why": "Food and Housing in the city and Amenities from Camps and Pastures, the improvements this plan builds instead of Mines, and +1 Appeal around it.",
+          "skip_if": "No Woods beside the capital's Camp sites, or a rival has it queued by turn 70."
+        },
+        {
+          "name": "Colosseum",
+          "why": "Amenities and Culture to every city within six tiles, and a wonder tile for the Culture adjacency.",
+          "skip_if": "The capital is not central or has no Entertainment Complex to stand beside, or Games and Recreation lands after turn 100."
+        }
       ],
       "governors": [
-        { "governor": "liang", "promotion": "Parks and Recreation", "city": "capital", "why": "City Parks raise Appeal and pay Culture on tiles the plan would otherwise leave empty." },
-        { "governor": "amani", "promotion": "Messenger", "city": "the Cultural city-state nearest the core", "why": "Two free envoys toward the first suzerainty, which is Culture and Favor at once." }
+        {
+          "governor": "liang",
+          "promotion": "Guildmaster",
+          "city": "capital",
+          "why": "Every Builder trained in the capital gets an extra charge, which the no-chop plan spends on Farms, Pastures and Camps."
+        },
+        {
+          "governor": "amani",
+          "promotion": "Messenger",
+          "city": "the Cultural city-state nearest the core",
+          "why": "Two free envoys toward the first suzerainty, which is Culture and Favor at once."
+        }
       ],
       "city_states": [
-        { "slug": "nan-madol", "why": "Culture from every district on or beside Coast; the coastal Harbors and Theater Squares pay twice." },
-        { "slug": "rapa-nui", "why": "Moai on the coast are Culture and raise nothing's Appeal cost." },
-        { "type": "Cultural", "why": "Culture in every Amphitheater at three envoys, and a suzerainty is Favor." }
+        {
+          "slug": "nan-madol",
+          "why": "Culture from every district on or beside Coast; the coastal Harbors and Theater Squares pay twice."
+        },
+        {
+          "slug": "rapa-nui",
+          "why": "Moai on the coast are Culture and raise nothing's Appeal cost."
+        },
+        {
+          "type": "Cultural",
+          "why": "Culture in every Amphitheater at three envoys, and a suzerainty is Favor."
+        }
       ],
       "great_people": [
-        { "class": "great-writer", "why": "Great Works of Writing fill the Amphitheaters and the Humanism path begins." },
-        { "class": "great-prophet", "why": "Only if one is cheap: a religion with Reliquaries or Work Ethic is Faith, and the Faith is Naturalists; otherwise let it go." }
+        {
+          "class": "great-writer",
+          "why": "Great Works of Writing fill the Amphitheaters and the Humanism path begins."
+        },
+        {
+          "class": "great-prophet",
+          "why": "Only if one is cheap: a religion with Reliquaries or Work Ethic is Faith, and the Faith is Naturalists; otherwise let it go."
+        }
       ],
       "checkpoints": [
-        { "turn": 60, "test": "Direction written down: Culture with four cities holding Breathtaking tiles and a Theater Square started, Diplomatic with Classical Republic adopted and the first suzerainty in reach, or Science with the mountain Campus? Is Classical Republic adopted and paying Favor?", "pass": "Queues switch to the direction's list; Preserves in three cities on the Culture direction, envoys and a Commercial Hub on the Diplomatic direction.", "fail": "No direction at turn 60 is the shape's failure. Decide by the Appeal lens: ten or more Breathtaking tiles inside the borders is Culture, fewer is Diplomatic. Classical Republic not adopted means Political Philosophy is late; buy the Monuments the Culture rate is missing." },
-        { "turn": 110, "test": "Six cities, Preserves with Groves in three, a Theater Square with an Amphitheater in the capital, Favor above 50, and the queues showing the direction?", "pass": "Enter the Great Works phase.", "fail": "Five cities and two Preserves is acceptable. No Grove means the Preserve is paying nothing; finish it before any wonder. Favor under 30 means the Wildcards hold the wrong government; Classical Republic holds two, Autocracy and Oligarchy hold one." }
+        {
+          "turn": 60,
+          "test": "Direction written down: Culture with four cities holding Breathtaking tiles and a Theater Square started, Diplomatic with Classical Republic adopted and the first suzerainty in reach, or Science with the mountain Campus? Is Classical Republic adopted and paying Favor?",
+          "pass": "Queues switch to the direction's list; Preserves in three cities on the Culture direction, envoys and a Commercial Hub on the Diplomatic direction.",
+          "fail": "No direction at turn 60 is the shape's failure. Decide by the Appeal lens: ten or more Breathtaking tiles inside the borders is Culture, fewer is Diplomatic. Classical Republic not adopted means Political Philosophy is late; buy the Monuments the Culture rate is missing."
+        },
+        {
+          "turn": 110,
+          "test": "Six cities, Preserves with Groves in three, a Theater Square with an Amphitheater in the capital, Favor above 50, and the queues showing the direction?",
+          "pass": "Enter the Great Works phase.",
+          "fail": "Five cities and two Preserves is acceptable. No Grove means the Preserve is paying nothing; finish it before any wonder. Favor under 30 means the Wildcards hold the wrong government; Classical Republic holds two, Autocracy and Oligarchy hold one."
+        }
       ],
       "tasks": [
-        { "id": "preserve-decide", "turn": 60, "text": "Write the direction down: Culture, Diplomatic or Science. Everything after this turn is built toward it." },
-        { "id": "preserve-government", "turn": 62, "text": "Adopt Classical Republic the turn Political Philosophy lands and check the Favor line reads +2 per turn from the Wildcards." },
-        { "id": "preserve-first-preserve", "turn": 70, "text": "First Preserve placed on the capital's Breathtaking edge; confirm in the lens that the adjacent tiles rose by one." },
-        { "id": "preserve-theater", "turn": 85, "text": "Theater Square built in the capital beside the Holy Site; Amphitheater queued." },
-        { "id": "preserve-sixth-city", "turn": 105, "text": "Sixth city founded; after this, settle only where a Mountain, Woods or Coast is in the first ring." },
-        { "id": "preserve-mine-audit", "turn": 110, "text": "Audit every Mine and Quarry: any one beside a Charming or Breathtaking tile is removed by the next Builder." }
+        {
+          "id": "preserve-decide",
+          "turn": 60,
+          "text": "Write the direction down: Culture, Diplomatic or Science. Everything after this turn is built toward it."
+        },
+        {
+          "id": "preserve-government",
+          "turn": 62,
+          "text": "Adopt Classical Republic the turn Political Philosophy lands and check the Favor line reads +2 per turn from the Wildcards."
+        },
+        {
+          "id": "preserve-first-preserve",
+          "turn": 70,
+          "text": "First Preserve placed on the capital's Breathtaking edge; confirm in the lens that the adjacent tiles rose by one."
+        },
+        {
+          "id": "preserve-theater",
+          "turn": 85,
+          "text": "Theater Square built in the capital beside the Holy Site; Amphitheater queued."
+        },
+        {
+          "id": "preserve-sixth-city",
+          "turn": 105,
+          "text": "Sixth city founded; after this, settle only where a Mountain, Woods or Coast is in the first ring."
+        },
+        {
+          "id": "preserve-mine-audit",
+          "turn": 110,
+          "text": "Audit every Mine and Quarry: any one beside a Charming or Breathtaking tile is removed by the next Builder."
+        }
       ]
     },
     {
       "id": "works",
       "name": "Great Works and the first audit",
-      "turns": { "from": 111, "to": 175 },
+      "turns": {
+        "from": 111,
+        "to": 175
+      },
       "era": "medieval",
       "objective": "Fill the Amphitheaters and Art Museums with Great Works, build Lumber Mills for the Production chopping would have given, reach Humanism and The Enlightenment on the civic tree, keep the Favor spent or sold, and pass the era checkpoint that asks whether the Appeal is being turned into Tourism or merely admired.",
       "build_order": [
-        { "item": "Amphitheater", "why": "Great Writer slots in every Theater Square; Culture per city." },
-        { "item": "Builder", "why": "Lumber Mills on every Woods tile that is not a park site; Mass Production Eureka and the Production plan." },
-        { "item": "Art Museum", "why": "Opera and Ballet Inspiration and the Great Artist slots; three themed is Cultural Heritage." },
-        { "item": "University", "why": "Two for Printing; Science keeps pace so Radio and Conservation arrive before turn 200." },
-        { "item": "Market", "why": "Two for Guilds; the Gold buys Builders and later Naturalists when the Faith runs short." },
-        { "item": "Entertainment Complex", "why": "Amenities and +1 Appeal around it; place it on the Charming ring to push it to Breathtaking." },
-        { "item": "Rough Rider", "why": "Only when Rifling lands and a neighbour arms: four on the hills behind the border, nothing more." }
+        {
+          "item": "Amphitheater",
+          "why": "Great Writer slots in every Theater Square; Culture per city."
+        },
+        {
+          "item": "Builder",
+          "why": "Lumber Mills on every Woods tile that is not a park site; Mass Production Eureka and the Production plan."
+        },
+        {
+          "item": "Art Museum",
+          "why": "Opera and Ballet Inspiration and the Great Artist slots; three themed is Cultural Heritage."
+        },
+        {
+          "item": "University",
+          "why": "Two for Printing; Science keeps pace so Radio and Conservation arrive before turn 200."
+        },
+        {
+          "item": "Market",
+          "why": "Two for Guilds; the Gold buys Builders while the Faith is saved for Naturalists."
+        },
+        {
+          "item": "Entertainment Complex",
+          "why": "Amenities and +1 Appeal around it; place it on the Charming ring to push it to Breathtaking."
+        },
+        {
+          "item": "Rough Rider",
+          "why": "Only when Rifling lands and a neighbour arms: four on the hills behind the border, nothing more."
+        }
       ],
       "research": [
-        { "id": "tech:mass-production", "note": "A Lumber Mill gives the Eureka; Lumber Mills are the Production plan and they keep the Woods." },
-        { "id": "tech:education", "note": "A Great Scientist gives the Eureka; Universities." },
-        { "id": "tech:printing", "note": "Two Universities; Science for the Modern techs the Parks need." },
-        { "id": "tech:astronomy", "note": "A University beside a Mountain, which the capital Campus is." },
-        { "id": "tech:banking", "note": "Guilds gives the Eureka; Banks." },
-        { "id": "tech:castles", "note": "Tier 2 government gives the Eureka; on the way to Rifling's neighbours." },
-        { "id": "tech:cartography", "note": "Two Harbors; Caravels for the Exploration Inspiration and a second continent." },
-        { "id": "tech:military-engineering", "note": "An Aqueduct in the largest city; Housing without a Neighborhood yet." }
+        {
+          "id": "tech:education",
+          "note": "A Great Scientist gives the Eureka; Universities."
+        },
+        {
+          "id": "tech:mass-production",
+          "note": "A Lumber Mill gives the Eureka; Lumber Mills are the Production plan and they keep the Woods."
+        },
+        {
+          "id": "tech:printing",
+          "note": "Two Universities; Science for the Modern techs the Parks need."
+        },
+        {
+          "id": "tech:astronomy",
+          "note": "A University beside a Mountain, which the capital Campus is."
+        },
+        {
+          "id": "tech:banking",
+          "note": "Guilds gives the Eureka; Banks."
+        },
+        {
+          "id": "tech:castles",
+          "note": "Tier 2 government gives the Eureka; on the way to Rifling's neighbours."
+        },
+        {
+          "id": "tech:cartography",
+          "note": "Two Harbors; Caravels for the Exploration Inspiration and a second continent."
+        },
+        {
+          "id": "tech:military-engineering",
+          "note": "An Aqueduct in the largest city; Housing without a Neighborhood yet."
+        }
       ],
       "civics": [
-        { "id": "civic:humanism", "note": "A Great Artist gives the Inspiration; Art Museums." },
-        { "id": "civic:feudalism", "note": "Six Farms; Serfdom for the Lumber Mill Builders." },
-        { "id": "civic:civil-service", "note": "The capital at ten population under its Grove." },
-        { "id": "civic:guilds", "note": "Two Markets; Town Charters." },
-        { "id": "civic:exploration", "note": "Two Caravels; Merchant Republic holds two Wildcards too." },
-        { "id": "civic:diplomatic-service", "note": "An alliance gives the Inspiration and the Chemistry Eureka; Wisselbanken for the Diplomatic direction." },
-        { "id": "civic:the-enlightenment", "note": "Three Great People, which three Theater Squares supply; Free Market and the Scientific Theory Eureka." },
-        { "id": "civic:mercantilism", "note": "A Great Merchant; Merchant Confederation in a Wildcard." },
-        { "id": "civic:medieval-faires", "note": "Four Trade Routes; the domestic Production routes make this free." }
+        {
+          "id": "civic:feudalism",
+          "note": "Six Farms; Serfdom for the Lumber Mill Builders."
+        },
+        {
+          "id": "civic:civil-service",
+          "note": "The capital at ten population under its Grove."
+        },
+        {
+          "id": "civic:guilds",
+          "note": "Two Markets; Town Charters."
+        },
+        {
+          "id": "civic:medieval-faires",
+          "note": "Four Trade Routes; the domestic Production routes make this free. Merchant Confederation unlocks here."
+        },
+        {
+          "id": "civic:humanism",
+          "note": "A Great Artist gives the Inspiration; Art Museums."
+        },
+        {
+          "id": "civic:exploration",
+          "note": "Two Caravels; Merchant Republic holds three Wildcards."
+        },
+        {
+          "id": "civic:diplomatic-service",
+          "note": "An alliance gives the Inspiration and the Chemistry Eureka; Wisselbanken for the Diplomatic direction."
+        },
+        {
+          "id": "civic:the-enlightenment",
+          "note": "Three Great People, which three Theater Squares supply; Free Market and the Scientific Theory Eureka."
+        },
+        {
+          "id": "civic:mercantilism",
+          "note": "A Great Merchant; it leads to Colonialism."
+        }
       ],
       "policies": [
-        { "card": "Merchant Republic", "slot": "wildcard", "from": "civic:exploration", "why": "Two Wildcards, two Economic slots and more Trade Routes; the Favor keeps flowing." },
-        { "card": "Serfdom", "slot": "economic", "from": "civic:feudalism", "why": "Builders with extra charges for the Lumber Mills and Farms, never Mines." },
-        { "card": "Merchant Confederation", "slot": "wildcard", "from": "civic:mercantilism", "why": "Gold per envoy in a Wildcard; the envoys are already going out for the suzerainties." },
-        { "card": "Frescoes", "slot": "economic", "from": "civic:humanism", "why": "Great Artist points; the Art Museums need filling before Cultural Heritage." },
-        { "card": "Wisselbanken", "slot": "wildcard", "from": "civic:diplomatic-service", "why": "Diplomatic direction: alliance points and Favor from routes to allies." }
+        {
+          "card": "Merchant Republic",
+          "slot": "wildcard",
+          "from": "civic:exploration",
+          "why": "Three Wildcards, two Economic slots and more Trade Routes; the Favor keeps flowing."
+        },
+        {
+          "card": "Serfdom",
+          "slot": "economic",
+          "from": "civic:feudalism",
+          "why": "Builders with extra charges for the Lumber Mills and Farms, never Mines."
+        },
+        {
+          "card": "Merchant Confederation",
+          "slot": "wildcard",
+          "from": "civic:medieval-faires",
+          "why": "Gold per envoy in a Wildcard; the envoys are already going out for the suzerainties."
+        },
+        {
+          "card": "Frescoes",
+          "slot": "wildcard",
+          "from": "civic:humanism",
+          "why": "Great Artist points; the Art Museums need filling before Cultural Heritage."
+        },
+        {
+          "card": "Wisselbanken",
+          "slot": "wildcard",
+          "from": "civic:diplomatic-service",
+          "why": "Diplomatic direction: alliance points and Favor from routes to allies."
+        }
       ],
       "districts": [
-        { "district": "theater-square", "city": "every city with a Breathtaking tile", "note": "Beside the Preserve or Holy Site; the Amphitheater goes in the turn it finishes." },
-        { "district": "commercial-hub", "city": "the capital and the Harbor city", "note": "Markets for Guilds; the Gold buys what Production cannot." },
-        { "district": "entertainment-complex", "city": "the largest city", "note": "On the Charming ring so its +1 Appeal makes new Breathtaking tiles." },
-        { "district": "industrial-zone", "city": "one city only, on its low-appeal side", "note": "Two tiles from any park site, behind the Mines if there are any; the Factory's regional reach is the point." }
+        {
+          "district": "theater-square",
+          "city": "every city with a Breathtaking tile",
+          "note": "Beside the Preserve or Holy Site; the Amphitheater goes in the turn it finishes."
+        },
+        {
+          "district": "commercial-hub",
+          "city": "the capital and the Harbor city",
+          "note": "Markets for Guilds; the Gold buys what Production cannot."
+        },
+        {
+          "district": "entertainment-complex",
+          "city": "the largest city",
+          "note": "On the Charming ring so its +1 Appeal makes new Breathtaking tiles."
+        },
+        {
+          "district": "industrial-zone",
+          "city": "one city only, on its low-appeal side",
+          "note": "Two tiles from any park site, behind the Mines if there are any; the Factory's regional reach is the point."
+        }
       ],
       "wonders": [
-        { "name": "Kilwa Kisiwani", "why": "Two suzerainties become +15% yields in every city; the Cultural suzerainties are already held.", "skip_if": "No coastal city, or fewer than two suzerainties at turn 140." },
-        { "name": "Forbidden City", "why": "An extra Wildcard, which under Founding Fathers is also an extra Favor per turn.", "skip_if": "Printing lands after turn 170 or a Culture civilization has it queued." },
-        { "name": "Chichen Itza", "why": "Culture and Production from Rainforest tiles the plan refuses to clear.", "skip_if": "Fewer than four Rainforest tiles inside the borders." }
+        {
+          "name": "Kilwa Kisiwani",
+          "why": "Two suzerainties become +15% yields in every city; the Cultural suzerainties are already held.",
+          "skip_if": "No coastal city, or fewer than two suzerainties at turn 140."
+        },
+        {
+          "name": "Forbidden City",
+          "why": "An extra Wildcard, which under Founding Fathers is also an extra Favor per turn.",
+          "skip_if": "Printing lands after turn 170 or a Culture civilization has it queued."
+        },
+        {
+          "name": "Chichen Itza",
+          "why": "Culture and Production from Rainforest tiles the plan refuses to clear.",
+          "skip_if": "Fewer than four Rainforest tiles inside the borders."
+        }
       ],
       "governors": [
-        { "governor": "pingala", "promotion": "Connoisseur", "city": "capital", "why": "Culture per population in the Theater Square capital; Curator comes later for the Film Studio." },
-        { "governor": "reyna", "promotion": "Forestry Management", "city": "the city with the most Woods", "why": "Gold from unimproved features and +1 Appeal on the tiles beside them; the one promotion that raises Appeal for nothing." },
-        { "governor": "magnus", "promotion": "Vertical Integration", "city": "the Industrial Zone city", "note": "Taken late; Groundbreaker is never taken.", "why": "Production from Factories and Power Plants in a plan with no chops." }
+        {
+          "governor": "pingala",
+          "promotion": "Connoisseur",
+          "city": "capital",
+          "why": "Culture per population in the Theater Square capital; Curator comes later for the Film Studio."
+        },
+        {
+          "governor": "reyna",
+          "promotion": "Forestry Management",
+          "city": "the city with the most Woods",
+          "why": "Gold from unimproved features and +1 Appeal on the tiles beside them; the one promotion that raises Appeal for nothing."
+        }
       ],
       "city_states": [
-        { "slug": "antananarivo", "why": "Culture per Great Person ever earned, up to 30%; the Theater Squares earn many." },
-        { "slug": "kumasi", "why": "Culture and Gold on routes to city-states for every district in the origin city." },
-        { "type": "Industrial", "why": "Production in every Workshop at three envoys for cities that cannot chop." }
+        {
+          "slug": "antananarivo",
+          "why": "Culture per Great Person ever earned, up to 30%; the Theater Squares earn many."
+        },
+        {
+          "slug": "kumasi",
+          "why": "Culture and Gold on routes to city-states for every district in the origin city."
+        },
+        {
+          "type": "Industrial",
+          "why": "Production in every Workshop at three envoys for cities that cannot chop."
+        }
       ],
       "great_people": [
-        { "class": "great-writer", "why": "Two Great Works per Writer; the Amphitheaters fill fastest." },
-        { "class": "great-artist", "why": "Humanism Inspiration and the Art Museum themes." },
-        { "class": "great-merchant", "why": "Mercantilism Inspiration, and some give Amenities or envoys." },
-        { "class": "great-engineer", "why": "Wonder Production in a capital with no chops." }
+        {
+          "class": "great-writer",
+          "why": "Two Great Works per Writer; the Amphitheaters fill fastest."
+        },
+        {
+          "class": "great-artist",
+          "why": "Humanism Inspiration and the Art Museum themes."
+        },
+        {
+          "class": "great-merchant",
+          "why": "Mercantilism Inspiration, and some give Amenities or envoys."
+        },
+        {
+          "class": "great-engineer",
+          "why": "Wonder Production in a capital with no chops."
+        }
       ],
       "checkpoints": [
-        { "turn": 140, "test": "Era checkpoint. Is the Appeal being spent? Three Theater Squares with Amphitheaters holding Great Works, Lumber Mills on half the Woods, the last four civics on the direction's path, and the Favor either spent on Congress votes or sold for Gold. Diplomatic: two suzerainties and an alliance?", "pass": "Continue; queue Art Museums.", "fail": "Civics taken because they were next is the banked-bonus failure; reroute the tree today. Favor above 200 unspent is the same failure in another currency; sell it to the richest AI and buy Builders. Fewer than two Theater Squares means the Preserves were built instead of the Tourism; the next three districts are Theater Squares." },
-        { "turn": 175, "test": "Six or more cities, Amphitheaters in four, two Art Museums, two Universities, Lumber Mills on every non-park Woods, and the direction still reachable?", "pass": "Enter the Parks phase.", "fail": "If Science is last among met civilizations, Conservation and Radio will arrive after turn 220; buy Libraries and run a Scientific suzerainty for ten turns. If the direction is unreachable, pivot to Diplomatic now; the Favor is already banked and the flat curve makes it affordable." }
+        {
+          "turn": 140,
+          "test": "Era checkpoint. Is the Appeal being spent? Three Theater Squares with Amphitheaters holding Great Works, Lumber Mills on half the Woods, the last four civics on the direction's path, and the Favor either spent on Congress votes or sold for Gold. Diplomatic: two suzerainties and an alliance?",
+          "pass": "Continue; queue Art Museums.",
+          "fail": "Civics taken because they were next is the banked-bonus failure; reroute the tree today. Favor above 200 unspent is the same failure in another currency; sell it to the richest AI and buy Builders. Fewer than two Theater Squares means the Preserves were built instead of the Tourism; the next three districts are Theater Squares."
+        },
+        {
+          "turn": 175,
+          "test": "Six or more cities, Amphitheaters in four, two Art Museums, two Universities, Lumber Mills on every non-park Woods, and the direction still reachable?",
+          "pass": "Enter the Parks phase.",
+          "fail": "If Science is last among met civilizations, Conservation and Radio will arrive after turn 220; buy Libraries and run a Scientific suzerainty for ten turns. If the direction is unreachable, pivot to Diplomatic now; the Favor is already banked and the flat curve makes it affordable."
+        }
       ],
       "tasks": [
-        { "id": "works-civic-audit", "turn": 115, "text": "Audit the civic tree: the next four civics are the direction's. If not, re-pick now." },
-        { "id": "works-lumber-mills", "turn": 130, "text": "Lumber Mills on every Woods tile that is not a park site; Mass Production Eureka collected." },
-        { "id": "works-amphitheaters", "turn": 140, "text": "Amphitheaters in three Theater Squares with at least two Great Works of Writing between them." },
-        { "id": "works-favor-sale", "turn": 150, "text": "Sell Favor above 100 to the richest AI or spend it on the Congress; the Favor is income, not a score." },
-        { "id": "works-art-museums", "turn": 165, "text": "Two Art Museums built; Opera and Ballet Inspiration collected and the first Great Artist placed." },
-        { "id": "works-park-sites", "turn": 170, "text": "Mark the National Park sites now: a four-tile vertical diamond of Charming or better, all in one city, with no improvement on any tile. Protect them from every Builder." }
+        {
+          "id": "works-civic-audit",
+          "turn": 115,
+          "text": "Audit the civic tree: the next four civics are the direction's. If not, re-pick now."
+        },
+        {
+          "id": "works-lumber-mills",
+          "turn": 130,
+          "text": "Lumber Mills on every Woods tile that is not a park site; Mass Production Eureka collected."
+        },
+        {
+          "id": "works-amphitheaters",
+          "turn": 140,
+          "text": "Amphitheaters in three Theater Squares with at least two Great Works of Writing between them."
+        },
+        {
+          "id": "works-favor-sale",
+          "turn": 150,
+          "text": "Sell Favor above 100 to the richest AI or spend it on the Congress; the Favor is income, not a score."
+        },
+        {
+          "id": "works-art-museums",
+          "turn": 165,
+          "text": "Two Art Museums built; Opera and Ballet Inspiration collected and the first Great Artist placed."
+        },
+        {
+          "id": "works-park-sites",
+          "turn": 170,
+          "text": "Mark the National Park sites now: a four-tile vertical diamond of Charming or better, all in one city, with no improvement on any tile. Protect them from every Builder."
+        }
       ]
     },
     {
       "id": "parks",
       "name": "National Parks and Film Studios",
-      "turns": { "from": 176, "to": 240 },
+      "turns": {
+        "from": 176,
+        "to": 240
+      },
       "era": "industrial",
       "objective": "Reach Conservation and Radio, buy a Naturalist with Faith for every marked park site, land the Eiffel Tower for +2 Appeal everywhere, put a Film Studio in every Theater Square city, and pass the era checkpoint asking whether the Tourism is now rising faster than the top rival's Culture.",
       "build_order": [
-        { "item": "Naturalist", "why": "Bought with Faith the turn Conservation lands; one National Park per marked site, two in the first ten turns." },
-        { "item": "Film Studio", "why": "Every Theater Square city the turn Radio lands; the Modern-era Tourism doubling." },
-        { "item": "Sanctuary", "why": "The second Preserve building at Conservation: Culture and Science on the Breathtaking tiles beside it." },
-        { "item": "Archaeological Museum", "why": "Natural History Inspiration and Artifacts for Combustion; one city only, the Art Museums are the rest." },
-        { "item": "Factory", "why": "In the one Industrial Zone; its regional Production reaches six tiles and nothing else does." },
-        { "item": "Neighborhood", "why": "One on a Breathtaking tile for the Conservation Inspiration, then on low-appeal tiles for Sanitation." },
-        { "item": "Seaside Resort", "why": "Every Breathtaking coastal flat tile the turn Radio lands; Tourism equal to Appeal." }
+        {
+          "item": "Naturalist",
+          "why": "Bought with Faith the turn Conservation lands; one National Park per marked site, two in the first ten turns."
+        },
+        {
+          "item": "Film Studio",
+          "why": "Every Theater Square city the turn Radio lands; the Modern-era Tourism doubling."
+        },
+        {
+          "item": "Sanctuary",
+          "why": "The second Preserve building at Conservation: Culture and Science on the Breathtaking tiles beside it."
+        },
+        {
+          "item": "Archaeological Museum",
+          "why": "Natural History Inspiration and Artifacts for Combustion; one city only, the Art Museums are the rest."
+        },
+        {
+          "item": "Factory",
+          "why": "In the one Industrial Zone; its regional Production reaches six tiles and nothing else does."
+        },
+        {
+          "item": "Neighborhood",
+          "why": "One on a Breathtaking tile for the Conservation Inspiration, then on low-appeal tiles for Sanitation."
+        },
+        {
+          "item": "Seaside Resort",
+          "why": "Every Breathtaking coastal flat tile the turn Radio lands; Tourism equal to Appeal."
+        }
       ],
       "research": [
-        { "id": "tech:industrialization", "note": "Two Workshops, or unboosted; the Eiffel Tower and the single Factory." },
-        { "id": "tech:scientific-theory", "note": "The Enlightenment gave the Eureka." },
-        { "id": "tech:radio", "note": "The first National Park gives the Eureka; Film Studios and Seaside Resorts unlock here, so it is the phase's goal." },
-        { "id": "tech:sanitation", "note": "Two Neighborhoods; Housing past the Aqueducts." },
-        { "id": "tech:economics", "note": "Two Banks; Stock Exchanges and the Gold for Naturalists when Faith runs short." },
-        { "id": "tech:flight", "note": "The Eiffel Tower gives the Eureka; Tourism from wonders doubles here." },
-        { "id": "tech:combustion", "note": "An Artifact from the Archaeologist; Tanks for the garrison." },
-        { "id": "tech:rifling", "note": "Unboosted unless a Niter hill is already behind an Encampment; Rough Riders for the border." }
+        {
+          "id": "tech:industrialization",
+          "note": "Two Workshops, or unboosted; the single Factory. The Eiffel Tower comes from Steel."
+        },
+        {
+          "id": "tech:scientific-theory",
+          "note": "The Enlightenment gave the Eureka."
+        },
+        {
+          "id": "tech:rifling",
+          "note": "Unboosted unless a Niter hill is already behind an Encampment; Rough Riders for the border."
+        },
+        {
+          "id": "tech:flight",
+          "note": "The Eiffel Tower gives the Eureka; Tourism from wonders doubles here."
+        },
+        {
+          "id": "tech:radio",
+          "note": "The first National Park gives the Eureka; Film Studios and Seaside Resorts unlock here, so it is the phase's goal."
+        },
+        {
+          "id": "tech:sanitation",
+          "note": "Two Neighborhoods; Housing past the Aqueducts."
+        },
+        {
+          "id": "tech:economics",
+          "note": "Two Banks; Stock Exchanges and the Gold for Film Studios, so the Faith stays for Naturalists."
+        },
+        {
+          "id": "tech:combustion",
+          "note": "An Artifact from the Archaeologist; Tanks for the garrison."
+        }
       ],
       "civics": [
-        { "id": "civic:natural-history", "note": "An Archaeological Museum gives the Inspiration; Conservation is behind it." },
-        { "id": "civic:urbanization", "note": "A fifteen-population city; Neighborhoods." },
-        { "id": "civic:conservation", "note": "A Neighborhood on a Breathtaking tile gives the Inspiration; Naturalists, Sanctuaries and the Parks unlock here, so it is the phase's other goal." },
-        { "id": "civic:opera-and-ballet", "note": "An Art Museum gave the Inspiration; Grand Opera." },
-        { "id": "civic:civil-engineering", "note": "Seven district types; Public Works." },
-        { "id": "civic:mass-media", "note": "Radio gives the Inspiration; on the way to Ideology and Democracy." },
-        { "id": "civic:colonialism", "note": "Astronomy gave the Inspiration." }
+        {
+          "id": "civic:colonialism",
+          "note": "Astronomy gave the Inspiration."
+        },
+        {
+          "id": "civic:civil-engineering",
+          "note": "Seven district types; Public Works."
+        },
+        {
+          "id": "civic:natural-history",
+          "note": "An Archaeological Museum gives the Inspiration; Conservation is behind it."
+        },
+        {
+          "id": "civic:urbanization",
+          "note": "A fifteen-population city; Neighborhoods."
+        },
+        {
+          "id": "civic:conservation",
+          "note": "A Neighborhood on a Breathtaking tile gives the Inspiration; Naturalists, Sanctuaries and the Parks unlock here, so it is the phase's other goal."
+        },
+        {
+          "id": "civic:opera-and-ballet",
+          "note": "An Art Museum gave the Inspiration; Grand Opera."
+        },
+        {
+          "id": "civic:mass-media",
+          "note": "Radio gives the Inspiration; on the way to Ideology and Democracy."
+        }
       ],
       "policies": [
-        { "card": "Grand Opera", "slot": "economic", "from": "civic:opera-and-ballet", "why": "Doubled Theater Square buildings in six cities." },
-        { "card": "Public Works", "slot": "economic", "from": "civic:civil-engineering", "why": "Builders faster for the Lumber Mills, Neighborhoods and Seaside Resorts." },
-        { "card": "Free Market", "slot": "economic", "from": "civic:the-enlightenment", "why": "Commercial Hub buildings doubled; the Gold buys Naturalists at 1,000 or more each." },
-        { "card": "Liberalism", "slot": "economic", "from": "civic:the-enlightenment", "why": "An Amenity in every city with two districts; the Parks add more and the Culture needs happy cities." }
+        {
+          "card": "Grand Opera",
+          "slot": "economic",
+          "from": "civic:opera-and-ballet",
+          "why": "Doubled Theater Square buildings in six cities."
+        },
+        {
+          "card": "Public Works",
+          "slot": "economic",
+          "from": "civic:civil-engineering",
+          "why": "Builders faster for the Lumber Mills, Neighborhoods and Seaside Resorts."
+        },
+        {
+          "card": "Free Market",
+          "slot": "economic",
+          "from": "civic:the-enlightenment",
+          "why": "Commercial Hub buildings doubled; the Gold buys Builders and buildings, since Naturalists are bought with Faith alone."
+        },
+        {
+          "card": "Liberalism",
+          "slot": "economic",
+          "from": "civic:the-enlightenment",
+          "why": "An Amenity in every city with two districts; the Parks add more and the Culture needs happy cities."
+        }
       ],
       "districts": [
-        { "district": "neighborhood", "city": "the largest city, on a Breathtaking tile first", "note": "Conservation Inspiration; later ones on low-appeal tiles for Sanitation." },
-        { "district": "preserve", "city": "any city with a park site and no Preserve yet", "note": "The Sanctuary at Conservation pays Culture and Science by Appeal." }
+        {
+          "district": "neighborhood",
+          "city": "the largest city, on a Breathtaking tile first",
+          "note": "Conservation Inspiration; later ones on low-appeal tiles for Sanitation."
+        },
+        {
+          "district": "preserve",
+          "city": "any city with a park site and no Preserve yet",
+          "note": "The Sanctuary at Conservation pays Culture and Science by Appeal."
+        }
       ],
       "wonders": [
-        { "name": "Eiffel Tower", "why": "+2 Appeal to every tile in the empire: the Charming ring becomes Breathtaking and every ability yield, Park and Resort grows at once. The plan's single most important build.", "skip_if": "Never skip it; if a rival finishes it first, buy the Production back with Favor sales and build Cristo Redentor instead." },
-        { "name": "Hermitage", "why": "Four Great Artist slots and Culture; the Art Museums are full by now.", "skip_if": "Fewer than three Great Artists earned by turn 200." },
-        { "name": "Bolshoi Theatre", "why": "Free civics and Great Work slots the turn it finishes.", "skip_if": "Opera and Ballet lands after turn 215 or a Culture civilization has it queued." }
+        {
+          "name": "Eiffel Tower",
+          "why": "+2 Appeal to every tile in the empire: the Charming ring becomes Breathtaking and every ability yield, Park and Resort grows at once. The plan's single most important build.",
+          "skip_if": "Never skip it; if a rival finishes it first, buy the Production back with Favor sales and build Cristo Redentor instead."
+        },
+        {
+          "name": "Hermitage",
+          "why": "Four Great Work of Art slots and their Tourism; the Art Museums are full by now.",
+          "skip_if": "Fewer than three Great Artists earned by turn 200."
+        },
+        {
+          "name": "Bolshoi Theatre",
+          "why": "Free civics and Great Work slots the turn it finishes.",
+          "skip_if": "Opera and Ballet lands after turn 215 or a Culture civilization has it queued."
+        }
       ],
       "governors": [
-        { "governor": "pingala", "promotion": "Curator", "city": "the Film Studio capital", "why": "Doubled Tourism from Great Works in the city with the most slots and the Film Studio." },
-        { "governor": "moksha", "promotion": "Bishop", "city": "the Holy Site city", "why": "Faith for Naturalists at a time when every Faith point is a park tile." },
-        { "governor": "liang", "promotion": "Parks and Recreation", "city": "the city with the most park sites", "why": "City Parks on the tiles the diamonds leave over, raising Appeal and Culture." }
+        {
+          "governor": "pingala",
+          "promotion": "Curator",
+          "city": "the Film Studio capital",
+          "why": "Doubled Tourism from Great Works in the city with the most slots and the Film Studio."
+        },
+        {
+          "governor": "moksha",
+          "promotion": "Bishop",
+          "city": "a Holy Site city other than the capital, which Pingala holds",
+          "why": "Faith for Naturalists at a time when every Faith point is a park tile."
+        },
+        {
+          "governor": "liang",
+          "promotion": "Parks and Recreation",
+          "city": "the city with the most park sites",
+          "why": "City Parks on the tiles the diamonds leave over, raising Appeal and Culture."
+        }
       ],
       "city_states": [
-        { "slug": "auckland", "why": "Production on shallow water tiles for the coastal cities, which is Production without an Appeal cost." },
-        { "type": "Religious", "why": "Faith in every Temple at six envoys; Faith is Naturalists and Rock Bands." }
+        {
+          "slug": "auckland",
+          "why": "Production on shallow water tiles for the coastal cities, which is Production without an Appeal cost."
+        },
+        {
+          "type": "Religious",
+          "why": "Faith in every Temple at six envoys; Faith is Naturalists and Rock Bands."
+        }
       ],
       "great_people": [
-        { "class": "great-artist", "why": "Themed Art Museums are the Cultural Heritage Inspiration and the Tourism." },
-        { "class": "great-musician", "why": "Broadcast Center and Film Studio slots; Music is the highest Tourism per work." },
-        { "class": "great-engineer", "why": "Gustave Eiffel and the Industrial Engineers finish the Eiffel Tower." }
+        {
+          "class": "great-artist",
+          "why": "Themed Art Museums are the Cultural Heritage Inspiration and the Tourism."
+        },
+        {
+          "class": "great-musician",
+          "why": "Film Studio slots, since America builds no Broadcast Center; Music is the highest Tourism per work."
+        },
+        {
+          "class": "great-engineer",
+          "why": "Gustave Eiffel and the Industrial Engineers finish the Eiffel Tower."
+        }
       ],
       "checkpoints": [
-        { "turn": 205, "test": "Era checkpoint. Is the chosen direction still reachable? Culture: Conservation landed, two National Parks founded, Film Studios in three cities, the Eiffel Tower built or within ten turns, and Tourism rising against the top rival's Culture. Diplomatic: Democracy adopted with four Wildcards and Favor first in the world.", "pass": "Continue; the close is thirty-five turns away.", "fail": "A direction out of reach at turn 205 is pivoted, not forced. A Culture empire with Favor from four Wildcards switches to Diplomatic in one Congress session; switch today and start buying votes. No Park by turn 205 means the sites were improved; find any four-tile diamond of Charming tiles, remove the improvements, and buy the Naturalist." },
-        { "turn": 240, "test": "Four National Parks, Seaside Resorts on every Breathtaking coast, Film Studios in every Theater Square city, and Tourism above the second-weakest rival's Culture?", "pass": "Enter the close.", "fail": "Two Parks and three Resorts is acceptable if the Eiffel Tower is up. None of it means the Faith went elsewhere; stop buying anything but Naturalists until the sites are filled." }
+        {
+          "turn": 205,
+          "test": "Era checkpoint. Is the chosen direction still reachable? Culture: Conservation landed, two National Parks founded, Film Studios in three cities, the Eiffel Tower built or within ten turns, and Tourism rising against the top rival's Culture. Diplomatic: Democracy adopted with four Wildcards and Favor first in the world.",
+          "pass": "Continue; the close is thirty-five turns away.",
+          "fail": "A direction out of reach at turn 205 is pivoted, not forced. A Culture empire with Favor from four Wildcards switches to Diplomatic in one Congress session; switch today and start buying votes. No Park by turn 205 means the sites were improved; find any four-tile diamond of Charming tiles, remove the improvements, and buy the Naturalist."
+        },
+        {
+          "turn": 240,
+          "test": "Four National Parks, Seaside Resorts on every Breathtaking coast, Film Studios in every Theater Square city, and Tourism above the second-weakest rival's Culture?",
+          "pass": "Enter the close.",
+          "fail": "Two Parks and three Resorts is acceptable if the Eiffel Tower is up. None of it means the Faith went elsewhere; stop buying anything but Naturalists until the sites are filled."
+        }
       ],
       "tasks": [
-        { "id": "parks-archaeologist", "turn": 180, "text": "Archaeological Museum built and the Archaeologist digging; Natural History and Combustion collected." },
-        { "id": "parks-conservation", "turn": 195, "text": "Conservation landed; the first Naturalist bought with Faith the same turn and walked to the best marked site." },
-        { "id": "parks-eiffel", "turn": 200, "text": "Eiffel Tower under construction in the Industrial Zone city with every Great Engineer charge and the Factory's Production on it." },
-        { "id": "parks-radio", "turn": 210, "text": "Radio landed; Film Studios queued in every Theater Square city and Seaside Resorts on every Breathtaking coastal flat tile." },
-        { "id": "parks-second-park", "turn": 215, "text": "Second National Park founded; check that every tile in its city rose by one in the Appeal lens." },
-        { "id": "parks-fourth-park", "turn": 235, "text": "Fourth National Park founded; Favor spent on the Congress resolution that helps Tourism or banked for the Diplomatic pivot." }
+        {
+          "id": "parks-archaeologist",
+          "turn": 180,
+          "text": "Archaeological Museum built and the Archaeologist digging; Natural History and Combustion collected."
+        },
+        {
+          "id": "parks-conservation",
+          "turn": 195,
+          "text": "Conservation landed; the first Naturalist bought with Faith the same turn and walked to the best marked site."
+        },
+        {
+          "id": "parks-eiffel",
+          "turn": 200,
+          "text": "Eiffel Tower under construction in the Industrial Zone city with every Great Engineer charge and the Factory's Production on it."
+        },
+        {
+          "id": "parks-radio",
+          "turn": 210,
+          "text": "Radio landed; Film Studios queued in every Theater Square city and Seaside Resorts on every Breathtaking coastal flat tile."
+        },
+        {
+          "id": "parks-second-park",
+          "turn": 215,
+          "text": "Second National Park founded; check that every tile in its city rose by one in the Appeal lens."
+        },
+        {
+          "id": "parks-fourth-park",
+          "turn": 235,
+          "text": "Fourth National Park founded; Favor spent on the Congress resolution that helps Tourism or banked for the Diplomatic pivot."
+        }
       ]
     },
     {
       "id": "close",
       "name": "Close",
-      "turns": { "from": 241, "to": null },
+      "turns": {
+        "from": 241,
+        "to": null
+      },
       "era": "modern",
       "objective": "Finish the direction: Rock Bands bought with the Park Faith and sent at the rivals with the most Culture, Online Communities and Computers for the Tourism multipliers, Cristo Redentor for the Resorts, or four Wildcards' worth of Favor spent on the last two Congress votes.",
       "build_order": [
-        { "item": "Rock Band", "why": "Bought with Faith at every Holy Site; the Culture direction's close." },
-        { "item": "Broadcast Center", "why": "Film Studios already; the remaining Theater Square cities get the plain building for the Music slots." },
-        { "item": "Aerodrome", "why": "Two for Synthetic Materials; P-51 Mustangs in them for the home continent's air." },
-        { "item": "Stock Exchange", "why": "Two for Capitalism; the Gold buys the last Rock Bands when the Faith is spent." },
-        { "item": "Sewer", "why": "Four for Suffrage; Democracy and its four Wildcards." },
-        { "item": "Diplomatic Quarter", "why": "Diplomatic direction only: Consulate and Chancery for Favor and the Chancery's Favor per Great Person." }
+        {
+          "item": "Rock Band",
+          "why": "Bought with Faith in the Theater Square cities; the Culture direction's close."
+        },
+        {
+          "item": "Film Studio",
+          "why": "The remaining Theater Square cities; America builds the Film Studio in place of the Broadcast Center, and each holds a Music slot."
+        },
+        {
+          "item": "Aerodrome",
+          "why": "Two for Synthetic Materials; P-51 Mustangs in them for the home continent's air."
+        },
+        {
+          "item": "Stock Exchange",
+          "why": "Two for Capitalism; the Gold buys buildings so the Faith stays for the last Rock Bands."
+        },
+        {
+          "item": "Sewer",
+          "why": "Four for Suffrage; Democracy and its four Wildcards."
+        },
+        {
+          "item": "Diplomatic Quarter",
+          "why": "Diplomatic direction only: Consulate and Chancery for Favor and the Chancery's Favor per Great Person."
+        }
       ],
       "research": [
-        { "id": "tech:computers", "note": "Tier 3 government gives the Eureka; +25% Tourism, the biggest late multiplier." },
-        { "id": "tech:electricity", "note": "Unboosted; Power for the Film Studios and Broadcast Centers." },
-        { "id": "tech:chemistry", "note": "Alliance level 2; Research Labs." },
-        { "id": "tech:replaceable-parts", "note": "Unboosted; Infantry to garrison a Culture empire under threat." },
-        { "id": "tech:advanced-flight", "note": "Two P-51 Mustangs count as Biplanes' successors only if built; otherwise unboosted." },
-        { "id": "tech:synthetic-materials", "note": "Two Aerodromes; the Mustangs live in them." }
+        {
+          "id": "tech:electricity",
+          "note": "Unboosted; Power for the Film Studios."
+        },
+        {
+          "id": "tech:computers",
+          "note": "Tier 3 government gives the Eureka; +25% Tourism, the biggest late multiplier."
+        },
+        {
+          "id": "tech:chemistry",
+          "note": "Alliance level 2; Research Labs."
+        },
+        {
+          "id": "tech:replaceable-parts",
+          "note": "Unboosted; Infantry to garrison a Culture empire under threat."
+        },
+        {
+          "id": "tech:advanced-flight",
+          "note": "Two Biplanes, or unboosted; the P-51 Mustang unlocks here."
+        },
+        {
+          "id": "tech:synthetic-materials",
+          "note": "Two Aerodromes; the Mustangs live in them."
+        }
       ],
       "civics": [
-        { "id": "civic:ideology", "note": "No Inspiration; the gate to Democracy." },
-        { "id": "civic:suffrage", "note": "Four Sewers; Democracy holds four Wildcards under Founding Fathers, which is four Favor per turn." },
-        { "id": "civic:cultural-heritage", "note": "A themed Art Museum; Heritage Tourism." },
-        { "id": "civic:social-media", "note": "Telecommunications gives the Inspiration if a Great Scientist supplies it; Online Communities." },
-        { "id": "civic:environmentalism", "note": "Two Solar Farms; it is the civic that pays Tourism from Preserves and Parks' neighbours." },
-        { "id": "civic:professional-sports", "note": "Two Entertainment Complexes; Stadiums are Amenities for the last fifty turns." }
+        {
+          "id": "civic:ideology",
+          "note": "No Inspiration; the gate to Democracy."
+        },
+        {
+          "id": "civic:suffrage",
+          "note": "Four Sewers; Democracy holds four Wildcards under Founding Fathers, which is four Favor per turn."
+        },
+        {
+          "id": "civic:cultural-heritage",
+          "note": "A themed Art Museum; Heritage Tourism."
+        },
+        {
+          "id": "civic:professional-sports",
+          "note": "Two Entertainment Complexes; Stadiums are Amenities for the last fifty turns."
+        },
+        {
+          "id": "civic:social-media",
+          "note": "Researching Telecommunications gives the Inspiration; Online Communities."
+        },
+        {
+          "id": "civic:environmentalism",
+          "note": "Two Solar Farms; it is the civic that pays Tourism from Preserves and Parks' neighbours."
+        }
       ],
       "policies": [
-        { "card": "Democracy", "slot": "wildcard", "from": "civic:suffrage", "why": "Four Wildcards under Founding Fathers, four Favor per turn, and the Culture bonus from Great People." },
-        { "card": "Heritage Tourism", "slot": "economic", "from": "civic:cultural-heritage", "why": "Tourism from Great Works doubled across six Theater Squares." },
-        { "card": "Online Communities", "slot": "economic", "from": "civic:social-media", "why": "Tourism toward civilizations with a Trade Route to them raised by half; run one route to every rival." },
-        { "card": "Diplomatic League", "slot": "wildcard", "from": "civic:political-philosophy", "why": "Diplomatic direction: keeps every suzerainty for the Congress votes." }
+        {
+          "card": "Democracy",
+          "slot": "wildcard",
+          "from": "civic:suffrage",
+          "why": "Four Wildcards under Founding Fathers, four Favor per turn, and the Culture bonus from Great People."
+        },
+        {
+          "card": "Heritage Tourism",
+          "slot": "economic",
+          "from": "civic:cultural-heritage",
+          "why": "Tourism from Great Works of Art and Artifacts doubled across six Theater Squares."
+        },
+        {
+          "card": "Online Communities",
+          "slot": "economic",
+          "from": "civic:social-media",
+          "why": "Tourism toward civilizations with a Trade Route to them raised by half; run one route to every rival."
+        },
+        {
+          "card": "Diplomatic League",
+          "slot": "wildcard",
+          "from": "civic:political-philosophy",
+          "why": "Diplomatic direction: keeps every suzerainty for the Congress votes."
+        }
       ],
       "districts": [
-        { "district": "aerodrome", "city": "the two Industrial-side cities", "note": "On the low-appeal side; Synthetic Materials Eureka and the Mustangs." },
-        { "district": "diplomatic-quarter", "city": "capital", "note": "Diplomatic direction only; its buildings are Favor and alliance points." }
+        {
+          "district": "aerodrome",
+          "city": "the two Industrial-side cities",
+          "note": "On the low-appeal side; Synthetic Materials Eureka and the Mustangs."
+        },
+        {
+          "district": "diplomatic-quarter",
+          "city": "capital",
+          "note": "Diplomatic direction only; its buildings are Favor and alliance points."
+        }
       ],
       "wonders": [
-        { "name": "Cristo Redentor", "why": "Doubled Tourism from Seaside Resorts and no Tourism penalty from rivals' governments.", "skip_if": "Fewer than four Seaside Resorts, or Mass Media lands after turn 260." },
-        { "name": "Golden Gate Bridge", "why": "Appeal and Tourism on the coast beside the Resorts.", "skip_if": "No two land tiles across a one-tile strait in a coastal city." }
+        {
+          "name": "Cristo Redentor",
+          "why": "Doubled Tourism from Seaside Resorts, and religious Tourism no longer reduced once rivals reach The Enlightenment.",
+          "skip_if": "Fewer than four Seaside Resorts, or Mass Media lands after turn 260."
+        },
+        {
+          "name": "Golden Gate Bridge",
+          "why": "Appeal and Tourism on the coast beside the Resorts.",
+          "skip_if": "No two land tiles across a one-tile strait in a coastal city."
+        }
       ],
       "governors": [
-        { "governor": "pingala", "promotion": "Curator", "city": "the Film Studio capital", "why": "Stays for the last fifty turns; the Great Works and the Film Studio are the Tourism." },
-        { "governor": "amani", "promotion": "Puppeteer", "city": "the contested city-state", "why": "Diplomatic direction: holds the suzerainties the Congress votes come from." }
+        {
+          "governor": "pingala",
+          "promotion": "Curator",
+          "city": "the Film Studio capital",
+          "why": "Stays for the last fifty turns; the Great Works and the Film Studio are the Tourism."
+        },
+        {
+          "governor": "amani",
+          "promotion": "Puppeteer",
+          "city": "the contested city-state",
+          "why": "Diplomatic direction: holds the suzerainties the Congress votes come from."
+        },
+        {
+          "governor": "magnus",
+          "promotion": "Vertical Integration",
+          "city": "the Industrial Zone city",
+          "note": "Taken late; Groundbreaker comes with him and is never used.",
+          "why": "Production from Factories and Power Plants in a plan with no chops."
+        }
       ],
       "city_states": [],
       "great_people": [
-        { "class": "great-musician", "why": "Music is the highest Tourism per Great Work and the Film Studios hold it." },
-        { "class": "great-artist", "why": "Themes complete the last Museums." }
+        {
+          "class": "great-musician",
+          "why": "Music is the highest Tourism per Great Work and the Film Studios hold it."
+        },
+        {
+          "class": "great-artist",
+          "why": "Themes complete the last Museums."
+        }
       ],
       "checkpoints": [
-        { "turn": 285, "test": "Culture: Tourism above three rivals' Culture with the last rival within reach of Rock Bands? Diplomatic: within four Victory Points with Favor banked for the next Congress?", "pass": "Continue to the end; Rock Bands at the last rival, Favor at the last vote.", "fail": "Convert to the other direction if it is closer; a Culture empire with Democracy's Favor usually is. Otherwise Score; six cities with Parks and Great Works score well." }
+        {
+          "turn": 285,
+          "test": "Culture: Tourism above three rivals' Culture with the last rival within reach of Rock Bands? Diplomatic: within four Victory Points with Favor banked for the next Congress?",
+          "pass": "Continue to the end; Rock Bands at the last rival, Favor at the last vote.",
+          "fail": "Convert to the other direction if it is closer; a Culture empire with Democracy's Favor usually is. Otherwise Score; six cities with Parks and Great Works score well."
+        }
       ],
       "tasks": [
-        { "id": "close-democracy", "turn": 250, "text": "Democracy adopted with four Wildcards full; confirm the Favor line reads +4 or more per turn." },
-        { "id": "close-rock-bands", "turn": 260, "text": "Rock Bands bought with Faith and sent at the rival whose Culture is highest; Music Festival or Indie promotions." },
-        { "id": "close-trade-routes", "turn": 265, "text": "One Trade Route to every rival civilization for Online Communities; the Tourism reaches them by half again." },
-        { "id": "close-congress", "turn": 275, "text": "Diplomatic direction: every Favor point into the two resolutions that pay Victory Points; Culture direction: sell the Favor for the Gold that buys the last Rock Bands." },
-        { "id": "close-review", "turn": 285, "text": "Review the turn 285 checkpoint and continue or declare the game a Score game." }
+        {
+          "id": "close-democracy",
+          "turn": 250,
+          "text": "Democracy adopted with four Wildcards full; confirm the Favor line reads +4 or more per turn."
+        },
+        {
+          "id": "close-rock-bands",
+          "turn": 260,
+          "text": "Rock Bands bought with Faith and sent at the rival whose Culture is highest; Music Festival or Indie promotions."
+        },
+        {
+          "id": "close-trade-routes",
+          "turn": 265,
+          "text": "One Trade Route to every rival civilization for Online Communities; the Tourism reaches them by half again."
+        },
+        {
+          "id": "close-congress",
+          "turn": 275,
+          "text": "Diplomatic direction: every Favor point into the two resolutions that pay Victory Points; Culture direction: sell the Favor for Gold and keep the Faith for the last Rock Bands."
+        },
+        {
+          "id": "close-review",
+          "turn": 285,
+          "text": "Review the turn 285 checkpoint and continue or declare the game a Score game."
+        }
       ]
     }
   ],
   "boosts": [
-    { "id": "tech:astrology", "fit": "cheap", "when": "appeal", "how": "The Scout walks toward the mountains and coast where a natural wonder sits." },
-    { "id": "tech:writing", "fit": "free", "when": "appeal", "how": "The Scout meets the first rival civilization." },
-    { "id": "tech:irrigation", "fit": "free", "when": "appeal", "how": "A Farm on Wheat or Rice; Farms are the first Builder's whole job." },
-    { "id": "tech:archery", "fit": "cheap", "when": "appeal", "how": "The Slinger finishes a camp scout on the home continent." },
-    { "id": "tech:bronze-working", "fit": "cheap", "when": "appeal", "how": "Three camp kills from the Warriors clearing the home continent." },
-    { "id": "tech:sailing", "fit": "cheap", "when": "appeal", "how": "The third city is founded on the coast." },
-    { "id": "tech:masonry", "fit": "costly", "when": "appeal", "how": "A Quarry only on a hill with no Charming neighbour; usually researched unboosted." },
-    { "id": "tech:wheel", "fit": "costly", "when": "appeal", "how": "One Mine on a resource hill behind the Encampment site, or unboosted." },
-    { "id": "tech:currency", "fit": "free", "when": "preserve", "how": "The first Trader runs a domestic route to the second city." },
-    { "id": "tech:celestial-navigation", "fit": "cheap", "when": "preserve", "how": "Two Fishing Boats in the coastal city." },
-    { "id": "tech:mathematics", "fit": "free", "when": "preserve", "how": "Holy Site, Preserve and Theater Square in the capital." },
-    { "id": "tech:construction", "fit": "cheap", "when": "preserve", "how": "A Water Mill in the river city." },
-    { "id": "tech:horseback-riding", "fit": "free", "when": "preserve", "how": "A Pasture on Horses or Sheep, which never lowers Appeal." },
-    { "id": "tech:machinery", "fit": "cheap", "when": "preserve", "how": "Three Archers as the garrison the plan builds instead of Encampments." },
-    { "id": "tech:apprenticeship", "fit": "costly", "when": "preserve", "how": "Three Mines only on hills no park or Breathtaking tile touches." },
-    { "id": "tech:iron-working", "fit": "skip", "when": null, "how": "" },
-    { "id": "tech:shipbuilding", "fit": "skip", "when": null, "how": "" },
-    { "id": "tech:engineering", "fit": "costly", "when": "preserve", "how": "Ancient Walls only if a neighbour threatens." },
-    { "id": "tech:mass-production", "fit": "free", "when": "works", "how": "The first Lumber Mill; the whole Production plan is Lumber Mills." },
-    { "id": "tech:education", "fit": "cheap", "when": "works", "how": "The first Great Scientist from the mountain Campus." },
-    { "id": "tech:printing", "fit": "cheap", "when": "works", "how": "Two Universities in the capital and the second Campus." },
-    { "id": "tech:astronomy", "fit": "free", "when": "works", "how": "The University in the capital Campus beside its Mountain." },
-    { "id": "tech:banking", "fit": "free", "when": "works", "how": "Guilds is on the civic path for the Markets." },
-    { "id": "tech:castles", "fit": "free", "when": "works", "how": "Any Tier 2 government at Exploration." },
-    { "id": "tech:cartography", "fit": "cheap", "when": "works", "how": "Two Harbors in the coastal cities." },
-    { "id": "tech:military-engineering", "fit": "cheap", "when": "works", "how": "An Aqueduct in the largest city." },
-    { "id": "tech:stirrups", "fit": "free", "when": "works", "how": "Feudalism is on the civic path for Serfdom." },
-    { "id": "tech:buttress", "fit": "free", "when": "works", "how": "Temple of Artemis or the Colosseum counts as a Classical or later wonder." },
-    { "id": "tech:industrialization", "fit": "costly", "when": "parks", "how": "Two Workshops in a plan with one Industrial Zone; usually unboosted." },
-    { "id": "tech:scientific-theory", "fit": "free", "when": "parks", "how": "The Enlightenment is on the civic path." },
-    { "id": "tech:radio", "fit": "free", "when": "parks", "how": "The first National Park, which is the phase's goal." },
-    { "id": "tech:sanitation", "fit": "cheap", "when": "parks", "how": "Two Neighborhoods, the first on a Breathtaking tile for Conservation." },
-    { "id": "tech:economics", "fit": "cheap", "when": "parks", "how": "Two Banks in the Commercial Hubs." },
-    { "id": "tech:flight", "fit": "free", "when": "parks", "how": "The Eiffel Tower counts as an Industrial-era wonder." },
-    { "id": "tech:combustion", "fit": "cheap", "when": "parks", "how": "The Archaeologist extracts one Artifact." },
-    { "id": "tech:rifling", "fit": "costly", "when": "parks", "how": "A Niter Mine only on a hill with no Charming neighbour." },
-    { "id": "tech:steam-power", "fit": "costly", "when": "parks", "how": "Two Shipyards only if two Harbors have Production to spare." },
-    { "id": "tech:electricity", "fit": "skip", "when": null, "how": "" },
-    { "id": "tech:computers", "fit": "free", "when": "close", "how": "Democracy is a Tier 3 government and the direction wants it anyway." },
-    { "id": "tech:chemistry", "fit": "cheap", "when": "close", "how": "Alliance level 2 with the Diplomatic Service ally." },
-    { "id": "tech:replaceable-parts", "fit": "skip", "when": null, "how": "" },
-    { "id": "tech:advanced-flight", "fit": "costly", "when": "close", "how": "Two Biplanes only if a neighbour arms; usually unboosted." },
-    { "id": "tech:synthetic-materials", "fit": "cheap", "when": "close", "how": "Two Aerodromes on the low-appeal side of two cities." },
-    { "id": "civic:craftsmanship", "fit": "free", "when": "appeal", "how": "Three Farms and Pastures from the first Builder." },
-    { "id": "civic:foreign-trade", "fit": "costly", "when": "appeal", "how": "A second continent only if the Scout reaches one." },
-    { "id": "civic:early-empire", "fit": "free", "when": "appeal", "how": "Six population across the first two cities." },
-    { "id": "civic:mysticism", "fit": "free", "when": "appeal", "how": "Earth Goddess founded by turn 25." },
-    { "id": "civic:state-workforce", "fit": "free", "when": "appeal", "how": "The capital Holy Site." },
-    { "id": "civic:military-tradition", "fit": "free", "when": "preserve", "how": "The first camp the escort Warriors clear." },
-    { "id": "civic:political-philosophy", "fit": "cheap", "when": "preserve", "how": "Three city-states met by the Scout and a Warrior." },
-    { "id": "civic:drama-and-poetry", "fit": "cheap", "when": "preserve", "how": "Temple of Artemis or the Colosseum." },
-    { "id": "civic:games-and-recreation", "fit": "free", "when": "preserve", "how": "Researching Construction for the Water Mill." },
-    { "id": "civic:recorded-history", "fit": "costly", "when": "preserve", "how": "Two Campuses only on the Science direction." },
-    { "id": "civic:theology", "fit": "skip", "when": null, "how": "" },
-    { "id": "civic:military-training", "fit": "skip", "when": null, "how": "" },
-    { "id": "civic:humanism", "fit": "free", "when": "works", "how": "The first Great Artist from the Theater Squares." },
-    { "id": "civic:feudalism", "fit": "cheap", "when": "works", "how": "Six Farms across six cities, which the no-Mine rule produces anyway." },
-    { "id": "civic:civil-service", "fit": "free", "when": "works", "how": "The capital at ten population under its Grove and Temple of Artemis." },
-    { "id": "civic:guilds", "fit": "cheap", "when": "works", "how": "Two Markets in the capital and the Harbor city." },
-    { "id": "civic:exploration", "fit": "cheap", "when": "works", "how": "Two Caravels from the Harbor cities." },
-    { "id": "civic:diplomatic-service", "fit": "cheap", "when": "works", "how": "An alliance with the friendliest civilization off the home continent." },
-    { "id": "civic:the-enlightenment", "fit": "free", "when": "works", "how": "Three Great People from three Theater Squares." },
-    { "id": "civic:mercantilism", "fit": "cheap", "when": "works", "how": "A Great Merchant from two Commercial Hubs." },
-    { "id": "civic:medieval-faires", "fit": "free", "when": "works", "how": "Four Trade Routes from the domestic Production routes." },
-    { "id": "civic:divine-right", "fit": "skip", "when": null, "how": "" },
-    { "id": "civic:reformed-church", "fit": "skip", "when": null, "how": "" },
-    { "id": "civic:natural-history", "fit": "cheap", "when": "parks", "how": "One Archaeological Museum in the city without an Art Museum." },
-    { "id": "civic:urbanization", "fit": "cheap", "when": "parks", "how": "A Grove city at fifteen population." },
-    { "id": "civic:conservation", "fit": "cheap", "when": "parks", "how": "One Neighborhood on a Breathtaking tile; the plan has dozens." },
-    { "id": "civic:opera-and-ballet", "fit": "free", "when": "parks", "how": "The first Art Museum." },
-    { "id": "civic:civil-engineering", "fit": "cheap", "when": "parks", "how": "Seven district types once the Industrial Zone and Entertainment Complex exist." },
-    { "id": "civic:mass-media", "fit": "free", "when": "parks", "how": "Researching Radio for the Film Studios." },
-    { "id": "civic:colonialism", "fit": "free", "when": "parks", "how": "Researching Astronomy for the University Eureka." },
-    { "id": "civic:nationalism", "fit": "skip", "when": null, "how": "" },
-    { "id": "civic:suffrage", "fit": "cheap", "when": "close", "how": "Four Sewers across six cities." },
-    { "id": "civic:cultural-heritage", "fit": "free", "when": "close", "how": "A themed Art Museum, which three Great Artists supply." },
-    { "id": "civic:social-media", "fit": "costly", "when": "close", "how": "Telecommunications only if a Great Scientist supplies it." },
-    { "id": "civic:environmentalism", "fit": "cheap", "when": "close", "how": "Two Solar Farms on flat tiles the Parks do not need." },
-    { "id": "civic:professional-sports", "fit": "cheap", "when": "close", "how": "Two Entertainment Complexes from the Amenity builds." },
-    { "id": "civic:class-struggle", "fit": "skip", "when": null, "how": "" },
-    { "id": "civic:capitalism", "fit": "cheap", "when": "close", "how": "Two Stock Exchanges in the Commercial Hubs." }
+    {
+      "id": "tech:astrology",
+      "fit": "cheap",
+      "when": "appeal",
+      "how": "The Scout walks toward the mountains and coast where a natural wonder sits."
+    },
+    {
+      "id": "tech:writing",
+      "fit": "free",
+      "when": "appeal",
+      "how": "The Scout meets the first rival civilization."
+    },
+    {
+      "id": "tech:irrigation",
+      "fit": "free",
+      "when": "appeal",
+      "how": "A Farm on Wheat or Rice; Farms are the first Builder's whole job."
+    },
+    {
+      "id": "tech:archery",
+      "fit": "cheap",
+      "when": "appeal",
+      "how": "The Slinger finishes a camp scout on the home continent."
+    },
+    {
+      "id": "tech:bronze-working",
+      "fit": "cheap",
+      "when": "appeal",
+      "how": "Three camp kills from the Warriors clearing the home continent."
+    },
+    {
+      "id": "tech:sailing",
+      "fit": "cheap",
+      "when": "appeal",
+      "how": "The third city is founded on the coast."
+    },
+    {
+      "id": "tech:masonry",
+      "fit": "costly",
+      "when": "appeal",
+      "how": "A Quarry only on a hill with no Charming neighbour; usually researched unboosted."
+    },
+    {
+      "id": "tech:wheel",
+      "fit": "costly",
+      "when": "appeal",
+      "how": "One Mine on a resource hill behind the Encampment site, or unboosted."
+    },
+    {
+      "id": "tech:currency",
+      "fit": "free",
+      "when": "preserve",
+      "how": "The first Trader runs a domestic route to the second city."
+    },
+    {
+      "id": "tech:celestial-navigation",
+      "fit": "cheap",
+      "when": "preserve",
+      "how": "Two Fishing Boats in the coastal city."
+    },
+    {
+      "id": "tech:mathematics",
+      "fit": "free",
+      "when": "preserve",
+      "how": "Holy Site, Preserve and Theater Square in the capital."
+    },
+    {
+      "id": "tech:construction",
+      "fit": "cheap",
+      "when": "preserve",
+      "how": "A Water Mill in the river city."
+    },
+    {
+      "id": "tech:horseback-riding",
+      "fit": "free",
+      "when": "preserve",
+      "how": "A Pasture on Horses or Sheep, which never lowers Appeal."
+    },
+    {
+      "id": "tech:machinery",
+      "fit": "cheap",
+      "when": "preserve",
+      "how": "Three Archers as the garrison the plan builds instead of Encampments."
+    },
+    {
+      "id": "tech:apprenticeship",
+      "fit": "costly",
+      "when": "preserve",
+      "how": "Three Mines only on hills no park or Breathtaking tile touches."
+    },
+    {
+      "id": "tech:iron-working",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:shipbuilding",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:engineering",
+      "fit": "costly",
+      "when": "preserve",
+      "how": "Ancient Walls only if a neighbour threatens."
+    },
+    {
+      "id": "tech:mass-production",
+      "fit": "free",
+      "when": "works",
+      "how": "The first Lumber Mill; the whole Production plan is Lumber Mills."
+    },
+    {
+      "id": "tech:education",
+      "fit": "cheap",
+      "when": "works",
+      "how": "The first Great Scientist from the mountain Campus."
+    },
+    {
+      "id": "tech:printing",
+      "fit": "cheap",
+      "when": "works",
+      "how": "Two Universities in the capital and the second Campus."
+    },
+    {
+      "id": "tech:astronomy",
+      "fit": "free",
+      "when": "works",
+      "how": "The University in the capital Campus beside its Mountain."
+    },
+    {
+      "id": "tech:banking",
+      "fit": "free",
+      "when": "works",
+      "how": "Guilds is on the civic path for the Markets."
+    },
+    {
+      "id": "tech:castles",
+      "fit": "free",
+      "when": "works",
+      "how": "Any Tier 2 government at Exploration."
+    },
+    {
+      "id": "tech:cartography",
+      "fit": "cheap",
+      "when": "works",
+      "how": "Two Harbors in the coastal cities."
+    },
+    {
+      "id": "tech:military-engineering",
+      "fit": "cheap",
+      "when": "works",
+      "how": "An Aqueduct in the largest city."
+    },
+    {
+      "id": "tech:stirrups",
+      "fit": "free",
+      "when": "works",
+      "how": "Feudalism is on the civic path for Serfdom."
+    },
+    {
+      "id": "tech:buttress",
+      "fit": "free",
+      "when": "works",
+      "how": "The Colosseum counts as a Classical or later wonder; Temple of Artemis is Ancient and does not."
+    },
+    {
+      "id": "tech:industrialization",
+      "fit": "costly",
+      "when": "parks",
+      "how": "Two Workshops in a plan with one Industrial Zone; usually unboosted."
+    },
+    {
+      "id": "tech:scientific-theory",
+      "fit": "free",
+      "when": "parks",
+      "how": "The Enlightenment is on the civic path."
+    },
+    {
+      "id": "tech:radio",
+      "fit": "free",
+      "when": "parks",
+      "how": "The first National Park, which is the phase's goal."
+    },
+    {
+      "id": "tech:sanitation",
+      "fit": "cheap",
+      "when": "parks",
+      "how": "Two Neighborhoods, the first on a Breathtaking tile for Conservation."
+    },
+    {
+      "id": "tech:economics",
+      "fit": "cheap",
+      "when": "parks",
+      "how": "Two Banks in the Commercial Hubs."
+    },
+    {
+      "id": "tech:flight",
+      "fit": "free",
+      "when": "parks",
+      "how": "The Eiffel Tower, a Modern-era wonder, counts as Industrial era or later."
+    },
+    {
+      "id": "tech:combustion",
+      "fit": "cheap",
+      "when": "parks",
+      "how": "The Archaeologist extracts one Artifact."
+    },
+    {
+      "id": "tech:rifling",
+      "fit": "costly",
+      "when": "parks",
+      "how": "A Niter Mine only on a hill with no Charming neighbour."
+    },
+    {
+      "id": "tech:steam-power",
+      "fit": "costly",
+      "when": "parks",
+      "how": "Two Shipyards only if two Harbors have Production to spare."
+    },
+    {
+      "id": "tech:electricity",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:computers",
+      "fit": "free",
+      "when": "close",
+      "how": "Democracy is a Tier 3 government and the direction wants it anyway."
+    },
+    {
+      "id": "tech:chemistry",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Alliance level 2 with the Diplomatic Service ally."
+    },
+    {
+      "id": "tech:replaceable-parts",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:advanced-flight",
+      "fit": "costly",
+      "when": "close",
+      "how": "Two Biplanes only if a neighbour arms; usually unboosted."
+    },
+    {
+      "id": "tech:synthetic-materials",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Aerodromes on the low-appeal side of two cities."
+    },
+    {
+      "id": "civic:craftsmanship",
+      "fit": "free",
+      "when": "appeal",
+      "how": "Three Farms and Pastures from the first Builder."
+    },
+    {
+      "id": "civic:foreign-trade",
+      "fit": "costly",
+      "when": "appeal",
+      "how": "A second continent only if the Scout reaches one."
+    },
+    {
+      "id": "civic:early-empire",
+      "fit": "free",
+      "when": "appeal",
+      "how": "Six population across the first two cities."
+    },
+    {
+      "id": "civic:mysticism",
+      "fit": "free",
+      "when": "appeal",
+      "how": "Earth Goddess founded by turn 25."
+    },
+    {
+      "id": "civic:state-workforce",
+      "fit": "free",
+      "when": "appeal",
+      "how": "The capital Holy Site."
+    },
+    {
+      "id": "civic:military-tradition",
+      "fit": "free",
+      "when": "preserve",
+      "how": "The first camp the escort Warriors clear."
+    },
+    {
+      "id": "civic:political-philosophy",
+      "fit": "cheap",
+      "when": "preserve",
+      "how": "Three city-states met by the Scout and a Warrior."
+    },
+    {
+      "id": "civic:drama-and-poetry",
+      "fit": "cheap",
+      "when": "preserve",
+      "how": "Temple of Artemis or the Colosseum."
+    },
+    {
+      "id": "civic:games-and-recreation",
+      "fit": "free",
+      "when": "preserve",
+      "how": "Researching Construction for the Water Mill."
+    },
+    {
+      "id": "civic:recorded-history",
+      "fit": "costly",
+      "when": "preserve",
+      "how": "Two Campuses only on the Science direction."
+    },
+    {
+      "id": "civic:theology",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:military-training",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:humanism",
+      "fit": "free",
+      "when": "works",
+      "how": "The first Great Artist from the Theater Squares."
+    },
+    {
+      "id": "civic:feudalism",
+      "fit": "cheap",
+      "when": "works",
+      "how": "Six Farms across six cities, which the no-Mine rule produces anyway."
+    },
+    {
+      "id": "civic:civil-service",
+      "fit": "free",
+      "when": "works",
+      "how": "The capital at ten population under its Grove and Temple of Artemis."
+    },
+    {
+      "id": "civic:guilds",
+      "fit": "cheap",
+      "when": "works",
+      "how": "Two Markets in the capital and the Harbor city."
+    },
+    {
+      "id": "civic:exploration",
+      "fit": "cheap",
+      "when": "works",
+      "how": "Two Caravels from the Harbor cities."
+    },
+    {
+      "id": "civic:diplomatic-service",
+      "fit": "cheap",
+      "when": "works",
+      "how": "An alliance with the friendliest civilization off the home continent."
+    },
+    {
+      "id": "civic:the-enlightenment",
+      "fit": "free",
+      "when": "works",
+      "how": "Three Great People from three Theater Squares."
+    },
+    {
+      "id": "civic:mercantilism",
+      "fit": "cheap",
+      "when": "works",
+      "how": "A Great Merchant from two Commercial Hubs."
+    },
+    {
+      "id": "civic:medieval-faires",
+      "fit": "free",
+      "when": "works",
+      "how": "Four Trade Routes from the domestic Production routes."
+    },
+    {
+      "id": "civic:divine-right",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:reformed-church",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:natural-history",
+      "fit": "cheap",
+      "when": "parks",
+      "how": "One Archaeological Museum in the city without an Art Museum."
+    },
+    {
+      "id": "civic:urbanization",
+      "fit": "cheap",
+      "when": "parks",
+      "how": "A Grove city at fifteen population."
+    },
+    {
+      "id": "civic:conservation",
+      "fit": "cheap",
+      "when": "parks",
+      "how": "One Neighborhood on a Breathtaking tile; the plan has dozens."
+    },
+    {
+      "id": "civic:opera-and-ballet",
+      "fit": "free",
+      "when": "parks",
+      "how": "The first Art Museum."
+    },
+    {
+      "id": "civic:civil-engineering",
+      "fit": "cheap",
+      "when": "parks",
+      "how": "Seven district types once the Industrial Zone and Entertainment Complex exist."
+    },
+    {
+      "id": "civic:mass-media",
+      "fit": "free",
+      "when": "parks",
+      "how": "Researching Radio for the Film Studios."
+    },
+    {
+      "id": "civic:colonialism",
+      "fit": "free",
+      "when": "parks",
+      "how": "Researching Astronomy for the University Eureka."
+    },
+    {
+      "id": "civic:nationalism",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:suffrage",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Four Sewers across six cities."
+    },
+    {
+      "id": "civic:cultural-heritage",
+      "fit": "free",
+      "when": "close",
+      "how": "A themed Art Museum, which three Great Artists supply."
+    },
+    {
+      "id": "civic:social-media",
+      "fit": "costly",
+      "when": "close",
+      "how": "Researching Telecommunications, an Information-era tech off the Culture path."
+    },
+    {
+      "id": "civic:environmentalism",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Solar Farms on flat tiles the Parks do not need."
+    },
+    {
+      "id": "civic:professional-sports",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Entertainment Complexes from the Amenity builds."
+    },
+    {
+      "id": "civic:class-struggle",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:capitalism",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Stock Exchanges in the Commercial Hubs."
+    }
   ],
   "decision_triggers": [
-    { "name": "Flat land", "if": "At turn 50 fewer than six tiles inside the borders read Breathtaking in the Appeal lens.", "then": "Choose Diplomatic at turn 60. Classical Republic now, Democracy later, Diplomatic League and Merchant Confederation in the Wildcards, and the Culture goes to the civics that reach Democracy; the Appeal rule is relaxed except around the one park site the capital can still make." },
-    { "name": "Natural wonder found", "if": "The Scout finds a natural wonder within eight tiles of the capital before turn 40.", "then": "The next Settler goes there whatever else is planned. Its tiles are +2 Appeal all round, the Science tiles pay from the first turn, and it is the first National Park site; mark the four-tile diamond before any Builder arrives." },
-    { "name": "Civics drifting", "if": "At any era checkpoint the last three civics were not on the chosen direction's path.", "then": "The Appeal yields are being banked. Re-pick the civic queue today toward Humanism, Opera and Ballet, Conservation and Suffrage, and note it as a near-miss on the plan." },
-    { "name": "Favor piling up", "if": "Diplomatic Favor passes 200 unspent on the Culture direction.", "then": "Sell it to the richest AI for Gold per turn and buy Builders and Naturalists with the Gold; on the Diplomatic direction, spend it in the next Congress on whichever resolution pays Victory Points." },
-    { "name": "Appeal lowered", "if": "A Mine, Quarry, Industrial Zone or Encampment appears beside a Charming or Breathtaking tile.", "then": "Remove the improvement with the next Builder and move the district plan to the city's low-appeal side; one Mine costs a park tile and a Resort for the rest of the game." }
+    {
+      "name": "Flat land",
+      "if": "At turn 50 fewer than six tiles inside the borders read Breathtaking in the Appeal lens.",
+      "then": "Choose Diplomatic at turn 60. Classical Republic now, Democracy later, Diplomatic League and Merchant Confederation in the Wildcards, and the Culture goes to the civics that reach Democracy; the Appeal rule is relaxed except around the one park site the capital can still make."
+    },
+    {
+      "name": "Natural wonder found",
+      "if": "The Scout finds a natural wonder within eight tiles of the capital before turn 40.",
+      "then": "The next Settler goes there whatever else is planned. Its tiles are +2 Appeal all round, the Science tiles pay from the first turn, and it is the first National Park site; mark the four-tile diamond before any Builder arrives."
+    },
+    {
+      "name": "Civics drifting",
+      "if": "At any era checkpoint the last three civics were not on the chosen direction's path.",
+      "then": "The Appeal yields are being banked. Re-pick the civic queue today toward Humanism, Opera and Ballet, Conservation and Suffrage, and note it as a near-miss on the plan."
+    },
+    {
+      "name": "Favor piling up",
+      "if": "Diplomatic Favor passes 200 unspent on the Culture direction.",
+      "then": "Sell it to the richest AI for Gold per turn and buy Builders with the Gold and keep the Faith for Naturalists; on the Diplomatic direction, spend it in the next Congress on whichever resolution pays Victory Points."
+    },
+    {
+      "name": "Appeal lowered",
+      "if": "A Mine, Quarry, Industrial Zone or Encampment appears beside a Charming or Breathtaking tile.",
+      "then": "Remove the improvement with the next Builder and move the district plan to the city's low-appeal side; one Mine costs a park tile and a Resort for the rest of the game."
+    }
   ],
   "abort": {
     "trigger": "Turn 150 with no direction committed: one Theater Square, no Preserve with a Grove, Favor unspent above 200, and a civic tree picked in order.",

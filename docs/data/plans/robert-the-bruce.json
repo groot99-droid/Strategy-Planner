@@ -12,14 +12,14 @@
     "speed": "Standard",
     "difficulty": "Emperor",
     "map": "Continents or Pangaea, standard size, 8 civilizations; Scotland has no start bias, so a mixed grassland, hills and coast start is assumed",
-    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. Robert the Bruce's single persona is planned here. Amenity thresholds are the game's: Content at zero surplus, Happy at plus one or plus two, Ecstatic at plus three or more, and every luxury supplies one Amenity to four cities."
+    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. Robert the Bruce's single persona is planned here. Amenity thresholds are the game's: Content from minus one to plus two, Happy at plus three or plus four, Ecstatic at plus five or more, and every luxury supplies one Amenity to four cities."
   },
   "verdict": {
     "victory": "Science",
     "secondary": "Culture",
     "confidence": "medium",
     "one_line": "Count the luxuries before you count the land, settle only as many cities as you can keep Ecstatic, and let Scottish Enlightenment turn every Campus and Industrial Zone into a doubled Great Scientist and Great Engineer mint. Bannockburn is a ten-turn Production burst you take once, if a neighbour hands you the cause.",
-    "why": "Scottish Enlightenment pays Science and Production as a percentage and Great Scientist and Great Engineer points per Campus and Industrial Zone, and both halves double when a city is Ecstatic rather than Happy. A percentage bonus and a points bonus both favour a compact empire of large district-heavy cities, which is the shape a Science game wants anyway, and the Great Engineers that fall out of the Industrial Zones finish the Production wonders that a spaceport run needs. Ecstatic is plus three Amenities in every city at once, so the empire's size is set by the luxuries it can hold, and the plan treats each new city as an Amenity bill before it is a Campus. Culture is the fallback because the same Entertainment Complexes, Golf Courses and Great Engineer wonders carry Tourism if a rival out-techs the Campuses."
+    "why": "Scottish Enlightenment pays Science and Production as a percentage and Great Scientist and Great Engineer points per Campus and Industrial Zone, and both halves double when a city is Ecstatic rather than Happy. A percentage bonus and a points bonus both favour a compact empire of large district-heavy cities, which is the shape a Science game wants anyway, and the Great Engineers that fall out of the Industrial Zones finish the Production wonders that a spaceport run needs. Ecstatic is plus five Amenities in every city at once, so the empire's size is set by the luxuries it can hold, and the plan treats each new city as an Amenity bill before it is a Campus. Culture is the fallback because the same Entertainment Complexes, Golf Courses and Great Engineer wonders carry Tourism if a rival out-techs the Campuses."
   },
   "map_check": {
     "must_have": [
@@ -46,7 +46,7 @@
       "source": "civ_ability",
       "name": "Scottish Enlightenment",
       "buys": "Happy cities gain five percent Science and Production plus one Great Scientist point per Campus and one Great Engineer point per Industrial Zone; Ecstatic cities gain ten percent and two points each.",
-      "exploit": "Every city is kept at plus three Amenities or more, which is the watched stat, and every city gets a Campus and the best ones an Industrial Zone, because the points are per district and the percentage is per city. A city that cannot be made Ecstatic is a city the plan does not found."
+      "exploit": "Every city is kept at plus five Amenities or more, which is the watched stat, and every city gets a Campus and the best ones an Industrial Zone, because the points are per district and the percentage is per city. A city that cannot be made Ecstatic is a city the plan does not found."
     },
     {
       "source": "unique_unit",
@@ -57,8 +57,8 @@
     {
       "source": "unique_infrastructure",
       "name": "Golf Course",
-      "buys": "A Builder improvement at the Reformed Church civic that gives an Amenity and Gold, more Gold beside the City Center, Culture beside an Entertainment Complex, and more Culture and Housing in later eras; one per city.",
-      "exploit": "One Golf Course per city on the turn Reformed Church lands is a free Amenity in every city at once, which is the margin that keeps cities Ecstatic as they grow past ten population. Place it beside the City Center or the Entertainment Complex so the Gold and Culture come with it."
+      "buys": "A Builder improvement at the Reformed Church civic that gives two Amenities and Gold, Culture beside the City Center and beside an Entertainment Complex, and Tourism and Housing in later eras; one per city.",
+      "exploit": "One Golf Course per city on the turn Reformed Church lands is two free Amenities in every city at once, which is the margin that keeps cities Ecstatic as they grow past ten population. Place it beside the City Center or the Entertainment Complex so the Culture comes with it."
     },
     {
       "source": "agenda",
@@ -69,25 +69,25 @@
   ],
   "shape_block": {
     "monitor": {
-      "watched_stat": "The Amenity surplus of your least content city, read from the city banner or the Reports screen's city list, with the Ecstatic line at plus three",
+      "watched_stat": "The Amenity surplus of your least content city, read from the city banner or the Reports screen's city list, with the Ecstatic line at plus five",
       "check_every": "turn from the founding of the second city, and on the turn before any luxury trade deal ends",
       "bands": {
         "green": {
-          "test": "Every city shows plus three Amenities or more, no luxury deal ends within five turns, and the next planned city has a luxury of its own or a spare copy already in hand.",
+          "test": "Every city shows plus five Amenities or more, no luxury deal ends within five turns, and the next planned city has a luxury of its own or a spare copy already in hand.",
           "response": "No action. Keep the build on Campuses, Libraries and the next Entertainment Complex, and spend Gold on Builders and the next Settler rather than on luxuries you do not yet need."
         },
         "amber": {
-          "test": "Any city has dropped to plus one or plus two, or a luxury deal ends within five turns, or a Settler is about to found a city that would push a shared luxury past four cities.",
+          "test": "Any city has dropped to plus three or plus four, or a luxury deal ends within five turns, or a Settler is about to found a city that would push a shared luxury past four cities.",
           "response": "Act now while it costs Gold rather than Science: renew or replace the expiring luxury with any rival who has a spare copy, pause the next Settler until a luxury for it exists, and if the city is the only one short, move a unit into it under Retainers or buy the Arena. Amber is the band where a single trade fixes everything."
         },
         "red": {
-          "test": "Any city sits at zero or below, or two or more cities are below Ecstatic at once.",
-          "response": "The doubled bonus is off empire-wide and the five percent half is at risk. Stop every non-Amenity build in the affected cities, buy a luxury outright for Gold per turn from the richest rival, slot Retainers and garrison the short cities, run the Entertainment Complex city's Bread and Circuses project, and do not found another city until every banner is back at plus three."
+          "test": "Any city sits at plus two or below, or two or more cities are below Ecstatic at once.",
+          "response": "The doubled bonus is off empire-wide and the five percent half is at risk. Stop every non-Amenity build in the affected cities, buy a luxury outright for Gold per turn from the richest rival, slot Retainers and garrison the short cities, run the Entertainment Complex city's Bread and Circuses project, and do not found another city until every banner is back at plus five."
         }
       },
       "second_watch": {
         "stat": "Luxury count against city count, since each luxury serves four cities, and the expiry turn of every luxury you hold by trade, written down as a renewal calendar",
-        "why": "Luxury deals run thirty turns and lapse without warning on the turn they end, and a lapse drops four cities at once. The city count must never exceed what the owned luxuries plus the traded ones can keep at plus three, so the second watch sets the empire's size and the first watch keeps it honest."
+        "why": "Luxury deals run thirty turns and lapse without warning on the turn they end, and a lapse drops four cities at once. The city count must never exceed what the owned luxuries plus the traded ones can keep at plus five, so the second watch sets the empire's size and the first watch keeps it honest."
       },
       "off_period_plan": "There is no off period once two cities exist; the stat is read every turn for the whole game. Between Amenity fixes the build is the Science game the bonus pays for: a Campus on mountain or reef adjacency in every city, an Industrial Zone in the three best Production cities, an Entertainment Complex within six tiles of as many cities as possible, Commercial Hubs for the Gold that buys luxuries, and Builders that improve every luxury the borders reach before they improve anything else."
     }
@@ -143,7 +143,11 @@
         },
         {
           "id": "tech:astrology",
-          "note": "The Temple of Artemis unlocks here; Eureka if the Scout finds a natural wonder."
+          "note": "Stonehenge and the Holy Site unlock here; Eureka if the Scout finds a natural wonder."
+        },
+        {
+          "id": "tech:archery",
+          "note": "The Temple of Artemis unlocks here; Eureka only if the Slinger kills a unit."
         },
         {
           "id": "tech:writing",
@@ -289,7 +293,7 @@
         },
         {
           "item": "Entertainment Complex",
-          "why": "In the city within six tiles of the most others; the Arena is one Amenity now and the Zoo and Stadium reach the whole cluster later."
+          "why": "In the city within six tiles of the most others; the Arena is two Amenities now and the Zoo and Stadium reach the whole cluster later."
         },
         {
           "item": "Arena",
@@ -314,12 +318,12 @@
           "note": "A Quarry on Stone or Marble boosts it; Ancient Walls so a raid never drops a city's Amenities through pillage."
         },
         {
-          "id": "tech:construction",
-          "note": "Water Mill gives the Eureka; the Entertainment Complex and Colosseum need it."
-        },
-        {
           "id": "tech:horseback-riding",
           "note": "A Pasture on Horses, Sheep or Cattle boosts it; Pastures also feed the Temple of Artemis."
+        },
+        {
+          "id": "tech:construction",
+          "note": "Water Mill gives the Eureka; it is the Inspiration for Games and Recreation, which unlocks the Entertainment Complex and Colosseum."
         },
         {
           "id": "tech:mathematics",
@@ -337,7 +341,7 @@
       "civics": [
         {
           "id": "civic:state-workforce",
-          "note": "Free Inspiration from the capital Campus; the envoy is the point."
+          "note": "Free Inspiration from the capital Campus; it opens Political Philosophy and Games and Recreation."
         },
         {
           "id": "civic:mysticism",
@@ -345,7 +349,7 @@
         },
         {
           "id": "civic:political-philosophy",
-          "note": "Classical Republic for the Amenity in cities with two districts; Inspiration from three city-states met."
+          "note": "Classical Republic for the Amenity in every city with a district; Inspiration from three city-states met."
         },
         {
           "id": "civic:games-and-recreation",
@@ -369,19 +373,19 @@
           "card": "Colonization",
           "slot": "economic",
           "from": "civic:early-empire",
-          "why": "Settlers at half cost for the cities the census allows."
+          "why": "Fifty percent more Production toward Settlers for the cities the census allows."
         },
         {
           "card": "Inspiration",
           "slot": "wildcard",
           "from": "civic:mysticism",
-          "why": "Two more Great Scientist points per Campus on top of the Ecstatic two."
+          "why": "Two more Great Scientist points a turn on top of the Ecstatic two per Campus."
         },
         {
           "card": "Classical Republic",
           "slot": "wildcard",
           "from": "civic:political-philosophy",
-          "why": "The government: an Amenity in every city with two districts, which every city in this plan has by turn 80."
+          "why": "The government: an Amenity and Housing in every city with a district, which every city in this plan has by turn 80."
         },
         {
           "card": "Natural Philosophy",
@@ -392,7 +396,7 @@
         {
           "card": "Limitanei",
           "slot": "military",
-          "from": "civic:defensive-tactics",
+          "from": "civic:early-empire",
           "why": "Loyalty from garrisons in the border cities until Retainers replaces it."
         }
       ],
@@ -470,9 +474,9 @@
       "checkpoints": [
         {
           "turn": 60,
-          "test": "Three cities all at plus three or more, a Campus in two of them, and the first luxury trade deal signed with its expiry turn written on the calendar?",
+          "test": "Three cities all at plus five or more, a Campus in two of them, and the first luxury trade deal signed with its expiry turn written on the calendar?",
           "pass": "Continue; the fourth Settler goes out if the census or the trade allows it.",
-          "fail": "A city below plus three at turn 60 means the census was optimistic: stop Settlers, buy a luxury from the richest rival this turn, and build the Entertainment Complex before the next Campus."
+          "fail": "A city below plus five at turn 60 means the census was optimistic: stop Settlers, buy a luxury from the richest rival this turn, and build the Entertainment Complex before the next Campus."
         },
         {
           "turn": 95,
@@ -567,8 +571,12 @@
           "note": "Free Eureka from Merchant Republic; the Alhambra and its two Amenities unlock here."
         },
         {
+          "id": "tech:machinery",
+          "note": "Three Archers boost it; Crossbowmen for the border if a neighbour arms."
+        },
+        {
           "id": "tech:printing",
-          "note": "Two Universities give the Eureka; Culture across the empire."
+          "note": "Two Universities give the Eureka; Tourism from Great Works of Writing doubles."
         },
         {
           "id": "tech:banking",
@@ -580,21 +588,17 @@
         },
         {
           "id": "tech:buttress",
-          "note": "Owning the Colosseum gives the Eureka; otherwise unboosted on the way to Printing."
-        },
-        {
-          "id": "tech:machinery",
-          "note": "Three Archers boost it; Crossbowmen for the border if a neighbour arms."
+          "note": "Owning the Colosseum gives the Eureka; otherwise unboosted on the way to Mass Production."
         }
       ],
       "civics": [
         {
           "id": "civic:feudalism",
-          "note": "Six Farms give the Inspiration; Retainers is the Amenity card and Serfdom the Builder card."
+          "note": "Six Farms give the Inspiration; Serfdom is the Builder card."
         },
         {
           "id": "civic:civil-service",
-          "note": "Capital at ten population with the Aqueduct gives the Inspiration."
+          "note": "Capital at ten population with the Aqueduct gives the Inspiration; Retainers is the Amenity card."
         },
         {
           "id": "civic:guilds",
@@ -606,11 +610,11 @@
         },
         {
           "id": "civic:exploration",
-          "note": "Merchant Republic for the Trade Routes that carry luxuries and the Castles Eureka; Inspiration from two Caravels only on a coastal map."
+          "note": "Merchant Republic for its Gold and district Production and the Castles Eureka; Inspiration from two Caravels only on a coastal map."
         },
         {
           "id": "civic:humanism",
-          "note": "A Great Artist gives the Inspiration if one falls to you; Reformed Church sits past it."
+          "note": "A Great Artist gives the Inspiration if one falls to you; The Enlightenment sits past it."
         },
         {
           "id": "civic:reformed-church",
@@ -625,7 +629,7 @@
         {
           "card": "Retainers",
           "slot": "military",
-          "from": "civic:feudalism",
+          "from": "civic:civil-service",
           "why": "An Amenity in every city with a garrisoned unit; one Warrior per city is the cheapest Amenity in the game and stays slotted for the rest of it."
         },
         {
@@ -636,7 +640,7 @@
         },
         {
           "card": "Craftsmen",
-          "slot": "economic",
+          "slot": "military",
           "from": "civic:guilds",
           "why": "Doubles Industrial Zone adjacency; the Production percentage multiplies it."
         },
@@ -644,7 +648,7 @@
           "card": "Merchant Republic",
           "slot": "wildcard",
           "from": "civic:exploration",
-          "why": "The government: two more Trade Routes for luxury-bearing partners, and the Castles Eureka."
+          "why": "The government: ten percent Gold in cities with a Governor and fifteen percent Production toward districts, and the Castles Eureka."
         },
         {
           "card": "Inspiration",
@@ -674,11 +678,11 @@
         {
           "name": "Alhambra",
           "why": "Two Amenities and an extra Military slot, which this plan fills with Retainers permanently.",
-          "skip_if": "No Encampment on a hill exists by turn 130, or Spain or a wonder civilization has Castles before you."
+          "skip_if": "No Encampment with a free Hills tile beside it exists by turn 130, or Spain or a wonder civilization has Castles before you."
         },
         {
           "name": "Huey Teocalli",
-          "why": "An Amenity and Food per adjacent Lake tile in a city that has a Lake; a quiet Ecstatic margin.",
+          "why": "An Amenity per adjacent Lake tile, and Food and Production per Lake tile in the empire; a quiet Ecstatic margin.",
           "skip_if": "No city has a Lake tile with two or more Lake neighbours, or Military Tactics is a detour at turn 120."
         }
       ],
@@ -692,13 +696,13 @@
         {
           "governor": "amani",
           "promotion": "Affluence",
-          "city": "the nearest city-state to the core",
-          "why": "An Amenity in your cities within six tiles of her city-state; park her where the most cities fall inside the circle."
+          "city": "a city-state with a luxury you lack",
+          "why": "A copy of every luxury the city-state holds, and each copy is an Amenity in four cities; park her where the luxury is one you cannot trade for."
         },
         {
           "governor": "reyna",
           "promotion": "Tax Collector",
-          "city": "the Commercial Hub city",
+          "city": "a Commercial Hub city other than the capital",
           "why": "Gold per citizen is the luxury budget when a deal must be bought rather than swapped."
         }
       ],
@@ -729,9 +733,9 @@
       "checkpoints": [
         {
           "turn": 130,
-          "test": "Every city still at plus three or more past ten population, Universities in two, an Industrial Zone in two, and Retainers slotted with a garrison in each city?",
+          "test": "Every city still at plus five or more past ten population, Universities in two, an Industrial Zone in two, and Retainers slotted with a garrison in each city?",
           "pass": "Continue; queue the Alhambra if the Encampment stands.",
-          "fail": "A city at plus one or two with a University means growth outran Amenities: Arena in a second Entertainment Complex, a luxury bought for Gold per turn, and no new district in that city until the banner is plus three."
+          "fail": "A city at plus three or four with a University means growth outran Amenities: Arena in a second Entertainment Complex, a luxury bought for Gold per turn, and no new district in that city until the banner is plus five."
         },
         {
           "turn": 165,
@@ -837,6 +841,10 @@
           "note": "Unboosted unless two Privateers are cheap; Power for Factories and Research Labs."
         },
         {
+          "id": "tech:flight",
+          "note": "Owning Ruhr Valley or Oxford gives the Eureka; on the way to Rocketry."
+        },
+        {
           "id": "tech:radio",
           "note": "A National Park gives the Eureka if Conservation came with a Breathtaking Neighborhood; otherwise unboosted."
         }
@@ -848,7 +856,7 @@
         },
         {
           "id": "civic:civil-engineering",
-          "note": "Seven district types is free for an empire with Campus, Industrial Zone, Entertainment Complex, Commercial Hub, Encampment, Aqueduct and Theater Square."
+          "note": "Seven different specialty districts: Campus, Industrial Zone, Entertainment Complex, Commercial Hub, Encampment and Theater Square make six, so a Harbor or Holy Site is the seventh; the Aqueduct and Neighborhood do not count."
         },
         {
           "id": "civic:colonialism",
@@ -867,16 +875,20 @@
           "note": "A Neighborhood on a Breathtaking tile gives the Inspiration; Golf Courses raise Appeal nearby."
         },
         {
-          "id": "civic:class-struggle",
-          "note": "Three Factories give the Inspiration; Five-Year Plan."
+          "id": "civic:mass-media",
+          "note": "Radio gives the Inspiration and also unlocks the Broadcast Centers for the Culture fallback; Ideology needs this civic."
         },
         {
           "id": "civic:ideology",
-          "note": "Democracy for Gold and Great People; no Inspiration exists."
+          "note": "Five-Year Plan, and Suffrage and Class Struggle past it; no Inspiration exists."
+        },
+        {
+          "id": "civic:class-struggle",
+          "note": "Three Factories give the Inspiration; Communism and Collectivization, neither planned."
         },
         {
           "id": "civic:suffrage",
-          "note": "Four Sewers give the Inspiration; New Deal is the late Amenity card."
+          "note": "Four Sewers give the Inspiration; Democracy, and New Deal, the late Amenity card."
         }
       ],
       "policies": [
@@ -895,20 +907,20 @@
         {
           "card": "Five-Year Plan",
           "slot": "economic",
-          "from": "civic:class-struggle",
+          "from": "civic:ideology",
           "why": "Campus and Industrial Zone adjacency raised in the two districts the bonus lives in."
         },
         {
           "card": "Democracy",
           "slot": "wildcard",
-          "from": "civic:ideology",
+          "from": "civic:suffrage",
           "why": "The Tier 3 government for a peaceful Science civilization; Computers' Eureka comes with it."
         },
         {
           "card": "New Deal",
           "slot": "economic",
           "from": "civic:suffrage",
-          "why": "Two Amenities and Housing in every city with three specialty districts; the Gold cost is paid by the Banks and Golf Courses."
+          "why": "Two Amenities and Housing in every city with three specialty districts; it needs Democracy, which this plan runs."
         }
       ],
       "districts": [
@@ -925,7 +937,7 @@
         {
           "district": "theater-square",
           "city": "capital",
-          "note": "The Culture fallback and the Civil Engineering count; Golf Course Culture beside it."
+          "note": "The Culture fallback and the Civil Engineering count."
         }
       ],
       "wonders": [
@@ -1064,19 +1076,15 @@
       "research": [
         {
           "id": "tech:computers",
-          "note": "Democracy gave the Eureka; Culture and Tourism rise with it and the Flight line follows."
-        },
-        {
-          "id": "tech:plastics",
-          "note": "An Oil Well gives the Eureka; the Spaceport's launches need it."
+          "note": "Democracy gave the Eureka; Tourism rises a quarter across the empire, which the Culture fallback keeps."
         },
         {
           "id": "tech:refining",
           "note": "A Coal Power Plant gives the Eureka; Power for the Labs."
         },
         {
-          "id": "tech:flight",
-          "note": "Owning Ruhr Valley or Oxford gives the Eureka; on the way to Rocketry."
+          "id": "tech:plastics",
+          "note": "An Oil Well gives the Eureka; the Spaceport's launches need it."
         }
       ],
       "civics": [
@@ -1091,10 +1099,6 @@
         {
           "id": "civic:space-race",
           "note": "The Spaceport gives the Inspiration; Integrated Space Cell."
-        },
-        {
-          "id": "civic:mass-media",
-          "note": "Radio gives the Inspiration; Broadcast Centers for the Culture fallback."
         }
       ],
       "policies": [
@@ -1102,7 +1106,7 @@
           "card": "Integrated Space Cell",
           "slot": "military",
           "from": "civic:space-race",
-          "why": "Faster space projects in the Spaceport city, which has the Encampment the card asks for."
+          "why": "Fifteen percent faster space projects in the Spaceport city once it has a Military Academy or a Seaport, which the card asks for."
         },
         {
           "card": "New Deal",
@@ -1121,7 +1125,7 @@
         {
           "district": "spaceport",
           "city": "the Ruhr Valley city",
-          "note": "Magnus with Vertical Integration and the Factories of every neighbour feed it."
+          "note": "Magnus with Vertical Integration and the Factories of every neighbour feed it while it is built; he leaves when Pingala arrives for the projects."
         }
       ],
       "wonders": [
@@ -1136,7 +1140,7 @@
           "governor": "pingala",
           "promotion": "Space Initiative",
           "city": "the Spaceport city",
-          "why": "Moved from the capital if the Spaceport is elsewhere; the space projects are the last thing he multiplies."
+          "why": "Moved from the capital if the Spaceport is elsewhere, and only after Magnus leaves that city, since a city holds one governor; the space projects are the last thing he multiplies."
         }
       ],
       "city_states": [],
@@ -1155,14 +1159,14 @@
           "turn": 290,
           "test": "Satellite launched, every city still Ecstatic, and Science per turn the highest on the map?",
           "pass": "Continue to the Exoplanet Expedition; no further decisions.",
-          "fail": "If a rival is a project ahead with Science you cannot match, switch to the Culture fallback: Golf Course Culture, Broadcast Centers and the Entertainment Complex wonders are already standing, and Rock Bands bought with the Gold the Banks make finish it."
+          "fail": "If a rival is a project ahead with Science you cannot match, switch to the Culture fallback: Golf Course Culture, Broadcast Centers and the Entertainment Complex wonders are already standing, and Rock Bands bought with Faith finish it."
         }
       ],
       "tasks": [
         {
           "id": "close-spaceport",
           "turn": 245,
-          "text": "Spaceport finished in the Ruhr Valley city; Pingala moved there if he is not already."
+          "text": "Spaceport finished in the Ruhr Valley city; Pingala moved there if he is not already, once Magnus has moved out."
         },
         {
           "id": "close-stadium",
@@ -1469,7 +1473,7 @@
     {
       "id": "tech:flight",
       "fit": "free",
-      "when": "close",
+      "when": "industrial",
       "how": "Ruhr Valley or Oxford University is an Industrial wonder."
     },
     {
@@ -1624,9 +1628,9 @@
     },
     {
       "id": "civic:civil-engineering",
-      "fit": "free",
+      "fit": "cheap",
       "when": "industrial",
-      "how": "Seven district types stand by turn 180."
+      "how": "Six specialty district types stand by turn 180; a Harbor or Holy Site makes the seventh."
     },
     {
       "id": "civic:colonialism",
@@ -1709,7 +1713,7 @@
     {
       "id": "civic:mass-media",
       "fit": "cheap",
-      "when": "close",
+      "when": "industrial",
       "how": "Researching Radio on the Flight line."
     }
   ],
@@ -1717,7 +1721,7 @@
     {
       "name": "Pause the Settler",
       "if": "The next city site has no luxury of its own and every owned or traded luxury already serves four cities.",
-      "then": "Do not found it. Trade for a luxury first, or build the Entertainment Complex that will cover the site, and settle only when the banner would read plus three on the turn it lands."
+      "then": "Do not found it. Trade for a luxury first, or build the Entertainment Complex that will cover the site, and settle only when the banner would read plus five on the turn it lands."
     },
     {
       "name": "Declare Bannockburn",
@@ -1747,7 +1751,7 @@
   "common_mistakes": [
     "Settling to the land instead of to the luxuries. Each luxury serves four cities; the ninth city on five luxuries drops the bonus in every city at once.",
     "Letting a luxury deal lapse because the partner's renewal offer was worse. Four cities fall from Ecstatic the turn it ends, and the Science lost in five turns is more than the Gold the new deal asks.",
-    "Reading the Amenity banner only when a city turns Displeased. Amber is plus one or two, when a single trade or a garrison under Retainers fixes it; red is when it costs a district.",
+    "Reading the Amenity banner only when a city turns Displeased. Amber is plus three or four, when a single trade or a garrison under Retainers fixes it; red is when it costs a district.",
     "Treating Bannockburn as a conquest ability. It is ten turns of doubled Production for the whole empire; declare it with wonders queued, not with an army built.",
     "Putting the Entertainment Complex in the city with the most Production. The Zoo and Stadium reach six tiles; the site is chosen for how many cities fall inside the circle."
   ],
@@ -1756,6 +1760,6 @@
     "Boost objectives cross-checked against civilization6planner.com tech-tree and civics-tree pages, 2026-10-01.",
     "Leadership Focus tags, caveats and Monitor supplement for Robert the Bruce in this repository.",
     "The civ-info text says Bannockburn gives the Production bonus to units; in Gathering Storm the plus one hundred percent Production applies to all cities for the ten turns, and the plan follows the game.",
-    "Amenity thresholds (Happy at plus one, Ecstatic at plus three), luxuries serving four cities, and the per-Campus and per-Industrial Zone points (one when Happy, two when Ecstatic) are from the Gathering Storm rules; the civ-info text gives no numbers."
+    "Amenity thresholds (Happy at plus three, Ecstatic at plus five, since the August 2020 update), luxuries serving four cities, and the per-Campus and per-Industrial Zone points (one when Happy, two when Ecstatic) are from the Gathering Storm rules; the civ-info text gives no numbers."
   ]
 }
