@@ -214,7 +214,7 @@
       "city_states": [
         {
           "slug": "kabul",
-          "why": "Double experience on every unit; the first envoy goes here if Kabul is met."
+          "why": "Double experience from every battle your units start; the first envoy goes here if Kabul is met."
         },
         {
           "type": "Militaristic",
@@ -324,7 +324,7 @@
         },
         {
           "id": "tech:mathematics",
-          "note": "Encampment, Commercial Hub and Campus make the three districts; on the road to Apprenticeship."
+          "note": "Encampment, Commercial Hub and Campus make the three districts; on the road to Military Tactics and Education."
         }
       ],
       "civics": [
@@ -338,7 +338,7 @@
         },
         {
           "id": "civic:political-philosophy",
-          "note": "Oligarchy: Combat Strength for Hetairoi and Hypaspists and experience on top of the Basilikoi Paides."
+          "note": "Oligarchy: Combat Strength for Hypaspists and extra experience for every unit on top of the Basilikoi Paides."
         },
         {
           "id": "civic:military-training",
@@ -354,7 +354,7 @@
           "card": "Oligarchy",
           "slot": "wildcard",
           "from": "civic:political-philosophy",
-          "why": "The government until Monarchy: Combat Strength and experience for every land unit."
+          "why": "The government until Monarchy: Combat Strength for melee and anti-cavalry units and extra experience for every unit."
         },
         {
           "card": "Maneuver",
@@ -372,7 +372,7 @@
           "card": "Colonization",
           "slot": "economic",
           "from": "civic:early-empire",
-          "why": "Settlers at half price while the Encampment city builds units."
+          "why": "Settlers half again as fast while the Encampment city builds units."
         }
       ],
       "districts": [
@@ -399,7 +399,7 @@
       "wonders": [
         {
           "name": "Statue of Zeus",
-          "why": "Free Archers, Spearmen and a Battering Ram beside the Encampment, and faster anti-cavalry and melee thereafter.",
+          "why": "A free Archer, Spearman and Battering Ram beside the Encampment, and faster anti-cavalry units thereafter.",
           "skip_if": "The Encampment city has no flat tile beside the district, or the first war is already won by the time Bronze Working's build slot is free."
         },
         {
@@ -492,11 +492,11 @@
         "to": 150
       },
       "era": "medieval",
-      "objective": "Run two more wars back to back against the next-nearest rivals and any city-state in the way, upgrading Hetairoi to Knights and Hypaspists to Men-At-Arms, while the captured Campuses and the unit queue keep Science within an era of the leaders.",
+      "objective": "Run two more wars back to back against the next-nearest rivals and any city-state in the way, upgrading Hetairoi to Coursers and Hypaspists to Men-At-Arms with Knights trained alongside, while the captured Campuses and the unit queue keep Science within an era of the leaders.",
       "build_order": [
         {
           "item": "Knight",
-          "why": "Hetairoi upgrade at Stirrups; the strike force stays a generation ahead under Professional Army."
+          "why": "Trained new at Stirrups as the heavy strike force, since the Hetairoi upgrade to Coursers, not Knights; Professional Army keeps both lines a generation ahead."
         },
         {
           "item": "Crossbowman",
@@ -542,7 +542,7 @@
         },
         {
           "id": "tech:military-engineering",
-          "note": "Siege Tower and the Armory on the road to Gunpowder; the Aqueduct boosts it."
+          "note": "Trebuchets and the Armory on the road to Gunpowder; the Aqueduct boosts it."
         },
         {
           "id": "tech:engineering",
@@ -588,7 +588,7 @@
           "card": "Professional Army",
           "slot": "military",
           "from": "civic:mercenaries",
-          "why": "Hetairoi to Knights and Hypaspists to Men-At-Arms at half the Gold."
+          "why": "Hetairoi to Coursers and Hypaspists to Men-At-Arms at half the Gold."
         },
         {
           "card": "Feudal Contract",
@@ -650,7 +650,7 @@
           "governor": "pingala",
           "promotion": "Researcher",
           "city": "capital",
-          "why": "The Science multiplier on the largest Campus."
+          "why": "Science per citizen in the largest city, on top of its Campus."
         }
       ],
       "city_states": [
@@ -680,7 +680,7 @@
       "checkpoints": [
         {
           "turn": 115,
-          "test": "Second rival capital or three more cities taken, army upgraded to Knights and Men-At-Arms, and Science within one era of the leader?",
+          "test": "Second rival capital or three more cities taken, army upgraded to Coursers and Men-At-Arms with Knights in the line, and Science within one era of the leader?",
           "pass": "Declare the third war before signing the second peace.",
           "fail": "If the army is still Classical at turn 115, stop advancing, upgrade under Professional Army in one turn of Gold, then resume. If Science is two eras behind, Libraries in every capture before the next Settler."
         },
@@ -700,7 +700,7 @@
         {
           "id": "rolling-war-upgrade",
           "turn": 100,
-          "text": "Upgrade every Hetairoi to a Knight and every Hypaspist to a Man-At-Arms under Professional Army in one turn."
+          "text": "Upgrade every Hetairoi to a Courser and every Hypaspist to a Man-At-Arms under Professional Army in one turn."
         },
         {
           "id": "rolling-war-libraries",
@@ -785,7 +785,7 @@
         },
         {
           "id": "tech:military-science",
-          "note": "Cavalry for the Knights; a Knight kill gives it, and this army has Knights."
+          "note": "Cavalry for the Coursers; a Knight kill gives it, and this army has Knights."
         }
       ],
       "civics": [
@@ -860,7 +860,7 @@
           "governor": "victor",
           "promotion": "Defense Logistics",
           "city": "the front city",
-          "why": "Units heal and resupply where the Bombards stage."
+          "why": "The front city cannot be put under siege while the Bombards stage there, and Niter and Iron accumulate faster."
         },
         {
           "governor": "reyna",
@@ -947,7 +947,7 @@
         },
         {
           "item": "Cavalry",
-          "why": "Knights upgrade under Professional Army; the flanking force the Hetairoi became."
+          "why": "Coursers upgrade under Professional Army; the flanking force the Hetairoi became."
         },
         {
           "item": "Line Infantry",
@@ -977,7 +977,7 @@
         },
         {
           "id": "tech:ballistics",
-          "note": "Field Cannons and Artillery; two Forts from a Military Engineer give it."
+          "note": "Field Cannons; two Forts from a Military Engineer give it."
         },
         {
           "id": "tech:scientific-theory",
@@ -1037,7 +1037,7 @@
           "governor": "victor",
           "promotion": "Arms Race Proponent",
           "city": "the front city",
-          "why": "Strategic resources for Artillery and Tanks accumulate where they are built."
+          "why": "Faster nuclear device projects if the last capitals hold out; Defense Logistics already keeps the strategic resources coming."
         }
       ],
       "city_states": [],
@@ -1259,7 +1259,7 @@
       "id": "tech:military-science",
       "fit": "free",
       "when": "parity",
-      "how": "A Knight kill; the Hetairoi became Knights at Stirrups."
+      "how": "A Knight kill; the Knights trained at Stirrups are already in the line."
     },
     {
       "id": "tech:cartography",

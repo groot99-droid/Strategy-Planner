@@ -37,13 +37,13 @@
       "source": "leader_ability",
       "name": "Kandake of Meroë",
       "buys": "20 percent more Production toward every district, 40 percent in a city with a Nubian Pyramid adjacent to the City Center.",
-      "exploit": "The discount applies to Production only, never to a purchase, so every district in this plan is built, not bought, and Gold goes to Builders, Settlers and units instead. A Pyramid tile touching the center is chosen at settle time for every city, because the difference between 20 and 40 percent over a nine-district city is roughly four free districts."
+      "exploit": "The discount applies to Production only, never to a purchase, so every district in this plan is built, not bought, and Gold goes to Builders, Settlers and units instead. A Pyramid tile touching the center is chosen at settle time for every city, because the difference between 20 and 40 percent over a nine-district city is more than one free district."
     },
     {
       "source": "civ_ability",
       "name": "Ta-Seti",
       "buys": "50 percent more Production toward ranged units, 50 percent more experience for them, +1 Production from Mines on strategic resources and +2 Gold from Mines on bonus and luxury resources.",
-      "exploit": "Pitati Archers under Agoge come out at a quarter of a Warrior's effective cost and reach two promotions in the first war. Every hill with a resource gets a Mine before a Farm; the Gold from luxury Mines is what pays Settler and Builder upkeep while Production is on districts."
+      "exploit": "Pitati Archers under Agoge come out at double speed, for less Production than a Warrior and reach two promotions in the first war. Every hill with a resource gets a Mine before a Farm; the Gold from luxury Mines is what pays Settler and Builder upkeep while Production is on districts."
     },
     {
       "source": "unique_unit",
@@ -124,7 +124,7 @@
         },
         {
           "item": "Slinger",
-          "why": "One barbarian kill before Archery lands gives the Eureka; it upgrades to a Pitati later under Ta-Seti pricing."
+          "why": "One barbarian kill before Archery lands gives the Eureka; it upgrades to a Pitati later for Gold."
         },
         {
           "item": "Settler",
@@ -148,13 +148,13 @@
         },
         {
           "item": "Settler",
-          "why": "Third city on the next settle-map site; Magnus Provision in the capital by then."
+          "why": "Third city on the next settle-map site; Magnus Provision in the capital for the Settlers after it."
         }
       ],
       "research": [
         {
           "id": "tech:archery",
-          "note": "First. The Slinger kill boosts it; Pitati Archers are the whole window."
+          "note": "First after Animal Husbandry, its prerequisite. The Slinger kill boosts it; Pitati Archers are the whole window."
         },
         {
           "id": "tech:mining",
@@ -357,7 +357,7 @@
         },
         {
           "id": "civic:state-workforce",
-          "note": "Free from the first Campus; Limes if the target counter-attacks."
+          "note": "Free from the first Campus; Conscription to carry six archers, Limes if the target counter-attacks."
         },
         {
           "id": "civic:early-empire",
@@ -365,7 +365,7 @@
         },
         {
           "id": "civic:mysticism",
-          "note": "Free from the pantheon; it is on the way to Political Philosophy."
+          "note": "Free from the pantheon; a cheap civic while the war runs."
         },
         {
           "id": "civic:political-philosophy",
@@ -373,7 +373,7 @@
         },
         {
           "id": "civic:military-training",
-          "note": "Inspiration from the forward Encampment; Conscription to carry six archers."
+          "note": "Inspiration from the forward Encampment; on the way to Mercenaries."
         },
         {
           "id": "civic:games-and-recreation",
@@ -399,25 +399,25 @@
           "card": "Colonization",
           "slot": "economic",
           "from": "civic:early-empire",
-          "why": "Settlers at half cost for sites three to five while the capital finishes its districts."
+          "why": "Settlers half again as fast for sites three to five while the capital finishes its districts."
         },
         {
           "card": "Oligarchy",
           "slot": "wildcard",
           "from": "civic:political-philosophy",
-          "why": "Four Combat Strength and extra experience for every unit in the war."
+          "why": "Four Combat Strength for the melee units and extra experience for every unit in the war."
         },
         {
           "card": "Conscription",
           "slot": "military",
-          "from": "civic:military-training",
+          "from": "civic:state-workforce",
           "why": "Six archers and two melee units at one Gold each less; swapped in when Agoge is no longer needed."
         },
         {
           "card": "Natural Philosophy",
           "slot": "economic",
           "from": "civic:recorded-history",
-          "why": "Doubles the Campus adjacency the Pyramids and desert mountains give."
+          "why": "Doubles the Campus adjacency the desert mountains and neighbouring districts give."
         }
       ],
       "districts": [
@@ -662,7 +662,7 @@
           "card": "Craftsmen",
           "slot": "economic",
           "from": "civic:guilds",
-          "why": "Doubles Industrial Zone adjacency from Mines and Pyramids."
+          "why": "Doubles Industrial Zone adjacency from Mines and neighbouring districts."
         },
         {
           "card": "Monarchy",
@@ -686,7 +686,7 @@
       "wonders": [
         {
           "name": "Kilwa Kisiwani",
-          "why": "Suzerainty bonuses from Scientific city-states doubled across the empire.",
+          "why": "Fifteen percent more Science in its city for a Scientific suzerainty, and in every city once you hold two Scientific city-states.",
           "skip_if": "No coastal city, or Machinery lands after turn 140."
         }
       ],
@@ -711,7 +711,7 @@
         },
         {
           "slug": "hattusa",
-          "why": "Two of every unrevealed strategic a turn; Niter for the Rifling Eureka without a Mine."
+          "why": "Two a turn of every strategic resource revealed but not yet improved; Niter and Coal arrive before the Builders reach them."
         }
       ],
       "great_people": [
@@ -846,7 +846,7 @@
           "card": "Rationalism",
           "slot": "economic",
           "from": "civic:the-enlightenment",
-          "why": "Science from Campus buildings in cities of ten or more with adjacency three or more; the Pyramid and Natural Philosophy get every Campus there."
+          "why": "Science from Campus buildings in cities of ten or more with adjacency three or more; Campuses set among other districts and mountains get there."
         },
         {
           "card": "Five-Year Plan",
@@ -872,7 +872,7 @@
         {
           "name": "Oxford University",
           "why": "Two free techs and Science in the best Campus city.",
-          "skip_if": "A rival has Scientific Theory first, or the capital Campus is not on a Pyramid tile."
+          "skip_if": "A rival reached Education well ahead of you, or no flat Grassland or Plains tile touches the capital Campus."
         },
         {
           "name": "Ruhr Valley",
@@ -1326,7 +1326,7 @@
       "id": "tech:flight",
       "fit": "costly",
       "when": "live",
-      "how": "Only if Ruhr Valley or Oxford was built."
+      "how": "Only if Ruhr Valley was built; Oxford is a Renaissance wonder and does not count."
     },
     {
       "id": "tech:replaceable-parts",

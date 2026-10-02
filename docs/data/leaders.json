@@ -7425,7 +7425,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Science",
+   "secondary": "Domination",
+   "confidence": "high",
+   "one_line": "Settle on hills, pin a Seowon two tiles out of every city with nothing ever built beside it and Mines and Farms all around it, pour every Governor title into promotions for Hwarang, and spend the early Science lead on a space race finished around turn 250, before rivals' adjacency catches up.",
+   "updated": "2026-10-02",
+   "version": 1,
+   "file": "data/plans/seondeok.json",
+   "phases": 5,
+   "boosts": 61
+  },
   "slug": "seondeok",
   "name": "Seondeok",
   "persona": null,
@@ -7703,7 +7713,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Domination",
+   "secondary": "Culture",
+   "confidence": "medium",
+   "one_line": "Trigger Eurekas instead of researching: each one is a whole technology, so chain them to Crossbowmen, Knights and Trebuchets by turn 80 and take the nearest neighbour's cities before turn 120. After that Babylon is a wide empire with half everyone else's Science, and it plays like one.",
+   "updated": "2026-10-02",
+   "version": 1,
+   "file": "data/plans/hammurabi.json",
+   "phases": 5,
+   "boosts": 63
+  },
   "slug": "hammurabi",
   "name": "Hammurabi",
   "persona": null,
@@ -9669,7 +9689,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Culture",
+   "secondary": "Science",
+   "confidence": "medium",
+   "one_line": "Ring each city's best tiles with districts, park a wonder in every gap for one turn of Production, and let Swan King pay Culture, and from Castles Tourism, on all of them; finish only the keystones a rival is coming for, then finish everything once the Hansas make it cheap.",
+   "updated": "2026-10-02",
+   "version": 1,
+   "file": "data/plans/ludwig-ii.json",
+   "phases": 5,
+   "boosts": 62
+  },
   "slug": "ludwig-ii",
   "name": "Ludwig II",
   "persona": null,
@@ -10485,7 +10515,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Diplomatic",
+   "secondary": "Culture",
+   "confidence": "medium",
+   "one_line": "Play a slow, walled tundra builder for 150 turns that leaves its best Woods unimproved and banks Faith and Favor, then turn those Woods into National Parks at Conservation and spend the Tourism-fed Favor on the World Congress votes that award Diplomatic Victory points.",
+   "updated": "2026-10-02",
+   "version": 1,
+   "file": "data/plans/wilfrid-laurier.json",
+   "phases": 5,
+   "boosts": 61
+  },
   "slug": "wilfrid-laurier",
   "name": "Wilfrid Laurier",
   "persona": null,
@@ -10760,7 +10800,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Culture",
+   "secondary": "Science",
+   "confidence": "medium",
+   "one_line": "Play a plain river builder for 130 turns while every Great Work goes into one or two walled Theater Square cities on the border, then fill an Art Museum, the Hermitage and an Archaeological Museum there until the neighbour's small cities hit zero Loyalty and walk over, and win on the Tourism the same works and France's doubled wonders already make.",
+   "updated": "2026-10-02",
+   "version": 1,
+   "file": "data/plans/eleanor-of-aquitaine.json",
+   "phases": 5,
+   "boosts": 60
+  },
   "slug": "eleanor-of-aquitaine",
   "name": "Eleanor of Aquitaine",
   "persona": null,
@@ -11609,7 +11659,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Science",
+   "secondary": "Religion",
+   "confidence": "medium",
+   "one_line": "Skip the Faith race, put the Production it would have cost into Settlers and Campuses, have one Holy Site ready when the last Prophet arrives, and choose by turn 80 whether the Madrasa Faith converts neighbours for Science, converts them for the win, or buys Mamluks.",
+   "updated": "2026-10-02",
+   "version": 1,
+   "file": "data/plans/saladin.json",
+   "phases": 5,
+   "boosts": 61
+  },
   "slug": "saladin",
   "name": "Saladin",
   "persona": null,
@@ -12155,7 +12215,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Culture",
+   "secondary": "Religion",
+   "confidence": "medium",
+   "one_line": "Settle only on Hills, build the Faith base first with Mountain Holy Sites, Rock-Hewn Churches and every resource improved, choose by turn 70 what the Faith buys, and then spend it every turn: Great Writers and Archaeologists for Culture, Apostles for Religion, or Campus buildings for Science.",
+   "updated": "2026-10-02",
+   "version": 1,
+   "file": "data/plans/menelik-ii.json",
+   "phases": 5,
+   "boosts": 61
+  },
   "slug": "menelik-ii",
   "name": "Menelik II",
   "persona": null,
@@ -13265,7 +13335,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Religion",
+   "secondary": "Domination",
+   "confidence": "medium",
+   "one_line": "Found a religion early, beeline Gunpowder, and walk Conquistadors with Missionaries on their tiles into the nearest civilization that worships something else. Every city they take converts on capture, and every civilization that already follows you is left alone, because it already counts toward the win.",
+   "updated": "2026-10-02",
+   "version": 1,
+   "file": "data/plans/philip-ii.json",
+   "phases": 5,
+   "boosts": 60
+  },
   "slug": "philip-ii",
   "name": "Philip II",
   "persona": null,
@@ -14137,7 +14217,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Science",
+   "secondary": "Culture",
+   "confidence": "medium",
+   "one_line": "Grow four river cities on Granaries, Aqueducts and Farms before running a single project, then push them over Population 10 one at a time with the Lijia Food project and turn each crossing into a University and a Researcher. Nothing happens for eighty turns, and then the Science chart turns.",
+   "updated": "2026-10-02",
+   "version": 1,
+   "file": "data/plans/yongle.json",
+   "phases": 5,
+   "boosts": 61
+  },
   "slug": "yongle",
   "name": "Yongle",
   "persona": null,
@@ -14686,7 +14776,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Science",
+   "secondary": "Culture",
+   "confidence": "medium",
+   "one_line": "Settle eight to ten cities in a tight coastal cluster, give each a Commercial Hub or Harbor so it adds a Trader, send the routes into a capital stacked with every district type, never trade abroad, and decide by turn 70 what the Culture, Science and Gold are for.",
+   "updated": "2026-10-02",
+   "version": 1,
+   "file": "data/plans/tokugawa.json",
+   "phases": 5,
+   "boosts": 64
+  },
   "slug": "tokugawa",
   "name": "Tokugawa",
   "persona": null,
@@ -14946,7 +15046,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Science",
+   "secondary": "Diplomatic",
+   "confidence": "medium",
+   "one_line": "Meet everyone, fill every Trade Route slot with a coastal foreign city, plant Feitorias in the hosts most likely to survive the game, and turn the Gold into Navigation Schools, Campuses and Research Labs. Audit the host cities every five turns, because the economy lives in other people's ports.",
+   "updated": "2026-10-02",
+   "version": 1,
+   "file": "data/plans/joao-iii.json",
+   "phases": 5,
+   "boosts": 58
+  },
   "slug": "joao-iii",
   "name": "Joao III",
   "persona": null,

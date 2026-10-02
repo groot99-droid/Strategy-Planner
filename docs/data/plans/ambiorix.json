@@ -93,7 +93,7 @@
         },
         {
           "item": "Gaesatae",
-          "why": "Second Gaesatae; two clear the first camp together with the +2 from standing side by side and pay 24 Culture between them."
+          "why": "Second Gaesatae; two clear the first camp together with the +2 from standing side by side and the second pays 12 Culture as it is trained; the starting one paid none."
         },
         {
           "item": "Slinger",
@@ -134,16 +134,16 @@
           "note": "Eureka from three Barbarian kills the Gaesatae make at the first camp; reveals Iron and opens Iron Working for the Oppidum."
         },
         {
+          "id": "tech:animal-husbandry",
+          "note": "Cheap, the prerequisite for Archery, reveals Horses so the Oppidum can sit beside them, and a Pasture gives Horseback Riding for free later."
+        },
+        {
           "id": "tech:archery",
           "note": "Eureka from a Slinger kill at the camp; two Archers in the back row."
         },
         {
           "id": "tech:masonry",
-          "note": "Battering Ram for the Walls and the Quarry the Oppidum wants beside it; Eureka from the Quarry."
-        },
-        {
-          "id": "tech:animal-husbandry",
-          "note": "Cheap, reveals Horses so the Oppidum can sit beside them, and a Pasture gives Horseback Riding for free later."
+          "note": "Battering Ram for the Walls; Eureka from the Quarry, which Mining unlocks and the Oppidum wants beside it."
         }
       ],
       "civics": [
@@ -302,7 +302,7 @@
         },
         {
           "id": "tech:construction",
-          "note": "Water Mill in the capital for the Eureka; and the turn the target researches it is the turn its Catapults start, which is the real deadline."
+          "note": "Water Mill in the capital for the Eureka; and the turn the target researches Engineering is the turn its Catapults start, which is the real deadline."
         }
       ],
       "civics": [
@@ -324,7 +324,7 @@
         },
         {
           "id": "civic:mysticism",
-          "note": "Free Inspiration from the pantheon; on the way to Drama and Poetry, which the Culture game wants."
+          "note": "Free Inspiration from the pantheon; a cheap civic while the war runs; Drama and Poetry, which the Culture game wants, comes from Early Empire instead."
         },
         {
           "id": "civic:defensive-tactics",
@@ -348,13 +348,13 @@
           "card": "Colonization",
           "slot": "economic",
           "from": "civic:early-empire",
-          "why": "The third city at half Settler cost while the block does the conquering."
+          "why": "The third city with Settlers half again as fast while the block does the conquering."
         },
         {
           "card": "Oligarchy",
           "slot": "wildcard",
           "from": "civic:political-philosophy",
-          "why": "The government: +4 Strength on every Gaesatae, Spearman and Archer, on top of the formation bonus, and faster experience. Classical Republic is wrong here."
+          "why": "The government: +4 Strength on every Gaesatae and Spearman, on top of the formation bonus, and faster experience. Classical Republic is wrong here."
         }
       ],
       "districts": [
@@ -371,7 +371,7 @@
       "wonders": [
         {
           "name": "Statue of Zeus",
-          "why": "Free Spearmen, Archers and a Battering Ram, every one of which takes the formation bonus, and +50% toward anti-cavalry; it is a second block for the price of one wonder.",
+          "why": "A free Spearman, Archer and Battering Ram, every one of which takes the formation bonus, and +50% toward anti-cavalry; it is a second block for the price of one wonder.",
           "skip_if": "The first capture has not happened by turn 60, no flat tile sits beside an Encampment, or a rival is more than half done, which the Wonders tab shows."
         }
       ],
@@ -781,7 +781,7 @@
       "research": [
         {
           "id": "tech:printing",
-          "note": "Two Universities is costly for a one-Campus empire; usually unboosted. Needed for the Culture multiplier and Oxford."
+          "note": "Two Universities is costly for a one-Campus empire; usually unboosted. Needed for the Forbidden City."
         },
         {
           "id": "tech:banking",
@@ -815,7 +815,7 @@
         },
         {
           "id": "civic:humanism",
-          "note": "Inspiration from the first Great Artist, which the Art Museums attract; Art Museums and Grand Opera."
+          "note": "Inspiration from the first Great Artist, which the Art Museums attract; Art Museums."
         },
         {
           "id": "civic:diplomatic-service",
@@ -1016,7 +1016,7 @@
         },
         {
           "item": "Rock Band",
-          "why": "Culture branch: bought with Faith from the Religious Idols Mines if the pantheon was changed, otherwise from Holy Site purchases."
+          "why": "Culture branch: bought with Faith from the Religious Idols Mines if Religious Idols was the pantheon, otherwise from Holy Site purchases."
         },
         {
           "item": "Neighborhood",
@@ -1026,7 +1026,7 @@
       "research": [
         {
           "id": "tech:rifling",
-          "note": "A Mine on the Niter Military Engineering revealed; Field Cannons and the Musketman garrisons."
+          "note": "A Mine on the Niter Military Engineering revealed; Line Infantry for the garrisons."
         },
         {
           "id": "tech:refining",
@@ -1068,7 +1068,7 @@
         },
         {
           "id": "civic:mass-media",
-          "note": "Free Inspiration from Radio; Broadcast Centers and Online Communities."
+          "note": "Free Inspiration from Radio; Broadcast Centers; Online Communities waits for Social Media."
         },
         {
           "id": "civic:cultural-heritage",
@@ -1089,7 +1089,7 @@
         {
           "card": "Online Communities",
           "slot": "diplomatic",
-          "from": "civic:mass-media",
+          "from": "civic:social-media",
           "why": "Culture branch: +50% Tourism to civilizations you trade with; Kumasi's routes count."
         },
         {
@@ -1121,11 +1121,11 @@
         {
           "name": "Eiffel Tower",
           "why": "+2 Appeal to every tile in the empire, which turns mined hills back into National Park and Seaside Resort country.",
-          "skip_if": "Steam Power arrives after turn 280 or a Culture civilization is already building it."
+          "skip_if": "Steel arrives after turn 280 or a Culture civilization is already building it."
         },
         {
           "name": "Cristo Redentor",
-          "why": "Tourism from Relics and Seaside Resorts unaffected by Ideology, and it hides the empire's lack of Great Musicians.",
+          "why": "Double Tourism from Seaside Resorts and Relic Tourism that rivals' Enlightenment does not reduce, and it hides the empire's lack of Great Musicians.",
           "skip_if": "The Domination branch is chosen, or no Hills tile is free in a high-Production city."
         }
       ],
@@ -1175,7 +1175,7 @@
         {
           "id": "close-open-borders",
           "turn": 245,
-          "text": "Culture branch: Open Borders with every civilization you are not at war with, and a Trade Route to each; Online Communities slotted."
+          "text": "Culture branch: Open Borders with every civilization you are not at war with, and a Trade Route to each; Online Communities slotted once Social Media lands."
         },
         {
           "id": "close-join-war",

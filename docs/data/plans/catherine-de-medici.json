@@ -403,6 +403,14 @@
           "note": "Six Farms; Serfdom for the Builders the Châteaux will need."
         },
         {
+          "id": "civic:civil-service",
+          "note": "Inspiration at ten population in the capital; Meenakshi Temple is here but is a Religion wonder, skip it."
+        },
+        {
+          "id": "civic:theology",
+          "note": "Taken plain: Divine Right needs it, and with no religion planned its Inspiration is skipped."
+        },
+        {
           "id": "civic:divine-right",
           "note": "Gothic Architecture is the second wonder discount; Monarchy if the empire is wide. Inspiration from two Temples, which France will not have: unboosted."
         },
@@ -451,7 +459,7 @@
         {
           "district": "theater-square",
           "city": "capital and the two best Culture cities",
-          "note": "Beside the future wonder sites: each adjacent wonder is +1 adjacency and each Theater is Great Writer points."
+          "note": "Beside the future wonder sites: each adjacent wonder is +2 adjacency and each Theater is Great Writer points."
         },
         {
           "district": "commercial-hub",
@@ -499,9 +507,9 @@
         },
         {
           "governor": "magnus",
-          "promotion": "Vertical Integration",
-          "city": "capital",
-          "why": "Industrial Zone Production from the feeder cities' Zones; the second title is Vertical Integration after Groundbreaker."
+          "promotion": "Groundbreaker",
+          "city": "second city",
+          "why": "Groundbreaker's larger harvests in the second Production city; Pingala holds the capital, and a city takes only one governor. Vertical Integration, which adds the feeder cities' Industrial Zone Production, is his third promotion, after Industrialist, and comes in the Industrial era."
         }
       ],
       "city_states": [
@@ -603,7 +611,7 @@
         },
         {
           "item": "Art Museum",
-          "why": "Opera and Ballet Inspiration and Great Artist points for Humanism; Great Works of Art are themed Tourism."
+          "why": "Opera and Ballet Inspiration and Great Artist points; Great Works of Art are themed Tourism."
         },
         {
           "item": "Musketman",
@@ -637,22 +645,18 @@
         },
         {
           "id": "tech:gunpowder",
-          "note": "Musketmen and Renaissance Walls; Eureka from an Armory on the Domination option."
+          "note": "Musketmen; Eureka from an Armory on the Domination option."
         },
         {
           "id": "tech:cartography",
-          "note": "Casa de Contratación on a coast; Eureka from two Harbors only if the map is coastal."
+          "note": "Casa de Contratación beside a Government Plaza; Eureka from two Harbors only if the map is coastal."
         },
         {
           "id": "tech:siege-tactics",
-          "note": "Domination option: Bombards. Eureka from two Trebuchets."
+          "note": "Domination option: Renaissance Walls in the captures; Bombards come from Metal Casting. Eureka from two Trebuchets."
         }
       ],
       "civics": [
-        {
-          "id": "civic:civil-service",
-          "note": "Inspiration at ten population in the capital; Meenakshi Temple is here but is a Religion wonder, skip it."
-        },
         {
           "id": "civic:humanism",
           "note": "The Château and the Art Museum. Inspiration needs a Great Artist first, which rarely happens; take it unboosted."
@@ -705,9 +709,9 @@
         },
         {
           "card": "Frescoes",
-          "slot": "economic",
+          "slot": "wildcard",
           "from": "civic:humanism",
-          "why": "Great Artist points for the Art Museums once the Châteaux are placed and Serfdom comes out."
+          "why": "Great Artist points for the Art Museums once the Châteaux are placed."
         }
       ],
       "districts": [
@@ -769,7 +773,7 @@
           "governor": "amani",
           "promotion": "Emissary",
           "city": "Brussels or the nearest Cultural city-state",
-          "why": "Two envoys and Loyalty pressure; keeps the wonder suzerainty against Pericles."
+          "why": "Two envoys; keeps the wonder suzerainty against Pericles."
         },
         {
           "governor": "victor",
@@ -807,7 +811,7 @@
           "turn": 140,
           "test": "Three wonders standing, Humanism in, and at least four Châteaux placed beside them?",
           "pass": "Continue; queue the next Renaissance wonder and buy a Builder per wonder city.",
-          "fail": "If fewer than two wonders stand, the capital's Production was spent elsewhere: audit the queue for units and buildings a feeder city could have built, and move Magnus in."
+          "fail": "If fewer than two wonders stand, the capital's Production was spent elsewhere: audit the queue for units and buildings a feeder city could have built, and swap Magnus into the capital in place of Pingala until two wonders stand."
         },
         {
           "turn": 180,
@@ -953,7 +957,7 @@
         },
         {
           "id": "civic:nationalism",
-          "note": "Inspiration from a Casus Belli war; Grand Armee on the Domination option, and Corps for everyone."
+          "note": "Inspiration from a Casus Belli war; Grande Armée on the Domination option, and Corps for everyone."
         },
         {
           "id": "civic:conservation",
@@ -961,7 +965,7 @@
         },
         {
           "id": "civic:mass-media",
-          "note": "Free Inspiration from Radio; Broadcast Centers and Cristo Redentor."
+          "note": "Free Inspiration from Radio; Cristo Redentor; Broadcast Centers come with Radio."
         }
       ],
       "policies": [
@@ -984,7 +988,7 @@
           "why": "Science in the Campus cities so Flight, Radio and Computers arrive on time."
         },
         {
-          "card": "Grand Armee",
+          "card": "Grande Armée",
           "slot": "military",
           "from": "civic:nationalism",
           "why": "Domination option: Garde Impériale half again as fast."
@@ -1148,7 +1152,7 @@
         "to": null
       },
       "era": "modern",
-      "objective": "Finish the chosen condition: Tourism pushed past every rival's domestic Culture with Rock Bands, National Parks, Broadcast Centers and Online Communities, and Spies defending the Great Works and Spaceport-watching the Science leader; or the last home-continent capitals taken by Garde Impériale and Artillery under Total War and Grand Armee.",
+      "objective": "Finish the chosen condition: Tourism pushed past every rival's domestic Culture with Rock Bands, National Parks, Broadcast Centers and Online Communities, and Spies defending the Great Works and Spaceport-watching the Science leader; or the last home-continent capitals taken by Garde Impériale and Artillery under Total War and Grande Armée.",
       "build_order": [
         {
           "item": "Broadcast Center",
@@ -1156,7 +1160,7 @@
         },
         {
           "item": "Rock Band",
-          "why": "Faith-bought or Gold-bought at Cold War-era Culture; aim them at the civilization with the highest domestic Culture."
+          "why": "Faith-bought, since Gold cannot buy them, at Cold War-era Culture; aim them at the civilization with the highest domestic Culture."
         },
         {
           "item": "Seaside Resort",
@@ -1172,7 +1176,7 @@
         },
         {
           "item": "Stock Exchange",
-          "why": "Two for Capitalism; the Gold buys Rock Bands and Great Works."
+          "why": "Two for Capitalism; the Gold buys Great Musicians and Great Works."
         }
       ],
       "research": [
@@ -1270,8 +1274,8 @@
         {
           "governor": "amani",
           "promotion": "Foreign Investor",
-          "city": "a rival's border city",
-          "why": "Loyalty pressure and the Spy's work made easier where the Tourism leader is closest."
+          "city": "Brussels or the most contested city-state",
+          "why": "Two more envoys where a rival is closest to taking the suzerainty; Amani cannot sit in another civilization's city."
         }
       ],
       "city_states": [],
@@ -1683,7 +1687,7 @@
     {
       "id": "civic:civil-service",
       "fit": "cheap",
-      "when": "spend",
+      "when": "direction",
       "how": "The capital at ten population with the Aqueduct."
     },
     {

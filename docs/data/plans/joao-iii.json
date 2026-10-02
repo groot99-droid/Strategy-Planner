@@ -1,0 +1,1555 @@
+{
+  "leader": "Joao III",
+  "civilization": "Portugal",
+  "generated": "2026-10-02",
+  "slug": "joao-iii",
+  "shape": "Monitor",
+  "secondary_shape": null,
+  "version": 1,
+  "updated": "2026-10-02",
+  "assumptions": {
+    "ruleset": "Gathering Storm with every expansion and the Leader Pass",
+    "speed": "Standard",
+    "difficulty": "Emperor",
+    "map": "Archipelago, Island Plates or Small Continents, standard size, 8 civilizations and the default city-state count",
+    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. João III has a single persona, planned here. The plan reads Porta do Cerco as one Trade Route of capacity for each civilization met, as the ability text says; if your game grants it only once, the exploration loop still pays through Writing, Political Philosophy and the Feitoria hosts it finds."
+  },
+  "verdict": {
+    "victory": "Science",
+    "secondary": "Diplomatic",
+    "confidence": "medium",
+    "one_line": "Meet everyone, fill every Trade Route slot with a coastal foreign city, plant Feitorias in the hosts most likely to survive the game, and turn the Gold into Navigation Schools, Campuses and Research Labs. Audit the host cities every five turns, because the economy lives in other people's ports.",
+    "why": "Casa da Índia adds half again to every yield of an international route and Porta do Cerco adds a Trade Route for each civilization met, so Portugal runs more and richer routes than anyone, but only into coastal foreign cities that someone else owns and can lose. The Feitoria makes the best of those hosts worth more again. All of that is Gold and Production, not a victory, so the plan converts it: Trade Confederation turns every international route into Science and Culture, the Navigation School is a University that pays Science for coast tiles, and Reyna's Contractor buys Campuses outright in new cities. Diplomatic is the fallback because the same Gold buys Diplomatic Favor and suzerainty, and the civilization with a route into every capital is the one with friends at the World Congress."
+  },
+  "map_check": {
+    "must_have": [
+      "A coastal capital, or coast within one Settler move of the start; Harbors, Naus and Navigation Schools all need it.",
+      "At least three foreign coastal cities, rival or city-state, reachable by water from the capital by turn 40, confirmed by the Scouts."
+    ],
+    "prefer": [
+      "Archipelago, Island Plates or Small Continents, where nearly every foreign city is coastal and every civilization is a contact worth a Trade Route.",
+      "Fish, Crabs or reef in the capital's rings for God of the Sea Production and the Celestial Navigation Eureka.",
+      "Bermuda Triangle or Lysefjord within reach of the Nau routes, for movement or promotions on the ships that patrol the sea lanes.",
+      "Several city-states on the coast: Open Borders with all of them makes each a Feitoria host without a treaty."
+    ],
+    "no_go": "A Pangaea or highlands map where most rival cities and city-states sit inland. Casa da Índia then forbids nearly every international route, the Feitorias have no hosts, and the capacity each contact adds sits idle.",
+    "fallback": "Move the Settler up to two turns toward coast. If the reachable foreign cities are still inland, send international routes only to the coastal city-states, run the rest domestic to grow your own cities, and play a generic Science civilization: Navigation Schools in the coastal cities, Commercial Hubs feeding Reyna's Contractor, and the watched stat read for the city-states alone."
+  },
+  "kit_levers": [
+    {
+      "source": "leader_ability",
+      "name": "Porta do Cerco",
+      "buys": "Every unit sees one tile farther, each civilization met adds a Trade Route of capacity, and Portugal has Open Borders with every city-state.",
+      "exploit": "Exploration is the economy, not a preliminary: two Scouts and later the Naus sweep for contacts because each first meeting is a Trader to build that turn. Open Borders with city-states makes every coastal city-state a Feitoria host and a safe Trader path without a treaty, so city-states are the first hosts and the safest ones."
+    },
+    {
+      "source": "civ_ability",
+      "name": "Casa da Índia",
+      "buys": "International routes gain half again on all yields but may only end in foreign cities on the coast or with a Harbor; Traders range half again farther over water and can embark from the start.",
+      "exploit": "Only coastal foreign cities count as destinations, so they are what the audit tracks; domestic routes are unaffected and are the fallback when hosts are lost. The water range is why the first Trader crosses a strait to a rich coastal capital rather than walking to a poor inland one."
+    },
+    {
+      "source": "unique_unit",
+      "name": "Nau",
+      "buys": "A Caravel at Cartography with a free promotion, lower maintenance and two charges to build Feitorias.",
+      "exploit": "Two Naus are four Feitorias and the Exploration Inspiration; a third is built only when the audit lists two more hosts worth a charge. Between plantings they patrol the sea lanes the Traders use, which is the amber response to barbarian ships."
+    },
+    {
+      "source": "unique_infrastructure",
+      "name": "Feitoria",
+      "buys": "Built on a Coast or Lake tile next to land and next to a Luxury or Bonus resource, inside a civilization or city-state you have Open Borders with: the tile's owner gains Gold and Production, and every Portuguese route to that city gains Gold and Production.",
+      "exploit": "Placement is the whole decision: hosts that will still be standing in friendly hands in the Atomic era, city-states you are suzerain of first and friendly civilizations second, never a neighbour you may fight, because the Feitoria pays its owner too and cannot be removed. Once a host has one, every Trader that can reach it goes there."
+    },
+    {
+      "source": "unique_infrastructure",
+      "name": "Navigation School",
+      "buys": "A University replacement with Production toward naval units, Science for every two Coast or Lake tiles in the city, and a Great Admiral and Great Scientist point.",
+      "exploit": "The Science conversion. Every coastal Campus city gets one, so the Campus goes in the city with the most coast tiles rather than the one with the best mountain. Two of them are the Printing Eureka, and the Great Scientist points carry Education's successors."
+    },
+    {
+      "source": "agenda",
+      "name": "Navigator's Legacy",
+      "buys": "AI João explores the map, likes civilizations that have explored more than others and dislikes those that have explored less.",
+      "exploit": "Irrelevant to your own play except that an AI Portugal on the same map is a rival for the same coastal hosts and the same contacts; treat its Traders as competition for your Feitoria cities and do not plant in a city it already routes to heavily."
+    }
+  ],
+  "shape_block": {
+    "monitor": {
+      "watched_stat": "Status of every coastal foreign city that receives a Portuguese Trade Route or hosts a Feitoria: still standing in the same friendly hands, still on the coast or with a Harbor, and still reachable by water without passing an enemy or barbarian ship",
+      "check_every": "five turns from the first international Trader, and at once whenever a war is declared involving a host city's owner or suzerain, a Trader is plundered, or a Trader finishes its route and asks for a new destination",
+      "bands": {
+        "green": {
+          "test": "Every host city is held by the same owner, at peace with you and with its neighbours, inside Trader range, with no hostile ship on the water path, and every Trade Route slot is in use.",
+          "response": "No action. Keep the current build, queue a Trader the turn capacity rises, and keep one Nau or Galley sweeping new coast for the next host on the audit."
+        },
+        "amber": {
+          "test": "Any host city is under siege or has a hostile army beside it, its owner has denounced you, a city-state host's suzerain is unfriendly to you, a barbarian or enemy ship has been seen on a route's water path, or a Trade Route slot has been idle for more than one turn.",
+          "response": "Act now while the fix is cheap: pick the replacement host for that city's routes from the audit, move a Nau onto the threatened sea lane, send envoys or Amani to the city-state host until you are suzerain, and offer the host's owner a Luxury or Gold for a Declaration of Friendship. Do not plant a new Feitoria in an amber host."
+        },
+        "red": {
+          "test": "A host city has been captured by a civilization at war with you, razed, or its owner or suzerain is at war with you, or two Traders have been plundered in ten turns, or a third of capacity has no valid coastal foreign destination.",
+          "response": "Re-route every affected Trader the turn it comes home, to the best remaining host with a Feitoria and otherwise to the best coastal foreign city in range. Send the nearest Nau with a spare charge to the best unplanted host on the audit, and run domestic routes only for the slots no foreign host can take. Nothing else is built until the slots are full again."
+        }
+      },
+      "second_watch": {
+        "stat": "Trade Route capacity against routes running, read on the Trade Routes panel, and the count of civilizations not yet met",
+        "why": "Porta do Cerco turns each first contact into capacity, so an unmet civilization and an idle slot are the same lost income, and capacity banked without a Trader pays nothing. Medieval Faires and the Merchant Republic swap both assume the slots are full."
+      },
+      "off_period_plan": "Turns 1 to roughly 90, before Cartography and the first Nau, there are no Feitorias to watch. The loop reads the same three questions for each coastal foreign city a Trader goes to, and the build is the response capacity: two Scouts and a Galley pair meeting every civilization and city-state on reachable coasts, Harbors and a Commercial Hub for capacity and the Cartography Eureka, the Colossus, and a capital Campus so Science does not wait for the Navigation School."
+    }
+  },
+  "phases": [
+    {
+      "id": "setup",
+      "name": "Setup",
+      "turns": {
+        "from": 1,
+        "to": 25
+      },
+      "era": "ancient",
+      "objective": "Settle on the coast, send two Scouts along it in both directions, meet the first civilizations and three city-states, reach Foreign Trade, and have the first Trader running to a coastal foreign city by turn 25 with the destination audit written before it leaves.",
+      "build_order": [
+        {
+          "item": "Scout",
+          "why": "Porta do Cerco's extra Sight makes it the best Scout in the game; contacts are Trade Routes, Writing and Political Philosophy."
+        },
+        {
+          "item": "Scout",
+          "why": "The second goes the other way along the coast; with Survey slotted both promote quickly and live longer."
+        },
+        {
+          "item": "Slinger",
+          "why": "Archery Eureka on a barbarian scout, and a guard while both Scouts are away."
+        },
+        {
+          "item": "Builder",
+          "why": "Two Fishing Boats for Celestial Navigation and God of the Sea, then a Farm on a resource for Irrigation; three improvements is Craftsmanship."
+        },
+        {
+          "item": "Settler",
+          "why": "Second city on the coast toward the nearest coastal city-state or rival capital."
+        },
+        {
+          "item": "Monument",
+          "why": "Culture to Foreign Trade and Early Empire on time."
+        },
+        {
+          "item": "Trader",
+          "why": "Foreign Trade lands near turn 20; the first Trader goes to the richest coastal foreign city in water range and triggers Currency."
+        },
+        {
+          "item": "Settler",
+          "why": "Third city on the coast; every coastal city is a future Harbor, route origin and Navigation School."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:sailing",
+          "note": "Eureka free from the coastal capital; Fishing Boats and Harbors start here."
+        },
+        {
+          "id": "tech:pottery",
+          "note": "Leads to Irrigation and Granaries; no boost to collect."
+        },
+        {
+          "id": "tech:astrology",
+          "note": "Leads to Celestial Navigation; Eureka from the natural wonder the Scouts find."
+        },
+        {
+          "id": "tech:writing",
+          "note": "Eureka free from the first civilization met; the capital Campus comes from it."
+        },
+        {
+          "id": "tech:irrigation",
+          "note": "The Builder's Farm on a resource gives the Eureka; Plantations on coastal Luxuries need it."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:code-of-laws",
+          "note": "Survey for the Scouts and God King for the pantheon."
+        },
+        {
+          "id": "civic:craftsmanship",
+          "note": "Inspiration from the first Builder's three improvements."
+        },
+        {
+          "id": "civic:foreign-trade",
+          "note": "The Trader and the first Trade Route of capacity; Inspiration if a Scout sees a second continent."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Survey",
+          "slot": "military",
+          "from": "civic:code-of-laws",
+          "why": "Double experience for the two Scouts, whose promotions keep them alive long enough to meet everyone on the coast."
+        },
+        {
+          "card": "God King",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "Faith for God of the Sea by turn 20 and Gold in the capital."
+        },
+        {
+          "card": "Caravansaries",
+          "slot": "economic",
+          "from": "civic:foreign-trade",
+          "why": "Gold on every route from the first Trader on; it replaces God King once the pantheon is founded."
+        }
+      ],
+      "districts": [
+        {
+          "district": "harbor",
+          "city": "capital",
+          "note": "Planned now, built first in the loop: a Trade Route of capacity, State Workforce, and half of the Cartography Eureka."
+        }
+      ],
+      "pantheon": {
+        "slug": "god-of-the-sea",
+        "why": "Production from Fishing Boats is the only Production a coastal capital has early, and it builds the Traders and Settlers.",
+        "alternative": "religious-settlements"
+      },
+      "wonders": [],
+      "governors": [],
+      "city_states": [
+        {
+          "type": "Trade",
+          "why": "The first envoy into a Trade city-state is Gold in the capital while the Traders are still few."
+        },
+        {
+          "slug": "hunza",
+          "why": "Gold for every five tiles a route travels; Portuguese routes cross water and run long, so the bonus is larger than for anyone else."
+        }
+      ],
+      "great_people": [],
+      "checkpoints": [
+        {
+          "turn": 25,
+          "test": "First Trader running to a coastal foreign city, two civilizations and three city-states met, and two cities on the coast?",
+          "pass": "Enter the standing loop; read the audit every five turns from here.",
+          "fail": "If no coastal foreign city is in range, send the Trader to your second city for Currency and keep both Scouts moving along the coast. If none is found by turn 40, run the map-check fallback."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "setup-settle-coast",
+          "turn": 1,
+          "text": "Settle on the coast with two sea resources in range; move at most two turns to get there."
+        },
+        {
+          "id": "setup-scouts-out",
+          "turn": 3,
+          "text": "Send one Scout each way along the coastline; note every coastal city, its owner and its Luxuries."
+        },
+        {
+          "id": "setup-pantheon",
+          "turn": 18,
+          "text": "Found God of the Sea, or Religious Settlements if the capital has fewer than two sea resources."
+        },
+        {
+          "id": "setup-write-audit",
+          "turn": 20,
+          "text": "Write the destination audit: one line per coastal foreign city found, with owner, water distance, Luxuries, and whether a Coast tile beside it touches a Luxury or Bonus resource, which is where a Feitoria will go."
+        },
+        {
+          "id": "setup-first-trader",
+          "turn": 25,
+          "text": "First Trader sent to the audit's best coastal foreign city; Caravansaries slotted the same turn."
+        }
+      ]
+    },
+    {
+      "id": "loop",
+      "name": "Standing loop",
+      "turns": {
+        "from": 26,
+        "to": 85
+      },
+      "era": "classical",
+      "objective": "Read the audit every five turns while the empire grows to four coastal cities with Harbors, every Trade Route slot holds an international route to a coastal foreign city, the Colossus adds a slot, and the capital Campus starts the Science the Gold will later buy.",
+      "build_order": [
+        {
+          "item": "Harbor",
+          "why": "Capital first: a Trade Route of capacity, State Workforce, and with the second city's Harbor the Cartography Eureka."
+        },
+        {
+          "item": "Trader",
+          "why": "Every time capacity rises, from a contact, a district or the Colossus, a Trader is queued that turn."
+        },
+        {
+          "item": "Galley",
+          "why": "Two under Maritime Industries for the Shipbuilding Eureka; they clear barbarian ships off the lanes the Traders use."
+        },
+        {
+          "item": "Settler",
+          "why": "Fourth city on the coast; each one is a Harbor, a route origin and a later Navigation School."
+        },
+        {
+          "item": "Colossus",
+          "why": "A Trade Route of capacity, a free Trader, Gold and Great Admiral points on the capital's coast."
+        },
+        {
+          "item": "Campus",
+          "why": "In the capital on the tile with the most adjacency; the Library is the first Great Scientist and the Education Eureka."
+        },
+        {
+          "item": "Commercial Hub",
+          "why": "In the second city: a Trade Route of capacity, Mathematics' third district, and the Market for Guilds."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:celestial-navigation",
+          "note": "Eureka from the two Fishing Boats; Harbors unlock here."
+        },
+        {
+          "id": "tech:currency",
+          "note": "Eureka from the first Trader's route; Commercial Hubs and Markets."
+        },
+        {
+          "id": "tech:shipbuilding",
+          "note": "Two Galleys give the Eureka; the Colossus unlocks here."
+        },
+        {
+          "id": "tech:mathematics",
+          "note": "Harbor, Campus and Commercial Hub make three districts; Education needs it later."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:early-empire",
+          "note": "Colonization for the third and fourth Settlers; Inspiration at six population."
+        },
+        {
+          "id": "civic:mysticism",
+          "note": "Free Inspiration from the pantheon founded in setup."
+        },
+        {
+          "id": "civic:state-workforce",
+          "note": "The capital Harbor gives the Inspiration."
+        },
+        {
+          "id": "civic:political-philosophy",
+          "note": "Classical Republic; the Inspiration came from three city-states met in setup."
+        },
+        {
+          "id": "civic:drama-and-poetry",
+          "note": "The Colossus gives the Inspiration."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Maritime Industries",
+          "slot": "military",
+          "from": "civic:foreign-trade",
+          "why": "Galleys at double speed for the Shipbuilding Eureka and the sea-lane patrol."
+        },
+        {
+          "card": "Colonization",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "Settlers faster until the fourth coastal city is down."
+        },
+        {
+          "card": "Caravansaries",
+          "slot": "economic",
+          "from": "civic:foreign-trade",
+          "why": "Kept slotted all game until Triangular Trade replaces it; Gold on every route."
+        },
+        {
+          "card": "Classical Republic",
+          "slot": "wildcard",
+          "from": "civic:political-philosophy",
+          "why": "The government: Amenities in district cities and more Great Person points for the Admirals and Merchants the Harbors and Commercial Hub earn."
+        }
+      ],
+      "districts": [
+        {
+          "district": "harbor",
+          "city": "every coastal city",
+          "note": "Capital and second city first for the Cartography Eureka; each is Trade Route capacity and Great Admiral points."
+        },
+        {
+          "district": "campus",
+          "city": "capital",
+          "note": "The coastal tile with the best adjacency; the Library starts the Great Scientist race early."
+        },
+        {
+          "district": "commercial-hub",
+          "city": "second city",
+          "note": "Beside the Harbor and a river if one exists; capacity, Gold and the Guilds Markets."
+        }
+      ],
+      "pantheon": {
+        "slug": "god-of-the-sea",
+        "why": "Already founded; this phase spends its Production on Traders, Galleys and Harbors."
+      },
+      "wonders": [
+        {
+          "name": "Colossus",
+          "why": "A free Trader and a Trade Route of capacity on top of Gold and Admiral points; it is the trade wonder of the Classical era.",
+          "skip_if": "Shipbuilding is not in by turn 55 or the capital Harbor is not standing by then; a second Commercial Hub buys the same Trade Route."
+        },
+        {
+          "name": "Great Lighthouse",
+          "why": "Movement for every naval unit and Admiral points; the Galleys and later Naus cover the lanes faster.",
+          "skip_if": "The capital is already building the Colossus, or any rival had Celestial Navigation before you."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "reyna",
+          "promotion": "Harbormaster",
+          "city": "capital",
+          "why": "Doubles the Harbor and Commercial Hub adjacency in the city with both; the first title goes to Reyna and the second to Harbormaster."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "mogadishu",
+          "why": "Traders immune to plunder on water tiles; suzerainty takes the commonest red-band cause out of the audit."
+        },
+        {
+          "type": "Scientific",
+          "why": "Envoys into Scientific city-states are Science in the capital and every Library while the Campus count is low."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-merchant",
+          "why": "Zhang Qian adds a Trade Route of capacity and Gold on foreign routes into his city; the Commercial Hub's points are aimed at him."
+        },
+        {
+          "class": "great-admiral",
+          "why": "Harbors and the Colossus make Portugal the Admiral leader early; the first one escorts the Galleys on the busiest sea lane."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 50,
+          "test": "Three coastal cities, every Trade Route slot running to a coastal foreign city, and every civilization on the home landmass met?",
+          "pass": "Continue; queue the Colossus if its skip rule does not fire.",
+          "fail": "Idle slots this early mean the audit is short of hosts: build a third Scout or the Galley pair now and send them along the coast you have not seen, and run domestic routes in the meantime."
+        },
+        {
+          "turn": 85,
+          "test": "Four coastal cities, Harbors in three, the Cartography Eureka in hand, a capital Campus with a Library, and at least four Feitoria host candidates on the audit?",
+          "pass": "Enter the Feitoria phase; Cartography is the next research.",
+          "fail": "Fewer than four candidates means the coast is thin: put the Naus on contacts first and Feitorias second, and plant in city-states before any major civilization."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "loop-first-read",
+          "turn": 30,
+          "text": "First formal read of the audit: mark each host green, amber or red against the bands and write the replacement host beside every amber one."
+        },
+        {
+          "id": "loop-capital-harbor",
+          "turn": 35,
+          "text": "Capital Harbor finished; a Trader queued for its slot the same turn."
+        },
+        {
+          "id": "loop-galley-pair",
+          "turn": 45,
+          "text": "Two Galleys built under Maritime Industries; one patrols the busiest sea lane and one scouts the coast the Scouts missed."
+        },
+        {
+          "id": "loop-colossus",
+          "turn": 60,
+          "text": "Colossus finished in the capital, or formally skipped and a Commercial Hub queued in its place."
+        },
+        {
+          "id": "loop-capital-campus",
+          "turn": 70,
+          "text": "Capital Campus and Library built; Reyna with Harbormaster in the capital."
+        },
+        {
+          "id": "loop-host-shortlist",
+          "turn": 80,
+          "text": "Rank the Feitoria shortlist: city-states first, then civilizations friendly to you with no shared land border, each with the exact coast tile beside a Luxury or Bonus resource."
+        }
+      ]
+    },
+    {
+      "id": "feitoria",
+      "name": "Feitorias and the ocean",
+      "turns": {
+        "from": 86,
+        "to": 150
+      },
+      "era": "medieval",
+      "objective": "Reach Cartography by turn 95, plant four Feitorias with two Naus in the hosts the audit rates safest, meet every civilization across the ocean for its Trade Route, adopt Merchant Republic, and put Navigation Schools in the two coastal Campus cities.",
+      "build_order": [
+        {
+          "item": "Nau",
+          "why": "Two of them: four Feitoria charges, the Exploration Inspiration, and the ocean crossing that finds the last civilizations."
+        },
+        {
+          "item": "Trader",
+          "why": "Every slot the ocean contacts and Merchant Republic open; Feitoria hosts first, then the longest water routes for Hunza."
+        },
+        {
+          "item": "Campus",
+          "why": "In the second coastal city, on the tile with the most Coast in the city's rings, for Recorded History and the second Navigation School."
+        },
+        {
+          "item": "Navigation School",
+          "why": "Education's University replacement in both Campus cities; two give Printing."
+        },
+        {
+          "item": "Market",
+          "why": "Two for Guilds and the Banking Eureka; Gold that Reyna will later spend."
+        },
+        {
+          "item": "Aqueduct",
+          "why": "Military Engineering Eureka and the Housing for the capital to reach ten."
+        },
+        {
+          "item": "Lighthouse",
+          "why": "Housing and Great Admiral points in the Harbor cities that will host Shipyards later."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:cartography",
+          "note": "Eureka from two Harbors; the Nau and ocean crossing. The single most important research of the game."
+        },
+        {
+          "id": "tech:apprenticeship",
+          "note": "Prerequisite for Education; boosted only if three Mines exist, which a coastal empire rarely has."
+        },
+        {
+          "id": "tech:education",
+          "note": "Eureka from the first Great Scientist; the Navigation School."
+        },
+        {
+          "id": "tech:buttress",
+          "note": "Free Eureka from the Colossus; research it when it is the cheapest tech on offer."
+        },
+        {
+          "id": "tech:military-engineering",
+          "note": "Aqueduct in the capital gives the Eureka."
+        },
+        {
+          "id": "tech:castles",
+          "note": "Free Eureka from Merchant Republic; research it when cheap."
+        },
+        {
+          "id": "tech:stirrups",
+          "note": "Free Eureka from Feudalism; research it only when it is the cheapest tech."
+        },
+        {
+          "id": "tech:banking",
+          "note": "Free Eureka from Guilds; Banks and Great Zimbabwe."
+        },
+        {
+          "id": "tech:printing",
+          "note": "Two Navigation Schools give the Eureka."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:recorded-history",
+          "note": "Two Campuses give the Inspiration."
+        },
+        {
+          "id": "civic:feudalism",
+          "note": "Six Farms give the Inspiration; on the line to Medieval Faires."
+        },
+        {
+          "id": "civic:civil-service",
+          "note": "The capital at ten population with its Aqueduct."
+        },
+        {
+          "id": "civic:guilds",
+          "note": "Two Markets give the Inspiration; Town Charters."
+        },
+        {
+          "id": "civic:medieval-faires",
+          "note": "Four routes running is free for Portugal; Merchant Confederation."
+        },
+        {
+          "id": "civic:mercenaries",
+          "note": "Unboosted for this plan; Trade Confederation is the reason to take it."
+        },
+        {
+          "id": "civic:exploration",
+          "note": "Two Naus give the Inspiration; Merchant Republic."
+        },
+        {
+          "id": "civic:naval-tradition",
+          "note": "Usually unboosted; Naval Infrastructure doubles Harbor adjacency if the Harbors sit beside reefs or many coast resources."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Merchant Republic",
+          "slot": "wildcard",
+          "from": "civic:exploration",
+          "why": "The government: two more Trade Routes of capacity and two wildcard slots for the trade cards."
+        },
+        {
+          "card": "Trade Confederation",
+          "slot": "economic",
+          "from": "civic:mercenaries",
+          "why": "Science and Culture from every international route; this is the card that turns the route count into a victory yield."
+        },
+        {
+          "card": "Town Charters",
+          "slot": "economic",
+          "from": "civic:guilds",
+          "why": "Double Commercial Hub adjacency in the Harbor cities where the hubs sit beside the water."
+        },
+        {
+          "card": "Merchant Confederation",
+          "slot": "diplomatic",
+          "from": "civic:medieval-faires",
+          "why": "Gold for every envoy in city-states; the envoys that protect the city-state hosts pay for themselves."
+        },
+        {
+          "card": "Press Gangs",
+          "slot": "military",
+          "from": "civic:exploration",
+          "why": "Naus built at double speed while the Feitoria charges are being placed; swapped out once the charges are spent."
+        }
+      ],
+      "districts": [
+        {
+          "district": "campus",
+          "city": "second coastal city",
+          "note": "On the tile touching the most Coast; the Navigation School pays for coast tiles in the city."
+        },
+        {
+          "district": "harbor",
+          "city": "every new coastal city",
+          "note": "Capacity, Admiral points and Housing; the first district in any city founded after turn 85."
+        },
+        {
+          "district": "commercial-hub",
+          "city": "capital",
+          "note": "Beside the Harbor for Harbormaster's doubled adjacency; the second Market for Guilds."
+        }
+      ],
+      "wonders": [],
+      "governors": [
+        {
+          "governor": "amani",
+          "promotion": "Emissary",
+          "city": "the city-state host with the most Portuguese routes",
+          "why": "Two envoys' worth of suzerainty where it protects the most route income; she moves if another host goes amber."
+        },
+        {
+          "governor": "pingala",
+          "promotion": "Librarian",
+          "city": "the first Navigation School city",
+          "why": "Science and Culture in the city where the Science conversion starts."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "singapore",
+          "why": "Production in every city for each foreign civilization it trades with; Portugal trades with all of them, which fixes a coastal empire's weakest yield."
+        },
+        {
+          "slug": "bandar-brunei",
+          "why": "Gold on routes ending at or passing a trading post in a foreign city, and Portuguese routes end in foreign cities by rule."
+        },
+        {
+          "type": "Trade",
+          "why": "Trade city-states on the coast are the safest Feitoria hosts; suzerainty keeps them out of other people's wars."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-merchant",
+          "why": "Marco Polo and Irene of Athens each add a Trade Route of capacity; the second Commercial Hub's points are aimed at them."
+        },
+        {
+          "class": "great-admiral",
+          "why": "Navigation Schools and Harbors keep the Admiral race green; one escorts the Naus across the first ocean."
+        },
+        {
+          "class": "great-scientist",
+          "why": "The first one is the Education Eureka and the start of the Science conversion."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 110,
+          "test": "Cartography in, two Naus afloat, four Feitorias planted in hosts at peace with you, and Merchant Republic adopted?",
+          "pass": "Continue; every Trader that can reach a Feitoria host goes there.",
+          "fail": "If Feitorias are short because hosts were missing, plant the remaining charges in city-states and buy Open Borders from the friendliest civilization; if Merchant Republic is late, put Culture into Exploration before anything else."
+        },
+        {
+          "turn": 150,
+          "test": "Every civilization met, every slot running international, two Navigation Schools standing, and Trade Confederation slotted?",
+          "pass": "Enter the network phase; the Gold now turns into Science.",
+          "fail": "Unmet civilizations are lost Trade Routes: send a Nau around the map now. If the Navigation Schools are missing, buy the second with route Gold before any new Trader."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "feitoria-cartography",
+          "turn": 92,
+          "text": "Cartography researched with its Eureka; the first Nau queued in the Harbor city nearest the best host."
+        },
+        {
+          "id": "feitoria-naus",
+          "turn": 100,
+          "text": "Two Naus afloat; Open Borders bought from any friendly civilization whose city is on the shortlist."
+        },
+        {
+          "id": "feitoria-plant",
+          "turn": 108,
+          "text": "Four Feitorias planted, no two adjacent, each on a Coast tile beside a Luxury or Bonus resource in a green host."
+        },
+        {
+          "id": "feitoria-republic",
+          "turn": 115,
+          "text": "Merchant Republic adopted; the two new slots get Traders to Feitoria hosts the same turn."
+        },
+        {
+          "id": "feitoria-ocean-contacts",
+          "turn": 125,
+          "text": "A Nau or Caravel has crossed every ocean and met every remaining civilization; each contact's slot is filled."
+        },
+        {
+          "id": "feitoria-trade-confederation",
+          "turn": 130,
+          "text": "Trade Confederation slotted; read Science per turn before and after to confirm what the route count is worth."
+        },
+        {
+          "id": "feitoria-navigation-schools",
+          "turn": 145,
+          "text": "Navigation Schools in both Campus cities; Printing Eureka collected."
+        }
+      ]
+    },
+    {
+      "id": "network",
+      "name": "Network and conversion",
+      "turns": {
+        "from": 151,
+        "to": 220
+      },
+      "era": "renaissance",
+      "objective": "Hold every host green and replace lost ones before their routes run out, build the Torre de Belém in the city that sends the most routes, and convert the Gold into Science: Navigation Schools in every coastal city, Contractor-bought Campuses in new cities, Rationalism, and an alliance with the friendliest trade partner.",
+      "build_order": [
+        {
+          "item": "Torre de Belém",
+          "why": "Gold per Luxury at every international destination of its city's routes, and a free building in every city on another continent."
+        },
+        {
+          "item": "Navigation School",
+          "why": "In every coastal Campus city; the Campuses in new cities are bought with Gold."
+        },
+        {
+          "item": "Bank",
+          "why": "Two for Economics in the Commercial Hub cities."
+        },
+        {
+          "item": "Shipyard",
+          "why": "Two for Steam Power; Production in the coastal cities that have little else."
+        },
+        {
+          "item": "Workshop",
+          "why": "Two for Industrialization in the two cities with hills."
+        },
+        {
+          "item": "Trader",
+          "why": "A replacement queued the turn a host goes red, and one for every new contact or Great Merchant slot."
+        },
+        {
+          "item": "Nau",
+          "why": "A third only when the audit lists two new hosts worth a charge; otherwise the charges are spent."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:astronomy",
+          "note": "Usually unboosted; Colonialism's Inspiration comes from researching it."
+        },
+        {
+          "id": "tech:mass-production",
+          "note": "Shipyards; the Lumber Mill Eureka is rare on a coastal empire."
+        },
+        {
+          "id": "tech:scientific-theory",
+          "note": "Free Eureka from The Enlightenment; Research Labs follow."
+        },
+        {
+          "id": "tech:economics",
+          "note": "Two Banks give the Eureka; Stock Exchanges later."
+        },
+        {
+          "id": "tech:industrialization",
+          "note": "Two Workshops give the Eureka; Factories for the coastal cities."
+        },
+        {
+          "id": "tech:steam-power",
+          "note": "Two Shipyards give the Eureka."
+        },
+        {
+          "id": "tech:chemistry",
+          "note": "Alliance level two with the trade partner gives the Eureka; Research Labs."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:mercantilism",
+          "note": "A Great Merchant gives the Inspiration; Triangular Trade and the Torre de Belém."
+        },
+        {
+          "id": "civic:the-enlightenment",
+          "note": "Three Great People is long done; Rationalism."
+        },
+        {
+          "id": "civic:diplomatic-service",
+          "note": "The first alliance gives the Inspiration; pick the friendliest civilization your routes already reach."
+        },
+        {
+          "id": "civic:colonialism",
+          "note": "Free Inspiration from Astronomy."
+        },
+        {
+          "id": "civic:urbanization",
+          "note": "The capital at fifteen population gives the Inspiration."
+        },
+        {
+          "id": "civic:civil-engineering",
+          "note": "Usually unboosted; the plan does not build seven district types."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Triangular Trade",
+          "slot": "economic",
+          "from": "civic:mercantilism",
+          "why": "Gold and Faith on every route; it replaces Caravansaries the turn Mercantilism lands."
+        },
+        {
+          "card": "Rationalism",
+          "slot": "economic",
+          "from": "civic:the-enlightenment",
+          "why": "Science from Campus buildings, which the Navigation Schools are; it goes in a wildcard slot if the economic slots are full."
+        },
+        {
+          "card": "Trade Confederation",
+          "slot": "economic",
+          "from": "civic:mercenaries",
+          "why": "Kept all game; its yield rises with every slot filled."
+        }
+      ],
+      "districts": [
+        {
+          "district": "campus",
+          "city": "every coastal city of six population or more",
+          "note": "Bought with Gold through Reyna's Contractor in new cities, on the tile touching the most Coast."
+        },
+        {
+          "district": "industrial-zone",
+          "city": "the two cities with hills",
+          "note": "Workshops for Industrialization; Factories carry the Spaceport city later."
+        },
+        {
+          "district": "commercial-hub",
+          "city": "every city above eight population",
+          "note": "Capacity where a Harbor is not possible, and the Banks for Economics."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Torre de Belém",
+          "why": "Gold per Luxury at the destination of every international route from its city, and a free building in each city on another continent.",
+          "skip_if": "Mercantilism lands after turn 175, or a rival with more Production in a coastal city has already started it; Triangular Trade spreads similar Gold across every route anyway."
+        },
+        {
+          "name": "Great Zimbabwe",
+          "why": "A Trade Route of capacity and Gold on routes from its city for each Bonus resource it holds.",
+          "skip_if": "No Cattle sits beside a Commercial Hub with a Market, or Banking lands after turn 170."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "reyna",
+          "promotion": "Contractor",
+          "city": "the newest city",
+          "why": "Buys the Campus and Harbor outright with route Gold, so a new city joins the Science count the turn it is founded."
+        },
+        {
+          "governor": "pingala",
+          "promotion": "Researcher",
+          "city": "capital",
+          "why": "Science per citizen in the tallest Navigation School city."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "geneva",
+          "why": "Science in every city whenever you are at war with no one, which is the state a trade empire wants anyway."
+        },
+        {
+          "type": "Scientific",
+          "why": "Six envoys in a Scientific city-state is Science in every Navigation School; Merchant Confederation pays Gold for the same envoys."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-scientist",
+          "why": "Navigation Schools give a Scientist point each; Renaissance Scientists are Eurekas and Campus Science."
+        },
+        {
+          "class": "great-merchant",
+          "why": "Every Merchant who adds capacity is taken; the rest only when free."
+        },
+        {
+          "class": "great-engineer",
+          "why": "Only for the Torre de Belém or a Shipyard city's Factory, never as a race."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 180,
+          "test": "Every host green or amber with a replacement written, Triangular Trade slotted, Torre de Belém built or skipped, and Science per turn in the top three?",
+          "pass": "Continue; Contractor buys the next Campus.",
+          "fail": "Science outside the top three with Gold banked means the conversion is late: stop saving Gold, buy a Campus or Navigation School every turn the treasury allows, and slot Rationalism over Town Charters."
+        },
+        {
+          "turn": 220,
+          "test": "Navigation Schools in every coastal city, an alliance at level two, and every slot still running to a foreign coastal host?",
+          "pass": "Enter the close; the Spaceport city is chosen now.",
+          "fail": "If hosts keep going red, run the abort test below; if Science lags, put the Spaceport in the best Production city now and keep the network for Gold only."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "network-triangular",
+          "turn": 160,
+          "text": "Triangular Trade slotted the turn Mercantilism lands, replacing Caravansaries."
+        },
+        {
+          "id": "network-torre",
+          "turn": 170,
+          "text": "Torre de Belém started in the city sending the most international routes, or formally skipped."
+        },
+        {
+          "id": "network-alliance",
+          "turn": 180,
+          "text": "Alliance with the friendliest trade partner; level two by turn 200 for Chemistry."
+        },
+        {
+          "id": "network-contractor",
+          "turn": 185,
+          "text": "Reyna moved to the newest city with Contractor; its Campus bought the turn she arrives."
+        },
+        {
+          "id": "network-host-audit",
+          "turn": 200,
+          "text": "Full audit: every host's owner, its wars, its walls, and who borders it; re-plan any host whose owner is losing a war."
+        },
+        {
+          "id": "network-workshops",
+          "turn": 215,
+          "text": "Two Workshops and two Shipyards standing; Industrialization and Steam Power Eurekas collected."
+        }
+      ]
+    },
+    {
+      "id": "close",
+      "name": "Close",
+      "turns": {
+        "from": 221,
+        "to": null
+      },
+      "era": "modern",
+      "objective": "Win the space race from Navigation Schools and Research Labs funded by the route network, with the Spaceport in the best Production coastal city and Hong Kong's project bonus, while the audit keeps running to the last launch; switch to Diplomatic at the checkpoint if the race is lost.",
+      "build_order": [
+        {
+          "item": "Research Lab",
+          "why": "In every Navigation School city; the first one is Nuclear Program's Inspiration."
+        },
+        {
+          "item": "Factory",
+          "why": "In the Spaceport city first; its Production is what the projects run on."
+        },
+        {
+          "item": "Spaceport",
+          "why": "In the best Production coastal city, with Pingala's Space Initiative there."
+        },
+        {
+          "item": "Stock Exchange",
+          "why": "Two for Capitalism in the Bank cities; Gold to buy the Research Labs."
+        },
+        {
+          "item": "Trader",
+          "why": "Replacement routes whenever a host goes red; the network still pays for everything."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:computers",
+          "note": "Free Eureka from Democracy."
+        },
+        {
+          "id": "tech:rocketry",
+          "note": "The Spaceport; no boost to collect."
+        },
+        {
+          "id": "tech:robotics",
+          "note": "Free Eureka from Globalization if E-Commerce is taken."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:capitalism",
+          "note": "Two Stock Exchanges give the Inspiration."
+        },
+        {
+          "id": "civic:suffrage",
+          "note": "Democracy; boosted only if four Sewers are already wanted."
+        },
+        {
+          "id": "civic:nuclear-program",
+          "note": "The first Research Lab gives the Inspiration."
+        },
+        {
+          "id": "civic:space-race",
+          "note": "The Spaceport gives the Inspiration."
+        },
+        {
+          "id": "civic:globalization",
+          "note": "E-Commerce; worth the detour only with thirty or more turns of play left."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Democracy",
+          "slot": "wildcard",
+          "from": "civic:suffrage",
+          "why": "The Tier 3 government for a peaceful trade empire; the Computers Eureka comes with it and Gold patronage of Great Scientists is cheaper."
+        },
+        {
+          "card": "E-Commerce",
+          "slot": "economic",
+          "from": "civic:globalization",
+          "why": "Production and Gold on every international route; the largest late yield the network can earn."
+        },
+        {
+          "card": "Rationalism",
+          "slot": "economic",
+          "from": "civic:the-enlightenment",
+          "why": "Kept to the end; Research Labs are Campus buildings too."
+        }
+      ],
+      "districts": [
+        {
+          "district": "spaceport",
+          "city": "the best Production coastal city",
+          "note": "Beside the Industrial Zone; Pingala moves here."
+        }
+      ],
+      "wonders": [],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Space Initiative",
+          "city": "the Spaceport city",
+          "why": "Production toward the space projects where they are built."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "hong-kong",
+          "why": "Production toward city projects, and every space-race step is a city project."
+        },
+        {
+          "type": "Industrial",
+          "why": "Production in the capital and every Factory for the Spaceport city's projects."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-scientist",
+          "why": "Atomic and Information Scientists are free techs and Research Lab Science toward the last launches."
+        },
+        {
+          "class": "great-engineer",
+          "why": "Production for the Spaceport city's projects when one is free."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 250,
+          "test": "Spaceport built, the Earth Satellite launched or underway, and every host still green or amber?",
+          "pass": "Continue the launches; no new districts outside the Spaceport city.",
+          "fail": "If the Spaceport is late, buy the Factory and Power in its city with route Gold and move every Great Engineer there."
+        },
+        {
+          "turn": 290,
+          "test": "Moon Landing done and the Mars projects underway, with Science per turn first or second?",
+          "pass": "Continue to the end; keep the audit running so the Gold does not stop.",
+          "fail": "If two rivals are ahead in launches, switch to Diplomatic: buy Diplomatic Favor from the AIs with route Gold and vote for Favor on every resolution."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "close-research-labs",
+          "turn": 230,
+          "text": "Research Labs bought in every Navigation School city with route Gold."
+        },
+        {
+          "id": "close-spaceport",
+          "turn": 245,
+          "text": "Spaceport built in the chosen city; Pingala with Space Initiative moved there."
+        },
+        {
+          "id": "close-ecommerce",
+          "turn": 270,
+          "text": "E-Commerce slotted if Globalization was taken; otherwise Triangular Trade stays."
+        },
+        {
+          "id": "close-review",
+          "turn": 290,
+          "text": "Review the turn 290 checkpoint and commit to Science or to the Diplomatic fallback."
+        }
+      ]
+    }
+  ],
+  "boosts": [
+    {
+      "id": "tech:sailing",
+      "fit": "free",
+      "when": "setup",
+      "how": "The coastal capital triggers it the turn it is founded."
+    },
+    {
+      "id": "tech:astrology",
+      "fit": "cheap",
+      "when": "setup",
+      "how": "A Scout with Porta do Cerco's extra Sight spots a natural wonder a tile sooner than anyone else's."
+    },
+    {
+      "id": "tech:writing",
+      "fit": "free",
+      "when": "setup",
+      "how": "The first Scout meets a civilization; the same contact is a Trade Route."
+    },
+    {
+      "id": "tech:irrigation",
+      "fit": "cheap",
+      "when": "setup",
+      "how": "The Builder's third charge Farms a resource after the two Fishing Boats."
+    },
+    {
+      "id": "tech:archery",
+      "fit": "cheap",
+      "when": "setup",
+      "how": "The Slinger finishes a barbarian scout that wanders toward the capital."
+    },
+    {
+      "id": "tech:celestial-navigation",
+      "fit": "free",
+      "when": "setup",
+      "how": "The first Builder's two Fishing Boats."
+    },
+    {
+      "id": "tech:currency",
+      "fit": "free",
+      "when": "setup",
+      "how": "The first Trader's route at turn 25."
+    },
+    {
+      "id": "tech:wheel",
+      "fit": "costly",
+      "when": "loop",
+      "how": "A Mine on a resource hill, which a coastal capital often lacks; usually researched unboosted."
+    },
+    {
+      "id": "tech:bronze-working",
+      "fit": "costly",
+      "when": "loop",
+      "how": "Three barbarian kills only if a camp sits on a coast the Galleys can reach."
+    },
+    {
+      "id": "tech:masonry",
+      "fit": "costly",
+      "when": "loop",
+      "how": "A Quarry only if Stone or Marble is in the capital's rings."
+    },
+    {
+      "id": "tech:shipbuilding",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "Two Galleys built under Maritime Industries for the sea-lane patrol."
+    },
+    {
+      "id": "tech:mathematics",
+      "fit": "free",
+      "when": "loop",
+      "how": "Harbor, Campus and Commercial Hub are three specialty districts by turn 70."
+    },
+    {
+      "id": "tech:construction",
+      "fit": "costly",
+      "when": "loop",
+      "how": "A Water Mill needs a river city, which coastal sites rarely have."
+    },
+    {
+      "id": "tech:buttress",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "Owning the Colossus, a Classical wonder the plan builds anyway."
+    },
+    {
+      "id": "tech:cartography",
+      "fit": "free",
+      "when": "loop",
+      "how": "Harbors in the capital and second city by turn 75."
+    },
+    {
+      "id": "tech:apprenticeship",
+      "fit": "costly",
+      "when": "feitoria",
+      "how": "Three Mines across a coastal empire takes a deliberate Builder trip; often unboosted on the way to Education."
+    },
+    {
+      "id": "tech:stirrups",
+      "fit": "free",
+      "when": "feitoria",
+      "how": "Feudalism is on the civic path to Medieval Faires."
+    },
+    {
+      "id": "tech:education",
+      "fit": "cheap",
+      "when": "feitoria",
+      "how": "The capital Library earns the first Great Scientist near turn 95."
+    },
+    {
+      "id": "tech:military-engineering",
+      "fit": "cheap",
+      "when": "feitoria",
+      "how": "The capital Aqueduct, which it needs to reach ten population."
+    },
+    {
+      "id": "tech:castles",
+      "fit": "free",
+      "when": "feitoria",
+      "how": "Merchant Republic is a Tier 2 government."
+    },
+    {
+      "id": "tech:banking",
+      "fit": "free",
+      "when": "feitoria",
+      "how": "Guilds is on the civic path for Town Charters."
+    },
+    {
+      "id": "tech:printing",
+      "fit": "cheap",
+      "when": "feitoria",
+      "how": "Two Navigation Schools, which count as Universities."
+    },
+    {
+      "id": "tech:astronomy",
+      "fit": "costly",
+      "when": "network",
+      "how": "A Navigation School beside a Mountain only if a Campus already touches one."
+    },
+    {
+      "id": "tech:mass-production",
+      "fit": "costly",
+      "when": "network",
+      "how": "A Lumber Mill on Woods, which coastal sites often lack; the Shipyards need the tech anyway."
+    },
+    {
+      "id": "tech:scientific-theory",
+      "fit": "free",
+      "when": "network",
+      "how": "The Enlightenment is on the civic path for Rationalism."
+    },
+    {
+      "id": "tech:economics",
+      "fit": "cheap",
+      "when": "network",
+      "how": "Two Banks in the Commercial Hub cities the Gold already flows through."
+    },
+    {
+      "id": "tech:industrialization",
+      "fit": "cheap",
+      "when": "network",
+      "how": "Two Workshops in the two cities with hills."
+    },
+    {
+      "id": "tech:steam-power",
+      "fit": "cheap",
+      "when": "network",
+      "how": "Two Shipyards in Harbor cities, which also feed Production to coastal builds."
+    },
+    {
+      "id": "tech:chemistry",
+      "fit": "cheap",
+      "when": "network",
+      "how": "Alliance level two with the trade partner from Diplomatic Service."
+    },
+    {
+      "id": "tech:computers",
+      "fit": "free",
+      "when": "close",
+      "how": "Democracy is the Tier 3 government."
+    },
+    {
+      "id": "tech:robotics",
+      "fit": "free",
+      "when": "close",
+      "how": "Globalization is on the civic path for E-Commerce."
+    },
+    {
+      "id": "tech:horseback-riding",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:iron-working",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:machinery",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:square-rigging",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:craftsmanship",
+      "fit": "free",
+      "when": "setup",
+      "how": "Two Fishing Boats and a Farm from the first Builder."
+    },
+    {
+      "id": "civic:foreign-trade",
+      "fit": "cheap",
+      "when": "setup",
+      "how": "A Scout with extra Sight sees across a strait to a second continent; on Archipelago maps it is nearly automatic."
+    },
+    {
+      "id": "civic:mysticism",
+      "fit": "free",
+      "when": "setup",
+      "how": "Founding God of the Sea."
+    },
+    {
+      "id": "civic:political-philosophy",
+      "fit": "free",
+      "when": "setup",
+      "how": "Three city-states met by the two Scouts, which Open Borders lets walk straight through."
+    },
+    {
+      "id": "civic:military-tradition",
+      "fit": "costly",
+      "when": "loop",
+      "how": "Clear a barbarian outpost only when one sits beside a coastal city-state the Traders use."
+    },
+    {
+      "id": "civic:state-workforce",
+      "fit": "free",
+      "when": "loop",
+      "how": "The capital Harbor is the first district."
+    },
+    {
+      "id": "civic:early-empire",
+      "fit": "free",
+      "when": "loop",
+      "how": "Six population across three coastal cities working Fishing Boats."
+    },
+    {
+      "id": "civic:drama-and-poetry",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "Finishing the Colossus."
+    },
+    {
+      "id": "civic:recorded-history",
+      "fit": "cheap",
+      "when": "feitoria",
+      "how": "The second Campus in the next coastal city by turn 100."
+    },
+    {
+      "id": "civic:naval-tradition",
+      "fit": "costly",
+      "when": "feitoria",
+      "how": "A Quadrireme kill against a barbarian ship; usually researched unboosted."
+    },
+    {
+      "id": "civic:feudalism",
+      "fit": "cheap",
+      "when": "feitoria",
+      "how": "Six Farms across five cities, counted before the Builders turn to the coast."
+    },
+    {
+      "id": "civic:civil-service",
+      "fit": "cheap",
+      "when": "feitoria",
+      "how": "The capital at ten population with its Aqueduct."
+    },
+    {
+      "id": "civic:mercenaries",
+      "fit": "costly",
+      "when": "feitoria",
+      "how": "Eight land units is not this plan; research it unboosted for Trade Confederation."
+    },
+    {
+      "id": "civic:guilds",
+      "fit": "cheap",
+      "when": "feitoria",
+      "how": "Two Markets in the Commercial Hub cities."
+    },
+    {
+      "id": "civic:medieval-faires",
+      "fit": "free",
+      "when": "feitoria",
+      "how": "Four Trade Routes running at once, which Portugal has by turn 60."
+    },
+    {
+      "id": "civic:exploration",
+      "fit": "free",
+      "when": "feitoria",
+      "how": "Two Naus, the Caravel replacement, built for their Feitoria charges."
+    },
+    {
+      "id": "civic:diplomatic-service",
+      "fit": "cheap",
+      "when": "network",
+      "how": "An alliance with the friendliest civilization your routes already reach."
+    },
+    {
+      "id": "civic:mercantilism",
+      "fit": "cheap",
+      "when": "network",
+      "how": "A Great Merchant from the Commercial Hubs; the capacity Merchants are wanted anyway."
+    },
+    {
+      "id": "civic:the-enlightenment",
+      "fit": "free",
+      "when": "network",
+      "how": "Three Great People, which the Admirals, Merchants and first Scientist reached long before."
+    },
+    {
+      "id": "civic:colonialism",
+      "fit": "free",
+      "when": "network",
+      "how": "Researching Astronomy on the Science path."
+    },
+    {
+      "id": "civic:urbanization",
+      "fit": "cheap",
+      "when": "network",
+      "how": "The capital at fifteen population with Harbor and Aqueduct Housing."
+    },
+    {
+      "id": "civic:civil-engineering",
+      "fit": "costly",
+      "when": "network",
+      "how": "Seven specialty district types needs a Theater Square and Entertainment Complex the plan does not prioritize."
+    },
+    {
+      "id": "civic:capitalism",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Stock Exchanges in the Bank cities."
+    },
+    {
+      "id": "civic:suffrage",
+      "fit": "costly",
+      "when": "close",
+      "how": "Four Sewers only in cities at the Housing cap; otherwise research it unboosted for Democracy."
+    },
+    {
+      "id": "civic:nuclear-program",
+      "fit": "free",
+      "when": "close",
+      "how": "The first Research Lab in the capital."
+    },
+    {
+      "id": "civic:space-race",
+      "fit": "free",
+      "when": "close",
+      "how": "The Spaceport the plan builds anyway."
+    },
+    {
+      "id": "civic:globalization",
+      "fit": "costly",
+      "when": "close",
+      "how": "Two Airports; worth it only if E-Commerce will run for thirty turns or more."
+    },
+    {
+      "id": "civic:theology",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:humanism",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    }
+  ],
+  "decision_triggers": [
+    {
+      "name": "Replace a lost host",
+      "if": "A host city is captured by a civilization at war with you, razed, or its owner or suzerain declares war on you, ending its routes and stranding its Feitoria.",
+      "then": "The turn it happens, re-route each Trader as it comes home to the next host on the audit, preferring one that already has a Feitoria, and send the nearest Nau with a spare charge to the best unplanted host. Do not start a war to take the lost host back unless it is weakly held, coastal and next to your fleet."
+    },
+    {
+      "name": "Protect a city-state host",
+      "if": "A city-state hosting a Feitoria has a major civilization's army beside it, a suzerain unfriendly to you, or you are about to lose its suzerainty.",
+      "then": "Send envoys until you are suzerain, move Amani there with Emissary, and if a siege has started, levy its military and move a Nau beside it. A host you are suzerain of cannot be pulled into someone else's war against you."
+    },
+    {
+      "name": "Open Borders before a Feitoria",
+      "if": "The best unplanted Feitoria site is in a major civilization's territory and you have no Open Borders with it.",
+      "then": "Trade a Luxury or Gold for Open Borders and plant only if that civilization is friendly and not your likely war target. Otherwise give the charge to a city-state host, because the Feitoria pays its owner every turn and cannot be removed."
+    },
+    {
+      "name": "Go domestic",
+      "if": "A third of Trade Route capacity has had no valid coastal foreign destination for ten turns.",
+      "then": "Send those Traders to your own newest cities for Food and Production until a new host is met or a Feitoria is planted, and put the next Nau to sea to find one."
+    },
+    {
+      "name": "Diplomacy over space",
+      "if": "At turn 290 two rivals are ahead in launches but your Diplomatic Favor is the highest at the World Congress.",
+      "then": "Switch the verdict to Diplomatic: buy Favor from the AIs with route Gold, keep suzerainty of every host city-state with Merchant Confederation Gold, and vote for Favor on every resolution."
+    }
+  ],
+  "abort": {
+    "trigger": "The watched stat has been red for fifteen turns: fewer than half the Trade Route slots can reach a standing, friendly, coastal foreign city, and no new host can be met or Feitoria planted inside the next ten turns.",
+    "actions": [
+      "Stop building Naus and planting Feitorias; every charge now risks paying a host that is already lost or hostile.",
+      "Turn the idle Traders domestic for Food and Production, and keep only the routes into city-states you are suzerain of.",
+      "Rebuild as a generic Science civilization around the Navigation Schools, Commercial Hubs and Gold already standing, with Reyna's Contractor buying Campuses and the Diplomatic fallback kept open."
+    ]
+  },
+  "fail_state": "The host cities fell or turned hostile one at a time while the audit went unread: the Feitorias stand in a rival's cities paying the rival, half the Trade Route slots have no coastal foreign destination, and the Gold that should have bought Navigation Schools and Campuses sat in the treasury. Portugal is then a coastal civilization with idle Traders and Science an era behind.",
+  "common_mistakes": [
+    "Planting a Feitoria in a neighbour you may fight. It pays the host Gold and Production every turn and cannot be removed, and a war with that host cancels every route that made it worth building.",
+    "Leaving a slot idle after a new contact. Porta do Cerco's capacity is income only while a Trader fills it, and an empty slot banks nothing.",
+    "Routing to the richest coastal city without asking who might conquer it. A host captured by a civilization at war with you is several routes and a Feitoria lost in one turn; route to the host that will still be standing.",
+    "Reading the audit only when a Trader finishes. By then the war that killed the host is ten turns old; check every five turns and on every declaration of war anywhere near a host.",
+    "Banking Gold because it is flowing. Gold is the means, and Trade Confederation, Navigation Schools and Contractor-bought Campuses are the conversion; a Portugal that saves its income loses the space race to a civilization with half of it."
+  ],
+  "sources": [
+    "Civilization VI Civilopedia, Gathering Storm ruleset with the Portugal Pack (Portugal, João III, Porta do Cerco, Casa da Índia, Nau, Feitoria, Navigation School, Torre de Belém).",
+    "Portugal ability text as quoted in the CivFanatics thread on the March 2021 Portugal patch notes, read 2026-10-02.",
+    "Boost objectives from leadership-focus/data/civ6/eurekas.json and city-state bonuses from leadership-focus/data/civ6/city-states.json in this repository.",
+    "Leadership Focus tags, caveats and Monitor supplement for João III in this repository. The civ-info text omits that the Feitoria also pays its tile's owner Gold and Production, must sit on a Coast or Lake tile not adjacent to another Feitoria, and cannot be removed, and that the Navigation School gives Science per two Coast or Lake tiles plus Great Admiral and Great Scientist points; the plan follows the game text."
+  ]
+}

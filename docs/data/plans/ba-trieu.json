@@ -19,7 +19,7 @@
     "secondary": "Science",
     "confidence": "medium",
     "one_line": "Audit the features before every settle, pin a Theater Square on Woods, a Campus on Rainforest and a Thành on Marsh in each city before the first Builder arrives, chop nothing that is pinned, and let the terrain Culture plus the Thành's Tourism after Flight carry a Culture game nobody can invade.",
-    "why": "Nine Dragon River Delta is a restriction with a yield attached: every building in a Woods district gives Culture, every one in a Rainforest district gives Science, every one in a Marsh district gives Production, so a Theater Square on Woods with three buildings is three Culture before adjacency. The Thành is an Encampment with no population requirement that gains Culture from each adjacent district and turns that Culture into Tourism at Flight, which makes the defensive district a Tourism source and every city a small fortress. Drive Out the Aggressors doubles the Combat Strength bonus inside Vietnamese borders, so the army is small and the Production goes to Amphitheaters. Culture is the victory because the kit's late payoff is Tourism; Science is the fallback because Rainforest Campuses are the same decision made with the other feature; Domination is not here because the strength bonus stops at the border."
+    "why": "Nine Dragon River Delta is a restriction with a yield attached: every building in a Woods district gives Culture, every one in a Rainforest district gives Science, every one in a Marsh district gives Production, so a Theater Square on Woods with three buildings is three Culture before adjacency. The Thành is an Encampment with no population requirement that gains Culture from each adjacent district and turns that Culture into Tourism at Flight, which makes the defensive district a Tourism source and every city a small fortress. Drive Out the Aggressors gives every Vietnamese unit fighting on Woods, Rainforest or Marsh +5 Combat Strength, so the army is small and the Production goes to Amphitheaters. Culture is the victory because the kit's late payoff is Tourism; Science is the fallback because Rainforest Campuses are the same decision made with the other feature; Domination is not here because the strength bonus needs a feature tile under the unit, and the Production goes to Culture."
   },
   "map_check": {
     "must_have": [
@@ -39,7 +39,7 @@
     {
       "source": "leader_ability",
       "name": "Drive Out The Aggressors",
-      "buys": "Extra Combat Strength and Movement for Vietnamese units on Woods, Rainforest and Marsh tiles, with the strength bonus doubled when the tile is inside Vietnam's own borders.",
+      "buys": "+5 Combat Strength for Vietnamese units fighting on Woods, Rainforest and Marsh tiles, and extra Movement for units that start a turn on one.",
       "exploit": "The defence is the land: two Archers and a Warrior standing on forest tiles inside the border beat a Classical rush without Walls, and the Production saved goes to Amphitheaters. The army never leaves the trees; a Vietnamese unit on open plains outside the border is an ordinary unit, and the plan does not send one there."
     },
     {
@@ -130,7 +130,7 @@
         },
         {
           "item": "Builder",
-          "why": "Three improvements on tiles that are not pinned: a Farm, a Mine, a Lumber Mill later; Craftsmanship on the third."
+          "why": "Three improvements on tiles that are not pinned: a Farm, a Mine and a second Farm or a Quarry, with a Lumber Mill later; Craftsmanship on the third."
         },
         {
           "item": "Slinger",
@@ -198,7 +198,7 @@
           "card": "Ilkum",
           "slot": "economic",
           "from": "civic:craftsmanship",
-          "why": "Builders faster; every city needs Mines and Farms on its unpinned tiles because the pinned ones yield nothing until they are districts."
+          "why": "Builders faster; every city needs Mines and Farms on its unpinned tiles because the pinned ones are never improved."
         }
       ],
       "districts": [
@@ -210,7 +210,7 @@
       ],
       "pantheon": {
         "slug": "sacred-path",
-        "why": "Holy Sites must sit on features anyway, and a Holy Site on Woods ringed by Rainforest takes a Faith per Rainforest tile; where the start is Marsh rather than jungle, Lady of the Reeds and Marshes turns the Thành tiles into Production instead.",
+        "why": "Holy Sites must sit on features anyway, and a Holy Site on Woods ringed by Rainforest takes a Faith per Rainforest tile; where the start is Marsh rather than jungle, Lady of the Reeds and Marshes turns the unpinned Marsh tiles into Production instead.",
         "alternative": "earth-goddess"
       },
       "wonders": [],
@@ -285,7 +285,7 @@
         },
         {
           "item": "Theater Square",
-          "why": "First in every city, on its Woods; the Amphitheater's Culture is doubled by the terrain."
+          "why": "First in every city, on its Woods; the Amphitheater gains a Culture from the terrain."
         },
         {
           "item": "Campus",
@@ -315,7 +315,7 @@
       "research": [
         {
           "id": "tech:masonry",
-          "note": "A Quarry if Stone is on an unpinned hill; Ancient Walls go in the Thành, not the center."
+          "note": "A Quarry if Stone is on an unpinned hill; Ancient Walls are a City Center building and wait for Engineering."
         },
         {
           "id": "tech:currency",
@@ -361,7 +361,7 @@
         },
         {
           "id": "civic:military-tradition",
-          "note": "The forest camp cleared; the civic is a step to Political Philosophy."
+          "note": "The forest camp cleared; the civic is a step to Military Training."
         },
         {
           "id": "civic:political-philosophy",
@@ -402,10 +402,10 @@
           "why": "Settlers at half cost for the audited sites before a rival takes them."
         },
         {
-          "card": "Classical Republic",
+          "card": "Literary Tradition",
           "slot": "wildcard",
-          "from": "civic:political-philosophy",
-          "why": "Great Person points toward the first Great Writer and Amenities for a dense empire."
+          "from": "civic:drama-and-poetry",
+          "why": "Great Writer points toward the first Great Writer, in a Classical Republic Wildcard slot."
         },
         {
           "card": "Aesthetics",
@@ -449,7 +449,7 @@
       "wonders": [
         {
           "name": "Apadana",
-          "why": "Two envoys per wonder built in the capital for the rest of the game; it needs a Theater Square or Commercial Hub beside it and must not take a pinned feature.",
+          "why": "Two envoys per wonder built in the capital for the rest of the game; it must sit adjacent to the capital's City Center and must not take a pinned feature.",
           "skip_if": "Political Philosophy lands after turn 60 or the only legal tile is a pinned feature."
         },
         {
@@ -524,7 +524,7 @@
         {
           "id": "delta-religion",
           "turn": 70,
-          "text": "Found the religion; take a Faith-per-follower Founder belief and Choral Music as the Follower for the Woods Holy Sites."
+          "text": "Found the religion; take Pilgrimage as the Founder belief for Faith per converted city and Choral Music as the Follower for the Woods Holy Sites."
         },
         {
           "id": "delta-thanh",
@@ -574,7 +574,7 @@
         },
         {
           "item": "Industrial Zone",
-          "why": "Two, on Marsh, beside the Thành; the Workshop's Production is doubled by the feature and the Eureka is two Workshops."
+          "why": "Two, on Marsh, beside the Thành; the Workshop gains a Production from the feature and the Eureka is two Workshops."
         },
         {
           "item": "Art Museum",
@@ -638,7 +638,7 @@
         },
         {
           "id": "civic:divine-right",
-          "note": "Two Temples; Monarchy for Housing from the Thành Walls, or stay Republic."
+          "note": "Two Temples; Monarchy for Housing from the city Walls, or stay Republic."
         },
         {
           "id": "civic:humanism",
@@ -684,7 +684,7 @@
         {
           "district": "industrial-zone",
           "city": "the two Marsh cities",
-          "note": "Beside the Thành; Workshop Production doubled by the Marsh."
+          "note": "Beside the Thành; the Workshop gains a Production from the Marsh."
         },
         {
           "district": "commercial-hub",
@@ -826,7 +826,7 @@
       "research": [
         {
           "id": "tech:flight",
-          "note": "Out of order and first: the Thành Tourism switches on here. Eureka from Chichen Itza or any later wonder."
+          "note": "Out of order and first: the Thành Tourism switches on here. Eureka from the Bolshoi Theatre, the Hermitage or any other Industrial-era or later wonder."
         },
         {
           "id": "tech:scientific-theory",
@@ -947,7 +947,7 @@
           "governor": "reyna",
           "promotion": "Forestry Management",
           "city": "the National Park city",
-          "why": "Appeal and Gold on the Woods tiles the Park and the Resorts need; her chop bonus is never used."
+          "why": "Appeal and Gold on the Woods tiles the Park and the Resorts need."
         }
       ],
       "city_states": [
@@ -992,7 +992,7 @@
         {
           "id": "flight-research",
           "turn": 160,
-          "text": "Flight researched ahead of everything else in the Industrial tree; confirm each Thành's Tourism on the city screen."
+          "text": "Flight researched ahead of every tech it does not require; confirm each Thành's Tourism on the city screen."
         },
         {
           "id": "flight-archaeologists",
@@ -1102,7 +1102,7 @@
       "wonders": [
         {
           "name": "Cristo Redentor",
-          "why": "Tourism from Seaside Resorts doubled and no Ideology penalty.",
+          "why": "Tourism from Seaside Resorts doubled and religious Tourism keeps its full value after other civs reach The Enlightenment.",
           "skip_if": "Mass Media lands after turn 250 or Brazil is on the map."
         }
       ],
@@ -1110,8 +1110,8 @@
         {
           "governor": "amani",
           "promotion": "Emissary",
-          "city": "the city nearest the civ furthest behind on your Tourism",
-          "why": "Open borders and an envoy where the last Tourists are."
+          "city": "a city-state near the civ furthest behind on your Tourism",
+          "why": "She counts as two envoys in that city-state; open borders come from a deal, not from her."
         }
       ],
       "city_states": [],
@@ -1393,7 +1393,7 @@
       "id": "tech:flight",
       "fit": "cheap",
       "when": "flight",
-      "how": "Owning Chichen Itza, the Forbidden City or any later wonder; researched first in the era regardless."
+      "how": "Owning the Bolshoi Theatre, the Hermitage or any other Industrial-era or later wonder; researched first regardless."
     },
     {
       "id": "tech:chemistry",
@@ -1691,7 +1691,7 @@
     {
       "name": "Culture outruns Science",
       "if": "At turn 150 the civics tree is two eras ahead of the techs.",
-      "then": "Normal for this plan, except that Flight must not slip: beeline it. Slot Rationalism and Natural Philosophy, put Pingala on Researcher for twenty turns, and keep Culture first."
+      "then": "Normal for this plan, except that Flight must not slip: beeline it. Slot Rationalism, or Natural Philosophy if The Enlightenment is not in yet, put Pingala on Researcher for twenty turns, and keep Culture first."
     }
   ],
   "abort": {
@@ -1707,8 +1707,8 @@
     "Harvesting a Woods or Rainforest for the Production. For any other civ it is a free Settler; for Vietnam it is a district removed from the city for the game unless Medieval Faires replants it a hundred turns later.",
     "Placing the Thành adjacent to the City Center. The game refuses, and the player then puts it on the Woods meant for the Theater Square; its tile is the second-ring feature reserved at settle time.",
     "Settling for the river. A river gives Housing; a Woods gives a Theater Square with a Culture bonus on every building. The audit counts features, not water.",
-    "Treating the strength bonus as an offensive kit. It doubles inside Vietnam's borders and stops at them; an army that marches out is ordinary and the Production it cost was an Amphitheater.",
-    "Reaching the Industrial era and researching Industrialization first. Flight switches the Thành to Tourism; it is the first Industrial tech this civ takes, every game."
+    "Treating the strength bonus as an offensive kit. It applies only on Woods, Rainforest and Marsh; an army that marches out onto open ground is ordinary and the Production it cost was an Amphitheater.",
+    "Reaching the Industrial era and spreading research across the tree. Flight switches the Thành to Tourism; it is the first Modern-era tech this civ takes, every game."
   ],
   "sources": [
     "Civilization VI Civilopedia, Gathering Storm ruleset with the New Frontier Pass (Vietnam, Ba Trieu, Thành, Voi Chiến, Nine Dragon River Delta, Drive Out the Aggressors).",

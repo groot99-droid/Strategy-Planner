@@ -1,0 +1,1665 @@
+{
+  "slug": "wilfrid-laurier",
+  "shape": "Dead-Phase",
+  "secondary_shape": null,
+  "version": 1,
+  "updated": "2026-10-02",
+  "assumptions": {
+    "ruleset": "Gathering Storm with every expansion and the Leader Pass",
+    "speed": "Standard",
+    "difficulty": "Emperor",
+    "map": "Continents or Pangaea with polar regions, standard size, 8 civilizations",
+    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. Wilfrid Laurier has a single persona and that base leader is planned here. Tundra pacing is slower than the roster default: cities, districts and civics below are dated a few turns later than a grassland plan would date them, on purpose."
+  },
+  "verdict": {
+    "victory": "Diplomatic",
+    "secondary": "Culture",
+    "confidence": "medium",
+    "one_line": "Play a slow, walled tundra builder for 150 turns that leaves its best Woods unimproved and banks Faith and Favor, then turn those Woods into National Parks at Conservation and spend the Tourism-fed Favor on the World Congress votes that award Diplomatic Victory points.",
+    "why": "Nothing in the kit produces anything before the Industrial era. The Last Best West only lifts the tundra to what grassland gives everyone else, Four Faces of Peace removes one kind of war rather than adding a yield, the Ice Hockey Rink is an Amenity and a little Culture until Flight, and the Mountie and the National Parks it can found are Modern era. After Conservation the pieces connect: parks on cold, wooded, unimproved land pay Tourism, Canada turns Tourism into Diplomatic Favor, and it earns extra Favor from every Emergency and Scored Competition it completes, which Laurier's own agenda already pushes it to join. Favor is what wins World Congress votes, and those votes, the competitions, the Statue of Liberty and the Mahabodhi Temple are where Diplomatic Victory points come from, so Diplomatic is the primary. The same parks, rinks and resorts are Tourism, so Culture is the fallback if a rival's Favor bank outgrows yours."
+  },
+  "map_check": {
+    "must_have": [
+      "Room for six cities on cold land by turn 95 without fighting for it; the plan has no military edge at any point and Tundra is land nobody else contests.",
+      "At least two clusters of Woods beside coast, mountains or a natural wonder within the first six cities' reach. A National Park needs four adjacent Charming tiles, and bare Tundra or Snow has no Appeal of its own."
+    ],
+    "prefer": [
+      "A Tundra or Tundra Hills start, which the start bias normally gives; without one The Last Best West and the Ice Hockey Rink do nothing.",
+      "At least one coastal city, for the Statue of Liberty and for Seaside Resorts on Charming coast.",
+      "A natural wonder near the tundra (Eyjafjallajökull, Ubsunur Hollow, Vinland or any other): the tiles beside it gain Appeal and make the easiest park site on the map.",
+      "Snow tiles near each city, so each Ice Hockey Rink goes on land that is good for nothing else.",
+      "Neighbours on the far side of open tundra rather than on the border; the dormant phase is safer with distance."
+    ],
+    "no_go": "A temperate start with no Tundra in reach and no Woods, coast or mountains to build Appeal from. The leader ability and the Rink are off for the whole game and there is nowhere to put a National Park; nothing in the kit replaces either.",
+    "fallback": "If the start is temperate, keep the dormant phase as written and play the Favor half of the kit alone: suzerainties, alliances, every Emergency and Scored Competition, the Statue of Liberty and the Mahabodhi Temple for a Diplomatic victory, with parks on whatever Woods-and-coast clusters exist. If the tundra is bare, pin the sites anyway and plant Woods on them at Conservation; the parks arrive twenty turns later than planned."
+  },
+  "kit_levers": [
+    {
+      "source": "leader_ability",
+      "name": "The Last Best West",
+      "buys": "Farms on Tundra from turn one and on Tundra Hills later, bonus Production on Mines and Lumber Mills and bonus Food on Camps and Farms on Tundra and Snow, and cheaper purchases of Tundra and Snow tiles.",
+      "exploit": "This is survival, not growth: it lets a cold capital grow at an ordinary pace. Spend it on the production side of each city (Farms, Hill Mines, Lumber Mills on Woods away from the park sites), and use the cheap tile purchases to pull every park-site tile into the right city's borders long before Conservation."
+    },
+    {
+      "source": "civ_ability",
+      "name": "Four Faces of Peace",
+      "buys": "No Surprise Wars in either direction and no war on city-states, plus Diplomatic Favor from accumulated Tourism and from completing Emergencies and Scored Competitions.",
+      "exploit": "Every war on Canada has to be formal, so a denunciation is the warning and the defensive floor is sized for that warning, not for a surprise. In the payoff phase every point of Tourism and every competition finished is Favor, and Favor buys the World Congress votes that award Diplomatic Victory points."
+    },
+    {
+      "source": "unique_unit",
+      "name": "Mountie",
+      "buys": "A Modern era light cavalry unit with low maintenance that can found a National Park and fights far better near National Parks, more so near Canadian ones.",
+      "exploit": "Each Mountie is a park founder paid for in Production rather than Faith, so the Faith bank buys the Naturalists for the first two parks and Mounties found the rest. Mounties kept back from park duty garrison the park cities, where their bonus makes them the late-game defence."
+    },
+    {
+      "source": "unique_infrastructure",
+      "name": "Ice Hockey Rink",
+      "buys": "An improvement on Tundra or Snow that gives the city an Amenity, raises the Appeal of the tiles around it, and yields Culture from the cold tiles beside it.",
+      "exploit": "Build one in every city as soon as it unlocks, on Snow where possible and beside a pinned park site so it lifts that site's Appeal. From Flight its Culture also counts as Tourism, which Four Faces of Peace turns into Favor."
+    },
+    {
+      "source": "agenda",
+      "name": "Canadian Expeditionary Force",
+      "buys": "Laurier responds to World Congress Emergencies whenever possible and dislikes leaders who refuse to take part in them.",
+      "exploit": "On your side it is a reminder of the plan: join every Emergency you can complete, because the civ ability pays Favor for it. An AI Laurier on another map is the easiest friend to make if you do the same."
+    }
+  ],
+  "shape_block": {
+    "dead_phase": {
+      "activation_turn": 150,
+      "flatness_statement": "Wilfrid Laurier has no leader advantage for the first 150 turns. That is expected and it is correct. The Last Best West only lifts the tundra to what grassland gives everyone else, Four Faces of Peace removes one kind of war rather than adding a yield, the Ice Hockey Rink is an Amenity and a little Culture until Flight, the Mountie is a Modern era unit, and Favor from Tourism needs Tourism, which needs National Parks, which need Conservation. Do not judge this leader before turn 150, and do not switch strategies at turn 60 because the curve looks flat or because a grassland neighbour has twice your cities. Canada is a slow, walled tundra builder until Conservation, and the plan below is that game, played to survive and to keep the best cold land unimproved.",
+      "stockpile": [
+        "Park sites: three diamonds of four tiles, every tile Charming or better, unimproved, and inside one city's borders, pinned on the map by turn 110 and bought in with the cheap Tundra and Snow tile purchases wherever the borders have not reached them.",
+        "Appeal kept rather than spent: the Woods on and around those sites left standing, a Preserve beside two of them, an Ice Hockey Rink beside each, and no Mine, Quarry, Industrial Zone or Encampment touching any park tile.",
+        "Faith banked for two Naturalists on the turn Conservation lands, from Dance of the Aurora Holy Sites, with nothing Faith-bought in the dormant phase.",
+        "Diplomatic Favor: 200 or more banked by turn 150 from suzerainties, alliances and every Emergency and Scored Competition completed, with none spent on votes that award nothing.",
+        "Civics: Civil Engineering, Natural History and Urbanization behind you and Conservation adopted or within ten turns, with Theater Squares in three cities carrying the Culture rate.",
+        "A floor that survives a formal war: Medieval Walls and a Crossbowman in each border city, and at least one alliance with a neighbour."
+      ],
+      "progress_markers": [
+        "City count: 4 by turn 50, 6 by turn 95, 7 or 8 by turn 150.",
+        "Culture per turn: 8 by turn 50, 25 by turn 100, 60 by turn 150; Science at roughly the same numbers.",
+        "Park-ready tiles (Charming and unimproved, counted with the Appeal lens): 4 by turn 100, 12 by turn 150.",
+        "Diplomatic Favor banked: 50 by turn 100, 120 by turn 125, 200 by turn 150.",
+        "Specialty districts: 3 by turn 75, 8 by turn 115, 14 by turn 150."
+      ],
+      "activation_test": "At turn 150 answer four questions. Is Conservation adopted, or ten turns away or less? Are at least two park sites still four Charming, unimproved tiles inside one city each? Is there Faith banked for two Naturalists? Is there 200 Favor banked and suzerainty over at least two city-states? Four yes answers mean the kit is on and the activation phase begins. Any no means the dormant phase continues for up to ten turns to fix exactly that item; a no that cannot be fixed by turn 160 means the abort branch."
+    }
+  },
+  "phases": [
+    {
+      "id": "settle",
+      "name": "Dormant: settle the tundra",
+      "turns": {
+        "from": 1,
+        "to": 50
+      },
+      "era": "ancient",
+      "objective": "Four cities by turn 50 on Tundra with fresh water or coast, Tundra Farms and a Camp worked in each, a Slinger or Archer in every city, the barbarian camps within eight tiles cleared, and Dance of the Aurora founded. The leader gives nothing here beyond Farms on Tundra, which only bring a cold capital up to an ordinary pace; this is the generic opening, played carefully, with one habit added: every Woods cluster beside coast, mountains or a natural wonder is noted as a future park site and left alone.",
+      "build_order": [
+        {
+          "item": "Scout",
+          "why": "Barbarian camps sit on the tundra fringe; find them, the neighbours for Writing, a natural wonder for Astrology, and three city-states for Political Philosophy."
+        },
+        {
+          "item": "Slinger",
+          "why": "Archery Eureka on the first barbarian scout. Barbarians ignore Four Faces of Peace; this is the first real defence."
+        },
+        {
+          "item": "Builder",
+          "why": "Two Tundra Farms beside the capital and a Camp on Deer or Furs: the Craftsmanship Inspiration, and the Food a tundra capital lacks."
+        },
+        {
+          "item": "Settler",
+          "why": "Second city by turn 20 on Tundra with fresh water or coast, toward the best Woods cluster."
+        },
+        {
+          "item": "Warrior",
+          "why": "Escort and camp clearing; three barbarian kills give Bronze Working, the camp itself gives Military Tradition."
+        },
+        {
+          "item": "Settler",
+          "why": "Third city by turn 35; the size of the empire at turn 150 is decided here."
+        },
+        {
+          "item": "Monument",
+          "why": "Culture for Mysticism and Early Empire; there is no other Culture source yet."
+        },
+        {
+          "item": "Builder",
+          "why": "More Tundra Farms and a Mine on a resource on Tundra Hills for The Wheel."
+        },
+        {
+          "item": "Settler",
+          "why": "Fourth city by turn 50 with Colonization slotted."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:animal-husbandry",
+          "note": "Camps on Deer and Furs, the tundra's only early bonus resources."
+        },
+        {
+          "id": "tech:mining",
+          "note": "Mines on Tundra Hills, which The Last Best West makes worth working."
+        },
+        {
+          "id": "tech:archery",
+          "note": "Eureka from a Slinger kill; Archers are the defensive floor."
+        },
+        {
+          "id": "tech:astrology",
+          "note": "Holy Site for Dance of the Aurora; Eureka from a natural wonder."
+        },
+        {
+          "id": "tech:writing",
+          "note": "Eureka from meeting the first civilization; the Campus later."
+        },
+        {
+          "id": "tech:bronze-working",
+          "note": "Three barbarian kills; the camps on the tundra edge supply them."
+        },
+        {
+          "id": "tech:sailing",
+          "note": "Only once a city is on the coast, which makes the Eureka free."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:code-of-laws",
+          "note": "God King and Discipline."
+        },
+        {
+          "id": "civic:craftsmanship",
+          "note": "Inspiration from three improved tiles; Ilkum."
+        },
+        {
+          "id": "civic:foreign-trade",
+          "note": "The first Trader for Currency; the Inspiration only if a second continent is sighted."
+        },
+        {
+          "id": "civic:mysticism",
+          "note": "Free Inspiration from the pantheon; unlocks the Preserve district."
+        },
+        {
+          "id": "civic:early-empire",
+          "note": "Colonization; Inspiration at six Population."
+        },
+        {
+          "id": "civic:military-tradition",
+          "note": "Inspiration from the first camp cleared."
+        }
+      ],
+      "policies": [
+        {
+          "card": "God King",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "Faith toward Dance of the Aurora by turn 30 without a Holy Site."
+        },
+        {
+          "card": "Discipline",
+          "slot": "military",
+          "from": "civic:code-of-laws",
+          "why": "Slingers and Warriors beat camp units while there is nothing else."
+        },
+        {
+          "card": "Ilkum",
+          "slot": "economic",
+          "from": "civic:craftsmanship",
+          "why": "Builders faster; every Tundra Farm and Camp costs a charge."
+        },
+        {
+          "card": "Colonization",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "+50% Production toward Settlers three and four."
+        }
+      ],
+      "districts": [
+        {
+          "district": "holy-site",
+          "city": "capital or second city",
+          "note": "Beside three or more Tundra tiles, which Dance of the Aurora turns into Faith; the State Workforce Inspiration."
+        }
+      ],
+      "pantheon": {
+        "slug": "dance-of-the-aurora",
+        "why": "+1 Faith per adjacent Tundra tile on every Holy Site: the Faith that buys the Naturalists 120 turns later.",
+        "alternative": "goddess-of-the-hunt"
+      },
+      "wonders": [],
+      "governors": [
+        {
+          "governor": "magnus",
+          "promotion": "Provision",
+          "city": "capital",
+          "why": "The first title: Settlers from the capital do not cost Population, which on Tundra is the slowest thing to replace."
+        }
+      ],
+      "city_states": [
+        {
+          "type": "Scientific",
+          "why": "First envoy for capital Science; Science is one of the few things that visibly improves in this phase."
+        },
+        {
+          "type": "Cultural",
+          "why": "Culture in the capital so Mysticism and Early Empire arrive on time."
+        }
+      ],
+      "great_people": [],
+      "checkpoints": [
+        {
+          "turn": 25,
+          "test": "Two cities, a Slinger or Archer in each, Tundra Farms worked, and no barbarian camp within six tiles?",
+          "pass": "Third Settler goes toward the best Woods-and-coast cluster.",
+          "fail": "Delay the third Settler one build for a second Slinger; a city lost here cannot be recovered in a Dead-Phase plan."
+        },
+        {
+          "turn": 50,
+          "test": "Four cities, Dance of the Aurora founded, Early Empire reached, and three park-site candidates noted?",
+          "pass": "Enter the build phase; Holy Sites and Walls are next.",
+          "fail": "Three cities is acceptable if the fourth Settler is in production. Two cities means the tundra is poorer than usual: buy Farm tiles with the cheap purchase and settle tighter."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "settle-capital",
+          "turn": 1,
+          "text": "Settle on Tundra or Tundra Hills with fresh water or coast; move at most one turn. Count the Woods and Tundra tiles within three."
+        },
+        {
+          "id": "settle-scout",
+          "turn": 4,
+          "text": "Send the Scout along the tundra edge; note every camp, every city-state and every natural wonder."
+        },
+        {
+          "id": "settle-farms",
+          "turn": 12,
+          "text": "First Builder: two Tundra Farms and a Camp before anything else."
+        },
+        {
+          "id": "settle-pantheon",
+          "turn": 30,
+          "text": "Found Dance of the Aurora, or Goddess of the Hunt if the Holy Site sites have more Camps than Tundra beside them."
+        },
+        {
+          "id": "settle-park-notes",
+          "turn": 40,
+          "text": "Pin three Woods clusters beside coast, mountains or a natural wonder as park candidates; no Builder touches them from now on."
+        },
+        {
+          "id": "settle-fourth-city",
+          "turn": 50,
+          "text": "Fourth city founded; mark the next three sites on the map."
+        }
+      ]
+    },
+    {
+      "id": "build",
+      "name": "Dormant: build",
+      "turns": {
+        "from": 51,
+        "to": 100
+      },
+      "era": "classical",
+      "objective": "Six cities by turn 95, Holy Sites with Shrines in two of them, a Campus in the capital and the second city, the first Preserve beside the best park site, Ancient Walls and an Archer in the two border cities, an Ice Hockey Rink in every city, and envoys enough for two suzerainties. Still no leader advantage; the markers to watch are cities, Culture, Faith and park-ready tiles.",
+      "build_order": [
+        {
+          "item": "Holy Site",
+          "why": "Second city, beside Tundra for Dance of the Aurora; Faith is the Naturalist bank."
+        },
+        {
+          "item": "Shrine",
+          "why": "Both Holy Sites; Great Prophet points in case a religion is still open."
+        },
+        {
+          "item": "Settler",
+          "why": "Cities five and six; cheap Tundra tile purchases fill their borders faster."
+        },
+        {
+          "item": "Ancient Walls",
+          "why": "Both border cities; the Engineering Eureka and the answer to a formal declaration."
+        },
+        {
+          "item": "Campus",
+          "why": "Capital first, beside mountains if possible, then the second city for Recorded History."
+        },
+        {
+          "item": "Ice Hockey Rink",
+          "why": "One per city as soon as Games and Recreation lands, on Snow where possible and beside a park site where not."
+        },
+        {
+          "item": "Preserve",
+          "why": "Beside the best park site and never next to the City Center; it raises the Appeal of the tiles around it."
+        },
+        {
+          "item": "Archer",
+          "why": "One per border city; three Archers are the Machinery Eureka."
+        },
+        {
+          "item": "Trader",
+          "why": "The Currency Eureka and the Gold for tile purchases."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:masonry",
+          "note": "Ancient Walls; Eureka only if Stone, Marble or Gypsum is in the borders."
+        },
+        {
+          "id": "tech:currency",
+          "note": "Eureka from the first Trade Route; Commercial Hubs later."
+        },
+        {
+          "id": "tech:wheel",
+          "note": "Eureka from the resource Mine; Water Mills for Construction."
+        },
+        {
+          "id": "tech:construction",
+          "note": "Water Mill Eureka; Games and Recreation follows for free."
+        },
+        {
+          "id": "tech:engineering",
+          "note": "Eureka from the Ancient Walls the floor needs anyway."
+        },
+        {
+          "id": "tech:mathematics",
+          "note": "Holy Site, Campus and Preserve make three specialty districts."
+        },
+        {
+          "id": "tech:apprenticeship",
+          "note": "Three Tundra Hills Mines; on the way to Education."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:state-workforce",
+          "note": "Inspiration from the first Holy Site."
+        },
+        {
+          "id": "civic:games-and-recreation",
+          "note": "Free from Construction; unlocks the Ice Hockey Rink."
+        },
+        {
+          "id": "civic:political-philosophy",
+          "note": "Classical Republic and Charismatic Leader; Inspiration from three city-states."
+        },
+        {
+          "id": "civic:recorded-history",
+          "note": "Two Campuses; Natural Philosophy if Science lags."
+        },
+        {
+          "id": "civic:drama-and-poetry",
+          "note": "Unboosted; Literary Tradition for the Great Writers the Theater Squares want later."
+        },
+        {
+          "id": "civic:theology",
+          "note": "Temples; the religion only if a Great Prophet has already arrived."
+        },
+        {
+          "id": "civic:defensive-tactics",
+          "note": "Unboosted; Bastions and Limes are the formal-war answer."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Classical Republic",
+          "slot": "wildcard",
+          "from": "civic:political-philosophy",
+          "why": "The dormant government: Amenities and Great Person points for a builder with no war to fight."
+        },
+        {
+          "card": "Charismatic Leader",
+          "slot": "diplomatic",
+          "from": "civic:political-philosophy",
+          "why": "Envoys toward two suzerainties; each one pays Favor every turn from here on."
+        },
+        {
+          "card": "Ilkum",
+          "slot": "economic",
+          "from": "civic:craftsmanship",
+          "why": "Builders for six Farms, three Mines and the Rinks."
+        },
+        {
+          "card": "Colonization",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "Cities five and six."
+        },
+        {
+          "card": "Bastions",
+          "slot": "military",
+          "from": "civic:defensive-tactics",
+          "why": "Swapped in the turn a neighbour denounces you: City Defense and ranged strength without spending Production."
+        }
+      ],
+      "districts": [
+        {
+          "district": "holy-site",
+          "city": "second city",
+          "note": "Tundra adjacency for Dance of the Aurora; Shrine at once."
+        },
+        {
+          "district": "campus",
+          "city": "capital and second city",
+          "note": "Mountain adjacency where possible; two Campuses are the Recorded History Inspiration."
+        },
+        {
+          "district": "preserve",
+          "city": "the city with the best park site",
+          "note": "Placed so its Appeal lands on the park diamond, never on it; a Grove follows when Production allows."
+        }
+      ],
+      "wonders": [],
+      "governors": [
+        {
+          "governor": "liang",
+          "promotion": "Guildmaster",
+          "city": "second city",
+          "why": "Builders with an extra charge for the Farms and Rinks of every new city."
+        },
+        {
+          "governor": "amani",
+          "promotion": "Emissary",
+          "city": "the city-state nearest to suzerainty",
+          "why": "Two envoys' worth at once; a suzerainty is Favor every turn for the rest of the game."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "geneva",
+          "why": "Science in every city while not at war, which for Canada is almost always."
+        },
+        {
+          "type": "Cultural",
+          "why": "Culture in the capital now and in Amphitheaters later; the Conservation clock."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-prophet",
+          "why": "Only if one arrives from the two Holy Sites by turn 90; a religion makes the Mahabodhi Temple and its two Diplomatic Victory points possible."
+        },
+        {
+          "class": "great-scientist",
+          "why": "The first Classical Great Scientist from the capital Campus is the Education Eureka."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 75,
+          "test": "Five cities, both border cities walled with an Archer inside, two Holy Sites, and the first Rink built?",
+          "pass": "Place the Preserve beside the best park site next.",
+          "fail": "Walls first if they are missing. A formal war comes after a denunciation and a short wait, and that wait is not long enough to build Walls from nothing."
+        },
+        {
+          "turn": 100,
+          "test": "Six cities, 25 Culture and 30 Science, Faith banking every turn, two suzerainties or one plus Amani, and four park-ready tiles?",
+          "pass": "Enter the stage phase; Theater Squares are next.",
+          "fail": "Five cities and 20 Culture is still inside the plan. Fewer than four park-ready tiles means Builders improved the sites: move the pins to the next cluster now, while there is time to buy its tiles."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "build-holy-sites",
+          "turn": 58,
+          "text": "Second Holy Site placed beside three Tundra tiles; Shrines in both."
+        },
+        {
+          "id": "build-walls",
+          "turn": 65,
+          "text": "Ancient Walls in both border cities with an Archer inside each."
+        },
+        {
+          "id": "build-rinks",
+          "turn": 78,
+          "text": "Ice Hockey Rink in every city, on Snow where it exists and beside a park site where it does not."
+        },
+        {
+          "id": "build-envoys",
+          "turn": 85,
+          "text": "Charismatic Leader slotted; envoys to the Scientific and Cultural city-states, Amani to whichever is closest to suzerainty."
+        },
+        {
+          "id": "build-preserve",
+          "turn": 90,
+          "text": "Preserve beside the best park site; check that the Appeal lens shows four Charming tiles in the diamond."
+        },
+        {
+          "id": "build-sixth-city",
+          "turn": 95,
+          "text": "Sixth city founded; buy any of its park-site tiles that sit outside its starting borders."
+        }
+      ]
+    },
+    {
+      "id": "stage",
+      "name": "Dormant: stage",
+      "turns": {
+        "from": 101,
+        "to": 150
+      },
+      "era": "renaissance",
+      "objective": "Arrive at turn 150 with Civil Engineering, Natural History and Urbanization behind you and Conservation adopted or ten turns away, three park sites intact, Faith banked for two Naturalists, 200 Favor banked, Theater Squares in three cities, Medieval Walls and Crossbowmen in the border cities, and an alliance with a neighbour. The leader still gives nothing visible; this phase builds the stockpile the parks and the votes consume.",
+      "build_order": [
+        {
+          "item": "Theater Square",
+          "why": "Capital and the two best park cities; Culture is the Conservation clock and the Great Artists are Humanism."
+        },
+        {
+          "item": "Commercial Hub",
+          "why": "Two cities; Markets for Guilds and Trade Routes for Medieval Faires."
+        },
+        {
+          "item": "Medieval Walls",
+          "why": "Both border cities; a formal war still comes, the immunity only removes the surprise."
+        },
+        {
+          "item": "Crossbowman",
+          "why": "Upgrade the Archers; the three of them already gave Machinery."
+        },
+        {
+          "item": "University",
+          "why": "Two of them for Printing, one in a Campus beside a Mountain for Astronomy."
+        },
+        {
+          "item": "Amphitheater",
+          "why": "In the Theater Squares; Great Writer points and Culture."
+        },
+        {
+          "item": "Lumber Mill",
+          "why": "On Tundra Woods on the production side of a city only, never on or beside a park site."
+        },
+        {
+          "item": "Aqueduct",
+          "why": "Capital; the Military Engineering Eureka and the Housing the capital needs to grow."
+        },
+        {
+          "item": "Temple",
+          "why": "Both Holy Sites for Divine Right; the Faith stays banked."
+        },
+        {
+          "item": "Archaeological Museum",
+          "why": "One in the best Theater Square once Humanism lands: the Natural History Inspiration, and Archaeologists for the Culture fallback."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:machinery",
+          "note": "Eureka from three Archers; Crossbowmen."
+        },
+        {
+          "id": "tech:military-engineering",
+          "note": "Eureka from the capital Aqueduct."
+        },
+        {
+          "id": "tech:education",
+          "note": "Eureka from the first Great Scientist; Universities."
+        },
+        {
+          "id": "tech:castles",
+          "note": "Medieval Walls; Eureka once Merchant Republic is adopted."
+        },
+        {
+          "id": "tech:astronomy",
+          "note": "University beside a Mountain; the Colonialism Inspiration comes with it."
+        },
+        {
+          "id": "tech:printing",
+          "note": "Two Universities."
+        },
+        {
+          "id": "tech:banking",
+          "note": "Free Eureka from Guilds; Banks for Economics."
+        },
+        {
+          "id": "tech:mass-production",
+          "note": "A Lumber Mill on the production side."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:feudalism",
+          "note": "Six Tundra Farms; Serfdom."
+        },
+        {
+          "id": "civic:civil-service",
+          "note": "Meritocracy; usually unboosted on Tundra."
+        },
+        {
+          "id": "civic:divine-right",
+          "note": "Two Temples in the Holy Site cities."
+        },
+        {
+          "id": "civic:guilds",
+          "note": "Two Markets."
+        },
+        {
+          "id": "civic:medieval-faires",
+          "note": "Four Trade Routes; Merchant Confederation."
+        },
+        {
+          "id": "civic:exploration",
+          "note": "Merchant Republic, the staging government."
+        },
+        {
+          "id": "civic:humanism",
+          "note": "A Great Artist; Art and Archaeological Museums."
+        },
+        {
+          "id": "civic:diplomatic-service",
+          "note": "Form the first alliance for the Inspiration and the Favor."
+        },
+        {
+          "id": "civic:the-enlightenment",
+          "note": "Three Great People earned."
+        },
+        {
+          "id": "civic:reformed-church",
+          "note": "St. Basil's Cathedral; the Inspiration only with a religion in six cities."
+        },
+        {
+          "id": "civic:civil-engineering",
+          "note": "Seven specialty districts; Public Works for the park-phase Builders."
+        },
+        {
+          "id": "civic:natural-history",
+          "note": "Inspiration from the Archaeological Museum; Archaeologists for the fallback."
+        },
+        {
+          "id": "civic:urbanization",
+          "note": "Unboosted; Neighborhoods, and the last step before Conservation."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Merchant Republic",
+          "slot": "wildcard",
+          "from": "civic:exploration",
+          "why": "The staging government: two Diplomatic slots for Charismatic Leader and Merchant Confederation, and the Gold for tile purchases."
+        },
+        {
+          "card": "Serfdom",
+          "slot": "economic",
+          "from": "civic:feudalism",
+          "why": "Builders with extra charges for Farms, Mines and the Rinks of new cities."
+        },
+        {
+          "card": "Meritocracy",
+          "slot": "economic",
+          "from": "civic:civil-service",
+          "why": "Culture per specialty district; the empire has many districts and little else."
+        },
+        {
+          "card": "Charismatic Leader",
+          "slot": "diplomatic",
+          "from": "civic:political-philosophy",
+          "why": "Suzerainties are Favor every turn."
+        },
+        {
+          "card": "Merchant Confederation",
+          "slot": "diplomatic",
+          "from": "civic:medieval-faires",
+          "why": "Gold from every envoy, which pays for the park-site tile purchases."
+        },
+        {
+          "card": "Limes",
+          "slot": "military",
+          "from": "civic:defensive-tactics",
+          "why": "Medieval Walls at double speed the turn a neighbour denounces you."
+        }
+      ],
+      "districts": [
+        {
+          "district": "theater-square",
+          "city": "capital and the two best park cities",
+          "note": "Culture for Conservation; Amphitheaters now and a museum later."
+        },
+        {
+          "district": "commercial-hub",
+          "city": "capital and second city",
+          "note": "Markets for Guilds and Trade Routes for Medieval Faires."
+        },
+        {
+          "district": "preserve",
+          "city": "the second and third park cities",
+          "note": "Appeal around the remaining park sites, placed beside the diamond so no park tile is lost to the district itself."
+        },
+        {
+          "district": "government-plaza",
+          "city": "capital",
+          "note": "An extra Governor title for Victor or Reyna."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Mahabodhi Temple",
+          "why": "Two Diplomatic Victory points banked long before the votes start, and two Apostles.",
+          "skip_if": "No religion founded by turn 110, or no Woods tile beside a Holy Site with a Temple that is not part of a park site."
+        },
+        {
+          "name": "St. Basil's Cathedral",
+          "why": "Food, Production and Culture on every Tundra tile the capital works; the largest yield boost a tundra capital can get.",
+          "skip_if": "The capital works fewer than six Tundra tiles, or Reformed Church is more than fifteen turns away at turn 125."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "victor",
+          "promotion": "Garrison Commander",
+          "city": "the border city facing the strongest neighbour",
+          "why": "Combat Strength and Loyalty where a formal war would start."
+        },
+        {
+          "governor": "reyna",
+          "promotion": "Land Acquisition",
+          "city": "the main park city",
+          "why": "Tiles arrive faster, and with the cheap Tundra purchases the park sites are inside its borders by turn 130."
+        },
+        {
+          "governor": "pingala",
+          "promotion": "Connoisseur",
+          "city": "capital",
+          "why": "Culture per citizen; the Conservation clock."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "geneva",
+          "why": "Keep the suzerainty; Science while at peace is the whole Science plan."
+        },
+        {
+          "type": "Cultural",
+          "why": "Amphitheater Culture at three envoys."
+        },
+        {
+          "type": "Trade",
+          "why": "Gold in the capital and in Markets for tile purchases."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-writer",
+          "why": "Amphitheater slots; Great Works are Culture now and Tourism, so Favor, later."
+        },
+        {
+          "class": "great-artist",
+          "why": "The Humanism Inspiration and works for the first museum."
+        },
+        {
+          "class": "great-scientist",
+          "why": "Education, and a count toward The Enlightenment."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 125,
+          "test": "Merchant Republic adopted, Medieval Walls in both border cities, an alliance formed, and 120 Favor banked?",
+          "pass": "Pin the park sites for good and start buying their outlying tiles.",
+          "fail": "Walls first if they are missing. If no alliance is available, keep every neighbour friendly and a Crossbowman in each border city. Favor under 80 means suzerainties were lost: put Amani back on the nearest one."
+        },
+        {
+          "turn": 150,
+          "test": "Run the activation test: Conservation in or ten turns away, two or more park sites intact, Faith for two Naturalists, 200 Favor and two suzerainties?",
+          "pass": "The kit is on; enter the activation phase.",
+          "fail": "Fix the single missing item for up to ten turns. Two or more missing at turn 160 means the abort branch."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "stage-theaters",
+          "turn": 105,
+          "text": "Theater Squares in the capital and the two best park cities, Amphitheaters queued."
+        },
+        {
+          "id": "stage-alliance",
+          "turn": 118,
+          "text": "Form an alliance with the strongest neighbour: formal-war insurance now and the Chemistry Eureka later."
+        },
+        {
+          "id": "stage-medieval-walls",
+          "turn": 122,
+          "text": "Medieval Walls and a Crossbowman in each border city."
+        },
+        {
+          "id": "stage-buy-tiles",
+          "turn": 130,
+          "text": "Buy every park-site tile still outside a border with the cheap Tundra and Snow purchase."
+        },
+        {
+          "id": "stage-faith-check",
+          "turn": 140,
+          "text": "Confirm the Faith bank covers two Naturalists; nothing else is bought with Faith until Conservation."
+        },
+        {
+          "id": "stage-activation",
+          "turn": 150,
+          "text": "Run the activation test and write the four answers down."
+        }
+      ]
+    },
+    {
+      "id": "activate",
+      "name": "Activation: the parks",
+      "turns": {
+        "from": 151,
+        "to": 200
+      },
+      "era": "industrial",
+      "objective": "Switch every Phase A habit off. Naturalists create two National Parks the turn Conservation lands, the first one gives the Radio Eureka, Seaside Resorts go on Charming coast outside the parks, Mounties found the later parks once they unlock, the Statue of Liberty brings four Diplomatic Victory points and the Flight Eureka, and Flight turns every Rink's Culture into Tourism, which Canada turns into Favor. Favor passes 400 and the first votes that award Diplomatic Victory points are won.",
+      "build_order": [
+        {
+          "item": "Naturalist",
+          "why": "Two, bought with the banked Faith the turn Conservation lands; one park each on the pinned sites."
+        },
+        {
+          "item": "Statue of Liberty",
+          "why": "Four Diplomatic Victory points and the Flight Eureka; a Great Engineer rushes it."
+        },
+        {
+          "item": "Mountie",
+          "why": "As soon as it unlocks: park founders paid for in Production, and the late defence near the parks."
+        },
+        {
+          "item": "Seaside Resort",
+          "why": "Builders on Charming or Breathtaking coast outside the parks: Tourism from the tile's Appeal."
+        },
+        {
+          "item": "Bank",
+          "why": "Two of them for Economics, and Gold for tile purchases and the trades that earn Favor."
+        },
+        {
+          "item": "Industrial Zone",
+          "why": "Production side only, with Workshops for Industrialization; it lowers the Appeal of the tiles beside it."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:industrialization",
+          "note": "Two Workshops."
+        },
+        {
+          "id": "tech:scientific-theory",
+          "note": "Free Eureka from The Enlightenment."
+        },
+        {
+          "id": "tech:economics",
+          "note": "Two Banks."
+        },
+        {
+          "id": "tech:flight",
+          "note": "Eureka from the Statue of Liberty; improvements' Culture becomes Tourism."
+        },
+        {
+          "id": "tech:radio",
+          "note": "Eureka from the first park; Seaside Resorts and Broadcast Centers."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:colonialism",
+          "note": "Free Inspiration from Astronomy; Raj."
+        },
+        {
+          "id": "civic:conservation",
+          "note": "The activation civic: Naturalists, and Builders can plant Woods on thin park sites."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Merchant Republic",
+          "slot": "wildcard",
+          "from": "civic:exploration",
+          "why": "Kept until Democracy; the two Diplomatic slots matter more than anything a new government offers here."
+        },
+        {
+          "card": "Raj",
+          "slot": "diplomatic",
+          "from": "civic:colonialism",
+          "why": "Science, Culture, Faith and Gold per suzerainty; the Faith tops up the Naturalist bank."
+        },
+        {
+          "card": "Charismatic Leader",
+          "slot": "diplomatic",
+          "from": "civic:political-philosophy",
+          "why": "More suzerainties, more Favor, more Raj."
+        },
+        {
+          "card": "Public Works",
+          "slot": "economic",
+          "from": "civic:civil-engineering",
+          "why": "Builders for Seaside Resorts and for planting Woods on park sites."
+        }
+      ],
+      "districts": [
+        {
+          "district": "industrial-zone",
+          "city": "the two best production-side cities",
+          "note": "Away from every park and resort tile; Workshops, then Factories."
+        },
+        {
+          "district": "preserve",
+          "city": "any park city still without one",
+          "note": "Appeal for the next park site and the Seaside Resorts."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Statue of Liberty",
+          "why": "Four Diplomatic Victory points, and an Industrial era wonder for the Flight Eureka.",
+          "skip_if": "No coastal city, or it cannot be finished by turn 190 even with a Great Engineer."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "reyna",
+          "promotion": "Forestry Management",
+          "city": "the main park city",
+          "why": "Appeal and Gold from the unimproved Woods the parks are made of."
+        },
+        {
+          "governor": "amani",
+          "promotion": "Prestige",
+          "city": "her city-state",
+          "why": "A suzerainty that rivals find much harder to take; Favor and Raj both depend on it."
+        }
+      ],
+      "city_states": [
+        {
+          "type": "Religious",
+          "why": "Faith toward the third and fourth Naturalists if Mounties are not yet unlocked."
+        },
+        {
+          "type": "Cultural",
+          "why": "Keep the suzerainty; Culture now and Favor every turn."
+        },
+        {
+          "type": "Trade",
+          "why": "Gold for Seaside Resort Builders and for Banks."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-engineer",
+          "why": "Rush the Statue of Liberty."
+        },
+        {
+          "class": "great-artist",
+          "why": "Fill the Art Museum; Great Works are Tourism and so Favor."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 170,
+          "test": "Two National Parks created, the Radio Eureka collected, a Rink in every city, and Favor rising faster than before turn 150?",
+          "pass": "Queue Mounties and Seaside Resorts; enter every Scored Competition on offer.",
+          "fail": "If only one park exists, the second site lost Appeal: plant Woods on it with Public Works Builders, or move to the next pin and buy its tiles."
+        },
+        {
+          "turn": 200,
+          "test": "Statue of Liberty built, three or more parks, 400 Favor banked or spent winning votes, and six or more Diplomatic Victory points?",
+          "pass": "Enter the payoff phase.",
+          "fail": "Fewer than four Diplomatic Victory points at turn 200 means rivals are out-voting you: stop spending Favor on contested votes, bank it for the sessions where it decides the outcome, and keep Culture as the live fallback."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "activate-naturalists",
+          "turn": 152,
+          "text": "Conservation in: buy two Naturalists and create the first two parks on the pinned sites."
+        },
+        {
+          "id": "activate-radio",
+          "turn": 158,
+          "text": "Radio Eureka collected from the first park; research Radio next."
+        },
+        {
+          "id": "activate-competitions",
+          "turn": 165,
+          "text": "Enter every Emergency and Scored Competition that can be completed; Canada's Favor for each is the point."
+        },
+        {
+          "id": "activate-statue",
+          "turn": 180,
+          "text": "Statue of Liberty finished, with a Great Engineer if needed; Flight Eureka collected."
+        },
+        {
+          "id": "activate-mounties",
+          "turn": 190,
+          "text": "Mounties built as they unlock: one founds the third park, the rest garrison the park cities."
+        },
+        {
+          "id": "activate-resorts",
+          "turn": 196,
+          "text": "Seaside Resorts on every Charming coast tile outside a park."
+        }
+      ]
+    },
+    {
+      "id": "payoff",
+      "name": "Payoff: the votes",
+      "turns": {
+        "from": 201,
+        "to": null
+      },
+      "era": "modern",
+      "objective": "Run hot. Spend Favor to win every World Congress vote that awards Diplomatic Victory points, finish every Scored Competition and Emergency for Canada's Favor, add the Eiffel Tower's Appeal to every park and resort, raise an alliance to level 2 for Chemistry, and reach 20 Diplomatic Victory points. There is no time for a second build-out; every city builds Tourism, Favor or defence. Culture stays the fallback because the same parks are Tourism.",
+      "build_order": [
+        {
+          "item": "Eiffel Tower",
+          "why": "+2 Appeal on every tile: every park, resort and rink tile pays more Tourism, and Tourism is Favor."
+        },
+        {
+          "item": "Mountie",
+          "why": "A further park wherever four Charming tiles still stand; otherwise garrison duty near the parks."
+        },
+        {
+          "item": "Broadcast Center",
+          "why": "In the Theater Squares; Culture now and the fallback's Tourism."
+        },
+        {
+          "item": "Research Lab",
+          "why": "Capital; the Nuclear Program Inspiration and enough Science that no rival out-techs the defence."
+        },
+        {
+          "item": "Seaside Resort",
+          "why": "On each coast tile the Eiffel Tower lifts to Charming."
+        },
+        {
+          "item": "Sewer",
+          "why": "Four, only in cities short of Housing: Suffrage and Democracy."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:sanitation",
+          "note": "Sewers for the Suffrage Inspiration and Democracy."
+        },
+        {
+          "id": "tech:chemistry",
+          "note": "Eureka from an alliance at level 2; Research Labs."
+        },
+        {
+          "id": "tech:combustion",
+          "note": "Eureka from one Artifact extracted for the Culture fallback."
+        },
+        {
+          "id": "tech:computers",
+          "note": "Free Eureka from Democracy."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:mass-media",
+          "note": "Free Inspiration from Radio."
+        },
+        {
+          "id": "civic:suffrage",
+          "note": "Democracy."
+        },
+        {
+          "id": "civic:nuclear-program",
+          "note": "Inspiration from the capital Research Lab."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Democracy",
+          "slot": "wildcard",
+          "from": "civic:suffrage",
+          "why": "The payoff government: two Diplomatic slots, two Wildcards, and Great Person points."
+        },
+        {
+          "card": "Raj",
+          "slot": "diplomatic",
+          "from": "civic:colonialism",
+          "why": "Kept; every suzerainty pays four yields."
+        },
+        {
+          "card": "Charismatic Leader",
+          "slot": "diplomatic",
+          "from": "civic:political-philosophy",
+          "why": "Envoys to hold the suzerainties the Favor and Raj depend on."
+        },
+        {
+          "card": "Heritage Tourism",
+          "slot": "economic",
+          "from": "civic:cultural-heritage",
+          "why": "Culture fallback only: more Tourism from Great Works of Art and Artifacts."
+        }
+      ],
+      "districts": [
+        {
+          "district": "theater-square",
+          "city": "every city with room outside the park sites",
+          "note": "Broadcast Centers for Culture and the fallback."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Eiffel Tower",
+          "why": "+2 Appeal on every tile in the civilization: more Tourism from every park and resort, and new Charming tiles for further parks.",
+          "skip_if": "It cannot be finished by turn 230 even with a Great Engineer, or a rival with a stronger Industrial Zone has already started it."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Curator",
+          "city": "capital",
+          "why": "Great Work Tourism doubled in the capital for the Culture fallback."
+        },
+        {
+          "governor": "victor",
+          "promotion": "Embrasure",
+          "city": "the border city facing the strongest rival",
+          "why": "A late formal war is still possible; an extra city ranged strike buys time for the Mounties to arrive."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "geneva",
+          "why": "Science at peace for the rest of the game."
+        },
+        {
+          "type": "Cultural",
+          "why": "Culture and Favor; hold the suzerainty against rival envoys."
+        },
+        {
+          "type": "Trade",
+          "why": "Gold for buying votes' worth of trades and resort tiles."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-engineer",
+          "why": "Rush the Eiffel Tower."
+        },
+        {
+          "class": "great-musician",
+          "why": "Great Works of Music for the Broadcast Centers if the Culture fallback is taken."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 240,
+          "test": "Ten or more Diplomatic Victory points, Favor income above every rival's, and every park still standing?",
+          "pass": "Keep voting only on the proposals that award points; enter every competition.",
+          "fail": "Under eight points: find who is winning the votes, ally with them or out-bid them only on point-awarding proposals, and review the Culture fallback at turn 260."
+        },
+        {
+          "turn": 280,
+          "test": "Sixteen or more Diplomatic Victory points, or visiting Tourists above every rival's domestic Tourists?",
+          "pass": "Continue to the end; no further decisions.",
+          "fail": "Neither: the game is a Score game. Keep Favor for defensive votes and build Research Labs and Broadcast Centers."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "payoff-eiffel",
+          "turn": 215,
+          "text": "Eiffel Tower finished; recheck the Appeal lens for new park and resort sites."
+        },
+        {
+          "id": "payoff-democracy",
+          "turn": 220,
+          "text": "Democracy adopted; Raj and Charismatic Leader in the Diplomatic slots."
+        },
+        {
+          "id": "payoff-votes",
+          "turn": 225,
+          "text": "At each World Congress spend Favor only on proposals that award Diplomatic Victory points or deny them to a rival."
+        },
+        {
+          "id": "payoff-chemistry",
+          "turn": 235,
+          "text": "Oldest alliance at level 2; Chemistry Eureka collected."
+        },
+        {
+          "id": "payoff-review",
+          "turn": 260,
+          "text": "Decide whether the Culture fallback is closer than the Diplomatic count, and write the decision down."
+        }
+      ]
+    }
+  ],
+  "boosts": [
+    {
+      "id": "tech:sailing",
+      "fit": "cheap",
+      "when": "settle",
+      "how": "Settle the second or third city on a cold coast; the Statue of Liberty needs one anyway."
+    },
+    {
+      "id": "tech:astrology",
+      "fit": "cheap",
+      "when": "settle",
+      "how": "The Scout finds a natural wonder while sweeping the tundra fringe."
+    },
+    {
+      "id": "tech:archery",
+      "fit": "cheap",
+      "when": "settle",
+      "how": "The Slinger finishes a barbarian scout near the capital."
+    },
+    {
+      "id": "tech:writing",
+      "fit": "free",
+      "when": "settle",
+      "how": "The Scout meets the first civilization."
+    },
+    {
+      "id": "tech:bronze-working",
+      "fit": "cheap",
+      "when": "settle",
+      "how": "Three barbarian kills while the Slinger and Warrior clear the nearest camp."
+    },
+    {
+      "id": "tech:wheel",
+      "fit": "cheap",
+      "when": "settle",
+      "how": "The second Builder mines a Silver or other resource on Tundra Hills."
+    },
+    {
+      "id": "tech:irrigation",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:masonry",
+      "fit": "costly",
+      "when": "build",
+      "how": "Only if Stone, Marble or Gypsum sits inside the borders; otherwise research it unboosted for Walls."
+    },
+    {
+      "id": "tech:celestial-navigation",
+      "fit": "costly",
+      "when": "build",
+      "how": "Two Fishing Boats on cold-water Fish or Crabs, only on a coastal start."
+    },
+    {
+      "id": "tech:currency",
+      "fit": "free",
+      "when": "build",
+      "how": "The first Trader runs its route."
+    },
+    {
+      "id": "tech:iron-working",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:construction",
+      "fit": "cheap",
+      "when": "build",
+      "how": "A Water Mill in a river city."
+    },
+    {
+      "id": "tech:engineering",
+      "fit": "free",
+      "when": "build",
+      "how": "Ancient Walls in the first border city are the defensive floor anyway."
+    },
+    {
+      "id": "tech:mathematics",
+      "fit": "cheap",
+      "when": "build",
+      "how": "Holy Site, Campus and Preserve standing by turn 90."
+    },
+    {
+      "id": "tech:apprenticeship",
+      "fit": "free",
+      "when": "build",
+      "how": "Three Mines on Tundra Hills, the best Production tiles The Last Best West gives."
+    },
+    {
+      "id": "tech:buttress",
+      "fit": "costly",
+      "when": "stage",
+      "how": "Only if the Mahabodhi Temple or St. Basil's Cathedral is finished first."
+    },
+    {
+      "id": "tech:machinery",
+      "fit": "free",
+      "when": "stage",
+      "how": "Three Archers from the defensive floor."
+    },
+    {
+      "id": "tech:military-engineering",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "An Aqueduct in the capital."
+    },
+    {
+      "id": "tech:stirrups",
+      "fit": "free",
+      "when": "stage",
+      "how": "Feudalism is on the civic path."
+    },
+    {
+      "id": "tech:education",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "The first Great Scientist from the two Campuses."
+    },
+    {
+      "id": "tech:castles",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "Adopt Merchant Republic, a Tier 2 government, before researching Castles."
+    },
+    {
+      "id": "tech:astronomy",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "A University in a Campus that sits beside a Mountain."
+    },
+    {
+      "id": "tech:printing",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "Two Universities in the Campus cities."
+    },
+    {
+      "id": "tech:banking",
+      "fit": "free",
+      "when": "stage",
+      "how": "Guilds is on the civic path."
+    },
+    {
+      "id": "tech:mass-production",
+      "fit": "free",
+      "when": "stage",
+      "how": "A Lumber Mill on Tundra Woods on the production side of any city."
+    },
+    {
+      "id": "tech:cartography",
+      "fit": "costly",
+      "when": "stage",
+      "how": "Two Harbors, only if three or more cities are coastal."
+    },
+    {
+      "id": "tech:industrialization",
+      "fit": "cheap",
+      "when": "activate",
+      "how": "Two Workshops in Industrial Zones on the production side."
+    },
+    {
+      "id": "tech:scientific-theory",
+      "fit": "free",
+      "when": "activate",
+      "how": "The Enlightenment is on the civic path."
+    },
+    {
+      "id": "tech:economics",
+      "fit": "cheap",
+      "when": "activate",
+      "how": "Banks in the two Commercial Hubs."
+    },
+    {
+      "id": "tech:sanitation",
+      "fit": "costly",
+      "when": "payoff",
+      "how": "Two Neighborhoods, only on land already spoiled for parks; otherwise unboosted."
+    },
+    {
+      "id": "tech:flight",
+      "fit": "cheap",
+      "when": "activate",
+      "how": "The Statue of Liberty, an Industrial era wonder the plan builds anyway."
+    },
+    {
+      "id": "tech:radio",
+      "fit": "free",
+      "when": "activate",
+      "how": "The first National Park created by a Naturalist."
+    },
+    {
+      "id": "tech:chemistry",
+      "fit": "cheap",
+      "when": "payoff",
+      "how": "Raise the oldest alliance to level 2; alliances are part of the Favor plan."
+    },
+    {
+      "id": "tech:combustion",
+      "fit": "cheap",
+      "when": "payoff",
+      "how": "One Archaeologist extracts one Artifact for the Culture fallback."
+    },
+    {
+      "id": "tech:computers",
+      "fit": "free",
+      "when": "payoff",
+      "how": "Democracy is a Tier 3 government and the payoff government."
+    },
+    {
+      "id": "civic:craftsmanship",
+      "fit": "free",
+      "when": "settle",
+      "how": "Three improved tiles: two Tundra Farms and a Camp."
+    },
+    {
+      "id": "civic:foreign-trade",
+      "fit": "costly",
+      "when": "settle",
+      "how": "Only if the Scout or a boat sights a second continent."
+    },
+    {
+      "id": "civic:military-tradition",
+      "fit": "cheap",
+      "when": "settle",
+      "how": "The Warrior and Slinger clear the nearest barbarian camp."
+    },
+    {
+      "id": "civic:mysticism",
+      "fit": "free",
+      "when": "settle",
+      "how": "Founding Dance of the Aurora."
+    },
+    {
+      "id": "civic:early-empire",
+      "fit": "cheap",
+      "when": "settle",
+      "how": "Six Population across the first three cities; Tundra Farms make it reachable."
+    },
+    {
+      "id": "civic:state-workforce",
+      "fit": "free",
+      "when": "build",
+      "how": "The first Holy Site."
+    },
+    {
+      "id": "civic:games-and-recreation",
+      "fit": "free",
+      "when": "build",
+      "how": "Researching Construction."
+    },
+    {
+      "id": "civic:political-philosophy",
+      "fit": "cheap",
+      "when": "build",
+      "how": "Three city-states met by the Scout; polar maps hide them, so keep scouting."
+    },
+    {
+      "id": "civic:drama-and-poetry",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:recorded-history",
+      "fit": "cheap",
+      "when": "build",
+      "how": "Campuses in the capital and the second city."
+    },
+    {
+      "id": "civic:theology",
+      "fit": "costly",
+      "when": "build",
+      "how": "Found a religion only if a Great Prophet arrives from the Holy Sites; do not race for it."
+    },
+    {
+      "id": "civic:defensive-tactics",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:feudalism",
+      "fit": "free",
+      "when": "stage",
+      "how": "Six Tundra Farms, which the leader ability makes the normal tile."
+    },
+    {
+      "id": "civic:civil-service",
+      "fit": "costly",
+      "when": "stage",
+      "how": "A ten-Population city is slow on Tundra; only the capital with an Aqueduct gets there."
+    },
+    {
+      "id": "civic:divine-right",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "Temples in the two Holy Site cities."
+    },
+    {
+      "id": "civic:guilds",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "Markets in the two Commercial Hubs."
+    },
+    {
+      "id": "civic:medieval-faires",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "Four Trade Routes from two Commercial Hubs and the Foreign Trade route."
+    },
+    {
+      "id": "civic:exploration",
+      "fit": "costly",
+      "when": "stage",
+      "how": "Two Caravels, only on a coastal map."
+    },
+    {
+      "id": "civic:humanism",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "A Great Artist from the Theater Squares."
+    },
+    {
+      "id": "civic:diplomatic-service",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "An alliance with the friendliest neighbour as soon as one can be formed."
+    },
+    {
+      "id": "civic:the-enlightenment",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "Three Great People across the game so far."
+    },
+    {
+      "id": "civic:reformed-church",
+      "fit": "costly",
+      "when": "stage",
+      "how": "Six cities following your religion, only if one was founded."
+    },
+    {
+      "id": "civic:civil-engineering",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "Seven different specialty districts: the Preserve and Government Plaza count, and a Harbor or Entertainment Complex is the seventh."
+    },
+    {
+      "id": "civic:natural-history",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "An Archaeological Museum in the best Theater Square."
+    },
+    {
+      "id": "civic:colonialism",
+      "fit": "free",
+      "when": "activate",
+      "how": "Researching Astronomy in the stage phase."
+    },
+    {
+      "id": "civic:urbanization",
+      "fit": "costly",
+      "when": "stage",
+      "how": "A fifteen-Population city; only a capital with St. Basil's and an Aqueduct manages it."
+    },
+    {
+      "id": "civic:conservation",
+      "fit": "costly",
+      "when": "activate",
+      "how": "A Neighborhood on one Breathtaking tile that is not part of a park; worth it because this is the activation civic."
+    },
+    {
+      "id": "civic:mass-media",
+      "fit": "free",
+      "when": "payoff",
+      "how": "Researching Radio, which the first park has already boosted."
+    },
+    {
+      "id": "civic:suffrage",
+      "fit": "costly",
+      "when": "payoff",
+      "how": "Four Sewers, built only where the Housing is needed."
+    },
+    {
+      "id": "civic:nuclear-program",
+      "fit": "cheap",
+      "when": "payoff",
+      "how": "A Research Lab in the capital."
+    }
+  ],
+  "decision_triggers": [
+    {
+      "name": "Denounced by a neighbour",
+      "if": "A neighbour denounces you, masses units on the border, or gains a Casus Belli against you.",
+      "then": "A denunciation is the warning: a formal war can follow once its waiting period is over. Slot Bastions or Limes, buy Archers or Crossbowmen into the border city, move Victor there, and ask your ally to stand with you. Do not counter-invade; a war that costs a city ends the plan."
+    },
+    {
+      "name": "Park site spoiled",
+      "if": "A pinned park site drops below Charming: Woods lost, a Mine or district built beside it, or a rival's Encampment or Industrial Zone across the border.",
+      "then": "Move the pin to the next cluster and buy its tiles cheaply with The Last Best West. After Conservation, plant Woods on the damaged site to restore its Appeal, and put Reyna with Forestry Management in that city."
+    },
+    {
+      "name": "Emergency or competition",
+      "if": "The World Congress declares an Emergency or opens a Scored Competition that you can complete.",
+      "then": "Join it. Canada gains Favor for completing it, Laurier's agenda wants it, and the Favor bank is the payoff. Refuse only an Emergency that would need a war you cannot win."
+    },
+    {
+      "name": "Culture closer than votes",
+      "if": "At turn 260 your visiting Tourists exceed the domestic Tourists of all but two civilizations, while your Diplomatic Victory points are under twelve.",
+      "then": "Close on Culture instead: Heritage Tourism, Pingala's Curator in the capital, museums filled, Seaside Resorts on every Charming coast tile, and Favor kept only for defensive votes."
+    }
+  ],
+  "abort": {
+    "trigger": "Turn 160 with two or more activation items still missing (Conservation more than ten turns away, fewer than two intact park sites, no Faith bank, Favor under 100), or a city lost during the dormant phase that was not retaken.",
+    "actions": [
+      "The leader ability is now decorative. Say so and stop planning around parks; build Seaside Resorts where Appeal exists and stop protecting Woods.",
+      "Play the Favor half of the kit alone for a Diplomatic victory: every Emergency and Scored Competition, suzerainties under Charismatic Leader and Raj, the Statue of Liberty, and votes only where they award points.",
+      "If rivals still out-vote you by turn 230, play the generic empire for Science and Score with Campuses and Research Labs."
+    ]
+  },
+  "fail_state": "Turn 150 with every Tundra Woods lumber-milled and every hill mined, no Charming tile left unimproved, Conservation thirty turns away and the Faith spent on nothing that mattered; or a border city lost at turn 90 to a formal war the Walls were never built against, because the immunity was read as peace. Both are dormant-phase failures that only show at activation.",
+  "common_mistakes": [
+    "Judging the leader at turn 60. The curve is flat by design, and the tundra makes the empire look smaller than its neighbours until well past turn 100.",
+    "Reading Four Faces of Peace as peace. It removes surprise wars only; a neighbour who denounces you can still declare formally, and barbarians ignore it entirely.",
+    "Milling and mining every cold tile because The Last Best West rewards it. An improved tile can never be part of a National Park, and Mines and Industrial Zones lower the Appeal around them.",
+    "Spending the Faith bank in the dormant phase. The Naturalists that start the payoff are bought with it.",
+    "Spending Favor on early votes that award nothing. Favor is the payoff's currency; bank it until votes award Diplomatic Victory points.",
+    "Skipping Emergencies and Scored Competitions because each looks small. The Favor Canada earns from completing them is half the reason the plan wins."
+  ],
+  "sources": [
+    "Civilization VI Civilopedia, Gathering Storm ruleset (Canada, Wilfrid Laurier, The Last Best West, Four Faces of Peace, Mountie, Ice Hockey Rink, National Parks, World Congress).",
+    "Boost objectives taken from leadership-focus/data/civ6/eurekas.json in this repository.",
+    "Leadership Focus tags, caveats and Dead-Phase supplement for Wilfrid Laurier in this repository.",
+    "Where the civ-info text and the game may differ, the plan does not depend on the difference: the civ-info dates Farms on Tundra Hills to Engineering, while the Civilopedia as I know it ties them to the Civil Engineering civic, and the plan places no Tundra Hills Farm before the activation phase either way. The city-state clause of Four Faces of Peace is irrelevant to a plan that never declares war. The Mountie's unlocking tech or civic, its exact bonus near parks, and the Ice Hockey Rink's unlocking civic (Games and Recreation here) and one-per-city limit should be confirmed in the Civilopedia."
+  ]
+}

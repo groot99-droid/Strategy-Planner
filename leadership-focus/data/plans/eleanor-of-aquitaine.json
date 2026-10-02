@@ -1,0 +1,498 @@
+{
+  "slug": "eleanor-of-aquitaine",
+  "shape": "Dead-Phase",
+  "secondary_shape": null,
+  "version": 1,
+  "updated": "2026-10-02",
+  "assumptions": {
+    "ruleset": "Gathering Storm with every expansion and the Leader Pass",
+    "speed": "Standard",
+    "difficulty": "Emperor",
+    "map": "Continents or Pangaea, standard size, 8 civilizations",
+    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. Eleanor of Aquitaine has a single persona and leads France or England at the player's choice at game setup. This plan plays her leading France: Grand Tour discounts and doubles the Industrial wonder that holds four Great Works of Art, the Château is Culture on the river banks France's start bias provides, and both feed the Culture victory that Court of Love already points at. England is the choice for a water map; the map check says when."
+  },
+  "verdict": {
+    "victory": "Culture",
+    "secondary": "Science",
+    "confidence": "medium",
+    "one_line": "Play a plain river builder for 130 turns while every Great Work goes into one or two walled Theater Square cities on the border, then fill an Art Museum, the Hermitage and an Archaeological Museum there until the neighbour's small cities hit zero Loyalty and walk over, and win on the Tourism the same works and France's doubled wonders already make.",
+    "why": "Court of Love is a flat -1 Loyalty per turn per Great Work on every foreign city within 9 tiles, and a city that loses its Loyalty while Eleanor is pulling hardest on it joins her outright, districts and all. That is conquest with no army, but it needs eight to ten works in range before it beats a city's own citizens, Amenities and Governor, and the slots that hold that many only exist from Humanism and Natural History, which is why the plan is dormant until turn 130. The same works are Tourism, doubled by Pingala's Curator in the court city, and France's Grand Tour doubles every wonder's Tourism and discounts the Hermitage that holds four of them, so the pressure engine and the Culture victory are one investment. Science is the fallback because the dormant phase builds Campuses and every flipped city arrives with its own."
+  },
+  "map_check": {
+    "must_have": [
+      "A rival civilization on the same landmass, with open land between your capital and theirs where a city can be founded 10 to 12 tiles from their capital by turn 40.",
+      "Room for six cities by turn 85 without fighting for it; the plan has no early military edge to take land with."
+    ],
+    "prefer": [
+      "A river capital and a river site for the court city: France's start bias delivers the first, and the Hermitage and the Châteaux need the second.",
+      "Plains hills near the court city for the Production its Walls and Theater Square buildings cost.",
+      "A neighbour that settles many small cities toward you; small cities near the border are the easiest Loyalty targets on the map.",
+      "Cliffs of Dover or Piopiotahi near one of your cities for Culture, and a luxury cluster near the court city for the Amenities that keep its own Loyalty up."
+    ],
+    "no_go": "An isolated start with no foreign city reachable within 9 tiles of land you can settle, or a neighbour so aggressive that the court city is under siege by turn 60. Court of Love then has nothing to pull, and France plays a wonder game with a decorative leader ability.",
+    "fallback": "The France or England choice is made at setup, before the map is seen, so read the map script. On Continents or Pangaea take France, as this plan does. On Islands, Archipelago or another water-heavy script take England instead: the Royal Navy Dockyard gives Loyalty and Gold to a court city founded on a rival's continent, which is what keeps a border city overseas from flipping the wrong way, and Redcoats defend it off the home continent; drop the Hermitage-under-Grand-Tour and Château steps and keep everything else. If France was chosen and no rival is in reach by turn 40, play France for Culture through Grand Tour wonders and treat Court of Love as decorative."
+  },
+  "kit_levers": [
+    { "source": "leader_ability", "name": "Court of Love", "buys": "Every Great Work in any of Eleanor's cities gives -1 Loyalty per turn to each foreign city within 9 tiles, stacking with every other work; a foreign city that loses all its Loyalty while Eleanor exerts the most pressure on it skips the Free City stage and joins her with its districts and buildings.", "exploit": "Great Works are siege equipment here, not decoration. Every work is placed in the one or two court cities within 9 tiles of the targets and never in a safe interior city. The arithmetic is read at every checkpoint: works in range against the target's own Loyalty per turn from the Loyalty lens. Each flipped city with a Theater Square becomes the next court city, and the works move forward into it." },
+    { "source": "civ_ability", "name": "Uses the chosen civilization's ability", "buys": "This plan chooses France at setup, so Eleanor gets Grand Tour: +20% Production toward Medieval, Renaissance and Industrial era wonders and double Tourism from wonders of every era. Choosing England would bring Workshop of the World instead.", "exploit": "Grand Tour pays twice. The Hermitage, an Industrial wonder with four Great Work of Art slots, is built at a fifth off in the court city, where its slots add four to the pressure on every target; and every wonder France finishes counts double for the Culture victory the pressure feeds. Ancient and Classical wonders are left to rivals." },
+    { "source": "unique_unit", "name": "Garde Impériale (if France)", "buys": "France's Industrial-era melee unit, with extra Combat Strength on the capital's continent and Great General points from kills.", "exploit": "The payoff phase's defensive floor. A rival whose border cities are slipping away often declares war, and two Garde Impériale behind the court city's Walls hold it. Not an offensive tool: a city taken by force brings grievances and none of the kit's value." },
+    { "source": "unique_unit", "name": "Sea Dog (if England)", "buys": "England setup only: a Privateer replacement that can capture enemy ships and stays hidden beyond one tile.", "exploit": "Irrelevant on the France setup. On the England water-map setup, two Sea Dogs keep the sea lane to an overseas court city open and give the Electricity Eureka." },
+    { "source": "unique_unit", "name": "Redcoat (if England)", "buys": "England setup only: an Industrial-era melee unit with extra Combat Strength off the home continent and no Movement cost to disembark.", "exploit": "On the England setup, the garrison for a court city planted on a rival's continent; it is what lets a border city overseas survive the war its flips provoke." },
+    { "source": "unique_infrastructure", "name": "Château (if France)", "buys": "A river-only improvement from Humanism that gives Culture, more beside wonders, Gold beside luxuries, and Tourism after Flight.", "exploit": "River tiles beside the court city's Hermitage site and the capital's wonders are left unfarmed from turn 1. From Humanism the Builders put Châteaux there first, and Flight turns their Culture into Tourism during the payoff." },
+    { "source": "unique_infrastructure", "name": "Royal Navy Dockyard (if England)", "buys": "England setup only: a Harbor replacement whose naval units move faster, with extra Gold and Loyalty for a city on a foreign continent.", "exploit": "On the England setup, the first district in an overseas court city: its Loyalty keeps a border city on a rival's continent from being pulled over while its own Great Works pull the rival's cities the other way." },
+    { "source": "agenda", "name": "Angevin Empire", "buys": "Eleanor grows her own cities and dislikes leaders whose nearby cities have low Population.", "exploit": "A reminder of the mechanics rather than a lever: citizen pressure still counts alongside Court of Love, so the court cities are grown as well as stocked, and the small foreign cities near the border fall first. An AI Eleanor on the same map does this to you; keep a Governor in your own border city." }
+  ],
+  "shape_block": {
+    "dead_phase": {
+      "activation_turn": 130,
+      "flatness_statement": "Eleanor of Aquitaine has no leader advantage for the first 130 turns. That is expected and it is correct: Court of Love is -1 Loyalty per Great Work, the first Great Work of Writing arrives around turn 80, an Amphitheater holds two, and the Art Museum, Archaeological Museum and Hermitage that hold the rest come with Humanism and Natural History. Before turn 130 the court cities exert -2 to -6 a turn against foreign cities whose own citizens, Amenities and Governors keep them comfortably positive, so nothing visibly moves. Grand Tour starts with Medieval wonders and the Château waits for Humanism. Do not judge this leader before turn 130, and do not move the Great Works into safe interior cities because the border looks quiet. France is a plain river builder until Humanism, and the plan below is that plain game, played to survive with its Great Works in the right two cities.",
+      "stockpile": [
+        "The court city: a city founded by turn 40, 10 to 12 tiles from the nearest rival capital, so the rival's next cities land within 9 tiles of it; Ancient Walls by turn 60, Medieval Walls by turn 115, and an Archer then Crossbowmen inside.",
+        "Great Works: six or more held in the court cities by turn 130 and none anywhere else; four of Writing in two Amphitheaters and the rest from a third Amphitheater in range or works bought from AI civilizations.",
+        "Empty slots waiting: Gold banked to buy the court city's Art Museum the turn Humanism lands, a river-adjacent tile beside it kept clear for the Hermitage, and the second court city's Theater Square reserved for the Archaeological Museum.",
+        "Pingala established in the court city with Grants by turn 110: the Loyalty every Governor gives in its own city, and doubled Great Person points from the Amphitheater there.",
+        "Population: the court city at 10 or more by turn 130, so its citizens rather than the rival's are the strongest pull on the target cities."
+      ],
+      "progress_markers": [
+        "City count: 4 by turn 45, 6 by turn 85, 7 by turn 130.",
+        "Culture per turn: 10 by turn 50, 30 by turn 90, 70 by turn 130.",
+        "Great Works held in the court cities: 1 by turn 85, 4 by turn 115, 6 by turn 130.",
+        "Theater Squares with Amphitheaters within 9 tiles of a target city: 1 by turn 80, 2 by turn 105, 3 by turn 130.",
+        "Loyalty per turn of the two best target cities, read from the Loyalty lens and written down at turns 90, 110 and 130; it should fall toward zero as each work arrives."
+      ],
+      "activation_test": "At turn 130 answer four questions. Do the court cities hold six or more Great Works within 9 tiles of at least one foreign city that is not a capital? Is that city's Loyalty per turn, with the works counted, negative or within three points of zero? Is Humanism adopted or within five turns, with Gold banked for the Art Museum? Is Pingala in the court city, and is the court city itself walled and at positive Loyalty? Four yes answers mean the kit is on and the activation phase begins. Any no means the dormant phase continues for up to fifteen turns to fix exactly that item; a no that cannot be fixed by turn 145 means the abort branch. The arithmetic to keep in view: a target sitting at +4 a turn before Court of Love needs ten works in range to fall at -6, which takes it from full Loyalty to zero in about seventeen turns; a Governor arriving there adds eight to what must be beaten."
+    }
+  },
+  "phases": [
+    {
+      "id": "settle",
+      "name": "Dormant: settle",
+      "turns": { "from": 1, "to": 45 },
+      "era": "ancient",
+      "objective": "Four cities by turn 45 on rivers where possible, one of them the court city: the border city toward the nearest rival, founded 10 to 12 tiles from that rival's capital so the rival's next two cities land within 9 tiles of it. A Slinger or Archer in every city and a pantheon by turn 30. Eleanor gives nothing here and the plan does not pretend otherwise; this is the generic strong opening.",
+      "build_order": [
+        { "item": "Scout", "why": "Find the nearest rival capital by turn 15; the court city's site is measured from it, and Writing comes from the meeting." },
+        { "item": "Slinger", "why": "Archery Eureka on the first barbarian scout and the first piece of the defensive floor." },
+        { "item": "Settler", "why": "Second city on the river by turn 18; growth and Production for everything the dormant phase has to build." },
+        { "item": "Warrior", "why": "Escort for the court city's Settler, which walks toward the rival and past whatever camp is in the way." },
+        { "item": "Settler", "why": "The court city, 10 to 12 tiles from the rival capital on the line between capitals, on a river or hills if either is there." },
+        { "item": "Monument", "why": "Culture for Early Empire and Political Philosophy; the court city's Theater Square waits on Drama and Poetry." },
+        { "item": "Builder", "why": "Three improvements for Craftsmanship, a Mine on a resource for The Wheel and a Farm on one for Irrigation; river banks stay unfarmed for Châteaux." },
+        { "item": "Settler", "why": "Fourth city behind the court city, so the border has depth and a second city sits within reach of the targets later." },
+        { "item": "Archer", "why": "In the court city; it is the nearest city to a rival and the first one an AI will test." }
+      ],
+      "research": [
+        { "id": "tech:pottery", "note": "Writing needs it; no Eureka to collect." },
+        { "id": "tech:mining", "note": "Mines on plains hills for the Production the Settlers and Walls cost." },
+        { "id": "tech:archery", "note": "Archers are the defensive floor; Eureka from a Slinger kill." },
+        { "id": "tech:writing", "note": "Campus in the capital; Eureka from meeting the rival the Scout finds." },
+        { "id": "tech:irrigation", "note": "Plantations for luxuries and Amenities; Eureka from a farmed resource." },
+        { "id": "tech:masonry", "note": "Ancient Walls for the court city; the Eureka needs a Quarry, which is often not there." }
+      ],
+      "civics": [
+        { "id": "civic:code-of-laws", "note": "God King and Discipline; the pantheon by turn 30." },
+        { "id": "civic:craftsmanship", "note": "Inspiration from three improved tiles; Agoge if a neighbour is close." },
+        { "id": "civic:early-empire", "note": "Colonization for cities three and four; Inspiration at six Population." },
+        { "id": "civic:mysticism", "note": "Free Inspiration from the pantheon; on the way to Drama and Poetry's tree." }
+      ],
+      "policies": [
+        { "card": "God King", "slot": "economic", "from": "civic:code-of-laws", "why": "Faith for Divine Spark by turn 30 without a Holy Site, which this plan never builds." },
+        { "card": "Discipline", "slot": "military", "from": "civic:code-of-laws", "why": "Slingers and Warriors beat the barbarians that wander toward the court city's site." },
+        { "card": "Colonization", "slot": "economic", "from": "civic:early-empire", "why": "Settlers faster for the court city and the fourth city." }
+      ],
+      "districts": [
+        { "district": "campus", "city": "capital", "note": "After Writing, beside mountains or a reef; the first district is the State Workforce Inspiration and Science is the dormant phase's visible marker." }
+      ],
+      "pantheon": { "slug": "divine-spark", "why": "+1 Great Writer point from every Theater Square with an Amphitheater and +1 Great Scientist point from every Campus with a Library: the Great Writers whose works become the first pressure arrive sooner.", "alternative": "city-patron-goddess" },
+      "wonders": [],
+      "governors": [],
+      "city_states": [
+        { "type": "Cultural", "why": "Envoys into the first Cultural city-state met; Culture in the capital toward Drama and Poetry." },
+        { "type": "Scientific", "why": "Science in the capital, which is the marker the dormant phase lives on." }
+      ],
+      "great_people": [],
+      "checkpoints": [
+        { "turn": 30, "test": "Rival capital found, the court city site chosen 10 to 12 tiles from it, and a pantheon founded?", "pass": "The next Settler goes to the court city site, escorted.", "fail": "If the rival has not been found, the Scout keeps going and the court city waits: settle the third city where it is safe and make the fourth the court city. A court city placed blind is a border city with nothing to pull." },
+        { "turn": 45, "test": "Four cities including the court city, an Archer or Slinger in each, and Early Empire reached?", "pass": "Enter the build phase; the court city's Walls come first.", "fail": "Three cities is still inside the plan if the court city is one of them. If the court city is not settled, it is the capital's next build and nothing else is queued." }
+      ],
+      "tasks": [
+        { "id": "settle-capital", "turn": 1, "text": "Settle on a river with a hill or two in range; move at most one turn." },
+        { "id": "settle-find-rival", "turn": 10, "text": "Scout toward the nearest rival; note their capital and the open land between it and yours." },
+        { "id": "settle-pantheon", "turn": 28, "text": "Found Divine Spark, or City Patron Goddess if Divine Spark is already taken." },
+        { "id": "settle-court-city", "turn": 35, "text": "Found the court city 10 to 12 tiles from the rival capital. Write its name down; every Great Work in the game goes here or to the second court city." },
+        { "id": "settle-reserve-banks", "turn": 40, "text": "Mark the river tiles beside the capital and the court city as Château tiles; Farms and Mines go elsewhere." }
+      ]
+    },
+    {
+      "id": "build",
+      "name": "Dormant: build",
+      "turns": { "from": 46, "to": 85 },
+      "era": "classical",
+      "objective": "Six cities by turn 85, Ancient Walls and an Archer in the court city, its Theater Square placed before any other city's and its Amphitheater finished by turn 80, Campuses with Libraries in the capital and second city, and Pingala appointed in the court city. Still no leader advantage; the markers to watch are cities, Culture, districts and the first Great Writer's points.",
+      "build_order": [
+        { "item": "Ancient Walls", "why": "Court city first; it faces the rival, and the Engineering Eureka comes with it." },
+        { "item": "Settler", "why": "Cities five and six behind the border, where the rival cannot contest them." },
+        { "item": "Theater Square", "why": "Court city, on its best adjacency tile; the first of the two places in the empire where Great Works will live." },
+        { "item": "Campus", "why": "Capital, then the second city; Science is the dormant phase's visible marker." },
+        { "item": "Amphitheater", "why": "Court city by turn 80: two Great Work of Writing slots and +1 Great Writer point under Divine Spark." },
+        { "item": "Library", "why": "Both Campuses; the Recorded History Inspiration and the Great Scientist that is the Education Eureka." },
+        { "item": "Trader", "why": "Currency Eureka and Gold; Gold buys the Art Museum and patronizes Great People later." },
+        { "item": "Water Mill", "why": "Capital on the river; the Construction Eureka and growth." },
+        { "item": "Commercial Hub", "why": "Second city on the river; Gold, a Trade Route, and the third specialty district for Mathematics." }
+      ],
+      "research": [
+        { "id": "tech:currency", "note": "Commercial Hub and Markets; Eureka from the first Trade Route." },
+        { "id": "tech:construction", "note": "Water Mill Eureka; Games and Recreation follows for free." },
+        { "id": "tech:engineering", "note": "Eureka from the court city's Ancient Walls; Aqueducts later." },
+        { "id": "tech:mathematics", "note": "Campus, Theater Square and Commercial Hub make three specialty districts for the Eureka." },
+        { "id": "tech:apprenticeship", "note": "Three Mines on plains hills; the Production the court city's buildings cost." }
+      ],
+      "civics": [
+        { "id": "civic:state-workforce", "note": "Inspiration from the capital Campus; Government Plaza later." },
+        { "id": "civic:political-philosophy", "note": "Classical Republic and the next Governor Title; Inspiration from three city-states met." },
+        { "id": "civic:drama-and-poetry", "note": "Theater Square, Amphitheater and Literary Tradition; usually unboosted." },
+        { "id": "civic:games-and-recreation", "note": "Free Inspiration from Construction; Entertainment Complex for the court city later." },
+        { "id": "civic:recorded-history", "note": "Two Campuses give the Inspiration." },
+        { "id": "civic:defensive-tactics", "note": "Bastions if a neighbour comes early; Inspiration if one declares." }
+      ],
+      "policies": [
+        { "card": "Classical Republic", "slot": "wildcard", "from": "civic:political-philosophy", "why": "The dormant government: an Amenity in every city with a district and +15% Great Person points." },
+        { "card": "Literary Tradition", "slot": "wildcard", "from": "civic:drama-and-poetry", "why": "+2 Great Writer points a turn on top of the Amphitheater's; every point is a future -1 on the targets." },
+        { "card": "Colonization", "slot": "economic", "from": "civic:early-empire", "why": "Settlers five and six faster." },
+        { "card": "Caravansaries", "slot": "economic", "from": "civic:foreign-trade", "why": "Gold from the Trade Routes; it buys the Walls now and the Art Museum later." }
+      ],
+      "districts": [
+        { "district": "theater-square", "city": "court city", "note": "The first Theater Square in the empire; mountain or wonder-site adjacency if the tile allows, but never a tile farther from the targets." },
+        { "district": "campus", "city": "capital and second city", "note": "Libraries by turn 80 for Recorded History and the Great Scientist." },
+        { "district": "commercial-hub", "city": "second city", "note": "River adjacency; Gold for the purchases the activation phase makes." }
+      ],
+      "wonders": [],
+      "governors": [
+        { "governor": "magnus", "promotion": "Provision", "city": "capital", "why": "The first Governor Title: Settlers from the capital without losing Population." },
+        { "governor": "pingala", "promotion": "Librarian", "city": "court city", "why": "The second title, appointed by turn 75: a Governor's Loyalty in the city the rival's citizens pull on, and +15% Culture where the Theater Square is." }
+      ],
+      "city_states": [
+        { "slug": "antananarivo", "why": "Culture for every Great Person ever earned; this plan earns a Writer every fifteen turns from here on." },
+        { "slug": "bologna", "why": "Great Person points from every district with a building; the Amphitheater cities earn Writers sooner." },
+        { "type": "Cultural", "why": "Keep the first Cultural city-state's suzerainty with the Culture envoys Political Philosophy brings." }
+      ],
+      "great_people": [
+        { "class": "great-writer", "why": "The first Great Writer by turn 85 from Divine Spark, Literary Tradition and the court city's Amphitheater; walked to the court city and activated there." }
+      ],
+      "checkpoints": [
+        { "turn": 65, "test": "Court city walled, its Theater Square placed, five cities, and Drama and Poetry adopted?", "pass": "Queue the Amphitheater in the court city and appoint Pingala there with the next title.", "fail": "If the Walls are missing, build them before the Theater Square; a court city lost to a Classical rush ends the plan. If Drama and Poetry is more than five turns away, take the government first and place the Theater Square by turn 72." },
+        { "turn": 85, "test": "Six cities, the court city's Amphitheater built, Pingala there, and two Libraries standing?", "pass": "Enter the stage phase; the second court city's Theater Square is the next district.", "fail": "Five cities is still inside the plan. If the Amphitheater is not built, buy it with Gold this turn: it is the first pair of slots in the whole plan." }
+      ],
+      "tasks": [
+        { "id": "build-court-walls", "turn": 52, "text": "Ancient Walls finished in the court city with an Archer inside." },
+        { "id": "build-court-theater", "turn": 62, "text": "Theater Square placed in the court city on its best tile facing the rival; no other city gets one first." },
+        { "id": "build-pingala", "turn": 72, "text": "Appoint Pingala in the court city with the second Governor Title." },
+        { "id": "build-amphitheater", "turn": 80, "text": "Amphitheater finished in the court city; Literary Tradition slotted." },
+        { "id": "build-second-court-site", "turn": 84, "text": "Choose the second court city: your own city nearest a different cluster of the rival's cities, or a new site within 9 tiles of them. Write it down." }
+      ]
+    },
+    {
+      "id": "stage",
+      "name": "Dormant: stage",
+      "turns": { "from": 86, "to": 130 },
+      "era": "medieval",
+      "objective": "Arrive at turn 130 with six Great Works sitting in the court cities and nowhere else, a second Amphitheater within 9 tiles of the targets, Humanism adopted or five turns away with Gold banked for the Art Museum, Medieval Walls in the court city, Pingala promoted to Grants there, and the Forbidden City standing in the capital under Grand Tour. The leader still gives nothing visible; this phase builds the stockpile the activation spends.",
+      "build_order": [
+        { "item": "Theater Square", "why": "Second court city; its Amphitheater is the second pair of slots and its museum later is the Archaeological one." },
+        { "item": "Amphitheater", "why": "Second court city by turn 105, and a third in the capital if the capital is within 9 tiles of a target." },
+        { "item": "Aqueduct", "why": "Capital first for the Military Engineering Eureka, then the court city so it grows past 10 and out-pulls the targets." },
+        { "item": "Medieval Walls", "why": "Court city; the rival notices its border cities slipping, and the court city is where it will answer." },
+        { "item": "Crossbowman", "why": "Two, upgraded from the floor's Archers once Machinery is in; the court city's garrison through the Renaissance." },
+        { "item": "University", "why": "Capital and second city; the Science marker and the Printing Eureka." },
+        { "item": "Market", "why": "Capital and second city; the Guilds Inspiration and the Gold the activation spends." },
+        { "item": "Forbidden City", "why": "Capital, a Renaissance wonder at a fifth off under Grand Tour with doubled Tourism; the extra Wildcard slot keeps Literary Tradition and Frescoes both slotted." },
+        { "item": "Builder", "why": "Six Farms for Feudalism away from the reserved banks, and the charges Châteaux need at Humanism." }
+      ],
+      "research": [
+        { "id": "tech:machinery", "note": "Crossbowmen; Eureka from the three Archers of the defensive floor." },
+        { "id": "tech:education", "note": "Universities; Eureka from the Divine Spark Great Scientist." },
+        { "id": "tech:military-engineering", "note": "Aqueducts for the court city's growth; Eureka from the capital Aqueduct." },
+        { "id": "tech:castles", "note": "Medieval Walls for the court city; Eureka from adopting Merchant Republic." },
+        { "id": "tech:printing", "note": "Forbidden City; Eureka from two Universities." }
+      ],
+      "civics": [
+        { "id": "civic:feudalism", "note": "Serfdom for Builders; Inspiration from six Farms." },
+        { "id": "civic:civil-service", "note": "Meritocracy; Inspiration when the capital reaches ten Population behind its Aqueduct." },
+        { "id": "civic:guilds", "note": "Two Markets give the Inspiration and Banking's Eureka." },
+        { "id": "civic:exploration", "note": "Merchant Republic, the Tier 2 government; Inspiration only on a coastal map." },
+        { "id": "civic:humanism", "note": "Art Museum, Archaeological Museum, Château and Frescoes: the slots the activation fills. Target turn 128 to 132." }
+      ],
+      "policies": [
+        { "card": "Merchant Republic", "slot": "wildcard", "from": "civic:exploration", "why": "The staging government: more Trade Routes and Gold for the Art Museum purchase, and the Castles Eureka." },
+        { "card": "Meritocracy", "slot": "economic", "from": "civic:civil-service", "why": "+1 Culture per specialty district in every city; Culture is the Humanism clock." },
+        { "card": "Literary Tradition", "slot": "wildcard", "from": "civic:drama-and-poetry", "why": "Kept slotted; the second and third Great Writers are the stockpile." },
+        { "card": "Serfdom", "slot": "economic", "from": "civic:feudalism", "why": "Builders with extra charges for the Farms now and the Châteaux at Humanism." }
+      ],
+      "districts": [
+        { "district": "theater-square", "city": "second court city", "note": "Within 9 tiles of a different rival city than the first court city covers, so two targets are under pressure at once." },
+        { "district": "aqueduct", "city": "capital, then court city", "note": "Military Engineering Eureka in the capital; Housing in the court city so its citizens outnumber the targets'." },
+        { "district": "commercial-hub", "city": "capital", "note": "The second Market for Guilds and the Gold that buys the Art Museum." }
+      ],
+      "wonders": [
+        { "name": "Forbidden City", "why": "Renaissance, so Grand Tour cuts its cost by a fifth and doubles its Tourism; the extra Wildcard slot carries a Great Person card for the rest of the game.", "skip_if": "A Culture-focused rival has Printing before you, or the capital has no flat tile beside its City Center." }
+      ],
+      "governors": [
+        { "governor": "pingala", "promotion": "Grants", "city": "court city", "why": "Promoted by turn 110: doubled Great Person points in the court city, so its Amphitheater's Writer points double." },
+        { "governor": "victor", "promotion": "Redoubt", "city": "second court city", "why": "The third title: a Governor's Loyalty in the second border city and a stronger garrison while the rival still has Knights." }
+      ],
+      "city_states": [
+        { "slug": "kumasi", "why": "Culture and Gold on Trade Routes to city-states for every specialty district in the origin; send the Merchant Republic routes from the court city." },
+        { "slug": "antananarivo", "why": "Keep suzerainty; the Culture bonus grows with every Writer and Scientist." },
+        { "type": "Cultural", "why": "Envoys toward a second Cultural suzerainty for Culture toward Humanism." }
+      ],
+      "great_people": [
+        { "class": "great-writer", "why": "Two more by turn 125, each walked to a court city and activated there; never in the capital unless the capital is in range." },
+        { "class": "great-scientist", "why": "The Divine Spark Libraries bring one by turn 100 for the Education Eureka." },
+        { "class": "great-artist", "why": "One earned before Humanism is its Inspiration; keep the unit unactivated and walk it to the court city's Art Museum." }
+      ],
+      "checkpoints": [
+        { "turn": 105, "test": "Four Great Works in the court cities, the second court city's Amphitheater built or being bought, and Pingala with Grants?", "pass": "Keep every Writer point flowing to the court cities; Medieval Walls go up next.", "fail": "Fewer than four works: patronize the next Great Writer with Gold or Faith rather than waiting, and ask every AI whether it will sell a Great Work of Writing for Gold. Walls first if a neighbour is massing units." },
+        { "turn": 130, "test": "Run the activation test: six works in range of a non-capital target, its Loyalty near zero, Humanism within five turns, and Pingala in a walled court city at positive Loyalty?", "pass": "The kit is on. Enter the activation phase and buy the Art Museum the turn Humanism lands.", "fail": "Fix the single missing item for up to fifteen turns. Two or more missing at turn 145 means the abort branch, and France plays for Culture through Grand Tour alone." }
+      ],
+      "tasks": [
+        { "id": "stage-second-theater", "turn": 90, "text": "Theater Square placed in the second court city." },
+        { "id": "stage-grants", "turn": 104, "text": "Pingala promoted to Grants in the court city." },
+        { "id": "stage-read-targets", "turn": 110, "text": "Open the Loyalty lens and write down the Loyalty per turn of every foreign city within 9 tiles of the court cities; the two lowest non-capitals are the targets." },
+        { "id": "stage-medieval-walls", "turn": 115, "text": "Medieval Walls finished in the court city with two Crossbowmen inside." },
+        { "id": "stage-forbidden-city", "turn": 122, "text": "Forbidden City finished in the capital under Grand Tour; Frescoes goes in its slot at Humanism." },
+        { "id": "stage-bank-gold", "turn": 127, "text": "Humanism five turns out or less; hold enough Gold to buy the Art Museum outright the turn it lands." }
+      ]
+    },
+    {
+      "id": "activate",
+      "name": "Activation: the first flips",
+      "turns": { "from": 131, "to": 185 },
+      "era": "renaissance",
+      "objective": "Switch the Phase A habits off. Buy the court city's Art Museum the turn Humanism lands and fill it, build the Archaeological Museum in the second court city and send Archaeologists at Natural History, put the Hermitage beside the court city's Theater Square under Grand Tour, promote Pingala to Curator, and flip the first foreign city by turn 165. Each flipped city gets a Monument and a Governor the turn it arrives, and if it has a Theater Square within 9 tiles of the next foreign city it becomes the next court city.",
+      "build_order": [
+        { "item": "Art Museum", "why": "Court city, bought with Gold the turn Humanism lands: three Great Work of Art slots and the Opera and Ballet Inspiration." },
+        { "item": "Château", "why": "Every reserved river tile beside the capital's and the court city's wonders; Culture now, Tourism after Flight." },
+        { "item": "Archaeological Museum", "why": "Second court city: three artifact slots that Archaeologists fill faster than any Great Person can, and the Natural History Inspiration." },
+        { "item": "Archaeologist", "why": "Two the turn Natural History lands; dig the antiquity sites nearest the second court city and pick artifacts that theme the museum." },
+        { "item": "Hermitage", "why": "Court city on its river tile at a fifth off: four Great Work of Art slots, which is -4 a turn on every target once full." },
+        { "item": "Entertainment Complex", "why": "Court city; Amenities keep its own Loyalty high while it pulls on the neighbours." },
+        { "item": "Monument", "why": "In every flipped city the turn it joins; Loyalty and Culture before anything else is queued there." }
+      ],
+      "research": [
+        { "id": "tech:banking", "note": "Free Eureka from Guilds; Banks for the Gold patronage runs on." },
+        { "id": "tech:gunpowder", "note": "Musketmen for the court city if a rival masses on the border; usually unboosted." },
+        { "id": "tech:scientific-theory", "note": "Free Eureka from The Enlightenment; the Science fallback stays alive." },
+        { "id": "tech:mass-production", "note": "Eureka from one Lumber Mill; the road to Industrialization." },
+        { "id": "tech:industrialization", "note": "Two Workshops for the Eureka; Production for the Hermitage and Bolshoi Theatre." }
+      ],
+      "civics": [
+        { "id": "civic:the-enlightenment", "note": "Three Great People earned give the Inspiration; Scientific Theory follows." },
+        { "id": "civic:diplomatic-service", "note": "Alliance with a civilization that is not the target; Spies for Great Work Heist if slots outnumber works." },
+        { "id": "civic:opera-and-ballet", "note": "Inspiration from the court city's Art Museum; Symphonies and the Bolshoi Theatre." },
+        { "id": "civic:natural-history", "note": "Inspiration from the Archaeological Museum built first; Archaeologists and the Hermitage." }
+      ],
+      "policies": [
+        { "card": "Frescoes", "slot": "wildcard", "from": "civic:humanism", "why": "+2 Great Artist points a turn; the Art Museum and the Hermitage need seven works of art between them." },
+        { "card": "Literary Tradition", "slot": "wildcard", "from": "civic:drama-and-poetry", "why": "In the Forbidden City's slot; Writers still fill the third Amphitheater and the flipped cities' slots." },
+        { "card": "Merchant Republic", "slot": "wildcard", "from": "civic:exploration", "why": "Kept: the Trade Route Gold is what patronizes Great Artists and buys Archaeologists." },
+        { "card": "Meritocracy", "slot": "economic", "from": "civic:civil-service", "why": "Culture per specialty district, and every flipped city adds its districts to the count." }
+      ],
+      "districts": [
+        { "district": "entertainment-complex", "city": "court city", "note": "Amenities for its own Loyalty and the first of two for Professional Sports." },
+        { "district": "theater-square", "city": "any flipped city within 9 tiles of the next foreign city", "note": "The next court city; built only where the next ring of targets is in range." }
+      ],
+      "wonders": [
+        { "name": "Hermitage", "why": "Industrial, so Grand Tour discounts it and doubles its Tourism, and its four art slots in the court city add -4 a turn on every target once they are full.", "skip_if": "No river-adjacent tile in either court city, or Natural History lands after turn 175; a Hermitage outside Court of Love's range is Tourism only and the Bolshoi Theatre comes first." }
+      ],
+      "governors": [
+        { "governor": "pingala", "promotion": "Curator", "city": "court city", "why": "+100% Tourism from Great Works in the city that holds most of them; the pressure and the Culture victory now come from the same buildings." },
+        { "governor": "victor", "promotion": "Garrison Commander", "city": "second court city", "why": "Loyalty to your other cities within 9 tiles, which now includes the first flipped city, and Combat Strength when the rival's patience runs out." }
+      ],
+      "city_states": [
+        { "slug": "kumasi", "why": "Kept: Culture on the court city's Trade Routes grows with each Theater Square building." },
+        { "slug": "antananarivo", "why": "Kept: every Great Person recruited in this phase raises the Culture bonus toward its cap." },
+        { "type": "Cultural", "why": "A second Cultural suzerainty for Culture toward Opera and Ballet and Natural History." }
+      ],
+      "great_people": [
+        { "class": "great-artist", "why": "Patronize with Gold or Faith the moment one is affordable; each brings two or three works for the Art Museum and the Hermitage." },
+        { "class": "great-writer", "why": "Every further Writer fills a flipped city's Amphitheater and moves the pressure one ring outward." }
+      ],
+      "checkpoints": [
+        { "turn": 150, "test": "Art Museum full, the Archaeological Museum built, Curator on Pingala, and the best target losing five or more Loyalty a turn?", "pass": "Hold course; the target reaches zero within twenty turns. Start the Hermitage.", "fail": "If the target falls by less than five a turn, read what holds it up in the Loyalty lens: a new Governor there needs eight more works in range or a switch to the second target; a Golden Age there needs patience until it ends." },
+        { "turn": 185, "test": "At least one foreign city joined and holding positive Loyalty with a Governor, and the Hermitage built or within ten turns?", "pass": "Enter the payoff phase; the next court city is chosen among the flipped cities.", "fail": "No flip by turn 185 means the targets are better held than the works can reach: move every work into the single court city closest to the weakest target, and take the abort branch at turn 200 if nothing has joined." }
+      ],
+      "tasks": [
+        { "id": "activate-art-museum", "turn": 132, "text": "Buy the Art Museum in the court city the turn Humanism lands; walk any held Great Artist there and activate it." },
+        { "id": "activate-chateaux", "turn": 138, "text": "Builders put Châteaux on every reserved river tile beside a wonder." },
+        { "id": "activate-arch-museum", "turn": 145, "text": "Archaeological Museum built in the second court city before Natural History, for the Inspiration." },
+        { "id": "activate-curator", "turn": 148, "text": "Pingala promoted to Curator in the court city." },
+        { "id": "activate-archaeologists", "turn": 155, "text": "Natural History in: two Archaeologists out the same turn, digging the sites nearest the second court city." },
+        { "id": "activate-first-flip", "turn": 165, "text": "First foreign city joins: Monument queued, a Governor sent, its Loyalty checked every turn for ten turns." }
+      ]
+    },
+    {
+      "id": "payoff",
+      "name": "Payoff: leapfrog and Tourism",
+      "turns": { "from": 186, "to": null },
+      "era": "industrial",
+      "objective": "Run hot. Every flipped city with a Theater Square in range of the next ring becomes a court city and the Great Works move forward into it, Broadcast Centers add Music slots at Radio, Flight turns the Châteaux and wonders into Tourism, and Rock Bands and National Parks close the Culture victory. There is no second build-out: cities build Culture buildings, Tourism units, and the Monuments and Walls that hold what has joined.",
+      "build_order": [
+        { "item": "Theater Square", "why": "In the newest flipped city that reaches the next ring of foreign cities; the works move in as soon as its buildings stand." },
+        { "item": "Bolshoi Theatre", "why": "Capital: an Industrial wonder at a fifth off with doubled Tourism, and the Flight Eureka if the Hermitage was skipped." },
+        { "item": "Broadcast Center", "why": "Both court cities at Radio: a Music slot each and the Satellites Eureka." },
+        { "item": "Naturalist", "why": "National Parks on Breathtaking tiles; the Radio Eureka and Tourism the wonders do not supply." },
+        { "item": "Rock Band", "why": "Bought with Faith once unlocked and sent at the rival with the most domestic Tourists." },
+        { "item": "Garde Impériale", "why": "Two in each court city when a rival whose cities are slipping declares war; defence only." }
+      ],
+      "research": [
+        { "id": "tech:flight", "note": "Free Eureka from the Hermitage; Châteaux and every wonder tile start producing Tourism." },
+        { "id": "tech:combustion", "note": "Free Eureka from the first artifact dug." },
+        { "id": "tech:radio", "note": "Broadcast Centers; Eureka from a National Park." },
+        { "id": "tech:computers", "note": "Tourism boost for the Culture race; Eureka from adopting Democracy." },
+        { "id": "tech:telecommunications", "note": "Social Media and Online Communities; no Eureka to collect." }
+      ],
+      "civics": [
+        { "id": "civic:mass-media", "note": "Free Inspiration from Radio." },
+        { "id": "civic:suffrage", "note": "Democracy for cheaper Great Person patronage; four Sewers are not worth chasing for the Inspiration." },
+        { "id": "civic:cultural-heritage", "note": "Inspiration from the themed Archaeological Museum; Heritage Tourism." },
+        { "id": "civic:professional-sports", "note": "Two Entertainment Complexes, one in each court city, give the Inspiration." },
+        { "id": "civic:social-media", "note": "Free Inspiration from Telecommunications; Online Communities." }
+      ],
+      "policies": [
+        { "card": "Heritage Tourism", "slot": "economic", "from": "civic:cultural-heritage", "why": "More Tourism from the Great Works the court cities already hold." },
+        { "card": "Online Communities", "slot": "economic", "from": "civic:social-media", "why": "Tourism toward every civilization a Trade Route reaches; the court city's routes run to the rivals." },
+        { "card": "Symphonies", "slot": "wildcard", "from": "civic:opera-and-ballet", "why": "Great Musician points for the Broadcast Center slots." },
+        { "card": "Democracy", "slot": "wildcard", "from": "civic:suffrage", "why": "Cheaper patronage of Great People and the Computers Eureka." }
+      ],
+      "districts": [
+        { "district": "theater-square", "city": "each new court city among the flipped cities", "note": "The pressure moves one ring outward each time a flipped city can hold works." },
+        { "district": "entertainment-complex", "city": "second court city", "note": "Professional Sports Inspiration and the Amenities its own Loyalty needs." }
+      ],
+      "wonders": [
+        { "name": "Bolshoi Theatre", "why": "Industrial, discounted and doubled by Grand Tour; a Tourism wonder that also covers the Flight Eureka.", "skip_if": "Opera and Ballet lands after turn 200, or a Culture rival already has it under way." },
+        { "name": "Eiffel Tower", "why": "+2 Appeal on every tile in the empire, so every National Park and Château pays more, and its Tourism is doubled.", "skip_if": "Steel arrives after turn 240, or the capital is still finishing the Bolshoi Theatre." }
+      ],
+      "governors": [
+        { "governor": "pingala", "promotion": "Curator", "city": "court city", "why": "Stays with the largest Great Work stock; if the stock moves to a new court city, Pingala moves with it." },
+        { "governor": "victor", "promotion": "Garrison Commander", "city": "the newest court city", "why": "Holds the latest flips with Loyalty to every city within 9 tiles while the works pull on the next ring." }
+      ],
+      "city_states": [
+        { "slug": "antananarivo", "why": "Kept to the end; the bonus is at or near its cap by now." },
+        { "type": "Cultural", "why": "Every Cultural suzerainty still on offer; Culture is the Tourism multiplier's base." }
+      ],
+      "great_people": [
+        { "class": "great-musician", "why": "One for each Broadcast Center slot; patronized under Democracy if they are slow." },
+        { "class": "great-artist", "why": "Any still on offer fills a flipped city's Art Museum and extends the reach." }
+      ],
+      "checkpoints": [
+        { "turn": 220, "test": "Three foreign cities joined and held, the works moved into the newest court city, and Tourism ahead of the domestic Tourists of two rivals?", "pass": "Rock Bands and Online Communities against the remaining rivals; the flips continue on their own.", "fail": "If the flips have stopped, the next ring is too well held: leave the works where Curator doubles them and push the Culture victory with Rock Bands and National Parks alone." },
+        { "turn": 280, "test": "Culture victory within thirty turns on the Tourism screen, or Science within reach on the enlarged empire?", "pass": "Continue to the end; no further decisions.", "fail": "Neither: the game is a Score game. The flipped cities and the Great Works both count; build for Science and Culture and stop buying Rock Bands." }
+      ],
+      "tasks": [
+        { "id": "payoff-leapfrog", "turn": 190, "text": "Choose the next court city among the flipped cities; move the Writing works into its Amphitheater as soon as it has one." },
+        { "id": "payoff-flight", "turn": 200, "text": "Flight researched; confirm the Châteaux and every wonder now show Tourism." },
+        { "id": "payoff-broadcast", "turn": 215, "text": "Broadcast Centers in both court cities with Great Musicians activated in them." },
+        { "id": "payoff-national-parks", "turn": 225, "text": "Two National Parks from Naturalists; Radio Eureka collected." },
+        { "id": "payoff-rock-bands", "turn": 245, "text": "Rock Bands sent at the two rivals with the most domestic Tourists." }
+      ]
+    }
+  ],
+  "boosts": [
+    { "id": "tech:writing", "fit": "free", "when": "settle", "how": "The Scout meets the rival it was sent to find." },
+    { "id": "tech:archery", "fit": "cheap", "when": "settle", "how": "The Slinger finishes a barbarian scout near the capital." },
+    { "id": "tech:bronze-working", "fit": "cheap", "when": "settle", "how": "Three barbarian kills from the Archers defending the cities; the camps send them anyway." },
+    { "id": "tech:irrigation", "fit": "cheap", "when": "settle", "how": "Farm a Wheat or Rice that is not on a reserved river bank." },
+    { "id": "tech:wheel", "fit": "cheap", "when": "settle", "how": "The first Builder mines a resource on a plains hill." },
+    { "id": "tech:masonry", "fit": "costly", "when": "settle", "how": "Only if Stone, Marble or Gypsum is in the first ring; otherwise research it unboosted for the court city's Walls." },
+    { "id": "tech:sailing", "fit": "costly", "when": "settle", "how": "Only if a city lands on the coast; the plan does not move a river site for it." },
+    { "id": "tech:astrology", "fit": "skip", "when": null, "how": "" },
+    { "id": "civic:craftsmanship", "fit": "free", "when": "settle", "how": "Three improvements from the first Builder." },
+    { "id": "civic:early-empire", "fit": "free", "when": "settle", "how": "Six Population across the first two river cities." },
+    { "id": "civic:mysticism", "fit": "free", "when": "settle", "how": "Founding Divine Spark with God King's Faith." },
+    { "id": "civic:military-tradition", "fit": "costly", "when": "settle", "how": "Only if a camp sits on the court city's site; the plan does not hunt camps." },
+    { "id": "civic:foreign-trade", "fit": "costly", "when": "settle", "how": "Only if the Scout reaches a second continent, which a Continents map rarely allows this early." },
+    { "id": "tech:currency", "fit": "free", "when": "build", "how": "The first Trader runs its route." },
+    { "id": "tech:construction", "fit": "cheap", "when": "build", "how": "A Water Mill in the river capital." },
+    { "id": "tech:engineering", "fit": "free", "when": "build", "how": "The court city's Ancient Walls are the first build of the phase." },
+    { "id": "tech:mathematics", "fit": "cheap", "when": "build", "how": "Campus, Theater Square and Commercial Hub by turn 80." },
+    { "id": "tech:apprenticeship", "fit": "cheap", "when": "build", "how": "Three Mines on plains hills across the first four cities." },
+    { "id": "tech:celestial-navigation", "fit": "costly", "when": "build", "how": "Two Fishing Boats only if a city is coastal; inland it is researched unboosted or not at all." },
+    { "id": "tech:horseback-riding", "fit": "skip", "when": null, "how": "" },
+    { "id": "civic:state-workforce", "fit": "free", "when": "build", "how": "The capital Campus is the first district." },
+    { "id": "civic:political-philosophy", "fit": "cheap", "when": "build", "how": "Three city-states met by the Scout on its way past the rival." },
+    { "id": "civic:drama-and-poetry", "fit": "costly", "when": "build", "how": "Only if a wonder is finished first; France's discount starts in the Medieval era, so take it unboosted rather than race a Classical wonder at full price." },
+    { "id": "civic:games-and-recreation", "fit": "free", "when": "build", "how": "Researching Construction." },
+    { "id": "civic:recorded-history", "fit": "cheap", "when": "build", "how": "Campuses in the capital and the second city by turn 80." },
+    { "id": "civic:defensive-tactics", "fit": "cheap", "when": "build", "how": "A neighbour declaring on the walled court city; a border city near a rival draws it sooner or later." },
+    { "id": "civic:theology", "fit": "skip", "when": null, "how": "" },
+    { "id": "tech:machinery", "fit": "free", "when": "stage", "how": "Archers in the capital, the court city and the second court city are the defensive floor." },
+    { "id": "tech:education", "fit": "cheap", "when": "stage", "how": "The Great Scientist the Divine Spark Libraries bring by turn 100." },
+    { "id": "tech:military-engineering", "fit": "cheap", "when": "stage", "how": "The capital Aqueduct, built for growth anyway." },
+    { "id": "tech:castles", "fit": "cheap", "when": "stage", "how": "Adopt Merchant Republic the turn Exploration lands." },
+    { "id": "tech:printing", "fit": "cheap", "when": "stage", "how": "Universities in the capital and the second city." },
+    { "id": "tech:stirrups", "fit": "free", "when": "stage", "how": "Feudalism is on the civic path; research it only when Gunpowder needs it." },
+    { "id": "tech:astronomy", "fit": "costly", "when": "stage", "how": "A University beside a mountain only where the Campus already sits there." },
+    { "id": "civic:feudalism", "fit": "cheap", "when": "stage", "how": "Six Farms across the river cities, away from the reserved banks." },
+    { "id": "civic:civil-service", "fit": "cheap", "when": "stage", "how": "The capital reaches ten Population behind its Aqueduct." },
+    { "id": "civic:guilds", "fit": "cheap", "when": "stage", "how": "Markets in the capital and the second city." },
+    { "id": "civic:divine-right", "fit": "skip", "when": null, "how": "" },
+    { "id": "civic:exploration", "fit": "costly", "when": "stage", "how": "Two Caravels only if a city is coastal; inland, unboosted." },
+    { "id": "civic:humanism", "fit": "costly", "when": "stage", "how": "A Great Artist before Humanism, from the Theater Squares' points or patronized with idle Faith; otherwise take it unboosted." },
+    { "id": "tech:banking", "fit": "free", "when": "activate", "how": "Guilds is on the civic path." },
+    { "id": "tech:gunpowder", "fit": "costly", "when": "activate", "how": "An Armory only if an Encampment already exists; the plan does not build one for this." },
+    { "id": "tech:scientific-theory", "fit": "free", "when": "activate", "how": "The Enlightenment is on the civic path." },
+    { "id": "tech:mass-production", "fit": "cheap", "when": "activate", "how": "One Lumber Mill on Woods away from the river banks." },
+    { "id": "tech:industrialization", "fit": "cheap", "when": "activate", "how": "Two Workshops in the capital and the second city." },
+    { "id": "tech:cartography", "fit": "costly", "when": "activate", "how": "Two Harbors only on a coastal map." },
+    { "id": "civic:the-enlightenment", "fit": "free", "when": "activate", "how": "Three Great Writers and a Great Scientist are already recruited by turn 130." },
+    { "id": "civic:diplomatic-service", "fit": "cheap", "when": "activate", "how": "An alliance with a civilization that is not the target." },
+    { "id": "civic:opera-and-ballet", "fit": "free", "when": "activate", "how": "The court city's Art Museum, bought at Humanism." },
+    { "id": "civic:natural-history", "fit": "free", "when": "activate", "how": "The second court city's Archaeological Museum, built before the civic." },
+    { "id": "civic:urbanization", "fit": "cheap", "when": "activate", "how": "The capital or the court city reaches fifteen Population." },
+    { "id": "civic:civil-engineering", "fit": "costly", "when": "activate", "how": "Seven different specialty districts; the flipped cities sometimes bring the missing ones." },
+    { "id": "civic:nationalism", "fit": "skip", "when": null, "how": "" },
+    { "id": "tech:flight", "fit": "free", "when": "payoff", "how": "The Hermitage, or the Bolshoi Theatre if the Hermitage was skipped." },
+    { "id": "tech:combustion", "fit": "free", "when": "payoff", "how": "The first artifact the Archaeologists extract." },
+    { "id": "tech:radio", "fit": "cheap", "when": "payoff", "how": "One National Park from a Naturalist." },
+    { "id": "tech:computers", "fit": "cheap", "when": "payoff", "how": "Adopt Democracy the turn Suffrage lands." },
+    { "id": "tech:chemistry", "fit": "cheap", "when": "payoff", "how": "The Diplomatic Service ally reaches alliance level 2." },
+    { "id": "tech:satellites", "fit": "cheap", "when": "payoff", "how": "Broadcast Centers in both court cities." },
+    { "id": "civic:mass-media", "fit": "free", "when": "payoff", "how": "Researching Radio for the Broadcast Centers." },
+    { "id": "civic:suffrage", "fit": "costly", "when": "payoff", "how": "Four Sewers; take it unboosted unless the cities need the Housing anyway." },
+    { "id": "civic:cultural-heritage", "fit": "cheap", "when": "payoff", "how": "Theme the second court city's Archaeological Museum by choosing which three artifacts to dig." },
+    { "id": "civic:professional-sports", "fit": "cheap", "when": "payoff", "how": "Entertainment Complexes in both court cities." },
+    { "id": "civic:social-media", "fit": "free", "when": "payoff", "how": "Researching Telecommunications." },
+    { "id": "civic:distributed-sovereignty", "fit": "cheap", "when": "payoff", "how": "The first Rock Band bought with Faith." }
+  ],
+  "decision_triggers": [
+    { "name": "Target gets a Governor", "if": "A target city within 9 tiles of the court cities is assigned a Governor, or its Loyalty per turn rises by eight or more in one turn.", "then": "That is eight more to beat. Either add eight works in range (the Hermitage and a third Amphitheater) or switch to the second target now. Do not keep feeding a city that has drifted out of reach." },
+    { "name": "Rival in a Dark Age", "if": "The target's owner enters a Dark Age, or the target city goes Unhappy.", "then": "Push now: move every Great Work that can reach into the court city nearest that city and hold them there until it joins. The window is the length of their age." },
+    { "name": "Court city wobbling", "if": "The court city's own Loyalty per turn goes negative.", "then": "The neighbours' citizens are winning. Keep Pingala there, add Amenities with an Entertainment Complex or a luxury trade, garrison a unit, and never move works out: a court city that flips takes its Great Works to the rival." },
+    { "name": "War on the court city", "if": "A rival whose cities are slipping declares war on you.", "then": "Defend inside the Walls with Crossbowmen and later Garde Impériale; take the Defensive Tactics Inspiration if it is still open. Do not counter-invade: a city captured by force brings grievances and none of the kit's value." },
+    { "name": "A city joins", "if": "A foreign city's Loyalty reaches zero and it joins France.", "then": "Monument and a Governor the same turn, Walls if it faces its old owner. If it has a Theater Square within 9 tiles of the next foreign city, it becomes a court city and the works move into it once it has slots." }
+  ],
+  "abort": {
+    "trigger": "Turn 145 with fewer than six Great Works within 9 tiles of any non-capital foreign city, or the court city lost or flipped during the dormant phase.",
+    "actions": [
+      "The leader ability is now decorative. Say so, and place Great Works for theming and Curator's Tourism instead of for range.",
+      "Play France as a Grand Tour wonder civilization: Medieval to Industrial wonders in the capital, Châteaux beside them, and the Culture victory from doubled wonder Tourism.",
+      "If the Culture race is lost by turn 250, turn the Universities and Research Labs the dormant phase built toward a Science finish."
+    ]
+  },
+  "fail_state": "Turn 130 with four Great Works spread across the capital and two interior cities, or a court city founded fifteen tiles from anything foreign, or a court city that flipped to the rival in the Renaissance with its Amphitheater full. Each is a dormant-phase mistake that only shows when the flips fail to start, and none of them can be fixed after turn 150.",
+  "common_mistakes": [
+    "Activating Great Writers wherever they appear. A Great Work in the capital, fourteen tiles from the border, is Tourism and nothing else; walk the unit to a court city.",
+    "Targeting the rival's capital. Capitals have the strongest Loyalty in their empire; the targets are the small cities the rival settles toward you.",
+    "Founding the court city in the wrong place. Beyond 9 tiles of the rival's likely city sites the works pressure nothing, and too close to their capital it is the one that flips.",
+    "Leaving the court city without a Governor. Its own Loyalty is pulled by the same neighbours it is pulling on, and Pingala's presence is what keeps it yours.",
+    "Taking a flipped city for granted. The balance that pulled it over can pull it back; Monument, Governor and works in range the turn it arrives.",
+    "Farming the river banks in the first fifty turns. The Châteaux need them and France has nowhere else to put them."
+  ],
+  "sources": [
+    "Civilization VI Civilopedia, Gathering Storm ruleset (Eleanor of Aquitaine, Court of Love, Angevin Empire; France with Grand Tour, Garde Impériale and Château; England with Workshop of the World, Sea Dog, Redcoat and Royal Navy Dockyard).",
+    "Loyalty rules as of Rise and Fall and Gathering Storm: citizen pressure from cities within 9 tiles, a Governor's Loyalty in its own city, Amenities and Ages as modifiers, and the Loyalty lens as the readout the plan relies on.",
+    "Boost objectives from leadership-focus/data/civ6/eurekas.json in this repository.",
+    "Leadership Focus tags, caveats and Dead-Phase supplement for Eleanor of Aquitaine in this repository.",
+    "Where the civ-info text differs from the game, the game is followed: the civilization ability is France's or England's, chosen at setup, and this plan takes France's Grand Tour. The Redcoat is England's Line Infantry replacement rather than a standalone unit. A Theater Square holds an Art Museum or an Archaeological Museum, not both, so each court city takes one of them."
+  ]
+}

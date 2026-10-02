@@ -1,0 +1,1585 @@
+{
+  "leader": "Philip II",
+  "civilization": "Spain",
+  "generated": "2026-10-02",
+  "slug": "philip-ii",
+  "shape": "Gate",
+  "secondary_shape": null,
+  "version": 1,
+  "updated": "2026-10-02",
+  "assumptions": {
+    "ruleset": "Gathering Storm with every expansion and the Leader Pass",
+    "speed": "Standard",
+    "difficulty": "Emperor",
+    "map": "Continents or Small Continents, standard size, 8 civilizations",
+    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. Philip II has a single persona and it is planned here. The gate has two halves, a founded religion and the Gunpowder technology that unlocks the Conquistador, and both are conditions, not turns. The leader record puts Conquistadors at turn 130 to 150 for unforced play; this plan beelines Gunpowder and expects it between turn 105 and 120, so every turn number before the gate is a pace check."
+  },
+  "verdict": {
+    "victory": "Religion",
+    "secondary": "Domination",
+    "confidence": "medium",
+    "one_line": "Found a religion early, beeline Gunpowder, and walk Conquistadors with Missionaries on their tiles into the nearest civilization that worships something else. Every city they take converts on capture, and every civilization that already follows you is left alone, because it already counts toward the win.",
+    "why": "El Escorial only fires against civilizations whose majority religion differs from yours, and the Conquistador only reaches its full strength with a religious unit on its tile and converts what it captures. That makes the war a conversion tool: it is aimed at exactly the civilizations a Religion victory has to turn, and each capture is a converted city that counts for Reformed Church and the victory the moment it is yours. Once a civilization follows your religion the combat bonus against it disappears, which is fine, because it no longer needs fighting. Domination is the secondary rather than the primary because the Conquistador edge shrinks to nothing against Line Infantry and Renaissance Walls in the Industrial era, long before every capital can fall; the Apostles that two Holy Sites and the overseas Missions pay for are what finish the game."
+  },
+  "map_check": {
+    "must_have": [
+      "A coastal capital, or coast within one Settler move: Spain's start bias leans coastal, and the Harbor, the intercontinental Trade Routes and the overseas Missions all start there.",
+      "At least one rival with a religion of its own within roughly 15 tiles by land or a short coastal crossing, because El Escorial and the escorted Conquistador need a differently-faithed target in reach during the Renaissance."
+    ],
+    "prefer": [
+      "A Mountain, Woods cluster or natural wonder beside the capital for a Holy Site with a major adjacency; the religion is half the gate and it is a race against the AI's Prophets.",
+      "Delicate Arch or the Dead Sea in reach, for Faith and an early Astrology Eureka.",
+      "Plains hills and Iron near the forward city, for the Encampment, the Men-at-Arms bank and Alhambra later.",
+      "A second continent within Caravel reach, so Treasure Fleet routes and the extra Faith from Missions off the home continent are live in the Renaissance."
+    ],
+    "no_go": "Every reachable rival already follows your religion, or the only differently-faithed civilizations sit across Ocean with nothing reachable before the Industrial era. El Escorial then has no target, the Conquistador has nobody to convert, and the gate opens onto an empty map.",
+    "fallback": "If no target is reachable, play the religion peacefully: Apostles and Inquisitors from two Holy Sites, a colony on the second continent ringed with Missions, and Treasure Fleet Trade Routes for Gold, with Conquistadors kept only as the defensive line. If the last Great Prophet goes elsewhere, run the Prophet lost trigger below."
+  },
+  "kit_levers": [
+    {
+      "source": "leader_ability",
+      "name": "El Escorial",
+      "buys": "Inquisitors get one extra Remove Heresy, and combat units fight at +4 Combat Strength against civilizations that follow a different religion; the civ-info text extends a matching edge to religious units in theological combat.",
+      "exploit": "The bonus is decided by the target's majority religion, so a faith check comes before every declaration and no Missionary or Trade Route of yours ever enters a target. The extra Remove Heresy is what holds the conquests: an Inquisitor walks behind the army and wipes the old faith out of each capture before its former neighbours press it back."
+    },
+    {
+      "source": "civ_ability",
+      "name": "Treasure Fleet",
+      "buys": "Trade Routes between continents pay extra Gold, Faith and Production, and Fleets and Armadas form at Mercantilism instead of Nationalism and Mobilization.",
+      "exploit": "A colony on the second continent turns every domestic route from the capital into an intercontinental one, which pays for upgrades in Gold and for Missionary escorts in Faith. If the next differently-faithed target is across water, Mercantilism lets Caravels and Frigates form Fleets an era before anyone else, and the escorted Conquistadors land under them."
+    },
+    {
+      "source": "unique_unit",
+      "name": "Conquistador",
+      "buys": "A Musketman replacement at Gunpowder with +10 Combat Strength when a religious unit shares its tile; a city it captures, or stands next to when the city falls, converts to your religion.",
+      "exploit": "55 plus 10 plus the El Escorial 4 is 69, which beats a Pikeman or a Knight outright and a garrisoned Musketman by 14. Every Conquistador moves with a Missionary on its tile at the end of every turn, the banked Men-at-Arms all upgrade on the gate turn, and each capture converts on the spot and counts toward Reformed Church."
+    },
+    {
+      "source": "unique_infrastructure",
+      "name": "Mission",
+      "buys": "A Builder improvement that yields Faith, more of it on a continent other than the capital's, and Science beside a Campus.",
+      "exploit": "Missions are the colony's economy, not the homeland's. Settle one or two cities on the second continent, ring a Campus there with Missions, and the Faith they make buys the Apostles that finish the Religion victory after the Conquistador window closes."
+    },
+    {
+      "source": "agenda",
+      "name": "Counter Reformer",
+      "buys": "AI Philip wants every one of his cities on his faith, likes civilizations that share it and hates anyone who spreads another religion into his empire.",
+      "exploit": "Irrelevant to your own play, but it is the plan in miniature: a civilization that adopts your religion stops being a target and becomes a partner, and one that missionizes into your cities hands you a Holy War Casus Belli and a reason to strike it first."
+    }
+  ],
+  "shape_block": {
+    "gate": {
+      "gate_condition": "Two halves, both conditions and neither a turn: a religion of your own founded and followed in your cities, which turns El Escorial on, and the Gunpowder technology, which unlocks the Conquistador. The post-gate war starts only when both are true and the staging list below is complete; a turn number on the calendar opens nothing.",
+      "fastest_path": [
+        "tech:astrology",
+        "civic:mysticism",
+        "tech:mining",
+        "tech:bronze-working",
+        "tech:animal-husbandry",
+        "tech:horseback-riding",
+        "tech:pottery",
+        "tech:writing",
+        "tech:currency",
+        "tech:masonry",
+        "tech:wheel",
+        "tech:construction",
+        "tech:engineering",
+        "tech:apprenticeship",
+        "tech:military-engineering",
+        "civic:feudalism",
+        "tech:stirrups",
+        "tech:gunpowder"
+      ],
+      "estimated_arrival": {
+        "from": 105,
+        "to": 120
+      },
+      "staging": [
+        "Religion founded, the Holy City and a second Holy Site each with a Temple, and the faith map written down: every rival's majority religion read from the Religion lens, and no Missionary or Trade Route of yours sent into any of them.",
+        "A target picked from that map: the nearest civilization whose majority religion is not yours, with its capital or a large city within about eight tiles of the forward city, scouted for Walls and defenders.",
+        "Four to six Men-at-Arms banked in the forward Encampment city under Feudal Contract, ready to upgrade to Conquistadors the turn Gunpowder lands, and the Gold for it: price one upgrade at turn 100, halve it for Professional Army, and hold that times the number of units.",
+        "One Missionary per Conquistador bought with Faith and parked in the forward city, plus one spare. These are the +10 escorts and they spread to nobody before the war.",
+        "Iron mined for the Men-at-Arms and a Niter source mined or traded for, if the Conquistador's build or upgrade cost asks for it.",
+        "Two Trebuchets for Medieval Walls, a Great General from the Encampment, and an Inquisitor (or the Apostle that launches the Inquisition) to follow the army.",
+        "Ancient Walls in the forward city and the capital, Victor in the forward city, and a Casus Belli ready: Holy War if the target has converted one of your cities, otherwise a denouncement five turns old for a Formal War."
+      ],
+      "late_gate": "The religion half is late if no Great Prophet has arrived by turn 80 and the Religion screen shows none left: run the Prophet lost trigger, because waiting for a Prophet that will never come is the worst use of the pre-gate. The Gunpowder half is late if it is not in by turn 140, and then the problem is Science, not the army. Build a Campus with a Library in the capital, put Pingala there with Researcher, finish the Armory for the Eureka if it is not standing, and keep the Men-at-Arms banked rather than spending them. El Escorial already works on every unit once the religion exists, so a neighbour who attacks in the meantime is fought at +4 behind Walls, but take no cities: a capture before the Conquistador does not convert. A gate twenty turns late still opens before most targets field Line Infantry, so the plan survives a late gate; it does not survive an army spent before it.",
+      "closing_window": "Two deadlines. The first is parity: escorted Conquistadors at 69 are decisive against Musketmen, Knights and Pikemen and are not decisive against Line Infantry at 65 behind Renaissance Walls, and targets field both in the Industrial era, roughly turn 170 to 190 on Emperor. The second is the target's own faith: your captured, converted cities press your religion on the target's remaining cities, and if its majority flips to yours mid-war the +4 is gone against it. Read the target's majority religion every five turns of the war, take its cities in a tight sequence, and when it is one city from flipping, either take the capital that turn or make peace and count the civilization as converted."
+    }
+  },
+  "phases": [
+    {
+      "id": "found",
+      "name": "Found and scout",
+      "turns": {
+        "from": 1,
+        "to": 30
+      },
+      "era": "ancient",
+      "objective": "State the gate on turn 1, settle on the coast, put a Holy Site down by turn 20 beside the best adjacency in reach, found Divine Spark, and settle the second city, so the Great Prophet race starts before the AI's Holy Sites are up.",
+      "build_order": [
+        {
+          "item": "Scout",
+          "why": "Meets civilizations for Writing, finds a natural wonder for Astrology, and records which neighbours will found rival religions."
+        },
+        {
+          "item": "Slinger",
+          "why": "Archery Eureka on a barbarian scout, and the capital's defender while the Scout is away."
+        },
+        {
+          "item": "Settler",
+          "why": "Second city toward the nearest rival on plains hills or a river; this becomes the forward Encampment city."
+        },
+        {
+          "item": "Builder",
+          "why": "Three improved tiles for Craftsmanship, a Farm on a resource for Irrigation, and a Mine for Bronze Working's line."
+        },
+        {
+          "item": "Holy Site",
+          "why": "Capital, beside a Mountain, Woods or natural wonder; Divine Spark and the Great Prophet points both run through it."
+        },
+        {
+          "item": "Warrior",
+          "why": "Escort and second defender; with the Slinger it makes the three barbarian kills for Bronze Working."
+        },
+        {
+          "item": "Shrine",
+          "why": "More Great Prophet points, and the building that lets the Holy City buy Missionaries later."
+        },
+        {
+          "item": "Settler",
+          "why": "Third city, coastal if possible, before turn 35."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:astrology",
+          "note": "First. Holy Site and Shrine; Eureka if the Scout finds a natural wonder."
+        },
+        {
+          "id": "tech:mining",
+          "note": "Mines and the road to Bronze Working and Masonry."
+        },
+        {
+          "id": "tech:sailing",
+          "note": "Eureka free from the coastal capital; the Harbor line starts here."
+        },
+        {
+          "id": "tech:pottery",
+          "note": "Prerequisite for Writing and Irrigation; no boost to chase."
+        },
+        {
+          "id": "tech:writing",
+          "note": "Eureka free from meeting the first civilization; Currency sits behind it."
+        },
+        {
+          "id": "tech:bronze-working",
+          "note": "Encampment and the Iron reveal; Eureka from three barbarian kills."
+        },
+        {
+          "id": "tech:animal-husbandry",
+          "note": "Pastures and the road to Horseback Riding, which three gate techs need."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:code-of-laws",
+          "note": "God King for the pantheon and Discipline for the camps."
+        },
+        {
+          "id": "civic:craftsmanship",
+          "note": "Inspiration from three improved tiles; Military Tradition and State Workforce sit behind it."
+        },
+        {
+          "id": "civic:foreign-trade",
+          "note": "Trade Routes and the road to Mysticism; research it plain unless a second continent is sighted first."
+        }
+      ],
+      "policies": [
+        {
+          "card": "God King",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "Faith in the capital for the pantheon by turn 20."
+        },
+        {
+          "card": "Discipline",
+          "slot": "military",
+          "from": "civic:code-of-laws",
+          "why": "The Warrior and Slinger beat camp units for Bronze Working."
+        }
+      ],
+      "districts": [
+        {
+          "district": "holy-site",
+          "city": "capital",
+          "note": "Best adjacency in reach, started by turn 15 and finished by turn 20; it is half the gate."
+        }
+      ],
+      "pantheon": {
+        "slug": "divine-spark",
+        "why": "An extra Great Prophet point from every Holy Site is the fastest pantheon route to the religion half of the gate; God of War is the pick only if barbarians crowd the start and the Holy Site will see the kills.",
+        "alternative": "god-of-war"
+      },
+      "wonders": [
+        {
+          "name": "Stonehenge",
+          "why": "A free Great Prophet the turn it completes, which closes the religion half of the gate twenty turns early.",
+          "skip_if": "There is no Stone with a flat tile beside it, the capital makes under 8 Production, or a rival has Astrology and a Holy Site before you; on Emperor the AI often finishes it by turn 30."
+        }
+      ],
+      "governors": [],
+      "city_states": [
+        {
+          "type": "Religious",
+          "why": "The first envoy into a Religious city-state adds Faith in the capital toward the pantheon and the first Missionaries."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-prophet",
+          "why": "Points start accumulating from the capital Holy Site; check the Great People screen to see how many Prophets remain."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 30,
+          "test": "Two cities, the capital Holy Site finished with a Shrine queued, the pantheon founded, and two rivals met?",
+          "pass": "Enter the Prophet race: second Holy Site, Revelation, and Classical Republic as soon as Political Philosophy lands.",
+          "fail": "If the Holy Site is not up, stop the third Settler and finish it; a Prophet race started at turn 35 on Emperor is usually lost. If no rival is met, send the Warrior out as a second scout."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "found-state-gate",
+          "turn": 1,
+          "text": "Write the gate down: a founded religion and Gunpowder, no offensive war before both. Settle on the coast and queue Astrology."
+        },
+        {
+          "id": "found-scout-faiths",
+          "turn": 6,
+          "text": "Scout toward the nearest rivals; note each capital, its Holy Site if any, and the camps between you."
+        },
+        {
+          "id": "found-holy-site",
+          "turn": 15,
+          "text": "Place the capital Holy Site on the best adjacency tile and chop Woods into it to finish by turn 20."
+        },
+        {
+          "id": "found-pantheon",
+          "turn": 20,
+          "text": "Found Divine Spark, or God of War if two barbarian camps sit within eight tiles of the Holy Site."
+        },
+        {
+          "id": "found-second-city",
+          "turn": 24,
+          "text": "Settle the forward city toward the nearest rival, on plains hills or behind a river, with a Hills tile free for an Encampment and Alhambra."
+        }
+      ]
+    },
+    {
+      "id": "prophet",
+      "name": "Win the Prophet race",
+      "turns": {
+        "from": 31,
+        "to": 65
+      },
+      "era": "classical",
+      "objective": "Win the Great Prophet race with two Holy Sites, Revelation and Classical Republic and found the religion by turn 60, grow to five cities with Ancient Walls and an Encampment facing the likeliest target, and write down every neighbour's majority religion.",
+      "build_order": [
+        {
+          "item": "Holy Site",
+          "why": "Second city; doubles the Prophet points and later holds the second Temple for Divine Right."
+        },
+        {
+          "item": "Settler",
+          "why": "Fourth and fifth cities under Colonization; Reformed Church later needs six cities following the religion."
+        },
+        {
+          "item": "Encampment",
+          "why": "Forward city, beside a free Hills tile; Military Training Inspiration, the Barracks and Armory later, and Alhambra's site."
+        },
+        {
+          "item": "Trader",
+          "why": "Currency Eureka; a domestic route to the second city, never into a rival you may fight."
+        },
+        {
+          "item": "Ancient Walls",
+          "why": "Forward city first; Engineering Eureka and the defensive floor while the gate is shut."
+        },
+        {
+          "item": "Harbor",
+          "why": "Capital, once Celestial Navigation lands; Trade Route capacity and the Cartography line for the colony."
+        },
+        {
+          "item": "Monument",
+          "why": "Culture for Theology and the long civic road to Mercenaries and Divine Right."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:irrigation",
+          "note": "Eureka from a Farm on a resource; food for Early Empire."
+        },
+        {
+          "id": "tech:wheel",
+          "note": "Eureka from a Mine on a resource; Engineering sits behind it."
+        },
+        {
+          "id": "tech:currency",
+          "note": "Eureka from the first Trader; Commercial Hub and the road to Apprenticeship."
+        },
+        {
+          "id": "tech:horseback-riding",
+          "note": "Eureka from a Pasture; Construction, Apprenticeship and Stirrups all need it."
+        },
+        {
+          "id": "tech:masonry",
+          "note": "Ancient Walls; Eureka from a Quarry if Stone is near."
+        },
+        {
+          "id": "tech:celestial-navigation",
+          "note": "Two Fishing Boats give the Eureka; the capital Harbor."
+        },
+        {
+          "id": "tech:iron-working",
+          "note": "Mine the Iron the Men-at-Arms bank will need; Eureka from that Mine."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:mysticism",
+          "note": "Inspiration free from the pantheon; Revelation for the Prophet race."
+        },
+        {
+          "id": "civic:military-tradition",
+          "note": "Inspiration from the first camp cleared; Military Training sits behind it."
+        },
+        {
+          "id": "civic:early-empire",
+          "note": "Colonization for the fourth and fifth Settlers; six population is the Inspiration."
+        },
+        {
+          "id": "civic:state-workforce",
+          "note": "Inspiration free from the capital Holy Site; Conscription for the bank later."
+        },
+        {
+          "id": "civic:political-philosophy",
+          "note": "Classical Republic; Inspiration from three city-states met."
+        },
+        {
+          "id": "civic:drama-and-poetry",
+          "note": "Theology needs it; research it plain unless Stonehenge was built."
+        },
+        {
+          "id": "civic:theology",
+          "note": "After the religion is founded, for the free Inspiration; Temples and Mahabodhi."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Revelation",
+          "slot": "wildcard",
+          "from": "civic:mysticism",
+          "why": "Two more Great Prophet points every turn until the religion is founded; swap it out the turn it is."
+        },
+        {
+          "card": "Colonization",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "Fourth and fifth Settlers at half again the speed."
+        },
+        {
+          "card": "Classical Republic",
+          "slot": "wildcard",
+          "from": "civic:political-philosophy",
+          "why": "The government: more Great Person points for the Prophet and Amenities in every city with a district."
+        }
+      ],
+      "districts": [
+        {
+          "district": "holy-site",
+          "city": "second city",
+          "note": "Second Prophet source; its Temple is the second one Divine Right asks for."
+        },
+        {
+          "district": "encampment",
+          "city": "forward city",
+          "note": "Next to a free Hills tile for Alhambra; Barracks and Armory follow in the stage phase."
+        },
+        {
+          "district": "harbor",
+          "city": "capital",
+          "note": "Trade Route capacity and the start of the Harbor pair for Cartography."
+        }
+      ],
+      "pantheon": {
+        "slug": "divine-spark",
+        "why": "Already founded; this phase spends it on the second Holy Site's Prophet points."
+      },
+      "wonders": [],
+      "governors": [
+        {
+          "governor": "magnus",
+          "promotion": "Provision",
+          "city": "capital",
+          "why": "Settlers from the capital cost no population while it also carries the Holy Site."
+        }
+      ],
+      "city_states": [
+        {
+          "type": "Religious",
+          "why": "Three envoys add Faith to every Shrine, which is the Missionary budget for the escorts."
+        },
+        {
+          "type": "Militaristic",
+          "why": "One envoy adds Production to units in the capital for the Walls-and-Warriors floor."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-prophet",
+          "why": "The religion half of the gate; its beliefs should pay per following city, because every capture adds one, and include Holy Order for cheaper escorts."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 50,
+          "test": "Two Holy Sites with Shrines, Revelation slotted, and at least two Great Prophets still unclaimed on the Great People screen?",
+          "pass": "Keep every point on the Prophet; the third Settler and the Encampment go in the second and third cities.",
+          "fail": "If only one Prophet remains and a rival is closer, patronize it with Faith the turn the cost is within reach; if none remain, run the Prophet lost trigger."
+        },
+        {
+          "turn": 65,
+          "test": "Religion founded, five cities, the Encampment up in the forward city, and every neighbour's majority religion written down?",
+          "pass": "Enter staging: Gunpowder beeline, Men-at-Arms bank, Missionary bank.",
+          "fail": "Religion founded but cities short: settle the fifth before the bank starts. Faith map missing: send the Scout or a Warrior to look before anything is declared."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "prophet-second-holy-site",
+          "turn": 34,
+          "text": "Start the second city's Holy Site on its best adjacency tile; Shrine straight after."
+        },
+        {
+          "id": "prophet-revelation",
+          "turn": 38,
+          "text": "Slot Revelation and keep it until the Prophet is earned."
+        },
+        {
+          "id": "prophet-encampment",
+          "turn": 48,
+          "text": "Encampment in the forward city beside a free Hills tile; Military Training Inspiration collected."
+        },
+        {
+          "id": "prophet-found-religion",
+          "turn": 58,
+          "text": "Found the religion in the capital Holy Site; choose beliefs for the war, one that pays per following city now and Holy Order when an Enhancer slot opens, so every escort Missionary costs less."
+        },
+        {
+          "id": "prophet-faith-map",
+          "turn": 63,
+          "text": "Read the Religion lens for every met civilization and record its majority religion; mark the nearest one that is not yours as the provisional target."
+        }
+      ]
+    },
+    {
+      "id": "stage",
+      "name": "Stage for the Conquistadors",
+      "turns": {
+        "from": 66,
+        "to": 120
+      },
+      "era": "medieval",
+      "objective": "Beeline Gunpowder while the staging list fills: Barracks and Armory in the forward Encampment, four to six Men-at-Arms banked, one Missionary per future Conquistador bought with Faith, two Trebuchets and a Great General, Temples in both Holy Sites, and a differently-faithed target scouted, then run the gate check the turn Gunpowder lands.",
+      "build_order": [
+        {
+          "item": "Barracks",
+          "why": "Forward Encampment; the building the Armory needs, and Men-at-Arms trained here reach a promotion sooner."
+        },
+        {
+          "item": "Temple",
+          "why": "Both Holy Site cities; two is the Divine Right Inspiration, and Apostles, Inquisitors and Mahabodhi need them."
+        },
+        {
+          "item": "Aqueduct",
+          "why": "Capital; the Military Engineering Eureka and Housing toward Civil Service's ten population."
+        },
+        {
+          "item": "Man-At-Arms",
+          "why": "Four to six under Feudal Contract; they are the Conquistadors the gate turn upgrades."
+        },
+        {
+          "item": "Armory",
+          "why": "Forward Encampment; the Gunpowder Eureka, which halves the last step of the gate."
+        },
+        {
+          "item": "Missionary",
+          "why": "Bought with Faith in the Holy City, one per future Conquistador plus a spare; parked, never spread into a target."
+        },
+        {
+          "item": "Trebuchet",
+          "why": "Two; Medieval Walls fall to them and owning both is the Siege Tactics Eureka."
+        },
+        {
+          "item": "Commercial Hub",
+          "why": "Capital; Trade Route capacity and the Gold the upgrades and Professional Army need."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:construction",
+          "note": "Eureka from a Water Mill; Games and Recreation Inspiration and Military Engineering sit behind it."
+        },
+        {
+          "id": "tech:engineering",
+          "note": "Eureka free from Ancient Walls; Aqueducts for the Military Engineering Eureka."
+        },
+        {
+          "id": "tech:apprenticeship",
+          "note": "Three Mines give the Eureka; Men-at-Arms unlock here and the bank starts."
+        },
+        {
+          "id": "tech:military-engineering",
+          "note": "Eureka from the capital Aqueduct; Armory and Trebuchets."
+        },
+        {
+          "id": "tech:stirrups",
+          "note": "Eureka free from Feudalism; a Gunpowder prerequisite in this reading of the tree."
+        },
+        {
+          "id": "tech:gunpowder",
+          "note": "The gate. Eureka from the Armory; research nothing else once it is the cheapest route."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:games-and-recreation",
+          "note": "Inspiration free from Construction; Military Training sits behind it."
+        },
+        {
+          "id": "civic:military-training",
+          "note": "Inspiration free from the Encampment; Mercenaries needs it."
+        },
+        {
+          "id": "civic:defensive-tactics",
+          "note": "Limitanei for the conquests later; Inspiration only if a neighbour declares."
+        },
+        {
+          "id": "civic:feudalism",
+          "note": "Six Farms give the Inspiration; Feudal Contract for the bank and the Stirrups Eureka."
+        },
+        {
+          "id": "civic:mercenaries",
+          "note": "Professional Army halves the gate-turn upgrades; eight land units is the Inspiration."
+        },
+        {
+          "id": "civic:recorded-history",
+          "note": "Research it plain; Civil Service and Divine Right sit behind it."
+        },
+        {
+          "id": "civic:civil-service",
+          "note": "Capital at ten population with the Aqueduct; Divine Right needs it."
+        },
+        {
+          "id": "civic:divine-right",
+          "note": "Two Temples give the Inspiration; Reformed Church and Theocracy sit behind it."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Conscription",
+          "slot": "military",
+          "from": "civic:state-workforce",
+          "why": "One Gold less per unit every turn while the bank sits waiting."
+        },
+        {
+          "card": "Feudal Contract",
+          "slot": "military",
+          "from": "civic:feudalism",
+          "why": "Men-at-Arms at half again the speed for the bank."
+        },
+        {
+          "card": "Serfdom",
+          "slot": "economic",
+          "from": "civic:feudalism",
+          "why": "Builders with extra charges for the six Farms and the Mines the bank needs."
+        },
+        {
+          "card": "Professional Army",
+          "slot": "military",
+          "from": "civic:mercenaries",
+          "why": "Slot it the turn before Gunpowder lands; every banked unit upgrades at half price."
+        }
+      ],
+      "districts": [
+        {
+          "district": "commercial-hub",
+          "city": "capital",
+          "note": "Market for Guilds later and the Gold for the gate-turn upgrades."
+        },
+        {
+          "district": "aqueduct",
+          "city": "capital",
+          "note": "Military Engineering Eureka and the Housing for ten population."
+        },
+        {
+          "district": "campus",
+          "city": "third city",
+          "note": "One Library for the Science the Gunpowder beeline needs; the late-gate lever if Gunpowder slips."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Mahabodhi Temple",
+          "why": "Two free Apostles: one launches the Inquisition that follows the army, the other spreads to your own cities and city-states.",
+          "skip_if": "There is no Woods tile beside a Holy Site with a Temple, a rival has Theology before you, or the Production is needed for the Armory before Gunpowder."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "victor",
+          "promotion": "Redoubt",
+          "city": "forward Encampment city",
+          "why": "The floor while the bank waits, and the city the war starts from."
+        },
+        {
+          "governor": "moksha",
+          "promotion": "Bishop",
+          "city": "capital",
+          "why": "Faith from the Holy City's districts for the Missionary bank, and stronger pressure on your own cities."
+        }
+      ],
+      "city_states": [
+        {
+          "type": "Militaristic",
+          "why": "Three envoys add Production to every Barracks and six to every Armory: the Men-at-Arms bank and the Conquistador line."
+        },
+        {
+          "slug": "kabul",
+          "why": "Double experience from battles you start; the bank promotes on camps before the gate."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-general",
+          "why": "The Encampment's points earn the Medieval General who walks with the first Conquistador stack."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 95,
+          "test": "Military Engineering researched, Barracks up, four Men-at-Arms standing, three Missionaries banked, and the target's majority religion still not yours?",
+          "pass": "Build the Armory now; collect the Gunpowder Eureka before the research starts.",
+          "fail": "Men-at-Arms short: Feudal Contract and the Barracks city builds nothing else. Missionaries short: slot God King again and buy them before anything else with Faith. Target converted: pick the next differently-faithed civilization on the map."
+        },
+        {
+          "turn": 120,
+          "test": "Gate check: religion founded AND Gunpowder researched AND every staging item ticked?",
+          "pass": "Upgrade the bank to Conquistadors this turn, put a Missionary on every one, declare with the Casus Belli and march.",
+          "fail": "Gate open but staging short: do not declare. Finish the list first; an unescorted opening wastes the +10. Gunpowder not in: run the late-gate plan."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "stage-temples",
+          "turn": 75,
+          "text": "Temples in both Holy Site cities; Divine Right Inspiration banked for later."
+        },
+        {
+          "id": "stage-bank",
+          "turn": 95,
+          "text": "Four Men-at-Arms standing in the forward city; price one upgrade and start saving the Gold."
+        },
+        {
+          "id": "stage-armory",
+          "turn": 100,
+          "text": "Armory finished in the forward Encampment for the Gunpowder Eureka."
+        },
+        {
+          "id": "stage-missionaries",
+          "turn": 108,
+          "text": "One Missionary per future Conquistador plus a spare, bought with Faith and parked in the forward city."
+        },
+        {
+          "id": "stage-target-check",
+          "turn": 112,
+          "text": "Faith check on the target: its majority religion is not yours, no Trade Route of yours runs into it, and its Walls are noted. Denounce it for a Formal War if no Holy War is available."
+        },
+        {
+          "id": "stage-gate-check",
+          "turn": 120,
+          "text": "Run the gate check the turn Gunpowder lands; upgrade everything the same turn or not at all."
+        }
+      ]
+    },
+    {
+      "id": "crusade",
+      "name": "Escorted conquest",
+      "turns": {
+        "from": 121,
+        "to": 180
+      },
+      "era": "renaissance",
+      "objective": "Walk escorted Conquistadors into the chosen target, take its capital and two more cities before Renaissance Walls, let every capture convert and hold it with Inquisitors, switch to Theocracy at Reformed Church to buy Conquistadors with Faith, and plant a colony on the second continent for Missions and Treasure Fleet routes.",
+      "build_order": [
+        {
+          "item": "Conquistador",
+          "why": "Upgraded from the bank under Professional Army, then trained or Faith-bought under Theocracy; never fewer than four in the field."
+        },
+        {
+          "item": "Missionary",
+          "why": "Replacements for escorts lost in theological combat; one on every Conquistador's tile at all times."
+        },
+        {
+          "item": "Monument",
+          "why": "First build in every capture; Loyalty before anything else."
+        },
+        {
+          "item": "Harbor",
+          "why": "Second coastal city; two Harbors give the Cartography Eureka and the route to the colony."
+        },
+        {
+          "item": "Caravel",
+          "why": "Two, for Exploration's Inspiration; they escort the colony Settler across."
+        },
+        {
+          "item": "Settler",
+          "why": "One or two to the second continent; Missions there earn the extra Faith and domestic routes to them earn Treasure Fleet yields."
+        },
+        {
+          "item": "Market",
+          "why": "Two, for Guilds; Gold for the next upgrades."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:shipbuilding",
+          "note": "Embarkation and Cartography; research it plain."
+        },
+        {
+          "id": "tech:cartography",
+          "note": "Two Harbors give the Eureka; Caravels and ocean travel for the colony."
+        },
+        {
+          "id": "tech:castles",
+          "note": "Eureka free once Theocracy is adopted; Alhambra beside the Encampment."
+        },
+        {
+          "id": "tech:metal-casting",
+          "note": "Bombards for Renaissance Walls; research it plain."
+        },
+        {
+          "id": "tech:siege-tactics",
+          "note": "Eureka from the two staged Trebuchets; Renaissance Walls at home."
+        },
+        {
+          "id": "tech:square-rigging",
+          "note": "Eureka from a Conquistador kill; Frigates for the Fleets Treasure Fleet allows."
+        },
+        {
+          "id": "tech:banking",
+          "note": "Eureka free from Guilds; Banks for the Gold economy."
+        },
+        {
+          "id": "tech:buttress",
+          "note": "Eureka from Mahabodhi or Alhambra; Hagia Sophia."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:reformed-church",
+          "note": "Six cities following the religion is the Inspiration, and captures count; Theocracy."
+        },
+        {
+          "id": "civic:guilds",
+          "note": "Two Markets give the Inspiration; the Banking Eureka."
+        },
+        {
+          "id": "civic:medieval-faires",
+          "note": "Four Trade Routes running give the Inspiration; Humanism sits behind it."
+        },
+        {
+          "id": "civic:exploration",
+          "note": "Two Caravels give the Inspiration; Colonial Offices and Missions."
+        },
+        {
+          "id": "civic:humanism",
+          "note": "Research it plain; Mercantilism sits behind it."
+        },
+        {
+          "id": "civic:mercantilism",
+          "note": "Fleets and Armadas for Spain; take it before declaring on an overseas target."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Theocracy",
+          "slot": "wildcard",
+          "from": "civic:reformed-church",
+          "why": "The government: land units bought with Faith, so Conquistadors and their Missionaries come from the same budget."
+        },
+        {
+          "card": "Professional Army",
+          "slot": "military",
+          "from": "civic:mercenaries",
+          "why": "Half-price upgrades for every Swordsman or Man-at-Arms still in the empire."
+        },
+        {
+          "card": "Limitanei",
+          "slot": "military",
+          "from": "civic:defensive-tactics",
+          "why": "Loyalty in every garrisoned capture while the old faith is being wiped out of it."
+        },
+        {
+          "card": "Colonial Offices",
+          "slot": "economic",
+          "from": "civic:exploration",
+          "why": "Growth and Loyalty in the colony on the second continent."
+        }
+      ],
+      "districts": [
+        {
+          "district": "campus",
+          "city": "the colony",
+          "note": "Missions ring it for Science on top of their overseas Faith."
+        },
+        {
+          "district": "harbor",
+          "city": "the colony and a second home coastal city",
+          "note": "Cartography Eureka and the endpoints of the intercontinental routes."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Alhambra",
+          "why": "An extra military policy slot so Limitanei sits beside Professional Army, plus Great General points; on Hills beside the forward Encampment.",
+          "skip_if": "No Hills tile is free beside an Encampment, or Castles lands after turn 150 while the war still needs the Production."
+        },
+        {
+          "name": "Hagia Sophia",
+          "why": "Missionaries and Apostles spread one extra time; the close is an Apostle game.",
+          "skip_if": "Buttress is not researched by turn 150, or the war is still live and every Production point is going into Conquistadors."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "victor",
+          "promotion": "Garrison Commander",
+          "city": "the first capture",
+          "why": "Loyalty and Combat Strength in the city most likely to be retaken or to flip."
+        },
+        {
+          "governor": "liang",
+          "promotion": "Guildmaster",
+          "city": "the colony",
+          "why": "Builders with an extra charge for the Missions around the colony Campus."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "akkad",
+          "why": "Melee attacks do full damage to Walls; Conquistadors are melee, so the Trebuchets only finish what the escorts start."
+        },
+        {
+          "slug": "valletta",
+          "why": "Walls and Encampment buildings bought with Faith in each capture."
+        },
+        {
+          "slug": "fez",
+          "why": "Science when the religion converts a city for the first time, and the war converts cities every few turns."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-general",
+          "why": "One General with every Conquistador stack; a Renaissance General for the second front."
+        },
+        {
+          "class": "great-merchant",
+          "why": "The Mercantilism Inspiration, and Fleets and Armadas behind it if the next target is overseas."
+        },
+        {
+          "class": "great-admiral",
+          "why": "Escorts the colony convoy and, later, an Armada against a coastal target."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 145,
+          "test": "Target capital taken by a Conquistador and converted, an Inquisitor in it, four escorted Conquistadors still in the field, and Reformed Church done?",
+          "pass": "Switch to Theocracy and take the target's next two cities in sequence; read its majority religion every five turns.",
+          "fail": "Capital still standing: if Renaissance Walls are up, bring Bombards or take its smaller cities instead and keep the Conquistadors alive. If the escorts are gone, stop and rebuy them before the next attack."
+        },
+        {
+          "turn": 180,
+          "test": "Three or more captures converted and holding, the colony settled with Missions, and no target yet fielding Line Infantry?",
+          "pass": "Enter the close: one more war only against a differently-faithed civilization without Line Infantry, Apostles everywhere else.",
+          "fail": "Fewer captures or Line Infantry on the target: make peace, hold what is taken, and move the whole effort to Apostles and Inquisitors."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "crusade-upgrade",
+          "turn": 121,
+          "text": "Upgrade every banked Man-at-Arms to a Conquistador and put a Missionary on each tile the same turn."
+        },
+        {
+          "id": "crusade-first-siege",
+          "turn": 128,
+          "text": "Trebuchets on the Walls, General adjacent, and take the capital with a Conquistador so it converts."
+        },
+        {
+          "id": "crusade-inquisitor",
+          "turn": 132,
+          "text": "Inquisitor into the first capture; Remove Heresy before its former neighbours press the old faith back."
+        },
+        {
+          "id": "crusade-theocracy",
+          "turn": 140,
+          "text": "Reformed Church done; adopt Theocracy and Faith-buy the next Conquistadors."
+        },
+        {
+          "id": "crusade-colony",
+          "turn": 155,
+          "text": "Colony settled on the second continent; Missions around its Campus and a domestic route from the capital."
+        },
+        {
+          "id": "crusade-parity",
+          "turn": 175,
+          "text": "Check every target's military for Line Infantry and its cities for Renaissance Walls; plan the close accordingly."
+        }
+      ]
+    },
+    {
+      "id": "close",
+      "name": "Convert the rest",
+      "turns": {
+        "from": 181,
+        "to": null
+      },
+      "era": "industrial",
+      "objective": "Close the Conquistador war before Line Infantry, hold every capture, and finish the Religion victory with Apostles and Inquisitors bought from two Holy Cities and the Mission Faith; fight again only a differently-faithed civilization that can still be outfought, by Armada if it is across water.",
+      "build_order": [
+        {
+          "item": "Apostle",
+          "why": "Faith-bought in the Holy City in pairs; the Religion victory is carried by them now."
+        },
+        {
+          "item": "Inquisitor",
+          "why": "Behind every Apostle push and in every capture; the extra Remove Heresy keeps converted cities converted."
+        },
+        {
+          "item": "Frigate",
+          "why": "Only if the last target is overseas: formed into a Fleet or Armada under Treasure Fleet to cover the landing."
+        },
+        {
+          "item": "Shipyard",
+          "why": "Two for Steam Power; Production in the Harbor cities."
+        },
+        {
+          "item": "University",
+          "why": "Capital and colony Campus; Science so the army is not two eras behind."
+        },
+        {
+          "item": "Workshop",
+          "why": "Two for Industrialization; Production for the last units."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:astronomy",
+          "note": "Colonialism Inspiration comes from researching it; Eureka only if a University sits beside a Mountain."
+        },
+        {
+          "id": "tech:printing",
+          "note": "Two Universities give the Eureka; the Science catch-up."
+        },
+        {
+          "id": "tech:industrialization",
+          "note": "Two Workshops give the Eureka; Factories."
+        },
+        {
+          "id": "tech:steam-power",
+          "note": "Two Shipyards give the Eureka; Ironclads to guard the colony route."
+        },
+        {
+          "id": "tech:scientific-theory",
+          "note": "Eureka free from The Enlightenment."
+        },
+        {
+          "id": "tech:rifling",
+          "note": "Eureka from a Niter Mine, already in place from staging; your own Line Infantry for defence."
+        },
+        {
+          "id": "tech:economics",
+          "note": "Two Banks give the Eureka if Gold is short; otherwise research it plain."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:the-enlightenment",
+          "note": "Three Great People earned is the Inspiration; the Prophet, a General and the Merchant already count."
+        },
+        {
+          "id": "civic:colonialism",
+          "note": "Inspiration from researching Astronomy."
+        },
+        {
+          "id": "civic:nationalism",
+          "note": "Inspiration free from the Casus Belli war; Grand Armee."
+        },
+        {
+          "id": "civic:mobilization",
+          "note": "Research it plain unless three Corps exist."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Theocracy",
+          "slot": "wildcard",
+          "from": "civic:reformed-church",
+          "why": "Stay in it: Faith-bought units and a Religious Strength edge for the Apostles."
+        },
+        {
+          "card": "Grand Armee",
+          "slot": "military",
+          "from": "civic:nationalism",
+          "why": "Industrial units faster if one more war is chosen."
+        },
+        {
+          "card": "Limitanei",
+          "slot": "military",
+          "from": "civic:defensive-tactics",
+          "why": "Loyalty in the conquests for as long as rivals sit next to them."
+        }
+      ],
+      "districts": [
+        {
+          "district": "industrial-zone",
+          "city": "capital and the best Production capture",
+          "note": "Workshops for Industrialization and the Production for Apostles' escorts."
+        },
+        {
+          "district": "campus",
+          "city": "capital",
+          "note": "University for Printing; the Science catch-up."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Venetian Arsenal",
+          "why": "A second naval unit with every one built, if the last target is across water and Armadas are coming.",
+          "skip_if": "Every remaining target is on your continent, or Mass Production lands after turn 200."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "moksha",
+          "promotion": "Patron Saint",
+          "city": "capital",
+          "why": "Apostles bought in the Holy City start with an extra promotion."
+        },
+        {
+          "governor": "victor",
+          "promotion": "Embrasure",
+          "city": "the capture nearest a rival",
+          "why": "The conquest that borders the next civilization holds while the Apostles work."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "yerevan",
+          "why": "Apostles choose their promotions; Debater and Proselytizer on every one."
+        },
+        {
+          "type": "Religious",
+          "why": "Six envoys add Faith to every Temple, which is the Apostle budget."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-admiral",
+          "why": "Escort for an Armada landing or for Apostles crossing to the second continent."
+        },
+        {
+          "class": "great-scientist",
+          "why": "Any Scientist that adds Science or a Eureka keeps the army current."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 240,
+          "test": "Your religion the majority in every civilization but two, and every capture still at positive Loyalty?",
+          "pass": "Finish with Apostles against the last two, Inquisitors behind them; no further decisions.",
+          "fail": "Religion stalled: count the holdouts. A differently-faithed holdout without Line Infantry is the last war; one that is too strong is a Score game, so build Science and Culture and stop buying units."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "close-peace",
+          "turn": 182,
+          "text": "Make peace with the conquered civilization on the best terms on offer and garrison every capture."
+        },
+        {
+          "id": "close-apostles",
+          "turn": 190,
+          "text": "Four Apostles from the Holy City toward the largest differently-faithed civilization that is not a war target."
+        },
+        {
+          "id": "close-armada",
+          "turn": 205,
+          "text": "If one more war is chosen overseas, form the Fleet or Armada and load the escorted Conquistadors or their successors."
+        },
+        {
+          "id": "close-review",
+          "turn": 240,
+          "text": "Run the turn 240 checkpoint and either finish the Apostle push or declare the game a Score game."
+        }
+      ]
+    }
+  ],
+  "boosts": [
+    {
+      "id": "tech:sailing",
+      "fit": "free",
+      "when": "found",
+      "how": "The coastal capital triggers it on settle."
+    },
+    {
+      "id": "tech:astrology",
+      "fit": "cheap",
+      "when": "found",
+      "how": "The Scout finds a natural wonder; head toward hills and coast first."
+    },
+    {
+      "id": "tech:writing",
+      "fit": "free",
+      "when": "found",
+      "how": "The Scout meets the first civilization."
+    },
+    {
+      "id": "tech:archery",
+      "fit": "cheap",
+      "when": "found",
+      "how": "The Slinger finishes a barbarian scout near the capital."
+    },
+    {
+      "id": "tech:bronze-working",
+      "fit": "cheap",
+      "when": "found",
+      "how": "Three barbarian kills by the Warrior and Slinger at the nearest camp."
+    },
+    {
+      "id": "tech:irrigation",
+      "fit": "cheap",
+      "when": "prophet",
+      "how": "The first Builder farms a wheat, rice or maize resource."
+    },
+    {
+      "id": "tech:wheel",
+      "fit": "cheap",
+      "when": "prophet",
+      "how": "A Mine on a resource hill from the first or second Builder."
+    },
+    {
+      "id": "tech:currency",
+      "fit": "free",
+      "when": "prophet",
+      "how": "The first Trader runs a domestic route to the second city."
+    },
+    {
+      "id": "tech:horseback-riding",
+      "fit": "cheap",
+      "when": "prophet",
+      "how": "A Pasture on Horses or Sheep."
+    },
+    {
+      "id": "tech:masonry",
+      "fit": "cheap",
+      "when": "prophet",
+      "how": "A Quarry on Stone, which the Walls want anyway."
+    },
+    {
+      "id": "tech:celestial-navigation",
+      "fit": "cheap",
+      "when": "prophet",
+      "how": "Two Fishing Boats off the coastal capital."
+    },
+    {
+      "id": "tech:iron-working",
+      "fit": "cheap",
+      "when": "prophet",
+      "how": "A Mine on the Iron the Men-at-Arms bank needs."
+    },
+    {
+      "id": "tech:construction",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "A Water Mill in a river city."
+    },
+    {
+      "id": "tech:engineering",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "Ancient Walls in the forward city, already on the floor list."
+    },
+    {
+      "id": "tech:mathematics",
+      "fit": "free",
+      "when": "stage",
+      "how": "Holy Site, Encampment and Harbor are three specialty districts by turn 65."
+    },
+    {
+      "id": "tech:apprenticeship",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "Three Mines across the first three cities."
+    },
+    {
+      "id": "tech:military-engineering",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "The capital Aqueduct, built for the Housing as well."
+    },
+    {
+      "id": "tech:stirrups",
+      "fit": "free",
+      "when": "stage",
+      "how": "Feudalism is on the civic path."
+    },
+    {
+      "id": "tech:gunpowder",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "An Armory in the forward Encampment, built on purpose before the research starts."
+    },
+    {
+      "id": "tech:machinery",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:education",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:shipbuilding",
+      "fit": "costly",
+      "when": "crusade",
+      "how": "Two Galleys only if the coast needs guarding; usually research it plain."
+    },
+    {
+      "id": "tech:cartography",
+      "fit": "cheap",
+      "when": "crusade",
+      "how": "Harbors in the capital and a second coastal city."
+    },
+    {
+      "id": "tech:castles",
+      "fit": "cheap",
+      "when": "crusade",
+      "how": "Adopting Theocracy, a Tier 2 government, at Reformed Church."
+    },
+    {
+      "id": "tech:metal-casting",
+      "fit": "costly",
+      "when": "crusade",
+      "how": "Two Crossbowmen only if Archers were kept for the floor."
+    },
+    {
+      "id": "tech:siege-tactics",
+      "fit": "free",
+      "when": "crusade",
+      "how": "The two Trebuchets on the staging list."
+    },
+    {
+      "id": "tech:square-rigging",
+      "fit": "free",
+      "when": "crusade",
+      "how": "Any kill by a Conquistador, the Musketman replacement, in the first war."
+    },
+    {
+      "id": "tech:banking",
+      "fit": "free",
+      "when": "crusade",
+      "how": "Guilds is on the civic path."
+    },
+    {
+      "id": "tech:buttress",
+      "fit": "cheap",
+      "when": "crusade",
+      "how": "Mahabodhi Temple or Alhambra standing; otherwise it is costly."
+    },
+    {
+      "id": "tech:mass-production",
+      "fit": "cheap",
+      "when": "crusade",
+      "how": "A Lumber Mill on Woods in the forward city."
+    },
+    {
+      "id": "tech:astronomy",
+      "fit": "costly",
+      "when": "close",
+      "how": "A University beside a Mountain; only if the Campus was placed there."
+    },
+    {
+      "id": "tech:printing",
+      "fit": "costly",
+      "when": "close",
+      "how": "Two Universities, capital and colony; late but needed."
+    },
+    {
+      "id": "tech:industrialization",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Workshops in the Industrial Zones."
+    },
+    {
+      "id": "tech:steam-power",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Shipyards in cities that already have Harbors."
+    },
+    {
+      "id": "tech:scientific-theory",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Unlock The Enlightenment civic, which three Great People make cheap."
+    },
+    {
+      "id": "tech:rifling",
+      "fit": "cheap",
+      "when": "close",
+      "how": "The Niter Mine from the staging list, or a new one if Niter was traded."
+    },
+    {
+      "id": "tech:economics",
+      "fit": "costly",
+      "when": "close",
+      "how": "Two Banks only if Gold is short."
+    },
+    {
+      "id": "civic:craftsmanship",
+      "fit": "free",
+      "when": "found",
+      "how": "Three improved tiles from the first Builder."
+    },
+    {
+      "id": "civic:foreign-trade",
+      "fit": "costly",
+      "when": "found",
+      "how": "A second continent sighted before turn 25 needs a lucky Scout; research it plain."
+    },
+    {
+      "id": "civic:military-tradition",
+      "fit": "cheap",
+      "when": "prophet",
+      "how": "Clear the nearest barbarian outpost with the Warrior and Slinger."
+    },
+    {
+      "id": "civic:mysticism",
+      "fit": "free",
+      "when": "prophet",
+      "how": "Founding Divine Spark in the first phase."
+    },
+    {
+      "id": "civic:early-empire",
+      "fit": "free",
+      "when": "prophet",
+      "how": "Six population across the first two or three cities."
+    },
+    {
+      "id": "civic:state-workforce",
+      "fit": "free",
+      "when": "prophet",
+      "how": "The capital Holy Site is the first district."
+    },
+    {
+      "id": "civic:political-philosophy",
+      "fit": "cheap",
+      "when": "prophet",
+      "how": "Three city-states met by the Scout and the coastal Warrior."
+    },
+    {
+      "id": "civic:drama-and-poetry",
+      "fit": "costly",
+      "when": "prophet",
+      "how": "Only Stonehenge triggers it this early; otherwise research it plain for Theology."
+    },
+    {
+      "id": "civic:theology",
+      "fit": "free",
+      "when": "prophet",
+      "how": "Founding the religion, which is the gate's first half."
+    },
+    {
+      "id": "civic:games-and-recreation",
+      "fit": "free",
+      "when": "stage",
+      "how": "Researching Construction."
+    },
+    {
+      "id": "civic:military-training",
+      "fit": "free",
+      "when": "stage",
+      "how": "The forward Encampment built in the prophet phase."
+    },
+    {
+      "id": "civic:defensive-tactics",
+      "fit": "costly",
+      "when": "stage",
+      "how": "Only if a neighbour declares on you; never provoke it."
+    },
+    {
+      "id": "civic:feudalism",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "Six Farms across five cities with Serfdom Builders."
+    },
+    {
+      "id": "civic:mercenaries",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "Eight land combat units: the Men-at-Arms bank plus the floor's Warriors, Slinger and Archer."
+    },
+    {
+      "id": "civic:recorded-history",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:civil-service",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "The capital reaches ten population behind the Aqueduct."
+    },
+    {
+      "id": "civic:divine-right",
+      "fit": "free",
+      "when": "stage",
+      "how": "Temples in both Holy Site cities, built for the Apostles anyway."
+    },
+    {
+      "id": "civic:reformed-church",
+      "fit": "free",
+      "when": "crusade",
+      "how": "Six cities following the religion; every Conquistador capture adds one."
+    },
+    {
+      "id": "civic:guilds",
+      "fit": "cheap",
+      "when": "crusade",
+      "how": "Two Markets, capital and first capture."
+    },
+    {
+      "id": "civic:medieval-faires",
+      "fit": "cheap",
+      "when": "crusade",
+      "how": "Four Trade Routes at once, domestic and to friendly civilizations, never into a target."
+    },
+    {
+      "id": "civic:exploration",
+      "fit": "cheap",
+      "when": "crusade",
+      "how": "Two Caravels, which escort the colony Settler."
+    },
+    {
+      "id": "civic:humanism",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:mercantilism",
+      "fit": "costly",
+      "when": "crusade",
+      "how": "A Great Merchant from the Commercial Hub; patronize it with Gold if an overseas war needs Armadas soon."
+    },
+    {
+      "id": "civic:diplomatic-service",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:the-enlightenment",
+      "fit": "free",
+      "when": "close",
+      "how": "Three Great People: the Prophet, a General and the Merchant or an Admiral."
+    },
+    {
+      "id": "civic:colonialism",
+      "fit": "free",
+      "when": "close",
+      "how": "Researching Astronomy."
+    },
+    {
+      "id": "civic:nationalism",
+      "fit": "free",
+      "when": "close",
+      "how": "The first war was declared with Holy War or Formal War."
+    },
+    {
+      "id": "civic:mobilization",
+      "fit": "costly",
+      "when": "close",
+      "how": "Three Corps, which this plan only has if a final war is chosen."
+    }
+  ],
+  "decision_triggers": [
+    {
+      "name": "Target converts",
+      "if": "The target's majority religion flips to yours during the war, from the pressure of your captured cities or a stray Apostle.",
+      "then": "The +4 is gone against it and it now counts toward the Religion victory. Make peace on the best terms on offer, keep what is taken, and turn the army toward the next civilization whose majority religion is not yours."
+    },
+    {
+      "name": "Prophet lost",
+      "if": "The Great People screen shows no Great Prophet left before yours is earned.",
+      "then": "Do not wait. Let a distant civilization's religion, never a neighbour you mean to fight, become the majority in your cities, and check on the first Conquistador's combat preview that the bonus shows against differently-faithed neighbours. If it does not, play Spain as a Treasure Fleet trade and Mission Science civilization and keep the Conquistadors for defence."
+    },
+    {
+      "name": "Target across water",
+      "if": "The nearest civilization whose majority religion differs from yours is reachable only by sea.",
+      "then": "Take Mercantilism before declaring, form Caravels and Frigates into Fleets, and land Conquistadors with their Missionaries in the same turn beside a coastal city; never land the escort a turn before its Conquistador."
+    },
+    {
+      "name": "Escorts under attack",
+      "if": "Enemy Apostles or Inquisitors start killing your escort Missionaries in theological combat.",
+      "then": "Bring your own Inquisitor or an Apostle into the stack to fight them, rebuy Missionaries the same turn, and hold every Conquistador without an escort out of attack range until it has one."
+    },
+    {
+      "name": "Line Infantry on the target",
+      "if": "The target fields Line Infantry or finishes Renaissance Walls on its remaining cities.",
+      "then": "The window is closed against it. Make peace, garrison and wall the captures, and spend from here on Apostles and Inquisitors rather than units."
+    }
+  ],
+  "abort": {
+    "trigger": "Gunpowder lands with fewer than three upgradeable units or no Missionaries banked, while every differently-faithed civilization in reach already has Musketmen and Medieval or Renaissance Walls.",
+    "actions": [
+      "Do not declare. Three unescorted Conquistadors against a walled Musketman city lose the army the rest of the plan needs.",
+      "Fold into the peaceful Religion branch: Temples, Apostles and Inquisitors from both Holy Sites, the colony and its Missions, and Treasure Fleet routes for Gold.",
+      "Keep the Conquistadors as the defensive line and use them only if a differently-faithed neighbour attacks you, where El Escorial's +4 still applies."
+    ]
+  },
+  "fail_state": "The religion was founded late or not at all, the pre-gate built neither a Men-at-Arms bank nor a Missionary bank, and Gunpowder arrived to unescorted Conquistadors facing a target that had already adopted Spain's own religion through careless Trade Routes. The +4 never fired, the +10 never fired, nothing was converted, and Spain entered the Industrial era as a mid-sized civilization with a religion it could not spread and an army that was obsolete on arrival.",
+  "common_mistakes": [
+    "Sending Missionaries or Trade Routes into the intended target before the war. Religious pressure flips its majority to yours and the +4 against it disappears before the first shot.",
+    "Moving a Conquistador without a religious unit on its tile. Without the escort it is a Musketman with a +4 that only applies some of the time.",
+    "Upgrading Conquistadors to Line Infantry. The upgrade throws away the +10 and the conversion on capture; keep them as they are and build the new line separately.",
+    "Spending the escort Missionaries' spread charges on the target's cities. A capture converts the city for free; the charges belong to your own cities and to friendly civilizations.",
+    "Taking God of the Forge for faster Conquistadors. It only covers Ancient and Classical units, and the religion race needs a Prophet pantheon instead.",
+    "Treating the pre-gate as waiting. Two Holy Sites, five cities, an Armory, a Men-at-Arms bank and a Missionary bank are the whole post-gate army; none of them appear on the gate turn."
+  ],
+  "sources": [
+    "Civilization VI Civilopedia, Gathering Storm ruleset (Spain, Philip II, El Escorial, Treasure Fleet, Conquistador, Mission). The Conquistador replaces the Musketman, which the civ-info entry lists as replacing nothing; the game is followed here.",
+    "The leader affinity file pairs Fez and Granada with Religious city-states and suggests God of the Forge for faster Conquistadors; this repository's city-state file types Fez as Scientific and Granada as Militaristic, and God of the Forge covers only Ancient and Classical units, so the plan uses Divine Spark and types city-states as the vocabulary does.",
+    "Boost objectives taken from leadership-focus/data/civ6/eurekas.json in this repository.",
+    "Leadership Focus tags, caveats and the Gate template for Philip II in this repository; the gate condition and the estimated arrival come from the leader record, with the Gunpowder estimate pulled forward by the beeline."
+  ]
+}

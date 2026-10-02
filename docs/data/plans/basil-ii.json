@@ -58,7 +58,7 @@
       "source": "unique_unit",
       "name": "Dromon",
       "buys": "A Quadrireme replacement with Range 2 and extra strength against units.",
-      "exploit": "Two of them are the Shipbuilding Eureka and the Naval Tradition Inspiration, and when the first target is coastal they strip its defenders from two tiles away while the cavalry closes. Not built at all on an inland map."
+      "exploit": "A kill by one is the Naval Tradition Inspiration, and when the first target is coastal they strip its defenders from two tiles away while the cavalry closes. Not built at all on an inland map."
     },
     {
       "source": "unique_infrastructure",
@@ -92,7 +92,7 @@
         "A religion founded with Crusade as the Enhancer planned (bought with the second Apostle or the Mahabodhi pair) and a Founder belief that pays per converted city.",
         "The target chosen: the nearest rival city by road, not its capital unless the capital is nearest, with Ancient Walls or none and a majority religion that is not an enhanced rival faith.",
         "Two Missionaries bought, one on the road with a Warrior escort and one in reserve, because the first one dies to a barbarian or a theological hit about one game in three.",
-        "Six Horsemen under Maneuver and Agoge, promoted once on camps, parked in the Encampment city with a Battering Ram for any city that converts late and keeps Walls that matter.",
+        "Six Horsemen under Maneuver, their escorts under Agoge, promoted once on camps, parked in the Encampment city with a Battering Ram for any city that converts late and keeps Walls that matter.",
         "A second Holy Site city with a Shrine, so the Faith keeps buying Missionaries during the war and the Taxis Prophet points stay flowing.",
         "Horses pastured and Iron revealed; Stirrups queued so the Horsemen upgrade to Knights in the field under Professional Army.",
         "Oligarchy adopted, a Casus Belli available (Holy War once the target's civ has converted one of your cities, or a Formal War from a denouncement five turns old)."
@@ -347,7 +347,7 @@
         },
         {
           "id": "tech:engineering",
-          "note": "Eureka free from the Walls; the Ram and Medieval Walls at home."
+          "note": "Eureka free from the Walls; the Aqueduct and Catapults behind it."
         },
         {
           "id": "tech:stirrups",
@@ -407,7 +407,7 @@
           "card": "Oligarchy",
           "slot": "wildcard",
           "from": "civic:political-philosophy",
-          "why": "The government: +4 Combat Strength on melee and anti-cavalry, faster experience, and the Legacy card later."
+          "why": "The government: +4 Combat Strength on melee and anti-cavalry, and faster experience as its legacy bonus builds."
         },
         {
           "card": "Scripture",
@@ -435,7 +435,7 @@
       "wonders": [
         {
           "name": "Mahabodhi Temple",
-          "why": "Two free Apostles the turn it completes: one enhances with Crusade, one converts the target's Holy City. Woods beside a Holy Site.",
+          "why": "Two free Apostles the turn it completes: one enhances with Crusade, one converts the target's Holy City. Woods beside a Holy Site with a Temple.",
           "skip_if": "Theology lands after turn 75, or no Holy Site has an adjacent woods tile."
         }
       ],
@@ -444,7 +444,7 @@
           "governor": "moksha",
           "promotion": "Bishop",
           "city": "capital",
-          "why": "Religious units adjacent to the city win theological combat; the Missionaries start their walk from here."
+          "why": "Religious pressure from the city to its neighbours is doubled; the Missionaries start their walk from here."
         },
         {
           "governor": "victor",
@@ -586,11 +586,11 @@
         },
         {
           "id": "tech:military-engineering",
-          "note": "Aqueduct Eureka; Siege Towers for the rare city that flips back with Medieval Walls."
+          "note": "Aqueduct Eureka; Military Engineers, and Trebuchets for the rare city that flips back with Medieval Walls."
         },
         {
           "id": "tech:castles",
-          "note": "Free from Oligarchy; Medieval Walls in the captures."
+          "note": "Free from Monarchy, the Tier 2 government; Medieval Walls in the captures."
         },
         {
           "id": "tech:construction",
@@ -598,10 +598,6 @@
         }
       ],
       "civics": [
-        {
-          "id": "civic:divine-right",
-          "note": "The Tagma. Two Temples is the Inspiration and the Holy Site cities want them anyway; Chivalry and Monarchy."
-        },
         {
           "id": "civic:defensive-tactics",
           "note": "Inspiration free when the target's civ or its ally declares; Limitanei for the captures."
@@ -619,8 +615,16 @@
           "note": "Eight land units is the army; Professional Army for Horsemen to Knights at half price."
         },
         {
+          "id": "civic:recorded-history",
+          "note": "Taken plain on the way to Civil Service and Divine Right; no Campus exists yet, so no Inspiration."
+        },
+        {
           "id": "civic:civil-service",
           "note": "Capital at ten population; Retainers for Amenities in garrisoned captures."
+        },
+        {
+          "id": "civic:divine-right",
+          "note": "The Tagma. Two Temples is the Inspiration and the Holy Site cities want them anyway; Chivalry and Monarchy."
         }
       ],
       "policies": [
@@ -691,9 +695,9 @@
         },
         {
           "governor": "moksha",
-          "promotion": "Divine Architect",
-          "city": "newest capture",
-          "why": "Buy its Holy Site with Faith the turn it is taken; the religion holds and the Taxis points grow."
+          "promotion": "Bishop",
+          "city": "the first capture, while Victor moves on to the newest",
+          "why": "Moved to the capture, his doubled pressure holds the religion there and pushes it into its neighbours; Divine Architect, which buys districts with Faith, is his last promotion and comes much later."
         },
         {
           "governor": "magnus",
@@ -749,7 +753,7 @@
         {
           "id": "holywar-first-capture",
           "turn": 78,
-          "text": "Take the target; garrison one unit, Monument first, Victor moved in, Faith-buy its Holy Site under Divine Architect."
+          "text": "Take the target; garrison one unit, Monument first, Victor moved in; Moksha takes his place when Victor moves on to the next capture."
         },
         {
           "id": "holywar-crusade",
@@ -844,24 +848,24 @@
       ],
       "civics": [
         {
-          "id": "civic:reformed-church",
-          "note": "Six cities following, long since true; Theocracy and Wars of Religion."
-        },
-        {
           "id": "civic:guilds",
           "note": "Two Markets; Banking Eureka and the Gold."
         },
         {
+          "id": "civic:medieval-faires",
+          "note": "Four Trade Routes from the Markets; Triangular Trade for Gold and Faith."
+        },
+        {
+          "id": "civic:reformed-church",
+          "note": "Six cities following, long since true; Theocracy and Wars of Religion."
+        },
+        {
           "id": "civic:exploration",
-          "note": "On the way to Reformed Church; two Caravels if the second civ is coastal."
+          "note": "Off the Reformed Church path; Merchant Republic, and two Caravels if the second civ is coastal."
         },
         {
           "id": "civic:nationalism",
           "note": "Holy War Casus Belli against the second civ is the Inspiration; Corps for the Tagma."
-        },
-        {
-          "id": "civic:medieval-faires",
-          "note": "Four Trade Routes from the Markets; Triangular Trade for Gold and Faith."
         }
       ],
       "policies": [
@@ -925,7 +929,7 @@
         {
           "governor": "amani",
           "promotion": "Emissary",
-          "city": "a capture near a city-state",
+          "city": "Kabul or Jerusalem, whichever is contested",
           "why": "Hold Kabul and Jerusalem while every civ you have fought courts them."
         }
       ],
@@ -1069,7 +1073,7 @@
       ],
       "policies": [
         {
-          "card": "Grand Armee",
+          "card": "Grande Armée",
           "slot": "military",
           "from": "civic:nationalism",
           "why": "Industrial units faster; Cuirassiers and Field Cannons."
@@ -1110,7 +1114,7 @@
         {
           "governor": "reyna",
           "promotion": "Tax Collector",
-          "city": "capital",
+          "city": "the largest city that is not the Holy City",
           "why": "Gold for the Cuirassier upgrades once Theocracy's Faith is on Apostles."
         }
       ],
@@ -1233,7 +1237,7 @@
       "id": "tech:shipbuilding",
       "fit": "costly",
       "when": "holywar",
-      "how": "Two Dromons only on a coastal map."
+      "how": "Two Galleys only on a coastal map; the Dromon itself needs Shipbuilding."
     },
     {
       "id": "tech:construction",
@@ -1268,7 +1272,7 @@
     {
       "id": "tech:stirrups",
       "fit": "free",
-      "when": "prophet",
+      "when": "holywar",
       "how": "Feudalism is on the civic path; the Knights arrive with it."
     },
     {
@@ -1287,7 +1291,7 @@
       "id": "tech:castles",
       "fit": "free",
       "when": "holywar",
-      "how": "Oligarchy is a Tier 2 government."
+      "how": "Monarchy from Divine Right is a Tier 2 government; Oligarchy is Tier 1."
     },
     {
       "id": "tech:education",
