@@ -51,13 +51,13 @@
     {
       "source": "unique_unit",
       "name": "Malón Raider",
-      "buys": "Renaissance light cavalry with extra Combat Strength near friendly territory and pillaging for a single Movement point.",
+      "buys": "Medieval light cavalry, replacing the Courser, with extra Combat Strength near friendly territory and pillaging for a single Movement point.",
       "exploit": "The spoiler unit. Four of them trained in a governed border city raid a Golden Age neighbour's border city from inside your own borders' reach, pillaging its tiles for Gold and killing the defenders that come out, each kill taking Loyalty. They never go deep; the bonus and the healing are at home."
     },
     {
       "source": "unique_infrastructure",
       "name": "Chemamull",
-      "buys": "A tile improvement that converts the tile's Appeal into Culture, and into Tourism after Flight, on tiles that are already Charming or better.",
+      "buys": "A tile improvement that converts the tile's Appeal into Culture, and into Tourism after Flight, on tiles that are already Breathtaking.",
       "exploit": "Every Breathtaking tile beside the mountains that is not a district site gets one, Builders never chop the Woods that keep the Appeal up, and Eiffel Tower is the one wonder the plan chases because it raises every Chemamull at once. This is the Culture victory; the Great Works are extras."
     },
     {
@@ -125,7 +125,7 @@
         },
         {
           "item": "Builder",
-          "why": "Mine a hill for The Wheel, Farm a resource for Irrigation, Pasture the Horses; three improvements is Craftsmanship and the Horses are the cavalry."
+          "why": "Mine a resource for The Wheel, Farm a resource for Irrigation, Pasture the Horses; three improvements is Craftsmanship and the Horses are the cavalry."
         },
         {
           "item": "Settler",
@@ -194,7 +194,7 @@
         {
           "district": "theater-square",
           "city": "capital",
-          "note": "Beside the mountains and the City Center; chosen on turn 1, built after the second Settler. Culture is the victory, so it is the first district."
+          "note": "Beside the mountains and the City Center; chosen on turn 1, built once Drama and Poetry unlocks it in the next phase. Culture is the victory, so it is the first district."
         }
       ],
       "pantheon": {
@@ -206,9 +206,9 @@
       "governors": [
         {
           "governor": "magnus",
-          "promotion": "Provision",
+          "promotion": "Groundbreaker",
           "city": "capital",
-          "why": "The first title goes to a Governor, not a promotion: Toqui's Culture and Production in the capital from turn 25, and Settlers without the population cost."
+          "why": "The first title goes to a Governor, not a promotion: Toqui's Culture and Production in the capital from turn 25, and half again the yield of every harvest outside the Chemamull belt."
         }
       ],
       "city_states": [
@@ -218,7 +218,7 @@
         },
         {
           "type": "Militaristic",
-          "why": "Cheaper units in the capital and Kabul's experience later if it is the one met."
+          "why": "Production toward units in the capital and Kabul's experience later if it is the one met."
         }
       ],
       "great_people": [],
@@ -274,7 +274,7 @@
         },
         {
           "item": "Horseman",
-          "why": "Four, built in the governed border city for the experience; they clear camps now and become Coursers and Malon Raiders later."
+          "why": "Four, built in the governed border city for the experience; they clear camps now and become Malon Raiders later."
         },
         {
           "item": "Settler",
@@ -332,15 +332,15 @@
         },
         {
           "id": "tech:construction",
-          "note": "A Water Mill if a city is on a river; otherwise unboosted, but the Colosseum lives here."
+          "note": "A Water Mill if a city is on a river; otherwise unboosted, but it is the Games and Recreation Inspiration."
         },
         {
           "id": "tech:apprenticeship",
-          "note": "Three Mines on the hills beside the mountains; Mines also raise nothing and lower Appeal only on the tile itself."
+          "note": "Three Mines on the hills beside the mountains; Mines lower the Appeal of every adjacent tile, so keep them off the Chemamull tiles' neighbours."
         },
         {
           "id": "tech:military-tactics",
-          "note": "A Spearman kill at a camp; Castles and the Courser line are beyond it."
+          "note": "A Spearman kill at a camp; Pikemen for the border cities."
         }
       ],
       "civics": [
@@ -354,11 +354,11 @@
         },
         {
           "id": "civic:military-tradition",
-          "note": "Clearing a camp with the Horsemen gives the Inspiration; Raid for the Malon Raiders later."
+          "note": "Clearing a camp with the Horsemen gives the Inspiration; Maneuver for the Horsemen."
         },
         {
           "id": "civic:political-philosophy",
-          "note": "Oligarchy for the cavalry force's Combat Strength and experience; Inspiration from three city-states met."
+          "note": "Oligarchy for the melee escorts' Combat Strength and every unit's experience; Inspiration from three city-states met."
         },
         {
           "id": "civic:drama-and-poetry",
@@ -370,15 +370,15 @@
         },
         {
           "id": "civic:recorded-history",
-          "note": "Two Campuses give the Inspiration and a Governor title comes with it."
+          "note": "Two Campuses give the Inspiration and a Governor title comes with it; Praetorium for Loyalty in governed cities."
         },
         {
           "id": "civic:defensive-tactics",
-          "note": "Being declared on gives the Inspiration, and a civilization that spoils will be; Praetorium for Loyalty in governed cities and a Governor title."
+          "note": "Being declared on gives the Inspiration, and a civilization that spoils will be; Limes for the border city's walls and a Governor title."
         },
         {
           "id": "civic:military-training",
-          "note": "An Encampment in the border city gives the Inspiration; Great General points."
+          "note": "An Encampment in the border city gives the Inspiration; Great General points, and Raid for the Malon Raiders later."
         }
       ],
       "policies": [
@@ -386,13 +386,13 @@
           "card": "Oligarchy",
           "slot": "wildcard",
           "from": "civic:political-philosophy",
-          "why": "The government: Combat Strength and extra experience on top of Toqui's, which puts the cavalry force two promotions ahead of what it hunts."
+          "why": "The government: Combat Strength for the melee and anti-cavalry escorts, not the cavalry, and extra experience for every unit on top of Toqui's, which puts the cavalry force two promotions ahead of what it hunts."
         },
         {
           "card": "Colonization",
           "slot": "economic",
           "from": "civic:early-empire",
-          "why": "Settlers at half cost for the mountain cities and the second border city."
+          "why": "Half again the Production toward Settlers for the mountain cities and the second border city."
         },
         {
           "card": "Limitanei",
@@ -403,14 +403,14 @@
         {
           "card": "Praetorium",
           "slot": "military",
-          "from": "civic:defensive-tactics",
+          "from": "civic:recorded-history",
           "why": "Extra Loyalty in every governed city, which under Toqui is every city; it is the second watch's floor."
         },
         {
           "card": "Maneuver",
           "slot": "military",
           "from": "civic:military-tradition",
-          "why": "Cavalry at half again the speed while the four Horsemen are being built."
+          "why": "Half again the Production toward the four Horsemen while they are being built."
         }
       ],
       "districts": [
@@ -443,19 +443,19 @@
         {
           "name": "Colosseum",
           "why": "Culture and Amenities to every city within six tiles, which for a compact mountain core is every city; Loyalty follows Amenities.",
-          "skip_if": "Rome is on the map, Games and Recreation lands after turn 80, or the capital's Production is under 15 at turn 55."
+          "skip_if": "Rome is on the map, Games and Recreation lands after turn 80, the capital's Production is under 15 at turn 55, or no Entertainment Complex has flat land beside it."
         }
       ],
       "governors": [
         {
           "governor": "pingala",
-          "promotion": "Connoisseur",
+          "promotion": "Librarian",
           "city": "capital",
-          "why": "Culture per citizen in the city with the Theater Square; the second title is a second Governor, not a promotion."
+          "why": "Culture and Science in the city with the Theater Square; the second title is a second Governor, not a promotion."
         },
         {
           "governor": "victor",
-          "promotion": "Garrison Commander",
+          "promotion": "Redoubt",
           "city": "the border city",
           "why": "Combat Strength and Loyalty in the city facing the neighbour, and Toqui's experience on the cavalry trained there."
         },
@@ -473,7 +473,7 @@
         },
         {
           "type": "Cultural",
-          "why": "Culture in every Theater Square building; Drama and Poetry and Humanism arrive sooner."
+          "why": "Culture in every Amphitheater; Drama and Poetry and Humanism arrive sooner."
         },
         {
           "slug": "preslav",
@@ -545,11 +545,11 @@
         "to": 170
       },
       "era": "medieval",
-      "objective": "Run the watched stat every five turns and act on it the turn it goes green: a spoiler war of kills inside a Golden Age neighbour's border city until it rebels and joins you, with Malon Raiders from Mercenaries on; and in the long red periods, a Culture game of Chemamull, Theater Squares and governed cities that never falls behind.",
+      "objective": "Run the watched stat every five turns and act on it the turn it goes green: a spoiler war of kills inside a Golden Age neighbour's border city until it rebels and joins you, with Malon Raiders from Castles on; and in the long red periods, a Culture game of Chemamull, Theater Squares and governed cities that never falls behind.",
       "build_order": [
         {
           "item": "Malón Raider",
-          "why": "Four, trained in the governed border city when they unlock at Mercenaries; the spoiler force proper, with pillaging for a single Movement point."
+          "why": "Four, trained in the governed border city when they unlock at Castles; the spoiler force proper, with pillaging for a single Movement point."
         },
         {
           "item": "Amphitheater",
@@ -583,11 +583,11 @@
       "research": [
         {
           "id": "tech:stirrups",
-          "note": "Free Eureka from Feudalism; Knights are not the plan, but Stirrups is on the way to Castles and the Courser."
+          "note": "Free Eureka from Feudalism; Knights are not the plan, but one Knight kill is the Military Science Eureka later."
         },
         {
           "id": "tech:castles",
-          "note": "Free Eureka from a Tier 2 government; Coursers for the Horsemen to upgrade into while the Malon Raider is still a civic away."
+          "note": "Free Eureka from a Tier 2 government; the Malon Raider unlocks here, and the Horsemen upgrade straight into it; the Mapuche have no Courser."
         },
         {
           "id": "tech:machinery",
@@ -607,7 +607,7 @@
         },
         {
           "id": "tech:mass-production",
-          "note": "A Lumber Mill on Woods the Chemamull does not need; Workshops."
+          "note": "A Lumber Mill on Woods the Chemamull does not need; on the way to Industrialization."
         },
         {
           "id": "tech:banking",
@@ -633,7 +633,7 @@
         },
         {
           "id": "civic:mercenaries",
-          "note": "Eight land units give the Inspiration during the first spoiler war; the Malon Raider unlocks here and this is the civic priority of the phase."
+          "note": "Eight land units give the Inspiration during the first spoiler war; Professional Army halves the Horsemen's upgrade to Malon Raiders, and this is the civic priority of the phase."
         },
         {
           "id": "civic:guilds",
@@ -660,7 +660,7 @@
         {
           "card": "Raid",
           "slot": "military",
-          "from": "civic:military-tradition",
+          "from": "civic:military-training",
           "why": "Half again the yield from every tile the Malon Raiders pillage; slotted the turn the band goes green and removed when it goes red."
         },
         {
@@ -673,7 +673,7 @@
           "card": "Feudal Contract",
           "slot": "military",
           "from": "civic:feudalism",
-          "why": "Malon Raiders and Crossbowmen faster in the ten turns after the band goes amber."
+          "why": "Crossbowmen and the border garrison faster in the ten turns after the band goes amber."
         },
         {
           "card": "Serfdom",
@@ -685,7 +685,7 @@
           "card": "Professional Army",
           "slot": "military",
           "from": "civic:mercenaries",
-          "why": "Half-price upgrades from Horseman to Courser to Malon Raider, so the promoted cavalry are never replaced."
+          "why": "Half-price upgrades from Horseman to Malon Raider, so the promoted cavalry are never replaced."
         }
       ],
       "districts": [
@@ -718,14 +718,14 @@
         },
         {
           "name": "Kilwa Kisiwani",
-          "why": "Cultural and Militaristic suzerain bonuses amplified in every city, and the Envoys it grants hold them.",
-          "skip_if": "Machinery lands after turn 150, or you are suzerain of fewer than two city-states at turn 130."
+          "why": "Cultural and Militaristic city-state yields amplified, in every city for a type you are suzerain of two of, and the Envoys it grants hold them.",
+          "skip_if": "Machinery lands after turn 150, or you are suzerain of fewer than two city-states of one type at turn 130."
         }
       ],
       "governors": [
         {
           "governor": "victor",
-          "promotion": "Embrasure",
+          "promotion": "Garrison Commander",
           "city": "the border city facing the current target",
           "why": "The cavalry retreat to it to heal; it must hold while they do."
         },
@@ -737,9 +737,9 @@
         },
         {
           "governor": "liang",
-          "promotion": "Zoning Commissioner",
+          "promotion": "Guildmaster",
           "city": "the newest mountain city",
-          "why": "District Production in a city whose Governor is also Toqui's Culture and Production."
+          "why": "An extra charge on every Builder for the Chemamull, in a city whose Governor is also Toqui's Culture and Production."
         }
       ],
       "city_states": [
@@ -773,9 +773,9 @@
       "checkpoints": [
         {
           "turn": 130,
-          "test": "Mercenaries reached with four Malon Raiders standing in a governed border city, Medieval Walls on both border cities, and the watched stat read and acted on at every era boundary so far?",
+          "test": "Castles researched with four Malon Raiders standing in a governed border city, Medieval Walls on both border cities, and the watched stat read and acted on at every era boundary so far?",
           "pass": "Continue; the response is ready whenever the stat goes green.",
-          "fail": "If the Malon Raiders are missing, Mercenaries was skipped for Culture civics: it is the one civic the kit needs, take it now. If a Golden Age came and went with no war, re-read the amber band; the window was ten turns and the plan missed it."
+          "fail": "If the Malon Raiders are missing, Castles was skipped for other research: it is the one tech the kit needs, research it now. If a Golden Age came and went with no war, re-read the amber band; the window was ten turns and the plan missed it."
         },
         {
           "turn": 170,
@@ -793,12 +793,12 @@
         {
           "id": "loop-mercenaries",
           "turn": 120,
-          "text": "Mercenaries reached; four Malon Raiders built in the border Encampment city under Feudal Contract, Horsemen upgraded under Professional Army."
+          "text": "Mercenaries reached; four Malon Raiders built in the border Encampment city, Horsemen upgraded under Professional Army."
         },
         {
           "id": "loop-first-strike",
           "turn": 125,
-          "text": "The first time the band is green: declare with a Casus Belli, kill inside the lowest-Loyalty border city's borders only, pillage with Raid slotted, and withdraw to heal under Embrasure rather than pressing on."
+          "text": "The first time the band is green: declare with a Casus Belli, kill inside the lowest-Loyalty border city's borders only, pillage with Raid slotted, and withdraw to heal under Garrison Commander rather than pressing on."
         },
         {
           "id": "loop-flip",
@@ -871,7 +871,7 @@
         },
         {
           "id": "tech:military-science",
-          "note": "A kill with a Knight or a Courser upgraded to one during a spoiler war; Cavalry for the Malon Raiders to become."
+          "note": "A kill with a Knight built for it during a spoiler war; Cavalry for the Malon Raiders to become."
         },
         {
           "id": "tech:steel",
@@ -933,7 +933,7 @@
         },
         {
           "id": "civic:ideology",
-          "note": "Democracy for Tourism and Gold; no Inspiration exists."
+          "note": "the way to Suffrage and Democracy; no Inspiration exists."
         }
       ],
       "policies": [
@@ -952,7 +952,7 @@
         {
           "card": "Democracy",
           "slot": "wildcard",
-          "from": "civic:ideology",
+          "from": "civic:suffrage",
           "why": "The Tier 3 government for a Culture civilization; Computers' Eureka comes with it."
         },
         {
@@ -994,21 +994,21 @@
       "governors": [
         {
           "governor": "pingala",
-          "promotion": "Curator",
+          "promotion": "Connoisseur",
           "city": "capital",
-          "why": "Doubles Tourism from the Great Works the free Writers and Artists left in the capital."
+          "why": "Culture per citizen in the capital, her first promotion; Curator, which doubles the Great Works' Tourism, is two titles further on."
         },
         {
           "governor": "reyna",
-          "promotion": "Contractor",
+          "promotion": "Land Acquisition",
           "city": "the newest or flipped city",
-          "why": "Buy its Theater Square and Monument outright so a city that arrived at low Loyalty is governed and productive inside five turns."
+          "why": "A Governor the turn it arrives, so a city that came at low Loyalty is governed inside five turns; buy its Monument with Gold, since buying the Theater Square itself needs Contractor, two titles further on."
         },
         {
           "governor": "magnus",
-          "promotion": "Vertical Integration",
+          "promotion": "Groundbreaker",
           "city": "the Eiffel Tower city",
-          "why": "Factory Production shared into the city building the plan's one essential wonder."
+          "why": "Half again the Production from every chop on tiles the Chemamull does not need, in the city building the plan's one essential wonder; Vertical Integration is three titles away."
         }
       ],
       "city_states": [
@@ -1018,7 +1018,7 @@
         },
         {
           "type": "Cultural",
-          "why": "Culture in every Theater Square building and a vote partner in the Congress."
+          "why": "Culture in every Amphitheater, Art Museum and Archaeological Museum, and Diplomatic Favor for the Congress."
         },
         {
           "type": "Industrial",
@@ -1044,7 +1044,7 @@
           "turn": 200,
           "test": "Flight researched or within ten turns, Eiffel Tower started with its skip rule not fired, the first National Park founded, and Tourism per turn rising against every rival?",
           "pass": "Continue; Chemamull on every new Breathtaking tile Eiffel Tower creates.",
-          "fail": "If Flight is late, Natural Philosophy and Research Grants in every Campus city until it lands; the Chemamull pay nothing until it does. If Tourism trails three or more rivals, buy an Archaeologist and a Rock Band with the Earth Goddess Faith."
+          "fail": "If Flight is late, Natural Philosophy and Research Grants in every Campus city until it lands; the Chemamull pay nothing until it does. If Tourism trails three or more rivals, buy an Archaeologist with Gold and a Rock Band with the Earth Goddess Faith."
         },
         {
           "turn": 240,
@@ -1169,7 +1169,7 @@
       "governors": [
         {
           "governor": "amani",
-          "promotion": "Puppeteer",
+          "promotion": "Emissary",
           "city": "the most contested Cultural city-state",
           "why": "Hold the Cultural suzerainties through the last Congress sessions."
         }
@@ -1429,7 +1429,7 @@
       "id": "tech:military-science",
       "fit": "cheap",
       "when": "tourism",
-      "how": "A Knight kill during a spoiler war; the Coursers upgrade to Knights only for this."
+      "how": "A Knight kill during a spoiler war; one Knight is built for this alone."
     },
     {
       "id": "tech:steel",
@@ -1559,9 +1559,9 @@
     },
     {
       "id": "civic:defensive-tactics",
-      "fit": "free",
+      "fit": "costly",
       "when": "groundwork",
-      "how": "A spoiler civilization is declared on sooner or later."
+      "how": "Only if a neighbour declares; the plan starts no war in this phase."
     },
     {
       "id": "civic:military-training",
@@ -1742,7 +1742,7 @@
     {
       "name": "Golden Age next door",
       "if": "A neighbour in reach enters a Golden or Heroic Age and one of its border cities is within six tiles of a governed Mapuche city.",
-      "then": "Declare inside two turns with a Casus Belli, slot Raid, and kill only inside that city's borders; pillage with the Malon Raiders and withdraw to heal under Embrasure. The city rebels when its Loyalty hits zero; do not besiege it."
+      "then": "Declare inside two turns with a Casus Belli, slot Raid, and kill only inside that city's borders; pillage with the Malon Raiders and withdraw to heal under Garrison Commander. The city rebels when its Loyalty hits zero; do not besiege it."
     },
     {
       "name": "Age ending",

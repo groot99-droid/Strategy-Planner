@@ -16,7 +16,7 @@
     "secondary": "Culture",
     "confidence": "high",
     "one_line": "Plant the capital where eight cities fit inside six tiles, settle all of them by turn 70 on Farms and Plantations rather than rivers, put an Observatory beside the Plantations in every one, and let a compact empire at +10% to everything out-research rivals twice its size.",
-    "why": "Ix Mutal Ajaw gives every city within six tiles of the capital a tenth more of every yield and takes a sixth away from anything farther, so the empire is a circle drawn on turn one and the only question is how many cities the circle holds. Mayab removes the need for rivers and coasts: Farms give Housing and Gold, so cities sit wherever the circle needs them, three tiles apart on dry land, and the Farms they grow on are Observatory adjacency. The Observatory takes major adjacency from Plantations and minor from Farms and districts, which a packed circle supplies without a mountain in sight. Science is the victory because the kit's yield is Science and the circle's weakness is scale, which Science punishes least. Culture is the fallback because the same compact Theater Squares get the same +10%. Domination fights the kit: a captured city outside the circle is a liability at -15%."
+    "why": "Ix Mutal Ajaw gives every other city within six tiles of the capital a tenth more of every yield and takes 15% away from anything farther, so the empire is a circle drawn on turn one and the only question is how many cities the circle holds. Mayab removes the need for rivers and coasts: Farms give Housing and Gold, so cities sit wherever the circle needs them, three tiles apart on dry land, and the Farms they grow on are Observatory adjacency. The Observatory takes major adjacency from Plantations and minor from Farms and districts, which a packed circle supplies without a mountain in sight. Science is the victory because the kit's yield is Science and the circle's weakness is scale, which Science punishes least. Culture is the fallback because the same compact Theater Squares get the same +10%. Domination fights the kit: a captured city outside the circle is a liability at -15%."
   },
   "map_check": {
     "must_have": [
@@ -36,7 +36,7 @@
     {
       "source": "leader_ability",
       "name": "Ix Mutal Ajaw",
-      "buys": "Every yield in cities within six tiles of the Capital is raised by a tenth and every yield in cities farther away is cut by more; units within six tiles of the Capital fight at +5 Combat Strength.",
+      "buys": "Every yield in non-capital cities within six tiles of the Capital is raised by a tenth and every yield in cities farther away is cut by more; units within six tiles of the Capital fight at +5 Combat Strength.",
       "exploit": "The capital tile is chosen for the circle it draws, not for the tile itself. Every city is founded inside the circle, at three-tile spacing so that eight to ten fit; none is founded outside it for any resource, wonder or coast. The defence is a ring of Hul'che inside the circle where they already have +5; nothing is built to fight beyond it."
     },
     {
@@ -55,7 +55,7 @@
       "source": "unique_infrastructure",
       "name": "Observatory",
       "buys": "A Campus replacement whose adjacency comes from Plantations and from Farms and districts rather than from mountains, reefs and rainforest.",
-      "exploit": "Placed in every city on the tile touching the most Plantations, and otherwise between the Farm triangles so that four Farms and the City Center give it +3. Its tile is pinned at settle time, because the Farms around it are placed to feed it. Natural Philosophy doubles whatever it has, and every city has one by turn 100."
+      "exploit": "Placed in every city on the tile touching the most Plantations, and otherwise between the Farm triangles so that four Farms, the City Center and one more district give it +3. Its tile is pinned at settle time, because the Farms around it are placed to feed it. Natural Philosophy doubles whatever it has, and every city has one by turn 100."
     },
     {
       "source": "agenda",
@@ -142,6 +142,10 @@
         {
           "id": "tech:pottery",
           "note": "Granary and the Irrigation line; the Plantations need Irrigation."
+        },
+        {
+          "id": "tech:animal-husbandry",
+          "note": "Archery's prerequisite; reveals Horses for the Pasture that boosts Horseback Riding."
         },
         {
           "id": "tech:archery",
@@ -294,7 +298,7 @@
         },
         {
           "item": "Trader",
-          "why": "Domestic, to whichever city is youngest; Currency on the first route."
+          "why": "Domestic, from whichever city is youngest; Currency on the first route."
         },
         {
           "item": "Government Plaza",
@@ -336,7 +340,7 @@
         },
         {
           "id": "tech:construction",
-          "note": "Unboosted unless a Water Mill is possible; Entertainment Complex for the Amenities nine cities need."
+          "note": "Unboosted unless a Water Mill is possible; it gives the Games and Recreation Inspiration, and that civic unlocks the Entertainment Complex for the Amenities nine cities need."
         }
       ],
       "civics": [
@@ -354,23 +358,23 @@
         },
         {
           "id": "civic:military-tradition",
-          "note": "The rim camp cleared; a step to Political Philosophy."
+          "note": "The rim camp cleared; the first step toward Mercenaries and Professional Army."
         },
         {
           "id": "civic:political-philosophy",
           "note": "Classical Republic; three city-states met."
         },
         {
-          "id": "civic:recorded-history",
-          "note": "Two Observatories; Natural Philosophy."
-        },
-        {
           "id": "civic:drama-and-poetry",
           "note": "Inspiration from the Pyramids; Theater Squares in the inner ring later."
         },
         {
+          "id": "civic:recorded-history",
+          "note": "Two Observatories; Natural Philosophy."
+        },
+        {
           "id": "civic:games-and-recreation",
-          "note": "Free from Construction; the Colosseum covers the whole circle from the capital."
+          "note": "Free from Construction; the Colosseum beside the capital covers most of the circle."
         }
       ],
       "policies": [
@@ -378,7 +382,7 @@
           "card": "Colonization",
           "slot": "economic",
           "from": "civic:early-empire",
-          "why": "Settlers at half cost for the five remaining sites; the race for the circle is won here."
+          "why": "+50% Production toward Settlers for the five remaining sites; the race for the circle is won here."
         },
         {
           "card": "Urban Planning",
@@ -428,7 +432,7 @@
         },
         {
           "name": "Colosseum",
-          "why": "Culture and Amenities to every city within six tiles, which from the capital is the whole circle by definition.",
+          "why": "Culture and Amenities to every city within six tiles, which from a tile beside the capital is most of the circle.",
           "skip_if": "Games and Recreation lands after turn 80 or no Entertainment Complex tile is free beside the capital."
         }
       ],
@@ -449,7 +453,7 @@
       "city_states": [
         {
           "slug": "mitla",
-          "why": "Growth 15% faster in cities with a Campus, and the Observatory counts; nine cities grow on Farms a sixth faster."
+          "why": "Growth 15% faster in cities with a Campus, and the Observatory counts; nine cities grow on Farms 15% faster."
         },
         {
           "slug": "la-venta",
@@ -570,7 +574,7 @@
         },
         {
           "id": "tech:buttress",
-          "note": "Free from the Pyramids or the Colosseum."
+          "note": "Free from the Colosseum; the Ancient-era Pyramids do not count."
         },
         {
           "id": "tech:printing",
@@ -701,7 +705,7 @@
       "great_people": [
         {
           "class": "great-scientist",
-          "why": "Every one; buy with Gold when the points are short. The Medieval ones add Science to Universities, which every city has."
+          "why": "Every one; buy with Gold when the points are short. The Renaissance one, Isaac Newton, adds Science to every University, which every city has."
         },
         {
           "class": "great-merchant",
@@ -757,7 +761,7 @@
       "build_order": [
         {
           "item": "Factory",
-          "why": "Both Industrial Zones; one Factory's Production reaches every city in the circle."
+          "why": "Both Industrial Zones; between them the two Factories reach every city in the circle."
         },
         {
           "item": "Research Lab",
@@ -861,7 +865,7 @@
           "card": "Public Works",
           "slot": "economic",
           "from": "civic:civil-engineering",
-          "why": "Builders with extra charges for the Coal, Oil and Aluminum Mines."
+          "why": "Builders with extra charges for the Coal and Aluminum Mines and the Oil Wells."
         }
       ],
       "districts": [
@@ -880,7 +884,7 @@
         {
           "name": "Oxford University",
           "why": "Two free techs and Science in the best Observatory city.",
-          "skip_if": "Scientific Theory lands after turn 200 or a Science rival is ahead on Production."
+          "skip_if": "No Grassland or Plains tile touches an Observatory with a University by turn 200 or a Science rival is ahead on Production."
         },
         {
           "name": "Ruhr Valley",
@@ -1013,7 +1017,7 @@
         },
         {
           "id": "tech:robotics",
-          "note": "Unboosted; two Airports are not worth it."
+          "note": "Unboosted; Globalization is not on the civic path."
         }
       ],
       "civics": [
@@ -1023,7 +1027,7 @@
         },
         {
           "id": "civic:nuclear-program",
-          "note": "A Research Lab; the Nuclear Program card."
+          "note": "A Research Lab; the International Space Agency card."
         },
         {
           "id": "civic:capitalism",
@@ -1165,7 +1169,7 @@
       "id": "tech:currency",
       "fit": "free",
       "when": "circle",
-      "how": "The first domestic Trade Route to the youngest city."
+      "how": "The first domestic Trade Route from the youngest city."
     },
     {
       "id": "tech:horseback-riding",
@@ -1249,7 +1253,7 @@
       "id": "tech:buttress",
       "fit": "cheap",
       "when": "compact",
-      "how": "The Pyramids or the Colosseum."
+      "how": "The Colosseum; the Ancient-era Pyramids do not count."
     },
     {
       "id": "tech:cartography",
@@ -1549,7 +1553,7 @@
       "id": "civic:civil-engineering",
       "fit": "cheap",
       "when": "live",
-      "how": "Seven district types; the Entertainment Complex and an Aqueduct make it."
+      "how": "Seven district types; the Entertainment Complex and a rim Holy Site make it; an Aqueduct does not count."
     },
     {
       "id": "civic:urbanization",
@@ -1645,14 +1649,14 @@
   "fail_state": "Turn 150 with five cities inside the circle and three outside it at -15%, Observatories placed beside rivers for Housing that Mayab never gives, Farms mined for Production, and Science in the middle of the table. The capital tile that drew the circle and the Settlers that left it were decided before turn 40 and no city can be moved.",
   "common_mistakes": [
     "Settling the capital on the river. Mayab gives no Housing from water; the Farms give it, and the capital belongs wherever the six-tile circle holds the most cities.",
-    "Founding a seventh city two tiles outside the circle because the land is better. It yields a sixth less of everything for the game and the city inside on worse land yields a tenth more.",
+    "Founding a seventh city two tiles outside the circle because the land is better. It yields 15% less of everything for the game and the city inside on worse land yields a tenth more.",
     "Keeping a captured or flipped city outside the radius because it is free. It is a -15% city that invites a war the Hul'che cannot fight at full strength.",
     "Mining the hills before farming the flats. Farms are the Housing, the Gold and the Observatory adjacency; Mines are a few Production in an empire that buys with Gold.",
     "Placing the Observatory beside the mountain or the reef. It gets nothing from either; it gets Science from Plantations, Farms and districts, and its tile is chosen for those."
   ],
   "sources": [
     "Civilization VI Civilopedia, Gathering Storm ruleset with the New Frontier Pass (Maya, Lady Six Sky, Observatory, Hul'che, Mayab, Ix Mutal Ajaw).",
-    "Where the civ-info text is thin, the game is followed: Ix Mutal Ajaw is +10% to all yields within six tiles of the Capital and -15% beyond, with +5 Combat Strength for units within six tiles; Mayab also grants +1 Amenity per Luxury resource adjacent to a City Center; the Observatory's major adjacency is from Plantations and its minor adjacency from Farms and districts, with none from Mountains, Reefs or Rainforest.",
+    "Where the civ-info text is thin, the game is followed: Ix Mutal Ajaw is +10% to all yields in non-capital cities within six tiles of the Capital and -15% beyond, with +5 Combat Strength for units within six tiles; Mayab also grants +1 Amenity per Luxury resource adjacent to a City Center; the Observatory's major adjacency is from Plantations and its minor adjacency from Farms and districts, with none from Mountains, Reefs or Rainforest.",
     "Boost objectives cross-checked against civilization6planner.com tech-tree and civics-tree pages, 2026-10-01.",
     "Leadership Focus tags, caveats, Front-Load template and the FrontLoad_LadySixSky worked example in this repository."
   ]

@@ -37,13 +37,13 @@
       "source": "leader_ability",
       "name": "Kupe's Voyage",
       "buys": "The game starts embarked on Ocean with +2 Science and +2 Culture per turn until the first city is founded, which then gets a free Builder and +1 Population, and the Palace gives +3 Housing and +1 Amenity.",
-      "exploit": "Spend four or five turns looking and then land; every turn at sea pays four yields and costs a turn of growth, Production and the pantheon race, and the trade turns against you around turn 6. The free Builder puts Fishing Boats on two sea resources the turn after landing, which is Food, a culture bomb and the Celestial Navigation Eureka at once; the extra Housing lets the capital grow to eight before it needs anything."
+      "exploit": "Spend four or five turns looking and then land; every turn at sea pays four yields and costs a turn of growth, Production and the pantheon race, and the trade turns against you around turn 6. The free Builder puts Fishing Boats on two sea resources in the turns after landing, which is Food, a culture bomb and the Celestial Navigation Eureka at once; the extra Housing lets the capital grow to eight before it needs anything."
     },
     {
       "source": "civ_ability",
       "name": "Mana",
       "buys": "Sailing and Shipbuilding known from turn one, Ocean movement from the start, embarked units with extra Combat Strength and Movement, +1 Production on unimproved Woods and Rainforest, Fishing Boats that give extra Food and claim adjacent tiles, and no harvesting or feature removal.",
-      "exploit": "Woods are Production tiles without a Builder and Rainforest beside a Marae is Culture and Faith too, so the plan improves the sea and the flat land and leaves every feature standing. Fishing Boats on the border claim the tiles beside them, which is how a coastal city takes a Reef or a wonder tile from a rival. A Settler on a Galley reaches the second landmass before anyone else has a boat."
+      "exploit": "Woods are Production tiles without a Builder and Rainforest beside a Marae is Culture and Faith too, so the plan improves the sea and the flat land and leaves every feature standing. Fishing Boats on the border claim the tiles beside them, which is how a coastal city takes a Reef or a wonder tile from a rival. A Settler escorted by a Galley reaches the second landmass before anyone else has a boat."
     },
     {
       "source": "unique_infrastructure",
@@ -78,7 +78,7 @@
           },
           {
             "victory": "Religion",
-            "when_it_fits": "A Great Prophet is still available at turn 90 and the Marae Faith can buy him with Faith patronage. Fifty Faith a turn from eight Marae buys Apostles faster than any Holy Site civilization and the coastal cities are reachable by religious units on Galleys; but the Prophet usually is gone, so take this only when the Great People screen shows one left and no rival within forty points of him."
+            "when_it_fits": "A Great Prophet is still available at turn 90 and the Marae Faith can buy him with Faith patronage. Fifty Faith a turn from eight Marae buys Apostles faster than any Holy Site civilization and the coastal cities are reachable by embarked religious units; but the Prophet usually is gone, so take this only when the Great People screen shows one left and no rival within forty points of him."
           }
         ],
         "choose_by": 60,
@@ -115,7 +115,7 @@
         },
         {
           "item": "Galley",
-          "why": "Escorts the Settler on the water and clears the Barbarian Quadriremes that find a coastal capital; Shipbuilding is already known."
+          "why": "Escorts the Settler on the water and clears the Barbarian Quadriremes that find a coastal capital; Sailing is already known."
         },
         {
           "item": "Monument",
@@ -199,13 +199,13 @@
           "card": "Maritime Industries",
           "slot": "military",
           "from": "civic:foreign-trade",
-          "why": "Galleys at half cost; the Settler escorts and the camp-ship hunters."
+          "why": "+100% Production toward Galleys; the Settler escorts and the camp-ship hunters."
         },
         {
           "card": "Colonization",
           "slot": "economic",
           "from": "civic:early-empire",
-          "why": "Settlers at half cost until six coastal cities stand."
+          "why": "+50% Production toward Settlers until six coastal cities stand."
         }
       ],
       "districts": [
@@ -244,7 +244,7 @@
           "turn": 40,
           "test": "Two cities founded on coasts with features, the pantheon taken, the landing camp cleared, and no feature removed anywhere?",
           "pass": "Enter the shore phase; the direction decision is twenty turns away.",
-          "fail": "One city with the second Settler on a Galley is acceptable. A pantheon after turn 35 means the Monument is missing; buy it. A camp alive beside the capital is Quadriremes in ten turns; the two Warriors and the Galley clear it now."
+          "fail": "One city with the second Settler embarked beside a Galley is acceptable. A pantheon after turn 35 means God King came late; slot it now. A camp alive beside the capital is Quadriremes in ten turns; the two Warriors and the Galley clear it now."
         }
       ],
       "tasks": [
@@ -266,7 +266,7 @@
         {
           "id": "voyage-second-city",
           "turn": 25,
-          "text": "Second city founded on a wooded coast by Settler on a Galley; confirm the Fishing Boat range claims a tile the city did not own."
+          "text": "Second city founded on a wooded coast by a Settler escorted by a Galley; confirm the Fishing Boat range claims a tile the city did not own."
         },
         {
           "id": "voyage-pantheon",
@@ -308,7 +308,7 @@
         },
         {
           "item": "Toa",
-          "why": "Four at Iron Working with no Iron: the camp clearers and the Pa builders on the border hill."
+          "why": "Four at Construction with no Iron: the camp clearers and the Pa builders on the border hill."
         },
         {
           "item": "Trader",
@@ -330,7 +330,7 @@
         },
         {
           "id": "tech:iron-working",
-          "note": "Unboosted unless an Iron hill is bare; the Toa needs no Iron, only the tech."
+          "note": "Unboosted unless an Iron hill is bare; the Toa needs no Iron and unlocks at Construction."
         },
         {
           "id": "tech:masonry",
@@ -341,12 +341,12 @@
           "note": "Harbor, Theater Square and Campus in the capital by turn 85."
         },
         {
-          "id": "tech:construction",
-          "note": "A Water Mill in a river city if any; otherwise unboosted on the way to Mass Production."
-        },
-        {
           "id": "tech:horseback-riding",
           "note": "A Pasture gives the Eureka; Pastures keep the features around them."
+        },
+        {
+          "id": "tech:construction",
+          "note": "A Water Mill in a river city if any; otherwise unboosted; the Toa unlock here."
         },
         {
           "id": "tech:apprenticeship",
@@ -368,7 +368,7 @@
         },
         {
           "id": "civic:military-tradition",
-          "note": "First camp cleared; on the path to Political Philosophy."
+          "note": "First camp cleared; on the path to Mercenaries."
         },
         {
           "id": "civic:games-and-recreation",
@@ -380,7 +380,7 @@
         },
         {
           "id": "civic:naval-tradition",
-          "note": "A Quadrireme kill against a Barbarian ship; Harbors get a Culture adjacency card and Great Admiral points."
+          "note": "A Quadrireme kill against a Barbarian ship; Harbors get a doubled-adjacency card and Great Admiral points."
         },
         {
           "id": "civic:theology",
@@ -410,7 +410,7 @@
           "card": "Agoge",
           "slot": "military",
           "from": "civic:craftsmanship",
-          "why": "Toa at half cost; four of them hold the Classical era."
+          "why": "+50% Production toward Toa; four of them hold the Classical era."
         },
         {
           "card": "Diplomatic League",
@@ -448,32 +448,32 @@
       "wonders": [
         {
           "name": "Great Lighthouse",
-          "why": "Movement for the Galleys and Settlers and Great Admiral points in a Harbor capital.",
+          "why": "Movement for the Galleys and Great Admiral points in a Harbor capital.",
           "skip_if": "The capital Harbor is not placed by turn 60, or a naval civilization has it queued."
         },
         {
           "name": "Temple of Artemis",
-          "why": "Housing and Amenities from Camps and Pastures, which this plan builds instead of Mines.",
+          "why": "Housing, and Amenities from Camps and Pastures, which this plan builds instead of Mines.",
           "skip_if": "No Camps or Pastures within four tiles of the capital."
         },
         {
           "name": "Mausoleum at Halicarnassus",
           "why": "Coastal, and the Great Admirals and Engineers it empowers are the Great People a Maori empire earns.",
-          "skip_if": "No coastal flat tile beside the capital Harbor, or Construction lands after turn 95."
+          "skip_if": "No coastal flat tile beside the capital Harbor, or Mathematics lands after turn 95."
         }
       ],
       "governors": [
         {
           "governor": "liang",
           "promotion": "Aquaculture",
-          "city": "capital",
+          "city": "the second city",
           "why": "Fisheries on the coast tiles the Fishing Boats cannot reach; Food and Production without a feature touched."
         },
         {
           "governor": "magnus",
           "promotion": "Provision",
           "city": "capital",
-          "note": "Never Groundbreaker; there is nothing to chop.",
+          "note": "Groundbreaker comes with the appointment and does nothing here; there is nothing to chop.",
           "why": "Settlers three through six without losing the population the Marae tiles need."
         }
       ],
@@ -494,7 +494,7 @@
       "great_people": [
         {
           "class": "great-admiral",
-          "why": "Harbors earn them; a Classical Great Admiral is Movement and strength for the Settler fleet."
+          "why": "Harbors earn them; a Classical Great Admiral is Movement and strength for the Galleys escorting the Settlers."
         },
         {
           "class": "great-artist",
@@ -584,7 +584,7 @@
         },
         {
           "item": "Market",
-          "why": "Two for Guilds; the Gold buys the Builders and later the Rock Bands when Faith runs short."
+          "why": "Two for Guilds; the Gold buys the Builders so the Faith is left for Naturalists and Rock Bands."
         },
         {
           "item": "Builder",
@@ -597,12 +597,12 @@
           "note": "Two Harbors gave the Eureka; Caravels and the ocean for the last Settlers."
         },
         {
-          "id": "tech:mass-production",
-          "note": "One Lumber Mill on a Woods tile that keeps the Woods; the rest stay unimproved for Mana."
-        },
-        {
           "id": "tech:education",
           "note": "A Great Scientist gives the Eureka; Universities."
+        },
+        {
+          "id": "tech:mass-production",
+          "note": "One Lumber Mill on a Woods tile that keeps the Woods; the rest stay unimproved for Mana."
         },
         {
           "id": "tech:printing",
@@ -672,11 +672,11 @@
           "card": "Merchant Republic",
           "slot": "wildcard",
           "from": "civic:exploration",
-          "why": "Two Economic slots for Aesthetics and Frescoes, and more Trade Routes for the islands."
+          "why": "Economic slots for Aesthetics, a Wildcard for Frescoes, and more Trade Routes for the islands."
         },
         {
           "card": "Frescoes",
-          "slot": "economic",
+          "slot": "wildcard",
           "from": "civic:humanism",
           "why": "Great Artist points; the Museums fill before Cultural Heritage."
         },
@@ -724,12 +724,12 @@
       "wonders": [
         {
           "name": "Chichen Itza",
-          "why": "Culture and Production on every Rainforest tile, which the Maori keep anyway.",
+          "why": "Culture and Production on every Rainforest tile in its city, which the Maori keep anyway.",
           "skip_if": "Fewer than four Rainforest tiles inside the borders."
         },
         {
           "name": "Kilwa Kisiwani",
-          "why": "Coastal, and two suzerainties become +15% yields in every one of eight cities.",
+          "why": "Coastal, and two suzerainties of one type become +15% of that type's yield in every one of eight cities.",
           "skip_if": "Fewer than two suzerainties at turn 140."
         },
         {
@@ -748,7 +748,7 @@
         {
           "governor": "reyna",
           "promotion": "Harbormaster",
-          "city": "the largest Harbor city",
+          "city": "the largest Harbor city after the capital",
           "why": "Doubled Harbor adjacency and Gold where the Lighthouse and Shipyard stand."
         },
         {
@@ -875,7 +875,7 @@
       "research": [
         {
           "id": "tech:industrialization",
-          "note": "Two Workshops, or unboosted; the Eiffel Tower and Factories."
+          "note": "Two Workshops, or unboosted; Factories."
         },
         {
           "id": "tech:scientific-theory",
@@ -884,6 +884,10 @@
         {
           "id": "tech:steam-power",
           "note": "Two Shipyards gave the Eureka; Ironclads and the Steel line."
+        },
+        {
+          "id": "tech:steel",
+          "note": "An Ironclad from the Steam Power Shipyards and a Coal Mine on a bare hill; Battleships guard the coast."
         },
         {
           "id": "tech:flight",
@@ -997,7 +1001,7 @@
         {
           "name": "Oxford University",
           "why": "Science direction: two free techs and Great Scientist points.",
-          "skip_if": "The Culture direction is chosen, or Scientific Theory lands after turn 215."
+          "skip_if": "The Culture direction is chosen, or Education lands after turn 215."
         }
       ],
       "governors": [
@@ -1005,7 +1009,7 @@
           "governor": "pingala",
           "promotion": "Curator",
           "city": "the capital",
-          "why": "Doubled Tourism from Great Works and the wonders in the city with the most of both."
+          "why": "Doubled Tourism from Great Works in the city with the most of them."
         },
         {
           "governor": "moksha",
@@ -1099,7 +1103,7 @@
         "to": null
       },
       "era": "modern",
-      "objective": "Finish the direction: Rock Bands bought with the Marae Faith and sent at the rivals with the most Culture, Computers and Online Communities for the Tourism multipliers, Cristo Redentor for the Resorts, or the three Spaceport projects on the Science direction.",
+      "objective": "Finish the direction: Rock Bands bought with the Marae Faith and sent at the rivals with the most Culture, Computers and Online Communities for the Tourism multipliers, Cristo Redentor for the Resorts, or the Spaceport projects on the Science direction.",
       "build_order": [
         {
           "item": "Rock Band",
@@ -1111,11 +1115,11 @@
         },
         {
           "item": "Stock Exchange",
-          "why": "Two for Capitalism; Gold for the last Rock Bands."
+          "why": "Two for Capitalism; Gold for what the Faith cannot buy, since Rock Bands take Faith only."
         },
         {
           "item": "Sewer",
-          "why": "Four for Suffrage; Democracy's Great People Culture."
+          "why": "Four for Suffrage; Democracy's cheaper Great People."
         },
         {
           "item": "Spaceport",
@@ -1137,7 +1141,7 @@
         },
         {
           "id": "tech:plastics",
-          "note": "An Oil Well on the first offshore Oil; Oil for Power and the Science direction."
+          "note": "An Oil Well on the first land Oil; Oil for Power and the Science direction."
         },
         {
           "id": "tech:replaceable-parts",
@@ -1146,10 +1150,6 @@
         {
           "id": "tech:synthetic-materials",
           "note": "Two Aerodromes."
-        },
-        {
-          "id": "tech:steel",
-          "note": "An Ironclad from the Steam Power Shipyards and a Coal Mine on a bare hill; Battleships guard the coast."
         }
       ],
       "civics": [
@@ -1187,7 +1187,7 @@
           "card": "Democracy",
           "slot": "wildcard",
           "from": "civic:suffrage",
-          "why": "Culture from Great People and three Economic slots for the Tourism cards."
+          "why": "Cheaper Great People patronage and three Economic slots for the Tourism cards."
         },
         {
           "card": "Heritage Tourism",
@@ -1218,7 +1218,7 @@
       "wonders": [
         {
           "name": "Cristo Redentor",
-          "why": "Doubled Tourism from Seaside Resorts, which a Maori coast has in dozens, and no Tourism penalty from rivals' governments.",
+          "why": "Doubled Tourism from Seaside Resorts, which a Maori coast has in dozens, and religious Tourism that The Enlightenment does not reduce.",
           "skip_if": "Fewer than four Seaside Resorts, or Mass Media lands after turn 260."
         },
         {
@@ -1312,7 +1312,7 @@
       "id": "tech:celestial-navigation",
       "fit": "free",
       "when": "voyage",
-      "how": "Two Fishing Boats from the free Builder on the landing turn."
+      "how": "Two Fishing Boats from the free Builder in the turns after landing."
     },
     {
       "id": "tech:irrigation",
@@ -1528,7 +1528,7 @@
       "id": "tech:plastics",
       "fit": "cheap",
       "when": "close",
-      "how": "An Oil Well on offshore Oil, which a coastal empire usually finds."
+      "how": "An Oil Well on land Oil; offshore Oil needs Plastics itself."
     },
     {
       "id": "tech:replaceable-parts",
@@ -1545,7 +1545,7 @@
     {
       "id": "tech:steel",
       "fit": "costly",
-      "when": "close",
+      "when": "flight",
       "how": "An Ironclad and a Coal Mine on a bare hill."
     },
     {
@@ -1558,7 +1558,7 @@
       "id": "civic:craftsmanship",
       "fit": "free",
       "when": "voyage",
-      "how": "Three improvements from the free Builder on the landing turn."
+      "how": "Three improvements from the free Builder in the turns after landing."
     },
     {
       "id": "civic:early-empire",
@@ -1600,7 +1600,7 @@
       "id": "civic:games-and-recreation",
       "fit": "free",
       "when": "shore",
-      "how": "Researching Construction on the way to Mass Production."
+      "how": "Researching Construction for the Toa."
     },
     {
       "id": "civic:recorded-history",

@@ -29,7 +29,7 @@
     "prefer": [
       "A rival capital within fifteen tiles of the nearest city-state you can hold, so a levied army reaches a target inside its 30 turns.",
       "A Geothermal Fissure in the first three cities for the Thermal Bath's Tourism and Fire Goddess Faith.",
-      "Hills across the river for Mines, Apprenticeship and the Production the far bank already doubles.",
+      "Hills across the river for Mines, Apprenticeship and the Production the far bank already raises by half.",
       "Horses within the first two cities; Black Army is a Courser and needs them."
     ],
     "no_go": "No river within two Settler moves and no city-state met by turn 40. Both halves of the kit are off: nothing builds faster and nothing can be levied, so Hungary is a plain civilization with a late Zoo.",
@@ -40,7 +40,7 @@
       "source": "leader_ability",
       "name": "Raven King",
       "buys": "Levied units gain extra Movement and Combat Strength, upgrade for a fraction of the Gold and without strategic resources, and every levy grants two Envoys with that city-state.",
-      "exploit": "A levy is both the army and a three-Envoy swing at the city-state that supplied it, so the plan levies the city-state whose suzerainty is contested rather than the one that is safe, upgrades the rented units the turn they arrive because the upgrade is nearly free, and times each levy so the 30 turns cover one siege and the march home."
+      "exploit": "A levy is both the army and a two-Envoy gain at the city-state that supplied it, so the plan levies the city-state whose suzerainty is contested rather than the one that is safe, upgrades the rented units the turn they arrive because the upgrade is nearly free, and times each levy so the 30 turns cover one siege and the march home."
     },
     {
       "source": "civ_ability",
@@ -64,7 +64,7 @@
       "source": "unique_infrastructure",
       "name": "Thermal Bath",
       "buys": "A Zoo replacement with regional Amenities and Production for every city within six tiles, and Tourism where the city holds a Geothermal Fissure.",
-      "exploit": "It arrives at Natural History, late, so it is the consolidation building rather than the plan: two Thermal Baths placed between the captured cities keep a wide, war-weary empire content and productive without luxuries, and they count as Entertainment Complexes for the Professional Sports Inspiration."
+      "exploit": "It arrives at Natural History, late, so it is the consolidation building rather than the plan: two Thermal Baths placed between the captured cities keep a wide, war-weary empire content and productive without luxuries, and the two Entertainment Complexes they sit in are the Professional Sports Inspiration."
     },
     {
       "source": "agenda",
@@ -175,7 +175,7 @@
         },
         {
           "id": "civic:mysticism",
-          "note": "Free Inspiration from the pantheon; Diplomatic League lives here and is the first diplomatic card."
+          "note": "Free Inspiration from the pantheon; Diplomatic League waits for Political Philosophy."
         }
       ],
       "policies": [
@@ -209,7 +209,7 @@
       "city_states": [
         {
           "type": "Militaristic",
-          "why": "The first Envoy into any Militaristic city-state met is cheaper units at home and the first levy source later."
+          "why": "The first Envoy into any Militaristic city-state met is Production toward units in the capital and the first levy source later."
         },
         {
           "type": "Industrial",
@@ -264,12 +264,12 @@
       "objective": "Build the Gold and Envoy machine: a Commercial Hub and Market across the river in every city, Oligarchy with Charismatic Leader and Diplomatic League, suzerainty of two city-states by turn 70, one trial levy to learn the price and the clock, and six cities by turn 100.",
       "build_order": [
         {
-          "item": "Commercial Hub",
-          "why": "Across the river in the capital at half again the speed; its Trade Route is the Currency Eureka."
-        },
-        {
           "item": "Trader",
           "why": "Currency Eureka and the first steady Gold; four routes running is Medieval Faires later."
+        },
+        {
+          "item": "Commercial Hub",
+          "why": "Across the river in the capital at half again the speed; Currency is researched first, and its extra Trade Route keeps a second Trader running."
         },
         {
           "item": "Water Mill",
@@ -323,7 +323,7 @@
         },
         {
           "id": "tech:mathematics",
-          "note": "Commercial Hub, Encampment and an Aqueduct or Harbor make three specialty districts by turn 80."
+          "note": "Commercial Hub, Encampment and a Harbor or Industrial Zone make three specialty districts by turn 80."
         },
         {
           "id": "tech:apprenticeship",
@@ -373,12 +373,12 @@
           "card": "Oligarchy",
           "slot": "wildcard",
           "from": "civic:political-philosophy",
-          "why": "The government: Combat Strength and experience for the levied melee units and the Black Army later, and the diplomatic slot the Envoy cards need."
+          "why": "The government: Combat Strength for the levied melee and anti-cavalry units, experience for them and the Black Army later, and the diplomatic slot the Envoy cards need."
         },
         {
           "card": "Diplomatic League",
           "slot": "diplomatic",
-          "from": "civic:mysticism",
+          "from": "civic:political-philosophy",
           "why": "The first Envoy to every city-state counts double; slotted until every city-state met has one, then swapped."
         },
         {
@@ -391,7 +391,7 @@
           "card": "Colonization",
           "slot": "economic",
           "from": "civic:early-empire",
-          "why": "Settlers at half the cost while the capital alternates them with the Commercial Hub."
+          "why": "Half again the Production toward Settlers while the capital alternates them with the Commercial Hub."
         },
         {
           "card": "Caravansaries",
@@ -424,14 +424,14 @@
       "wonders": [
         {
           "name": "Apadana",
-          "why": "Two Envoys when it completes and two more for every later wonder in the same city; built across the river it is cheap for Hungary and it pays in the currency the plan runs on.",
+          "why": "Two Envoys when it completes and two more for every later wonder in the same city; Pearl of the Danube does not speed wonders, but it pays in the currency the plan runs on.",
           "skip_if": "Persia is on the map and has Political Philosophy first, or the capital's Production is under 15 at turn 50."
         }
       ],
       "governors": [
         {
           "governor": "amani",
-          "promotion": "Emissary",
+          "promotion": "Messenger",
           "city": "the most contested city-state",
           "why": "She counts as two Envoys where she sits and is moved to whichever city-state a rival is closest to matching; she is the plan's Envoy reserve."
         },
@@ -445,7 +445,7 @@
       "city_states": [
         {
           "type": "Militaristic",
-          "why": "The levy source: Militaristic city-states field the most and strongest units for the price, and suzerainty discounts your own units too."
+          "why": "The levy source: Militaristic city-states field the most and strongest units for the price, and the Envoys placed there add Production to your own units too."
         },
         {
           "slug": "kabul",
@@ -453,7 +453,7 @@
         },
         {
           "type": "Trade",
-          "why": "Gold is the levy budget; a Trade suzerainty is Gold on every route."
+          "why": "Gold is the levy budget; Envoys at a Trade city-state put Gold in the capital and every Market."
         }
       ],
       "great_people": [
@@ -484,7 +484,7 @@
         {
           "id": "loop-first-hub",
           "turn": 35,
-          "text": "Capital Commercial Hub finished across the river; Trader bought or built and sent to the second city for Currency."
+          "text": "Trader bought or built and sent to the second city for the Currency Eureka; capital Commercial Hub finished across the river."
         },
         {
           "id": "loop-oligarchy",
@@ -545,11 +545,11 @@
         },
         {
           "item": "Alhambra",
-          "why": "A military policy slot and Great General points, built on hills beside the Encampment at Hungarian speed."
+          "why": "A military policy slot and Great General points, built on hills beside the Encampment; Pearl of the Danube does not speed wonders."
         },
         {
           "item": "Kilwa Kisiwani",
-          "why": "Envoys on completion and every suzerain bonus stronger across the empire; it is a Matthias wonder before it is anyone else's."
+          "why": "Envoys on completion and the yields of your suzerain city-states stronger across the empire once you hold two of a type; it is a Matthias wonder before it is anyone else's."
         },
         {
           "item": "Monument",
@@ -567,7 +567,7 @@
         },
         {
           "id": "tech:military-engineering",
-          "note": "The capital Aqueduct gives the Eureka; Armories and Siege Towers."
+          "note": "The capital Aqueduct gives the Eureka; Armories and Trebuchets."
         },
         {
           "id": "tech:machinery",
@@ -587,7 +587,7 @@
         },
         {
           "id": "tech:mass-production",
-          "note": "A Lumber Mill on any Woods; Industrial Zone buildings and the Production for the Huszár line."
+          "note": "A Lumber Mill on any Woods; Shipyards, and the road to Industrialization and the Huszár line's Factories."
         },
         {
           "id": "tech:gunpowder",
@@ -638,10 +638,10 @@
           "why": "Gold for every Envoy you have placed; with Charismatic Leader in the other diplomatic or wildcard slot, Envoys pay for the levies they protect."
         },
         {
-          "card": "Feudal Contract",
+          "card": "Chivalry",
           "slot": "military",
-          "from": "civic:feudalism",
-          "why": "Black Army and Trebuchets faster while the campaign is on."
+          "from": "civic:divine-right",
+          "why": "Black Army faster while the campaign is on."
         },
         {
           "card": "Professional Army",
@@ -676,8 +676,8 @@
       "wonders": [
         {
           "name": "Alhambra",
-          "why": "An extra military policy slot and Great General points, and it acts as a Fort on the frontier; hills beside the Encampment make it a Hungarian build.",
-          "skip_if": "No hill tile beside the Encampment city, or Castles arrives after turn 140."
+          "why": "An extra military policy slot and Great General points, and it acts as a Fort on the frontier; it goes on a hill beside the Encampment.",
+          "skip_if": "No hill tile beside the Encampment, or Castles arrives after turn 140."
         },
         {
           "name": "Kilwa Kisiwani",
@@ -892,7 +892,7 @@
           "card": "Wisselbanken",
           "slot": "diplomatic",
           "from": "civic:diplomatic-service",
-          "why": "Trade Routes to your suzerain city-states earn more and build alliance points; alliances are Huszár strength."
+          "why": "Trade Routes to your allies earn more and build alliance points; alliances are Huszár strength."
         },
         {
           "card": "Triangular Trade",
@@ -933,7 +933,7 @@
       "wonders": [
         {
           "name": "Forbidden City",
-          "why": "A second wildcard slot, which for this plan is Charismatic Leader and Merchant Confederation both in at once.",
+          "why": "A second wildcard slot, which for this plan keeps Charismatic Leader and Merchant Confederation in beside Wisselbanken.",
           "skip_if": "China is on the map, Printing lands after turn 230, or the capital's Production is under 30 at turn 215."
         }
       ],
@@ -964,11 +964,11 @@
         },
         {
           "type": "Industrial",
-          "why": "Production in the Thermal Bath cities and in every captured city that has none."
+          "why": "Production in every Workshop and Factory, the Thermal Bath cities' included."
         },
         {
           "type": "Trade",
-          "why": "Gold on every route; a second Trade suzerainty with Kilwa Kisiwani is Gold in every city."
+          "why": "Gold in the capital, every Market and every Bank; a second Trade suzerainty with Kilwa Kisiwani is Gold in every city."
         }
       ],
       "great_people": [
@@ -1088,7 +1088,7 @@
         },
         {
           "id": "civic:ideology",
-          "note": "Democracy for the Diplomatic branch, Fascism for Domination; no Inspiration exists."
+          "note": "the road to Suffrage's Democracy for the Diplomatic branch and Totalitarianism's Fascism for Domination; no Inspiration exists."
         }
       ],
       "policies": [
@@ -1108,7 +1108,7 @@
           "card": "Containment",
           "slot": "diplomatic",
           "from": "civic:diplomatic-service",
-          "why": "Envoys to city-states near rivals with a different government count double; the Congress branch's last Envoy lever."
+          "why": "Envoys to city-states whose suzerain runs a different government count double; the Congress branch's last Envoy lever."
         }
       ],
       "districts": [],
@@ -1232,7 +1232,7 @@
       "id": "tech:mathematics",
       "fit": "cheap",
       "when": "loop",
-      "how": "Commercial Hub, Encampment and Aqueduct across the river make three specialty districts by turn 80."
+      "how": "Commercial Hub, Encampment and Industrial Zone across the river make three specialty districts by turn 80."
     },
     {
       "id": "tech:apprenticeship",
@@ -1424,7 +1424,7 @@
       "id": "tech:flight",
       "fit": "costly",
       "when": "close",
-      "how": "An Industrial wonder only if the Forbidden City counts or one falls into a captured city."
+      "how": "An Industrial-era wonder only if one falls into a captured city; the Forbidden City is Renaissance and does not count."
     },
     {
       "id": "tech:computers",
