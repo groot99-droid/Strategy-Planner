@@ -174,7 +174,7 @@
         },
         {
           "id": "civic:military-tradition",
-          "note": "The Raid card is the whole economy; Inspiration from the first camp cleared."
+          "note": "The road to Military Training and the Raid card; Inspiration from the first camp cleared."
         }
       ],
       "policies": [
@@ -330,7 +330,7 @@
         },
         {
           "id": "civic:mysticism",
-          "note": "Free Inspiration from the pantheon; Holy Site adjacency."
+          "note": "Free Inspiration from the pantheon; Revelation for Great Prophet points."
         },
         {
           "id": "civic:political-philosophy",
@@ -342,21 +342,21 @@
         },
         {
           "id": "civic:military-training",
-          "note": "Inspiration from the Encampment; Maneuver and Agoge are not needed, but the Great General points are."
+          "note": "Inspiration from the Encampment; the Raid card, which is the whole economy."
         }
       ],
       "policies": [
         {
           "card": "Raid",
           "slot": "military",
-          "from": "civic:military-tradition",
+          "from": "civic:military-training",
           "why": "Half again as much from every pillage; slotted whenever the fleet is raiding."
         },
         {
           "card": "Colonization",
           "slot": "economic",
           "from": "civic:early-empire",
-          "why": "Settlers at half the cost while the raids pay for Builders."
+          "why": "Settlers half again as fast while the raids pay for Builders."
         },
         {
           "card": "Oligarchy",
@@ -409,7 +409,7 @@
       "city_states": [
         {
           "slug": "wolin",
-          "why": "Great General and Great Admiral points per Encampment and Harbor building; suzerainty is worth three envoys."
+          "why": "Great General points for land kills and Great Admiral points for naval kills, which the raiding fleet makes constantly; suzerainty is worth three envoys."
         },
         {
           "slug": "nan-madol",
@@ -447,8 +447,8 @@
       "tasks": [
         {
           "id": "loop-raid-card",
-          "turn": 30,
-          "text": "Slot Raid before the first pillage and keep it slotted while the stat is green."
+          "turn": 70,
+          "text": "Slot Raid the turn Military Training lands and keep it slotted while the stat is green."
         },
         {
           "id": "loop-first-raid",
@@ -519,7 +519,7 @@
       "research": [
         {
           "id": "tech:military-engineering",
-          "note": "Aqueduct Eureka; Siege Towers if Medieval Walls appear."
+          "note": "Aqueduct Eureka; Armories and Military Engineers."
         },
         {
           "id": "tech:machinery",
@@ -630,7 +630,7 @@
         },
         {
           "slug": "preslav",
-          "why": "Loyalty per Encampment building and cheaper upgrades."
+          "why": "Loyalty per Encampment building in the captured cities."
         }
       ],
       "great_people": [
@@ -803,7 +803,7 @@
           "governor": "amani",
           "promotion": "Emissary",
           "city": "a captured city near a rival",
-          "why": "Loyalty pressure outward and an envoy where the fleet took a city-state's neighbour."
+          "why": "Loyalty for every other captured city within nine tiles."
         },
         {
           "governor": "pingala",

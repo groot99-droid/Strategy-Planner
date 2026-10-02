@@ -177,7 +177,7 @@
           "card": "God King",
           "slot": "economic",
           "from": "civic:code-of-laws",
-          "why": "Faith toward the pantheon; Korea has no Holy Site and needs 25 Faith from somewhere."
+          "why": "Faith toward the pantheon; this plan builds no Holy Site and needs 25 Faith from somewhere."
         },
         {
           "card": "Discipline",
@@ -1153,7 +1153,7 @@
       "id": "tech:flight",
       "fit": "cheap",
       "when": "live",
-      "how": "Oxford University or Ruhr Valley completes."
+      "how": "Ruhr Valley completes; Oxford University is a Renaissance wonder and does not count."
     },
     {
       "id": "tech:refining",
@@ -1247,9 +1247,9 @@
     },
     {
       "id": "civic:drama-and-poetry",
-      "fit": "cheap",
+      "fit": "costly",
       "when": "execute",
-      "how": "Any wonder; the Great Library if it is built."
+      "how": "Any wonder finished before this civic; the Great Library needs Recorded History, which needs Drama and Poetry first, so it cannot give this Inspiration. Usually unboosted."
     },
     {
       "id": "civic:defensive-tactics",
@@ -1333,7 +1333,7 @@
       "id": "civic:class-struggle",
       "fit": "cheap",
       "when": "live",
-      "how": "Three Factories, two of them in the Industrial Zones."
+      "how": "Three Factories, which means a third Industrial Zone off every ring; a Factory can only be built in an Industrial Zone."
     },
     {
       "id": "civic:nuclear-program",

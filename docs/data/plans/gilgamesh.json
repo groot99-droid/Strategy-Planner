@@ -147,12 +147,12 @@
           "note": "Discipline for the camp fights and Urban Planning for the capital."
         },
         {
-          "id": "civic:military-tradition",
-          "note": "Maneuver halves the time to a War-Cart; the Inspiration is free from the first camp cleared."
+          "id": "civic:craftsmanship",
+          "note": "Three improved tiles give the Inspiration; Ilkum is not needed yet, but Military Tradition hangs off it."
         },
         {
-          "id": "civic:craftsmanship",
-          "note": "Three improved tiles give the Inspiration; Ilkum is not needed yet, but Agoge is on the way to Early Empire."
+          "id": "civic:military-tradition",
+          "note": "Maneuver cuts the time to a War-Cart by a third; the Inspiration is free from the first camp cleared."
         }
       ],
       "policies": [
@@ -172,7 +172,7 @@
           "card": "Maneuver",
           "slot": "military",
           "from": "civic:military-tradition",
-          "why": "+50% Production toward Ancient and Classical cavalry; the third and fourth War-Carts come out in half the turns."
+          "why": "+50% Production toward Ancient and Classical cavalry; the third and fourth War-Carts come out in two thirds of the turns."
         }
       ],
       "districts": [],
@@ -297,12 +297,12 @@
       ],
       "civics": [
         {
-          "id": "civic:early-empire",
-          "note": "Colonization for the third city; Inspiration free at six population."
-        },
-        {
           "id": "civic:foreign-trade",
           "note": "Trade Routes and the Caravansaries card; Inspiration only if a second continent is in sight."
+        },
+        {
+          "id": "civic:early-empire",
+          "note": "Colonization for the third city; Inspiration free at six population."
         },
         {
           "id": "civic:state-workforce",
@@ -314,7 +314,7 @@
         },
         {
           "id": "civic:mysticism",
-          "note": "Free Inspiration from the pantheon; it is on the way to Drama and Poetry and Theology, neither of which this plan chases."
+          "note": "Free Inspiration from the pantheon; it leads only to Theology, which this plan does not chase."
         }
       ],
       "policies": [
@@ -334,13 +334,7 @@
           "card": "Colonization",
           "slot": "economic",
           "from": "civic:early-empire",
-          "why": "The third city at half Settler cost while the army does the conquering."
-        },
-        {
-          "card": "Oligarchy",
-          "slot": "wildcard",
-          "from": "civic:political-philosophy",
-          "why": "The government: +4 Strength for the Warriors breaking Walls and faster experience for the War-Carts. Autocracy is wrong here; nothing is being built."
+          "why": "The third city with +50% Production toward its Settler while the army does the conquering."
         }
       ],
       "districts": [
@@ -372,7 +366,7 @@
       "city_states": [
         {
           "slug": "akkad",
-          "why": "Suzerainty before the second siege if it is on the map; melee attacks then ignore Walls."
+          "why": "Suzerainty before the second siege if it is on the map; melee attacks then do full damage to Walls."
         },
         {
           "type": "Militaristic",
@@ -588,7 +582,7 @@
         {
           "name": "Colosseum",
           "why": "+2 Amenities to every city within six tiles covers the captures that have none.",
-          "skip_if": "The captured cities are more than six tiles from any city that could build it, or Games and Recreation lands after turn 130."
+          "skip_if": "The captured cities are more than six tiles from any city that could build it, Games and Recreation lands after turn 130, or no Entertainment Complex stands for it to be built beside."
         }
       ],
       "governors": [
@@ -596,13 +590,13 @@
           "governor": "pingala",
           "promotion": "Researcher",
           "city": "capital",
-          "why": "The Science the arming phase did not buy; move to Librarian once Universities exist."
+          "why": "The Science the arming phase did not buy; Librarian, her base ability, already adds Science and Culture there."
         },
         {
           "governor": "amani",
           "promotion": "Emissary",
           "city": "the captured capital",
-          "why": "Two envoys and Loyalty pressure outward in the city nearest the former owner."
+          "why": "Loyalty in the city nearest the former owner; once it holds, assign her to a city-state, where Emissary counts as two envoys."
         }
       ],
       "city_states": [
@@ -768,12 +762,6 @@
           "slot": "economic",
           "from": "civic:guilds",
           "why": "Commercial Hub adjacency doubled; Gold for upgrades and purchases."
-        },
-        {
-          "card": "Merchant Republic",
-          "slot": "wildcard",
-          "from": "civic:exploration",
-          "why": "The Tier 2 government: two extra Trade Routes and purchase discounts fit a wide trading empire; Monarchy only if a war is being joined."
         }
       ],
       "districts": [
@@ -903,7 +891,7 @@
           "why": "Domination branch: the siege line for capitals with Renaissance Walls."
         },
         {
-          "item": "Cavalry",
+          "item": "Cuirassier",
           "why": "Domination branch: Knights upgraded under Professional Army; the War-Carts' last form."
         },
         {
@@ -1028,7 +1016,7 @@
         {
           "id": "close-join-war",
           "turn": 240,
-          "text": "Domination branch: the moment the ally declares or is declared on, join under Adventures of Enkidu and send Cavalry and Field Cannons at the nearest enemy capital."
+          "text": "Domination branch: the moment the ally declares or is declared on, join under Adventures of Enkidu and send Cuirassiers and Field Cannons at the nearest enemy capital."
         },
         {
           "id": "close-spaceport",
@@ -1172,8 +1160,8 @@
     {
       "id": "tech:castles",
       "fit": "free",
-      "when": "digest",
-      "how": "Any Tier 2 government."
+      "when": "build",
+      "how": "Merchant Republic at Exploration, the Tier 2 government for a wide trading empire; Monarchy only if a war is being joined."
     },
     {
       "id": "tech:machinery",
@@ -1333,9 +1321,9 @@
     },
     {
       "id": "civic:defensive-tactics",
-      "fit": "free",
+      "fit": "costly",
       "when": "window",
-      "how": "The target or its friend declares war on you after the first capture."
+      "how": "Only if a friend or ally of the target declares war on you after the first capture; the target itself is already at war with you."
     },
     {
       "id": "civic:games-and-recreation",

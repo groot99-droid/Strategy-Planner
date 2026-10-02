@@ -48,7 +48,7 @@
     {
       "source": "unique_unit",
       "name": "Garde Impériale",
-      "buys": "An Industrial era melee unit with higher Combat Strength, +10 when fighting on or next to the capital's home continent, and Great General points from kills.",
+      "buys": "An Industrial era melee unit with higher Combat Strength, +10 when fighting on the capital's home continent, and Great General points from kills.",
       "exploit": "The Domination option's instrument. Built in bulk at Military Science, promoted under a Great General, and carrying the visibility bonus on top of the continent bonus, a Garde Impériale corps takes neighbouring cities an era before Infantry. It is useless overseas, which is why the Domination option is only offered on a shared continent."
     },
     {
@@ -243,7 +243,7 @@
         {
           "district": "commercial-hub",
           "city": "capital",
-          "note": "First district: a Trade Route for Currency, the Gold that later buys Builders for Châteaux, and Great Merchant points for Mercantilism."
+          "note": "First district: a second Trade Route, the Gold that later buys Builders for Châteaux, and Great Merchant points for Mercantilism."
         },
         {
           "district": "campus",
@@ -702,7 +702,7 @@
           "card": "Professional Army",
           "slot": "military",
           "from": "civic:mercenaries",
-          "why": "Domination option: Swordsmen to Musketmen at half price."
+          "why": "Domination option: Swordsmen to Men-at-Arms and Men-at-Arms to Musketmen at half price."
         },
         {
           "card": "Frescoes",
@@ -826,7 +826,7 @@
         {
           "id": "spend-chateaux",
           "turn": 135,
-          "text": "Humanism in; every reserved river tile beside a finished wonder gets a Château before any other improvement."
+          "text": "Humanism in; every reserved river tile beside a finished wonder gets a Château before any other improvement, no two Châteaux adjacent."
         },
         {
           "id": "spend-spy-missions",
@@ -958,7 +958,7 @@
         },
         {
           "id": "civic:conservation",
-          "note": "Inspiration from a Neighborhood on Breathtaking appeal, which the wonders create; National Parks and Heritage Tourism."
+          "note": "Inspiration from a Neighborhood on Breathtaking appeal, which the wonders create; National Parks and Naturalists."
         },
         {
           "id": "civic:mass-media",
@@ -975,8 +975,8 @@
         {
           "card": "Heritage Tourism",
           "slot": "economic",
-          "from": "civic:conservation",
-          "why": "Double Tourism from Great Works of Art and Artifacts; the Museums are now the second engine."
+          "from": "civic:cultural-heritage",
+          "why": "Double Tourism from Great Works of Art and Artifacts once Cultural Heritage lands; the Museums are now the second engine."
         },
         {
           "card": "Rationalism",
@@ -1209,7 +1209,7 @@
         },
         {
           "id": "civic:cultural-heritage",
-          "note": "Inspiration from a themed Museum; Tourism from Great Works of Art and Artifacts up."
+          "note": "Inspiration from a themed Museum; Heritage Tourism, which doubles Tourism from Great Works of Art and Artifacts."
         },
         {
           "id": "civic:professional-sports",
@@ -1234,7 +1234,7 @@
         {
           "card": "Heritage Tourism",
           "slot": "economic",
-          "from": "civic:conservation",
+          "from": "civic:cultural-heritage",
           "why": "Stays slotted; the Museums are themed now."
         },
         {
@@ -1279,7 +1279,7 @@
       "great_people": [
         {
           "class": "great-musician",
-          "why": "Three Music slots per Broadcast Center; each Great Musician is the most Tourism one unit can carry."
+          "why": "One Music slot per Broadcast Center; each Great Musician is the most Tourism one unit can carry."
         }
       ],
       "checkpoints": [
@@ -1547,7 +1547,7 @@
       "id": "tech:radio",
       "fit": "cheap",
       "when": "tourism",
-      "how": "One National Park on a Breathtaking hill cluster; a Naturalist bought with Faith or Gold."
+      "how": "One National Park on a Breathtaking hill cluster; a Naturalist bought with Faith, the only currency that buys one."
     },
     {
       "id": "tech:chemistry",
@@ -1900,7 +1900,7 @@
     "Never choosing. The kit pays a little in every era for a different reason, which makes drifting comfortable; the turn-70 decision and the era checkpoints exist because nothing in the kit will force the choice for you."
   ],
   "sources": [
-    "Civilization VI Civilopedia, Gathering Storm ruleset (France, Catherine de Medici (Black Queen), Garde Impériale, Château). The Garde Impériale is a unique Industrial era unit unlocked at Military Science that replaces no unit in Gathering Storm; the civ-info text's 'replaces Line Infantry' is treated as its tier, not a replacement.",
+    "Civilization VI Civilopedia, Gathering Storm ruleset (France, Catherine de Medici (Black Queen), Garde Impériale, Château). The Garde Impériale is a unique Industrial era melee unit that replaces the Line Infantry, which is why three of them count for the Replaceable Parts Eureka.",
     "Diplomatic Visibility combat bonus (+3 Combat Strength per level of advantage) and Spy mission list (Gain Sources, Listening Post, Steal Tech Boost, Sabotage Production, Great Work Heist, Disrupt Rocketry, Counterspy) per the Gathering Storm rules.",
     "Boost objectives cross-checked against civilization6planner.com tech-tree and civics-tree pages, 2026-10-01.",
     "Leadership Focus tags, caveats and Linear template for Catherine de Medici (Black Queen) in this repository."

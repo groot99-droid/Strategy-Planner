@@ -19,7 +19,7 @@
     "secondary": "Culture",
     "confidence": "medium",
     "one_line": "Found a religion first, then put an Encampment on every border so each culture bomb steals a ring of tiles and converts the city that lost them. Hold the grudges with Walls, Crusade and Winged Hussars, and let Relics pay for the rest.",
-    "why": "Golden Liberty fires a culture bomb from every Encampment and Fort, and Lithuanian Union turns each bomb that takes foreign tiles into a conversion of the city that lost them, which is a spread of your religion that no Apostle has to walk to and no theological combat can stop. That makes the kit a Religion kit: every neighbour's border cities turn Polish in faith for the price of a district, and the Reformed Church, Crusade and Relic bonuses all pay off that same religion. Nothing in the kit converts anyone before the religion exists, which is why the first fifty turns are a Great Prophet race and the plan refuses to spend a bomb on a foreign border until the Prophet is in hand. Culture is the second route because Jadwiga's Relics give Culture as well as Faith and Gold, and Reliquaries turns a Temple full of Martyrs into Tourism; Domination is only a branch, taken when a converted neighbour is weak enough for Hussars under Crusade."
+    "why": "Golden Liberty fires a culture bomb from every Encampment and Fort, and Lithuanian Union turns each bomb that takes foreign tiles into a conversion of the city that lost them, which is a spread of your religion that no Apostle has to walk to and no theological combat can stop. That makes the kit a Religion kit: every neighbour's border cities turn Polish in faith for the price of a district, and the Reformed Church, Crusade and Relic bonuses all pay off that same religion. Nothing in the kit converts anyone before the religion exists, which is why the first fifty turns are a Great Prophet race and the plan refuses to spend a bomb on a foreign border until the Prophet is in hand. Culture is the second route because Jadwiga's Relics give Culture as well as Faith and Gold, and Martyr Apostles fill the Temples' Relic slots, which are Tourism; Domination is only a branch, taken when a converted neighbour is weak enough for Hussars under Crusade."
   },
   "map_check": {
     "must_have": [
@@ -28,7 +28,7 @@
     ],
     "prefer": [
       "Stone or marble for Stone Circles, and hills for the Production the Sukiennice and the Hussars need.",
-      "Horses within the first three cities, because the Winged Hussar needs them and the plan defends with it.",
+      "Horses and Iron within the first three cities: Iron for the Knights that hold the bomb phase, Horses for the Winged Hussars they upgrade into.",
       "A natural wonder in reach for the Astrology Eureka and the first Relic if Kandy is on the map.",
       "Two neighbours rather than one, so the second and third bombs do not all land on the same enraged civ."
     ],
@@ -51,8 +51,8 @@
     {
       "source": "unique_unit",
       "name": "Winged Hussar",
-      "buys": "A Medieval heavy cavalry unit unlocked by the Mercenaries civic, 55 Combat Strength and 4 Movement, needing Horses, which pushes a defender back a tile whenever it deals more damage than it takes, and upgrades to a Cuirassier.",
-      "exploit": "It is a Musketman's strength two eras early with the mobility to reach any border the grudges arrive on. The plan uses it to punish the first neighbour who declares after a bomb, under Crusade against the cities the bombs have already converted, and to take one of them if the Domination branch is chosen. Under the Grand Master's Chapel it is bought with Faith."
+      "buys": "A heavy cavalry unit that replaces the Cuirassier and is unlocked by Military Science in the Industrial era, 55 Combat Strength and 4 Movement, needing Horses, which pushes a defender back a tile whenever it deals more damage than it takes.",
+      "exploit": "It arrives late, so the bomb phase holds the border with Knights, which upgrade into Hussars at Military Science under Professional Army. The plan then uses it to punish the neighbours who declare after a bomb, under Crusade against the cities the bombs have already converted, and to take one of them if the Domination branch is chosen. Under the Grand Master's Chapel or Theocracy it is bought with Faith."
     },
     {
       "source": "unique_infrastructure",
@@ -83,7 +83,7 @@
         "to": 65
       },
       "staging": [
-        "A religion founded with a Founder belief that pays per city converted (Church Property or Tithe) or per Relic (Reliquaries), and Crusade pencilled in as the Enhancer so converted cities later give +10 Combat Strength to the Hussars.",
+        "A religion founded with a Founder belief that pays per city converted (Church Property or Tithe), and Crusade pencilled in as the Enhancer so converted cities later give +10 Combat Strength to the Knights and later the Hussars.",
         "The first bomb city settled within three tiles of the target's border, its Holy Site or a Missionary already making it follow your religion as majority.",
         "Bronze Working researched and the Encampment tile chosen: an owned tile on the outer ring whose six neighbours include at least three foreign tiles, none of them a district.",
         "Ancient Walls and an Archer in that city, and a Slinger or Archer in every other city, because the bomb is a declaration of war in everything but name.",
@@ -347,7 +347,7 @@
         },
         {
           "id": "civic:military-tradition",
-          "note": "First camp cleared; Agoge for Archers under Oligarchy."
+          "note": "First camp cleared; on the road to Military Training and Strategos."
         },
         {
           "id": "civic:early-empire",
@@ -377,13 +377,13 @@
           "card": "Colonization",
           "slot": "economic",
           "from": "civic:early-empire",
-          "why": "Third Settler at half price; the second bomb city."
+          "why": "Third Settler 50 percent faster; the second bomb city."
         },
         {
           "card": "Oligarchy",
           "slot": "wildcard",
           "from": "civic:political-philosophy",
-          "why": "The government: +4 Combat Strength for the Archers and Swordsmen that hold the border, and its military slot is a second Wildcard."
+          "why": "The government: +4 Combat Strength for the Swordsmen and Spearmen that hold the border, and its military slot is a second Wildcard."
         },
         {
           "card": "Scripture",
@@ -401,7 +401,7 @@
         {
           "district": "encampment",
           "city": "capital",
-          "note": "The safe bomb: claims your own hinterland, gives Military Training, and is the Barracks city for the Hussars."
+          "note": "The safe bomb: claims your own hinterland, gives Military Training, and is the Stable city for the Knights and Hussars."
         }
       ],
       "pantheon": {
@@ -420,7 +420,7 @@
           "governor": "moksha",
           "promotion": "Bishop",
           "city": "capital",
-          "why": "Faith and the Holy Site city's religious strength; his later promotions buy districts with Faith in the bomb cities."
+          "why": "Faith and the Holy Site city's religious pressure; his later promotions buy districts with Faith in the bomb cities."
         },
         {
           "governor": "victor",
@@ -436,7 +436,7 @@
         },
         {
           "slug": "yerevan",
-          "why": "Apostles choose their promotion: Martyr for Relics under Reliquaries, or Proselytizer to overwrite a rival's pressure in a bombed city."
+          "why": "Apostles choose their promotion: Martyr for Relics, or Proselytizer to overwrite a rival's pressure in a bombed city."
         },
         {
           "type": "Religious",
@@ -487,7 +487,7 @@
         {
           "id": "prophet-found",
           "turn": 58,
-          "text": "Found the religion: Church Property or Reliquaries as Founder, a Worship building with a Relic slot in mind, and Crusade planned as the Enhancer."
+          "text": "Found the religion: Church Property or Tithe as Founder, a Worship building with a Relic slot in mind, and Crusade planned as the Enhancer."
         },
         {
           "id": "prophet-convert-bomb-city",
@@ -504,7 +504,7 @@
         "to": 125
       },
       "era": "medieval",
-      "objective": "Put an Encampment on each foreign border in turn, converting the city behind every bomb, enhance the religion with Crusade, build the Sukiennice economy and the Temples that hold Relics, unlock the Winged Hussar at Mercenaries, and win the first defensive war the bombs provoke without losing a city.",
+      "objective": "Put an Encampment on each foreign border in turn, converting the city behind every bomb, enhance the religion with Crusade, build the Sukiennice economy and the Temples that hold Relics, field Knights under Chivalry, and win the first defensive war the bombs provoke without losing a city.",
       "build_order": [
         {
           "item": "Encampment",
@@ -531,12 +531,12 @@
           "why": "Two Temples are Divine Right; each holds a Relic worth +4 Gold, +2 Culture and +2 Faith under Lithuanian Union."
         },
         {
-          "item": "Winged Hussar",
-          "why": "Four of them from the Encampment city once Mercenaries lands; the answer to the first declared war."
+          "item": "Knight",
+          "why": "Four of them from the Encampment city under Chivalry; the answer to the first declared war, and they upgrade into Winged Hussars at Military Science."
         },
         {
           "item": "Government Plaza",
-          "why": "For the Grand Master's Chapel, so Hussars and Swordsmen are bought with the Faith the religion makes."
+          "why": "For the Grand Master's Chapel, so Knights and Swordsmen are bought with the Faith the religion makes."
         }
       ],
       "research": [
@@ -546,7 +546,7 @@
         },
         {
           "id": "tech:apprenticeship",
-          "note": "Three Mines; the Production the Hussars and the Walls run on."
+          "note": "Three Mines; the Production the Knights and the Walls run on."
         },
         {
           "id": "tech:military-tactics",
@@ -554,7 +554,7 @@
         },
         {
           "id": "tech:stirrups",
-          "note": "Free Eureka from Feudalism; Knights are not needed, the Hussar is better, but Stirrups leads to Castles."
+          "note": "Free Eureka from Feudalism; Knights are the border army until the Winged Hussar replaces the Cuirassier at Military Science."
         },
         {
           "id": "tech:machinery",
@@ -566,7 +566,7 @@
         },
         {
           "id": "tech:castles",
-          "note": "Free from Oligarchy; Medieval Walls in the bomb cities before the second war."
+          "note": "Medieval Walls in the bomb cities before the second war; the Eureka needs a Tier 2 government, which Oligarchy is not."
         },
         {
           "id": "tech:education",
@@ -584,11 +584,11 @@
         },
         {
           "id": "civic:mercenaries",
-          "note": "The Winged Hussar unlocks here. Eight land units is the border garrison anyway."
+          "note": "Professional Army for the upgrades. Eight land units is the border garrison anyway."
         },
         {
           "id": "civic:divine-right",
-          "note": "Two Temples give it; Chivalry for Hussar Production and the Grand Master's Chapel."
+          "note": "Two Temples give it; Chivalry for Knight Production and the Grand Master's Chapel."
         },
         {
           "id": "civic:guilds",
@@ -610,7 +610,7 @@
           "card": "Chivalry",
           "slot": "military",
           "from": "civic:divine-right",
-          "why": "Half again as fast on every Winged Hussar; in the Wildcard slot Golden Liberty freed."
+          "why": "Half again as fast on every Knight; in the Wildcard slot Golden Liberty freed."
         },
         {
           "card": "Town Charters",
@@ -645,7 +645,7 @@
         {
           "district": "government-plaza",
           "city": "capital",
-          "note": "Grand Master's Chapel at Divine Right: Faith buys the Hussars."
+          "note": "Grand Master's Chapel at Divine Right: Faith buys the Knights."
         },
         {
           "district": "holy-site",
@@ -655,7 +655,7 @@
       ],
       "pantheon": {
         "slug": "stone-circles",
-        "why": "Already founded; the Faith is now spent on Missionaries for the bombed cities and Hussars from the Chapel."
+        "why": "Already founded; the Faith is now spent on Missionaries for the bombed cities and Knights from the Chapel."
       },
       "wonders": [
         {
@@ -674,13 +674,13 @@
           "governor": "victor",
           "promotion": "Defense Logistics",
           "city": "whichever bomb city is at war",
-          "why": "Full healing each turn for the garrison; move him to the border that was declared on."
+          "why": "The city cannot be put under siege, so it keeps healing; move him to the border that was declared on."
         },
         {
           "governor": "moksha",
-          "promotion": "Divine Architect",
+          "promotion": "Laying On of Hands",
           "city": "newest bomb city",
-          "why": "Buy its Holy Site and Encampment with Faith; the bomb fires the turn the district completes, bought or built."
+          "why": "Missionaries and Apostles heal fully in one turn in the city's tiles, so the religious units holding the bombed ring stay in the fight."
         },
         {
           "governor": "magnus",
@@ -706,7 +706,7 @@
       "great_people": [
         {
           "class": "great-general",
-          "why": "A Medieval General with four Hussars is the whole defensive army; Strategos and the two Encampments make the points."
+          "why": "A Medieval General with four Knights is the whole defensive army; Strategos and the two Encampments make the points."
         },
         {
           "class": "great-merchant",
@@ -722,9 +722,9 @@
         },
         {
           "turn": 125,
-          "test": "Three or more foreign cities converted by bombs, Mercenaries done, four Hussars standing, and Divine Right with the Grand Master's Chapel built?",
+          "test": "Three or more foreign cities converted by bombs, Mercenaries done, four Knights standing, and Divine Right with the Grand Master's Chapel built?",
           "pass": "Enter the Hussar phase: Reformed Church, Theocracy and the Forts.",
-          "fail": "Fewer than three conversions means the borders were too far apart: settle a city inside three tiles of the next foreign border and bomb from there. No Hussars means no Horses: trade for them or take Hattusa's envoys, and hold with Pikemen and Crossbowmen until then."
+          "fail": "Fewer than three conversions means the borders were too far apart: settle a city inside three tiles of the next foreign border and bomb from there. No Knights means no Iron: trade for it or take Hattusa's envoys, and hold with Pikemen and Crossbowmen until then."
         }
       ],
       "tasks": [
@@ -756,7 +756,7 @@
         {
           "id": "bomb-hussars",
           "turn": 118,
-          "text": "Four Winged Hussars under Chivalry, or bought at the Grand Master's Chapel, parked in the bomb city most likely to be attacked."
+          "text": "Four Knights under Chivalry, or bought at the Grand Master's Chapel, parked in the bomb city most likely to be attacked."
         }
       ]
     },
@@ -784,7 +784,7 @@
         },
         {
           "item": "Winged Hussar",
-          "why": "Replace losses; upgrade to Cuirassiers only under Professional Army once Military Science is in."
+          "why": "Upgrade the Knights under Professional Army once Military Science is in, and replace losses."
         },
         {
           "item": "University",
@@ -822,7 +822,7 @@
         },
         {
           "id": "tech:military-science",
-          "note": "Cuirassiers replace the Hussars; the Eureka is a Knight kill you will rarely make with Hussars."
+          "note": "The Winged Hussar unlocks here and the Knights upgrade into it; the Eureka is a Knight kill from the bomb-phase wars."
         },
         {
           "id": "tech:ballistics",
@@ -840,7 +840,7 @@
         },
         {
           "id": "civic:mercantilism",
-          "note": "The first Great Merchant from the Sukiennice points gives it; Merchant Republic if Theocracy is not wanted."
+          "note": "The first Great Merchant from the Sukiennice points gives it; Merchant Republic comes from Exploration if Theocracy is not wanted."
         },
         {
           "id": "civic:exploration",
@@ -874,7 +874,7 @@
           "card": "Professional Army",
           "slot": "military",
           "from": "civic:mercenaries",
-          "why": "Hussars to Cuirassiers at half price when Military Science lands."
+          "why": "Knights to Winged Hussars at half price when Military Science lands."
         }
       ],
       "districts": [
@@ -892,7 +892,7 @@
       "wonders": [
         {
           "name": "St. Basil's Cathedral",
-          "why": "Three Relic slots and doubled religious Tourism in its city; with Reliquaries and Lithuanian Union it is the Culture branch in one building, built beside the City Center.",
+          "why": "Three Relic slots and doubled religious Tourism in its city; with Lithuanian Union it is the Culture branch in one building, built beside the City Center.",
           "skip_if": "Reformed Church lands after turn 170, or fewer than three Relics are held or in sight by then."
         },
         {
@@ -912,13 +912,13 @@
           "governor": "victor",
           "promotion": "Embrasure",
           "city": "the border at war",
-          "why": "Two promotions on units built or bought in the city; Hussars arrive ready."
+          "why": "An extra ranged strike for the city and a free promotion on units trained there; Hussars arrive ready."
         },
         {
           "governor": "amani",
-          "promotion": "Emissary",
-          "city": "a bomb city near a city-state",
-          "why": "Two envoys to hold Valletta or Yerevan while every civ courts them against you."
+          "promotion": "Messenger",
+          "city": "Valletta or Yerevan",
+          "why": "She counts as two envoys in the city-state she sits in, holding Valletta or Yerevan while every civ courts them against you."
         }
       ],
       "city_states": [
@@ -973,7 +973,7 @@
         {
           "id": "hussar-apostle-pairs",
           "turn": 148,
-          "text": "Two Apostles per unconverted neighbour, escorted by a Hussar, with Proselytizer or Martyr chosen at Yerevan."
+          "text": "Two Apostles per unconverted neighbour, escorted by a Knight or Hussar, with Proselytizer or Martyr chosen at Yerevan."
         },
         {
           "id": "hussar-inquisitors",
@@ -988,7 +988,7 @@
         {
           "id": "hussar-branch-choice",
           "turn": 185,
-          "text": "Decide the second route: Relic Tourism through St. Basil's and Reliquaries, or one converted capital with Hussars and Bombards. Write it down."
+          "text": "Decide the second route: Relic Tourism through St. Basil's, or one converted capital with Hussars and Bombards. Write it down."
         }
       ]
     },
@@ -1004,15 +1004,15 @@
       "build_order": [
         {
           "item": "Apostle",
-          "why": "Three per remaining civ, with Proselytizer, escorted by Cuirassiers."
+          "why": "Three per remaining civ, with Proselytizer, escorted by Winged Hussars."
         },
         {
           "item": "Inquisitor",
           "why": "Stationed in every bomb city and the Holy City; the AI aims its Apostles at the cities you took by bomb."
         },
         {
-          "item": "Cuirassier",
-          "why": "Upgraded Hussars under Professional Army; the escort and the deterrent."
+          "item": "Winged Hussar",
+          "why": "Upgraded Knights under Professional Army; the escort and the deterrent."
         },
         {
           "item": "Renaissance Walls",
@@ -1143,7 +1143,7 @@
         {
           "id": "close-apostle-waves",
           "turn": 200,
-          "text": "Three Proselytizer Apostles per unconverted civ, escorted by Cuirassiers, aimed at its largest cities first."
+          "text": "Three Proselytizer Apostles per unconverted civ, escorted by Winged Hussars, aimed at its largest cities first."
         },
         {
           "id": "close-walls",
@@ -1275,9 +1275,9 @@
     },
     {
       "id": "tech:castles",
-      "fit": "free",
+      "fit": "costly",
       "when": "bomb",
-      "how": "Oligarchy is a Tier 2 government."
+      "how": "A Tier 2 government; Oligarchy is Tier 1 and Theocracy waits for Reformed Church, so research it plain."
     },
     {
       "id": "tech:education",
@@ -1323,9 +1323,9 @@
     },
     {
       "id": "tech:military-science",
-      "fit": "costly",
+      "fit": "cheap",
       "when": "hussar",
-      "how": "A Knight kill; the Hussar is not a Knight, so usually unboosted."
+      "how": "A Knight kill in the bomb-phase wars; the Knights that hold the border make it."
     },
     {
       "id": "tech:ballistics",
@@ -1559,7 +1559,7 @@
     {
       "name": "Neighbour declares after a bomb",
       "if": "A bombed civ declares war on you, which the plan expects within ten turns of every bomb.",
-      "then": "Fight behind Walls with Archers and Crossbowmen, collect the Defensive Tactics Inspiration, and meet them only in their own converted border city under Crusade with Hussars. Make peace when offered unless the Domination branch is chosen; the tiles stay yours either way."
+      "then": "Fight behind Walls with Archers and Crossbowmen, collect the Defensive Tactics Inspiration, and meet them only in their own converted border city under Crusade with Knights or Hussars. Make peace when offered unless the Domination branch is chosen; the tiles stay yours either way."
     },
     {
       "name": "Last Great Prophet gone",
@@ -1569,7 +1569,7 @@
     {
       "name": "Weak converted neighbour",
       "if": "A bombed neighbour at war with you has a capital within eight tiles following your religion, Ancient or Medieval Walls, and fewer than three melee defenders.",
-      "then": "Take the Domination branch for that one civ: four Hussars under Crusade and Wars of Religion with a General and two Trebuchets. The capital converts nothing new but removes the civ from the majority count and ends its Apostles."
+      "then": "Take the Domination branch for that one civ: four Knights or Hussars under Crusade and Wars of Religion with a General and two Trebuchets. The capital converts nothing new but removes the civ from the majority count and ends its Apostles."
     },
     {
       "name": "Rival Inquisitors appear",
@@ -1594,7 +1594,7 @@
     "Letting a bombed city sit without pressure. Without a Missionary, a Temple and a Holy Site nearby, it flips back the moment its owner enhances, and the bomb cannot be fired twice."
   ],
   "sources": [
-    "Civilization VI Civilopedia, Gathering Storm ruleset (Poland, Jadwiga, Winged Hussar, Sukiennice). The civ-info text in this repository describes the Winged Hussar as a Cuirassier replacement with bonus damage and ignoring Zone of Control; in the game it is a standalone Medieval heavy cavalry unit unlocked by the Mercenaries civic that pushes back a defender it out-damages and upgrades to a Cuirassier, and this plan follows the game.",
+    "Civilization VI Civilopedia, Gathering Storm ruleset (Poland, Jadwiga, Winged Hussar, Sukiennice). The civ-info text in this repository describes the Winged Hussar as a Cuirassier replacement; in the game it replaces the Cuirassier at Military Science and pushes back a defender it out-damages, so this plan holds the Medieval border with Knights that upgrade into it.",
     "Civilopedia: Golden Liberty fires from completed Encampments and Forts; the Fort improvement requires Siege Tactics in Rise and Fall and Gathering Storm, so the Fort bombs are placed in the Renaissance phase.",
     "Boost objectives cross-checked against civilization6planner.com tech-tree and civics-tree pages, 2026-10-01.",
     "Leadership Focus tags, caveats and Gate supplement for Jadwiga in this repository; the Gate template requires a complete pre-gate build and a stated late-gate contingency."

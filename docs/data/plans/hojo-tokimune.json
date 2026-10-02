@@ -142,7 +142,7 @@
         },
         {
           "item": "Theater Square",
-          "why": "Second district, half price, touching the Holy Site and the center."
+          "why": "Second district once Drama and Poetry lands, half price, touching the Holy Site and the center."
         }
       ],
       "research": [
@@ -323,11 +323,11 @@
         },
         {
           "id": "tech:masonry",
-          "note": "A Quarry if Stone is near; otherwise unboosted on the way to Mathematics."
+          "note": "A Quarry if Stone is near; otherwise unboosted on the way to Construction."
         },
         {
           "id": "tech:mathematics",
-          "note": "Three districts by turn 40 is free; three more Science per Campus from the adjacency."
+          "note": "Three different districts by turn 40 is free; Education follows for the Universities."
         },
         {
           "id": "tech:construction",
@@ -391,7 +391,7 @@
           "card": "Colonization",
           "slot": "economic",
           "from": "civic:early-empire",
-          "why": "Settlers at half cost for the four remaining grid sites."
+          "why": "Settlers half again as fast for the four remaining grid sites."
         },
         {
           "card": "Classical Republic",
@@ -651,7 +651,7 @@
           "card": "Frescoes",
           "slot": "wildcard",
           "from": "civic:humanism",
-          "why": "Great Artist points from every Theater Square."
+          "why": "Two Great Artist points a turn toward the first Artist."
         }
       ],
       "districts": [
@@ -819,7 +819,7 @@
         },
         {
           "id": "tech:flight",
-          "note": "Owning Kotoku-in or any later wonder gives it; Flight is Tourism from wonders."
+          "note": "Owning the Bolshoi Theatre, the Hermitage or any later wonder gives it; Flight turns the Culture from improvements into Tourism."
         }
       ],
       "civics": [
@@ -1062,7 +1062,7 @@
       "wonders": [
         {
           "name": "Cristo Redentor",
-          "why": "Tourism from Seaside Resorts doubled and no Ideology penalty; the coast was settled for this.",
+          "why": "Tourism from Seaside Resorts doubled and relic Tourism no longer drops after the Enlightenment; the coast was settled for this.",
           "skip_if": "Mass Media lands after turn 250 or Brazil is on the map."
         }
       ],
@@ -1071,7 +1071,7 @@
           "governor": "amani",
           "promotion": "Emissary",
           "city": "the city nearest the civ furthest behind on your Tourism",
-          "why": "Open borders and an envoy where the last Tourists are."
+          "why": "Loyalty for every other city within nine tiles on the border facing the last rival; Amani adds no Tourism herself."
         }
       ],
       "city_states": [],
@@ -1359,7 +1359,7 @@
       "id": "tech:flight",
       "fit": "cheap",
       "when": "live",
-      "how": "Owning Kotoku-in, Forbidden City or any later wonder."
+      "how": "Owning the Bolshoi Theatre, the Hermitage or any later wonder; Kotoku-in and the Forbidden City are too early to count."
     },
     {
       "id": "tech:chemistry",

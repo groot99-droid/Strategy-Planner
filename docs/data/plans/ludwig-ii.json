@@ -907,7 +907,7 @@
         },
         {
           "type": "Cultural",
-          "why": "Culture in every Amphitheater and later every museum, and partners in the Congress."
+          "why": "Culture in every Amphitheater and later every museum, and Diplomatic Favor from each suzerainty for the Congress."
         }
       ],
       "great_people": [
@@ -1171,7 +1171,7 @@
       "city_states": [
         {
           "type": "Cultural",
-          "why": "Culture in every museum at six envoys, and votes in the Congress for a Culture winner."
+          "why": "Culture in every museum at six envoys, and Diplomatic Favor from each suzerainty to spend in the Congress."
         },
         {
           "slug": "kumasi",
@@ -1666,7 +1666,7 @@
     "Believing completion ends the bonus. A finished wonder keeps Swan King's Culture and cannot be deleted; the risk is a rival finishing the parked one, not you finishing it.",
     "Putting a second turn of Production into a wonder you do not mean to finish. Parking costs one turn; every turn after that is Production a rival can delete with one completion.",
     "Parking a wonder that touches one district. It costs a tile for +2 Culture; wait until a second district can be placed beside it.",
-    "Reading Gossip only when a wonder-completed notice arrives. By then the site is gone; Open access with every civilization from the first Delegation is what makes amber visible.",
+    "Reading Gossip only when a wonder-completed notice arrives. By then the site is gone; Open access with every civilization, from a Delegation and a Trade Route, is what makes amber visible.",
     "Researching Drama and Poetry before Apadana is finished, which throws away the Inspiration the wonder was built for.",
     "Delaying Castles. Every turn before it is Culture adjacency that is not yet Tourism, and Monarchy's Eureka makes it cheap."
   ],

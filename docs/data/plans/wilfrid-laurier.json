@@ -238,7 +238,7 @@
           "governor": "magnus",
           "promotion": "Provision",
           "city": "capital",
-          "why": "The first title: Settlers from the capital do not cost Population, which on Tundra is the slowest thing to replace."
+          "why": "Appointed with the first title (Groundbreaker) and promoted to Provision with the second: Settlers from the capital do not cost Population, which on Tundra is the slowest thing to replace."
         }
       ],
       "city_states": [
@@ -789,7 +789,7 @@
         },
         {
           "class": "great-artist",
-          "why": "The Humanism Inspiration and works for the first museum."
+          "why": "The Humanism Inspiration and works for an Art Museum."
         },
         {
           "class": "great-scientist",
@@ -1112,7 +1112,7 @@
           "card": "Democracy",
           "slot": "wildcard",
           "from": "civic:suffrage",
-          "why": "The payoff government: two Diplomatic slots, two Wildcards, and Great Person points."
+          "why": "The payoff government: two Diplomatic slots, two Wildcards, and Great People patronized for half the Gold."
         },
         {
           "card": "Raj",
@@ -1539,7 +1539,7 @@
       "id": "civic:medieval-faires",
       "fit": "cheap",
       "when": "stage",
-      "how": "Four Trade Routes from two Commercial Hubs and the Foreign Trade route."
+      "how": "Four Trade Routes: two Commercial Hubs and the Foreign Trade route give three, so a Harbor or a third Commercial Hub supplies the fourth."
     },
     {
       "id": "civic:exploration",

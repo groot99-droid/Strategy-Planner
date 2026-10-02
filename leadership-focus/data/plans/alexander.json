@@ -339,7 +339,7 @@
         },
         {
           "id": "civic:military-training",
-          "note": "Free Inspiration from the Encampment; Great General points and the road to Feudalism."
+          "note": "Free Inspiration from the Encampment; Great General points and the road to Mercenaries."
         },
         {
           "id": "civic:mysticism",
@@ -619,7 +619,7 @@
         },
         {
           "district": "campus",
-          "city": "every captured city that lacks one and has a mountain or Woods",
+          "city": "every captured city that lacks one and has a mountain or Rainforest",
           "note": "Libraries and Universities are the Science plan; the captured ones come first."
         }
       ],
@@ -766,7 +766,7 @@
         },
         {
           "id": "tech:siege-tactics",
-          "note": "Two Trebuchets already own it; Bombards and the Renaissance siege."
+          "note": "Two Trebuchets already own it; Renaissance Walls for the border cities."
         },
         {
           "id": "tech:printing",
@@ -1214,7 +1214,7 @@
       "id": "tech:buttress",
       "fit": "costly",
       "when": "rolling-war",
-      "how": "Only if Terracotta Army or Alhambra is built or captured."
+      "how": "Only if Statue of Zeus, Terracotta Army or Alhambra is built or captured."
     },
     {
       "id": "tech:gunpowder",

@@ -24,7 +24,7 @@
   "map_check": {
     "must_have": [
       "At least three rival civilizations reachable by land or coast before turn 60, because an unmet civilization pays nothing.",
-      "A Holy Site tile with two or more adjacency points (mountain, woods, river or natural wonder) within the capital's first two rings."
+      "A Holy Site tile with two or more adjacency points (mountain, woods or natural wonder) within the capital's first two rings."
     ],
     "prefer": [
       "Grassland river land for Farms with Stepwells between them; the Stepwell's Food bonus comes from adjacent Farms.",
@@ -370,7 +370,7 @@
           "card": "Colonization",
           "slot": "economic",
           "from": "civic:early-empire",
-          "why": "Settlers at half the cost for cities three and four."
+          "why": "Settlers half again as fast for cities three and four."
         },
         {
           "card": "Charismatic Leader",
@@ -416,7 +416,7 @@
         {
           "name": "Mahabodhi Temple",
           "why": "Two free Apostles the turn it completes and Faith; it is a wonder that spreads your religion for you.",
-          "skip_if": "No Woods tile adjacent to a Holy Site is available, or a rival's progress notification appears before you have started it."
+          "skip_if": "No Woods tile adjacent to a Holy Site with a Temple is available, or a rival's progress notification appears before you have started it."
         },
         {
           "name": "Temple of Artemis",
@@ -429,7 +429,7 @@
           "governor": "moksha",
           "promotion": "Patron Saint",
           "city": "capital",
-          "why": "Apostles and Missionaries bought here start with a promotion; the capital is the religious depot."
+          "why": "Apostles bought here start with an extra promotion; the capital is the religious depot."
         },
         {
           "governor": "pingala",
@@ -649,7 +649,7 @@
         {
           "name": "Mont St. Michel",
           "why": "Every Apostle gets Martyr; relics from Debaters lost in theological combat become Faith and Tourism.",
-          "skip_if": "No floodplains or marsh tile is available beside a Holy Site, or the Divine Right civic lands after turn 150."
+          "skip_if": "No floodplains or marsh tile is available, or the Divine Right civic lands after turn 150."
         }
       ],
       "governors": [
@@ -662,8 +662,8 @@
         {
           "governor": "amani",
           "promotion": "Emissary",
-          "city": "the city nearest Jerusalem or Yerevan",
-          "why": "Two envoys toward suzerainty and loyalty pressure outward."
+          "city": "Jerusalem or Yerevan",
+          "why": "Assigned to the city-state itself she counts as two envoys toward suzerainty."
         }
       ],
       "city_states": [
@@ -1205,7 +1205,7 @@
       "id": "tech:buttress",
       "fit": "costly",
       "when": "spread",
-      "how": "Only if Mahabodhi Temple or Temple of Artemis was finished; Hagia Sophia is worth the detour."
+      "how": "Only if Mahabodhi Temple was finished, since the Temple of Artemis is Ancient and does not count; Hagia Sophia is worth the detour."
     },
     {
       "id": "tech:printing",

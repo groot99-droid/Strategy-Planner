@@ -360,7 +360,7 @@
         },
         {
           "id": "civic:state-workforce",
-          "note": "Free from the first Campus; Conscription to carry six archers, Limes if the target counter-attacks."
+          "note": "Free from the first Campus; Conscription to carry six archers; Limes from Defensive Tactics if the target counter-attacks."
         },
         {
           "id": "civic:early-empire",
@@ -453,7 +453,7 @@
         {
           "name": "Pyramids",
           "why": "A free Builder and an extra charge on every Builder, and every Builder in this plan has a Pyramid to build first.",
-          "skip_if": "No flat Desert or Floodplains tile in the capital's workable ring, or Egypt is on the map."
+          "skip_if": "No flat Desert or Desert Floodplains tile in the capital's workable ring, or Egypt is on the map."
         },
         {
           "name": "Jebel Barkal",

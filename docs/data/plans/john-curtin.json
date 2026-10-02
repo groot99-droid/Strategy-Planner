@@ -139,7 +139,7 @@
         },
         {
           "item": "Monument",
-          "why": "Culture to Early Empire and Political Philosophy; Governors and the Culture Bomb Pastures both need the civics."
+          "why": "Culture to Early Empire and Political Philosophy; the Governors need the civics."
         },
         {
           "item": "Builder",
@@ -372,6 +372,10 @@
           "note": "Classical Republic for the Great Person points and Amenities; Inspiration from three city-states met."
         },
         {
+          "id": "civic:drama-and-poetry",
+          "note": "Recorded History's prerequisite, so it comes before the Great Library; the Inspiration needs a wonder this plan does not have yet. Theater Squares on Appeal tiles if the Culture direction is chosen."
+        },
+        {
           "id": "civic:recorded-history",
           "note": "Two Campuses give the Inspiration; Natural Philosophy and a Governor title."
         },
@@ -386,10 +390,6 @@
         {
           "id": "civic:military-tradition",
           "note": "Clearing a camp gives the Inspiration; the card slots are not needed."
-        },
-        {
-          "id": "civic:drama-and-poetry",
-          "note": "Inspiration if a wonder is finished; Theater Squares on Appeal tiles if the Culture direction is chosen."
         }
       ],
       "policies": [
@@ -397,7 +397,7 @@
           "card": "Colonization",
           "slot": "economic",
           "from": "civic:early-empire",
-          "why": "Settlers at half cost for six coastal cities."
+          "why": "Settlers 50 percent faster for six coastal cities."
         },
         {
           "card": "Classical Republic",
@@ -415,7 +415,7 @@
           "card": "Inspiration",
           "slot": "wildcard",
           "from": "civic:mysticism",
-          "why": "Great Scientist points per Campus; Education's Eureka is the first Scientist."
+          "why": "+2 Great Scientist points a turn; Education's Eureka is the first Scientist."
         },
         {
           "card": "Bastions",
@@ -726,7 +726,7 @@
         },
         {
           "name": "Forbidden City",
-          "why": "A second wildcard slot for Rationalism and a Great Person card both; another queue wonder.",
+          "why": "An extra Wildcard slot for Rationalism or a Great Person card; another queue wonder.",
           "skip_if": "China is on the map, or Printing lands after turn 170."
         }
       ],
@@ -741,7 +741,7 @@
           "governor": "victor",
           "promotion": "Embrasure",
           "city": "the border city",
-          "why": "Ranged strength and defence; the bait city must bleed the aggressor, not fall."
+          "why": "An extra ranged strike each turn and a free promotion on units trained there; the bait city must bleed the aggressor, not fall."
         },
         {
           "governor": "liang",
@@ -752,9 +752,9 @@
         },
         {
           "governor": "amani",
-          "promotion": "Emissary",
+          "promotion": "Messenger",
           "city": "a city-state beside the aggressor",
-          "why": "Her Envoys keep the suzerainty that makes a captured city-state yours to liberate."
+          "why": "She counts as two Envoys in the city-state she sits in, keeping the suzerainty that makes a captured city-state yours to liberate."
         }
       ],
       "city_states": [
@@ -764,7 +764,7 @@
         },
         {
           "type": "Militaristic",
-          "why": "Cheaper upgrades for the floor, and a Militaristic city-state beside the aggressor is the one he captures first."
+          "why": "Unit Production in the capital for the floor, and a Militaristic city-state beside the aggressor is the one he captures first."
         },
         {
           "slug": "cardiff",
@@ -932,7 +932,7 @@
         },
         {
           "id": "civic:civil-engineering",
-          "note": "Seven district types is close for an empire with Campus, Harbor, Commercial Hub, Theater Square, Industrial Zone, Aqueduct and Neighborhood."
+          "note": "Seven different specialty districts; Aqueducts and Neighborhoods do not count, so Campus, Harbor, Commercial Hub, Theater Square and Industrial Zone need two of the Spaceport, an Entertainment Complex or a Government Plaza."
         },
         {
           "id": "civic:nationalism",
@@ -956,7 +956,11 @@
         },
         {
           "id": "civic:ideology",
-          "note": "Democracy for Gold and Tourism; no Inspiration exists."
+          "note": "The gate to the Tier 3 governments; no Inspiration exists. Democracy itself comes at Suffrage."
+        },
+        {
+          "id": "civic:suffrage",
+          "note": "Four Sewers give the Inspiration; Democracy unlocks here."
         },
         {
           "id": "civic:capitalism",
@@ -981,7 +985,7 @@
         {
           "card": "Democracy",
           "slot": "wildcard",
-          "from": "civic:ideology",
+          "from": "civic:suffrage",
           "why": "The Tier 3 government for a peaceful builder; Computers' Eureka comes with it."
         },
         {
@@ -1170,7 +1174,7 @@
         },
         {
           "id": "tech:plastics",
-          "note": "An Oil Well on Oil gives the Eureka; Offshore Platforms on the coast."
+          "note": "An Oil Well on Oil gives the Eureka; Offshore Oil Rigs on the coast."
         },
         {
           "id": "tech:refining",
@@ -1178,11 +1182,11 @@
         },
         {
           "id": "tech:satellites",
-          "note": "Two Broadcast Centers give the Eureka; the Earth Satellite project needs the tech."
+          "note": "Two Broadcast Centers give the Eureka; the Moon Landing project needs the tech."
         },
         {
           "id": "tech:robotics",
-          "note": "Free Eureka from Globalization if it is reached; the Moon Landing needs it."
+          "note": "Free Eureka from Globalization if it is reached; on the road to the Mars projects."
         },
         {
           "id": "tech:nanotechnology",
@@ -1660,9 +1664,9 @@
     },
     {
       "id": "civic:drama-and-poetry",
-      "fit": "cheap",
+      "fit": "costly",
       "when": "expand",
-      "how": "Finishing the Great Library."
+      "how": "A wonder; the Great Library cannot be it, since Recorded History needs Drama and Poetry first."
     },
     {
       "id": "civic:theology",
@@ -1758,7 +1762,7 @@
       "id": "civic:civil-engineering",
       "fit": "cheap",
       "when": "peak",
-      "how": "Seven district types; the Neighborhood is usually the seventh."
+      "how": "Seven specialty districts; Neighborhoods and Aqueducts do not count, so the Spaceport and an Entertainment Complex or Government Plaza make the last two."
     },
     {
       "id": "civic:nationalism",
@@ -1807,6 +1811,12 @@
       "fit": "free",
       "when": "peak",
       "how": "The first Research Lab."
+    },
+    {
+      "id": "civic:suffrage",
+      "fit": "cheap",
+      "when": "peak",
+      "how": "Four Sewers in the tall coastal cities, which their Housing wants anyway."
     },
     {
       "id": "civic:mobilization",

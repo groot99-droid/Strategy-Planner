@@ -58,7 +58,7 @@
       "source": "unique_infrastructure",
       "name": "Prasat",
       "buys": "A Temple replacement with a Relic slot, whose Missionaries receive the Martyr promotion so they leave a Relic when killed in theological combat.",
-      "exploit": "Build it in every Holy Site city and buy Missionaries from the Prasat cities only; a Missionary lost in combat is a Relic in the slot, which is Faith, Culture and Tourism. Reliquaries as the follower belief triples all of it, which is why the plan fights theological battles it would otherwise avoid."
+      "exploit": "Build it in every Holy Site city and buy Missionaries from the Prasat cities only; a Missionary lost in combat is a Relic in the slot, which is Faith, Culture and Tourism. Reliquaries as the Enhancer belief triples its Faith and Tourism, which is why the plan fights theological battles it would otherwise avoid."
     },
     {
       "source": "agenda",
@@ -182,7 +182,7 @@
         },
         {
           "id": "civic:mysticism",
-          "note": "The pantheon gives the Inspiration; the Holy Site adjacency civic and the Oracle."
+          "note": "The pantheon gives the Inspiration; Revelation for the Great Prophet, and the Oracle."
         }
       ],
       "policies": [
@@ -208,7 +208,7 @@
           "card": "Colonization",
           "slot": "economic",
           "from": "civic:early-empire",
-          "why": "Settlers at half cost for cities three through six."
+          "why": "Settlers 50 percent faster for cities three through six."
         }
       ],
       "districts": [
@@ -228,7 +228,7 @@
       "city_states": [
         {
           "type": "Religious",
-          "why": "The first envoy is Faith in the capital, and the type bonus at three envoys is Faith in every Shrine and Temple; the Prasat counts."
+          "why": "The first envoy is Faith in the capital, and the type bonus is Faith in every Shrine at three envoys and in every Temple at six; the Prasat counts."
         },
         {
           "slug": "jerusalem",
@@ -341,7 +341,7 @@
         },
         {
           "id": "tech:construction",
-          "note": "The Water Mill gives the Eureka; Ancient Walls and the Colosseum are behind it."
+          "note": "The Water Mill gives the Eureka; the Colosseum is behind it."
         },
         {
           "id": "tech:mathematics",
@@ -367,11 +367,15 @@
       "civics": [
         {
           "id": "civic:military-tradition",
-          "note": "The first camp cleared gives the Inspiration; on the path to Political Philosophy."
+          "note": "The first camp cleared gives the Inspiration; a cheap side civic, not on the path to Political Philosophy."
         },
         {
           "id": "civic:political-philosophy",
           "note": "Three city-states met; Classical Republic for the Great Prophet points or Autocracy if a wonder matters."
+        },
+        {
+          "id": "civic:drama-and-poetry",
+          "note": "A wonder gives the Inspiration; Theology's prerequisite, and Theater Squares on the Culture direction."
         },
         {
           "id": "civic:theology",
@@ -380,10 +384,6 @@
         {
           "id": "civic:games-and-recreation",
           "note": "Construction gives the Inspiration; Entertainment Complexes for cities growing past ten."
-        },
-        {
-          "id": "civic:drama-and-poetry",
-          "note": "A wonder gives the Inspiration; Theater Squares on the Culture direction."
         },
         {
           "id": "civic:recorded-history",
@@ -411,7 +411,7 @@
           "card": "Revelation",
           "slot": "wildcard",
           "from": "civic:mysticism",
-          "why": "Great Prophet points doubled until the religion is founded; swapped out the turn after."
+          "why": "+2 Great Prophet points a turn until the religion is founded; swapped out the turn after."
         },
         {
           "card": "Urban Planning",
@@ -455,7 +455,7 @@
         {
           "name": "Temple of Artemis",
           "why": "Housing and Amenities from every Camp and Pasture within four tiles across a dense river empire; the Drama and Poetry Inspiration.",
-          "skip_if": "No Camp resource within four tiles of a river city, or Astrology was researched after turn 20 and a rival has it queued."
+          "skip_if": "No Camp beside a buildable tile in a river city, or Archery was researched after turn 20 and a rival has it queued."
         },
         {
           "name": "Mahabodhi Temple",
@@ -479,7 +479,7 @@
           "governor": "moksha",
           "promotion": "Bishop",
           "city": "the second Holy Site city",
-          "why": "Religion direction: religious units bought here spread farther and the Holy Site buildings pay more Faith."
+          "why": "Religion direction: the city's religious pressure on its neighbours doubled and +2 Faith for every specialty district in it."
         }
       ],
       "city_states": [
@@ -493,7 +493,7 @@
         },
         {
           "type": "Religious",
-          "why": "Faith in every Shrine and Prasat at three envoys."
+          "why": "Faith in every Shrine at three envoys and in every Prasat at six."
         }
       ],
       "great_people": [
@@ -911,7 +911,7 @@
         },
         {
           "id": "tech:scientific-theory",
-          "note": "The Enlightenment gave the Eureka; Research Labs."
+          "note": "The Enlightenment gave the Eureka; Oxford University. Research Labs come with Chemistry."
         },
         {
           "id": "tech:economics",
@@ -927,7 +927,7 @@
         },
         {
           "id": "tech:flight",
-          "note": "Angkor Wat or Mont St. Michel is a Classical or later wonder but not Industrial; unboosted unless Ruhr Valley is built. Relic Tourism begins here."
+          "note": "Angkor Wat or Mont St. Michel is a Classical or later wonder but not Industrial; unboosted unless Ruhr Valley is built. Tourism from improvements begins here."
         },
         {
           "id": "tech:steam-power",
@@ -937,7 +937,7 @@
       "civics": [
         {
           "id": "civic:civil-engineering",
-          "note": "Seven district types, which six cities with Aqueducts, Holy Sites and Entertainment reach; Public Works."
+          "note": "Seven different specialty districts; Aqueducts do not count, so a Government Plaza or Harbor joins the Holy Site, Commercial Hub, Campus, Entertainment Complex and Industrial Zone. Public Works."
         },
         {
           "id": "civic:colonialism",
@@ -1017,7 +1017,7 @@
         {
           "name": "St. Basil's Cathedral",
           "why": "Three Relic slots and Tourism from Relics; Culture direction above all, Religion direction for the Faith.",
-          "skip_if": "No Tundra tile beside a City Center, which on a river map is usual; then skip it without regret."
+          "skip_if": "No free tile beside a City Center, or a rival built it in the Renaissance, which by turn 171 is likely; then skip it without regret."
         },
         {
           "name": "Ruhr Valley",
@@ -1444,7 +1444,7 @@
       "id": "tech:buttress",
       "fit": "cheap",
       "when": "grow",
-      "how": "Temple of Artemis or Mahabodhi Temple from the Faith phase."
+      "how": "Mahabodhi Temple from the Faith phase; the Temple of Artemis is Ancient and does not count."
     },
     {
       "id": "tech:military-tactics",
@@ -1682,9 +1682,9 @@
     },
     {
       "id": "civic:civil-engineering",
-      "fit": "free",
+      "fit": "cheap",
       "when": "spread",
-      "how": "Seven district types across six cities with Holy Sites, Aqueducts and Entertainment."
+      "how": "Seven different specialty districts; Aqueducts do not count, so add a Government Plaza or a Harbor to the Holy Site, Commercial Hub, Campus, Entertainment Complex and Industrial Zone."
     },
     {
       "id": "civic:colonialism",
@@ -1795,7 +1795,7 @@
     {
       "name": "Missionary killed",
       "if": "A Martyr Missionary falls in theological combat.",
-      "then": "Place the Relic in a Prasat or Mont St. Michel slot the same turn, never leave it in the queue; it is Faith, Culture and Tourism, and under Reliquaries three times each."
+      "then": "Place the Relic in a Prasat or Mont St. Michel slot the same turn, never leave it in the queue; it is Faith, Culture and Tourism, and under Reliquaries its Faith and Tourism are tripled."
     }
   ],
   "abort": {
@@ -1816,7 +1816,7 @@
     "Treating population as the plan. It is an input; a city of twenty with no Theater Square, Campus or Apostle to its name has produced nothing but Score."
   ],
   "sources": [
-    "Civilization VI Civilopedia, Gathering Storm ruleset with the New Frontier Pass (Khmer, Jayavarman VII, Monasteries of the King, Grand Barays, Domrey, Prasat).",
+    "Civilization VI Civilopedia, Gathering Storm ruleset with the Khmer and Indonesia Civilization & Scenario Pack (Khmer, Jayavarman VII, Monasteries of the King, Grand Barays, Domrey, Prasat).",
     "Boost objectives cross-checked against civilization6planner.com tech-tree and civics-tree pages, 2026-10-01.",
     "Leadership Focus tags, caveats, Linear template and the Linear_Trajan worked example in this repository."
   ]

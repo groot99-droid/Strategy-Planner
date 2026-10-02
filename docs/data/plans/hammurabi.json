@@ -19,7 +19,7 @@
     "secondary": "Culture",
     "confidence": "medium",
     "one_line": "Trigger Eurekas instead of researching: each one is a whole technology, so chain them to Crossbowmen, Knights and Trebuchets by turn 80 and take the nearest neighbour's cities before turn 120. After that Babylon is a wide empire with half everyone else's Science, and it plays like one.",
-    "why": "Enuma Anu Enlil turns every Eureka into a finished technology and halves Science per turn for the rest of the game. In the Ancient, Classical and early Medieval eras almost every Eureka is something an empire does anyway (meet a neighbour, kill Barbarians, farm, mine, build walls, own three Archers), so Babylon reaches Medieval siege and cavalry roughly an era before an Emperor AI, and Ninu Ilu Sirum hands it a free building with each first district so the infrastructure keeps pace. From the Renaissance on, the Eurekas ask for pairs of Universities, Workshops, Shipyards and Banks, and the halved Science base cannot fill the gaps, so the lead decays unless it has already been spent. Cities taken from the target are what it is spent on. Culture is the secondary because Inspirations are never halved and a wide empire of captured cities, free Amphitheaters and wonders can run it from a Science deficit, while the late military Eurekas ask only for units an army owns, which keeps a second war open."
+    "why": "Enuma Anu Enlil turns every Eureka into a finished technology and halves Science per turn for the rest of the game. In the Ancient, Classical and early Medieval eras almost every Eureka is something an empire does anyway (meet a neighbour, kill Barbarians, farm, mine, build walls, own three Archers), so Babylon reaches Medieval siege and cavalry roughly an era before an Emperor AI, and Ninu Ilu Sirum hands it a free building with each first district so the infrastructure keeps pace. From the Renaissance on, the Eurekas ask for pairs of Universities, Workshops, Shipyards and Banks, and the halved Science base cannot fill the gaps, so the lead decays unless it has already been spent. Cities taken from the target are what it is spent on. Culture is the secondary because Inspirations are never halved and a wide empire of captured cities, a free Amphitheater and wonders can run it from a Science deficit, while the late military Eurekas ask only for units an army owns, which keeps a second war open."
   },
   "map_check": {
     "must_have": [
@@ -460,7 +460,7 @@
         {
           "name": "Terracotta Army",
           "why": "Every land unit you own gains a promotion level when it completes, so time it to finish with the strike army already built: seven promoted units for one wonder, and Buttress' Eureka as a Classical wonder.",
-          "skip_if": "Construction completes after turn 55, the capital makes under 15 Production, or the army would not yet exist on the turn it completes."
+          "skip_if": "Construction completes after turn 55, the forward city makes under 15 Production (the wonder must sit on Grassland or Plains beside an Encampment with a Barracks, which only the forward city has), or the army would not yet exist on the turn it completes."
         },
         {
           "name": "Etemenanki",
@@ -483,7 +483,7 @@
         },
         {
           "type": "Industrial",
-          "why": "+2 Production in the capital toward districts and wonders: the Commercial Hub and the Terracotta Army."
+          "why": "+2 Production in the capital toward districts and wonders: the Commercial Hub and Etemenanki."
         }
       ],
       "great_people": [
@@ -994,7 +994,7 @@
         },
         {
           "item": "Field Cannon",
-          "why": "Domination branch: two give Scorched Earth's Inspiration and break Renaissance Walls."
+          "why": "Domination branch: two give Scorched Earth's Inspiration; as ranged units they do reduced damage to Walls, so Bombards from the banked Siege Tactics break the Renaissance Walls."
         },
         {
           "item": "Factory",
@@ -1368,7 +1368,7 @@
       "id": "tech:computers",
       "fit": "free",
       "when": "close",
-      "how": "Any Tier 3 government, adopted when Ideology lands."
+      "how": "Any Tier 3 government, adopted when Suffrage, Totalitarianism or Class Struggle lands."
     },
     {
       "id": "tech:replaceable-parts",

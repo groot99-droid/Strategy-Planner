@@ -105,359 +105,1245 @@
     {
       "id": "commit",
       "name": "Assess and commit",
-      "turns": { "from": 1, "to": 20 },
+      "turns": {
+        "from": 1,
+        "to": 20
+      },
       "era": "ancient",
       "objective": "Take the hill inventory, settle so the capital's Seowon hill sits in the second ring, pin its ring and the far side, research Mining, Pottery and Writing, place the Seowon on its pin the turn Writing lands, and draw cities two to eight with their hills before the second Settler is queued. Every decision that caps this game is made in these twenty turns.",
       "build_order": [
-        { "item": "Scout", "why": "Meets the first civilization for the Writing Eureka and reveals the hills that cities two to eight will be drawn on." },
-        { "item": "Slinger", "why": "The capital's defender while the Scout is away; the Archery Eureka on the first barbarian it finishes." },
-        { "item": "Settler", "why": "City two on its drawn hill site; a second Seowon city is worth more than anything else the capital can build." },
-        { "item": "Seowon", "why": "Placed on the pinned second-ring hill the turn Writing lands; half the cost of a Campus, and the State Workforce Inspiration when it finishes." },
-        { "item": "Builder", "why": "A Mine on a ring hill and a Farm on a ring flat for Craftsmanship; the Mine gains its Science the turn the Seowon completes." },
-        { "item": "Settler", "why": "City three on the next drawn hill; Seowon cities, not wonders, are the ceiling." },
-        { "item": "Monument", "why": "Culture for Political Philosophy and Recorded History; Korea's civics lag its techs all game." },
-        { "item": "Warrior", "why": "Only if a barbarian camp can see the capital; otherwise skip it and start the third Settler." }
+        {
+          "item": "Scout",
+          "why": "Meets the first civilization for the Writing Eureka and reveals the hills that cities two to eight will be drawn on."
+        },
+        {
+          "item": "Slinger",
+          "why": "The capital's defender while the Scout is away; the Archery Eureka on the first barbarian it finishes."
+        },
+        {
+          "item": "Settler",
+          "why": "City two on its drawn hill site; a second Seowon city is worth more than anything else the capital can build."
+        },
+        {
+          "item": "Seowon",
+          "why": "Placed on the pinned second-ring hill the turn Writing lands; half the cost of a Campus, and the State Workforce Inspiration when it finishes."
+        },
+        {
+          "item": "Builder",
+          "why": "A Mine on a ring hill and a Farm on a ring flat for Craftsmanship; the Mine gains its Science the turn the Seowon completes."
+        },
+        {
+          "item": "Settler",
+          "why": "City three on the next drawn hill; Seowon cities, not wonders, are the ceiling."
+        },
+        {
+          "item": "Monument",
+          "why": "Culture for Political Philosophy and Recorded History; Korea's civics lag its techs all game."
+        },
+        {
+          "item": "Warrior",
+          "why": "Only if a barbarian camp can see the capital; otherwise skip it and start the third Settler."
+        }
       ],
       "research": [
-        { "id": "tech:mining", "note": "First. Every ring hill becomes a Mine, and nothing else in the opening needs a tech." },
-        { "id": "tech:pottery", "note": "Second, because Writing requires it; no Eureka exists, so research it straight." },
-        { "id": "tech:writing", "note": "Third, for the Seowon; the Eureka comes from the Scout's first contact." }
+        {
+          "id": "tech:mining",
+          "note": "First. Every ring hill becomes a Mine, and nothing else in the opening needs a tech."
+        },
+        {
+          "id": "tech:pottery",
+          "note": "Second, because Writing requires it; no Eureka exists, so research it straight."
+        },
+        {
+          "id": "tech:writing",
+          "note": "Third, for the Seowon; the Eureka comes from the Scout's first contact."
+        }
       ],
       "civics": [
-        { "id": "civic:code-of-laws", "note": "Chiefdom's two slots: Discipline and God King." },
-        { "id": "civic:craftsmanship", "note": "Inspiration from three ring tiles improved; Ilkum for the Builders every ring needs." }
+        {
+          "id": "civic:code-of-laws",
+          "note": "Chiefdom's two slots: Discipline and God King."
+        },
+        {
+          "id": "civic:craftsmanship",
+          "note": "Inspiration from three ring tiles improved; Ilkum for the Builders every ring needs."
+        }
       ],
       "policies": [
-        { "card": "God King", "slot": "economic", "from": "civic:code-of-laws", "why": "Faith toward the pantheon; Korea has no Holy Site and needs 25 Faith from somewhere." },
-        { "card": "Discipline", "slot": "military", "from": "civic:code-of-laws", "why": "The Slinger and Warrior hold the capital against the first barbarians." },
-        { "card": "Ilkum", "slot": "economic", "from": "civic:craftsmanship", "why": "Replaces God King once the pantheon is founded; three ring tiles per city need Builders." }
+        {
+          "card": "God King",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "Faith toward the pantheon; this plan builds no Holy Site and needs 25 Faith from somewhere."
+        },
+        {
+          "card": "Discipline",
+          "slot": "military",
+          "from": "civic:code-of-laws",
+          "why": "The Slinger and Warrior hold the capital against the first barbarians."
+        },
+        {
+          "card": "Ilkum",
+          "slot": "economic",
+          "from": "civic:craftsmanship",
+          "why": "Replaces God King once the pantheon is founded; three ring tiles per city need Builders."
+        }
       ],
       "districts": [
-        { "district": "seowon", "city": "capital", "note": "Second ring, on the pinned hill, with nothing ever beside it; +4 Science from the turn it finishes." }
+        {
+          "district": "seowon",
+          "city": "capital",
+          "note": "Second ring, on the pinned hill, with nothing ever beside it; +4 Science from the turn it finishes."
+        }
       ],
-      "pantheon": { "slug": "divine-spark", "why": "+1 Great Scientist point from every Seowon with a Library, and the plan builds one in every city.", "alternative": "religious-settlements" },
+      "pantheon": {
+        "slug": "divine-spark",
+        "why": "+1 Great Scientist point from every Seowon with a Library, and the plan builds one in every city.",
+        "alternative": "religious-settlements"
+      },
       "wonders": [],
       "governors": [],
       "city_states": [
-        { "type": "Scientific", "why": "The first envoy is Science in the capital; the Scout finds them on the way to the rival." }
+        {
+          "type": "Scientific",
+          "why": "The first envoy is Science in the capital; the Scout finds them on the way to the rival."
+        }
       ],
       "great_people": [],
       "checkpoints": [
-        { "turn": 10, "test": "Capital on or beside a hill, the Seowon hill pinned in the second ring with three or more free ring tiles, Mining in, and the Scout past the first rival's border?", "pass": "Continue; draw the full settle map before the Settler finishes.", "fail": "No Seowon hill pinned: pin the best second-ring hill now, even with two free ring tiles. No contact yet: keep the Scout moving and accept a late Writing rather than a detour." },
-        { "turn": 20, "test": "Writing in, the Seowon placed on its pin, the first Settler out toward city two's hill, and cities two to eight drawn with their hills, rings and far sides?", "pass": "Enter the execute phase and follow the map.", "fail": "Map not drawn: hold the Settler one turn and draw it. Seowon placed off its pin: it stays there for good, so redraw the ring and the far side around where it actually is." }
+        {
+          "turn": 10,
+          "test": "Capital on or beside a hill, the Seowon hill pinned in the second ring with three or more free ring tiles, Mining in, and the Scout past the first rival's border?",
+          "pass": "Continue; draw the full settle map before the Settler finishes.",
+          "fail": "No Seowon hill pinned: pin the best second-ring hill now, even with two free ring tiles. No contact yet: keep the Scout moving and accept a late Writing rather than a detour."
+        },
+        {
+          "turn": 20,
+          "test": "Writing in, the Seowon placed on its pin, the first Settler out toward city two's hill, and cities two to eight drawn with their hills, rings and far sides?",
+          "pass": "Enter the execute phase and follow the map.",
+          "fail": "Map not drawn: hold the Settler one turn and draw it. Seowon placed off its pin: it stays there for good, so redraw the ring and the far side around where it actually is."
+        }
       ],
       "tasks": [
-        { "id": "commit-hill-inventory", "turn": 1, "text": "Before moving the Settler, list the second- and third-ring hills and pick the Seowon hill with three or more free ring tiles." },
-        { "id": "commit-settle", "turn": 1, "text": "Settle on or beside a hill, never on the Seowon hill, so that hill sits in the second ring." },
-        { "id": "commit-pin-ring", "turn": 3, "text": "Mark the Seowon hill, its six ring tiles, and the far side for the Commercial Hub, Theater Square, Industrial Zone and Aqueduct." },
-        { "id": "commit-scout-hills", "turn": 5, "text": "Scout toward the nearest rival, logging every cluster of hills and every city-state; Writing Eureka on first contact." },
-        { "id": "commit-place-seowon", "turn": 15, "text": "Place the Seowon on its pin the turn Writing completes and keep it in the queue until it finishes." },
-        { "id": "commit-settle-map", "turn": 18, "text": "Draw cities two to eight with their Seowon hills, rings and far sides before the second Settler is queued." },
-        { "id": "commit-governor-plan", "turn": 20, "text": "Write the Governor plan down: Pingala in the capital takes every promotion; one more Governor; no third until Pingala has three promotions." }
+        {
+          "id": "commit-hill-inventory",
+          "turn": 1,
+          "text": "Before moving the Settler, list the second- and third-ring hills and pick the Seowon hill with three or more free ring tiles."
+        },
+        {
+          "id": "commit-settle",
+          "turn": 1,
+          "text": "Settle on or beside a hill, never on the Seowon hill, so that hill sits in the second ring."
+        },
+        {
+          "id": "commit-pin-ring",
+          "turn": 3,
+          "text": "Mark the Seowon hill, its six ring tiles, and the far side for the Commercial Hub, Theater Square, Industrial Zone and Aqueduct."
+        },
+        {
+          "id": "commit-scout-hills",
+          "turn": 5,
+          "text": "Scout toward the nearest rival, logging every cluster of hills and every city-state; Writing Eureka on first contact."
+        },
+        {
+          "id": "commit-place-seowon",
+          "turn": 15,
+          "text": "Place the Seowon on its pin the turn Writing completes and keep it in the queue until it finishes."
+        },
+        {
+          "id": "commit-settle-map",
+          "turn": 18,
+          "text": "Draw cities two to eight with their Seowon hills, rings and far sides before the second Settler is queued."
+        },
+        {
+          "id": "commit-governor-plan",
+          "turn": 20,
+          "text": "Write the Governor plan down: Pingala in the capital takes every promotion; one more Governor; no third until Pingala has three promotions."
+        }
       ]
     },
     {
       "id": "execute",
       "name": "Follow the map",
-      "turns": { "from": 21, "to": 85 },
+      "turns": {
+        "from": 21,
+        "to": 85
+      },
       "era": "classical",
       "objective": "Settle cities two to seven on their drawn sites, make each city's first district its Seowon on the pin, mine and farm and work every ring, establish Pingala in the capital and promote him, and slot Natural Philosophy by turn 70. Low decision density by design; the work is placing what turn 20 drew.",
       "build_order": [
-        { "item": "Settler", "why": "Cities four to seven on the drawn hills, with Colonization slotted." },
-        { "item": "Seowon", "why": "First district in every new city, on its pin; chop the ring's Woods into it." },
-        { "item": "Builder", "why": "Mines on every ring hill and Farms on every ring flat before any other improvement." },
-        { "item": "Library", "why": "In every Seowon; Divine Spark pays from it and Recorded History counts the districts." },
-        { "item": "Commercial Hub", "why": "Capital, far side, touching the center; the first Trade Route for Currency." },
-        { "item": "Theater Square", "why": "Capital, touching the Commercial Hub; the third district type for Mathematics and Culture to keep civics in step." },
-        { "item": "Archer", "why": "One in each border city facing a rival; Korea builds Science, not soldiers." }
+        {
+          "item": "Settler",
+          "why": "Cities four to seven on the drawn hills, with Colonization slotted."
+        },
+        {
+          "item": "Seowon",
+          "why": "First district in every new city, on its pin; chop the ring's Woods into it."
+        },
+        {
+          "item": "Builder",
+          "why": "Mines on every ring hill and Farms on every ring flat before any other improvement."
+        },
+        {
+          "item": "Library",
+          "why": "In every Seowon; Divine Spark pays from it and Recorded History counts the districts."
+        },
+        {
+          "item": "Commercial Hub",
+          "why": "Capital, far side, touching the center; the first Trade Route for Currency."
+        },
+        {
+          "item": "Theater Square",
+          "why": "Capital, touching the Commercial Hub; the third district type for Mathematics and Culture to keep civics in step."
+        },
+        {
+          "item": "Archer",
+          "why": "One in each border city facing a rival; Korea builds Science, not soldiers."
+        }
       ],
       "research": [
-        { "id": "tech:archery", "note": "Archers for the border cities; the Slinger's kill gave the Eureka." },
-        { "id": "tech:wheel", "note": "A Mine on a ring resource gives the Eureka." },
-        { "id": "tech:currency", "note": "Trade Route from the capital to city two." },
-        { "id": "tech:iron-working", "note": "Iron on a ring hill is a Mine that also earns Science." },
-        { "id": "tech:mathematics", "note": "Seowon, Commercial Hub and Theater Square give the Eureka." },
-        { "id": "tech:apprenticeship", "note": "Three ring Mines are long done; Production for every Seowon building." },
-        { "id": "tech:engineering", "note": "Ancient Walls in the border city facing the nearest rival." }
+        {
+          "id": "tech:archery",
+          "note": "Archers for the border cities; the Slinger's kill gave the Eureka."
+        },
+        {
+          "id": "tech:wheel",
+          "note": "A Mine on a ring resource gives the Eureka."
+        },
+        {
+          "id": "tech:currency",
+          "note": "Trade Route from the capital to city two."
+        },
+        {
+          "id": "tech:iron-working",
+          "note": "Iron on a ring hill is a Mine that also earns Science."
+        },
+        {
+          "id": "tech:mathematics",
+          "note": "Seowon, Commercial Hub and Theater Square give the Eureka."
+        },
+        {
+          "id": "tech:apprenticeship",
+          "note": "Three ring Mines are long done; Production for every Seowon building."
+        },
+        {
+          "id": "tech:engineering",
+          "note": "Ancient Walls in the border city facing the nearest rival."
+        }
       ],
       "civics": [
-        { "id": "civic:state-workforce", "note": "Free from the capital Seowon." },
-        { "id": "civic:early-empire", "note": "Colonization for cities four to seven; six population is free." },
-        { "id": "civic:mysticism", "note": "Inspiration from the pantheon; the Inspiration card for Great Scientist points." },
-        { "id": "civic:political-philosophy", "note": "Classical Republic for Great Person points; three city-states met give the Inspiration." },
-        { "id": "civic:recorded-history", "note": "Two Seowons give the Inspiration; Natural Philosophy doubles every Seowon." }
+        {
+          "id": "civic:state-workforce",
+          "note": "Free from the capital Seowon."
+        },
+        {
+          "id": "civic:early-empire",
+          "note": "Colonization for cities four to seven; six population is free."
+        },
+        {
+          "id": "civic:mysticism",
+          "note": "Inspiration from the pantheon; the Inspiration card for Great Scientist points."
+        },
+        {
+          "id": "civic:political-philosophy",
+          "note": "Classical Republic for Great Person points; three city-states met give the Inspiration."
+        },
+        {
+          "id": "civic:recorded-history",
+          "note": "Two Seowons give the Inspiration; Natural Philosophy doubles every Seowon."
+        }
       ],
       "policies": [
-        { "card": "Colonization", "slot": "economic", "from": "civic:early-empire", "why": "Settlers faster for the four remaining near sites." },
-        { "card": "Urban Planning", "slot": "economic", "from": "civic:code-of-laws", "why": "One Production in every city while each builds its Seowon." },
-        { "card": "Natural Philosophy", "slot": "economic", "from": "civic:recorded-history", "why": "Doubles Campus adjacency, and the Seowon's flat +4 is its adjacency: +8 in every isolated Seowon." },
-        { "card": "Inspiration", "slot": "wildcard", "from": "civic:mysticism", "why": "Great Scientist points on top of Divine Spark and the Seowons." }
+        {
+          "card": "Colonization",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "Settlers faster for the four remaining near sites."
+        },
+        {
+          "card": "Urban Planning",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "One Production in every city while each builds its Seowon."
+        },
+        {
+          "card": "Natural Philosophy",
+          "slot": "economic",
+          "from": "civic:recorded-history",
+          "why": "Doubles Campus adjacency, and the Seowon's flat +4 is its adjacency: +8 in every isolated Seowon."
+        },
+        {
+          "card": "Inspiration",
+          "slot": "wildcard",
+          "from": "civic:mysticism",
+          "why": "Great Scientist points on top of Divine Spark and the Seowons."
+        }
       ],
       "districts": [
-        { "district": "seowon", "city": "every new city", "note": "First district, on the drawn hill, nothing beside it." },
-        { "district": "commercial-hub", "city": "capital", "note": "Far side, touching the City Center; Gold and the first Trade Route." },
-        { "district": "theater-square", "city": "capital", "note": "Far side, touching the Commercial Hub, never the ring." }
+        {
+          "district": "seowon",
+          "city": "every new city",
+          "note": "First district, on the drawn hill, nothing beside it."
+        },
+        {
+          "district": "commercial-hub",
+          "city": "capital",
+          "note": "Far side, touching the City Center; Gold and the first Trade Route."
+        },
+        {
+          "district": "theater-square",
+          "city": "capital",
+          "note": "Far side, touching the Commercial Hub, never the ring."
+        }
       ],
-      "pantheon": { "slug": "divine-spark", "why": "Founded around turn 30 from God King; pays from the first Library." },
+      "pantheon": {
+        "slug": "divine-spark",
+        "why": "Founded around turn 30 from God King; pays from the first Library."
+      },
       "wonders": [
-        { "name": "Great Library", "why": "Science, two Great Work of Writing slots and the Ancient and Classical Eurekas still missing; it must sit on flat land beside a Seowon with a Library, and a wonder there costs the Seowon nothing.", "skip_if": "Recorded History lands after turn 65, an AI has already started it, or the only flat tile beside a Seowon is a ring Farm the city works." }
+        {
+          "name": "Great Library",
+          "why": "Science, two Great Work of Writing slots and the Ancient and Classical Eurekas still missing; it must sit on flat land beside a Seowon with a Library, and a wonder there costs the Seowon nothing.",
+          "skip_if": "Recorded History lands after turn 65, an AI has already started it, or the only flat tile beside a Seowon is a ring Farm the city works."
+        }
       ],
       "governors": [
-        { "governor": "pingala", "promotion": "Librarian", "city": "capital", "why": "The first title: Science and Culture in the biggest city, and every later promotion on him adds Hwarang's three percent there." },
-        { "governor": "pingala", "promotion": "Researcher", "city": "capital", "why": "The first Hwarang promotion; Science per citizen in the city that works the most ring Mines." },
-        { "governor": "magnus", "promotion": "Groundbreaker", "city": "city two", "why": "Half again as much from chopping the Woods off ring hills into Seowons and Settlers; Provision is his first promotion." }
+        {
+          "governor": "pingala",
+          "promotion": "Librarian",
+          "city": "capital",
+          "why": "The first title: Science and Culture in the biggest city, and every later promotion on him adds Hwarang's three percent there."
+        },
+        {
+          "governor": "pingala",
+          "promotion": "Researcher",
+          "city": "capital",
+          "why": "The first Hwarang promotion; Science per citizen in the city that works the most ring Mines."
+        },
+        {
+          "governor": "magnus",
+          "promotion": "Groundbreaker",
+          "city": "city two",
+          "why": "Half again as much from chopping the Woods off ring hills into Seowons and Settlers; Provision is his first promotion."
+        }
       ],
       "city_states": [
-        { "slug": "geneva", "why": "Science in every city while at peace with every civilization, which is Korea's normal state." },
-        { "slug": "mitla", "why": "Faster growth in every Seowon city, and the ring Farms already feed them." },
-        { "type": "Scientific", "why": "Three envoys in any Scientific city-state add Science to every Library." }
+        {
+          "slug": "geneva",
+          "why": "Science in every city while at peace with every civilization, which is Korea's normal state."
+        },
+        {
+          "slug": "mitla",
+          "why": "Faster growth in every Seowon city, and the ring Farms already feed them."
+        },
+        {
+          "type": "Scientific",
+          "why": "Three envoys in any Scientific city-state add Science to every Library."
+        }
       ],
       "great_people": [
-        { "class": "great-scientist", "why": "The first one is the Education Eureka; Hypatia, if offered, adds Science to every Library and every Seowon has one." }
+        {
+          "class": "great-scientist",
+          "why": "The first one is the Education Eureka; Hypatia, if offered, adds Science to every Library and every Seowon has one."
+        }
       ],
       "checkpoints": [
-        { "turn": 50, "test": "Four cities each with a Seowon on its pin, four or more ring Mines worked, Pingala established in the capital, and the pantheon founded?", "pass": "Continue to cities five to seven.", "fail": "A city with no Seowon yet: chop its ring Woods into it before anything else. Pingala missing: the next title goes to him the turn it arrives." },
-        { "turn": 85, "test": "Six or seven cities, every Seowon with a Library, Natural Philosophy slotted, and Science first on the scoreboard?", "pass": "Enter the peak phase.", "fail": "Science second or lower: count Seowons that touch a district or sit in the first ring. More than one means the ceiling is already lower; settle the remaining drawn sites before any wonder." }
+        {
+          "turn": 50,
+          "test": "Four cities each with a Seowon on its pin, four or more ring Mines worked, Pingala established in the capital, and the pantheon founded?",
+          "pass": "Continue to cities five to seven.",
+          "fail": "A city with no Seowon yet: chop its ring Woods into it before anything else. Pingala missing: the next title goes to him the turn it arrives."
+        },
+        {
+          "turn": 85,
+          "test": "Six or seven cities, every Seowon with a Library, Natural Philosophy slotted, and Science first on the scoreboard?",
+          "pass": "Enter the peak phase.",
+          "fail": "Science second or lower: count Seowons that touch a district or sit in the first ring. More than one means the ceiling is already lower; settle the remaining drawn sites before any wonder."
+        }
       ],
       "tasks": [
-        { "id": "execute-pantheon", "turn": 30, "text": "Found Divine Spark, or Religious Settlements if it lands before turn 30 and a drawn site is still free." },
-        { "id": "execute-pingala", "turn": 35, "text": "First Governor title to Pingala in the capital; the second to Magnus in city two." },
-        { "id": "execute-four-seowons", "turn": 50, "text": "Four cities, four Seowons on their pins, ring Mines worked before any other tile." },
-        { "id": "execute-natural-philosophy", "turn": 70, "text": "Recorded History in and Natural Philosophy slotted the same turn." },
-        { "id": "execute-libraries", "turn": 85, "text": "A Library in every Seowon; the far-side districts placed in the capital, none touching a ring." }
+        {
+          "id": "execute-pantheon",
+          "turn": 30,
+          "text": "Found Divine Spark, or Religious Settlements if it lands before turn 30 and a drawn site is still free."
+        },
+        {
+          "id": "execute-pingala",
+          "turn": 35,
+          "text": "First Governor title to Pingala in the capital; the second to Magnus in city two."
+        },
+        {
+          "id": "execute-four-seowons",
+          "turn": 50,
+          "text": "Four cities, four Seowons on their pins, ring Mines worked before any other tile."
+        },
+        {
+          "id": "execute-natural-philosophy",
+          "turn": 70,
+          "text": "Recorded History in and Natural Philosophy slotted the same turn."
+        },
+        {
+          "id": "execute-libraries",
+          "turn": 85,
+          "text": "A Library in every Seowon; the far-side districts placed in the capital, none touching a ring."
+        }
       ]
     },
     {
       "id": "peak",
       "name": "Hold the lead",
-      "turns": { "from": 86, "to": 150 },
+      "turns": {
+        "from": 86,
+        "to": 150
+      },
       "era": "medieval",
       "objective": "Universities in every Seowon, the Government Plaza on a far-side tile, Pingala at three or more promotions, and one decision at Machinery: whether a Hwacha war buys enough hills to be worth it. Steady, unspectacular Science lead.",
       "build_order": [
-        { "item": "University", "why": "Every Seowon; Printing at two, Astronomy in the city whose Seowon touches a Mountain." },
-        { "item": "Government Plaza", "why": "On the far side of the capital or city two, never on a ring; the Ancestral Hall gives every later city a free Builder for its ring." },
-        { "item": "Hwacha", "why": "Two per border city facing a hostile neighbour, or four for the Hwacha window." },
-        { "item": "Aqueduct", "why": "Capital, on a tile that does not touch the Seowon; Military Engineering and Housing." },
-        { "item": "Market", "why": "Two, in the Commercial Hubs, for Guilds and the free Banking Eureka." }
+        {
+          "item": "University",
+          "why": "Every Seowon; Printing at two, Astronomy in the city whose Seowon touches a Mountain."
+        },
+        {
+          "item": "Government Plaza",
+          "why": "On the far side of the capital or city two, never on a ring; the Ancestral Hall gives every later city a free Builder for its ring."
+        },
+        {
+          "item": "Hwacha",
+          "why": "Two per border city facing a hostile neighbour, or four for the Hwacha window."
+        },
+        {
+          "item": "Aqueduct",
+          "why": "Capital, on a tile that does not touch the Seowon; Military Engineering and Housing."
+        },
+        {
+          "item": "Market",
+          "why": "Two, in the Commercial Hubs, for Guilds and the free Banking Eureka."
+        }
       ],
       "research": [
-        { "id": "tech:education", "note": "Universities; the first Great Scientist gave the Eureka." },
-        { "id": "tech:machinery", "note": "The Hwacha; usually unboosted." },
-        { "id": "tech:military-engineering", "note": "The capital Aqueduct, placed away from the Seowon." },
-        { "id": "tech:printing", "note": "Two Universities." },
-        { "id": "tech:astronomy", "note": "The University in the Seowon pinned beside a Mountain." },
-        { "id": "tech:mass-production", "note": "A Lumber Mill on Woods outside every ring." }
+        {
+          "id": "tech:education",
+          "note": "Universities; the first Great Scientist gave the Eureka."
+        },
+        {
+          "id": "tech:machinery",
+          "note": "The Hwacha; usually unboosted."
+        },
+        {
+          "id": "tech:military-engineering",
+          "note": "The capital Aqueduct, placed away from the Seowon."
+        },
+        {
+          "id": "tech:printing",
+          "note": "Two Universities."
+        },
+        {
+          "id": "tech:astronomy",
+          "note": "The University in the Seowon pinned beside a Mountain."
+        },
+        {
+          "id": "tech:mass-production",
+          "note": "A Lumber Mill on Woods outside every ring."
+        }
       ],
       "civics": [
-        { "id": "civic:feudalism", "note": "Six Farms, half of them in rings; Serfdom." },
-        { "id": "civic:civil-service", "note": "The capital at ten population on ring Farms." },
-        { "id": "civic:guilds", "note": "Two Markets; the Banking Eureka." },
-        { "id": "civic:diplomatic-service", "note": "A Research Alliance with the highest-Science neighbour." }
+        {
+          "id": "civic:feudalism",
+          "note": "Six Farms, half of them in rings; Serfdom."
+        },
+        {
+          "id": "civic:civil-service",
+          "note": "The capital at ten population on ring Farms."
+        },
+        {
+          "id": "civic:guilds",
+          "note": "Two Markets; the Banking Eureka."
+        },
+        {
+          "id": "civic:diplomatic-service",
+          "note": "A Research Alliance with the highest-Science neighbour."
+        }
       ],
       "policies": [
-        { "card": "Natural Philosophy", "slot": "economic", "from": "civic:recorded-history", "why": "Still the best card in the game for this empire." },
-        { "card": "Serfdom", "slot": "economic", "from": "civic:feudalism", "why": "Builders with more charges for the rings of cities six to eight." },
-        { "card": "Inspiration", "slot": "wildcard", "from": "civic:mysticism", "why": "Great Scientist points while the Universities fill." }
+        {
+          "card": "Natural Philosophy",
+          "slot": "economic",
+          "from": "civic:recorded-history",
+          "why": "Still the best card in the game for this empire."
+        },
+        {
+          "card": "Serfdom",
+          "slot": "economic",
+          "from": "civic:feudalism",
+          "why": "Builders with more charges for the rings of cities six to eight."
+        },
+        {
+          "card": "Inspiration",
+          "slot": "wildcard",
+          "from": "civic:mysticism",
+          "why": "Great Scientist points while the Universities fill."
+        }
       ],
       "districts": [
-        { "district": "government-plaza", "city": "capital or city two", "note": "Far side; its extra Governor title is a Hwarang promotion." },
-        { "district": "aqueduct", "city": "capital", "note": "On a tile that touches the City Center and not the Seowon." }
+        {
+          "district": "government-plaza",
+          "city": "capital or city two",
+          "note": "Far side; its extra Governor title is a Hwarang promotion."
+        },
+        {
+          "district": "aqueduct",
+          "city": "capital",
+          "note": "On a tile that touches the City Center and not the Seowon."
+        }
       ],
       "wonders": [],
       "governors": [
-        { "governor": "pingala", "promotion": "Connoisseur", "city": "capital", "why": "Culture per citizen keeps civics close to the techs, and it is another Hwarang promotion." },
-        { "governor": "pingala", "promotion": "Grants", "city": "capital", "why": "Great Person points doubled in the capital; the Seowon there makes the most Great Scientist points." }
+        {
+          "governor": "pingala",
+          "promotion": "Connoisseur",
+          "city": "capital",
+          "why": "Culture per citizen keeps civics close to the techs, and it is another Hwarang promotion."
+        },
+        {
+          "governor": "pingala",
+          "promotion": "Grants",
+          "city": "capital",
+          "why": "Great Person points doubled in the capital; the Seowon there makes the most Great Scientist points."
+        }
       ],
       "city_states": [
-        { "slug": "bologna", "why": "A Great Person point from every district with a building; every Seowon has a Library." },
-        { "slug": "taruga", "why": "Science for every improved strategic resource type, and Korea mines them all." }
+        {
+          "slug": "bologna",
+          "why": "A Great Person point from every district with a building; every Seowon has a Library."
+        },
+        {
+          "slug": "taruga",
+          "why": "Science for every improved strategic resource type, and Korea mines them all."
+        }
       ],
       "great_people": [
-        { "class": "great-scientist", "why": "Medieval and Renaissance Great Scientists whose bonuses land on Libraries and Universities, which every Seowon holds." }
+        {
+          "class": "great-scientist",
+          "why": "Medieval and Renaissance Great Scientists whose bonuses land on Libraries and Universities, which every Seowon holds."
+        }
       ],
       "checkpoints": [
-        { "turn": 115, "test": "Universities in three Seowons, Pingala on three promotions, and two Hwacha in each border city that faces a hostile neighbour?", "pass": "Continue; the rest of the Universities and the Government Plaza.", "fail": "Pingala short of promotions: a title went to a new Governor; give every next title to him. No Hwacha and a neighbour massing: buy two now, before the Universities." },
-        { "turn": 150, "test": "Every Seowon with a University, the Government Plaza built, and Science first by at least a quarter over the next civilization?", "pass": "Enter the live phase.", "fail": "Under a quarter: settle or capture any remaining drawn hill site and work every ring Mine before building anything else." }
+        {
+          "turn": 115,
+          "test": "Universities in three Seowons, Pingala on three promotions, and two Hwacha in each border city that faces a hostile neighbour?",
+          "pass": "Continue; the rest of the Universities and the Government Plaza.",
+          "fail": "Pingala short of promotions: a title went to a new Governor; give every next title to him. No Hwacha and a neighbour massing: buy two now, before the Universities."
+        },
+        {
+          "turn": 150,
+          "test": "Every Seowon with a University, the Government Plaza built, and Science first by at least a quarter over the next civilization?",
+          "pass": "Enter the live phase.",
+          "fail": "Under a quarter: settle or capture any remaining drawn hill site and work every ring Mine before building anything else."
+        }
       ],
       "tasks": [
-        { "id": "peak-hwacha-decision", "turn": 100, "text": "At Machinery, run the Hwacha window trigger: one war for hills, or two Hwacha per border city and peace." },
-        { "id": "peak-government-plaza", "turn": 110, "text": "Government Plaza on a far-side tile; spend its title on a promotion." },
-        { "id": "peak-universities", "turn": 125, "text": "Universities in four Seowons; Printing and Astronomy collected." },
-        { "id": "peak-research-alliance", "turn": 140, "text": "Research Alliance signed with the friendliest high-Science civilization." }
+        {
+          "id": "peak-hwacha-decision",
+          "turn": 100,
+          "text": "At Machinery, run the Hwacha window trigger: one war for hills, or two Hwacha per border city and peace."
+        },
+        {
+          "id": "peak-government-plaza",
+          "turn": 110,
+          "text": "Government Plaza on a far-side tile; spend its title on a promotion."
+        },
+        {
+          "id": "peak-universities",
+          "turn": 125,
+          "text": "Universities in four Seowons; Printing and Astronomy collected."
+        },
+        {
+          "id": "peak-research-alliance",
+          "turn": 140,
+          "text": "Research Alliance signed with the friendliest high-Science civilization."
+        }
       ]
     },
     {
       "id": "live",
       "name": "Live inside the ceiling",
-      "turns": { "from": 151, "to": 210 },
+      "turns": {
+        "from": 151,
+        "to": 210
+      },
       "era": "renaissance",
       "objective": "Rivals with high-adjacency Campuses start to close the gap here. The answer is Industrial Zones beside the ring Mines, Rationalism, Oxford University, Research Labs and any drawn site still empty, not new districts beside the Seowons. Communism at Class Struggle, and two flat Spaceport tiles reserved by turn 210.",
       "build_order": [
-        { "item": "Industrial Zone", "why": "Two, each placed to touch a ring's outer Mines but not the Seowon." },
-        { "item": "Factory", "why": "In both; Class Struggle at three." },
-        { "item": "Coal Power Plant", "why": "Power for the Factories and the Research Labs." },
-        { "item": "Research Lab", "why": "Every Seowon as soon as Chemistry allows." }
+        {
+          "item": "Industrial Zone",
+          "why": "Two, each placed to touch a ring's outer Mines but not the Seowon."
+        },
+        {
+          "item": "Factory",
+          "why": "In both; Class Struggle at three."
+        },
+        {
+          "item": "Coal Power Plant",
+          "why": "Power for the Factories and the Research Labs."
+        },
+        {
+          "item": "Research Lab",
+          "why": "Every Seowon as soon as Chemistry allows."
+        }
       ],
       "research": [
-        { "id": "tech:banking", "note": "Free from Guilds." },
-        { "id": "tech:scientific-theory", "note": "Free from The Enlightenment; Oxford University." },
-        { "id": "tech:industrialization", "note": "Two Workshops in the Industrial Zones." },
-        { "id": "tech:rifling", "note": "A Mine on Niter, ideally in a ring." },
-        { "id": "tech:chemistry", "note": "Research Labs; the Research Alliance at level 2 gives the Eureka." }
+        {
+          "id": "tech:banking",
+          "note": "Free from Guilds."
+        },
+        {
+          "id": "tech:scientific-theory",
+          "note": "Free from The Enlightenment; Oxford University."
+        },
+        {
+          "id": "tech:industrialization",
+          "note": "Two Workshops in the Industrial Zones."
+        },
+        {
+          "id": "tech:rifling",
+          "note": "A Mine on Niter, ideally in a ring."
+        },
+        {
+          "id": "tech:chemistry",
+          "note": "Research Labs; the Research Alliance at level 2 gives the Eureka."
+        }
       ],
       "civics": [
-        { "id": "civic:the-enlightenment", "note": "Three Great Scientists give the Inspiration; Rationalism." },
-        { "id": "civic:exploration", "note": "Merchant Republic as the Tier 2 government; usually unboosted." },
-        { "id": "civic:urbanization", "note": "The capital at fifteen population." },
-        { "id": "civic:class-struggle", "note": "Three Factories; Communism and Five-Year Plan." }
+        {
+          "id": "civic:the-enlightenment",
+          "note": "Three Great Scientists give the Inspiration; Rationalism."
+        },
+        {
+          "id": "civic:exploration",
+          "note": "Merchant Republic as the Tier 2 government; usually unboosted."
+        },
+        {
+          "id": "civic:urbanization",
+          "note": "The capital at fifteen population."
+        },
+        {
+          "id": "civic:class-struggle",
+          "note": "Three Factories; Communism and Five-Year Plan."
+        }
       ],
       "policies": [
-        { "card": "Rationalism", "slot": "economic", "from": "civic:the-enlightenment", "why": "Science from every Seowon building, with the extra for districts at +3 adjacency or more; every isolated Seowon qualifies." },
-        { "card": "Five-Year Plan", "slot": "economic", "from": "civic:class-struggle", "why": "Replaces Natural Philosophy and doubles Industrial Zone adjacency as well as the Seowon's." }
+        {
+          "card": "Rationalism",
+          "slot": "economic",
+          "from": "civic:the-enlightenment",
+          "why": "Science from every Seowon building, with the extra for districts at +3 adjacency or more; every isolated Seowon qualifies."
+        },
+        {
+          "card": "Five-Year Plan",
+          "slot": "economic",
+          "from": "civic:class-struggle",
+          "why": "Replaces Natural Philosophy and doubles Industrial Zone adjacency as well as the Seowon's."
+        }
       ],
       "districts": [
-        { "district": "industrial-zone", "city": "the two cities with the most ring Mines", "note": "Touching the ring's outer Mines, not the Seowon; Ruhr Valley beside one if a river allows." }
+        {
+          "district": "industrial-zone",
+          "city": "the two cities with the most ring Mines",
+          "note": "Touching the ring's outer Mines, not the Seowon; Ruhr Valley beside one if a river allows."
+        }
       ],
       "wonders": [
-        { "name": "Oxford University", "why": "Two free technologies and Science in its city; it goes on flat Grassland or Plains beside a Seowon with a University.", "skip_if": "Scientific Theory lands after turn 185, or the only qualifying tile is a ring Farm the city works." },
-        { "name": "Ruhr Valley", "why": "Production in its city and on every Mine there; the ring Mines make it the Spaceport city.", "skip_if": "No river tile touches an Industrial Zone with a Factory, or Industrialization lands after turn 190." }
+        {
+          "name": "Oxford University",
+          "why": "Two free technologies and Science in its city; it goes on flat Grassland or Plains beside a Seowon with a University.",
+          "skip_if": "Scientific Theory lands after turn 185, or the only qualifying tile is a ring Farm the city works."
+        },
+        {
+          "name": "Ruhr Valley",
+          "why": "Production in its city and on every Mine there; the ring Mines make it the Spaceport city.",
+          "skip_if": "No river tile touches an Industrial Zone with a Factory, or Industrialization lands after turn 190."
+        }
       ],
       "governors": [
-        { "governor": "liang", "promotion": "Zoning Commissioner", "city": "the Ruhr Valley city", "why": "District Production for the Industrial Zone and later the Spaceport; his promotions count for Hwarang there too." }
+        {
+          "governor": "liang",
+          "promotion": "Zoning Commissioner",
+          "city": "the Ruhr Valley city",
+          "why": "District Production for the Industrial Zone and later the Spaceport; his promotions count for Hwarang there too."
+        }
       ],
       "city_states": [
-        { "slug": "hong-kong", "why": "Production toward city projects, which is every space project the next phase runs." }
+        {
+          "slug": "hong-kong",
+          "why": "Production toward city projects, which is every space project the next phase runs."
+        }
       ],
       "great_people": [
-        { "class": "great-engineer", "why": "Charges into Oxford University and Ruhr Valley." },
-        { "class": "great-scientist", "why": "Industrial Great Scientists for free techs and Research Lab Science." }
+        {
+          "class": "great-engineer",
+          "why": "Charges into Oxford University and Ruhr Valley."
+        },
+        {
+          "class": "great-scientist",
+          "why": "Industrial Great Scientists for free techs and Research Lab Science."
+        }
       ],
       "checkpoints": [
-        { "turn": 180, "test": "Rationalism slotted, two Industrial Zones with Factories and a Coal Power Plant, Oxford built or skipped, and Chemistry in?", "pass": "Continue; Research Labs in every Seowon.", "fail": "Behind on Industrial Zones: build them in the two ring-Mine cities only, and skip any wonder still queued." },
-        { "turn": 210, "test": "Communism adopted, Five-Year Plan slotted, Rocketry within ten turns, and a flat Spaceport tile reserved in the capital and the Ruhr city?", "pass": "Enter the launch phase.", "fail": "No flat far-side tile left: use one that touches the Seowon only in the second city and accept the lost point; the capital's Spaceport takes priority." }
+        {
+          "turn": 180,
+          "test": "Rationalism slotted, two Industrial Zones with Factories and a Coal Power Plant, Oxford built or skipped, and Chemistry in?",
+          "pass": "Continue; Research Labs in every Seowon.",
+          "fail": "Behind on Industrial Zones: build them in the two ring-Mine cities only, and skip any wonder still queued."
+        },
+        {
+          "turn": 210,
+          "test": "Communism adopted, Five-Year Plan slotted, Rocketry within ten turns, and a flat Spaceport tile reserved in the capital and the Ruhr city?",
+          "pass": "Enter the launch phase.",
+          "fail": "No flat far-side tile left: use one that touches the Seowon only in the second city and accept the lost point; the capital's Spaceport takes priority."
+        }
       ],
       "tasks": [
-        { "id": "live-industrial-zones", "turn": 165, "text": "Two Industrial Zones placed against ring Mines, neither touching a Seowon." },
-        { "id": "live-rationalism", "turn": 175, "text": "Rationalism slotted the turn The Enlightenment completes." },
-        { "id": "live-spaceport-tiles", "turn": 205, "text": "Reserve a flat tile on the far side of the capital and of the Ruhr city for Spaceports." }
+        {
+          "id": "live-industrial-zones",
+          "turn": 165,
+          "text": "Two Industrial Zones placed against ring Mines, neither touching a Seowon."
+        },
+        {
+          "id": "live-rationalism",
+          "turn": 175,
+          "text": "Rationalism slotted the turn The Enlightenment completes."
+        },
+        {
+          "id": "live-spaceport-tiles",
+          "turn": 205,
+          "text": "Reserve a flat tile on the far side of the capital and of the Ruhr city for Spaceports."
+        }
       ]
     },
     {
       "id": "launch",
       "name": "Launch",
-      "turns": { "from": 211, "to": null },
+      "turns": {
+        "from": 211,
+        "to": null
+      },
       "era": "modern",
       "objective": "Finish the space race before the ceiling matters: Spaceports in the capital and the Ruhr city, Pingala on Space Initiative, Hong Kong held, every Great Engineer into projects, Counterspies on both Spaceports, and the Exoplanet Expedition launched by about turn 250.",
       "build_order": [
-        { "item": "Spaceport", "why": "Capital and the Ruhr city, on the flat far-side tiles reserved at turn 205." },
-        { "item": "Spy", "why": "Counterspies in both Spaceport cities; one on Disrupt Rocketry if a rival's Spaceport is ahead." },
-        { "item": "Research Lab", "why": "Any Seowon still without one; the projects need their techs on time." }
+        {
+          "item": "Spaceport",
+          "why": "Capital and the Ruhr city, on the flat far-side tiles reserved at turn 205."
+        },
+        {
+          "item": "Spy",
+          "why": "Counterspies in both Spaceport cities; one on Disrupt Rocketry if a rival's Spaceport is ahead."
+        },
+        {
+          "item": "Research Lab",
+          "why": "Any Seowon still without one; the projects need their techs on time."
+        }
       ],
       "research": [
-        { "id": "tech:refining", "note": "The Coal Power Plant already gave the Eureka." },
-        { "id": "tech:rocketry", "note": "Spaceports and the Earth Satellite; no Eureka exists." },
-        { "id": "tech:computers", "note": "Free from Communism." },
-        { "id": "tech:plastics", "note": "An Oil Well for Power." },
-        { "id": "tech:satellites", "note": "The Moon Landing; usually unboosted." },
-        { "id": "tech:nanotechnology", "note": "A Mine on Aluminum." }
+        {
+          "id": "tech:refining",
+          "note": "The Coal Power Plant already gave the Eureka."
+        },
+        {
+          "id": "tech:rocketry",
+          "note": "Spaceports and the Earth Satellite; no Eureka exists."
+        },
+        {
+          "id": "tech:computers",
+          "note": "Free from Communism."
+        },
+        {
+          "id": "tech:plastics",
+          "note": "An Oil Well for Power."
+        },
+        {
+          "id": "tech:satellites",
+          "note": "The Moon Landing; usually unboosted."
+        },
+        {
+          "id": "tech:nanotechnology",
+          "note": "A Mine on Aluminum."
+        }
       ],
       "civics": [
-        { "id": "civic:nuclear-program", "note": "Free from the first Research Lab." },
-        { "id": "civic:space-race", "note": "Free from the first Spaceport." }
+        {
+          "id": "civic:nuclear-program",
+          "note": "Free from the first Research Lab."
+        },
+        {
+          "id": "civic:space-race",
+          "note": "Free from the first Spaceport."
+        }
       ],
       "policies": [
-        { "card": "Five-Year Plan", "slot": "economic", "from": "civic:class-struggle", "why": "Seowon and Industrial Zone adjacency doubled to the end." },
-        { "card": "Rationalism", "slot": "economic", "from": "civic:the-enlightenment", "why": "Research Lab Science in every Seowon to the end." }
+        {
+          "card": "Five-Year Plan",
+          "slot": "economic",
+          "from": "civic:class-struggle",
+          "why": "Seowon and Industrial Zone adjacency doubled to the end."
+        },
+        {
+          "card": "Rationalism",
+          "slot": "economic",
+          "from": "civic:the-enlightenment",
+          "why": "Research Lab Science in every Seowon to the end."
+        }
       ],
       "districts": [
-        { "district": "spaceport", "city": "capital and the Ruhr city", "note": "Flat, far side, touching no Seowon." }
+        {
+          "district": "spaceport",
+          "city": "capital and the Ruhr city",
+          "note": "Flat, far side, touching no Seowon."
+        }
       ],
       "wonders": [],
       "governors": [
-        { "governor": "pingala", "promotion": "Space Initiative", "city": "capital", "why": "Production toward space projects in the capital Spaceport, and another Hwarang promotion." }
+        {
+          "governor": "pingala",
+          "promotion": "Space Initiative",
+          "city": "capital",
+          "why": "Production toward space projects in the capital Spaceport, and another Hwarang promotion."
+        }
       ],
       "city_states": [],
       "great_people": [
-        { "class": "great-engineer", "why": "Atomic and Information Great Engineers add Production to space projects; buy them with Gold if the points are short." },
-        { "class": "great-scientist", "why": "Free techs bring the next project forward." }
+        {
+          "class": "great-engineer",
+          "why": "Atomic and Information Great Engineers add Production to space projects; buy them with Gold if the points are short."
+        },
+        {
+          "class": "great-scientist",
+          "why": "Free techs bring the next project forward."
+        }
       ],
       "checkpoints": [
-        { "turn": 240, "test": "Earth Satellite and Moon Landing done, the Mars Colony under way, and no rival with more space projects complete?", "pass": "Continue; the Exoplanet Expedition next.", "fail": "A rival ahead: run the space race slips trigger, with Spies on its Spaceport and every Great Engineer on your projects." },
-        { "turn": 265, "test": "Exoplanet Expedition launched and the laser station projects shortening its trip?", "pass": "Finish; no further decisions.", "fail": "Not launched: the game is a Score game unless your military tech is ahead of the leader's, in which case run the Domination secondary against its Spaceport city." }
+        {
+          "turn": 240,
+          "test": "Earth Satellite and Moon Landing done, the Mars Colony under way, and no rival with more space projects complete?",
+          "pass": "Continue; the Exoplanet Expedition next.",
+          "fail": "A rival ahead: run the space race slips trigger, with Spies on its Spaceport and every Great Engineer on your projects."
+        },
+        {
+          "turn": 265,
+          "test": "Exoplanet Expedition launched and the laser station projects shortening its trip?",
+          "pass": "Finish; no further decisions.",
+          "fail": "Not launched: the game is a Score game unless your military tech is ahead of the leader's, in which case run the Domination secondary against its Spaceport city."
+        }
       ],
       "tasks": [
-        { "id": "launch-spaceports", "turn": 215, "text": "Spaceports started in the capital and the Ruhr city the turn Rocketry lands." },
-        { "id": "launch-counterspies", "turn": 220, "text": "Counterspies on both Spaceport districts before the first project begins." },
-        { "id": "launch-exoplanet", "turn": 250, "text": "Exoplanet Expedition launched; every remaining Great Engineer into the laser stations." }
+        {
+          "id": "launch-spaceports",
+          "turn": 215,
+          "text": "Spaceports started in the capital and the Ruhr city the turn Rocketry lands."
+        },
+        {
+          "id": "launch-counterspies",
+          "turn": 220,
+          "text": "Counterspies on both Spaceport districts before the first project begins."
+        },
+        {
+          "id": "launch-exoplanet",
+          "turn": 250,
+          "text": "Exoplanet Expedition launched; every remaining Great Engineer into the laser stations."
+        }
       ]
     }
   ],
   "boosts": [
-    { "id": "tech:writing", "fit": "free", "when": "commit", "how": "The Scout meets the first civilization on the way to its border." },
-    { "id": "tech:irrigation", "fit": "cheap", "when": "commit", "how": "The first Builder farms a Wheat, Rice or Maize tile in the ring." },
-    { "id": "tech:archery", "fit": "cheap", "when": "execute", "how": "The Slinger finishes a barbarian near the capital." },
-    { "id": "tech:wheel", "fit": "cheap", "when": "execute", "how": "A Mine on a resource hill in the ring." },
-    { "id": "tech:bronze-working", "fit": "costly", "when": "execute", "how": "Three barbarian kills; Korea fields two units and clears only camps that can see the capital." },
-    { "id": "tech:masonry", "fit": "costly", "when": "execute", "how": "A Quarry only on Stone or Marble outside every ring; otherwise unboosted for Walls." },
-    { "id": "tech:sailing", "fit": "cheap", "when": "execute", "how": "City two founded on the coast if the map drew one there; otherwise unboosted and late." },
-    { "id": "tech:astrology", "fit": "skip", "when": null, "how": "" },
-    { "id": "tech:currency", "fit": "cheap", "when": "execute", "how": "A Trader from the capital to city two." },
-    { "id": "tech:iron-working", "fit": "cheap", "when": "execute", "how": "A Mine on Iron, best on a ring hill where it also earns Science." },
-    { "id": "tech:mathematics", "fit": "cheap", "when": "execute", "how": "Seowon, Commercial Hub and Theater Square across the first three cities." },
-    { "id": "tech:engineering", "fit": "cheap", "when": "execute", "how": "Ancient Walls in the border city facing the nearest rival." },
-    { "id": "tech:construction", "fit": "cheap", "when": "execute", "how": "A Water Mill in whichever city sits on a river." },
-    { "id": "tech:horseback-riding", "fit": "costly", "when": "execute", "how": "A Pasture only if Horses or Sheep sit outside every ring." },
-    { "id": "tech:apprenticeship", "fit": "free", "when": "execute", "how": "Three Mines in the first two rings." },
-    { "id": "tech:education", "fit": "free", "when": "peak", "how": "The first Great Scientist from Seowon, Library and Divine Spark points." },
-    { "id": "tech:machinery", "fit": "costly", "when": "peak", "how": "Three Archers only if the Hwacha war is on; usually researched unboosted." },
-    { "id": "tech:military-engineering", "fit": "cheap", "when": "peak", "how": "The capital Aqueduct on a tile that does not touch the Seowon." },
-    { "id": "tech:stirrups", "fit": "free", "when": "peak", "how": "Feudalism is on the civic path for Serfdom." },
-    { "id": "tech:castles", "fit": "costly", "when": "live", "how": "Merchant Republic at Exploration is the first Tier 2 government; Castles waits for it." },
-    { "id": "tech:buttress", "fit": "cheap", "when": "peak", "how": "The Great Library completes; if it was skipped, research unboosted." },
-    { "id": "tech:military-tactics", "fit": "skip", "when": null, "how": "" },
-    { "id": "tech:printing", "fit": "free", "when": "peak", "how": "Universities in two Seowons." },
-    { "id": "tech:astronomy", "fit": "cheap", "when": "peak", "how": "The University in the Seowon pinned beside a Mountain at turn 0." },
-    { "id": "tech:mass-production", "fit": "cheap", "when": "peak", "how": "A Lumber Mill on Woods outside every ring." },
-    { "id": "tech:gunpowder", "fit": "costly", "when": "peak", "how": "An Armory only if an Encampment was built for the Hwacha war." },
-    { "id": "tech:banking", "fit": "free", "when": "live", "how": "Guilds is on the civic path." },
-    { "id": "tech:scientific-theory", "fit": "free", "when": "live", "how": "The Enlightenment is on the civic path." },
-    { "id": "tech:industrialization", "fit": "cheap", "when": "live", "how": "Workshops in the two Industrial Zones beside the ring Mines." },
-    { "id": "tech:rifling", "fit": "cheap", "when": "live", "how": "A Mine on Niter, which a hill start usually has in reach." },
-    { "id": "tech:sanitation", "fit": "cheap", "when": "live", "how": "Two Neighborhoods on far-side tiles away from every Seowon." },
-    { "id": "tech:chemistry", "fit": "cheap", "when": "live", "how": "The Research Alliance reaches level 2." },
-    { "id": "tech:flight", "fit": "cheap", "when": "live", "how": "Oxford University or Ruhr Valley completes." },
-    { "id": "tech:refining", "fit": "cheap", "when": "launch", "how": "The Coal Power Plant built for the Research Labs." },
-    { "id": "tech:computers", "fit": "free", "when": "launch", "how": "Communism, a Tier 3 government, adopted at Class Struggle." },
-    { "id": "tech:plastics", "fit": "cheap", "when": "launch", "how": "An Oil Well on the nearest Oil." },
-    { "id": "tech:satellites", "fit": "costly", "when": "launch", "how": "Two Broadcast Centers only if two Theater Squares exist; usually unboosted." },
-    { "id": "tech:nanotechnology", "fit": "cheap", "when": "launch", "how": "A Mine on Aluminum; Korea already mines every hill it owns." },
-    { "id": "tech:robotics", "fit": "costly", "when": "launch", "how": "Globalization only if two Airports are worth building; usually unboosted." },
-    { "id": "civic:craftsmanship", "fit": "free", "when": "commit", "how": "Three ring tiles improved by the first Builder." },
-    { "id": "civic:foreign-trade", "fit": "costly", "when": "commit", "how": "Only if the Scout sights a second continent; never chased." },
-    { "id": "civic:military-tradition", "fit": "costly", "when": "commit", "how": "Clearing a camp, which Korea does only when it can see the capital." },
-    { "id": "civic:state-workforce", "fit": "free", "when": "execute", "how": "The capital Seowon is the first district." },
-    { "id": "civic:early-empire", "fit": "free", "when": "execute", "how": "Six population across the first three cities." },
-    { "id": "civic:mysticism", "fit": "cheap", "when": "execute", "how": "The pantheon from God King's Faith." },
-    { "id": "civic:political-philosophy", "fit": "cheap", "when": "execute", "how": "Three city-states met by the Scout." },
-    { "id": "civic:recorded-history", "fit": "free", "when": "execute", "how": "Two Seowons; city two's is its first district." },
-    { "id": "civic:games-and-recreation", "fit": "free", "when": "execute", "how": "Researching Construction for the Water Mill." },
-    { "id": "civic:drama-and-poetry", "fit": "cheap", "when": "execute", "how": "Any wonder; the Great Library if it is built." },
-    { "id": "civic:defensive-tactics", "fit": "costly", "when": "execute", "how": "Only if a neighbour declares war on you." },
-    { "id": "civic:theology", "fit": "skip", "when": null, "how": "" },
-    { "id": "civic:military-training", "fit": "skip", "when": null, "how": "" },
-    { "id": "civic:feudalism", "fit": "cheap", "when": "peak", "how": "Six Farms, half of them on ring flats." },
-    { "id": "civic:civil-service", "fit": "cheap", "when": "peak", "how": "The capital at ten population on ring Farms." },
-    { "id": "civic:guilds", "fit": "cheap", "when": "peak", "how": "Markets in the two Commercial Hubs." },
-    { "id": "civic:diplomatic-service", "fit": "cheap", "when": "peak", "how": "An alliance with the friendliest neighbour, a Research Alliance by choice." },
-    { "id": "civic:humanism", "fit": "costly", "when": "live", "how": "A Great Artist only if the capital Theater Square has an Amphitheater." },
-    { "id": "civic:the-enlightenment", "fit": "free", "when": "live", "how": "Three Great Scientists by the Renaissance." },
-    { "id": "civic:exploration", "fit": "costly", "when": "live", "how": "Two Caravels only on a coastal map; usually unboosted." },
-    { "id": "civic:urbanization", "fit": "cheap", "when": "live", "how": "The capital at fifteen population with its Aqueduct." },
-    { "id": "civic:colonialism", "fit": "free", "when": "live", "how": "Astronomy was researched for the Mountain Seowon." },
-    { "id": "civic:scorched-earth", "fit": "cheap", "when": "live", "how": "Two Hwacha kept from the border defence count as Field Cannons." },
-    { "id": "civic:class-struggle", "fit": "cheap", "when": "live", "how": "Three Factories, two of them in the Industrial Zones." },
-    { "id": "civic:nuclear-program", "fit": "free", "when": "launch", "how": "The first Research Lab in a Seowon." },
-    { "id": "civic:space-race", "fit": "free", "when": "launch", "how": "The first Spaceport." }
+    {
+      "id": "tech:writing",
+      "fit": "free",
+      "when": "commit",
+      "how": "The Scout meets the first civilization on the way to its border."
+    },
+    {
+      "id": "tech:irrigation",
+      "fit": "cheap",
+      "when": "commit",
+      "how": "The first Builder farms a Wheat, Rice or Maize tile in the ring."
+    },
+    {
+      "id": "tech:archery",
+      "fit": "cheap",
+      "when": "execute",
+      "how": "The Slinger finishes a barbarian near the capital."
+    },
+    {
+      "id": "tech:wheel",
+      "fit": "cheap",
+      "when": "execute",
+      "how": "A Mine on a resource hill in the ring."
+    },
+    {
+      "id": "tech:bronze-working",
+      "fit": "costly",
+      "when": "execute",
+      "how": "Three barbarian kills; Korea fields two units and clears only camps that can see the capital."
+    },
+    {
+      "id": "tech:masonry",
+      "fit": "costly",
+      "when": "execute",
+      "how": "A Quarry only on Stone or Marble outside every ring; otherwise unboosted for Walls."
+    },
+    {
+      "id": "tech:sailing",
+      "fit": "cheap",
+      "when": "execute",
+      "how": "City two founded on the coast if the map drew one there; otherwise unboosted and late."
+    },
+    {
+      "id": "tech:astrology",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:currency",
+      "fit": "cheap",
+      "when": "execute",
+      "how": "A Trader from the capital to city two."
+    },
+    {
+      "id": "tech:iron-working",
+      "fit": "cheap",
+      "when": "execute",
+      "how": "A Mine on Iron, best on a ring hill where it also earns Science."
+    },
+    {
+      "id": "tech:mathematics",
+      "fit": "cheap",
+      "when": "execute",
+      "how": "Seowon, Commercial Hub and Theater Square across the first three cities."
+    },
+    {
+      "id": "tech:engineering",
+      "fit": "cheap",
+      "when": "execute",
+      "how": "Ancient Walls in the border city facing the nearest rival."
+    },
+    {
+      "id": "tech:construction",
+      "fit": "cheap",
+      "when": "execute",
+      "how": "A Water Mill in whichever city sits on a river."
+    },
+    {
+      "id": "tech:horseback-riding",
+      "fit": "costly",
+      "when": "execute",
+      "how": "A Pasture only if Horses or Sheep sit outside every ring."
+    },
+    {
+      "id": "tech:apprenticeship",
+      "fit": "free",
+      "when": "execute",
+      "how": "Three Mines in the first two rings."
+    },
+    {
+      "id": "tech:education",
+      "fit": "free",
+      "when": "peak",
+      "how": "The first Great Scientist from Seowon, Library and Divine Spark points."
+    },
+    {
+      "id": "tech:machinery",
+      "fit": "costly",
+      "when": "peak",
+      "how": "Three Archers only if the Hwacha war is on; usually researched unboosted."
+    },
+    {
+      "id": "tech:military-engineering",
+      "fit": "cheap",
+      "when": "peak",
+      "how": "The capital Aqueduct on a tile that does not touch the Seowon."
+    },
+    {
+      "id": "tech:stirrups",
+      "fit": "free",
+      "when": "peak",
+      "how": "Feudalism is on the civic path for Serfdom."
+    },
+    {
+      "id": "tech:castles",
+      "fit": "costly",
+      "when": "live",
+      "how": "Merchant Republic at Exploration is the first Tier 2 government; Castles waits for it."
+    },
+    {
+      "id": "tech:buttress",
+      "fit": "cheap",
+      "when": "peak",
+      "how": "The Great Library completes; if it was skipped, research unboosted."
+    },
+    {
+      "id": "tech:military-tactics",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:printing",
+      "fit": "free",
+      "when": "peak",
+      "how": "Universities in two Seowons."
+    },
+    {
+      "id": "tech:astronomy",
+      "fit": "cheap",
+      "when": "peak",
+      "how": "The University in the Seowon pinned beside a Mountain at turn 0."
+    },
+    {
+      "id": "tech:mass-production",
+      "fit": "cheap",
+      "when": "peak",
+      "how": "A Lumber Mill on Woods outside every ring."
+    },
+    {
+      "id": "tech:gunpowder",
+      "fit": "costly",
+      "when": "peak",
+      "how": "An Armory only if an Encampment was built for the Hwacha war."
+    },
+    {
+      "id": "tech:banking",
+      "fit": "free",
+      "when": "live",
+      "how": "Guilds is on the civic path."
+    },
+    {
+      "id": "tech:scientific-theory",
+      "fit": "free",
+      "when": "live",
+      "how": "The Enlightenment is on the civic path."
+    },
+    {
+      "id": "tech:industrialization",
+      "fit": "cheap",
+      "when": "live",
+      "how": "Workshops in the two Industrial Zones beside the ring Mines."
+    },
+    {
+      "id": "tech:rifling",
+      "fit": "cheap",
+      "when": "live",
+      "how": "A Mine on Niter, which a hill start usually has in reach."
+    },
+    {
+      "id": "tech:sanitation",
+      "fit": "cheap",
+      "when": "live",
+      "how": "Two Neighborhoods on far-side tiles away from every Seowon."
+    },
+    {
+      "id": "tech:chemistry",
+      "fit": "cheap",
+      "when": "live",
+      "how": "The Research Alliance reaches level 2."
+    },
+    {
+      "id": "tech:flight",
+      "fit": "cheap",
+      "when": "live",
+      "how": "Ruhr Valley completes; Oxford University is a Renaissance wonder and does not count."
+    },
+    {
+      "id": "tech:refining",
+      "fit": "cheap",
+      "when": "launch",
+      "how": "The Coal Power Plant built for the Research Labs."
+    },
+    {
+      "id": "tech:computers",
+      "fit": "free",
+      "when": "launch",
+      "how": "Communism, a Tier 3 government, adopted at Class Struggle."
+    },
+    {
+      "id": "tech:plastics",
+      "fit": "cheap",
+      "when": "launch",
+      "how": "An Oil Well on the nearest Oil."
+    },
+    {
+      "id": "tech:satellites",
+      "fit": "costly",
+      "when": "launch",
+      "how": "Two Broadcast Centers only if two Theater Squares exist; usually unboosted."
+    },
+    {
+      "id": "tech:nanotechnology",
+      "fit": "cheap",
+      "when": "launch",
+      "how": "A Mine on Aluminum; Korea already mines every hill it owns."
+    },
+    {
+      "id": "tech:robotics",
+      "fit": "costly",
+      "when": "launch",
+      "how": "Globalization only if two Airports are worth building; usually unboosted."
+    },
+    {
+      "id": "civic:craftsmanship",
+      "fit": "free",
+      "when": "commit",
+      "how": "Three ring tiles improved by the first Builder."
+    },
+    {
+      "id": "civic:foreign-trade",
+      "fit": "costly",
+      "when": "commit",
+      "how": "Only if the Scout sights a second continent; never chased."
+    },
+    {
+      "id": "civic:military-tradition",
+      "fit": "costly",
+      "when": "commit",
+      "how": "Clearing a camp, which Korea does only when it can see the capital."
+    },
+    {
+      "id": "civic:state-workforce",
+      "fit": "free",
+      "when": "execute",
+      "how": "The capital Seowon is the first district."
+    },
+    {
+      "id": "civic:early-empire",
+      "fit": "free",
+      "when": "execute",
+      "how": "Six population across the first three cities."
+    },
+    {
+      "id": "civic:mysticism",
+      "fit": "cheap",
+      "when": "execute",
+      "how": "The pantheon from God King's Faith."
+    },
+    {
+      "id": "civic:political-philosophy",
+      "fit": "cheap",
+      "when": "execute",
+      "how": "Three city-states met by the Scout."
+    },
+    {
+      "id": "civic:recorded-history",
+      "fit": "free",
+      "when": "execute",
+      "how": "Two Seowons; city two's is its first district."
+    },
+    {
+      "id": "civic:games-and-recreation",
+      "fit": "free",
+      "when": "execute",
+      "how": "Researching Construction for the Water Mill."
+    },
+    {
+      "id": "civic:drama-and-poetry",
+      "fit": "costly",
+      "when": "execute",
+      "how": "Any wonder finished before this civic; the Great Library needs Recorded History, which needs Drama and Poetry first, so it cannot give this Inspiration. Usually unboosted."
+    },
+    {
+      "id": "civic:defensive-tactics",
+      "fit": "costly",
+      "when": "execute",
+      "how": "Only if a neighbour declares war on you."
+    },
+    {
+      "id": "civic:theology",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:military-training",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:feudalism",
+      "fit": "cheap",
+      "when": "peak",
+      "how": "Six Farms, half of them on ring flats."
+    },
+    {
+      "id": "civic:civil-service",
+      "fit": "cheap",
+      "when": "peak",
+      "how": "The capital at ten population on ring Farms."
+    },
+    {
+      "id": "civic:guilds",
+      "fit": "cheap",
+      "when": "peak",
+      "how": "Markets in the two Commercial Hubs."
+    },
+    {
+      "id": "civic:diplomatic-service",
+      "fit": "cheap",
+      "when": "peak",
+      "how": "An alliance with the friendliest neighbour, a Research Alliance by choice."
+    },
+    {
+      "id": "civic:humanism",
+      "fit": "costly",
+      "when": "live",
+      "how": "A Great Artist only if the capital Theater Square has an Amphitheater."
+    },
+    {
+      "id": "civic:the-enlightenment",
+      "fit": "free",
+      "when": "live",
+      "how": "Three Great Scientists by the Renaissance."
+    },
+    {
+      "id": "civic:exploration",
+      "fit": "costly",
+      "when": "live",
+      "how": "Two Caravels only on a coastal map; usually unboosted."
+    },
+    {
+      "id": "civic:urbanization",
+      "fit": "cheap",
+      "when": "live",
+      "how": "The capital at fifteen population with its Aqueduct."
+    },
+    {
+      "id": "civic:colonialism",
+      "fit": "free",
+      "when": "live",
+      "how": "Astronomy was researched for the Mountain Seowon."
+    },
+    {
+      "id": "civic:scorched-earth",
+      "fit": "cheap",
+      "when": "live",
+      "how": "Two Hwacha kept from the border defence count as Field Cannons."
+    },
+    {
+      "id": "civic:class-struggle",
+      "fit": "cheap",
+      "when": "live",
+      "how": "Three Factories, which means a third Industrial Zone off every ring; a Factory can only be built in an Industrial Zone."
+    },
+    {
+      "id": "civic:nuclear-program",
+      "fit": "free",
+      "when": "launch",
+      "how": "The first Research Lab in a Seowon."
+    },
+    {
+      "id": "civic:space-race",
+      "fit": "free",
+      "when": "launch",
+      "how": "The first Spaceport."
+    }
   ],
   "decision_triggers": [
     {

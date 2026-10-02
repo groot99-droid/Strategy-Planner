@@ -19,7 +19,7 @@
     "secondary": "Domination",
     "confidence": "medium",
     "one_line": "Settle wide, give every city a Commercial Hub and a Hansa before it has the population to deserve them, decide by turn 60 whether the extra Military slot buys a city-state and a neighbour or just the escorts, and point the Production at Campuses and a Spaceport.",
-    "why": "Free Imperial Cities lets a German city build one district more than its population allows, and the Hansa is the cheapest and best-placed Production district in the game, so a four-population German city can already hold a Commercial Hub, a Hansa and a Campus while a rival city of the same size holds one district. That is Production and district count, and neither points anywhere by itself; the Production has to be spent on something that ends the game. Science is the default because a Hansa in every city builds Campuses, Universities and the three Spaceport projects faster than any other kit, and nothing in it expires. Domination is the second direction and not Culture because the extra Military policy slot and the +7 against city-states are real from turn one, a weak city-state within reach is a free second city, and the same Hansas then build the siege line. Nothing German makes Great Works or Tourism cheaper."
+    "why": "Free Imperial Cities lets a German city build one district more than its population allows, and the Hansa is the cheapest and best-placed Production district in the game, so a four-population German city can already hold a Commercial Hub, a Hansa and a Campus while a rival city of the same size holds two districts. That is Production and district count, and neither points anywhere by itself; the Production has to be spent on something that ends the game. Science is the default because a Hansa in every city builds Campuses, Universities and the three Spaceport projects faster than any other kit, and nothing in it expires. Domination is the second direction and not Culture because the extra Military policy slot and the +7 against city-states are real from turn one, a weak city-state within reach is a free second city, and the same Hansas then build the siege line. Nothing German makes Great Works or Tourism cheaper."
   },
   "map_check": {
     "must_have": [
@@ -32,7 +32,7 @@
       "Hattusa or Johannesburg on the map; strategic resources and Production per improved resource type both multiply through many cities."
     ],
     "no_go": "A small island or a start boxed in to three cities. The extra district and the Hansa are paid per city, and three cities is three Hansas and a kit that has finished growing by turn 80.",
-    "fallback": "If the land runs out early, take the Domination direction at turn 60: the nearest city-state falls to four Warriors and two Archers at 44 effective strength, and a neighbour's cities become German cities with their own extra district the turn they are captured."
+    "fallback": "If the land runs out early, take the Domination direction at turn 60: the nearest city-state falls to four Warriors and two Archers attacking at 27 and 32 with the +7, and a neighbour's cities become German cities with their own extra district the turn they are captured."
   },
   "kit_levers": [
     {
@@ -130,6 +130,10 @@
         {
           "item": "Monument",
           "why": "Only in the capital, after the second Settler; the Culture pays Political Philosophy by turn 55."
+        },
+        {
+          "item": "Trader",
+          "why": "Foreign Trade's first route, domestic to the second city, for the Currency Eureka before the capital Commercial Hub."
         }
       ],
       "research": [
@@ -148,6 +152,10 @@
         {
           "id": "tech:writing",
           "note": "The Scout meets a rival; the Campus is the Science direction."
+        },
+        {
+          "id": "tech:currency",
+          "note": "The Commercial Hub unlocks here, so it is researched in this phase; Eureka from the first Trader's route."
         },
         {
           "id": "tech:wheel",
@@ -207,13 +215,13 @@
           "card": "Agoge",
           "slot": "military",
           "from": "civic:craftsmanship",
-          "why": "Warriors, Slingers and Archers at half cost; the city-state option is built on it."
+          "why": "Warriors, Slingers and Archers half again as fast; the city-state option is built on it."
         },
         {
           "card": "Colonization",
           "slot": "economic",
           "from": "civic:early-empire",
-          "why": "Settlers at half cost until seven cities stand."
+          "why": "Settlers half again as fast until seven cities stand."
         }
       ],
       "districts": [
@@ -263,7 +271,7 @@
         },
         {
           "id": "found-two-slots",
-          "turn": 3,
+          "turn": 10,
           "text": "Fill both Military slots the turn Code of Laws lands; an empty slot is the ability unused."
         },
         {
@@ -274,7 +282,7 @@
         {
           "id": "found-second-city",
           "turn": 18,
-          "text": "Second city founded on a river with hills; queue a Commercial Hub at one population to prove the extra district works."
+          "text": "Second city founded on a river with hills; queue a Commercial Hub at one population the turn Currency lands, to prove the extra district works."
         },
         {
           "id": "found-city-state-decision",
@@ -308,7 +316,7 @@
         },
         {
           "item": "Trader",
-          "why": "Currency Eureka; a domestic route to the capital carries Production from the Hansa city."
+          "why": "A second route; a domestic route to the capital carries Production from the Hansa city."
         },
         {
           "item": "Campus",
@@ -332,10 +340,6 @@
         }
       ],
       "research": [
-        {
-          "id": "tech:currency",
-          "note": "First Trade Route gives the Eureka; Commercial Hubs come before Hansas."
-        },
         {
           "id": "tech:iron-working",
           "note": "An Iron Mine gives the Eureka; Swordsmen on the Domination direction."
@@ -402,7 +406,7 @@
           "card": "Classical Republic",
           "slot": "wildcard",
           "from": "civic:political-philosophy",
-          "why": "Science direction: Amenities and Great Person points for seven cities, and still two Military slots."
+          "why": "Science direction: Amenities and Great Person points for seven cities, and still one Military slot beside the Wildcard."
         },
         {
           "card": "Conscription",
@@ -453,12 +457,12 @@
         {
           "name": "Pyramids",
           "why": "An extra charge on every Builder across seven cities' Mines.",
-          "skip_if": "No desert or floodplain tile near the capital, or a rival has Masonry well before you."
+          "skip_if": "No desert or desert floodplains tile near the capital, or a rival has Masonry well before you."
         },
         {
           "name": "Colosseum",
           "why": "Amenities and Culture to every city within six tiles of a dense German core.",
-          "skip_if": "The capital is not central, or Construction lands after turn 95."
+          "skip_if": "The capital is not central, or Games and Recreation lands after turn 95."
         }
       ],
       "governors": [
@@ -478,7 +482,7 @@
       "city_states": [
         {
           "slug": "hattusa",
-          "why": "Two of every unrevealed strategic resource per turn; Iron for Swordsmen and Niter later without a Mine."
+          "why": "Two of every revealed but unimproved strategic resource per turn; Iron for Swordsmen and Niter later without a Mine."
         },
         {
           "type": "Scientific",
@@ -678,7 +682,7 @@
           "card": "Feudal Contract",
           "slot": "military",
           "from": "civic:feudalism",
-          "why": "The spare Military slot builds Crossbowmen and Pikemen at half cost for the garrison or the war."
+          "why": "The spare Military slot builds Crossbowmen and Pikemen half again as fast for the garrison or the war."
         },
         {
           "card": "Merchant Republic",
@@ -878,6 +882,10 @@
           "note": "Two Banks; Stock Exchanges."
         },
         {
+          "id": "tech:chemistry",
+          "note": "Alliance level 2; Research Labs."
+        },
+        {
           "id": "tech:sanitation",
           "note": "Two Neighborhoods; Housing past the Aqueducts."
         },
@@ -942,12 +950,6 @@
           "slot": "military",
           "from": "civic:nationalism",
           "why": "Domination direction: Bombards and Cuirassiers faster in the spare Military slot."
-        },
-        {
-          "card": "Five-Year Plan",
-          "slot": "economic",
-          "from": "civic:class-struggle",
-          "why": "Hansa and Campus adjacency doubled once Class Struggle lands; it replaces Craftsmen."
         }
       ],
       "districts": [
@@ -1095,10 +1097,6 @@
           "note": "Ruhr Valley gives the Eureka; Aerodromes."
         },
         {
-          "id": "tech:chemistry",
-          "note": "Alliance level 2; Research Labs."
-        },
-        {
           "id": "tech:plastics",
           "note": "An Oil Well; Oil for Power and Tanks."
         },
@@ -1159,6 +1157,12 @@
           "slot": "economic",
           "from": "civic:cultural-heritage",
           "why": "Culture direction: Tourism from Great Works doubled."
+        },
+        {
+          "card": "Five-Year Plan",
+          "slot": "economic",
+          "from": "civic:class-struggle",
+          "why": "Hansa and Campus adjacency doubled once Class Struggle lands; it replaces Craftsmen."
         }
       ],
       "districts": [
@@ -1276,7 +1280,7 @@
     {
       "id": "tech:currency",
       "fit": "free",
-      "when": "hansa",
+      "when": "found",
       "how": "The first Trader runs a domestic route to the second city."
     },
     {
@@ -1355,7 +1359,7 @@
       "id": "tech:castles",
       "fit": "free",
       "when": "compound",
-      "how": "Any Tier 2 government at Medieval Faires or Divine Right."
+      "how": "Any Tier 2 government at Exploration or Divine Right."
     },
     {
       "id": "tech:banking",
@@ -1486,7 +1490,7 @@
     {
       "id": "tech:chemistry",
       "fit": "cheap",
-      "when": "close",
+      "when": "industrial",
       "how": "Alliance level 2 with the Diplomatic Service ally."
     },
     {
@@ -1764,7 +1768,7 @@
     {
       "name": "City-state in reach",
       "if": "At turn 30 a city-state within eight tiles has no Walls and no suzerain with an army nearby.",
-      "then": "Take it: four Warriors and two Archers under Discipline and Agoge attack at an effective 44, and it is a second city with its own extra district by turn 45. Send no envoys there first; they are lost on the declaration."
+      "then": "Take it: four Warriors and two Archers built under Agoge attack at 27 and 32 with the +7, and it is a second city with its own extra district by turn 45. Send no envoys there first; they are lost on the declaration."
     },
     {
       "name": "Neighbour in Swordsman range",

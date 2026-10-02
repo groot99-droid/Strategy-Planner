@@ -110,7 +110,7 @@
         "to": 20
       },
       "era": "ancient",
-      "objective": "Settle among the features, pin the capital's cluster, declare the no-chop rule, audit and draw cities two through six, found the pantheon, and have the second Settler out and the Theater Square queued on its Woods by turn 20. The twenty turns that decide how many districts this empire will ever have.",
+      "objective": "Settle among the features, pin the capital's cluster, declare the no-chop rule, audit and draw cities two through six, found the pantheon, and have the second Settler out and the Holy Site queued on its Woods by turn 20. The twenty turns that decide how many districts this empire will ever have.",
       "build_order": [
         {
           "item": "Scout",
@@ -137,8 +137,8 @@
           "why": "Archery from a barbarian kill, then an Archer on the forest tile beside the capital."
         },
         {
-          "item": "Theater Square",
-          "why": "First district, on the pinned Woods beside the center; State Workforce fires and the Amphitheater is the first Culture building."
+          "item": "Holy Site",
+          "why": "First district, on its pinned Woods; State Workforce fires and the Shrine is the first Faith building. The Theater Square waits for Drama and Poetry."
         },
         {
           "item": "Settler",
@@ -203,9 +203,9 @@
       ],
       "districts": [
         {
-          "district": "theater-square",
+          "district": "holy-site",
           "city": "capital",
-          "note": "First district, on the pinned Woods adjacent to the center; every building in it gives an extra Culture."
+          "note": "First district, on its pinned Woods; the Theater Square needs Drama and Poetry, so the Holy Site comes first and every building in it gives an extra Culture."
         }
       ],
       "pantheon": {
@@ -231,9 +231,9 @@
         },
         {
           "turn": 20,
-          "test": "Second Settler out toward an audited site, Theater Square queued on its Woods, the pantheon founded or one turn away, and cities two through six drawn with their clusters?",
+          "test": "Second Settler out toward an audited site, Holy Site queued on its Woods, the pantheon founded or one turn away, and cities two through six drawn with their clusters?",
           "pass": "Enter the delta phase and follow the map.",
-          "fail": "No map yet: draw it this turn. Theater Square queued on a non-feature tile: it cannot be, the game refuses; if it is queued on the Rainforest meant for the Campus, cancel it and move it to the Woods."
+          "fail": "No map yet: draw it this turn. Holy Site queued on a non-feature tile: it cannot be, the game refuses; if it is queued on the Rainforest meant for the Campus, cancel it and move it to the Woods."
         }
       ],
       "tasks": [
@@ -263,9 +263,9 @@
           "text": "Found Sacred Path, or Earth Goddess if the features are Woods on hills, or Lady of the Reeds and Marshes if the capital holds three or more Marsh."
         },
         {
-          "id": "assess-theater-square",
+          "id": "assess-holy-site",
           "turn": 20,
-          "text": "Theater Square placed on its pinned Woods; the Amphitheater is queued behind it."
+          "text": "Holy Site placed on its pinned Woods; the Shrine is queued behind it. The Theater Square waits for Drama and Poetry."
         }
       ]
     },
@@ -315,7 +315,7 @@
       "research": [
         {
           "id": "tech:masonry",
-          "note": "A Quarry if Stone is on an unpinned hill; Ancient Walls are a City Center building and wait for Engineering."
+          "note": "A Quarry if Stone is on an unpinned hill; it also unlocks the Ancient Walls built later for the Engineering Eureka."
         },
         {
           "id": "tech:currency",
@@ -349,7 +349,7 @@
       "civics": [
         {
           "id": "civic:state-workforce",
-          "note": "Free from the capital Theater Square."
+          "note": "Free from the capital Holy Site."
         },
         {
           "id": "civic:early-empire",
@@ -514,7 +514,7 @@
         {
           "id": "delta-city-two-three",
           "turn": 25,
-          "text": "Cities two and three settled on audited sites; Theater Square pinned on Woods and queued in each the turn it is founded."
+          "text": "Cities two and three settled on audited sites; Theater Square pinned on Woods in each and queued the turn Drama and Poetry lands."
         },
         {
           "id": "delta-capital-campus",
@@ -963,7 +963,7 @@
       "great_people": [
         {
           "class": "great-musician",
-          "why": "Broadcast Centers hold them; three Great Works of Music is a themed Tourism source."
+          "why": "Broadcast Centers hold one each; a Great Work of Music is the most Tourism per slot."
         },
         {
           "class": "great-artist",
@@ -1023,7 +1023,7 @@
       "build_order": [
         {
           "item": "Rock Band",
-          "why": "Bought with Faith in the Holy Site cities; sent at the civ with the most domestic Tourists."
+          "why": "Bought with Faith in the Theater Square cities; sent at the civ with the most domestic Tourists."
         },
         {
           "item": "Broadcast Center",
@@ -1083,7 +1083,7 @@
           "card": "Heritage Tourism",
           "slot": "economic",
           "from": "civic:cultural-heritage",
-          "why": "Doubles Tourism from Great Works, which is most of this empire's Tourism beside the Thành."
+          "why": "Doubles Tourism from Great Works of Art and Artifacts, which is most of this empire's Tourism beside the Thành."
         },
         {
           "card": "Online Communities",
@@ -1453,7 +1453,7 @@
       "id": "civic:state-workforce",
       "fit": "free",
       "when": "delta",
-      "how": "The capital Theater Square, the first district."
+      "how": "The capital Holy Site, the first district."
     },
     {
       "id": "civic:early-empire",
@@ -1477,7 +1477,7 @@
       "id": "civic:drama-and-poetry",
       "fit": "cheap",
       "when": "delta",
-      "how": "Apadana or Chichen Itza."
+      "how": "Apadana, finished before the civic; Chichen Itza is a Guilds wonder and comes far too late for it."
     },
     {
       "id": "civic:games-and-recreation",

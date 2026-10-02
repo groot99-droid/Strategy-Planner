@@ -85,7 +85,7 @@
         "to": 70
       },
       "staging": [
-        "Four Varu standing (Horseback Riding by turn 45, God of the Forge and Agoge on the Encampment city) and parked two tiles from the target's border, out of its sight.",
+        "Four Varu standing (Horseback Riding by turn 45, God of the Forge and Maneuver on the Encampment city) and parked two tiles from the target's border, out of its sight.",
         "Two Swordsmen or Warriors with a Battering Ram stacked beside them: Varu cannot carry the Ram, and an Emperor capital has Ancient Walls by turn 60 more often than not.",
         "Two Archers behind the Varu for the garrison and for finishing units the elephants wound.",
         "The target scouted this turn: its capital or nearest city within two Varu moves of your border, its Walls status, its defenders, and whether a second city is within reach for the same ten turns.",
@@ -170,7 +170,7 @@
         },
         {
           "id": "civic:craftsmanship",
-          "note": "First step on the gate path; Agoge for Varu, Archers and Swordsmen. Inspiration from three improved tiles."
+          "note": "First step on the gate path; Agoge for Archers and Swordsmen. Inspiration from three improved tiles."
         },
         {
           "id": "civic:military-tradition",
@@ -485,7 +485,7 @@
         },
         {
           "item": "Commercial Hub",
-          "why": "Capital; the Trade Route pays Currency and the Market pays the post-war upgrades."
+          "why": "Capital, once Currency is in; a second Trade Route, and the Market pays the post-war upgrades."
         }
       ],
       "research": [
@@ -762,7 +762,7 @@
           "card": "Monarchy",
           "slot": "wildcard",
           "from": "civic:divine-right",
-          "why": "The government: Housing from Walls and two Wildcard slots beside the two Military ones for Limitanei and Retainers."
+          "why": "The government: Housing from Walls and three Military slots for Limitanei, Retainers and Professional Army."
         },
         {
           "card": "Retainers",
@@ -1107,7 +1107,7 @@
       "id": "tech:currency",
       "fit": "free",
       "when": "strike",
-      "how": "The first Trader from the capital's Commercial Hub."
+      "how": "The first Trader on the route Foreign Trade opens, before any Commercial Hub, which needs Currency."
     },
     {
       "id": "tech:construction",

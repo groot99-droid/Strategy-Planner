@@ -317,7 +317,7 @@
         },
         {
           "item": "Library",
-          "why": "Both Campuses; the Recorded History Inspiration and the Great Scientist that is the Education Eureka."
+          "why": "Both Campuses; Divine Spark's Great Scientist point and the Great Scientist that is the Education Eureka."
         },
         {
           "item": "Trader",
@@ -410,12 +410,12 @@
         {
           "district": "theater-square",
           "city": "court city",
-          "note": "The first Theater Square in the empire; mountain or wonder-site adjacency if the tile allows, but never a tile farther from the targets."
+          "note": "The first Theater Square in the empire; wonder-site or district adjacency if the tile allows, but never a tile farther from the targets."
         },
         {
           "district": "campus",
           "city": "capital and second city",
-          "note": "Libraries by turn 80 for Recorded History and the Great Scientist."
+          "note": "Libraries by turn 80 for Divine Spark and the Great Scientist."
         },
         {
           "district": "commercial-hub",
@@ -429,13 +429,13 @@
           "governor": "magnus",
           "promotion": "Provision",
           "city": "capital",
-          "why": "The first Governor Title: Settlers from the capital without losing Population."
+          "why": "The first two Governor Titles, appointment then Provision: Settlers from the capital without losing Population."
         },
         {
           "governor": "pingala",
           "promotion": "Librarian",
           "city": "court city",
-          "why": "The second title, appointed by turn 75: a Governor's Loyalty in the city the rival's citizens pull on, and +15% Culture where the Theater Square is."
+          "why": "The third title, appointed by turn 75: a Governor's Loyalty in the city the rival's citizens pull on, and +15% Culture where the Theater Square is."
         }
       ],
       "city_states": [
@@ -486,7 +486,7 @@
         {
           "id": "build-pingala",
           "turn": 72,
-          "text": "Appoint Pingala in the court city with the second Governor Title."
+          "text": "Appoint Pingala in the court city with the third Governor Title."
         },
         {
           "id": "build-amphitheater",
@@ -558,7 +558,7 @@
         },
         {
           "id": "tech:military-engineering",
-          "note": "Aqueducts for the court city's growth; Eureka from the capital Aqueduct."
+          "note": "Military Engineers; Eureka from the capital Aqueduct."
         },
         {
           "id": "tech:castles",
@@ -646,13 +646,13 @@
           "governor": "pingala",
           "promotion": "Grants",
           "city": "court city",
-          "why": "Promoted by turn 110: doubled Great Person points in the court city, so its Amphitheater's Writer points double."
+          "why": "Promoted through Connoisseur to Grants by turn 110: doubled Great Person points in the court city, so its Amphitheater's Writer points double."
         },
         {
           "governor": "victor",
           "promotion": "Redoubt",
           "city": "second court city",
-          "why": "The third title: a Governor's Loyalty in the second border city and a stronger garrison while the rival still has Knights."
+          "why": "The title after Grants: a Governor's Loyalty in the second border city and a stronger garrison while the rival still has Knights."
         }
       ],
       "city_states": [
@@ -871,7 +871,7 @@
       "city_states": [
         {
           "slug": "kumasi",
-          "why": "Kept: Culture on the court city's Trade Routes grows with each Theater Square building."
+          "why": "Kept: Culture on the court city's Trade Routes grows with each specialty district in the court city."
         },
         {
           "slug": "antananarivo",
@@ -955,7 +955,7 @@
         },
         {
           "item": "Bolshoi Theatre",
-          "why": "Capital: an Industrial wonder at a fifth off with doubled Tourism, and the Flight Eureka if the Hermitage was skipped."
+          "why": "A court city, on flat land beside its Theater Square as the wonder requires: an Industrial wonder at a fifth off with doubled Tourism, and the Flight Eureka if the Hermitage was skipped."
         },
         {
           "item": "Broadcast Center",
@@ -1060,12 +1060,12 @@
         {
           "name": "Bolshoi Theatre",
           "why": "Industrial, discounted and doubled by Grand Tour; a Tourism wonder that also covers the Flight Eureka.",
-          "skip_if": "Opera and Ballet lands after turn 200, or a Culture rival already has it under way."
+          "skip_if": "Opera and Ballet lands after turn 200, or a Culture rival already has it under way, or no court city has a flat tile beside its Theater Square."
         },
         {
           "name": "Eiffel Tower",
-          "why": "+2 Appeal on every tile in the empire, so every National Park and Château pays more, and its Tourism is doubled.",
-          "skip_if": "Steel arrives after turn 240, or the capital is still finishing the Bolshoi Theatre."
+          "why": "+2 Appeal on every tile in the empire, so every National Park pays more, and its Tourism is doubled.",
+          "skip_if": "Steel arrives after turn 240, or the Bolshoi Theatre is still being finished."
         }
       ],
       "governors": [

@@ -30,7 +30,7 @@
       "Hills or Woods on the approach, since the block moves one tile a turn anyway and the cover protects it from Slingers.",
       "Stone or a strategic resource beside a hill ring for the Oppidum's adjacency.",
       "Two Barbarian camps within reach; Gaesatae fight Barbarian Spearmen and Swordsmen at a bonus and the camps pay Military Tradition and Bronze Working.",
-      "Chocolate Hills or Gobustan: four mineable tiles in one place is a Culture city from turn 30."
+      "Chocolate Hills, four mineable tiles in one place, or Gobustan, three Culture tiles: either is a Culture city from turn 30."
     ],
     "no_go": "An island or peninsula start with no land neighbour, or flat grassland with no hill within three tiles of the capital. The first denies the window; the second denies the Mines that make Gaul different from a Warrior rush.",
     "fallback": "If no capital is within reach by turn 12, settle three hill cities, mine every hill, build Oppida at Iron Working and play Gaul as a Culture civilization: Theater Squares two tiles out beside the Mines, Monuments bought with the unit Culture, and a Domination deadline moved to the Medieval era against a city-state or a second-ring neighbour with Men-At-Arms in the same block."
@@ -40,7 +40,7 @@
       "source": "leader_ability",
       "name": "King of the Eburones",
       "buys": "Culture equal to a fifth of the Production cost of every non-civilian unit trained, and +2 Combat Strength for melee, anti-cavalry and ranged units per adjacent friendly combat unit.",
-      "exploit": "Two levers in one. The Culture means the arming phase is also the civic plan: six Gaesatae and two Archers are about 100 Culture, which is Military Tradition and most of Early Empire. The Strength means formation is a step, not a habit: the block moves as one, every unit ends its turn touching at least two others, and the unit that attacks is the one with the most neighbours. Cavalry and siege get neither bonus, so the army is Gaesatae, Spearmen and Archers only."
+      "exploit": "Two levers in one. The Culture means the arming phase is also the civic plan: six Gaesatae and two Archers are about 100 Culture, which is Military Tradition and most of Early Empire. The Strength means formation is a step, not a habit: the block moves as one, every unit ends its turn touching at least two others, and the unit that attacks is the one with the most neighbours. Cavalry and siege get no Strength bonus, so the army is Gaesatae, Spearmen and Archers only."
     },
     {
       "source": "civ_ability",
@@ -663,7 +663,7 @@
           "governor": "amani",
           "promotion": "Emissary",
           "city": "the captured capital",
-          "why": "Two envoys and Loyalty pressure outward in the city nearest the former owner."
+          "why": "Loyalty in the city nearest the former owner; she counts as two envoys only once moved to a city-state."
         },
         {
           "governor": "liang",
@@ -1638,7 +1638,7 @@
   ],
   "sources": [
     "Civilization VI Civilopedia, Gathering Storm ruleset with the New Frontier Pass (Gaul, Ambiorix, Gaesatae, Oppidum, King of the Eburones, Hallstatt Culture). The Oppidum is treated as the game has it: unlocked at Iron Working, with its own ranged attack and defence, and granting the Apprenticeship technology when the first one is completed.",
-    "King of the Eburones is taken as +2 Combat Strength per adjacent friendly combat unit for melee, anti-cavalry and ranged units, and Culture equal to 20% of a trained non-civilian unit's Production cost; cavalry, siege and naval units receive neither.",
+    "King of the Eburones is taken as +2 Combat Strength per adjacent friendly combat unit for melee, anti-cavalry and ranged units, and Culture equal to 20% of a trained non-civilian unit's Production cost; cavalry, siege and naval units receive only the Culture.",
     "Gathering Storm rule that Battering Rams and Siege Towers apply to melee and anti-cavalry units, which Gaesatae are.",
     "Boost objectives cross-checked against civilization6planner.com tech-tree and civics-tree pages, 2026-10-02.",
     "Leadership Focus tags, caveats and the Countdown template for Ambiorix in this repository."

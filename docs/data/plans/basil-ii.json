@@ -94,7 +94,7 @@
         "Two Missionaries bought, one on the road with a Warrior escort and one in reserve, because the first one dies to a barbarian or a theological hit about one game in three.",
         "Six Horsemen under Maneuver, their escorts under Agoge, promoted once on camps, parked in the Encampment city with a Battering Ram for any city that converts late and keeps Walls that matter.",
         "A second Holy Site city with a Shrine, so the Faith keeps buying Missionaries during the war and the Taxis Prophet points stay flowing.",
-        "Horses pastured and Iron revealed; Stirrups queued so the Horsemen upgrade to Knights in the field under Professional Army.",
+        "Horses pastured and Iron revealed; Stirrups queued so Knights join the Horsemen, which upgrade to Coursers at Castles under Professional Army, not to Knights.",
         "Oligarchy adopted, a Casus Belli available (Holy War once the target's civ has converted one of your cities, or a Formal War from a denouncement five turns old)."
       ],
       "late_gate": "If no Great Prophet by turn 70, run Holy Site Prayers in both cities without pause, keep Revelation slotted, buy the second Shrine with Gold and send Moksha to the capital; do not send Horsemen at an unconverted city in the meantime, they lose to Walls like everyone else's. If the religion exists but the target refuses to convert because a rival faith is enhanced there, switch targets to the rival's nearest city without a majority religion, or send an Apostle with Proselytizer instead of a Missionary. If the last Prophet goes to another civ, the gate is closed: adopt the religion that spreads into you, keep the cavalry for defence, and play the Dromon and Hippodrome economy toward Score or a late Domination with Cuirassiers, which do not need the gate.",
@@ -159,6 +159,10 @@
           "note": "Horsemen, the first post-gate army; Eureka from the Pasture."
         },
         {
+          "id": "tech:mining",
+          "note": "Mines for Production and the Wheel Eureka."
+        },
+        {
           "id": "tech:bronze-working",
           "note": "The Encampment the Horsemen stage in; Eureka from three barbarian kills."
         },
@@ -202,7 +206,7 @@
           "card": "Revelation",
           "slot": "wildcard",
           "from": "civic:mysticism",
-          "why": "Two Great Prophet points a turn on top of the Taxis points; the first half of the gate is a race."
+          "why": "Two Great Prophet points a turn on top of the Taxis points; the first half of the gate is a race. It is a Wildcard card and Chiefdom has no Wildcard slot, so it goes in the turn Oligarchy is adopted."
         }
       ],
       "districts": [
@@ -326,10 +330,6 @@
           "note": "One Archer per city for the floor; Eureka from the Slinger kill."
         },
         {
-          "id": "tech:mining",
-          "note": "Mines for Production and the Wheel Eureka."
-        },
-        {
           "id": "tech:wheel",
           "note": "Heavy Chariots are not the plan, but Construction and Engineering are behind it."
         },
@@ -351,7 +351,7 @@
         },
         {
           "id": "tech:stirrups",
-          "note": "Knights. Queue it so the Horsemen upgrade the turn Feudalism gives the Eureka."
+          "note": "Knights. Queue it so the first Knights start the turn Feudalism gives the Eureka; Horsemen are light cavalry and upgrade to Coursers at Castles, not to Knights."
         }
       ],
       "civics": [
@@ -520,7 +520,7 @@
         {
           "id": "prophet-stage",
           "turn": 68,
-          "text": "Six Horsemen, a Ram and the General in the forward city; denounce the target's civ so a Formal War is available at the gate check."
+          "text": "Six Horsemen, a Ram and the General in the forward city; the target's civ already denounced, by turn 65 at the latest, since a Formal War needs a denouncement five turns old at the gate check."
         }
       ]
     },
@@ -532,7 +532,7 @@
         "to": 130
       },
       "era": "medieval",
-      "objective": "Take the converted target and the cities the kill-spread converts behind it with Horsemen that become Knights and then Tagma, reach Divine Right for the Tagma and the first Hippodrome, enhance with Crusade, and hold every capture with your religion and a garrison before any rival enhances.",
+      "objective": "Take the converted target and the cities the kill-spread converts behind it with Horsemen joined by Knights and then Tagma, reach Divine Right for the Tagma and the first Hippodrome, enhance with Crusade, and hold every capture with your religion and a garrison before any rival enhances.",
       "build_order": [
         {
           "item": "Missionary",
@@ -544,7 +544,7 @@
         },
         {
           "item": "Knight",
-          "why": "Upgrade the Horsemen under Professional Army the turn Stirrups lands; new Knights only until Divine Right, then Tagma."
+          "why": "Built from the turn Stirrups lands, since Horsemen upgrade to Coursers at Castles and not to Knights; new Knights only until Divine Right, then Tagma."
         },
         {
           "item": "Tagma",
@@ -585,16 +585,16 @@
           "note": "Three Archers; Crossbowmen behind the cavalry finish defenders."
         },
         {
+          "id": "tech:construction",
+          "note": "Water Mill; Games and Recreation for the Hippodrome's Arena is behind it."
+        },
+        {
           "id": "tech:military-engineering",
           "note": "Aqueduct Eureka; Military Engineers, and Trebuchets for the rare city that flips back with Medieval Walls."
         },
         {
           "id": "tech:castles",
           "note": "Free from Monarchy, the Tier 2 government; Medieval Walls in the captures."
-        },
-        {
-          "id": "tech:construction",
-          "note": "Water Mill; Games and Recreation for the Hippodrome's Arena is behind it."
         }
       ],
       "civics": [
@@ -612,7 +612,7 @@
         },
         {
           "id": "civic:mercenaries",
-          "note": "Eight land units is the army; Professional Army for Horsemen to Knights at half price."
+          "note": "Eight land units is the army; Professional Army for Horsemen to Coursers at half price."
         },
         {
           "id": "civic:recorded-history",
@@ -638,7 +638,7 @@
           "card": "Professional Army",
           "slot": "military",
           "from": "civic:mercenaries",
-          "why": "Horsemen to Knights at half price the turn Stirrups lands."
+          "why": "Horsemen to Coursers at half price the turn Castles lands."
         },
         {
           "card": "Limitanei",
@@ -727,13 +727,13 @@
         },
         {
           "class": "great-prophet",
-          "why": "None remains after the first; the Taxis points still count toward Theology-era Great People for The Enlightenment."
+          "why": "None remains for Byzantium after the first, since a civ that has founded a religion earns no more; that one Prophet counts toward the three Great People The Enlightenment needs."
         }
       ],
       "checkpoints": [
         {
           "turn": 95,
-          "test": "First target taken, two cities behind it converted by the kill-spread, Stirrups in and the Horsemen upgraded, and Divine Right within ten turns?",
+          "test": "First target taken, two cities behind it converted by the kill-spread, Stirrups in and the first Knights built, and Divine Right within ten turns?",
           "pass": "Ride at the next converted city; Missionary ahead of any that is only half converted.",
           "fail": "Target still standing at 95 means it flipped back mid-siege or was never majority: check the lens, send the reserve Missionary, and pull the cavalry out of Walls range until it reads your colour. Divine Right far away: Monuments and Pingala; Knights carry the war until then."
         },
@@ -763,7 +763,7 @@
         {
           "id": "holywar-knights",
           "turn": 92,
-          "text": "Stirrups in with Feudalism; upgrade every Horseman to a Knight under Professional Army in the field."
+          "text": "Stirrups in with Feudalism; Knights queued in the Encampment city, and every Horseman upgraded to a Courser under Professional Army once Castles is in."
         },
         {
           "id": "holywar-tagma",
@@ -853,7 +853,7 @@
         },
         {
           "id": "civic:medieval-faires",
-          "note": "Four Trade Routes from the Markets; Triangular Trade for Gold and Faith."
+          "note": "Four Trade Routes from the Markets; Triangular Trade for Gold and Faith follows at Mercantilism."
         },
         {
           "id": "civic:reformed-church",
@@ -1423,7 +1423,7 @@
       "id": "civic:drama-and-poetry",
       "fit": "costly",
       "when": "prophet",
-      "how": "Only if Stonehenge or Mahabodhi Temple was built; usually researched plain on the Divine Right path."
+      "how": "Only if Stonehenge was built, since Mahabodhi Temple needs Theology, which comes after this civic; usually researched plain on the Divine Right path."
     },
     {
       "id": "civic:military-training",
@@ -1572,7 +1572,7 @@
     {
       "name": "Rival Holy City in reach",
       "if": "A rival's Holy City lies within eight tiles of your border and its majority can be converted by two Apostles.",
-      "then": "Convert it before anything else: a converted Holy City is +3 Combat Strength on every Byzantine unit, and taking it afterwards removes the rival's founder income and makes the next conversions permanent."
+      "then": "Convert it before anything else: a converted Holy City is +3 Combat Strength on every Byzantine unit, and taking it afterwards makes the next conversions permanent."
     },
     {
       "name": "Last Great Prophet gone",

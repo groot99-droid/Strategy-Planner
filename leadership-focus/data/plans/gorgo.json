@@ -25,7 +25,7 @@
     ],
     "prefer": [
       "A rival or city-state border within fifteen tiles, so there is something to kill when the camps close.",
-      "Gobustan or Giant's Causeway in reach: Culture on hills, or stronger Hoplites.",
+      "Gobustan or Giant's Causeway in reach: Culture on the wonder tiles, or stronger Hoplites.",
       "Pasture resources near the capital for God of the Open Sky as the alternative pantheon."
     ],
     "no_go": "A flat start with no hills within two city sites and barbarians turned off. The Acropolis has nowhere to go and the leader ability has nothing to kill; both halves of the kit are off.",
@@ -337,7 +337,7 @@
         },
         {
           "id": "civic:mysticism",
-          "note": "Free from the pantheon; Inspiration card for Great Writer points."
+          "note": "Free from the pantheon; Inspiration card for Great Scientist points."
         },
         {
           "id": "civic:military-training",
@@ -357,7 +357,7 @@
           "card": "Oligarchy",
           "slot": "wildcard",
           "from": "civic:political-philosophy",
-          "why": "Combat Strength and experience for Hoplites and Archers; the government until Monarchy."
+          "why": "Combat Strength for Hoplites and experience for every unit; the government until Monarchy."
         },
         {
           "card": "Maneuver",
@@ -369,13 +369,13 @@
           "card": "Inspiration",
           "slot": "wildcard",
           "from": "civic:mysticism",
-          "why": "The Greek extra Wildcard slot holds a Great Person card from the start; Great Writer points for the Amphitheaters."
+          "why": "The Greek extra Wildcard slot holds a Great Person card from the start; Great Scientist points for the Campuses."
         },
         {
           "card": "Colonization",
           "slot": "economic",
           "from": "civic:early-empire",
-          "why": "Hill cities at half the Settler cost."
+          "why": "Settlers for the hill cities half again as fast."
         }
       ],
       "districts": [
@@ -408,7 +408,7 @@
         {
           "name": "Apadana",
           "why": "Two envoys for every later wonder in the capital; with the Acropolis envoys it secures the Cultural city-states for the game.",
-          "skip_if": "Political Philosophy arrives after turn 55 or the capital has no coast or flat tile beside the City Center."
+          "skip_if": "Political Philosophy arrives after turn 55 or the capital has no free tile beside the City Center."
         }
       ],
       "governors": [
@@ -658,7 +658,7 @@
         },
         {
           "governor": "amani",
-          "promotion": "Emissary",
+          "promotion": "Messenger",
           "city": "a contested Cultural city-state",
           "why": "Two envoys where a rival is one short of taking suzerainty."
         }
@@ -752,7 +752,7 @@
           "why": "Two for Printing; the Science that keeps Tourism's techs on time."
         },
         {
-          "item": "Musketman",
+          "item": "Pike and Shot",
           "why": "Pikemen upgrade at Gunpowder; defence only, unless a rival sends units to kill."
         },
         {
@@ -775,7 +775,7 @@
         },
         {
           "id": "tech:gunpowder",
-          "note": "Musketmen for defence; an Armory gives it."
+          "note": "Pike and Shot for defence; an Armory gives it."
         },
         {
           "id": "tech:banking",
@@ -791,7 +791,7 @@
         },
         {
           "id": "tech:scientific-theory",
-          "note": "Free from The Enlightenment; Research Labs."
+          "note": "Free from The Enlightenment; Research Labs come later with Chemistry."
         },
         {
           "id": "tech:cartography",
@@ -851,7 +851,7 @@
           "card": "Professional Army",
           "slot": "military",
           "from": "civic:mercenaries",
-          "why": "Pikemen to Musketmen at half price; the army is a border garrison now."
+          "why": "Pikemen to Pike and Shot at half price; the army is a border garrison now."
         }
       ],
       "districts": [
@@ -874,8 +874,8 @@
       "wonders": [
         {
           "name": "Hermitage",
-          "why": "Four Great Artist slots beside a Theater Square; the Humanism line's Artists need somewhere to go.",
-          "skip_if": "No river tile beside an Acropolis, or Humanism arrives after turn 190; put the Artists in Art Museums instead."
+          "why": "Four Great Work of Art slots on a river; the Humanism line's Artists need somewhere to go.",
+          "skip_if": "No river tile in a Greek city, or Natural History arrives after turn 210; put the Artists in Art Museums instead."
         },
         {
           "name": "Kilwa Kisiwani",
@@ -894,7 +894,7 @@
           "governor": "reyna",
           "promotion": "Harbormaster",
           "city": "the coastal trade city",
-          "why": "Gold from the Harbor and Trade Routes."
+          "why": "Double adjacency Gold from the Harbor and Commercial Hub."
         }
       ],
       "city_states": [
@@ -978,7 +978,7 @@
         },
         {
           "item": "Stadium",
-          "why": "Professional Sports Inspiration and Amenities for the whole empire."
+          "why": "Unlocked by Professional Sports; Amenities for the whole empire."
         },
         {
           "item": "Naturalist",
@@ -1072,7 +1072,7 @@
         },
         {
           "name": "Cristo Redentor",
-          "why": "Tourism from Seaside Resorts and relics doubled, and Tourism unaffected by rival ideologies.",
+          "why": "Tourism from Seaside Resorts doubled, and Tourism from relics no longer drops after the Enlightenment.",
           "skip_if": "There is no coast for Resorts and no religion for relics; the wonder then does little."
         }
       ],
@@ -1267,7 +1267,7 @@
       "id": "tech:buttress",
       "fit": "cheap",
       "when": "war",
-      "how": "The Oracle, Apadana or Great Library counts."
+      "how": "The Apadana or Great Library counts; the Oracle is Ancient and does not."
     },
     {
       "id": "tech:printing",

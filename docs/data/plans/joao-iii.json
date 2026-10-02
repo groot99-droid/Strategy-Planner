@@ -28,7 +28,7 @@
     ],
     "prefer": [
       "Archipelago, Island Plates or Small Continents, where nearly every foreign city is coastal and every civilization is a contact worth a Trade Route.",
-      "Fish, Crabs or reef in the capital's rings for God of the Sea Production and the Celestial Navigation Eureka.",
+      "Fish, Crabs or other sea resources in the capital's rings for God of the Sea Production and the Celestial Navigation Eureka.",
       "Bermuda Triangle or Lysefjord within reach of the Nau routes, for movement or promotions on the ships that patrol the sea lanes.",
       "Several city-states on the coast: Open Borders with all of them makes each a Feitoria host without a treaty."
     ],
@@ -713,7 +713,7 @@
         {
           "id": "feitoria-ocean-contacts",
           "turn": 125,
-          "text": "A Nau or Caravel has crossed every ocean and met every remaining civilization; each contact's slot is filled."
+          "text": "A Nau has crossed every ocean and met every remaining civilization; each contact's slot is filled."
         },
         {
           "id": "feitoria-trade-confederation",
@@ -876,7 +876,7 @@
           "governor": "reyna",
           "promotion": "Contractor",
           "city": "the newest city",
-          "why": "Buys the Campus and Harbor outright with route Gold, so a new city joins the Science count the turn it is founded."
+          "why": "Buys the Campus and Harbor outright with route Gold, so a new city joins the Science count once she is established there."
         },
         {
           "governor": "pingala",
@@ -942,7 +942,7 @@
         {
           "id": "network-contractor",
           "turn": 185,
-          "text": "Reyna moved to the newest city with Contractor; its Campus bought the turn she arrives."
+          "text": "Reyna moved to the newest city with Contractor; its Campus bought the turn she is established."
         },
         {
           "id": "network-host-audit",
@@ -1066,7 +1066,7 @@
         },
         {
           "type": "Industrial",
-          "why": "Production in the capital and every Factory for the Spaceport city's projects."
+          "why": "Production in every Factory for the Spaceport city's projects, and in the capital toward its buildings and districts."
         }
       ],
       "great_people": [
@@ -1088,7 +1088,7 @@
         },
         {
           "turn": 290,
-          "test": "Moon Landing done and the Mars projects underway, with Science per turn first or second?",
+          "test": "Moon Landing done and the Mars Colony underway, with Science per turn first or second?",
           "pass": "Continue to the end; keep the audit running so the Gold does not stop.",
           "fail": "If two rivals are ahead in launches, switch to Diplomatic: buy Diplomatic Favor from the AIs with route Gold and vote for Favor on every resolution."
         }

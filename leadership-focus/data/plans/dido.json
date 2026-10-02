@@ -48,7 +48,7 @@
       "source": "unique_unit",
       "name": "Bireme",
       "buys": "A faster, stronger Galley that keeps nearby Traders from being plundered and is cheaper to build.",
-      "exploit": "Two Biremes clear the coastal camps for Bronze Working and Military Tradition, trigger the Shipbuilding Eureka by existing, and then escort the Settlers and Traders along the coast. One Bireme beside a Trader is the whole anti-plunder plan."
+      "exploit": "Two Biremes kill the coastal camps' units for Bronze Working while the Slinger steps onto the emptied camp for Military Tradition, trigger the Shipbuilding Eureka by existing, and then escort the Settlers and Traders along the coast. One Bireme beside a Trader is the whole anti-plunder plan."
     },
     {
       "source": "unique_infrastructure",
@@ -135,7 +135,7 @@
       "research": [
         {
           "id": "tech:sailing",
-          "note": "Free Eureka from the coastal capital; Biremes and embarked Settlers."
+          "note": "Free Eureka from the coastal capital; Biremes, and the road to Shipbuilding, which lets Settlers embark."
         },
         {
           "id": "tech:writing",
@@ -191,7 +191,7 @@
           "card": "Colonization",
           "slot": "economic",
           "from": "civic:early-empire",
-          "why": "Settlers at half the cost on top of the Cothon bonus; the pump."
+          "why": "Settlers half again as fast on top of the Cothon bonus; the pump."
         }
       ],
       "districts": [
@@ -251,7 +251,7 @@
         {
           "id": "setup-first-camp",
           "turn": 22,
-          "text": "Clear the nearest coastal camp with the Biremes for Bronze Working and Military Tradition."
+          "text": "Clear the nearest coastal camp with the Biremes for Bronze Working, the Slinger stepping onto it for Military Tradition."
         },
         {
           "id": "setup-third-city",
@@ -310,7 +310,7 @@
         },
         {
           "id": "tech:shipbuilding",
-          "note": "Free Eureka from two Biremes; embarked Settlers cross ocean and the Mediterranean Colonies bonus carries them."
+          "note": "Free Eureka from two Biremes; embarked Settlers cross coast and lake water and the Mediterranean Colonies bonus carries them."
         },
         {
           "id": "tech:masonry",
@@ -356,7 +356,7 @@
         },
         {
           "id": "civic:military-tradition",
-          "note": "Inspiration from the first camp the Biremes cleared; it unlocks nothing the plan needs beyond the path."
+          "note": "Inspiration from the first camp the Biremes emptied and the Slinger took; it unlocks nothing the plan needs beyond the path."
         },
         {
           "id": "civic:recorded-history",
@@ -684,7 +684,7 @@
         {
           "name": "Venetian Arsenal",
           "why": "Two ships for one; the overseas crossing needs escorts and the Great Admiral points are free.",
-          "skip_if": "Mass Production lands after turn 150, or no war threatens the crossing."
+          "skip_if": "Mass Production lands after turn 150, no coastal city has an Industrial Zone to place it beside, or no war threatens the crossing."
         }
       ],
       "governors": [
@@ -692,7 +692,7 @@
           "governor": "amani",
           "promotion": "Emissary",
           "city": "the first overseas city",
-          "why": "Loyalty from a Governor and envoys toward the nearest city-state; she moves to whichever overseas city is amber."
+          "why": "Loyalty from an established Governor; she moves to whichever overseas city is amber."
         },
         {
           "governor": "victor",
@@ -872,7 +872,7 @@
       "policies": [
         {
           "card": "Colonial Offices",
-          "slot": "diplomatic",
+          "slot": "economic",
           "from": "civic:colonialism",
           "why": "Growth and Loyalty in cities off the capital's continent, whichever continent that is after turn 200."
         },
@@ -936,7 +936,7 @@
           "governor": "reyna",
           "promotion": "Harbormaster",
           "city": "the best Cothon city",
-          "why": "Doubled Cothon adjacency Gold and cheaper tile purchases in a coastal empire."
+          "why": "Doubled Cothon adjacency Gold and faster border growth from Land Acquisition in a coastal empire."
         }
       ],
       "city_states": [
@@ -1086,7 +1086,7 @@
         },
         {
           "card": "Colonial Offices",
-          "slot": "diplomatic",
+          "slot": "economic",
           "from": "civic:colonialism",
           "why": "Loyalty and growth off the capital's continent until the end."
         },
@@ -1334,7 +1334,7 @@
       "id": "tech:buttress",
       "fit": "cheap",
       "when": "overseas",
-      "how": "The Great Lighthouse or Colossus from the home-coast phase."
+      "how": "The Colossus from the home-coast phase; the Great Lighthouse is Ancient and does not count."
     },
     {
       "id": "tech:printing",
@@ -1430,7 +1430,7 @@
       "id": "civic:military-tradition",
       "fit": "free",
       "when": "home-coast",
-      "how": "The first coastal camp cleared by the Biremes."
+      "how": "The first coastal camp emptied by the Biremes and taken by the Slinger."
     },
     {
       "id": "civic:state-workforce",

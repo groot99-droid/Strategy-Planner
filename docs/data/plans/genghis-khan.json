@@ -23,7 +23,7 @@
   },
   "map_check": {
     "must_have": [
-      "Horses within the first two cities' borders by turn 30, mined or pastured; Horsemen, Knights and the Ordu's unit line all need them.",
+      "Horses within the first two cities' borders by turn 30, pastured; Horsemen need them, and the Knights after them need Iron.",
       "A rival capital within Trade Route range (15 tiles by land in the Ancient era) so the route can be running before the first Horsemen are built."
     ],
     "prefer": [
@@ -87,11 +87,11 @@
       "staging": [
         "The Trader dispatched to the target's nearest city and the route confirmed running; the Trading Post appears the turn it starts under Örtöö.",
         "Delegation sent and, when offered, Embassies exchanged with the target, so the visibility gap is two levels before Walls appear.",
-        "An Encampment with an Ordu in the city nearest the target and four Horsemen trained there, plus one Battering Ram.",
-        "Horses improved and showing at least four per turn in the resource bar; Horsemen and Knights draw from the stockpile.",
+        "An Encampment with an Ordu in the city nearest the target and four Horsemen trained there, plus one Battering Ram and a Warrior or Swordsman to use it, since cavalry cannot.",
+        "Horses improved and showing at least four per turn in the resource bar; Horsemen draw from the stockpile.",
         "The target scouted: no Ancient Walls on its nearest city, no more than two Spearmen, and a cavalry civ if one is within reach.",
         "A denouncement five turns old for a Formal War, or a Casus Belli, so grievances do not pull a third civ in.",
-        "A Great General within reach of the Ordu city; Horsemen with +5 and +1 Movement from a General and the Ordu are at 7 Movement with roads."
+        "A Great General within reach of the Ordu city; Horsemen with +5 and +1 Movement from a General and the Ordu are at 6 Movement."
       ],
       "late_gate": "If the gate is twenty turns late (no running route to the target by turn 70), the cause is one of three things. No Trader: Foreign Trade was delayed, so slot Culture in the capital and buy the Trader with Gold the turn the civic lands. The route cannot reach: settle a city toward the target or build a Commercial Hub in the nearest one so a shorter route exists. The Trader was plundered: send it with a Horseman escort along the road. In the meantime keep the Ordu training Horsemen for barbarians only, clear every camp between you and the target so the road is safe for the next Trader, and do not declare; a war without the visibility bonus is a war at plus three. If the gate is still shut by Stirrups, open it against the second-nearest rival instead and fight the first with Keshigs later.",
       "closing_window": "Parity comes in two forms. Visibility parity: once the target exchanges Embassies, places a Spy with Listening Post or forms alliances, the gap closes and the doubled bonus goes with it; check the visibility level on the target every five turns during the war and never let it reach equal. Unit parity: Pike and Shot at Metal Casting and Musketmen behind Renaissance Walls (turn 170 to 200 on Emperor) stop Knights and Keshigs cold, and the capture mechanic stops paying when rivals stop building cavalry. Every target must be taken between its Trading Post and its Renaissance Walls, and the last capital must fall before the first rival Field Cannon."
@@ -266,7 +266,7 @@
         },
         {
           "item": "Battering Ram",
-          "why": "Horsemen cannot take Walls; one Ram carried with the stack can."
+          "why": "Horsemen cannot take Walls and a Ram does not help cavalry; one Ram with a Warrior or Swordsman beside it can."
         },
         {
           "item": "Ancient Walls",
@@ -287,6 +287,10 @@
           "note": "Water Mill in a river city and the road to Currency."
         },
         {
+          "id": "tech:writing",
+          "note": "Free from meeting the rival; a Campus later for Stirrups."
+        },
+        {
           "id": "tech:currency",
           "note": "Second Trade Route; Eureka from the first route. One route per target is the rule."
         },
@@ -297,10 +301,6 @@
         {
           "id": "tech:iron-working",
           "note": "Swordsmen to hold the captures; mine the Iron Hattusa was supplying."
-        },
-        {
-          "id": "tech:writing",
-          "note": "Free from meeting the rival; a Campus later for Stirrups."
         }
       ],
       "civics": [
@@ -319,10 +319,6 @@
         {
           "id": "civic:political-philosophy",
           "note": "Oligarchy is the war government; Inspiration from three city-states met."
-        },
-        {
-          "id": "civic:military-training",
-          "note": "Inspiration from the Encampment; Strategos for the General."
         }
       ],
       "policies": [
@@ -337,12 +333,6 @@
           "slot": "economic",
           "from": "civic:early-empire",
           "why": "Third and fourth Settler cheaply while the Ordu builds horses."
-        },
-        {
-          "card": "Oligarchy",
-          "slot": "wildcard",
-          "from": "civic:political-philosophy",
-          "why": "The government: Combat Strength and experience for the whole stack."
         }
       ],
       "districts": [
@@ -436,7 +426,7 @@
         {
           "id": "stage-four-horsemen",
           "turn": 48,
-          "text": "Four Horsemen and one Battering Ram staged in the Ordu city with the General."
+          "text": "Four Horsemen, one Battering Ram and a Swordsman to use it staged in the Ordu city with the General."
         }
       ]
     },
@@ -483,7 +473,7 @@
         },
         {
           "id": "tech:engineering",
-          "note": "Free from the Ancient Walls; Rams and roads."
+          "note": "Free from the Ancient Walls; Catapults and the Aqueduct."
         },
         {
           "id": "tech:mathematics",
@@ -504,6 +494,10 @@
           "note": "Free from Construction; Entertainment later for the captures."
         },
         {
+          "id": "civic:military-training",
+          "note": "Inspiration from the Encampment; Strategos for the General."
+        },
+        {
           "id": "civic:defensive-tactics",
           "note": "Inspiration if the target declares on you first; Limitanei for the captures."
         },
@@ -513,7 +507,7 @@
         },
         {
           "id": "civic:mysticism",
-          "note": "Free from the pantheon; the road to Theology is not taken, but it is on the way to Drama for Culture."
+          "note": "Free from the pantheon; with Drama and Poetry it opens Theology, which Divine Right needs."
         }
       ],
       "policies": [
@@ -552,7 +546,7 @@
         {
           "name": "Colosseum",
           "why": "Amenities for the conquered cities within six tiles of the capital.",
-          "skip_if": "Captures are far from the capital or Games and Recreation lands after turn 90."
+          "skip_if": "Captures are far from the capital, Games and Recreation lands after turn 90, or no Entertainment Complex stands for it to be built beside."
         }
       ],
       "governors": [
@@ -566,7 +560,7 @@
           "governor": "amani",
           "promotion": "Emissary",
           "city": "capture nearest the next target",
-          "why": "Loyalty pressure on the next target's border and an envoy."
+          "why": "Loyalty in the capture nearest the next target; once it holds, assign her to a city-state, where Emissary counts as two envoys."
         }
       ],
       "city_states": [
@@ -612,7 +606,7 @@
         {
           "id": "first-war-first-city",
           "turn": 58,
-          "text": "Take the nearest city with the Ram and four Horsemen; let a Horseman make the last hit on any enemy horse unit."
+          "text": "Take the nearest city with the Ram, a Swordsman beside it and four Horsemen; let a Horseman make the last hit on any enemy horse unit."
         },
         {
           "id": "first-war-second-trader",
@@ -651,7 +645,7 @@
         },
         {
           "item": "Siege Tower",
-          "why": "Carried by a Keshig; Medieval Walls fall to Knights with one."
+          "why": "Carried by a Keshig; it works for melee and anti-cavalry units, not cavalry, so a Swordsman or Pikeman goes in with it while the Knights finish the field."
         },
         {
           "item": "Trader",
@@ -670,11 +664,11 @@
       "research": [
         {
           "id": "tech:castles",
-          "note": "Free from Oligarchy; Medieval Walls at home."
+          "note": "Free once Monarchy is adopted at Divine Right; Medieval Walls at home."
         },
         {
           "id": "tech:military-engineering",
-          "note": "Aqueduct Eureka; Siege Towers."
+          "note": "Aqueduct Eureka; Trebuchets and the Armory."
         },
         {
           "id": "tech:machinery",
@@ -719,12 +713,6 @@
           "slot": "military",
           "from": "civic:mercenaries",
           "why": "Surviving Horsemen to Knights at half price."
-        },
-        {
-          "card": "Monarchy",
-          "slot": "wildcard",
-          "from": "civic:divine-right",
-          "why": "The government for an empire of captures with Walls."
         }
       ],
       "districts": [
@@ -763,7 +751,7 @@
       "city_states": [
         {
           "slug": "akkad",
-          "why": "Full damage to Walls from melee; Knights become siege units with it."
+          "why": "Full damage to Walls from melee and anti-cavalry attacks; the Swordsmen and Pikemen in the stack break Walls the Knights cannot."
         },
         {
           "slug": "venice",
@@ -873,7 +861,7 @@
         },
         {
           "id": "tech:military-science",
-          "note": "Knight kill in the ongoing war; Cavalry replaces the Cuirassiers."
+          "note": "Knight kill in the ongoing war; Cuirassiers for the Knight upgrades."
         },
         {
           "id": "tech:printing",
@@ -1081,7 +1069,7 @@
       "id": "tech:castles",
       "fit": "free",
       "when": "horde",
-      "how": "Oligarchy is a Tier 2 government."
+      "how": "Monarchy, adopted at Divine Right, is a Tier 2 government."
     },
     {
       "id": "tech:military-engineering",

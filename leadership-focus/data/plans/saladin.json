@@ -32,19 +32,53 @@
     "fallback": "Play the Science direction without the religious half: found the religion anyway for the Worship building at a tenth of its cost and the +10% Science, Faith and Culture in every Arabian city that has it, hold the home cities with the Holy City's pressure, and spend the Madrasa Faith on Great Scientists instead of Missionaries."
   },
   "kit_levers": [
-    { "source": "leader_ability", "name": "Righteousness of the Faith", "buys": "The Worship building Arabia's religion picks can be bought by any civilization for a tenth of the normal Faith, and Arabian cities that have it get +10% Science, Faith and Culture.", "exploit": "Evangelize the Worship belief with the first Apostle, then buy the building in every Arabian city with a Temple the turn the Temple finishes. At a tenth of the cost it is the cheapest percentage bonus in the game, and taking the Wat when it is still free stacks its flat Science on top of the percentage." },
-    { "source": "civ_ability", "name": "The Last Prophet", "buys": "Arabia receives the final Great Prophet automatically when the next-to-last one is claimed, if it has not earned one already, and +1 Science for every foreign city following its religion.", "exploit": "Build no Shrine, Holy Site or Temple for the race; build one Holy Site to receive the Prophet and put everything else into Settlers and Campuses. After founding, every Missionary that converts a foreign city is permanent Science, so the Faith is aimed at neighbours' cities once home is safe." },
-    { "source": "unique_unit", "name": "Mamluk", "buys": "A Knight replacement with the Knight's Combat Strength that heals at the end of every turn, even after moving or attacking.", "exploit": "The Domination direction: five Mamluks and two Trebuchets never stop to heal, and with Crusade evangelized they fight at +10 beside cities the Missionaries have already converted. On the other directions two Mamluks clear the late camps and hold the border." },
-    { "source": "unique_infrastructure", "name": "Madrasa", "buys": "A University replacement with more Science than the University and Faith equal to the Campus district's adjacency bonus.", "exploit": "The plan's Faith engine. Campuses go beside Mountains, Geothermal Fissures and other districts from turn 20 so that each Madrasa later pays three or four Faith a turn as well as Science; that Faith buys the Worship buildings, the Missionaries and, under Theocracy on the Domination direction, the Mamluks." },
-    { "source": "agenda", "name": "Ayyubid Dynasty", "buys": "Saladin likes civilizations that have his religion's Worship building and dislikes those that follow another religion or fight his faith's followers.", "exploit": "Only matters for AI Saladin: an AI Arabia pushes its religion late into everyone's cities, so a religious civilization should treat him as the theological rival rather than a friend." }
+    {
+      "source": "leader_ability",
+      "name": "Righteousness of the Faith",
+      "buys": "The Worship building Arabia's religion picks can be bought by any civilization for a tenth of the normal Faith, and Arabian cities that have it get +10% Science, Faith and Culture.",
+      "exploit": "Evangelize the Worship belief with the first Apostle, then buy the building in every Arabian city with a Temple the turn the Temple finishes. At a tenth of the cost it is the cheapest percentage bonus in the game, and taking the Wat when it is still free stacks its flat Science on top of the percentage."
+    },
+    {
+      "source": "civ_ability",
+      "name": "The Last Prophet",
+      "buys": "Arabia receives the final Great Prophet automatically when the next-to-last one is claimed, if it has not earned one already, and +1 Science for every foreign city following its religion.",
+      "exploit": "Build no Shrine, Holy Site or Temple for the race; build one Holy Site to receive the Prophet and put everything else into Settlers and Campuses. After founding, every Missionary that converts a foreign city is permanent Science, so the Faith is aimed at neighbours' cities once home is safe."
+    },
+    {
+      "source": "unique_unit",
+      "name": "Mamluk",
+      "buys": "A Knight replacement with the Knight's Combat Strength that heals at the end of every turn, even after moving or attacking.",
+      "exploit": "The Domination direction: five Mamluks and two Trebuchets never stop to heal, and with Crusade evangelized they fight at +10 beside cities the Missionaries have already converted. On the other directions two Mamluks clear the late camps and hold the border."
+    },
+    {
+      "source": "unique_infrastructure",
+      "name": "Madrasa",
+      "buys": "A University replacement with more Science than the University and Faith equal to the Campus district's adjacency bonus.",
+      "exploit": "The plan's Faith engine. Campuses go beside Mountains, Geothermal Fissures and other districts from turn 20 so that each Madrasa later pays three or four Faith a turn as well as Science; that Faith buys the Worship buildings, the Missionaries and, under Theocracy on the Domination direction, the Mamluks."
+    },
+    {
+      "source": "agenda",
+      "name": "Ayyubid Dynasty",
+      "buys": "Saladin likes civilizations that have his religion's Worship building and dislikes those that follow another religion or fight his faith's followers.",
+      "exploit": "Only matters for AI Saladin: an AI Arabia pushes its religion late into everyone's cities, so a religious civilization should treat him as the theological rival rather than a friend."
+    }
   ],
   "shape_block": {
     "linear": {
       "direction": {
         "options": [
-          { "victory": "Science", "when_it_fits": "Five or more Campuses with +2 or better adjacency by turn 80 and two neighbours with eight or more cities between them inside Missionary reach. Madrasas turn adjacency into Science and Faith, the Faith buys Worship buildings and Missionaries, and every converted foreign city is permanent Science; nothing in the kit expires on this path." },
-          { "victory": "Religion", "when_it_fits": "The religion is founded by turn 85, the Mosque or another spread belief is still free, and no rival religion is the majority in more than two civilizations. Madrasa Faith and Theocracy buy Apostles faster than most religious AIs and Jerusalem makes every Holy Site push like a Holy City; take it only when the map has left room, because a late founder starts every theological fight behind." },
-          { "victory": "Domination", "when_it_fits": "A neighbour within ten tiles has no Walls beyond Ancient ones at turn 80, and Missionaries can convert two of its cities before Stirrups. Crusade gives +10 Combat Strength near converted foreign cities, Mamluks heal every turn so the siege never pauses, and Theocracy lets the Madrasa Faith buy them; the window closes when the target fields Musketmen." }
+          {
+            "victory": "Science",
+            "when_it_fits": "Five or more Campuses with +2 or better adjacency by turn 80 and two neighbours with eight or more cities between them inside Missionary reach. Madrasas turn adjacency into Science and Faith, the Faith buys Worship buildings and Missionaries, and every converted foreign city is permanent Science; nothing in the kit expires on this path."
+          },
+          {
+            "victory": "Religion",
+            "when_it_fits": "The religion is founded by turn 85, the Mosque or another spread belief is still free, and no rival religion is the majority in more than two civilizations. Madrasa Faith and Theocracy buy Apostles faster than most religious AIs and Jerusalem makes every Holy Site push like a Holy City; take it only when the map has left room, because a late founder starts every theological fight behind."
+          },
+          {
+            "victory": "Domination",
+            "when_it_fits": "A neighbour within ten tiles has no Walls beyond Ancient ones at turn 80, and Missionaries can convert two of its cities before Stirrups. Crusade gives +10 Combat Strength near converted foreign cities, Mamluks heal every turn so the siege never pauses, and Theocracy lets the Madrasa Faith buy them; the window closes when the target fields Musketmen."
+          }
         ],
         "choose_by": 80,
         "commit_test": "At turn 120 read the religion and the queues. Science has the Worship building in every Temple city, Madrasas in three cities and Missionaries walking to foreign cities; Religion has Theocracy, two Apostles out and the Holy City buying more; Domination has Crusade evangelized, five Mamluks and two Trebuchets at the border. A little of each, or Faith piling up unspent, is the banked bonus and the plan has failed its own test."
@@ -55,405 +89,1437 @@
     {
       "id": "campus",
       "name": "Campuses, not Shrines",
-      "turns": { "from": 1, "to": 45 },
+      "turns": {
+        "from": 1,
+        "to": 45
+      },
       "era": "ancient",
-      "objective": "Put the Production other civilizations spend on Shrines and Holy Sites into Settlers and Campuses: four cities and two Campuses beside Mountains by turn 45, a pantheon bought with God King's Faith alone, and a Scout's count of who is building Holy Sites, because the next-to-last religion founded is the turn Arabia's Prophet arrives.",
+      "objective": "Put the Production other civilizations spend on Shrines and Holy Sites into Settlers and Campuses: four cities and two Campuses beside Mountains by turn 45, a pantheon bought with God King's Faith alone, and a Scout's count of who is building Holy Sites, because the turn the next-to-last Great Prophet is claimed is the turn Arabia's Prophet arrives.",
       "build_order": [
-        { "item": "Scout", "why": "Meets rivals for Writing and counts their Holy Sites; that count dates the last Prophet." },
-        { "item": "Slinger", "why": "Archery Eureka on a camp scout, and the only defender the capital needs while Settlers leave." },
-        { "item": "Settler", "why": "Second city by turn 15 toward the nearest Mountains; no Shrine is ever queued ahead of a Settler." },
-        { "item": "Builder", "why": "A Farm on Wheat or a Floodplains resource for Irrigation, a Mine on a resource for The Wheel, a third improvement for Craftsmanship." },
-        { "item": "Campus", "why": "Capital Campus beside a Mountain the turn Writing lands; State Workforce Inspiration, and the Madrasa's Faith later equals this adjacency." },
-        { "item": "Settler", "why": "Third city once Colonization is slotted from Early Empire." },
-        { "item": "Library", "why": "Divine Spark pays only on a Campus with a Library, and the Madrasa needs it." },
-        { "item": "Settler", "why": "Fourth city; this is the Settler a rival spent on its Shrine and Temple." }
+        {
+          "item": "Scout",
+          "why": "Meets rivals for Writing and counts their Holy Sites; that count dates the last Prophet."
+        },
+        {
+          "item": "Slinger",
+          "why": "Archery Eureka on a camp scout, and the only defender the capital needs while Settlers leave."
+        },
+        {
+          "item": "Settler",
+          "why": "Second city by turn 15 toward the nearest Mountains; no Shrine is ever queued ahead of a Settler."
+        },
+        {
+          "item": "Builder",
+          "why": "A Farm on Wheat or a Floodplains resource for Irrigation, a Mine on a resource for The Wheel, a third improvement for Craftsmanship."
+        },
+        {
+          "item": "Campus",
+          "why": "Capital Campus beside a Mountain the turn Writing lands; State Workforce Inspiration, and the Madrasa's Faith later equals this adjacency."
+        },
+        {
+          "item": "Settler",
+          "why": "Third city once Colonization is slotted from Early Empire."
+        },
+        {
+          "item": "Library",
+          "why": "Divine Spark pays only on a Campus with a Library, and the Madrasa needs it."
+        },
+        {
+          "item": "Settler",
+          "why": "Fourth city; this is the Settler a rival spent on its Shrine and Temple."
+        }
       ],
       "research": [
-        { "id": "tech:pottery", "note": "No Eureka; Writing and Irrigation both sit behind it." },
-        { "id": "tech:mining", "note": "Mines on Hills for Production; The Wheel and Apprenticeship later." },
-        { "id": "tech:writing", "note": "The Scout's first meeting gives the Eureka; Campuses are the opening." },
-        { "id": "tech:animal-husbandry", "note": "Reveals Horses for the Mamluks later; Archery is behind it." },
-        { "id": "tech:archery", "note": "The Slinger's kill gives the Eureka; an Archer holds the capital." },
-        { "id": "tech:irrigation", "note": "A Farm on a resource; Floodplains and Wheat feed the desert cities." }
+        {
+          "id": "tech:pottery",
+          "note": "No Eureka; Writing and Irrigation both sit behind it."
+        },
+        {
+          "id": "tech:mining",
+          "note": "Mines on Hills for Production; The Wheel and Apprenticeship later."
+        },
+        {
+          "id": "tech:writing",
+          "note": "The Scout's first meeting gives the Eureka; Campuses are the opening."
+        },
+        {
+          "id": "tech:animal-husbandry",
+          "note": "Reveals Horses for the Pasture that boosts Horseback Riding; Archery is behind it."
+        },
+        {
+          "id": "tech:archery",
+          "note": "The Slinger's kill gives the Eureka; an Archer holds the capital."
+        },
+        {
+          "id": "tech:irrigation",
+          "note": "A Farm on a resource; Floodplains and Wheat feed the desert cities."
+        }
       ],
       "civics": [
-        { "id": "civic:code-of-laws", "note": "God King is the whole pantheon plan, and Discipline for the camps." },
-        { "id": "civic:craftsmanship", "note": "Three improvements from the first Builder." },
-        { "id": "civic:foreign-trade", "note": "Unboosted unless a second continent is seen; Early Empire and Mysticism sit behind it." },
-        { "id": "civic:early-empire", "note": "Six population across two cities; Colonization for Settlers three and four." },
-        { "id": "civic:state-workforce", "note": "The capital Campus gives the Inspiration; Political Philosophy is behind it." },
-        { "id": "civic:mysticism", "note": "Founding the pantheon gives the Inspiration; the Inspiration policy card for Great Scientist points comes from it." }
+        {
+          "id": "civic:code-of-laws",
+          "note": "God King is the whole pantheon plan, and Discipline for the camps."
+        },
+        {
+          "id": "civic:craftsmanship",
+          "note": "Three improvements from the first Builder."
+        },
+        {
+          "id": "civic:foreign-trade",
+          "note": "Unboosted unless a second continent is seen; Early Empire and Mysticism sit behind it."
+        },
+        {
+          "id": "civic:early-empire",
+          "note": "Six population across two cities; Colonization for Settlers three and four."
+        },
+        {
+          "id": "civic:state-workforce",
+          "note": "The capital Campus gives the Inspiration; Political Philosophy is behind it."
+        },
+        {
+          "id": "civic:mysticism",
+          "note": "Founding the pantheon gives the Inspiration; the Inspiration policy card for Great Scientist points comes from it."
+        }
       ],
       "policies": [
-        { "card": "God King", "slot": "economic", "from": "civic:code-of-laws", "why": "The only Faith Arabia makes before turn 40; the pantheon lands near turn 30 on it." },
-        { "card": "Discipline", "slot": "military", "from": "civic:code-of-laws", "why": "The Slinger and Warrior clear the camps that threaten the Settlers." },
-        { "card": "Colonization", "slot": "economic", "from": "civic:early-empire", "why": "Replaces God King the turn after the pantheon; Settlers at half cost until city seven." }
+        {
+          "card": "God King",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "The only Faith Arabia makes before turn 40; the pantheon lands near turn 30 on it."
+        },
+        {
+          "card": "Discipline",
+          "slot": "military",
+          "from": "civic:code-of-laws",
+          "why": "The Slinger and Warrior clear the camps that threaten the Settlers."
+        },
+        {
+          "card": "Colonization",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "Replaces God King the turn after the pantheon; +50% Production toward Settlers, kept until city seven."
+        }
       ],
       "districts": [
-        { "district": "campus", "city": "capital and second city", "note": "Beside one or more Mountains, a Geothermal Fissure or a Reef; leave room beside it for the next districts, since a +3 Campus is a three-Faith Madrasa later." }
+        {
+          "district": "campus",
+          "city": "capital and second city",
+          "note": "Beside one or more Mountains, a Geothermal Fissure or a Reef; leave room beside it for the next districts, since a +3 Campus is a three-Faith Madrasa later."
+        }
       ],
-      "pantheon": { "slug": "divine-spark", "why": "A Great Scientist point from every Campus with a Library, which is what this opening builds instead of Holy Sites, and the first Great Scientist is the Education Eureka.", "alternative": "desert-folklore" },
+      "pantheon": {
+        "slug": "divine-spark",
+        "why": "A Great Scientist point from every Campus with a Library, which is what this opening builds instead of Holy Sites, and the first Great Scientist is the Education Eureka.",
+        "alternative": "desert-folklore"
+      },
       "wonders": [],
       "governors": [],
       "city_states": [
-        { "type": "Scientific", "why": "The first envoys go to a Scientific city-state: Science in the capital now and in every Library at three envoys." },
-        { "slug": "geneva", "why": "If met, suzerainty is +15% Science in every city while at peace, which is the Science direction's normal state." }
+        {
+          "type": "Scientific",
+          "why": "The first envoys go to a Scientific city-state: Science in the capital now and in every Library at three envoys."
+        },
+        {
+          "slug": "geneva",
+          "why": "If met, suzerainty is +15% Science in every city while at peace, which is the Science direction's normal state."
+        }
       ],
       "great_people": [],
       "checkpoints": [
-        { "turn": 25, "test": "Two cities, the capital Campus placed beside a Mountain, God King slotted and no Shrine or Holy Site built anywhere?", "pass": "Keep the Settler chain going; the pantheon lands within five turns.", "fail": "A Shrine or Holy Site in a queue is the Faith race this kit was excused from; cancel it and put a Settler there. No second city by turn 25 means the Builder went ahead of the Settler; swap them for city three." },
-        { "turn": 45, "test": "Four cities, two Campuses with a Library in the capital, the pantheon founded, and a note of which rivals have Holy Sites and how many religions exist?", "pass": "Enter the waiting phase; the Holy Site that will receive the Prophet is the next district after Campus three.", "fail": "Three cities is acceptable with the fourth Settler walking. No pantheon by turn 45 means God King came off too early; put it back until the 25 Faith are in. No count of rival Holy Sites means the Prophet's date is a guess; send the Scout or a Warrior to the unmet rivals." }
+        {
+          "turn": 25,
+          "test": "Two cities, the capital Campus placed beside a Mountain, God King slotted and no Shrine or Holy Site built anywhere?",
+          "pass": "Keep the Settler chain going; the pantheon lands within five turns.",
+          "fail": "A Shrine or Holy Site in a queue is the Faith race this kit was excused from; cancel it and put a Settler there. No second city by turn 25 means the Builder went ahead of the Settler; swap them for city three."
+        },
+        {
+          "turn": 45,
+          "test": "Four cities, two Campuses with a Library in the capital, the pantheon founded, and a note of which rivals have Holy Sites and how many religions exist?",
+          "pass": "Enter the waiting phase; the Holy Site that will receive the Prophet is the next district after Campus three.",
+          "fail": "Three cities is acceptable with the fourth Settler walking. No pantheon by turn 45 means God King came off too early; put it back until the 25 Faith are in. No count of rival Holy Sites means the Prophet's date is a guess; send the Scout or a Warrior to the unmet rivals."
+        }
       ],
       "tasks": [
-        { "id": "campus-settle", "turn": 1, "text": "Settle on the spot or one move toward a Mountain or a river; the capital Campus wants two Mountains beside it." },
-        { "id": "campus-scout-faith", "turn": 8, "text": "Scout toward the nearest rivals and note every Holy Site seen; three rival Holy Sites by turn 30 mean the last Prophet comes early." },
-        { "id": "campus-first-campus", "turn": 20, "text": "Capital Campus started on the best Mountain tile; State Workforce Inspiration on completion." },
-        { "id": "campus-pantheon", "turn": 30, "text": "Found Divine Spark with God King's Faith, or Desert Folklore if the capital is ringed by Desert; then swap God King for Colonization." },
-        { "id": "campus-fourth-city", "turn": 45, "text": "Fourth city founded; every city's first district is a Campus, never a Holy Site." }
+        {
+          "id": "campus-settle",
+          "turn": 1,
+          "text": "Settle on the spot or one move toward a Mountain or a river; the capital Campus wants two Mountains beside it."
+        },
+        {
+          "id": "campus-scout-faith",
+          "turn": 8,
+          "text": "Scout toward the nearest rivals and note every Holy Site seen; three rival Holy Sites by turn 30 mean the last Prophet comes early."
+        },
+        {
+          "id": "campus-first-campus",
+          "turn": 20,
+          "text": "Capital Campus started on the best Mountain tile; State Workforce Inspiration on completion."
+        },
+        {
+          "id": "campus-pantheon",
+          "turn": 30,
+          "text": "Found Divine Spark with God King's Faith, or Desert Folklore if the capital is ringed by Desert; then swap God King for Colonization."
+        },
+        {
+          "id": "campus-fourth-city",
+          "turn": 45,
+          "text": "Fourth city founded; every city's first district is a Campus, never a Holy Site."
+        }
       ]
     },
     {
       "id": "prophet",
       "name": "Waiting for the last Prophet",
-      "turns": { "from": 46, "to": 95 },
+      "turns": {
+        "from": 46,
+        "to": 95
+      },
       "era": "classical",
       "objective": "Reach seven cities with a Campus in each and Libraries in the best three, finish one Holy Site in the best Desert or Mountain city before the third rival religion is founded, decide the direction by turn 80 from what the belief lists and the neighbours offer, and found the religion the turn the last Prophet arrives.",
       "build_order": [
-        { "item": "Settler", "why": "Cities five to seven; the Production that Shrines and Temples would have taken goes here." },
-        { "item": "Campus", "why": "First district in every new city, Mountain or district adjacency first." },
-        { "item": "Holy Site", "why": "One, in the city with the most Desert or a Mountain beside it, finished before the next-to-last religion is founded so the Prophet can found on arrival." },
-        { "item": "Shrine", "why": "Missionaries need it, and the Holy Site's adjacency makes it the empire's only Faith until the Madrasas." },
-        { "item": "Library", "why": "In the three best Campuses; Divine Spark and the Inspiration card push the first Great Scientist." },
-        { "item": "Trader", "why": "Currency Eureka; a domestic route into the capital carries Food and Production." },
-        { "item": "Commercial Hub", "why": "The third district type for the Mathematics Eureka, and Gold to buy Settlers." },
-        { "item": "Temple", "why": "In the Holy Site city right after founding; Apostles and the Worship building both need it." }
+        {
+          "item": "Settler",
+          "why": "Cities five to seven; the Production that Shrines and Temples would have taken goes here."
+        },
+        {
+          "item": "Campus",
+          "why": "First district in every new city, Mountain or district adjacency first."
+        },
+        {
+          "item": "Holy Site",
+          "why": "One, in the city with the most Desert or a Mountain beside it, finished before the next-to-last religion is founded so the Prophet can found on arrival."
+        },
+        {
+          "item": "Shrine",
+          "why": "Missionaries need it, and the Holy Site's adjacency makes it the empire's only Faith until the Madrasas."
+        },
+        {
+          "item": "Library",
+          "why": "In the three best Campuses; Divine Spark and the Inspiration card push the first Great Scientist."
+        },
+        {
+          "item": "Trader",
+          "why": "Currency Eureka; a domestic route into the capital carries Food and Production."
+        },
+        {
+          "item": "Commercial Hub",
+          "why": "The third district type for the Mathematics Eureka, and Gold to buy Settlers."
+        },
+        {
+          "item": "Temple",
+          "why": "In the Holy Site city right after founding; Apostles and the Worship building both need it."
+        }
       ],
       "research": [
-        { "id": "tech:astrology", "note": "A natural wonder the Scout finds gives the Eureka; the one Holy Site needs it before turn 60." },
-        { "id": "tech:currency", "note": "The first Trade Route gives the Eureka; Commercial Hub and Apprenticeship." },
-        { "id": "tech:masonry", "note": "A Quarry on Stone or Marble; Construction is behind it." },
-        { "id": "tech:horseback-riding", "note": "A Pasture on Horses or Sheep; Stirrups and the Mamluk are on this line." },
-        { "id": "tech:mathematics", "note": "Campus, Holy Site and Commercial Hub give the Eureka; Petra, and Education behind it." },
-        { "id": "tech:construction", "note": "A Water Mill in a river city; Games and Recreation follows free." },
-        { "id": "tech:apprenticeship", "note": "Three Mines on Hills; Education needs it with Mathematics." }
+        {
+          "id": "tech:astrology",
+          "note": "A natural wonder the Scout finds gives the Eureka; the one Holy Site needs it before turn 60."
+        },
+        {
+          "id": "tech:currency",
+          "note": "The first Trade Route gives the Eureka; Commercial Hub and Apprenticeship."
+        },
+        {
+          "id": "tech:masonry",
+          "note": "A Quarry on Stone or Marble; Construction is behind it."
+        },
+        {
+          "id": "tech:horseback-riding",
+          "note": "A Pasture on Horses or Sheep; Stirrups and the Mamluk are on this line."
+        },
+        {
+          "id": "tech:mathematics",
+          "note": "Campus, Holy Site and Commercial Hub give the Eureka; Petra, and Education behind it."
+        },
+        {
+          "id": "tech:construction",
+          "note": "A Water Mill in a river city; Games and Recreation follows free."
+        },
+        {
+          "id": "tech:apprenticeship",
+          "note": "Three Mines on Hills; Education needs it with Mathematics."
+        }
       ],
       "civics": [
-        { "id": "civic:political-philosophy", "note": "Three city-states met; Classical Republic for Great Person points across seven cities." },
-        { "id": "civic:drama-and-poetry", "note": "Petra gives the Inspiration in a desert capital; Theology is behind it." },
-        { "id": "civic:recorded-history", "note": "Two Campuses give the Inspiration before turn 50; Natural Philosophy." },
-        { "id": "civic:games-and-recreation", "note": "Researching Construction gives it; Entertainment Complexes for a seven-city empire." },
-        { "id": "civic:theology", "note": "Founding gives the Inspiration; research it to half and hold it until the Prophet founds." }
+        {
+          "id": "civic:political-philosophy",
+          "note": "Three city-states met; Classical Republic for Great Person points across seven cities."
+        },
+        {
+          "id": "civic:drama-and-poetry",
+          "note": "Petra gives the Inspiration in a desert capital; Theology is behind it."
+        },
+        {
+          "id": "civic:recorded-history",
+          "note": "Two Campuses give the Inspiration before turn 50; Natural Philosophy."
+        },
+        {
+          "id": "civic:games-and-recreation",
+          "note": "Researching Construction gives it; Entertainment Complexes for a seven-city empire."
+        },
+        {
+          "id": "civic:theology",
+          "note": "Founding gives the Inspiration; research it to half and hold it until the Prophet founds."
+        }
       ],
       "policies": [
-        { "card": "Inspiration", "slot": "economic", "from": "civic:mysticism", "why": "+2 Great Scientist points a turn; with Divine Spark the Education Eureka is banked before Education is researched." },
-        { "card": "Natural Philosophy", "slot": "economic", "from": "civic:recorded-history", "why": "Doubled Campus adjacency in every city, and a Mountain Campus is the Madrasa's Faith later." },
-        { "card": "Charismatic Leader", "slot": "diplomatic", "from": "civic:political-philosophy", "why": "Envoys into the Scientific city-states and, on the Religion direction, Jerusalem." },
-        { "card": "Colonization", "slot": "economic", "from": "civic:early-empire", "why": "Kept until city seven is founded, then replaced by Natural Philosophy." }
+        {
+          "card": "Inspiration",
+          "slot": "wildcard",
+          "from": "civic:mysticism",
+          "why": "+2 Great Scientist points a turn; with Divine Spark the Education Eureka is banked before Education is researched."
+        },
+        {
+          "card": "Natural Philosophy",
+          "slot": "economic",
+          "from": "civic:recorded-history",
+          "why": "Doubled Campus adjacency in every city, and a Mountain Campus is the Madrasa's Faith later."
+        },
+        {
+          "card": "Charismatic Leader",
+          "slot": "diplomatic",
+          "from": "civic:political-philosophy",
+          "why": "Envoys into the Scientific city-states and, on the Religion direction, Jerusalem."
+        },
+        {
+          "card": "Colonization",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "Kept until city seven is founded, then replaced by Natural Philosophy."
+        }
       ],
       "districts": [
-        { "district": "campus", "city": "every new city", "note": "Placed for adjacency first; a +1 Campus is a one-Faith Madrasa." },
-        { "district": "holy-site", "city": "the city with the most Desert or a Mountain beside it, usually the capital or second city", "note": "One only on the Science direction until the Prophet founds; on the Religion direction a second goes in the city nearest the most foreign cities." },
-        { "district": "commercial-hub", "city": "capital", "note": "The third district type for Mathematics and the base for the first Trade Routes." }
+        {
+          "district": "campus",
+          "city": "every new city",
+          "note": "Placed for adjacency first; a +1 Campus is a one-Faith Madrasa."
+        },
+        {
+          "district": "holy-site",
+          "city": "the city with the most Desert or a Mountain beside it, usually the capital or second city",
+          "note": "One only on the Science direction until the Prophet founds; on the Religion direction a second goes in the city nearest the most foreign cities."
+        },
+        {
+          "district": "commercial-hub",
+          "city": "capital",
+          "note": "The third district type for Mathematics and the base for the first Trade Routes."
+        }
       ],
-      "pantheon": { "slug": "divine-spark", "why": "Already founded; every Campus with a Library this phase adds a Great Scientist point." },
+      "pantheon": {
+        "slug": "divine-spark",
+        "why": "Already founded; every Campus with a Library this phase adds a Great Scientist point."
+      },
       "wonders": [
-        { "name": "Petra", "why": "Desert tiles in the city gain Food, Gold and Production, which turns a desert capital into a Settler and Campus city and gives the Drama and Poetry Inspiration.", "skip_if": "Fewer than five Desert tiles inside the city's range, or Mathematics lands after turn 75." }
+        {
+          "name": "Petra",
+          "why": "Desert tiles in the city gain Food, Gold and Production, which turns a desert capital into a Settler and Campus city and gives the Drama and Poetry Inspiration.",
+          "skip_if": "Fewer than five Desert tiles inside the city's range, or Mathematics lands after turn 75."
+        }
       ],
       "governors": [
-        { "governor": "pingala", "promotion": "Librarian", "city": "capital", "why": "+15% Science and Culture in the city with the best Campus." },
-        { "governor": "magnus", "promotion": "Provision", "city": "the second city", "why": "Settlers five to seven without losing population while the capital builds Libraries." }
+        {
+          "governor": "pingala",
+          "promotion": "Librarian",
+          "city": "capital",
+          "why": "+15% Science and Culture in the city with the best Campus."
+        },
+        {
+          "governor": "magnus",
+          "promotion": "Provision",
+          "city": "the second city",
+          "why": "Settlers five to seven without losing population while the capital builds Libraries."
+        }
       ],
       "city_states": [
-        { "type": "Scientific", "why": "Three envoys in one Scientific city-state put Science in every Library the phase builds." },
-        { "slug": "jerusalem", "why": "Religion direction: every city with a Holy Site pushes pressure as if it were a Holy City, which is how a late religion catches up." }
+        {
+          "type": "Scientific",
+          "why": "Three envoys in one Scientific city-state put Science in every Library the phase builds."
+        },
+        {
+          "slug": "jerusalem",
+          "why": "Religion direction: every city with a Holy Site pushes pressure as if it were a Holy City, which is how a late religion catches up."
+        }
       ],
       "great_people": [
-        { "class": "great-prophet", "why": "Arrives on its own when the next-to-last Prophet is claimed; spend no Faith or points chasing it, only have the Holy Site finished." },
-        { "class": "great-scientist", "why": "Divine Spark and the Inspiration card earn the first one; it is the Education Eureka." }
+        {
+          "class": "great-prophet",
+          "why": "Arrives on its own when the next-to-last Prophet is claimed; spend no Faith or points chasing it, only have the Holy Site finished."
+        },
+        {
+          "class": "great-scientist",
+          "why": "Divine Spark and the Inspiration card earn the first one; it is the Education Eureka."
+        }
       ],
       "checkpoints": [
-        { "turn": 65, "test": "Six cities, a Campus in at least five, one Holy Site finished, and the number of religions founded counted?", "pass": "The Prophet can found the turn it appears; keep settling to seven and queue Libraries.", "fail": "No Holy Site means the Prophet will sit idle when it arrives; buy or rush it now. Fewer than five Campuses means a city built something else first; check every queue for a Monument, Shrine or wonder ahead of the Campus." },
-        { "turn": 85, "test": "Direction written down by turn 80, the religion founded or the Holy Site waiting with the belief shortlist ready, and the next three civics on the direction's path?", "pass": "Enter the Madrasa phase; Education is the next technology.", "fail": "No direction at turn 85 is the shape's failure: choose Science unless the Religion or Domination preconditions are plainly met. If beliefs were picked without a shortlist, check that the Follower belief at least pays per city or per building, and plan the Worship belief for the first Apostle." }
+        {
+          "turn": 65,
+          "test": "Six cities, a Campus in at least five, one Holy Site finished, and the number of religions founded counted?",
+          "pass": "The Prophet can found the turn it appears; keep settling to seven and queue Libraries.",
+          "fail": "No Holy Site means the Prophet will sit idle when it arrives; buy or rush it now. Fewer than five Campuses means a city built something else first; check every queue for a Monument, Shrine or wonder ahead of the Campus."
+        },
+        {
+          "turn": 85,
+          "test": "Direction written down by turn 80, the religion founded or the Holy Site waiting with the belief shortlist ready, and the next three civics on the direction's path?",
+          "pass": "Enter the Madrasa phase; Education is the next technology.",
+          "fail": "No direction at turn 85 is the shape's failure: choose Science unless the Religion or Domination preconditions are plainly met. If beliefs were picked without a shortlist, check that the Follower belief at least pays per city or per building, and plan the Worship belief for the first Apostle."
+        }
       ],
       "tasks": [
-        { "id": "prophet-holy-site", "turn": 55, "text": "Holy Site started in the best Desert or Mountain city; Shrine queued behind it." },
-        { "id": "prophet-count", "turn": 60, "text": "Count the religions founded; at three on a standard map the last Prophet is one founding away and the Holy Site must be finished now." },
-        { "id": "prophet-shortlist", "turn": 70, "text": "Read every founded religion's beliefs and rank what is left: Jesuit Education, then Work Ethic or Feed the World as Follower; Cross-Cultural Dialogue or Tithe as Founder; the Wat, Mosque or Meeting House as Worship." },
-        { "id": "prophet-government", "turn": 72, "text": "Adopt Classical Republic the turn Political Philosophy lands; Inspiration and Natural Philosophy in its Economic slots." },
-        { "id": "prophet-decide", "turn": 80, "text": "Write the direction down: Science, Religion or Domination, with the neighbour and the beliefs that decided it." },
-        { "id": "prophet-found", "turn": 88, "text": "Found the religion in the Holy Site the turn the Prophet appears, taking the shortlist's first free Founder and Follower beliefs; queue the Temple." }
+        {
+          "id": "prophet-holy-site",
+          "turn": 55,
+          "text": "Holy Site started in the best Desert or Mountain city; Shrine queued behind it."
+        },
+        {
+          "id": "prophet-count",
+          "turn": 60,
+          "text": "Count the religions founded; at three on a standard map the last Prophet is one founding away and the Holy Site must be finished now."
+        },
+        {
+          "id": "prophet-shortlist",
+          "turn": 70,
+          "text": "Read every founded religion's beliefs and rank what is left: Jesuit Education, then Work Ethic or Feed the World as Follower; Cross-Cultural Dialogue or Tithe as Founder; the Wat, Mosque or Meeting House as Worship."
+        },
+        {
+          "id": "prophet-government",
+          "turn": 72,
+          "text": "Adopt Classical Republic the turn Political Philosophy lands; Natural Philosophy in an Economic slot and Inspiration in the Wildcard slot."
+        },
+        {
+          "id": "prophet-decide",
+          "turn": 80,
+          "text": "Write the direction down: Science, Religion or Domination, with the neighbour and the beliefs that decided it."
+        },
+        {
+          "id": "prophet-found",
+          "turn": 88,
+          "text": "Found the religion in the Holy Site the turn the Prophet appears, taking the shortlist's first free Founder and Follower beliefs; queue the Temple."
+        }
       ]
     },
     {
       "id": "madrasa",
       "name": "Madrasas and the Worship building",
-      "turns": { "from": 96, "to": 165 },
+      "turns": {
+        "from": 96,
+        "to": 165
+      },
       "era": "medieval",
       "objective": "Turn the religion into Science: Madrasas in every Campus, the Worship belief added with the first Apostle and its building bought for a tenth of the Faith in every Arabian city with a Temple, and Madrasa Faith spent every turn on Missionaries into foreign cities, each of which pays The Last Prophet's Science, or on the direction's own uses. The era checkpoint asks whether that Faith is being spent.",
       "build_order": [
-        { "item": "Madrasa", "why": "Every Campus city, best adjacency first; two of them give the Printing Eureka." },
-        { "item": "Holy Site", "why": "In the four largest cities, with a Temple each; the Worship building needs the Temple and two Temples are the Divine Right Inspiration." },
-        { "item": "Apostle", "why": "The first one bought with Faith uses Evangelize Belief for the Worship belief; the second is the Enhancer on the Religion or Domination direction." },
-        { "item": "Missionary", "why": "Bought in the Holy City and sent to the nearest foreign cities; each conversion is +1 Science for good, and Fez pays more on the first." },
-        { "item": "Market", "why": "Two for Guilds; Gold buys what Faith cannot." },
-        { "item": "Aqueduct", "why": "Military Engineering Eureka and Housing for the Madrasa cities heading past ten population." },
-        { "item": "Mamluk", "why": "Domination direction only: five with two Trebuchets, bought with Faith under Theocracy where possible." }
+        {
+          "item": "Madrasa",
+          "why": "Every Campus city, best adjacency first; two of them give the Printing Eureka."
+        },
+        {
+          "item": "Holy Site",
+          "why": "In the four largest cities, with a Temple each; the Worship building needs the Temple and two Temples are the Divine Right Inspiration."
+        },
+        {
+          "item": "Apostle",
+          "why": "The first one bought with Faith uses Evangelize Belief for the Worship belief; the second is the Enhancer on the Religion or Domination direction."
+        },
+        {
+          "item": "Missionary",
+          "why": "Bought in the Holy City and sent to the nearest foreign cities; each conversion is +1 Science for good, and Fez pays more on the first."
+        },
+        {
+          "item": "Market",
+          "why": "Two for Guilds; Gold buys what Faith cannot."
+        },
+        {
+          "item": "Aqueduct",
+          "why": "Military Engineering Eureka and Housing for the Madrasa cities heading past ten population."
+        },
+        {
+          "item": "Mamluk",
+          "why": "Domination direction only: five with two Trebuchets, bought with Faith under Theocracy where possible."
+        }
       ],
       "research": [
-        { "id": "tech:education", "note": "The first Great Scientist gave the Eureka; Madrasas unlock here." },
-        { "id": "tech:stirrups", "note": "Feudalism gives the Eureka; the Mamluk unlocks here." },
-        { "id": "tech:machinery", "note": "Unboosted, since three Archers are not in the plan; research it on the way to Printing." },
-        { "id": "tech:astronomy", "note": "A Madrasa in the Mountain Campus gives the Eureka; Colonialism follows free." },
-        { "id": "tech:printing", "note": "Two Madrasas count as Universities for the Eureka." },
-        { "id": "tech:military-engineering", "note": "An Aqueduct gives the Eureka; Trebuchets for the Domination direction." },
-        { "id": "tech:castles", "note": "Any Tier 2 government gives the Eureka." },
-        { "id": "tech:banking", "note": "Guilds gives the Eureka; Banks for the Gold." }
+        {
+          "id": "tech:education",
+          "note": "The first Great Scientist gave the Eureka; Madrasas unlock here."
+        },
+        {
+          "id": "tech:stirrups",
+          "note": "Feudalism gives the Eureka; the Mamluk unlocks here."
+        },
+        {
+          "id": "tech:machinery",
+          "note": "Unboosted, since three Archers are not in the plan; research it, after its prerequisites Iron Working and Engineering, on the way to Printing."
+        },
+        {
+          "id": "tech:astronomy",
+          "note": "A Madrasa in the Mountain Campus gives the Eureka; Colonialism follows free."
+        },
+        {
+          "id": "tech:printing",
+          "note": "Two Madrasas count as Universities for the Eureka."
+        },
+        {
+          "id": "tech:military-engineering",
+          "note": "An Aqueduct gives the Eureka; Trebuchets for the Domination direction."
+        },
+        {
+          "id": "tech:castles",
+          "note": "Any Tier 2 government gives the Eureka."
+        },
+        {
+          "id": "tech:banking",
+          "note": "Guilds gives the Eureka; Banks for the Gold."
+        }
       ],
       "civics": [
-        { "id": "civic:feudalism", "note": "Six Farms across seven cities; Serfdom, and the Stirrups Eureka." },
-        { "id": "civic:civil-service", "note": "The capital at ten population." },
-        { "id": "civic:divine-right", "note": "Two Temples built for the Worship building give it; Chivalry for the Domination direction." },
-        { "id": "civic:guilds", "note": "Two Markets." },
-        { "id": "civic:medieval-faires", "note": "Four Trade Routes at once; Merchant Confederation." },
-        { "id": "civic:reformed-church", "note": "Six cities following the religion, Arabia's own included; Theocracy for the Religion and Domination directions." },
-        { "id": "civic:the-enlightenment", "note": "Three Great People: the Prophet and two Scientists already count; Rationalism." }
+        {
+          "id": "civic:feudalism",
+          "note": "Six Farms across seven cities; Serfdom, and the Stirrups Eureka."
+        },
+        {
+          "id": "civic:civil-service",
+          "note": "The capital at ten population."
+        },
+        {
+          "id": "civic:divine-right",
+          "note": "Two Temples built for the Worship building give it; Chivalry for the Domination direction."
+        },
+        {
+          "id": "civic:guilds",
+          "note": "Two Markets."
+        },
+        {
+          "id": "civic:medieval-faires",
+          "note": "Four Trade Routes at once; Merchant Confederation."
+        },
+        {
+          "id": "civic:reformed-church",
+          "note": "Six cities following the religion, Arabia's own included; Theocracy for the Religion and Domination directions."
+        },
+        {
+          "id": "civic:the-enlightenment",
+          "note": "Three Great People: the Prophet and two Scientists already count; Rationalism."
+        }
       ],
       "policies": [
-        { "card": "Natural Philosophy", "slot": "economic", "from": "civic:recorded-history", "why": "Still the strongest card for a Campus empire until Rationalism." },
-        { "card": "Serfdom", "slot": "economic", "from": "civic:feudalism", "why": "Builders with more charges for the Farms, Mines and Lumber Mills seven cities still need." },
-        { "card": "Chivalry", "slot": "military", "from": "civic:divine-right", "why": "Domination direction: faster Mamluks for the one-era window." },
-        { "card": "Merchant Confederation", "slot": "diplomatic", "from": "civic:medieval-faires", "why": "Gold per envoy; Fez and the Scientific city-states hold most of them." },
-        { "card": "Rationalism", "slot": "economic", "from": "civic:the-enlightenment", "why": "Science direction: Campus buildings doubled in the big Madrasa cities." }
+        {
+          "card": "Natural Philosophy",
+          "slot": "economic",
+          "from": "civic:recorded-history",
+          "why": "Still the strongest card for a Campus empire until Rationalism."
+        },
+        {
+          "card": "Serfdom",
+          "slot": "economic",
+          "from": "civic:feudalism",
+          "why": "Builders with more charges for the Farms, Mines and Lumber Mills seven cities still need."
+        },
+        {
+          "card": "Chivalry",
+          "slot": "military",
+          "from": "civic:divine-right",
+          "why": "Domination direction: faster Mamluks for the one-era window."
+        },
+        {
+          "card": "Merchant Confederation",
+          "slot": "diplomatic",
+          "from": "civic:medieval-faires",
+          "why": "Gold per envoy; Fez and the Scientific city-states hold most of them."
+        },
+        {
+          "card": "Rationalism",
+          "slot": "economic",
+          "from": "civic:the-enlightenment",
+          "why": "Science direction: Campus buildings doubled in the big Madrasa cities."
+        }
       ],
       "districts": [
-        { "district": "holy-site", "city": "the four largest cities", "note": "A Temple in each for the Worship building at a tenth of the Faith; Desert or Mountain adjacency makes them Faith too." },
-        { "district": "aqueduct", "city": "the Madrasa cities without fresh water", "note": "Military Engineering Eureka and the Housing to reach ten population." },
-        { "district": "commercial-hub", "city": "two river cities", "note": "Markets for Guilds and Trade Routes for Medieval Faires." },
-        { "district": "encampment", "city": "the city nearest the target", "note": "Domination direction only: Stables and Great General points." }
+        {
+          "district": "holy-site",
+          "city": "the four largest cities",
+          "note": "A Temple in each for the Worship building at a tenth of the Faith; Desert or Mountain adjacency makes them Faith too."
+        },
+        {
+          "district": "aqueduct",
+          "city": "the Madrasa cities without fresh water",
+          "note": "Military Engineering Eureka and the Housing to reach ten population."
+        },
+        {
+          "district": "commercial-hub",
+          "city": "two river cities",
+          "note": "Markets for Guilds and Trade Routes for Medieval Faires."
+        },
+        {
+          "district": "encampment",
+          "city": "the city nearest the target",
+          "note": "Domination direction only: Stables and Great General points."
+        }
       ],
       "wonders": [
-        { "name": "Mahabodhi Temple", "why": "Two free Apostles: one evangelizes the Worship belief and one the Enhancer, which saves the first Faith of the Madrasa era for Missionaries.", "skip_if": "The Holy City's Temple is not finished by turn 105, or a religious civilization has it under way." },
-        { "name": "Kilwa Kisiwani", "why": "Two Scientific suzerainties become +15% Science in every city.", "skip_if": "No flat coastal tile in a core city, or fewer than two Scientific suzerainties at turn 130." }
+        {
+          "name": "Mahabodhi Temple",
+          "why": "Two free Apostles: one evangelizes the Worship belief and one the Enhancer, which saves the first Faith of the Madrasa era for Missionaries.",
+          "skip_if": "The Holy City's Temple is not finished by turn 105, or a religious civilization has it under way."
+        },
+        {
+          "name": "Kilwa Kisiwani",
+          "why": "Two Scientific suzerainties become +15% Science in every city.",
+          "skip_if": "No flat coastal tile in a core city, or fewer than two Scientific suzerainties at turn 130."
+        }
       ],
       "governors": [
-        { "governor": "moksha", "promotion": "Bishop", "city": "the Holy City", "why": "Stronger pressure outward from the Holy City, which is the defence a late founder needs against rival Missionaries already on the road." },
-        { "governor": "pingala", "promotion": "Researcher", "city": "capital", "why": "+1 Science per Citizen where the largest Madrasa is." },
-        { "governor": "victor", "promotion": "Garrison Commander", "city": "the first captured city", "why": "Domination direction: Loyalty and defence where the counterattack lands." }
+        {
+          "governor": "moksha",
+          "promotion": "Bishop",
+          "city": "the Holy City",
+          "why": "Stronger pressure outward from the Holy City, which is the defence a late founder needs against rival Missionaries already on the road."
+        },
+        {
+          "governor": "pingala",
+          "promotion": "Researcher",
+          "city": "capital",
+          "why": "+1 Science per Citizen where the largest Madrasa is."
+        },
+        {
+          "governor": "victor",
+          "promotion": "Garrison Commander",
+          "city": "the first captured city",
+          "why": "Domination direction: Loyalty and defence where the counterattack lands."
+        }
       ],
       "city_states": [
-        { "slug": "fez", "why": "Each city a religious unit converts for the first time pays 20 Science per Population, so the first Missionaries go to the largest foreign cities." },
-        { "slug": "chinguetti", "why": "Trade Routes gain Faith from followers of the religion in the destination; domestic routes into the converted cities pay for the next Missionary." },
-        { "type": "Religious", "why": "Religion direction: Faith in every Shrine at three envoys and every Temple at six." }
+        {
+          "slug": "fez",
+          "why": "Each city a religious unit converts for the first time pays 20 Science per Population, so the first Missionaries go to the largest foreign cities."
+        },
+        {
+          "slug": "chinguetti",
+          "why": "Trade Routes gain Faith from followers of the religion in the destination; routes into the converted foreign cities pay for the next Missionary."
+        },
+        {
+          "type": "Religious",
+          "why": "Religion direction: Faith in every Shrine at three envoys and every Temple at six."
+        }
       ],
       "great_people": [
-        { "class": "great-scientist", "why": "Madrasa boosts and The Enlightenment's three Great People." },
-        { "class": "great-general", "why": "Domination direction: the Mamluk stack fights under one." }
+        {
+          "class": "great-scientist",
+          "why": "Madrasa boosts and The Enlightenment's three Great People."
+        },
+        {
+          "class": "great-general",
+          "why": "Domination direction: the Mamluk stack fights under one."
+        }
       ],
       "checkpoints": [
-        { "turn": 125, "test": "Era checkpoint. Is the bonus being spent? The Worship building in every Arabian city with a Temple, Madrasas in four cities, the Faith total below the price of one Missionary at the end of most turns, and the foreign cities following the religion counted?", "pass": "Continue; the Science from converted cities should rise every era.", "fail": "Faith above a few hundred is the banked bonus this shape fails on. Buy Missionaries for the nearest foreign cities today, or Great Scientists with Faith if none is in reach; then check the civic queue against the direction." },
-        { "turn": 160, "test": "Madrasas in every Campus city and, by direction, six foreign cities following the religion, the religion the majority in two other civilizations, or three cities taken?", "pass": "Enter the Industrial phase.", "fail": "If the direction is out of reach, pivot now; with a Madrasa in every Campus city Science is always reachable, and the Missionaries already sent keep paying." }
+        {
+          "turn": 125,
+          "test": "Era checkpoint. Is the bonus being spent? The Worship building in every Arabian city with a Temple, Madrasas in four cities, the Faith total below the price of one Missionary at the end of most turns, and the foreign cities following the religion counted?",
+          "pass": "Continue; the Science from converted cities should rise every era.",
+          "fail": "Faith above a few hundred is the banked bonus this shape fails on. Buy Missionaries for the nearest foreign cities today, or Great Scientists with Faith if none is in reach; then check the civic queue against the direction."
+        },
+        {
+          "turn": 160,
+          "test": "Madrasas in every Campus city and, by direction, six foreign cities following the religion, the religion the majority in two other civilizations, or three cities taken?",
+          "pass": "Enter the Industrial phase.",
+          "fail": "If the direction is out of reach, pivot now; with a Madrasa in every Campus city Science is always reachable, and the Missionaries already sent keep paying."
+        }
       ],
       "tasks": [
-        { "id": "madrasa-first-apostle", "turn": 100, "text": "Buy the first Apostle and Evangelize Belief for the Worship belief: the Wat if it is free, the Mosque on the Religion direction, otherwise whatever Faith building is left." },
-        { "id": "madrasa-worship", "turn": 110, "text": "Buy the Worship building in every Arabian city with a Temple; at a tenth of the Faith it is the cheapest +10% in the game." },
-        { "id": "madrasa-missionaries", "turn": 115, "text": "Two Missionaries from the Holy City into the nearest foreign cities with no religion or a weak one, largest first for Fez." },
-        { "id": "madrasa-four", "turn": 130, "text": "Madrasas in four Campus cities; Printing Eureka collected." },
-        { "id": "madrasa-home-check", "turn": 140, "text": "Check every Arabian city's majority religion; any city turned by a rival gets a Missionary back from the Holy City the same turn." },
-        { "id": "madrasa-mamluks", "turn": 145, "text": "Domination direction: five Mamluks and two Trebuchets with Crusade evangelized march on the converted neighbour's cities." }
+        {
+          "id": "madrasa-first-apostle",
+          "turn": 100,
+          "text": "Buy the first Apostle and Evangelize Belief for the Worship belief: the Wat if it is free, the Mosque on the Religion direction, otherwise whatever Faith building is left."
+        },
+        {
+          "id": "madrasa-worship",
+          "turn": 110,
+          "text": "Buy the Worship building in every Arabian city with a Temple; at a tenth of the Faith it is the cheapest +10% in the game."
+        },
+        {
+          "id": "madrasa-missionaries",
+          "turn": 115,
+          "text": "Two Missionaries from the Holy City into the nearest foreign cities with no religion or a weak one, largest first for Fez."
+        },
+        {
+          "id": "madrasa-four",
+          "turn": 130,
+          "text": "Madrasas in four Campus cities; Printing Eureka collected."
+        },
+        {
+          "id": "madrasa-home-check",
+          "turn": 140,
+          "text": "Check every Arabian city's majority religion; any city turned by a rival gets a Missionary back from the Holy City the same turn."
+        },
+        {
+          "id": "madrasa-mamluks",
+          "turn": 145,
+          "text": "Domination direction: five Mamluks and two Trebuchets with Crusade evangelized march on the converted neighbour's cities."
+        }
       ]
     },
     {
       "id": "industrial",
       "name": "Converted cities, converted Science",
-      "turns": { "from": 166, "to": 235 },
+      "turns": {
+        "from": 166,
+        "to": 235
+      },
       "era": "industrial",
       "objective": "Convert the Madrasa empire's Science and Faith into the direction's close: Research Labs and a reserved Spaceport site on Science, Apostles under Theocracy against the last civilizations holding out on Religion, or a Field Cannon and Cuirassier push on the next capital on Domination; the era checkpoint asks whether the direction is still reachable.",
       "build_order": [
-        { "item": "Industrial Zone", "why": "Beside the Campus for adjacency; two Workshops for Industrialization." },
-        { "item": "Factory", "why": "Three for Class Struggle; the Production behind Research Labs and the Spaceport." },
-        { "item": "Bank", "why": "Two for Economics; Gold to buy Research Labs in the small cities." },
-        { "item": "Neighborhood", "why": "Two for Sanitation; Housing past the Aqueducts for the Madrasa cities." },
-        { "item": "Coal Power Plant", "why": "Power for the Factories and Research Labs, and the Refining Eureka." },
-        { "item": "Apostle", "why": "Religion direction: four at a time with Debater, aimed at the last civilization whose majority is not yours." },
-        { "item": "Research Lab", "why": "Science direction: the Madrasa cities first." }
+        {
+          "item": "Industrial Zone",
+          "why": "Beside the Campus for adjacency; two Workshops for Industrialization."
+        },
+        {
+          "item": "Factory",
+          "why": "Three for Class Struggle; the Production behind Research Labs and the Spaceport."
+        },
+        {
+          "item": "Bank",
+          "why": "Two for Economics; Gold to buy Research Labs in the small cities."
+        },
+        {
+          "item": "Neighborhood",
+          "why": "Two for Sanitation; Housing past the Aqueducts for the Madrasa cities."
+        },
+        {
+          "item": "Coal Power Plant",
+          "why": "Power for the Factories and Research Labs, and the Refining Eureka."
+        },
+        {
+          "item": "Apostle",
+          "why": "Religion direction: four at a time with Debater, aimed at the last civilization whose majority is not yours."
+        },
+        {
+          "item": "Research Lab",
+          "why": "Science direction: the Madrasa cities first."
+        }
       ],
       "research": [
-        { "id": "tech:industrialization", "note": "Two Workshops give the Eureka; Factories and Coal." },
-        { "id": "tech:scientific-theory", "note": "The Enlightenment gave the Eureka; Oxford University." },
-        { "id": "tech:economics", "note": "Two Banks." },
-        { "id": "tech:sanitation", "note": "Two Neighborhoods." },
-        { "id": "tech:military-science", "note": "A Mamluk kill gives the Eureka on the Domination direction; unboosted otherwise." },
-        { "id": "tech:refining", "note": "A Coal Power Plant gives the Eureka." },
-        { "id": "tech:chemistry", "note": "Alliance level 2 with a friendly neighbour; Research Labs." }
+        {
+          "id": "tech:industrialization",
+          "note": "Two Workshops give the Eureka; Factories and Coal."
+        },
+        {
+          "id": "tech:scientific-theory",
+          "note": "The Enlightenment gave the Eureka; Oxford University."
+        },
+        {
+          "id": "tech:economics",
+          "note": "Two Banks."
+        },
+        {
+          "id": "tech:sanitation",
+          "note": "Two Neighborhoods."
+        },
+        {
+          "id": "tech:military-science",
+          "note": "A Mamluk kill gives the Eureka on the Domination direction; unboosted otherwise."
+        },
+        {
+          "id": "tech:refining",
+          "note": "A Coal Power Plant gives the Eureka."
+        },
+        {
+          "id": "tech:chemistry",
+          "note": "Alliance level 2 with a friendly neighbour; Research Labs."
+        }
       ],
       "civics": [
-        { "id": "civic:civil-engineering", "note": "Seven district types, which Campus, Holy Site, Commercial Hub, Industrial Zone, Neighborhood, Entertainment Complex and Harbor or Encampment reach." },
-        { "id": "civic:colonialism", "note": "Researching Astronomy gave it." },
-        { "id": "civic:urbanization", "note": "A Madrasa city at fifteen population." },
-        { "id": "civic:nationalism", "note": "A Casus Belli war on the Domination direction; unboosted otherwise." },
-        { "id": "civic:ideology", "note": "No Inspiration; the gate to Tier 3 governments." },
-        { "id": "civic:class-struggle", "note": "Three Factories; Five-Year Plan." }
+        {
+          "id": "civic:civil-engineering",
+          "note": "Seven specialty district types, which Campus, Holy Site, Commercial Hub, Industrial Zone, Entertainment Complex, Harbor and Encampment reach; Neighborhoods and Aqueducts do not count."
+        },
+        {
+          "id": "civic:colonialism",
+          "note": "Researching Astronomy gave it."
+        },
+        {
+          "id": "civic:urbanization",
+          "note": "A Madrasa city at fifteen population."
+        },
+        {
+          "id": "civic:nationalism",
+          "note": "A Casus Belli war on the Domination direction; unboosted otherwise."
+        },
+        {
+          "id": "civic:ideology",
+          "note": "No Inspiration; the gate to Tier 3 governments."
+        },
+        {
+          "id": "civic:class-struggle",
+          "note": "Three Factories; Five-Year Plan."
+        }
       ],
       "policies": [
-        { "card": "Public Works", "slot": "economic", "from": "civic:civil-engineering", "why": "Builders for the Mines and Lumber Mills the Factories need." },
-        { "card": "Five-Year Plan", "slot": "economic", "from": "civic:class-struggle", "why": "Campus and Industrial Zone adjacency doubled across the empire." },
-        { "card": "Grande Armee", "slot": "military", "from": "civic:nationalism", "why": "Domination direction: faster Field Cannons and Cuirassiers for the next capital." }
+        {
+          "card": "Public Works",
+          "slot": "economic",
+          "from": "civic:civil-engineering",
+          "why": "Builders for the Mines and Lumber Mills the Factories need."
+        },
+        {
+          "card": "Five-Year Plan",
+          "slot": "economic",
+          "from": "civic:class-struggle",
+          "why": "Campus and Industrial Zone adjacency doubled across the empire."
+        },
+        {
+          "card": "Grande Armee",
+          "slot": "military",
+          "from": "civic:nationalism",
+          "why": "Domination direction: faster Field Cannons and Line Infantry for the next capital; Cuirassiers are cavalry and get nothing from it."
+        }
       ],
       "districts": [
-        { "district": "industrial-zone", "city": "the three best Production cities", "note": "Beside the Campus, so each district raises the other's adjacency." },
-        { "district": "neighborhood", "city": "the two largest Madrasa cities", "note": "Sanitation Eureka; low-appeal tiles." },
-        { "district": "spaceport", "city": "the best Production city", "note": "Science direction: the site is reserved now, on flat land." }
+        {
+          "district": "industrial-zone",
+          "city": "the three best Production cities",
+          "note": "Beside the Campus, so each district raises the other's adjacency."
+        },
+        {
+          "district": "neighborhood",
+          "city": "the two largest Madrasa cities",
+          "note": "Sanitation Eureka; low-appeal tiles."
+        },
+        {
+          "district": "spaceport",
+          "city": "the best Production city",
+          "note": "Science direction: the site is reserved now, on flat land."
+        }
       ],
       "wonders": [
-        { "name": "Oxford University", "why": "Two free technologies and Science in the best Madrasa city; the Madrasa counts as the University it needs.", "skip_if": "Scientific Theory lands after turn 210, or no Grassland or Plains tile sits beside a Madrasa Campus." },
-        { "name": "Ruhr Valley", "why": "Production per Mine and a flat bonus in the Spaceport city.", "skip_if": "No Industrial Zone beside a river, or Industrialization lands after turn 210." }
+        {
+          "name": "Oxford University",
+          "why": "Two free technologies and Science in the best Madrasa city; the Madrasa counts as the University it needs.",
+          "skip_if": "Scientific Theory lands after turn 210, or no Grassland or Plains tile sits beside a Madrasa Campus."
+        },
+        {
+          "name": "Ruhr Valley",
+          "why": "Production per Mine and Quarry and +20% Production in the Spaceport city.",
+          "skip_if": "No Industrial Zone beside a river, or Industrialization lands after turn 210."
+        }
       ],
       "governors": [
-        { "governor": "pingala", "promotion": "Grants", "city": "capital", "why": "Doubled Great Person points where the most Great Scientist points are made." },
-        { "governor": "liang", "promotion": "Zoning Commissioner", "city": "the Spaceport city", "why": "Faster Industrial Zone, Neighborhood and Spaceport in the city that builds the projects." }
+        {
+          "governor": "pingala",
+          "promotion": "Grants",
+          "city": "capital",
+          "why": "Doubled Great Person points where the most Great Scientist points are made."
+        },
+        {
+          "governor": "liang",
+          "promotion": "Zoning Commissioner",
+          "city": "the Spaceport city",
+          "why": "Faster Industrial Zone, Neighborhood and Spaceport in the city that builds the projects."
+        }
       ],
       "city_states": [
-        { "type": "Industrial", "why": "Production in every Workshop at three envoys and every Factory at six." },
-        { "slug": "geneva", "why": "Science direction: +15% Science in every city while at peace." }
+        {
+          "type": "Industrial",
+          "why": "Production in every Workshop at three envoys and every Factory at six."
+        },
+        {
+          "slug": "geneva",
+          "why": "Science direction: +15% Science in every city while at peace."
+        }
       ],
       "great_people": [
-        { "class": "great-scientist", "why": "Research Lab boosts and the late Eurekas the Madrasas cannot trigger." },
-        { "class": "great-engineer", "why": "Production toward the Spaceport or Ruhr Valley." }
+        {
+          "class": "great-scientist",
+          "why": "Research Lab boosts and the late Eurekas the Madrasas cannot trigger."
+        },
+        {
+          "class": "great-engineer",
+          "why": "Production toward the Spaceport or Ruhr Valley."
+        }
       ],
       "checkpoints": [
-        { "turn": 200, "test": "Era checkpoint. Is the chosen direction still reachable? Science: Research Labs started in three cities and the Science rate first among met civilizations. Religion: the religion the majority in all but two civilizations. Domination: a capital taken since turn 165.", "pass": "Continue; the close is thirty-five turns away.", "fail": "A direction out of reach at turn 200 is pivoted, not forced. A Madrasa empire with converted foreign cities can switch to Science from either other direction and still finish; switch today and reserve the Spaceport site." },
-        { "turn": 235, "test": "Spaceport started, or the religion the majority in all but one civilization, or a second capital in reach of Artillery?", "pass": "Enter the close.", "fail": "None of the three means a Score game; keep Science and Faith in every city, which this empire does well." }
+        {
+          "turn": 200,
+          "test": "Era checkpoint. Is the chosen direction still reachable? Science: Research Labs started in three cities and the Science rate first among met civilizations. Religion: the religion the majority in all but two civilizations. Domination: a capital taken since turn 165.",
+          "pass": "Continue; the close is thirty-five turns away.",
+          "fail": "A direction out of reach at turn 200 is pivoted, not forced. A Madrasa empire with converted foreign cities can switch to Science from either other direction and still finish; switch today and reserve the Spaceport site."
+        },
+        {
+          "turn": 235,
+          "test": "Spaceport started, or the religion the majority in all but one civilization, or a second capital in reach of Artillery?",
+          "pass": "Enter the close.",
+          "fail": "None of the three means a Score game; keep Science and Faith in every city, which this empire does well."
+        }
       ],
       "tasks": [
-        { "id": "industrial-workshops", "turn": 180, "text": "Two Workshops in Industrial Zones beside Campuses; Industrialization Eureka collected." },
-        { "id": "industrial-apostles", "turn": 195, "text": "Religion direction: four Debater Apostles bought under Theocracy push the last rival majority back." },
-        { "id": "industrial-push", "turn": 200, "text": "Domination direction: Field Cannons and Cuirassiers with a Great General take the next capital." },
-        { "id": "industrial-labs", "turn": 215, "text": "Science direction: Research Labs in the three best Madrasa cities." },
-        { "id": "industrial-spaceport-site", "turn": 230, "text": "Spaceport started in the Ruhr Valley or best Production city." }
+        {
+          "id": "industrial-workshops",
+          "turn": 180,
+          "text": "Two Workshops in Industrial Zones beside Campuses; Industrialization Eureka collected."
+        },
+        {
+          "id": "industrial-apostles",
+          "turn": 195,
+          "text": "Religion direction: four Debater Apostles bought under Theocracy push the last rival majority back."
+        },
+        {
+          "id": "industrial-push",
+          "turn": 200,
+          "text": "Domination direction: Field Cannons and Cuirassiers with a Great General take the next capital."
+        },
+        {
+          "id": "industrial-labs",
+          "turn": 215,
+          "text": "Science direction: Research Labs in the three best Madrasa cities."
+        },
+        {
+          "id": "industrial-spaceport-site",
+          "turn": 230,
+          "text": "Spaceport started in the Ruhr Valley or best Production city."
+        }
       ]
     },
     {
       "id": "close",
       "name": "Close",
-      "turns": { "from": 236, "to": null },
+      "turns": {
+        "from": 236,
+        "to": null
+      },
       "era": "modern",
       "objective": "Finish the direction with the whole empire's output: the Spaceport projects with Power and Great Scientists, the last theological wins with Apostles bought from Madrasa Faith, or the last capitals with Artillery and Infantry under a Great General.",
       "build_order": [
-        { "item": "Spaceport", "why": "Science direction: the projects start the turn it finishes." },
-        { "item": "Research Lab", "why": "In every Madrasa city still without one." },
-        { "item": "Apostle", "why": "Religion direction: the last civilizations, with Debater promotions and the Holy City's pressure behind them." },
-        { "item": "Artillery", "why": "Domination direction: Urban Defenses fall to Artillery and Infantry." },
-        { "item": "Aerodrome", "why": "Two for Synthetic Materials; fighters to defend the Spaceport city." }
+        {
+          "item": "Spaceport",
+          "why": "Science direction: the projects start the turn it finishes."
+        },
+        {
+          "item": "Research Lab",
+          "why": "In every Madrasa city still without one."
+        },
+        {
+          "item": "Apostle",
+          "why": "Religion direction: the last civilizations, with Debater promotions and the Holy City's pressure behind them."
+        },
+        {
+          "item": "Artillery",
+          "why": "Domination direction: Urban Defenses fall to Artillery and Infantry."
+        },
+        {
+          "item": "Aerodrome",
+          "why": "Two for Synthetic Materials; fighters to defend the Spaceport city."
+        }
       ],
       "research": [
-        { "id": "tech:flight", "note": "Oxford University or Ruhr Valley gives the Eureka." },
-        { "id": "tech:plastics", "note": "An Oil Well on the first Oil found." },
-        { "id": "tech:computers", "note": "Any Tier 3 government gives the Eureka." },
-        { "id": "tech:synthetic-materials", "note": "Two Aerodromes." }
+        {
+          "id": "tech:flight",
+          "note": "Oxford University or Ruhr Valley gives the Eureka."
+        },
+        {
+          "id": "tech:plastics",
+          "note": "An Oil Well on the first Oil found."
+        },
+        {
+          "id": "tech:computers",
+          "note": "Any Tier 3 government gives the Eureka."
+        },
+        {
+          "id": "tech:synthetic-materials",
+          "note": "Two Aerodromes."
+        }
       ],
       "civics": [
-        { "id": "civic:suffrage", "note": "Four Sewers across the large cities." },
-        { "id": "civic:nuclear-program", "note": "A Research Lab gives the Inspiration." },
-        { "id": "civic:space-race", "note": "The Spaceport gives the Inspiration; International Space Agency." }
+        {
+          "id": "civic:suffrage",
+          "note": "Four Sewers across the large cities."
+        },
+        {
+          "id": "civic:nuclear-program",
+          "note": "A Research Lab gives the Inspiration."
+        },
+        {
+          "id": "civic:space-race",
+          "note": "The Spaceport gives the Inspiration; International Space Agency."
+        }
       ],
       "policies": [
-        { "card": "International Space Agency", "slot": "diplomatic", "from": "civic:space-race", "why": "Science per suzerainty; Fez, Geneva and the Scientific city-states are held." }
+        {
+          "card": "International Space Agency",
+          "slot": "diplomatic",
+          "from": "civic:space-race",
+          "why": "Science per suzerainty; Fez, Geneva and the Scientific city-states are held."
+        }
       ],
       "districts": [
-        { "district": "aerodrome", "city": "the two Industrial Zone cities", "note": "Synthetic Materials Eureka and air cover for the Spaceport." }
+        {
+          "district": "aerodrome",
+          "city": "the two Industrial Zone cities",
+          "note": "Synthetic Materials Eureka and air cover for the Spaceport."
+        }
       ],
       "wonders": [],
       "governors": [
-        { "governor": "pingala", "promotion": "Space Initiative", "city": "the Spaceport city", "why": "Production toward the space projects." }
+        {
+          "governor": "pingala",
+          "promotion": "Space Initiative",
+          "city": "the Spaceport city",
+          "why": "Production toward the space projects."
+        }
       ],
       "city_states": [],
       "great_people": [
-        { "class": "great-scientist", "why": "The late Great Scientists are the only boosts for the techs with no Eureka." },
-        { "class": "great-engineer", "why": "Project Production in the Spaceport city." }
+        {
+          "class": "great-scientist",
+          "why": "The late Great Scientists are the only boosts for the techs with no Eureka."
+        },
+        {
+          "class": "great-engineer",
+          "why": "Project Production in the Spaceport city."
+        }
       ],
       "checkpoints": [
-        { "turn": 280, "test": "Science: Moon Landing done and the later projects running? Religion: one civilization left to convert? Domination: a capital taken since turn 235?", "pass": "Continue to the end.", "fail": "Convert to Score; an empire with Madrasas and Worship buildings everywhere scores well, and the plan stops paying for anything that does not add to it." }
+        {
+          "turn": 280,
+          "test": "Science: Moon Landing done and the later projects running? Religion: one civilization left to convert? Domination: a capital taken since turn 235?",
+          "pass": "Continue to the end.",
+          "fail": "Convert to Score; an empire with Madrasas and Worship buildings everywhere scores well, and the plan stops paying for anything that does not add to it."
+        }
       ],
       "tasks": [
-        { "id": "close-moon", "turn": 255, "text": "Science direction: Moon Landing started with Power in the Spaceport city." },
-        { "id": "close-religion", "turn": 255, "text": "Religion direction: Apostles and Missionaries into the last civilization until its majority turns." },
-        { "id": "close-artillery", "turn": 255, "text": "Domination direction: four Artillery and four Infantry under a Great General at the next capital." },
-        { "id": "close-review", "turn": 280, "text": "Review the turn 280 checkpoint and continue or declare the game a Score game." }
+        {
+          "id": "close-moon",
+          "turn": 255,
+          "text": "Science direction: Moon Landing started with Power in the Spaceport city."
+        },
+        {
+          "id": "close-religion",
+          "turn": 255,
+          "text": "Religion direction: Apostles and Missionaries into the last civilization until its majority turns."
+        },
+        {
+          "id": "close-artillery",
+          "turn": 255,
+          "text": "Domination direction: four Artillery and four Infantry under a Great General at the next capital."
+        },
+        {
+          "id": "close-review",
+          "turn": 280,
+          "text": "Review the turn 280 checkpoint and continue or declare the game a Score game."
+        }
       ]
     }
   ],
   "boosts": [
-    { "id": "tech:writing", "fit": "free", "when": "campus", "how": "The Scout meets the first rival." },
-    { "id": "tech:archery", "fit": "cheap", "when": "campus", "how": "The Slinger finishes a barbarian scout." },
-    { "id": "tech:irrigation", "fit": "cheap", "when": "campus", "how": "A Farm on Wheat or a Floodplains resource." },
-    { "id": "tech:wheel", "fit": "cheap", "when": "campus", "how": "The first Builder mines a resource on a Hill." },
-    { "id": "tech:bronze-working", "fit": "costly", "when": "campus", "how": "Three barbarian kills; the plan has one Slinger and one Warrior, so research it unboosted." },
-    { "id": "tech:astrology", "fit": "cheap", "when": "prophet", "how": "The Scout walks to a natural wonder before turn 50." },
-    { "id": "tech:currency", "fit": "free", "when": "prophet", "how": "The first Trader runs a domestic route into the capital." },
-    { "id": "tech:masonry", "fit": "cheap", "when": "prophet", "how": "A Quarry on Stone or Marble." },
-    { "id": "tech:horseback-riding", "fit": "cheap", "when": "prophet", "how": "A Pasture on Horses or Sheep." },
-    { "id": "tech:mathematics", "fit": "free", "when": "prophet", "how": "Campus, the Prophet's Holy Site and the capital Commercial Hub." },
-    { "id": "tech:construction", "fit": "cheap", "when": "prophet", "how": "A Water Mill in a river city." },
-    { "id": "tech:apprenticeship", "fit": "cheap", "when": "prophet", "how": "Three Mines on Hills across seven cities." },
-    { "id": "tech:iron-working", "fit": "costly", "when": "prophet", "how": "An Iron Mine, worth it only on the Domination direction where Mamluks need the Iron." },
-    { "id": "tech:engineering", "fit": "costly", "when": "prophet", "how": "Ancient Walls in a border city, only if a neighbour is threatening." },
-    { "id": "tech:education", "fit": "cheap", "when": "madrasa", "how": "The first Great Scientist from Divine Spark and the Inspiration card." },
-    { "id": "tech:stirrups", "fit": "free", "when": "madrasa", "how": "Feudalism is on the civic path." },
-    { "id": "tech:machinery", "fit": "skip", "when": null, "how": "" },
-    { "id": "tech:astronomy", "fit": "free", "when": "madrasa", "how": "The capital Madrasa sits in a Campus beside a Mountain." },
-    { "id": "tech:printing", "fit": "free", "when": "madrasa", "how": "Two Madrasas, which count as Universities." },
-    { "id": "tech:military-engineering", "fit": "cheap", "when": "madrasa", "how": "An Aqueduct in a Madrasa city without fresh water." },
-    { "id": "tech:castles", "fit": "free", "when": "madrasa", "how": "Any Tier 2 government: Merchant Republic or Theocracy." },
-    { "id": "tech:banking", "fit": "free", "when": "madrasa", "how": "Guilds is on the civic path." },
-    { "id": "tech:mass-production", "fit": "cheap", "when": "madrasa", "how": "One Lumber Mill on Woods." },
-    { "id": "tech:industrialization", "fit": "cheap", "when": "industrial", "how": "Two Workshops in the Industrial Zones." },
-    { "id": "tech:scientific-theory", "fit": "free", "when": "industrial", "how": "The Enlightenment is on the civic path." },
-    { "id": "tech:economics", "fit": "cheap", "when": "industrial", "how": "Two Banks in the Commercial Hub cities." },
-    { "id": "tech:sanitation", "fit": "cheap", "when": "industrial", "how": "Two Neighborhoods in the largest Madrasa cities." },
-    { "id": "tech:military-science", "fit": "costly", "when": "industrial", "how": "A Mamluk kill; free on the Domination direction, a detour otherwise." },
-    { "id": "tech:refining", "fit": "cheap", "when": "industrial", "how": "The first Coal Power Plant beside the Factories." },
-    { "id": "tech:chemistry", "fit": "cheap", "when": "industrial", "how": "Alliance level 2 with a neighbour that follows the religion." },
-    { "id": "tech:steam-power", "fit": "skip", "when": null, "how": "" },
-    { "id": "tech:flight", "fit": "cheap", "when": "close", "how": "Oxford University or Ruhr Valley." },
-    { "id": "tech:plastics", "fit": "cheap", "when": "close", "how": "An Oil Well on the first Oil found." },
-    { "id": "tech:computers", "fit": "free", "when": "close", "how": "Any Tier 3 government." },
-    { "id": "tech:synthetic-materials", "fit": "cheap", "when": "close", "how": "Two Aerodromes in the Industrial Zone cities." },
-    { "id": "civic:craftsmanship", "fit": "free", "when": "campus", "how": "Three improvements from the first Builder." },
-    { "id": "civic:early-empire", "fit": "free", "when": "campus", "how": "Six population across the first two cities." },
-    { "id": "civic:state-workforce", "fit": "free", "when": "campus", "how": "The capital Campus, the first district built." },
-    { "id": "civic:mysticism", "fit": "free", "when": "campus", "how": "The pantheon bought with God King's Faith." },
-    { "id": "civic:military-tradition", "fit": "cheap", "when": "campus", "how": "The Slinger and Warrior clear the nearest camp." },
-    { "id": "civic:foreign-trade", "fit": "costly", "when": "campus", "how": "A second continent only if the Scout or a coastal city sees one." },
-    { "id": "civic:political-philosophy", "fit": "cheap", "when": "prophet", "how": "Three city-states met by the Scout and a Warrior." },
-    { "id": "civic:drama-and-poetry", "fit": "cheap", "when": "prophet", "how": "Petra in the desert capital." },
-    { "id": "civic:recorded-history", "fit": "free", "when": "prophet", "how": "Two Campuses, which the opening has by turn 45." },
-    { "id": "civic:games-and-recreation", "fit": "free", "when": "prophet", "how": "Researching Construction." },
-    { "id": "civic:theology", "fit": "free", "when": "prophet", "how": "The last Prophet founds the religion; hold the civic at half until it does." },
-    { "id": "civic:feudalism", "fit": "cheap", "when": "madrasa", "how": "Six Farms across seven cities." },
-    { "id": "civic:civil-service", "fit": "cheap", "when": "madrasa", "how": "The capital at ten population with its Aqueduct." },
-    { "id": "civic:divine-right", "fit": "free", "when": "madrasa", "how": "Two Temples built for the Worship building." },
-    { "id": "civic:guilds", "fit": "cheap", "when": "madrasa", "how": "Two Markets in the Commercial Hub cities." },
-    { "id": "civic:medieval-faires", "fit": "cheap", "when": "madrasa", "how": "Four Trade Routes from seven cities." },
-    { "id": "civic:reformed-church", "fit": "free", "when": "madrasa", "how": "Six cities following the religion, Arabia's own included." },
-    { "id": "civic:the-enlightenment", "fit": "free", "when": "madrasa", "how": "The last Prophet and two Great Scientists are three Great People." },
-    { "id": "civic:humanism", "fit": "costly", "when": "madrasa", "how": "A Great Artist; nothing in the plan makes them." },
-    { "id": "civic:diplomatic-service", "fit": "cheap", "when": "madrasa", "how": "An alliance with a neighbour that follows the religion." },
-    { "id": "civic:exploration", "fit": "skip", "when": null, "how": "" },
-    { "id": "civic:civil-engineering", "fit": "cheap", "when": "industrial", "how": "Seven different specialty districts across the empire." },
-    { "id": "civic:colonialism", "fit": "free", "when": "industrial", "how": "Researching Astronomy." },
-    { "id": "civic:urbanization", "fit": "cheap", "when": "industrial", "how": "A Madrasa city at fifteen population." },
-    { "id": "civic:nationalism", "fit": "costly", "when": "industrial", "how": "A Casus Belli war only on the Domination direction." },
-    { "id": "civic:class-struggle", "fit": "cheap", "when": "industrial", "how": "Three Factories in the Industrial Zones." },
-    { "id": "civic:suffrage", "fit": "cheap", "when": "close", "how": "Four Sewers across the large cities." },
-    { "id": "civic:nuclear-program", "fit": "free", "when": "close", "how": "The first Research Lab on the Science direction." },
-    { "id": "civic:space-race", "fit": "free", "when": "close", "how": "The Spaceport on the Science direction." }
+    {
+      "id": "tech:writing",
+      "fit": "free",
+      "when": "campus",
+      "how": "The Scout meets the first rival."
+    },
+    {
+      "id": "tech:archery",
+      "fit": "cheap",
+      "when": "campus",
+      "how": "The Slinger finishes a barbarian scout."
+    },
+    {
+      "id": "tech:irrigation",
+      "fit": "cheap",
+      "when": "campus",
+      "how": "A Farm on Wheat or a Floodplains resource."
+    },
+    {
+      "id": "tech:wheel",
+      "fit": "cheap",
+      "when": "campus",
+      "how": "The first Builder mines a resource on a Hill."
+    },
+    {
+      "id": "tech:bronze-working",
+      "fit": "costly",
+      "when": "campus",
+      "how": "Three barbarian kills; the plan has one Slinger and one Warrior, so research it unboosted."
+    },
+    {
+      "id": "tech:astrology",
+      "fit": "cheap",
+      "when": "prophet",
+      "how": "The Scout walks to a natural wonder before turn 50."
+    },
+    {
+      "id": "tech:currency",
+      "fit": "free",
+      "when": "prophet",
+      "how": "The first Trader runs a domestic route into the capital."
+    },
+    {
+      "id": "tech:masonry",
+      "fit": "cheap",
+      "when": "prophet",
+      "how": "A Quarry on Stone or Marble."
+    },
+    {
+      "id": "tech:horseback-riding",
+      "fit": "cheap",
+      "when": "prophet",
+      "how": "A Pasture on Horses or Sheep."
+    },
+    {
+      "id": "tech:mathematics",
+      "fit": "free",
+      "when": "prophet",
+      "how": "Campus, the Prophet's Holy Site and the capital Commercial Hub."
+    },
+    {
+      "id": "tech:construction",
+      "fit": "cheap",
+      "when": "prophet",
+      "how": "A Water Mill in a river city."
+    },
+    {
+      "id": "tech:apprenticeship",
+      "fit": "cheap",
+      "when": "prophet",
+      "how": "Three Mines on Hills across seven cities."
+    },
+    {
+      "id": "tech:iron-working",
+      "fit": "costly",
+      "when": "prophet",
+      "how": "An Iron Mine, worth it only on the Domination direction where Mamluks need the Iron."
+    },
+    {
+      "id": "tech:engineering",
+      "fit": "costly",
+      "when": "prophet",
+      "how": "Ancient Walls in a border city, only if a neighbour is threatening."
+    },
+    {
+      "id": "tech:education",
+      "fit": "cheap",
+      "when": "madrasa",
+      "how": "The first Great Scientist from Divine Spark and the Inspiration card."
+    },
+    {
+      "id": "tech:stirrups",
+      "fit": "free",
+      "when": "madrasa",
+      "how": "Feudalism is on the civic path."
+    },
+    {
+      "id": "tech:machinery",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:astronomy",
+      "fit": "free",
+      "when": "madrasa",
+      "how": "The capital Madrasa sits in a Campus beside a Mountain."
+    },
+    {
+      "id": "tech:printing",
+      "fit": "free",
+      "when": "madrasa",
+      "how": "Two Madrasas, which count as Universities."
+    },
+    {
+      "id": "tech:military-engineering",
+      "fit": "cheap",
+      "when": "madrasa",
+      "how": "An Aqueduct in a Madrasa city without fresh water."
+    },
+    {
+      "id": "tech:castles",
+      "fit": "free",
+      "when": "madrasa",
+      "how": "Any Tier 2 government: Merchant Republic or Theocracy."
+    },
+    {
+      "id": "tech:banking",
+      "fit": "free",
+      "when": "madrasa",
+      "how": "Guilds is on the civic path."
+    },
+    {
+      "id": "tech:mass-production",
+      "fit": "cheap",
+      "when": "madrasa",
+      "how": "One Lumber Mill on Woods."
+    },
+    {
+      "id": "tech:industrialization",
+      "fit": "cheap",
+      "when": "industrial",
+      "how": "Two Workshops in the Industrial Zones."
+    },
+    {
+      "id": "tech:scientific-theory",
+      "fit": "free",
+      "when": "industrial",
+      "how": "The Enlightenment is on the civic path."
+    },
+    {
+      "id": "tech:economics",
+      "fit": "cheap",
+      "when": "industrial",
+      "how": "Two Banks in the Commercial Hub cities."
+    },
+    {
+      "id": "tech:sanitation",
+      "fit": "cheap",
+      "when": "industrial",
+      "how": "Two Neighborhoods in the largest Madrasa cities."
+    },
+    {
+      "id": "tech:military-science",
+      "fit": "costly",
+      "when": "industrial",
+      "how": "A Mamluk kill; free on the Domination direction, a detour otherwise."
+    },
+    {
+      "id": "tech:refining",
+      "fit": "cheap",
+      "when": "industrial",
+      "how": "The first Coal Power Plant beside the Factories."
+    },
+    {
+      "id": "tech:chemistry",
+      "fit": "cheap",
+      "when": "industrial",
+      "how": "Alliance level 2 with a neighbour that follows the religion."
+    },
+    {
+      "id": "tech:steam-power",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:flight",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Oxford University or Ruhr Valley."
+    },
+    {
+      "id": "tech:plastics",
+      "fit": "cheap",
+      "when": "close",
+      "how": "An Oil Well on the first Oil found."
+    },
+    {
+      "id": "tech:computers",
+      "fit": "free",
+      "when": "close",
+      "how": "Any Tier 3 government."
+    },
+    {
+      "id": "tech:synthetic-materials",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Aerodromes in the Industrial Zone cities."
+    },
+    {
+      "id": "civic:craftsmanship",
+      "fit": "free",
+      "when": "campus",
+      "how": "Three improvements from the first Builder."
+    },
+    {
+      "id": "civic:early-empire",
+      "fit": "free",
+      "when": "campus",
+      "how": "Six population across the first two cities."
+    },
+    {
+      "id": "civic:state-workforce",
+      "fit": "free",
+      "when": "campus",
+      "how": "The capital Campus, the first district built."
+    },
+    {
+      "id": "civic:mysticism",
+      "fit": "free",
+      "when": "campus",
+      "how": "The pantheon bought with God King's Faith."
+    },
+    {
+      "id": "civic:military-tradition",
+      "fit": "cheap",
+      "when": "campus",
+      "how": "The Slinger and Warrior clear the nearest camp."
+    },
+    {
+      "id": "civic:foreign-trade",
+      "fit": "costly",
+      "when": "campus",
+      "how": "A second continent only if the Scout or a coastal city sees one."
+    },
+    {
+      "id": "civic:political-philosophy",
+      "fit": "cheap",
+      "when": "prophet",
+      "how": "Three city-states met by the Scout and a Warrior."
+    },
+    {
+      "id": "civic:drama-and-poetry",
+      "fit": "cheap",
+      "when": "prophet",
+      "how": "Petra in the desert capital."
+    },
+    {
+      "id": "civic:recorded-history",
+      "fit": "free",
+      "when": "prophet",
+      "how": "Two Campuses, which the opening has by turn 45."
+    },
+    {
+      "id": "civic:games-and-recreation",
+      "fit": "free",
+      "when": "prophet",
+      "how": "Researching Construction."
+    },
+    {
+      "id": "civic:theology",
+      "fit": "free",
+      "when": "prophet",
+      "how": "The last Prophet founds the religion; hold the civic at half until it does."
+    },
+    {
+      "id": "civic:feudalism",
+      "fit": "cheap",
+      "when": "madrasa",
+      "how": "Six Farms across seven cities."
+    },
+    {
+      "id": "civic:civil-service",
+      "fit": "cheap",
+      "when": "madrasa",
+      "how": "The capital at ten population with its Aqueduct."
+    },
+    {
+      "id": "civic:divine-right",
+      "fit": "free",
+      "when": "madrasa",
+      "how": "Two Temples built for the Worship building."
+    },
+    {
+      "id": "civic:guilds",
+      "fit": "cheap",
+      "when": "madrasa",
+      "how": "Two Markets in the Commercial Hub cities."
+    },
+    {
+      "id": "civic:medieval-faires",
+      "fit": "cheap",
+      "when": "madrasa",
+      "how": "Four Trade Routes from seven cities."
+    },
+    {
+      "id": "civic:reformed-church",
+      "fit": "free",
+      "when": "madrasa",
+      "how": "Six cities following the religion, Arabia's own included."
+    },
+    {
+      "id": "civic:the-enlightenment",
+      "fit": "free",
+      "when": "madrasa",
+      "how": "The last Prophet and two Great Scientists are three Great People."
+    },
+    {
+      "id": "civic:humanism",
+      "fit": "costly",
+      "when": "madrasa",
+      "how": "A Great Artist; nothing in the plan makes them."
+    },
+    {
+      "id": "civic:diplomatic-service",
+      "fit": "cheap",
+      "when": "madrasa",
+      "how": "An alliance with a neighbour that follows the religion."
+    },
+    {
+      "id": "civic:exploration",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:civil-engineering",
+      "fit": "cheap",
+      "when": "industrial",
+      "how": "Seven different specialty districts across the empire."
+    },
+    {
+      "id": "civic:colonialism",
+      "fit": "free",
+      "when": "industrial",
+      "how": "Researching Astronomy."
+    },
+    {
+      "id": "civic:urbanization",
+      "fit": "cheap",
+      "when": "industrial",
+      "how": "A Madrasa city at fifteen population."
+    },
+    {
+      "id": "civic:nationalism",
+      "fit": "costly",
+      "when": "industrial",
+      "how": "A Casus Belli war only on the Domination direction."
+    },
+    {
+      "id": "civic:class-struggle",
+      "fit": "cheap",
+      "when": "industrial",
+      "how": "Three Factories in the Industrial Zones."
+    },
+    {
+      "id": "civic:suffrage",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Four Sewers across the large cities."
+    },
+    {
+      "id": "civic:nuclear-program",
+      "fit": "free",
+      "when": "close",
+      "how": "The first Research Lab on the Science direction."
+    },
+    {
+      "id": "civic:space-race",
+      "fit": "free",
+      "when": "close",
+      "how": "The Spaceport on the Science direction."
+    }
   ],
   "decision_triggers": [
-    { "name": "Religions come early", "if": "Three religions are founded before turn 50.", "then": "The last Prophet is one founding away. Finish the Holy Site now, ahead of the next Campus, and have the belief shortlist written by turn 55; pick the direction early from what is left." },
-    { "name": "Prophet runs late", "if": "Turn 75 with two or fewer religions founded.", "then": "The Prophet may not come until the Medieval era. Do not race for it; the Science direction needs no religion before the Madrasas. Keep the Holy Site, add a Shrine so Missionaries can be bought the turn the religion exists, and if Religion was the leaning, switch to Science." },
-    { "name": "Jesuit Education is left", "if": "Jesuit Education is still free when the Prophet founds.", "then": "Take it as the Follower belief whatever the direction: Madrasa Faith then buys Libraries and Madrasas directly, which is worth more to this kit than any other Follower belief." },
-    { "name": "Heresy at home", "if": "An Arabian city's majority religion is foreign, or rival Apostles are within three tiles of a Madrasa city.", "then": "Buy a Missionary in the Holy City and convert the city back that turn, with Moksha as Bishop holding the pressure. On the Religion direction launch an Inquisition with an Apostle instead and remove the heresy with Inquisitors." },
-    { "name": "Converted neighbour in reach", "if": "By turn 110 two cities of a neighbour within ten tiles follow the religion and it has no Medieval Walls.", "then": "On the Domination direction evangelize Crusade with the second Apostle and march the Mamluks with Trebuchets. On Science leave the neighbour alone; its converted cities pay Science every turn it lives." }
+    {
+      "name": "Religions come early",
+      "if": "Three religions are founded before turn 50.",
+      "then": "The last Prophet is one founding away. Finish the Holy Site now, ahead of the next Campus, and have the belief shortlist written by turn 55; pick the direction early from what is left."
+    },
+    {
+      "name": "Prophet runs late",
+      "if": "Turn 75 with two or fewer religions founded.",
+      "then": "The Prophet may not come until the Medieval era. Do not race for it; the Science direction needs no religion before the Madrasas. Keep the Holy Site, add a Shrine so Missionaries can be bought the turn the religion exists, and if Religion was the leaning, switch to Science."
+    },
+    {
+      "name": "Jesuit Education is left",
+      "if": "Jesuit Education is still free when the Prophet founds.",
+      "then": "Take it as the Follower belief whatever the direction: Madrasa Faith then buys Libraries and Madrasas directly, which is worth more to this kit than any other Follower belief."
+    },
+    {
+      "name": "Heresy at home",
+      "if": "An Arabian city's majority religion is foreign, or rival Apostles are within three tiles of a Madrasa city.",
+      "then": "Buy a Missionary in the Holy City and convert the city back that turn, with Moksha as Bishop holding the pressure. On the Religion direction launch an Inquisition with an Apostle instead and remove the heresy with Inquisitors."
+    },
+    {
+      "name": "Converted neighbour in reach",
+      "if": "By turn 110 two cities of a neighbour within ten tiles follow the religion and it has no Medieval Walls.",
+      "then": "On the Domination direction evangelize Crusade with the second Apostle and march the Mamluks with Trebuchets. On Science leave the neighbour alone; its converted cities pay Science every turn it lives."
+    }
   ],
   "abort": {
     "trigger": "Turn 150 with no direction committed: Faith banked above the price of three Missionaries, the Worship building in fewer than half the Temple cities, no foreign city converted and no capital taken.",

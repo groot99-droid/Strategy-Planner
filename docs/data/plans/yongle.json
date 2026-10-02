@@ -95,7 +95,7 @@
         "Hong Kong's suzerainty if it is on the map, or envoys flowing toward it, for the extra Production on every Lijia turn.",
         "A defensive floor that needs no attention: Ancient Walls and two Archers in each border city and a line of three Great Wall segments facing the nearest rival."
       ],
-      "late_gate": "If no city has crossed by turn 120, twenty turns behind pace, Housing is almost always the cause, not Production. Stop every project, put the capital's Builders on Farms and Pastures, finish the Aqueduct, send two Traders from the other cities into the capital for Food, and appoint Magnus with Surplus Logistics there. If Amenities are the cause, trade for a luxury an AI has spare, build the Arena, and slot Retainers with an Archer garrisoned in the city. Do not settle more cities during the delay, since each one splits the luxuries further, and do not start a second city's project to make up time: two half-housed cities cross later than one fully housed one. If the delay runs past turn 140, the gate is no longer the bottleneck and the abort applies.",
+      "late_gate": "If no city has crossed by turn 120, twenty turns behind pace, Housing is almost always the cause, not Production. Stop every project, put the capital's Builders on Farms and Pastures, finish the Aqueduct, send two Traders from the capital to the other cities for Food, and appoint Magnus with Surplus Logistics there. If Amenities are the cause, trade for a luxury an AI has spare, build the Arena, and slot Retainers with an Archer garrisoned in the city. Do not settle more cities during the delay, since each one splits the luxuries further, and do not start a second city's project to make up time: two half-housed cities cross later than one fully housed one. If the delay runs past turn 140, the gate is no longer the bottleneck and the abort applies.",
       "closing_window": "The Lijia yields are permanent, so the far deadline is not the ability expiring but parity in Population and Science. Through the Renaissance the AI's cities stall at eight to twelve for want of Housing, and China's crossed cities are three to six Citizens larger, which is the whole lead. Parity arrives in the Industrial era, roughly turn 170 to 200 on Emperor, when rivals build Neighborhoods and Sewers and their capitals reach the same size without projects, and in Science when the leading rival's Research Labs come in. Convert before that: every core city over 10 with a University by turn 170, the capital at 15 with Urbanization in reach, and Science per turn first on the table at the turn 190 check. After parity the projects are worth running only for Gold; a project turn in a city past 15 is a Research Lab turn lost."
     }
   },
@@ -313,7 +313,7 @@
         },
         {
           "id": "tech:currency",
-          "note": "Commercial Hub and Market; Eureka from the first Trade Route, a Food route into the capital."
+          "note": "Commercial Hub and Market; Eureka from the first Trade Route, a Food route out of the capital."
         },
         {
           "id": "tech:engineering",
@@ -396,7 +396,7 @@
         {
           "district": "commercial-hub",
           "city": "second river city",
-          "note": "Trade Route capacity for a Food route into the capital, and Muscat's Amenity if it is met."
+          "note": "Trade Route capacity for a Food route out of the capital, and Muscat's Amenity if it is met."
         },
         {
           "district": "entertainment-complex",
@@ -640,7 +640,7 @@
           "governor": "magnus",
           "promotion": "Surplus Logistics",
           "city": "second river city",
-          "why": "More Food and growth in the next city to cross, and Food from the Trade Routes that end there."
+          "why": "Faster growth in the next city to cross, and Food for the cities whose Trade Routes end there."
         }
       ],
       "city_states": [
@@ -802,7 +802,7 @@
           "card": "Merchant Republic",
           "slot": "wildcard",
           "from": "civic:exploration",
-          "why": "The government: Trade Route capacity for Food routes into the cities still below the threshold, and cheaper Gold purchases."
+          "why": "The government: Trade Route capacity for Food routes out of the cities still below the threshold, and cheaper Gold purchases."
         },
         {
           "card": "Rationalism",
@@ -863,7 +863,7 @@
           "governor": "pingala",
           "promotion": "Grants",
           "city": "capital",
-          "why": "More Great Scientist points from the capital's Campus buildings."
+          "why": "Double the Great Person points the capital earns, its Campus's Great Scientist points among them."
         }
       ],
       "city_states": [
@@ -873,7 +873,7 @@
         },
         {
           "type": "Scientific",
-          "why": "Six envoys across Scientific city-states add Science to every University, and every core city has one."
+          "why": "Six envoys in one Scientific city-state add Science to every University, and every core city has one."
         }
       ],
       "great_people": [
@@ -1025,7 +1025,7 @@
         },
         {
           "id": "civic:space-race",
-          "note": "Inspiration from the Spaceport; the space projects themselves."
+          "note": "Inspiration from the Spaceport; Integrated Space Cell for the space projects."
         }
       ],
       "policies": [
@@ -1083,7 +1083,7 @@
           "governor": "liang",
           "promotion": "Zoning Commissioner",
           "city": "second big city",
-          "why": "Faster Neighborhoods and Research Lab districts in the city behind the capital."
+          "why": "Faster Neighborhoods and other districts in the city behind the capital."
         }
       ],
       "city_states": [
@@ -1093,7 +1093,7 @@
         },
         {
           "type": "Scientific",
-          "why": "Keep six envoys in Scientific city-states for the University Science."
+          "why": "Keep six envoys in one Scientific city-state for the University Science."
         }
       ],
       "great_people": [
@@ -1202,7 +1202,7 @@
       "id": "tech:currency",
       "fit": "cheap",
       "when": "housing",
-      "how": "The first Trader runs a Food route from the second city into the capital."
+      "how": "The first Trader runs a Food route from the capital to the second city."
     },
     {
       "id": "tech:construction",

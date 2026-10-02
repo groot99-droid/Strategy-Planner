@@ -52,7 +52,7 @@
       "source": "unique_unit",
       "name": "Immortal",
       "buys": "A Swordsman replacement at Iron Working with 30 melee Strength, a 25 Strength ranged attack of range 2, and no Iron cost.",
-      "exploit": "Four Immortals shoot the garrison from two tiles away on the turn they arrive and walk in the turn the Walls are down; they are the Archers and the Swordsmen of the burst at once. No Iron means the arming phase never waits on a Mine. They keep the ranged attack when upgraded to Musketmen, so they are the garrison line for the rest of the game, and under Professional Army they are cheap to upgrade."
+      "exploit": "Four Immortals shoot the garrison from two tiles away on the turn they arrive and walk in the turn the Walls are down; they are the Archers and the Swordsmen of the burst at once. No Iron means the arming phase never waits on a Mine. They lose the ranged attack when upgraded, so they stay Immortals as the garrison line until Professional Army makes the upgrade cheap."
     },
     {
       "source": "unique_infrastructure",
@@ -328,7 +328,7 @@
         },
         {
           "id": "tech:mathematics",
-          "note": "Three specialty districts once the war is done; Apprenticeship behind it."
+          "note": "Three specialty districts once the war is done; Education behind it."
         }
       ],
       "civics": [
@@ -342,7 +342,7 @@
         },
         {
           "id": "civic:mysticism",
-          "note": "Free Inspiration from the pantheon; on the way to Drama and Poetry, which the Culture game wants."
+          "note": "Free Inspiration from the pantheon; cheap Culture progress between the bursts; Drama and Poetry hangs off Early Empire, not this."
         },
         {
           "id": "civic:defensive-tactics",
@@ -374,7 +374,7 @@
           "card": "Colonization",
           "slot": "economic",
           "from": "civic:early-empire",
-          "why": "The third city at half Settler cost while the army does the conquering."
+          "why": "The third city with Settlers fifty percent faster while the army does the conquering."
         },
         {
           "card": "Oligarchy",
@@ -673,13 +673,13 @@
           "governor": "reyna",
           "promotion": "Harbormaster",
           "city": "capital",
-          "why": "Her base trait adds Gold on Commercial Hub adjacency, and the capital Hub beside a Pairidaeza is the richest tile in the empire."
+          "why": "Harbormaster doubles the Commercial Hub's adjacency, and the capital's river Hub is the richest district in the empire."
         },
         {
           "governor": "amani",
           "promotion": "Emissary",
           "city": "the captured capital",
-          "why": "Two envoys and Loyalty pressure outward in the city nearest the former owner."
+          "why": "Loyalty pressure outward in the city nearest the former owner."
         },
         {
           "governor": "pingala",
@@ -751,7 +751,7 @@
         {
           "id": "digest-musketmen",
           "turn": 158,
-          "text": "Upgrade the garrison Immortals to Musketmen under Professional Army; they keep the ranged attack. Disband any you cannot afford to upgrade."
+          "text": "Slot Professional Army and queue the garrison Immortals to upgrade to Musketmen the turn Gunpowder lands; the ranged attack is lost on upgrade. Disband any you cannot afford to upgrade."
         }
       ]
     },
@@ -827,7 +827,7 @@
       "civics": [
         {
           "id": "civic:humanism",
-          "note": "Inspiration from the first Great Artist, which the Art Museums attract; Art Museums and Grand Opera."
+          "note": "Inspiration from the first Great Artist; Art Museums, which attract the rest."
         },
         {
           "id": "civic:diplomatic-service",
@@ -1047,7 +1047,7 @@
       "research": [
         {
           "id": "tech:rifling",
-          "note": "A Mine on the Niter Military Engineering revealed; Field Cannons and the Musketman line."
+          "note": "A Mine on the Niter Military Engineering revealed; Line Infantry, the Musketman line's next step."
         },
         {
           "id": "tech:refining",
@@ -1085,7 +1085,7 @@
         },
         {
           "id": "civic:class-struggle",
-          "note": "Three Factories; Communism for the Production or Democracy for the Tourism."
+          "note": "Three Factories; Communism for the Production; Democracy comes from Suffrage."
         },
         {
           "id": "civic:urbanization",
@@ -1093,7 +1093,7 @@
         },
         {
           "id": "civic:mass-media",
-          "note": "Free Inspiration from Radio; Broadcast Centers and Online Communities."
+          "note": "Free Inspiration from Radio; Broadcast Centers; Online Communities waits for Social Media."
         },
         {
           "id": "civic:cultural-heritage",
@@ -1118,7 +1118,7 @@
         {
           "card": "Online Communities",
           "slot": "diplomatic",
-          "from": "civic:mass-media",
+          "from": "civic:social-media",
           "why": "Culture branch: +50% Tourism to civilizations you trade with; the routes to the ally count."
         },
         {
@@ -1150,11 +1150,11 @@
         {
           "name": "Eiffel Tower",
           "why": "+2 Appeal to every tile in the empire on top of the Pairidaezas; Seaside Resorts and National Parks everywhere.",
-          "skip_if": "Steam Power arrives after turn 280 or a Culture civilization is already building it."
+          "skip_if": "Steel arrives after turn 280 or a Culture civilization is already building it."
         },
         {
           "name": "Cristo Redentor",
-          "why": "Tourism from Seaside Resorts unaffected by Ideology, and it doubles the Resort line the Appeal built.",
+          "why": "Tourism from Seaside Resorts and Relics doubled, which doubles the Resort line the Appeal built.",
           "skip_if": "The Domination branch is chosen, or no Hills tile is free in a high-Production city."
         }
       ],
@@ -1450,7 +1450,7 @@
       "id": "tech:flight",
       "fit": "cheap",
       "when": "close",
-      "how": "Owning the Hermitage, the Forbidden City or any Industrial wonder."
+      "how": "Owning the Hermitage or any Industrial wonder."
     },
     {
       "id": "tech:combustion",
@@ -1588,7 +1588,7 @@
       "id": "civic:humanism",
       "fit": "cheap",
       "when": "build",
-      "how": "The first Great Artist the Art Museums attract."
+      "how": "The first Great Artist, patronized with Gold or Faith before any Art Museum exists."
     },
     {
       "id": "civic:diplomatic-service",
@@ -1711,7 +1711,7 @@
     {
       "name": "Ally at war",
       "if": "After turn 200 an ally is attacked by, or attacks, a civilization an era behind you whose cities are within ten tiles of your border.",
-      "then": "Join under the alliance's Casus Belli the same turn; Musketmen with the Immortals' ranged attack and Bombards take two more cities, and the Nationalism Inspiration comes free. Never a Surprise War, whatever the Movement would be."
+      "then": "Join under the alliance's Casus Belli the same turn; Musketmen and Bombards take two more cities, and the Nationalism Inspiration comes free. Never a Surprise War, whatever the Movement would be."
     }
   ],
   "abort": {

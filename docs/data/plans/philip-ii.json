@@ -46,7 +46,7 @@
       "source": "civ_ability",
       "name": "Treasure Fleet",
       "buys": "Trade Routes between continents pay extra Gold, Faith and Production, and Fleets and Armadas form at Mercantilism instead of Nationalism and Mobilization.",
-      "exploit": "A colony on the second continent turns every domestic route from the capital into an intercontinental one, which pays for upgrades in Gold and for Missionary escorts in Faith. If the next differently-faithed target is across water, Mercantilism lets Caravels and Frigates form Fleets an era before anyone else, and the escorted Conquistadors land under them."
+      "exploit": "A colony on the second continent turns every domestic route from the capital to it into an intercontinental one, which pays for upgrades in Gold and for Missionary escorts in Faith. If the next differently-faithed target is across water, Mercantilism lets Caravels and Frigates form Fleets an era before anyone else, and the escorted Conquistadors land under them."
     },
     {
       "source": "unique_unit",
@@ -524,7 +524,7 @@
         },
         {
           "item": "Commercial Hub",
-          "why": "Capital; Trade Route capacity and the Gold the upgrades and Professional Army need."
+          "why": "Capital; the Gold the upgrades and Professional Army need."
         }
       ],
       "research": [
@@ -672,7 +672,7 @@
           "turn": 95,
           "test": "Military Engineering researched, Barracks up, four Men-at-Arms standing, three Missionaries banked, and the target's majority religion still not yours?",
           "pass": "Build the Armory now; collect the Gunpowder Eureka before the research starts.",
-          "fail": "Men-at-Arms short: Feudal Contract and the Barracks city builds nothing else. Missionaries short: slot God King again and buy them before anything else with Faith. Target converted: pick the next differently-faithed civilization on the map."
+          "fail": "Men-at-Arms short: Feudal Contract and the Barracks city builds nothing else. Missionaries short: buy them before anything else with Faith. Target converted: pick the next differently-faithed civilization on the map."
         },
         {
           "turn": 120,

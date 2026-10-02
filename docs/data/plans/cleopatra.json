@@ -46,7 +46,7 @@
       "source": "civ_ability",
       "name": "Iteru",
       "buys": "Districts and wonders adjacent to a river are built fifteen percent faster, and Floodplains do not block the placement of districts or wonders.",
-      "exploit": "Every district in every city goes on a river tile, Floodplains first, so the bonus applies to every build and the Farms stay on the dry land. Wonders that need Floodplains or desert, the Pyramids, Great Bath and Etemenanki, are Egypt's before anyone else can place them. Keep one or two Floodplains unimproved beside the City Center for the Theater Square and Campus later."
+      "exploit": "Every district in every city goes on a river tile, Floodplains first, so the bonus applies to every build and the Farms stay on the dry land. Wonders that need Floodplains or desert, the Pyramids, Great Bath and Etemenanki, take Iteru's fifteen percent when they sit beside the river. Keep one or two Floodplains unimproved beside the City Center for the Theater Square and Campus later."
     },
     {
       "source": "unique_unit",
@@ -130,7 +130,7 @@
         },
         {
           "item": "Pyramids",
-          "why": "On a Floodplain or desert tile beside the river with Corvee slotted; an extra charge on every Builder for the whole game."
+          "why": "On a desert or desert Floodplains tile beside the river with Corvee slotted; an extra charge on every Builder for the whole game."
         }
       ],
       "research": [
@@ -220,12 +220,12 @@
       "wonders": [
         {
           "name": "Pyramids",
-          "why": "An extra charge on every Builder; the Sphinxes and Floodplains Farms are all Builder charges, and Egypt places it on Floodplains before anyone else can.",
-          "skip_if": "No desert or Floodplains tile within the capital's first two rings, or a rival finishes Masonry before turn 30."
+          "why": "An extra charge on every Builder; the Sphinxes and Floodplains Farms are all Builder charges, and on a desert Floodplain beside the river it takes Iteru's fifteen percent.",
+          "skip_if": "No desert or desert Floodplains tile within the capital's first two rings, or a rival finishes Masonry before turn 30."
         },
         {
           "name": "Great Bath",
-          "why": "Housing and an Amenity in the capital, and it sits on Floodplains, which only Egypt can fill this early.",
+          "why": "Housing and an Amenity in the capital, and it must sit on Floodplains, which an Egyptian river capital has to spare.",
           "skip_if": "The Pyramids are still building at turn 40 or the capital has fewer than two Floodplains tiles free."
         }
       ],
@@ -284,7 +284,7 @@
         {
           "id": "nile-pyramids",
           "turn": 38,
-          "text": "Pyramids placed on a Floodplains or desert tile adjacent to the river with Corvee slotted; the Sphinx goes beside it the turn it finishes."
+          "text": "Pyramids placed on a desert or desert Floodplains tile adjacent to the river with Corvee slotted; the Sphinx goes beside it the turn it finishes."
         }
       ]
     },
@@ -359,7 +359,7 @@
         },
         {
           "id": "tech:engineering",
-          "note": "Ancient Walls in the border city; Petra and the Great Wall are behind it."
+          "note": "Ancient Walls in the border city; the Aqueduct and Machu Picchu unlock here."
         },
         {
           "id": "tech:apprenticeship",
@@ -377,7 +377,7 @@
         },
         {
           "id": "civic:military-tradition",
-          "note": "The first camp cleared by a Chariot gives the Inspiration; on the path to Political Philosophy."
+          "note": "The first camp cleared by a Chariot gives the Inspiration; cheap while it is boosted, though it is not on the path to Political Philosophy."
         },
         {
           "id": "civic:political-philosophy",
@@ -417,7 +417,7 @@
           "card": "Colonization",
           "slot": "economic",
           "from": "civic:early-empire",
-          "why": "Settlers at half cost for cities four through six."
+          "why": "Settlers fifty percent faster for cities four through six."
         },
         {
           "card": "Aesthetics",
@@ -467,7 +467,7 @@
         {
           "name": "Temple of Artemis",
           "why": "Housing and Amenities from every Camp and Pasture within four tiles across a dense river empire.",
-          "skip_if": "No Camp resource within reach of a river city, or Astrology lands after turn 70."
+          "skip_if": "No Camp resource within reach of a river city, or Archery lands after turn 70."
         },
         {
           "name": "Oracle",
@@ -491,7 +491,7 @@
           "governor": "liang",
           "promotion": "Zoning Commissioner",
           "city": "the second wonder city",
-          "why": "Faster districts and wonders where Iteru is already paying."
+          "why": "Faster districts where Iteru is already paying."
         }
       ],
       "city_states": [
@@ -615,7 +615,7 @@
       "research": [
         {
           "id": "tech:military-engineering",
-          "note": "The Aqueduct gives the Eureka; Petra and the Great Wall sit on this line."
+          "note": "The Aqueduct gives the Eureka; Military Engineers unlock here."
         },
         {
           "id": "tech:education",
@@ -623,7 +623,7 @@
         },
         {
           "id": "tech:machinery",
-          "note": "Three Archers upgraded from the Chariots give the Eureka; Crossbowmen are the garrison."
+          "note": "Three Archers give the Eureka; Crossbowmen are the garrison."
         },
         {
           "id": "tech:castles",
@@ -762,7 +762,7 @@
         },
         {
           "name": "Great Library",
-          "why": "Science direction: Great Scientist points and a free Eureka per Great Scientist; Writing slots for Culture.",
+          "why": "Science direction: Great Scientist points and the Eureka for every Ancient and Classical tech still missing one; Writing slots for Culture.",
           "skip_if": "Recorded History lands after turn 110, or a Science civilization has it queued."
         },
         {
@@ -782,13 +782,13 @@
           "governor": "liang",
           "promotion": "Zoning Commissioner",
           "city": "the best wonder city",
-          "why": "Faster wonders where Gothic Architecture and Iteru already stack."
+          "why": "Faster districts in the city where Gothic Architecture and Iteru already stack on the wonders."
         },
         {
           "governor": "amani",
           "promotion": "Emissary",
-          "city": "a city near two city-states",
-          "why": "Envoys toward Brussels and Antananarivo; the Diplomatic direction needs her Prestige line."
+          "city": "Brussels",
+          "why": "Two envoys' worth in Brussels while she sits there; the Diplomatic direction needs her Prestige line."
         }
       ],
       "city_states": [
@@ -928,7 +928,7 @@
         },
         {
           "id": "tech:steam-power",
-          "note": "Eiffel Tower unlocks here; unboosted unless a coastal city builds two Shipyards."
+          "note": "Eiffel Tower waits for Steel; unboosted unless a coastal city builds two Shipyards."
         },
         {
           "id": "tech:flight",
@@ -1035,11 +1035,11 @@
         {
           "name": "Eiffel Tower",
           "why": "Two more Appeal on every tile in the empire, which pushes the whole river ring to Breathtaking and makes every coast a Resort.",
-          "skip_if": "Steam Power lands after turn 225, or a Culture civilization has it queued and is ahead on Production."
+          "skip_if": "Steel lands after turn 225, or a Culture civilization has it queued and is ahead on Production."
         },
         {
           "name": "Hermitage",
-          "why": "Culture direction: six Great Work of Art slots in one Theater Square city.",
+          "why": "Culture direction: four Great Work of Art slots in one Theater Square city.",
           "skip_if": "Fewer than three Great Artists expected before turn 240, or Natural History lands after turn 220."
         },
         {
@@ -1064,7 +1064,7 @@
           "governor": "pingala",
           "promotion": "Curator",
           "city": "capital",
-          "why": "Culture direction: Tourism from the wonders and Great Works doubled in the capital."
+          "why": "Culture direction: Tourism from Great Works doubled in the capital."
         },
         {
           "governor": "reyna",
@@ -1283,7 +1283,7 @@
       "wonders": [
         {
           "name": "Cristo Redentor",
-          "why": "Culture direction: Seaside Resort Tourism is not reduced by rival Culture and Relic Tourism is doubled.",
+          "why": "Culture direction: Tourism from Seaside Resorts and Relics is doubled.",
           "skip_if": "No Seaside Resorts were placed and no Relics are held, or Mass Media lands after turn 260."
         },
         {
@@ -1454,7 +1454,7 @@
       "id": "tech:machinery",
       "fit": "cheap",
       "when": "appeal",
-      "how": "Three Archers upgraded from the Chariots and Slingers held as garrison."
+      "how": "Three Archers built or bought as the border garrison."
     },
     {
       "id": "tech:castles",

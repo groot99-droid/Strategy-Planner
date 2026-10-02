@@ -40,7 +40,7 @@
       "source": "leader_ability",
       "name": "Exalted Goddess of the Three Worlds",
       "buys": "Naval units can be bought with Faith, religious units embark and disembark at no Movement cost, and every City Center adjacent to Coast or a Lake makes +2 Faith.",
-      "exploit": "Every city is coastal, so every city pays Faith from turn 1 and the pantheon lands by turn 12. Buy the first Galley with Faith on turn 10 rather than building a Warrior; buy Quadriremes for the coast when camps spawn ships; and never build a Jong with Production when the treasury can buy it the turn Mercantilism lands."
+      "exploit": "Every city is coastal, so every city pays Faith from turn 1 and the pantheon lands by turn 12. Spend the first Faith on the pantheon and build the first Galley rather than a Warrior, since two Faith a turn cannot buy a ship in the first thirty turns; buy Quadriremes for the coast when camps spawn ships; and never build a Jong with Production when the treasury can buy it the turn Mercantilism lands."
     },
     {
       "source": "civ_ability",
@@ -110,11 +110,15 @@
         "to": 30
       },
       "era": "ancient",
-      "objective": "Run the map check on turn 1, settle on the coast beside sea resources, buy the first Galley with Faith, found God of the Sea by turn 12 from the City Center's own Faith, place a coastal Holy Site in the capital, and have the second coastal city settled with its Holy Site tile marked.",
+      "objective": "Run the map check on turn 1, settle on the coast beside sea resources, build the first Galley, found God of the Sea by turn 12 from the City Center's own Faith, place a coastal Holy Site in the capital, and have the second coastal city settled with its Holy Site tile marked.",
       "build_order": [
         {
           "item": "Scout",
           "why": "Coastline both ways, the second and third city sites, the nearest camp, and a natural wonder for Astrology and Kandy."
+        },
+        {
+          "item": "Galley",
+          "why": "Built, not bought: the City Center's Faith goes to the pantheon first. It scouts the coast, meets the first civilization and city-states, and is the first of the two Galleys for Shipbuilding."
         },
         {
           "item": "Slinger",
@@ -198,7 +202,7 @@
           "card": "Maritime Industries",
           "slot": "military",
           "from": "civic:foreign-trade",
-          "why": "Cheaper Galleys and Quadriremes whether they are built or bought."
+          "why": "Galleys and Quadriremes at double Production; it does not lower the Faith price of the ones bought."
         }
       ],
       "districts": [
@@ -225,7 +229,7 @@
       "checkpoints": [
         {
           "turn": 30,
-          "test": "Two coastal cities, God of the Sea founded, the capital Holy Site placed, a Faith-bought Galley at sea, and Craftsmanship and Foreign Trade done?",
+          "test": "Two coastal cities, God of the Sea founded, the capital Holy Site placed, a Galley at sea, and Craftsmanship and Foreign Trade done?",
           "pass": "Queue the Shrine and the third Settler; enter the Faith phase.",
           "fail": "No pantheon by 30 means the capital is not on the coast or the Holy Site took the Monument's turn; fix the first by re-reading the map check, the second by buying the Monument. No second city: Settler now, before the Shrine."
         }
@@ -238,8 +242,8 @@
         },
         {
           "id": "shore-galley",
-          "turn": 10,
-          "text": "Buy a Galley with Faith; send it along the coast to find the camps that will spawn ships and the second continent for Foreign Trade."
+          "turn": 20,
+          "text": "Galley built; send it along the coast to find the camps that will spawn ships and the second continent for Foreign Trade."
         },
         {
           "id": "shore-pantheon",
@@ -308,7 +312,7 @@
         },
         {
           "id": "tech:shipbuilding",
-          "note": "Kampungs. Eureka from two Galleys, which Faith bought already."
+          "note": "Kampungs. Eureka from two Galleys, the capital's and one more from the second city."
         },
         {
           "id": "tech:writing",
@@ -316,7 +320,7 @@
         },
         {
           "id": "tech:bronze-working",
-          "note": "Lumber Mills later and the camp kills now; Eureka from three barbarian kills."
+          "note": "Iron revealed and the camp kills now; Eureka from three barbarian kills."
         },
         {
           "id": "tech:archery",
@@ -353,12 +357,12 @@
           "note": "Classical Republic for the Prophet points; three city-states met by the Galley."
         },
         {
-          "id": "civic:theology",
-          "note": "Inspiration from founding the religion; Scripture doubles the water adjacency."
-        },
-        {
           "id": "civic:drama-and-poetry",
           "note": "On the gate path to Humanism; Inspiration if Mahabodhi or the Great Lighthouse is built."
+        },
+        {
+          "id": "civic:theology",
+          "note": "Inspiration from founding the religion; Scripture doubles the water adjacency."
         },
         {
           "id": "civic:games-and-recreation",
@@ -370,13 +374,7 @@
           "card": "Colonization",
           "slot": "economic",
           "from": "civic:early-empire",
-          "why": "Fourth and fifth Settlers at half price while Faith buys the ships."
-        },
-        {
-          "card": "Classical Republic",
-          "slot": "wildcard",
-          "from": "civic:political-philosophy",
-          "why": "The government: Great Prophet points and an Amenity in every small coastal city."
+          "why": "Fourth and fifth Settlers at +50% Production while Faith buys the ships."
         },
         {
           "card": "Scripture",
@@ -388,7 +386,7 @@
           "card": "Maritime Industries",
           "slot": "military",
           "from": "civic:foreign-trade",
-          "why": "Still slotted: Quadriremes are cheaper to buy as well as build."
+          "why": "Still slotted for Quadriremes built with Production; it does not lower their Faith price."
         }
       ],
       "districts": [
@@ -416,7 +414,7 @@
         {
           "name": "Mahabodhi Temple",
           "why": "Two free Apostles and Faith; on a coastal Holy Site beside Woods it is the first convoy for nothing.",
-          "skip_if": "No Holy Site sits beside Woods, or Theology lands after turn 80."
+          "skip_if": "No Holy Site with a Temple sits beside Woods, or Theology lands after turn 80."
         },
         {
           "name": "Great Lighthouse",
@@ -571,7 +569,7 @@
         },
         {
           "id": "tech:castles",
-          "note": "Free Eureka from Classical Republic; Medieval Walls on the target-facing city."
+          "note": "Free Eureka once Theocracy is adopted at Reformed Church; Medieval Walls on the target-facing city."
         },
         {
           "id": "tech:mass-production",
@@ -624,12 +622,6 @@
           "slot": "economic",
           "from": "civic:theology",
           "why": "Still doubling every water Holy Site."
-        },
-        {
-          "card": "Theocracy",
-          "slot": "wildcard",
-          "from": "civic:reformed-church",
-          "why": "The government: Faith purchases 15% cheaper, which is two Jong for the price of one and three quarters, and stronger Apostles."
         },
         {
           "card": "Simultaneum",
@@ -693,11 +685,11 @@
         },
         {
           "slug": "valletta",
-          "why": "Walls and Harbor buildings bought with Faith in the coastal cities that have no Production."
+          "why": "Walls and other City Center buildings bought with Faith in the coastal cities that have no Production."
         },
         {
           "type": "Trade",
-          "why": "A Trade city-state's envoys add Gold per Trade Route, and the Harbors run four."
+          "why": "A Trade city-state's envoys add Gold in the capital and in every Market, and this phase builds two."
         }
       ],
       "great_people": [
@@ -777,7 +769,7 @@
         },
         {
           "item": "Caravel",
-          "why": "The melee ship that captures; upgrade it to a Privateer when Mercantilism's Gold allows."
+          "why": "The melee ship that captures; its upgrade line is the Ironclad, so a Faith-bought Privateer is the spare once Mercantilism lands."
         },
         {
           "item": "Inquisitor",
@@ -862,12 +854,6 @@
           "why": "One more charge on every Apostle in the convoys."
         },
         {
-          "card": "Theocracy",
-          "slot": "wildcard",
-          "from": "civic:reformed-church",
-          "why": "Still the government: every Jong and Apostle 15% cheaper."
-        },
-        {
           "card": "Wars of Religion",
           "slot": "military",
           "from": "civic:reformed-church",
@@ -914,7 +900,7 @@
           "governor": "amani",
           "promotion": "Emissary",
           "city": "the city nearest a rival coast",
-          "why": "Loyalty outward and envoys for the Religious city-states."
+          "why": "Loyalty there; assign her to a Religious city-state instead and Emissary counts as two envoys."
         }
       ],
       "city_states": [
@@ -1205,7 +1191,7 @@
       "id": "tech:shipbuilding",
       "fit": "free",
       "when": "faith",
-      "how": "Two Galleys, both bought with Faith by turn 30."
+      "how": "Two Galleys, the capital's and one more from the second city."
     },
     {
       "id": "tech:mathematics",
@@ -1271,7 +1257,7 @@
       "id": "tech:castles",
       "fit": "free",
       "when": "stage",
-      "how": "Classical Republic is a Tier 2 government."
+      "how": "Theocracy, adopted at Reformed Church, is a Tier 2 government."
     },
     {
       "id": "tech:cartography",
@@ -1349,7 +1335,7 @@
       "id": "tech:electricity",
       "fit": "cheap",
       "when": "close",
-      "how": "Two Privateers, one of them the upgraded Caravel."
+      "how": "Two Privateers, Faith-bought once Mercantilism lands."
     },
     {
       "id": "tech:steel",
@@ -1359,9 +1345,9 @@
     },
     {
       "id": "tech:flight",
-      "fit": "free",
+      "fit": "costly",
       "when": "close",
-      "how": "Kilwa or the Venetian Arsenal is an Industrial-or-later wonder you own."
+      "how": "Owning an Industrial-era wonder; Kilwa and the Venetian Arsenal come too early to count."
     },
     {
       "id": "tech:military-science",

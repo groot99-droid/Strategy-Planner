@@ -52,7 +52,7 @@
       "source": "unique_unit",
       "name": "Oromo Cavalry",
       "buys": "A Courser replacement with more Combat Strength and Sight that pays no extra Movement on Hills.",
-      "exploit": "Two or three are the whole standing army: they clear barbarians, hold the hill border and fight from Hills where the leader bonus stacks. On flat land against Pikemen they are ordinary Coursers, so they defend the highland rather than invade the lowland."
+      "exploit": "Two or three are the whole standing army: they clear barbarians, hold the hill border and fight from Hills where the leader bonus stacks. On flat land against Pikemen they are little better than Coursers, so they defend the highland rather than invade the lowland."
     },
     {
       "source": "unique_infrastructure",
@@ -370,12 +370,12 @@
           "note": "Construction gives the Inspiration; Arenas for a hill empire short of luxuries."
         },
         {
-          "id": "civic:theology",
-          "note": "Founding the religion gives the Inspiration; Temples and Scripture."
-        },
-        {
           "id": "civic:drama-and-poetry",
           "note": "The Oracle gives the Inspiration; Theater Squares and Aesthetics for the Culture direction."
+        },
+        {
+          "id": "civic:theology",
+          "note": "Founding the religion gives the Inspiration; Temples and Scripture."
         },
         {
           "id": "civic:recorded-history",
@@ -849,7 +849,7 @@
         },
         {
           "id": "tech:scientific-theory",
-          "note": "The Enlightenment gives the Eureka; Research Labs and Oxford University."
+          "note": "The Enlightenment gives the Eureka; Oxford University. Research Labs wait for Chemistry."
         },
         {
           "id": "tech:rifling",
@@ -1353,7 +1353,7 @@
     {
       "id": "tech:chemistry",
       "fit": "cheap",
-      "when": "close",
+      "when": "three-paths",
       "how": "Alliance level 2 with the Diplomatic Service ally."
     },
     {
@@ -1591,7 +1591,7 @@
     "Banking Faith because the Science and Culture arrive anyway. The Council pays on Faith per turn, which is exactly why the bank grows unnoticed.",
     "Skipping the food plan. Hills cap cities at five or six population, and population is what works the churches and the resources.",
     "Sending domestic Trade Routes from the resource cities. Only international routes pay Aksumite Faith per resource; domestic routes belong to the hungry hill cities.",
-    "Marching Oromo Cavalry onto the lowlands. On Hills they carry the +4 bonus and move freely; on flat land against Pikemen they are ordinary Coursers."
+    "Marching Oromo Cavalry onto the lowlands. On Hills they carry the +4 bonus and move freely; on flat land against Pikemen they are little better than Coursers."
   ],
   "sources": [
     "Civilization VI Civilopedia, Gathering Storm ruleset with the New Frontier Pass Ethiopia Pack (Ethiopia, Menelik II, Council of Ministers, Aksumite Legacy, Oromo Cavalry, Rock-Hewn Church).",

@@ -299,7 +299,7 @@
         },
         {
           "item": "Commercial Hub",
-          "why": "First district in every inland city and the second in the capital: a point of Trade Route capacity, and City Patron Goddess pays a quarter of it."
+          "why": "First district in every inland city and the second in the capital: a point of Trade Route capacity, and City Patron Goddess adds 25% Production toward it wherever it is the first district."
         },
         {
           "item": "Harbor",
@@ -361,7 +361,7 @@
         },
         {
           "id": "tech:shipbuilding",
-          "note": "Only for the Colossus; two Galleys are a real detour."
+          "note": "The Colossus now and Cartography and Mass Production later; two Galleys for the Eureka are a real detour."
         }
       ],
       "civics": [
@@ -612,7 +612,7 @@
       "civics": [
         {
           "id": "civic:military-training",
-          "note": "Delay it until the capital Encampment is placed; the Inspiration then comes free."
+          "note": "Delay it until the capital Encampment is built; the Inspiration then comes free."
         },
         {
           "id": "civic:feudalism",
@@ -672,7 +672,7 @@
         },
         {
           "card": "Rationalism",
-          "slot": "wildcard",
+          "slot": "economic",
           "from": "civic:the-enlightenment",
           "why": "Science direction: more Science from Campus buildings, which the ringed Campuses qualify for."
         },
@@ -956,7 +956,7 @@
         {
           "name": "Ruhr Valley",
           "why": "Production in the Electronics Factory city, which then builds the Spaceport or the late Culture buildings.",
-          "skip_if": "The central Industrial Zone is not beside a River, or Industrialization lands after turn 210."
+          "skip_if": "No River tile touches the central Industrial Zone, or Industrialization lands after turn 210."
         }
       ],
       "governors": [
@@ -1459,7 +1459,7 @@
       "id": "civic:military-training",
       "fit": "cheap",
       "when": "stack",
-      "how": "The capital's Encampment, placed before the civic is researched."
+      "how": "The capital's Encampment, built before the civic is researched."
     },
     {
       "id": "civic:theology",

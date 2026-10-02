@@ -97,7 +97,7 @@
         "to": 45
       },
       "era": "ancient",
-      "objective": "Put the Production other civilizations spend on Shrines and Holy Sites into Settlers and Campuses: four cities and two Campuses beside Mountains by turn 45, a pantheon bought with God King's Faith alone, and a Scout's count of who is building Holy Sites, because the next-to-last religion founded is the turn Arabia's Prophet arrives.",
+      "objective": "Put the Production other civilizations spend on Shrines and Holy Sites into Settlers and Campuses: four cities and two Campuses beside Mountains by turn 45, a pantheon bought with God King's Faith alone, and a Scout's count of who is building Holy Sites, because the turn the next-to-last Great Prophet is claimed is the turn Arabia's Prophet arrives.",
       "build_order": [
         {
           "item": "Scout",
@@ -147,7 +147,7 @@
         },
         {
           "id": "tech:animal-husbandry",
-          "note": "Reveals Horses for the Mamluks later; Archery is behind it."
+          "note": "Reveals Horses for the Pasture that boosts Horseback Riding; Archery is behind it."
         },
         {
           "id": "tech:archery",
@@ -201,7 +201,7 @@
           "card": "Colonization",
           "slot": "economic",
           "from": "civic:early-empire",
-          "why": "Replaces God King the turn after the pantheon; Settlers at half cost until city seven."
+          "why": "Replaces God King the turn after the pantheon; +50% Production toward Settlers, kept until city seven."
         }
       ],
       "districts": [
@@ -369,7 +369,7 @@
       "policies": [
         {
           "card": "Inspiration",
-          "slot": "economic",
+          "slot": "wildcard",
           "from": "civic:mysticism",
           "why": "+2 Great Scientist points a turn; with Divine Spark the Education Eureka is banked before Education is researched."
         },
@@ -487,7 +487,7 @@
         {
           "id": "prophet-government",
           "turn": 72,
-          "text": "Adopt Classical Republic the turn Political Philosophy lands; Inspiration and Natural Philosophy in its Economic slots."
+          "text": "Adopt Classical Republic the turn Political Philosophy lands; Natural Philosophy in an Economic slot and Inspiration in the Wildcard slot."
         },
         {
           "id": "prophet-decide",
@@ -551,7 +551,7 @@
         },
         {
           "id": "tech:machinery",
-          "note": "Unboosted, since three Archers are not in the plan; research it on the way to Printing."
+          "note": "Unboosted, since three Archers are not in the plan; research it, after its prerequisites Iron Working and Engineering, on the way to Printing."
         },
         {
           "id": "tech:astronomy",
@@ -697,7 +697,7 @@
         },
         {
           "slug": "chinguetti",
-          "why": "Trade Routes gain Faith from followers of the religion in the destination; domestic routes into the converted cities pay for the next Missionary."
+          "why": "Trade Routes gain Faith from followers of the religion in the destination; routes into the converted foreign cities pay for the next Missionary."
         },
         {
           "type": "Religious",
@@ -833,7 +833,7 @@
       "civics": [
         {
           "id": "civic:civil-engineering",
-          "note": "Seven district types, which Campus, Holy Site, Commercial Hub, Industrial Zone, Neighborhood, Entertainment Complex and Harbor or Encampment reach."
+          "note": "Seven specialty district types, which Campus, Holy Site, Commercial Hub, Industrial Zone, Entertainment Complex, Harbor and Encampment reach; Neighborhoods and Aqueducts do not count."
         },
         {
           "id": "civic:colonialism",
@@ -873,7 +873,7 @@
           "card": "Grande Armee",
           "slot": "military",
           "from": "civic:nationalism",
-          "why": "Domination direction: faster Field Cannons and Cuirassiers for the next capital."
+          "why": "Domination direction: faster Field Cannons and Line Infantry for the next capital; Cuirassiers are cavalry and get nothing from it."
         }
       ],
       "districts": [
@@ -901,7 +901,7 @@
         },
         {
           "name": "Ruhr Valley",
-          "why": "Production per Mine and a flat bonus in the Spaceport city.",
+          "why": "Production per Mine and Quarry and +20% Production in the Spaceport city.",
           "skip_if": "No Industrial Zone beside a river, or Industrialization lands after turn 210."
         }
       ],
