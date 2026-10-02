@@ -1,0 +1,1613 @@
+{
+  "leader": "Suleiman",
+  "civilization": "Ottoman",
+  "generated": "2026-10-02",
+  "slug": "suleiman",
+  "shape": "Dead-Phase",
+  "secondary_shape": null,
+  "version": 1,
+  "updated": "2026-10-01",
+  "assumptions": {
+    "ruleset": "Gathering Storm with every expansion and the Leader Pass",
+    "speed": "Standard",
+    "difficulty": "Emperor",
+    "map": "Continents or Pangaea, standard size, 8 civilizations",
+    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. Suleiman's base persona (Grand Vizier, with Ibrahim) is planned here, not the Muhteşem persona."
+  },
+  "verdict": {
+    "victory": "Domination",
+    "secondary": "Science",
+    "confidence": "medium",
+    "one_line": "Play a plain wide builder for 110 turns, reach Gunpowder with Niter, an Armory and Ibrahim already promoted in the forward city, then take capitals with Janissaries behind Bombards that hit walls harder than anyone else's.",
+    "why": "Nothing in the kit works before Gunpowder: Ibrahim is a governor with a military bonus and no army to apply it to, the Grand Bazaar needs Banking, and the siege bonus needs a target with walls. After Gunpowder it all lands at once. A 120-Production Janissary at 60 Combat Strength with a free promotion is the cheapest strong unit of its era, Bombards come out half again as fast and hit district defences at +5, and in Gathering Storm a conquered city keeps its population and gains Amenities and Loyalty, so each capital taken is a working city the same turn. That is a Domination kit with a Science fallback, because the wide empire the dormant phase builds has Campuses whether or not the war happens."
+  },
+  "map_check": {
+    "must_have": [
+      "Room for six cities by turn 80 without fighting for it; the plan has no early military edge to seize land with.",
+      "At least one rival capital within 15 tiles of a city you can found, so the first Janissary war is a short march and not a crossing."
+    ],
+    "prefer": [
+      "Hills for Production; Janissaries cost Population and the cities that build them need to regrow.",
+      "Niter revealed inside your borders at Military Engineering, or Hattusa on the map to supply it.",
+      "Pamukkale or another Amenity source near the capital; a wide empire at war is short of Amenities."
+    ],
+    "no_go": "An isolated start where the nearest rival capital is across an ocean, or a cramped start that leaves room for three cities. The siege army needs a land target and the Janissary economy needs cities to draw Population from.",
+    "fallback": "If the nearest capital is overseas, keep the dormant phase as written, take Cartography and Square Rigging, and run the war from Barbary Corsairs and Frigates against coastal cities with Janissaries landed behind them. If the land is cramped, the first war comes earlier and smaller: Catapults with the siege bonus against the neighbour's second city around turn 90, then the plan resumes."
+  },
+  "kit_levers": [
+    {
+      "source": "leader_ability",
+      "name": "Grand Vizier",
+      "buys": "Ibrahim, a governor only Suleiman has: +20% Production toward military units where he sits, +5 Combat Strength for units fighting inside that city's territory with Head Falconer, and +10 Combat Strength against district defences for every unit within 10 tiles with Serasker.",
+      "exploit": "Ibrahim is placed in the forward city by turn 70 and promoted to Serasker before Gunpowder, so the siege bonus is already standing on the border when the first Bombard rolls out. Every Janissary war is launched from his city, and he moves with the front when the front moves."
+    },
+    {
+      "source": "civ_ability",
+      "name": "Great Turkish Bombard",
+      "buys": "Siege units at +50% Production and +5 Combat Strength against district defences; cities the Ottomans did not found keep their Population when conquered and gain +1 Amenity and +4 Loyalty per turn.",
+      "exploit": "Catapults in the dormant phase are the defensive floor and the Engineering practice; Bombards after Metal Casting are the whole offence. The conquest half means a captured capital is a full-size city on the turn it falls, which is where the Janissaries are built from without costing your own Population."
+    },
+    {
+      "source": "unique_unit",
+      "name": "Janissary",
+      "buys": "A Musketman replacement at 120 Production instead of 240, 60 Combat Strength instead of 55, a free promotion, +5 against anti-cavalry, 10 Niter, and -1 Population when trained in an Ottoman-founded city.",
+      "exploit": "The dormant phase stockpiles Niter and Population so that six Janissaries can be built in six turns at turn 110. After the first capture, Janissaries are trained in conquered cities where the Population cost does not apply."
+    },
+    {
+      "source": "unique_unit",
+      "name": "Barbary Corsair",
+      "buys": "A Privateer replacement from the Mercantilism civic, cheaper, whose coastal raids cost no Movement.",
+      "exploit": "The naval half of the payoff on a coastal map: it strips a coastal capital's tiles the turn before the Janissaries land and pays for the war in pillaged Gold. Not built on a landlocked map."
+    },
+    {
+      "source": "unique_infrastructure",
+      "name": "Grand Bazaar",
+      "buys": "A cheaper Bank that adds one extra unit per turn of each strategic resource the city has improved and one Amenity per luxury it has improved.",
+      "exploit": "Built first in the city with the Niter mine, so the Janissary stockpile grows twice as fast, and then in every Commercial Hub city for the Amenities a wide conquering empire runs out of."
+    },
+    {
+      "source": "agenda",
+      "name": "Lawgiver",
+      "buys": "Suleiman likes civilizations whose cities are happy and loyal and dislikes those with unhappy or disloyal cities.",
+      "exploit": "Irrelevant to your own play, except as a reminder that the AI Suleiman on another map judges your Amenities; here it is a prompt to keep the conquered cities happy, which the civ ability already helps with."
+    }
+  ],
+  "shape_block": {
+    "dead_phase": {
+      "activation_turn": 110,
+      "flatness_statement": "Suleiman has no leader advantage for the first 110 turns. That is expected and it is correct: Ibrahim's bonuses need an army and a target, the Janissary needs Gunpowder, the Grand Bazaar needs Banking, and the siege bonus needs walls to shoot at. Do not judge this leader before turn 110, and do not switch strategies at turn 60 because the curve looks flat. The Ottomans are a plain wide civilization until Gunpowder, and the plan below is the plain wide game, played to survive.",
+      "stockpile": [
+        "A siege-capable Production base: at least two cities with an Encampment, one with an Armory, and 30 or more Production in each of the four best cities by turn 110.",
+        "Ibrahim established in the forward city with Pasha, Head Falconer and Serasker by turn 100, not appointed on the turn war is declared.",
+        "Niter: a mined source inside your borders, or Hattusa's suzerainty, and 60 Niter banked by turn 110 so six Janissaries can be trained without waiting.",
+        "Population to spend: the four Janissary cities at 8 or more Population, since each Janissary trained at home costs one.",
+        "Two Catapults and two Crossbowmen already standing in the forward city, to upgrade into Bombards and to screen them."
+      ],
+      "progress_markers": [
+        "City count: 4 by turn 45, 6 by turn 80, 8 by turn 110.",
+        "Science per turn: 15 by turn 50, 35 by turn 80, 60 by turn 110.",
+        "Specialty districts: 3 by turn 60, 8 by turn 85, 14 by turn 110.",
+        "Ibrahim's titles: appointed by turn 70, two promotions by turn 100.",
+        "Niter banked: first source mined by turn 95, 60 in stock by turn 110."
+      ],
+      "activation_test": "At turn 110 answer four questions: Is Gunpowder researched or within three turns? Is there 60 Niter in stock or 10 per turn arriving? Is Ibrahim in the forward city with Serasker? Are two Catapults and two Crossbowmen standing within five tiles of the target with roads behind them? Four yes answers mean the kit is on and the activation phase begins. Any no means the dormant phase continues for up to ten turns to fix exactly that item; a no that cannot be fixed by turn 120 means the abort branch."
+    }
+  },
+  "phases": [
+    {
+      "id": "settle",
+      "name": "Dormant: settle",
+      "turns": {
+        "from": 1,
+        "to": 45
+      },
+      "era": "ancient",
+      "objective": "Four cities by turn 45 with a Slinger or Archer in each, every barbarian camp within eight tiles cleared, and a pantheon founded. The leader gives nothing here and the plan does not pretend otherwise; this is the generic strong opening, played carefully.",
+      "build_order": [
+        {
+          "item": "Scout",
+          "why": "Find the neighbours and the rival capital that will be the turn 110 target; Writing comes from the first meeting."
+        },
+        {
+          "item": "Warrior",
+          "why": "Second escort for the Settlers and the first camp clearance; Bronze Working needs three barbarian kills."
+        },
+        {
+          "item": "Settler",
+          "why": "The second city at turn 15 to 18 is the single biggest determinant of where the empire is at turn 110."
+        },
+        {
+          "item": "Slinger",
+          "why": "Archery Eureka on the first barbarian scout, then an Archer in the capital; the defensive floor starts here."
+        },
+        {
+          "item": "Settler",
+          "why": "Third city toward the target rival, on hills if possible; this is the future forward city."
+        },
+        {
+          "item": "Monument",
+          "why": "Culture to reach Early Empire and Political Philosophy on time; governors come from civics."
+        },
+        {
+          "item": "Builder",
+          "why": "Three improvements for Craftsmanship, a Mine for The Wheel, a Quarry for Masonry."
+        },
+        {
+          "item": "Settler",
+          "why": "Fourth city by turn 45; Colonization makes it cheap."
+        },
+        {
+          "item": "Warrior",
+          "why": "One more body before the Classical era; a four-city empire with three units invites a surprise war."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:animal-husbandry",
+          "note": "Reveals Horses and improves the Camps a wide empire feeds on."
+        },
+        {
+          "id": "tech:mining",
+          "note": "Mines on hills for Production, which is the whole currency of the later siege."
+        },
+        {
+          "id": "tech:bronze-working",
+          "note": "Reveals Iron, unlocks the Encampment; Eureka from three barbarian kills."
+        },
+        {
+          "id": "tech:archery",
+          "note": "Archers are the defensive floor; Eureka from a Slinger kill."
+        },
+        {
+          "id": "tech:writing",
+          "note": "Campus; Eureka from meeting the first civilization."
+        },
+        {
+          "id": "tech:masonry",
+          "note": "Ancient Walls in the border cities and the Pyramids; Eureka from a Quarry."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:code-of-laws",
+          "note": "Discipline and God King; the pantheon by turn 25."
+        },
+        {
+          "id": "civic:craftsmanship",
+          "note": "Agoge for the defensive units; Inspiration from three improved tiles."
+        },
+        {
+          "id": "civic:foreign-trade",
+          "note": "Trade Routes; Inspiration only if the Scout finds a second continent."
+        },
+        {
+          "id": "civic:early-empire",
+          "note": "Colonization and the first Governor Title; Inspiration at six Population."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Discipline",
+          "slot": "military",
+          "from": "civic:code-of-laws",
+          "why": "Warriors and Slingers beat camp units while the empire has nothing else."
+        },
+        {
+          "card": "God King",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "The pantheon arrives by turn 25 without a Holy Site."
+        },
+        {
+          "card": "Agoge",
+          "slot": "military",
+          "from": "civic:craftsmanship",
+          "why": "Archers and Spearmen faster; the floor is cheap to build now and expensive to rebuild later."
+        },
+        {
+          "card": "Colonization",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "Settlers at half the cost for cities three and four."
+        }
+      ],
+      "districts": [
+        {
+          "district": "campus",
+          "city": "capital",
+          "note": "Placed after Writing beside mountains or a reef; the first district is the State Workforce Inspiration."
+        }
+      ],
+      "pantheon": {
+        "slug": "god-of-the-forge",
+        "why": "+25% Production toward Ancient and Classical military units: the defensive floor and the Catapults cost a quarter less for 60 turns.",
+        "alternative": "religious-settlements"
+      },
+      "wonders": [],
+      "governors": [
+        {
+          "governor": "magnus",
+          "promotion": "Provision",
+          "city": "capital",
+          "why": "The first title at Early Empire; the capital builds Settlers five and six without losing Population."
+        }
+      ],
+      "city_states": [
+        {
+          "type": "Militaristic",
+          "why": "An early envoy buys Production toward units in the capital and keeps a Militaristic city-state from levying against you."
+        },
+        {
+          "type": "Scientific",
+          "why": "Science in the capital is the progress marker the dormant phase lives on."
+        }
+      ],
+      "great_people": [],
+      "checkpoints": [
+        {
+          "turn": 25,
+          "test": "Two cities settled, an Archer or Slinger in each, and no barbarian camp within six tiles of either?",
+          "pass": "Third Settler goes out toward the target rival.",
+          "fail": "Delay the third Settler one build: a second Slinger or a Warrior clears the camp first. A city lost here is not recoverable in a Dead-Phase plan."
+        },
+        {
+          "turn": 45,
+          "test": "Four cities, the pantheon founded, and Early Empire reached?",
+          "pass": "Enter the build phase; Walls go into the two border cities next.",
+          "fail": "Three cities is acceptable if the fourth Settler is in production; two cities means the land is poor and the fallback applies: settle tighter and bring the first Catapult war forward to turn 90."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "settle-capital",
+          "turn": 1,
+          "text": "Settle on or beside hills with fresh water; move at most one turn. Production matters more than anything else this kit will need."
+        },
+        {
+          "id": "settle-scout-target",
+          "turn": 8,
+          "text": "Send the Scout toward the nearest rival and note the distance from your planned third city to their capital; under 15 tiles is the target."
+        },
+        {
+          "id": "settle-pantheon",
+          "turn": 25,
+          "text": "Found God of the Forge, or Religious Settlements if a fifth city site is contested."
+        },
+        {
+          "id": "settle-third-city",
+          "turn": 32,
+          "text": "Found the third city toward the target rival on a hill with fresh water. This is the forward city; everything military goes here later."
+        },
+        {
+          "id": "settle-fourth-city",
+          "turn": 45,
+          "text": "Found the fourth city; mark the next three sites on the map now so the build phase does not spend turns deciding."
+        }
+      ]
+    },
+    {
+      "id": "build",
+      "name": "Dormant: build",
+      "turns": {
+        "from": 46,
+        "to": 80
+      },
+      "era": "classical",
+      "objective": "Six cities by turn 70, Campuses with Libraries in the two best, a Commercial Hub and Government Plaza in the capital, Ancient Walls and an Archer in the two border cities, and Ibrahim established in the forward city by turn 70. Still no leader advantage; the markers to watch are cities, Science and districts.",
+      "build_order": [
+        {
+          "item": "Settler",
+          "why": "Cities five and six; the Janissary economy draws Population from the number of cities, not their size."
+        },
+        {
+          "item": "Ancient Walls",
+          "why": "In the two border cities; the Engineering Eureka and the only thing that stops a Classical rush."
+        },
+        {
+          "item": "Campus",
+          "why": "Capital and second city; Science is the progress marker and the route to Gunpowder."
+        },
+        {
+          "item": "Library",
+          "why": "Both Campuses; the Education path and the Great Scientist points."
+        },
+        {
+          "item": "Government Plaza",
+          "why": "Capital; the Ancestral Hall for free Builders in new cities, and the Governor Title that becomes Ibrahim's second promotion."
+        },
+        {
+          "item": "Commercial Hub",
+          "why": "Capital; the Trade Route pays for the Settlers and the Market is the Guilds Inspiration."
+        },
+        {
+          "item": "Encampment",
+          "why": "Forward city; Ibrahim's home, the Barracks for Military Training, and later the Armory for Gunpowder."
+        },
+        {
+          "item": "Trader",
+          "why": "Currency Eureka and Gold; the dormant phase runs on Gold more than Production."
+        },
+        {
+          "item": "Water Mill",
+          "why": "In a river city for the Construction Eureka and growth."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:currency",
+          "note": "Commercial Hub and Markets; Eureka from the first Trade Route."
+        },
+        {
+          "id": "tech:iron-working",
+          "note": "Mine the Iron the Scout found; Swordsmen are the floor if a neighbour comes early."
+        },
+        {
+          "id": "tech:construction",
+          "note": "Water Mill Eureka; Entertainment Complex later and the Games and Recreation Inspiration."
+        },
+        {
+          "id": "tech:engineering",
+          "note": "Catapults, the first siege unit the civ ability speeds up; Eureka from Ancient Walls."
+        },
+        {
+          "id": "tech:mathematics",
+          "note": "Campus, Commercial Hub and Encampment make three specialty districts for the Eureka."
+        },
+        {
+          "id": "tech:apprenticeship",
+          "note": "Three Mines; the Production the siege army is built from."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:state-workforce",
+          "note": "Inspiration from the first district; Government Plaza."
+        },
+        {
+          "id": "civic:political-philosophy",
+          "note": "Classical Republic and the second Governor Title, which is Ibrahim's appointment."
+        },
+        {
+          "id": "civic:military-training",
+          "note": "Inspiration from the forward city's Encampment; Great General points."
+        },
+        {
+          "id": "civic:games-and-recreation",
+          "note": "Free Inspiration from Construction; Entertainment Complex for the Amenities six cities need."
+        },
+        {
+          "id": "civic:defensive-tactics",
+          "note": "Bastions and Limes; Inspiration if a neighbour declares on you, which they may."
+        },
+        {
+          "id": "civic:recorded-history",
+          "note": "Two Campuses give the Inspiration; Natural Philosophy."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Classical Republic",
+          "slot": "wildcard",
+          "from": "civic:political-philosophy",
+          "why": "The dormant government: Amenities and Great Person points for a builder with no war to fight yet."
+        },
+        {
+          "card": "Colonization",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "Settlers five and six at half price."
+        },
+        {
+          "card": "Caravansaries",
+          "slot": "economic",
+          "from": "civic:foreign-trade",
+          "why": "Gold from the Trade Routes that pay for Walls and Builders."
+        },
+        {
+          "card": "Bastions",
+          "slot": "military",
+          "from": "civic:defensive-tactics",
+          "why": "Combat Strength and ranged strength for the walled border cities; the floor costs no Production."
+        }
+      ],
+      "districts": [
+        {
+          "district": "campus",
+          "city": "capital and second city",
+          "note": "Mountain or reef adjacency; Libraries by turn 75 for the Recorded History Inspiration."
+        },
+        {
+          "district": "commercial-hub",
+          "city": "capital",
+          "note": "River adjacency; the Market is the first of two for Guilds."
+        },
+        {
+          "district": "encampment",
+          "city": "forward city",
+          "note": "On a hill facing the target; Ibrahim's seat and the Armory site."
+        },
+        {
+          "district": "government-plaza",
+          "city": "capital",
+          "note": "Ancestral Hall; the free Builder in every new city is worth more than the Warlord's Throne for a plan with no early war."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Pyramids",
+          "why": "A free Builder and an extra charge on every Builder for a wide empire that will mine, quarry and farm for 200 turns.",
+          "skip_if": "No flat Desert tile within the capital's workable radius, or a rival shows Masonry ten turns before you."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "ibrahim",
+          "promotion": "Pasha",
+          "city": "forward city",
+          "why": "Appointed with the second title around turn 65 to 70. His default +20% Production toward military units is small now; what matters is that he is established and accruing promotions long before turn 110."
+        },
+        {
+          "governor": "pingala",
+          "promotion": "Researcher",
+          "city": "capital",
+          "why": "Third title: Science in the capital, which is the Gunpowder clock."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "hattusa",
+          "why": "Two of each revealed-but-unimproved strategic resource per turn; it is Niter insurance if no source appears inside your borders."
+        },
+        {
+          "slug": "ngazargamu",
+          "why": "Land units 20% cheaper to buy per Encampment building in the city; Janissaries bought with Gold in the forward city later."
+        },
+        {
+          "type": "Industrial",
+          "why": "Production toward buildings and districts in the capital during the long build."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-scientist",
+          "why": "The first Classical Great Scientist is the Education Eureka and a Library's worth of Science."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 65,
+          "test": "Five cities, both border cities walled, and Political Philosophy adopted with Ibrahim appointed or appointable this turn?",
+          "pass": "Appoint Ibrahim in the forward city; queue the Encampment there.",
+          "fail": "If the walls are missing, build them before anything else: a Classical declaration against an unwalled border city ends the plan. If Ibrahim is not yet available, the Government Plaza's title goes to him, not to Pingala."
+        },
+        {
+          "turn": 80,
+          "test": "Six cities, two Libraries, Ibrahim established in the forward city, Science at 35 or more?",
+          "pass": "Enter the staging phase; Military Engineering is the next research priority.",
+          "fail": "Five cities and 30 Science is still inside the plan. Fewer than five cities or Science under 25 means the Gunpowder date slips to 125 and the activation test moves with it; do not shorten the stockpile to hit the date."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "build-walls-border",
+          "turn": 52,
+          "text": "Ancient Walls finished in both border cities, with an Archer behind each."
+        },
+        {
+          "id": "build-campuses",
+          "turn": 60,
+          "text": "Campuses placed in the capital and second city; Libraries queued."
+        },
+        {
+          "id": "build-ibrahim",
+          "turn": 68,
+          "text": "Appoint Ibrahim in the forward city with the Political Philosophy title. Write the city name down; every military build from here on is queued there."
+        },
+        {
+          "id": "build-sixth-city",
+          "turn": 72,
+          "text": "Sixth city founded; Ancestral Hall gives it a free Builder."
+        },
+        {
+          "id": "build-encampment",
+          "turn": 78,
+          "text": "Encampment finished in the forward city; Barracks queued for the Armory that Gunpowder's Eureka needs."
+        }
+      ]
+    },
+    {
+      "id": "stage",
+      "name": "Dormant: stage",
+      "turns": {
+        "from": 81,
+        "to": 110
+      },
+      "era": "medieval",
+      "objective": "Arrive at turn 110 with Gunpowder in hand or three turns away, 60 Niter banked, an Armory built, Ibrahim promoted to Serasker, and two Catapults and two Crossbowmen standing in the forward city. The leader still gives nothing visible; this phase builds the stockpile the payoff consumes.",
+      "build_order": [
+        {
+          "item": "Barracks",
+          "why": "Forward city; the Armory needs it, and the Armory is the Gunpowder Eureka."
+        },
+        {
+          "item": "Armory",
+          "why": "Forward city; the Gunpowder Eureka saves 40% of the tech that switches the kit on."
+        },
+        {
+          "item": "Catapult",
+          "why": "Two of them, 50% faster by the civ ability; they upgrade to Bombards at Metal Casting and they are the Classical-era floor meanwhile."
+        },
+        {
+          "item": "Crossbowman",
+          "why": "Two of them: the Metal Casting Eureka and the screen the Bombards need."
+        },
+        {
+          "item": "Market",
+          "why": "Second Market for the Guilds Inspiration, and the Grand Bazaar's prerequisite in the Niter city."
+        },
+        {
+          "item": "Aqueduct",
+          "why": "Capital; Military Engineering Eureka, Housing, and the Industrial Zone adjacency later."
+        },
+        {
+          "item": "University",
+          "why": "Two of them for the Printing Eureka and the Science that keeps Gunpowder on schedule."
+        },
+        {
+          "item": "Military Engineer",
+          "why": "One, after Military Engineering: roads from the forward city toward the target so the siege arrives in one piece."
+        },
+        {
+          "item": "Medieval Walls",
+          "why": "Forward city only; it will be the city the target counterattacks."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:machinery",
+          "note": "Crossbowmen; Eureka from three Archers, which the floor already has."
+        },
+        {
+          "id": "tech:military-engineering",
+          "note": "Reveals Niter and unlocks the Military Engineer; Eureka from the Aqueduct."
+        },
+        {
+          "id": "tech:stirrups",
+          "note": "Free Eureka from Feudalism; Gunpowder's prerequisite and Knights for an escort."
+        },
+        {
+          "id": "tech:education",
+          "note": "Universities; Eureka from the Classical Great Scientist."
+        },
+        {
+          "id": "tech:castles",
+          "note": "Free Eureka from Monarchy; the Alhambra and Medieval Walls in the forward city."
+        },
+        {
+          "id": "tech:gunpowder",
+          "note": "The activation tech. Eureka from the Armory; target turn 108 to 112."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:feudalism",
+          "note": "Six Farms; Serfdom for the Builders that mine the Niter."
+        },
+        {
+          "id": "civic:civil-service",
+          "note": "A ten-Population city; the Meritocracy card and the way to Divine Right."
+        },
+        {
+          "id": "civic:guilds",
+          "note": "Two Markets; the Banking Eureka for the Grand Bazaar."
+        },
+        {
+          "id": "civic:divine-right",
+          "note": "Monarchy and the Castles Eureka; two Temples only if a religion happened to be founded, otherwise unboosted."
+        },
+        {
+          "id": "civic:mercenaries",
+          "note": "Professional Army for cheap upgrades; Inspiration at eight land units, which the floor plus the Catapults reaches."
+        },
+        {
+          "id": "civic:medieval-faires",
+          "note": "Four Trade Routes running; the Merchant Confederation card and the road to Exploration and Mercantilism."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Serfdom",
+          "slot": "economic",
+          "from": "civic:feudalism",
+          "why": "Builders with extra charges: the Niter Mine, three more Mines for Apprenticeship, and six Farms."
+        },
+        {
+          "card": "Professional Army",
+          "slot": "military",
+          "from": "civic:mercenaries",
+          "why": "Catapults to Bombards and Archers to Crossbowmen at half price when Metal Casting lands."
+        },
+        {
+          "card": "Monarchy",
+          "slot": "wildcard",
+          "from": "civic:divine-right",
+          "why": "The staging government: Housing from Walls, an extra military slot, and the Castles Eureka."
+        },
+        {
+          "card": "Limes",
+          "slot": "military",
+          "from": "civic:defensive-tactics",
+          "why": "Walls at double speed in the forward city before it becomes the front."
+        }
+      ],
+      "districts": [
+        {
+          "district": "encampment",
+          "city": "second border city",
+          "note": "A second Encampment so two cities can train Janissaries at once at turn 110."
+        },
+        {
+          "district": "aqueduct",
+          "city": "capital",
+          "note": "Military Engineering Eureka; Housing for a capital that will spend Population on Janissaries."
+        },
+        {
+          "district": "campus",
+          "city": "third and fourth cities",
+          "note": "Science is the clock; four Campuses by turn 100."
+        },
+        {
+          "district": "commercial-hub",
+          "city": "the Niter city",
+          "note": "Market now, Grand Bazaar at Banking: the extra Niter per turn starts the moment the Bank replacement is built."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Alhambra",
+          "why": "An extra Military policy slot and Great General points, on a hill beside the forward city's Encampment where the whole war will be staged.",
+          "skip_if": "No hill tile adjacent to the forward Encampment, or Castles arrives after turn 100."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "ibrahim",
+          "promotion": "Serasker",
+          "city": "forward city",
+          "why": "Promoted by turn 100: +10 Combat Strength against district defences for every unit within ten tiles. Head Falconer first for +5 inside the territory while the army is still defensive, Serasker as the next title."
+        },
+        {
+          "governor": "magnus",
+          "promotion": "Black Marketeer",
+          "city": "forward city",
+          "why": "Only if Niter is scarce: units there cost 80% less of the strategic resource."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "hattusa",
+          "why": "Keep suzerainty if no Niter source appeared; it is the stockpile."
+        },
+        {
+          "slug": "valletta",
+          "why": "Faith-buy Walls and Encampment buildings in the forward city if any Faith accumulated."
+        },
+        {
+          "type": "Militaristic",
+          "why": "Barracks and Armory Production in the forward city, and a levy option if a neighbour comes early."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-general",
+          "why": "A Medieval Great General retires for Combat Strength or stays with the Catapults; a Renaissance one is the Janissary army's escort."
+        },
+        {
+          "class": "great-engineer",
+          "why": "Any Medieval Great Engineer that rushes a district or a wonder in the forward city."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 95,
+          "test": "Military Engineering researched, Niter revealed, a source inside your borders or Hattusa's suzerainty held, and the Armory under construction?",
+          "pass": "Mine the Niter this turn; queue the Catapults and Crossbowmen behind the Armory.",
+          "fail": "No Niter in reach means the war is Bombards and Crossbowmen with Janissaries bought from Hattusa's trickle; shift two envoys to Hattusa now and buy Niter from any AI that will sell it. The activation date holds, the Janissary count shrinks."
+        },
+        {
+          "turn": 110,
+          "test": "Run the activation test: Gunpowder in or three turns out, 60 Niter, Ibrahim with Serasker in the forward city, two Catapults and two Crossbowmen staged?",
+          "pass": "The kit is on. Enter the activation phase and start Janissaries the turn Gunpowder lands.",
+          "fail": "Fix the single missing item for up to ten turns. If two or more are missing at turn 120, the abort branch applies and the empire plays for Science."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "stage-armory",
+          "turn": 88,
+          "text": "Barracks then Armory in the forward city; the Armory finishes before Gunpowder is researched, not after."
+        },
+        {
+          "id": "stage-niter",
+          "turn": 95,
+          "text": "Military Engineering done: mine the nearest Niter the turn it appears, with a Serfdom Builder."
+        },
+        {
+          "id": "stage-catapults",
+          "turn": 98,
+          "text": "Two Catapults built in the forward city under God of the Forge and Ibrahim's Pasha bonus; park them inside the Walls."
+        },
+        {
+          "id": "stage-serasker",
+          "turn": 100,
+          "text": "Ibrahim's second promotion is Serasker. Confirm the target capital is within ten tiles of the forward city or move him to a city that is."
+        },
+        {
+          "id": "stage-roads",
+          "turn": 104,
+          "text": "Military Engineer lays road from the forward city to the border facing the target; a siege that arrives piecemeal dies piecemeal."
+        },
+        {
+          "id": "stage-write-order",
+          "turn": 108,
+          "text": "Write the first war's build order: six Janissaries across two Encampment cities, Bombard upgrades for both Catapults, one Knight escort. Nothing else is queued until it is done."
+        }
+      ]
+    },
+    {
+      "id": "activate",
+      "name": "Activation: the first capital",
+      "turns": {
+        "from": 111,
+        "to": 150
+      },
+      "era": "renaissance",
+      "objective": "Switch every Phase A habit off. Six Janissaries, two Bombards and a Knight take the target capital by turn 140 under Serasker's bonus, the Grand Bazaar starts the second Niter stream, and Janissaries are trained in the captured city, where they cost no Population.",
+      "build_order": [
+        {
+          "item": "Janissary",
+          "why": "Six of them across the two Encampment cities; 120 Production each, a free promotion each, one Population each at home."
+        },
+        {
+          "item": "Bombard",
+          "why": "Upgrade both Catapults under Professional Army at Metal Casting, then build a third; half again as fast and +5 against walls, +10 more within Ibrahim's ten tiles."
+        },
+        {
+          "item": "Knight",
+          "why": "One escort to finish fleeing units and to take the Military Science Eureka with a kill."
+        },
+        {
+          "item": "Grand Bazaar",
+          "why": "In the Niter city at Banking; one extra Niter per turn and an Amenity per luxury."
+        },
+        {
+          "item": "Military Engineer",
+          "why": "A second one for two Forts, which is the Ballistics Eureka, and roads to the target."
+        },
+        {
+          "item": "Medieval Walls",
+          "why": "The captured capital, the turn it is taken; the counterattack comes within ten turns."
+        },
+        {
+          "item": "Janissary",
+          "why": "Trained in the captured capital from now on: no Population cost, and the city came with its full Population."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:metal-casting",
+          "note": "Bombards; Eureka from the two Crossbowmen already standing."
+        },
+        {
+          "id": "tech:banking",
+          "note": "Free Eureka from Guilds; the Grand Bazaar."
+        },
+        {
+          "id": "tech:printing",
+          "note": "Two Universities; the Science that keeps the war ahead of the target's walls."
+        },
+        {
+          "id": "tech:square-rigging",
+          "note": "Eureka from a Janissary kill, since it replaces the Musketman; Frigates on a coastal map."
+        },
+        {
+          "id": "tech:military-science",
+          "note": "Eureka from the Knight's kill; Military Academies and the next upgrade tier."
+        },
+        {
+          "id": "tech:ballistics",
+          "note": "Two Forts from the Military Engineers; Field Cannons for the second war."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:exploration",
+          "note": "Merchant Republic if Gold is short; two Caravels only on a coastal map."
+        },
+        {
+          "id": "civic:diplomatic-service",
+          "note": "Form an alliance with the civilization on the far side of the target; it keeps the war a two-sided one."
+        },
+        {
+          "id": "civic:mercantilism",
+          "note": "Barbary Corsairs and Triangular Trade; Inspiration from a Great Merchant if one arrives, otherwise unboosted."
+        },
+        {
+          "id": "civic:nationalism",
+          "note": "Declare the first war with a Casus Belli for the Inspiration; Corps for the second war."
+        },
+        {
+          "id": "civic:the-enlightenment",
+          "note": "Three Great People earned; Rationalism for the Science fallback."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Professional Army",
+          "slot": "military",
+          "from": "civic:mercenaries",
+          "why": "Catapults to Bombards, Archers to Crossbowmen, at half the Gold."
+        },
+        {
+          "card": "Conscription",
+          "slot": "military",
+          "from": "civic:state-workforce",
+          "why": "A nine-unit army at one Gold less each; the war must not bankrupt the Universities."
+        },
+        {
+          "card": "Triangular Trade",
+          "slot": "economic",
+          "from": "civic:mercantilism",
+          "why": "Gold and Faith from Trade Routes while Production is all military."
+        },
+        {
+          "card": "Monarchy",
+          "slot": "wildcard",
+          "from": "civic:divine-right",
+          "why": "Kept through the war; the extra military slot holds Conscription."
+        }
+      ],
+      "districts": [
+        {
+          "district": "commercial-hub",
+          "city": "every city without one",
+          "note": "Grand Bazaars are the Amenity engine for an empire about to double."
+        },
+        {
+          "district": "encampment",
+          "city": "the captured capital",
+          "note": "It becomes the forward city for the second war; Ibrahim moves here once it is stable."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Forbidden City",
+          "why": "An extra Wildcard slot for a government that needs both military and economic cards during the war.",
+          "skip_if": "A Culture-focused rival has Printing before you, or the capital has no flat tile beside its City Center."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "ibrahim",
+          "promotion": "Serasker",
+          "city": "forward city, then the captured capital",
+          "why": "He stays where the Bombards are. Move him to the captured capital once the counterattack has been beaten, so the second target is within his ten tiles."
+        },
+        {
+          "governor": "victor",
+          "promotion": "Garrison Commander",
+          "city": "the captured capital",
+          "why": "Loyalty and Combat Strength in the city most likely to be retaken; the civ ability's +4 Loyalty plus Victor holds it."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "akkad",
+          "why": "Melee and anti-cavalry attacks do full damage to Walls: Janissaries then finish what the Bombards start."
+        },
+        {
+          "slug": "hattusa",
+          "why": "Keep the Niter stream through the war."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-general",
+          "why": "A Renaissance Great General gives +5 Combat Strength and +1 Movement to the Janissaries; take any that is on offer, with Gold if needed."
+        },
+        {
+          "class": "great-merchant",
+          "why": "The Mercantilism Inspiration and Gold for the upgrades."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 125,
+          "test": "War declared with a Casus Belli, six Janissaries and two Bombards within three tiles of the target capital, Ibrahim within ten tiles?",
+          "pass": "Begin the siege; Bombards fire first, Janissaries take the city at zero defence.",
+          "fail": "If the army is short, wait: a siege with one Bombard against Renaissance Walls loses Janissaries for nothing. Declare at turn 130 at the latest; after 135 the target has Musketmen and the window is the second war's width."
+        },
+        {
+          "turn": 150,
+          "test": "The target capital held for ten turns with positive Loyalty, Janissaries in production there, and Science still above the target's?",
+          "pass": "Enter the payoff phase; the second capital is chosen now.",
+          "fail": "No capture by turn 150 means the siege is failing against walls the plan did not expect: make peace for cities if any are offered, keep the army, and run the Science fallback with the empire as built."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "activate-janissaries",
+          "turn": 113,
+          "text": "Gunpowder in: six Janissaries queued across both Encampment cities, nothing else in those queues."
+        },
+        {
+          "id": "activate-bombards",
+          "turn": 118,
+          "text": "Metal Casting in: upgrade both Catapults to Bombards under Professional Army."
+        },
+        {
+          "id": "activate-casus-belli",
+          "turn": 124,
+          "text": "Declare the war with whatever Casus Belli is available; Nationalism's Inspiration comes from it and grievances stay lower."
+        },
+        {
+          "id": "activate-siege",
+          "turn": 128,
+          "text": "Bombards reduce the capital's defences under Serasker; Janissaries take it on the turn its defence reaches zero, not before."
+        },
+        {
+          "id": "activate-hold",
+          "turn": 135,
+          "text": "Medieval Walls, Victor and a Janissary garrison in the captured capital; beat the counterattack inside its territory, where Head Falconer applies."
+        },
+        {
+          "id": "activate-grand-bazaar",
+          "turn": 140,
+          "text": "Grand Bazaar finished in the Niter city; check the Niter income is at least 12 per turn."
+        }
+      ]
+    },
+    {
+      "id": "payoff",
+      "name": "Payoff: the next capitals",
+      "turns": {
+        "from": 151,
+        "to": null
+      },
+      "era": "industrial",
+      "objective": "Run hot. Two more capitals by turn 220 with Bombards becoming Artillery, Janissaries becoming Line Infantry and then Infantry, Corps and Armies under Nationalism and Mobilization, and Barbary Corsairs stripping any coastal target first. There is no time for a second build-out; every conquered city builds military and Commercial Hubs only.",
+      "build_order": [
+        {
+          "item": "Janissary",
+          "why": "From conquered cities, upgraded to Line Infantry at Replaceable Parts under Professional Army."
+        },
+        {
+          "item": "Field Cannon",
+          "why": "Two of them for the Scorched Earth Inspiration and ranged support that outranges Musketmen."
+        },
+        {
+          "item": "Artillery",
+          "why": "Upgraded Bombards at Steel; the siege bonus and Serasker still apply."
+        },
+        {
+          "item": "Barbary Corsair",
+          "why": "On a coastal map: pillage the next coastal capital's tiles for free Movement the turn before the landing."
+        },
+        {
+          "item": "Military Academy",
+          "why": "In the two Encampment cities: Corps and Armies without Nationalism's Gold cost, and the Totalitarianism Inspiration at three."
+        },
+        {
+          "item": "Factory",
+          "why": "The two best Production cities; Industrialization's Eureka from two Workshops first."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:industrialization",
+          "note": "Factories and Coal; Eureka from two Workshops."
+        },
+        {
+          "id": "tech:rifling",
+          "note": "Free Eureka: the Niter Mine is already built."
+        },
+        {
+          "id": "tech:steel",
+          "note": "Artillery; Eureka needs an Ironclad and a Coal Mine, taken on a coastal map and skipped inland."
+        },
+        {
+          "id": "tech:replaceable-parts",
+          "note": "Infantry; Eureka from three Line Infantry, which the upgraded Janissaries are."
+        },
+        {
+          "id": "tech:scientific-theory",
+          "note": "Free Eureka from The Enlightenment; Research Grants for the Science track."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:scorched-earth",
+          "note": "Two Field Cannons; Total War for the later sieges."
+        },
+        {
+          "id": "civic:mobilization",
+          "note": "Three Corps; Levee en Masse."
+        },
+        {
+          "id": "civic:totalitarianism",
+          "note": "Three Military Academies; Fascism if the war has four capitals left to take."
+        },
+        {
+          "id": "civic:ideology",
+          "note": "Choose the government the war needs: Fascism for the army, Communism for the Production."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Grand Armee",
+          "slot": "military",
+          "from": "civic:nationalism",
+          "why": "Industrial-era units faster in every conquered city."
+        },
+        {
+          "card": "Total War",
+          "slot": "military",
+          "from": "civic:scorched-earth",
+          "why": "Pillage pays double; the Corsairs and the Artillery both feed on it."
+        },
+        {
+          "card": "Levee en Masse",
+          "slot": "military",
+          "from": "civic:mobilization",
+          "why": "Unit maintenance halved for an army that now numbers twenty."
+        }
+      ],
+      "districts": [
+        {
+          "district": "industrial-zone",
+          "city": "the two best Production cities",
+          "note": "Factories late, but the Artillery and Infantry need them."
+        }
+      ],
+      "wonders": [],
+      "governors": [
+        {
+          "governor": "ibrahim",
+          "promotion": "Grand Vizier",
+          "city": "the newest captured capital",
+          "why": "He moves with the front. The top title matters only if he is ever parked in an allied capital; keep him with the army."
+        },
+        {
+          "governor": "victor",
+          "promotion": "Embrasure",
+          "city": "each new capture",
+          "why": "Each capital holds while the army moves on."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "akkad",
+          "why": "Full damage to Walls from Infantry for the rest of the game."
+        },
+        {
+          "slug": "preslav",
+          "why": "Loyalty per Encampment building in cities that were someone else's capital."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-general",
+          "why": "Industrial Great Generals keep the Infantry at +5; buy one with Gold before each war."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 190,
+          "test": "Second capital taken, all captured cities at positive Loyalty, and the army at tech parity with the next target?",
+          "pass": "Third target chosen; Barbary Corsairs if it is coastal.",
+          "fail": "A capital still standing at turn 190 means the war has slowed to the AI's pace: switch Ideology to Fascism, form Corps, and give it until turn 220."
+        },
+        {
+          "turn": 230,
+          "test": "Three capitals held, or the remaining capitals reachable before Battleships and Infantry corps appear on the other side?",
+          "pass": "Continue to the end; no further decisions.",
+          "fail": "Convert to Science with the empire as it stands: Campuses and Research Labs in every captured city, and the army kept only at defensive strength."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "payoff-ibrahim-forward",
+          "turn": 155,
+          "text": "Move Ibrahim to the city nearest the second target; wait the establishment turns before declaring."
+        },
+        {
+          "id": "payoff-field-cannons",
+          "turn": 165,
+          "text": "Two Field Cannons built; Scorched Earth Inspiration collected."
+        },
+        {
+          "id": "payoff-second-war",
+          "turn": 175,
+          "text": "Declare on the second target with a Casus Belli, with Artillery or Bombards in front and a Great General behind."
+        },
+        {
+          "id": "payoff-upgrade-line",
+          "turn": 200,
+          "text": "Janissaries to Line Infantry under Professional Army; Replaceable Parts Eureka collected from three of them."
+        },
+        {
+          "id": "payoff-review",
+          "turn": 230,
+          "text": "Review the turn 230 checkpoint and either continue the conquest or declare the game a Science game."
+        }
+      ]
+    }
+  ],
+  "boosts": [
+    {
+      "id": "tech:archery",
+      "fit": "cheap",
+      "when": "settle",
+      "how": "The Slinger finishes a barbarian scout near the capital."
+    },
+    {
+      "id": "tech:writing",
+      "fit": "free",
+      "when": "settle",
+      "how": "The Scout meets the first civilization."
+    },
+    {
+      "id": "tech:bronze-working",
+      "fit": "cheap",
+      "when": "settle",
+      "how": "Three barbarian kills while clearing the nearest camp."
+    },
+    {
+      "id": "tech:masonry",
+      "fit": "cheap",
+      "when": "settle",
+      "how": "The first Builder quarries Stone."
+    },
+    {
+      "id": "tech:wheel",
+      "fit": "free",
+      "when": "settle",
+      "how": "The first Builder mines a resource hill."
+    },
+    {
+      "id": "tech:irrigation",
+      "fit": "cheap",
+      "when": "settle",
+      "how": "Farm a Wheat or Rice beside the capital."
+    },
+    {
+      "id": "tech:astrology",
+      "fit": "costly",
+      "when": "settle",
+      "how": "Only if the Scout happens on a natural wonder."
+    },
+    {
+      "id": "tech:sailing",
+      "fit": "costly",
+      "when": "settle",
+      "how": "Only if a city lands on the coast."
+    },
+    {
+      "id": "tech:horseback-riding",
+      "fit": "cheap",
+      "when": "build",
+      "how": "A Pasture on the Horses the capital has."
+    },
+    {
+      "id": "tech:currency",
+      "fit": "free",
+      "when": "build",
+      "how": "The first Trader runs its route."
+    },
+    {
+      "id": "tech:iron-working",
+      "fit": "cheap",
+      "when": "build",
+      "how": "Mine the Iron the Scout found."
+    },
+    {
+      "id": "tech:construction",
+      "fit": "cheap",
+      "when": "build",
+      "how": "A Water Mill in a river city."
+    },
+    {
+      "id": "tech:engineering",
+      "fit": "free",
+      "when": "build",
+      "how": "Ancient Walls in the border cities are the defensive floor anyway."
+    },
+    {
+      "id": "tech:mathematics",
+      "fit": "free",
+      "when": "build",
+      "how": "Campus, Commercial Hub and Encampment by turn 80."
+    },
+    {
+      "id": "tech:apprenticeship",
+      "fit": "free",
+      "when": "build",
+      "how": "Three Mines across six cities."
+    },
+    {
+      "id": "tech:celestial-navigation",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:shipbuilding",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:machinery",
+      "fit": "free",
+      "when": "stage",
+      "how": "Three Archers from the defensive floor."
+    },
+    {
+      "id": "tech:military-engineering",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "The capital Aqueduct."
+    },
+    {
+      "id": "tech:stirrups",
+      "fit": "free",
+      "when": "stage",
+      "how": "Feudalism is on the civic path."
+    },
+    {
+      "id": "tech:education",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "The Classical Great Scientist from two Libraries."
+    },
+    {
+      "id": "tech:castles",
+      "fit": "free",
+      "when": "stage",
+      "how": "Monarchy is a Tier 2 government."
+    },
+    {
+      "id": "tech:gunpowder",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "The Armory in the forward city, built before the tech is researched."
+    },
+    {
+      "id": "tech:military-tactics",
+      "fit": "costly",
+      "when": "stage",
+      "how": "A Spearman kill at a camp if one is handy; otherwise unboosted."
+    },
+    {
+      "id": "tech:buttress",
+      "fit": "costly",
+      "when": "stage",
+      "how": "Only if the Alhambra or Pyramids were built."
+    },
+    {
+      "id": "tech:metal-casting",
+      "fit": "free",
+      "when": "activate",
+      "how": "Two Crossbowmen are in the staging stockpile."
+    },
+    {
+      "id": "tech:banking",
+      "fit": "free",
+      "when": "activate",
+      "how": "Guilds is on the civic path."
+    },
+    {
+      "id": "tech:printing",
+      "fit": "cheap",
+      "when": "activate",
+      "how": "Two Universities in the Science cities."
+    },
+    {
+      "id": "tech:square-rigging",
+      "fit": "cheap",
+      "when": "activate",
+      "how": "A Janissary kill in the first war."
+    },
+    {
+      "id": "tech:military-science",
+      "fit": "cheap",
+      "when": "activate",
+      "how": "The Knight escort takes one kill."
+    },
+    {
+      "id": "tech:ballistics",
+      "fit": "cheap",
+      "when": "activate",
+      "how": "Two Forts from the Military Engineers on the border."
+    },
+    {
+      "id": "tech:siege-tactics",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:cartography",
+      "fit": "costly",
+      "when": "activate",
+      "how": "Two Harbors only on a coastal map where the Corsairs are planned."
+    },
+    {
+      "id": "tech:mass-production",
+      "fit": "cheap",
+      "when": "activate",
+      "how": "One Lumber Mill on Woods."
+    },
+    {
+      "id": "tech:astronomy",
+      "fit": "costly",
+      "when": "activate",
+      "how": "A University beside a mountain only where the Campus already sits there."
+    },
+    {
+      "id": "tech:industrialization",
+      "fit": "cheap",
+      "when": "payoff",
+      "how": "Two Workshops in the Industrial Zones."
+    },
+    {
+      "id": "tech:rifling",
+      "fit": "free",
+      "when": "payoff",
+      "how": "The Niter Mine is already built."
+    },
+    {
+      "id": "tech:steel",
+      "fit": "costly",
+      "when": "payoff",
+      "how": "An Ironclad and a Coal Mine on a coastal map; unboosted inland."
+    },
+    {
+      "id": "tech:replaceable-parts",
+      "fit": "free",
+      "when": "payoff",
+      "how": "Three upgraded Janissaries are Line Infantry."
+    },
+    {
+      "id": "tech:scientific-theory",
+      "fit": "free",
+      "when": "payoff",
+      "how": "The Enlightenment is on the civic path."
+    },
+    {
+      "id": "tech:economics",
+      "fit": "cheap",
+      "when": "payoff",
+      "how": "Two Grand Bazaars count as Banks."
+    },
+    {
+      "id": "civic:craftsmanship",
+      "fit": "free",
+      "when": "settle",
+      "how": "Three improvements from the first Builder."
+    },
+    {
+      "id": "civic:foreign-trade",
+      "fit": "costly",
+      "when": "settle",
+      "how": "Only if the Scout reaches a second continent."
+    },
+    {
+      "id": "civic:early-empire",
+      "fit": "free",
+      "when": "settle",
+      "how": "Six Population across the first two cities."
+    },
+    {
+      "id": "civic:military-tradition",
+      "fit": "cheap",
+      "when": "settle",
+      "how": "The Warriors clear the nearest camp."
+    },
+    {
+      "id": "civic:mysticism",
+      "fit": "free",
+      "when": "settle",
+      "how": "Founding the pantheon."
+    },
+    {
+      "id": "civic:state-workforce",
+      "fit": "free",
+      "when": "build",
+      "how": "Build the first Campus in the capital before State Workforce comes up."
+    },
+    {
+      "id": "civic:political-philosophy",
+      "fit": "cheap",
+      "when": "build",
+      "how": "Three city-states met by the Scout."
+    },
+    {
+      "id": "civic:military-training",
+      "fit": "free",
+      "when": "build",
+      "how": "The forward city's Encampment."
+    },
+    {
+      "id": "civic:games-and-recreation",
+      "fit": "free",
+      "when": "build",
+      "how": "Researching Construction."
+    },
+    {
+      "id": "civic:defensive-tactics",
+      "fit": "cheap",
+      "when": "build",
+      "how": "Any neighbour declaring on you; it happens to a walled builder more often than not."
+    },
+    {
+      "id": "civic:recorded-history",
+      "fit": "free",
+      "when": "build",
+      "how": "Two Campuses by turn 75."
+    },
+    {
+      "id": "civic:drama-and-poetry",
+      "fit": "costly",
+      "when": "build",
+      "how": "Only if the Pyramids were built."
+    },
+    {
+      "id": "civic:theology",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:feudalism",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "Six Farms across six cities."
+    },
+    {
+      "id": "civic:civil-service",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "The capital reaches ten Population behind the Aqueduct."
+    },
+    {
+      "id": "civic:guilds",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "Markets in the capital and the Niter city."
+    },
+    {
+      "id": "civic:divine-right",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:mercenaries",
+      "fit": "free",
+      "when": "stage",
+      "how": "Eight land units: the floor plus the Catapults and Crossbowmen."
+    },
+    {
+      "id": "civic:medieval-faires",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "Four Trade Routes from two Commercial Hubs and an Encampment-free Harbor if coastal."
+    },
+    {
+      "id": "civic:exploration",
+      "fit": "costly",
+      "when": "activate",
+      "how": "Two Caravels only on a coastal map."
+    },
+    {
+      "id": "civic:diplomatic-service",
+      "fit": "cheap",
+      "when": "activate",
+      "how": "An alliance with the civilization beyond the target."
+    },
+    {
+      "id": "civic:mercantilism",
+      "fit": "costly",
+      "when": "activate",
+      "how": "A Great Merchant from the Commercial Hubs if one comes; do not chase it."
+    },
+    {
+      "id": "civic:nationalism",
+      "fit": "free",
+      "when": "activate",
+      "how": "The first war is declared with a Casus Belli."
+    },
+    {
+      "id": "civic:the-enlightenment",
+      "fit": "cheap",
+      "when": "activate",
+      "how": "Three Great People across the game so far."
+    },
+    {
+      "id": "civic:humanism",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:scorched-earth",
+      "fit": "cheap",
+      "when": "payoff",
+      "how": "Two Field Cannons for the second war."
+    },
+    {
+      "id": "civic:mobilization",
+      "fit": "cheap",
+      "when": "payoff",
+      "how": "Three Corps from the Military Academies."
+    },
+    {
+      "id": "civic:totalitarianism",
+      "fit": "costly",
+      "when": "payoff",
+      "how": "Three Military Academies; build the third only if Fascism is wanted."
+    },
+    {
+      "id": "civic:colonialism",
+      "fit": "costly",
+      "when": "payoff",
+      "how": "Researching Astronomy, which this plan reaches late."
+    }
+  ],
+  "decision_triggers": [
+    {
+      "name": "Early neighbour war",
+      "if": "A neighbour declares on a walled border city before turn 100.",
+      "then": "Defend inside the Walls with Archers and the Catapults; take the Defensive Tactics Inspiration. Do not counter-invade with Swordsmen; the first offensive war is the Janissary war and nothing earlier."
+    },
+    {
+      "name": "No Niter anywhere",
+      "if": "Military Engineering reveals no Niter within two tiles of any border and Hattusa is not on the map.",
+      "then": "Put two envoys into any Militaristic city-state, buy Niter from the AI every ten turns, and plan the first war as four Janissaries with three Bombards instead of six with two. The siege bonus does the work; the Janissaries only walk in."
+    },
+    {
+      "name": "Target walls up early",
+      "if": "The target capital shows Renaissance Walls before turn 120.",
+      "then": "Keep the plan but change the target to the same civilization's second-largest city; capitals with Renaissance Walls fall to Artillery in the payoff phase, not to Bombards."
+    },
+    {
+      "name": "Coastal target",
+      "if": "The nearest capital is on the coast and reachable by sea in ten turns.",
+      "then": "Add Mercantilism before Nationalism, build three Barbary Corsairs, and strip the capital's tiles the turn before the Janissaries land. The Gold pays for the Bombard upgrades."
+    }
+  ],
+  "abort": {
+    "trigger": "Turn 120 with two or more of the activation items missing (no Gunpowder, no Niter, Ibrahim unpromoted, no siege units staged), or a city lost during the dormant phase that was not retaken.",
+    "actions": [
+      "Stop building military beyond the defensive floor; the Janissary window is gone and Musketmen behind it are not special.",
+      "The leader ability is now decorative. Say so and stop planning around Ibrahim; put him in an allied capital for the alliance rate and leave him there.",
+      "Play the wide empire for Science: Universities everywhere, Grand Bazaars for Amenities, Rationalism, and the Campuses the dormant phase already built."
+    ]
+  },
+  "fail_state": "Turn 120 with Gunpowder researched and nothing to spend it on: no Niter, Ibrahim appointed last turn, two Encampments without Armories, and six cities at five Population that cannot afford to lose one each. Or, more simply, a border city lost at turn 70 to a Classical rush the walls were never built against. Both are dormant-phase failures that only show at activation.",
+  "common_mistakes": [
+    "Judging the leader at turn 60. The curve is flat by design; switching to a different plan there throws away the stockpile that is half built.",
+    "Appointing Ibrahim on the turn war is declared. He needs establishment turns and two promotions; the plan places him at turn 70.",
+    "Training all six Janissaries in Ottoman-founded cities. Each costs a Population; after the first capture they come from the conquered city for free.",
+    "Skipping Walls in the border cities because nothing has happened yet. A Dead-Phase leader with no walls is the most common elimination on the roster.",
+    "Building Catapults and Bombards without a Crossbowman screen. The siege bonus is on the siege unit; it still dies to a Knight in one turn.",
+    "Building the Grand Bazaar last because it is cheap. In the Niter city it is the second Niter stream and it should be the first Bank built."
+  ],
+  "sources": [
+    "Civilization VI Civilopedia, Gathering Storm ruleset (Ottomans, Suleiman, Ibrahim, Janissary, Barbary Corsair, Grand Bazaar).",
+    "Boost objectives cross-checked against civilization6planner.com tech-tree and civics-tree pages, 2026-10-01.",
+    "Leadership Focus tags, caveats and Dead-Phase supplement for Suleiman in this repository.",
+    "Where the civ-info text differs from the game, the game is followed: the Janissary does not convert defeated units; it costs 1 Population in Ottoman-founded cities and needs 10 Niter. Great Turkish Bombard also makes conquered cities keep their Population with +1 Amenity and +4 Loyalty. Ibrahim's titles are Pasha (default), Head Falconer, Serasker, Khass-Oda-Bashi, Capou Agha and Grand Vizier. The Barbary Corsair is the Ottoman unique unit the civ-info text omits."
+  ]
+}

@@ -1,6 +1,16 @@
 [
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Domination",
+   "secondary": "Science",
+   "confidence": "high",
+   "one_line": "Four War-Carts leave the capital before turn 25 and take the nearest capital before it has Walls. Everything after turn 80 is a wide Science empire built on the cities they took and the Ziggurats laid behind them.",
+   "updated": "2026-10-01",
+   "version": 1,
+   "file": "data/plans/gilgamesh.json",
+   "phases": 5,
+   "boosts": 63
+  },
   "slug": "gilgamesh",
   "name": "Gilgamesh",
   "persona": null,
@@ -268,7 +278,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Science",
+   "secondary": "Domination",
+   "confidence": "high",
+   "one_line": "Decide the Pyramid tiles and the first target before the Settler moves, take the nearest capital with Pitati Archers before Crossbowmen exist, and then spend the permanent district discount on Campuses in every city you own or took.",
+   "updated": "2026-10-01",
+   "version": 1,
+   "file": "data/plans/amanitore.json",
+   "phases": 5,
+   "boosts": 72
+  },
   "slug": "amanitore",
   "name": "Amanitore",
   "persona": null,
@@ -591,7 +611,17 @@
   }
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Domination",
+   "secondary": "Culture",
+   "confidence": "medium",
+   "one_line": "Six Eagle Warriors harvest the neighbour's units as Builders, spend the Builders on districts at home, and take the neighbour's cities before Swordsmen appear. After turn 90 the empire is wide, amenity-rich and full of half-rushed districts, and it plays for Culture or more conquest by era.",
+   "updated": "2026-10-01",
+   "version": 1,
+   "file": "data/plans/montezuma.json",
+   "phases": 5,
+   "boosts": 68
+  },
   "slug": "montezuma",
   "name": "Montezuma",
   "persona": null,
@@ -1127,7 +1157,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Domination",
+   "secondary": "Science",
+   "confidence": "medium",
+   "one_line": "Out-settle the continent in the first sixty turns on the extra Movement, choose between a cavalry conquest and a wide Campus empire by turn 60, and spend every Comandante General in the era it arrives.",
+   "updated": "2026-10-01",
+   "version": 1,
+   "file": "data/plans/simon-bolivar.json",
+   "phases": 5,
+   "boosts": 65
+  },
   "slug": "simon-bolivar",
   "name": "Simon Bolivar",
   "persona": null,
@@ -1395,7 +1435,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Domination",
+   "secondary": "Science",
+   "confidence": "high",
+   "one_line": "Never be at peace. Every war is free of weariness, every captured Campus or Encampment is a Eureka, and every unit trained under a Basilikoi Paides is Science, so the game is a rolling conquest with the next target chosen before the current one falls.",
+   "updated": "2026-10-01",
+   "version": 1,
+   "file": "data/plans/alexander.json",
+   "phases": 5,
+   "boosts": 63
+  },
   "slug": "alexander",
   "name": "Alexander",
   "persona": null,
@@ -1672,7 +1722,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Culture",
+   "secondary": "Domination",
+   "confidence": "medium",
+   "one_line": "Farm kills for Culture while there are things to kill, spend that Culture on civics the same turn it arrives, and build the Acropolis empire that keeps paying when the barbarians are gone.",
+   "updated": "2026-10-01",
+   "version": 1,
+   "file": "data/plans/gorgo.json",
+   "phases": 5,
+   "boosts": 68
+  },
   "slug": "gorgo",
   "name": "Gorgo",
   "persona": null,
@@ -2227,7 +2287,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Domination",
+   "secondary": "Score",
+   "confidence": "high",
+   "one_line": "Fence the empire with Ikandas and walls, bank eight Impi, and do nothing offensive until Mercenaries. Then pair every Impi into a Corps the same turn, take the nearest capital, and let each capture upgrade the unit that took it.",
+   "updated": "2026-10-01",
+   "version": 1,
+   "file": "data/plans/shaka.json",
+   "phases": 5,
+   "boosts": 50
+  },
   "slug": "shaka",
   "name": "Shaka",
   "persona": null,
@@ -2766,7 +2836,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Domination",
+   "secondary": "Score",
+   "confidence": "high",
+   "one_line": "Send the Trader before the Horseman. A Trading Post in the target's city is a level of Diplomatic Visibility, Mongolia doubles the Combat Strength that visibility gives, and every cavalry fight you win may hand you the loser's horse.",
+   "updated": "2026-10-01",
+   "version": 1,
+   "file": "data/plans/genghis-khan.json",
+   "phases": 5,
+   "boosts": 47
+  },
   "slug": "genghis-khan",
   "name": "Genghis Khan",
   "persona": null,
@@ -3895,7 +3975,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Domination",
+   "secondary": "Science",
+   "confidence": "medium",
+   "one_line": "Play a plain wide builder for 110 turns, reach Gunpowder with Niter, an Armory and Ibrahim already promoted in the forward city, then take capitals with Janissaries behind Bombards that hit walls harder than anyone else's.",
+   "updated": "2026-10-01",
+   "version": 1,
+   "file": "data/plans/suleiman.json",
+   "phases": 5,
+   "boosts": 64
+  },
   "slug": "suleiman",
   "name": "Suleiman",
   "persona": null,
@@ -4430,7 +4520,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Science",
+   "secondary": "Domination",
+   "confidence": "medium",
+   "one_line": "Settle eight to ten cities before turn 80 on free Monuments, free Trading Posts and free roads, choose by turn 60 whether the Legions take a neighbour or the cities take Campuses, and spend the Culture lead on the civics that serve that choice.",
+   "updated": "2026-10-01",
+   "version": 1,
+   "file": "data/plans/trajan.json",
+   "phases": 5,
+   "boosts": 65
+  },
   "slug": "trajan",
   "name": "Trajan",
   "persona": null,
@@ -4702,7 +4802,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Culture",
+   "secondary": "Science",
+   "confidence": "high",
+   "one_line": "Settle cities three tiles apart along the coast, pin a four-district cluster in each before anything is built, and let half-price Theater Squares and Holy Sites plus full adjacency from every neighbouring district carry a Culture game that the Electronics Factory finishes.",
+   "updated": "2026-10-01",
+   "version": 1,
+   "file": "data/plans/hojo-tokimune.json",
+   "phases": 5,
+   "boosts": 83
+  },
   "slug": "hojo-tokimune",
   "name": "Hojo Tokimune",
   "persona": null,
@@ -9082,7 +9192,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Culture",
+   "secondary": "Science",
+   "confidence": "medium",
+   "one_line": "Pick three Great Person classes on turn 20, win every race in them with Magnanimous refunds, Pingala's Grants and the Carnival project, and let Rainforest Appeal turn the Great Works into Tourism through Seaside Resorts and National Parks.",
+   "updated": "2026-10-01",
+   "version": 1,
+   "file": "data/plans/pedro-ii.json",
+   "phases": 5,
+   "boosts": 67
+  },
   "slug": "pedro-ii",
   "name": "Pedro II",
   "persona": null,
@@ -9881,7 +10001,17 @@
   "secondary": null
  },
  {
-  "planSummary": null,
+  "planSummary": {
+   "victory": "Culture",
+   "secondary": "Domination",
+   "confidence": "medium",
+   "one_line": "Build the Medieval, Renaissance and Industrial wonders at a fifth off and double their Tourism, line the rivers with Châteaux, and use the free Spy and the visibility edge to see every rival's progress before they see yours. If the home continent holds a weak neighbour, the same visibility is a standing +3 Combat Strength and the Garde Impériale finishes the job.",
+   "updated": "2026-10-01",
+   "version": 1,
+   "file": "data/plans/catherine-de-medici.json",
+   "phases": 5,
+   "boosts": 84
+  },
   "slug": "catherine-de-medici",
   "name": "Catherine de Medici",
   "persona": "Black Queen",

@@ -1,0 +1,1633 @@
+{
+  "leader": "Montezuma",
+  "civilization": "Aztec",
+  "generated": "2026-10-02",
+  "slug": "montezuma",
+  "shape": "Countdown",
+  "secondary_shape": null,
+  "version": 1,
+  "updated": "2026-10-01",
+  "assumptions": {
+    "ruleset": "Gathering Storm with every expansion and the Leader Pass",
+    "speed": "Standard",
+    "difficulty": "Emperor",
+    "map": "Continents or Pangaea, standard size, 8 civilizations",
+    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. Montezuma's single persona is planned here. The luxury Strength bonus counts distinct luxury types improved inside Aztec borders, not copies and not imports; imports only pay Amenities."
+  },
+  "verdict": {
+    "victory": "Domination",
+    "secondary": "Culture",
+    "confidence": "medium",
+    "one_line": "Six Eagle Warriors harvest the neighbour's units as Builders, spend the Builders on districts at home, and take the neighbour's cities before Swordsmen appear. After turn 90 the empire is wide, amenity-rich and full of half-rushed districts, and it plays for Culture or more conquest by era.",
+    "why": "The Eagle Warrior is 28 Strength against 20 Strength Warriors and it turns every unit it beats into a Builder, which Legend of the Five Suns spends as 20% of a district per charge. That is two conversions running at once in the window: cities taken and districts rushed. Gifts for the Tlatoani adds a point of Strength per distinct improved luxury, which is worth four to six points by turn 50 on a start with luxuries and nothing by the Industrial era when base Strength is in the sixties. Walls do not close this window, because Eagle Warriors carry a Battering Ram; Iron Working on the target does, so the deadline is the target's Swordsmen. The Tlachtli pays Faith, Culture, an Amenity and Great General points from a building a wide empire builds anyway, which is why Culture is the fallback and not Science."
+  },
+  "map_check": {
+    "must_have": [
+      "A rival capital reachable by land within roughly 14 tiles by turn 12.",
+      "Three or more distinct luxury resources within the first three city sites; the Strength bonus and the Amenity engine both depend on variety."
+    ],
+    "prefer": [
+      "A lake or river capital: Huey Teocalli and Housing.",
+      "Barbarian camps within reach of the capital; every raider they send is a Builder.",
+      "A Militaristic city-state near the target for levies and the Kabul double-experience bonus."
+    ],
+    "no_go": "An island start with no land neighbour, or a start with one luxury type in reach. The Eagle Warrior has nothing to capture and the Strength bonus stays at one; the kit is then a district-rushing Builder civ with no war to feed it.",
+    "fallback": "If no capital is within reach by turn 14, farm the Barbarian camps for Builders instead of a civilization, spend them on Campuses and Theater Squares, settle every distinct luxury you can see, and play Culture from the Tlachtli and the Amenity surplus. Keep four Eagle Warriors for the first neighbour who lands near you."
+  },
+  "kit_levers": [
+    {
+      "source": "leader_ability",
+      "name": "Gifts for the Tlatoani",
+      "buys": "Each improved luxury gives an Amenity to two extra cities, and military units get +1 Strength per distinct improved luxury type.",
+      "exploit": "Settle and improve every different luxury within reach before the war, not after; four types is +4 on every Eagle Warrior and six Amenities the captures will need. Trade for duplicates you lack only for Amenities; imports do not raise Strength. Keep the civilization that sells you luxuries at peace for the whole game."
+    },
+    {
+      "source": "civ_ability",
+      "name": "Legend of the Five Suns",
+      "buys": "A Builder charge completes 20% of a district's cost.",
+      "exploit": "Captured Builders are district Production in a bottle. Keep a written sink list: the district every city builds next, placed before the Builder arrives, so a four-charge Builder finishes 80% of it the turn it walks in. Never let a captured Builder sit idle or farm a tile."
+    },
+    {
+      "source": "unique_unit",
+      "name": "Eagle Warrior",
+      "buys": "A 28 Strength Warrior replacement that can capture defeated enemy and Barbarian units as Builders.",
+      "exploit": "Six of them, with Agoge, are the arming phase. Fight the raiders a camp sends before clearing it, because each one is a Builder; in the war, kill the target's Warriors and Slingers in the field before touching the city. They upgrade to Swordsmen and keep nothing special, so the window ends when the target can build Swordsmen of its own."
+    },
+    {
+      "source": "unique_infrastructure",
+      "name": "Tlachtli",
+      "buys": "An Arena replacement with Faith, Culture, an Amenity and Great General points.",
+      "exploit": "An Entertainment Complex in every third city becomes a Culture and Faith building rather than a dead Amenity fix; the Great General points feed the window and the Faith buys the pantheon's successors. Rush the Entertainment Complex with captured Builders in the captured cities, where the Amenity is needed most."
+    },
+    {
+      "source": "agenda",
+      "name": "Tlatoani",
+      "buys": "Montezuma likes civilizations with the same luxuries and dislikes those holding luxuries he lacks.",
+      "exploit": "Irrelevant to your own play except as the model for the luxury line: the civilizations holding luxuries you lack are the trade partners you keep, not the targets. The target is the neighbour whose luxuries you want to improve yourself."
+    }
+  ],
+  "shape_block": {
+    "countdown": {
+      "deadline_turn": 90,
+      "midpoint_turn": 55,
+      "target_selection": "On turn 1, send the first Eagle Warrior along the flattest ground; the target is the nearest rival capital by land within 14 tiles, confirmed by turn 12 and not changed after. Between two candidates, take the one whose territory holds luxury types you do not have, because its cities raise your Strength when captured. Check its banner for Walls, which the Ram handles, and its unit types: the first Swordsman it fields is what actually closes this window.",
+      "what_counts_as_converted": "At turn 90: cities of the target held with positive Loyalty, districts completed with captured Builder charges (count them), and distinct luxury types improved inside your borders. Builders sitting unspent, units killed, luxuries only imported, and a large Eagle Warrior army do not count. Six cities, eight rushed districts and five luxury types is a full conversion; three cities and two districts is partial and still worth the war.",
+      "after_window": "At turn 90 the plan stops conquering regardless of the count. Eagle Warriors garrison the captures and upgrade to Swordsmen only under Professional Army. Remaining Builder charges go to Entertainment Complexes and Campuses in the captures, every luxury in the new borders is improved, and the empire runs as a wide Culture civilization with Tlachtli Faith and Amenities. Later wars are era wars, taken when a neighbour is behind, and the luxury Strength bonus is treated as noise."
+    }
+  },
+  "phases": [
+    {
+      "id": "arm",
+      "name": "Arm",
+      "turns": {
+        "from": 1,
+        "to": 30
+      },
+      "era": "ancient",
+      "objective": "Pick the target on turn 1, harvest the first camp's raiders as Builders, settle two cities on distinct luxuries and improve them, found God of the Forge, and have six Eagle Warriors with a Battering Ram queued within five tiles of the target by turn 30.",
+      "build_order": [
+        {
+          "item": "Eagle Warrior",
+          "why": "Second Eagle Warrior scouts toward the target; two together capture the first Barbarian raider."
+        },
+        {
+          "item": "Eagle Warrior",
+          "why": "Three hold the camp's spawn point and farm raiders; each capture is a Builder."
+        },
+        {
+          "item": "Settler",
+          "why": "Second city on a luxury you do not already have; the Strength bonus starts here."
+        },
+        {
+          "item": "Eagle Warrior",
+          "why": "Fourth, under Agoge once Craftsmanship is in."
+        },
+        {
+          "item": "Builder",
+          "why": "Only if the camp has not paid one by turn 15: improve the capital's luxuries first, then Craftsmanship's three tiles."
+        },
+        {
+          "item": "Eagle Warrior",
+          "why": "Fifth; the siege needs six so two can rotate out to heal."
+        },
+        {
+          "item": "Eagle Warrior",
+          "why": "Sixth; after this the capital builds a Monument and nothing else before the war."
+        },
+        {
+          "item": "Settler",
+          "why": "Third city on another distinct luxury, settled by turn 30 with Colonization if Early Empire is in."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:mining",
+          "note": "Most luxuries are Mine or Plantation improvements; Mining first, then whatever the capital's luxuries need."
+        },
+        {
+          "id": "tech:animal-husbandry",
+          "note": "Camps and Pastures for Furs, Ivory and Truffles; Horseback Riding's Eureka from any Pasture."
+        },
+        {
+          "id": "tech:bronze-working",
+          "note": "Eureka from three Barbarian kills, captures included; the Encampment and Iron reveal."
+        },
+        {
+          "id": "tech:masonry",
+          "note": "The Battering Ram; Eureka from a Quarry on Marble or Stone, both of which are luxuries or bonuses you improve anyway."
+        },
+        {
+          "id": "tech:archery",
+          "note": "Eureka from a Slinger kill if you build one; Archers garrison the captures later."
+        },
+        {
+          "id": "tech:irrigation",
+          "note": "Plantation luxuries need it: Cotton, Dyes, Silk, Spices, Sugar, Wine, Cocoa, Coffee, Tea, Tobacco, Olives."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:code-of-laws",
+          "note": "Discipline for the camp fights; God King for the pantheon by turn 20."
+        },
+        {
+          "id": "civic:craftsmanship",
+          "note": "Agoge is the whole arming phase; the Inspiration is three improved tiles, which the first Builder does."
+        },
+        {
+          "id": "civic:foreign-trade",
+          "note": "On the way to Early Empire; Trade Routes carry luxuries for Amenities later."
+        },
+        {
+          "id": "civic:early-empire",
+          "note": "Colonization for the third Settler; Inspiration at six population across two cities."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Discipline",
+          "slot": "military",
+          "from": "civic:code-of-laws",
+          "why": "+5 against Barbarians while the Eagle Warriors farm the camp."
+        },
+        {
+          "card": "God King",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "The pantheon by turn 20 so Forge covers the last four Eagle Warriors."
+        },
+        {
+          "card": "Agoge",
+          "slot": "military",
+          "from": "civic:craftsmanship",
+          "why": "+50% Production toward Ancient and Classical melee, anti-cavalry and ranged units; Eagle Warriors are melee."
+        }
+      ],
+      "districts": [],
+      "pantheon": {
+        "slug": "god-of-the-forge",
+        "why": "+25% Production toward Ancient and Classical military units on top of Agoge; six Eagle Warriors by turn 30 needs both.",
+        "alternative": "religious-settlements"
+      },
+      "wonders": [],
+      "governors": [],
+      "city_states": [
+        {
+          "type": "Militaristic",
+          "why": "First envoy: +2 Production toward units in the capital while it builds nothing else."
+        },
+        {
+          "slug": "kabul",
+          "why": "Double experience for attacks you initiate; Eagle Warriors reach their second promotion inside the window if Kabul is met early."
+        }
+      ],
+      "great_people": [],
+      "checkpoints": [
+        {
+          "turn": 30,
+          "test": "Six Eagle Warriors within five tiles of the target, a Battering Ram queued or built, three cities on three distinct improved luxuries, and the target fielding no Swordsmen?",
+          "pass": "Declare on turn 31; kill the field units first, every one is a Builder.",
+          "fail": "If the army is short, finish it; staging after the declaration is spent from the window. If the target already has Swordsmen, swap to its weakest city or to the next neighbour, and bring the Ram regardless."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "arm-pick-target",
+          "turn": 1,
+          "text": "Settle in place or on the lake or river one tile away; send the Eagle Warrior along the open ground and name the target by turn 12."
+        },
+        {
+          "id": "arm-farm-camp",
+          "turn": 10,
+          "text": "Hold the tiles beside the nearest camp with two Eagle Warriors and capture every raider it sends; clear the camp only when three Builders are banked."
+        },
+        {
+          "id": "arm-sink-list",
+          "turn": 14,
+          "text": "Write the Builder sink list: capital Holy Site or Campus placed, second city Encampment placed; each captured Builder goes to the next item."
+        },
+        {
+          "id": "arm-luxuries",
+          "turn": 20,
+          "text": "Improve the capital's and second city's luxuries; count the distinct types, that number is the Strength bonus."
+        },
+        {
+          "id": "arm-pantheon",
+          "turn": 20,
+          "text": "Found God of the Forge with the first 25 Faith."
+        },
+        {
+          "id": "arm-stage",
+          "turn": 30,
+          "text": "Six Eagle Warriors within five tiles of the target out of its sight, with the Ram one turn behind."
+        }
+      ]
+    },
+    {
+      "id": "window",
+      "name": "Window",
+      "turns": {
+        "from": 31,
+        "to": 90
+      },
+      "era": "classical",
+      "objective": "Take the target capital and two more of its cities before it fields Swordsmen, capture every unit it sends out as a Builder, and spend those Builders on districts placed in advance, while improving every luxury inside the new borders.",
+      "build_order": [
+        {
+          "item": "Battering Ram",
+          "why": "Eagle Warriors are melee and use it; Walls do not stop this window."
+        },
+        {
+          "item": "Monument",
+          "why": "In every captured city the turn it falls; Loyalty first."
+        },
+        {
+          "item": "Eagle Warrior",
+          "why": "Replace losses only; two more under Agoge if the second city needs them."
+        },
+        {
+          "item": "Entertainment Complex",
+          "why": "Rushed with captured Builder charges in the first capture; the Tlachtli is the Amenity and Culture fix."
+        },
+        {
+          "item": "Settler",
+          "why": "Fourth Aztec city on a distinct luxury the war uncovers."
+        },
+        {
+          "item": "Archer",
+          "why": "One per capture as a garrison so the Eagle Warriors move on."
+        },
+        {
+          "item": "Trader",
+          "why": "Capital to the forward city for the Currency Eureka and a road for the army."
+        },
+        {
+          "item": "Encampment",
+          "why": "In the forward city, rushed with charges; Military Training and Great General points."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:wheel",
+          "note": "Eureka from the first luxury Mine; Engineering and the Water Mill behind it."
+        },
+        {
+          "id": "tech:writing",
+          "note": "Free Eureka from meeting the target; the capital Campus is a Builder sink."
+        },
+        {
+          "id": "tech:currency",
+          "note": "Eureka from the first Trade Route; Commercial Hub as a sink and Gold for upkeep."
+        },
+        {
+          "id": "tech:horseback-riding",
+          "note": "Free from a Pasture; on the way to Stirrups for Knights later."
+        },
+        {
+          "id": "tech:iron-working",
+          "note": "The target's Swordsmen close the window; yours reopen it for one more city if Iron is near. Mine it."
+        },
+        {
+          "id": "tech:construction",
+          "note": "Water Mill in a river city; Games and Recreation's Inspiration for the Entertainment Complex."
+        },
+        {
+          "id": "tech:military-tactics",
+          "note": "Huey Teocalli if the capital is on a lake; Eureka from a Spearman kill, which the war can supply."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:military-tradition",
+          "note": "Inspiration free from clearing the farmed camp; the Raid card pays for the war."
+        },
+        {
+          "id": "civic:state-workforce",
+          "note": "Inspiration from the first rushed district; Conscription and a Governor title."
+        },
+        {
+          "id": "civic:political-philosophy",
+          "note": "Oligarchy: +4 Strength for the Eagle Warriors and faster experience; Inspiration from three city-states met."
+        },
+        {
+          "id": "civic:games-and-recreation",
+          "note": "The Entertainment Complex and the Tlachtli; Inspiration free from Construction."
+        },
+        {
+          "id": "civic:military-training",
+          "note": "Inspiration from the forward Encampment; Great General points on top of the Tlachtli's."
+        },
+        {
+          "id": "civic:mysticism",
+          "note": "Free Inspiration from the pantheon; on the way to Theology if the Tlachtli Faith is ever spent on a religion."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Agoge",
+          "slot": "military",
+          "from": "civic:craftsmanship",
+          "why": "Kept until the last replacement Eagle Warrior; then Conscription."
+        },
+        {
+          "card": "Raid",
+          "slot": "military",
+          "from": "civic:military-tradition",
+          "why": "Pillage the target's luxury improvements for Gold on the way in, then repair them with the Builders you captured."
+        },
+        {
+          "card": "Colonization",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "The fourth and fifth Aztec cities on luxuries at half Settler cost."
+        },
+        {
+          "card": "Oligarchy",
+          "slot": "wildcard",
+          "from": "civic:political-philosophy",
+          "why": "The government: +4 Strength on every Eagle Warrior and Swordsman and faster promotions."
+        }
+      ],
+      "districts": [
+        {
+          "district": "entertainment-complex",
+          "city": "the first captured city",
+          "note": "Rushed with charges; the Tlachtli's Amenity holds the capture and its Culture pays from turn one."
+        },
+        {
+          "district": "encampment",
+          "city": "the forward city",
+          "note": "Rushed with charges; Military Training's Inspiration, Great General points and a Walls anchor."
+        },
+        {
+          "district": "campus",
+          "city": "capital",
+          "note": "Rushed with charges when a Builder is spare; the Science the window does not otherwise buy."
+        }
+      ],
+      "pantheon": {
+        "slug": "god-of-the-forge",
+        "why": "Already founded; replacement Eagle Warriors, Archers and the first Swordsmen benefit."
+      },
+      "wonders": [
+        {
+          "name": "Huey Teocalli",
+          "why": "+1 Amenity and +1 Food per adjacent Lake tile; the Aztec wonder, and Amenities are the cost of a wide conquest.",
+          "skip_if": "The capital has no Lake tile, or Military Tactics lands after turn 85; charges spent on a wonder are charges not spent on districts."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "victor",
+          "promotion": "Garrison Commander",
+          "city": "the captured capital",
+          "why": "Loyalty and Strength in the capture most likely to flip; move him with each new city."
+        },
+        {
+          "governor": "magnus",
+          "promotion": "Provision",
+          "city": "capital",
+          "why": "Settlers to the new luxuries without costing population."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "kabul",
+          "why": "Suzerainty for the double experience; a second-promotion Eagle Warrior is 35 Strength on attack with Oligarchy and four luxuries."
+        },
+        {
+          "slug": "buenos-aires",
+          "why": "Bonus resources count as luxuries for Amenities; a wide empire with captures needs every Amenity it can find."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-general",
+          "why": "Tlachtli and Encampment points; a Classical Great General gives Eagle Warriors +5 Strength and +1 Movement."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 55,
+          "test": "Midpoint: the target capital taken, at least four Builders captured and spent, and four distinct luxuries improved?",
+          "pass": "Continue to the second and third cities; audit Amenities and Loyalty in the capture first.",
+          "fail": "Reduce scope now: one more city at most. If the capital still stands with a Swordsman inside, take the weakest city instead and make peace the turn it falls. Partial conversion beats total expiry."
+        },
+        {
+          "turn": 90,
+          "test": "Deadline: three captured cities held with positive Loyalty, six or more districts rushed with charges, and five luxury types improved?",
+          "pass": "Stop conquering. Enter the digest phase; make peace on any terms that keep the cities.",
+          "fail": "Abort branch if nothing was taken: peace now, disband every Eagle Warrior beyond four, run the digest phase on what you have. One or two cities is a partial pass; proceed, do not extend."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "window-declare",
+          "turn": 31,
+          "text": "Declare the Surprise War with the army adjacent; kill the target's field units first and capture every one you can as a Builder."
+        },
+        {
+          "id": "window-first-city",
+          "turn": 45,
+          "text": "Capture the target capital with the Ram crew. Keep it; Monument, Archer and Victor the same turn."
+        },
+        {
+          "id": "window-audit",
+          "turn": 46,
+          "text": "After every capture: Amenities and Loyalty checked, Entertainment Complex placed for the next Builder, luxuries in the new borders queued for improvement. Per capture, not on a schedule."
+        },
+        {
+          "id": "window-spend-builders",
+          "turn": 60,
+          "text": "Count idle Builder charges; any Builder not walking to a placed district is wasted. Spend them the turn they arrive."
+        },
+        {
+          "id": "window-third-city",
+          "turn": 80,
+          "text": "Take the third city with Swordsmen upgraded from Eagle Warriors under Oligarchy, or with a levied Militaristic city-state army."
+        },
+        {
+          "id": "window-stop",
+          "turn": 90,
+          "text": "Write down cities held, districts rushed and luxury types improved. Make peace this turn whatever the numbers say."
+        }
+      ]
+    },
+    {
+      "id": "digest",
+      "name": "Digest",
+      "turns": {
+        "from": 91,
+        "to": 160
+      },
+      "era": "medieval",
+      "objective": "Stabilize the captured cities with Tlachtli Amenities and Monuments, improve every luxury in the new borders, pay the infrastructure bill the arming phase skipped, and build the Campuses and Theater Squares that decide which victory the wide empire plays for.",
+      "build_order": [
+        {
+          "item": "Monument",
+          "why": "Any city still without one; Loyalty first."
+        },
+        {
+          "item": "Tlachtli",
+          "why": "In every Entertainment Complex; the Amenity, Faith and Culture are the digest phase's income."
+        },
+        {
+          "item": "Granary",
+          "why": "Housing in cities that were pillaged on the way in."
+        },
+        {
+          "item": "Builder",
+          "why": "Serfdom Builders improve every luxury inside the new borders and build the six Farms for Feudalism."
+        },
+        {
+          "item": "Theater Square",
+          "why": "Capital and the captured capital; the Culture branch starts here, rushed with any remaining charges."
+        },
+        {
+          "item": "Campus",
+          "why": "One per city over time; two Libraries give Recorded History."
+        },
+        {
+          "item": "Commercial Hub",
+          "why": "Capital; Markets for Guilds and Gold for upkeep."
+        },
+        {
+          "item": "Ancient Walls",
+          "why": "In the captured capital; the former owner comes back once."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:engineering",
+          "note": "Ancient Walls give the Eureka; Aqueducts for Housing in the lake and river cities."
+        },
+        {
+          "id": "tech:mathematics",
+          "note": "Encampment, Entertainment Complex and Campus are three specialty districts; Apprenticeship behind it."
+        },
+        {
+          "id": "tech:apprenticeship",
+          "note": "Three Mines, which the luxury Mines already are; Industrial Zones."
+        },
+        {
+          "id": "tech:stirrups",
+          "note": "Free Eureka from Feudalism; Knights for a Medieval era war if a neighbour falls behind."
+        },
+        {
+          "id": "tech:education",
+          "note": "Eureka from the first Great Scientist; Universities."
+        },
+        {
+          "id": "tech:military-engineering",
+          "note": "An Aqueduct in the capital; Niter reveal."
+        },
+        {
+          "id": "tech:castles",
+          "note": "Free Eureka from a Tier 2 government; Medieval Walls in the border cities."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:drama-and-poetry",
+          "note": "Theater Squares; Inspiration from Huey Teocalli if it was built, otherwise unboosted."
+        },
+        {
+          "id": "civic:recorded-history",
+          "note": "Two Campuses give the Inspiration; Natural Philosophy."
+        },
+        {
+          "id": "civic:feudalism",
+          "note": "Six Farms from the Serfdom Builders; Stirrups Eureka."
+        },
+        {
+          "id": "civic:civil-service",
+          "note": "The capital reaches ten population with Granary and Aqueduct."
+        },
+        {
+          "id": "civic:guilds",
+          "note": "Two Markets; Banking Eureka."
+        },
+        {
+          "id": "civic:mercenaries",
+          "note": "Eight land units is the army left from the window; Professional Army for the Swordsman upgrades."
+        },
+        {
+          "id": "civic:theology",
+          "note": "Only if the Tlachtli Faith has bought a Great Prophet by turn 120; otherwise skip the religion and spend Faith on Builders under Monumentality later."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Serfdom",
+          "slot": "economic",
+          "from": "civic:feudalism",
+          "why": "Five-charge Builders improve every luxury in the new borders and feed districts at 20% a charge."
+        },
+        {
+          "card": "Professional Army",
+          "slot": "military",
+          "from": "civic:mercenaries",
+          "why": "Eagle Warriors to Swordsmen and later Musketmen at half the Gold."
+        },
+        {
+          "card": "Aesthetics",
+          "slot": "economic",
+          "from": "civic:drama-and-poetry",
+          "why": "Theater Square adjacency doubled while the Culture branch is built."
+        },
+        {
+          "card": "Diplomatic League",
+          "slot": "diplomatic",
+          "from": "civic:political-philosophy",
+          "why": "First envoy doubled into Kabul, Buenos Aires and the Cultural city-states."
+        }
+      ],
+      "districts": [
+        {
+          "district": "theater-square",
+          "city": "capital and the captured capital",
+          "note": "Beside the Entertainment Complex and wonders; the Culture branch's engine."
+        },
+        {
+          "district": "campus",
+          "city": "every city over time",
+          "note": "Rushed with charges where a Builder is spare; two Libraries for Recorded History."
+        },
+        {
+          "district": "commercial-hub",
+          "city": "capital",
+          "note": "River adjacency; Markets for Guilds and Trade Routes that carry Food to the captures."
+        },
+        {
+          "district": "aqueduct",
+          "city": "capital",
+          "note": "Housing to ten for Civil Service; Military Engineering's Eureka."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Colosseum",
+          "why": "+2 Amenities to every city within six tiles; with the captures clustered around the old target it covers all of them.",
+          "skip_if": "The captures are spread more than six tiles from any city that could build it, or Games and Recreation came after turn 110."
+        },
+        {
+          "name": "Temple of Artemis",
+          "why": "+1 Amenity per adjacent Camp, Pasture and Plantation, which a luxury-settled empire has in numbers.",
+          "skip_if": "No city has a Camp adjacent to a free tile, or Archery lands after turn 100."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "amani",
+          "promotion": "Affluence",
+          "city": "the nearest city-state to the captures",
+          "why": "+1 Amenity to your cities within six tiles of her city-state; Amenities are the cost of this empire."
+        },
+        {
+          "governor": "pingala",
+          "promotion": "Connoisseur",
+          "city": "capital",
+          "why": "Culture per citizen in the Theater Square city; Researcher instead if the Science branch is chosen."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "buenos-aires",
+          "why": "Keep suzerainty; bonus resources as Amenities is the cheapest fix for a wide empire."
+        },
+        {
+          "type": "Cultural",
+          "why": "Culture in every Amphitheater at three envoys; the Culture branch's early multiplier."
+        },
+        {
+          "slug": "zanzibar",
+          "why": "Two luxuries available nowhere else, six Amenities each; they do not raise Strength but they hold the captures."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-general",
+          "why": "Medieval Great Generals retire into a free Knight or Strength for an era war if one is offered."
+        },
+        {
+          "class": "great-writer",
+          "why": "Amphitheater slots in two Theater Squares; the Culture branch's first Great Works."
+        },
+        {
+          "class": "great-merchant",
+          "why": "Colaeus and later Great Merchants grant Amenities or luxury copies; worth the Gold patronage."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 120,
+          "test": "Every captured city at positive Loyalty and at least neutral Amenities, every luxury inside the borders improved, and two Theater Squares placed?",
+          "pass": "Continue; start the Campuses and the Commercial Hub.",
+          "fail": "A city at negative Loyalty or in Unrest is the only emergency: Monument purchase, Victor, Tlachtli rushed before anything else. An unimproved luxury is a free Amenity and a Strength point left on the table; send a Builder now."
+        },
+        {
+          "turn": 160,
+          "test": "Two Theater Squares with Amphitheaters, two Campuses with Libraries, Gold per turn positive, and the former target at peace?",
+          "pass": "Enter the expand phase and choose the branch's first wonder.",
+          "fail": "If Gold is negative, disband the Eagle Warriors not yet upgraded and run Traders. If a Theater Square is missing, it is the next Builder's job."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "digest-loyalty-audit",
+          "turn": 92,
+          "text": "Audit Amenities and Loyalty in every captured city; Monument, Tlachtli and Victor before anything else is queued."
+        },
+        {
+          "id": "digest-luxuries",
+          "turn": 105,
+          "text": "Walk a Builder to every unimproved luxury inside the new borders; count the distinct types again and trade duplicates away for ones you lack."
+        },
+        {
+          "id": "digest-theaters",
+          "turn": 125,
+          "text": "Theater Squares placed in the capital and the captured capital, rushed with the last captured charges."
+        },
+        {
+          "id": "digest-campuses",
+          "turn": 145,
+          "text": "Two Campuses with Libraries built; Recorded History Inspiration collected."
+        },
+        {
+          "id": "digest-upgrades",
+          "turn": 155,
+          "text": "Upgrade the surviving Eagle Warriors to Swordsmen under Professional Army; disband any you cannot afford."
+        }
+      ]
+    },
+    {
+      "id": "expand",
+      "name": "Build the wide empire",
+      "turns": {
+        "from": 161,
+        "to": 230
+      },
+      "era": "renaissance",
+      "objective": "Turn the wide, amenity-rich empire into a Culture engine with Art Museums, wonders and Great Works, keep a Knight and Crossbow army for one era war against whichever neighbour is behind, and decide by turn 230 which of the two closes the game.",
+      "build_order": [
+        {
+          "item": "Amphitheater",
+          "why": "Every Theater Square; Great Writer slots and the Humanism path."
+        },
+        {
+          "item": "University",
+          "why": "Every Campus; two give Printing, and Culture needs enough Science to reach Flight on time."
+        },
+        {
+          "item": "Art Museum",
+          "why": "Opera and Ballet's Inspiration and the Great Artist slots; theme them."
+        },
+        {
+          "item": "Market",
+          "why": "Second Market for Guilds if not done; Banks for Economics."
+        },
+        {
+          "item": "Industrial Zone",
+          "why": "Two, beside the luxury Mines for adjacency; Workshops for Industrialization."
+        },
+        {
+          "item": "Knight",
+          "why": "Four, only when the era-war trigger fires; otherwise the Swordsmen garrison."
+        },
+        {
+          "item": "Trader",
+          "why": "International routes to the luxury sellers; Amenities and the Mercantilism line."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:printing",
+          "note": "Two Universities give the Eureka; Culture needs the Science behind it."
+        },
+        {
+          "id": "tech:banking",
+          "note": "Free Eureka from Guilds; Banks and the Economics line."
+        },
+        {
+          "id": "tech:astronomy",
+          "note": "A University beside a Mountain if any Campus has one; Colonialism's Inspiration comes from researching it."
+        },
+        {
+          "id": "tech:industrialization",
+          "note": "Two Workshops; Factories and Coal."
+        },
+        {
+          "id": "tech:gunpowder",
+          "note": "An Armory in the forward Encampment; Musketmen for the era war."
+        },
+        {
+          "id": "tech:scientific-theory",
+          "note": "Free Eureka from The Enlightenment; the Science base the Culture game needs."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:humanism",
+          "note": "Inspiration from the first Great Artist; Art Museums."
+        },
+        {
+          "id": "civic:diplomatic-service",
+          "note": "Form an alliance with the luxury seller; the Inspiration comes with it."
+        },
+        {
+          "id": "civic:reformed-church",
+          "note": "Only if a religion was founded; otherwise skip toward The Enlightenment."
+        },
+        {
+          "id": "civic:the-enlightenment",
+          "note": "Three Great People earned by now; Rationalism and Free Market."
+        },
+        {
+          "id": "civic:opera-and-ballet",
+          "note": "The first Art Museum gives the Inspiration; Grand Opera."
+        },
+        {
+          "id": "civic:colonialism",
+          "note": "Free Inspiration from Astronomy; on the way to Nationalism and Natural History."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Grand Opera",
+          "slot": "economic",
+          "from": "civic:opera-and-ballet",
+          "why": "Theater Square buildings doubled; the Culture branch's multiplier."
+        },
+        {
+          "card": "Rationalism",
+          "slot": "economic",
+          "from": "civic:the-enlightenment",
+          "why": "University Science in cities at ten population; the Flight timing depends on it."
+        },
+        {
+          "card": "Town Charters",
+          "slot": "economic",
+          "from": "civic:guilds",
+          "why": "Commercial Hub adjacency doubled; Gold buys the Art Museum Great Works."
+        },
+        {
+          "card": "Monarchy",
+          "slot": "wildcard",
+          "from": "civic:divine-right",
+          "why": "The Tier 2 government for a wide empire with Walls: Housing and Influence per Walls city. Merchant Republic instead if no era war is planned."
+        }
+      ],
+      "districts": [
+        {
+          "district": "theater-square",
+          "city": "every city with a Tlachtli",
+          "note": "Beside the Entertainment Complex; Art Museums for the Great Artists."
+        },
+        {
+          "district": "industrial-zone",
+          "city": "the two best Production cities",
+          "note": "Beside the luxury Mines and an Aqueduct; Workshops for Industrialization."
+        },
+        {
+          "district": "harbor",
+          "city": "any coastal city",
+          "note": "Trade Route capacity to the luxury sellers; Cartography's Eureka at two."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Forbidden City",
+          "why": "An extra wildcard slot for Grand Opera or a military card.",
+          "skip_if": "Printing arrives after turn 200 or a dedicated Culture civilization is already at it."
+        },
+        {
+          "name": "Alhambra",
+          "why": "An extra military slot and Great General points, on Hills beside the forward Encampment.",
+          "skip_if": "No Hills tile adjacent to an Encampment, or Castles lands after turn 190."
+        },
+        {
+          "name": "Kilwa Kisiwani",
+          "why": "+15% to the yields of the city-state types you hold; Cultural and Industrial suzerainties pay the Culture game.",
+          "skip_if": "No coastal city, or fewer than two suzerainties by turn 180."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Curator",
+          "city": "capital",
+          "why": "Tourism from Great Works doubled once the Art Museums fill; the Culture branch's late lever."
+        },
+        {
+          "governor": "reyna",
+          "promotion": "Tax Collector",
+          "city": "the Commercial Hub city",
+          "why": "Gold to buy Great Works and luxury copies."
+        }
+      ],
+      "city_states": [
+        {
+          "type": "Cultural",
+          "why": "Six envoys for Culture in every Art Museum."
+        },
+        {
+          "type": "Industrial",
+          "why": "Production in every Workshop and Factory for the wonders."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-artist",
+          "why": "Three works from one Artist theme an Art Museum; Humanism's Inspiration from the first."
+        },
+        {
+          "class": "great-writer",
+          "why": "Amphitheater slots across the empire; Culture and Tourism both."
+        },
+        {
+          "class": "great-engineer",
+          "why": "Renaissance Great Engineers finish the Forbidden City or Alhambra."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 195,
+          "test": "Four Amphitheaters, two Art Museums placed, Universities in every Campus, and Culture per turn above the median rival?",
+          "pass": "Continue; the Culture branch is live.",
+          "fail": "Culture below the median means the captures still have no Theater Squares; build them before any wonder. Science far behind means Rationalism and Universities first, since Flight is the Tourism gate."
+        },
+        {
+          "turn": 230,
+          "test": "Is a neighbour two eras behind with reachable cities, or is your Tourism already pulling visitors from three civilizations?",
+          "pass": "Commit: an era war with Knights, Crossbowmen and Musketmen for two more cities, or Culture with Flight, Museums and Seaside Resorts.",
+          "fail": "Neither: the game is a Score game. Keep building Theater Squares and Campuses and stop paying for units beyond the garrisons."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "expand-amphitheaters",
+          "turn": 175,
+          "text": "Amphitheaters in every Theater Square; the first Great Writer's works placed."
+        },
+        {
+          "id": "expand-alliance",
+          "turn": 185,
+          "text": "Form an alliance with the civilization that sells you luxuries; it is the diplomacy floor and the Diplomatic Service Inspiration."
+        },
+        {
+          "id": "expand-museums",
+          "turn": 205,
+          "text": "Two Art Museums built; Opera and Ballet's Inspiration collected and the first Great Artist themed."
+        },
+        {
+          "id": "expand-branch",
+          "turn": 230,
+          "text": "Choose the branch: one era war against the neighbour two eras behind, or Culture. Write the decision down."
+        }
+      ]
+    },
+    {
+      "id": "close",
+      "name": "Close",
+      "turns": {
+        "from": 231,
+        "to": null
+      },
+      "era": "industrial",
+      "objective": "Finish the chosen branch: capitals taken by Field Cannons and Infantry one era war at a time, or Tourism from Museums, National Parks, Seaside Resorts and Rock Bands pulling every civilization's visitors.",
+      "build_order": [
+        {
+          "item": "Factory",
+          "why": "Both branches: Production in every Industrial Zone, and Class Struggle's Inspiration at three."
+        },
+        {
+          "item": "Archaeological Museum",
+          "why": "Culture branch: Natural History's Inspiration and Artifacts to theme."
+        },
+        {
+          "item": "Broadcast Center",
+          "why": "Culture branch: the Great Musician slots and Tourism from Radio."
+        },
+        {
+          "item": "Field Cannon",
+          "why": "Domination branch: the siege line for cities with Renaissance Walls."
+        },
+        {
+          "item": "Musketman",
+          "why": "Domination branch: the old Eagle Warriors' third form, upgraded under Professional Army."
+        },
+        {
+          "item": "Seaside Resort",
+          "why": "Culture branch: Builders on high-appeal coast after Radio."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:electricity",
+          "note": "Power for Factories; Eureka from two Privateers only if a Harbor exists."
+        },
+        {
+          "id": "tech:flight",
+          "note": "Tourism from wonders and the Great Wall-style improvements; Eureka from owning an Industrial wonder."
+        },
+        {
+          "id": "tech:radio",
+          "note": "National Parks and Seaside Resorts; Eureka from the first National Park."
+        },
+        {
+          "id": "tech:military-science",
+          "note": "Domination branch: a Knight kill in the era war; Military Academies."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:natural-history",
+          "note": "The first Archaeological Museum gives the Inspiration; Archaeologists for the Artifacts."
+        },
+        {
+          "id": "civic:conservation",
+          "note": "A Neighborhood on Breathtaking appeal; National Parks with Naturalists bought with Tlachtli Faith."
+        },
+        {
+          "id": "civic:mass-media",
+          "note": "Free Inspiration from Radio; Broadcast Centers and the Tourism multiplier."
+        },
+        {
+          "id": "civic:class-struggle",
+          "note": "Three Factories; the Tier 3 government for the Computers Eureka."
+        },
+        {
+          "id": "civic:nationalism",
+          "note": "Domination branch: the era war declared with a Casus Belli gives the Inspiration; Grand Armee."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Heritage Tourism",
+          "slot": "economic",
+          "from": "civic:natural-history",
+          "why": "Culture branch: Tourism from Great Works doubled."
+        },
+        {
+          "card": "Online Communities",
+          "slot": "economic",
+          "from": "civic:social-media",
+          "why": "Culture branch: Tourism to civilizations you trade with, which the luxury routes already are."
+        },
+        {
+          "card": "Grand Armee",
+          "slot": "military",
+          "from": "civic:nationalism",
+          "why": "Domination branch: Industrial units faster for the last sieges."
+        }
+      ],
+      "districts": [
+        {
+          "district": "neighborhood",
+          "city": "capital and the captured capital",
+          "note": "Housing, Sanitation's Eureka at two, and Conservation's Inspiration on a Breathtaking tile."
+        },
+        {
+          "district": "preserve",
+          "city": "a high-appeal city",
+          "note": "Culture branch: Culture and Faith from appeal around the National Park."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Eiffel Tower",
+          "why": "+2 Appeal on every tile; Seaside Resorts and National Parks everywhere.",
+          "skip_if": "Steam Power lands after turn 270 or a Culture civilization is already building it."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "moksha",
+          "promotion": "Patron Saint",
+          "city": "the Faith city",
+          "why": "Culture branch: Naturalists and Rock Bands bought with Tlachtli Faith at a discount."
+        },
+        {
+          "governor": "victor",
+          "promotion": "Embrasure",
+          "city": "the newest capture",
+          "why": "Domination branch: each capital holds while the army moves on."
+        }
+      ],
+      "city_states": [
+        {
+          "type": "Cultural",
+          "why": "Keep six envoys; Culture in every Museum."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-musician",
+          "why": "Culture branch: Broadcast Center slots are the strongest Tourism per work."
+        },
+        {
+          "class": "great-artist",
+          "why": "Culture branch: theme every Art Museum; buy the last one with Faith if needed."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 290,
+          "test": "Culture branch: Tourism pulling visitors from every civilization but one, or Domination branch: two capitals taken since turn 230?",
+          "pass": "Continue to the end; Rock Bands or Infantry, no further decisions.",
+          "fail": "Convert to Score: keep the garrisons, stop new military, and spend Faith on Naturalists and Gold on Great Works."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "close-museums",
+          "turn": 245,
+          "text": "Culture branch: Archaeological Museums built and three Archaeologists digging; Natural History Inspiration collected."
+        },
+        {
+          "id": "close-era-war",
+          "turn": 245,
+          "text": "Domination branch: declare with a Casus Belli on the neighbour two eras behind; Field Cannons and Musketmen at the nearest capital."
+        },
+        {
+          "id": "close-parks",
+          "turn": 265,
+          "text": "Culture branch: two National Parks with Faith-bought Naturalists and Seaside Resorts on every Breathtaking coast tile."
+        },
+        {
+          "id": "close-review",
+          "turn": 290,
+          "text": "Review the turn 290 checkpoint and either continue or declare the game a Score game."
+        }
+      ]
+    }
+  ],
+  "boosts": [
+    {
+      "id": "tech:bronze-working",
+      "fit": "free",
+      "when": "arm",
+      "how": "Three Barbarian kills at the farmed camp; captures count."
+    },
+    {
+      "id": "tech:writing",
+      "fit": "free",
+      "when": "window",
+      "how": "Meeting the target on the way to it."
+    },
+    {
+      "id": "tech:archery",
+      "fit": "cheap",
+      "when": "arm",
+      "how": "One Slinger kill at the camp if a Slinger is built; otherwise unboosted."
+    },
+    {
+      "id": "tech:masonry",
+      "fit": "cheap",
+      "when": "arm",
+      "how": "A Quarry on Marble or Stone near the capital."
+    },
+    {
+      "id": "tech:irrigation",
+      "fit": "free",
+      "when": "arm",
+      "how": "The first Plantation or Farm on a resource; most luxuries are one or the other."
+    },
+    {
+      "id": "tech:wheel",
+      "fit": "free",
+      "when": "window",
+      "how": "The first luxury Mine."
+    },
+    {
+      "id": "tech:horseback-riding",
+      "fit": "free",
+      "when": "window",
+      "how": "A Pasture on any Horses, Sheep or Cattle."
+    },
+    {
+      "id": "tech:currency",
+      "fit": "cheap",
+      "when": "window",
+      "how": "The first Trader to the forward city."
+    },
+    {
+      "id": "tech:iron-working",
+      "fit": "cheap",
+      "when": "window",
+      "how": "Mine the Iron Bronze Working revealed; Swordsmen upgrades need it."
+    },
+    {
+      "id": "tech:construction",
+      "fit": "cheap",
+      "when": "window",
+      "how": "A Water Mill in a river city."
+    },
+    {
+      "id": "tech:military-tactics",
+      "fit": "cheap",
+      "when": "window",
+      "how": "A Spearman kill during the war; bring one Spearman for it if Huey Teocalli is wanted."
+    },
+    {
+      "id": "tech:astrology",
+      "fit": "costly",
+      "when": "arm",
+      "how": "Only if the first Eagle Warrior passes a natural wonder."
+    },
+    {
+      "id": "tech:sailing",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:celestial-navigation",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:shipbuilding",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:engineering",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "Ancient Walls in the captured capital."
+    },
+    {
+      "id": "tech:mathematics",
+      "fit": "free",
+      "when": "digest",
+      "how": "Encampment, Entertainment Complex and Campus, all rushed with charges."
+    },
+    {
+      "id": "tech:apprenticeship",
+      "fit": "free",
+      "when": "digest",
+      "how": "Three Mines; the luxury Mines already count."
+    },
+    {
+      "id": "tech:stirrups",
+      "fit": "free",
+      "when": "digest",
+      "how": "Feudalism is on the civic path."
+    },
+    {
+      "id": "tech:education",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "The first Great Scientist from two Libraries."
+    },
+    {
+      "id": "tech:military-engineering",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "The capital Aqueduct."
+    },
+    {
+      "id": "tech:castles",
+      "fit": "free",
+      "when": "digest",
+      "how": "Any Tier 2 government."
+    },
+    {
+      "id": "tech:machinery",
+      "fit": "costly",
+      "when": "digest",
+      "how": "Three Archers only if the garrisons are Archers; usually unboosted."
+    },
+    {
+      "id": "tech:buttress",
+      "fit": "cheap",
+      "when": "expand",
+      "how": "Owning Huey Teocalli, the Colosseum or Temple of Artemis."
+    },
+    {
+      "id": "tech:printing",
+      "fit": "cheap",
+      "when": "expand",
+      "how": "Build Universities in two cities (Campus cities two and three)."
+    },
+    {
+      "id": "tech:banking",
+      "fit": "free",
+      "when": "expand",
+      "how": "Guilds is on the civic path."
+    },
+    {
+      "id": "tech:astronomy",
+      "fit": "costly",
+      "when": "expand",
+      "how": "A University beside a Mountain only if a Campus already sits by one."
+    },
+    {
+      "id": "tech:industrialization",
+      "fit": "cheap",
+      "when": "expand",
+      "how": "Build Workshops in two Industrial Zone cities."
+    },
+    {
+      "id": "tech:gunpowder",
+      "fit": "cheap",
+      "when": "expand",
+      "how": "An Armory in the forward Encampment."
+    },
+    {
+      "id": "tech:scientific-theory",
+      "fit": "free",
+      "when": "expand",
+      "how": "The Enlightenment is on the civic path."
+    },
+    {
+      "id": "tech:mass-production",
+      "fit": "cheap",
+      "when": "expand",
+      "how": "A Lumber Mill on any Woods tile."
+    },
+    {
+      "id": "tech:economics",
+      "fit": "costly",
+      "when": "expand",
+      "how": "Two Banks if Gold is short."
+    },
+    {
+      "id": "tech:cartography",
+      "fit": "costly",
+      "when": "expand",
+      "how": "Two Harbors only if two coastal cities exist."
+    },
+    {
+      "id": "tech:square-rigging",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:military-science",
+      "fit": "cheap",
+      "when": "close",
+      "how": "A Knight kill in the era war."
+    },
+    {
+      "id": "tech:electricity",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:flight",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Owning any Industrial wonder; Eiffel Tower or Big Ben."
+    },
+    {
+      "id": "tech:radio",
+      "fit": "cheap",
+      "when": "close",
+      "how": "The first National Park with a Faith-bought Naturalist."
+    },
+    {
+      "id": "tech:sanitation",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Neighborhoods in the two biggest cities."
+    },
+    {
+      "id": "tech:computers",
+      "fit": "free",
+      "when": "close",
+      "how": "Any Tier 3 government."
+    },
+    {
+      "id": "tech:combustion",
+      "fit": "cheap",
+      "when": "close",
+      "how": "The first Artifact extracted on the Culture branch."
+    },
+    {
+      "id": "civic:craftsmanship",
+      "fit": "free",
+      "when": "arm",
+      "how": "Three improved tiles from the first Builder, luxuries first."
+    },
+    {
+      "id": "civic:foreign-trade",
+      "fit": "costly",
+      "when": "arm",
+      "how": "Only if a second continent is in sight; otherwise unboosted."
+    },
+    {
+      "id": "civic:early-empire",
+      "fit": "free",
+      "when": "arm",
+      "how": "Six population across two cities."
+    },
+    {
+      "id": "civic:military-tradition",
+      "fit": "free",
+      "when": "window",
+      "how": "Clearing the farmed camp once its Builders are banked."
+    },
+    {
+      "id": "civic:state-workforce",
+      "fit": "free",
+      "when": "window",
+      "how": "The first district rushed with captured charges."
+    },
+    {
+      "id": "civic:mysticism",
+      "fit": "free",
+      "when": "window",
+      "how": "Founding God of the Forge."
+    },
+    {
+      "id": "civic:political-philosophy",
+      "fit": "cheap",
+      "when": "window",
+      "how": "Three city-states met by the army on the march."
+    },
+    {
+      "id": "civic:games-and-recreation",
+      "fit": "free",
+      "when": "window",
+      "how": "Researching Construction."
+    },
+    {
+      "id": "civic:military-training",
+      "fit": "cheap",
+      "when": "window",
+      "how": "The forward Encampment, rushed with charges."
+    },
+    {
+      "id": "civic:defensive-tactics",
+      "fit": "free",
+      "when": "window",
+      "how": "The target or its friend declares war on you after the first capture."
+    },
+    {
+      "id": "civic:drama-and-poetry",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "Huey Teocalli, the Colosseum or Temple of Artemis completed."
+    },
+    {
+      "id": "civic:recorded-history",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "Build Campuses in two cities; the second one lands in the loop."
+    },
+    {
+      "id": "civic:theology",
+      "fit": "costly",
+      "when": "digest",
+      "how": "Founding a religion with Tlachtli Faith; only if a Great Prophet is still available."
+    },
+    {
+      "id": "civic:feudalism",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "Six Farms from the Serfdom Builders."
+    },
+    {
+      "id": "civic:civil-service",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "The capital at ten population with Granary and Aqueduct."
+    },
+    {
+      "id": "civic:guilds",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "Build Markets in two Commercial Hub cities."
+    },
+    {
+      "id": "civic:mercenaries",
+      "fit": "free",
+      "when": "digest",
+      "how": "Eight land units left over from the window."
+    },
+    {
+      "id": "civic:medieval-faires",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "Four Trade Routes, two of them carrying Food to the captures."
+    },
+    {
+      "id": "civic:divine-right",
+      "fit": "costly",
+      "when": "digest",
+      "how": "Two Temples only if the religion was founded."
+    },
+    {
+      "id": "civic:naval-tradition",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:humanism",
+      "fit": "cheap",
+      "when": "expand",
+      "how": "The first Great Artist from two Amphitheaters."
+    },
+    {
+      "id": "civic:diplomatic-service",
+      "fit": "cheap",
+      "when": "expand",
+      "how": "An alliance with the luxury seller."
+    },
+    {
+      "id": "civic:reformed-church",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:the-enlightenment",
+      "fit": "cheap",
+      "when": "expand",
+      "how": "Three Great People: a General, a Writer and one more."
+    },
+    {
+      "id": "civic:opera-and-ballet",
+      "fit": "cheap",
+      "when": "expand",
+      "how": "The first Art Museum."
+    },
+    {
+      "id": "civic:colonialism",
+      "fit": "free",
+      "when": "expand",
+      "how": "Researching Astronomy."
+    },
+    {
+      "id": "civic:exploration",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:mercantilism",
+      "fit": "cheap",
+      "when": "expand",
+      "how": "The first Great Merchant, which the Amenity line patronizes anyway."
+    },
+    {
+      "id": "civic:civil-engineering",
+      "fit": "cheap",
+      "when": "expand",
+      "how": "Seven different specialty districts across the wide empire."
+    },
+    {
+      "id": "civic:natural-history",
+      "fit": "cheap",
+      "when": "close",
+      "how": "The first Archaeological Museum."
+    },
+    {
+      "id": "civic:conservation",
+      "fit": "cheap",
+      "when": "close",
+      "how": "A Neighborhood on a Breathtaking tile beside the lake or a wonder."
+    },
+    {
+      "id": "civic:mass-media",
+      "fit": "free",
+      "when": "close",
+      "how": "Research Radio first; the Inspiration follows at no extra cost."
+    },
+    {
+      "id": "civic:class-struggle",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Build Factories in three cities along the Industrial Zone belt."
+    },
+    {
+      "id": "civic:nationalism",
+      "fit": "cheap",
+      "when": "close",
+      "how": "The era war declared with a Casus Belli."
+    },
+    {
+      "id": "civic:urbanization",
+      "fit": "cheap",
+      "when": "close",
+      "how": "A fifteen-population capital."
+    },
+    {
+      "id": "civic:social-media",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    }
+  ],
+  "decision_triggers": [
+    {
+      "name": "Swordsman on the target",
+      "if": "The target fields a Swordsman before the capital falls.",
+      "then": "The window is closing early. Take the nearest smaller city instead, make peace the turn it falls, and spend the remaining turns on luxuries and districts rather than a second siege."
+    },
+    {
+      "name": "Idle Builder",
+      "if": "Any captured Builder has gone two turns without a placed district to walk to.",
+      "then": "Place the next district on the sink list in the nearest city before the Builder moves again; if the list is empty, the Builder improves the nearest unimproved luxury, which raises Strength and Amenities both."
+    },
+    {
+      "name": "Three stalled turns",
+      "if": "For three consecutive turns during the window the target city is no closer to falling and no unit has been captured.",
+      "then": "Reduce scope the same turn: the weakest city of the same owner, or peace for the city they will cede. Do not wait for the midpoint."
+    },
+    {
+      "name": "Luxury seller threatened",
+      "if": "Another civilization declares war on the civilization that sells you two or more luxury types.",
+      "then": "Stay out of it, offer the seller a Declared Friendship, and buy the luxuries forward on a thirty-turn deal; losing the Amenities mid-digest puts the captures into Unrest."
+    }
+  ],
+  "abort": {
+    "trigger": "Turn 90 with no city captured, or three stalled turns before turn 55 with no units captured and the target's Walls intact behind a Swordsman.",
+    "actions": [
+      "Make peace immediately on any terms that cost no city; the grievances are already paid.",
+      "Disband every Eagle Warrior beyond four and stop building military; the maintenance is pure loss.",
+      "Spend every banked Builder on Theater Squares and Campuses, improve every luxury in reach, and run the digest and expand phases as a Culture civilization on the cities you have."
+    ]
+  },
+  "fail_state": "Turn 90 with the neighbour behind Walls and Swordsmen, no city taken, a dozen Builder charges spent on Farms because no district was placed, two luxury types improved, and six Eagle Warriors on maintenance. The Aztecs are then a three-city civ with an Arena that makes Faith, no Amenity surplus to speak of, and grievances with the only neighbour whose luxuries they wanted.",
+  "common_mistakes": [
+    "Clearing the first camp before its raiders have been captured. The camp is a Builder factory; the reward for clearing it is one tribal village.",
+    "Letting captured Builders improve tiles. A charge is 20% of a district; a Farm is a Farm. Place the district before the Builder arrives.",
+    "Counting imported luxuries toward Strength. Only distinct luxuries improved inside Aztec borders raise it; imports pay Amenities and nothing else.",
+    "Declaring on the civilization that sells you luxuries because it is nearest. The target is the neighbour whose luxuries you lack and can capture, not your Amenity supplier.",
+    "Treating a big Eagle Warrior army at turn 90 as success. Cities, rushed districts and improved luxury types are the count; units are maintenance."
+  ],
+  "sources": [
+    "Civilization VI Civilopedia, Gathering Storm ruleset (Aztec, Montezuma, Eagle Warrior, Tlachtli, Legend of the Five Suns, Gifts for the Tlatoani).",
+    "Gathering Storm rule that Battering Rams and Siege Towers apply to melee and anti-cavalry units, which Eagle Warriors are.",
+    "Boost objectives cross-checked against civilization6planner.com tech-tree and civics-tree pages, 2026-10-01.",
+    "Leadership Focus tags, caveats and the Countdown template for Montezuma in this repository."
+  ]
+}

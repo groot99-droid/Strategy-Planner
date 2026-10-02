@@ -1,0 +1,439 @@
+{
+  "slug": "genghis-khan",
+  "shape": "Gate",
+  "secondary_shape": null,
+  "version": 1,
+  "updated": "2026-10-01",
+  "assumptions": {
+    "ruleset": "Gathering Storm with every expansion and the Leader Pass",
+    "speed": "Standard",
+    "difficulty": "Emperor",
+    "map": "Pangaea or Continents, standard size, 8 civilizations",
+    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. Genghis Khan has a single persona and it is planned here. The gate is a running Trade Route to the target that has already planted its Trading Post, not a turn, and it is reopened for every new target."
+  },
+  "verdict": {
+    "victory": "Domination",
+    "secondary": "Score",
+    "confidence": "high",
+    "one_line": "Send the Trader before the Horseman. A Trading Post in the target's city is a level of Diplomatic Visibility, Mongolia doubles the Combat Strength that visibility gives, and every cavalry fight you win may hand you the loser's horse.",
+    "why": "Örtöö plants a Trading Post the turn a route begins instead of when it completes, and doubles the Combat Strength a Diplomatic Visibility lead gives from +3 to +6 per level. Mongol Horde adds +3 to every light and heavy cavalry unit and a chance to capture defeated cavalry outright. Stacked, a Horseman with a Trading Post, a Delegation and an Embassy on the target is fighting at +15 or more against a civ that has no visibility on you, and that is before the Ordu's extra Movement. None of it is free: the route must be running before the declaration and the target must field cavalry for the captures to pay, which is why the plan is a Gate and why each war has its own pre-war Trader. The kit makes nothing but conquest, so Score is what an incomplete one becomes."
+  },
+  "map_check": {
+    "must_have": [
+      "Horses within the first two cities' borders by turn 30, mined or pastured; Horsemen, Knights and the Ordu's unit line all need them.",
+      "A rival capital within Trade Route range (15 tiles by land in the Ancient era) so the route can be running before the first Horsemen are built."
+    ],
+    "prefer": [
+      "Grassland and plains with Pastures for God of the Open Sky and the Horseback Riding Eureka.",
+      "Open ground rather than hills and jungle between you and the target; cavalry moves at full speed on it and Keshigs can shoot and retreat.",
+      "Two or three rivals on the same landmass so the second and third routes can be sent by land.",
+      "A rival that fields cavalry, Scythia, Arabia, Poland, Hungary or Byzantium, so Mongol Horde captures units rather than killing them."
+    ],
+    "no_go": "No Horses within reach of the first three cities and no Hattusa to buy them from. The whole kit is cavalry, and a Mongolia without Horses is a civ with slightly better Trade Routes.",
+    "fallback": "If Horses appear only after Horseback Riding reveals them beyond the border, settle the third city on them and delay the first war until Knights. If there are none at all, run Örtöö as a trade economy with Commercial Hubs and Markets, take Hattusa's suzerainty for the Horses it provides, and play Score with a defensive Keshig line once Stirrups lands."
+  },
+  "kit_levers": [
+    { "source": "leader_ability", "name": "Mongol Horde", "buys": "+3 Combat Strength for every light and heavy cavalry unit and the Keshig, and a chance that a defeated enemy cavalry unit joins your army instead of dying.", "exploit": "Pick wars against civs that field cavalry and let Horsemen and Knights take the kill on every enemy horse; a captured Knight is 180 Production you did not spend. Keshigs soften, cavalry finishes." },
+    { "source": "civ_ability", "name": "Örtöö", "buys": "A Trading Post appears in the destination city the turn a Trade Route starts, you get a level of Diplomatic Visibility with civs you have a Trading Post in, and the Combat Strength bonus from a visibility lead is doubled.", "exploit": "The gate itself. The Trader is sent to the target's nearest city before the army is built, the Delegation and Embassy are exchanged while still at peace, and the war is declared only when the visibility gap is two levels or more, which is +12 on every unit in the field." },
+    { "source": "unique_unit", "name": "Keshig", "buys": "A ranged cavalry unit at Stirrups with 4 Movement that can carry a civilian or support unit at its own speed.", "exploit": "Two Keshigs escort the Battering Ram or Siege Tower to the wall at cavalry speed and shoot the defenders down for the Knights to finish. They are the second-war unit; the first war is Horsemen." },
+    { "source": "unique_infrastructure", "name": "Ordu", "buys": "A Stable replacement in the Encampment that gives every light and heavy cavalry unit trained in its city +1 Movement.", "exploit": "One Encampment with an Ordu in the forward city builds every Horseman, Knight and Keshig the plan uses; a 5-Movement Horseman reaches the target's capital before its Walls do." },
+    { "source": "agenda", "name": "Horse Lord", "buys": "Genghis Khan dislikes civilizations with strong cavalry forces of their own.", "exploit": "Irrelevant to your own play, but AI Genghis on the same map will pick a fight with you the moment your stables fill; keep a Trading Post in his nearest city before he does the same to you." }
+  ],
+  "shape_block": {
+    "gate": {
+      "gate_condition": "A Trade Route from one of your cities is running to a city of the intended target, so its Örtöö Trading Post is planted and you hold at least one level of Diplomatic Visibility more than the target holds on you, with Horsemen built in an Ordu city and a Casus Belli or denouncement ready. It reopens for every new target; a war declared before the route is a war without the kit.",
+      "fastest_path": ["civic:foreign-trade", "tech:animal-husbandry", "tech:horseback-riding", "tech:bronze-working", "tech:currency", "civic:military-tradition", "civic:political-philosophy", "tech:stirrups"],
+      "estimated_arrival": { "from": 30, "to": 50 },
+      "staging": [
+        "The Trader dispatched to the target's nearest city and the route confirmed running; the Trading Post appears the turn it starts under Örtöö.",
+        "Delegation sent and, when offered, Embassies exchanged with the target, so the visibility gap is two levels before Walls appear.",
+        "An Encampment with an Ordu in the city nearest the target and four Horsemen trained there, plus one Battering Ram.",
+        "Horses improved and showing at least four per turn in the resource bar; Horsemen and Knights draw from the stockpile.",
+        "The target scouted: no Ancient Walls on its nearest city, no more than two Spearmen, and a cavalry civ if one is within reach.",
+        "A denouncement five turns old for a Formal War, or a Casus Belli, so grievances do not pull a third civ in.",
+        "A Great General within reach of the Ordu city; Horsemen with +5 and +1 Movement from a General and the Ordu are at 7 Movement with roads."
+      ],
+      "late_gate": "If the gate is twenty turns late (no running route to the target by turn 70), the cause is one of three things. No Trader: Foreign Trade was delayed, so slot Culture in the capital and buy the Trader with Gold the turn the civic lands. The route cannot reach: settle a city toward the target or build a Commercial Hub in the nearest one so a shorter route exists. The Trader was plundered: send it with a Horseman escort along the road. In the meantime keep the Ordu training Horsemen for barbarians only, clear every camp between you and the target so the road is safe for the next Trader, and do not declare; a war without the visibility bonus is a war at plus three. If the gate is still shut by Stirrups, open it against the second-nearest rival instead and fight the first with Keshigs later.",
+      "closing_window": "Parity comes in two forms. Visibility parity: once the target exchanges Embassies, places a Spy with Listening Post or forms alliances, the gap closes and the doubled bonus goes with it; check the visibility level on the target every five turns during the war and never let it reach equal. Unit parity: Pike and Shot at Metal Casting and Musketmen behind Renaissance Walls (turn 170 to 200 on Emperor) stop Knights and Keshigs cold, and the capture mechanic stops paying when rivals stop building cavalry. Every target must be taken between its Trading Post and its Renaissance Walls, and the last capital must fall before the first rival Field Cannon."
+    }
+  },
+  "phases": [
+    {
+      "id": "found",
+      "name": "Found and find Horses",
+      "turns": { "from": 1, "to": 25 },
+      "era": "ancient",
+      "objective": "State the gate on turn 1, settle on or beside Horses, find the nearest rival and the road to it, and have Foreign Trade and Horseback Riding both within reach by turn 25 so the Trader and the first Horseman arrive together.",
+      "build_order": [
+        { "item": "Scout", "why": "Find the nearest rival and the Horses; the route and the target both depend on it." },
+        { "item": "Warrior", "why": "Escort for the Settler and the second camp-clearer; it holds the capital while the Horsemen are out." },
+        { "item": "Slinger", "why": "Archery Eureka and a defender; Archers behind the Horsemen later." },
+        { "item": "Settler", "why": "Second city on Horses toward the nearest rival; this is the Ordu city." },
+        { "item": "Builder", "why": "A Pasture on the Horses for the Horseback Riding Eureka and the Open Sky Culture." },
+        { "item": "Monument", "why": "Foreign Trade and Military Tradition are the first civics on the path; both need Culture." },
+        { "item": "Trader", "why": "The gate. Sent to the target's nearest city the turn Foreign Trade lands." },
+        { "item": "Settler", "why": "Third city on the second Horse source or on the road to the target." }
+      ],
+      "research": [
+        { "id": "tech:animal-husbandry", "note": "Reveals Horses; the settle decision depends on it. Research it first." },
+        { "id": "tech:mining", "note": "Mines for Production and the road to Bronze Working." },
+        { "id": "tech:archery", "note": "Eureka from the Slinger kill; Archers are the only ranged unit until Stirrups." },
+        { "id": "tech:horseback-riding", "note": "Horsemen and the Ordu's prerequisite; Eureka from the first Pasture." },
+        { "id": "tech:bronze-working", "note": "Encampment for the Ordu; three barbarian kills give the Eureka." }
+      ],
+      "civics": [
+        { "id": "civic:code-of-laws", "note": "Discipline for the camps and Survey for the Scout." },
+        { "id": "civic:foreign-trade", "note": "The Trader. First civic after Code of Laws; the gate cannot open without it." },
+        { "id": "civic:craftsmanship", "note": "Three improved tiles; Agoge is not the card here, Maneuver is, but Military Tradition sits behind it." }
+      ],
+      "policies": [
+        { "card": "Discipline", "slot": "military", "from": "civic:code-of-laws", "why": "Warriors beat camp units for the Bronze Working kills." },
+        { "card": "Caravansary", "slot": "economic", "from": "civic:foreign-trade", "why": "Gold on the route that is also the gate." }
+      ],
+      "districts": [],
+      "pantheon": { "slug": "god-of-the-open-sky", "why": "Culture from every Pasture; the civics on the gate path come faster and Horses are pastured anyway.", "alternative": "god-of-craftsmen" },
+      "wonders": [],
+      "governors": [],
+      "city_states": [
+        { "slug": "hattusa", "why": "Two of each revealed but unimproved strategic resource per turn; it is Horses before the Pasture and Iron forever." }
+      ],
+      "great_people": [],
+      "checkpoints": [
+        { "turn": 25, "test": "Horses inside a border, the nearest rival found and within 15 tiles, and Foreign Trade and Horseback Riding both researched or one turn away?", "pass": "Dispatch the Trader toward the target the turn it is built; start the Encampment in the Horse city.", "fail": "No Horses: run the map-check fallback. Rival too far: pick the nearest city-state as the practice target and settle one city toward the rival so the route reaches." }
+      ],
+      "tasks": [
+        { "id": "found-state-gate", "turn": 1, "text": "Write the gate down: no war without a running route to the target. Settle; queue Animal Husbandry first." },
+        { "id": "found-scout-rival", "turn": 6, "text": "Scout toward the nearest rival; count the tiles, note the camps and whether it has Horses of its own." },
+        { "id": "found-pasture", "turn": 15, "text": "Pasture the Horses for the Horseback Riding Eureka and the first Open Sky Culture." },
+        { "id": "found-second-city", "turn": 20, "text": "Settle the Ordu city on or beside Horses, toward the target." },
+        { "id": "found-trader", "turn": 25, "text": "Build or buy the Trader the turn Foreign Trade lands; it goes to the target's nearest city." }
+      ]
+    },
+    {
+      "id": "stage",
+      "name": "Route, Ordu, Horsemen",
+      "turns": { "from": 26, "to": 50 },
+      "era": "classical",
+      "objective": "Open the gate: a running Trade Route to the target with its Trading Post planted, an Ordu in the forward city, four Horsemen out of it, Delegations exchanged, and a Casus Belli or denouncement ready, with Walls at home so the war cannot be reversed.",
+      "build_order": [
+        { "item": "Encampment", "why": "Forward city; the Ordu goes in it and the Military Training Inspiration comes from it." },
+        { "item": "Ordu", "why": "+1 Movement on every Horseman and Knight built here for the rest of the game." },
+        { "item": "Horseman", "why": "Four, from the Ordu city under Maneuver; the first war's whole army." },
+        { "item": "Battering Ram", "why": "Horsemen cannot take Walls; one Ram carried with the stack can." },
+        { "item": "Ancient Walls", "why": "Capital; the Engineering Eureka and the floor if the target counter-attacks." },
+        { "item": "Archer", "why": "Two, one per home city; the garrison while the horses are away." },
+        { "item": "Settler", "why": "Fourth city; a Trade Route needs an origin within range of each later target." }
+      ],
+      "research": [
+        { "id": "tech:wheel", "note": "Water Mill in a river city and the road to Currency." },
+        { "id": "tech:currency", "note": "Second Trade Route; Eureka from the first route. One route per target is the rule." },
+        { "id": "tech:masonry", "note": "Ancient Walls at home; a Quarry if stone is near." },
+        { "id": "tech:iron-working", "note": "Swordsmen to hold the captures; mine the Iron Hattusa was supplying." },
+        { "id": "tech:writing", "note": "Free from meeting the rival; a Campus later for Stirrups." }
+      ],
+      "civics": [
+        { "id": "civic:military-tradition", "note": "Maneuver for cavalry Production and Raid; Inspiration from the first camp." },
+        { "id": "civic:state-workforce", "note": "The Encampment is the first district; Conscription." },
+        { "id": "civic:early-empire", "note": "Colonization for the third and fourth Settler." },
+        { "id": "civic:political-philosophy", "note": "Oligarchy is the war government; Inspiration from three city-states met." },
+        { "id": "civic:military-training", "note": "Inspiration from the Encampment; Strategos for the General." }
+      ],
+      "policies": [
+        { "card": "Maneuver", "slot": "military", "from": "civic:military-tradition", "why": "Horsemen half again as fast out of the Ordu." },
+        { "card": "Colonization", "slot": "economic", "from": "civic:early-empire", "why": "Third and fourth Settler cheaply while the Ordu builds horses." },
+        { "card": "Oligarchy", "slot": "wildcard", "from": "civic:political-philosophy", "why": "The government: Combat Strength and experience for the whole stack." }
+      ],
+      "districts": [
+        { "district": "encampment", "city": "forward Horse city", "note": "Ordu inside; every cavalry unit comes from here." },
+        { "district": "commercial-hub", "city": "capital", "note": "Second Trade Route at Currency; the second target's route starts here." }
+      ],
+      "pantheon": { "slug": "god-of-the-open-sky", "why": "Already founded; the Pastures pay for the civics in this phase." },
+      "wonders": [
+        { "name": "Terracotta Army", "why": "A free promotion on every unit standing; time it for the turn the fourth Horseman is out.", "skip_if": "Construction is not researched by turn 60 or no flat tile beside the Encampment is free." }
+      ],
+      "governors": [
+        { "governor": "victor", "promotion": "Garrison Commander", "city": "forward Horse city", "why": "Combat Strength inside its borders and Loyalty; the home base of every war." },
+        { "governor": "magnus", "promotion": "Provision", "city": "capital", "why": "Settlers without the population cost while the capital grows." }
+      ],
+      "city_states": [
+        { "slug": "kabul", "why": "Double experience from battles you start; Horsemen promote to Depredation and Pursuit in one war." },
+        { "slug": "wolin", "why": "Great General points for every land kill against anyone." }
+      ],
+      "great_people": [
+        { "class": "great-general", "why": "+5 and +1 Movement on Horsemen in range; Boudica also flips barbarians. One before the first war." }
+      ],
+      "checkpoints": [
+        { "turn": 40, "test": "Trade Route running to the target and its Trading Post showing, Ordu complete, and two Horsemen built?", "pass": "Send the Delegation, denounce if there is no Casus Belli, and queue the last two Horsemen and the Ram.", "fail": "Route not running: the gate is closed, no war. Find why (range, plunder, no Trader) and fix it before building more horses." },
+        { "turn": 50, "test": "Gate check: route running, visibility gap at least one level (two with an Embassy), four Horsemen plus a Ram staged in the Ordu city, and a denouncement five turns old?", "pass": "Declare; enter the first war.", "fail": "Gate open, staging short: finish the horses, do not declare. Gate closed: run the late-gate plan." }
+      ],
+      "tasks": [
+        { "id": "stage-route-running", "turn": 28, "text": "Confirm the Trade Route to the target is running and its Trading Post is on the map; this is the gate." },
+        { "id": "stage-delegation", "turn": 30, "text": "Send a Delegation to the target (25 Gold) for a second level of visibility; exchange Embassies when offered." },
+        { "id": "stage-ordu", "turn": 35, "text": "Ordu complete in the forward Encampment; every Horseman from here on comes from this city." },
+        { "id": "stage-denounce", "turn": 44, "text": "Denounce the target so a Formal War is available at turn 49; skip if a Casus Belli is already on offer." },
+        { "id": "stage-four-horsemen", "turn": 48, "text": "Four Horsemen and one Battering Ram staged in the Ordu city with the General." }
+      ]
+    },
+    {
+      "id": "first-war",
+      "name": "First war at plus twelve",
+      "turns": { "from": 51, "to": 100 },
+      "era": "classical",
+      "objective": "Take the target's nearest two cities and its capital with Horsemen fighting at the doubled visibility bonus, capture every enemy horse unit that falls, and before peace send the next Trader so the second gate is already opening while the first war ends.",
+      "build_order": [
+        { "item": "Horseman", "why": "Replacements as they fall; the Ordu keeps two in production through the war." },
+        { "item": "Monument", "why": "First build in every capture; Loyalty first." },
+        { "item": "Trader", "why": "The second route, to the next target, sent while the first war is still on." },
+        { "item": "Swordsman", "why": "Two, to garrison captures; cavalry does not hold cities well." },
+        { "item": "Library", "note": "Capital Campus", "why": "Stirrups is the next unit tech and the Campus is the only way there on time." },
+        { "item": "Water Mill", "why": "Construction Eureka and Food in the capital." }
+      ],
+      "research": [
+        { "id": "tech:construction", "note": "Water Mill Eureka; Games and Recreation Inspiration comes with researching it." },
+        { "id": "tech:engineering", "note": "Free from the Ancient Walls; Rams and roads." },
+        { "id": "tech:mathematics", "note": "Encampment, Commercial Hub and Campus are three districts." },
+        { "id": "tech:apprenticeship", "note": "Three Mines; it is a prerequisite of Stirrups." },
+        { "id": "tech:stirrups", "note": "Keshigs and Knights. Feudalism gives the Eureka; do not research it unboosted." }
+      ],
+      "civics": [
+        { "id": "civic:games-and-recreation", "note": "Free from Construction; Entertainment later for the captures." },
+        { "id": "civic:defensive-tactics", "note": "Inspiration if the target declares on you first; Limitanei for the captures." },
+        { "id": "civic:feudalism", "note": "Six Farms; the Stirrups Eureka and Feudal Contract." },
+        { "id": "civic:mysticism", "note": "Free from the pantheon; the road to Theology is not taken, but it is on the way to Drama for Culture." }
+      ],
+      "policies": [
+        { "card": "Raid", "slot": "military", "from": "civic:military-tradition", "why": "Horsemen pillage on the way in; the Gold pays for the next Trader and the Delegation." },
+        { "card": "Limitanei", "slot": "military", "from": "civic:defensive-tactics", "why": "Loyalty in captures once the war is won." },
+        { "card": "Conscription", "slot": "military", "from": "civic:state-workforce", "why": "Maintenance on a growing cavalry army." }
+      ],
+      "districts": [
+        { "district": "campus", "city": "capital", "note": "Stirrups and Castles need a Science base; one Campus is enough." },
+        { "district": "encampment", "city": "first capture", "note": "A second Ordu city for the next war's horses, closer to the next target." }
+      ],
+      "wonders": [
+        { "name": "Colosseum", "why": "Amenities for the conquered cities within six tiles of the capital.", "skip_if": "Captures are far from the capital or Games and Recreation lands after turn 90." }
+      ],
+      "governors": [
+        { "governor": "victor", "promotion": "Garrison Commander", "city": "the newest capture", "why": "Holds the city while the horses move on." },
+        { "governor": "amani", "promotion": "Emissary", "city": "capture nearest the next target", "why": "Loyalty pressure on the next target's border and an envoy." }
+      ],
+      "city_states": [
+        { "type": "Militaristic", "why": "Production on units in the capital for the replacement Horsemen." },
+        { "slug": "preslav", "why": "Loyalty in captured cities per Encampment building." }
+      ],
+      "great_people": [
+        { "class": "great-general", "why": "A second General for the second front; retire the first only after the capital falls." },
+        { "class": "great-merchant", "why": "A Merchant that adds a Trade Route capacity is one more gate opened at once." }
+      ],
+      "checkpoints": [
+        { "turn": 75, "test": "Two cities taken, at least one enemy cavalry unit captured, and the visibility gap still one level or more?", "pass": "Press to the capital; send the second Trader to the next target.", "fail": "Gap closed means the target got an Embassy or Spy: pillage, take what is held and make peace. No captures means the target fields no cavalry: finish this war and choose a cavalry civ next." },
+        { "turn": 100, "test": "Target capital taken or peace signed with two cities kept, second route running to the next target, and Stirrups in or one tech away?", "pass": "Enter the Keshig phase against the second target.", "fail": "If the capital stands at 100 and Walls are up, take peace with what is held; the Horseman window is closing and Knights are the next tool." }
+      ],
+      "tasks": [
+        { "id": "first-war-declare", "turn": 51, "text": "Declare with the Casus Belli; check the visibility level on the target the same turn and write it down." },
+        { "id": "first-war-first-city", "turn": 58, "text": "Take the nearest city with the Ram and four Horsemen; let a Horseman make the last hit on any enemy horse unit." },
+        { "id": "first-war-second-trader", "turn": 70, "text": "Send the second Trader to the next rival's nearest city while the first war is still on; the second gate opens now." },
+        { "id": "first-war-capital", "turn": 85, "text": "Target capital taken, or peace with two cities kept if it has Walls and Pikemen." },
+        { "id": "first-war-feudalism", "turn": 95, "text": "Six Farms done, Feudalism in, Stirrups Eureka collected." }
+      ]
+    },
+    {
+      "id": "horde",
+      "name": "Keshigs and Knights",
+      "turns": { "from": 101, "to": 170 },
+      "era": "medieval",
+      "objective": "Run the peak: Keshigs escorting siege at cavalry speed, Knights and captured Knights finishing, two Ordu cities feeding two stacks, a route and a Delegation on every target before every declaration, and the third capital taken before Pike and Shot appears anywhere.",
+      "build_order": [
+        { "item": "Keshig", "why": "Four, from the Ordu cities under Chivalry; they shoot defenders and carry the siege." },
+        { "item": "Knight", "why": "Four, the melee finisher; every captured enemy Knight is one fewer to build." },
+        { "item": "Siege Tower", "why": "Carried by a Keshig; Medieval Walls fall to Knights with one." },
+        { "item": "Trader", "why": "Third and fourth routes; one running to each future target." },
+        { "item": "Market", "why": "Two for Guilds; Gold for upgrades and Delegations." },
+        { "item": "Stable", "note": "In non-Ordu Encampments only if a third Encampment exists", "why": "Experience and Production on cavalry in a third front city." }
+      ],
+      "research": [
+        { "id": "tech:castles", "note": "Free from Oligarchy; Medieval Walls at home." },
+        { "id": "tech:military-engineering", "note": "Aqueduct Eureka; Siege Towers." },
+        { "id": "tech:machinery", "note": "Three Archers; Crossbowmen to hold the captures." },
+        { "id": "tech:siege-tactics", "note": "Two Trebuchets if a target already has Medieval Walls." },
+        { "id": "tech:banking", "note": "Free from Guilds; Banks for the economy under the army." }
+      ],
+      "civics": [
+        { "id": "civic:civil-service", "note": "Capital at ten population; the road to Divine Right." },
+        { "id": "civic:divine-right", "note": "Chivalry doubles cavalry Production; Monarchy for the wide empire. Two Temples is rarely available here, research it plain." },
+        { "id": "civic:guilds", "note": "Two Markets; Banking Eureka." },
+        { "id": "civic:mercenaries", "note": "Eight land units is the horde; Professional Army for the Knight upgrades." }
+      ],
+      "policies": [
+        { "card": "Chivalry", "slot": "military", "from": "civic:divine-right", "why": "Knights and Keshigs at half again the speed." },
+        { "card": "Professional Army", "slot": "military", "from": "civic:mercenaries", "why": "Surviving Horsemen to Knights at half price." },
+        { "card": "Monarchy", "slot": "wildcard", "from": "civic:divine-right", "why": "The government for an empire of captures with Walls." }
+      ],
+      "districts": [
+        { "district": "commercial-hub", "city": "two captures", "note": "Trade Route capacity; each is a gate for a later target." },
+        { "district": "aqueduct", "city": "capital", "note": "Military Engineering Eureka and Housing for Civil Service." }
+      ],
+      "wonders": [
+        { "name": "Alhambra", "why": "An extra military slot and Great General points, on hills beside an Encampment.", "skip_if": "No hill free beside an Encampment or Castles lands after turn 150." }
+      ],
+      "governors": [
+        { "governor": "victor", "promotion": "Embrasure", "city": "wherever the front is", "why": "Still the front governor." },
+        { "governor": "reyna", "promotion": "Harbormaster", "city": "the largest Commercial Hub capture", "why": "Gold and a Trade Route lever; Contractor later." }
+      ],
+      "city_states": [
+        { "slug": "akkad", "why": "Full damage to Walls from melee; Knights become siege units with it." },
+        { "slug": "venice", "why": "Gold on every route to a foreign city, which every gate route is." }
+      ],
+      "great_people": [
+        { "class": "great-general", "why": "Medieval Generals for two stacks; +1 Movement keeps the Keshigs ahead of the walls." },
+        { "class": "great-merchant", "why": "Route capacity and Gold." }
+      ],
+      "checkpoints": [
+        { "turn": 135, "test": "Second rival's capital taken, four Keshigs and four Knights standing, and a route running to the third target?", "pass": "Declare on the third; keep the visibility check every five turns.", "fail": "If the second capital stands, its Walls outgrew the army: Trebuchets or Siege Tower, or take its lesser cities and move on. If no third route runs, the gate is shut: no third declaration until it does." },
+        { "turn": 170, "test": "Three capitals held, every capture at positive Loyalty, and no rival with Metal Casting or Renaissance Walls on the next target?", "pass": "Enter the close; Cuirassiers upgrade the Knights.", "fail": "A rival with Pike and Shot or Renaissance Walls on the next target closes the window: hold what is taken, build Encampments and Walls in it, and play the rest for Score." }
+      ],
+      "tasks": [
+        { "id": "horde-keshigs", "turn": 108, "text": "Four Keshigs out of the Ordu cities; one carries the Siege Tower." },
+        { "id": "horde-second-declare", "turn": 112, "text": "Gate check on the second target: route running, visibility gap, Delegation and Embassy; then declare." },
+        { "id": "horde-capture-horses", "turn": 125, "text": "Knights take the last hit on every enemy cavalry unit; count the captures and promote them." },
+        { "id": "horde-third-route", "turn": 130, "text": "Third Trader running to the third target before the second war ends." },
+        { "id": "horde-visibility-check", "turn": 150, "text": "Visibility level on the current target checked; if equal, pillage and make peace, do not siege at plus three." },
+        { "id": "horde-loyalty", "turn": 165, "text": "Loyalty and Amenities audit in every capture; Entertainment Complex in the largest." }
+      ]
+    },
+    {
+      "id": "close",
+      "name": "Cuirassiers and the close",
+      "turns": { "from": 171, "to": null },
+      "era": "renaissance",
+      "objective": "Finish the remaining capitals with Cuirassiers and Bombards while a Trading Post and an Embassy still give the visibility edge, and once rivals reach Pike and Shot, Renaissance Walls and Spies, stop widening and hold a Score-winning empire.",
+      "build_order": [
+        { "item": "Cuirassier", "why": "Upgrade the Knights under Professional Army; 64 Combat Strength plus the horde bonus." },
+        { "item": "Bombard", "why": "Two, carried by Keshigs, for Renaissance Walls." },
+        { "item": "Entertainment Complex", "why": "Amenities in the conquered core." },
+        { "item": "University", "why": "Two for Printing; the Science the horde never built." },
+        { "item": "Workshop", "why": "Two for Industrialization; Factories for the last campaign." },
+        { "item": "Spy", "why": "Counterspy at home keeps rivals from closing the visibility gap with Listening Posts." }
+      ],
+      "research": [
+        { "id": "tech:gunpowder", "note": "Armory in an Ordu city; Bombards are behind Metal Casting." },
+        { "id": "tech:metal-casting", "note": "Two Crossbowmen; Bombards and Pike and Shot for your own garrisons." },
+        { "id": "tech:military-science", "note": "Knight kill in the ongoing war; Cavalry replaces the Cuirassiers." },
+        { "id": "tech:printing", "note": "Two Universities; Science catch-up." }
+      ],
+      "civics": [
+        { "id": "civic:diplomatic-service", "note": "Spies; form an alliance with a far civ for the Inspiration and extra visibility on its neighbours." },
+        { "id": "civic:nationalism", "note": "Corps of Cuirassiers; Inspiration from the Casus Belli wars already fought." },
+        { "id": "civic:exploration", "note": "Only if the last capitals are overseas." }
+      ],
+      "policies": [
+        { "card": "Grand Armee", "slot": "military", "from": "civic:nationalism", "why": "Industrial units faster for the final campaign." },
+        { "card": "Retainers", "slot": "military", "from": "civic:civil-service", "why": "Amenities in garrisoned captures." }
+      ],
+      "districts": [
+        { "district": "entertainment-complex", "city": "the largest capture", "note": "Regional Amenities." },
+        { "district": "industrial-zone", "city": "capital", "note": "Workshop and Factory for the last war." }
+      ],
+      "wonders": [],
+      "governors": [
+        { "governor": "victor", "promotion": "Embrasure", "city": "the newest capture", "why": "Front-line governor to the end." },
+        { "governor": "pingala", "promotion": "Researcher", "city": "capital", "why": "The Science that keeps Cuirassiers from meeting Line Infantry." }
+      ],
+      "city_states": [],
+      "great_people": [
+        { "class": "great-general", "why": "Renaissance Generals for the Cuirassier Corps." }
+      ],
+      "checkpoints": [
+        { "turn": 230, "test": "Half the remaining capitals taken since turn 170 and the visibility gap still open on the current target?", "pass": "Continue to the last capital.", "fail": "Rivals at Pike and Shot with Spies and Renaissance Walls: stop declaring, hold the empire and take Score." }
+      ],
+      "tasks": [
+        { "id": "close-cuirassiers", "turn": 180, "text": "Knights upgraded to Cuirassiers under Professional Army; Bombards built." },
+        { "id": "close-counterspy", "turn": 190, "text": "A Spy on counterspy duty in the capital and one in the Ordu city." },
+        { "id": "close-parity-check", "turn": 210, "text": "Check every rival for Metal Casting, Renaissance Walls and Spies; mark which targets are still open." },
+        { "id": "close-last-capital", "turn": 250, "text": "Final capital campaign with the open gate, or declare a Score game and build Science and Culture." }
+      ]
+    }
+  ],
+  "boosts": [
+    { "id": "tech:archery", "fit": "cheap", "when": "found", "how": "The Slinger kills a barbarian scout." },
+    { "id": "tech:writing", "fit": "free", "when": "found", "how": "The Scout meets the first rival on the road to the target." },
+    { "id": "tech:bronze-working", "fit": "cheap", "when": "found", "how": "Three kills at the nearest camp with Warriors and the Slinger." },
+    { "id": "tech:horseback-riding", "fit": "free", "when": "found", "how": "The first Pasture on the Horses the capital needs anyway." },
+    { "id": "tech:wheel", "fit": "cheap", "when": "stage", "how": "Mine a resource hill with the first Builder." },
+    { "id": "tech:masonry", "fit": "cheap", "when": "stage", "how": "A Quarry on stone near the capital." },
+    { "id": "tech:currency", "fit": "free", "when": "stage", "how": "The gate route is the first Trade Route." },
+    { "id": "tech:iron-working", "fit": "cheap", "when": "stage", "how": "Mine the Iron for Swordsmen garrisons." },
+    { "id": "tech:irrigation", "fit": "cheap", "when": "stage", "how": "Farm a wheat or rice; counts toward Feudalism too." },
+    { "id": "tech:astrology", "fit": "skip", "when": null, "how": "" },
+    { "id": "tech:sailing", "fit": "skip", "when": null, "how": "" },
+    { "id": "tech:construction", "fit": "cheap", "when": "first-war", "how": "A Water Mill in the capital." },
+    { "id": "tech:engineering", "fit": "free", "when": "first-war", "how": "Ancient Walls in the capital." },
+    { "id": "tech:mathematics", "fit": "cheap", "when": "first-war", "how": "Encampment, Commercial Hub and Campus." },
+    { "id": "tech:apprenticeship", "fit": "cheap", "when": "first-war", "how": "Three Mines across the home cities." },
+    { "id": "tech:stirrups", "fit": "free", "when": "first-war", "how": "Feudalism is on the civic path." },
+    { "id": "tech:military-tactics", "fit": "costly", "when": "first-war", "how": "A Spearman kill; the plan rarely has one, so usually unboosted." },
+    { "id": "tech:castles", "fit": "free", "when": "horde", "how": "Oligarchy is a Tier 2 government." },
+    { "id": "tech:military-engineering", "fit": "cheap", "when": "horde", "how": "The capital Aqueduct." },
+    { "id": "tech:machinery", "fit": "cheap", "when": "horde", "how": "Three Archers across the garrisons." },
+    { "id": "tech:siege-tactics", "fit": "costly", "when": "horde", "how": "Two Trebuchets only if a target has Medieval Walls." },
+    { "id": "tech:banking", "fit": "free", "when": "horde", "how": "Guilds is on the civic path." },
+    { "id": "tech:education", "fit": "skip", "when": null, "how": "" },
+    { "id": "tech:gunpowder", "fit": "cheap", "when": "close", "how": "An Armory in the Ordu city." },
+    { "id": "tech:metal-casting", "fit": "cheap", "when": "close", "how": "Two Crossbowmen from the Archers." },
+    { "id": "tech:military-science", "fit": "free", "when": "close", "how": "A Knight kill in a war the plan is always fighting." },
+    { "id": "tech:printing", "fit": "costly", "when": "close", "how": "Two Universities; late, but the Science is needed." },
+    { "id": "tech:buttress", "fit": "costly", "when": "horde", "how": "Only if Terracotta Army or Colosseum was built." },
+    { "id": "civic:foreign-trade", "fit": "costly", "when": "found", "how": "A second continent is rarely in reach early; research it plain and first." },
+    { "id": "civic:craftsmanship", "fit": "free", "when": "found", "how": "Pasture, Mine and a Farm from the first Builder." },
+    { "id": "civic:military-tradition", "fit": "free", "when": "stage", "how": "The first camp cleared on the road to the target." },
+    { "id": "civic:state-workforce", "fit": "free", "when": "stage", "how": "The forward Encampment is the first district." },
+    { "id": "civic:early-empire", "fit": "free", "when": "stage", "how": "Six population across two cities." },
+    { "id": "civic:political-philosophy", "fit": "cheap", "when": "stage", "how": "Three city-states met by the Scout." },
+    { "id": "civic:military-training", "fit": "free", "when": "stage", "how": "The Ordu's Encampment." },
+    { "id": "civic:mysticism", "fit": "free", "when": "first-war", "how": "The pantheon founded in the first phase." },
+    { "id": "civic:games-and-recreation", "fit": "free", "when": "first-war", "how": "Researching Construction." },
+    { "id": "civic:defensive-tactics", "fit": "costly", "when": "first-war", "how": "Only if the target declares first; do not wait for it." },
+    { "id": "civic:feudalism", "fit": "cheap", "when": "first-war", "how": "Six Farms across four cities." },
+    { "id": "civic:recorded-history", "fit": "skip", "when": null, "how": "" },
+    { "id": "civic:drama-and-poetry", "fit": "costly", "when": "first-war", "how": "Only if Terracotta Army or Colosseum was built." },
+    { "id": "civic:theology", "fit": "skip", "when": null, "how": "" },
+    { "id": "civic:civil-service", "fit": "cheap", "when": "horde", "how": "Capital at ten population with the Aqueduct." },
+    { "id": "civic:divine-right", "fit": "costly", "when": "horde", "how": "Two Temples; no Holy Sites in this plan, so unboosted." },
+    { "id": "civic:guilds", "fit": "cheap", "when": "horde", "how": "Two Markets in Commercial Hub cities." },
+    { "id": "civic:mercenaries", "fit": "free", "when": "horde", "how": "Eight land units is the horde." },
+    { "id": "civic:medieval-faires", "fit": "cheap", "when": "horde", "how": "Four routes running at once, one to each target past and future." },
+    { "id": "civic:naval-tradition", "fit": "skip", "when": null, "how": "" },
+    { "id": "civic:diplomatic-service", "fit": "cheap", "when": "close", "how": "An alliance with a far civ that is nobody's target." },
+    { "id": "civic:nationalism", "fit": "free", "when": "close", "how": "Every war in this plan is declared with a Casus Belli." },
+    { "id": "civic:exploration", "fit": "costly", "when": "close", "how": "Two Caravels only if the last capitals are overseas." },
+    { "id": "civic:mercantilism", "fit": "cheap", "when": "close", "how": "A Great Merchant from the Commercial Hubs." },
+    { "id": "civic:mobilization", "fit": "cheap", "when": "close", "how": "Three Corps of Cuirassiers after Nationalism." }
+  ],
+  "decision_triggers": [
+    { "name": "Visibility gap closes", "if": "During a war the target reaches equal Diplomatic Visibility with you (Embassy exchanged, Spy placed or alliance level gained).", "then": "The doubled bonus is gone. Pillage the ring, take any city already under siege, and make peace with what is held. Reopen the gate on the next target rather than fighting this one at plus three." },
+    { "name": "Target fields no cavalry", "if": "The first ten turns of a war produce no capture because the target builds only Archers and Spearmen.", "then": "Finish the war for the cities, not the captures, and pick the next target by its stables: Scythia, Arabia, Hungary, Poland or Byzantium if any is in reach." },
+    { "name": "Trader plundered", "if": "The gate route is plundered by barbarians or the target before the declaration.", "then": "The gate is shut. Escort the next Trader with a Horseman, clear the camp that did it, and delay the declaration until the new route is running; do not declare without the Trading Post." },
+    { "name": "Walls on the target", "if": "The next target completes Medieval Walls before the Knights arrive.", "then": "Keshigs carry a Siege Tower or Trebuchets come with the stack; or take the target's unwalled cities and move the capital campaign to the next rival." }
+  ],
+  "abort": {
+    "trigger": "No Horses by turn 60 despite Hattusa and a third city, or every reachable rival has Walls, Pikemen and an Embassy with you before the first route is running.",
+    "actions": [
+      "Do not declare into that; Horsemen at plus three against Walls lose the army and the next forty turns.",
+      "Run Örtöö as an economy: Commercial Hubs, Markets and Caravansary on every route, with Hattusa's Horses feeding a defensive Keshig line at Stirrups.",
+      "Settle the remaining land, keep one Encampment with an Ordu for defence, and play Score with a Culture lean from Open Sky Pastures."
+    ]
+  },
+  "fail_state": "The Industrial era arrives with one captured city, Horsemen that fought at plus three because the route was never sent, no Knights captured because the only war was against an Archer civ, and four cities that built stables instead of Campuses. Mongolia is then a small civ with good Trade Routes and an army that is an era behind.",
+  "common_mistakes": [
+    "Declaring before the Trade Route is running. The Trading Post is the visibility level and the visibility level is the bonus; without it Mongolia's cavalry is ordinary.",
+    "Sending the Trader and the army at the same time. The route needs a lead of ten turns or more to be established and to add the Delegation on top.",
+    "Letting Knights kill enemy infantry while Archers finish enemy horses. The capture only triggers when a cavalry unit makes the kill on a cavalry unit.",
+    "Fighting on after the visibility gap closes. Check it every five turns; an Embassy or a Spy on the other side halves your edge overnight.",
+    "Building the Ordu city's Encampment with no Stable replacement in it. The Ordu's +1 Movement is the difference between reaching a city before its Walls and after."
+  ],
+  "sources": [
+    "Civilization VI Civilopedia, Gathering Storm ruleset (Mongolia, Genghis Khan, Keshig, Ordu; Örtöö plants the Trading Post at route start, gives visibility per Trading Post and doubles the visibility Combat Strength bonus; Mongol Horde gives +3 to cavalry and a capture chance). The civ-info text omits the Ordu, which is Mongolia's unique Stable replacement in the game.",
+    "Boost objectives cross-checked against civilization6planner.com tech-tree and civics-tree pages, 2026-10-01.",
+    "Leadership Focus tags, caveats and Gate supplement for Genghis Khan in this repository."
+  ]
+}

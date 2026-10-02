@@ -1,0 +1,1758 @@
+{
+  "leader": "Pedro II",
+  "civilization": "Brazil",
+  "generated": "2026-10-02",
+  "slug": "pedro-ii",
+  "shape": "Monitor",
+  "secondary_shape": null,
+  "version": 1,
+  "updated": "2026-10-01",
+  "assumptions": {
+    "ruleset": "Gathering Storm with every expansion and the Leader Pass",
+    "speed": "Standard",
+    "difficulty": "Emperor",
+    "map": "Continents or Pangaea, standard size, 8 civilizations, with the Brazil rainforest start bias honoured",
+    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. Pedro II's single persona is planned here. Magnanimous refunds a fifth of the Great Person points on every recruit or patronage; the plan treats patronage with Gold or Faith as part of the same loop."
+  },
+  "verdict": {
+    "victory": "Culture",
+    "secondary": "Science",
+    "confidence": "medium",
+    "one_line": "Pick three Great Person classes on turn 20, win every race in them with Magnanimous refunds, Pingala's Grants and the Carnival project, and let Rainforest Appeal turn the Great Works into Tourism through Seaside Resorts and National Parks.",
+    "why": "Magnanimous makes every recruit a fifth cheaper than the same recruit for anyone else, and the discount compounds because the refunded points sit on the next Great Person of the class. That only matters if Brazil wins the races it enters, so the plan narrows to Writers, Artists and Scientists and watches the rivals' points. Amazon makes Rainforest the adjacency for Campus and Theater Square and a plus-one Appeal tile instead of a minus-one, which is why a Brazilian coast with Copacabana and a Rainforest interior produces Seaside Resorts and National Parks that most civilizations cannot site. The Street Carnival keeps a tall, district-heavy empire in Amenities for nothing. Science is the fallback because the same Campuses and Great Scientists carry a spaceport game if the Culture race is lost to a Great Work hoarder."
+  },
+  "map_check": {
+    "must_have": [
+      "At least three Rainforest tiles within two rings of the capital, so the first Campus and Theater Square each touch two of them.",
+      "A second city site with Rainforest and a river or hills within ten tiles, because the Great Person engine needs two full district cities by turn 60."
+    ],
+    "prefer": [
+      "Hills under the Rainforest, since Mines on them are the only Production a jungle start has without chopping.",
+      "Coast within reach of the second or third city for a Copacabana and the Seaside Resorts the Appeal pays into.",
+      "Pantanal or Roraima in reach: both sit in Brazil's terrain and give the Astrology Eureka plus Appeal for the National Park."
+    ],
+    "no_go": "No Rainforest within reach of the first three city sites. Amazon is off for the game and the Appeal plan with it; Brazil is then a plain Great Person civilization with an Entertainment Complex that costs less.",
+    "fallback": "Move the Settler up to two turns toward Rainforest or a river. If neither appears, keep Magnanimous as the whole kit: Campuses on mountains, Theater Squares beside wonders, Pingala with Grants in the capital, the same three-class priority list and the same watched stat. Drop Seaside Resorts from the plan and aim the Culture at Great Works and Rock Bands, or switch the verdict to Science at the turn 90 checkpoint."
+  },
+  "kit_levers": [
+    {
+      "source": "leader_ability",
+      "name": "Magnanimous",
+      "buys": "A fifth of the Great Person points spent come back after every recruit or patronage, so the next Great Person of that class starts a fifth paid for.",
+      "exploit": "The refund only compounds in classes where Brazil keeps winning, so the plan commits to three classes by turn 20 and pours every card, project and Governor into them. Patronage with Gold or Faith is refunded too, which makes a late patronage the cheapest way to finish a race a rival is about to win."
+    },
+    {
+      "source": "civ_ability",
+      "name": "Amazon",
+      "buys": "Rainforest gives plus one Appeal instead of minus one, and the standard adjacency bonus to Campuses, Commercial Hubs, Holy Sites and Theater Squares.",
+      "exploit": "Every specialty district goes on a tile touching two or more Rainforest tiles, and no Builder ever removes Rainforest. The Appeal half pays twice: Breathtaking tiles for Neighborhoods, Seaside Resorts and National Parks in the second half of the game."
+    },
+    {
+      "source": "unique_infrastructure",
+      "name": "Street Carnival",
+      "buys": "An Entertainment Complex that gives more Amenities, and a Carnival project that pays Great Engineer, Merchant, Writer, Artist and Musician points when it finishes.",
+      "exploit": "Two Street Carnivals keep eight tall cities content without luxuries, and the Carnival project is the race-closer: when the watched stat goes amber in a Culture class, the biggest city runs Carnival until the race is won."
+    },
+    {
+      "source": "unique_infrastructure",
+      "name": "Copacabana",
+      "buys": "A Water Park replacement on the coast with Amenities and Culture, and its own Carnival project.",
+      "exploit": "The coastal cities get Copacabana instead of a Street Carnival, which frees their land tiles for Seaside Resorts along a coast whose Appeal the Rainforest has already lifted."
+    },
+    {
+      "source": "unique_unit",
+      "name": "Minas Geraes",
+      "buys": "A Battleship that arrives at the Nationalism civic rather than at Steel, with stronger bombardment and anti-air.",
+      "exploit": "A Culture civ reaches Nationalism long before Steel, so two Minas Geraes are the cheapest coastal defence in the game for an empire that will be the Tourism leader everyone resents. Build them for defence; do not plan a war around them."
+    },
+    {
+      "source": "agenda",
+      "name": "Patron of the Arts",
+      "buys": "AI Pedro dislikes anyone who takes a Great Person he was chasing.",
+      "exploit": "Irrelevant to your own play except as a reminder that an AI Pedro on the map is a rival on the same watched stat; treat his points as the leading rival's in every class he contests."
+    }
+  ],
+  "shape_block": {
+    "monitor": {
+      "watched_stat": "Your Great Person points per turn against the leading rival's, read per class on the Great People screen, for the three classes on the priority list",
+      "check_every": "five turns from turn 25, and every turn once any Great Person in a chosen class is within twenty points of recruitment for you or a rival",
+      "bands": {
+        "green": {
+          "test": "In every chosen class you lead on points per turn, or you lead on accumulated points by more than one rival turn of output.",
+          "response": "No action. Keep Pingala's Grants in the capital, keep the current build, and spend Gold on Builders and Settlers rather than patronage."
+        },
+        "amber": {
+          "test": "In a chosen class a rival is ahead on accumulated points and would reach the current Great Person within ten turns of you, or a rival's points per turn in that class has passed yours.",
+          "response": "Act now while the fix is cheap: slot the class's wildcard card (Inspiration, Literary Tradition, Frescoes, Invention, Symphonies), run the matching city project (Campus Research Grants, Theater Square Performances, or Carnival) in the two biggest cities, and if the remaining gap is under a third of the cost, patronize with Gold or Faith, which Magnanimous refunds too."
+        },
+        "red": {
+          "test": "A rival recruited the Great Person you were chasing, or you trail in two of the three chosen classes with no project that closes the gap inside ten turns.",
+          "response": "Stop chasing that individual. Your points carry to the next Great Person of the class, so take the next one only if the carried points plus the refund put you ahead; otherwise drop that class from the list for one era and move its card and projects to the class you still lead. Never clear Rainforest to buy the Production for a race."
+        }
+      },
+      "second_watch": {
+        "stat": "Rainforest tiles inside your borders, and the Appeal of the tiles your Street Carnival, Copacabana, Neighborhoods and planned Seaside Resorts sit on",
+        "why": "Every Rainforest tile removed is a permanent loss of district adjacency and Appeal, and Builders with spare charges are the quiet way the engine gets switched off. If the count falls, the Culture half of the plan falls with it."
+      },
+      "off_period_plan": "There is no off period; Magnanimous pays from the first Great Prophet to the last Great Scientist. Between races the domestic build is Settlers to six cities, a Campus and a Theater Square touching Rainforest in each, a Commercial Hub in the two river cities, a Street Carnival in the two largest, and Builders that Mine the hills and Plantation the Bananas and never chop."
+    }
+  },
+  "phases": [
+    {
+      "id": "setup",
+      "name": "Setup",
+      "turns": {
+        "from": 1,
+        "to": 25
+      },
+      "era": "ancient",
+      "objective": "Settle beside Rainforest without clearing any of it, found a second city on a river or hills, found the pantheon, and write the three-class Great Person priority list by turn 20 so the watched stat has something to measure.",
+      "build_order": [
+        {
+          "item": "Scout",
+          "why": "Writing comes from the first civilization met and Astrology from a natural wonder; Brazil's Rainforest hides both."
+        },
+        {
+          "item": "Slinger",
+          "why": "Archery Eureka on the first barbarian scout and a defender while the capital builds Settlers."
+        },
+        {
+          "item": "Settler",
+          "why": "The second city goes to a river or hills site with Rainforest in its second ring."
+        },
+        {
+          "item": "Monument",
+          "why": "Culture to Mysticism and Political Philosophy on time; Inspiration and Revelation are the first race cards."
+        },
+        {
+          "item": "Builder",
+          "why": "Mine a Rainforest hill for The Wheel, Plantation the Bananas, Farm a Rice for Irrigation; three improvements is Craftsmanship."
+        },
+        {
+          "item": "Warrior",
+          "why": "A second body for the camp that sees the capital; Bronze Working needs three barbarian kills."
+        },
+        {
+          "item": "Settler",
+          "why": "Third city toward the coast or the best remaining Rainforest cluster."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:animal-husbandry",
+          "note": "Reveals Horses and starts the Archery line; no boost to collect."
+        },
+        {
+          "id": "tech:mining",
+          "note": "Mines on the Rainforest hills are the only early Production; no boost to collect."
+        },
+        {
+          "id": "tech:astrology",
+          "note": "Holy Site for Divine Spark's Great Prophet points; Eureka if the Scout finds Pantanal or Roraima."
+        },
+        {
+          "id": "tech:writing",
+          "note": "Eureka free from the first civilization met; the first Campus beside Rainforest."
+        },
+        {
+          "id": "tech:irrigation",
+          "note": "Farm a Rice or Wheat for the Eureka; Plantations on Bananas and Sugar need it."
+        },
+        {
+          "id": "tech:wheel",
+          "note": "A Mine on a resource hill boosts it; Water Mill for Construction later."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:code-of-laws",
+          "note": "God King for the pantheon and Urban Planning for the Settlers."
+        },
+        {
+          "id": "civic:craftsmanship",
+          "note": "Inspiration from the first Builder's three improvements; Ilkum for more Builders."
+        },
+        {
+          "id": "civic:foreign-trade",
+          "note": "First Trade Route for Currency; Inspiration if the Scout crosses a continent line."
+        },
+        {
+          "id": "civic:mysticism",
+          "note": "Free Inspiration from the pantheon; Inspiration and Revelation are the first Great Person cards, and the Oracle unlocks here."
+        }
+      ],
+      "policies": [
+        {
+          "card": "God King",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "Faith for Divine Spark by turn 20."
+        },
+        {
+          "card": "Discipline",
+          "slot": "military",
+          "from": "civic:code-of-laws",
+          "why": "The Slinger and Warriors beat the camp units for Bronze Working."
+        },
+        {
+          "card": "Ilkum",
+          "slot": "economic",
+          "from": "civic:craftsmanship",
+          "why": "Builders faster once the pantheon is founded; the Rainforest hills need Mines, not chops."
+        }
+      ],
+      "districts": [
+        {
+          "district": "campus",
+          "city": "capital",
+          "note": "Placed on turn 1 in the mind, built after the second Settler: the tile touching the most Rainforest, mountain or reef."
+        }
+      ],
+      "pantheon": {
+        "slug": "divine-spark",
+        "why": "Great Prophet, Scientist and Writer points from Holy Sites, Libraries and Amphitheaters; it is Magnanimous from turn 20.",
+        "alternative": "goddess-of-festivals"
+      },
+      "wonders": [],
+      "governors": [],
+      "city_states": [
+        {
+          "type": "Scientific",
+          "why": "The first envoy into any Scientific city-state is Science in the capital while the Campus is still a plan."
+        },
+        {
+          "slug": "bologna",
+          "why": "A Great Person point per district with a building, in every city; suzerainty is worth three envoys the moment it is met."
+        }
+      ],
+      "great_people": [],
+      "checkpoints": [
+        {
+          "turn": 25,
+          "test": "Two cities settled, pantheon founded, the Campus site chosen beside two or more Rainforest tiles, and the three-class priority list written down?",
+          "pass": "Enter the standing loop; read the Great People screen every five turns from here.",
+          "fail": "If the pantheon is missing, keep God King and delay the second Settler one build. If no Rainforest site exists for the Campus, run the map-check fallback now rather than at turn 90."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "setup-settle-rainforest",
+          "turn": 1,
+          "text": "Settle on or beside a river with Rainforest in the first two rings; move at most two turns to get there, and never settle on a tile that forces a chop."
+        },
+        {
+          "id": "setup-scout-contacts",
+          "turn": 5,
+          "text": "Send the Scout toward the nearest coast or mountain line; meeting a civilization is Writing and a natural wonder is Astrology."
+        },
+        {
+          "id": "setup-priority-list",
+          "turn": 20,
+          "text": "Write the three Great Person classes you will race: Great Writers and Great Scientists always, plus Great Artists on a Culture map or Great Prophets if a religion is cheap. Everything else is taken only when free."
+        },
+        {
+          "id": "setup-pantheon",
+          "turn": 20,
+          "text": "Found Divine Spark, or Goddess of Festivals if Bananas and Sugar are the only yields around the capital."
+        },
+        {
+          "id": "setup-second-city",
+          "turn": 25,
+          "text": "Second city on a river or hills with Rainforest in its second ring; plan its Theater Square tile before the Settler lands."
+        }
+      ]
+    },
+    {
+      "id": "loop",
+      "name": "Standing loop",
+      "turns": {
+        "from": 26,
+        "to": 90
+      },
+      "era": "classical",
+      "objective": "Run the watched stat every five turns while four cities each get a Campus or Theater Square touching Rainforest, the Oracle is attempted, and the first two Great People of the chosen classes are recruited with Magnanimous refunds banked.",
+      "build_order": [
+        {
+          "item": "Campus",
+          "why": "Capital first, second city next; two Campuses is Recorded History and Natural Philosophy doubles the Rainforest adjacency."
+        },
+        {
+          "item": "Library",
+          "why": "Divine Spark's Great Scientist point needs a Library, and Bologna's point needs a building in the district."
+        },
+        {
+          "item": "Theater Square",
+          "why": "In the second city beside Rainforest; Great Writer points start here."
+        },
+        {
+          "item": "Amphitheater",
+          "why": "Divine Spark's Great Writer point and two Writing slots for the first Great Writer's works."
+        },
+        {
+          "item": "Settler",
+          "why": "Third and fourth cities; the Great Person engine is per district, so it is per city."
+        },
+        {
+          "item": "Oracle",
+          "why": "A Great Person point per district in its city and cheaper Faith patronage; the best wonder Pedro can own."
+        },
+        {
+          "item": "Trader",
+          "why": "Currency Eureka and the Gold that pays the first patronage."
+        },
+        {
+          "item": "Water Mill",
+          "why": "Construction Eureka in the river capital; Housing for a tall city."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:currency",
+          "note": "Eureka from the first Trade Route; Commercial Hub beside Rainforest in the capital."
+        },
+        {
+          "id": "tech:bronze-working",
+          "note": "Three barbarian kills from the camp the Warriors clear; Encampment is not planned, Iron reveal is."
+        },
+        {
+          "id": "tech:mathematics",
+          "note": "Campus, Theater Square and Holy Site or Commercial Hub make three districts; free Eureka."
+        },
+        {
+          "id": "tech:construction",
+          "note": "Water Mill in the capital gives the Eureka; the Street Carnival unlocks here."
+        },
+        {
+          "id": "tech:apprenticeship",
+          "note": "Three Mines on Rainforest hills; the Production the district plan runs on."
+        },
+        {
+          "id": "tech:celestial-navigation",
+          "note": "Only if the third city is coastal: two Fishing Boats boost it and the Harbor leads to Copacabana."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:early-empire",
+          "note": "Colonization for the third and fourth Settler; Inspiration at six population across two cities."
+        },
+        {
+          "id": "civic:state-workforce",
+          "note": "Free Inspiration from the first Campus; Corvee is not needed, the envoy is."
+        },
+        {
+          "id": "civic:political-philosophy",
+          "note": "Classical Republic for the Great Person points; Inspiration from three city-states met."
+        },
+        {
+          "id": "civic:recorded-history",
+          "note": "Two Campuses give the Inspiration; Natural Philosophy and the Great Library."
+        },
+        {
+          "id": "civic:drama-and-poetry",
+          "note": "The Oracle gives the Inspiration; Literary Tradition is the Great Writer card."
+        },
+        {
+          "id": "civic:games-and-recreation",
+          "note": "Free Inspiration from Construction; the Street Carnival needs it."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Inspiration",
+          "slot": "wildcard",
+          "from": "civic:mysticism",
+          "why": "Great Scientist points per Campus; the first race card, slotted from the moment the capital Campus stands."
+        },
+        {
+          "card": "Colonization",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "Settlers at half the cost while the capital alternates them with districts."
+        },
+        {
+          "card": "Classical Republic",
+          "slot": "wildcard",
+          "from": "civic:political-philosophy",
+          "why": "The government: more Great Person points and Amenities for a district-heavy core."
+        },
+        {
+          "card": "Natural Philosophy",
+          "slot": "economic",
+          "from": "civic:recorded-history",
+          "why": "Doubles the Rainforest Campus adjacency; Science is the race fuel."
+        },
+        {
+          "card": "Literary Tradition",
+          "slot": "wildcard",
+          "from": "civic:drama-and-poetry",
+          "why": "Great Writer points per Theater Square; swapped in for Inspiration whenever the Writer race is the amber one."
+        }
+      ],
+      "districts": [
+        {
+          "district": "campus",
+          "city": "capital and second city",
+          "note": "Touching two or more Rainforest tiles; Natural Philosophy doubles the adjacency."
+        },
+        {
+          "district": "theater-square",
+          "city": "second and third city",
+          "note": "Rainforest adjacency counts here too; Amphitheaters hold the first Great Writer's works."
+        },
+        {
+          "district": "commercial-hub",
+          "city": "capital",
+          "note": "Rainforest and river adjacency for Gold; the Trade Route is Currency and Gold is patronage money."
+        },
+        {
+          "district": "holy-site",
+          "city": "the city with the best mountain and Rainforest tile",
+          "note": "Only if Great Prophets are on the list; Divine Spark's Prophet point needs it."
+        }
+      ],
+      "pantheon": {
+        "slug": "divine-spark",
+        "why": "Already founded; this phase builds the Libraries and Amphitheaters it pays through."
+      },
+      "wonders": [
+        {
+          "name": "Oracle",
+          "why": "A Great Person point per district in the city and Faith patronage a quarter cheaper; it is the Magnanimous wonder.",
+          "skip_if": "Greece, China or Egypt is on the map and has Mysticism before you, or no hill tile sits within the capital's second ring by turn 40."
+        },
+        {
+          "name": "Great Library",
+          "why": "Great Scientist and Great Writer points and two Writing slots in a Campus city.",
+          "skip_if": "Any rival finishes Recorded History before you reach it, or the Campus city has fewer than ten Production at turn 70."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Grants",
+          "city": "capital",
+          "why": "Double Great Person points in the city with the most districts; this is the single largest lever in the plan and it goes in at the first title."
+        },
+        {
+          "governor": "magnus",
+          "promotion": "Provision",
+          "city": "second city",
+          "why": "Settlers without the population cost from the city that is not racing."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "bologna",
+          "why": "A Great Person point per district with a building; four cities with Libraries and Amphitheaters is eight points a turn."
+        },
+        {
+          "slug": "antananarivo",
+          "why": "Culture per Great Person ever earned, which is the one stat this plan maximizes."
+        },
+        {
+          "type": "Cultural",
+          "why": "Culture in the capital and later in every Amphitheater; Drama and Poetry and Humanism arrive sooner."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-scientist",
+          "why": "The first Classical Great Scientist is usually a free Eureka pair; with Magnanimous the second is a fifth cheaper and Education's Eureka comes with it."
+        },
+        {
+          "class": "great-writer",
+          "why": "Two Writing slots are waiting in the Amphitheater; the Culture starts the Tourism count and Humanism's Inspiration is a Great Artist later."
+        },
+        {
+          "class": "great-prophet",
+          "why": "Only if Prophets are on the list: a religion gives Faith patronage, which Magnanimous refunds like any recruit."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 50,
+          "test": "Is the watched stat green in at least two chosen classes, with the capital Campus and a second city Theater Square standing and Pingala's Grants in place?",
+          "pass": "Continue; queue the Oracle if its hill is still free.",
+          "fail": "Amber in two classes this early means the district plan is late: stop Settlers after the third city, run Campus Research Grants in the capital, and slot Inspiration until the first Great Scientist lands."
+        },
+        {
+          "turn": 90,
+          "test": "Four cities, two Great People recruited in chosen classes, and Campus or Theater Square in three cities touching Rainforest?",
+          "pass": "Enter the accumulation phase; the refunds now start compounding.",
+          "fail": "One Great Person or none: drop the weakest class from the list, keep two, and move both wildcard slots to them. If the Oracle was lost, build the Great Library instead and stop entering wonder races."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "loop-first-read",
+          "turn": 30,
+          "text": "First formal read of the Great People screen: note the leading rival's points per turn in each of your three classes and write the amber threshold beside it."
+        },
+        {
+          "id": "loop-grants",
+          "turn": 35,
+          "text": "Pingala with Grants in the capital at the first Governor title; Researcher is the second promotion, not the first."
+        },
+        {
+          "id": "loop-oracle",
+          "turn": 45,
+          "text": "Start the Oracle on a hill in the capital's second ring; abandon it if a rival's progress notification appears before it is half built."
+        },
+        {
+          "id": "loop-first-recruit",
+          "turn": 60,
+          "text": "Recruit the first chosen-class Great Person and check that the refund landed on the next one's bar; this is the proof the engine works."
+        },
+        {
+          "id": "loop-third-city",
+          "turn": 55,
+          "text": "Third city settled with its Theater Square tile touching Rainforest; fourth Settler queued behind the Campus."
+        },
+        {
+          "id": "loop-amber-drill",
+          "turn": 80,
+          "text": "Run the amber response once deliberately, even if green: slot the class card, run the project, and note how many turns the gap closed by. That number is your amber lead time for the rest of the game."
+        }
+      ]
+    },
+    {
+      "id": "accumulate",
+      "name": "Accumulate",
+      "turns": {
+        "from": 91,
+        "to": 160
+      },
+      "era": "medieval",
+      "objective": "Win every chosen-class race from Education to Humanism with the refunds compounding, bring six cities online with Street Carnivals keeping them content, and have the Great Works slots filled faster than the Writers and Artists arrive.",
+      "build_order": [
+        {
+          "item": "Street Carnival",
+          "why": "In the two largest cities; the Amenities for a district-heavy core and the Carnival project for Writers, Artists, Merchants and Engineers."
+        },
+        {
+          "item": "University",
+          "why": "Two for Printing; Education's Eureka was the first Great Scientist."
+        },
+        {
+          "item": "Art Museum",
+          "why": "Great Artist points and the Opera and Ballet Inspiration; slots for the Humanism Artists."
+        },
+        {
+          "item": "Market",
+          "why": "Two for Guilds; Traveling Merchants adds a fourth class only if the list has room."
+        },
+        {
+          "item": "Settler",
+          "why": "Fifth and sixth cities; each new Campus is more points per turn."
+        },
+        {
+          "item": "Aqueduct",
+          "why": "Military Engineering Eureka and Housing for the tall capital."
+        },
+        {
+          "item": "Carnival",
+          "why": "The project itself, run in the Street Carnival city whenever the watched stat is amber in a Culture class."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:education",
+          "note": "Eureka was the first Great Scientist; Universities and Printing follow."
+        },
+        {
+          "id": "tech:military-engineering",
+          "note": "Aqueduct in the capital gives the Eureka; Armories are not planned."
+        },
+        {
+          "id": "tech:castles",
+          "note": "Free Eureka from Monarchy or Theocracy; Castles leads nowhere this plan needs, research it when cheap."
+        },
+        {
+          "id": "tech:printing",
+          "note": "Two Universities give the Eureka; Printing is Culture across the empire and the Forbidden City."
+        },
+        {
+          "id": "tech:banking",
+          "note": "Free Eureka from Guilds; Banks for Gold patronage."
+        },
+        {
+          "id": "tech:astronomy",
+          "note": "A University beside a mountain gives the Eureka; Colonialism's Inspiration comes from researching it."
+        },
+        {
+          "id": "tech:buttress",
+          "note": "Owning the Oracle or Great Library gives the Eureka; otherwise research it unboosted for Printing."
+        },
+        {
+          "id": "tech:mass-production",
+          "note": "Only if Woods exist for a Lumber Mill; Rainforest cannot take one, so otherwise this is unboosted."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:theology",
+          "note": "Only if a religion was founded; Scripture otherwise stays unused."
+        },
+        {
+          "id": "civic:feudalism",
+          "note": "Six Farms across six cities; Serfdom for the Builders that improve rather than clear."
+        },
+        {
+          "id": "civic:civil-service",
+          "note": "Capital at ten population with the Aqueduct gives the Inspiration."
+        },
+        {
+          "id": "civic:guilds",
+          "note": "Two Markets give the Inspiration; Traveling Merchants if Merchants join the list."
+        },
+        {
+          "id": "civic:humanism",
+          "note": "The first Great Artist gives the Inspiration free; Frescoes and Invention are two more race cards."
+        },
+        {
+          "id": "civic:medieval-faires",
+          "note": "Four Trade Routes running gives the Inspiration; routes are Gold for patronage."
+        },
+        {
+          "id": "civic:mercantilism",
+          "note": "A Great Merchant gives the Inspiration; take one when it is free and no rival is close."
+        },
+        {
+          "id": "civic:diplomatic-service",
+          "note": "The first alliance gives the Inspiration; a Cultural alliance is Tourism later."
+        },
+        {
+          "id": "civic:the-enlightenment",
+          "note": "Three Great People is already done by now; Rationalism and the Scientific Theory Eureka."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Frescoes",
+          "slot": "wildcard",
+          "from": "civic:humanism",
+          "why": "Great Artist points from Theater Squares; the Artist race card."
+        },
+        {
+          "card": "Invention",
+          "slot": "wildcard",
+          "from": "civic:humanism",
+          "why": "Great Engineer points; used only when an Engineer that builds a wonder is one race away."
+        },
+        {
+          "card": "Serfdom",
+          "slot": "economic",
+          "from": "civic:feudalism",
+          "why": "Builders with extra charges for Mines and Plantations in six cities; none of the charges go on Rainforest."
+        },
+        {
+          "card": "Traveling Merchants",
+          "slot": "wildcard",
+          "from": "civic:guilds",
+          "why": "Great Merchant points per Commercial Hub, if Merchants were the third class."
+        },
+        {
+          "card": "Monarchy",
+          "slot": "wildcard",
+          "from": "civic:divine-right",
+          "why": "Only if Divine Right is reached first; otherwise keep Classical Republic until Merchant Republic for the Trade Routes and the Castles Eureka either way."
+        }
+      ],
+      "districts": [
+        {
+          "district": "street-carnival",
+          "city": "capital and the largest second city",
+          "note": "Beside the Theater Square if possible; the Carnival project is the amber response for Culture classes."
+        },
+        {
+          "district": "theater-square",
+          "city": "every city from the fourth on",
+          "note": "Rainforest adjacency; Art Museums for the Artists, Amphitheaters for the Writers."
+        },
+        {
+          "district": "aqueduct",
+          "city": "capital",
+          "note": "Housing for a tall racing city and the Military Engineering Eureka."
+        },
+        {
+          "district": "harbor",
+          "city": "the coastal city",
+          "note": "The Copacabana needs a coastal city with a Harbor's worth of Production; the Cartography Eureka is incidental."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Forbidden City",
+          "why": "A second wildcard slot, which for Pedro is a second Great Person card running at once.",
+          "skip_if": "China is on the map, Printing arrives after turn 170, or the capital Production is under 25 at turn 150."
+        },
+        {
+          "name": "Kilwa Kisiwani",
+          "why": "Suzerainty of Bologna and Antananarivo pays extra in every city with it; a Culture and Great Person wonder for a city-state plan.",
+          "skip_if": "No coastal city has Machinery-era Production, or you are suzerain of fewer than two city-states at turn 140."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Researcher",
+          "city": "capital",
+          "why": "Second promotion after Grants; Science per citizen in the tallest city."
+        },
+        {
+          "governor": "liang",
+          "promotion": "Zoning Commissioner",
+          "city": "the fourth and fifth cities",
+          "why": "District Production in new cities whose Rainforest adjacency is ready before their Production is."
+        },
+        {
+          "governor": "reyna",
+          "promotion": "Tax Collector",
+          "city": "the Commercial Hub city",
+          "why": "Gold per citizen pays the patronage that closes an amber race."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "vilnius",
+          "why": "Theater Square adjacency plus a half at the highest alliance level; with Rainforest adjacency that is the whole Culture economy."
+        },
+        {
+          "slug": "kumasi",
+          "why": "Culture and Gold on routes to city-states per specialty district, and this empire has more districts than anyone."
+        },
+        {
+          "type": "Industrial",
+          "why": "Production in a civilization whose Rainforest tiles have little of it; Brussels if a wonder is being attempted."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-writer",
+          "why": "Every Medieval and Renaissance Writer; two works each into Amphitheaters and the Great Library."
+        },
+        {
+          "class": "great-artist",
+          "why": "From Humanism on; three works each into Art Museums, themed by era and type for Cultural Heritage."
+        },
+        {
+          "class": "great-scientist",
+          "why": "Universities and the Research Grants project keep the Scientist race green; Newton and Hypatia are the ones to time."
+        },
+        {
+          "class": "great-merchant",
+          "why": "Only when the race is free; Mercantilism's Inspiration and Gold for patronage."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 120,
+          "test": "Six Great People recruited in chosen classes since turn 1, the watched stat green in two of three classes, and a Street Carnival standing?",
+          "pass": "Continue; start the Forbidden City if its skip rule does not fire.",
+          "fail": "Fewer than four Great People means the races are being lost: narrow to two classes, keep both wildcard slots on them, run Carnival in the Street Carnival city continuously, and audit Rainforest count against the second watch."
+        },
+        {
+          "turn": 160,
+          "test": "Six cities with Theater Squares, every Writing and Art slot filled or a Great Person within ten turns of filling it, and Humanism and Printing both done?",
+          "pass": "Enter the monopoly phase; Tourism begins to count.",
+          "fail": "Empty slots with Great People banked means buildings are late: Amphitheaters and Art Museums before any new district, and buy one with Gold rather than lose a race to a full inventory."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "accumulate-carnival",
+          "turn": 100,
+          "text": "First Street Carnival finished in the capital; run Carnival once to learn its turn count, then only when the watched stat is amber."
+        },
+        {
+          "id": "accumulate-universities",
+          "turn": 115,
+          "text": "Two Universities built; Printing Eureka collected; Pingala given Researcher."
+        },
+        {
+          "id": "accumulate-fifth-city",
+          "turn": 120,
+          "text": "Fifth city settled; Liang moved there with Zoning Commissioner the turn it is founded."
+        },
+        {
+          "id": "accumulate-humanism",
+          "turn": 135,
+          "text": "Humanism reached on the back of the first Great Artist; Frescoes slotted in place of Inspiration if the Artist race is the tighter one."
+        },
+        {
+          "id": "accumulate-rainforest-audit",
+          "turn": 140,
+          "text": "Count Rainforest tiles inside your borders against the turn 90 count. If it fell, find the Builder that did it and stop issuing chops."
+        },
+        {
+          "id": "accumulate-forbidden-city",
+          "turn": 155,
+          "text": "Forbidden City started or formally skipped; if started, the second wildcard slot takes the class card the first slot does not hold."
+        }
+      ]
+    },
+    {
+      "id": "monopoly",
+      "name": "Monopoly",
+      "turns": {
+        "from": 161,
+        "to": 230
+      },
+      "era": "industrial",
+      "objective": "Hold the lead in the chosen classes through the Industrial and early Modern eras, convert Rainforest Appeal into Neighborhoods, National Parks and Seaside Resorts, and have Tourism rising against every rival by turn 230.",
+      "build_order": [
+        {
+          "item": "Archaeological Museum",
+          "why": "Natural History's Inspiration and Artifacts for Combustion; a third Great Work type for theming."
+        },
+        {
+          "item": "Copacabana",
+          "why": "In the coastal city; Amenities and Culture on the coast whose land tiles become Seaside Resorts."
+        },
+        {
+          "item": "Neighborhood",
+          "why": "Two for Sanitation; the first on a Breathtaking Rainforest tile is the Conservation Inspiration."
+        },
+        {
+          "item": "Workshop",
+          "why": "Two for Industrialization in the two best Production cities; Factories power the Carnival and the museums."
+        },
+        {
+          "item": "Naturalist",
+          "why": "Faith-bought after Conservation; a National Park on four Rainforest and mountain tiles is Radio's Eureka."
+        },
+        {
+          "item": "Seaside Resort",
+          "why": "Builders on every Breathtaking coast tile beside the Copacabana."
+        },
+        {
+          "item": "Hermitage",
+          "why": "Great Artist points and four Art slots in the capital."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:industrialization",
+          "note": "Two Workshops give the Eureka; Factories and the Hermitage line."
+        },
+        {
+          "id": "tech:scientific-theory",
+          "note": "Free Eureka from The Enlightenment; Research Grants projects get stronger."
+        },
+        {
+          "id": "tech:sanitation",
+          "note": "Two Neighborhoods give the Eureka; Housing for cities past fifteen."
+        },
+        {
+          "id": "tech:chemistry",
+          "note": "Alliance level two with the Cultural ally gives the Eureka; Research Labs."
+        },
+        {
+          "id": "tech:combustion",
+          "note": "An Artifact from the Archaeologist gives the Eureka; on the way to Flight."
+        },
+        {
+          "id": "tech:radio",
+          "note": "The first National Park gives the Eureka; Mass Media's Inspiration follows."
+        },
+        {
+          "id": "tech:flight",
+          "note": "Own an Industrial wonder for the Eureka, the Hermitage counts; Cristo Redentor and Tourism from wonders."
+        },
+        {
+          "id": "tech:economics",
+          "note": "Two Banks if Gold patronage is the race-closer; otherwise unboosted."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:natural-history",
+          "note": "The Archaeological Museum gives the Inspiration; Archaeologists and the Hermitage."
+        },
+        {
+          "id": "civic:opera-and-ballet",
+          "note": "The first Art Museum gave the Inspiration long ago; Symphonies and Grand Opera."
+        },
+        {
+          "id": "civic:civil-engineering",
+          "note": "Seven district types is free for an empire with Street Carnival, Copacabana, Campus, Theater, Commercial Hub, Harbor and Holy Site."
+        },
+        {
+          "id": "civic:colonialism",
+          "note": "Astronomy gave the Inspiration; on the way to Conservation."
+        },
+        {
+          "id": "civic:urbanization",
+          "note": "A city of fifteen gives the Inspiration; Neighborhoods on Breathtaking tiles."
+        },
+        {
+          "id": "civic:conservation",
+          "note": "A Neighborhood on a Breathtaking Rainforest tile gives the Inspiration free; Naturalists and National Parks."
+        },
+        {
+          "id": "civic:nationalism",
+          "note": "Casus Belli war is not planned, so this is unboosted; the Minas Geraes unlocks here and a Culture leader needs coastal defence."
+        },
+        {
+          "id": "civic:mass-media",
+          "note": "Radio gives the Inspiration; Broadcast Centers and the Tourism from Great Musicians."
+        },
+        {
+          "id": "civic:ideology",
+          "note": "Democracy for Gold patronage and Tourism; no Inspiration exists."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Symphonies",
+          "slot": "wildcard",
+          "from": "civic:opera-and-ballet",
+          "why": "Great Musician points once Broadcast Centers exist; Musicians are the late Tourism class and the list adds them here."
+        },
+        {
+          "card": "Grand Opera",
+          "slot": "economic",
+          "from": "civic:opera-and-ballet",
+          "why": "Culture from Theater Square buildings, which this empire has in every city."
+        },
+        {
+          "card": "Rationalism",
+          "slot": "economic",
+          "from": "civic:the-enlightenment",
+          "why": "Science from Campus buildings in the tall cities; the fallback Science victory lives here."
+        },
+        {
+          "card": "Democracy",
+          "slot": "wildcard",
+          "from": "civic:ideology",
+          "why": "The Tier 3 government for a peaceful Culture civilization; Computers' Eureka comes with it and Gold patronage is cheaper."
+        }
+      ],
+      "districts": [
+        {
+          "district": "neighborhood",
+          "city": "capital and the two largest cities",
+          "note": "On Breathtaking Rainforest tiles; the first one is Conservation and all of them are Sanitation."
+        },
+        {
+          "district": "industrial-zone",
+          "city": "the two best Production cities",
+          "note": "Workshops for Industrialization and Factories for the museum and resort builds."
+        },
+        {
+          "district": "copacabana",
+          "city": "the coastal city",
+          "note": "The Water Park replacement; it sits in the water and leaves the coast tiles free for Seaside Resorts."
+        },
+        {
+          "district": "preserve",
+          "city": "a city with a Rainforest and mountain cluster",
+          "note": "Appeal and Culture from the Grove on tiles the National Park will not take."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Hermitage",
+          "why": "Great Artist points per turn and four Art slots; it both wins the Artist race and houses the winners.",
+          "skip_if": "Natural History lands after turn 200 or a rival Culture civilization is already building it."
+        },
+        {
+          "name": "Cristo Redentor",
+          "why": "Doubles Tourism from Seaside Resorts, which the Copacabana coast with Rainforest Appeal produces more of than anyone.",
+          "skip_if": "Flight arrives after turn 240, or fewer than three Seaside Resorts are possible on your coast."
+        },
+        {
+          "name": "Eiffel Tower",
+          "why": "Two Appeal on every tile; more Breathtaking tiles for Resorts, Parks and Neighborhoods across the whole empire.",
+          "skip_if": "Steel is more than 15 turns away at turn 220, or France is on the map and ahead in Science."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Curator",
+          "city": "capital",
+          "why": "Doubles Tourism from the Great Works the chosen classes have filled the capital with."
+        },
+        {
+          "governor": "reyna",
+          "promotion": "Contractor",
+          "city": "the newest city",
+          "why": "Buy the Theater Square and Campus outright with the Gold the Commercial Hubs make, so a new city joins the race in one turn."
+        },
+        {
+          "governor": "magnus",
+          "promotion": "Vertical Integration",
+          "city": "the Industrial Zone city",
+          "why": "Factory Production shared into the neighbouring racing cities."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "antananarivo",
+          "why": "By now the Culture bonus is near its cap from the Great People recruited; keep suzerainty."
+        },
+        {
+          "slug": "nan-madol",
+          "why": "Culture from the coastal districts the Copacabana city holds."
+        },
+        {
+          "type": "Cultural",
+          "why": "Every Cultural suzerainty is Culture in every Amphitheater and Art Museum, and a vote partner in the Congress."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-artist",
+          "why": "Hermitage, Art Museums and the second Archaeological Museum hold them; theme by era and type."
+        },
+        {
+          "class": "great-musician",
+          "why": "Added to the list at Opera and Ballet; Broadcast Centers hold their works and each is Tourism no rival has."
+        },
+        {
+          "class": "great-scientist",
+          "why": "Darwin on a natural wonder and the Industrial Scientists' free techs keep the Science fallback alive."
+        },
+        {
+          "class": "great-engineer",
+          "why": "Only when free: an Engineer that finishes the Hermitage or Cristo Redentor is a wonder bought with refunded points."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 200,
+          "test": "Tourism per turn higher than every rival but at most one, the first National Park founded, and the watched stat green in Artists and Musicians?",
+          "pass": "Continue; Seaside Resorts on every Breathtaking coast tile.",
+          "fail": "If Tourism trails two or more rivals, buy Archaeologists and Rock Bands with Faith, send a Trade Route to the Tourism leader for the Open Borders bonus, and check that Cultural Heritage's themed building exists."
+        },
+        {
+          "turn": 230,
+          "test": "Is the Culture victory screen showing you ahead of half the civilizations in Visitors, with the chosen classes still green?",
+          "pass": "Enter the close; Rock Bands and Resorts finish it.",
+          "fail": "Behind in Visitors but ahead in Science: switch the verdict to Science at this checkpoint, keep Pingala and the Great Scientists, and build the Spaceport in the Industrial Zone city."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "monopoly-museums",
+          "turn": 170,
+          "text": "Archaeological Museum built and an Archaeologist out; the first Artifact is Combustion and a third Great Work type."
+        },
+        {
+          "id": "monopoly-neighborhood",
+          "turn": 180,
+          "text": "First Neighborhood on a Breathtaking Rainforest tile in the capital; Conservation Inspiration collected."
+        },
+        {
+          "id": "monopoly-national-park",
+          "turn": 195,
+          "text": "Naturalist bought with Faith and the first National Park founded on a Rainforest and mountain diamond; Radio Eureka collected."
+        },
+        {
+          "id": "monopoly-resorts",
+          "turn": 210,
+          "text": "Seaside Resorts on every Breathtaking coast tile beside the Copacabana; Cristo Redentor started if its rule allows."
+        },
+        {
+          "id": "monopoly-minas-geraes",
+          "turn": 220,
+          "text": "Two Minas Geraes built after Nationalism and parked at the two largest coastal cities; the Tourism leader is the one everyone declares on."
+        }
+      ]
+    },
+    {
+      "id": "close",
+      "name": "Close",
+      "turns": {
+        "from": 231,
+        "to": null
+      },
+      "era": "modern",
+      "objective": "Finish the Culture victory with Rock Bands, Seaside Resorts, National Parks and themed museums while the chosen Great Person classes stay green, or run the Science fallback from the same Campuses if the turn 230 checkpoint said so.",
+      "build_order": [
+        {
+          "item": "Broadcast Center",
+          "why": "Great Musician slots and Culture in every Theater Square city; Satellites' Eureka at two."
+        },
+        {
+          "item": "Rock Band",
+          "why": "Faith-bought with Album Cover Art or Music Festival promotions and sent to the civilizations with the most Culture."
+        },
+        {
+          "item": "Seaside Resort",
+          "why": "Every remaining Breathtaking coast tile; Eiffel Tower adds more each era."
+        },
+        {
+          "item": "Research Lab",
+          "why": "Nuclear Program's Inspiration and the Science fallback."
+        },
+        {
+          "item": "Spaceport",
+          "why": "Science fallback only; in the Industrial Zone city with Magnus."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:computers",
+          "note": "Democracy gave the Eureka; Tourism from Culture rises with it."
+        },
+        {
+          "id": "tech:electricity",
+          "note": "Unboosted; Power for the Broadcast Centers and Factories."
+        },
+        {
+          "id": "tech:refining",
+          "note": "A Coal Power Plant gives the Eureka if one was built; otherwise unboosted on the way to Plastics."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:cultural-heritage",
+          "note": "A themed building gives the Inspiration free; Heritage Tourism."
+        },
+        {
+          "id": "civic:professional-sports",
+          "note": "Two Street Carnivals count as Entertainment Complexes; free Inspiration and Stadiums for Amenities."
+        },
+        {
+          "id": "civic:nuclear-program",
+          "note": "A Research Lab gives the Inspiration; needed for the Science fallback, optional otherwise."
+        },
+        {
+          "id": "civic:social-media",
+          "note": "Telecommunications research gives the Inspiration; Online Communities is more Tourism to trade partners."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Heritage Tourism",
+          "slot": "economic",
+          "from": "civic:cultural-heritage",
+          "why": "Tourism from Great Works doubled in an empire built on them."
+        },
+        {
+          "card": "Online Communities",
+          "slot": "economic",
+          "from": "civic:social-media",
+          "why": "Tourism to civilizations you trade with; six Trade Routes go to the six biggest Culture rivals."
+        },
+        {
+          "card": "Satellite Broadcasts",
+          "slot": "economic",
+          "from": "civic:cultural-heritage",
+          "why": "Tourism from Great Works of Music tripled; Symphonies made the Musicians, this spends them."
+        }
+      ],
+      "districts": [],
+      "wonders": [],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Space Initiative",
+          "city": "the Spaceport city",
+          "why": "Science fallback only: moved out of the capital for the last projects."
+        }
+      ],
+      "city_states": [],
+      "great_people": [
+        {
+          "class": "great-musician",
+          "why": "Every Modern and Atomic Musician; Broadcast Centers and Satellite Broadcasts turn each into Tourism no museum can match."
+        },
+        {
+          "class": "great-scientist",
+          "why": "Science fallback: the Atomic Scientists are free techs toward the spaceport."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 280,
+          "test": "Visitors higher than the domestic tourists of every civilization but one, or on the Science fallback the first launch complete?",
+          "pass": "Continue; no further decisions.",
+          "fail": "Convert to Score: keep recruiting Great People for the points, stop buying Rock Bands, and spend Gold on buildings in every city."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "close-rock-bands",
+          "turn": 240,
+          "text": "First two Rock Bands bought with Faith and sent to the two civilizations with the highest domestic Culture."
+        },
+        {
+          "id": "close-themes",
+          "turn": 250,
+          "text": "Every Art Museum and Archaeological Museum themed; swap works with the Cultural ally to finish the sets."
+        },
+        {
+          "id": "close-review",
+          "turn": 280,
+          "text": "Review the turn 280 checkpoint; if Culture is won by projection, stop building and keep the Great Person races going for the points alone."
+        }
+      ]
+    }
+  ],
+  "boosts": [
+    {
+      "id": "tech:writing",
+      "fit": "free",
+      "when": "setup",
+      "how": "The Scout meets the first civilization."
+    },
+    {
+      "id": "tech:astrology",
+      "fit": "cheap",
+      "when": "setup",
+      "how": "Rainforest starts sit near Pantanal, Roraima or a mountain wonder; the Scout finds one."
+    },
+    {
+      "id": "tech:irrigation",
+      "fit": "cheap",
+      "when": "setup",
+      "how": "The first Builder Farms a Rice or Wheat before touching the Bananas."
+    },
+    {
+      "id": "tech:wheel",
+      "fit": "cheap",
+      "when": "setup",
+      "how": "A Mine on a resource hill under Rainforest."
+    },
+    {
+      "id": "tech:archery",
+      "fit": "costly",
+      "when": "setup",
+      "how": "The Slinger kill is luck; usually researched unboosted later."
+    },
+    {
+      "id": "tech:bronze-working",
+      "fit": "costly",
+      "when": "loop",
+      "how": "Three barbarian kills at the camp that sees the capital; a Culture civ otherwise ignores camps."
+    },
+    {
+      "id": "tech:sailing",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "The third city on the coast triggers it if the Copacabana coast exists."
+    },
+    {
+      "id": "tech:currency",
+      "fit": "free",
+      "when": "loop",
+      "how": "The first Trader runs a route to the second city."
+    },
+    {
+      "id": "tech:mathematics",
+      "fit": "free",
+      "when": "loop",
+      "how": "Campus, Theater Square and Commercial Hub are three specialty districts by turn 70."
+    },
+    {
+      "id": "tech:construction",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "A Water Mill in the river capital."
+    },
+    {
+      "id": "tech:apprenticeship",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "Three Mines on Rainforest hills across two cities."
+    },
+    {
+      "id": "tech:celestial-navigation",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "Two Fishing Boats in the coastal city; only if there is one."
+    },
+    {
+      "id": "tech:masonry",
+      "fit": "costly",
+      "when": "loop",
+      "how": "Only if a Quarry resource is in the capital's rings."
+    },
+    {
+      "id": "tech:horseback-riding",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:iron-working",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:shipbuilding",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:engineering",
+      "fit": "costly",
+      "when": "loop",
+      "how": "Ancient Walls only if a neighbour looks hostile."
+    },
+    {
+      "id": "tech:education",
+      "fit": "free",
+      "when": "accumulate",
+      "how": "The first Great Scientist is on the priority list."
+    },
+    {
+      "id": "tech:military-engineering",
+      "fit": "cheap",
+      "when": "accumulate",
+      "how": "The capital Aqueduct."
+    },
+    {
+      "id": "tech:castles",
+      "fit": "free",
+      "when": "accumulate",
+      "how": "Any Tier 2 government."
+    },
+    {
+      "id": "tech:printing",
+      "fit": "cheap",
+      "when": "accumulate",
+      "how": "Two Universities in the Campus cities."
+    },
+    {
+      "id": "tech:banking",
+      "fit": "free",
+      "when": "accumulate",
+      "how": "Guilds is on the civic path."
+    },
+    {
+      "id": "tech:astronomy",
+      "fit": "costly",
+      "when": "accumulate",
+      "how": "A University beside a mountain only if a Campus already touches one."
+    },
+    {
+      "id": "tech:buttress",
+      "fit": "free",
+      "when": "accumulate",
+      "how": "Owning the Oracle or Great Library."
+    },
+    {
+      "id": "tech:mass-production",
+      "fit": "costly",
+      "when": "accumulate",
+      "how": "A Lumber Mill needs Woods; Rainforest will not take one."
+    },
+    {
+      "id": "tech:stirrups",
+      "fit": "free",
+      "when": "accumulate",
+      "how": "Feudalism is on the civic path."
+    },
+    {
+      "id": "tech:machinery",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:military-tactics",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:cartography",
+      "fit": "costly",
+      "when": "accumulate",
+      "how": "Two Harbors only if two coastal cities exist."
+    },
+    {
+      "id": "tech:gunpowder",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:square-rigging",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:siege-tactics",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:metal-casting",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:industrialization",
+      "fit": "cheap",
+      "when": "monopoly",
+      "how": "Two Workshops in the Industrial Zones."
+    },
+    {
+      "id": "tech:scientific-theory",
+      "fit": "free",
+      "when": "monopoly",
+      "how": "The Enlightenment is on the civic path."
+    },
+    {
+      "id": "tech:sanitation",
+      "fit": "cheap",
+      "when": "monopoly",
+      "how": "Two Neighborhoods on Breathtaking Rainforest tiles."
+    },
+    {
+      "id": "tech:economics",
+      "fit": "costly",
+      "when": "monopoly",
+      "how": "Two Banks only if Gold patronage is the chosen race-closer."
+    },
+    {
+      "id": "tech:chemistry",
+      "fit": "cheap",
+      "when": "monopoly",
+      "how": "Alliance level two with the Cultural ally, which the Diplomatic Service Inspiration started."
+    },
+    {
+      "id": "tech:combustion",
+      "fit": "cheap",
+      "when": "monopoly",
+      "how": "The first Artifact from the Archaeological Museum's Archaeologist."
+    },
+    {
+      "id": "tech:radio",
+      "fit": "cheap",
+      "when": "monopoly",
+      "how": "The first National Park on Rainforest and mountain tiles."
+    },
+    {
+      "id": "tech:flight",
+      "fit": "cheap",
+      "when": "monopoly",
+      "how": "The Hermitage counts as an Industrial wonder."
+    },
+    {
+      "id": "tech:steel",
+      "fit": "costly",
+      "when": "monopoly",
+      "how": "An Ironclad and a Coal Mine only if the Eiffel Tower is being attempted."
+    },
+    {
+      "id": "tech:steam-power",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:electricity",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:refining",
+      "fit": "costly",
+      "when": "close",
+      "how": "A Coal Power Plant if one was built for the Factories."
+    },
+    {
+      "id": "tech:computers",
+      "fit": "free",
+      "when": "close",
+      "how": "Democracy is the Tier 3 government."
+    },
+    {
+      "id": "civic:craftsmanship",
+      "fit": "free",
+      "when": "setup",
+      "how": "Three improvements from the first Builder."
+    },
+    {
+      "id": "civic:foreign-trade",
+      "fit": "cheap",
+      "when": "setup",
+      "how": "The Scout crosses onto a second continent on a Continents map."
+    },
+    {
+      "id": "civic:mysticism",
+      "fit": "free",
+      "when": "setup",
+      "how": "Founding Divine Spark."
+    },
+    {
+      "id": "civic:military-tradition",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:early-empire",
+      "fit": "free",
+      "when": "loop",
+      "how": "Six population across the first two cities."
+    },
+    {
+      "id": "civic:state-workforce",
+      "fit": "free",
+      "when": "loop",
+      "how": "The capital Campus is the first district."
+    },
+    {
+      "id": "civic:political-philosophy",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "Three city-states met by the Scout and the second Scout if needed."
+    },
+    {
+      "id": "civic:recorded-history",
+      "fit": "free",
+      "when": "loop",
+      "how": "Two Campuses by turn 60."
+    },
+    {
+      "id": "civic:drama-and-poetry",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "Finishing the Oracle or the Great Library."
+    },
+    {
+      "id": "civic:games-and-recreation",
+      "fit": "free",
+      "when": "loop",
+      "how": "Researching Construction."
+    },
+    {
+      "id": "civic:theology",
+      "fit": "costly",
+      "when": "loop",
+      "how": "Only if a Great Prophet was on the list and a religion founded."
+    },
+    {
+      "id": "civic:defensive-tactics",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "A neighbour declares on a Culture civ sooner or later; the Inspiration arrives by itself."
+    },
+    {
+      "id": "civic:military-training",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:feudalism",
+      "fit": "cheap",
+      "when": "accumulate",
+      "how": "Six Farms across six cities."
+    },
+    {
+      "id": "civic:civil-service",
+      "fit": "cheap",
+      "when": "accumulate",
+      "how": "The capital at ten population with the Aqueduct."
+    },
+    {
+      "id": "civic:guilds",
+      "fit": "cheap",
+      "when": "accumulate",
+      "how": "Two Markets in the Commercial Hub cities."
+    },
+    {
+      "id": "civic:humanism",
+      "fit": "free",
+      "when": "accumulate",
+      "how": "The first Great Artist is on the priority list."
+    },
+    {
+      "id": "civic:medieval-faires",
+      "fit": "cheap",
+      "when": "accumulate",
+      "how": "Four Trade Routes running from the Commercial Hubs and Harbor."
+    },
+    {
+      "id": "civic:mercantilism",
+      "fit": "cheap",
+      "when": "accumulate",
+      "how": "One Great Merchant taken when no rival is close."
+    },
+    {
+      "id": "civic:diplomatic-service",
+      "fit": "cheap",
+      "when": "accumulate",
+      "how": "A Cultural alliance with the friendliest Culture rival."
+    },
+    {
+      "id": "civic:the-enlightenment",
+      "fit": "free",
+      "when": "accumulate",
+      "how": "Three Great People is done by turn 100 for Pedro."
+    },
+    {
+      "id": "civic:divine-right",
+      "fit": "costly",
+      "when": "accumulate",
+      "how": "Two Temples only if a religion was founded."
+    },
+    {
+      "id": "civic:reformed-church",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:mercenaries",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:exploration",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:natural-history",
+      "fit": "free",
+      "when": "monopoly",
+      "how": "The Archaeological Museum is in the build order."
+    },
+    {
+      "id": "civic:opera-and-ballet",
+      "fit": "free",
+      "when": "monopoly",
+      "how": "The first Art Museum in the accumulation phase."
+    },
+    {
+      "id": "civic:civil-engineering",
+      "fit": "free",
+      "when": "monopoly",
+      "how": "Seven district types; the Street Carnival and Copacabana count as their base districts."
+    },
+    {
+      "id": "civic:colonialism",
+      "fit": "free",
+      "when": "monopoly",
+      "how": "Researching Astronomy."
+    },
+    {
+      "id": "civic:urbanization",
+      "fit": "cheap",
+      "when": "monopoly",
+      "how": "The capital at fifteen with Aqueduct, Neighborhood and Street Carnival Amenities."
+    },
+    {
+      "id": "civic:conservation",
+      "fit": "free",
+      "when": "monopoly",
+      "how": "A Neighborhood on a Breathtaking Rainforest tile; Amazon makes those common."
+    },
+    {
+      "id": "civic:nationalism",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:mass-media",
+      "fit": "free",
+      "when": "monopoly",
+      "how": "Researching Radio, which the National Park Eureka made cheap."
+    },
+    {
+      "id": "civic:capitalism",
+      "fit": "costly",
+      "when": "monopoly",
+      "how": "Two Stock Exchanges only if Gold patronage is the race-closer."
+    },
+    {
+      "id": "civic:class-struggle",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:suffrage",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:cultural-heritage",
+      "fit": "free",
+      "when": "close",
+      "how": "One themed Art Museum."
+    },
+    {
+      "id": "civic:professional-sports",
+      "fit": "free",
+      "when": "close",
+      "how": "Two Street Carnivals count as two Entertainment Complexes."
+    },
+    {
+      "id": "civic:nuclear-program",
+      "fit": "cheap",
+      "when": "close",
+      "how": "A Research Lab in the capital."
+    },
+    {
+      "id": "civic:social-media",
+      "fit": "costly",
+      "when": "close",
+      "how": "Telecommunications research is a detour unless the Science fallback is running."
+    }
+  ],
+  "decision_triggers": [
+    {
+      "name": "Drop a class",
+      "if": "The watched stat has been amber in one chosen class for ten turns and a rival's points per turn there is more than half again yours.",
+      "then": "Take that class off the list for one era. Move its wildcard card and its project to the class you lead most narrowly, and bank the points for the next Great Person of the dropped class rather than spending Gold on it."
+    },
+    {
+      "name": "Patronize to close",
+      "if": "A chosen-class Great Person is within a third of its cost for you and a rival will recruit it inside five turns.",
+      "then": "Patronize with Gold or Faith now. Magnanimous refunds a fifth of the points either way, so a patronage that wins the race is cheaper than the next full recruit after a loss."
+    },
+    {
+      "name": "Add Musicians",
+      "if": "Opera and Ballet is reached and no rival has more than two Great Musician points per turn.",
+      "then": "Great Musicians join the list as the fourth class; Symphonies goes in the second wildcard slot and Broadcast Centers follow in every Theater Square city."
+    },
+    {
+      "name": "Science over Culture",
+      "if": "At turn 230 Visitors trail two or more civilizations but Science per turn leads them all.",
+      "then": "Switch the verdict to Science: Pingala takes Space Initiative, the Industrial Zone city builds the Spaceport, and the Great Scientist race becomes the only one chased."
+    }
+  ],
+  "abort": {
+    "trigger": "The watched stat has been red in two of the three chosen classes for fifteen turns, with rivals recruiting the Great People you were chasing and no project or patronage able to close a gap.",
+    "actions": [
+      "Stop entering Great Person races; take only the Great People nobody else wants and let the points sit.",
+      "Rebuild as a generic tall Culture civilization around the Theater Squares, Street Carnivals and Rainforest Appeal already standing: Archaeologists, Rock Bands, Seaside Resorts and National Parks need no Great People.",
+      "Keep the Rainforest. The Appeal half of Amazon does not care who won the Great Scientist."
+    ]
+  },
+  "fail_state": "The Modern era arrives with the Great Person classes split five ways and none of them won, Rainforest chopped for the Production the races seemed to need, and a Culture civilization with half-empty Great Work slots, no Breathtaking tiles left for Resorts or Parks, and rivals whose Writers and Artists Brazil paid for. Pedro is then a plain civ with an Entertainment Complex that costs less.",
+  "common_mistakes": [
+    "Chasing every Great Person because the refund makes each look cheap. The refund compounds only inside a class Brazil keeps winning; spread across all nine classes it is points spent on races a rival finishes.",
+    "Chopping Rainforest for a wonder or a Settler. Every tile cleared is a district adjacency and an Appeal point gone for the rest of the game, and the Resorts and Parks never come back.",
+    "Reading the Great People screen only when a recruit is close. By then the rival is three turns out and the only response left is a patronage you cannot afford.",
+    "Running Carnival in a city with no Street Carnival finished, or in every city at once. It is the amber response for one class in the two biggest cities, not a standing build.",
+    "Leaving Pingala on Librarian or Researcher first. Grants doubles the Great Person points of the capital and is the largest single lever in the kit; it is the first promotion, not the third."
+  ],
+  "sources": [
+    "Civilization VI Civilopedia, Gathering Storm ruleset (Brazil, Pedro II, Magnanimous, Amazon, Street Carnival, Copacabana, Minas Geraes).",
+    "Boost objectives cross-checked against civilization6planner.com tech-tree and civics-tree pages, 2026-10-01.",
+    "Leadership Focus tags, caveats and Monitor supplement for Pedro II in this repository. The supplement says the refund applies only on recruitment; the Gathering Storm ability text refunds points on patronage as well, and the plan follows the game.",
+    "The Minas Geraes unlocks with the Nationalism civic, not a technology; the civ-info text does not say so and the plan follows the game."
+  ]
+}

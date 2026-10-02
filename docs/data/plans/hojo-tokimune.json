@@ -1,0 +1,1697 @@
+{
+  "leader": "Hojo Tokimune",
+  "civilization": "Japanese",
+  "generated": "2026-10-02",
+  "slug": "hojo-tokimune",
+  "shape": "Front-Load",
+  "secondary_shape": null,
+  "version": 1,
+  "updated": "2026-10-01",
+  "assumptions": {
+    "ruleset": "Gathering Storm with every expansion and the Leader Pass",
+    "speed": "Standard",
+    "difficulty": "Emperor",
+    "map": "Continents or Small Continents, standard size, 8 civilizations",
+    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. Hojo Tokimune's single persona is planned here, not Tokugawa. The shape is Front-Load because the city spacing and the order districts are placed in are decided before the second Settler and cannot be undone; the kit itself is flat and works on almost any start."
+  },
+  "verdict": {
+    "victory": "Culture",
+    "secondary": "Science",
+    "confidence": "high",
+    "one_line": "Settle cities three tiles apart along the coast, pin a four-district cluster in each before anything is built, and let half-price Theater Squares and Holy Sites plus full adjacency from every neighbouring district carry a Culture game that the Electronics Factory finishes.",
+    "why": "Meiji Restoration turns district adjacency from a terrain problem into a geometry problem: a Theater Square touching three districts has +3 before any wonder or river, in every city, on any map. Divine Wind halves the cost of exactly the districts a Culture game is built on, Theater Squares and Holy Sites, and the Faith from cheap Holy Sites buys the Great Writers, Artists and Musicians that fill them. The Electronics Factory adds Culture to every city within six tiles, which a tightly spaced empire means every city. Science is the secondary because Campuses in the same clusters get the same adjacency, not because the kit points there. Domination is possible on a coast with Samurai but it spends the half-price districts on nothing."
+  },
+  "map_check": {
+    "must_have": [
+      "Flat or hill land for at least four cities three tiles apart, each with room for a four-district cluster, within 12 tiles of the capital.",
+      "Nothing else. The kit is terrain-independent; the check is about spacing, not features."
+    ],
+    "prefer": [
+      "A coastal capital, so Harbors join the clusters, Divine Wind defends the shore, and Seaside Resorts pay Tourism later.",
+      "Hills under the capital and the first two cities for Production; the districts are cheap but there are many of them.",
+      "A river or coast running past three sites, for Commercial Hub and Harbor adjacency on top of the district adjacency.",
+      "Woods and coast near the cluster sites for appeal: National Parks and Seaside Resorts are the late Tourism."
+    ],
+    "no_go": "A start hemmed in by mountains, marsh or a rival within six tiles so that fewer than three cities fit at three-tile spacing. The kit then has no clusters to multiply and Japan is an ordinary civ with a cheap Encampment.",
+    "fallback": "Settle in place and play Japan as a one-city-cluster Culture civ: capital plus two satellites at the closest legal spacing, Theater Square and Holy Site in each, and take a neighbour's nearest city with Samurai around turn 120 to make a fourth. Say the empire will be small and plan Tourism from wonders and Seaside Resorts rather than from city count."
+  },
+  "kit_levers": [
+    {
+      "source": "leader_ability",
+      "name": "Divine Wind",
+      "buys": "Five Combat Strength for land units on tiles beside Coast and for naval units in shallow water, and Encampments, Holy Sites and Theater Squares built in half the time.",
+      "exploit": "Every city builds a Theater Square and a Holy Site as its first two districts because they cost half; the Campus and Commercial Hub come third and fourth at full price with the adjacency the first two give them. The combat bonus means the empire is defended by the coast it settled, not by an army."
+    },
+    {
+      "source": "civ_ability",
+      "name": "Meiji Restoration",
+      "buys": "Every district gets a full +1 adjacency from each adjacent district instead of the half point other civilizations get.",
+      "exploit": "Districts are placed in a ring that touches the City Center and each other, never spread to chase a mountain or a river. The order matters: the first district placed has no neighbours yet, so it is the Holy Site or Theater Square, which are cheap; the Campus goes in once two districts already border its tile."
+    },
+    {
+      "source": "unique_unit",
+      "name": "Samurai",
+      "buys": "A Medieval melee unit that fights at full strength however damaged it is, with no Iron requirement.",
+      "exploit": "Not an offensive plan. Four Samurai on coastal tiles with Divine Wind hold the whole shore against a Renaissance invasion, which lets the empire skip Walls in the inner cities and keep Production on districts. If a neighbour's coastal city is weak around turn 120, the same four take it."
+    },
+    {
+      "source": "unique_infrastructure",
+      "name": "Electronics Factory",
+      "buys": "A Factory that also gives Culture to every city within six tiles once Electricity is researched.",
+      "exploit": "With cities three tiles apart, one Electronics Factory covers four or five cities. Two Industrial Zones, placed at the ends of the cluster chain, cover the empire; the Culture they add is the late push into the civics that unlock Tourism cards."
+    },
+    {
+      "source": "agenda",
+      "name": "Bushido",
+      "buys": "Tokimune likes civilizations with a strong military and high Faith and Culture, and dislikes a strong military without them.",
+      "exploit": "Irrelevant to your own play. An AI Hojo on the map will respect a Culture civ with a standing army, so keeping four Samurai is diplomacy as well as defence."
+    }
+  ],
+  "shape_block": {
+    "front_load": {
+      "turn_zero": [
+        "Before the Settler moves: can three more cities sit exactly three tiles from this spot and from each other, each with four flat or hill tiles in its first ring free for districts? Count them on the visible map. Three or more: settle. Fewer: move one turn toward open land, then settle whatever is there.",
+        "Before the Settler moves: is the capital coastal? If coast is one move away, take it; Harbors join the clusters, Divine Wind defends them, and the first Seaside Resort tiles are decided now.",
+        "Before the Settler moves: pin the capital's cluster. Holy Site first on the tile that touches the center and two other future district tiles, Theater Square second touching both, Campus third touching both of those, Commercial Hub or Harbor fourth. Nothing is queued in the capital on any pinned tile.",
+        "By turn 10: write the order the clusters will be built in for the first four cities. The cheap districts go first everywhere because they create the adjacency the expensive ones collect."
+      ],
+      "ceiling": "Eight to ten cities at three-tile spacing, each with four or five districts at +3 or more adjacency, each capped around 12 to 15 population by the tiles the spacing leaves them. That is a Culture victory around turn 280 on Emperor from Great Works, two wonder clusters and Seaside Resorts, with Science close behind. The cap is population: a tightly spaced Japan cannot run the 25-population cities a Science victory wants, so the Spaceport is the fallback and not the aim.",
+      "irreversibles": [
+        {
+          "decision": "Capital tile, which fixes the spacing grid for every later city; every site is measured three tiles from it.",
+          "by_turn": 2
+        },
+        {
+          "decision": "Capital cluster pinned: which tile holds the Holy Site, which the Theater Square, which the Campus. A district placed off the pins breaks the adjacency of the other three.",
+          "by_turn": 8
+        },
+        {
+          "decision": "The spacing plan for cities two through six, drawn before the second Settler finishes. Any city founded four or more tiles out loses the shared adjacency and the Electronics Factory coverage for good.",
+          "by_turn": 30
+        },
+        {
+          "decision": "The build order of each cluster: Holy Site or Theater Square first in every city. A Campus placed first in a city has no neighbours and never gets its full adjacency back.",
+          "by_turn": 40
+        },
+        {
+          "decision": "Which two cities hold the Industrial Zones for the Electronics Factories; the six-tile radius must cover every other city.",
+          "by_turn": 60
+        }
+      ],
+      "settle_map_rule": "Draw every city two through eight before the second Settler is produced, on a grid of exactly three tiles between centers, following the coast where there is one. Each site must have four tiles in its first ring that are not resources, not mountains and not water, pinned as Holy Site, Theater Square, Campus and the fourth district. Cities seven and eight may be 40 turns away; they are drawn now so that cities three and four do not take their tiles. A site that cannot hold four districts at three tiles is skipped, not pushed out to four."
+    }
+  },
+  "phases": [
+    {
+      "id": "assess",
+      "name": "Assess and commit",
+      "turns": {
+        "from": 1,
+        "to": 20
+      },
+      "era": "ancient",
+      "objective": "Settle on the grid, pin the capital's four-district cluster, draw the spacing plan for the next five cities, found the pantheon, and have the second Settler and the first Holy Site queued by turn 20. Every decision that caps this game is made in these twenty turns.",
+      "build_order": [
+        {
+          "item": "Scout",
+          "why": "Finds the coastline, the first rival and three city-states; confirms the drawn sites are really there."
+        },
+        {
+          "item": "Warrior",
+          "why": "A second Warrior rather than a Slinger: with Divine Wind it holds the coast and clears the first camp for Military Tradition."
+        },
+        {
+          "item": "Settler",
+          "why": "City two, three tiles along the coast; Magnus is not yet available so the capital pays the population."
+        },
+        {
+          "item": "Monument",
+          "why": "Culture is the resource this plan spends; Early Empire and Political Philosophy on time."
+        },
+        {
+          "item": "Builder",
+          "why": "Three improvements for Craftsmanship, Fishing Boats for Celestial Navigation, a Mine for The Wheel."
+        },
+        {
+          "item": "Holy Site",
+          "why": "First district, half price, on the pinned tile; it starts the adjacency the Theater Square and Campus collect."
+        },
+        {
+          "item": "Settler",
+          "why": "City three, three tiles the other way; both satellites exist before the capital's second district."
+        },
+        {
+          "item": "Theater Square",
+          "why": "Second district, half price, touching the Holy Site and the center."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:astrology",
+          "note": "First, for the half-price Holy Site; Eureka only if the Scout finds a natural wonder."
+        },
+        {
+          "id": "tech:mining",
+          "note": "Mines on hills; the Production the many districts need."
+        },
+        {
+          "id": "tech:sailing",
+          "note": "Free from the coastal capital; Harbors are on this line."
+        },
+        {
+          "id": "tech:bronze-working",
+          "note": "Three camp kills with the coastal Warriors; Encampment at half price later."
+        },
+        {
+          "id": "tech:writing",
+          "note": "Free from the first civilization met; the Campus goes third in every cluster."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:code-of-laws",
+          "note": "God King for the pantheon; Urban Planning once it is founded."
+        },
+        {
+          "id": "civic:craftsmanship",
+          "note": "Inspiration from the first Builder; Ilkum for more Builders."
+        },
+        {
+          "id": "civic:foreign-trade",
+          "note": "A Trader between the capital and city two; Inspiration if the Scout sees a second continent."
+        }
+      ],
+      "policies": [
+        {
+          "card": "God King",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "The pantheon by turn 20 before the Holy Site exists."
+        },
+        {
+          "card": "Discipline",
+          "slot": "military",
+          "from": "civic:code-of-laws",
+          "why": "Two Warriors on the coast with Divine Wind clear the camp."
+        },
+        {
+          "card": "Ilkum",
+          "slot": "economic",
+          "from": "civic:craftsmanship",
+          "why": "Builders faster; every city needs Mines before its third district."
+        }
+      ],
+      "districts": [
+        {
+          "district": "holy-site",
+          "city": "capital",
+          "note": "First district on the pinned tile; half price; it is the anchor of the cluster."
+        }
+      ],
+      "pantheon": {
+        "slug": "city-patron-goddess",
+        "why": "Every new city builds its first district a quarter faster, and this plan founds eight cities that each start with a district.",
+        "alternative": "god-of-the-sea"
+      },
+      "wonders": [],
+      "governors": [],
+      "city_states": [
+        {
+          "type": "Cultural",
+          "why": "The first envoy is Culture in the capital toward Political Philosophy."
+        }
+      ],
+      "great_people": [],
+      "checkpoints": [
+        {
+          "turn": 10,
+          "test": "Capital settled with three sites at three-tile spacing visible, its four district tiles pinned, and the Scout along the coast?",
+          "pass": "Continue; the spacing plan for cities two through six is drawn before the Settler finishes.",
+          "fail": "Fewer than three legal sites: run the fallback and plan a three-city cluster. Pins missing: place them before the Holy Site is queued."
+        },
+        {
+          "turn": 20,
+          "test": "Second Settler out, Astrology in, the Holy Site queued on its pin, and cities two through six drawn with their clusters?",
+          "pass": "Enter the cluster phase and follow the map.",
+          "fail": "No map yet: draw it this turn, before the Settler moves. Holy Site queued off its pin: cancel it; the Production is refunded and the adjacency is not."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "assess-settle-grid",
+          "turn": 1,
+          "text": "Settle on the coast if it is within one move; count the three-tile sites before the Settler plants."
+        },
+        {
+          "id": "assess-pin-capital",
+          "turn": 3,
+          "text": "Pin Holy Site, Theater Square, Campus and Commercial Hub or Harbor in the capital's first ring, touching each other and the center."
+        },
+        {
+          "id": "assess-scout-coast",
+          "turn": 5,
+          "text": "Scout along the coast both ways; mark camps, city-states and the sites the map drew."
+        },
+        {
+          "id": "assess-settle-map",
+          "turn": 15,
+          "text": "Draw cities two through eight on the three-tile grid, each with four district tiles pinned, and write the cluster build order for each."
+        },
+        {
+          "id": "assess-pantheon",
+          "turn": 18,
+          "text": "Found City Patron Goddess, or God of the Sea if the capital works four or more sea tiles."
+        },
+        {
+          "id": "assess-holy-site",
+          "turn": 20,
+          "text": "Queue the capital Holy Site on its pin the turn Astrology completes."
+        }
+      ]
+    },
+    {
+      "id": "cluster",
+      "name": "Build the clusters",
+      "turns": {
+        "from": 21,
+        "to": 80
+      },
+      "era": "classical",
+      "objective": "Settle cities two through six on the grid and build each cluster in the pinned order: Holy Site, Theater Square, Campus, then the fourth district. Found a religion from the cheap Holy Sites so Faith can buy Great People later. Low decision density by design; the work is following the map.",
+      "build_order": [
+        {
+          "item": "Settler",
+          "why": "Cities four, five and six on the grid; Colonization and Magnus Provision."
+        },
+        {
+          "item": "Holy Site",
+          "why": "First in every new city; half price; the anchor."
+        },
+        {
+          "item": "Theater Square",
+          "why": "Second in every city; half price; Amphitheater for the Great Writers."
+        },
+        {
+          "item": "Campus",
+          "why": "Third in the capital and city two, touching both cheap districts; Recorded History at two."
+        },
+        {
+          "item": "Shrine",
+          "why": "Two Holy Sites with Shrines reach a Great Prophet before turn 80 on Emperor."
+        },
+        {
+          "item": "Amphitheater",
+          "why": "Great Writer points and the first Great Work slots."
+        },
+        {
+          "item": "Harbor",
+          "why": "Fourth district in coastal cities; Cartography at two; Trade Routes for Currency and Medieval Faires."
+        },
+        {
+          "item": "Builder",
+          "why": "Mines on every hill in every city; the clusters are cheap, the buildings are not."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:celestial-navigation",
+          "note": "Two Fishing Boats; Harbors as the fourth district."
+        },
+        {
+          "id": "tech:currency",
+          "note": "The first Trade Route; Commercial Hubs where there is no coast."
+        },
+        {
+          "id": "tech:masonry",
+          "note": "A Quarry if Stone is near; otherwise unboosted on the way to Mathematics."
+        },
+        {
+          "id": "tech:mathematics",
+          "note": "Three districts by turn 40 is free; three more Science per Campus from the adjacency."
+        },
+        {
+          "id": "tech:construction",
+          "note": "A Water Mill in the river city; Games and Recreation Inspiration comes with it."
+        },
+        {
+          "id": "tech:wheel",
+          "note": "A Mine on a resource; Water Mill."
+        },
+        {
+          "id": "tech:engineering",
+          "note": "Ancient Walls in the capital only; Eureka from building them."
+        },
+        {
+          "id": "tech:apprenticeship",
+          "note": "Three Mines across the clusters; Industrial Zones later for the Electronics Factories."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:state-workforce",
+          "note": "Free from the first Holy Site."
+        },
+        {
+          "id": "civic:early-empire",
+          "note": "Colonization for cities four through six; six population is free."
+        },
+        {
+          "id": "civic:mysticism",
+          "note": "Free from the pantheon; Inspiration card for Great Scientists."
+        },
+        {
+          "id": "civic:political-philosophy",
+          "note": "Classical Republic for the Great Person points; Inspiration from three city-states."
+        },
+        {
+          "id": "civic:drama-and-poetry",
+          "note": "Aesthetics doubles Theater Square adjacency; Inspiration from the first wonder."
+        },
+        {
+          "id": "civic:games-and-recreation",
+          "note": "Free from Construction; Entertainment Complexes in the two biggest clusters later."
+        },
+        {
+          "id": "civic:recorded-history",
+          "note": "Two Campuses; Natural Philosophy doubles their adjacency too."
+        },
+        {
+          "id": "civic:theology",
+          "note": "Inspiration from founding the religion; Scripture."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Urban Planning",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "One Production in every city while six cities each build two cheap districts."
+        },
+        {
+          "card": "Colonization",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "Settlers at half cost for the four remaining grid sites."
+        },
+        {
+          "card": "Classical Republic",
+          "slot": "wildcard",
+          "from": "civic:political-philosophy",
+          "why": "Great Person points and Amenities; the government for a dense peaceful empire."
+        },
+        {
+          "card": "Aesthetics",
+          "slot": "economic",
+          "from": "civic:drama-and-poetry",
+          "why": "Doubles the Theater Square adjacency the clusters already made large."
+        },
+        {
+          "card": "Natural Philosophy",
+          "slot": "economic",
+          "from": "civic:recorded-history",
+          "why": "Doubles the Campus adjacency; the Campus touches three districts in every cluster."
+        }
+      ],
+      "districts": [
+        {
+          "district": "holy-site",
+          "city": "every city",
+          "note": "First; half price; Faith for the Great People later."
+        },
+        {
+          "district": "theater-square",
+          "city": "every city",
+          "note": "Second; half price; the victory."
+        },
+        {
+          "district": "campus",
+          "city": "capital and cities two and three",
+          "note": "Third, once two districts border its pin."
+        },
+        {
+          "district": "harbor",
+          "city": "every coastal city",
+          "note": "Fourth; Nan Madol pays Culture on it."
+        }
+      ],
+      "pantheon": {
+        "slug": "city-patron-goddess",
+        "why": "Already founded; it fires in each new city's first district."
+      },
+      "wonders": [
+        {
+          "name": "Apadana",
+          "why": "Two envoys per wonder in the capital for the rest of the game, and the capital builds most of them.",
+          "skip_if": "Political Philosophy lands after turn 60 or the capital Theater Square is not yet placed; the wonder must sit beside the center and must not take a pinned tile."
+        },
+        {
+          "name": "Colosseum",
+          "why": "Culture and Amenities to every city within six tiles, which at three-tile spacing is the whole empire.",
+          "skip_if": "No Entertainment Complex can be fitted beside the capital cluster without taking a pinned tile, or Games and Recreation is later than turn 75."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "magnus",
+          "promotion": "Provision",
+          "city": "capital",
+          "why": "Four Settlers out of the capital without losing population."
+        },
+        {
+          "governor": "pingala",
+          "promotion": "Connoisseur",
+          "city": "capital",
+          "why": "Culture per citizen in the city with the biggest Theater Square."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "nan-madol",
+          "why": "Two Culture on every coastal district; a coastal cluster of four districts is eight Culture per city."
+        },
+        {
+          "slug": "auckland",
+          "why": "Production on shallow water for every coastal city."
+        },
+        {
+          "type": "Cultural",
+          "why": "Culture in Amphitheaters at three envoys."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-prophet",
+          "why": "Two cheap Holy Sites with Shrines reach one by turn 80; the religion's Faith buys Great People from Theology onward."
+        },
+        {
+          "class": "great-writer",
+          "why": "Amphitheaters in two cities; the first Great Works are Writing."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 50,
+          "test": "Four cities on the grid, every one with a Holy Site placed on its pin, the capital Theater Square finished, and a religion within reach?",
+          "pass": "Continue; cities five and six and the Campuses.",
+          "fail": "A city founded off the grid: it stays, but no further city leaves the grid and its cluster is drawn around what it has. No religion in reach: buy the second Shrine and keep God King one more turn."
+        },
+        {
+          "turn": 80,
+          "test": "Six cities, Theater Square and Holy Site in each, two Campuses, and Aesthetics slotted?",
+          "pass": "Enter the peak phase.",
+          "fail": "Fewer than six cities: settle the rest before any wonder. Clusters built out of order: stop and place the missing cheap district before the next full-price one."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "cluster-city-two-three",
+          "turn": 25,
+          "text": "Cities two and three settled on the grid; Holy Site pinned and queued in each the turn it is founded."
+        },
+        {
+          "id": "cluster-capital-campus",
+          "turn": 40,
+          "text": "Capital Campus placed on its pin once the Holy Site and Theater Square both exist beside it."
+        },
+        {
+          "id": "cluster-religion",
+          "turn": 70,
+          "text": "Found the religion; take a Faith-per-follower Founder belief and Choral Music or Religious Community as the Follower."
+        },
+        {
+          "id": "cluster-six-cities",
+          "turn": 80,
+          "text": "Six cities on the grid, each with its first two districts; write down which two will hold Industrial Zones."
+        }
+      ]
+    },
+    {
+      "id": "peak",
+      "name": "Peak",
+      "turns": {
+        "from": 81,
+        "to": 150
+      },
+      "era": "medieval",
+      "objective": "The clusters finish and the yields compound: Universities, Art Museums ready for Great Artists, Markets and Harbors for Guilds and Medieval Faires, and the two Industrial Zones placed at the ends of the chain. Four Samurai hold the coast and nothing else is built for war.",
+      "build_order": [
+        {
+          "item": "Settler",
+          "why": "Cities seven and eight on the grid if the land is still open; otherwise skipped."
+        },
+        {
+          "item": "University",
+          "why": "Two for Printing; the Campuses have +4 or more adjacency by now."
+        },
+        {
+          "item": "Temple",
+          "why": "Two for Divine Right; Faith for the Great Artists and Musicians."
+        },
+        {
+          "item": "Market",
+          "why": "Two for Guilds; Banking is then free."
+        },
+        {
+          "item": "Industrial Zone",
+          "why": "Two, at the ends of the chain, each covering four cities; Workshops for Industrialization."
+        },
+        {
+          "item": "Samurai",
+          "why": "Four, on the coast; the empire's whole army."
+        },
+        {
+          "item": "Aqueduct",
+          "why": "In the capital for Military Engineering and Housing; spacing caps tiles, not buildings."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:education",
+          "note": "The first Great Scientist from the adjacency-heavy Campuses."
+        },
+        {
+          "id": "tech:military-tactics",
+          "note": "Samurai; Eureka only if a Spearman kills something, so usually unboosted."
+        },
+        {
+          "id": "tech:military-engineering",
+          "note": "Aqueduct Eureka."
+        },
+        {
+          "id": "tech:castles",
+          "note": "Free from the Tier 2 government."
+        },
+        {
+          "id": "tech:cartography",
+          "note": "Free from two Harbors."
+        },
+        {
+          "id": "tech:printing",
+          "note": "Two Universities."
+        },
+        {
+          "id": "tech:mass-production",
+          "note": "A Lumber Mill on Woods; Shipyards."
+        },
+        {
+          "id": "tech:industrialization",
+          "note": "Two Workshops; the Electronics Factory."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:feudalism",
+          "note": "Six Farms; Serfdom for the Builders."
+        },
+        {
+          "id": "civic:civil-service",
+          "note": "The capital at ten population; Meritocracy is Culture per district, and this empire is districts."
+        },
+        {
+          "id": "civic:guilds",
+          "note": "Two Markets; Craftsmen."
+        },
+        {
+          "id": "civic:divine-right",
+          "note": "Two Temples; Monarchy, or stay in Classical Republic for the Great People."
+        },
+        {
+          "id": "civic:medieval-faires",
+          "note": "Four Trade Routes from the Harbors."
+        },
+        {
+          "id": "civic:humanism",
+          "note": "A Great Artist from the Theater Squares; Art Museums."
+        },
+        {
+          "id": "civic:diplomatic-service",
+          "note": "A Cultural Alliance; Tourism between allies."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Meritocracy",
+          "slot": "economic",
+          "from": "civic:civil-service",
+          "why": "One Culture per specialty district per city; four districts in eight cities is thirty-two Culture."
+        },
+        {
+          "card": "Serfdom",
+          "slot": "economic",
+          "from": "civic:feudalism",
+          "why": "Builders with extra charges for the Mines and the appeal improvements."
+        },
+        {
+          "card": "Craftsmen",
+          "slot": "economic",
+          "from": "civic:guilds",
+          "why": "Doubles Industrial Zone adjacency in the two cities that will hold Electronics Factories."
+        },
+        {
+          "card": "Frescoes",
+          "slot": "wildcard",
+          "from": "civic:humanism",
+          "why": "Great Artist points from every Theater Square."
+        }
+      ],
+      "districts": [
+        {
+          "district": "industrial-zone",
+          "city": "the two cities at the ends of the chain",
+          "note": "Each covers four or five cities with the Electronics Factory."
+        },
+        {
+          "district": "commercial-hub",
+          "city": "inland cities",
+          "note": "Fourth district where there is no Harbor; Markets for Guilds."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Kotoku-in",
+          "why": "Faith in the Holy Site city and four Warrior Monks; it must touch a Holy Site and every city has one touching the center.",
+          "skip_if": "Divine Right lands after turn 130, or the wonder tile would take a pinned district tile."
+        },
+        {
+          "name": "Forbidden City",
+          "why": "A wildcard slot for Frescoes or Literary Tradition on top of the government's.",
+          "skip_if": "Printing lands after turn 150 or China is on the map."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Grants",
+          "city": "capital",
+          "why": "Great Person points doubled in the city with the most districts."
+        },
+        {
+          "governor": "liang",
+          "promotion": "Zoning Commissioner",
+          "city": "the newest city",
+          "why": "District Production where the cluster is least built."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "kumasi",
+          "why": "Culture and Gold on Trade Routes per district in the origin city; four-district cities make that route the best in the game."
+        },
+        {
+          "slug": "ayutthaya",
+          "why": "Culture from every building finished, and this empire finishes a building every turn."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-artist",
+          "why": "Three Art Museums with themed sets; bought with Faith when the points are short."
+        },
+        {
+          "class": "great-writer",
+          "why": "Every one that appears; the Amphitheaters hold two each."
+        },
+        {
+          "class": "great-engineer",
+          "why": "Wonder charges for Kotoku-in and the Forbidden City."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 115,
+          "test": "Two Universities, two Temples, Meritocracy slotted and the two Industrial Zones placed where they cover every city?",
+          "pass": "Continue; Art Museums and the first Great Artist.",
+          "fail": "An Industrial Zone that leaves a city uncovered: move the second one before it is built, not after. No Great Artist in sight: Frescoes and Faith-buy the first one."
+        },
+        {
+          "turn": 150,
+          "test": "Eight cities or every grid site filled, four Samurai on the coast, Electronics Factory under construction, and Culture top two?",
+          "pass": "Enter the live phase; the empire is finished and the rest is Tourism.",
+          "fail": "Culture below third: Great Works are missing, not districts; buy Great Writers with Faith and fill the Amphitheaters before any more buildings."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "peak-universities",
+          "turn": 100,
+          "text": "Two Universities built; Printing collected."
+        },
+        {
+          "id": "peak-samurai",
+          "turn": 120,
+          "text": "Four Samurai built and parked on coastal tiles beside the border cities."
+        },
+        {
+          "id": "peak-industrial-zones",
+          "turn": 135,
+          "text": "Both Industrial Zones placed with Workshops; check that every city is within six tiles of one."
+        },
+        {
+          "id": "peak-art-museums",
+          "turn": 150,
+          "text": "Art Museums in the three largest Theater Squares; first Great Artist earned or bought."
+        }
+      ]
+    },
+    {
+      "id": "live",
+      "name": "Live inside the ceiling",
+      "turns": {
+        "from": 151,
+        "to": 220
+      },
+      "era": "industrial",
+      "objective": "Convert Culture to Tourism: Electronics Factories powered, Archaeological Museums with Artifacts, themed Art Museums, Seaside Resorts on the coast the grid followed, and a National Park where the appeal allows. The spacing now caps population, so Housing is bought where Neighborhoods will not fit.",
+      "build_order": [
+        {
+          "item": "Electronics Factory",
+          "why": "In both Industrial Zones; Culture to every city once Electricity is in."
+        },
+        {
+          "item": "Archaeological Museum",
+          "why": "Two cities; Archaeologists for Artifacts and the Combustion Eureka."
+        },
+        {
+          "item": "Bank",
+          "why": "Two for Economics; Gold buys Great People and Seaside Resort tiles."
+        },
+        {
+          "item": "Power Plant",
+          "why": "Coal then Oil; the Factories need Power and so does Tourism from the Broadcast Centers."
+        },
+        {
+          "item": "Neighborhood",
+          "why": "Two for Sanitation where a tile is free; Housing is the spacing's bill."
+        },
+        {
+          "item": "Broadcast Center",
+          "why": "Every Theater Square; Great Musicians and the Satellites Eureka."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:banking",
+          "note": "Free from Guilds."
+        },
+        {
+          "id": "tech:scientific-theory",
+          "note": "Free from The Enlightenment."
+        },
+        {
+          "id": "tech:electricity",
+          "note": "Two Privateers from the Harbors; it switches the Electronics Factory Culture on."
+        },
+        {
+          "id": "tech:economics",
+          "note": "Two Banks."
+        },
+        {
+          "id": "tech:sanitation",
+          "note": "Two Neighborhoods."
+        },
+        {
+          "id": "tech:combustion",
+          "note": "An Artifact from the first Archaeologist."
+        },
+        {
+          "id": "tech:radio",
+          "note": "A National Park if the appeal exists; Mass Media is free with it."
+        },
+        {
+          "id": "tech:flight",
+          "note": "Owning Kotoku-in or any later wonder gives it; Flight is Tourism from wonders."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:the-enlightenment",
+          "note": "Three Great People is long done; Rationalism and Free Market."
+        },
+        {
+          "id": "civic:civil-engineering",
+          "note": "Free from seven district types."
+        },
+        {
+          "id": "civic:opera-and-ballet",
+          "note": "An Art Museum; Grand Opera."
+        },
+        {
+          "id": "civic:natural-history",
+          "note": "An Archaeological Museum; Archaeologists."
+        },
+        {
+          "id": "civic:urbanization",
+          "note": "The capital at fifteen population; Neighborhoods."
+        },
+        {
+          "id": "civic:conservation",
+          "note": "A Neighborhood on a Breathtaking tile; National Parks and Eco-Tourism later."
+        },
+        {
+          "id": "civic:mass-media",
+          "note": "Free from Radio; Cristo Redentor."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Grand Opera",
+          "slot": "economic",
+          "from": "civic:opera-and-ballet",
+          "why": "Doubles the Culture of Theater Square buildings in every cluster."
+        },
+        {
+          "card": "Rationalism",
+          "slot": "economic",
+          "from": "civic:the-enlightenment",
+          "why": "Science from Campus buildings; the clusters meet the adjacency test everywhere."
+        },
+        {
+          "card": "Free Market",
+          "slot": "economic",
+          "from": "civic:the-enlightenment",
+          "why": "Gold from Commercial Hub and Harbor buildings to buy Great People."
+        }
+      ],
+      "districts": [
+        {
+          "district": "neighborhood",
+          "city": "the two cities with a free Breathtaking tile",
+          "note": "Sanitation and Conservation in one build."
+        },
+        {
+          "district": "entertainment-complex",
+          "city": "the central city",
+          "note": "Amenities to every city within six tiles; the Colosseum if it was not built earlier."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Bolshoi Theatre",
+          "why": "Two free civics and Great Writer and Musician slots in a Theater Square city.",
+          "skip_if": "Opera and Ballet lands after turn 200 or Russia is on the map."
+        },
+        {
+          "name": "Hermitage",
+          "why": "Four Great Artist slots in one building; the themed museums overflow.",
+          "skip_if": "Natural History is later than turn 205 or no Theater Square city has the Production."
+        },
+        {
+          "name": "Eiffel Tower",
+          "why": "Two appeal on every tile in the empire; every Seaside Resort and National Park pays more.",
+          "skip_if": "Steel lands after turn 230 or France is ahead on the Industrial techs."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Curator",
+          "city": "capital",
+          "why": "Doubles Tourism from Great Works in the city holding most of them."
+        },
+        {
+          "governor": "reyna",
+          "promotion": "Forestry Management",
+          "city": "the National Park city",
+          "why": "Appeal and Gold on the tiles the Park and the Resorts need."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "antananarivo",
+          "why": "Culture per Great Person ever earned, and this empire earns one every few turns."
+        },
+        {
+          "slug": "cardiff",
+          "why": "Power from Harbor buildings for the Factories without a second Coal plant."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-musician",
+          "why": "Broadcast Centers hold them; three Great Works of Music is a themed Tourism source nobody else gets."
+        },
+        {
+          "class": "great-artist",
+          "why": "Every one until the Hermitage is full."
+        },
+        {
+          "class": "great-merchant",
+          "why": "The ones that give Amenities or Tourism; the spacing makes Amenities tight."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 185,
+          "test": "Both Electronics Factories powered and Electricity in, two Archaeological Museums digging, and Tourism leading against at least half the civilizations?",
+          "pass": "Continue to the close.",
+          "fail": "Tourism behind: open borders and Trade Routes with the civ that is furthest behind on your Tourism, then Seaside Resorts on every coastal tile of appeal four or more."
+        },
+        {
+          "turn": 220,
+          "test": "Three themed museums, Grand Opera slotted, Seaside Resorts on the coast, and Culture first?",
+          "pass": "Enter the close.",
+          "fail": "Great Works unthemed: trade Great Works with civs that are behind on Culture to complete sets before anything else is built."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "live-factories",
+          "turn": 165,
+          "text": "Electronics Factories in both Industrial Zones, Coal Power Plant beside one; Electricity researched the same decade."
+        },
+        {
+          "id": "live-archaeologists",
+          "turn": 190,
+          "text": "Two Archaeological Museums with Archaeologists out; Combustion collected on the first Artifact."
+        },
+        {
+          "id": "live-resorts",
+          "turn": 210,
+          "text": "Seaside Resorts on every coastal tile with appeal of four or more, starting beside the capital."
+        }
+      ]
+    },
+    {
+      "id": "close",
+      "name": "Close",
+      "turns": {
+        "from": 221,
+        "to": null
+      },
+      "era": "modern",
+      "objective": "Finish Culture: Rock Bands from the Faith the Holy Sites banked, Computers and Social Media for the Tourism multipliers, Cristo Redentor if the Faith is there, and open borders with everyone. Four Samurai become four Infantry and nothing else is built for war.",
+      "build_order": [
+        {
+          "item": "Rock Band",
+          "why": "Bought with Faith in the Holy Site cities; sent at the civ with the most domestic Tourists."
+        },
+        {
+          "item": "Broadcast Center",
+          "why": "Any Theater Square that lacks one; Satellites at two."
+        },
+        {
+          "item": "Stock Exchange",
+          "why": "Two for Capitalism; Gold for Rock Bands when Faith runs short."
+        },
+        {
+          "item": "Research Lab",
+          "why": "Keep Science close enough that Computers arrives before turn 260."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:computers",
+          "note": "Free from the Tier 3 government; Tourism up by a quarter the turn it lands."
+        },
+        {
+          "id": "tech:satellites",
+          "note": "Two Broadcast Centers."
+        },
+        {
+          "id": "tech:plastics",
+          "note": "An Oil Well; Power for the Factories when Coal runs out."
+        },
+        {
+          "id": "tech:chemistry",
+          "note": "Alliance level 2 with the Cultural ally; Research Labs."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:cultural-heritage",
+          "note": "Free from the first themed museum; Heritage Tourism."
+        },
+        {
+          "id": "civic:social-media",
+          "note": "Free from Telecommunications; Online Communities."
+        },
+        {
+          "id": "civic:capitalism",
+          "note": "Two Stock Exchanges."
+        },
+        {
+          "id": "civic:distributed-sovereignty",
+          "note": "The first Rock Band."
+        },
+        {
+          "id": "civic:professional-sports",
+          "note": "Two Entertainment Complexes; Stadiums for Amenities."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Heritage Tourism",
+          "slot": "economic",
+          "from": "civic:cultural-heritage",
+          "why": "Doubles Tourism from Great Works, which is most of this empire's Tourism."
+        },
+        {
+          "card": "Online Communities",
+          "slot": "diplomatic",
+          "from": "civic:social-media",
+          "why": "Half again as much Tourism toward every civ you trade with."
+        },
+        {
+          "card": "Satellite Broadcasts",
+          "slot": "economic",
+          "from": "civic:space-race",
+          "why": "Tourism from Great Works of Music tripled; the Broadcast Centers are full of them."
+        }
+      ],
+      "districts": [],
+      "wonders": [
+        {
+          "name": "Cristo Redentor",
+          "why": "Tourism from Seaside Resorts doubled and no Ideology penalty; the coast was settled for this.",
+          "skip_if": "Mass Media lands after turn 250 or Brazil is on the map."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "amani",
+          "promotion": "Emissary",
+          "city": "the city nearest the civ furthest behind on your Tourism",
+          "why": "Open borders and an envoy where the last Tourists are."
+        }
+      ],
+      "city_states": [],
+      "great_people": [
+        {
+          "class": "great-musician",
+          "why": "Every one until the end; each is three Tourism sources."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 260,
+          "test": "Tourists ahead of every civ's domestic Tourists but one, Computers in, Heritage Tourism and Online Communities slotted?",
+          "pass": "Rock Bands at the last civ until it falls; no further decisions.",
+          "fail": "One civ with a large domestic count: every Rock Band and every open-borders deal goes at that civ alone; trade Great Works for theirs to raise Tourism toward them."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "close-rock-bands",
+          "turn": 235,
+          "text": "First two Rock Bands bought with Faith and sent at the civ with the most domestic Tourists."
+        },
+        {
+          "id": "close-open-borders",
+          "turn": 240,
+          "text": "Open borders and a Trade Route with every civ still ahead on domestic Tourists."
+        },
+        {
+          "id": "close-garrison",
+          "turn": 250,
+          "text": "Samurai upgraded to Infantry on the coast; nothing else built for war."
+        }
+      ]
+    }
+  ],
+  "boosts": [
+    {
+      "id": "tech:sailing",
+      "fit": "free",
+      "when": "assess",
+      "how": "The coastal capital triggers it on settle."
+    },
+    {
+      "id": "tech:writing",
+      "fit": "free",
+      "when": "assess",
+      "how": "The Scout meets the first civilization along the coast."
+    },
+    {
+      "id": "tech:astrology",
+      "fit": "costly",
+      "when": "assess",
+      "how": "Only if the Scout finds a natural wonder; the tech is researched first regardless."
+    },
+    {
+      "id": "tech:archery",
+      "fit": "costly",
+      "when": "assess",
+      "how": "No Slinger is built; researched unboosted when needed."
+    },
+    {
+      "id": "tech:bronze-working",
+      "fit": "cheap",
+      "when": "assess",
+      "how": "Three camp kills by the two Warriors on coastal tiles."
+    },
+    {
+      "id": "tech:masonry",
+      "fit": "cheap",
+      "when": "cluster",
+      "how": "A Quarry on Stone if one is near a cluster."
+    },
+    {
+      "id": "tech:wheel",
+      "fit": "cheap",
+      "when": "cluster",
+      "how": "A Mine on a resource hill from the first Builder."
+    },
+    {
+      "id": "tech:irrigation",
+      "fit": "cheap",
+      "when": "cluster",
+      "how": "A Farm on a resource near the capital."
+    },
+    {
+      "id": "tech:horseback-riding",
+      "fit": "costly",
+      "when": "cluster",
+      "how": "A Pasture only if Horses or Sheep sit inside a cluster."
+    },
+    {
+      "id": "tech:iron-working",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:celestial-navigation",
+      "fit": "free",
+      "when": "cluster",
+      "how": "Two Fishing Boats from the first Builder."
+    },
+    {
+      "id": "tech:currency",
+      "fit": "cheap",
+      "when": "cluster",
+      "how": "The first Trader between the capital and city two."
+    },
+    {
+      "id": "tech:mathematics",
+      "fit": "free",
+      "when": "cluster",
+      "how": "Holy Site, Theater Square and Campus in the capital by turn 40."
+    },
+    {
+      "id": "tech:construction",
+      "fit": "cheap",
+      "when": "cluster",
+      "how": "A Water Mill in the river city."
+    },
+    {
+      "id": "tech:engineering",
+      "fit": "cheap",
+      "when": "cluster",
+      "how": "Ancient Walls in the capital."
+    },
+    {
+      "id": "tech:shipbuilding",
+      "fit": "costly",
+      "when": "cluster",
+      "how": "Two Galleys only if a coastal camp needs clearing."
+    },
+    {
+      "id": "tech:apprenticeship",
+      "fit": "cheap",
+      "when": "cluster",
+      "how": "Three Mines across the first three cities."
+    },
+    {
+      "id": "tech:machinery",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:military-tactics",
+      "fit": "costly",
+      "when": "peak",
+      "how": "A Spearman kill, which this plan rarely has a Spearman for."
+    },
+    {
+      "id": "tech:education",
+      "fit": "cheap",
+      "when": "peak",
+      "how": "The first Great Scientist from the high-adjacency Campuses."
+    },
+    {
+      "id": "tech:military-engineering",
+      "fit": "cheap",
+      "when": "peak",
+      "how": "The capital Aqueduct for Housing."
+    },
+    {
+      "id": "tech:castles",
+      "fit": "free",
+      "when": "peak",
+      "how": "Any Tier 2 government."
+    },
+    {
+      "id": "tech:stirrups",
+      "fit": "free",
+      "when": "peak",
+      "how": "Feudalism is on the civic path."
+    },
+    {
+      "id": "tech:buttress",
+      "fit": "cheap",
+      "when": "peak",
+      "how": "Apadana or the Colosseum completes."
+    },
+    {
+      "id": "tech:cartography",
+      "fit": "free",
+      "when": "peak",
+      "how": "Two Harbors as fourth districts."
+    },
+    {
+      "id": "tech:printing",
+      "fit": "cheap",
+      "when": "peak",
+      "how": "Build Universities in two Campus cities."
+    },
+    {
+      "id": "tech:mass-production",
+      "fit": "cheap",
+      "when": "peak",
+      "how": "A Lumber Mill on Woods near a cluster."
+    },
+    {
+      "id": "tech:banking",
+      "fit": "free",
+      "when": "live",
+      "how": "Guilds is on the civic path."
+    },
+    {
+      "id": "tech:gunpowder",
+      "fit": "cheap",
+      "when": "peak",
+      "how": "An Armory in the half-price Encampment if one is built for the Samurai."
+    },
+    {
+      "id": "tech:astronomy",
+      "fit": "costly",
+      "when": "peak",
+      "how": "A University beside a Mountain only where a cluster happens to touch one."
+    },
+    {
+      "id": "tech:industrialization",
+      "fit": "cheap",
+      "when": "peak",
+      "how": "Two Workshops in the chain-end Industrial Zones."
+    },
+    {
+      "id": "tech:metal-casting",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:siege-tactics",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:square-rigging",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:scientific-theory",
+      "fit": "free",
+      "when": "live",
+      "how": "The Enlightenment is on the civic path."
+    },
+    {
+      "id": "tech:electricity",
+      "fit": "cheap",
+      "when": "live",
+      "how": "Two Privateers from the Harbors; they also guard the coast."
+    },
+    {
+      "id": "tech:economics",
+      "fit": "cheap",
+      "when": "live",
+      "how": "Two Banks in the Commercial Hubs."
+    },
+    {
+      "id": "tech:sanitation",
+      "fit": "cheap",
+      "when": "live",
+      "how": "Two Neighborhoods where a tile is free."
+    },
+    {
+      "id": "tech:steam-power",
+      "fit": "cheap",
+      "when": "live",
+      "how": "Two Shipyards in the Harbor cities."
+    },
+    {
+      "id": "tech:combustion",
+      "fit": "cheap",
+      "when": "live",
+      "how": "The first Artifact dug by an Archaeologist."
+    },
+    {
+      "id": "tech:radio",
+      "fit": "costly",
+      "when": "live",
+      "how": "A National Park if four Breathtaking tiles sit in a diamond; otherwise unboosted."
+    },
+    {
+      "id": "tech:flight",
+      "fit": "cheap",
+      "when": "live",
+      "how": "Owning Kotoku-in, Forbidden City or any later wonder."
+    },
+    {
+      "id": "tech:chemistry",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Alliance level 2 with the Cultural ally."
+    },
+    {
+      "id": "tech:rifling",
+      "fit": "costly",
+      "when": "live",
+      "how": "A Mine on Niter only if one is inside a cluster."
+    },
+    {
+      "id": "tech:refining",
+      "fit": "cheap",
+      "when": "live",
+      "how": "The first Coal Power Plant."
+    },
+    {
+      "id": "tech:plastics",
+      "fit": "cheap",
+      "when": "close",
+      "how": "An Oil Well on the nearest Oil."
+    },
+    {
+      "id": "tech:computers",
+      "fit": "free",
+      "when": "close",
+      "how": "Any Tier 3 government."
+    },
+    {
+      "id": "tech:satellites",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Broadcast Centers in the Theater Squares."
+    },
+    {
+      "id": "tech:robotics",
+      "fit": "costly",
+      "when": "close",
+      "how": "Globalization only if two Airports are worth building; usually unboosted."
+    },
+    {
+      "id": "civic:craftsmanship",
+      "fit": "free",
+      "when": "assess",
+      "how": "Three improvements from the first Builder."
+    },
+    {
+      "id": "civic:foreign-trade",
+      "fit": "cheap",
+      "when": "assess",
+      "how": "The Scout or a Galley sights a second continent along the coast."
+    },
+    {
+      "id": "civic:military-tradition",
+      "fit": "cheap",
+      "when": "assess",
+      "how": "The first coastal camp cleared by the Warriors."
+    },
+    {
+      "id": "civic:state-workforce",
+      "fit": "free",
+      "when": "cluster",
+      "how": "The capital Holy Site, the first district."
+    },
+    {
+      "id": "civic:early-empire",
+      "fit": "free",
+      "when": "cluster",
+      "how": "Six population across the first three cities."
+    },
+    {
+      "id": "civic:mysticism",
+      "fit": "free",
+      "when": "cluster",
+      "how": "The pantheon founded by turn 20."
+    },
+    {
+      "id": "civic:political-philosophy",
+      "fit": "cheap",
+      "when": "cluster",
+      "how": "Three city-states met by the Scout along the coast."
+    },
+    {
+      "id": "civic:drama-and-poetry",
+      "fit": "cheap",
+      "when": "cluster",
+      "how": "Apadana or the Colosseum."
+    },
+    {
+      "id": "civic:games-and-recreation",
+      "fit": "free",
+      "when": "cluster",
+      "how": "Researching Construction."
+    },
+    {
+      "id": "civic:recorded-history",
+      "fit": "free",
+      "when": "cluster",
+      "how": "Two Campuses as third districts."
+    },
+    {
+      "id": "civic:theology",
+      "fit": "cheap",
+      "when": "cluster",
+      "how": "Founding the religion from two cheap Holy Sites."
+    },
+    {
+      "id": "civic:military-training",
+      "fit": "cheap",
+      "when": "peak",
+      "how": "One half-price Encampment for the Samurai."
+    },
+    {
+      "id": "civic:defensive-tactics",
+      "fit": "costly",
+      "when": "cluster",
+      "how": "Only if a neighbour declares on you."
+    },
+    {
+      "id": "civic:feudalism",
+      "fit": "cheap",
+      "when": "peak",
+      "how": "Six Farms across the clusters."
+    },
+    {
+      "id": "civic:civil-service",
+      "fit": "cheap",
+      "when": "peak",
+      "how": "The capital at ten population."
+    },
+    {
+      "id": "civic:guilds",
+      "fit": "cheap",
+      "when": "peak",
+      "how": "Build Markets in two Commercial Hub cities."
+    },
+    {
+      "id": "civic:divine-right",
+      "fit": "cheap",
+      "when": "peak",
+      "how": "Two Temples in the Holy Sites."
+    },
+    {
+      "id": "civic:medieval-faires",
+      "fit": "cheap",
+      "when": "peak",
+      "how": "Four Trade Routes from the Harbors and Commercial Hubs."
+    },
+    {
+      "id": "civic:mercenaries",
+      "fit": "costly",
+      "when": "peak",
+      "how": "Eight land units is twice the army this plan keeps."
+    },
+    {
+      "id": "civic:naval-tradition",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:humanism",
+      "fit": "free",
+      "when": "peak",
+      "how": "The first Great Artist from the Theater Squares."
+    },
+    {
+      "id": "civic:diplomatic-service",
+      "fit": "cheap",
+      "when": "peak",
+      "how": "A Cultural Alliance with the nearest friendly civ."
+    },
+    {
+      "id": "civic:exploration",
+      "fit": "costly",
+      "when": "peak",
+      "how": "Two Caravels only if the Harbors have nothing better to build."
+    },
+    {
+      "id": "civic:reformed-church",
+      "fit": "costly",
+      "when": "peak",
+      "how": "Six cities following the religion happens if it spreads on its own; never chased."
+    },
+    {
+      "id": "civic:mercantilism",
+      "fit": "cheap",
+      "when": "live",
+      "how": "The first Great Merchant from the Commercial Hubs."
+    },
+    {
+      "id": "civic:the-enlightenment",
+      "fit": "free",
+      "when": "live",
+      "how": "Three Great People by the Medieval era."
+    },
+    {
+      "id": "civic:civil-engineering",
+      "fit": "free",
+      "when": "live",
+      "how": "Seven district types by turn 160."
+    },
+    {
+      "id": "civic:opera-and-ballet",
+      "fit": "cheap",
+      "when": "live",
+      "how": "The first Art Museum."
+    },
+    {
+      "id": "civic:natural-history",
+      "fit": "cheap",
+      "when": "live",
+      "how": "The first Archaeological Museum."
+    },
+    {
+      "id": "civic:urbanization",
+      "fit": "cheap",
+      "when": "live",
+      "how": "The capital at fifteen population with Sewers and the Aqueduct."
+    },
+    {
+      "id": "civic:conservation",
+      "fit": "cheap",
+      "when": "live",
+      "how": "A Neighborhood on a Breathtaking coastal or woods tile."
+    },
+    {
+      "id": "civic:mass-media",
+      "fit": "free",
+      "when": "live",
+      "how": "Research Radio first; the Inspiration follows at no extra cost."
+    },
+    {
+      "id": "civic:colonialism",
+      "fit": "costly",
+      "when": "live",
+      "how": "Astronomy is off the main path; usually unboosted."
+    },
+    {
+      "id": "civic:nationalism",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:capitalism",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Stock Exchanges."
+    },
+    {
+      "id": "civic:class-struggle",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Three Factories, two of them Electronics Factories."
+    },
+    {
+      "id": "civic:cultural-heritage",
+      "fit": "free",
+      "when": "close",
+      "how": "The first themed Art Museum."
+    },
+    {
+      "id": "civic:social-media",
+      "fit": "free",
+      "when": "close",
+      "how": "Researching Telecommunications."
+    },
+    {
+      "id": "civic:professional-sports",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Entertainment Complexes."
+    },
+    {
+      "id": "civic:distributed-sovereignty",
+      "fit": "cheap",
+      "when": "close",
+      "how": "The first Rock Band bought with Faith."
+    },
+    {
+      "id": "civic:space-race",
+      "fit": "costly",
+      "when": "close",
+      "how": "A Spaceport only if Science is close enough that the fallback is live."
+    }
+  ],
+  "decision_triggers": [
+    {
+      "name": "A site does not fit the grid",
+      "if": "The next planned city would have to sit four or more tiles from its neighbours to find flat land.",
+      "then": "Skip the site and take the next one on the grid, even if it is worse land. A city off the grid loses the shared adjacency and the Electronics Factory coverage for the rest of the game; a worse tile loses two Food."
+    },
+    {
+      "name": "A neighbour lands on the coast",
+      "if": "A rival army disembarks beside any coastal city.",
+      "then": "Do not build Walls. Move the Samurai onto coastal tiles between the landing and the city; Divine Wind gives them five Strength and the city's own ranged attack finishes what they wound."
+    },
+    {
+      "name": "Culture outruns Science",
+      "if": "At turn 150 the civics tree is two eras ahead of the techs.",
+      "then": "Normal for this plan. Slot Rationalism and Natural Philosophy, put Pingala on Researcher for twenty turns, and keep Culture first; do not add Campuses that break a cluster."
+    },
+    {
+      "name": "The weak coastal city",
+      "if": "Around turn 120 a neighbour's coastal city within six tiles of your border has no Walls and two or fewer defenders.",
+      "then": "Take it with the four Samurai and keep it as a ninth city; pin its cluster the turn it is captured. One city only; the plan does not become a war."
+    }
+  ],
+  "abort": {
+    "trigger": "Turn 80 with fewer than four cities on the grid, or three or more clusters built out of order so that the Campuses and Theater Squares sit at +1 adjacency.",
+    "actions": [
+      "Stop founding cities off the grid; what exists is the empire, and the plan says so.",
+      "Play a generic Culture game from wonders and Great Works: Apadana, Kilwa, the Forbidden City and the Hermitage in the capital, Faith-bought Great Artists.",
+      "Keep the four Samurai and consider the weak-coastal-city trigger to add a city the clusters could not."
+    ]
+  },
+  "fail_state": "Turn 150 with cities four and five tiles apart, Theater Squares placed first where they touch nothing, two Industrial Zones that cover half the empire, and Culture in the middle of the table. The spacing decisions that caused it were made before turn 40 and no district can be moved.",
+  "common_mistakes": [
+    "Placing the Campus first because it is the strongest district. It is placed third, once two cheap districts border its tile; placed first it has no neighbours and never gets them back.",
+    "Spreading cities to four tiles for better land. The adjacency and the Electronics Factory radius are the kit; the land is not.",
+    "Letting a wonder take a pinned district tile. Wonders go in the second ring; pins are districts.",
+    "Building Walls in every city because a neighbour looks aggressive. Divine Wind and four Samurai on the coast are the defence; Walls are Production taken from a Theater Square.",
+    "Treating Faith as a religion resource. The cheap Holy Sites exist to buy Great Writers, Artists, Musicians and Rock Bands; Apostles are not in this plan."
+  ],
+  "sources": [
+    "Civilization VI Civilopedia, Gathering Storm ruleset (Japan, Hojo Tokimune, Samurai, Electronics Factory, Divine Wind, Meiji Restoration).",
+    "The civ-info text describes the Samurai as a Man-At-Arms replacement; in Gathering Storm it unlocks at Military Tactics with no Iron requirement, and the plan uses that. The Electronics Factory's Culture to cities within six tiles requires Electricity to be researched.",
+    "Boost objectives cross-checked against civilization6planner.com tech-tree and civics-tree pages, 2026-10-01.",
+    "Leadership Focus tags, caveats and Front-Load template for Hojo Tokimune in this repository."
+  ]
+}

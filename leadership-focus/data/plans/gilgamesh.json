@@ -1,0 +1,472 @@
+{
+  "slug": "gilgamesh",
+  "shape": "Countdown",
+  "secondary_shape": null,
+  "version": 1,
+  "updated": "2026-10-01",
+  "assumptions": {
+    "ruleset": "Gathering Storm with every expansion and the Leader Pass",
+    "speed": "Standard",
+    "difficulty": "Emperor",
+    "map": "Continents or Pangaea, standard size, 8 civilizations",
+    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. Gilgamesh's single persona is planned here. The War-Cart is treated as the game has it: a heavy cavalry unit with no resource requirement, not a ranged unit."
+  },
+  "verdict": {
+    "victory": "Domination",
+    "secondary": "Science",
+    "confidence": "high",
+    "one_line": "Four War-Carts leave the capital before turn 25 and take the nearest capital before it has Walls. Everything after turn 80 is a wide Science empire built on the cities they took and the Ziggurats laid behind them.",
+    "why": "The War-Cart is a 30 Strength unit with 3 Movement that needs no Horses, no Iron and no technology, against neighbours who field 20 Strength Warriors and 15 Strength Slingers until roughly turn 60 on Emperor. That gap is the whole leader, and it closes the turn the target finishes Ancient Walls, because heavy cavalry cannot use a Battering Ram in Gathering Storm. Captured cities are permanent; the units are not. The Ziggurat is a flat-tile Science improvement that costs no district, and Epic Quest pays a tribal village per camp and halves city-state levies, so the digest phase has Science and allies to grow into, which is why the secondary is Science and not Culture."
+  },
+  "map_check": {
+    "must_have": [
+      "A rival capital reachable by land within roughly 12 tiles of your capital, found by turn 10.",
+      "Flat ground on the approach; War-Carts lose two thirds of their tempo in Hills and Woods."
+    ],
+    "prefer": [
+      "A river beside the capital for Ziggurat Culture and Hammurabi-style growth.",
+      "Two or three Barbarian camps within reach, each worth a tribal village reward under Epic Quest.",
+      "A Militaristic city-state near the target whose units can be levied at half cost for the siege."
+    ],
+    "no_go": "An island or peninsula start with no land neighbour, or a neighbour behind a mountain range with a single Hills pass. The War-Cart window cannot be reached in time and the plan has no naval version.",
+    "fallback": "If no capital is within reach by turn 12, settle two cities on rivers, lay Ziggurats, and play Sumeria as a Science civilization with alliances: Adventures of Enkidu still lets you join an ally's war without penalty later, and Epic Quest still pays for every camp. The convert deadline then applies to a city-state or a second-ring neighbour instead."
+  },
+  "kit_levers": [
+    { "source": "leader_ability", "name": "Adventures of Enkidu", "buys": "No warmonger penalty for joining a war an Ally is already in, and shared pillage rewards and experience with allied units within 5 tiles.", "exploit": "The first war is yours and is paid for in grievances. Every later war should be joined, not started: form a Military or Research Alliance in the digest phase, wait for the ally to be attacked or to attack, and pile on at no grievance cost. That is how a Domination game continues after turn 150 without a coalition forming." },
+    { "source": "civ_ability", "name": "Epic Quest", "buys": "A tribal village reward for every Barbarian outpost captured, and city-state levies at half the Gold cost.", "exploit": "Camps are the economy of the arming phase: route the first two War-Carts through every camp between you and the target and bank the rewards (a free Builder, Faith or a Eureka). From the window onward, a Militaristic city-state next to the target is a half-price army you levy for ten turns instead of building." },
+    { "source": "unique_unit", "name": "War-Cart", "buys": "A 30 Strength, 3 Movement heavy cavalry unit available from turn 1 with no Horses, no Iron and no technology, and no penalty against anti-cavalry.", "exploit": "Build four before anything but a Warrior and a Settler, and march them on the nearest capital before it has Walls. They cannot use a Battering Ram, so the siege is two Warriors with a Ram breaking the Walls while the War-Carts kill everything that steps outside. After turn 80 they garrison the captures until Professional Army upgrades them to Knights." },
+    { "source": "unique_infrastructure", "name": "Ziggurat", "buys": "A flat-tile improvement with +2 Science, +1 Culture beside a river, and more Culture at Natural History, available from the first Builder.", "exploit": "Every captured city arrives with no districts. A Builder with three charges puts three Ziggurats on its river tiles and the city is a Campus-sized Science source the turn it stops rioting. Lay them on tiles you would not farm; the Science catch-up in the digest phase is Ziggurats first, Campuses second." },
+    { "source": "agenda", "name": "Ally of Enkidu", "buys": "Gilgamesh wants alliances and dislikes anyone who attacks his friends.", "exploit": "Irrelevant to your own play except as a reminder that AI leaders read your early war as the opposite of this agenda. Declare Friendship with the civilization on the far side of your target before the war starts; it is the future ally whose wars you join." }
+  ],
+  "shape_block": {
+    "countdown": {
+      "deadline_turn": 80,
+      "midpoint_turn": 50,
+      "target_selection": "On turn 1, pick the direction the start position implies (the longest stretch of flat land) and send the Warrior that way. The target is the nearest rival capital by land, chosen by turn 10 from what the Warrior and the first War-Cart see, and it is not changed afterwards. Prefer a capital on flat ground with no river crossing on your side. If two are equally near, take the one whose owner has not built Ancient Walls yet, which the city banner shows; Walls are what actually close this window, not the turn number.",
+      "what_counts_as_converted": "Cities you hold at turn 80: the target capital and at least one more city of the same owner, each with positive Loyalty and a Monument started. A second Sumerian city settled with the Builder and Settler the camps paid for also counts. War-Cart kills, pillage Gold, tribal village rewards and a large surviving army do not count; an eight-unit army at turn 80 with no city taken is the fail state, not a result.",
+      "after_window": "At turn 80 the plan stops conquering whether or not the second city fell. War-Carts garrison the captures and wait for Professional Army before upgrading to Knights. Production turns to Monuments, Granaries and Builders for Ziggurats in every captured city, then Campuses. The empire is wide and behind in infrastructure, and the rest of the game is a Science civilization with alliances; any later war is one an ally has already started."
+    }
+  },
+  "phases": [
+    {
+      "id": "arm",
+      "name": "Arm",
+      "turns": { "from": 1, "to": 25 },
+      "era": "ancient",
+      "objective": "Pick the target on turn 1, clear the camps on the way to it for Epic Quest rewards, found the pantheon, and have four War-Carts and two Warriors within five tiles of the target capital by turn 25 while it still has no Walls.",
+      "build_order": [
+        { "item": "Warrior", "why": "Scouts toward the target and is the first half of the Battering Ram crew later; a Scout sees more but cannot clear a camp." },
+        { "item": "War-Cart", "why": "The first one clears the nearest camp for a tribal village reward and Military Tradition, and confirms the target." },
+        { "item": "War-Cart", "why": "Two War-Carts take a camp in one turn and kill three Barbarians for Bronze Working between them." },
+        { "item": "Settler", "why": "The second city goes toward the target as the forward base the siege heals in; it is the only Settler before the window." },
+        { "item": "War-Cart", "why": "Third War-Cart; Maneuver should be slotted by now so it costs two thirds." },
+        { "item": "War-Cart", "why": "Four is the number that takes a Walls-free capital in three turns; five is a Monument not built." },
+        { "item": "Warrior", "why": "The second half of the Ram crew. Heavy cavalry cannot use a Battering Ram in Gathering Storm." },
+        { "item": "Builder", "why": "Only if a camp did not pay one: three Ziggurats on river flats and the Craftsmanship Inspiration." }
+      ],
+      "research": [
+        { "id": "tech:mining", "note": "First, for the Builder's Mine and because Bronze Working hangs off it." },
+        { "id": "tech:bronze-working", "note": "Eureka from the three Barbarian kills the War-Carts make at the first camp; reveals Iron and opens the Encampment later." },
+        { "id": "tech:animal-husbandry", "note": "Cheap, and a Pasture on any Horses or Sheep gives Horseback Riding for free later." },
+        { "id": "tech:archery", "note": "Eureka if a Slinger gets a kill; otherwise research it unboosted for the Archers that defend the forward city." },
+        { "id": "tech:masonry", "note": "Battering Ram for the Warriors and the Walls you will need at home afterwards; Eureka from a Quarry if Stone is nearby." }
+      ],
+      "civics": [
+        { "id": "civic:code-of-laws", "note": "Discipline for the camp fights and Urban Planning for the capital." },
+        { "id": "civic:military-tradition", "note": "Maneuver halves the time to a War-Cart; the Inspiration is free from the first camp cleared." },
+        { "id": "civic:craftsmanship", "note": "Three improved tiles give the Inspiration; Ilkum is not needed yet, but Agoge is on the way to Early Empire." }
+      ],
+      "policies": [
+        { "card": "Discipline", "slot": "military", "from": "civic:code-of-laws", "why": "+5 Strength against Barbarians while the War-Carts clear camps for Epic Quest." },
+        { "card": "Urban Planning", "slot": "economic", "from": "civic:code-of-laws", "why": "+1 Production in the capital, which is building nothing but units." },
+        { "card": "Maneuver", "slot": "military", "from": "civic:military-tradition", "why": "+50% Production toward Ancient and Classical cavalry; the third and fourth War-Carts come out in half the turns." }
+      ],
+      "districts": [],
+      "pantheon": { "slug": "god-of-the-forge", "why": "+25% Production toward Ancient and Classical military units stacks with Maneuver on every War-Cart and on the Warriors for the Ram.", "alternative": "initiation-rites" },
+      "wonders": [],
+      "governors": [],
+      "city_states": [
+        { "type": "Militaristic", "why": "The first envoy goes to any Militaristic city-state met near the target: +2 Production toward units in the capital, and a half-price levy later under Epic Quest." },
+        { "slug": "akkad", "why": "Full damage to Walls from melee attacks turns the Warrior-and-Ram siege into a two-turn job if Akkad is on the map; worth three envoys the moment it is met." }
+      ],
+      "great_people": [],
+      "checkpoints": [
+        { "turn": 25, "test": "Four War-Carts and two Warriors within five tiles of the target capital, and the target city banner shows no Walls?", "pass": "Declare on turn 26 with a Surprise War; the grievances are the price of the window and there is no Casus Belli available this early.", "fail": "If the army is short, finish it before marching; staging after the declaration is spent from the window. If the target already has Walls, swap to its second city or the next nearest capital without Walls, and bring the Ram." }
+      ],
+      "tasks": [
+        { "id": "arm-pick-target", "turn": 1, "text": "Settle in place or one tile toward flat land, then send the Warrior along the open ground; the target is whichever rival capital it finds first within 12 tiles." },
+        { "id": "arm-first-camp", "turn": 12, "text": "Clear the nearest Barbarian camp with two War-Carts; take the Epic Quest reward and the Military Tradition Inspiration." },
+        { "id": "arm-forward-city", "turn": 18, "text": "Settle the second city on a river between the capital and the target; it is where the War-Carts heal." },
+        { "id": "arm-pantheon", "turn": 20, "text": "Found God of the Forge with the first 25 Faith; slot Maneuver the turn Military Tradition completes." },
+        { "id": "arm-stage", "turn": 25, "text": "Move the four War-Carts and two Warriors to within five tiles of the target capital, out of its sight, with the Ram queued in the forward city." }
+      ]
+    },
+    {
+      "id": "window",
+      "name": "Window",
+      "turns": { "from": 26, "to": 80 },
+      "era": "classical",
+      "objective": "Take the target capital and one more of its cities before turn 80, holding each one with a garrison and a Monument, while the home cities build nothing that pays back after the deadline except Settlers and Builders the camps did not provide.",
+      "build_order": [
+        { "item": "Battering Ram", "why": "The moment the target shows Walls; two Warriors with a Ram beside the city while the War-Carts kill the sortie." },
+        { "item": "War-Cart", "why": "Replace losses only; the fourth surviving War-Cart is worth more than a fifth new one." },
+        { "item": "Monument", "why": "In every captured city the turn it is taken; Loyalty before anything else." },
+        { "item": "Settler", "why": "Third city with the Colonization card, on a river, while the army is away." },
+        { "item": "Builder", "why": "Three Ziggurats on each captured city's flat river tiles; this is the Science catch-up starting early." },
+        { "item": "Archer", "why": "One per captured city as the standing garrison so the War-Carts can move on." },
+        { "item": "Trader", "why": "Capital to the forward city for the Currency Eureka and a road the army uses." }
+      ],
+      "research": [
+        { "id": "tech:archery", "note": "Garrison Archers for the captures; Eureka from a Slinger kill if one happened." },
+        { "id": "tech:wheel", "note": "Eureka from the first Mine; the Water Mill and Heavy Chariot line are irrelevant, but Engineering hangs off it." },
+        { "id": "tech:writing", "note": "Eureka free from meeting the target; Campus in the capital after the war." },
+        { "id": "tech:currency", "note": "Eureka from the first Trade Route; the Commercial Hub pays unit maintenance." },
+        { "id": "tech:horseback-riding", "note": "Free Eureka from a Pasture; needed for the Stirrups upgrade later, nothing else." },
+        { "id": "tech:iron-working", "note": "Mine the Iron Bronze Working revealed; Knights need it when the War-Carts upgrade." }
+      ],
+      "civics": [
+        { "id": "civic:early-empire", "note": "Colonization for the third city; Inspiration free at six population." },
+        { "id": "civic:foreign-trade", "note": "Trade Routes and the Caravansaries card; Inspiration only if a second continent is in sight." },
+        { "id": "civic:state-workforce", "note": "Conscription for unit maintenance and a Governor title; Inspiration from the first district." },
+        { "id": "civic:political-philosophy", "note": "Oligarchy for the Warriors and the experience; Inspiration from three city-states, which the War-Carts meet on the way." },
+        { "id": "civic:mysticism", "note": "Free Inspiration from the pantheon; it is on the way to Drama and Poetry and Theology, neither of which this plan chases." }
+      ],
+      "policies": [
+        { "card": "Maneuver", "slot": "military", "from": "civic:military-tradition", "why": "Kept until the last replacement War-Cart is built, then swapped for Conscription." },
+        { "card": "Conscription", "slot": "military", "from": "civic:state-workforce", "why": "One Gold per unit per turn off an eight-unit army is the difference between positive and negative income." },
+        { "card": "Colonization", "slot": "economic", "from": "civic:early-empire", "why": "The third city at half Settler cost while the army does the conquering." },
+        { "card": "Oligarchy", "slot": "wildcard", "from": "civic:political-philosophy", "why": "The government: +4 Strength for the Warriors breaking Walls and faster experience for the War-Carts. Autocracy is wrong here; nothing is being built." }
+      ],
+      "districts": [
+        { "district": "campus", "city": "capital", "note": "Only after the first capture; before that every hammer is a unit. State Workforce's Inspiration comes from it." }
+      ],
+      "pantheon": { "slug": "god-of-the-forge", "why": "Already founded; replacement War-Carts and the garrison Archers benefit." },
+      "wonders": [],
+      "governors": [
+        { "governor": "magnus", "promotion": "Provision", "city": "capital", "why": "The third-city Settler leaves without costing population while the capital is also replacing units." },
+        { "governor": "victor", "promotion": "Garrison Commander", "city": "the captured capital", "why": "Loyalty and Strength in the city most likely to flip or be retaken; move him with each new capture." }
+      ],
+      "city_states": [
+        { "slug": "akkad", "why": "Suzerainty before the second siege if it is on the map; melee attacks then ignore Walls." },
+        { "type": "Militaristic", "why": "Levy its army at half cost for the second city if the target has rebuilt; ten turns of six free units is a siege." }
+      ],
+      "great_people": [
+        { "class": "great-general", "why": "A Classical Great General gives War-Carts +5 Strength and +1 Movement within two tiles, since they are Ancient units; one is worth two more War-Carts." }
+      ],
+      "checkpoints": [
+        { "turn": 50, "test": "Midpoint: is the target capital taken, or at least under siege with its Walls down and no defenders in the field?", "pass": "Continue to the second city; audit Amenities and Loyalty in the capture before moving on.", "fail": "Reduce scope now: one city instead of two. If the capital is still at full Walls with a sortie every turn, take the weakest second city instead, and make peace the turn it falls. Partial conversion beats total expiry." },
+        { "turn": 80, "test": "Deadline: two captured cities held with positive Loyalty, or one capital and a third Sumerian city settled?", "pass": "Stop conquering. Enter the digest phase and make peace on any terms that keep the cities.", "fail": "Abort branch: peace now, disband every War-Cart beyond four, and run the digest phase on the empire you have. The next war is one an ally starts." }
+      ],
+      "tasks": [
+        { "id": "window-declare", "turn": 26, "text": "Declare the Surprise War with the army already adjacent; the Walls are the clock, so if the banner shows them being built, hit the city the same turn." },
+        { "id": "window-first-city", "turn": 42, "text": "Capture the target capital with a War-Cart. Keep it; never raze a capital. Monument and an Archer garrison the same turn." },
+        { "id": "window-audit", "turn": 43, "text": "After every capture, before anything else: check Amenities and Loyalty, move Victor in, and buy a Monument if Loyalty is negative. Repeat per capture, not on a schedule." },
+        { "id": "window-ziggurats", "turn": 55, "text": "Builder with three charges lays three Ziggurats on the captured capital's river flats." },
+        { "id": "window-second-city", "turn": 70, "text": "Take the second city with the Ram crew if it has Walls, or the levied city-state army if the War-Carts are below half strength." },
+        { "id": "window-stop", "turn": 80, "text": "Write down the number of cities held. Whatever it is, make peace this turn and move production to Monuments and Granaries." }
+      ]
+    },
+    {
+      "id": "digest",
+      "name": "Digest",
+      "turns": { "from": 81, "to": 150 },
+      "era": "medieval",
+      "objective": "Stabilize the captured cities, pay the infrastructure bill the arming phase skipped, lay Ziggurats in every city, build the first Campuses and Commercial Hubs, and form the alliance that makes every later war free of grievances.",
+      "build_order": [
+        { "item": "Monument", "why": "In any city still without one; Loyalty first." },
+        { "item": "Granary", "why": "Housing in cities that were pillaged on the way in and have no fresh water improvements." },
+        { "item": "Builder", "why": "Three Ziggurats per city before any Farm; the Science comes from here, not from districts yet." },
+        { "item": "Campus", "why": "Capital first, then the captured capital; two Campuses give Recorded History." },
+        { "item": "Library", "why": "In both Campuses; the Scientific city-state envoys pay into them." },
+        { "item": "Commercial Hub", "why": "Capital; Markets for Guilds and Gold for the standing army's upkeep." },
+        { "item": "Trader", "why": "Routes from the captures to the capital for roads, Food and the Medieval Faires Inspiration." },
+        { "item": "Ancient Walls", "why": "In the captured capital; the former owner will come back once, and Engineering's Eureka comes with it." }
+      ],
+      "research": [
+        { "id": "tech:construction", "note": "Water Mill in a river city for the Eureka; Colosseum region Amenities are the fix for a wide empire." },
+        { "id": "tech:engineering", "note": "Ancient Walls give the Eureka; Aqueducts for Housing." },
+        { "id": "tech:mathematics", "note": "Campus, Commercial Hub and an Encampment are three specialty districts; Petra and Apprenticeship behind it." },
+        { "id": "tech:apprenticeship", "note": "Three Mines across the empire; Industrial Zones later." },
+        { "id": "tech:education", "note": "Eureka from the first Great Scientist, which two Libraries attract; Universities." },
+        { "id": "tech:stirrups", "note": "Free Eureka from Feudalism; War-Carts to Knights under Professional Army." },
+        { "id": "tech:military-engineering", "note": "An Aqueduct in the capital gives the Eureka; Niter reveal." }
+      ],
+      "civics": [
+        { "id": "civic:military-training", "note": "One Encampment in the forward city for the Inspiration and Great General points; also the third specialty district." },
+        { "id": "civic:recorded-history", "note": "Two Campuses give the Inspiration; Natural Philosophy doubles Campus adjacency." },
+        { "id": "civic:feudalism", "note": "Six Farms once the Ziggurats are down; Serfdom Builders and the Stirrups Eureka." },
+        { "id": "civic:civil-service", "note": "The capital reaches ten population with a Granary and Aqueduct." },
+        { "id": "civic:guilds", "note": "Two Markets; the Banking Eureka and Town Charters." },
+        { "id": "civic:mercenaries", "note": "Eight land units is the army you already have; Professional Army halves the Knight upgrades." }
+      ],
+      "policies": [
+        { "card": "Natural Philosophy", "slot": "economic", "from": "civic:recorded-history", "why": "Campus adjacency doubled; the river Campuses pay twice." },
+        { "card": "Serfdom", "slot": "economic", "from": "civic:feudalism", "why": "Five-charge Builders lay Ziggurats in every captured city in one trip." },
+        { "card": "Professional Army", "slot": "military", "from": "civic:mercenaries", "why": "War-Carts to Knights at half the Gold; do not upgrade before this card is in." },
+        { "card": "Diplomatic League", "slot": "diplomatic", "from": "civic:political-philosophy", "why": "First envoy doubled into the Scientific and Militaristic city-states." }
+      ],
+      "districts": [
+        { "district": "campus", "city": "capital and the captured capital", "note": "Beside Mountains or a river confluence; Recorded History wants two." },
+        { "district": "commercial-hub", "city": "capital", "note": "River adjacency; Markets for Guilds and Trade Route capacity for the captures." },
+        { "district": "encampment", "city": "the forward city", "note": "Military Training Inspiration, Great General points, and the third district for Mathematics." },
+        { "district": "aqueduct", "city": "capital", "note": "Housing to ten population for Civil Service and the Military Engineering Eureka." }
+      ],
+      "wonders": [
+        { "name": "Great Library", "why": "Great Scientist points and two Great Work slots in a Science empire with a Campus and Library already built.", "skip_if": "Any rival has Recorded History before you do, or the capital Library is not up by turn 110." },
+        { "name": "Colosseum", "why": "+2 Amenities to every city within six tiles covers the captures that have none.", "skip_if": "The captured cities are more than six tiles from any city that could build it, or Games and Recreation lands after turn 130." }
+      ],
+      "governors": [
+        { "governor": "pingala", "promotion": "Researcher", "city": "capital", "why": "The Science the arming phase did not buy; move to Librarian once Universities exist." },
+        { "governor": "amani", "promotion": "Emissary", "city": "the captured capital", "why": "Two envoys and Loyalty pressure outward in the city nearest the former owner." }
+      ],
+      "city_states": [
+        { "type": "Scientific", "why": "Three envoys for Science in every Library; the AI contests these hardest, so send them early." },
+        { "slug": "geneva", "why": "+15% Science whenever you are not at war, which is the digest phase in one line." }
+      ],
+      "great_people": [
+        { "class": "great-scientist", "why": "The first one is the Education Eureka; Hypatia or Euclid in a two-Library empire." },
+        { "class": "great-general", "why": "A Medieval Great General retires into Strength for the Knight line if an ally's war is joined later." }
+      ],
+      "checkpoints": [
+        { "turn": 110, "test": "Every captured city at positive Loyalty with a Monument and three Ziggurats, and two Campuses with Libraries?", "pass": "Continue; start the Commercial Hub and the Encampment.", "fail": "A city at negative Loyalty is the only emergency: Victor, a Monument purchase, and an Entertainment Complex before any Campus. If Ziggurats are missing, the next two builds are Builders." },
+        { "turn": 150, "test": "Education researched, a Declared Friendship with the civilization beyond the old target, and Gold per turn positive with Conscription slotted?", "pass": "Enter the build phase and propose the alliance.", "fail": "If Gold is negative, disband the War-Carts you have not upgraded and run Traders. If no friendship exists, denounce nobody and send a delegation to every civilization you have met." }
+      ],
+      "tasks": [
+        { "id": "digest-loyalty-audit", "turn": 82, "text": "Audit Amenities and Loyalty in every captured city; Monument, Granary and Victor before anything else is queued." },
+        { "id": "digest-ziggurats", "turn": 95, "text": "Three Ziggurats on river flats in every city; count them and keep a Builder moving until each city has three." },
+        { "id": "digest-campuses", "turn": 115, "text": "Two Campuses with Libraries built; Recorded History Inspiration collected." },
+        { "id": "digest-friendship", "turn": 130, "text": "Declare Friendship with the civilization on the far side of the old target; it is the alliance Adventures of Enkidu needs." },
+        { "id": "digest-knights", "turn": 145, "text": "Upgrade the surviving War-Carts to Knights under Professional Army; disband any you cannot afford to upgrade." }
+      ]
+    },
+    {
+      "id": "build",
+      "name": "Build the wide empire",
+      "turns": { "from": 151, "to": 230 },
+      "era": "renaissance",
+      "objective": "Form a Research Alliance, put a University in every Campus and a Workshop in two Industrial Zones, and decide by turn 230 whether the alliance's next war is joined for two more cities or the game is closed by Science.",
+      "build_order": [
+        { "item": "University", "why": "Every Campus; two give Printing and the Science lead a Domination endgame needs." },
+        { "item": "Market", "why": "Second Market for Guilds if it is not done, then Banks for Economics." },
+        { "item": "Industrial Zone", "why": "Two, in the best Production cities, beside Mines and the Aqueduct." },
+        { "item": "Workshop", "why": "Two Workshops give Industrialization; Factories follow." },
+        { "item": "Settler", "why": "Fill any gap between the capital and the captures; a wide empire wants every river." },
+        { "item": "Trader", "why": "Routes to the ally for Alliance points, Gold, and the Mercantilism line." }
+      ],
+      "research": [
+        { "id": "tech:printing", "note": "Two Universities give the Eureka; the Science multiplier for the rest of the game." },
+        { "id": "tech:astronomy", "note": "A University beside a Mountain if any Campus has one; otherwise unboosted." },
+        { "id": "tech:banking", "note": "Free Eureka from Guilds; Banks for Economics." },
+        { "id": "tech:industrialization", "note": "Two Workshops; Factories and Coal." },
+        { "id": "tech:scientific-theory", "note": "Free Eureka from The Enlightenment; the Research Lab line." },
+        { "id": "tech:gunpowder", "note": "An Armory in the Encampment city; Musketmen for the garrisons." }
+      ],
+      "civics": [
+        { "id": "civic:diplomatic-service", "note": "Forming the alliance gives the Inspiration; it is also the point of the phase." },
+        { "id": "civic:the-enlightenment", "note": "Three Great People earned by now; Rationalism." },
+        { "id": "civic:civil-engineering", "note": "Seven different specialty districts across a wide empire; Public Works for Builders." },
+        { "id": "civic:nationalism", "note": "Only if the alliance war is joined; the Inspiration comes from a Casus Belli, and joining an ally's war is one." },
+        { "id": "civic:colonialism", "note": "Free Inspiration from Astronomy; on the way to Nationalism and the Industrial governments." }
+      ],
+      "policies": [
+        { "card": "Rationalism", "slot": "economic", "from": "civic:the-enlightenment", "why": "Science from University buildings in cities at ten population or more." },
+        { "card": "Craftsmen", "slot": "economic", "from": "civic:guilds", "why": "Industrial Zone adjacency doubled while the Workshops go up." },
+        { "card": "Town Charters", "slot": "economic", "from": "civic:guilds", "why": "Commercial Hub adjacency doubled; Gold for upgrades and purchases." },
+        { "card": "Merchant Republic", "slot": "wildcard", "from": "civic:exploration", "why": "The Tier 2 government: two extra Trade Routes and purchase discounts fit a wide trading empire; Monarchy only if a war is being joined." }
+      ],
+      "districts": [
+        { "district": "industrial-zone", "city": "the two best Production cities", "note": "Beside Mines, the Aqueduct and the Commercial Hub for adjacency; Workshops for Industrialization." },
+        { "district": "campus", "city": "every city without one", "note": "A wide Science empire needs one per city; Universities give Printing." },
+        { "district": "theater-square", "city": "capital", "note": "One for the Culture to reach Ideology on time; Great Works from the Great Library go here." }
+      ],
+      "wonders": [
+        { "name": "Kilwa Kisiwani", "why": "+15% to every yield from city-state types you are suzerain of; with Scientific and Militaristic suzerainties it is the best wonder for this empire.", "skip_if": "No coastal city exists, or you hold fewer than two suzerainties by turn 180." },
+        { "name": "Forbidden City", "why": "An extra wildcard slot for Rationalism or a military card.", "skip_if": "Printing arrives after turn 200 or a Culture civilization is ahead of you." }
+      ],
+      "governors": [
+        { "governor": "magnus", "promotion": "Industrialist", "city": "the best Industrial Zone city", "why": "Factory and Power Plant yields for the production the endgame needs." },
+        { "governor": "liang", "promotion": "Zoning Commissioner", "city": "the captured capital", "why": "Districts at +20% in a city that still has none." }
+      ],
+      "city_states": [
+        { "slug": "geneva", "why": "Keep suzerainty; the Science bonus is on whenever no war is declared, which the alliance keeps true." },
+        { "type": "Industrial", "why": "Production in every Workshop and Factory for the wide build." }
+      ],
+      "great_people": [
+        { "class": "great-scientist", "why": "Renaissance Great Scientists boost the Universities; Newton and Galileo are the ones to spend Gold on." },
+        { "class": "great-engineer", "why": "Industrial Zone Production and wonder completion; one Great Engineer finishes Kilwa." }
+      ],
+      "checkpoints": [
+        { "turn": 190, "test": "A Research Alliance active, four Universities, and two Workshops?", "pass": "Continue; the Science base is what both branches need.", "fail": "No alliance means no cheap wars: fall back to Science entirely and spend the Military Alliance offer on the strongest neighbour instead. Fewer than four Universities means the captures still lack Campuses; build them before Industrial Zones." },
+        { "turn": 230, "test": "Is the ally at war with a neighbour whose cities you can reach with Knights and Musketmen, or is your Science within one era of the leader?", "pass": "Commit: join the ally's war for two more cities under Adventures of Enkidu, or close by Science with Research Labs and a Spaceport.", "fail": "Neither: the game is a Score game. Build Campuses and Theater Squares everywhere and stop paying for units beyond the garrisons." }
+      ],
+      "tasks": [
+        { "id": "build-alliance", "turn": 160, "text": "Form a Research Alliance with the Declared Friend; Diplomatic Service's Inspiration and Chemistry's Eureka both come from it." },
+        { "id": "build-universities", "turn": 185, "text": "A University in every Campus; Printing Eureka collected." },
+        { "id": "build-workshops", "turn": 200, "text": "Two Workshops built; Industrialization Eureka collected." },
+        { "id": "build-branch", "turn": 230, "text": "Choose the branch: join the ally's war for two reachable cities, or Science. Write the decision down." }
+      ]
+    },
+    {
+      "id": "close",
+      "name": "Close",
+      "turns": { "from": 231, "to": null },
+      "era": "industrial",
+      "objective": "Finish the chosen branch: join the ally's wars one after another under Adventures of Enkidu until the remaining capitals fall, or build the Spaceport and launch while the wide empire's Campuses carry the Science.",
+      "build_order": [
+        { "item": "Factory", "why": "Both branches: Production in every Industrial Zone, and Class Struggle's Inspiration at three." },
+        { "item": "Research Lab", "why": "Science branch: the last multiplier in every University city." },
+        { "item": "Spaceport", "why": "Science branch: in the highest Production city, started the turn Rocketry lands." },
+        { "item": "Field Cannon", "why": "Domination branch: the siege line for capitals with Renaissance Walls." },
+        { "item": "Cavalry", "why": "Domination branch: Knights upgraded under Professional Army; the War-Carts' last form." },
+        { "item": "Military Academy", "why": "Domination branch: Corps and Armies for the last sieges." }
+      ],
+      "research": [
+        { "id": "tech:electricity", "note": "Power for Factories and Research Labs; Eureka from two Privateers only if a coast exists." },
+        { "id": "tech:refining", "note": "A Coal Power Plant gives the Eureka; Power for the Science buildings." },
+        { "id": "tech:chemistry", "note": "Free Eureka at alliance level 2, which this plan has held for a hundred turns; Research Labs." },
+        { "id": "tech:military-science", "note": "Domination branch: a Knight kill in the ally's war; Military Academies." }
+      ],
+      "civics": [
+        { "id": "civic:class-struggle", "note": "Three Factories; Communism's Production for the Spaceport, or Fascism via Totalitarianism for the war." },
+        { "id": "civic:urbanization", "note": "A fifteen-population capital; Neighborhoods for the Housing a wide empire runs out of." },
+        { "id": "civic:space-race", "note": "Science branch: the Spaceport gives the Inspiration; Integrated Space Cell." },
+        { "id": "civic:mobilization", "note": "Domination branch: three Corps; Levee en Masse." }
+      ],
+      "policies": [
+        { "card": "Five-Year Plan", "slot": "economic", "from": "civic:class-struggle", "why": "Science branch under Communism: Industrial Zone and Campus adjacency for the Spaceport city." },
+        { "card": "International Space Agency", "slot": "diplomatic", "from": "civic:nuclear-program", "why": "Science branch: +5% Science per city-state suzerainty; this empire holds several." },
+        { "card": "Levee en Masse", "slot": "military", "from": "civic:mobilization", "why": "Domination branch: unit maintenance down while the last army is fielded." }
+      ],
+      "districts": [
+        { "district": "spaceport", "city": "the best Production city", "note": "Science branch only; Space Race Inspiration." },
+        { "district": "neighborhood", "city": "capital and the captured capital", "note": "Housing; two give the Sanitation Eureka." }
+      ],
+      "wonders": [
+        { "name": "Oxford University", "why": "Two free technologies and Science in a University city.", "skip_if": "Scientific Theory arrives after turn 250 or a Science civilization is already building it." }
+      ],
+      "governors": [
+        { "governor": "pingala", "promotion": "Space Initiative", "city": "the Spaceport city", "why": "Science branch: +30% Production toward space projects." },
+        { "governor": "victor", "promotion": "Embrasure", "city": "the newest capture", "why": "Domination branch: each capital holds while the army moves on." }
+      ],
+      "city_states": [
+        { "type": "Scientific", "why": "Six envoys for Science in every University; the alliance's shared envoys help." }
+      ],
+      "great_people": [
+        { "class": "great-scientist", "why": "Industrial and Modern Great Scientists are the space projects' shortcuts." },
+        { "class": "great-engineer", "why": "Modern Great Engineers finish the Spaceport projects or Military Academies." }
+      ],
+      "checkpoints": [
+        { "turn": 290, "test": "Science branch: Spaceport built and the first launch done, or Domination branch: two capitals taken since turn 230 in allied wars?", "pass": "Continue to the end; no further decisions.", "fail": "Convert to Score: keep the garrisons, stop new military, and spend on Campuses, Theater Squares and city-state envoys." }
+      ],
+      "tasks": [
+        { "id": "close-join-war", "turn": 240, "text": "Domination branch: the moment the ally declares or is declared on, join under Adventures of Enkidu and send Cavalry and Field Cannons at the nearest enemy capital." },
+        { "id": "close-spaceport", "turn": 250, "text": "Science branch: Spaceport finished and the satellite launch queued in the Communism capital." },
+        { "id": "close-factories", "turn": 255, "text": "Three Factories built; Class Struggle Inspiration collected and the Tier 3 government adopted for the Computers Eureka." },
+        { "id": "close-review", "turn": 290, "text": "Review the turn 290 checkpoint and either continue or declare the game a Score game." }
+      ]
+    }
+  ],
+  "boosts": [
+    { "id": "tech:bronze-working", "fit": "free", "when": "arm", "how": "Three Barbarian kills at the first camp the War-Carts clear." },
+    { "id": "tech:writing", "fit": "free", "when": "arm", "how": "Meeting the target civilization on the way to it." },
+    { "id": "tech:archery", "fit": "cheap", "when": "arm", "how": "A Slinger kill at the first camp, if one is built; otherwise unboosted." },
+    { "id": "tech:masonry", "fit": "cheap", "when": "arm", "how": "A Quarry on Stone near the capital, if any; the Ram needs the tech regardless." },
+    { "id": "tech:wheel", "fit": "cheap", "when": "window", "how": "The first Builder mines a resource hill." },
+    { "id": "tech:horseback-riding", "fit": "free", "when": "window", "how": "A Pasture on any Horses, Sheep or Cattle." },
+    { "id": "tech:currency", "fit": "cheap", "when": "window", "how": "The first Trader runs to the forward city." },
+    { "id": "tech:iron-working", "fit": "cheap", "when": "window", "how": "Mine the Iron that Bronze Working revealed; Knights need it later." },
+    { "id": "tech:irrigation", "fit": "cheap", "when": "digest", "how": "Farm a Wheat or Rice tile in a river city." },
+    { "id": "tech:astrology", "fit": "costly", "when": "arm", "how": "Only if the Warrior passes a natural wonder on the way to the target." },
+    { "id": "tech:sailing", "fit": "skip", "when": null, "how": "" },
+    { "id": "tech:celestial-navigation", "fit": "skip", "when": null, "how": "" },
+    { "id": "tech:shipbuilding", "fit": "skip", "when": null, "how": "" },
+    { "id": "tech:construction", "fit": "cheap", "when": "digest", "how": "A Water Mill in the capital." },
+    { "id": "tech:engineering", "fit": "cheap", "when": "digest", "how": "Ancient Walls in the captured capital." },
+    { "id": "tech:mathematics", "fit": "cheap", "when": "digest", "how": "Campus, Commercial Hub and Encampment are three specialty districts." },
+    { "id": "tech:apprenticeship", "fit": "cheap", "when": "digest", "how": "Three Mines across the hills the Ziggurats do not use." },
+    { "id": "tech:education", "fit": "cheap", "when": "digest", "how": "The first Great Scientist from two Libraries." },
+    { "id": "tech:stirrups", "fit": "free", "when": "digest", "how": "Feudalism is on the civic path." },
+    { "id": "tech:military-engineering", "fit": "cheap", "when": "digest", "how": "The capital Aqueduct." },
+    { "id": "tech:castles", "fit": "free", "when": "digest", "how": "Any Tier 2 government." },
+    { "id": "tech:machinery", "fit": "costly", "when": "digest", "how": "Three Archers only if the garrisons are already Archers; usually unboosted." },
+    { "id": "tech:military-tactics", "fit": "costly", "when": "digest", "how": "A Spearman kill, which this army rarely has a Spearman for." },
+    { "id": "tech:buttress", "fit": "cheap", "when": "build", "how": "Owning the Great Library or Colosseum." },
+    { "id": "tech:printing", "fit": "cheap", "when": "build", "how": "Two Universities in the Science catch-up." },
+    { "id": "tech:banking", "fit": "free", "when": "build", "how": "Guilds is on the civic path." },
+    { "id": "tech:astronomy", "fit": "costly", "when": "build", "how": "A University beside a Mountain only if a Campus already sits by one." },
+    { "id": "tech:gunpowder", "fit": "cheap", "when": "build", "how": "An Armory in the Encampment city." },
+    { "id": "tech:industrialization", "fit": "cheap", "when": "build", "how": "Two Workshops in the Industrial Zones." },
+    { "id": "tech:scientific-theory", "fit": "free", "when": "build", "how": "The Enlightenment is on the civic path." },
+    { "id": "tech:economics", "fit": "costly", "when": "build", "how": "Two Banks if Gold is short; otherwise unboosted." },
+    { "id": "tech:mass-production", "fit": "cheap", "when": "build", "how": "A Lumber Mill on any Woods tile." },
+    { "id": "tech:square-rigging", "fit": "skip", "when": null, "how": "" },
+    { "id": "tech:military-science", "fit": "cheap", "when": "close", "how": "A Knight kill in the ally's war; the Knights are the old War-Carts." },
+    { "id": "tech:electricity", "fit": "skip", "when": null, "how": "" },
+    { "id": "tech:refining", "fit": "cheap", "when": "close", "how": "A Coal Power Plant in the best Industrial Zone." },
+    { "id": "tech:chemistry", "fit": "free", "when": "close", "how": "Alliance level 2, which the digest-phase alliance reaches on its own." },
+    { "id": "tech:sanitation", "fit": "cheap", "when": "close", "how": "Two Neighborhoods in the two biggest cities." },
+    { "id": "tech:computers", "fit": "free", "when": "close", "how": "Any Tier 3 government." },
+    { "id": "tech:flight", "fit": "costly", "when": "close", "how": "Owning Oxford University or any Industrial wonder." },
+    { "id": "civic:craftsmanship", "fit": "free", "when": "arm", "how": "Three improved tiles from the first Builder, Ziggurats included." },
+    { "id": "civic:military-tradition", "fit": "free", "when": "arm", "how": "The first camp cleared by War-Carts." },
+    { "id": "civic:foreign-trade", "fit": "costly", "when": "window", "how": "Only if a second continent is in sight of the army; otherwise unboosted." },
+    { "id": "civic:early-empire", "fit": "free", "when": "window", "how": "Six population across the first two cities." },
+    { "id": "civic:state-workforce", "fit": "free", "when": "window", "how": "The capital Campus after the first capture." },
+    { "id": "civic:mysticism", "fit": "free", "when": "window", "how": "Founding God of the Forge in the arming phase." },
+    { "id": "civic:political-philosophy", "fit": "cheap", "when": "window", "how": "Three city-states met by the War-Carts on the march." },
+    { "id": "civic:defensive-tactics", "fit": "free", "when": "window", "how": "The target or its friend declares war on you after the first capture." },
+    { "id": "civic:games-and-recreation", "fit": "free", "when": "digest", "how": "Researching Construction." },
+    { "id": "civic:military-training", "fit": "cheap", "when": "digest", "how": "The Encampment in the forward city." },
+    { "id": "civic:recorded-history", "fit": "cheap", "when": "digest", "how": "Two Campuses, capital and captured capital." },
+    { "id": "civic:theology", "fit": "skip", "when": null, "how": "" },
+    { "id": "civic:drama-and-poetry", "fit": "costly", "when": "digest", "how": "Only if the Great Library or Colosseum is completed." },
+    { "id": "civic:feudalism", "fit": "cheap", "when": "digest", "how": "Six Farms across four cities after the Ziggurats are laid." },
+    { "id": "civic:civil-service", "fit": "cheap", "when": "digest", "how": "The capital reaches ten population with Granary and Aqueduct." },
+    { "id": "civic:guilds", "fit": "cheap", "when": "digest", "how": "Two Markets, capital and captured capital." },
+    { "id": "civic:mercenaries", "fit": "free", "when": "digest", "how": "Eight land units is the army left over from the window." },
+    { "id": "civic:medieval-faires", "fit": "cheap", "when": "digest", "how": "Four Trade Routes from the captures to the capital." },
+    { "id": "civic:divine-right", "fit": "skip", "when": null, "how": "" },
+    { "id": "civic:naval-tradition", "fit": "skip", "when": null, "how": "" },
+    { "id": "civic:diplomatic-service", "fit": "free", "when": "build", "how": "Forming the alliance is the point of the phase." },
+    { "id": "civic:the-enlightenment", "fit": "cheap", "when": "build", "how": "Three Great People: a Great Scientist, a Great General and one more." },
+    { "id": "civic:civil-engineering", "fit": "cheap", "when": "build", "how": "Seven different specialty districts across the wide empire." },
+    { "id": "civic:nationalism", "fit": "cheap", "when": "build", "how": "Joining an ally's war is a Casus Belli." },
+    { "id": "civic:colonialism", "fit": "free", "when": "build", "how": "Researching Astronomy." },
+    { "id": "civic:exploration", "fit": "skip", "when": null, "how": "" },
+    { "id": "civic:humanism", "fit": "skip", "when": null, "how": "" },
+    { "id": "civic:mercantilism", "fit": "costly", "when": "build", "how": "A Great Merchant, which a Commercial Hub empire gets eventually." },
+    { "id": "civic:class-struggle", "fit": "cheap", "when": "close", "how": "Three Factories across the Industrial Zones." },
+    { "id": "civic:urbanization", "fit": "cheap", "when": "close", "how": "A fifteen-population capital with Aqueduct and Neighborhood." },
+    { "id": "civic:space-race", "fit": "free", "when": "close", "how": "The Spaceport on the Science branch." },
+    { "id": "civic:mobilization", "fit": "cheap", "when": "close", "how": "Three Corps on the Domination branch." },
+    { "id": "civic:nuclear-program", "fit": "cheap", "when": "close", "how": "The first Research Lab." }
+  ],
+  "decision_triggers": [
+    { "name": "Walls on the target", "if": "The target capital's banner shows Ancient Walls before the War-Carts arrive.", "then": "Do not throw cavalry at it. Bring the two Warriors and a Battering Ram, or swap to the target's second city and take the capital later with the levied city-state army. If Akkad is on the map, buy suzerainty first." },
+    { "name": "Camp pays a Settler or Builder", "if": "An Epic Quest reward from a camp is a free Builder, Settler or Eureka before turn 20.", "then": "Skip the matching item in the build order and put the saved turns into the fourth War-Cart; the arming phase gets shorter, not bigger." },
+    { "name": "Three stalled turns", "if": "For three consecutive turns during the window the target city is no closer to falling: Walls intact, defenders replaced, no War-Cart able to attack.", "then": "Reduce scope the same turn. Take the weakest city of the same owner instead, or make peace for whatever city they will cede. Do not wait for the midpoint." },
+    { "name": "Ally at war", "if": "After turn 150 an ally is attacked by, or attacks, a civilization whose cities are within ten tiles of your border.", "then": "Join under Adventures of Enkidu the same turn: no grievances, shared experience with the ally's units, and two more cities for the digest machine. Make peace the turn the second city falls." }
+  ],
+  "abort": {
+    "trigger": "Turn 80 with no city captured, or three stalled turns before turn 50 with the target's Walls intact and no Ram in reach.",
+    "actions": [
+      "Make peace immediately on any terms that cost no city; the grievances are already paid and prolonging the war buys nothing.",
+      "Disband every War-Cart beyond four; the maintenance is pure loss and Knights are a hundred turns away.",
+      "Run the digest phase on the empire you have: Ziggurats, Campuses, Geneva, and a Declared Friendship with the strongest neighbour so the next war is one you join."
+    ]
+  },
+  "fail_state": "Turn 80 with the War-Carts obsolete, the neighbour behind Walls with Spearmen and Archers, no city taken, eight units of maintenance on a two-city economy, and grievances with every civilization you have met. Sumeria is then a small civ a full era behind, with a tribal village bonus for camps it no longer needs to clear.",
+  "common_mistakes": [
+    "Scouting the whole continent before choosing a target. The window is fifty turns and the target must be chosen from what the first Warrior sees.",
+    "Building a fifth and sixth War-Cart because they are cheap. Four take a city; the extra two are a Settler and a Builder not built, and they are all Knights you cannot afford to upgrade later.",
+    "Marching heavy cavalry at a Walled city. Battering Rams do not work with cavalry in Gathering Storm; the Warriors with the Ram are not optional.",
+    "Counting kills, pillage Gold and camp rewards as progress. Only cities held at turn 80 count; an army with nothing to show is the fail state.",
+    "Starting the second war yourself. Adventures of Enkidu removes grievances only for wars an ally is already in; declare once, then join."
+  ],
+  "sources": [
+    "Civilization VI Civilopedia, Gathering Storm ruleset (Sumeria, Gilgamesh, War-Cart, Ziggurat). The civ-info text calls the War-Cart a ranged Chariot Archer replacement; in the game it is a heavy cavalry unit replacing the Heavy Chariot, 30 Strength, 3 Movement, no resource, and the plan follows the game.",
+    "Gathering Storm patch notes on Battering Rams and Siege Towers applying to melee and anti-cavalry units only, which is why the Warriors carry the Ram.",
+    "Boost objectives cross-checked against civilization6planner.com tech-tree and civics-tree pages, 2026-10-01.",
+    "Leadership Focus tags, caveats and the Countdown template and worked example for Gilgamesh in this repository."
+  ]
+}

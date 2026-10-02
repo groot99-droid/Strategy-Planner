@@ -1,0 +1,1577 @@
+{
+  "leader": "Alexander",
+  "civilization": "Macedon",
+  "generated": "2026-10-02",
+  "slug": "alexander",
+  "shape": "Monitor",
+  "secondary_shape": null,
+  "version": 1,
+  "updated": "2026-10-01",
+  "assumptions": {
+    "ruleset": "Gathering Storm with every expansion and the Leader Pass",
+    "speed": "Standard",
+    "difficulty": "Emperor",
+    "map": "Pangaea or Continents, standard size, 8 civilizations",
+    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. Alexander's single base persona is planned here; Macedon has no alternate persona in the Leader Pass."
+  },
+  "verdict": {
+    "victory": "Domination",
+    "secondary": "Science",
+    "confidence": "high",
+    "one_line": "Never be at peace. Every war is free of weariness, every captured Campus or Encampment is a Eureka, and every unit trained under a Basilikoi Paides is Science, so the game is a rolling conquest with the next target chosen before the current one falls.",
+    "why": "To the World's End removes the one cost that stops other conquerors, war weariness, and Hellenistic Fusion turns each captured district into a boost, so Macedon gets stronger and better researched with every city it takes rather than more tired. The Hetairoi arrive at Horseback Riding without needing Horses and the Hypaspist hits districts harder than a Swordsman, which makes the Classical window the strongest of any civilization. Nothing in the kit pays during peace, and the Science from the Basilikoi Paides stops the moment training stops, which is why the watched stat is the war state itself and why Science is the fallback, built from the captured Campuses, not the goal."
+  },
+  "map_check": {
+    "must_have": [
+      "A rival capital within roughly 15 tiles of the start, reachable by land, so the first Hetairoi war begins before turn 50.",
+      "Iron within the first three cities' reach by turn 40, because Hypaspists carry the sieges."
+    ],
+    "prefer": [
+      "Plains Hills and Woods near the capital for the Production the Encampment and the first army need.",
+      "A second neighbour behind the first, so the target queue is never empty.",
+      "Giant's Causeway or the Dead Sea within reach: extra strength and a full heal for an army that never goes home."
+    ],
+    "no_go": "An isolated start on a small island or a landmass with no rival within 25 land tiles. The kit does nothing against water and the first war would come after Walls, with the Classical window closed.",
+    "fallback": "If the nearest rival is beyond 20 tiles or across water, settle four cities fast, take the nearest city-states' neighbours by Medieval Walls with Trebuchets, and build Campuses next to the Encampments: Basilikoi Paides Science plus continuous unit training is a slow Science game until Cartography opens a naval target."
+  },
+  "kit_levers": [
+    {
+      "source": "leader_ability",
+      "name": "To the World's End",
+      "buys": "No war weariness in any Macedonian city, a full heal for every unit when a city containing a Wonder is captured, and the Hetairoi unique unit.",
+      "exploit": "Wars never have to end for Amenity reasons, so the plan declares the next war before signing the current peace, and it orders targets so that each city with a Wonder is taken when the army is at its most damaged, turning the wonder into a free field hospital."
+    },
+    {
+      "source": "civ_ability",
+      "name": "Hellenistic Fusion",
+      "buys": "A Eureka for each Encampment or Campus and an Inspiration for each Holy Site or Theater Square in a captured city.",
+      "exploit": "The target queue is sorted by district count, not by size. A four-district city is worth more than a capital with none, and the plan takes cities whole rather than razing them, because the boosts arrive on capture."
+    },
+    {
+      "source": "unique_unit",
+      "name": "Hetairoi",
+      "buys": "A Horseman replacement needing no Horses, with extra Combat Strength beside a Great General and Great General points for every kill.",
+      "exploit": "Four Hetairoi and a Great General are the Classical strike force; they kill units in the field, which feeds the next Great General, while the Hypaspists and a Battering Ram take the city. They are built the turn Horseback Riding lands, Horses or not."
+    },
+    {
+      "source": "unique_unit",
+      "name": "Hypaspist",
+      "buys": "A Swordsman replacement with extra Combat Strength when attacking districts and a stronger support bonus from adjacent units.",
+      "exploit": "The city-taker. Two Hypaspists beside a Battering Ram with the Hetairoi flanking take an Ancient-Walled city in two or three turns, and under Oligarchy they are ahead of anything the AI fields before Pikemen."
+    },
+    {
+      "source": "unique_infrastructure",
+      "name": "Basilikoi Paides",
+      "buys": "A Barracks replacement giving extra experience to units trained in the city and Science equal to a quarter of each non-civilian unit's Production cost.",
+      "exploit": "Every Encampment city builds units continuously as its Science building. A Hetairoi trained there is a fighting unit and a Library's worth of Science at once, which is why the plan never lets the unit queue go idle between wars."
+    },
+    {
+      "source": "agenda",
+      "name": "Short Life of Glory",
+      "buys": "Alexander likes civilizations at war with someone other than him and dislikes those at peace; Grievances against him decay twice as fast.",
+      "exploit": "The fast Grievance decay is the real effect: the diplomatic penalty for the third and fourth war is half what another conqueror pays, so the plan keeps a trade partner on the far side of the map and does not bother courting the neighbours it will take."
+    }
+  ],
+  "shape_block": {
+    "monitor": {
+      "watched_stat": "The war state: whether Macedon is at war this turn, and whether the next target is already chosen with a route and an army within ten turns of it",
+      "check_every": "turn, from the moment Horseback Riding is researched",
+      "bands": {
+        "green": {
+          "test": "At war with a civilization or a city-state whose cities you are actually besieging, and a named next target with its district count written down.",
+          "response": "Keep the unit queue running in every Basilikoi Paides city and keep taking cities. No domestic action needed beyond Monuments in captures."
+        },
+        "amber": {
+          "test": "At peace for three or more turns, or at war with nobody left to take within ten turns of the army, or the next target not yet chosen.",
+          "response": "Act now: pick the next target by district count and distance, move the army toward it while it heals, declare with whatever Casus Belli is available or none, and queue units in every Encampment city so the Science does not pause. Peace is the amber signal, not a rest."
+        },
+        "red": {
+          "test": "At peace for ten or more turns, or the army obsolete against the nearest target's Walls with no siege unit built.",
+          "response": "The kit is off. Stop every non-military build except Walls where needed, build the siege line the target requires (Battering Ram, Siege Tower or Trebuchets), and declare the moment it exists. Science from the Basilikoi Paides has already dropped; it only returns when the queue restarts."
+        }
+      },
+      "second_watch": {
+        "stat": "Loyalty and Amenities in every captured city, read on the turn of capture and every five turns after",
+        "why": "No war weariness is not no unhappiness. Captured cities still flip from Loyalty and still riot from Amenities, and a city that flips back takes its districts and their boosts with it. Loyalty, not weariness, is what ends a Macedonian war early."
+      },
+      "off_period_plan": "There should be no off period. If peace lasts more than a few turns, treat that as amber and fix it. The only legitimate pause is the ten turns a Walled target forces while Trebuchets or Bombards are built, and even then the unit queue keeps running for the Science and the city-states on the route are the interim targets."
+    }
+  },
+  "phases": [
+    {
+      "id": "setup",
+      "name": "Setup",
+      "turns": {
+        "from": 1,
+        "to": 25
+      },
+      "era": "ancient",
+      "objective": "Settle on Production, find the nearest rival capital and count its districts, clear the camps on the road to it for Bronze Working, and have Horseback Riding and an Encampment site chosen by turn 25.",
+      "build_order": [
+        {
+          "item": "Scout",
+          "why": "Finds the first target and the camps that give Bronze Working; Writing comes from the first meeting."
+        },
+        {
+          "item": "Warrior",
+          "why": "A second Warrior escorts the Settler and is the first unit to kill a barbarian for the Military Tradition line."
+        },
+        {
+          "item": "Slinger",
+          "why": "Archery Eureka on a barbarian scout; upgrades to an Archer for the first siege."
+        },
+        {
+          "item": "Settler",
+          "why": "Second city toward the target, on a hill, for the Encampment and Basilikoi Paides."
+        },
+        {
+          "item": "Builder",
+          "why": "A Pasture for the Horseback Riding Eureka, a Mine for The Wheel, a third improvement for Craftsmanship."
+        },
+        {
+          "item": "Monument",
+          "why": "Culture to reach Military Tradition and Political Philosophy before the first war."
+        },
+        {
+          "item": "Settler",
+          "why": "Third city; three cities is the minimum that can feed the army and the Encampment."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:animal-husbandry",
+          "note": "Reveals Horses and the Pasture that boosts Horseback Riding; first."
+        },
+        {
+          "id": "tech:mining",
+          "note": "Mines for Production and the Wheel Eureka."
+        },
+        {
+          "id": "tech:bronze-working",
+          "note": "Encampment and the Basilikoi Paides; the Eureka comes from the camps the Warriors clear."
+        },
+        {
+          "id": "tech:horseback-riding",
+          "note": "Hetairoi. Research it the moment the Pasture is built; nothing else in the tree matters more before turn 30."
+        },
+        {
+          "id": "tech:archery",
+          "note": "Archers for the first siege; the Slinger kill makes it cheap."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:code-of-laws",
+          "note": "Discipline against the camps, God King only if a pantheon is wanted."
+        },
+        {
+          "id": "civic:craftsmanship",
+          "note": "Agoge: the card the whole Classical army is built under."
+        },
+        {
+          "id": "civic:military-tradition",
+          "note": "Maneuver for cheaper Hetairoi; the Inspiration comes from the first camp cleared."
+        },
+        {
+          "id": "civic:foreign-trade",
+          "note": "A Trade Route for Gold and the Currency Eureka; take it after Military Tradition, not before."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Discipline",
+          "slot": "military",
+          "from": "civic:code-of-laws",
+          "why": "Warriors beat camp defenders cleanly, which is three kills for Bronze Working."
+        },
+        {
+          "card": "Agoge",
+          "slot": "military",
+          "from": "civic:craftsmanship",
+          "why": "Half again as fast on the melee and ranged units the Encampment will train."
+        },
+        {
+          "card": "Urban Planning",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "Production in every city while there is nothing better to slot."
+        }
+      ],
+      "districts": [
+        {
+          "district": "encampment",
+          "city": "second city, on the side facing the target",
+          "note": "Site it now, build it the turn Bronze Working lands; the Basilikoi Paides goes in before anything else."
+        }
+      ],
+      "pantheon": {
+        "slug": "god-of-the-forge",
+        "why": "Ancient and Classical units a quarter faster; the whole first army is built under it.",
+        "alternative": "religious-settlements"
+      },
+      "wonders": [],
+      "governors": [],
+      "city_states": [
+        {
+          "slug": "kabul",
+          "why": "Double experience on every unit; the first envoy goes here if Kabul is met."
+        },
+        {
+          "type": "Militaristic",
+          "why": "Unit Production in the capital for a single envoy, and the city-state is a practice target if no rival is close."
+        }
+      ],
+      "great_people": [],
+      "checkpoints": [
+        {
+          "turn": 25,
+          "test": "Nearest rival capital found with its district count noted, three camp kills made, and Horseback Riding researched or within five turns?",
+          "pass": "Enter the standing loop; begin reading the war state every turn.",
+          "fail": "No target found: send a second Scout and settle toward the unexplored side. No Horseback Riding by turn 30: the first war is a Hypaspist war at Iron Working instead, and the Pasture is still built for the Eureka."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "setup-settle-hill",
+          "turn": 1,
+          "text": "Settle on a Plains Hill or beside one; move at most one turn. The capital is the army's factory for the first hundred turns."
+        },
+        {
+          "id": "setup-scout-target",
+          "turn": 6,
+          "text": "Send the Scout toward the nearest rival; when the capital is found, note its districts, its Walls and the land route."
+        },
+        {
+          "id": "setup-pasture",
+          "turn": 14,
+          "text": "First Builder charge on a Pasture for the Horseback Riding Eureka, second on a Mine for The Wheel."
+        },
+        {
+          "id": "setup-camps",
+          "turn": 20,
+          "text": "Clear the camp nearest the route to the target with two Warriors and the Slinger: Bronze Working and Military Tradition in one action."
+        },
+        {
+          "id": "setup-second-city",
+          "turn": 24,
+          "text": "Settle the second city on a hill toward the target with room for an Encampment facing the enemy."
+        }
+      ]
+    },
+    {
+      "id": "first-war",
+      "name": "The first war",
+      "turns": {
+        "from": 26,
+        "to": 80
+      },
+      "era": "classical",
+      "objective": "Take the nearest rival capital and its best district city with four Hetairoi, two Hypaspists, a Battering Ram and a Great General before Walls become Medieval, and have the second target chosen before the peace treaty is even offered.",
+      "build_order": [
+        {
+          "item": "Encampment",
+          "why": "The Basilikoi Paides needs it; the Military Training Inspiration comes from it."
+        },
+        {
+          "item": "Basilikoi Paides",
+          "why": "Every unit trained here is Science. From this turn the queue never empties."
+        },
+        {
+          "item": "Hetairoi",
+          "why": "Four of them from the Encampment city under Agoge and Maneuver; the strike force."
+        },
+        {
+          "item": "Hypaspist",
+          "why": "Two, as soon as Iron is mined; they take the city."
+        },
+        {
+          "item": "Battering Ram",
+          "why": "Ancient Walls fall to Hypaspists with a Ram; without it the first war stalls."
+        },
+        {
+          "item": "Archer",
+          "why": "Two Archers upgraded from Slingers to finish Walls and defenders; three Archers give the Machinery Eureka."
+        },
+        {
+          "item": "Settler",
+          "why": "Third and fourth cities while the army is away; captured cities do not grow the core."
+        },
+        {
+          "item": "Monument",
+          "why": "In every capture on the turn of capture; Loyalty first."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:iron-working",
+          "note": "Hypaspists; mine the Iron the moment it shows."
+        },
+        {
+          "id": "tech:wheel",
+          "note": "Water Mill and the road to Construction and Engineering."
+        },
+        {
+          "id": "tech:masonry",
+          "note": "Battering Ram and Ancient Walls for the border city; Quarry for the Eureka."
+        },
+        {
+          "id": "tech:currency",
+          "note": "Commercial Hub in the capital; the Gold that upgrades the army later."
+        },
+        {
+          "id": "tech:construction",
+          "note": "Siege Tower against the second target if it already has Walls; Water Mill for the Eureka."
+        },
+        {
+          "id": "tech:mathematics",
+          "note": "Encampment, Commercial Hub and Campus make the three districts; on the road to Apprenticeship."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:early-empire",
+          "note": "Colonization for the third and fourth Settler; six population across two cities."
+        },
+        {
+          "id": "civic:state-workforce",
+          "note": "Conscription keeps the standing army affordable; the Encampment is the district that boosts it."
+        },
+        {
+          "id": "civic:political-philosophy",
+          "note": "Oligarchy: Combat Strength for Hetairoi and Hypaspists and experience on top of the Basilikoi Paides."
+        },
+        {
+          "id": "civic:military-training",
+          "note": "Free Inspiration from the Encampment; Great General points and the road to Feudalism."
+        },
+        {
+          "id": "civic:mysticism",
+          "note": "Only if the pantheon was founded; otherwise skip toward Drama and Poetry for the Great General wonder slots."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Oligarchy",
+          "slot": "wildcard",
+          "from": "civic:political-philosophy",
+          "why": "The government until Monarchy: Combat Strength and experience for every land unit."
+        },
+        {
+          "card": "Maneuver",
+          "slot": "military",
+          "from": "civic:military-tradition",
+          "why": "Hetairoi half again as fast."
+        },
+        {
+          "card": "Conscription",
+          "slot": "military",
+          "from": "civic:state-workforce",
+          "why": "One Gold less per unit per turn; the army is large by design."
+        },
+        {
+          "card": "Colonization",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "Settlers at half price while the Encampment city builds units."
+        }
+      ],
+      "districts": [
+        {
+          "district": "encampment",
+          "city": "second city",
+          "note": "Basilikoi Paides, then Walls; units from here get experience and give Science."
+        },
+        {
+          "district": "commercial-hub",
+          "city": "capital",
+          "note": "Gold for upgrades and a Trade Route to the Encampment city."
+        },
+        {
+          "district": "campus",
+          "city": "capital",
+          "note": "A Library beside the captured Campuses; Recorded History needs two Campuses."
+        }
+      ],
+      "pantheon": {
+        "slug": "god-of-the-forge",
+        "why": "Already founded; this phase spends it on the first army."
+      },
+      "wonders": [
+        {
+          "name": "Statue of Zeus",
+          "why": "Free Archers, Spearmen and a Battering Ram beside the Encampment, and faster anti-cavalry and melee thereafter.",
+          "skip_if": "The Encampment city has no flat tile beside the district, or the first war is already won by the time Bronze Working's build slot is free."
+        },
+        {
+          "name": "Terracotta Army",
+          "why": "A free promotion to every land unit; worth more to an army that never disbands than to anyone else.",
+          "skip_if": "Construction lands after turn 70 or a Production rival is already building it; a captured wonder heals you just as well."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "victor",
+          "promotion": "Garrison Commander",
+          "city": "the first captured city",
+          "why": "Loyalty and Combat Strength where the counterattack will come."
+        },
+        {
+          "governor": "magnus",
+          "promotion": "Provision",
+          "city": "capital",
+          "why": "Settlers without the population cost while the capital also builds units."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "akkad",
+          "why": "Melee and anti-cavalry units deal full damage to Walls; the Hypaspists become siege engines."
+        },
+        {
+          "slug": "valletta",
+          "why": "Faith-bought Walls and Encampment buildings in captured cities."
+        },
+        {
+          "type": "Militaristic",
+          "why": "Unit Production in the capital and a Barracks bonus at three envoys."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-general",
+          "why": "The first Classical Great General is the Hetairoi's extra strength and movement; Hetairoi kills feed the second one."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 50,
+          "test": "Four Hetairoi, two Hypaspists and a Battering Ram beside the first target, and the war declared?",
+          "pass": "Take the capital; take the district city next; write down the second target.",
+          "fail": "Army short: finish it under Agoge and Maneuver before declaring. Iron missing: swap Hypaspists for Archers with the Ram and take a smaller city first."
+        },
+        {
+          "turn": 80,
+          "test": "First rival capital held, at least one captured Campus or Encampment Eureka banked, and the second target chosen with the army already moving?",
+          "pass": "Enter the rolling war; the peace with the first rival is signed only when the second war is declared.",
+          "fail": "If the capital still stands at turn 80, the Classical window is closing: take the two smallest cities, make peace for Gold and start the Medieval siege line now."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "first-war-paides",
+          "turn": 32,
+          "text": "Basilikoi Paides finished in the Encampment city; from this turn its queue holds a unit at all times."
+        },
+        {
+          "id": "first-war-iron",
+          "turn": 36,
+          "text": "Iron mined and the first Hypaspist started; the Iron Working Eureka arrives with the Mine."
+        },
+        {
+          "id": "first-war-declare",
+          "turn": 48,
+          "text": "Declare on the nearest rival with the army two turns from its border; a Surprise War is acceptable this early because Grievances decay fast."
+        },
+        {
+          "id": "first-war-capital",
+          "turn": 60,
+          "text": "Capture the rival capital; if it holds a Wonder, time the assault for when the army is worn, because the capture heals everything."
+        },
+        {
+          "id": "first-war-next-target",
+          "turn": 75,
+          "text": "Choose the second target by district count and distance and move the healed army toward it before any peace is signed."
+        }
+      ]
+    },
+    {
+      "id": "rolling-war",
+      "name": "The rolling war",
+      "turns": {
+        "from": 81,
+        "to": 150
+      },
+      "era": "medieval",
+      "objective": "Run two more wars back to back against the next-nearest rivals and any city-state in the way, upgrading Hetairoi to Knights and Hypaspists to Men-At-Arms, while the captured Campuses and the unit queue keep Science within an era of the leaders.",
+      "build_order": [
+        {
+          "item": "Knight",
+          "why": "Hetairoi upgrade at Stirrups; the strike force stays a generation ahead under Professional Army."
+        },
+        {
+          "item": "Crossbowman",
+          "why": "Two of them give the Metal Casting Eureka and finish Walled cities from range."
+        },
+        {
+          "item": "Trebuchet",
+          "why": "Two, the moment a target shows Medieval Walls; two also give the Siege Tactics Eureka."
+        },
+        {
+          "item": "Aqueduct",
+          "why": "Military Engineering Eureka and Housing in the capital, which is also growing to ten for Civil Service."
+        },
+        {
+          "item": "Library",
+          "why": "In the captured Campuses; the Science the kit promises comes from using what it takes."
+        },
+        {
+          "item": "Ancient Walls",
+          "why": "In the capital and the Encampment city; the Engineering Eureka and a floor against the counter-declaration."
+        },
+        {
+          "item": "Market",
+          "why": "Two Markets for Guilds; Gold is the upgrade budget."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:apprenticeship",
+          "note": "Men-At-Arms for the Hypaspists; three Mines give it."
+        },
+        {
+          "id": "tech:stirrups",
+          "note": "Knights; free Eureka from Feudalism."
+        },
+        {
+          "id": "tech:machinery",
+          "note": "Crossbowmen; three Archers give it."
+        },
+        {
+          "id": "tech:military-tactics",
+          "note": "Pikemen against the AI's Knights; one Spearman kill."
+        },
+        {
+          "id": "tech:military-engineering",
+          "note": "Siege Tower and the Armory on the road to Gunpowder; the Aqueduct boosts it."
+        },
+        {
+          "id": "tech:engineering",
+          "note": "Ancient Walls boost it; Catapults are not needed, but it leads to Castles."
+        },
+        {
+          "id": "tech:castles",
+          "note": "Tier 2 government gives the Eureka; Medieval Walls at home."
+        },
+        {
+          "id": "tech:education",
+          "note": "Universities in the captured Campuses; a Great Scientist gives the Eureka if one is earned."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:feudalism",
+          "note": "Feudal Contract for Medieval units; six Farms across the core give it."
+        },
+        {
+          "id": "civic:mercenaries",
+          "note": "Professional Army: every upgrade at half price. Eight land units is already the army."
+        },
+        {
+          "id": "civic:defensive-tactics",
+          "note": "The AI will declare on you at some point; the Inspiration arrives by itself."
+        },
+        {
+          "id": "civic:divine-right",
+          "note": "Monarchy for a wide, Walled empire; Gothic Architecture is not needed."
+        },
+        {
+          "id": "civic:guilds",
+          "note": "Two Markets; the Banking Eureka and Craftsmen later."
+        },
+        {
+          "id": "civic:civil-service",
+          "note": "The capital at ten population with the Aqueduct."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Professional Army",
+          "slot": "military",
+          "from": "civic:mercenaries",
+          "why": "Hetairoi to Knights and Hypaspists to Men-At-Arms at half the Gold."
+        },
+        {
+          "card": "Feudal Contract",
+          "slot": "military",
+          "from": "civic:feudalism",
+          "why": "Medieval melee, ranged and anti-cavalry half again as fast in every Basilikoi Paides city."
+        },
+        {
+          "card": "Monarchy",
+          "slot": "wildcard",
+          "from": "civic:divine-right",
+          "why": "Housing from Walls and an extra military slot for a wide empire."
+        },
+        {
+          "card": "Serfdom",
+          "slot": "economic",
+          "from": "civic:feudalism",
+          "why": "Builders with extra charges to repair what the wars pillage and improve the captured land."
+        }
+      ],
+      "districts": [
+        {
+          "district": "encampment",
+          "city": "the largest captured city facing the next target",
+          "note": "A second Basilikoi Paides nearer the front; two unit queues is twice the Science."
+        },
+        {
+          "district": "aqueduct",
+          "city": "capital",
+          "note": "Military Engineering Eureka and growth for Civil Service."
+        },
+        {
+          "district": "campus",
+          "city": "every captured city that lacks one and has a mountain or Woods",
+          "note": "Libraries and Universities are the Science plan; the captured ones come first."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Alhambra",
+          "why": "An extra Military policy slot and Great General points, on a hill beside an Encampment.",
+          "skip_if": "No hill beside an Encampment is free, or Castles arrives after turn 140; a captured Alhambra counts just as well."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "victor",
+          "promotion": "Embrasure",
+          "city": "the newest capture",
+          "why": "Moves with the front; each new city holds while the army goes on."
+        },
+        {
+          "governor": "amani",
+          "promotion": "Emissary",
+          "city": "a captured city beside a rival",
+          "why": "Loyalty pressure outward and an envoy where the war passed a city-state."
+        },
+        {
+          "governor": "pingala",
+          "promotion": "Researcher",
+          "city": "capital",
+          "why": "The Science multiplier on the largest Campus."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "preslav",
+          "why": "Loyalty per Encampment building in a wide, captured empire."
+        },
+        {
+          "slug": "kabul",
+          "why": "Still the best envoy on the map for an army that fights every turn."
+        },
+        {
+          "type": "Scientific",
+          "why": "Science in every Library at three envoys; the captured Campuses multiply it."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-general",
+          "why": "A Medieval Great General retires for a free promotion or escorts the Knights; Hetairoi kills keep the points coming."
+        },
+        {
+          "class": "great-scientist",
+          "why": "The Education Eureka and a Library-era boost; the Campuses the plan captures earn the points."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 115,
+          "test": "Second rival capital or three more cities taken, army upgraded to Knights and Men-At-Arms, and Science within one era of the leader?",
+          "pass": "Declare the third war before signing the second peace.",
+          "fail": "If the army is still Classical at turn 115, stop advancing, upgrade under Professional Army in one turn of Gold, then resume. If Science is two eras behind, Libraries in every capture before the next Settler."
+        },
+        {
+          "turn": 150,
+          "test": "At war right now, with eight or more cities and Loyalty positive in all of them?",
+          "pass": "Enter the parity phase; the constraint is now technology, not weariness.",
+          "fail": "Any city at negative Loyalty gets a Governor and a Monument before the next siege. At peace at turn 150 is red: pick the nearest target by district count and declare within five turns."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "rolling-war-second-declare",
+          "turn": 85,
+          "text": "Declare the second war while the first peace is being signed; the army does not go home between them."
+        },
+        {
+          "id": "rolling-war-upgrade",
+          "turn": 100,
+          "text": "Upgrade every Hetairoi to a Knight and every Hypaspist to a Man-At-Arms under Professional Army in one turn."
+        },
+        {
+          "id": "rolling-war-libraries",
+          "turn": 110,
+          "text": "Libraries in every captured Campus; two Universities queued for the Printing Eureka."
+        },
+        {
+          "id": "rolling-war-trebuchets",
+          "turn": 125,
+          "text": "Two Trebuchets built the turn a target shows Medieval Walls; the Siege Tactics Eureka comes with them."
+        },
+        {
+          "id": "rolling-war-third-target",
+          "turn": 145,
+          "text": "Third target chosen and the route scouted before the second war ends."
+        }
+      ]
+    },
+    {
+      "id": "parity",
+      "name": "Parity",
+      "turns": {
+        "from": 151,
+        "to": 220
+      },
+      "era": "renaissance",
+      "objective": "Keep warring while technology becomes the binding constraint: Bombards and Musketmen before the AI's Renaissance Walls, Universities in every captured Campus, and the Gold to upgrade an army that is now large enough to cost more than the empire earns if it idles.",
+      "build_order": [
+        {
+          "item": "Bombard",
+          "why": "Renaissance Walls fall to Bombards and nothing earlier; two Trebuchets upgrade into them."
+        },
+        {
+          "item": "Musketman",
+          "why": "Men-At-Arms upgrade at Gunpowder; a Musketman kill gives Square Rigging."
+        },
+        {
+          "item": "Armory",
+          "why": "In both Encampments; the Gunpowder Eureka and more experience on top of the Basilikoi Paides."
+        },
+        {
+          "item": "University",
+          "why": "Two give the Printing Eureka; the Science catch-up lives here."
+        },
+        {
+          "item": "Bank",
+          "why": "Two give the Economics Eureka; the upgrade budget."
+        },
+        {
+          "item": "Workshop",
+          "why": "Two give the Industrialization Eureka; Industrial Zones in the two best Production cities."
+        },
+        {
+          "item": "Medieval Walls",
+          "why": "In border cities facing a rival with Bombards; the counterattack is now real."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:gunpowder",
+          "note": "Musketmen; the Armory gives the Eureka."
+        },
+        {
+          "id": "tech:metal-casting",
+          "note": "Bombards; two Crossbowmen give it."
+        },
+        {
+          "id": "tech:siege-tactics",
+          "note": "Two Trebuchets already own it; Bombards and the Renaissance siege."
+        },
+        {
+          "id": "tech:printing",
+          "note": "Two Universities; Science for the whole empire."
+        },
+        {
+          "id": "tech:banking",
+          "note": "Free from Guilds; Banks for Economics."
+        },
+        {
+          "id": "tech:square-rigging",
+          "note": "Musketman kill in the ongoing war; Frigates if a coast becomes a target."
+        },
+        {
+          "id": "tech:military-science",
+          "note": "Cavalry for the Knights; a Knight kill gives it, and this army has Knights."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:nationalism",
+          "note": "Corps and Grand Armee; every war from here is declared with a Casus Belli, which gives the Inspiration."
+        },
+        {
+          "id": "civic:diplomatic-service",
+          "note": "An alliance with the far-side trade partner; Spies for the sieges."
+        },
+        {
+          "id": "civic:exploration",
+          "note": "On the road to Nationalism; Caravels only if a coast is next."
+        },
+        {
+          "id": "civic:mercantilism",
+          "note": "Triangular Trade for Gold; a Great Merchant gives it if one is earned."
+        },
+        {
+          "id": "civic:the-enlightenment",
+          "note": "Three Great People already earned by the Generals; Rationalism for the Campuses."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Grand Armee",
+          "slot": "military",
+          "from": "civic:nationalism",
+          "why": "Industrial units half again as fast as they unlock."
+        },
+        {
+          "card": "Professional Army",
+          "slot": "military",
+          "from": "civic:mercenaries",
+          "why": "Stays slotted; every upgrade generation is half price."
+        },
+        {
+          "card": "Rationalism",
+          "slot": "economic",
+          "from": "civic:the-enlightenment",
+          "why": "Science from the Universities in the captured Campuses."
+        },
+        {
+          "card": "Triangular Trade",
+          "slot": "economic",
+          "from": "civic:mercantilism",
+          "why": "Gold and Faith per Trade Route; the upgrade budget."
+        }
+      ],
+      "districts": [
+        {
+          "district": "industrial-zone",
+          "city": "the two best Production cities",
+          "note": "Workshops for Industrialization; Factories for the Industrial army."
+        },
+        {
+          "district": "commercial-hub",
+          "city": "the largest captured cities",
+          "note": "Markets and Banks; the army's upkeep is paid here."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Forbidden City",
+          "why": "An extra Wildcard slot for Grand Armee and Rationalism at once.",
+          "skip_if": "Printing lands after turn 200 or the capital is not the Production leader; take a rival's instead."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "victor",
+          "promotion": "Defense Logistics",
+          "city": "the front city",
+          "why": "Units heal and resupply where the Bombards stage."
+        },
+        {
+          "governor": "reyna",
+          "promotion": "Tax Collector",
+          "city": "the largest Commercial Hub city",
+          "why": "Gold for an army that costs more than it did in the Classical era."
+        }
+      ],
+      "city_states": [
+        {
+          "type": "Scientific",
+          "why": "Science in every University at six envoys."
+        },
+        {
+          "type": "Industrial",
+          "why": "Production in Workshops and Factories for the Industrial army."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-general",
+          "why": "Renaissance Generals retire into a free unit or escort the Cavalry; the aura still covers Musketmen."
+        },
+        {
+          "class": "great-scientist",
+          "why": "The Renaissance Scientists boost Universities; this is the catch-up the kit funds."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 185,
+          "test": "Bombards and Musketmen fielded, two Universities built, and a third capital taken or besieged?",
+          "pass": "Continue; queue the fourth target.",
+          "fail": "No Bombards means the next Walled capital is out of reach: take the unwalled cities around it and build the siege line before the next declaration."
+        },
+        {
+          "turn": 220,
+          "test": "At war, Science within one era of the leader, and Gold income positive with the full army?",
+          "pass": "Enter the close; the remaining capitals are the list.",
+          "fail": "Negative Gold: disband the oldest units, not the newest, and slot Conscription. Science two eras behind: Universities before the next siege, because the next war is a Bombard war or it is lost."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "parity-armories",
+          "turn": 160,
+          "text": "Armories in both Encampments; the Gunpowder Eureka arrives with the first."
+        },
+        {
+          "id": "parity-bombards",
+          "turn": 175,
+          "text": "Two Bombards upgraded from Trebuchets and staged beside the next Walled target."
+        },
+        {
+          "id": "parity-universities",
+          "turn": 180,
+          "text": "Two Universities finished; the Printing Eureka banked."
+        },
+        {
+          "id": "parity-casus-belli",
+          "turn": 195,
+          "text": "Declare the fourth war with a Casus Belli (Reconquest, Protectorate or Holy War) for the Nationalism Inspiration and lower Grievances."
+        },
+        {
+          "id": "parity-fourth-target",
+          "turn": 215,
+          "text": "Fourth target chosen by district count; the army moving toward it before the current peace."
+        }
+      ]
+    },
+    {
+      "id": "close",
+      "name": "Close",
+      "turns": {
+        "from": 221,
+        "to": null
+      },
+      "era": "industrial",
+      "objective": "Take every remaining original capital with Artillery, Cavalry and Line Infantry built in Factory cities, keeping the unit queue and the Science running until the last capital falls or the Science victory the captured Campuses built becomes the shorter road.",
+      "build_order": [
+        {
+          "item": "Artillery",
+          "why": "Bombards upgrade; the only answer to Renaissance Walls and the city strength of a Modern capital."
+        },
+        {
+          "item": "Cavalry",
+          "why": "Knights upgrade under Professional Army; the flanking force the Hetairoi became."
+        },
+        {
+          "item": "Line Infantry",
+          "why": "Three give the Replaceable Parts Eureka; Infantry follows."
+        },
+        {
+          "item": "Factory",
+          "why": "In both Industrial Zones; the Production for the last army."
+        },
+        {
+          "item": "Military Academy",
+          "why": "Three give the Totalitarianism Inspiration and Corps straight from the queue."
+        },
+        {
+          "item": "Research Lab",
+          "why": "Keep Science close enough that the last targets cannot out-tech the siege."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:industrialization",
+          "note": "Factories; two Workshops give it."
+        },
+        {
+          "id": "tech:rifling",
+          "note": "Line Infantry; a Niter Mine gives it and Niter is needed anyway."
+        },
+        {
+          "id": "tech:ballistics",
+          "note": "Field Cannons and Artillery; two Forts from a Military Engineer give it."
+        },
+        {
+          "id": "tech:scientific-theory",
+          "note": "The Enlightenment gives it; Research Labs follow."
+        },
+        {
+          "id": "tech:replaceable-parts",
+          "note": "Infantry; three Line Infantry give it."
+        },
+        {
+          "id": "tech:steel",
+          "note": "Artillery; the Coal Mine is built for the Factories anyway."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:scorched-earth",
+          "note": "Total War; two Field Cannons give it."
+        },
+        {
+          "id": "civic:mobilization",
+          "note": "Levee en Masse; three Corps give it."
+        },
+        {
+          "id": "civic:totalitarianism",
+          "note": "Fascism for the last campaign; three Military Academies give it."
+        },
+        {
+          "id": "civic:urbanization",
+          "note": "On the road to Ideology; a captured capital at fifteen population gives it."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Total War",
+          "slot": "military",
+          "from": "civic:scorched-earth",
+          "why": "Double pillage yields and faster siege units for the last sieges."
+        },
+        {
+          "card": "Levee en Masse",
+          "slot": "military",
+          "from": "civic:mobilization",
+          "why": "Unit maintenance down by two Gold each across the largest army on the map."
+        },
+        {
+          "card": "Fascism",
+          "slot": "wildcard",
+          "from": "civic:totalitarianism",
+          "why": "The government for the last conquest: Combat Strength and unit Production."
+        }
+      ],
+      "districts": [],
+      "wonders": [],
+      "governors": [
+        {
+          "governor": "victor",
+          "promotion": "Arms Race Proponent",
+          "city": "the front city",
+          "why": "Strategic resources for Artillery and Tanks accumulate where they are built."
+        }
+      ],
+      "city_states": [],
+      "great_people": [
+        {
+          "class": "great-general",
+          "why": "Industrial and Modern Generals still cover Artillery and Infantry; the kills keep paying for them."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 270,
+          "test": "Two more original capitals taken since turn 220, or the Science victory within forty turns from the captured Campuses?",
+          "pass": "Finish whichever is nearer; no further decisions.",
+          "fail": "Neither: the game is a Score game. Keep the army for defence, stop the wars, and spend on Campuses and Theater Squares."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "close-artillery",
+          "turn": 235,
+          "text": "Four Artillery and two Cavalry Corps staged beside the nearest remaining original capital."
+        },
+        {
+          "id": "close-academies",
+          "turn": 245,
+          "text": "Three Military Academies built; Corps from the queue and the Totalitarianism Inspiration."
+        },
+        {
+          "id": "close-review",
+          "turn": 270,
+          "text": "Review the turn 270 checkpoint: continue the conquest, swap to the Science close, or call it a Score game."
+        }
+      ]
+    }
+  ],
+  "boosts": [
+    {
+      "id": "tech:writing",
+      "fit": "free",
+      "when": "setup",
+      "how": "The Scout meets the first rival on the way to its capital."
+    },
+    {
+      "id": "tech:bronze-working",
+      "fit": "free",
+      "when": "setup",
+      "how": "Three barbarian kills at the camp on the road to the target."
+    },
+    {
+      "id": "tech:archery",
+      "fit": "cheap",
+      "when": "setup",
+      "how": "The Slinger finishes a barbarian scout near the capital."
+    },
+    {
+      "id": "tech:horseback-riding",
+      "fit": "free",
+      "when": "setup",
+      "how": "The first Builder's Pasture; Animal Husbandry is researched first for this reason."
+    },
+    {
+      "id": "tech:wheel",
+      "fit": "cheap",
+      "when": "setup",
+      "how": "The first Builder mines a resource hill."
+    },
+    {
+      "id": "tech:astrology",
+      "fit": "cheap",
+      "when": "setup",
+      "how": "The Scout finds a natural wonder on the way to the target; do not detour for it."
+    },
+    {
+      "id": "tech:irrigation",
+      "fit": "cheap",
+      "when": "setup",
+      "how": "A Farm on a resource if one sits beside the capital."
+    },
+    {
+      "id": "tech:sailing",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:masonry",
+      "fit": "cheap",
+      "when": "first-war",
+      "how": "A Quarry on Stone near the capital; the Battering Ram needs the technology anyway."
+    },
+    {
+      "id": "tech:iron-working",
+      "fit": "free",
+      "when": "first-war",
+      "how": "The Iron Mine the Hypaspists require."
+    },
+    {
+      "id": "tech:currency",
+      "fit": "cheap",
+      "when": "first-war",
+      "how": "The first Trader runs from the capital to the Encampment city."
+    },
+    {
+      "id": "tech:construction",
+      "fit": "cheap",
+      "when": "first-war",
+      "how": "A Water Mill in the river city."
+    },
+    {
+      "id": "tech:mathematics",
+      "fit": "cheap",
+      "when": "first-war",
+      "how": "Encampment, Commercial Hub and Campus are three specialty districts by turn 70."
+    },
+    {
+      "id": "tech:engineering",
+      "fit": "cheap",
+      "when": "rolling-war",
+      "how": "Ancient Walls in the Encampment city before the first counter-declaration."
+    },
+    {
+      "id": "tech:celestial-navigation",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:shipbuilding",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:military-tactics",
+      "fit": "cheap",
+      "when": "rolling-war",
+      "how": "One Spearman kill; keep one Spearman with the army for this and against Horsemen."
+    },
+    {
+      "id": "tech:apprenticeship",
+      "fit": "cheap",
+      "when": "rolling-war",
+      "how": "Three Mines across the first three cities."
+    },
+    {
+      "id": "tech:stirrups",
+      "fit": "free",
+      "when": "rolling-war",
+      "how": "Feudalism is on the civic path."
+    },
+    {
+      "id": "tech:machinery",
+      "fit": "cheap",
+      "when": "rolling-war",
+      "how": "Three Archers, upgraded from the Slingers and built for the first siege."
+    },
+    {
+      "id": "tech:military-engineering",
+      "fit": "cheap",
+      "when": "rolling-war",
+      "how": "The capital Aqueduct."
+    },
+    {
+      "id": "tech:castles",
+      "fit": "free",
+      "when": "rolling-war",
+      "how": "Monarchy or any Tier 2 government."
+    },
+    {
+      "id": "tech:education",
+      "fit": "costly",
+      "when": "rolling-war",
+      "how": "Only if a Great Scientist is earned from the captured Campuses; otherwise unboosted."
+    },
+    {
+      "id": "tech:buttress",
+      "fit": "costly",
+      "when": "rolling-war",
+      "how": "Only if Terracotta Army or Alhambra is built or captured."
+    },
+    {
+      "id": "tech:gunpowder",
+      "fit": "free",
+      "when": "parity",
+      "how": "The Armory in the first Encampment."
+    },
+    {
+      "id": "tech:metal-casting",
+      "fit": "cheap",
+      "when": "parity",
+      "how": "Two Crossbowmen built for the Medieval sieges."
+    },
+    {
+      "id": "tech:siege-tactics",
+      "fit": "cheap",
+      "when": "parity",
+      "how": "Two Trebuchets built the turn a target shows Medieval Walls."
+    },
+    {
+      "id": "tech:printing",
+      "fit": "cheap",
+      "when": "parity",
+      "how": "Two Universities in the captured Campuses."
+    },
+    {
+      "id": "tech:banking",
+      "fit": "free",
+      "when": "parity",
+      "how": "Guilds is on the civic path."
+    },
+    {
+      "id": "tech:square-rigging",
+      "fit": "cheap",
+      "when": "parity",
+      "how": "A Musketman kill in whatever war is running."
+    },
+    {
+      "id": "tech:military-science",
+      "fit": "free",
+      "when": "parity",
+      "how": "A Knight kill; the Hetairoi became Knights at Stirrups."
+    },
+    {
+      "id": "tech:cartography",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:mass-production",
+      "fit": "costly",
+      "when": "parity",
+      "how": "One Lumber Mill if a Woods tile is free; otherwise unboosted."
+    },
+    {
+      "id": "tech:astronomy",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:economics",
+      "fit": "cheap",
+      "when": "parity",
+      "how": "Two Banks in the Commercial Hubs that pay the army."
+    },
+    {
+      "id": "tech:industrialization",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Workshops in the Industrial Zones."
+    },
+    {
+      "id": "tech:scientific-theory",
+      "fit": "free",
+      "when": "close",
+      "how": "The Enlightenment is on the civic path."
+    },
+    {
+      "id": "tech:rifling",
+      "fit": "cheap",
+      "when": "close",
+      "how": "A Niter Mine, needed for Musketmen and Bombards regardless."
+    },
+    {
+      "id": "tech:ballistics",
+      "fit": "costly",
+      "when": "close",
+      "how": "Two Forts from a Military Engineer on the border; a detour unless a Great General's retirement builds one."
+    },
+    {
+      "id": "tech:replaceable-parts",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Three Line Infantry upgraded from Musketmen."
+    },
+    {
+      "id": "tech:steel",
+      "fit": "costly",
+      "when": "close",
+      "how": "An Ironclad is a detour for a land army; the Coal Mine half is free."
+    },
+    {
+      "id": "tech:steam-power",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:sanitation",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:craftsmanship",
+      "fit": "free",
+      "when": "setup",
+      "how": "Three improved tiles from the first Builder."
+    },
+    {
+      "id": "civic:military-tradition",
+      "fit": "free",
+      "when": "setup",
+      "how": "The first camp cleared on the road to the target."
+    },
+    {
+      "id": "civic:foreign-trade",
+      "fit": "costly",
+      "when": "setup",
+      "how": "A second continent only if the Scout happens on it; never detour."
+    },
+    {
+      "id": "civic:state-workforce",
+      "fit": "free",
+      "when": "first-war",
+      "how": "The Encampment is the first district."
+    },
+    {
+      "id": "civic:early-empire",
+      "fit": "free",
+      "when": "first-war",
+      "how": "Six population across the first two cities."
+    },
+    {
+      "id": "civic:political-philosophy",
+      "fit": "cheap",
+      "when": "first-war",
+      "how": "Three city-states met by the Scout and the army on the march."
+    },
+    {
+      "id": "civic:military-training",
+      "fit": "free",
+      "when": "first-war",
+      "how": "The Encampment in the second city, built in the first-war phase."
+    },
+    {
+      "id": "civic:mysticism",
+      "fit": "cheap",
+      "when": "first-war",
+      "how": "Founding the pantheon under God King or from a Holy Site captured early."
+    },
+    {
+      "id": "civic:games-and-recreation",
+      "fit": "free",
+      "when": "first-war",
+      "how": "Researching Construction."
+    },
+    {
+      "id": "civic:drama-and-poetry",
+      "fit": "cheap",
+      "when": "first-war",
+      "how": "Statue of Zeus or Terracotta Army, or any wonder captured with its city."
+    },
+    {
+      "id": "civic:defensive-tactics",
+      "fit": "free",
+      "when": "rolling-war",
+      "how": "A rival declares on Macedon; with three wars running one will."
+    },
+    {
+      "id": "civic:recorded-history",
+      "fit": "cheap",
+      "when": "rolling-war",
+      "how": "Two Campuses: the capital's and the first captured one."
+    },
+    {
+      "id": "civic:theology",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:feudalism",
+      "fit": "cheap",
+      "when": "rolling-war",
+      "how": "Six Farms across the core cities."
+    },
+    {
+      "id": "civic:mercenaries",
+      "fit": "free",
+      "when": "rolling-war",
+      "how": "Eight land units is smaller than the army already is."
+    },
+    {
+      "id": "civic:divine-right",
+      "fit": "costly",
+      "when": "rolling-war",
+      "how": "Two Temples only in captured Holy Site cities; otherwise unboosted."
+    },
+    {
+      "id": "civic:guilds",
+      "fit": "cheap",
+      "when": "rolling-war",
+      "how": "Two Markets, in the capital and the largest capture."
+    },
+    {
+      "id": "civic:civil-service",
+      "fit": "cheap",
+      "when": "rolling-war",
+      "how": "The capital at ten population with the Aqueduct."
+    },
+    {
+      "id": "civic:medieval-faires",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:exploration",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:humanism",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:diplomatic-service",
+      "fit": "costly",
+      "when": "parity",
+      "how": "An alliance with the far-side trade partner; worth it for the Spies, not for the boost."
+    },
+    {
+      "id": "civic:mercantilism",
+      "fit": "costly",
+      "when": "parity",
+      "how": "A Great Merchant only if the Commercial Hubs earn one; do not chase."
+    },
+    {
+      "id": "civic:the-enlightenment",
+      "fit": "free",
+      "when": "parity",
+      "how": "Three Great People; the Generals alone get there."
+    },
+    {
+      "id": "civic:nationalism",
+      "fit": "free",
+      "when": "parity",
+      "how": "Every war from the Renaissance on is declared with a Casus Belli."
+    },
+    {
+      "id": "civic:reformed-church",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:scorched-earth",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Field Cannons for the Industrial sieges."
+    },
+    {
+      "id": "civic:mobilization",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Three Corps formed from the Cavalry and Infantry."
+    },
+    {
+      "id": "civic:totalitarianism",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Three Military Academies in the Encampment cities."
+    },
+    {
+      "id": "civic:urbanization",
+      "fit": "cheap",
+      "when": "close",
+      "how": "A captured capital at fifteen population; they arrive large."
+    },
+    {
+      "id": "civic:colonialism",
+      "fit": "costly",
+      "when": "parity",
+      "how": "Astronomy is off the path for a land army; take it only for the Colonial Taxes Gold."
+    },
+    {
+      "id": "civic:civil-engineering",
+      "fit": "costly",
+      "when": "close",
+      "how": "Seven district types happen across a captured empire without planning; do not build toward it."
+    }
+  ],
+  "decision_triggers": [
+    {
+      "name": "Peace offered",
+      "if": "The current enemy offers peace with cities or Gold while the army is still healthy and the next target is not yet in reach.",
+      "then": "Take the cities, not the Gold, and declare on the next target on the same turn or the turn after. The kit pays nothing during the gap."
+    },
+    {
+      "name": "Wonder city on the route",
+      "if": "A target city holds a Wonder and the army is below two-thirds health.",
+      "then": "Assault that city first. The capture heals every unit, which saves the five turns of healing a non-wonder city would cost."
+    },
+    {
+      "name": "Walls ahead of the army",
+      "if": "The next target shows Medieval or Renaissance Walls and the army has no Trebuchets or Bombards.",
+      "then": "Do not besiege. Take the unwalled cities around it and build the two siege units before the main siege; the unit queue keeps the Science running meanwhile."
+    },
+    {
+      "name": "Loyalty flip threatened",
+      "if": "A captured city shows negative Loyalty per turn in the city panel.",
+      "then": "Garrison it, move Victor or Amani there, buy a Monument, and if it still falls below zero, pause the advance for the five turns it takes rather than lose the districts and their boosts."
+    },
+    {
+      "name": "Science falling behind",
+      "if": "At any era checkpoint the Science leader is two eras ahead.",
+      "then": "Libraries and Universities in every captured Campus before the next Settler or wonder, and Pingala on the largest one; the next war is lost to Walls otherwise."
+    }
+  ],
+  "abort": {
+    "trigger": "At peace for more than fifteen turns with no reachable target: every remaining rival is across water with no Harbor built, or behind Renaissance Walls the army cannot breach within twenty turns.",
+    "actions": [
+      "Stop building units beyond defence; the Basilikoi Paides Science is not worth the upkeep without a war to use the units in.",
+      "Rebuild as a Science civilization around the captured Campuses: Universities, Research Labs, Pingala, and the Scientific city-states.",
+      "Keep the Encampments and one Corps per border; the civilizations you took cities from remember."
+    ]
+  },
+  "fail_state": "The Medieval era arrives with one war fought, peace signed for Gold, the Hetairoi obsolete and the Encampment queue idle. Macedon is then a mid-sized civilization with no Science buildings of its own, high Grievances, and a leader ability that has nothing to remove.",
+  "common_mistakes": [
+    "Signing peace to consolidate. There is nothing to consolidate against; weariness is the thing the kit removes, and peace turns the whole kit off.",
+    "Razing cities. A razed city gives no Eureka or Inspiration and no Science from its Campus; take it, garrison it, and move on.",
+    "Letting the Encampment queue idle between wars. The Basilikoi Paides pays Science per unit trained, not per unit owned.",
+    "Chasing the largest city instead of the most districts. Hellenistic Fusion counts districts; a small city with a Campus and an Encampment is two boosts.",
+    "Waiting for Horses. The Hetairoi needs none; the only reason to delay the first war is Iron for the Hypaspists."
+  ],
+  "sources": [
+    "Civilization VI Civilopedia, Gathering Storm ruleset (Macedon, Alexander, Hetairoi, Hypaspist, Basilikoi Paides).",
+    "Boost objectives cross-checked against civilization6planner.com tech-tree and civics-tree pages, 2026-10-01.",
+    "Leadership Focus tags, caveats and Monitor supplement for Alexander in this repository."
+  ]
+}

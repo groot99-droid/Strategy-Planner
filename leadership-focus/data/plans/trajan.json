@@ -1,0 +1,491 @@
+{
+  "slug": "trajan",
+  "shape": "Linear",
+  "secondary_shape": null,
+  "version": 1,
+  "updated": "2026-10-01",
+  "assumptions": {
+    "ruleset": "Gathering Storm with every expansion and the Leader Pass",
+    "speed": "Standard",
+    "difficulty": "Emperor",
+    "map": "Continents or Pangaea, standard size, 8 civilizations",
+    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. Trajan has one persona and that is the one planned here."
+  },
+  "verdict": {
+    "victory": "Science",
+    "secondary": "Domination",
+    "confidence": "medium",
+    "one_line": "Settle eight to ten cities before turn 80 on free Monuments, free Trading Posts and free roads, choose by turn 60 whether the Legions take a neighbour or the cities take Campuses, and spend the Culture lead on the civics that serve that choice.",
+    "why": "Trajan's Column puts a Monument in every city on the turn it is founded, and All Roads Lead to Rome gives each one a Trading Post and a road home, so a Roman city is productive and connected from turn one instead of turn fifteen. That is a settling bonus and a Culture bonus, and neither of them wins anything by itself; the Culture buys civics and the civics buy governments and policies that have to point somewhere. Science is the default because a wide empire with a Campus in every city is the thing this kit builds fastest and the Legion window is short, but a neighbour within twelve tiles at turn 50 makes the Legion push the better opening, which is why Domination is the second direction and not Culture."
+  },
+  "map_check": {
+    "must_have": [
+      "Land for eight cities within trade range of the capital, since the free roads and the Trading Posts only connect cities in range.",
+      "Fresh water or a Mountain beside at least half the city sites, because the Bath has the Aqueduct's placement rule."
+    ],
+    "prefer": [
+      "A rival capital within twelve tiles for the Legion option.",
+      "Plains Hills for Legion Production and Mines for Apprenticeship.",
+      "Pamukkale or Chocolate Hills in reach; Amenities and Production are what a wide Rome runs short of."
+    ],
+    "no_go": "A small island or a start with room for three cities. Every Roman bonus is paid per city founded; three cities is three Monuments and the kit is finished by turn 40.",
+    "fallback": "If the land is short, settle it anyway and take the Domination direction at turn 60: Legions need no Iron and the free roads move them to the border, and the neighbour's land becomes Roman cities with their own free Monuments on capture."
+  },
+  "kit_levers": [
+    { "source": "leader_ability", "name": "Trajan's Column", "buys": "A free Monument in every city founded or captured in the Ancient era, or the era-appropriate City Center building later.", "exploit": "Found cities instead of building Monuments, and found them early, because a city founded in the Ancient era gets a Monument while one founded later gets less. The Culture is the civic lead that the direction decision spends; a captured city gets the free building too, so conquest in the Classical era is still inside the ability." },
+    { "source": "civ_ability", "name": "All Roads Lead to Rome", "buys": "A free Trading Post in every city, automatic roads to new cities within trade range of the capital, and extra Gold on Trade Routes that pass through Roman cities.", "exploit": "Domestic Trade Routes pass through Trading Posts the moment they leave the capital, so the first Traders pay more than anyone else's. The roads move Settlers, Builders and Legions to the frontier at road speed, which is why the plan settles outward in a chain rather than a scatter." },
+    { "source": "unique_unit", "name": "Legion", "buys": "A Swordsman replacement with 40 Combat Strength that needs no Iron and carries one build charge for a Roman Fort, a road or clearing a feature.", "exploit": "The Domination option: six Legions under Oligarchy take a Classical capital before Walls, and the charge builds a Fort on the border afterward. On the Science option two Legions escort Settlers and clear the camps, and their charges clear features for districts." },
+    { "source": "unique_infrastructure", "name": "Bath", "buys": "An Aqueduct replacement with extra Housing and an Amenity, placed like an Aqueduct beside the City Center and a water source or Mountain.", "exploit": "A wide empire's limit is Amenities and Housing, not land. A Bath in every river or lake city removes both limits for one district, triggers the Military Engineering Eureka as an Aqueduct would, and gives the Industrial Zone beside it adjacency." },
+    { "source": "agenda", "name": "Optimus Princeps", "buys": "Trajan respects civilizations with a lot of territory and looks down on those with little.", "exploit": "Only matters for AI Trajan: a wide Rome of your own keeps him friendly, which frees the Legions for a smaller neighbour." }
+  ],
+  "shape_block": {
+    "linear": {
+      "direction": {
+        "options": [
+          { "victory": "Science", "when_it_fits": "Eight or more city sites are settled or claimed by turn 60 and no neighbour is both close and weak. A Campus in every city, Baths for the Housing to staff them, and the Culture lead spent on Recorded History, The Enlightenment and the Science governments out-researches any normal empire; nothing in the kit expires on this path." },
+          { "victory": "Domination", "when_it_fits": "A rival capital is within twelve tiles by road at turn 50 and has no Walls. Six Legions and a Battering Ram take it and one more city before Medieval Walls, each capture gets its own free building, and the empire that results is the Science empire with two more cities. If the window is missed, this option closes until Renaissance siege." },
+          { "victory": "Culture", "when_it_fits": "Two Cultural city-states are met by turn 40 and the capital has already landed a Classical wonder. Ten Monuments make the civic tree fast and ten Theater Squares make Tourism wide, but nothing in the kit makes Great Works or Tourism cheaper, so take this only when the map has already handed over the pieces." }
+        ],
+        "choose_by": 60,
+        "commit_test": "At turn 90 look at what the Culture bought: if the last three civics were Recorded History, Drama and Poetry and Theology for the Science or Culture path, or Military Tradition, Military Training and Political Philosophy for Oligarchy, the direction is chosen. If they were whatever came next on the tree, the lead is being banked and the plan has failed its own test."
+      }
+    }
+  },
+  "phases": [
+    {
+      "id": "expand",
+      "name": "Settle in a chain",
+      "turns": { "from": 1, "to": 40 },
+      "era": "ancient",
+      "objective": "Found four cities in a chain outward from the capital so each gets a free Monument, a Trading Post and a road, pick City Patron Goddess, and scout the nearest rival for the turn 60 decision.",
+      "build_order": [
+        { "item": "Scout", "why": "Finds the city chain and the nearest rival; Writing on the first meeting." },
+        { "item": "Warrior", "why": "Second Warrior escorts the first Settler and clears the nearest camp for Bronze Working." },
+        { "item": "Settler", "why": "No Monument to build, so the Settler is the second item; the second city is founded by turn 18." },
+        { "item": "Slinger", "why": "Archery Eureka on a camp scout and a defender while the Warriors escort." },
+        { "item": "Settler", "why": "Third city on the road the second one pulled out of the capital." },
+        { "item": "Builder", "why": "A Mine for The Wheel, a Quarry for Masonry, a Farm on a resource for Irrigation." },
+        { "item": "Settler", "why": "Fourth city; the capital has Housing to spare and Colonization is slotted by now." },
+        { "item": "Warrior", "why": "Escort for the fourth Settler; it upgrades to a Legion at Iron Working." }
+      ],
+      "research": [
+        { "id": "tech:mining", "note": "Mines for The Wheel and Apprenticeship; Bronze Working next." },
+        { "id": "tech:bronze-working", "note": "Three camp kills from the escort Warriors; Iron Working and the Legion are behind it." },
+        { "id": "tech:archery", "note": "Slinger kill at the first camp; Archers behind the Legions later." },
+        { "id": "tech:masonry", "note": "A Quarry gives the Eureka; the Pyramids and Ancient Walls." },
+        { "id": "tech:wheel", "note": "A Mine on a resource; Water Mills in the river cities." },
+        { "id": "tech:writing", "note": "The Scout meets a rival; Campuses are the Science direction." }
+      ],
+      "civics": [
+        { "id": "civic:code-of-laws", "note": "God King for the pantheon and Discipline for the escorts." },
+        { "id": "civic:craftsmanship", "note": "Three improvements from the first Builder; Ilkum for the next Builders." },
+        { "id": "civic:early-empire", "note": "Six population across two cities; Colonization for Settlers three and four." },
+        { "id": "civic:foreign-trade", "note": "The first Trade Route; Caravansaries and the Roman road Gold." },
+        { "id": "civic:state-workforce", "note": "The first district gives the Inspiration; the Monuments make this arrive early." }
+      ],
+      "policies": [
+        { "card": "God King", "slot": "economic", "from": "civic:code-of-laws", "why": "City Patron Goddess by turn 22; swap it out the turn after." },
+        { "card": "Discipline", "slot": "military", "from": "civic:code-of-laws", "why": "Warriors beat camp units while escorting Settlers." },
+        { "card": "Colonization", "slot": "economic", "from": "civic:early-empire", "why": "Settlers at half cost; the chain runs on it until turn 80." }
+      ],
+      "districts": [],
+      "pantheon": { "slug": "city-patron-goddess", "why": "Every new city builds its first district a quarter faster, and this empire founds more cities than anyone.", "alternative": "religious-settlements" },
+      "wonders": [],
+      "governors": [],
+      "city_states": [
+        { "type": "Industrial", "why": "The first envoy is Production toward districts in the capital, and the capital builds Settlers and then a Campus." },
+        { "slug": "preslav", "why": "Loyalty per Encampment building; a wide empire's far cities need it and the Domination direction needs it more." }
+      ],
+      "great_people": [],
+      "checkpoints": [
+        { "turn": 22, "test": "Two cities founded, each with its free Monument, the pantheon taken and a rival capital located?", "pass": "Keep the chain going; Settler three is in the queue.", "fail": "A second city after turn 22 means the Settler came too late in the queue; move the third Settler ahead of the Builder. No rival located by turn 30 means the Scout went the wrong way; send a Warrior the other way." },
+        { "turn": 40, "test": "Four cities founded, all connected by road, and the Culture rate at or above the top rival's?", "pass": "Enter the Legion phase; the direction decision is twenty turns away.", "fail": "Three cities is acceptable with the fourth Settler walking; the roads not connecting means a city was founded outside trade range, and the next ones go closer. Culture below a rival with four Monuments means the Monuments are not being worked around; check that no city is building a Monument it already has." }
+      ],
+      "tasks": [
+        { "id": "expand-settle-capital", "turn": 1, "text": "Settle on the spot or one move to a river or Mountain; the Bath needs one of them later." },
+        { "id": "expand-scout-rival", "turn": 8, "text": "Scout toward the nearest rival capital and note its distance by road; the turn 60 decision is this number." },
+        { "id": "expand-second-city", "turn": 18, "text": "Second city founded four to six tiles out; confirm the road appears and the Monument is there." },
+        { "id": "expand-pantheon", "turn": 22, "text": "Found City Patron Goddess, or Religious Settlements if the land is wide enough to want the free Settler more." },
+        { "id": "expand-fourth-city", "turn": 40, "text": "Fourth city founded on the chain; stop building Monuments anywhere, ever." }
+      ]
+    },
+    {
+      "id": "legion",
+      "name": "Legions and the decision",
+      "turns": { "from": 41, "to": 95 },
+      "era": "classical",
+      "objective": "Reach eight cities, build Baths where the water allows, take Oligarchy or Classical Republic, and decide by turn 60 whether six Legions march on the neighbour or two Legions escort the Campuses; by turn 90 the build queues show which.",
+      "build_order": [
+        { "item": "Settler", "why": "Cities five through eight; the Column pays per city and the Ancient era is nearly over." },
+        { "item": "Legion", "why": "Two on either direction for camps and escorts; six on the Domination direction, with a Battering Ram." },
+        { "item": "Bath", "why": "Capital first; Housing and an Amenity for a city that is about to pass ten population, and the Military Engineering Eureka." },
+        { "item": "Campus", "why": "Capital and the two best adjacency cities; every city on the Science direction." },
+        { "item": "Trader", "why": "Currency Eureka; domestic routes through Trading Posts pay Roman Gold." },
+        { "item": "Water Mill", "why": "Construction Eureka and Production in the river cities." },
+        { "item": "Builder", "why": "Three Mines for Apprenticeship and the Farms Feudalism wants." },
+        { "item": "Encampment", "why": "Domination direction: Great General points and the Military Training Inspiration in the city nearest the target." }
+      ],
+      "research": [
+        { "id": "tech:iron-working", "note": "The Legion unlocks here; the Eureka needs an Iron Mine the Legion itself does not." },
+        { "id": "tech:currency", "note": "First Trade Route gives the Eureka; Commercial Hubs for Gold a wide empire needs." },
+        { "id": "tech:horseback-riding", "note": "A Pasture gives the Eureka; Horsemen scout the target." },
+        { "id": "tech:construction", "note": "Water Mill gives the Eureka; the Colosseum is a wide-empire wonder." },
+        { "id": "tech:mathematics", "note": "Three specialty districts by turn 80." },
+        { "id": "tech:engineering", "note": "Ancient Walls in the border city; the Bath line leads here too." },
+        { "id": "tech:apprenticeship", "note": "Three Mines; Industrial Zones beside the Baths." }
+      ],
+      "civics": [
+        { "id": "civic:military-tradition", "note": "First camp cleared gives the Inspiration; on the path to Political Philosophy." },
+        { "id": "civic:mysticism", "note": "Pantheon gives the Inspiration." },
+        { "id": "civic:political-philosophy", "note": "Three city-states met; Oligarchy for the Legions or Classical Republic for the Campuses." },
+        { "id": "civic:military-training", "note": "Encampment gives the Inspiration on the Domination direction." },
+        { "id": "civic:games-and-recreation", "note": "Construction gives the Inspiration; Entertainment Complexes for eight cities." },
+        { "id": "civic:recorded-history", "note": "Two Campuses; Natural Philosophy is the Science direction's first spend of the Culture lead." },
+        { "id": "civic:drama-and-poetry", "note": "A wonder gives the Inspiration; Theater Squares only on the Culture direction." }
+      ],
+      "policies": [
+        { "card": "Oligarchy", "slot": "wildcard", "from": "civic:political-philosophy", "why": "Domination direction: +4 Combat Strength on Legions makes them 44, which no Classical city resists." },
+        { "card": "Classical Republic", "slot": "wildcard", "from": "civic:political-philosophy", "why": "Science direction: Amenities and Great Person points for eight cities." },
+        { "card": "Agoge", "slot": "military", "from": "civic:craftsmanship", "why": "Legions at half cost while the army is built." },
+        { "card": "Natural Philosophy", "slot": "economic", "from": "civic:recorded-history", "why": "Science direction: doubled Campus adjacency in every city." },
+        { "card": "Caravansaries", "slot": "economic", "from": "civic:foreign-trade", "why": "Gold on the domestic routes that already pass through Trading Posts." }
+      ],
+      "districts": [
+        { "district": "bath", "city": "capital and every river or lake city", "note": "Placed beside the City Center and the water; the Industrial Zone goes next to it later for adjacency." },
+        { "district": "campus", "city": "the three best adjacency cities, then all of them on the Science direction", "note": "Mountain or Geothermal adjacency first; City Patron Goddess makes the first one in each city fast." },
+        { "district": "encampment", "city": "the city nearest the target", "note": "Domination direction only." }
+      ],
+      "pantheon": { "slug": "city-patron-goddess", "why": "Already founded; it pays on every first district this phase builds." },
+      "wonders": [
+        { "name": "Pyramids", "why": "An extra charge on every Builder across eight cities.", "skip_if": "No desert or floodplain tile near the capital, or a rival has Masonry well before you." },
+        { "name": "Colosseum", "why": "Amenities and Culture to every city within six tiles, which in a Roman chain is most of them.", "skip_if": "The capital is not central to the chain, or Construction lands after turn 85." }
+      ],
+      "governors": [
+        { "governor": "magnus", "promotion": "Provision", "city": "capital", "why": "Settlers five through eight without losing population." },
+        { "governor": "pingala", "promotion": "Researcher", "city": "the best Campus city", "why": "Science direction: Science per population where the first University goes." }
+      ],
+      "city_states": [
+        { "slug": "buenos-aires", "why": "Bonus resources become Amenities; a wide empire has many Bonus resources and few Amenities." },
+        { "type": "Scientific", "why": "Science direction: Science in every Library at three envoys." }
+      ],
+      "great_people": [
+        { "class": "great-general", "why": "Domination direction: one Classical Great General on six Legions ends the war." },
+        { "class": "great-scientist", "why": "Science direction: the Education Eureka." }
+      ],
+      "checkpoints": [
+        { "turn": 60, "test": "Direction written down: Domination with a named target within twelve tiles and no Walls, Science, or Culture with its preconditions met? And is the Culture lead going to the civics that direction needs?", "pass": "Queues switch to the direction's list; Legions six or two accordingly.", "fail": "No direction at turn 60 is the shape's failure. Decide by distance: a rival within twelve tiles with no Walls is Domination, anything else is Science. If the civics chosen since turn 40 do not serve either, the Monuments have been banked; put the next civic on the direction's path today." },
+        { "turn": 90, "test": "Eight cities, a government, Baths in the river cities, and the queues showing the direction: six Legions and a Ram at the border, or a Campus in six cities with Libraries?", "pass": "Enter the compounding phase.", "fail": "Six cities and a government is acceptable; fewer means Settlers until eight. Queues showing a bit of each is drift; cut the half that is not the direction." }
+      ],
+      "tasks": [
+        { "id": "legion-first-two", "turn": 50, "text": "Two Legions built; one escorts Settlers, one clears the last camps, and each spends its charge on a Fort or a cleared feature." },
+        { "id": "legion-decide", "turn": 60, "text": "Write the direction down: Domination against a named rival, Science, or Culture. Everything after this turn is built toward it." },
+        { "id": "legion-government", "turn": 65, "text": "Adopt Oligarchy or Classical Republic the turn Political Philosophy lands." },
+        { "id": "legion-baths", "turn": 75, "text": "Baths in the capital and two river cities; Military Engineering Eureka collected." },
+        { "id": "legion-war", "turn": 85, "text": "Domination direction: six Legions and a Battering Ram take the target capital before it has Walls; Fort on the far side with the spare charge." },
+        { "id": "legion-eighth-city", "turn": 90, "text": "Eighth city founded; after this, settle only where Amenities allow." }
+      ]
+    },
+    {
+      "id": "compound",
+      "name": "Spend the Culture lead",
+      "turns": { "from": 96, "to": 165 },
+      "era": "medieval",
+      "objective": "Turn ten Monuments' worth of civics into the direction's governments and policies, build Universities, Markets and Industrial Zones beside the Baths, and pass the era checkpoint that asks whether the lead is being spent or banked.",
+      "build_order": [
+        { "item": "University", "why": "Two for Printing; one in every Campus on the Science direction." },
+        { "item": "Market", "why": "Two for Guilds; Commercial Hubs feed Trade Routes through the Trading Posts." },
+        { "item": "Industrial Zone", "why": "Beside a Bath for adjacency; two Workshops for Industrialization." },
+        { "item": "Builder", "why": "Six Farms for Feudalism and Lumber Mills for Mass Production." },
+        { "item": "Entertainment Complex", "why": "Arenas for Amenities in the cities the Baths and Colosseum do not reach." },
+        { "item": "Crossbowman", "why": "Domination direction: hold the captured cities; Metal Casting Eureka." },
+        { "item": "Theater Square", "why": "Culture direction: one in every city from here; otherwise the capital only." }
+      ],
+      "research": [
+        { "id": "tech:education", "note": "A Great Scientist gives the Eureka; Universities." },
+        { "id": "tech:military-engineering", "note": "The Bath gave the Eureka; Military Engineers build the roads the civ ability does not." },
+        { "id": "tech:castles", "note": "Tier 2 government gives the Eureka; Walls on the border." },
+        { "id": "tech:banking", "note": "Guilds gives the Eureka; Banks." },
+        { "id": "tech:printing", "note": "Two Universities; the Science direction's core." },
+        { "id": "tech:mass-production", "note": "A Lumber Mill; Shipyards only if coastal, otherwise it is on the way to Industrialization." },
+        { "id": "tech:astronomy", "note": "A University beside a Mountain; the Colonialism Inspiration." },
+        { "id": "tech:metal-casting", "note": "Two Crossbowmen on the Domination direction; unboosted otherwise." }
+      ],
+      "civics": [
+        { "id": "civic:feudalism", "note": "Six Farms; Serfdom for the Builders." },
+        { "id": "civic:civil-service", "note": "The capital at ten population with its Bath; Meritocracy for Culture per district." },
+        { "id": "civic:guilds", "note": "Two Markets; Craftsmen for the Industrial Zones." },
+        { "id": "civic:divine-right", "note": "Two Temples only with a religion; otherwise unboosted for Monarchy." },
+        { "id": "civic:exploration", "note": "Unboosted unless coastal; Merchant Republic is the Science direction's government." },
+        { "id": "civic:humanism", "note": "A Great Artist on the Culture direction; unboosted otherwise." },
+        { "id": "civic:diplomatic-service", "note": "An alliance gives the Inspiration; the Chemistry Eureka comes from the same alliance." },
+        { "id": "civic:the-enlightenment", "note": "Three Great People; Rationalism and the Scientific Theory Eureka." },
+        { "id": "civic:mercantilism", "note": "A Great Merchant; Triangular Trade for ten cities' routes." }
+      ],
+      "policies": [
+        { "card": "Meritocracy", "slot": "economic", "from": "civic:civil-service", "why": "Culture per district in an empire with thirty districts; the lead keeps compounding." },
+        { "card": "Serfdom", "slot": "economic", "from": "civic:feudalism", "why": "Builders with extra charges across ten cities." },
+        { "card": "Merchant Republic", "slot": "wildcard", "from": "civic:exploration", "why": "Science and Culture directions: two Economic slots and more Trade Routes." },
+        { "card": "Monarchy", "slot": "wildcard", "from": "civic:divine-right", "why": "Domination direction: Housing from Walls and an extra Military slot." },
+        { "card": "Rationalism", "slot": "economic", "from": "civic:the-enlightenment", "why": "Science direction: Campus buildings doubled in cities with Baths big enough to qualify." },
+        { "card": "Triangular Trade", "slot": "economic", "from": "civic:mercantilism", "why": "Gold and Faith on ten Trade Routes." }
+      ],
+      "districts": [
+        { "district": "industrial-zone", "city": "the two best Production cities, beside a Bath", "note": "Workshops for Industrialization; Ruhr Valley later." },
+        { "district": "commercial-hub", "city": "capital and two river cities", "note": "Markets for Guilds and the Trade Route count for Medieval Faires." },
+        { "district": "entertainment-complex", "city": "the city central to the chain's far end", "note": "Arena Amenities reach six tiles; the Colosseum covers the near end." },
+        { "district": "theater-square", "city": "every city on the Culture direction, otherwise the capital", "note": "Amphitheaters for Great Writer slots." }
+      ],
+      "wonders": [
+        { "name": "Kilwa Kisiwani", "why": "Two suzerainties become +15% yields in every one of ten cities.", "skip_if": "No coastal city, or fewer than two suzerainties at turn 130." },
+        { "name": "Forbidden City", "why": "An extra Wildcard slot; on the Science direction it holds Rationalism alongside Natural Philosophy.", "skip_if": "Printing lands after turn 160 or a Culture civilization has it queued." }
+      ],
+      "governors": [
+        { "governor": "liang", "promotion": "Zoning Commissioner", "city": "the Industrial Zone city", "why": "Faster districts in the city building the Bath, the Industrial Zone and the Workshop." },
+        { "governor": "victor", "promotion": "Garrison Commander", "city": "the captured capital", "why": "Domination direction: Loyalty and Combat Strength where the counterattack comes." },
+        { "governor": "amani", "promotion": "Emissary", "city": "a border city", "why": "Loyalty pressure outward on the far end of the chain." }
+      ],
+      "city_states": [
+        { "slug": "mexico-city", "why": "Regional effects reach three tiles farther; the Colosseum and Arenas cover the whole chain." },
+        { "type": "Scientific", "why": "Science direction: six envoys for Science in every University." }
+      ],
+      "great_people": [
+        { "class": "great-scientist", "why": "University boosts and the Education Eureka." },
+        { "class": "great-merchant", "why": "Mercantilism Inspiration and Trade Routes." },
+        { "class": "great-engineer", "why": "District Production in the Industrial Zone city." }
+      ],
+      "checkpoints": [
+        { "turn": 130, "test": "Era checkpoint. Is the Culture lead being spent? The last four civics should be on the direction's path, the government should be the direction's, and the Wildcard slots should hold the direction's cards. Domination: is the captured capital held and a second city taken? Science: Universities in four cities?", "pass": "Continue; queue Industrial Zones.", "fail": "Civics taken because they were next is the banked-bonus failure; reroute the tree today. On Domination with nothing taken since the Legion war, the direction has closed until Bombards; switch to Science while the Campus build is cheap." },
+        { "turn": 165, "test": "Ten cities, Baths in every eligible one, two Universities, two Markets, two Workshops, and the direction still reachable?", "pass": "Enter the Industrial phase.", "fail": "If Amenities are negative in three cities, stop everything else for Arenas and luxuries; a wide Rome dies of unhappiness, not of enemies. If the direction is unreachable, pivot now; the flat curve makes it affordable." }
+      ],
+      "tasks": [
+        { "id": "compound-civic-audit", "turn": 100, "text": "Audit the civic tree: the next four civics are the direction's. If not, re-pick now." },
+        { "id": "compound-universities", "turn": 120, "text": "Two Universities built; Printing Eureka collected." },
+        { "id": "compound-markets", "turn": 125, "text": "Two Markets built; Guilds Inspiration collected." },
+        { "id": "compound-workshops", "turn": 150, "text": "Two Workshops in Industrial Zones beside Baths; Industrialization Eureka collected." },
+        { "id": "compound-amenity-audit", "turn": 160, "text": "Amenity audit of all ten cities; Arenas or luxuries wherever a city is below zero." }
+      ]
+    },
+    {
+      "id": "industrial",
+      "name": "Peak output",
+      "turns": { "from": 166, "to": 235 },
+      "era": "industrial",
+      "objective": "Convert a ten-city empire's Production and Science into the direction's close: Research Labs and a Spaceport site, a Bombard and Line Infantry war for a second capital, or Museums and Archaeologists on the Culture direction, and pass the era checkpoint asking whether the direction is still reachable.",
+      "build_order": [
+        { "item": "Factory", "why": "Three for Class Struggle; the regional Production reaches the whole chain." },
+        { "item": "Bank", "why": "Two for Economics; Stock Exchanges later." },
+        { "item": "Neighborhood", "why": "Two for Sanitation; Baths run out at fifteen population." },
+        { "item": "Research Lab", "why": "Science direction: the lead is converted here." },
+        { "item": "Bombard", "why": "Domination direction: Renaissance Walls fall to two Bombards and Line Infantry." },
+        { "item": "Archaeological Museum", "why": "Culture direction: Natural History Inspiration and Artifacts for Combustion." },
+        { "item": "Power Plant", "why": "Factories and Research Labs pay in full only with Power." }
+      ],
+      "research": [
+        { "id": "tech:industrialization", "note": "Two Workshops gave the Eureka; Factories and Coal." },
+        { "id": "tech:scientific-theory", "note": "The Enlightenment gave the Eureka; Research Labs." },
+        { "id": "tech:economics", "note": "Two Banks; Stock Exchanges." },
+        { "id": "tech:sanitation", "note": "Two Neighborhoods; Housing past the Baths." },
+        { "id": "tech:rifling", "note": "A Niter Mine; Line Infantry on the Domination direction." },
+        { "id": "tech:steam-power", "note": "Two Shipyards only if coastal; otherwise it is on the way to Electricity." }
+      ],
+      "civics": [
+        { "id": "civic:civil-engineering", "note": "Seven district types, which ten cities with Baths reach easily; Public Works." },
+        { "id": "civic:nationalism", "note": "Casus Belli war on the Domination direction; unboosted otherwise." },
+        { "id": "civic:urbanization", "note": "A fifteen-population Bath city; Neighborhoods." },
+        { "id": "civic:colonialism", "note": "Astronomy gives the Inspiration." },
+        { "id": "civic:natural-history", "note": "An Archaeological Museum on the Culture direction; the Conservation line otherwise." },
+        { "id": "civic:opera-and-ballet", "note": "An Art Museum on the Culture direction; unboosted otherwise." }
+      ],
+      "policies": [
+        { "card": "Public Works", "slot": "economic", "from": "civic:civil-engineering", "why": "Builders faster across ten cities for the Neighborhoods and Mines." },
+        { "card": "Free Market", "slot": "economic", "from": "civic:the-enlightenment", "why": "Commercial Hub buildings doubled; the Gold buys Research Labs in the small cities." },
+        { "card": "Grand Armee", "slot": "military", "from": "civic:nationalism", "why": "Domination direction: Bombards and Line Infantry faster." },
+        { "card": "Five-Year Plan", "slot": "economic", "from": "civic:class-struggle", "why": "Science direction: Campus and Industrial Zone adjacency doubled across the empire once Class Struggle lands." }
+      ],
+      "districts": [
+        { "district": "neighborhood", "city": "the two largest cities", "note": "Sanitation Eureka; place them on low-appeal tiles." },
+        { "district": "spaceport", "city": "the best Production city", "note": "Science direction: the site is reserved now." }
+      ],
+      "wonders": [
+        { "name": "Ruhr Valley", "why": "Production per Mine and a flat bonus in the Spaceport city.", "skip_if": "No river Industrial Zone, or Industrialization lands after turn 220." },
+        { "name": "Oxford University", "why": "Science direction: two free techs and Great Scientist points.", "skip_if": "Scientific Theory lands after turn 215 or a Science civilization already has it." }
+      ],
+      "governors": [
+        { "governor": "reyna", "promotion": "Tax Collector", "city": "the Commercial Hub capital", "why": "Gold from a city at the centre of ten Trade Routes." },
+        { "governor": "pingala", "promotion": "Grants", "city": "the best Campus city", "why": "Great Person points toward the Great Scientists the Spaceport needs." }
+      ],
+      "city_states": [
+        { "slug": "johannesburg", "why": "Production per improved resource type in ten cities, doubled after Industrialization." },
+        { "type": "Industrial", "why": "Production in every Factory at six envoys." }
+      ],
+      "great_people": [
+        { "class": "great-engineer", "why": "Production toward the Spaceport or Ruhr Valley." },
+        { "class": "great-scientist", "why": "Research Lab boosts and the late Eurekas." }
+      ],
+      "checkpoints": [
+        { "turn": 200, "test": "Era checkpoint. Is the chosen direction still reachable? Science: Research Labs in three cities and the Science rate first among met civilizations. Domination: a second capital taken since turn 165. Culture: Tourism rising against the top rival's Culture.", "pass": "Continue; the close is thirty-five turns away.", "fail": "A direction out of reach at turn 200 is pivoted, not forced. A wide Rome with Factories in ten cities can switch to Science from any other direction and still finish; switch today and reserve the Spaceport site." },
+        { "turn": 235, "test": "Spaceport started, or a third capital in reach of Artillery, or Tourism within reach of the top rival?", "pass": "Enter the close.", "fail": "None: the game is a Score game; keep building Science and Culture in every city, which a ten-city empire does well." }
+      ],
+      "tasks": [
+        { "id": "industrial-factories", "turn": 185, "text": "Three Factories built with Power Plants beside them; Class Struggle Inspiration collected." },
+        { "id": "industrial-research-labs", "turn": 210, "text": "Science direction: Research Labs in three cities." },
+        { "id": "industrial-bombards", "turn": 200, "text": "Domination direction: two Bombards and four Line Infantry take the second capital under a Casus Belli." },
+        { "id": "industrial-museums", "turn": 205, "text": "Culture direction: Archaeological Museums in three cities and Archaeologists digging." },
+        { "id": "industrial-spaceport-site", "turn": 230, "text": "Spaceport district started in the Ruhr Valley city." }
+      ]
+    },
+    {
+      "id": "close",
+      "name": "Close",
+      "turns": { "from": 236, "to": null },
+      "era": "modern",
+      "objective": "Finish the direction with the whole empire's output: the three Spaceport projects with Power and Great Scientists, the last capitals with Artillery and Infantry, or Film-era Tourism from Museums and Seaside Resorts.",
+      "build_order": [
+        { "item": "Spaceport", "why": "Science direction: the projects start the turn it finishes." },
+        { "item": "Artillery", "why": "Domination direction: Urban Defenses fall to Artillery and Infantry." },
+        { "item": "Broadcast Center", "why": "Culture direction: Great Work of Music slots and Tourism." },
+        { "item": "Aerodrome", "why": "Two for Synthetic Materials; Bombers for the last sieges or defence." },
+        { "item": "Stock Exchange", "why": "Two for Capitalism; Gold to buy the last buildings." }
+      ],
+      "research": [
+        { "id": "tech:replaceable-parts", "note": "Three Line Infantry; Infantry to garrison." },
+        { "id": "tech:flight", "note": "Ruhr Valley or Oxford gives the Eureka; Aerodromes." },
+        { "id": "tech:chemistry", "note": "Alliance level 2; Research Labs." },
+        { "id": "tech:plastics", "note": "An Oil Well; Oil for Power and Tanks." },
+        { "id": "tech:computers", "note": "Tier 3 government; the Science direction's last multiplier." },
+        { "id": "tech:combined-arms", "note": "Three Armies on the Domination direction." }
+      ],
+      "civics": [
+        { "id": "civic:ideology", "note": "No Inspiration; the gate to Tier 3 governments." },
+        { "id": "civic:class-struggle", "note": "Three Factories; Communism." },
+        { "id": "civic:suffrage", "note": "Four Sewers across ten cities; Democracy." },
+        { "id": "civic:space-race", "note": "The Spaceport; International Space Agency." },
+        { "id": "civic:capitalism", "note": "Two Stock Exchanges." },
+        { "id": "civic:cultural-heritage", "note": "A themed Museum on the Culture direction." }
+      ],
+      "policies": [
+        { "card": "International Space Agency", "slot": "diplomatic", "from": "civic:space-race", "why": "Science per suzerainty; Buenos Aires, Mexico City and Johannesburg are held." },
+        { "card": "Heritage Tourism", "slot": "economic", "from": "civic:cultural-heritage", "why": "Culture direction: Tourism from Great Works doubled." },
+        { "card": "Levee en Masse", "slot": "military", "from": "civic:mobilization", "why": "Domination direction: cheaper upkeep on the Artillery and Infantry corps." }
+      ],
+      "districts": [
+        { "district": "aerodrome", "city": "the two Industrial Zone cities", "note": "Synthetic Materials Eureka." }
+      ],
+      "wonders": [],
+      "governors": [
+        { "governor": "pingala", "promotion": "Space Initiative", "city": "the Spaceport city", "why": "Production toward the three projects." }
+      ],
+      "city_states": [],
+      "great_people": [
+        { "class": "great-scientist", "why": "The Atomic and Information Great Scientists are the only boosts for Rocketry and Nuclear Fission." },
+        { "class": "great-engineer", "why": "Project Production in the Spaceport city." }
+      ],
+      "checkpoints": [
+        { "turn": 280, "test": "Science: Moon Landing done and the Mars projects running? Domination: a capital taken since turn 235? Culture: Tourism above two rivals' Culture?", "pass": "Continue to the end.", "fail": "Convert to Score; a ten-city empire with Monuments in all of them scores well, and the plan stops paying for anything that does not add to it." }
+      ],
+      "tasks": [
+        { "id": "close-moon", "turn": 255, "text": "Science direction: Moon Landing project started with Power in the Spaceport city." },
+        { "id": "close-artillery", "turn": 255, "text": "Domination direction: four Artillery and four Infantry under a Great General at the next capital." },
+        { "id": "close-tourism", "turn": 260, "text": "Culture direction: Broadcast Centers in the three Theater Square cities and Seaside Resorts on any coast." },
+        { "id": "close-review", "turn": 280, "text": "Review the turn 280 checkpoint and continue or declare the game a Score game." }
+      ]
+    }
+  ],
+  "boosts": [
+    { "id": "tech:bronze-working", "fit": "free", "when": "expand", "how": "Three camp kills from the Warriors escorting the Settlers." },
+    { "id": "tech:archery", "fit": "cheap", "when": "expand", "how": "The Slinger finishes a camp scout." },
+    { "id": "tech:masonry", "fit": "cheap", "when": "expand", "how": "A Quarry from the first Builder where Stone or Marble sits." },
+    { "id": "tech:wheel", "fit": "cheap", "when": "expand", "how": "The first Builder mines a resource hill." },
+    { "id": "tech:writing", "fit": "free", "when": "expand", "how": "The Scout meets the first rival." },
+    { "id": "tech:irrigation", "fit": "cheap", "when": "expand", "how": "A Farm on Wheat or Rice." },
+    { "id": "tech:astrology", "fit": "costly", "when": "expand", "how": "Only if the Scout happens on a natural wonder." },
+    { "id": "tech:iron-working", "fit": "costly", "when": "legion", "how": "An Iron Mine the Legion does not need; research it unboosted if none is close." },
+    { "id": "tech:currency", "fit": "free", "when": "legion", "how": "The first Trader runs a domestic route to the second city." },
+    { "id": "tech:horseback-riding", "fit": "cheap", "when": "legion", "how": "A Pasture on Horses or Sheep." },
+    { "id": "tech:construction", "fit": "cheap", "when": "legion", "how": "A Water Mill in a river city." },
+    { "id": "tech:mathematics", "fit": "cheap", "when": "legion", "how": "Bath, Campus and Commercial Hub by turn 80." },
+    { "id": "tech:engineering", "fit": "cheap", "when": "legion", "how": "Ancient Walls in the border city." },
+    { "id": "tech:apprenticeship", "fit": "free", "when": "legion", "how": "Three Mines across eight cities." },
+    { "id": "tech:education", "fit": "cheap", "when": "compound", "how": "The first Great Scientist from three Campuses." },
+    { "id": "tech:military-engineering", "fit": "free", "when": "compound", "how": "The capital Bath counts as an Aqueduct." },
+    { "id": "tech:castles", "fit": "free", "when": "compound", "how": "Any Tier 2 government." },
+    { "id": "tech:banking", "fit": "free", "when": "compound", "how": "Guilds is on the civic path." },
+    { "id": "tech:printing", "fit": "cheap", "when": "compound", "how": "Two Universities in the best Campus cities." },
+    { "id": "tech:mass-production", "fit": "cheap", "when": "compound", "how": "One Lumber Mill on Woods." },
+    { "id": "tech:astronomy", "fit": "cheap", "when": "compound", "how": "A University in the Mountain-adjacent Campus." },
+    { "id": "tech:metal-casting", "fit": "costly", "when": "compound", "how": "Two Crossbowmen only on the Domination direction." },
+    { "id": "tech:stirrups", "fit": "free", "when": "compound", "how": "Feudalism is on the civic path." },
+    { "id": "tech:industrialization", "fit": "free", "when": "industrial", "how": "Two Workshops from the compounding phase." },
+    { "id": "tech:scientific-theory", "fit": "free", "when": "industrial", "how": "The Enlightenment is on the civic path." },
+    { "id": "tech:economics", "fit": "cheap", "when": "industrial", "how": "Two Banks in the Commercial Hub cities." },
+    { "id": "tech:sanitation", "fit": "cheap", "when": "industrial", "how": "Two Neighborhoods in the largest cities." },
+    { "id": "tech:rifling", "fit": "cheap", "when": "industrial", "how": "A Mine on the Niter that Line Infantry want anyway." },
+    { "id": "tech:steam-power", "fit": "skip", "when": null, "how": "" },
+    { "id": "tech:replaceable-parts", "fit": "costly", "when": "close", "how": "Three Line Infantry; only the Domination direction has them." },
+    { "id": "tech:flight", "fit": "cheap", "when": "close", "how": "Ruhr Valley or Oxford University." },
+    { "id": "tech:chemistry", "fit": "cheap", "when": "close", "how": "Alliance level 2 with the Diplomatic Service ally." },
+    { "id": "tech:plastics", "fit": "cheap", "when": "close", "how": "An Oil Well on the first Oil found." },
+    { "id": "tech:computers", "fit": "free", "when": "close", "how": "Any Tier 3 government." },
+    { "id": "tech:combined-arms", "fit": "costly", "when": "close", "how": "Three Armies only on the Domination direction." },
+    { "id": "civic:craftsmanship", "fit": "free", "when": "expand", "how": "Three improvements from the first Builder." },
+    { "id": "civic:early-empire", "fit": "free", "when": "expand", "how": "Six population across the first two cities." },
+    { "id": "civic:foreign-trade", "fit": "costly", "when": "expand", "how": "A second continent only if the Scout reaches one." },
+    { "id": "civic:state-workforce", "fit": "free", "when": "expand", "how": "The first Bath or Campus." },
+    { "id": "civic:military-tradition", "fit": "free", "when": "legion", "how": "The first camp the escort Warriors clear." },
+    { "id": "civic:mysticism", "fit": "free", "when": "legion", "how": "City Patron Goddess." },
+    { "id": "civic:political-philosophy", "fit": "cheap", "when": "legion", "how": "Three city-states met by the Scout and a Warrior." },
+    { "id": "civic:military-training", "fit": "costly", "when": "legion", "how": "An Encampment only on the Domination direction." },
+    { "id": "civic:games-and-recreation", "fit": "free", "when": "legion", "how": "Researching Construction." },
+    { "id": "civic:recorded-history", "fit": "cheap", "when": "legion", "how": "Two Campuses, in the capital and the best Mountain city." },
+    { "id": "civic:drama-and-poetry", "fit": "cheap", "when": "legion", "how": "The Pyramids or the Colosseum." },
+    { "id": "civic:feudalism", "fit": "cheap", "when": "compound", "how": "Six Farms across ten cities." },
+    { "id": "civic:civil-service", "fit": "free", "when": "compound", "how": "The capital at ten population with its Bath." },
+    { "id": "civic:guilds", "fit": "cheap", "when": "compound", "how": "Two Markets in the Commercial Hub cities." },
+    { "id": "civic:divine-right", "fit": "skip", "when": null, "how": "" },
+    { "id": "civic:exploration", "fit": "skip", "when": null, "how": "" },
+    { "id": "civic:humanism", "fit": "costly", "when": "compound", "how": "A Great Artist only on the Culture direction." },
+    { "id": "civic:diplomatic-service", "fit": "cheap", "when": "compound", "how": "An alliance with the civilization that is not the target." },
+    { "id": "civic:the-enlightenment", "fit": "cheap", "when": "compound", "how": "Three Great People across the game." },
+    { "id": "civic:mercantilism", "fit": "cheap", "when": "compound", "how": "A Great Merchant from three Commercial Hubs." },
+    { "id": "civic:medieval-faires", "fit": "free", "when": "compound", "how": "Four Trade Routes from ten cities." },
+    { "id": "civic:civil-engineering", "fit": "free", "when": "industrial", "how": "Seven district types across ten cities with Baths." },
+    { "id": "civic:nationalism", "fit": "costly", "when": "industrial", "how": "A Casus Belli war only on the Domination direction." },
+    { "id": "civic:urbanization", "fit": "cheap", "when": "industrial", "how": "A Bath city at fifteen population." },
+    { "id": "civic:colonialism", "fit": "free", "when": "industrial", "how": "Researching Astronomy." },
+    { "id": "civic:natural-history", "fit": "costly", "when": "industrial", "how": "An Archaeological Museum only on the Culture direction." },
+    { "id": "civic:opera-and-ballet", "fit": "costly", "when": "industrial", "how": "An Art Museum only on the Culture direction." },
+    { "id": "civic:class-struggle", "fit": "cheap", "when": "close", "how": "Three Factories in the Industrial Zones." },
+    { "id": "civic:suffrage", "fit": "cheap", "when": "close", "how": "Four Sewers across ten cities." },
+    { "id": "civic:space-race", "fit": "cheap", "when": "close", "how": "The Spaceport on the Science direction." },
+    { "id": "civic:capitalism", "fit": "cheap", "when": "close", "how": "Two Stock Exchanges." },
+    { "id": "civic:cultural-heritage", "fit": "costly", "when": "close", "how": "A themed Museum only on the Culture direction." },
+    { "id": "civic:mobilization", "fit": "costly", "when": "close", "how": "Three Corps only on the Domination direction." }
+  ],
+  "decision_triggers": [
+    { "name": "Neighbour in Legion range", "if": "At turn 50 a rival capital is within twelve tiles by road and has no Walls.", "then": "Choose Domination at turn 60. Six Legions under Oligarchy and a Battering Ram take it by turn 90; each capture gets a free building and the empire continues as the Science empire afterward." },
+    { "name": "Civics drifting", "if": "At any era checkpoint the last three civics were not on the chosen direction's path.", "then": "The Monuments are being banked. Re-pick the civic queue today toward the direction's government and policies, and note it as a near-miss on the plan." },
+    { "name": "Amenities first", "if": "Three or more cities show negative Amenities.", "then": "Stop settling, build Arenas, buy a luxury, and send envoys to Buenos Aires. Rome's limit is Amenities, and the roads bring rebels as fast as Legions." },
+    { "name": "Walls before the Legions", "if": "The Legion target builds Ancient Walls before turn 85.", "then": "Bring a Battering Ram and keep going; Legions at 44 with a Ram still break Ancient Walls. Medieval Walls close the window; switch to Science and come back with Bombards if ever." }
+  ],
+  "abort": {
+    "trigger": "Turn 150 with no direction committed: no capital taken, no Campus in half the cities, no Theater Square outside the capital, and a civic tree picked in order.",
+    "actions": [
+      "Pick the direction the empire is already closest to; with ten Roman cities that is almost always Science. Commit fully; Linear leaders lose by drifting, not by collapsing.",
+      "Reroute the civic queue to Recorded History, The Enlightenment and Class Struggle today.",
+      "Put a Campus in every city without one before any other district."
+    ]
+  },
+  "fail_state": "Turn 200 with twelve comfortable cities, Monuments and Baths everywhere, a civic tree an era ahead of everyone and nothing to show for it: no capital taken, Campuses in four cities, no Spaceport site, and the Culture lead spent on whatever civic came next. Rome has out-settled the map and converted none of it, and the ability has nothing left to add.",
+  "common_mistakes": [
+    "Building Monuments. Every Roman city already has one; the queue slot is a Settler or a Builder.",
+    "Founding cities outside trade range of the capital. They get no road and no connection, and the chain breaks there.",
+    "Treating the Culture lead as a score. It buys civics; if the civics are not pointing at a victory, it buys nothing.",
+    "Settling until the land ends instead of until Amenities end. Rome's real cap is happiness, and free roads carry rebellion as easily as Legions.",
+    "Waiting for Iron to build Legions. They need none; six Legions by turn 80 is the whole Domination option and it closes with Medieval Walls."
+  ],
+  "sources": [
+    "Civilization VI Civilopedia, Gathering Storm ruleset (Rome, Trajan, Legion, Bath).",
+    "Boost objectives cross-checked against civilization6planner.com tech-tree and civics-tree pages, 2026-10-01.",
+    "Leadership Focus tags, caveats, Linear template and the Linear_Trajan worked example in this repository."
+  ]
+}
