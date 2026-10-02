@@ -29,7 +29,7 @@
     "prefer": [
       "Hills beside the mountains rather than flat land: a Terrace Farm goes on a hill, and a hill next to two mountains is a four-Food tile from the first Builder.",
       "Fresh water or a lake in the range for the capital's Aqueduct, which adds Production to every adjacent Terrace Farm.",
-      "Torres del Paine or Mount Kilimanjaro in the range; both double or feed Terrace Farms and raise appeal for Earth Goddess.",
+      "Torres del Paine or Mount Kilimanjaro in the range; one doubles the base yields of the Terrace hills beside it and the other adds Food to them and raise appeal for Earth Goddess.",
       "A second valley across a pass, so a Qhapaq Ñan can join two clusters and the empire keeps growing after turn 80."
     ],
     "no_go": "No Mountain tile within four tiles of the start and no range visible on the horizon. Without mountains Mit'a does nothing, Terrace Farms are plain Farms, and Qhapaq Ñan is a Food trickle; the Inca are then a civ with a late Skirmisher and no ability.",
@@ -39,13 +39,13 @@
     {
       "source": "leader_ability",
       "name": "Qhapaq Ñan",
-      "buys": "Domestic Trade Routes carry extra Food for every Mountain tile adjacent to the origin city, and from Foreign Trade onward Builders can place the Qhapaq Ñan on Mountain tiles, a tunnel that moves units through the range and yields Food from the mountains beside it.",
+      "buys": "Domestic Trade Routes carry extra Food for every Mountain tile in the origin city, and from Foreign Trade onward Builders can place the Qhapaq Ñan on Mountain tiles, a tunnel that moves units through the range.",
       "exploit": "Every Trade Route this empire runs is domestic until the Industrial era: a route from a six-mountain city carries six Food and nothing a foreign route offers compares. The capital is sited to touch as many mountains as the map allows because it is the origin of the first three routes. The Qhapaq Ñan is laid across the pass between the two valleys so the second cluster is inside the empire's road net and not behind a wall."
     },
     {
       "source": "civ_ability",
       "name": "Mit'a",
-      "buys": "Citizens can work Mountain tiles for Production, and each Terrace Farm adjacent to a Mountain gains Food from it, so a mountain city feeds and builds itself from terrain other civilizations cannot use.",
+      "buys": "Citizens can work Mountain tiles for Production, and each Mountain gains Food from every adjacent Terrace Farm, so a mountain city feeds and builds itself from terrain other civilizations cannot use.",
       "exploit": "The Terrace Farm cluster is pinned before the first Builder moves: hills that touch two or more mountains, arranged so an Aqueduct tile can touch several of them. Citizens work Terrace Farms first for growth and Mountains second for Production; a 15-population mountain city at turn 120 works four mountains and seven Terrace Farms and out-builds a river capital."
     },
     {
@@ -78,7 +78,7 @@
       "ceiling": "Six to eight cities along one or two ranges, each reaching 15 to 20 population on Terrace Farms and domestic Food, each with a Campus at +3 or more from mountains alone. That is a Science victory around turn 270 on Emperor from Universities beside mountains, Rationalism in every city, and Spaceport projects in the two tallest. Early Production is the cap: a mountain city builds its first districts slowly, so the plan supplements it with Mines on the Terrace-free hills and the Ancestral Hall's Builders. The empire is tall and compact, not wide; it cannot out-settle a flat neighbour and does not try.",
       "irreversibles": [
         {
-          "decision": "Capital tile: how many mountains it touches sets the Food on every domestic Trade Route for the game, and the Campus tile beside it sets the capital's Science.",
+          "decision": "Capital tile: how many mountains its borders hold sets the Food on every domestic Trade Route it starts, and the Campus tile beside it sets the capital's Science.",
           "by_turn": 3
         },
         {
@@ -206,7 +206,7 @@
       ],
       "pantheon": {
         "slug": "earth-goddess",
-        "why": "Mountains raise the appeal of every tile beside them to Breathtaking; a mountain capital has six or more such tiles, and the Faith buys the Great Scientists this plan is short of points for.",
+        "why": "Mountains raise the appeal of every tile beside them toward Breathtaking; a mountain capital has six or more such tiles, and the Faith buys the Great Scientists this plan is short of points for.",
         "alternative": "stone-circles"
       },
       "wonders": [],
@@ -285,7 +285,7 @@
         },
         {
           "item": "Trader",
-          "why": "One per city, every route domestic to the capital; Currency on the first, Medieval Faires at four."
+          "why": "One per Trade Route slot (Foreign Trade, then each Commercial Hub), every route domestic to the capital; Currency on the first, Medieval Faires at four."
         },
         {
           "item": "Campus",
@@ -339,7 +339,7 @@
         },
         {
           "id": "tech:construction",
-          "note": "A Water Mill if the capital has a river; otherwise unboosted on the way to Machu Picchu's Buttress."
+          "note": "A Water Mill if the capital has a river; otherwise unboosted on the way to Military Engineering and Castles."
         },
         {
           "id": "tech:apprenticeship",
@@ -361,7 +361,7 @@
         },
         {
           "id": "civic:military-tradition",
-          "note": "The valley camp cleared; Agoge is not needed, the card is a slot filler."
+          "note": "The valley camp cleared; Maneuver is not needed, the card is a slot filler."
         },
         {
           "id": "civic:political-philosophy",
@@ -385,7 +385,7 @@
           "card": "Colonization",
           "slot": "economic",
           "from": "civic:early-empire",
-          "why": "Settlers at half cost for cities four and five on the range."
+          "why": "+50% Production toward Settlers for cities four and five on the range."
         },
         {
           "card": "Classical Republic",
@@ -455,7 +455,7 @@
           "governor": "liang",
           "promotion": "Zoning Commissioner",
           "city": "city two",
-          "why": "Districts faster in the city with the least Production; the Builder title comes next."
+          "why": "Districts faster in the city with the least Production; her base Guildmaster title already gives that city's Builders an extra charge."
         }
       ],
       "city_states": [
@@ -485,7 +485,7 @@
       "checkpoints": [
         {
           "turn": 50,
-          "test": "Four cities on the range, four Terrace Farms in each, a domestic route from every city, and the capital Campus and Aqueduct built?",
+          "test": "Four cities on the range, four Terrace Farms in each, a domestic route in every Trade Route slot, and the capital Campus and Aqueduct built?",
           "pass": "Continue; city five, Machu Picchu and the Qhapaq Ñan.",
           "fail": "A city off the range: it stays, but it feeds a route and gets no Campus until the range cities have theirs. No Aqueduct: build it before the Commercial Hub; the Terrace Production is the point."
         },
@@ -493,7 +493,7 @@
           "turn": 80,
           "test": "Five cities, Machu Picchu built or within five turns, the Qhapaq Ñan laid across the pass, two Libraries, and Natural Philosophy slotted?",
           "pass": "Enter the tall phase.",
-          "fail": "Machu Picchu lost: take the Buttress Eureka from the Pyramids or any later wonder and move on. No Qhapaq Ñan: the second valley is settled by walking round; the plan slows by 20 turns and says so."
+          "fail": "Machu Picchu lost: take the Buttress Eureka from any other Classical or later wonder and move on. No Qhapaq Ñan: the second valley is settled by walking round; the plan slows by 20 turns and says so."
         }
       ],
       "tasks": [
@@ -505,7 +505,7 @@
         {
           "id": "range-routes",
           "turn": 40,
-          "text": "A Trader in every city running to the capital; count the Food per route and write it beside the city on the map."
+          "text": "A Trader in every Trade Route slot running to the capital; count the Food per route and write it beside the city on the map."
         },
         {
           "id": "range-aqueduct",
@@ -564,7 +564,7 @@
         },
         {
           "item": "Temple",
-          "why": "Capital only; Faith accumulates for Great Scientists at the Grand Master's Chapel rate without one."
+          "why": "Capital only; Earth Goddess and the Holy Site supply the Faith for Great Scientists without more Temples."
         }
       ],
       "research": [
@@ -624,7 +624,7 @@
         },
         {
           "id": "civic:medieval-faires",
-          "note": "Free from four domestic routes."
+          "note": "Four domestic routes, once a third Commercial Hub or Great Zimbabwe opens the fourth slot."
         },
         {
           "id": "civic:divine-right",
@@ -721,7 +721,7 @@
       "great_people": [
         {
           "class": "great-scientist",
-          "why": "Every one; buy with Faith and Gold when the points are short. The Medieval ones give Science from Universities, which every city has beside a mountain."
+          "why": "Every one; buy with Faith and Gold when the points are short. Isaac Newton in the Renaissance gives Science to every University, which every city has beside a mountain."
         },
         {
           "class": "great-engineer",
@@ -893,14 +893,14 @@
         {
           "district": "spaceport",
           "city": "the two tallest Industrial Zone cities",
-          "note": "Placed now, built at Rocketry; the choice is made here so the Factories go where the projects will run."
+          "note": "Chosen now, placed and built at Rocketry; the choice is made here so the Factories go where the projects will run."
         }
       ],
       "wonders": [
         {
           "name": "Oxford University",
           "why": "Two free techs and Science in the tallest Campus city; it needs a University beside flat land.",
-          "skip_if": "Scientific Theory lands after turn 200 or a Science rival has Oxford's Production lead."
+          "skip_if": "No Grassland or Plains tile beside a University Campus is free or a Science rival has Oxford's Production lead."
         },
         {
           "name": "Ruhr Valley",
@@ -951,9 +951,9 @@
         },
         {
           "turn": 220,
-          "test": "National Park founded, two Spaceport tiles placed, Power in every Lab city, and Chemistry collected?",
+          "test": "National Park founded, two Spaceport tiles chosen, Power in every Lab city, and Chemistry collected?",
           "pass": "Enter the close.",
-          "fail": "No Power: a second Coal plant or the Cardiff route; unpowered Labs are half Labs. Spaceport tiles unplaced: place them this turn on flat land beside the Factories."
+          "fail": "No Power: a second Coal plant or the Cardiff route; unpowered Labs are half Labs. Spaceport tiles unchosen: choose them this turn on flat land beside the Factories."
         }
       ],
       "tasks": [
@@ -975,7 +975,7 @@
         {
           "id": "live-spaceport-choice",
           "turn": 215,
-          "text": "Spaceport tiles placed in the two tallest Industrial Zone cities; nothing else is queued on those tiles."
+          "text": "Spaceport tiles chosen in the two tallest Industrial Zone cities; nothing else is queued on those tiles."
         }
       ]
     },
@@ -987,7 +987,7 @@
         "to": null
       },
       "era": "modern",
-      "objective": "Finish Science: Spaceports in the two tallest cities, the satellite, the Moon landing and the Mars colony run from Factories and Power Plants with Great Engineers and Gold on top, Computers and the Tier 3 government, and the Exoplanet Expedition launched with Lasers for the terrestrial laser station. The four Warak'aq become four Machine Guns and nothing else is built for war.",
+      "objective": "Finish Science: Spaceports in the two tallest cities, the satellite, the Moon landing and the Mars colony run from Factories and Power Plants with Great Engineers and Gold on top, Computers and the Tier 3 government, and the Exoplanet Expedition launched with Lasers for the terrestrial laser station. The four Warak'aq become four Rangers and nothing else is built for war.",
       "build_order": [
         {
           "item": "Spaceport",
@@ -1029,7 +1029,7 @@
         },
         {
           "id": "tech:robotics",
-          "note": "Globalization's Inspiration is two Airports, which this plan does not build; Robotics is taken unboosted."
+          "note": "Its Eureka is the Globalization civic, which this civic path does not reach first; Robotics is taken unboosted."
         },
         {
           "id": "tech:satellites",
@@ -1121,7 +1121,7 @@
         {
           "id": "close-garrison",
           "turn": 250,
-          "text": "Warak'aq upgraded to Machine Guns in the passes; nothing else built for war."
+          "text": "Warak'aq upgraded to Rangers in the passes; nothing else built for war."
         }
       ]
     }
@@ -1425,7 +1425,7 @@
       "id": "tech:robotics",
       "fit": "costly",
       "when": "close",
-      "how": "Globalization needs two Airports; usually unboosted."
+      "how": "Needs the Globalization civic, which this civic path does not reach first; usually unboosted."
     },
     {
       "id": "civic:craftsmanship",
@@ -1525,9 +1525,9 @@
     },
     {
       "id": "civic:medieval-faires",
-      "fit": "free",
+      "fit": "cheap",
       "when": "tall",
-      "how": "Four domestic Trade Routes running by turn 70."
+      "how": "Four domestic Trade Routes at once, after a third Commercial Hub or Great Zimbabwe opens the fourth slot."
     },
     {
       "id": "civic:divine-right",
@@ -1665,14 +1665,14 @@
   "fail_state": "Turn 120 with six cities at eight population, Mines on the hills that should have been Terrace Farms, Campuses placed beside rivers for the Commercial Hub rather than against the mountains, and the second valley settled by a rival. The decisions that caused it were made before turn 20 and no improvement or district can be moved.",
   "common_mistakes": [
     "Mining a hill that touches two Mountains because the city needs Production now. That hill is a four-Food Terrace Farm for the game; the Production comes from working the Mountain beside it.",
-    "Running foreign Trade Routes for Gold. The leader ability is on domestic routes only; a six-mountain origin city sends six Food, which is a Granary and a half per route.",
+    "Running foreign Trade Routes for Gold. The leader ability is on domestic routes only; a six-mountain origin city gains six Food per route, six Granaries' worth.",
     "Settling beside the river instead of against the range. Mit'a and Qhapaq Ñan do nothing for a river city; the Aqueduct gives the Housing the river would have.",
     "Placing the Campus where the Commercial Hub wants to be. The Campus takes the tile with the most mountain faces, always; the Commercial Hub gets Machu Picchu's adjacency later.",
     "Building an army to use the Warak'aq. It attacks twice because it is a pass guard; four of them is the whole military and the mountains do the rest."
   ],
   "sources": [
     "Civilization VI Civilopedia, Gathering Storm ruleset (Inca, Pachacuti, Terrace Farm, Qhapaq Ñan, Warak'aq, Machu Picchu).",
-    "Where the civ-info text differs from the game, the game is followed: the Warak'aq's edge is a second attack per turn when it has Movement left, not higher Ranged Strength; Mit'a's mountain Production is a flat yield and the plan does not rely on an Industrial-era increase; Terrace Farms count toward the Feudalism Inspiration as Farms.",
+    "Where the civ-info text differs from the game, the game is followed: the Warak'aq's edge is a second attack per turn when it has Movement left as well as higher Ranged Strength; Mit'a's mountain Production is a flat yield and the plan does not rely on an Industrial-era increase; Terrace Farms count toward the Feudalism Inspiration as Farms.",
     "Boost objectives cross-checked against civilization6planner.com tech-tree and civics-tree pages, 2026-10-01.",
     "Leadership Focus tags, caveats and Front-Load template for Pachacuti in this repository."
   ]

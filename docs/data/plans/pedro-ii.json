@@ -62,8 +62,8 @@
     {
       "source": "unique_unit",
       "name": "Minas Geraes",
-      "buys": "A Battleship that arrives at the Nationalism civic rather than at Steel, with stronger bombardment and anti-air.",
-      "exploit": "A Culture civ reaches Nationalism long before Steel, so two Minas Geraes are the cheapest coastal defence in the game for an empire that will be the Tourism leader everyone resents. Build them for defence; do not plan a war around them."
+      "buys": "A Battleship that arrives at Refining rather than at Steel, with stronger bombardment and anti-air.",
+      "exploit": "A Culture civ can skip Steel and still get it from Refining, so two Minas Geraes are the cheapest coastal defence in the game for an empire that will be the Tourism leader everyone resents. Build them for defence; do not plan a war around them."
     },
     {
       "source": "agenda",
@@ -294,7 +294,7 @@
         },
         {
           "item": "Oracle",
-          "why": "A Great Person point per district in its city and cheaper Faith patronage; the best wonder Pedro can own."
+          "why": "Two Great Person points per district in its city and cheaper Faith patronage; the best wonder Pedro can own."
         },
         {
           "item": "Trader",
@@ -302,7 +302,7 @@
         },
         {
           "item": "Water Mill",
-          "why": "Construction Eureka in the river capital; Housing for a tall city."
+          "why": "Construction Eureka in the river capital; Food for a tall city."
         }
       ],
       "research": [
@@ -320,7 +320,7 @@
         },
         {
           "id": "tech:construction",
-          "note": "Water Mill in the capital gives the Eureka; the Street Carnival unlocks here."
+          "note": "Water Mill in the capital gives the Eureka; Construction is also the Games and Recreation Inspiration, and the Street Carnival unlocks at that civic."
         },
         {
           "id": "tech:apprenticeship",
@@ -328,7 +328,7 @@
         },
         {
           "id": "tech:celestial-navigation",
-          "note": "Only if the third city is coastal: two Fishing Boats boost it and the Harbor leads to Copacabana."
+          "note": "Only if the third city is coastal: two Fishing Boats boost it and the Harbor and later the Copacabana share that coast."
         }
       ],
       "civics": [
@@ -362,13 +362,13 @@
           "card": "Inspiration",
           "slot": "wildcard",
           "from": "civic:mysticism",
-          "why": "Great Scientist points per Campus; the first race card, slotted from the moment the capital Campus stands."
+          "why": "Two Great Scientist points a turn; the first race card, slotted from the moment the capital Campus stands."
         },
         {
           "card": "Colonization",
           "slot": "economic",
           "from": "civic:early-empire",
-          "why": "Settlers at half the cost while the capital alternates them with districts."
+          "why": "Settlers built 50% faster while the capital alternates them with districts."
         },
         {
           "card": "Classical Republic",
@@ -386,7 +386,7 @@
           "card": "Literary Tradition",
           "slot": "wildcard",
           "from": "civic:drama-and-poetry",
-          "why": "Great Writer points per Theater Square; swapped in for Inspiration whenever the Writer race is the amber one."
+          "why": "Two Great Writer points a turn; swapped in for Inspiration whenever the Writer race is the amber one."
         }
       ],
       "districts": [
@@ -418,7 +418,7 @@
       "wonders": [
         {
           "name": "Oracle",
-          "why": "A Great Person point per district in the city and Faith patronage a quarter cheaper; it is the Magnanimous wonder.",
+          "why": "Two Great Person points per district in the city and Faith patronage a quarter cheaper; it is the Magnanimous wonder.",
           "skip_if": "Greece, China or Egypt is on the map and has Mysticism before you, or no hill tile sits within the capital's second ring by turn 40."
         },
         {
@@ -432,7 +432,7 @@
           "governor": "pingala",
           "promotion": "Grants",
           "city": "capital",
-          "why": "Double Great Person points in the city with the most districts; this is the single largest lever in the plan and it goes in at the first title."
+          "why": "Double Great Person points in the city with the most districts; this is the single largest lever in the plan and it goes in at the third title, after Connoisseur, the promotion it requires."
         },
         {
           "governor": "magnus",
@@ -472,7 +472,7 @@
       "checkpoints": [
         {
           "turn": 50,
-          "test": "Is the watched stat green in at least two chosen classes, with the capital Campus and a second city Theater Square standing and Pingala's Grants in place?",
+          "test": "Is the watched stat green in at least two chosen classes, with the capital Campus and a second city Theater Square standing and Pingala in place in the capital?",
           "pass": "Continue; queue the Oracle if its hill is still free.",
           "fail": "Amber in two classes this early means the district plan is late: stop Settlers after the third city, run Campus Research Grants in the capital, and slot Inspiration until the first Great Scientist lands."
         },
@@ -492,7 +492,7 @@
         {
           "id": "loop-grants",
           "turn": 35,
-          "text": "Pingala with Grants in the capital at the first Governor title; Researcher is the second promotion, not the first."
+          "text": "Pingala to the capital at the first Governor title, Connoisseur with the second and Grants with the third; Researcher comes after Grants, not before."
         },
         {
           "id": "loop-oracle",
@@ -582,7 +582,7 @@
         },
         {
           "id": "tech:buttress",
-          "note": "Owning the Oracle or Great Library gives the Eureka; otherwise research it unboosted for Printing."
+          "note": "Owning the Great Library gives the Eureka, since the Ancient-era Oracle does not count; otherwise research it unboosted for Printing."
         },
         {
           "id": "tech:mass-production",
@@ -632,7 +632,7 @@
           "card": "Frescoes",
           "slot": "wildcard",
           "from": "civic:humanism",
-          "why": "Great Artist points from Theater Squares; the Artist race card."
+          "why": "Two Great Artist points a turn; the Artist race card."
         },
         {
           "card": "Invention",
@@ -650,7 +650,7 @@
           "card": "Traveling Merchants",
           "slot": "wildcard",
           "from": "civic:guilds",
-          "why": "Great Merchant points per Commercial Hub, if Merchants were the third class."
+          "why": "Two Great Merchant points a turn, if Merchants were the third class."
         },
         {
           "card": "Monarchy",
@@ -678,7 +678,7 @@
         {
           "district": "harbor",
           "city": "the coastal city",
-          "note": "The Copacabana needs a coastal city with a Harbor's worth of Production; the Cartography Eureka is incidental."
+          "note": "The Copacabana needs a coastal city with a Harbor's worth of Production; the Cartography Eureka needs a second Harbor."
         }
       ],
       "wonders": [
@@ -689,7 +689,7 @@
         },
         {
           "name": "Kilwa Kisiwani",
-          "why": "Suzerainty of Bologna and Antananarivo pays extra in every city with it; a Culture and Great Person wonder for a city-state plan.",
+          "why": "Suzerainty of Bologna and Antananarivo pays 15% more Science and Culture in its city, and in every city once two city-states of one type are held; a Culture and Great Person wonder for a city-state plan.",
           "skip_if": "No coastal city has Machinery-era Production, or you are suzerain of fewer than two city-states at turn 140."
         }
       ],
@@ -698,12 +698,12 @@
           "governor": "pingala",
           "promotion": "Researcher",
           "city": "capital",
-          "why": "Second promotion after Grants; Science per citizen in the tallest city."
+          "why": "Third promotion, after Connoisseur and Grants; Science per citizen in the tallest city."
         },
         {
           "governor": "liang",
           "promotion": "Zoning Commissioner",
-          "city": "the fourth and fifth cities",
+          "city": "the fourth city, then the fifth",
           "why": "District Production in new cities whose Rainforest adjacency is ready before their Production is."
         },
         {
@@ -834,7 +834,7 @@
       "research": [
         {
           "id": "tech:industrialization",
-          "note": "Two Workshops give the Eureka; Factories and the Hermitage line."
+          "note": "Two Workshops give the Eureka; Factories and the Ruhr Valley."
         },
         {
           "id": "tech:scientific-theory",
@@ -892,11 +892,11 @@
         },
         {
           "id": "civic:nationalism",
-          "note": "Casus Belli war is not planned, so this is unboosted; the Minas Geraes unlocks here and a Culture leader needs coastal defence."
+          "note": "Casus Belli war is not planned, so this is unboosted; the Minas Geraes comes from Refining, not from this civic, and a Culture leader needs coastal defence."
         },
         {
           "id": "civic:mass-media",
-          "note": "Radio gives the Inspiration; Broadcast Centers and the Tourism from Great Musicians."
+          "note": "Radio gives the Inspiration, and Radio's Broadcast Centers hold the Tourism from Great Musicians."
         },
         {
           "id": "civic:ideology",
@@ -985,7 +985,7 @@
           "governor": "magnus",
           "promotion": "Vertical Integration",
           "city": "the Industrial Zone city",
-          "why": "Factory Production shared into the neighbouring racing cities."
+          "why": "This city takes the regional Production of every Factory and Power Plant in range, not just one."
         }
       ],
       "city_states": [
@@ -1025,7 +1025,7 @@
           "turn": 200,
           "test": "Tourism per turn higher than every rival but at most one, the first National Park founded, and the watched stat green in Artists and Musicians?",
           "pass": "Continue; Seaside Resorts on every Breathtaking coast tile.",
-          "fail": "If Tourism trails two or more rivals, buy Archaeologists and Rock Bands with Faith, send a Trade Route to the Tourism leader for the Open Borders bonus, and check that Cultural Heritage's themed building exists."
+          "fail": "If Tourism trails two or more rivals, buy Archaeologists and Rock Bands with Faith, send a Trade Route to the Tourism leader and open borders with it for both Tourism bonuses, and check that Cultural Heritage's themed building exists."
         },
         {
           "turn": 230,
@@ -1058,7 +1058,7 @@
         {
           "id": "monopoly-minas-geraes",
           "turn": 220,
-          "text": "Two Minas Geraes built after Nationalism and parked at the two largest coastal cities; the Tourism leader is the one everyone declares on."
+          "text": "Two Minas Geraes built once Refining lands and parked at the two largest coastal cities; the Tourism leader is the one everyone declares on."
         }
       ]
     },
@@ -1082,7 +1082,7 @@
         },
         {
           "item": "Seaside Resort",
-          "why": "Every remaining Breathtaking coast tile; Eiffel Tower adds more each era."
+          "why": "Every remaining Breathtaking coast tile; the Eiffel Tower's Appeal has added more."
         },
         {
           "item": "Research Lab",
@@ -1130,7 +1130,7 @@
           "card": "Heritage Tourism",
           "slot": "economic",
           "from": "civic:cultural-heritage",
-          "why": "Tourism from Great Works doubled in an empire built on them."
+          "why": "Tourism from Great Works of Art and Artifacts doubled in an empire built on them."
         },
         {
           "card": "Online Communities",
@@ -1141,7 +1141,7 @@
         {
           "card": "Satellite Broadcasts",
           "slot": "economic",
-          "from": "civic:cultural-heritage",
+          "from": "civic:space-race",
           "why": "Tourism from Great Works of Music tripled; Symphonies made the Musicians, this spends them."
         }
       ],
@@ -1334,9 +1334,9 @@
     },
     {
       "id": "tech:buttress",
-      "fit": "free",
+      "fit": "cheap",
       "when": "accumulate",
-      "how": "Owning the Oracle or Great Library."
+      "how": "Owning the Great Library; the Oracle is Ancient and does not count."
     },
     {
       "id": "tech:mass-production",
@@ -1747,12 +1747,12 @@
     "Chopping Rainforest for a wonder or a Settler. Every tile cleared is a district adjacency and an Appeal point gone for the rest of the game, and the Resorts and Parks never come back.",
     "Reading the Great People screen only when a recruit is close. By then the rival is three turns out and the only response left is a patronage you cannot afford.",
     "Running Carnival in a city with no Street Carnival finished, or in every city at once. It is the amber response for one class in the two biggest cities, not a standing build.",
-    "Leaving Pingala on Librarian or Researcher first. Grants doubles the Great Person points of the capital and is the largest single lever in the kit; it is the first promotion, not the third."
+    "Spending Pingala's second title on Researcher. Grants doubles the Great Person points of the capital and is the largest single lever in the kit; it is the second promotion, after Connoisseur, not the third."
   ],
   "sources": [
     "Civilization VI Civilopedia, Gathering Storm ruleset (Brazil, Pedro II, Magnanimous, Amazon, Street Carnival, Copacabana, Minas Geraes).",
     "Boost objectives cross-checked against civilization6planner.com tech-tree and civics-tree pages, 2026-10-01.",
     "Leadership Focus tags, caveats and Monitor supplement for Pedro II in this repository. The supplement says the refund applies only on recruitment; the Gathering Storm ability text refunds points on patronage as well, and the plan follows the game.",
-    "The Minas Geraes unlocks with the Nationalism civic, not a technology; the civ-info text does not say so and the plan follows the game."
+    "The Minas Geraes unlocks with the Refining technology rather than Steel; the civ-info text does not say so and the plan follows the game."
   ]
 }

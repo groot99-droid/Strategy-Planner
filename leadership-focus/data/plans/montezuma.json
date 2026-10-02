@@ -309,6 +309,10 @@
           "note": "Water Mill in a river city; Games and Recreation's Inspiration for the Entertainment Complex."
         },
         {
+          "id": "tech:mathematics",
+          "note": "Encampment, Entertainment Complex and Campus are three specialty districts; Military Tactics behind it."
+        },
+        {
           "id": "tech:military-tactics",
           "note": "Huey Teocalli if the capital is on a lake; Eureka from a Spearman kill, which the war can supply."
         }
@@ -316,7 +320,7 @@
       "civics": [
         {
           "id": "civic:military-tradition",
-          "note": "Inspiration free from clearing the farmed camp; the Raid card pays for the war."
+          "note": "Inspiration free from clearing the farmed camp; Military Training behind it has the Raid card that pays for the war."
         },
         {
           "id": "civic:state-workforce",
@@ -349,14 +353,14 @@
         {
           "card": "Raid",
           "slot": "military",
-          "from": "civic:military-tradition",
+          "from": "civic:military-training",
           "why": "Pillage the target's luxury improvements for Gold on the way in, then repair them with the Builders you captured."
         },
         {
           "card": "Colonization",
           "slot": "economic",
           "from": "civic:early-empire",
-          "why": "The fourth and fifth Aztec cities on luxuries at half Settler cost."
+          "why": "The fourth and fifth Aztec cities on luxuries with +50% Production toward Settlers."
         },
         {
           "card": "Oligarchy",
@@ -389,8 +393,8 @@
       "wonders": [
         {
           "name": "Huey Teocalli",
-          "why": "+1 Amenity and +1 Food per adjacent Lake tile; the Aztec wonder, and Amenities are the cost of a wide conquest.",
-          "skip_if": "The capital has no Lake tile, or Military Tactics lands after turn 85; charges spent on a wonder are charges not spent on districts."
+          "why": "+1 Amenity per adjacent Lake tile and +1 Food and +1 Production on every Lake tile in the empire; the Aztec wonder, and Amenities are the cost of a wide conquest.",
+          "skip_if": "The capital has no Lake tile, or Military Tactics lands after turn 85; Builder charges cannot rush a wonder, so it is paid in full Production."
         }
       ],
       "governors": [
@@ -410,7 +414,7 @@
       "city_states": [
         {
           "slug": "kabul",
-          "why": "Suzerainty for the double experience; a second-promotion Eagle Warrior is 35 Strength on attack with Oligarchy and four luxuries."
+          "why": "Suzerainty for the double experience; an Eagle Warrior is 36 Strength before its promotions with Oligarchy and four luxuries."
         },
         {
           "slug": "buenos-aires",
@@ -494,7 +498,7 @@
         },
         {
           "item": "Builder",
-          "why": "Serfdom Builders improve every luxury inside the new borders and build the six Farms for Feudalism."
+          "why": "Builders build the six Farms for Feudalism, then Serfdom Builders improve every luxury inside the new borders."
         },
         {
           "item": "Theater Square",
@@ -502,7 +506,7 @@
         },
         {
           "item": "Campus",
-          "why": "One per city over time; two Libraries give Recorded History."
+          "why": "One per city over time; two Campuses give Recorded History."
         },
         {
           "item": "Commercial Hub",
@@ -517,10 +521,6 @@
         {
           "id": "tech:engineering",
           "note": "Ancient Walls give the Eureka; Aqueducts for Housing in the lake and river cities."
-        },
-        {
-          "id": "tech:mathematics",
-          "note": "Encampment, Entertainment Complex and Campus are three specialty districts; Apprenticeship behind it."
         },
         {
           "id": "tech:apprenticeship",
@@ -554,7 +554,7 @@
         },
         {
           "id": "civic:feudalism",
-          "note": "Six Farms from the Serfdom Builders; Stirrups Eureka."
+          "note": "Six Farms from the digest Builders before Serfdom; Stirrups Eureka."
         },
         {
           "id": "civic:civil-service",
@@ -608,7 +608,7 @@
         {
           "district": "campus",
           "city": "every city over time",
-          "note": "Rushed with charges where a Builder is spare; two Libraries for Recorded History."
+          "note": "Rushed with charges where a Builder is spare; two Campuses for Recorded History."
         },
         {
           "district": "commercial-hub",
@@ -629,7 +629,7 @@
         },
         {
           "name": "Temple of Artemis",
-          "why": "+1 Amenity per adjacent Camp, Pasture and Plantation, which a luxury-settled empire has in numbers.",
+          "why": "+1 Amenity per Camp, Pasture and Plantation within four tiles, which a luxury-settled empire has in numbers.",
           "skip_if": "No city has a Camp adjacent to a free tile, or Archery lands after turn 100."
         }
       ],
@@ -971,7 +971,7 @@
         },
         {
           "item": "Musketman",
-          "why": "Domination branch: the old Eagle Warriors' third form, upgraded under Professional Army."
+          "why": "Domination branch: the old Eagle Warriors' fourth form, after Swordsman and Man-at-Arms, upgraded under Professional Army."
         },
         {
           "item": "Seaside Resort",
@@ -985,7 +985,7 @@
         },
         {
           "id": "tech:flight",
-          "note": "Tourism from wonders and the Great Wall-style improvements; Eureka from owning an Industrial wonder."
+          "note": "Tourism from wonders and the Great Wall-style improvements; Eureka from owning an Industrial-era or later wonder."
         },
         {
           "id": "tech:radio",
@@ -1007,7 +1007,7 @@
         },
         {
           "id": "civic:mass-media",
-          "note": "Free Inspiration from Radio; Broadcast Centers and the Tourism multiplier."
+          "note": "Free Inspiration from Radio, the tech that unlocks Broadcast Centers; the Tourism multiplier."
         },
         {
           "id": "civic:class-struggle",
@@ -1022,7 +1022,7 @@
         {
           "card": "Heritage Tourism",
           "slot": "economic",
-          "from": "civic:natural-history",
+          "from": "civic:cultural-heritage",
           "why": "Culture branch: Tourism from Great Works doubled."
         },
         {
@@ -1054,7 +1054,7 @@
         {
           "name": "Eiffel Tower",
           "why": "+2 Appeal on every tile; Seaside Resorts and National Parks everywhere.",
-          "skip_if": "Steam Power lands after turn 270 or a Culture civilization is already building it."
+          "skip_if": "Steel lands after turn 270 or a Culture civilization is already building it."
         }
       ],
       "governors": [
@@ -1062,7 +1062,7 @@
           "governor": "moksha",
           "promotion": "Patron Saint",
           "city": "the Faith city",
-          "why": "Culture branch: Naturalists and Rock Bands bought with Tlachtli Faith at a discount."
+          "why": "Culture branch: Naturalists and Rock Bands bought with Tlachtli Faith."
         },
         {
           "governor": "victor",
@@ -1146,9 +1146,9 @@
     },
     {
       "id": "tech:irrigation",
-      "fit": "free",
+      "fit": "cheap",
       "when": "arm",
-      "how": "The first Plantation or Farm on a resource; most luxuries are one or the other."
+      "how": "The first Farm on a Wheat, Rice or Maize resource; Plantations do not count."
     },
     {
       "id": "tech:wheel",
@@ -1219,7 +1219,7 @@
     {
       "id": "tech:mathematics",
       "fit": "free",
-      "when": "digest",
+      "when": "window",
       "how": "Encampment, Entertainment Complex and Campus, all rushed with charges."
     },
     {
@@ -1262,7 +1262,7 @@
       "id": "tech:buttress",
       "fit": "cheap",
       "when": "expand",
-      "how": "Owning Huey Teocalli, the Colosseum or Temple of Artemis."
+      "how": "Owning Huey Teocalli or the Colosseum; the Ancient-era Temple of Artemis does not count."
     },
     {
       "id": "tech:printing",
@@ -1340,7 +1340,7 @@
       "id": "tech:flight",
       "fit": "cheap",
       "when": "close",
-      "how": "Owning any Industrial wonder; Eiffel Tower or Big Ben."
+      "how": "Owning any Industrial-era or later wonder; Eiffel Tower or Big Ben."
     },
     {
       "id": "tech:radio",
@@ -1422,9 +1422,9 @@
     },
     {
       "id": "civic:defensive-tactics",
-      "fit": "free",
+      "fit": "costly",
       "when": "window",
-      "how": "The target or its friend declares war on you after the first capture."
+      "how": "Only if the target's friend declares war on you after the first capture; your own declaration does not count."
     },
     {
       "id": "civic:drama-and-poetry",
@@ -1448,7 +1448,7 @@
       "id": "civic:feudalism",
       "fit": "cheap",
       "when": "digest",
-      "how": "Six Farms from the Serfdom Builders."
+      "how": "Six Farms from the digest Builders, before Serfdom."
     },
     {
       "id": "civic:civil-service",
