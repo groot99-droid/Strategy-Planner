@@ -35,7 +35,12 @@ try {
     await page.evaluate(() => document.getElementById('row-military').scrollIntoView({ block: 'start' })); await sleep(500);
     const sl = () => page.evaluate(() => document.querySelector('#row-military .row__scroller').scrollLeft);
     const a = await sl(); await sleep(2000); const b = await sl(); ok(b - a >= 40, `DPR ${dpr}: row moved ${b - a}px in 2s`);
-    await page.hover('#row-military .card'); const h0 = await sl(); await sleep(700); ok(await sl() === h0, `DPR ${dpr}: row stops on hover`); await page.mouse.move(5, 5);
+    // Hover the way a person does: put the pointer over the visible middle of the row. page.hover() on a card would
+    // scroll it into view first (smoothly, since html has scroll-behavior: smooth) and can carry the row out from under the pointer.
+    const box = await page.$eval('#row-military .row__scroller', e => { const r = e.getBoundingClientRect(); return { x: r.x + r.width / 2, y: r.y + r.height / 2 }; });
+    await page.mouse.move(box.x, box.y); await sleep(150); const h0 = await sl(); await sleep(700); ok(await sl() === h0, `DPR ${dpr}: row stops on hover`);
+    ok(await page.$eval('#row-military', e => e.classList.contains('row--auto')), `DPR ${dpr}: scroll snap stays off while paused on hover`);
+    await page.mouse.move(5, 5); await sleep(400); const r0 = await sl(); await sleep(1200); ok(await sl() - r0 >= 20, `DPR ${dpr}: row resumes when the pointer leaves`);
     await ctx.close();
   }
   const ctx = await browser.newContext({ viewport: { width: 1280, height: 900 } }); await ctx.grantPermissions(['clipboard-read', 'clipboard-write']); const page = await ctx.newPage(); watch(page);

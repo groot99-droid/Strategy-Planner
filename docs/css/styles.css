@@ -217,7 +217,7 @@ main.is-swapping { opacity: 0; }
 .row__scroller { display: flex; gap: var(--space-md); overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x proximity; padding: 8px var(--gutter) 16px; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
 .row__scroller::-webkit-scrollbar { display: none; }
 .row__scroller > * { scroll-snap-align: start; flex: 0 0 auto; }
-.row--playing .row__scroller { scroll-snap-type: none; }
+.row--auto .row__scroller { scroll-snap-type: none; }
 
 /* cards */
 .card { position: relative; width: var(--card-w); border-radius: var(--radius); background: var(--card); border: 1px solid var(--line); overflow: hidden; transition: transform var(--ease), box-shadow var(--ease), border-color var(--ease); cursor: pointer; display: block; }

@@ -153,7 +153,10 @@ export function initRows(root) {
     scroller.addEventListener("wheel", onUserScroll, { passive: true });
     scroller.addEventListener("touchstart", onUserScroll, { passive: true });
     scroller.addEventListener("pointerdown", onUserScroll, { passive: true });
-    const setToggle = () => { if (!toggle) return; toggle.setAttribute("aria-pressed", String(!playing)); toggle.innerHTML = icon(playing ? "pause" : "play"); toggle.setAttribute("aria-label", (playing ? "Pause " : "Resume ") + row.getAttribute("aria-label") + " rotation"); };
+    // Scroll snap stays off for as long as the row is meant to rotate, not just while a frame is running:
+    // a hover, offscreen or hidden-tab pause must not hand the row back to snap, or it lurches to the nearest card.
+    const setAuto = () => row.classList.toggle("row--auto", autoplay && playing && !reducedMotion.matches);
+    const setToggle = () => { setAuto(); if (!toggle) return; toggle.setAttribute("aria-pressed", String(!playing)); toggle.innerHTML = icon(playing ? "pause" : "play"); toggle.setAttribute("aria-label", (playing ? "Pause " : "Resume ") + row.getAttribute("aria-label") + " rotation"); };
     row.addEventListener("click", (e) => {
       const b = e.target.closest("[data-row]"); if (!b) return;
       const step = cardStep() * 2;
