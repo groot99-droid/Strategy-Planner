@@ -89,6 +89,10 @@ checks one plan while it is being written. Boost ids are `tech:<slug>` and
 `civic:<slug>` from `data/civ6/eurekas.json`, which lists every technology's Eureka
 and every civic's Inspiration.
 
+Every plan has been fact-checked once against Gathering Storm. What the reviewer could
+not confirm (rules, rough numbers, places where `civ-info` and the game disagree) is
+listed per leader in `leadership-focus/PLAN-REVIEW-NOTES.md`, for checking by hand.
+
 To check the site in a browser (Playwright and Chromium needed):
 
 ```
