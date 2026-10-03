@@ -1,0 +1,1800 @@
+{
+  "leader": "Pericles",
+  "civilization": "Greece",
+  "generated": "2026-10-02",
+  "slug": "pericles",
+  "shape": "Monitor",
+  "secondary_shape": null,
+  "version": 1,
+  "updated": "2026-10-02",
+  "assumptions": {
+    "ruleset": "Gathering Storm with every expansion and the Leader Pass",
+    "speed": "Standard",
+    "difficulty": "Emperor",
+    "map": "Continents or Pangaea, standard size, 8 civilizations and 12 city-states, with the Greek hills start bias honoured",
+    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. Pericles' single persona is planned here. Surrounded by Glory pays five percent Culture per city-state you are suzerain of, and a tie in envoys leaves a city-state with no suzerain, so the margin at each one matters as much as the count."
+  },
+  "verdict": {
+    "victory": "Culture",
+    "secondary": "Diplomatic",
+    "confidence": "medium",
+    "one_line": "Build an Acropolis in every city for the Culture the multiplier needs, bank envoys and spend them where the margin is thinnest rather than where the bonus is prettiest, and keep a reserve so no suzerainty is ever lost on a rival's single envoy; the extra Wildcard slot runs the Great Person card the race needs.",
+    "why": "Surrounded by Glory is a percentage, so the Acropolis is the half of the kit that matters first: a cheap Theater Square on a hill with better adjacency and a free envoy on completion means every Greek city produces Culture early and pays an envoy toward the multiplier as it does so. Six suzerainties is thirty percent Culture, which is more than any Culture civilization's ability pays, but it is rented turn by turn and a rival's envoy or conquest cancels a share of it with no warning, which is why the plan watches the envoy margin at every held city-state rather than the count alone. Plato's Republic gives a second Wildcard slot under Classical Republic, which for a Culture game is Inspiration and Literary Tradition running at once, and later Frescoes in a government with more Wildcard room. Diplomatic is the fallback because every suzerainty is a Diplomatic Favor per turn to spend on Congress votes, and the same envoy economy carries a Diplomatic Victory if Tourism is outrun."
+  },
+  "map_check": {
+    "must_have": [
+      "Three or more city-states within fifteen tiles of the capital, met by turn 40, because the multiplier needs suzerainties by the Classical era and envoys sent to distant unmet city-states do not exist.",
+      "Hills within the first two rings of the capital and the second site, so the Acropolis can be placed beside the City Center on turn 1 in the mind and built as soon as Drama and Poetry unlocks it."
+    ],
+    "prefer": [
+      "A hill tile touching the City Center and two other district tiles, since the Acropolis takes a point from every adjacent district and two from each wonder.",
+      "Pastures or Plantations near the capital for God of the Open Sky or Oral Tradition Culture from turn 20.",
+      "Gobustan or Tsingy de Bemaraha in reach: Culture on the wonder tiles and Appeal for the National Parks the hills will take later.",
+      "No Germany, Hungary or Sumeria within twenty tiles; they conquer or levy the city-states Pericles courts."
+    ],
+    "no_go": "Fewer than two city-states on your landmass and none met by turn 50. Surrounded by Glory then has nothing to count for a hundred turns, and a Greece without suzerainties is a Theater Square civilization with a Spearman.",
+    "fallback": "Move the Settler up to two turns toward hills. If city-states are scarce, play the Acropolis half alone: a Culture game on Aesthetics, Great Writers and Artists with the extra Wildcard slot carrying two Great Person cards, and spend every envoy on whichever two city-states exist so the ten percent still arrives. Switch the fallback verdict to Diplomatic only if the Congress votes come cheap."
+  },
+  "kit_levers": [
+    {
+      "source": "leader_ability",
+      "name": "Surrounded by Glory",
+      "buys": "Five percent Culture in every city for each city-state you are suzerain of.",
+      "exploit": "The count is the goal and the margin is the job. The plan spends envoys to be suzerain of the most city-states it can hold at a two-envoy margin, keeps a reserve envoy unspent, and parks Amani where the margin is thinnest. A tie is a lost suzerainty, so an even margin is amber, not green."
+    },
+    {
+      "source": "civ_ability",
+      "name": "Plato's Republic",
+      "buys": "One extra Wildcard policy slot in every government.",
+      "exploit": "From Political Philosophy onward Greece runs two Wildcards under Classical Republic: Inspiration and Literary Tradition for the Great Person races, and a later government with more Wildcard room adds one for whatever the loop is short of, usually a diplomatic card. The slot is also why Greece changes government less often; every tier already has room."
+    },
+    {
+      "source": "unique_unit",
+      "name": "Hoplite",
+      "buys": "A Spearman replacement with a large Combat Strength bonus when adjacent to another Hoplite.",
+      "exploit": "Four Hoplites in a line are the whole Ancient and Classical defence, and two of them escort the Settlers. They are built in pairs, never singly, and they are the answer when a neighbour masses on the border while the Culture is being built. No offensive is planned around them."
+    },
+    {
+      "source": "unique_infrastructure",
+      "name": "Acropolis",
+      "buys": "A Theater Square replacement on Hills, cheaper to build, with a point of Culture from each adjacent district and the City Center and two from each adjacent wonder, and a free envoy when it is completed.",
+      "exploit": "Every city gets one on a hill touching the City Center and as many districts as the layout allows, and it is the first district in every city after the capital, because the envoy it grants is a suzerainty step and the Culture is the base the multiplier works on."
+    },
+    {
+      "source": "agenda",
+      "name": "Delian League",
+      "buys": "AI Pericles dislikes leaders who contest the city-states he is courting and likes those who do not.",
+      "exploit": "Irrelevant to your own play except as a map warning: an AI Pericles or Gorgo is a rival on the same watched stat, and every envoy they send is a margin you must answer."
+    }
+  ],
+  "shape_block": {
+    "monitor": {
+      "watched_stat": "At every city-state you are suzerain of, your envoy count minus the next civilization's, read on the city-state screen; and the total count of suzerainties against the era target",
+      "check_every": "turn from the first suzerainty, and the turn after every envoy notification about a city-state you hold",
+      "bands": {
+        "green": {
+          "test": "Every held city-state shows a margin of two envoys or more over the next rival, at least one envoy sits unspent in reserve, and the count meets the era target: three by turn 90, five by turn 160, six or more after.",
+          "response": "No action on the city-states. Keep the build on Acropolises, Amphitheaters and Settlers, let Influence accumulate, and send new envoys only to a city-state that is one envoy from the next bonus tier or from suzerainty."
+        },
+        "amber": {
+          "test": "Any held city-state has a margin of one, or a rival's envoy notification lands at a city-state you hold, or the count is one below the era target with no city-state within two envoys of flipping to you.",
+          "response": "Act now, while one envoy fixes it: spend the reserve envoy at the thinnest margin, move Amani to that city-state, and complete its quest if one is open. If a rival is building toward a city-state with three or more envoys in two turns, send two there before it is a tie. Then rebuild the reserve before sending anything new."
+        },
+        "red": {
+          "test": "A suzerainty has been lost or tied, or two held city-states sit at a margin of zero or one with no reserve, or a rival has declared war on a city-state you hold.",
+          "response": "The multiplier has already dropped. Everything else waits: every envoy on hand goes to the lost or tied city-state until it is two ahead, Amani moves there with Puppeteer if she has it, and if a rival army is on the city-state, levy its units for Gold and declare a Protectorate War if Diplomatic Service is in. Do not send envoys to a new city-state until every held one is back at two."
+        }
+      },
+      "second_watch": {
+        "stat": "Culture per turn before the multiplier, and the number of cities with a completed Acropolis",
+        "why": "A percentage of nothing is nothing. If the base Culture is under the Culture of a rival Theater Square civilization at any era checkpoint, more suzerainties do not fix it and another Acropolis does; the second watch stops the plan from spending Production on envoy wonders while the districts lag."
+      },
+      "off_period_plan": "There is no off period; the multiplier pays from the first suzerainty to the end. Between envoy moves the build is the Culture game underneath: an Acropolis in every city on the hill beside the City Center, Amphitheaters and Art Museums filled by the Great Writers and Artists the Wildcard cards win, Campuses in the two best cities for the Science that keeps up, and Hoplites in pairs on the borders."
+    }
+  },
+  "phases": [
+    {
+      "id": "setup",
+      "name": "Setup",
+      "turns": {
+        "from": 1,
+        "to": 30
+      },
+      "era": "ancient",
+      "objective": "Settle on or beside hills, meet every city-state within fifteen tiles with a Scout and a second Scout, found the pantheon, choose the hill for the first Acropolis beside the City Center, and write the city-state ledger so the watched stat has names in it before the first envoy is spent.",
+      "build_order": [
+        {
+          "item": "Scout",
+          "why": "City-states are the whole leader ability and each one met is an envoy target; Writing comes from the first civilization met."
+        },
+        {
+          "item": "Scout",
+          "why": "A second Scout the other way; Political Philosophy's Inspiration is three city-states met and the ledger wants six."
+        },
+        {
+          "item": "Settler",
+          "why": "The second city goes to a hill site within eight tiles, with its Acropolis tile chosen first."
+        },
+        {
+          "item": "Monument",
+          "why": "Culture to Political Philosophy by turn 50, which is the government, the extra Wildcard in use and Diplomatic League."
+        },
+        {
+          "item": "Builder",
+          "why": "Pasture or Plantation for the pantheon's Culture, a Mine for The Wheel, a third improvement for Craftsmanship."
+        },
+        {
+          "item": "Hoplite",
+          "why": "Two in a row after Bronze Working; the pair is the defence while the Culture is built."
+        },
+        {
+          "item": "Hoplite",
+          "why": "The second of the pair; a lone Hoplite is a Spearman."
+        },
+        {
+          "item": "Settler",
+          "why": "Third city toward the nearest cluster of city-states so envoys and quests are easy to see."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:animal-husbandry",
+          "note": "Pastures for God of the Open Sky; no boost to collect."
+        },
+        {
+          "id": "tech:mining",
+          "note": "Mines on the hills and the Acropolis's Production; no boost to collect."
+        },
+        {
+          "id": "tech:writing",
+          "note": "Eureka free from the first civilization met; a Campus in the capital later."
+        },
+        {
+          "id": "tech:bronze-working",
+          "note": "Three barbarian kills from the camp the Scouts find; the Hoplite unlocks here."
+        },
+        {
+          "id": "tech:astrology",
+          "note": "Eureka if a Scout finds a natural wonder; the Holy Site is optional, the Eureka is not."
+        },
+        {
+          "id": "tech:irrigation",
+          "note": "Farm a Rice or Wheat for the Eureka; Plantations for Oral Tradition if that pantheon was taken."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:code-of-laws",
+          "note": "Discipline for the camps and Urban Planning for the districts; no Inspiration exists."
+        },
+        {
+          "id": "civic:craftsmanship",
+          "note": "Inspiration from the first Builder's three improvements."
+        },
+        {
+          "id": "civic:foreign-trade",
+          "note": "The first Trade Route; Inspiration if a Scout crosses onto a second continent."
+        },
+        {
+          "id": "civic:early-empire",
+          "note": "Colonization for the Settlers; Inspiration at six population."
+        },
+        {
+          "id": "civic:mysticism",
+          "note": "Free Inspiration from the pantheon; Inspiration and Revelation go in the Wildcard slots and the Oracle unlocks here."
+        }
+      ],
+      "policies": [
+        {
+          "card": "God King",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "Faith for the pantheon by turn 20; swapped out the turn it is founded."
+        },
+        {
+          "card": "Discipline",
+          "slot": "military",
+          "from": "civic:code-of-laws",
+          "why": "Warriors and the Slinger beat camp units for Bronze Working."
+        },
+        {
+          "card": "Urban Planning",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "Production in every city once the pantheon is in; the Acropolis is the first thing it builds."
+        }
+      ],
+      "districts": [
+        {
+          "district": "acropolis",
+          "city": "capital",
+          "note": "Placed on turn 1 in the mind: the hill touching the City Center with room for a Campus and a Commercial Hub beside it; built the moment Drama and Poetry unlocks it."
+        }
+      ],
+      "pantheon": {
+        "slug": "god-of-the-open-sky",
+        "why": "Culture from Pastures on a hills start that usually has Sheep and Horses; Culture from turn 20 is Political Philosophy ten turns earlier.",
+        "alternative": "oral-tradition"
+      },
+      "wonders": [],
+      "governors": [],
+      "city_states": [
+        {
+          "type": "Cultural",
+          "why": "The first envoy into any Cultural city-state is Culture in the capital, and every Cultural suzerainty later is Culture in every Amphitheater and Art Museum."
+        },
+        {
+          "type": "Militaristic",
+          "why": "One envoy into a Militaristic city-state nearby is Hoplite Production in the capital and, once you are suzerain, a levy option when a camp gets serious."
+        }
+      ],
+      "great_people": [],
+      "checkpoints": [
+        {
+          "turn": 30,
+          "test": "Two cities on hill sites, the pantheon founded, four or more city-states met, and the ledger written with each one's type, quest and distance?",
+          "pass": "Enter the standing loop; read the city-state screen every turn from the first suzerainty.",
+          "fail": "Fewer than three city-states met means the Scouts went the wrong way: build a third Scout before the third Settler. If the capital has no hill for the Acropolis, the second city must, and it becomes the Culture capital."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "setup-settle-hills",
+          "turn": 1,
+          "text": "Settle on or beside hills with a hill tile touching the City Center free for the Acropolis; move at most two turns to get it."
+        },
+        {
+          "id": "setup-two-scouts",
+          "turn": 8,
+          "text": "Two Scouts out in opposite directions; each city-state met gets a line in the ledger with its type and its first quest."
+        },
+        {
+          "id": "setup-ledger",
+          "turn": 20,
+          "text": "Write the city-state ledger: every city-state met, its type, its quest, and the Culture it would add as a suzerainty. Rank them by distance and by how many rivals have met them."
+        },
+        {
+          "id": "setup-pantheon",
+          "turn": 20,
+          "text": "Found God of the Open Sky, or Oral Tradition if Plantations outnumber Pastures around the capital."
+        },
+        {
+          "id": "setup-first-envoy",
+          "turn": 25,
+          "text": "Spend the first envoy on the Cultural city-state nearest the capital, or on whichever city-state's quest you have already completed."
+        },
+        {
+          "id": "setup-second-city",
+          "turn": 28,
+          "text": "Found the second city on a hill site within eight tiles; its Acropolis tile is chosen before the Settler lands."
+        }
+      ]
+    },
+    {
+      "id": "loop",
+      "name": "Standing loop",
+      "turns": {
+        "from": 31,
+        "to": 95
+      },
+      "era": "classical",
+      "objective": "Run the margin check every turn while the empire grows to four cities with an Acropolis each, take Classical Republic with both Wildcards filled, build the Apadana and the Oracle, and be suzerain of three city-states at a two-envoy margin by turn 90.",
+      "build_order": [
+        {
+          "item": "Acropolis",
+          "why": "Capital first, then every city the turn it can place one; each completion is Culture and a free envoy."
+        },
+        {
+          "item": "Amphitheater",
+          "why": "Culture and two Writing slots for the first Great Writer; Cultural city-states pay into it at three envoys."
+        },
+        {
+          "item": "Settler",
+          "why": "Third and fourth cities on hill sites toward the city-state cluster."
+        },
+        {
+          "item": "Apadana",
+          "why": "Two envoys for every wonder built in the capital including itself; the envoy wonder."
+        },
+        {
+          "item": "Campus",
+          "why": "In the capital beside the Acropolis for both adjacencies; Science has to keep pace with Culture."
+        },
+        {
+          "item": "Trader",
+          "why": "Currency Eureka, and a route to a city-state completes a common quest."
+        },
+        {
+          "item": "Oracle",
+          "why": "On a hill in the capital: Great Person points per district and cheaper Faith patronage; Drama and Poetry's Inspiration when it finishes."
+        },
+        {
+          "item": "Hoplite",
+          "why": "A second pair for the fourth city's border if a neighbour arms."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:currency",
+          "note": "Eureka from the first Trade Route; Commercial Hub in the capital for the Gold envoy quests sometimes ask for."
+        },
+        {
+          "id": "tech:wheel",
+          "note": "A Mine on a resource hill boosts it; the hills start has several."
+        },
+        {
+          "id": "tech:masonry",
+          "note": "A Quarry on Stone or Marble boosts it; Ancient Walls complete a common quest."
+        },
+        {
+          "id": "tech:horseback-riding",
+          "note": "A Pasture gives the Eureka; God of the Open Sky wanted the Pasture anyway."
+        },
+        {
+          "id": "tech:mathematics",
+          "note": "Acropolis, Campus and Commercial Hub are three specialty districts; free Eureka."
+        },
+        {
+          "id": "tech:construction",
+          "note": "A Water Mill in a river city gives the Eureka; it is also the Games and Recreation Inspiration, which unlocks the Entertainment Complex for Amenities in a tall core."
+        },
+        {
+          "id": "tech:apprenticeship",
+          "note": "Three Mines on the hills give the Eureka; Production for the Acropolises."
+        },
+        {
+          "id": "tech:engineering",
+          "note": "Ancient Walls in the border city give the Eureka; Walls also answer a quest."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:state-workforce",
+          "note": "Free Inspiration from the first district, the capital Campus, since the Acropolis waits for Drama and Poetry."
+        },
+        {
+          "id": "civic:political-philosophy",
+          "note": "Classical Republic, Diplomatic League and Charismatic Leader; Inspiration from three city-states met, which the Scouts did by turn 30."
+        },
+        {
+          "id": "civic:drama-and-poetry",
+          "note": "The Apadana or Oracle gives the Inspiration; Aesthetics and Literary Tradition."
+        },
+        {
+          "id": "civic:games-and-recreation",
+          "note": "Free Inspiration from Construction; Entertainment Complex for a tall core."
+        },
+        {
+          "id": "civic:recorded-history",
+          "note": "Two Campuses give the Inspiration; Natural Philosophy and the Great Library."
+        },
+        {
+          "id": "civic:defensive-tactics",
+          "note": "Inspiration if a neighbour declares; Bastions if the Hoplites are not enough."
+        },
+        {
+          "id": "civic:theology",
+          "note": "Only if the Oracle's Faith founds a religion; otherwise skipped until later."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Classical Republic",
+          "slot": "wildcard",
+          "from": "civic:political-philosophy",
+          "why": "The government: Great Person points and Amenities, and with Plato's Republic two Wildcard slots instead of one."
+        },
+        {
+          "card": "Diplomatic League",
+          "slot": "diplomatic",
+          "from": "civic:political-philosophy",
+          "why": "The first envoy to each city-state counts as two; every new city-state in the ledger costs one envoy fewer to reach suzerainty."
+        },
+        {
+          "card": "Charismatic Leader",
+          "slot": "diplomatic",
+          "from": "civic:political-philosophy",
+          "why": "Influence points per turn; it is the envoy income and takes Classical Republic's single Diplomatic slot once Diplomatic League's doubled first envoys are spent."
+        },
+        {
+          "card": "Inspiration",
+          "slot": "wildcard",
+          "from": "civic:mysticism",
+          "why": "Great Scientist points every turn in the first Wildcard."
+        },
+        {
+          "card": "Literary Tradition",
+          "slot": "wildcard",
+          "from": "civic:drama-and-poetry",
+          "why": "Great Writer points every turn in the second Wildcard; the first Writer's works fill the Amphitheaters."
+        },
+        {
+          "card": "Aesthetics",
+          "slot": "economic",
+          "from": "civic:drama-and-poetry",
+          "why": "Doubles Acropolis adjacency; the base Culture the multiplier works on."
+        },
+        {
+          "card": "Colonization",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "Fifty percent more Production toward Settlers for the third and fourth cities."
+        }
+      ],
+      "districts": [
+        {
+          "district": "acropolis",
+          "city": "every city",
+          "note": "On the hill touching the City Center and the most future district tiles; the Oracle or Apadana adjacent adds two."
+        },
+        {
+          "district": "campus",
+          "city": "capital and second city",
+          "note": "Beside the Acropolis so the Acropolis takes a point from it and the Campus half a point back; Recorded History at two."
+        },
+        {
+          "district": "commercial-hub",
+          "city": "capital",
+          "note": "Adjacent to the Acropolis; Gold for the Hoplites and the Trade Route quests."
+        }
+      ],
+      "pantheon": {
+        "slug": "god-of-the-open-sky",
+        "why": "Already founded; this phase Pastures every Horse and Sheep tile."
+      },
+      "wonders": [
+        {
+          "name": "Apadana",
+          "why": "Two envoys when it finishes and two more for every later wonder in the capital; the Oracle beside it is four envoys for two wonders.",
+          "skip_if": "Persia or a wonder civilization has Political Philosophy before you, or the capital has under twelve Production at turn 55."
+        },
+        {
+          "name": "Oracle",
+          "why": "Great Person points per district in the capital, cheaper Faith patronage, two more Apadana envoys, and two Culture to the adjacent Acropolis.",
+          "skip_if": "No free hill tile sits within the capital's second ring by turn 45, or Brazil or China has Mysticism and a begun-construction notice before yours is half built."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "amani",
+          "promotion": "Emissary",
+          "city": "the city-state with the thinnest margin",
+          "why": "She counts as two envoys where she stands; she is the response unit, moved whenever the band turns amber. Emissary is the first title so the Puppeteer line is reachable."
+        },
+        {
+          "governor": "pingala",
+          "promotion": "Connoisseur",
+          "city": "capital",
+          "why": "Culture per citizen in the city with the Acropolis, Apadana and Oracle; the multiplier multiplies it."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "kumasi",
+          "why": "Culture and Gold on every Trade Route to a city-state per district in the origin city; Greece runs routes to its suzerainties anyway."
+        },
+        {
+          "slug": "antananarivo",
+          "why": "Culture per Great Person ever earned, which the three Wildcard cards make a long list."
+        },
+        {
+          "slug": "ayutthaya",
+          "why": "Culture equal to a tenth of every building's cost as it finishes; a wonder-heavy capital pays it constantly."
+        },
+        {
+          "type": "Cultural",
+          "why": "Every Cultural suzerainty is Culture in the capital, every Amphitheater at three envoys, and five percent everywhere."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-writer",
+          "why": "Literary Tradition and the Acropolises win the Classical Writers; two works each into the Amphitheaters."
+        },
+        {
+          "class": "great-scientist",
+          "why": "Inspiration in the first Wildcard and the Campuses; the first Classical Scientist is Education's Eureka."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 60,
+          "test": "Classical Republic adopted with Diplomatic League in the Diplomatic slot and both Wildcards filled, Drama and Poetry under way for the capital Acropolis, and one suzerainty held at a margin of two?",
+          "pass": "Continue; the Apadana starts if its rule allows.",
+          "fail": "No suzerainty at turn 60 means envoys were spread: pull every new envoy to the single city-state nearest suzerainty until it flips, and move Amani there now."
+        },
+        {
+          "turn": 95,
+          "test": "Four cities with an Acropolis each, three suzerainties at a margin of two, one envoy in reserve, and Culture per turn above every rival's but one?",
+          "pass": "Enter the league phase; Kilwa Kisiwani and the Medieval envoy civics are next.",
+          "fail": "If the count is two, the third is whichever city-state a rival has not touched, even a Religious one; if the margins are one, the reserve is rebuilt before any new target. If base Culture trails two rivals, Amphitheaters and Aesthetics before any Settler."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "loop-first-read",
+          "turn": 32,
+          "text": "First formal read: write each met city-state's envoy count for you and for the leading rival, and mark the one closest to flipping to you."
+        },
+        {
+          "id": "loop-government",
+          "turn": 52,
+          "text": "Classical Republic adopted; Diplomatic League in the Diplomatic slot until the first envoys to every met city-state are sent, then Charismatic Leader, and Inspiration and Literary Tradition in the two Wildcards."
+        },
+        {
+          "id": "loop-first-suzerainty",
+          "turn": 60,
+          "text": "First suzerainty taken with a margin of two; from here the stat is read every turn and the Culture screen checked for the five percent."
+        },
+        {
+          "id": "loop-third-city",
+          "turn": 62,
+          "text": "Third city founded on a hill toward the city-state cluster; Acropolis is its first build."
+        },
+        {
+          "id": "loop-first-acropolis",
+          "turn": 65,
+          "text": "Capital Acropolis finished soon after Drama and Poetry unlocks it; its free envoy goes to the city-state marked closest, not to a new one."
+        },
+        {
+          "id": "loop-amber-drill",
+          "turn": 85,
+          "text": "Run the amber response once deliberately: let a margin sit at one for a turn at a city-state no rival is courting, watch the screen, then restore it. Note how many turns a rival's envoy takes to appear after the notification."
+        }
+      ]
+    },
+    {
+      "id": "league",
+      "name": "The league",
+      "turns": {
+        "from": 96,
+        "to": 165
+      },
+      "era": "medieval",
+      "objective": "Raise the count to five suzerainties with Kilwa Kisiwani, the Medieval envoy civics and Amani's Puppeteer line while every margin stays at two, fill the Amphitheaters and Art Museums from the Writer and Artist races the three Wildcards win, and reach Diplomatic Service so a Protectorate War is available when a rival marches on a city-state you hold.",
+      "build_order": [
+        {
+          "item": "Kilwa Kisiwani",
+          "why": "Three envoys when it finishes and a bonus to every yield type you hold two suzerainties of; it is the Medieval envoy wonder and needs a coastal city."
+        },
+        {
+          "item": "Art Museum",
+          "why": "Great Artist slots and the Opera and Ballet Inspiration; Frescoes in the third Wildcard fills them."
+        },
+        {
+          "item": "University",
+          "why": "Two for Printing; the Science that keeps Greece in reach of Flight and Computers later."
+        },
+        {
+          "item": "Settler",
+          "why": "Fifth and sixth cities on hills; each is another Acropolis and another five percent base."
+        },
+        {
+          "item": "Market",
+          "why": "Two for Guilds and the Gold that levies a city-state's army when one is attacked."
+        },
+        {
+          "item": "Aqueduct",
+          "why": "Military Engineering Eureka and Housing in the capital."
+        },
+        {
+          "item": "Hoplite",
+          "why": "Upgraded to Pikemen under Professional Army later; the pairs stay on the borders."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:education",
+          "note": "Eureka from the first Great Scientist; Universities and Printing."
+        },
+        {
+          "id": "tech:machinery",
+          "note": "Kilwa Kisiwani unlocks here; three Archers boost it if a border needs Crossbowmen, otherwise unboosted and still taken early."
+        },
+        {
+          "id": "tech:military-engineering",
+          "note": "Aqueduct gives the Eureka; on the way to Castles."
+        },
+        {
+          "id": "tech:castles",
+          "note": "Free Eureka from Monarchy or Theocracy; Walls answer quests and the Alhambra is possible."
+        },
+        {
+          "id": "tech:printing",
+          "note": "Two Universities give the Eureka; the Forbidden City for a fourth Wildcard."
+        },
+        {
+          "id": "tech:banking",
+          "note": "Free Eureka from Guilds; Banks for Economics."
+        },
+        {
+          "id": "tech:astronomy",
+          "note": "A University beside a mountain gives the Eureka; the Potala Palace and its Diplomatic slot unlock here."
+        },
+        {
+          "id": "tech:buttress",
+          "note": "Owning the Apadana, a Classical wonder, gives the Eureka; the Oracle is Ancient and does not count; on the way to Printing."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:feudalism",
+          "note": "Six Farms give the Inspiration; Serfdom for the Builders."
+        },
+        {
+          "id": "civic:civil-service",
+          "note": "Capital at ten population gives the Inspiration; Meritocracy is Culture per district."
+        },
+        {
+          "id": "civic:guilds",
+          "note": "Two Markets give the Inspiration; Banking Eureka."
+        },
+        {
+          "id": "civic:medieval-faires",
+          "note": "Four Trade Routes to your suzerainties give the Inspiration; an envoy and Merchant Confederation come with the civic."
+        },
+        {
+          "id": "civic:divine-right",
+          "note": "Monarchy if the empire is wide; Inspiration from two Temples only if a religion exists, so plan for unboosted."
+        },
+        {
+          "id": "civic:humanism",
+          "note": "The first Great Artist gives the Inspiration; Frescoes is the Artist card."
+        },
+        {
+          "id": "civic:diplomatic-service",
+          "note": "The first alliance gives the Inspiration; the Protectorate War casus belli and an envoy come with it."
+        },
+        {
+          "id": "civic:mercantilism",
+          "note": "A Great Merchant gives the Inspiration; on the way to Colonialism."
+        },
+        {
+          "id": "civic:the-enlightenment",
+          "note": "Three Great People is long done; Rationalism and the Scientific Theory Eureka."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Frescoes",
+          "slot": "wildcard",
+          "from": "civic:humanism",
+          "why": "Great Artist points every turn in the third Wildcard; Art Museums are waiting."
+        },
+        {
+          "card": "Meritocracy",
+          "slot": "economic",
+          "from": "civic:civil-service",
+          "why": "Culture per specialty district in every city; six cities with three districts each is eighteen more Culture before the multiplier."
+        },
+        {
+          "card": "Merchant Confederation",
+          "slot": "diplomatic",
+          "from": "civic:medieval-faires",
+          "why": "Gold for every envoy you have placed at city-states; by now that is thirty or more a turn."
+        },
+        {
+          "card": "Monarchy",
+          "slot": "wildcard",
+          "from": "civic:divine-right",
+          "why": "The Tier 2 government with a Diplomatic slot and Housing for a wide core; Plato's Republic keeps three Wildcards under it too."
+        },
+        {
+          "card": "Serfdom",
+          "slot": "economic",
+          "from": "civic:feudalism",
+          "why": "Builders with extra charges for the Farms and Mines six cities need."
+        }
+      ],
+      "districts": [
+        {
+          "district": "acropolis",
+          "city": "the fifth and sixth cities",
+          "note": "First district in each; the envoy on completion goes to the thinnest margin."
+        },
+        {
+          "district": "harbor",
+          "city": "the coastal city",
+          "note": "Kilwa Kisiwani must be built next to the coast; the Harbor gives the city the Production to finish it."
+        },
+        {
+          "district": "theater-square",
+          "city": "none",
+          "note": "Never built: the Acropolis replaces it in every city, so this line exists only to say so."
+        },
+        {
+          "district": "aqueduct",
+          "city": "capital",
+          "note": "Housing for the Connoisseur city and the Military Engineering Eureka."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Kilwa Kisiwani",
+          "why": "Three envoys on completion and a yield bonus for every city-state type you hold two of; for Pericles that is usually Culture and one other.",
+          "skip_if": "No coastal city has fifteen Production at turn 120, or Machinery arrives after turn 150."
+        },
+        {
+          "name": "Forbidden City",
+          "why": "A fourth Wildcard slot for a civilization that already runs three; Invention or a second diplomatic card goes in it.",
+          "skip_if": "China is on the map, or Printing lands after turn 170."
+        },
+        {
+          "name": "Potala Palace",
+          "why": "An extra Diplomatic slot and Diplomatic Favor per turn; the Diplomatic fallback starts here.",
+          "skip_if": "No city has a mountain-adjacent hill tile free, or Tibet-style Faith civilizations have Astronomy before you."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "amani",
+          "promotion": "Puppeteer",
+          "city": "the contested city-state",
+          "why": "More envoys where she stands; with Puppeteer she alone restores a lost suzerainty against most rivals."
+        },
+        {
+          "governor": "pingala",
+          "promotion": "Grants",
+          "city": "capital",
+          "why": "Doubles the Great Person points the capital's districts and the Oracle produce, on top of what the Wildcard cards raise empire-wide; the Writer and Artist races stop being close."
+        },
+        {
+          "governor": "magnus",
+          "promotion": "Provision",
+          "city": "second city",
+          "why": "Settlers without the population cost from a city that does not carry the Culture."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "vilnius",
+          "why": "Half again as much Acropolis adjacency at the highest alliance level; with Aesthetics it is the single largest Culture bonus on the map."
+        },
+        {
+          "slug": "geneva",
+          "why": "Science while at peace, which a Hoplite-defended Culture civilization is for most of the game."
+        },
+        {
+          "type": "Religious",
+          "why": "Religious city-states are the cheapest suzerainties because the AI ignores them; each is still five percent."
+        },
+        {
+          "type": "Trade",
+          "why": "Gold in every Market at three envoys pays for the levies and the patronage."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-writer",
+          "why": "Every Medieval Writer; the Amphitheaters in six cities hold twelve works."
+        },
+        {
+          "class": "great-artist",
+          "why": "From Humanism on with Frescoes in the third Wildcard; three works each into Art Museums, themed by era."
+        },
+        {
+          "class": "great-merchant",
+          "why": "Only when free: Mercantilism's Inspiration, and a Merchant with an envoy is two for one."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 130,
+          "test": "Four suzerainties at a margin of two, Kilwa Kisiwani started or skipped, Art Museums in two cities, and the reserve envoy unspent?",
+          "pass": "Continue; the fifth suzerainty is the next city-state a rival has not courted.",
+          "fail": "Three or fewer means a rival is contesting the same cluster: shift the ledger to the city-states on the far side of your empire, where no rival envoy reaches, and move Amani to the one you are most likely to lose."
+        },
+        {
+          "turn": 165,
+          "test": "Five suzerainties, six cities with an Acropolis each, Diplomatic Service researched, and Great Works in every Amphitheater and Art Museum slot?",
+          "pass": "Enter the hegemony phase; Tourism begins to count.",
+          "fail": "If the count is four, do not chase a fifth into a rival's cluster; hold the four at a margin of three and take the fifth from a city-state that spawns or flips later. If slots sit empty, the Wildcards are on the wrong cards."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "league-kilwa",
+          "turn": 105,
+          "text": "Kilwa Kisiwani started in the coastal city with a Harbor; its three envoys are already assigned on paper to the thinnest margins."
+        },
+        {
+          "id": "league-puppeteer",
+          "turn": 115,
+          "text": "Amani promoted toward Puppeteer; from here she sits only on a contested suzerainty."
+        },
+        {
+          "id": "league-fifth-city",
+          "turn": 120,
+          "text": "Fifth city founded on a hill; Acropolis first, then the envoy it grants to the ledger's thinnest margin."
+        },
+        {
+          "id": "league-frescoes",
+          "turn": 135,
+          "text": "Humanism reached on the first Great Artist; Frescoes takes the third Wildcard and Inspiration leaves it if the Scientist race is lost."
+        },
+        {
+          "id": "league-protectorate",
+          "turn": 150,
+          "text": "Diplomatic Service reached; the Protectorate War casus belli is now available and the ledger notes which rival has units near which of your suzerainties."
+        },
+        {
+          "id": "league-margin-audit",
+          "turn": 160,
+          "text": "Audit every held city-state's margin against the leading rival; any at one gets the reserve envoy before the fifth suzerainty is attempted."
+        }
+      ]
+    },
+    {
+      "id": "hegemony",
+      "name": "Hegemony",
+      "turns": {
+        "from": 166,
+        "to": 235
+      },
+      "era": "industrial",
+      "objective": "Hold six or more suzerainties through the World Congress era with Favor and Puppeteer, convert the Acropolis Culture into Tourism through Archaeological Museums, National Parks on the hills and the Hermitage, and have Tourism rising against every rival by turn 235 with the Diplomatic Victory points counted as the fallback.",
+      "build_order": [
+        {
+          "item": "Archaeological Museum",
+          "why": "Natural History's Inspiration, Artifacts for Combustion, and a third Great Work type for theming."
+        },
+        {
+          "item": "Hermitage",
+          "why": "Great Artist points and four Art slots; it both wins the Artist race and houses the winners."
+        },
+        {
+          "item": "Naturalist",
+          "why": "Faith-bought after Conservation; Greek hills beside mountains site National Parks easily and the first is Radio's Eureka."
+        },
+        {
+          "item": "Workshop",
+          "why": "Two for Industrialization in the two best Production cities; Factories power the museums."
+        },
+        {
+          "item": "Neighborhood",
+          "why": "Two for Sanitation; the first on a Breathtaking hill is the Conservation Inspiration."
+        },
+        {
+          "item": "Pikeman",
+          "why": "The Hoplite pairs upgraded; Pike and Shot after Metal Casting if a neighbour arms."
+        },
+        {
+          "item": "Bank",
+          "why": "Two for Economics; Gold for the Congress and for levies."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:industrialization",
+          "note": "Two Workshops give the Eureka; Factories."
+        },
+        {
+          "id": "tech:scientific-theory",
+          "note": "Free Eureka from The Enlightenment; Research Grants projects get stronger."
+        },
+        {
+          "id": "tech:sanitation",
+          "note": "Two Neighborhoods give the Eureka."
+        },
+        {
+          "id": "tech:economics",
+          "note": "Two Banks give the Eureka; Stock Exchanges for Capitalism."
+        },
+        {
+          "id": "tech:chemistry",
+          "note": "Alliance level two with the Cultural ally gives the Eureka."
+        },
+        {
+          "id": "tech:combustion",
+          "note": "An Artifact gives the Eureka; on the way to Flight."
+        },
+        {
+          "id": "tech:radio",
+          "note": "The first National Park gives the Eureka; Mass Media follows."
+        },
+        {
+          "id": "tech:flight",
+          "note": "Owning the Hermitage gives the Eureka; Cristo Redentor and Tourism from wonders."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:natural-history",
+          "note": "The Archaeological Museum gives the Inspiration; the Hermitage."
+        },
+        {
+          "id": "civic:opera-and-ballet",
+          "note": "The first Art Museum gave the Inspiration; Grand Opera and Symphonies."
+        },
+        {
+          "id": "civic:civil-engineering",
+          "note": "Seven district types stand by now; free Inspiration."
+        },
+        {
+          "id": "civic:colonialism",
+          "note": "Astronomy gave the Inspiration; on the way to Conservation."
+        },
+        {
+          "id": "civic:urbanization",
+          "note": "A city of fifteen gives the Inspiration; Neighborhoods."
+        },
+        {
+          "id": "civic:conservation",
+          "note": "A Neighborhood on a Breathtaking hill gives the Inspiration; Naturalists and National Parks."
+        },
+        {
+          "id": "civic:nationalism",
+          "note": "Unboosted unless a Protectorate War was declared with the casus belli; Corps for the Pikemen."
+        },
+        {
+          "id": "civic:mass-media",
+          "note": "Radio gives the Inspiration; Broadcast Centers."
+        },
+        {
+          "id": "civic:ideology",
+          "note": "The road to Suffrage, which unlocks Democracy for Favor and patronage; no Inspiration exists."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Grand Opera",
+          "slot": "economic",
+          "from": "civic:opera-and-ballet",
+          "why": "Culture from Acropolis buildings in every city."
+        },
+        {
+          "card": "Symphonies",
+          "slot": "wildcard",
+          "from": "civic:opera-and-ballet",
+          "why": "Great Musician points every turn, with Broadcast Centers to hold the works; Musicians join the list in the third Wildcard."
+        },
+        {
+          "card": "Rationalism",
+          "slot": "economic",
+          "from": "civic:the-enlightenment",
+          "why": "Science from the Campus buildings; Greece has to reach Computers before the Tourism race ends."
+        },
+        {
+          "card": "Democracy",
+          "slot": "wildcard",
+          "from": "civic:suffrage",
+          "why": "The Tier 3 government: Diplomatic Favor, cheaper patronage, and Computers' Eureka; three Wildcards still."
+        },
+        {
+          "card": "Merchant Confederation",
+          "slot": "diplomatic",
+          "from": "civic:medieval-faires",
+          "why": "Kept all game; the envoy count only grows."
+        }
+      ],
+      "districts": [
+        {
+          "district": "neighborhood",
+          "city": "capital and the two largest cities",
+          "note": "Breathtaking hill tiles; Sanitation at two and Conservation on the first."
+        },
+        {
+          "district": "industrial-zone",
+          "city": "the two best Production cities",
+          "note": "Workshops for Industrialization; Factories for the museums and Broadcast Centers."
+        },
+        {
+          "district": "preserve",
+          "city": "a city with hills and a mountain cluster",
+          "note": "Appeal and Culture from the Grove on tiles the National Park will not take."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Hermitage",
+          "why": "Great Artist points and four Art slots in the capital; Flight's Eureka too.",
+          "skip_if": "Natural History lands after turn 200, or Russia or a rival Culture civilization is already building it."
+        },
+        {
+          "name": "Cristo Redentor",
+          "why": "Tourism from Seaside Resorts doubled and religious Tourism no longer reduced once rivals reach The Enlightenment; the Tourism wonder for a hills empire with little coast is still worth it for the religious half.",
+          "skip_if": "Flight arrives after turn 240, or fewer than two coastal cities exist."
+        },
+        {
+          "name": "Eiffel Tower",
+          "why": "Two Appeal on every tile; more Breathtaking hills for Parks and Neighborhoods.",
+          "skip_if": "Steel is more than fifteen turns away at turn 220, or France is on the map and ahead in Science."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Researcher",
+          "city": "capital",
+          "why": "Science per citizen in the capital for the race to Computers; Gathering Storm replaced Curator, the Great Works Tourism promotion, with Space Initiative."
+        },
+        {
+          "governor": "amani",
+          "promotion": "Puppeteer",
+          "city": "whichever suzerainty the Congress makes contested",
+          "why": "Still the response unit; a rival with Favor to spend will target your largest suzerainty."
+        },
+        {
+          "governor": "reyna",
+          "promotion": "Contractor",
+          "city": "the newest city",
+          "why": "Buy the Acropolis outright with Gold so a late city joins the base Culture in one turn."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "antananarivo",
+          "why": "By now the Culture bonus is near its cap from the Great People recruited; keep suzerainty."
+        },
+        {
+          "slug": "kumasi",
+          "why": "Routes to six suzerainties with Kumasi held are Culture and Gold in every origin city."
+        },
+        {
+          "type": "Cultural",
+          "why": "Every Cultural suzerainty is a Congress vote partner and Culture in every Art Museum."
+        },
+        {
+          "type": "Scientific",
+          "why": "Science in every University at six envoys; the Science fallback is not planned but Computers is needed."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-artist",
+          "why": "Hermitage, Art Museums and Archaeological Museums hold them; theme by era and type for Cultural Heritage."
+        },
+        {
+          "class": "great-musician",
+          "why": "Added at Opera and Ballet with Symphonies; Broadcast Centers hold their works."
+        },
+        {
+          "class": "great-writer",
+          "why": "Still taken when free; the Amphitheaters in the late cities have slots."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 200,
+          "test": "Six suzerainties at a margin of two, Tourism per turn higher than every rival but one, the first National Park founded, and Favor accumulating from every suzerainty?",
+          "pass": "Continue; Broadcast Centers in every Acropolis city.",
+          "fail": "If Tourism trails two or more rivals, buy Archaeologists and send a Trade Route to each Tourism leader for the Open Borders bonus; if the count fell, the Congress is the cause and Favor must be spent to block the resolution that targets you."
+        },
+        {
+          "turn": 235,
+          "test": "Culture victory screen showing you ahead of half the civilizations in Visitors, and the suzerainty count still six or more?",
+          "pass": "Enter the close; Rock Bands and Parks finish it.",
+          "fail": "Behind in Visitors but holding eight or more suzerainties: switch the verdict to Diplomatic at this checkpoint, bank Favor, and spend it on Victory Points at every Congress and on winning the Aid Requests."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "hegemony-museums",
+          "turn": 170,
+          "text": "Archaeological Museum built and an Archaeologist out; the first Artifact is Combustion."
+        },
+        {
+          "id": "hegemony-congress",
+          "turn": 180,
+          "text": "At the first Congress of the phase, spend Favor to block any resolution that cancels envoys or suzerainty bonuses, and vote for the one that doubles Culture."
+        },
+        {
+          "id": "hegemony-national-park",
+          "turn": 195,
+          "text": "Naturalist bought with Faith and the first National Park founded on hills beside a mountain; Radio Eureka collected."
+        },
+        {
+          "id": "hegemony-hermitage",
+          "turn": 205,
+          "text": "Hermitage finished or skipped; Pingala takes Researcher for the Science that reaches Computers."
+        },
+        {
+          "id": "hegemony-margin-audit",
+          "turn": 225,
+          "text": "Full margin audit against every rival with Favor to spend; any suzerainty a rival has Favor and envoys to take gets a margin of three."
+        }
+      ]
+    },
+    {
+      "id": "close",
+      "name": "Close",
+      "turns": {
+        "from": 236,
+        "to": null
+      },
+      "era": "modern",
+      "objective": "Finish the Culture victory with Rock Bands, National Parks and themed museums while the suzerainty count stays at six or more, or run the Diplomatic fallback from the same envoys and Favor if the turn 235 checkpoint said so.",
+      "build_order": [
+        {
+          "item": "Broadcast Center",
+          "why": "Great Musician slots and Culture in every Acropolis city; Satellites' Eureka at two."
+        },
+        {
+          "item": "Rock Band",
+          "why": "Faith-bought with Album Cover Art or Music Festival and sent to the civilizations with the most Culture."
+        },
+        {
+          "item": "Research Lab",
+          "why": "Nuclear Program's Inspiration and the Science to reach Computers' Tourism bonus."
+        },
+        {
+          "item": "Stock Exchange",
+          "why": "Two for Capitalism; Gold for the last patronage and the Congress."
+        },
+        {
+          "item": "Naturalist",
+          "why": "A second and third National Park on the hills the Eiffel Tower made Breathtaking."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:computers",
+          "note": "Democracy gave the Eureka; Tourism from Culture rises with it."
+        },
+        {
+          "id": "tech:electricity",
+          "note": "Unboosted; Power for the Broadcast Centers."
+        },
+        {
+          "id": "tech:refining",
+          "note": "A Coal Power Plant gives the Eureka if one was built; otherwise unboosted."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:cultural-heritage",
+          "note": "A themed museum gives the Inspiration; Heritage Tourism."
+        },
+        {
+          "id": "civic:capitalism",
+          "note": "Two Stock Exchanges give the Inspiration; on the way to Social Media."
+        },
+        {
+          "id": "civic:nuclear-program",
+          "note": "A Research Lab gives the Inspiration; optional, taken for the Science."
+        },
+        {
+          "id": "civic:social-media",
+          "note": "Telecommunications research gives the Inspiration; Online Communities."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Heritage Tourism",
+          "slot": "economic",
+          "from": "civic:cultural-heritage",
+          "why": "Tourism from Great Works doubled in an empire built on them."
+        },
+        {
+          "card": "Satellite Broadcasts",
+          "slot": "economic",
+          "from": "civic:cultural-heritage",
+          "why": "Tourism from Great Works of Music tripled; Symphonies made the Musicians."
+        },
+        {
+          "card": "Online Communities",
+          "slot": "economic",
+          "from": "civic:social-media",
+          "why": "Tourism to civilizations you trade with; six routes to the six biggest Culture rivals."
+        }
+      ],
+      "districts": [],
+      "wonders": [],
+      "governors": [
+        {
+          "governor": "amani",
+          "promotion": "Puppeteer",
+          "city": "the suzerainty nearest a rival with Favor",
+          "why": "She stays on duty to the last turn; the multiplier is rented until the game ends."
+        }
+      ],
+      "city_states": [],
+      "great_people": [
+        {
+          "class": "great-musician",
+          "why": "Every Modern and Atomic Musician into the Broadcast Centers under Satellite Broadcasts."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 285,
+          "test": "Visitors higher than the domestic tourists of every civilization but one, or on the Diplomatic fallback within four Victory Points of twenty?",
+          "pass": "Continue; no further decisions.",
+          "fail": "Convert to Score: keep every suzerainty for the Culture and Favor, stop buying Rock Bands, and spend Gold on buildings in every city."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "close-rock-bands",
+          "turn": 245,
+          "text": "First two Rock Bands bought with Faith and sent to the two civilizations with the highest domestic Culture."
+        },
+        {
+          "id": "close-themes",
+          "turn": 255,
+          "text": "Every Art Museum and Archaeological Museum themed; swap works with the Cultural ally to finish the sets."
+        },
+        {
+          "id": "close-review",
+          "turn": 285,
+          "text": "Review the turn 285 checkpoint and either finish the Culture victory or spend the banked Favor on Diplomatic Victory Points."
+        }
+      ]
+    }
+  ],
+  "boosts": [
+    {
+      "id": "tech:writing",
+      "fit": "free",
+      "when": "setup",
+      "how": "The first Scout meets a civilization inside fifteen tiles."
+    },
+    {
+      "id": "tech:bronze-working",
+      "fit": "cheap",
+      "when": "setup",
+      "how": "Three barbarian kills at the camp the Scouts find; the Hoplite is on this line anyway."
+    },
+    {
+      "id": "tech:astrology",
+      "fit": "cheap",
+      "when": "setup",
+      "how": "Two Scouts find a natural wonder more often than one does."
+    },
+    {
+      "id": "tech:irrigation",
+      "fit": "cheap",
+      "when": "setup",
+      "how": "The first Builder Farms a Rice or Wheat."
+    },
+    {
+      "id": "tech:archery",
+      "fit": "costly",
+      "when": "setup",
+      "how": "A Slinger kill is luck; this plan builds Hoplites, not Slingers."
+    },
+    {
+      "id": "tech:sailing",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "The coastal city for Kilwa Kisiwani triggers it on settle."
+    },
+    {
+      "id": "tech:currency",
+      "fit": "free",
+      "when": "loop",
+      "how": "The first Trader runs a route to a city-state."
+    },
+    {
+      "id": "tech:wheel",
+      "fit": "free",
+      "when": "loop",
+      "how": "A Mine on a resource hill; the hills start has several."
+    },
+    {
+      "id": "tech:masonry",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "A Quarry on Stone or Marble near the capital."
+    },
+    {
+      "id": "tech:horseback-riding",
+      "fit": "free",
+      "when": "loop",
+      "how": "The Pasture God of the Open Sky wanted."
+    },
+    {
+      "id": "tech:mathematics",
+      "fit": "free",
+      "when": "loop",
+      "how": "Acropolis, Campus and Commercial Hub are three specialty districts by turn 80."
+    },
+    {
+      "id": "tech:construction",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "A Water Mill in the river city."
+    },
+    {
+      "id": "tech:apprenticeship",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "Three Mines on the hills."
+    },
+    {
+      "id": "tech:engineering",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "Ancient Walls in the border city, which also answers a city-state quest."
+    },
+    {
+      "id": "tech:celestial-navigation",
+      "fit": "costly",
+      "when": "loop",
+      "how": "Two Fishing Boats only in the Kilwa city."
+    },
+    {
+      "id": "tech:iron-working",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:shipbuilding",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:military-tactics",
+      "fit": "costly",
+      "when": "league",
+      "how": "A Hoplite kill on a barbarian or an invader; it happens only if someone comes."
+    },
+    {
+      "id": "tech:education",
+      "fit": "free",
+      "when": "league",
+      "how": "The first Great Scientist falls to Inspiration in the first Wildcard."
+    },
+    {
+      "id": "tech:machinery",
+      "fit": "costly",
+      "when": "league",
+      "how": "Three Archers only if Crossbowmen are wanted; Kilwa makes the tech worth taking unboosted."
+    },
+    {
+      "id": "tech:military-engineering",
+      "fit": "cheap",
+      "when": "league",
+      "how": "The capital Aqueduct."
+    },
+    {
+      "id": "tech:castles",
+      "fit": "free",
+      "when": "league",
+      "how": "Monarchy is a Tier 2 government."
+    },
+    {
+      "id": "tech:stirrups",
+      "fit": "free",
+      "when": "league",
+      "how": "Feudalism is on the civic path."
+    },
+    {
+      "id": "tech:printing",
+      "fit": "cheap",
+      "when": "league",
+      "how": "Two Universities in the Campus cities."
+    },
+    {
+      "id": "tech:banking",
+      "fit": "free",
+      "when": "league",
+      "how": "Guilds is on the civic path."
+    },
+    {
+      "id": "tech:astronomy",
+      "fit": "cheap",
+      "when": "league",
+      "how": "A University in the Campus placed beside a mountain."
+    },
+    {
+      "id": "tech:buttress",
+      "fit": "free",
+      "when": "league",
+      "how": "Owning the Apadana, a Classical wonder; the Ancient-era Oracle does not count."
+    },
+    {
+      "id": "tech:mass-production",
+      "fit": "cheap",
+      "when": "league",
+      "how": "A Lumber Mill on any Woods tile."
+    },
+    {
+      "id": "tech:cartography",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:gunpowder",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:square-rigging",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:siege-tactics",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:metal-casting",
+      "fit": "costly",
+      "when": "league",
+      "how": "Two Crossbowmen only if a border needs them; Pike and Shot follow."
+    },
+    {
+      "id": "tech:industrialization",
+      "fit": "cheap",
+      "when": "hegemony",
+      "how": "Two Workshops in the Industrial Zones."
+    },
+    {
+      "id": "tech:scientific-theory",
+      "fit": "free",
+      "when": "hegemony",
+      "how": "The Enlightenment is on the civic path."
+    },
+    {
+      "id": "tech:sanitation",
+      "fit": "cheap",
+      "when": "hegemony",
+      "how": "Two Neighborhoods on Breathtaking hills."
+    },
+    {
+      "id": "tech:economics",
+      "fit": "cheap",
+      "when": "hegemony",
+      "how": "Two Banks in the Commercial Hub cities."
+    },
+    {
+      "id": "tech:chemistry",
+      "fit": "cheap",
+      "when": "hegemony",
+      "how": "Alliance level two with the Cultural ally from Diplomatic Service."
+    },
+    {
+      "id": "tech:combustion",
+      "fit": "cheap",
+      "when": "hegemony",
+      "how": "The first Artifact from the Archaeologist."
+    },
+    {
+      "id": "tech:radio",
+      "fit": "cheap",
+      "when": "hegemony",
+      "how": "The first National Park on hills beside a mountain."
+    },
+    {
+      "id": "tech:flight",
+      "fit": "cheap",
+      "when": "hegemony",
+      "how": "The Hermitage counts as an Industrial wonder."
+    },
+    {
+      "id": "tech:steel",
+      "fit": "costly",
+      "when": "hegemony",
+      "how": "An Ironclad and a Coal Mine only if the Eiffel Tower is attempted."
+    },
+    {
+      "id": "tech:steam-power",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:rifling",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:electricity",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:refining",
+      "fit": "costly",
+      "when": "close",
+      "how": "A Coal Power Plant if one was built for the Factories."
+    },
+    {
+      "id": "tech:computers",
+      "fit": "free",
+      "when": "close",
+      "how": "Democracy is the Tier 3 government."
+    },
+    {
+      "id": "civic:craftsmanship",
+      "fit": "free",
+      "when": "setup",
+      "how": "Three improvements from the first Builder."
+    },
+    {
+      "id": "civic:foreign-trade",
+      "fit": "cheap",
+      "when": "setup",
+      "how": "A Scout crosses onto a second continent on a Continents map."
+    },
+    {
+      "id": "civic:early-empire",
+      "fit": "free",
+      "when": "setup",
+      "how": "Six population across the first two cities."
+    },
+    {
+      "id": "civic:mysticism",
+      "fit": "free",
+      "when": "setup",
+      "how": "Founding God of the Open Sky."
+    },
+    {
+      "id": "civic:military-tradition",
+      "fit": "costly",
+      "when": "setup",
+      "how": "Clearing the nearest camp with the Hoplite pair; only if it is within six tiles."
+    },
+    {
+      "id": "civic:state-workforce",
+      "fit": "free",
+      "when": "loop",
+      "how": "The capital Campus is the first district; the Acropolis waits for Drama and Poetry."
+    },
+    {
+      "id": "civic:political-philosophy",
+      "fit": "free",
+      "when": "loop",
+      "how": "Three city-states met by the two Scouts before turn 30."
+    },
+    {
+      "id": "civic:drama-and-poetry",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "Finishing the Apadana or the Oracle."
+    },
+    {
+      "id": "civic:games-and-recreation",
+      "fit": "free",
+      "when": "loop",
+      "how": "Researching Construction."
+    },
+    {
+      "id": "civic:recorded-history",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "Two Campuses by turn 80."
+    },
+    {
+      "id": "civic:defensive-tactics",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "A neighbour declares on a Culture civilization sooner or later."
+    },
+    {
+      "id": "civic:theology",
+      "fit": "costly",
+      "when": "loop",
+      "how": "Only if the Oracle's Faith and a Holy Site found a religion."
+    },
+    {
+      "id": "civic:military-training",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:feudalism",
+      "fit": "cheap",
+      "when": "league",
+      "how": "Six Farms across six cities."
+    },
+    {
+      "id": "civic:civil-service",
+      "fit": "cheap",
+      "when": "league",
+      "how": "The capital at ten population with the Aqueduct."
+    },
+    {
+      "id": "civic:guilds",
+      "fit": "cheap",
+      "when": "league",
+      "how": "Two Markets in the Commercial Hub cities."
+    },
+    {
+      "id": "civic:medieval-faires",
+      "fit": "cheap",
+      "when": "league",
+      "how": "Four Trade Routes running to your suzerainties."
+    },
+    {
+      "id": "civic:divine-right",
+      "fit": "costly",
+      "when": "league",
+      "how": "Two Temples only if a religion exists; Monarchy is taken unboosted otherwise."
+    },
+    {
+      "id": "civic:humanism",
+      "fit": "free",
+      "when": "league",
+      "how": "The first Great Artist falls to Frescoes in the third Wildcard."
+    },
+    {
+      "id": "civic:diplomatic-service",
+      "fit": "cheap",
+      "when": "league",
+      "how": "A Cultural alliance with the friendliest Culture rival."
+    },
+    {
+      "id": "civic:mercantilism",
+      "fit": "cheap",
+      "when": "league",
+      "how": "One Great Merchant taken when no rival is close."
+    },
+    {
+      "id": "civic:the-enlightenment",
+      "fit": "free",
+      "when": "league",
+      "how": "Three Great People is done by turn 110 for Greece."
+    },
+    {
+      "id": "civic:mercenaries",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:naval-tradition",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:exploration",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:reformed-church",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:natural-history",
+      "fit": "free",
+      "when": "hegemony",
+      "how": "The Archaeological Museum is in the build order."
+    },
+    {
+      "id": "civic:opera-and-ballet",
+      "fit": "free",
+      "when": "hegemony",
+      "how": "The first Art Museum in the league phase."
+    },
+    {
+      "id": "civic:civil-engineering",
+      "fit": "free",
+      "when": "hegemony",
+      "how": "Seven district types stand by turn 180."
+    },
+    {
+      "id": "civic:colonialism",
+      "fit": "free",
+      "when": "hegemony",
+      "how": "Researching Astronomy."
+    },
+    {
+      "id": "civic:urbanization",
+      "fit": "cheap",
+      "when": "hegemony",
+      "how": "The capital at fifteen with Aqueduct and Neighborhood."
+    },
+    {
+      "id": "civic:conservation",
+      "fit": "cheap",
+      "when": "hegemony",
+      "how": "A Neighborhood on a Breathtaking hill beside a mountain."
+    },
+    {
+      "id": "civic:nationalism",
+      "fit": "costly",
+      "when": "hegemony",
+      "how": "A Protectorate War declared with its casus belli; only if a rival attacks a suzerainty."
+    },
+    {
+      "id": "civic:mass-media",
+      "fit": "free",
+      "when": "hegemony",
+      "how": "Researching Radio after the National Park Eureka."
+    },
+    {
+      "id": "civic:class-struggle",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:suffrage",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:scorched-earth",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:cultural-heritage",
+      "fit": "free",
+      "when": "close",
+      "how": "One themed Art Museum."
+    },
+    {
+      "id": "civic:capitalism",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Stock Exchanges in the Bank cities."
+    },
+    {
+      "id": "civic:nuclear-program",
+      "fit": "cheap",
+      "when": "close",
+      "how": "A Research Lab in the capital."
+    },
+    {
+      "id": "civic:social-media",
+      "fit": "costly",
+      "when": "close",
+      "how": "Telecommunications research is a detour for a Culture civilization."
+    }
+  ],
+  "decision_triggers": [
+    {
+      "name": "Rival envoy pulse",
+      "if": "A rival sends two or more envoys to a city-state you hold inside three turns and your margin would fall to one.",
+      "then": "Send the reserve envoy and one more the same turn, move Amani there, and do not answer a different city-state until this one is back at two. Then rebuild the reserve before any new target."
+    },
+    {
+      "name": "City-state under attack",
+      "if": "A civilization declares war on a city-state you are suzerain of, or moves four or more units within two tiles of it.",
+      "then": "Levy its army with Gold the same turn so it survives, and if Diplomatic Service is in, declare a Protectorate War; a conquered city-state is five percent gone for the rest of the game and the Nationalism Inspiration is small consolation."
+    },
+    {
+      "name": "Cheap suzerainty",
+      "if": "A city-state you have met has no rival envoys and your count is below the era target.",
+      "then": "Take it now with Diplomatic League's doubled first envoy and two more, whatever its type; a Religious or Trade suzerainty is the same five percent as a Cultural one."
+    },
+    {
+      "name": "Diplomatic over Culture",
+      "if": "At turn 235 Visitors trail two or more civilizations but you hold eight or more suzerainties and the most Favor on the map.",
+      "then": "Switch the verdict to Diplomatic: bank Favor, buy Victory Points at every Congress, win the Aid Requests with Production, and keep the suzerainties for the votes."
+    }
+  ],
+  "abort": {
+    "trigger": "The watched stat has been red for fifteen turns with two or more suzerainties lost to a rival's envoys or conquest and no envoys arriving fast enough to retake them.",
+    "actions": [
+      "Stop spending envoys into contested city-states; put them where no rival sends any, even if those city-states are far and Religious.",
+      "Rebuild as a generic tall Culture civilization around the Acropolises, Amphitheaters and Art Museums already standing; the base Culture is still Greece's, and the three Wildcard slots still carry the Great Person cards.",
+      "Keep the Hoplite pairs on the borders; a civilization that conquers city-states conquers neighbours next."
+    ]
+  },
+  "fail_state": "The Industrial era arrives with envoys spread one and two deep across every city-state on the map and suzerain of none, Acropolises in two cities only, a rival Culture civilization ahead in Tourism, and a World Congress that votes against you because you hold no votes. Greece is then a Theater Square civilization with a Spearman and a fine agenda.",
+  "common_mistakes": [
+    "Spreading envoys for the tier bonuses. One envoy in each of eight city-states is eight small bonuses and no suzerainties; three envoys in each of three city-states is fifteen percent Culture.",
+    "Treating an even margin as safe. A tie leaves a city-state with no suzerain, which is the same loss as being behind.",
+    "Building Theater Squares on flat ground because the hill was taken. The Acropolis is the whole Culture base and the envoy; plan the hill before the Settler lands.",
+    "Spending the reserve envoy on a new city-state because it was one away. The reserve exists for the amber band; a held suzerainty at a margin of one is worth more than a new one at three.",
+    "Leaving Amani in a city. She is two envoys wherever she stands and the plan's only instant response; she lives in city-states."
+  ],
+  "sources": [
+    "Civilization VI Civilopedia, Gathering Storm ruleset (Greece, Pericles, Surrounded by Glory, Plato's Republic, Hoplite, Acropolis).",
+    "Boost objectives cross-checked against civilization6planner.com tech-tree and civics-tree pages, 2026-10-01.",
+    "Leadership Focus tags, caveats and Monitor supplement for Pericles in this repository.",
+    "The Acropolis grants a free envoy when completed and takes two Culture from each adjacent wonder; the civ-info text omits the envoy and the plan follows the game.",
+    "Each suzerainty also pays one Diplomatic Favor per turn in Gathering Storm, which is why Diplomatic is the fallback; the civ-info text does not mention Favor."
+  ]
+}

@@ -1,0 +1,1450 @@
+{
+  "leader": "Chandragupta",
+  "civilization": "India",
+  "generated": "2026-10-02",
+  "slug": "chandragupta",
+  "shape": "Gate",
+  "secondary_shape": null,
+  "version": 1,
+  "updated": "2026-10-02",
+  "assumptions": {
+    "ruleset": "Gathering Storm with every expansion and the Leader Pass",
+    "speed": "Standard",
+    "difficulty": "Emperor",
+    "map": "Pangaea or Continents, standard size, 8 civilizations",
+    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. Chandragupta has a single persona and it is planned here. The gate is a civic plus a neighbour: Military Training unlocks the War of Territorial Expansion casus belli, and the casus belli only exists against a civilization with a city close to your border. The ten turns after the declaration are the whole kit."
+  },
+  "verdict": {
+    "victory": "Domination",
+    "secondary": "Religion",
+    "confidence": "medium",
+    "one_line": "Settle toward the nearest neighbour, bank four Varu and a Ram-and-Swordsman team before Military Training, then declare a War of Territorial Expansion and take two cities in the ten turns the +5 and +2 Movement last. Repeat on the next neighbour while Varu still outclass the field; after turn 100 India is a Stepwell and Dharma civ that holds what it took.",
+    "why": "Arthashastra gives every unit +5 Combat Strength and +2 Movement for ten turns after a War of Territorial Expansion is declared, and it opens that casus belli at Military Training instead of Mobilization, a Modern-era civic. A Varu is already a 40 Strength heavy cavalry unit at Horseback Riding whose adjacent enemies lose 5 Strength; under the burst it is a 45 Strength four-Movement elephant in the Classical era, which nothing on an Emperor map answers before Pikemen and Medieval Walls. That is a conquest window, not an economy, and it closes by turn 100 when Knights, Pikemen and Walls arrive, so the verdict is Domination started early and finished with the cities the burst took. Dharma and the Stepwell are why Religion is the second verdict rather than Science: conquered cities carrying foreign religions pay Amenities and Follower beliefs to India, and Stepwells beside Holy Sites make Faith on flat land the war already owns."
+  },
+  "map_check": {
+    "must_have": [
+      "A rival capital within roughly ten tiles of where your second city will sit, so the War of Territorial Expansion casus belli is on offer and the ten-turn burst is spent fighting rather than walking.",
+      "Horses, Sheep or Cattle within reach of the capital or the second city by turn 30; Varu cost no Horses, but the Pasture is the Horseback Riding Eureka, and without it the Varu arrive too late for the gate."
+    ],
+    "prefer": [
+      "Flat grassland or plains between you and the target: Varu are cavalry and lose turns in hills and Woods that the burst cannot buy back.",
+      "A river or floodplain beside the capital for Stepwells and Farms, which carry Early Empire and Feudalism and feed the Dharma cities later.",
+      "A second rival on the far side of the first, so the second War of Territorial Expansion has a target when the first peace is signed.",
+      "Mount Everest or any mountain cluster near a city site for a Holy Site that the Stepwells ring."
+    ],
+    "no_go": "An isolated start with no rival city within fifteen tiles of any land you can settle by turn 50. The casus belli is never offered, the Varu have nobody to charge, and the burst expires with no war to spend it on; nothing else in the kit replaces a neighbour.",
+    "fallback": "Isolated, play India as a Faith and growth civilization: Stepwells beside Holy Sites in every flat city, Religious Settlements for the free tiles, a religion by turn 70 with a Follower belief that pays per follower, and let Dharma collect the Amenities of every religion that drifts in. Keep two Varu for camps and the Great General points; expect a Religion or Score finish."
+  },
+  "kit_levers": [
+    {
+      "source": "leader_ability",
+      "name": "Arthashastra",
+      "buys": "The War of Territorial Expansion casus belli at Military Training instead of Mobilization, and +2 Movement and +5 Combat Strength for all units for ten turns after declaring one.",
+      "exploit": "Declare only when the whole strike force is already on the border and the target city is two moves away, so the ten turns are ten turns of combat. The burst fires again on the next War of Territorial Expansion, so the plan signs peace, moves to the second neighbour and declares a second time while Varu still rule the field."
+    },
+    {
+      "source": "civ_ability",
+      "name": "Dharma",
+      "buys": "Every religion with at least one follower in an Indian city gives that city its Follower belief and, in Gathering Storm, one Amenity.",
+      "exploit": "Conquered cities arrive with their founder's religion and keep it; do not purge it with Inquisitors. Two or three religions in a captured city is two or three Amenities and two or three Follower beliefs, which is what lets the war hold what it takes without Entertainment Complexes."
+    },
+    {
+      "source": "unique_unit",
+      "name": "Varu",
+      "buys": "A 40 Combat Strength heavy cavalry unit at Horseback Riding with two Movement and 120 Production, no Iron or Horses consumed per unit, and a -5 Combat Strength aura on adjacent enemy units.",
+      "exploit": "Four Varu with the burst are 45 Strength and four Movement in the Classical era. Park two beside the target city so its ranged defenders and garrison fight at -5, use the other two to kill everything that comes out, and let the Swordsmen and the Ram take the city. Varu cannot use the Ram themselves."
+    },
+    {
+      "source": "unique_infrastructure",
+      "name": "Stepwell",
+      "buys": "An Irrigation improvement on flat land worth +1 Housing and +1 Food, +1 Food beside a Farm, +1 Faith beside a Holy Site, +1 Faith at Feudalism and +1 Food at Professional Sports.",
+      "exploit": "One Stepwell beside the capital's Holy Site and two beside Farms by turn 40 is the Housing that lets the capital reach ten population for Civil Service while it also builds Varu. After the war, Stepwells in the captured cities are the cheapest Housing and Faith in the game."
+    },
+    {
+      "source": "agenda",
+      "name": "Maurya Empire",
+      "buys": "Chandragupta likes civilizations that keep their distance and dislikes those that settle near his borders.",
+      "exploit": "Irrelevant to your own play, but AI Chandragupta on the same map will forward-settle toward you and then resent your reply; if he is your neighbour he is also the natural first target, since he will have Varu too and you want to fight them with the burst, not without it."
+    }
+  ],
+  "shape_block": {
+    "gate": {
+      "gate_condition": "The Military Training civic is unlocked AND the diplomacy screen offers a War of Territorial Expansion against a chosen neighbour, which it does only when that neighbour has a city close to your border. Both halves are needed; the civic alone with a distant rival is not a gate, and a close rival before the civic is not one either.",
+      "fastest_path": [
+        "civic:craftsmanship",
+        "civic:military-tradition",
+        "civic:state-workforce",
+        "civic:games-and-recreation",
+        "civic:military-training",
+        "tech:animal-husbandry",
+        "tech:archery",
+        "tech:horseback-riding"
+      ],
+      "estimated_arrival": {
+        "from": 55,
+        "to": 70
+      },
+      "staging": [
+        "Four Varu standing (Horseback Riding by turn 45, God of the Forge and Maneuver on the Encampment city) and parked two tiles from the target's border, out of its sight.",
+        "Two Swordsmen or Warriors with a Battering Ram stacked beside them: Varu cannot carry the Ram, and an Emperor capital has Ancient Walls by turn 60 more often than not.",
+        "Two Archers behind the Varu for the garrison and for finishing units the elephants wound.",
+        "The target scouted this turn: its capital or nearest city within two Varu moves of your border, its Walls status, its defenders, and whether a second city is within reach for the same ten turns.",
+        "A Great General earned or within five turns, because +5 from the General and +5 from the burst and -5 on the defender from the Varu aura is a 15 point swing on every fight.",
+        "Military Tradition's Inspiration taken and the civic queue reading Games and Recreation then Military Training, with Culture checked so the civic lands on the turn the stack is in place and not ten turns earlier.",
+        "Three cities settled, the second one toward the target, with a Monument in each so the post-war civics are not starved."
+      ],
+      "late_gate": "If Military Training is twenty turns behind pace (not unlocked by turn 90), stop and read why. If it is Culture, build Monuments everywhere, chase the civic Inspirations, and put Pingala in the capital for Librarian's +15% Culture; keep the Varu home and clear camps for experience. If it is the casus belli, meaning no rival has a city near enough, do not wait: either settle a city of your own toward them so their border is close to yours, or accept that the neighbour is not a target and plan a Formal War later with Knights from Stirrups beside the Varu. A ten-turn burst spent after turn 100 against Pikemen and Medieval Walls does not take a city, so a gate that late converts the plan into the Stepwell fallback with a bigger army than it needs.",
+      "closing_window": "Parity arrives in three pieces, and the first one to land ends the window. Pikemen at Military Tactics make Varu charges expensive. Medieval Walls at Castles stop a Ram and need Trebuchets. Knights at Stirrups match the Varu's Strength without the burst. On an Emperor map the nearest rival has at least one of those by turn 100 to 110, which is why the plan's deadline to have taken its cities is turn 100. The second burst against the next neighbour must be declared before that same deadline; after it the Varu are outclassed by Knights until Military Science upgrades them to Cuirassiers, and the war becomes an ordinary Medieval one you fight only with a General and a Trebuchet pair."
+    }
+  },
+  "phases": [
+    {
+      "id": "found",
+      "name": "Found toward the neighbour",
+      "turns": {
+        "from": 1,
+        "to": 30
+      },
+      "era": "ancient",
+      "objective": "State the gate on turn 1, settle the capital on a river with Horses or flat land in reach, find the nearest rival capital and measure the distance to it, settle the second city toward that rival, and have Animal Husbandry and the first Pasture in before Horseback Riding is queued.",
+      "build_order": [
+        {
+          "item": "Scout",
+          "why": "The target choice comes from the first fifteen turns of scouting: which rival is nearest, where its capital sits and whether the ground between is flat."
+        },
+        {
+          "item": "Warrior",
+          "why": "Escort for the Settler and the first barbarian kills for Bronze Working; it is one of the two Ram carriers later."
+        },
+        {
+          "item": "Slinger",
+          "why": "Archery Eureka on the first barbarian, then it upgrades to the Archer that stands behind the Varu."
+        },
+        {
+          "item": "Settler",
+          "why": "Second city toward the nearest rival, on a river if there is one, with flat land for Stepwells and a hill for the Encampment."
+        },
+        {
+          "item": "Builder",
+          "why": "Pasture on Horses for the Horseback Riding Eureka, a Farm on a resource for Irrigation, and a third tile for Craftsmanship."
+        },
+        {
+          "item": "Monument",
+          "why": "Military Training is five civics away and Culture is the only thing that gets there on time."
+        },
+        {
+          "item": "Settler",
+          "why": "Third city before turn 40; three Monuments and three Builders carry the civics and the Varu."
+        },
+        {
+          "item": "Warrior",
+          "why": "Second melee unit for the camp clears and the second Ram carrier."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:animal-husbandry",
+          "note": "Reveals Horses and is the prerequisite of Archery and Horseback Riding; the whole tech path hangs on it."
+        },
+        {
+          "id": "tech:archery",
+          "note": "Archers behind the elephants and the step before Horseback Riding; Eureka from a Slinger kill."
+        },
+        {
+          "id": "tech:pottery",
+          "note": "Granary in the capital for Housing and the road to Irrigation."
+        },
+        {
+          "id": "tech:irrigation",
+          "note": "Stepwells. Farm a resource for the Eureka with the first Builder."
+        },
+        {
+          "id": "tech:bronze-working",
+          "note": "Encampment and Spearmen; the Eureka comes from the three camp kills the Warriors make."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:code-of-laws",
+          "note": "Discipline against the camps and Urban Planning in the capital."
+        },
+        {
+          "id": "civic:craftsmanship",
+          "note": "First step on the gate path; Agoge for Archers and Swordsmen. Inspiration from three improved tiles."
+        },
+        {
+          "id": "civic:military-tradition",
+          "note": "Second step; Inspiration from the first camp cleared. Maneuver speeds the Varu once they are unlocked."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Discipline",
+          "slot": "military",
+          "from": "civic:code-of-laws",
+          "why": "The two Warriors and the Slinger clear the first camp for Bronze Working and Military Tradition without losses."
+        },
+        {
+          "card": "Urban Planning",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "Production in the capital while it is the only city building anything."
+        },
+        {
+          "card": "Agoge",
+          "slot": "military",
+          "from": "civic:craftsmanship",
+          "why": "Archers and Swordsmen at half again the speed; Varu are heavy cavalry and take Maneuver instead."
+        }
+      ],
+      "districts": [],
+      "pantheon": {
+        "slug": "god-of-the-forge",
+        "why": "A quarter off every Varu, Archer and Swordsman the strike force needs, and they are all Ancient or Classical units.",
+        "alternative": "religious-settlements"
+      },
+      "wonders": [],
+      "governors": [],
+      "city_states": [
+        {
+          "type": "Militaristic",
+          "why": "The first envoy buys Production on units in the capital, which is what it builds from turn 30 to the gate."
+        }
+      ],
+      "great_people": [],
+      "checkpoints": [
+        {
+          "turn": 30,
+          "test": "Two cities standing, the nearest rival capital located and its distance to your second city measured, Horses pastured, and Craftsmanship and Military Tradition done or one turn off?",
+          "pass": "Queue Horseback Riding and start the Encampment in the city nearest the target; enter the arming phase.",
+          "fail": "No rival within fifteen tiles: run the map-check fallback now rather than at turn 70. No Horses: pasture Sheep or Cattle instead; any Pasture is the Horseback Riding Eureka, and Varu need no Horses."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "found-state-gate",
+          "turn": 1,
+          "text": "Write the gate down: no war until Military Training offers the War of Territorial Expansion against a neighbour whose city is close to your border. Settle on the river and set the civic queue toward Military Training."
+        },
+        {
+          "id": "found-scout-rival",
+          "turn": 10,
+          "text": "Scout toward the nearest rival; record its capital, the tile distance from your planned second city, and whether the ground between is flat."
+        },
+        {
+          "id": "found-pasture",
+          "turn": 18,
+          "text": "Pasture the Horses with the first Builder; the Horseback Riding Eureka is the strike force's unlock."
+        },
+        {
+          "id": "found-first-camp",
+          "turn": 20,
+          "text": "Clear the nearest camp with two Warriors and the Slinger for Military Tradition, Bronze Working and Archery."
+        },
+        {
+          "id": "found-second-city",
+          "turn": 26,
+          "text": "Settle the second city toward the rival, within ten tiles of its nearest city if the land allows, with a hill free for an Encampment."
+        }
+      ]
+    },
+    {
+      "id": "arm",
+      "name": "Arm and stage",
+      "turns": {
+        "from": 31,
+        "to": 60
+      },
+      "era": "classical",
+      "objective": "Build the strike force the gate assumes but does not provide: four Varu, two Swordsmen with a Battering Ram, two Archers and a Great General in the forward city, while the civic queue runs State Workforce, Games and Recreation and Military Training to land on the turn the stack is in place, and the empire grows to three Stepwell cities with Monuments.",
+      "build_order": [
+        {
+          "item": "Encampment",
+          "why": "In the forward city; Military Training's Inspiration, Great General points, Barracks experience and the Walls that cover the staging tile."
+        },
+        {
+          "item": "Varu",
+          "why": "Four of them, under God of the Forge and Maneuver, from the forward city and the capital; the first two clear camps for promotions."
+        },
+        {
+          "item": "Archer",
+          "why": "Two, upgraded from the Slinger and built fresh; they finish what the elephants wound and hold the staging city."
+        },
+        {
+          "item": "Battering Ram",
+          "why": "Ancient Walls on the target are likely by the gate; the Ram with two melee units is the only Classical answer."
+        },
+        {
+          "item": "Swordsman",
+          "why": "Two if Iron is mined, Warriors if not; they carry the Ram and take the city, since Varu cannot."
+        },
+        {
+          "item": "Builder",
+          "why": "Stepwells beside the Holy Site and Farms in every flat city; Feudalism's six Farms start here."
+        },
+        {
+          "item": "Settler",
+          "why": "Third city on the far side of the capital from the target, so the war does not expose it."
+        },
+        {
+          "item": "Holy Site",
+          "why": "Capital, beside the Stepwells; the Great Prophet that Dharma wants and the Faith that buys the second Great General later."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:horseback-riding",
+          "note": "Varu. The Eureka is free from the Pasture; nothing else in the phase matters until it lands."
+        },
+        {
+          "id": "tech:masonry",
+          "note": "Battering Ram and Ancient Walls for the forward city; Eureka from a Quarry if stone is near."
+        },
+        {
+          "id": "tech:wheel",
+          "note": "Water Mill for Construction and the road to Engineering; Eureka from a mined resource."
+        },
+        {
+          "id": "tech:iron-working",
+          "note": "Swordsmen as the Ram carriers; mine the Iron the moment it shows."
+        },
+        {
+          "id": "tech:writing",
+          "note": "Campus later; Eureka free from meeting the first civilization."
+        },
+        {
+          "id": "tech:astrology",
+          "note": "Holy Site in the capital for the Stepwell adjacency and the Prophet; Eureka if the Scout found a natural wonder."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:state-workforce",
+          "note": "Third step on the gate path; Inspiration from the Encampment. Conscription pays the stack's upkeep."
+        },
+        {
+          "id": "civic:games-and-recreation",
+          "note": "Fourth step; Inspiration from researching Construction, which is a detour here, so expect to pay full price."
+        },
+        {
+          "id": "civic:military-training",
+          "note": "The gate. Inspiration from the Encampment. Maneuver stays slotted; the burst makes the Varu faster still."
+        },
+        {
+          "id": "civic:foreign-trade",
+          "note": "After the gate: Trader for Currency and the step toward Early Empire and Political Philosophy."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Maneuver",
+          "slot": "military",
+          "from": "civic:military-tradition",
+          "why": "Half again the Production on Varu, which are heavy cavalry and get nothing from Agoge."
+        },
+        {
+          "card": "Conscription",
+          "slot": "military",
+          "from": "civic:state-workforce",
+          "why": "One Gold less on each of nine units while they wait at the border."
+        },
+        {
+          "card": "Ilkum",
+          "slot": "economic",
+          "from": "civic:craftsmanship",
+          "why": "Builders faster for the Stepwells and the Feudalism Farms."
+        }
+      ],
+      "districts": [
+        {
+          "district": "encampment",
+          "city": "forward city",
+          "note": "Military Training's Inspiration, Walls, Barracks and the General points; the staging tile sits inside its range."
+        },
+        {
+          "district": "holy-site",
+          "city": "capital",
+          "note": "Beside the Stepwells on flat land; +1 Faith on each Stepwell and the Great Prophet points."
+        }
+      ],
+      "pantheon": {
+        "slug": "god-of-the-forge",
+        "why": "Already founded; this phase spends it on four Varu and the escorts."
+      },
+      "wonders": [
+        {
+          "name": "Terracotta Army",
+          "why": "A free promotion on every land unit when it completes; time it for the turn before the declaration so four Varu charge promoted.",
+          "skip_if": "Construction is not researched by turn 50, there is no flat grassland or plains beside an Encampment with a Barracks or Stable, or Qin or Pericles is on the map."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "victor",
+          "promotion": "Redoubt",
+          "city": "forward city",
+          "why": "+5 Combat Strength on the forward city's garrison while the stack gathers beside it, and Loyalty when it becomes a border city of a conquest."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "kabul",
+          "why": "Double experience from fights you start; four Varu reach their second promotion inside the ten turns."
+        },
+        {
+          "slug": "akkad",
+          "why": "Melee and anti-cavalry units do full damage to Walls, which lets the Swordsmen take a walled city without a Catapult."
+        },
+        {
+          "slug": "nalanda",
+          "why": "The Mahavihara is a Science improvement India otherwise never builds; meeting Nalanda also counts toward Political Philosophy."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-general",
+          "why": "A Classical General before the gate: +5 Strength and +1 Movement stacked on the burst is what makes the ten turns enough for two cities."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 45,
+          "test": "Horseback Riding in, the first two Varu built, Encampment finished, State Workforce done, and three cities settled?",
+          "pass": "Queue the Ram and the Swordsmen, start the Holy Site, and check Culture against Military Training's cost so the civic lands between turn 55 and 65.",
+          "fail": "No Varu by 45 means the Pasture was late: buy the tile and slot Maneuver, and push the gate turn back rather than declaring with two. Encampment missing: build it before the third Settler; the Inspiration is 40% of the civic."
+        },
+        {
+          "turn": 60,
+          "test": "Four Varu, two Ram carriers, two Archers and a General or his points within five turns, all in the forward city, the target scouted with its Walls known, and Military Training within three turns?",
+          "pass": "Move the stack to the staging tile two tiles from the target's border; enter the strike phase and run the gate check the turn the civic lands.",
+          "fail": "Count what is short. Units short: nothing else is built until they stand. Civic short: the late-gate plan, Monuments and Pingala, and keep the Varu clearing camps. Target has Medieval Walls already: pick its second city or the next neighbour; do not charge a Castle with elephants."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "arm-encampment",
+          "turn": 36,
+          "text": "Finish the forward Encampment; State Workforce and Military Training Inspirations both come from it."
+        },
+        {
+          "id": "arm-first-varu",
+          "turn": 42,
+          "text": "First Varu out under Maneuver and God of the Forge; send it with an Archer to the nearest camp for a promotion."
+        },
+        {
+          "id": "arm-stepwells",
+          "turn": 45,
+          "text": "Three Stepwells placed: one beside the capital's Holy Site tile, two beside Farms, for Housing toward Early Empire and Civil Service."
+        },
+        {
+          "id": "arm-ram",
+          "turn": 52,
+          "text": "Battering Ram built and stacked with the two Swordsmen or Warriors; Akkad envoys sent if the target has Walls."
+        },
+        {
+          "id": "arm-general",
+          "turn": 56,
+          "text": "Great General earned from the Encampment points or bought with Gold; park him on the staging tile."
+        },
+        {
+          "id": "arm-stage",
+          "turn": 60,
+          "text": "Stack of four Varu, two melee with Ram, two Archers and the General parked two tiles from the target's border, out of its sight, Culture checked against the civic."
+        }
+      ]
+    },
+    {
+      "id": "strike",
+      "name": "The ten turns",
+      "turns": {
+        "from": 61,
+        "to": 100
+      },
+      "era": "classical",
+      "objective": "Run the gate check the turn Military Training lands, declare the War of Territorial Expansion with the stack already in position, take the target's nearest city and its capital inside the ten turns of +5 and +2 Movement, sign peace, and declare a second War of Territorial Expansion on the next neighbour before turn 100 if one has a city near your new border.",
+      "build_order": [
+        {
+          "item": "Varu",
+          "why": "Two replacements from the Encampment city during the war; the second burst wants six."
+        },
+        {
+          "item": "Monument",
+          "why": "First build in every capture; Loyalty before anything else."
+        },
+        {
+          "item": "Catapult",
+          "why": "One if the second target has Walls and Akkad is not yours; Varu and the Ram cannot open them alone."
+        },
+        {
+          "item": "Archer",
+          "why": "Garrison for each capture, so the field army stays whole."
+        },
+        {
+          "item": "Water Mill",
+          "why": "Capital; Construction Eureka and Food toward the ten-population Civil Service city."
+        },
+        {
+          "item": "Commercial Hub",
+          "why": "Capital, once Currency is in; a second Trade Route, and the Market pays the post-war upgrades."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:currency",
+          "note": "Commercial Hub and the Market; Eureka from the first Trade Route."
+        },
+        {
+          "id": "tech:construction",
+          "note": "Water Mill Eureka; Terracotta Army if it was skipped, and Games and Recreation's Inspiration is already spent."
+        },
+        {
+          "id": "tech:engineering",
+          "note": "Ancient Walls in the forward city give the Eureka; Catapults for the second target."
+        },
+        {
+          "id": "tech:mathematics",
+          "note": "Encampment, Holy Site and Commercial Hub are three specialty districts; Military Tactics and Pikemen are behind it."
+        },
+        {
+          "id": "tech:military-tactics",
+          "note": "Pikemen for the home line once rivals field cavalry back; Eureka from a Spearman kill if one is kept."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:early-empire",
+          "note": "Colonization and the step to Political Philosophy; six population across the cities is the Inspiration."
+        },
+        {
+          "id": "civic:political-philosophy",
+          "note": "Oligarchy: +4 Combat Strength for melee and anti-cavalry, which is the Ram carriers; three city-states met is the Inspiration."
+        },
+        {
+          "id": "civic:mysticism",
+          "note": "Free Inspiration from the pantheon; Revelation for Great Prophet points and the road to Theology."
+        },
+        {
+          "id": "civic:defensive-tactics",
+          "note": "Limes and Bastions for the captures' Walls, and the Reconquest casus belli; Inspiration if the target's friend declares on you."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Maneuver",
+          "slot": "military",
+          "from": "civic:military-tradition",
+          "why": "Replacement Varu during the war."
+        },
+        {
+          "card": "Oligarchy",
+          "slot": "wildcard",
+          "from": "civic:political-philosophy",
+          "why": "The government: +4 for the Swordsmen that take the cities and faster experience on everything."
+        },
+        {
+          "card": "Limitanei",
+          "slot": "military",
+          "from": "civic:early-empire",
+          "why": "+2 Loyalty per garrisoned capture; swap in the turn the first city falls."
+        },
+        {
+          "card": "Colonization",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "A fourth city of your own behind the front while the army is away."
+        }
+      ],
+      "districts": [
+        {
+          "district": "commercial-hub",
+          "city": "capital",
+          "note": "Trade Route and Market; the Gold that buys Knights at Stirrups."
+        },
+        {
+          "district": "encampment",
+          "city": "the first capture",
+          "note": "Walls and a garrison make the capture the forward base for the second war."
+        }
+      ],
+      "pantheon": {
+        "slug": "god-of-the-forge",
+        "why": "Still paying on replacement Varu and Archers."
+      },
+      "wonders": [
+        {
+          "name": "Colosseum",
+          "why": "Amenities and Culture in every city within six tiles, including the captures, which arrive unhappy.",
+          "skip_if": "No Entertainment Complex with an Arena stands on flat land to build it beside, the captures are more than six tiles from any city of yours that can build it, or Games and Recreation is already old and a rival has started it."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "victor",
+          "promotion": "Redoubt",
+          "city": "the first capture",
+          "why": "Move him the turn the city falls; Loyalty and +5 for the garrison."
+        },
+        {
+          "governor": "amani",
+          "promotion": "Emissary",
+          "city": "the forward city",
+          "why": "Loyalty pressure outward onto the target's remaining cities: each loses 2 Loyalty a turn within nine tiles."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "akkad",
+          "why": "Keep the suzerainty through both wars; it is what lets Swordsmen take Walls while the Varu kill the field army."
+        },
+        {
+          "type": "Militaristic",
+          "why": "Levy the nearest Militaristic city-state's units for Gold as a second stack if the target's ally joins."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-general",
+          "why": "The Classical General rides with the Varu; a second one for the second war if the Encampments make the points."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 70,
+          "test": "Gate check: is Military Training unlocked, is the War of Territorial Expansion offered against the target, and is every staging item ticked?",
+          "pass": "Declare this turn, move the full stack with +2 Movement, and set a ten-turn counter; the first city must fall by turn 6 of it.",
+          "fail": "Civic in but casus belli not offered: the target's cities are too far from your border; settle or buy a tile toward them, or switch targets. Casus belli offered but staging short: do not declare; finish the list. An unstaged burst is the one thing the kit cannot recover."
+        },
+        {
+          "turn": 100,
+          "test": "Two cities taken from the first target, peace signed, and a second War of Territorial Expansion declared or declined on purpose before Pikemen and Medieval Walls appear?",
+          "pass": "Enter the digest phase; the empire is five to seven cities and Stirrups and Knights are next.",
+          "fail": "One city or none: the first burst was spent walking or on a walled city without a Ram. Keep what is held, do not declare again against Medieval Walls, and convert to the Dharma and Stepwell fallback with a strong army; Knights at Stirrups can still take a weak second target under a Formal War later."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "strike-declare",
+          "turn": 68,
+          "text": "Declare the War of Territorial Expansion the turn Military Training lands and the stack is in place; write the turn number down and count ten from it."
+        },
+        {
+          "id": "strike-first-city",
+          "turn": 73,
+          "text": "Varu on both flanks of the city so its garrison fights at -5, General adjacent, Ram and Swordsmen on the wall, Archers on the ranged defender; take the nearest city by turn 6 of the burst."
+        },
+        {
+          "id": "strike-capital",
+          "turn": 78,
+          "text": "Roll the stack to the capital with the Movement still up; take it inside the burst or settle for its second city and a peace that keeps both."
+        },
+        {
+          "id": "strike-peace",
+          "turn": 82,
+          "text": "Sign peace while the units are promoted and before the AI's Pikemen arrive; keep every city, take Gold if offered."
+        },
+        {
+          "id": "strike-garrison",
+          "turn": 84,
+          "text": "Monument first in every capture, an Archer in each, Victor in the capital taken; audit Loyalty the turn after."
+        },
+        {
+          "id": "strike-second-burst",
+          "turn": 92,
+          "text": "If a second neighbour has a city near your new border, restage six Varu and the Ram team and declare the second War of Territorial Expansion; otherwise write down that the window is spent."
+        }
+      ]
+    },
+    {
+      "id": "digest",
+      "name": "Hold and grow",
+      "turns": {
+        "from": 101,
+        "to": 170
+      },
+      "era": "medieval",
+      "objective": "Turn five to seven cities with mixed religions into an empire: Stepwells and Monuments in every capture, Dharma's Amenities collected rather than purged, a religion founded from the capital's Holy Site, Knights added beside the Varu, and Walls and Pikemen on every border so no rival spends its own Medieval window on you.",
+      "build_order": [
+        {
+          "item": "Stepwell",
+          "why": "Two or three in every flat capture; Housing, Food and Faith for nothing but a Builder charge."
+        },
+        {
+          "item": "Granary",
+          "why": "Captures were pillaged on the way in; growth back to the Dharma Amenity thresholds."
+        },
+        {
+          "item": "Ancient Walls",
+          "why": "Every border city; the burst is gone and a neighbour's Knights are the next thing that arrives."
+        },
+        {
+          "item": "Pikeman",
+          "why": "Two per border; the counter to the cavalry rush you just taught the map to fear."
+        },
+        {
+          "item": "Shrine",
+          "why": "Capital Holy Site, then a Temple; the Great Prophet before the last one is taken."
+        },
+        {
+          "item": "Market",
+          "why": "Two Markets for Guilds; the Gold that buys Knights to stand beside the Varu."
+        },
+        {
+          "item": "Aqueduct",
+          "why": "Capital; Military Engineering Eureka and Housing toward fifteen population."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:apprenticeship",
+          "note": "Three Mines; Production in captures that have hills."
+        },
+        {
+          "id": "tech:stirrups",
+          "note": "Knights, built fresh: the Varu do not upgrade into them, their line goes to the Cuirassier at Military Science. Eureka free from Feudalism."
+        },
+        {
+          "id": "tech:military-engineering",
+          "note": "Aqueduct Eureka; Siege Towers if a third war is ever fought."
+        },
+        {
+          "id": "tech:machinery",
+          "note": "Crossbowmen behind the Walls; three Archers give the Eureka."
+        },
+        {
+          "id": "tech:castles",
+          "note": "Medieval Walls for the border; Eureka free from Monarchy, a Tier 2 government."
+        },
+        {
+          "id": "tech:education",
+          "note": "Universities and the Science the war never built; no Eureka worth chasing."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:feudalism",
+          "note": "Six Farms beside the Stepwells; Feudal Contract and +1 Faith on every Stepwell."
+        },
+        {
+          "id": "civic:theology",
+          "note": "Found the religion; Inspiration on founding. A Follower belief that pays per follower suits Dharma."
+        },
+        {
+          "id": "civic:civil-service",
+          "note": "Capital at ten population with Stepwells and the Aqueduct; the step to Guilds and Divine Right."
+        },
+        {
+          "id": "civic:guilds",
+          "note": "Two Markets; the Gold economy for the Knight upgrades."
+        },
+        {
+          "id": "civic:divine-right",
+          "note": "Two Temples give the Inspiration; Monarchy for a wide walled empire."
+        },
+        {
+          "id": "civic:mercenaries",
+          "note": "Professional Army for the Archer and Swordsman upgrades; eight land units is already true."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Serfdom",
+          "slot": "economic",
+          "from": "civic:feudalism",
+          "why": "Builders with extra charges for Stepwells and Farms in six cities."
+        },
+        {
+          "card": "Professional Army",
+          "slot": "military",
+          "from": "civic:mercenaries",
+          "why": "Archers to Crossbowmen and Swordsmen to Men-at-Arms at half the Gold; the Varu wait for Cuirassiers."
+        },
+        {
+          "card": "Monarchy",
+          "slot": "wildcard",
+          "from": "civic:divine-right",
+          "why": "The government: Housing from Walls and three Military slots for Limitanei, Retainers and Professional Army."
+        },
+        {
+          "card": "Retainers",
+          "slot": "military",
+          "from": "civic:civil-service",
+          "why": "Amenities in every garrisoned capture, on top of what Dharma gives."
+        }
+      ],
+      "districts": [
+        {
+          "district": "holy-site",
+          "city": "the two largest captures",
+          "note": "Stepwells beside them; Dharma pays per religion present, and your own religion adds a third."
+        },
+        {
+          "district": "aqueduct",
+          "city": "capital",
+          "note": "Housing and the Military Engineering Eureka."
+        },
+        {
+          "district": "campus",
+          "city": "capital or the best capture",
+          "note": "The one Science district the kit needs before Education."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Mahabodhi Temple",
+          "why": "Two free Apostles for the religion and Faith on the capital's Holy Site; the religion spreads into your own captures at no cost.",
+          "skip_if": "Theology lands after turn 150, or no Holy Site sits beside Woods, which it needs."
+        },
+        {
+          "name": "Alhambra",
+          "why": "An extra military policy slot and Great General points on a hill beside an Encampment.",
+          "skip_if": "No hill is free beside an Encampment or Castles is after turn 160."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "victor",
+          "promotion": "Garrison Commander",
+          "city": "the most exposed capture",
+          "why": "+5 Combat Strength for units defending in its territory on the most exposed border; Embrasure's extra ranged strike waits for a later title."
+        },
+        {
+          "governor": "moksha",
+          "promotion": "Bishop",
+          "city": "the first Holy Site capture",
+          "why": "Faith-bought Temples and Apostles in the city where Dharma stacks three religions."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "preslav",
+          "why": "Light and heavy cavalry get +5 Combat Strength fighting on hills, which is where the Varu and later Knights hold the border."
+        },
+        {
+          "type": "Religious",
+          "why": "Envoys for Faith; the Great Prophet and the Apostles come from it."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-prophet",
+          "why": "Founding the religion is the second verdict; the capital Holy Site and Shrine make the points, and Faith buys the last ones if short."
+        },
+        {
+          "class": "great-engineer",
+          "why": "Any Engineer that adds Production to districts goes into the capital's Industrial Zone later."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 130,
+          "test": "Every capture at positive Loyalty with a Monument and a Stepwell, Ancient Walls on every border city, the religion founded or the Prophet within ten turns, and Stirrups in?",
+          "pass": "Upgrade the Archers and Swordsmen under Professional Army, add Knights beside the Varu, and start the Markets; the empire is the asset now.",
+          "fail": "A capture at negative Loyalty is the only emergency: Victor, a garrison, Limitanei and Bread and Circuses before anything else. No Prophet in sight: buy him with Faith if within reach, or skip the religion and keep Dharma on borrowed religions."
+        },
+        {
+          "turn": 170,
+          "test": "Six or more cities, two Temples, Knights beside the Varu, Science within an era of the leaders, and a Casus Belli war still available for Nationalism's Inspiration?",
+          "pass": "Enter the close; decide between a third war with Knights and Trebuchets and a Religion push with Apostles.",
+          "fail": "Behind in Science: Campus and University in the two best cities before any new war. Fewer than six cities: settle the gaps the war opened under Colonization rather than fighting again."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "digest-loyalty-audit",
+          "turn": 105,
+          "text": "Audit Loyalty and Amenities in every capture; do not condemn or remove any foreign religion, each one is an Amenity under Dharma."
+        },
+        {
+          "id": "digest-stepwells",
+          "turn": 115,
+          "text": "Two Stepwells and a Granary in every flat capture; six Farms beside them for Feudalism."
+        },
+        {
+          "id": "digest-walls",
+          "turn": 125,
+          "text": "Ancient Walls in every border city and a Pikeman pair where the nearest rival has Horses."
+        },
+        {
+          "id": "digest-religion",
+          "turn": 140,
+          "text": "Found the religion with the capital's Prophet; take a Follower belief that scales with followers and Crusade or Defender of the Faith as the Enhancer."
+        },
+        {
+          "id": "digest-knights",
+          "turn": 150,
+          "text": "Build or buy four Knights to stand beside the Varu and upgrade the Archers to Crossbowmen under Professional Army; keep the Generals attached."
+        }
+      ]
+    },
+    {
+      "id": "close",
+      "name": "Finish or convert",
+      "turns": {
+        "from": 171,
+        "to": null
+      },
+      "era": "renaissance",
+      "objective": "Finish the game from a seven-city empire with the best Amenities on the map: take the remaining nearby capitals with Knights, Trebuchets and later Bombards under Formal and Reconquest wars if the Domination verdict still fits, or carry the religion to a majority of civilizations with Apostles bought in the Stepwell cities if it does not.",
+      "build_order": [
+        {
+          "item": "Trebuchet",
+          "why": "Two, for the Medieval Walls every remaining capital now has; the Siege Tactics Eureka on the way."
+        },
+        {
+          "item": "University",
+          "why": "Two for Printing; Science stays close enough that rivals cannot out-tech the army."
+        },
+        {
+          "item": "Apostle",
+          "why": "Religion branch: Faith-bought in the Holy Site cities, two at a time with an escort."
+        },
+        {
+          "item": "Workshop",
+          "why": "Two for Industrialization; Factories for the last campaign."
+        },
+        {
+          "item": "Bombard",
+          "why": "Domination branch: Renaissance Walls fall to Bombards behind Knights and later Cuirassiers."
+        },
+        {
+          "item": "Entertainment Complex",
+          "why": "Only where Dharma's Amenities run out; usually the newest capital."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:siege-tactics",
+          "note": "Two Trebuchets; Renaissance Walls behind it; Bombards come from Metal Casting."
+        },
+        {
+          "id": "tech:printing",
+          "note": "Two Universities; the Science catch-up."
+        },
+        {
+          "id": "tech:gunpowder",
+          "note": "An Armory in the forward Encampment; Musketmen to escort the Knights."
+        },
+        {
+          "id": "tech:military-science",
+          "note": "A Knight kill gives the Eureka cheaply; Cuirassiers are the Varu line's next form."
+        },
+        {
+          "id": "tech:industrialization",
+          "note": "Two Workshops; Factories and Coal."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:diplomatic-service",
+          "note": "Holy and Liberation wars for the Domination branch; an alliance is the Inspiration."
+        },
+        {
+          "id": "civic:reformed-church",
+          "note": "Six cities following the religion is near-automatic with Dharma; Religious Orders or Simultaneum."
+        },
+        {
+          "id": "civic:nationalism",
+          "note": "Corps, and the Inspiration already earned by the Casus Belli war."
+        },
+        {
+          "id": "civic:exploration",
+          "note": "Two Caravels only if the remaining capitals are overseas; otherwise skip the chase."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Chivalry",
+          "slot": "military",
+          "from": "civic:divine-right",
+          "why": "Knights and Cuirassiers at half again the speed for the third war."
+        },
+        {
+          "card": "Religious Orders",
+          "slot": "economic",
+          "from": "civic:reformed-church",
+          "why": "Religion branch: +5 Religious Strength for every Apostle in theological combat."
+        },
+        {
+          "card": "Grande Armée",
+          "slot": "military",
+          "from": "civic:nationalism",
+          "why": "Industrial units faster if the Domination branch continues."
+        }
+      ],
+      "districts": [
+        {
+          "district": "industrial-zone",
+          "city": "capital and the best Production capture",
+          "note": "Workshops for Industrialization and the Factories the close runs on."
+        },
+        {
+          "district": "campus",
+          "city": "the second Campus city",
+          "note": "Two Universities for Printing."
+        }
+      ],
+      "wonders": [],
+      "governors": [
+        {
+          "governor": "victor",
+          "promotion": "Embrasure",
+          "city": "the newest capture",
+          "why": "Still the front-line governor if the war continues."
+        },
+        {
+          "governor": "reyna",
+          "promotion": "Tax Collector",
+          "city": "capital",
+          "why": "Gold for upgrades once the Markets are small for the army they feed."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "yerevan",
+          "why": "Religion branch: choose every Apostle's promotion, Proselytizer for the convoys."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-general",
+          "why": "A Renaissance General keeps the Knights and Bombards at +5 against Renaissance Walls."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 220,
+          "test": "Domination: a third capital taken since turn 170 with the next in reach before Battleships and Field Cannons; or Religion: your religion the majority in half the civilizations?",
+          "pass": "Continue the chosen branch to the end; no further decisions.",
+          "fail": "Neither: declare the game a Score game. Stop building military beyond the Walls, put every city on Campuses, Theater Squares and Stepwells, and let Dharma's Amenities carry growth."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "close-branch",
+          "turn": 175,
+          "text": "Write the branch down: Domination if two more capitals are within fifteen tiles and short of Renaissance Walls, Religion otherwise."
+        },
+        {
+          "id": "close-trebuchets",
+          "turn": 185,
+          "text": "Domination branch: two Trebuchets and a General with six Knights staged under a Formal or Reconquest war."
+        },
+        {
+          "id": "close-apostles",
+          "turn": 185,
+          "text": "Religion branch: four Apostles under a Knight escort to the largest unconverted civilization; Inquisitors only at home."
+        },
+        {
+          "id": "close-review",
+          "turn": 220,
+          "text": "Review the turn 220 checkpoint and either continue or declare the game a Score game."
+        }
+      ]
+    }
+  ],
+  "boosts": [
+    {
+      "id": "tech:writing",
+      "fit": "free",
+      "when": "found",
+      "how": "The Scout meets the first rival on its way to the target."
+    },
+    {
+      "id": "tech:archery",
+      "fit": "cheap",
+      "when": "found",
+      "how": "The Slinger finishes a barbarian scout at the first camp."
+    },
+    {
+      "id": "tech:bronze-working",
+      "fit": "free",
+      "when": "found",
+      "how": "Three barbarian kills clearing the first camp with two Warriors."
+    },
+    {
+      "id": "tech:irrigation",
+      "fit": "free",
+      "when": "found",
+      "how": "The first Builder farms wheat or rice on the river; Stepwells sit behind it."
+    },
+    {
+      "id": "tech:wheel",
+      "fit": "cheap",
+      "when": "arm",
+      "how": "The second Builder mines a resource hill in the forward city."
+    },
+    {
+      "id": "tech:horseback-riding",
+      "fit": "free",
+      "when": "found",
+      "how": "The Pasture on Horses that the Varu need anyway."
+    },
+    {
+      "id": "tech:masonry",
+      "fit": "cheap",
+      "when": "arm",
+      "how": "A Quarry on stone near the capital or the forward city."
+    },
+    {
+      "id": "tech:astrology",
+      "fit": "costly",
+      "when": "arm",
+      "how": "Only if the Scout passes a natural wonder on its way to the rival."
+    },
+    {
+      "id": "tech:sailing",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:iron-working",
+      "fit": "cheap",
+      "when": "arm",
+      "how": "Mine the Iron the Swordsmen need; Bronze Working reveals it."
+    },
+    {
+      "id": "tech:currency",
+      "fit": "free",
+      "when": "strike",
+      "how": "The first Trader on the route Foreign Trade opens, before any Commercial Hub, which needs Currency."
+    },
+    {
+      "id": "tech:construction",
+      "fit": "cheap",
+      "when": "strike",
+      "how": "A Water Mill in the river capital."
+    },
+    {
+      "id": "tech:engineering",
+      "fit": "free",
+      "when": "strike",
+      "how": "Ancient Walls in the forward city cover the staging tile anyway."
+    },
+    {
+      "id": "tech:mathematics",
+      "fit": "cheap",
+      "when": "strike",
+      "how": "Encampment, Holy Site and Commercial Hub are three specialty districts."
+    },
+    {
+      "id": "tech:military-tactics",
+      "fit": "costly",
+      "when": "strike",
+      "how": "A Spearman kill, which this plan only has if one Spearman is kept for it."
+    },
+    {
+      "id": "tech:celestial-navigation",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:shipbuilding",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:stirrups",
+      "fit": "free",
+      "when": "digest",
+      "how": "Feudalism is on the civic path for the Stepwell Food."
+    },
+    {
+      "id": "tech:apprenticeship",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "Three Mines across the hill captures."
+    },
+    {
+      "id": "tech:military-engineering",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "The capital Aqueduct built for Housing."
+    },
+    {
+      "id": "tech:machinery",
+      "fit": "free",
+      "when": "digest",
+      "how": "Three Archers are the garrisons the war already built."
+    },
+    {
+      "id": "tech:castles",
+      "fit": "free",
+      "when": "digest",
+      "how": "Monarchy at Divine Right is a Tier 2 government with six slots."
+    },
+    {
+      "id": "tech:education",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:buttress",
+      "fit": "costly",
+      "when": "digest",
+      "how": "Only if Terracotta Army or Colosseum was completed."
+    },
+    {
+      "id": "tech:siege-tactics",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Trebuchets for the Medieval Walls of the third target."
+    },
+    {
+      "id": "tech:printing",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Universities in the Campus cities."
+    },
+    {
+      "id": "tech:gunpowder",
+      "fit": "cheap",
+      "when": "close",
+      "how": "An Armory in the forward Encampment."
+    },
+    {
+      "id": "tech:banking",
+      "fit": "free",
+      "when": "digest",
+      "how": "Guilds is on the civic path for the Markets."
+    },
+    {
+      "id": "tech:military-science",
+      "fit": "free",
+      "when": "close",
+      "how": "A Knight kill; the Knights built beside the Varu with Generals attached."
+    },
+    {
+      "id": "tech:industrialization",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Workshops in the Industrial Zones."
+    },
+    {
+      "id": "tech:metal-casting",
+      "fit": "costly",
+      "when": "close",
+      "how": "Two Crossbowmen only if the Archers were upgraded for a third war."
+    },
+    {
+      "id": "tech:cartography",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:craftsmanship",
+      "fit": "free",
+      "when": "found",
+      "how": "Pasture, Farm and a third tile from the first Builder."
+    },
+    {
+      "id": "civic:military-tradition",
+      "fit": "free",
+      "when": "found",
+      "how": "The first camp cleared by the Warriors and the Slinger."
+    },
+    {
+      "id": "civic:state-workforce",
+      "fit": "free",
+      "when": "arm",
+      "how": "The forward Encampment is the first district."
+    },
+    {
+      "id": "civic:foreign-trade",
+      "fit": "costly",
+      "when": "arm",
+      "how": "A second continent is rarely in reach of a land scout; research it plain after the gate."
+    },
+    {
+      "id": "civic:early-empire",
+      "fit": "free",
+      "when": "strike",
+      "how": "Six population across three Stepwell cities."
+    },
+    {
+      "id": "civic:mysticism",
+      "fit": "free",
+      "when": "strike",
+      "how": "The pantheon founded in the first phase."
+    },
+    {
+      "id": "civic:games-and-recreation",
+      "fit": "costly",
+      "when": "arm",
+      "how": "Researching Construction is a detour before the gate; pay full price or take it late."
+    },
+    {
+      "id": "civic:military-training",
+      "fit": "free",
+      "when": "arm",
+      "how": "The forward Encampment; the gate civic is boosted by its own prerequisite build."
+    },
+    {
+      "id": "civic:political-philosophy",
+      "fit": "cheap",
+      "when": "strike",
+      "how": "Three city-states met by the Scout and the second Warrior."
+    },
+    {
+      "id": "civic:defensive-tactics",
+      "fit": "cheap",
+      "when": "strike",
+      "how": "The target's ally or the target itself declares on you after the first peace."
+    },
+    {
+      "id": "civic:drama-and-poetry",
+      "fit": "costly",
+      "when": "digest",
+      "how": "Only if Terracotta Army or Colosseum was built."
+    },
+    {
+      "id": "civic:recorded-history",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:theology",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "Founding the religion from the capital's Prophet."
+    },
+    {
+      "id": "civic:feudalism",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "Six Farms beside the Stepwells across the captures."
+    },
+    {
+      "id": "civic:mercenaries",
+      "fit": "free",
+      "when": "digest",
+      "how": "Eight land combat units have stood since the first war."
+    },
+    {
+      "id": "civic:civil-service",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "The capital at ten population on Stepwells and the Aqueduct."
+    },
+    {
+      "id": "civic:guilds",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "Two Markets, capital and the first capture."
+    },
+    {
+      "id": "civic:divine-right",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "Two Temples in the Holy Site cities, which Dharma wants anyway."
+    },
+    {
+      "id": "civic:medieval-faires",
+      "fit": "costly",
+      "when": "digest",
+      "how": "Four Trade Routes if two Commercial Hubs are up."
+    },
+    {
+      "id": "civic:naval-tradition",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:diplomatic-service",
+      "fit": "costly",
+      "when": "close",
+      "how": "An alliance with a civilization you have not fought; possible once the wars are old."
+    },
+    {
+      "id": "civic:reformed-church",
+      "fit": "free",
+      "when": "close",
+      "how": "Six cities following your religion; Dharma cities count once your religion is in them."
+    },
+    {
+      "id": "civic:nationalism",
+      "fit": "free",
+      "when": "close",
+      "how": "The War of Territorial Expansion is a Casus Belli war."
+    },
+    {
+      "id": "civic:exploration",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:humanism",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:colonialism",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Researching Astronomy on the way to the Science catch-up."
+    },
+    {
+      "id": "civic:mobilization",
+      "fit": "costly",
+      "when": "close",
+      "how": "Three Corps only on the Domination branch after Nationalism."
+    },
+    {
+      "id": "civic:urbanization",
+      "fit": "cheap",
+      "when": "close",
+      "how": "The capital at fifteen population on Stepwells, Aqueduct and Dharma Amenities."
+    }
+  ],
+  "decision_triggers": [
+    {
+      "name": "Casus belli not offered",
+      "if": "Military Training is in but the diplomacy screen does not list War of Territorial Expansion against the intended target.",
+      "then": "The target's nearest city is too far from your territory. Settle a city or buy tiles toward it, check again each turn, and do not declare a Surprise War instead; the burst does not fire on a Surprise War and the grievances bring a third civ in and the plan has no answer to that."
+    },
+    {
+      "name": "Target has Walls at the gate",
+      "if": "The scouted first city has Ancient Walls when the civic lands.",
+      "then": "Declare anyway if the Ram and two melee units are stacked and Akkad is yours or the Walls are Ancient; the Varu aura makes the defenders weak and the Ram opens Ancient Walls in two turns. Medieval Walls: switch to the second city or the next neighbour; do not spend the burst on a Castle."
+    },
+    {
+      "name": "Second neighbour in reach",
+      "if": "After the first peace, a different civilization has a city near your new border and turn 100 has not passed.",
+      "then": "Restage six Varu and the Ram team and declare a second War of Territorial Expansion; the burst fires again for ten turns. If the civ is the same one you just fought, the truce blocks it; move on."
+    },
+    {
+      "name": "Foreign religion in a capture",
+      "if": "A captured city follows one or two religions that are not yours.",
+      "then": "Leave them. Each is an Amenity and a Follower belief under Dharma. Add your own religion with a Missionary later rather than removing theirs with an Inquisitor."
+    }
+  ],
+  "abort": {
+    "trigger": "Military Training lands with fewer than three Varu or no Ram team, while the target already has Ancient Walls and Pikemen or Swordsmen in the field.",
+    "actions": [
+      "Do not declare into that; a burst spent against a prepared city with half a stack loses the Varu that are the only early army India gets.",
+      "Finish staging at the slower pace and look for a softer target: a city-state near the border for the Great General points, or the rival's smallest border city under a later Formal War.",
+      "If no soft target exists by Stirrups, keep the Varu home for defence, settle the remaining land with Stepwells, and play the Dharma Religion fallback."
+    ]
+  },
+  "fail_state": "Declared the War of Territorial Expansion with the stack still at home and spent six of the ten turns walking, or declared with two Varu against a walled capital and lost them to the garrison; then watched Pikemen and Medieval Walls arrive while India held three cities with no religion, no Campus and no second war. The gate opened, the burst fired, and nothing was taken inside it.",
+  "common_mistakes": [
+    "Declaring the moment the civic lands with the army still in the capital. The burst is ten turns from the declaration, not from arrival; stage first, declare second.",
+    "Charging a walled city with Varu alone. Heavy cavalry cannot use the Battering Ram; the elephants weaken the defenders and the Swordsmen take the city.",
+    "Using a Surprise War because the casus belli was not offered. The burst fires on a War of Territorial Expansion only, and the grievances of a Surprise War bring the whole continent in.",
+    "Purging foreign religions out of captured cities. Under Dharma each one is an Amenity and a Follower belief; removing them makes India's captures ordinary.",
+    "Treating the pre-gate turns as waiting. Fifty turns with no Encampment, no Stepwells and two cities means the burst has nothing to stage and nothing to come home to."
+  ],
+  "sources": [
+    "Civilization VI Civilopedia, Gathering Storm ruleset (India, Chandragupta, Varu, Stepwell; Arthashastra opens the War of Territorial Expansion at Military Training with +2 Movement and +5 Combat Strength for ten turns; Dharma gives Follower beliefs and one Amenity per religion with a follower). The civ-info text lists the Varu as a Knight replacement; in the game it is a Classical heavy cavalry unit at Horseback Riding that replaces nothing and upgrades into the Cuirassier, and the plan follows the game. Dharma also gives Missionaries +2 spreads and +100% religious pressure from Trade Routes; the plan relies only on the Follower beliefs and the Amenity.",
+    "Boost objectives cross-checked against civilization6planner.com tech-tree and civics-tree pages, 2026-10-01.",
+    "Leadership Focus tags, caveats and Gate supplement for Chandragupta in this repository; the Gate template sets the pre-gate as a full staging build with the casus belli as the condition, not a turn."
+  ]
+}

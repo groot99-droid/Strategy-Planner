@@ -1,0 +1,1580 @@
+{
+  "slug": "simon-bolivar",
+  "shape": "Linear",
+  "secondary_shape": null,
+  "version": 1,
+  "updated": "2026-10-01",
+  "assumptions": {
+    "ruleset": "Gathering Storm with every expansion and the Leader Pass",
+    "speed": "Standard",
+    "difficulty": "Emperor",
+    "map": "Continents or Pangaea, standard size, 8 civilizations",
+    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. Simon Bolivar has one persona and that is the one planned here."
+  },
+  "verdict": {
+    "victory": "Domination",
+    "secondary": "Science",
+    "confidence": "medium",
+    "one_line": "Out-settle the continent in the first sixty turns on the extra Movement, choose between a cavalry conquest and a wide Campus empire by turn 60, and spend every Comandante General in the era it arrives.",
+    "why": "Ejercito Patriota is a flat +1 Movement on every unit for the whole game and the right to promote without ending the turn, and Campana Admirable hands over a Comandante General at every era change. Neither does anything by itself: the Movement only matters if Settlers and armies are actually moving, and a Comandante only matters if it is standing next to a fight. The kit points at Domination because the Llanero and the stacked Comandante auras make the Industrial cavalry push the best in the game, but the same settling speed builds a wide Science empire for a player whose map has no neighbour to take, which is why Science is the second option rather than Culture or Religion."
+  },
+  "map_check": {
+    "must_have": [
+      "Room for six to eight cities within twelve tiles of the capital, because the settling speed is the first thing the kit buys.",
+      "Horses within the first three cities, or the Horses the Horseman, Courser and Llanero line needs are bought from a neighbour with Gold rather than pastured."
+    ],
+    "prefer": [
+      "A rival capital within fifteen tiles, so the first Comandante Generals have a war to be spent on.",
+      "Plains Hills and rainforest for Production and for the Plantations the Hacienda wants beside it.",
+      "A Militaristic city-state in reach for Kabul's doubled experience, which the no-turn-end promotion turns into a promotion per fight."
+    ],
+    "no_go": "A one-city island or a start boxed in by two neighbours and a mountain range by turn 30. The Movement advantage needs ground to cross and the Comandante needs a front; with neither, Gran Colombia is a vanilla civilization with a late cavalry unit.",
+    "fallback": "If the land runs out by turn 40, take the Science direction at the turn 60 decision: the extra Movement still makes every Builder and Trader faster, Haciendas still pay Gold and Production, and the Comandantes become defensive insurance while Campuses go down in every city."
+  },
+  "kit_levers": [
+    {
+      "source": "leader_ability",
+      "name": "Campaña Admirable",
+      "buys": "A Comandante General, a Great General equivalent with a +5 Combat Strength and +1 Movement aura and a one-shot retire ability, at every era change from the Classical era on.",
+      "exploit": "Treat each one as a timer, not a trophy. The plan names the war, the camp or the escort each Comandante is spent on inside the era it arrives in, and uses the retire ability before the next one shows up. Two or three stacked auras on one front is the strongest buff in the game and it is free."
+    },
+    {
+      "source": "civ_ability",
+      "name": "Ejército Patriota",
+      "buys": "+1 Movement for every unit, civilians included, and promotions that do not end the unit's turn.",
+      "exploit": "Settlers reach sites a turn or two early for the first forty turns, which is an extra city by turn 60. In war, a unit attacks, promotes, heals the promotion's health and moves again in the same turn, so cavalry fights three turns of a normal war in two."
+    },
+    {
+      "source": "unique_unit",
+      "name": "Llanero",
+      "buys": "A Cavalry replacement with lower maintenance, +2 Combat Strength for each adjacent Llanero, and a full heal when a Comandante General retires in range.",
+      "exploit": "Build them in pairs and move them as a block of four to six; adjacency is the whole unit. A Comandante retire in the middle of the block is a free full heal for the whole push, so the Industrial Comandante is held for exactly that moment."
+    },
+    {
+      "source": "unique_infrastructure",
+      "name": "Hacienda",
+      "buys": "A Mercantilism improvement with Gold, Production and Housing, more Food beside Plantations and more Production beside other Haciendas.",
+      "exploit": "Lay Plantations first, then ring them with Haciendas in the Renaissance; the Gold pays the Llanero army's upkeep and the Housing lets the wide empire keep growing without Neighborhoods."
+    },
+    {
+      "source": "agenda",
+      "name": "Carabobo",
+      "buys": "Bolivar respects civilizations with many promoted, veteran units and dislikes those without.",
+      "exploit": "Only matters for AI Bolivar on your map: keep a few high-promotion units and he is a friend, which frees the Comandantes for someone else."
+    }
+  ],
+  "shape_block": {
+    "linear": {
+      "direction": {
+        "options": [
+          {
+            "victory": "Domination",
+            "when_it_fits": "A rival capital is within fifteen tiles by land, Horses are improved by turn 50, and at least one Militaristic city-state is met. The Medieval Comandante opens the first war, the Industrial Llanero push takes two capitals, and the Movement bonus makes every later war shorter than the enemy expects."
+          },
+          {
+            "victory": "Science",
+            "when_it_fits": "The land is wide and empty but no neighbour is within reach, or the first neighbour has Walls and a strong army by turn 60. Eight fast-settled cities with Campuses and Haciendas out-produce a normal empire, and the Comandantes are spent as defensive escorts and camp clearers rather than wasted."
+          },
+          {
+            "victory": "Culture",
+            "when_it_fits": "Only when two Cultural city-states and a wonder-rich capital are already in hand at turn 60 and neither of the other two options is open. It is a real win for a wide empire, but nothing in the kit speeds it up, so it is the choice of last resort."
+          }
+        ],
+        "choose_by": 60,
+        "commit_test": "By turn 90 the empire's Production is visibly going to the chosen direction: an Encampment, Stables and a Knight line for Domination, or a Campus in every city and Universities queued for Science. If the build queues show neither, the direction has not been chosen, whatever the player believes."
+      }
+    }
+  },
+  "phases": [
+    {
+      "id": "sprint",
+      "name": "Settling sprint",
+      "turns": {
+        "from": 1,
+        "to": 45
+      },
+      "era": "ancient",
+      "objective": "Use the extra Movement on Scouts, Settlers and Builders to found four cities by turn 45, clear every camp within reach with the Warriors and Slinger, and have Horses improved before the Classical era brings the first Comandante General.",
+      "build_order": [
+        {
+          "item": "Scout",
+          "why": "A 4-Movement Scout meets three civilizations and three city-states before anyone else and finds the city sites the sprint needs."
+        },
+        {
+          "item": "Warrior",
+          "why": "Second Warrior to pair with the first; two Warriors with Discipline clear camps a Spearman would struggle with."
+        },
+        {
+          "item": "Settler",
+          "why": "The second city goes down by turn 20; the extra Movement reaches a site five tiles out in two turns."
+        },
+        {
+          "item": "Slinger",
+          "why": "Archery Eureka on a camp scout, then an Archer for the first war or camp."
+        },
+        {
+          "item": "Settler",
+          "why": "Third city toward the nearest rival, claiming the land before they do."
+        },
+        {
+          "item": "Builder",
+          "why": "Pasture on Horses for Horseback Riding, a Mine for The Wheel, a Farm on a resource for Irrigation."
+        },
+        {
+          "item": "Monument",
+          "why": "Early Empire and Political Philosophy on time; the wide empire needs civics as fast as cities."
+        },
+        {
+          "item": "Settler",
+          "why": "Fourth city; Colonization makes it quick and the capital has grown back by now."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:animal-husbandry",
+          "note": "Reveals Horses, which decide where the third city goes."
+        },
+        {
+          "id": "tech:mining",
+          "note": "Mines for The Wheel and Apprenticeship later; Bronze Working next."
+        },
+        {
+          "id": "tech:bronze-working",
+          "note": "Three camp kills by the Warriors give the Eureka; Encampments and Iron reveal."
+        },
+        {
+          "id": "tech:archery",
+          "note": "Slinger kill at the first camp; Archers escort the Settlers."
+        },
+        {
+          "id": "tech:horseback-riding",
+          "note": "Pasture the Horses for the Eureka; Horsemen are the fastest camp clearers on the map with Movement 5."
+        },
+        {
+          "id": "tech:wheel",
+          "note": "A Mine on any resource; Water Mill and Heavy Chariots, and the road to Engineering."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:code-of-laws",
+          "note": "Discipline for the camps and God King for the pantheon."
+        },
+        {
+          "id": "civic:craftsmanship",
+          "note": "Three improvements from the first Builder give the Inspiration; Agoge for the escort units."
+        },
+        {
+          "id": "civic:foreign-trade",
+          "note": "Caravansaries later; the Inspiration arrives when the Scout crosses to a second continent."
+        },
+        {
+          "id": "civic:early-empire",
+          "note": "Colonization for Settlers three and four; Inspiration at six population across two cities."
+        },
+        {
+          "id": "civic:military-tradition",
+          "note": "The first camp cleared by the Warriors gives the Inspiration; Maneuver is the Ancient and Classical cavalry card."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Discipline",
+          "slot": "military",
+          "from": "civic:code-of-laws",
+          "why": "Paired Warriors with Discipline's bonus against Barbarians beat any camp."
+        },
+        {
+          "card": "God King",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "The pantheon by turn 25; swap it out for Colonization immediately after."
+        },
+        {
+          "card": "Colonization",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "+50% Production toward Settlers three and four; the sprint runs on it."
+        }
+      ],
+      "districts": [],
+      "pantheon": {
+        "slug": "religious-settlements",
+        "why": "A free Settler is the only pantheon that makes the sprint faster, and a Settler with 3 Movement is worth more here than anywhere.",
+        "alternative": "god-of-the-forge"
+      },
+      "wonders": [],
+      "governors": [],
+      "city_states": [
+        {
+          "type": "Militaristic",
+          "why": "Any Militaristic city-state met early takes the first envoy for +2 Production toward Warriors and Horsemen in the capital."
+        },
+        {
+          "slug": "kabul",
+          "why": "Double experience from battles you start plus promotions that do not end the turn means a unit can promote mid-fight; three envoys here are worth a wonder to a Domination run."
+        }
+      ],
+      "great_people": [],
+      "checkpoints": [
+        {
+          "turn": 25,
+          "test": "Two cities founded, the first camp cleared by the Warriors, and a rival capital located?",
+          "pass": "Keep settling; queue Settler three and four back to back.",
+          "fail": "If the second city is late, the Settler was walked without the Movement bonus mattering; pick a closer site. If no rival is found by turn 35, the Science direction is already likelier and the Scout should be looking for city-states instead."
+        },
+        {
+          "turn": 45,
+          "test": "Four cities, Horses improved, and a front or camp already named for the Classical Comandante General?",
+          "pass": "Enter the direction phase with the Classical Comandante arriving on the era change.",
+          "fail": "Three cities is acceptable if the fourth Settler is walking; two is not, and the next thirty turns are Settlers before anything else. Name the camp or front for the Classical Comandante before the era changes, so it is not the first banked bonus of the game."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "sprint-settle-capital",
+          "turn": 1,
+          "text": "Settle on the spot or one move away onto a Plains Hill or river; the Movement bonus is for the Settlers that follow, not this one."
+        },
+        {
+          "id": "sprint-comandante-escort",
+          "turn": 3,
+          "text": "Move the Warriors toward the nearest camp; with Discipline two Warriors are enough, and the first Comandante General only arrives with the Classical era."
+        },
+        {
+          "id": "sprint-second-city",
+          "turn": 20,
+          "text": "Second city founded five or six tiles out toward Horses or the nearest rival."
+        },
+        {
+          "id": "sprint-pantheon",
+          "turn": 25,
+          "text": "Found Religious Settlements and send the free Settler to the farthest good site, since it can get there."
+        },
+        {
+          "id": "sprint-horses",
+          "turn": 35,
+          "text": "Pasture the Horses; Horseback Riding Eureka and the first Horseman for camp clearing."
+        },
+        {
+          "id": "sprint-fourth-city",
+          "turn": 45,
+          "text": "Fourth city founded; write down the two best remaining sites for the next phase."
+        }
+      ]
+    },
+    {
+      "id": "direction",
+      "name": "Choose the direction",
+      "turns": {
+        "from": 46,
+        "to": 95
+      },
+      "era": "classical",
+      "objective": "Grow to six or seven cities, take a government, spend the Classical Comandante General on either a first war or the last camps, and by turn 60 write down which of Domination or Science the empire is building toward, then make the build queues show it by turn 90.",
+      "build_order": [
+        {
+          "item": "Settler",
+          "why": "Cities five and six; the sprint continues until the land or the Amenities run out."
+        },
+        {
+          "item": "Builder",
+          "why": "Three Mines for Apprenticeship and Farms toward Feudalism; the wide empire needs tiles improved."
+        },
+        {
+          "item": "Campus",
+          "why": "Capital first either way; Science direction puts one in every city from here."
+        },
+        {
+          "item": "Encampment",
+          "why": "Domination direction: Great General points, the Military Training Inspiration and a Stable for Horsemen and Knights."
+        },
+        {
+          "item": "Trader",
+          "why": "Currency Eureka and Gold; the empire's roads come from Traders too."
+        },
+        {
+          "item": "Water Mill",
+          "why": "Construction Eureka and Production in the river cities."
+        },
+        {
+          "item": "Horseman",
+          "why": "Four Horsemen under the Classical Comandante are a real Classical army at Movement 5 and the backbone of the first war if Domination is chosen."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:currency",
+          "note": "First Trade Route gives the Eureka; Commercial Hubs for the Gold a wide empire burns."
+        },
+        {
+          "id": "tech:iron-working",
+          "note": "Mine the Iron; Swordsmen if the first war needs melee behind the Horsemen."
+        },
+        {
+          "id": "tech:masonry",
+          "note": "A Quarry if there is one; Ancient Walls in the border city for Engineering."
+        },
+        {
+          "id": "tech:construction",
+          "note": "Water Mill gives the Eureka; Games and Recreation Inspiration follows."
+        },
+        {
+          "id": "tech:mathematics",
+          "note": "Three specialty districts by turn 80; Campus, Encampment and Commercial Hub."
+        },
+        {
+          "id": "tech:apprenticeship",
+          "note": "Three Mines; Industrial Zones and the Production for Knights later."
+        },
+        {
+          "id": "tech:engineering",
+          "note": "Ancient Walls in the city facing the rival."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:state-workforce",
+          "note": "First district gives the Inspiration; Corvee is unused but the civic is on the path."
+        },
+        {
+          "id": "civic:mysticism",
+          "note": "Pantheon gives the Inspiration."
+        },
+        {
+          "id": "civic:political-philosophy",
+          "note": "Three city-states met by the fast Scout; Oligarchy for Domination, Classical Republic for Science."
+        },
+        {
+          "id": "civic:games-and-recreation",
+          "note": "Construction gives the Inspiration; Entertainment Complexes later for the wide empire's Amenities."
+        },
+        {
+          "id": "civic:military-training",
+          "note": "Encampment gives the Inspiration on the Domination branch; otherwise research it unboosted for Mercenaries."
+        },
+        {
+          "id": "civic:recorded-history",
+          "note": "Two Campuses; Natural Philosophy on the Science branch."
+        },
+        {
+          "id": "civic:defensive-tactics",
+          "note": "A rival declaring on you is likely by now with six cities; Bastions if the border city is threatened."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Oligarchy",
+          "slot": "wildcard",
+          "from": "civic:political-philosophy",
+          "why": "Domination branch: +4 Combat Strength on Swordsmen and Spearmen (melee and anti-cavalry, not the Horsemen) and faster experience that the no-turn-end promotion spends immediately."
+        },
+        {
+          "card": "Classical Republic",
+          "slot": "wildcard",
+          "from": "civic:political-philosophy",
+          "why": "Science branch: Great Person points and Amenities for seven cities."
+        },
+        {
+          "card": "Maneuver",
+          "slot": "military",
+          "from": "civic:military-tradition",
+          "why": "Double Production on Ancient and Classical cavalry; slotted for the Horsemen, then swapped out in the Medieval era."
+        },
+        {
+          "card": "Natural Philosophy",
+          "slot": "economic",
+          "from": "civic:recorded-history",
+          "why": "Science branch: doubled Campus adjacency across the whole wide empire."
+        },
+        {
+          "card": "Caravansaries",
+          "slot": "economic",
+          "from": "civic:foreign-trade",
+          "why": "Gold from Trade Routes while the army or the Campuses are built."
+        }
+      ],
+      "districts": [
+        {
+          "district": "campus",
+          "city": "capital, then every city on the Science branch",
+          "note": "Mountain or rainforest adjacency; the Movement bonus means Builders reach the far cities to improve around them."
+        },
+        {
+          "district": "encampment",
+          "city": "the city nearest the chosen rival",
+          "note": "Domination branch: Stable, Great General points and the Military Training Inspiration."
+        },
+        {
+          "district": "commercial-hub",
+          "city": "capital",
+          "note": "Markets for Guilds; the Gold that keeps a wide empire solvent."
+        }
+      ],
+      "pantheon": {
+        "slug": "religious-settlements",
+        "why": "Already founded; its Settler should be a city by now."
+      },
+      "wonders": [
+        {
+          "name": "Pyramids",
+          "why": "An extra Builder charge on every Builder in a wide empire whose Builders already move faster.",
+          "skip_if": "No Desert or Desert Floodplains tile near the capital, or Masonry lands after turn 70."
+        },
+        {
+          "name": "Terracotta Army",
+          "why": "Domination branch only: a free promotion for every land unit, and promotions do not end the turn here.",
+          "skip_if": "The Science direction was chosen, or a neighbour has Construction before you."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "magnus",
+          "promotion": "Provision",
+          "city": "capital",
+          "why": "Settlers five, six and seven without the capital losing population."
+        },
+        {
+          "governor": "pingala",
+          "promotion": "Researcher",
+          "city": "capital, after Magnus moves out once the last Settler is trained",
+          "why": "Science branch: Science per population in the city that will hold the first University."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "kabul",
+          "why": "Three envoys for suzerainty before the first war; doubled experience on every attack you start."
+        },
+        {
+          "type": "Scientific",
+          "why": "Science branch: the first envoy is Science in the capital and the third is Science in every Library."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-general",
+          "why": "Domination branch: a Great General stacks with the Comandante aura; two auras on four Horsemen is a Classical conquest."
+        },
+        {
+          "class": "great-scientist",
+          "why": "Science branch: the Education Eureka and a Library boost."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 60,
+          "test": "Direction written down: Domination with a named first target, or Science with a Campus site chosen in every city? And is the Classical Comandante General in use, either escorting an attack or standing beside the last camp?",
+          "pass": "Build queues switch to the direction's list now; the next phase assumes it.",
+          "fail": "No direction at turn 60 is the shape's failure. Pick by map: a rival within fifteen tiles means Domination, no rival means Science. A Comandante parked in the capital is a banked bonus; move it to the front or retire it this turn."
+        },
+        {
+          "turn": 90,
+          "test": "Six or more cities, a government adopted, and the direction visible in the queues: an Encampment with a Stable and four Horsemen or Heavy Chariots, or Campuses in four cities with Libraries?",
+          "pass": "Enter the war phase or the University phase accordingly.",
+          "fail": "If the queues show both halves, the empire is drifting; cut the half that is not the direction. If neither, the Movement advantage has been spent on nothing and the plan reverts to Settlers and Builders until a direction is forced by the turn 150 abort."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "direction-decide",
+          "turn": 60,
+          "text": "Write the direction down: Domination against a named rival, or Science. Everything after this turn is built toward it."
+        },
+        {
+          "id": "direction-government",
+          "turn": 65,
+          "text": "Adopt Oligarchy or Classical Republic the turn Political Philosophy lands; do not leave Chiefdom running."
+        },
+        {
+          "id": "direction-sixth-city",
+          "turn": 70,
+          "text": "Sixth city founded; stop settling when Amenities drop to zero in two cities, not when the land ends."
+        },
+        {
+          "id": "direction-comandante-spent",
+          "turn": 75,
+          "text": "The Classical Comandante General is at the front or retired. Check it every ten turns; it is the easiest bonus to forget."
+        },
+        {
+          "id": "direction-first-war",
+          "turn": 85,
+          "text": "Domination branch: declare on the named target with four Horsemen, an Archer pair and the Comandante, and take a border city before Walls."
+        },
+        {
+          "id": "direction-libraries",
+          "turn": 90,
+          "text": "Science branch: Libraries in four Campuses and a Great Scientist on the way."
+        }
+      ]
+    },
+    {
+      "id": "campaign",
+      "name": "Knights and Haciendas",
+      "turns": {
+        "from": 96,
+        "to": 170
+      },
+      "era": "medieval",
+      "objective": "Spend the Medieval and Renaissance Comandante Generals on a Knight war that takes a capital, or on the Science branch, on escorting a wide empire into Universities, and lay the Plantation and Hacienda grid that funds the Industrial Llanero army either way.",
+      "build_order": [
+        {
+          "item": "Knight",
+          "why": "Domination branch: six Knights at Movement 5 under two Comandante auras take a Medieval Walled city once a Swordsman or Pikeman with a Siege Tower is through the Walls; siege support does not help cavalry."
+        },
+        {
+          "item": "University",
+          "why": "Two for Printing on either branch; the Science branch wants one in every Campus."
+        },
+        {
+          "item": "Market",
+          "why": "Two for Guilds; Gold for upgrades and for buying Builders in far cities."
+        },
+        {
+          "item": "Aqueduct",
+          "why": "Military Engineering Eureka and Housing in the capital."
+        },
+        {
+          "item": "Builder",
+          "why": "Plantations first, then Haciendas when Mercantilism lands; six Farms for Feudalism on the way."
+        },
+        {
+          "item": "Industrial Zone",
+          "why": "Two Workshops for Industrialization; the Llanero army is built here."
+        },
+        {
+          "item": "Crossbowman",
+          "why": "Two for Metal Casting and to hold what the Knights take."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:stirrups",
+          "note": "Feudalism gives the Eureka; Knights are the Medieval war."
+        },
+        {
+          "id": "tech:military-engineering",
+          "note": "Aqueduct gives the Eureka; the Armory that boosts Gunpowder."
+        },
+        {
+          "id": "tech:machinery",
+          "note": "Three Archers; Crossbowmen to hold captured cities."
+        },
+        {
+          "id": "tech:education",
+          "note": "A Great Scientist gives the Eureka; Universities on both branches."
+        },
+        {
+          "id": "tech:castles",
+          "note": "Tier 2 government gives the Eureka; Walls in the border cities."
+        },
+        {
+          "id": "tech:banking",
+          "note": "Guilds gives the Eureka; Banks for Economics later."
+        },
+        {
+          "id": "tech:printing",
+          "note": "Two Universities; the Science catch-up or the Science lead."
+        },
+        {
+          "id": "tech:metal-casting",
+          "note": "Two Crossbowmen; on the way to Military Science and the Llanero."
+        },
+        {
+          "id": "tech:gunpowder",
+          "note": "An Armory in the Encampment; Musketmen to hold the new border."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:feudalism",
+          "note": "Six Farms; Feudal Contract for the Knight army or Serfdom for the Builders laying Plantations."
+        },
+        {
+          "id": "civic:civil-service",
+          "note": "Capital at ten population with the Aqueduct; Meritocracy for a wide empire's Culture."
+        },
+        {
+          "id": "civic:mercenaries",
+          "note": "Eight land units is the Knight army plus escorts; Professional Army for the Horseman to Courser to Llanero upgrades later."
+        },
+        {
+          "id": "civic:guilds",
+          "note": "Two Markets; Craftsmen for the Industrial Zones."
+        },
+        {
+          "id": "civic:divine-right",
+          "note": "Two Temples only if Holy Sites were built; otherwise unboosted on the way to Monarchy."
+        },
+        {
+          "id": "civic:mercantilism",
+          "note": "A Great Merchant gives the Inspiration; the Hacienda unlocks here and the phase waits for it."
+        },
+        {
+          "id": "civic:diplomatic-service",
+          "note": "An alliance with the civilization that is not your target; the Inspiration and the Chemistry Eureka later."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Feudal Contract",
+          "slot": "military",
+          "from": "civic:feudalism",
+          "why": "Domination branch: Crossbowmen and the melee escort at double Production while the war runs; Knights are cavalry, which it does not cover."
+        },
+        {
+          "card": "Serfdom",
+          "slot": "economic",
+          "from": "civic:feudalism",
+          "why": "Builders with extra charges laying the Plantation and Hacienda grid across a wide empire."
+        },
+        {
+          "card": "Professional Army",
+          "slot": "military",
+          "from": "civic:mercenaries",
+          "why": "Half-price upgrades; Horsemen to Coursers now, Coursers to Llaneros in the next phase."
+        },
+        {
+          "card": "Monarchy",
+          "slot": "wildcard",
+          "from": "civic:divine-right",
+          "why": "Domination branch: the extra Military slot and Housing from Walls for a wide warring empire."
+        },
+        {
+          "card": "Merchant Republic",
+          "slot": "wildcard",
+          "from": "civic:exploration",
+          "why": "Science branch: two Economic slots and extra Trade Routes for Haciendas and Universities."
+        },
+        {
+          "card": "Triangular Trade",
+          "slot": "economic",
+          "from": "civic:mercantilism",
+          "why": "Gold and Faith from the routes a wide empire runs; it pays the Llanero army before it exists."
+        }
+      ],
+      "districts": [
+        {
+          "district": "industrial-zone",
+          "city": "the two best Production cities",
+          "note": "Workshops for Industrialization; Factories for the Llanero wave."
+        },
+        {
+          "district": "aqueduct",
+          "city": "capital",
+          "note": "Military Engineering Eureka and Housing; Civil Service Inspiration at ten population."
+        },
+        {
+          "district": "theater-square",
+          "city": "capital only",
+          "note": "One for Amphitheater Culture and the Great Artist slot; a wide empire needs civics, not Tourism."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Kilwa Kisiwani",
+          "why": "Suzerainty of Kabul and one Scientific or Industrial city-state becomes +15% of each type's yield in the Kilwa city, and two of the same type make it +15% in every city of a wide empire.",
+          "skip_if": "No coastal city with Production, or fewer than two suzerainties at turn 130."
+        },
+        {
+          "name": "Forbidden City",
+          "why": "An extra Wildcard slot, which on the Domination branch is another Military card.",
+          "skip_if": "Printing arrives after turn 160 or a Culture civilization is on the map."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "victor",
+          "promotion": "Garrison Commander",
+          "city": "the first captured city",
+          "why": "Loyalty and Combat Strength where the counterattack lands."
+        },
+        {
+          "governor": "liang",
+          "promotion": "Zoning Commissioner",
+          "city": "the Hacienda city",
+          "why": "Faster districts and an extra Builder charge in the city laying the grid."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "hattusa",
+          "why": "Two of every Strategic resource you have revealed but not mined; Niter for Musketmen and later Coal without a Mine."
+        },
+        {
+          "type": "Industrial",
+          "why": "Production in every Workshop at three envoys; the Llanero wave is built on it."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-general",
+          "why": "Domination branch: stack a Medieval Great General with the Medieval Comandante for +10 Combat Strength and +2 Movement on Knights."
+        },
+        {
+          "class": "great-merchant",
+          "why": "A Great Merchant gives the Mercantilism Inspiration and a Trade Route; the Hacienda is waiting on the civic."
+        },
+        {
+          "class": "great-scientist",
+          "why": "Science branch: University boosts and the Education Eureka."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 130,
+          "test": "Era checkpoint. Domination: a capital or two border cities taken with the Medieval Comandante used in the siege? Science: Universities in four cities and the Science rate ahead of every met rival? Either way, was the Medieval Comandante spent before the Renaissance arrived?",
+          "pass": "Continue; queue Plantations and Haciendas behind the main build.",
+          "fail": "A Comandante that reached the Renaissance unused is the shape's failure; retire it today and move the Renaissance one to the front the turn it arrives. On the Domination branch with no city taken, the first target was too strong: switch to the Science direction while the Science branch's build is still cheap, or pick a smaller neighbour."
+        },
+        {
+          "turn": 170,
+          "test": "Mercantilism unlocked and Haciendas being laid, two Workshops built, and the chosen direction still reachable (Domination: a second capital within reach before Infantry; Science: Printing done and the Campus count at the city count)?",
+          "pass": "Enter the Llanero phase.",
+          "fail": "If Mercantilism is not in by turn 170, Culture is too low for a wide empire: Monuments and Amphitheaters in every city before anything else. If the direction is unreachable, pivot now while the Industrial Comandante is still to come."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "campaign-knights",
+          "turn": 105,
+          "text": "Domination branch: six Knights and a Siege Tower staged beside the target with the Medieval Comandante in the middle of them."
+        },
+        {
+          "id": "campaign-capital",
+          "turn": 125,
+          "text": "Domination branch: take the rival capital; attack, promote, heal and move in the same turn with every Knight."
+        },
+        {
+          "id": "campaign-universities",
+          "turn": 125,
+          "text": "Science branch: Universities in four Campuses; Printing Eureka collected."
+        },
+        {
+          "id": "campaign-plantations",
+          "turn": 140,
+          "text": "Every Plantation resource in the empire improved; the Haciendas go beside them next."
+        },
+        {
+          "id": "campaign-haciendas",
+          "turn": 160,
+          "text": "Mercantilism in; a Hacienda beside every Plantation and a second beside the first where terrain allows."
+        },
+        {
+          "id": "campaign-era-audit",
+          "turn": 165,
+          "text": "Audit: has every Comandante so far been retired or spent at a front? If one is idle, retire it now."
+        }
+      ]
+    },
+    {
+      "id": "llaneros",
+      "name": "The Llanero push",
+      "turns": {
+        "from": 171,
+        "to": 240
+      },
+      "era": "industrial",
+      "objective": "Build or upgrade into a block of six to eight Llaneros, spend the Industrial and Modern Comandante Generals on taking two capitals before Infantry and Artillery appear, or on the Science branch, turn the Hacienda Gold into Factories, Research Labs and the Spaceport site.",
+      "build_order": [
+        {
+          "item": "Llanero",
+          "why": "Six to eight in a block; the adjacency bonus makes the eighth Llanero stronger than the first."
+        },
+        {
+          "item": "Factory",
+          "why": "Three for Class Struggle; Production for the army or the Spaceport."
+        },
+        {
+          "item": "Bombard",
+          "why": "Two Bombards or Field Cannons behind the Llaneros; cavalry does not take Renaissance Walls alone."
+        },
+        {
+          "item": "Bank",
+          "why": "Two for Economics; Hacienda Gold compounds through them."
+        },
+        {
+          "item": "Neighborhood",
+          "why": "Two for Sanitation; a wide empire runs out of Housing even with Haciendas."
+        },
+        {
+          "item": "Research Lab",
+          "why": "Science branch: the lead is converted here."
+        },
+        {
+          "item": "Military Academy",
+          "why": "Corps and Armies; three Llanero Corps are the final push."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:military-science",
+          "note": "A Knight kill gives the Eureka; the Llanero unlocks here."
+        },
+        {
+          "id": "tech:industrialization",
+          "note": "Two Workshops; Factories and Coal."
+        },
+        {
+          "id": "tech:scientific-theory",
+          "note": "The Enlightenment gives the Eureka; the road to Chemistry and its Research Labs."
+        },
+        {
+          "id": "tech:economics",
+          "note": "Two Banks; Stock Exchanges on the Science branch."
+        },
+        {
+          "id": "tech:rifling",
+          "note": "A Niter Mine; Line Infantry to hold what Llaneros take."
+        },
+        {
+          "id": "tech:sanitation",
+          "note": "Two Neighborhoods; Housing for the wide empire."
+        },
+        {
+          "id": "tech:chemistry",
+          "note": "Alliance level 2 gives the Eureka; Research Labs."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:the-enlightenment",
+          "note": "Three Great People; Rationalism on the Science branch, and the Scientific Theory Eureka."
+        },
+        {
+          "id": "civic:nationalism",
+          "note": "Declare with a Casus Belli; Corps for the Llanero block."
+        },
+        {
+          "id": "civic:scorched-earth",
+          "note": "Two Field Cannons; Total War for the last sieges."
+        },
+        {
+          "id": "civic:colonialism",
+          "note": "Astronomy gives the Inspiration."
+        },
+        {
+          "id": "civic:civil-engineering",
+          "note": "Seven district types across a wide empire; Public Works for Builders."
+        },
+        {
+          "id": "civic:urbanization",
+          "note": "A fifteen-population city; the Hacienda Housing makes it the capital."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Grande Armee",
+          "slot": "military",
+          "from": "civic:nationalism",
+          "why": "Industrial melee, ranged and anti-cavalry units faster; it does not cover the Llaneros, so the Line Infantry escort is built under it."
+        },
+        {
+          "card": "Total War",
+          "slot": "military",
+          "from": "civic:scorched-earth",
+          "why": "Pillaging pays double; Llaneros pillage on the way in and heal from it."
+        },
+        {
+          "card": "Rationalism",
+          "slot": "economic",
+          "from": "civic:the-enlightenment",
+          "why": "Science branch: the Universities and Research Labs in big Hacienda cities."
+        },
+        {
+          "card": "Free Market",
+          "slot": "economic",
+          "from": "civic:the-enlightenment",
+          "why": "Commercial Hub buildings doubled in cities ringed with Haciendas."
+        }
+      ],
+      "districts": [
+        {
+          "district": "neighborhood",
+          "city": "the two largest cities",
+          "note": "Sanitation Eureka and Housing; place them on high-appeal tiles, since their Housing rises with Appeal."
+        },
+        {
+          "district": "spaceport",
+          "city": "the best Production city",
+          "note": "Science branch: the site is reserved now even if the district waits for Rocketry."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Ruhr Valley",
+          "why": "Production per Mine and a flat bonus in the city that builds the Llaneros or the Spaceport.",
+          "skip_if": "No river Industrial Zone, or Industrialization lands after turn 220."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "victor",
+          "promotion": "Embrasure",
+          "city": "the newest capture",
+          "why": "Each captured capital holds while the block moves on."
+        },
+        {
+          "governor": "reyna",
+          "promotion": "Tax Collector",
+          "city": "the Hacienda capital",
+          "why": "Gold from the Hacienda grid; it pays the Corps."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "preslav",
+          "why": "Loyalty per Encampment building in captured capitals."
+        },
+        {
+          "type": "Scientific",
+          "why": "Science branch: six envoys for Science in every University."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-general",
+          "why": "An Industrial Great General beside the Industrial Comandante is +10 Combat Strength and +2 Movement on a Llanero block already at Movement 6."
+        },
+        {
+          "class": "great-engineer",
+          "why": "Science branch: Production toward the Spaceport and Factories."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 205,
+          "test": "Era checkpoint. Is the chosen victory still reachable? Domination: a Llanero block of six or more, a capital taken since turn 170, and the Industrial Comandante retired inside the block for the full heal? Science: Research Labs in three cities and the Science rate first among met civilizations?",
+          "pass": "Continue; the Modern Comandante goes straight to the front on arrival.",
+          "fail": "Domination with no capital since turn 170: the window is closing against Infantry; take the one remaining soft capital or pivot to Science on the Hacienda economy. An Industrial Comandante retired away from the Llaneros wasted the full heal; the Modern one must not be."
+        },
+        {
+          "turn": 240,
+          "test": "Two capitals held on the Domination branch, or the Spaceport district started on the Science branch?",
+          "pass": "Enter the close.",
+          "fail": "Neither: the game is a Score game unless a Diplomatic win is in reach through favor from a wide empire; stop building Llaneros and put every city on Science and Culture."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "llaneros-block",
+          "turn": 185,
+          "text": "Six Llaneros built or upgraded from Coursers under Professional Army, moving as one block."
+        },
+        {
+          "id": "llaneros-comandante-heal",
+          "turn": 195,
+          "text": "Retire the Industrial Comandante in the middle of the Llanero block after the first siege for the full heal, not before."
+        },
+        {
+          "id": "llaneros-second-capital",
+          "turn": 215,
+          "text": "Domination branch: second capital taken; Victor moved in the turn it falls."
+        },
+        {
+          "id": "llaneros-research-labs",
+          "turn": 215,
+          "text": "Science branch: Research Labs in three cities and the Spaceport site cleared."
+        },
+        {
+          "id": "llaneros-corps",
+          "turn": 230,
+          "text": "Three Llanero Corps formed for the Mobilization Inspiration and the last pushes."
+        }
+      ]
+    },
+    {
+      "id": "close",
+      "name": "Close",
+      "turns": {
+        "from": 241,
+        "to": null
+      },
+      "era": "modern",
+      "objective": "Finish the chosen direction with the last Comandante Generals: Tanks and Artillery behind the surviving Llanero Corps against the remaining capitals, or the Spaceport projects with the Hacienda Gold buying the last Research Labs.",
+      "build_order": [
+        {
+          "item": "Tank",
+          "why": "Domination branch: Tanks join the surviving Llanero block; Llaneros upgrade to Helicopters, not Tanks, so the block keeps its promotions by staying in the field."
+        },
+        {
+          "item": "Artillery",
+          "why": "Domination branch: Urban Defenses do not fall to cavalry."
+        },
+        {
+          "item": "Spaceport",
+          "why": "Science branch: the three projects start the turn it finishes."
+        },
+        {
+          "item": "Power Plant",
+          "why": "Both branches: Factories and Research Labs need Power to pay full yields."
+        },
+        {
+          "item": "Aerodrome",
+          "why": "Two for Synthetic Materials; Bombers finish the last capitals."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:replaceable-parts",
+          "note": "Three Line Infantry upgraded from Musketmen; Infantry to garrison."
+        },
+        {
+          "id": "tech:flight",
+          "note": "An Industrial wonder gives the Eureka; Aerodromes and the Rapid Deployment line."
+        },
+        {
+          "id": "tech:combined-arms",
+          "note": "Three Armies; Modern Armor."
+        },
+        {
+          "id": "tech:plastics",
+          "note": "An Oil Well; Oil for Tanks and Power."
+        },
+        {
+          "id": "tech:computers",
+          "note": "Tier 3 government; the Science branch's last multiplier."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:mobilization",
+          "note": "Three Corps; Levee en Masse for the last units."
+        },
+        {
+          "id": "civic:ideology",
+          "note": "No Inspiration; it is the gate to Tier 3 governments."
+        },
+        {
+          "id": "civic:totalitarianism",
+          "note": "Three Military Academies on the Domination branch; Fascism."
+        },
+        {
+          "id": "civic:class-struggle",
+          "note": "Three Factories; Communism for the Science branch's Production."
+        },
+        {
+          "id": "civic:space-race",
+          "note": "A Spaceport gives the Inspiration; International Space Agency."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Levee en Masse",
+          "slot": "military",
+          "from": "civic:mobilization",
+          "why": "Cheaper unit maintenance for a block of Tanks and Artillery."
+        },
+        {
+          "card": "Five-Year Plan",
+          "slot": "economic",
+          "from": "civic:class-struggle",
+          "why": "Science branch: Industrial Zone and Campus adjacency doubled in the Spaceport city."
+        },
+        {
+          "card": "International Space Agency",
+          "slot": "diplomatic",
+          "from": "civic:space-race",
+          "why": "Science per suzerainty; Kabul and Hattusa are already held."
+        }
+      ],
+      "districts": [
+        {
+          "district": "aerodrome",
+          "city": "the two captured capitals",
+          "note": "Synthetic Materials Eureka; Bombers for the last sieges."
+        }
+      ],
+      "wonders": [],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Space Initiative",
+          "city": "the Spaceport city",
+          "why": "Science branch: Production toward the three projects."
+        }
+      ],
+      "city_states": [],
+      "great_people": [
+        {
+          "class": "great-general",
+          "why": "Domination branch: a Modern Great General on a Tank Corps with the last Comandante beside it."
+        },
+        {
+          "class": "great-scientist",
+          "why": "Science branch: the Atomic and Information Great Scientists are the only boosts for Rocketry and Nuclear Fission."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 280,
+          "test": "Domination: every remaining capital within two eras of your army strength and one taken since turn 240? Science: the Moon Landing project done?",
+          "pass": "Continue to the end; keep each new Comandante at the front.",
+          "fail": "Convert to Score: stop building military beyond defence and put the Hacienda Gold into Culture and Science buildings."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "close-tanks",
+          "turn": 255,
+          "text": "Domination branch: Tanks beside the Llanero block with Artillery behind it and the Modern Comandante in range."
+        },
+        {
+          "id": "close-moon",
+          "turn": 265,
+          "text": "Science branch: Moon Landing project started; buy the Power Plant if it is not built."
+        },
+        {
+          "id": "close-comandante-last",
+          "turn": 270,
+          "text": "Spend the Atomic Comandante the turn it arrives; a late Comandante retired in a captured city is still Loyalty or healing."
+        },
+        {
+          "id": "close-review",
+          "turn": 280,
+          "text": "Review the turn 280 checkpoint and continue or declare the game a Score game."
+        }
+      ]
+    }
+  ],
+  "boosts": [
+    {
+      "id": "tech:archery",
+      "fit": "cheap",
+      "when": "sprint",
+      "how": "The Slinger kills a camp scout beside the Warriors."
+    },
+    {
+      "id": "tech:bronze-working",
+      "fit": "free",
+      "when": "sprint",
+      "how": "Three camp kills from the Warriors the sprint clears camps with anyway."
+    },
+    {
+      "id": "tech:horseback-riding",
+      "fit": "free",
+      "when": "sprint",
+      "how": "The Pasture on the Horses the third city was placed for."
+    },
+    {
+      "id": "tech:wheel",
+      "fit": "cheap",
+      "when": "sprint",
+      "how": "The first Builder mines a resource hill."
+    },
+    {
+      "id": "tech:writing",
+      "fit": "free",
+      "when": "sprint",
+      "how": "The 4-Movement Scout meets a civilization before turn 15."
+    },
+    {
+      "id": "tech:irrigation",
+      "fit": "cheap",
+      "when": "sprint",
+      "how": "A Farm on Wheat or Rice from the first Builder."
+    },
+    {
+      "id": "tech:astrology",
+      "fit": "cheap",
+      "when": "sprint",
+      "how": "The fast Scout finds a natural wonder more often than not."
+    },
+    {
+      "id": "tech:masonry",
+      "fit": "costly",
+      "when": "direction",
+      "how": "Only if a Quarry resource is near a city."
+    },
+    {
+      "id": "tech:sailing",
+      "fit": "cheap",
+      "when": "direction",
+      "how": "One coastal city among the first six."
+    },
+    {
+      "id": "tech:currency",
+      "fit": "free",
+      "when": "direction",
+      "how": "The first Trader to the second city."
+    },
+    {
+      "id": "tech:iron-working",
+      "fit": "cheap",
+      "when": "direction",
+      "how": "Mine the Iron that Bronze Working reveals."
+    },
+    {
+      "id": "tech:construction",
+      "fit": "cheap",
+      "when": "direction",
+      "how": "A Water Mill in a river city."
+    },
+    {
+      "id": "tech:mathematics",
+      "fit": "cheap",
+      "when": "direction",
+      "how": "Campus, Encampment and Commercial Hub by turn 80."
+    },
+    {
+      "id": "tech:apprenticeship",
+      "fit": "free",
+      "when": "direction",
+      "how": "Three Mines across six cities."
+    },
+    {
+      "id": "tech:engineering",
+      "fit": "cheap",
+      "when": "direction",
+      "how": "Ancient Walls in the border city."
+    },
+    {
+      "id": "tech:stirrups",
+      "fit": "free",
+      "when": "campaign",
+      "how": "Feudalism is on the civic path."
+    },
+    {
+      "id": "tech:military-engineering",
+      "fit": "cheap",
+      "when": "campaign",
+      "how": "The capital Aqueduct."
+    },
+    {
+      "id": "tech:machinery",
+      "fit": "costly",
+      "when": "campaign",
+      "how": "Three Archers only if a war needs Crossbowmen; usually unboosted."
+    },
+    {
+      "id": "tech:education",
+      "fit": "cheap",
+      "when": "campaign",
+      "how": "The first Great Scientist from two Campuses."
+    },
+    {
+      "id": "tech:castles",
+      "fit": "free",
+      "when": "campaign",
+      "how": "Any Tier 2 government."
+    },
+    {
+      "id": "tech:banking",
+      "fit": "free",
+      "when": "campaign",
+      "how": "Guilds is on the civic path."
+    },
+    {
+      "id": "tech:printing",
+      "fit": "cheap",
+      "when": "campaign",
+      "how": "Two Universities in the capital and the second Campus city."
+    },
+    {
+      "id": "tech:metal-casting",
+      "fit": "cheap",
+      "when": "campaign",
+      "how": "Two Crossbowmen behind the Knights."
+    },
+    {
+      "id": "tech:gunpowder",
+      "fit": "cheap",
+      "when": "campaign",
+      "how": "An Armory in the Encampment city."
+    },
+    {
+      "id": "tech:military-science",
+      "fit": "free",
+      "when": "llaneros",
+      "how": "A Knight kill in the Medieval war; the Science branch takes it unboosted."
+    },
+    {
+      "id": "tech:industrialization",
+      "fit": "free",
+      "when": "llaneros",
+      "how": "Two Workshops from the campaign phase."
+    },
+    {
+      "id": "tech:scientific-theory",
+      "fit": "free",
+      "when": "llaneros",
+      "how": "The Enlightenment is on the civic path."
+    },
+    {
+      "id": "tech:economics",
+      "fit": "cheap",
+      "when": "llaneros",
+      "how": "Two Banks in Hacienda cities."
+    },
+    {
+      "id": "tech:rifling",
+      "fit": "cheap",
+      "when": "llaneros",
+      "how": "A Mine on Niter, which the Musketmen needed anyway."
+    },
+    {
+      "id": "tech:sanitation",
+      "fit": "cheap",
+      "when": "llaneros",
+      "how": "Two Neighborhoods in the biggest cities."
+    },
+    {
+      "id": "tech:replaceable-parts",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Three Line Infantry upgraded from Musketmen."
+    },
+    {
+      "id": "tech:flight",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Ruhr Valley or any Industrial wonder."
+    },
+    {
+      "id": "tech:chemistry",
+      "fit": "cheap",
+      "when": "llaneros",
+      "how": "Alliance level 2 with the ally kept out of the wars."
+    },
+    {
+      "id": "tech:combined-arms",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Three Armies on the Domination branch."
+    },
+    {
+      "id": "tech:plastics",
+      "fit": "cheap",
+      "when": "close",
+      "how": "An Oil Well on the first Oil found."
+    },
+    {
+      "id": "tech:computers",
+      "fit": "free",
+      "when": "close",
+      "how": "Any Tier 3 government."
+    },
+    {
+      "id": "civic:craftsmanship",
+      "fit": "free",
+      "when": "sprint",
+      "how": "Three improvements from the first Builder."
+    },
+    {
+      "id": "civic:foreign-trade",
+      "fit": "cheap",
+      "when": "sprint",
+      "how": "The fast Scout reaches a second continent on most maps."
+    },
+    {
+      "id": "civic:military-tradition",
+      "fit": "free",
+      "when": "sprint",
+      "how": "The first camp cleared by the Warriors."
+    },
+    {
+      "id": "civic:early-empire",
+      "fit": "free",
+      "when": "sprint",
+      "how": "Six population across the first cities."
+    },
+    {
+      "id": "civic:state-workforce",
+      "fit": "free",
+      "when": "direction",
+      "how": "The first Campus or Encampment."
+    },
+    {
+      "id": "civic:mysticism",
+      "fit": "free",
+      "when": "direction",
+      "how": "The pantheon from the sprint."
+    },
+    {
+      "id": "civic:political-philosophy",
+      "fit": "free",
+      "when": "direction",
+      "how": "Three city-states met by the fast Scout."
+    },
+    {
+      "id": "civic:military-training",
+      "fit": "cheap",
+      "when": "direction",
+      "how": "The Encampment on the Domination branch."
+    },
+    {
+      "id": "civic:games-and-recreation",
+      "fit": "free",
+      "when": "direction",
+      "how": "Researching Construction."
+    },
+    {
+      "id": "civic:recorded-history",
+      "fit": "cheap",
+      "when": "direction",
+      "how": "Two Campuses, in the capital and the Horses city."
+    },
+    {
+      "id": "civic:defensive-tactics",
+      "fit": "cheap",
+      "when": "direction",
+      "how": "A rival declares on a wide, lightly defended empire."
+    },
+    {
+      "id": "civic:feudalism",
+      "fit": "cheap",
+      "when": "campaign",
+      "how": "Six Farms across the wide empire."
+    },
+    {
+      "id": "civic:civil-service",
+      "fit": "cheap",
+      "when": "campaign",
+      "how": "The capital at ten population."
+    },
+    {
+      "id": "civic:mercenaries",
+      "fit": "free",
+      "when": "campaign",
+      "how": "Eight land units is the Knight army."
+    },
+    {
+      "id": "civic:guilds",
+      "fit": "cheap",
+      "when": "campaign",
+      "how": "Two Markets in the Commercial Hub cities."
+    },
+    {
+      "id": "civic:divine-right",
+      "fit": "costly",
+      "when": "campaign",
+      "how": "Two Temples need Holy Sites this plan does not build."
+    },
+    {
+      "id": "civic:mercantilism",
+      "fit": "cheap",
+      "when": "campaign",
+      "how": "One Great Merchant from the capital Commercial Hub."
+    },
+    {
+      "id": "civic:diplomatic-service",
+      "fit": "cheap",
+      "when": "campaign",
+      "how": "An alliance with the neighbour that is not the target."
+    },
+    {
+      "id": "civic:medieval-faires",
+      "fit": "cheap",
+      "when": "campaign",
+      "how": "Four Trade Routes from seven cities."
+    },
+    {
+      "id": "civic:the-enlightenment",
+      "fit": "cheap",
+      "when": "llaneros",
+      "how": "Three Great People across the game."
+    },
+    {
+      "id": "civic:nationalism",
+      "fit": "cheap",
+      "when": "llaneros",
+      "how": "The Llanero war declared with a Casus Belli."
+    },
+    {
+      "id": "civic:scorched-earth",
+      "fit": "cheap",
+      "when": "llaneros",
+      "how": "Two Field Cannons behind the Llaneros."
+    },
+    {
+      "id": "civic:colonialism",
+      "fit": "free",
+      "when": "llaneros",
+      "how": "Researching Astronomy."
+    },
+    {
+      "id": "civic:civil-engineering",
+      "fit": "cheap",
+      "when": "llaneros",
+      "how": "Seven district types across a wide empire."
+    },
+    {
+      "id": "civic:urbanization",
+      "fit": "cheap",
+      "when": "llaneros",
+      "how": "The Hacienda capital at fifteen population."
+    },
+    {
+      "id": "civic:mobilization",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Three Llanero Corps."
+    },
+    {
+      "id": "civic:totalitarianism",
+      "fit": "costly",
+      "when": "close",
+      "how": "Three Military Academies on the Domination branch only."
+    },
+    {
+      "id": "civic:class-struggle",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Three Factories in the Industrial Zones."
+    },
+    {
+      "id": "civic:space-race",
+      "fit": "cheap",
+      "when": "close",
+      "how": "The Spaceport on the Science branch."
+    }
+  ],
+  "decision_triggers": [
+    {
+      "name": "Era change",
+      "if": "A new era begins and a Comandante General appears.",
+      "then": "Before ending the turn, assign it: to the front if a war is on, to the camp or the escort if not, and if nothing needs it, retire it for its ability rather than carrying it. Note the turn it arrived; if it is still unused ten turns later, that is the banked-bonus failure."
+    },
+    {
+      "name": "Soft neighbour",
+      "if": "By turn 60 a rival capital within fifteen tiles has no Walls and fewer than four units.",
+      "then": "Choose Domination. Four Horsemen under the Classical Comandante take it before Walls; the Movement bonus makes the march two turns."
+    },
+    {
+      "name": "Empty continent",
+      "if": "By turn 60 no rival is within fifteen tiles but six or more city sites remain.",
+      "then": "Choose Science. Keep settling, Campus in every city, and spend the Comandantes clearing camps and escorting Settlers to the far sites."
+    },
+    {
+      "name": "Walls before the Knights",
+      "if": "The first target has Medieval Walls when the Knights arrive.",
+      "then": "Bring a Siege Tower, a Swordsman or Pikeman to use it, and the Comandante, and keep going; a Siege Tower lets melee and anti-cavalry units ignore Walls, not cavalry. If the target also has Pikemen, switch to the next-weakest city and come back with Bombards."
+    },
+    {
+      "name": "Llanero window closing",
+      "if": "The target has Infantry or Artillery before the Llanero block is six strong.",
+      "then": "Do not push. Bring Tanks up before attacking, or pivot the direction to Science on the Hacienda economy; the flat curve makes the pivot cheap."
+    }
+  ],
+  "abort": {
+    "trigger": "Turn 150 with no direction committed: no capital taken, no Campus in half the cities, and a Comandante General or two retired unused in the capital.",
+    "actions": [
+      "Pick the direction the empire is already closest to: more Encampments and cavalry than Campuses means Domination, otherwise Science. Commit fully; Linear leaders lose by drifting, not by collapsing.",
+      "Spend the next Comandante the turn it arrives on something named in advance.",
+      "Lay the Hacienda grid regardless; it pays either direction."
+    ]
+  },
+  "fail_state": "Turn 200 with nine comfortable cities, Haciendas everywhere, four Comandante Generals retired for nothing in the capital, no capital taken and no Spaceport site chosen. Gran Colombia has out-settled the map and converted none of it; the Movement advantage is now matched by rival railroads and the Llanero is about to be obsolete.",
+  "common_mistakes": [
+    "Keeping a Comandante General safe in the capital for a war that never comes. It is era-tied; an unused one is the kit's whole leader ability thrown away.",
+    "Promoting a unit and then not using the rest of its turn. The no-turn-end promotion is only worth anything if the unit heals, moves and attacks again.",
+    "Spreading Llaneros across two fronts. The adjacency bonus means four together beat eight apart.",
+    "Settling until the land ends instead of until Amenities end. The Movement bonus makes over-expansion faster, not safer.",
+    "Building Haciendas before the Plantations. The Food comes from the Plantation adjacency; a Hacienda alone is a worse Farm with Gold."
+  ],
+  "sources": [
+    "Civilization VI Civilopedia, Gathering Storm ruleset (Gran Colombia, Simon Bolivar, Comandante General, Llanero, Hacienda).",
+    "Boost objectives cross-checked against civilization6planner.com tech-tree and civics-tree pages, 2026-10-01.",
+    "Leadership Focus tags, caveats and Linear template for Simon Bolivar in this repository. The civ-info text does not say that a Comandante General also arrives at the start of the game, and the game does not grant one: the first arrives with the Classical era."
+  ]
+}

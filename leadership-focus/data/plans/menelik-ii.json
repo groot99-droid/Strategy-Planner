@@ -1,0 +1,1599 @@
+{
+  "slug": "menelik-ii",
+  "shape": "Linear",
+  "secondary_shape": null,
+  "version": 1,
+  "updated": "2026-10-02",
+  "assumptions": {
+    "ruleset": "Gathering Storm with every expansion and the Leader Pass",
+    "speed": "Standard",
+    "difficulty": "Emperor",
+    "map": "Pangaea or Continents, standard size, 8 civilizations",
+    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. Menelik II has one persona and that is the one planned here. Ethiopia arrives with the New Frontier Pass Ethiopia Pack, which the Gathering Storm ruleset with every expansion includes."
+  },
+  "verdict": {
+    "victory": "Culture",
+    "secondary": "Religion",
+    "confidence": "medium",
+    "one_line": "Settle only on Hills, build the Faith base first with Mountain Holy Sites, Rock-Hewn Churches and every resource improved, choose by turn 70 what the Faith buys, and then spend it every turn: Great Writers and Archaeologists for Culture, Apostles for Religion, or Campus buildings for Science.",
+    "why": "Council of Ministers pays 15 percent of a hill city's Faith per turn as Science and the same again as Culture, so thirty Faith in a hill city is four or five of each on top of the Faith itself. That is a bonus on a stream, and it says nothing about where the stream goes; the Faith is the engine and the conversion is the dividend. Culture is the default because it is the only direction where the civ ability adds something no rival has: from Humanism Faith buys Archaeological Museums and from Natural History it buys the Archaeologists that fill them, so every Antiquity Site on the map becomes Faith turned into Tourism, while the Council's Culture share keeps the civic tree ahead. Religion is second because the same Holy Sites found a religion early and Ethiopia out-earns most AI Faith, but it depends on winning a Great Prophet and on how many religious civilizations share the map. Science is the landing when the Prophet is missed and the hill sites sit beside Mountains."
+  },
+  "map_check": {
+    "must_have": [
+      "Hills for at least four city sites within eight tiles of the capital; a city founded on flat land gets nothing from Council of Ministers for the whole game.",
+      "Food beside the hill sites: a river, lake, floodplain or flat grassland on at least two sides of each one, because Hills alone stall a city at five or six population."
+    ],
+    "prefer": [
+      "Mountains beside the hill sites, for Holy Site and Campus adjacency and for Rock-Hewn Church Faith.",
+      "Two or more copies of the same improvable resource in one city's reach, since Aksumite Legacy pays more for duplicates.",
+      "Mount Kilimanjaro for Food beside the hill cities, or any natural wonder for Astrology and Kandy's Relics.",
+      "Desert Hills inside the core for Jebel Barkal."
+    ],
+    "no_go": "A flat start with fewer than three hill sites in reach, or Hills only in tundra and desert with no Food beside them. The leader ability then applies to one or two cities, the conversion is a rounding error, and Ethiopia is a civilization with a Faith-bought museum and nothing else.",
+    "fallback": "Settle the Hills that exist and fill the gaps with flat cities that run Aksumite Legacy alone as resource and Trade Route cities. Take the Culture direction: Faith-bought Archaeologists do not care what the city stands on. Skip the Religion direction unless the Prophet arrives anyway."
+  },
+  "kit_levers": [
+    {
+      "source": "leader_ability",
+      "name": "Council of Ministers",
+      "buys": "Cities founded on Hills turn 15 percent of their Faith per turn into Science and the same share into Culture, and Ethiopian units get +4 Combat Strength fighting on Hills.",
+      "exploit": "Every Faith source goes in a hill city: Holy Sites, Shrines, Temples, the worship building and the Rock-Hewn Churches all sit where the conversion applies, and flat cities get Traders and resources, never a Holy Site. The conversion is paid on Faith per turn, not on the bank, so it arrives whether or not the Faith is spent; that is why the plan audits spending instead of trusting the yields."
+    },
+    {
+      "source": "civ_ability",
+      "name": "Aksumite Legacy",
+      "buys": "Improved resources yield Faith, more when a city owns several copies of the same one; international Trade Routes yield Faith per resource at the origin city; Faith can buy Archaeological Museums and Archaeologists.",
+      "exploit": "The first Builders improve every resource in reach and the cities work those tiles, so the pantheon and the Prophet come from resources as much as from districts. International Traders leave from the city with the most resources. From Humanism and Natural History the Faith stream buys the whole archaeology chain, which is the Culture direction's close."
+    },
+    {
+      "source": "unique_unit",
+      "name": "Oromo Cavalry",
+      "buys": "A Courser replacement with more Combat Strength and Sight that pays no extra Movement on Hills.",
+      "exploit": "Two or three are the whole standing army: they clear barbarians, hold the hill border and fight from Hills where the leader bonus stacks. On flat land against Pikemen they are little better than Coursers, so they defend the highland rather than invade the lowland."
+    },
+    {
+      "source": "unique_infrastructure",
+      "name": "Rock-Hewn Church",
+      "buys": "A Builder improvement placed only on Hills whose Faith grows with the Mountains and Hills around it.",
+      "exploit": "Placed on hill tiles beside Mountains inside hill cities, so its Faith is converted too. A tile yields only while a citizen works it, so each church needs a citizen, and a hill city at five population can work two beside its Farms; the food plan is what lets the churches pay."
+    },
+    {
+      "source": "agenda",
+      "name": "Ethiopian Highlands",
+      "buys": "AI Menelik judges other civilizations by how they settle Hills.",
+      "exploit": "Only matters when AI Menelik is on the map: he wants the same hill sites, so treat him as the first rival for land and settle the contested Hills before he does."
+    }
+  ],
+  "shape_block": {
+    "linear": {
+      "direction": {
+        "options": [
+          {
+            "victory": "Culture",
+            "when_it_fits": "The default. The Oracle stands or a Theater Square is placed beside the capital Holy Site by turn 70, and land neighbours have Antiquity Sites the Archaeologists can reach. Faith patronizes Great Writers and Artists at the Oracle's discount, the Council's Culture share keeps the civic tree ahead, and from Humanism and Natural History Faith buys the museums and Archaeologists that no other civilization can buy with Faith."
+          },
+          {
+            "victory": "Religion",
+            "when_it_fits": "The Great Prophet came by turn 60, and at turn 70 no rival religion holds more than four cities and no religion civilization such as Saladin, Gandhi or Peter is on the map. Ethiopian Faith per turn outruns the AI's, Mahabodhi Temple and Theocracy turn it into Apostles, and the Council keeps Science and Culture moving while the Apostles work, so the empire does not stall the way a pure Religion civilization does."
+          },
+          {
+            "victory": "Science",
+            "when_it_fits": "The Great Prophet was missed, or two religion civilizations share the map, and four or more hill cities sit beside Mountains. Campuses take the Mountain adjacency, Natural Philosophy doubles it, Divine Architect lets Faith buy the Campuses themselves and Faith patronizes Great Scientists; the Council's Science share is the bonus on top."
+          }
+        ],
+        "choose_by": 70,
+        "commit_test": "At turn 110 list what Faith bought since turn 70. Culture: two or more Great Writers or Artists and Theater Squares in half the cities. Religion: Apostles that have converted at least one rival city, and Temples in every Holy Site city. Science: Campuses in half the cities and a Great Scientist. If the Faith went to whatever was cheapest, or sat in the bank, the direction is not chosen, whatever the note at turn 70 says."
+      }
+    }
+  },
+  "phases": [
+    {
+      "id": "highlands",
+      "name": "Settle the Hills",
+      "turns": {
+        "from": 1,
+        "to": 35
+      },
+      "era": "ancient",
+      "objective": "Found the capital and two more cities on Hills with Food beside them, improve every resource in reach and keep it worked, found the pantheon by turn 28 and place the first Holy Site beside a Mountain, so the Faith base exists before the conversion has anything to convert.",
+      "build_order": [
+        {
+          "item": "Scout",
+          "why": "Maps the Mountain ranges and marks every hill site with Food beside it; Writing from the first rival and Astrology from any natural wonder."
+        },
+        {
+          "item": "Slinger",
+          "why": "Archery Eureka on a barbarian scout; standing on a Hill it defends with the +4 bonus while the Scout is away."
+        },
+        {
+          "item": "Settler",
+          "why": "Second city on a hill site with a river or flat grassland beside it; a flat site is never second."
+        },
+        {
+          "item": "Builder",
+          "why": "A Farm on a resource for Irrigation and Food, then a Mine on a bonus or luxury resource; every improved resource is Aksumite Faith."
+        },
+        {
+          "item": "Settler",
+          "why": "Third hill city; Colonization is slotted by now."
+        },
+        {
+          "item": "Holy Site",
+          "why": "In the capital beside a Mountain; it is the first Faith that is not a tile, and the Great Prophet race starts here."
+        },
+        {
+          "item": "Warrior",
+          "why": "Escort for the Settlers and the third barbarian kill toward Bronze Working, fought from Hills."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:pottery",
+          "note": "Granaries; a hill city meets its Housing cap before anything else."
+        },
+        {
+          "id": "tech:mining",
+          "note": "Mines on resources for Religious Idols and The Wheel."
+        },
+        {
+          "id": "tech:irrigation",
+          "note": "Farm a resource beside the capital: the Eureka and the Food Hills lack."
+        },
+        {
+          "id": "tech:astrology",
+          "note": "The Holy Site; Eureka from any natural wonder the Scout finds."
+        },
+        {
+          "id": "tech:wheel",
+          "note": "The first Mine on a resource gives the Eureka."
+        },
+        {
+          "id": "tech:archery",
+          "note": "Slinger kill; Archers hold hill cities cheaply."
+        },
+        {
+          "id": "tech:writing",
+          "note": "The Scout meets a rival; Campuses later."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:code-of-laws",
+          "note": "God King for the pantheon, Discipline against the camps."
+        },
+        {
+          "id": "civic:craftsmanship",
+          "note": "Three improved resources give the Inspiration; Ilkum for the Builders."
+        },
+        {
+          "id": "civic:foreign-trade",
+          "note": "The Trader for Aksumite routes; the Inspiration is rarely in reach from an inland hill start."
+        },
+        {
+          "id": "civic:early-empire",
+          "note": "Six population across three cities; Colonization."
+        },
+        {
+          "id": "civic:mysticism",
+          "note": "The pantheon gives the Inspiration; the Oracle and Revelation."
+        },
+        {
+          "id": "civic:state-workforce",
+          "note": "The capital Holy Site gives the Inspiration; Corvée for the Oracle."
+        }
+      ],
+      "policies": [
+        {
+          "card": "God King",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "Faith in the capital toward the pantheon; it stays until the pantheon is founded."
+        },
+        {
+          "card": "Discipline",
+          "slot": "military",
+          "from": "civic:code-of-laws",
+          "why": "Slingers and Warriors on Hills beat camp units outright."
+        },
+        {
+          "card": "Ilkum",
+          "slot": "economic",
+          "from": "civic:craftsmanship",
+          "why": "Builders faster after the pantheon; every resource they improve is Faith."
+        },
+        {
+          "card": "Colonization",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "Settlers faster for hill cities three and four."
+        }
+      ],
+      "districts": [
+        {
+          "district": "holy-site",
+          "city": "capital",
+          "note": "Beside a Mountain, and beside Woods where possible; placed by turn 30 and finished early in the next phase if Settlers come first."
+        }
+      ],
+      "pantheon": {
+        "slug": "religious-idols",
+        "why": "Two Faith on every Mine over a bonus or luxury resource stacks on the Aksumite Faith that same improved resource already pays, so a mined Silver or Copper pays twice.",
+        "alternative": "stone-circles"
+      },
+      "wonders": [],
+      "governors": [],
+      "city_states": [
+        {
+          "type": "Religious",
+          "why": "The first envoy is +2 Faith in the hill capital, which is converted there and speeds the pantheon."
+        },
+        {
+          "slug": "kandy",
+          "why": "Worth early envoys: each natural wonder found becomes a Relic, which is Faith now and Tourism on the Culture direction."
+        }
+      ],
+      "great_people": [],
+      "checkpoints": [
+        {
+          "turn": 28,
+          "test": "Pantheon founded, the second city standing on a Hill, and two resources improved and worked?",
+          "pass": "Swap God King for Ilkum and keep settling; the Holy Site and the third Settler are next.",
+          "fail": "No pantheon means the improved resources are not being worked or God King went in late: move citizens onto the improved tiles today. A second city on flat land is a mistake not to repeat; the next three go on Hills."
+        },
+        {
+          "turn": 35,
+          "test": "Three hill cities, four resources improved and worked, the capital Holy Site placed, and Faith at six or more per turn?",
+          "pass": "Enter the Faith base phase.",
+          "fail": "Two cities is acceptable with the third Settler walking. Faith under six means unimproved or unworked resources, or no Religious envoy yet; fix the tiles first, then send the next envoy."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "highlands-settle-hill",
+          "turn": 1,
+          "text": "Settle the capital on a Hill, moving at most one tile to reach one with a river, lake or Mountain beside it."
+        },
+        {
+          "id": "highlands-scout-hills",
+          "turn": 3,
+          "text": "Scout the nearest Mountain ranges and mark every hill site with Food beside it; note the first rival's distance."
+        },
+        {
+          "id": "highlands-first-builder",
+          "turn": 14,
+          "text": "First Builder farms a resource and mines a bonus or luxury resource; keep a citizen on each, since an unworked resource pays no Aksumite Faith."
+        },
+        {
+          "id": "highlands-pantheon",
+          "turn": 24,
+          "text": "Found Religious Idols, or Stone Circles if Stone, Marble or Gypsum outnumber the minable resources."
+        },
+        {
+          "id": "highlands-holy-site",
+          "turn": 30,
+          "text": "Holy Site placed in the capital beside a Mountain the turn Astrology is in."
+        },
+        {
+          "id": "highlands-third-city",
+          "turn": 35,
+          "text": "Third city founded on a Hill tile, never on the flat tile beside it."
+        }
+      ]
+    },
+    {
+      "id": "faith-base",
+      "name": "Build the Faith base and choose",
+      "turns": {
+        "from": 36,
+        "to": 85
+      },
+      "era": "classical",
+      "objective": "Reach six hill cities with Holy Sites and Shrines in four, Rock-Hewn Churches worked on the hill tiles beside Mountains, international Trade Routes from the resource cities, the Great Prophet earned and the religion founded, Food enough that every hill city grows past five, and the direction written down by turn 70.",
+      "build_order": [
+        {
+          "item": "Settler",
+          "why": "Hill cities four to six, each beside Food; a flat site is a city the leader ability ignores."
+        },
+        {
+          "item": "Holy Site",
+          "why": "In every hill city with a Mountain beside the site; the conversion is worth nothing until the Faith base exists."
+        },
+        {
+          "item": "Shrine",
+          "why": "In each Holy Site: Faith now and the prerequisite for Temples."
+        },
+        {
+          "item": "Builder",
+          "why": "Rock-Hewn Churches on hill tiles beside Mountains, Farms on flat river tiles, and every remaining resource improved."
+        },
+        {
+          "item": "Trader",
+          "why": "An international route from the city with the most resources: Aksumite Faith per resource, and the Currency Eureka."
+        },
+        {
+          "item": "Oracle",
+          "why": "Built on Hills, so the capital qualifies; cheaper Faith patronage of Great People for the rest of the game."
+        },
+        {
+          "item": "Granary",
+          "why": "Food and Housing in each hill city; their limit is Food and Housing, not land."
+        },
+        {
+          "item": "Water Mill",
+          "why": "Food in the river hill cities and the Construction Eureka."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:bronze-working",
+          "note": "Three barbarian kills from units on Hills give the Eureka."
+        },
+        {
+          "id": "tech:currency",
+          "note": "The first international Trade Route gives the Eureka; Commercial Hubs for more routes."
+        },
+        {
+          "id": "tech:horseback-riding",
+          "note": "A Pasture on hill Sheep or Cattle; Aksumite Faith as well."
+        },
+        {
+          "id": "tech:iron-working",
+          "note": "Jebel Barkal if Desert Hills are in reach; an Iron Mine is another improved resource."
+        },
+        {
+          "id": "tech:construction",
+          "note": "A Water Mill in a river hill city gives the Eureka."
+        },
+        {
+          "id": "tech:mathematics",
+          "note": "Holy Site, Campus and Theater Square by turn 80."
+        },
+        {
+          "id": "tech:engineering",
+          "note": "Aqueducts for hill cities with no fresh water; Walls only where a neighbour threatens."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:political-philosophy",
+          "note": "Three city-states met; Classical Republic and its Wildcard slot for Revelation."
+        },
+        {
+          "id": "civic:military-tradition",
+          "note": "The first camp cleared from a hill tile gives the Inspiration."
+        },
+        {
+          "id": "civic:games-and-recreation",
+          "note": "Construction gives the Inspiration; Arenas for a hill empire short of luxuries."
+        },
+        {
+          "id": "civic:drama-and-poetry",
+          "note": "The Oracle gives the Inspiration; Theater Squares and Aesthetics for the Culture direction."
+        },
+        {
+          "id": "civic:theology",
+          "note": "Founding the religion gives the Inspiration; Temples and Scripture."
+        },
+        {
+          "id": "civic:recorded-history",
+          "note": "Two Mountain Campuses give the Inspiration; Natural Philosophy for the Science direction."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Revelation",
+          "slot": "wildcard",
+          "from": "civic:mysticism",
+          "why": "Great Prophet points until the religion is founded; swap it out the turn after."
+        },
+        {
+          "card": "Corvée",
+          "slot": "economic",
+          "from": "civic:state-workforce",
+          "why": "The Oracle and Jebel Barkal faster in a hill capital with modest Production."
+        },
+        {
+          "card": "Scripture",
+          "slot": "economic",
+          "from": "civic:theology",
+          "why": "Holy Site adjacency doubled; Mountain Holy Sites are the base the Council converts."
+        },
+        {
+          "card": "Charismatic Leader",
+          "slot": "diplomatic",
+          "from": "civic:political-philosophy",
+          "why": "Envoys toward Kandy and Valletta suzerainty."
+        }
+      ],
+      "districts": [
+        {
+          "district": "holy-site",
+          "city": "every hill city with a Mountain beside the site",
+          "note": "Mountain and Woods adjacency; Shrines at once, Temples after Theology."
+        },
+        {
+          "district": "campus",
+          "city": "capital and the best Mountain city",
+          "note": "Two for Recorded History on every direction; more only on the Science direction."
+        },
+        {
+          "district": "theater-square",
+          "city": "capital, beside the Holy Site and the Oracle",
+          "note": "Placed by turn 70 on the Culture direction; the wonder beside it is adjacency."
+        }
+      ],
+      "pantheon": {
+        "slug": "religious-idols",
+        "why": "Already founded; every new Mine on a bonus or luxury resource adds to it."
+      },
+      "wonders": [
+        {
+          "name": "Oracle",
+          "why": "Must stand on Hills, which the capital supplies; Great Person patronage costs less Faith and districts in the city earn extra Great Person points.",
+          "skip_if": "A rival has Mysticism ten turns before you, or the capital's Production is under eight at turn 45."
+        },
+        {
+          "name": "Jebel Barkal",
+          "why": "Faith in every city within six tiles, which the Council converts in each hill city it reaches.",
+          "skip_if": "No Desert Hills inside a core city's borders, or Iron Working lands after turn 75."
+        },
+        {
+          "name": "Mahabodhi Temple",
+          "why": "Religion direction: two free Apostles and Faith in the Holy Site city.",
+          "skip_if": "The direction is not Religion, or no Woods tile sits beside a Holy Site with a Temple."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "magnus",
+          "promotion": "Surplus Logistics",
+          "city": "capital",
+          "why": "Faster growth in the hill capital toward Civil Service, and extra Food to every hungry hill city that sends a domestic route into it."
+        },
+        {
+          "governor": "moksha",
+          "promotion": "Bishop",
+          "city": "the second Holy Site city",
+          "why": "Faith per specialty district in a hill city the Council converts, and religious pressure that keeps neighbours' religions out."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "kandy",
+          "why": "Suzerainty turns each natural wonder found into a Relic: Faith now, Tourism on the Culture direction."
+        },
+        {
+          "slug": "valletta",
+          "why": "Faith buys City Center buildings, so Granaries, Water Mills and Walls come out of the Faith stream in hill cities short of Production."
+        },
+        {
+          "type": "Religious",
+          "why": "Three envoys for Faith in every Shrine across six Holy Sites."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-prophet",
+          "why": "The religion is founded by turn 70 or not at all; three Holy Sites, Shrines and Revelation get there at Emperor."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 70,
+          "test": "Direction written down: Culture with the Oracle or a capital Theater Square, Religion with a Prophet by turn 60 and no rival religion above four cities, or Science with the Prophet missed? Is the next Faith purchase on that direction's list?",
+          "pass": "Queues switch to the direction's list: Theater Squares, Faith held for Apostles, or Campuses.",
+          "fail": "No direction at turn 70 is the shape's failure. Decide by the Prophet: founded means Culture, missed means Culture with the Oracle or Science without it, and put the next Faith purchase on that path today."
+        },
+        {
+          "turn": 85,
+          "test": "Six hill cities, Holy Sites in four, Rock-Hewn Churches worked in three cities, Faith at 35 or more per turn, and every hill city above five population?",
+          "pass": "Enter the spending phase.",
+          "fail": "Hill cities stuck at five come first: Farms on flat river tiles, a Faith-bought Granary through Valletta, and a domestic route from each stalled city into Magnus's capital before any new district. Fewer than six cities: one more hill site, then stop; flat cities add nothing to the leader ability."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "faith-base-government",
+          "turn": 45,
+          "text": "Adopt Classical Republic the turn Political Philosophy lands and slot Revelation in its Wildcard."
+        },
+        {
+          "id": "faith-base-oracle",
+          "turn": 50,
+          "text": "Start the Oracle in the capital with Corvée slotted; skip it if the skip test fails."
+        },
+        {
+          "id": "faith-base-prophet",
+          "turn": 62,
+          "text": "Great Prophet earned; found the religion in the capital with a Founder belief that pays per follower and Jesuit Education as the Follower, or Feed the World if hill cities are starving."
+        },
+        {
+          "id": "faith-base-rock-hewn",
+          "turn": 66,
+          "text": "Rock-Hewn Churches on the hill tiles beside Mountains in the capital and the second city, each one worked by a citizen."
+        },
+        {
+          "id": "faith-base-decide",
+          "turn": 70,
+          "text": "Write the direction down: Culture, Religion or Science. Every Faith purchase after this turn serves it."
+        },
+        {
+          "id": "faith-base-trade",
+          "turn": 78,
+          "text": "Two international Trade Routes running from the two most resource-rich cities."
+        }
+      ]
+    },
+    {
+      "id": "spend",
+      "name": "Spend the Faith",
+      "turns": {
+        "from": 86,
+        "to": 160
+      },
+      "era": "medieval",
+      "objective": "Turn the Faith stream into the chosen direction every turn while the Council turns the same stream into Science and Culture: Theater Squares and Faith-patronized Great Writers and Artists for Culture, Apostles and Theocracy for Religion, Campuses and Faith-bought Libraries and Universities for Science. Pass the era checkpoint that asks whether the Faith is being spent or banked.",
+      "build_order": [
+        {
+          "item": "Temple",
+          "why": "In every Holy Site city: Faith, the Divine Right Inspiration and the step before the worship building."
+        },
+        {
+          "item": "Theater Square",
+          "why": "Culture direction: every hill city, beside its Holy Site; the capital only on the other directions."
+        },
+        {
+          "item": "Campus",
+          "why": "Science direction: every hill city beside a Mountain; the two from Recorded History otherwise."
+        },
+        {
+          "item": "Aqueduct",
+          "why": "Housing in hill cities with no fresh water, and the Military Engineering Eureka."
+        },
+        {
+          "item": "Commercial Hub",
+          "why": "Two, for Trade Route capacity and Guilds; more international routes are more Aksumite Faith."
+        },
+        {
+          "item": "Oromo Cavalry",
+          "why": "Two or three on the hill border: the defensive army and the barbarian clean-up, fighting from Hills with the +4 bonus."
+        },
+        {
+          "item": "Builder",
+          "why": "Six Farms for Feudalism on flat river tiles and on grassland Hills the churches do not need."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:apprenticeship",
+          "note": "Three Mines on hill tiles give the Eureka; Industrial Zones later."
+        },
+        {
+          "id": "tech:stirrups",
+          "note": "Feudalism gives the Eureka; no Knights are needed."
+        },
+        {
+          "id": "tech:castles",
+          "note": "A Tier 2 government gives the Eureka; the Oromo Cavalry and Medieval Walls in the border hill city."
+        },
+        {
+          "id": "tech:military-engineering",
+          "note": "The first Aqueduct gives the Eureka."
+        },
+        {
+          "id": "tech:education",
+          "note": "Universities; boosted only if a Great Scientist arrives."
+        },
+        {
+          "id": "tech:astronomy",
+          "note": "A University in a Mountain Campus gives the Eureka; Potala Palace."
+        },
+        {
+          "id": "tech:printing",
+          "note": "Two Universities give the Eureka."
+        },
+        {
+          "id": "tech:banking",
+          "note": "Guilds gives the Eureka."
+        },
+        {
+          "id": "tech:mass-production",
+          "note": "A Lumber Mill gives the Eureka; on the way to Industrialization."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:feudalism",
+          "note": "Six Farms from the food plan; Serfdom for the church and Farm Builders."
+        },
+        {
+          "id": "civic:civil-service",
+          "note": "The capital at ten population; Meritocracy."
+        },
+        {
+          "id": "civic:divine-right",
+          "note": "Two Temples give the Inspiration."
+        },
+        {
+          "id": "civic:guilds",
+          "note": "Two Markets give the Inspiration; Banking Eureka."
+        },
+        {
+          "id": "civic:medieval-faires",
+          "note": "Four Trade Routes give the Inspiration."
+        },
+        {
+          "id": "civic:reformed-church",
+          "note": "Six of your cities following your religion; Theocracy on the Religion direction."
+        },
+        {
+          "id": "civic:humanism",
+          "note": "A Great Artist patronized with Faith gives the Inspiration; Art and Archaeological Museums, which Ethiopia buys with Faith."
+        },
+        {
+          "id": "civic:the-enlightenment",
+          "note": "Three Great People give the Inspiration; Rationalism for the Science direction."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Serfdom",
+          "slot": "economic",
+          "from": "civic:feudalism",
+          "why": "Builders with extra charges for Rock-Hewn Churches and Farms."
+        },
+        {
+          "card": "Meritocracy",
+          "slot": "economic",
+          "from": "civic:civil-service",
+          "why": "Culture per specialty district, and every hill city has two or three."
+        },
+        {
+          "card": "Aesthetics",
+          "slot": "economic",
+          "from": "civic:drama-and-poetry",
+          "why": "Culture direction: Theater Square adjacency doubled."
+        },
+        {
+          "card": "Literary Tradition",
+          "slot": "wildcard",
+          "from": "civic:drama-and-poetry",
+          "why": "Culture direction: Great Writer points while Faith patronizes the rest."
+        },
+        {
+          "card": "Natural Philosophy",
+          "slot": "economic",
+          "from": "civic:recorded-history",
+          "why": "Science direction: Campus adjacency doubled, and Mountain Campuses are what hill sites have."
+        },
+        {
+          "card": "Theocracy",
+          "slot": "wildcard",
+          "from": "civic:reformed-church",
+          "why": "Religion direction: the government; stronger religious combat and Faith-bought land units for the border."
+        }
+      ],
+      "districts": [
+        {
+          "district": "theater-square",
+          "city": "every hill city on the Culture direction, otherwise the capital",
+          "note": "Beside the Holy Site; Amphitheaters bought with Faith under Jesuit Education."
+        },
+        {
+          "district": "campus",
+          "city": "every Mountain hill city on the Science direction, otherwise two",
+          "note": "Libraries and Universities bought with Faith under Jesuit Education."
+        },
+        {
+          "district": "commercial-hub",
+          "city": "the two most resource-rich cities",
+          "note": "Trade Route capacity for the international routes Aksumite Legacy pays on."
+        },
+        {
+          "district": "aqueduct",
+          "city": "every hill city with no fresh water",
+          "note": "Housing first; the Military Engineering Eureka."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Potala Palace",
+          "why": "Must stand on a Hill beside a Mountain, which Ethiopian cities have; Culture, Faith and an extra Diplomatic slot.",
+          "skip_if": "Astronomy lands after turn 145, or every hill tile beside a Mountain already holds a Rock-Hewn Church worth more."
+        },
+        {
+          "name": "Hagia Sophia",
+          "why": "Religion direction: every Apostle spreads once more and the Holy Site city gets Faith.",
+          "skip_if": "The direction is not Religion, or no flat tile sits beside a Holy Site."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "moksha",
+          "promotion": "Divine Architect",
+          "city": "whichever hill city the direction's next district goes in",
+          "why": "Districts bought with Faith: Theater Squares, Campuses or Holy Sites, moved city to city as the direction needs them."
+        },
+        {
+          "governor": "pingala",
+          "promotion": "Connoisseur",
+          "city": "the largest hill city after the capital",
+          "why": "Culture direction: Culture per citizen; Researcher instead on the Science direction."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "antananarivo",
+          "why": "Culture direction: Culture for every Great Person earned, and Faith patronage earns many."
+        },
+        {
+          "slug": "mohenjo-daro",
+          "why": "Full Housing from water in every hill city that has none, which is the Housing half of the food plan."
+        },
+        {
+          "slug": "yerevan",
+          "why": "Religion direction: Apostles choose their promotions."
+        },
+        {
+          "type": "Scientific",
+          "why": "Science direction: Science in every Library and University."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-writer",
+          "why": "Culture direction: patronized with Faith at the Oracle's discount into Amphitheater slots."
+        },
+        {
+          "class": "great-artist",
+          "why": "Culture direction: the Humanism Inspiration and the first Great Works of Art."
+        },
+        {
+          "class": "great-scientist",
+          "why": "Science direction: patronized with Faith; the Education Eureka."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 120,
+          "test": "Era checkpoint. Is the Faith being spent? Over the last twenty turns it should have bought the direction's things: Great Writers or Artists and Theater Square buildings, Apostles and Temples, or Libraries and Universities. A bank above the cost of the next Great Person with nothing queued means it is not.",
+          "pass": "Continue; the conversion is compounding into the right yields.",
+          "fail": "Faith banked is the shape's characteristic failure. Spend the bank today on the direction's next purchase and write down the next three Faith purchases."
+        },
+        {
+          "turn": 160,
+          "test": "Six to eight hill cities, Temples in every Holy Site city, Humanism done, and the direction's milestone met: three Great Works for Culture, a majority in two rival civilizations for Religion, or Universities in four cities for Science?",
+          "pass": "Enter the three-paths phase.",
+          "fail": "Below the milestone but still reachable: cut every build that is not the direction's. Out of reach: pivot now while the flat curve makes it cheap; Culture is the usual landing because the Faith-bought museums are still ahead."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "spend-temples",
+          "turn": 95,
+          "text": "Temples in every Holy Site city; Divine Right Inspiration collected."
+        },
+        {
+          "id": "spend-oromo",
+          "turn": 105,
+          "text": "Two Oromo Cavalry posted on Hills at the most exposed border."
+        },
+        {
+          "id": "spend-apostles",
+          "turn": 110,
+          "text": "Religion direction: Apostles from the Holy Site cities into the nearest rival with the weakest religion."
+        },
+        {
+          "id": "spend-patronage",
+          "turn": 115,
+          "text": "Culture direction: patronize the first Great Writer with Faith and buy an Amphitheater for it."
+        },
+        {
+          "id": "spend-universities",
+          "turn": 140,
+          "text": "Science direction: Universities in four Mountain Campuses, bought with Faith where Jesuit Education allows."
+        },
+        {
+          "id": "spend-humanism",
+          "turn": 150,
+          "text": "The turn Humanism lands, buy an Archaeological Museum with Faith in the best Theater Square city."
+        }
+      ]
+    },
+    {
+      "id": "three-paths",
+      "name": "One stream, three paths",
+      "turns": {
+        "from": 161,
+        "to": 235
+      },
+      "era": "industrial",
+      "objective": "Point the whole Faith stream at the chosen close: Archaeologists digging every Antiquity Site into Faith-bought museums and Naturalists making National Parks for Culture; Apostles and Inquisitors converting the last holdouts for Religion; Faith-bought Research Labs and Great Scientists for Science. Pass the era checkpoint that asks whether the path is still reachable.",
+      "build_order": [
+        {
+          "item": "Archaeological Museum",
+          "why": "Culture direction: Faith-bought in every Theater Square city; the first gives the Natural History Inspiration."
+        },
+        {
+          "item": "Archaeologist",
+          "why": "Culture direction: Faith-bought two at a time and sent to the richest Antiquity Sites; the first Artifact is the Combustion Eureka."
+        },
+        {
+          "item": "Art Museum",
+          "why": "Culture direction: the second museum type for Opera and Ballet and the Great Works of Art."
+        },
+        {
+          "item": "Industrial Zone",
+          "why": "Two, for Workshops and Industrialization; Faith does not build Factories."
+        },
+        {
+          "item": "Research Lab",
+          "why": "Science direction: Faith-bought under Jesuit Education in every Campus city."
+        },
+        {
+          "item": "Apostle",
+          "why": "Religion direction: Faith-bought with Debater or Proselytizer promotions for the last holdouts."
+        },
+        {
+          "item": "Neighborhood",
+          "why": "Housing for hill cities past their cap, placed on a Breathtaking tile for Conservation."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:industrialization",
+          "note": "Two Workshops give the Eureka."
+        },
+        {
+          "id": "tech:scientific-theory",
+          "note": "The Enlightenment gives the Eureka; Oxford University. Research Labs wait for Chemistry."
+        },
+        {
+          "id": "tech:rifling",
+          "note": "A Niter Mine gives the Eureka and is Aksumite Faith."
+        },
+        {
+          "id": "tech:combustion",
+          "note": "The first extracted Artifact gives the Eureka."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:natural-history",
+          "note": "A Faith-bought Archaeological Museum gives the Inspiration; Archaeologists and Antiquity Sites."
+        },
+        {
+          "id": "civic:colonialism",
+          "note": "Astronomy gives the Inspiration."
+        },
+        {
+          "id": "civic:opera-and-ballet",
+          "note": "An Art Museum gives the Inspiration; Grand Opera."
+        },
+        {
+          "id": "civic:civil-engineering",
+          "note": "Seven district types give the Inspiration; Public Works."
+        },
+        {
+          "id": "civic:urbanization",
+          "note": "Neighborhoods; usually unboosted in a hill empire."
+        },
+        {
+          "id": "civic:conservation",
+          "note": "A Breathtaking Neighborhood gives the Inspiration; Naturalists for National Parks."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Grand Opera",
+          "slot": "economic",
+          "from": "civic:opera-and-ballet",
+          "why": "Culture direction: more Culture from Theater Square buildings in the larger cities."
+        },
+        {
+          "card": "Rationalism",
+          "slot": "economic",
+          "from": "civic:the-enlightenment",
+          "why": "Science direction: more Science from Campus buildings."
+        },
+        {
+          "card": "Public Works",
+          "slot": "economic",
+          "from": "civic:civil-engineering",
+          "why": "Builders faster for Farms, Mines and the last churches."
+        },
+        {
+          "card": "Frescoes",
+          "slot": "wildcard",
+          "from": "civic:humanism",
+          "why": "Culture direction: Great Artist points beside the Faith patronage."
+        }
+      ],
+      "districts": [
+        {
+          "district": "industrial-zone",
+          "city": "the two best Production hill cities",
+          "note": "Workshops for Industrialization; Factories for the regional Production."
+        },
+        {
+          "district": "neighborhood",
+          "city": "the two largest cities",
+          "note": "On Breathtaking hill tiles beside Mountains for Conservation."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Oxford University",
+          "why": "Science direction: two free technologies and Great Scientist points.",
+          "skip_if": "The direction is not Science, or Scientific Theory lands after turn 215."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Curator",
+          "city": "the city with the most museums",
+          "why": "Culture direction: Tourism from its Great Works doubled; put the Artifacts there."
+        },
+        {
+          "governor": "moksha",
+          "promotion": "Grand Inquisitor",
+          "city": "capital",
+          "why": "Religion direction: Inquisitors defend the core while the Apostles finish abroad."
+        }
+      ],
+      "city_states": [
+        {
+          "type": "Cultural",
+          "why": "Culture direction: six envoys for Culture in every Art and Archaeological Museum."
+        },
+        {
+          "type": "Scientific",
+          "why": "Science direction: six envoys for Science in every University."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-artist",
+          "why": "Culture direction: Great Works of Art for the Art Museums."
+        },
+        {
+          "class": "great-musician",
+          "why": "Culture direction: patronized with Faith once Broadcast Centers are coming."
+        },
+        {
+          "class": "great-scientist",
+          "why": "Science direction: Research Lab boosts and the late Eurekas."
+        },
+        {
+          "class": "great-engineer",
+          "why": "Production for the Industrial Zones and, on the Science direction, the Spaceport."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 200,
+          "test": "Era checkpoint. Is the chosen path still reachable? Culture: four or more Artifacts displayed and Tourism rising toward the top rival's Culture. Religion: your religion the majority in half the civilizations. Science: Research Labs in three cities and Science first among met civilizations.",
+          "pass": "Continue; the close is thirty-five turns away.",
+          "fail": "Pivot rather than force it. The Faith stream funds all three paths, so switch to whichever the empire is nearest; Culture is usually nearest because museums and Archaeologists are bought, not built."
+        },
+        {
+          "turn": 235,
+          "test": "Culture: National Parks or themed museums started? Religion: two civilizations left to convert? Science: Spaceport site reserved and Research Labs in half the cities?",
+          "pass": "Enter the close on the same direction; there are no more pivots after this.",
+          "fail": "None: the game is a Score game; keep Faith buying Great People and Culture buildings, which Ethiopia does well."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "three-paths-museums",
+          "turn": 170,
+          "text": "Culture direction: Archaeological Museums bought with Faith in three Theater Square cities."
+        },
+        {
+          "id": "three-paths-archaeologists",
+          "turn": 180,
+          "text": "Culture direction: two Archaeologists bought with Faith and digging the nearest Antiquity Sites."
+        },
+        {
+          "id": "three-paths-apostles",
+          "turn": 190,
+          "text": "Religion direction: Apostles with Debater into the largest unconverted civilization, Inquisitors at home."
+        },
+        {
+          "id": "three-paths-labs",
+          "turn": 205,
+          "text": "Science direction: Research Labs bought with Faith in three Campus cities."
+        },
+        {
+          "id": "three-paths-parks",
+          "turn": 220,
+          "text": "Culture direction: the first Naturalist bought with Faith and a National Park on the hill-and-Mountain land."
+        }
+      ]
+    },
+    {
+      "id": "close",
+      "name": "Close",
+      "turns": {
+        "from": 236,
+        "to": null
+      },
+      "era": "atomic",
+      "objective": "Close out the direction with the Faith stream: Rock Bands, Naturalists and themed museums for Culture; the last conversions for Religion; the Spaceport projects, with Great Scientists patronized by Faith, for Science.",
+      "build_order": [
+        {
+          "item": "Rock Band",
+          "why": "Culture direction: Faith-bought and sent to the rivals with the most domestic tourists."
+        },
+        {
+          "item": "Naturalist",
+          "why": "Culture direction: Faith-bought; National Parks on the hill-and-Mountain regions that have the Appeal."
+        },
+        {
+          "item": "Broadcast Center",
+          "why": "Culture direction: Great Works of Music slots and the Satellites Eureka."
+        },
+        {
+          "item": "Spaceport",
+          "why": "Science direction: the projects start the turn it finishes."
+        },
+        {
+          "item": "Apostle",
+          "why": "Religion direction: Faith-bought for the last two civilizations, with Inquisitors held at home behind them."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:radio",
+          "note": "The first National Park gives the Eureka."
+        },
+        {
+          "id": "tech:computers",
+          "note": "Democracy or another Tier 3 government gives the Eureka; on the Science direction it leads to the Spaceport technologies."
+        },
+        {
+          "id": "tech:satellites",
+          "note": "Two Broadcast Centers give the Eureka."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:mass-media",
+          "note": "Radio gives the Inspiration."
+        },
+        {
+          "id": "civic:cultural-heritage",
+          "note": "A themed museum gives the Inspiration; Heritage Tourism."
+        },
+        {
+          "id": "civic:social-media",
+          "note": "Telecommunications gives the Inspiration; Online Communities."
+        },
+        {
+          "id": "civic:space-race",
+          "note": "A Spaceport gives the Inspiration on the Science direction."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Heritage Tourism",
+          "slot": "economic",
+          "from": "civic:cultural-heritage",
+          "why": "Culture direction: Tourism from Artifacts and Great Works of Art doubled."
+        },
+        {
+          "card": "Online Communities",
+          "slot": "economic",
+          "from": "civic:social-media",
+          "why": "Culture direction: more Tourism toward every civilization an international Trade Route reaches, and Aksumite Legacy already wants those routes."
+        },
+        {
+          "card": "International Space Agency",
+          "slot": "diplomatic",
+          "from": "civic:space-race",
+          "why": "Science direction: Science per city-state suzerainty."
+        }
+      ],
+      "districts": [
+        {
+          "district": "spaceport",
+          "city": "the best Production city",
+          "note": "Science direction only."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Eiffel Tower",
+          "why": "Culture direction: Appeal on every tile, which makes more National Park sites and Breathtaking tiles.",
+          "skip_if": "The direction is not Culture, or Steel lands after turn 250."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Space Initiative",
+          "city": "the Spaceport city",
+          "why": "Science direction: Production toward the projects."
+        }
+      ],
+      "city_states": [],
+      "great_people": [
+        {
+          "class": "great-musician",
+          "why": "Culture direction: patronized with Faith into Broadcast Centers."
+        },
+        {
+          "class": "great-scientist",
+          "why": "Science direction: patronized with Faith for the last Eurekas and the projects."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 280,
+          "test": "Culture: domestic tourists above two rivals' and rising? Religion: one civilization left? Science: Moon Landing done and the Mars projects running?",
+          "pass": "Continue to the end.",
+          "fail": "Convert to Score: Faith keeps buying Great People and Culture buildings, and the plan stops paying for anything that does not add to the score."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "close-rock-bands",
+          "turn": 245,
+          "text": "Culture direction: two Rock Bands bought with Faith and sent to the rival with the most domestic tourists."
+        },
+        {
+          "id": "close-spaceport",
+          "turn": 250,
+          "text": "Science direction: Spaceport built and the first project started."
+        },
+        {
+          "id": "close-last-convert",
+          "turn": 255,
+          "text": "Religion direction: Apostles and Inquisitor escorts on the last holdout, with Theocracy slotted."
+        },
+        {
+          "id": "close-review",
+          "turn": 280,
+          "text": "Review the turn 280 checkpoint and continue or declare the game a Score game."
+        }
+      ]
+    }
+  ],
+  "boosts": [
+    {
+      "id": "tech:astrology",
+      "fit": "cheap",
+      "when": "highlands",
+      "how": "Any natural wonder the Scout finds while it maps the Mountain ranges beside the hill sites."
+    },
+    {
+      "id": "tech:irrigation",
+      "fit": "free",
+      "when": "highlands",
+      "how": "The first Builder farms a resource beside the hill capital, which needs the Food anyway."
+    },
+    {
+      "id": "tech:archery",
+      "fit": "cheap",
+      "when": "highlands",
+      "how": "The Slinger finishes a barbarian scout, ideally from a hill tile."
+    },
+    {
+      "id": "tech:writing",
+      "fit": "free",
+      "when": "highlands",
+      "how": "The Scout meets the first civilization."
+    },
+    {
+      "id": "tech:wheel",
+      "fit": "free",
+      "when": "highlands",
+      "how": "The first Mine goes on a bonus or luxury resource for Religious Idols."
+    },
+    {
+      "id": "tech:sailing",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:masonry",
+      "fit": "cheap",
+      "when": "faith-base",
+      "how": "A Quarry on Stone, Marble or Gypsum, which pays Aksumite Faith as well."
+    },
+    {
+      "id": "tech:bronze-working",
+      "fit": "cheap",
+      "when": "faith-base",
+      "how": "Three barbarian kills by Slingers and Warriors fighting from Hills with the +4 bonus."
+    },
+    {
+      "id": "tech:currency",
+      "fit": "free",
+      "when": "faith-base",
+      "how": "The first international Trade Route, sent from the most resource-rich city for Aksumite Faith."
+    },
+    {
+      "id": "tech:horseback-riding",
+      "fit": "cheap",
+      "when": "faith-base",
+      "how": "A Pasture on Sheep or Cattle, which also pays Aksumite Faith."
+    },
+    {
+      "id": "tech:iron-working",
+      "fit": "cheap",
+      "when": "faith-base",
+      "how": "A Mine on Iron; it is an improved resource like any other."
+    },
+    {
+      "id": "tech:construction",
+      "fit": "cheap",
+      "when": "faith-base",
+      "how": "A Water Mill in a river hill city, built for the Food."
+    },
+    {
+      "id": "tech:mathematics",
+      "fit": "cheap",
+      "when": "faith-base",
+      "how": "Holy Site, Campus and Theater Square standing by turn 80."
+    },
+    {
+      "id": "tech:engineering",
+      "fit": "costly",
+      "when": "faith-base",
+      "how": "Ancient Walls only in a border hill city under threat; otherwise research it unboosted for Aqueducts."
+    },
+    {
+      "id": "tech:apprenticeship",
+      "fit": "free",
+      "when": "spend",
+      "how": "Three Mines on the hill tiles not taken by Rock-Hewn Churches."
+    },
+    {
+      "id": "tech:stirrups",
+      "fit": "free",
+      "when": "spend",
+      "how": "Feudalism is on the civic path."
+    },
+    {
+      "id": "tech:castles",
+      "fit": "free",
+      "when": "spend",
+      "how": "Any Tier 2 government: Theocracy, Monarchy or Merchant Republic."
+    },
+    {
+      "id": "tech:military-engineering",
+      "fit": "free",
+      "when": "spend",
+      "how": "The first Aqueduct, which a hill city with no fresh water needs for Housing."
+    },
+    {
+      "id": "tech:education",
+      "fit": "costly",
+      "when": "spend",
+      "how": "A Great Scientist; patronized with Faith only on the Science direction."
+    },
+    {
+      "id": "tech:astronomy",
+      "fit": "cheap",
+      "when": "spend",
+      "how": "A University in a Campus beside a Mountain, which the hill sites provide."
+    },
+    {
+      "id": "tech:printing",
+      "fit": "cheap",
+      "when": "spend",
+      "how": "Two Universities, Faith-bought where Jesuit Education was taken."
+    },
+    {
+      "id": "tech:banking",
+      "fit": "free",
+      "when": "spend",
+      "how": "Guilds is on the civic path."
+    },
+    {
+      "id": "tech:mass-production",
+      "fit": "cheap",
+      "when": "spend",
+      "how": "One Lumber Mill on Woods beside a hill city."
+    },
+    {
+      "id": "tech:buttress",
+      "fit": "costly",
+      "when": "spend",
+      "how": "A Classical or later wonder: Jebel Barkal or Mahabodhi Temple if either was built."
+    },
+    {
+      "id": "tech:industrialization",
+      "fit": "cheap",
+      "when": "three-paths",
+      "how": "Two Workshops in the Industrial Zones."
+    },
+    {
+      "id": "tech:scientific-theory",
+      "fit": "free",
+      "when": "three-paths",
+      "how": "The Enlightenment is on the civic path."
+    },
+    {
+      "id": "tech:rifling",
+      "fit": "cheap",
+      "when": "three-paths",
+      "how": "A Mine on Niter, which is also Aksumite Faith."
+    },
+    {
+      "id": "tech:combustion",
+      "fit": "free",
+      "when": "three-paths",
+      "how": "The first Archaeologist extracts an Artifact; buy one with Faith even off the Culture direction."
+    },
+    {
+      "id": "tech:radio",
+      "fit": "free",
+      "when": "close",
+      "how": "The first National Park from a Faith-bought Naturalist."
+    },
+    {
+      "id": "tech:computers",
+      "fit": "free",
+      "when": "close",
+      "how": "Any Tier 3 government."
+    },
+    {
+      "id": "tech:satellites",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Broadcast Centers on the Culture direction."
+    },
+    {
+      "id": "tech:chemistry",
+      "fit": "cheap",
+      "when": "three-paths",
+      "how": "Alliance level 2 with the Diplomatic Service ally."
+    },
+    {
+      "id": "civic:craftsmanship",
+      "fit": "free",
+      "when": "highlands",
+      "how": "Three improved tiles from the first Builders, which Aksumite Legacy wants anyway."
+    },
+    {
+      "id": "civic:foreign-trade",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:mysticism",
+      "fit": "free",
+      "when": "highlands",
+      "how": "Founding the pantheon."
+    },
+    {
+      "id": "civic:early-empire",
+      "fit": "free",
+      "when": "highlands",
+      "how": "Six population across three hill cities."
+    },
+    {
+      "id": "civic:state-workforce",
+      "fit": "free",
+      "when": "highlands",
+      "how": "The capital Holy Site, which is the first district."
+    },
+    {
+      "id": "civic:military-tradition",
+      "fit": "cheap",
+      "when": "faith-base",
+      "how": "Clear the nearest barbarian outpost with units standing on Hills."
+    },
+    {
+      "id": "civic:political-philosophy",
+      "fit": "cheap",
+      "when": "faith-base",
+      "how": "Three city-states met by the Scout and the escorts."
+    },
+    {
+      "id": "civic:games-and-recreation",
+      "fit": "free",
+      "when": "faith-base",
+      "how": "Researching Construction."
+    },
+    {
+      "id": "civic:theology",
+      "fit": "cheap",
+      "when": "faith-base",
+      "how": "Founding the religion with the Great Prophet."
+    },
+    {
+      "id": "civic:drama-and-poetry",
+      "fit": "cheap",
+      "when": "faith-base",
+      "how": "The Oracle in the hill capital."
+    },
+    {
+      "id": "civic:recorded-history",
+      "fit": "cheap",
+      "when": "faith-base",
+      "how": "Two Campuses beside Mountains, in the capital and the best Mountain city."
+    },
+    {
+      "id": "civic:defensive-tactics",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:feudalism",
+      "fit": "cheap",
+      "when": "spend",
+      "how": "Six Farms on flat river tiles and grassland Hills, which the food plan builds anyway."
+    },
+    {
+      "id": "civic:civil-service",
+      "fit": "cheap",
+      "when": "spend",
+      "how": "The capital at ten population with its Farms, a Granary and Magnus's Surplus Logistics."
+    },
+    {
+      "id": "civic:divine-right",
+      "fit": "free",
+      "when": "spend",
+      "how": "Two Temples in the Holy Site cities."
+    },
+    {
+      "id": "civic:guilds",
+      "fit": "cheap",
+      "when": "spend",
+      "how": "Two Markets in the Commercial Hubs that host the Trade Routes."
+    },
+    {
+      "id": "civic:medieval-faires",
+      "fit": "cheap",
+      "when": "spend",
+      "how": "Four Trade Routes running, the international ones from the resource cities."
+    },
+    {
+      "id": "civic:reformed-church",
+      "fit": "free",
+      "when": "spend",
+      "how": "Six Ethiopian cities following your own religion."
+    },
+    {
+      "id": "civic:humanism",
+      "fit": "cheap",
+      "when": "spend",
+      "how": "Patronize a Great Artist with Faith at the Oracle's discount."
+    },
+    {
+      "id": "civic:diplomatic-service",
+      "fit": "cheap",
+      "when": "spend",
+      "how": "An alliance with the friendliest neighbour, which also starts the Chemistry Eureka."
+    },
+    {
+      "id": "civic:the-enlightenment",
+      "fit": "free",
+      "when": "spend",
+      "how": "The Great Prophet, a Great Writer and a Great Artist are three Great People."
+    },
+    {
+      "id": "civic:natural-history",
+      "fit": "free",
+      "when": "three-paths",
+      "how": "Faith-buy the first Archaeological Museum the turn Humanism lands."
+    },
+    {
+      "id": "civic:colonialism",
+      "fit": "free",
+      "when": "three-paths",
+      "how": "Researching Astronomy."
+    },
+    {
+      "id": "civic:opera-and-ballet",
+      "fit": "cheap",
+      "when": "three-paths",
+      "how": "An Art Museum in the second Theater Square city."
+    },
+    {
+      "id": "civic:civil-engineering",
+      "fit": "cheap",
+      "when": "three-paths",
+      "how": "Holy Site, Campus, Theater Square, Commercial Hub, Industrial Zone, Entertainment Complex and one more district type."
+    },
+    {
+      "id": "civic:urbanization",
+      "fit": "costly",
+      "when": "three-paths",
+      "how": "A city at fifteen population, which Hills make slow; usually unboosted."
+    },
+    {
+      "id": "civic:conservation",
+      "fit": "cheap",
+      "when": "three-paths",
+      "how": "A Neighborhood on a Breathtaking tile beside Mountains and Woods."
+    },
+    {
+      "id": "civic:mass-media",
+      "fit": "free",
+      "when": "close",
+      "how": "Researching Radio, which the first National Park boosts."
+    },
+    {
+      "id": "civic:cultural-heritage",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Three Artifacts placed to meet the Archaeological Museum's theming rule."
+    },
+    {
+      "id": "civic:social-media",
+      "fit": "free",
+      "when": "close",
+      "how": "Researching Telecommunications."
+    },
+    {
+      "id": "civic:space-race",
+      "fit": "costly",
+      "when": "close",
+      "how": "A Spaceport; cheap only on the Science direction."
+    },
+    {
+      "id": "civic:distributed-sovereignty",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Faith buys the first Rock Band."
+    }
+  ],
+  "decision_triggers": [
+    {
+      "name": "Prophet race lost",
+      "if": "The last Great Prophet goes to a rival before Ethiopia earns one.",
+      "then": "Drop Revelation and take Culture if the Oracle stands, Science if it does not. Keep the Holy Sites and Rock-Hewn Churches: the Faith still converts, still patronizes Great People, buys districts through Divine Architect and later buys the museums."
+    },
+    {
+      "name": "Hill cities starving",
+      "if": "Two or more hill cities sit at five population or less with growth stalled.",
+      "then": "Farms on flat river tiles first, Granaries and Water Mills bought with Faith through Valletta, a domestic Trade Route from each stalled city into Magnus's capital, and the next city goes beside a river. No new district until they grow."
+    },
+    {
+      "name": "Flat site temptation",
+      "if": "The only open city sites are flat, or a flat site holds a luxury the empire needs.",
+      "then": "Settle it only for the luxury or the resources and run it as a resource city: international Traders out of it, no Holy Site, no Theater Square. Every district the Council would have paid for belongs in a hill city."
+    },
+    {
+      "name": "Faith bank growing",
+      "if": "The Faith bank is above the cost of the next Great Person or Archaeologist with nothing queued for two turns.",
+      "then": "Spend it on the direction now. The Council pays on Faith per turn, not on the bank, so banked Faith converts nothing more and buys nothing at all."
+    },
+    {
+      "name": "Golden Age with land open",
+      "if": "A Golden Age begins while hill sites with Food are still unclaimed.",
+      "then": "Take Monumentality and buy the remaining Settlers and Builders with Faith; the Faith base pays for its own expansion, then the dedication returns to the direction's."
+    }
+  ],
+  "abort": {
+    "trigger": "Turn 150 with no direction committed: no Theater Square outside the capital, no Apostle abroad, no Campus beyond the first two, and a Faith bank that has grown for twenty turns.",
+    "actions": [
+      "Pick the direction the empire is already closest to and commit fully; for Ethiopia that is almost always Culture, because Humanism is near and the Faith-bought museums need nothing but a Theater Square.",
+      "Spend the Faith bank today: Theater Squares through Divine Architect, then Great Writers and Artists through patronage.",
+      "Reroute the civic queue to Humanism and Natural History."
+    ]
+  },
+  "fail_state": "Turn 200 with seven comfortable hill cities, the best Faith income on the map, a religion in your own cities and a Faith bank in the thousands, but no museums, no Apostles abroad and no Campus beyond the first two. The Council has paid a modest Science and Culture trickle on Faith that nothing ever spent, and Ethiopia is a mid-table civilization with no victory in reach.",
+  "common_mistakes": [
+    "Settling a good flat site. That city gets no conversion for the whole game, and the conversion is the reason to play Ethiopia.",
+    "Building Rock-Hewn Churches nobody works. An improvement yields only while a citizen works it, and a hill city at five population cannot work three churches and its Farms.",
+    "Banking Faith because the Science and Culture arrive anyway. The Council pays on Faith per turn, which is exactly why the bank grows unnoticed.",
+    "Skipping the food plan. Hills cap cities at five or six population, and population is what works the churches and the resources.",
+    "Sending domestic Trade Routes from the resource cities. Only international routes pay Aksumite Faith per resource; domestic routes belong to the hungry hill cities.",
+    "Marching Oromo Cavalry onto the lowlands. On Hills they carry the +4 bonus and move freely; on flat land against Pikemen they are little better than Coursers."
+  ],
+  "sources": [
+    "Civilization VI Civilopedia, Gathering Storm ruleset with the New Frontier Pass Ethiopia Pack (Ethiopia, Menelik II, Council of Ministers, Aksumite Legacy, Oromo Cavalry, Rock-Hewn Church).",
+    "Where the civ-info paraphrase is vaguer than the game, the game is followed: Council of Ministers converts 15 percent of a hill city's Faith into Science and the same into Culture and gives +4 Combat Strength on Hills; Aksumite Legacy pays Faith on improved resources and on international Trade Routes per resource at the origin.",
+    "Boost ids and triggers from leadership-focus/data/civ6/eurekas.json in this repository.",
+    "Leadership Focus tags, caveats and the Linear template in this repository."
+  ]
+}

@@ -1,0 +1,1591 @@
+{
+  "slug": "gitarja",
+  "shape": "Gate",
+  "secondary_shape": null,
+  "version": 1,
+  "updated": "2026-10-02",
+  "assumptions": {
+    "ruleset": "Gathering Storm with every expansion and the Leader Pass",
+    "speed": "Standard",
+    "difficulty": "Emperor",
+    "map": "Archipelago, Island Plates or Small Continents, standard size, 8 civilizations",
+    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. Gitarja has a single persona and it is planned here. The gate is a civic and a treasury, not a turn: Mercantilism puts the Jong on the purchase list, and the Faith the coastal Holy Sites banked is what buys it. The map check runs before anything else, because on a land map there is no gate to reach."
+  },
+  "verdict": {
+    "victory": "Religion",
+    "secondary": "Culture",
+    "confidence": "medium",
+    "one_line": "Settle every city on the coast, put a Holy Site on the water in each, found the religion by turn 60 and bank the Faith. At Mercantilism buy a Jong fleet with it, own the sea, and carry the Apostles to every coastal city under its guns; take the one coastal Holy City whose religion contests yours.",
+    "why": "Exalted Goddess of the Three Worlds pays +2 Faith on every coastal City Center and lets Faith buy naval units from turn 1, which means the Galleys that clear the camps and the Quadriremes that hold the coast cost no Production in cities that have little. Great Nusantara makes coast a minor adjacency for Holy Sites, Campuses, Theater Squares and Industrial Zones, so a city on a peninsula has a +2 or +3 Holy Site with no mountains at all, and the Kampung gives those cities the Housing and Production that coastal sites normally lack. The religious units embarking for free is the piece that decides the verdict: on a water map Apostles are the slowest unit in the game for everyone but Indonesia, and the Jong, a Frigate with an extra move and more strength that Faith can buy, is the escort and the siege engine for the one coastal Holy City that has to fall. Culture is the second verdict because the same coast makes Theater Squares cheap to place and Nan Madol and the Kampung's late Tourism feed it; Domination is not, because Indonesia has no land unit and a Jong fleet cannot hold a continent."
+  },
+  "map_check": {
+    "must_have": [
+      "A coastal capital with at least two more coastal city sites within ten tiles of water travel, each with a coast-ringed tile for a Holy Site; the kit pays per coastal City Center and per coast tile beside a district and nothing else.",
+      "Sea resources near the first three cities for Kampungs and Fishing Boats; without them the coastal cities have no Production and the Jong fleet is bought from a treasury that never fills."
+    ],
+    "prefer": [
+      "An Archipelago or Island Plates map where most rival cities are on the coast, so the Jong fleet and the Apostles reach every target.",
+      "Lakes inland, which count as water for every part of the kit and are safe from barbarian ships.",
+      "A rival religion founded on the same water by a coastal civilization; its Holy City is the fleet's one real objective.",
+      "Woods on a coastal tile for Mahabodhi Temple and Reef near the capital for Great Barrier Reef or a simple Campus."
+    ],
+    "no_go": "A Pangaea or Continents start with the capital inland and no coast within two Settler moves, or a coast that is a single straight shoreline with every rival capital a dozen tiles from the water. The Faith from City Centers is gone, the district adjacency is gone, the Kampung has nowhere to stand, and a Jong fleet has no target; the whole kit is a Faith discount on ships you do not need.",
+    "fallback": "Move the Settler up to two turns to reach coast. If there is still none, play Indonesia as an ordinary Religion civ: Holy Sites beside mountains and Woods, Religious Settlements or Earth Goddess, the Theater Squares for Culture, and treat the Jong as a defensive purchase for whatever coast the empire later touches. Expect a Culture finish and do not plan on the fleet."
+  },
+  "kit_levers": [
+    {
+      "source": "leader_ability",
+      "name": "Exalted Goddess of the Three Worlds",
+      "buys": "Naval units can be bought with Faith, religious units embark and disembark at no Movement cost, and every City Center adjacent to Coast or a Lake makes +2 Faith.",
+      "exploit": "Every city is coastal, so every city pays Faith from turn 1 and the pantheon lands by turn 12. Spend the first Faith on the pantheon and build the first Galley rather than a Warrior, since two Faith a turn cannot buy a ship in the first thirty turns; buy Quadriremes for the coast when camps spawn ships; and never build a Jong with Production when the treasury can buy it the turn Mercantilism lands."
+    },
+    {
+      "source": "civ_ability",
+      "name": "Great Nusantara",
+      "buys": "Coast and Lake tiles give a minor adjacency bonus to Holy Sites, Campuses, Industrial Zones and Theater Squares, and Entertainment Complexes beside water give an extra Amenity.",
+      "exploit": "Put the Holy Site on the tip of a peninsula with four coast neighbours and it is +2 before a mountain or a Woods is counted; with Scripture that is +4. Campuses and Theater Squares go on the same kind of tile in the same cities, which is why the Culture fallback costs nothing extra."
+    },
+    {
+      "source": "unique_unit",
+      "name": "Jong",
+      "buys": "A Frigate replacement unlocked by the Mercantilism civic, with more Combat Strength and an extra Movement that its whole formation shares, and purchasable with Faith.",
+      "exploit": "The gate unit. Buy four the turn the civic lands, put a Great Admiral with them, and they clear every Quadrireme and Caravel on the map; a Jong escorting an embarked Apostle moves the Apostle at Jong speed. Six of them with a melee ship take a coastal Holy City before Renaissance Walls."
+    },
+    {
+      "source": "unique_infrastructure",
+      "name": "Kampung",
+      "buys": "A Shipbuilding improvement on a coast or lake tile beside a sea resource: +1 Housing and +1 Production, +1 Food per adjacent Fishing Boat, and more Housing and Tourism later.",
+      "exploit": "Ring every Fishing Boat with Kampungs and the coastal city grows to ten population without a single Farm, which is what pays Civil Service and feeds the specialists. Build them with the Builder charges Serfdom gives, not before Shipbuilding is in."
+    },
+    {
+      "source": "agenda",
+      "name": "Archipelagic State",
+      "buys": "Gitarja likes civilizations that leave small islands alone and dislikes those that settle or take cities on them.",
+      "exploit": "Irrelevant to your own play, but AI Gitarja on the same water will denounce whoever island-hops; if she is a neighbour, her Holy City is coastal by definition and she buys Jong too, so she is the target to convert first, before her fleet exists."
+    }
+  ],
+  "shape_block": {
+    "gate": {
+      "gate_condition": "The Mercantilism civic is unlocked, which puts the Jong on the Faith purchase list, AND the Faith treasury holds enough to buy at least two Jong the same turn, AND the empire sits on a water map where the fleet has a coastal Holy City to reach. The civic without the Faith is a unit you cannot afford; the Faith without the civic buys Caravels; either without the water is nothing.",
+      "fastest_path": [
+        "civic:craftsmanship",
+        "civic:foreign-trade",
+        "civic:state-workforce",
+        "civic:early-empire",
+        "civic:political-philosophy",
+        "civic:drama-and-poetry",
+        "civic:games-and-recreation",
+        "civic:defensive-tactics",
+        "civic:feudalism",
+        "civic:medieval-faires",
+        "civic:humanism",
+        "civic:mercantilism"
+      ],
+      "estimated_arrival": {
+        "from": 115,
+        "to": 135
+      },
+      "staging": [
+        "Faith banked for two Jong at the price the purchase panel shows the turn before the civic lands, roughly 1,200 Faith each at Standard speed before Theocracy's discount; check the number on a Frigate's Faith price in the capital rather than trusting this one.",
+        "Theocracy adopted at Reformed Church, so the purchases are 15% cheaper and the religious units are stronger; it is the government for the whole post-gate phase.",
+        "A Great Admiral earned or within five turns from two Harbors with Lighthouses; +5 Combat Strength and +1 Movement on the fleet is the difference between a siege and a loss.",
+        "One melee ship, a Caravel or a Faith-bought Privateer, to take the city the Jong batter; ranged ships cannot capture.",
+        "The target chosen and scouted: the coastal Holy City of the religion that contests yours, its Walls status and its ships, within fifteen tiles of water from your nearest Harbor.",
+        "Four Apostles bought and waiting in the Harbor city nearest the target, with Proselytizer or Debater promotions from Yerevan if it is yours.",
+        "Six coastal cities each with a Holy Site and a Temple, so the Faith income after the purchase refills the treasury for the Apostle waves that follow the fleet."
+      ],
+      "late_gate": "If Mercantilism is twenty turns behind pace (not unlocked by turn 155), the Culture is the problem, not the Faith: Monuments everywhere, Theater Squares on coast tiles in the two biggest cities, Pingala with Connoisseur in the capital, and Amphitheaters bought with Gold. Spend the delay on the religion instead of the fleet: Faith-bought Apostles with free embarkation convert the coastal cities around you now, and a Faith-bought Quadrireme pair escorts them. Do not buy Caravels to fill the gap; the Faith is the Jong fleet and nothing else. If a rival reaches Square Rigging and fields Frigates against your coast before the civic lands, hold the Harbors with Quadriremes and Walls and accept the fleet will be built into parity rather than ahead of it; the Apostles still win the Religion verdict if the convoys keep moving.",
+      "closing_window": "Parity arrives when rivals research Square Rigging (Frigates, roughly turn 150 to 170 on Emperor) and ends when they reach Steam Power (Ironclads, roughly turn 200 to 220). Between the gate and Square Rigging the Jong fleet is unopposed; between Square Rigging and Steam Power it is better than theirs by a move and five Strength; after Steam Power it is a target until Steel turns it into Battleships. So the coastal Holy City must fall and the Apostle convoys must have converted the majority of coastal cities before turn 200. The Religion verdict has its own close: if a rival religion holds more than half the civilizations before your convoys start, the convoys are a recovery, not a win, and the Culture fallback begins at the gate rather than after it."
+    }
+  },
+  "phases": [
+    {
+      "id": "shore",
+      "name": "Settle the shore",
+      "turns": {
+        "from": 1,
+        "to": 30
+      },
+      "era": "ancient",
+      "objective": "Run the map check on turn 1, settle on the coast beside sea resources, build the first Galley, found God of the Sea by turn 12 from the City Center's own Faith, place a coastal Holy Site in the capital, and have the second coastal city settled with its Holy Site tile marked.",
+      "build_order": [
+        {
+          "item": "Scout",
+          "why": "Coastline both ways, the second and third city sites, the nearest camp, and a natural wonder for Astrology and Kandy."
+        },
+        {
+          "item": "Galley",
+          "why": "Built, not bought: the City Center's Faith goes to the pantheon first. It scouts the coast, meets the first civilization and city-states, and is the first of the two Galleys for Shipbuilding."
+        },
+        {
+          "item": "Slinger",
+          "why": "The Archery Eureka on the first barbarian and a defender while the Galley is at sea."
+        },
+        {
+          "item": "Settler",
+          "why": "Second coastal city toward the nearest rival, on a peninsula with a coast-ringed Holy Site tile."
+        },
+        {
+          "item": "Holy Site",
+          "why": "On the capital's most water-ringed tile; +2 from coast alone, the Prophet points start, and State Workforce's Inspiration."
+        },
+        {
+          "item": "Monument",
+          "why": "Mercantilism is twelve civics away; Culture is the gate's clock."
+        },
+        {
+          "item": "Builder",
+          "why": "Fishing Boats on two sea resources for Celestial Navigation, and a third tile for Craftsmanship."
+        },
+        {
+          "item": "Settler",
+          "why": "Third coastal city; three City Centers on the water is +6 Faith before a Shrine exists."
+        },
+        {
+          "item": "Warrior",
+          "why": "Escort for the second Settler; the camps are inland and the Galley cannot reach them."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:sailing",
+          "note": "Free Eureka from the coastal capital; Galleys for Faith and the road to Shipbuilding."
+        },
+        {
+          "id": "tech:astrology",
+          "note": "The Holy Site. Eureka if the Scout or the Galley sights a natural wonder."
+        },
+        {
+          "id": "tech:pottery",
+          "note": "Granary for Housing; coastal cities have few Farms."
+        },
+        {
+          "id": "tech:mining",
+          "note": "Mines on the hills the coast has and the road to Bronze Working."
+        },
+        {
+          "id": "tech:animal-husbandry",
+          "note": "Archery sits behind it; the Slinger upgrades."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:code-of-laws",
+          "note": "God King is not needed with +2 Faith per coastal city; take Urban Planning and Discipline."
+        },
+        {
+          "id": "civic:craftsmanship",
+          "note": "First step on the gate path; Inspiration from three improved tiles."
+        },
+        {
+          "id": "civic:foreign-trade",
+          "note": "Maritime Industries for Faith-bought and built ships both; the second-continent Inspiration is free on an archipelago."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Urban Planning",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "Production in the capital while it is the only city building a Holy Site."
+        },
+        {
+          "card": "Discipline",
+          "slot": "military",
+          "from": "civic:code-of-laws",
+          "why": "The Slinger, Warrior and Galley beat the camp units."
+        },
+        {
+          "card": "Maritime Industries",
+          "slot": "military",
+          "from": "civic:foreign-trade",
+          "why": "Galleys and Quadriremes at double Production; it does not lower the Faith price of the ones bought."
+        }
+      ],
+      "districts": [
+        {
+          "district": "holy-site",
+          "city": "capital",
+          "note": "On the tile with the most coast neighbours, four if there is one; +2 from water before anything else."
+        }
+      ],
+      "pantheon": {
+        "slug": "god-of-the-sea",
+        "why": "+1 Production on every Fishing Boat, which is the only Production a coastal city has before Kampungs, and the Boats are already the Celestial Navigation Eureka.",
+        "alternative": "earth-goddess"
+      },
+      "wonders": [],
+      "governors": [],
+      "city_states": [
+        {
+          "type": "Religious",
+          "why": "The first envoy buys Faith in the capital on top of the +2 the coast gives."
+        }
+      ],
+      "great_people": [],
+      "checkpoints": [
+        {
+          "turn": 30,
+          "test": "Two coastal cities, God of the Sea founded, the capital Holy Site placed, a Galley at sea, and Craftsmanship and Foreign Trade done?",
+          "pass": "Queue the Shrine and the third Settler; enter the Faith phase.",
+          "fail": "No pantheon by 30 means the capital is not on the coast or the Holy Site took the Monument's turn; fix the first by re-reading the map check, the second by buying the Monument. No second city: Settler now, before the Shrine."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "shore-map-check",
+          "turn": 1,
+          "text": "Run the map check: coast under the capital, two more coastal sites within ten water tiles, sea resources beside them. If it fails, run the fallback now. Write the gate down: Mercantilism and the Faith for two Jong."
+        },
+        {
+          "id": "shore-galley",
+          "turn": 20,
+          "text": "Galley built; send it along the coast to find the camps that will spawn ships and the second continent for Foreign Trade."
+        },
+        {
+          "id": "shore-pantheon",
+          "turn": 12,
+          "text": "Found God of the Sea, or Earth Goddess if the coast is cliffs and Woods with high appeal."
+        },
+        {
+          "id": "shore-holy-site",
+          "turn": 20,
+          "text": "Capital Holy Site placed on the water-ringed tile; Shrine queued behind the Settler."
+        },
+        {
+          "id": "shore-second-city",
+          "turn": 27,
+          "text": "Second coastal city settled on a peninsula toward the nearest rival, Holy Site tile marked."
+        }
+      ]
+    },
+    {
+      "id": "faith",
+      "name": "Holy Sites on the water",
+      "turns": {
+        "from": 31,
+        "to": 80
+      },
+      "era": "classical",
+      "objective": "Grow to five coastal cities each with a water-ringed Holy Site and a Shrine, found the religion by turn 60 with the beliefs the convoys will need, place Kampungs around every Fishing Boat the turn Shipbuilding lands, hold the coast with Faith-bought Quadriremes, and keep the civic queue on the path to Mercantilism.",
+      "build_order": [
+        {
+          "item": "Shrine",
+          "why": "In every Holy Site; Prophet points and the first Faith beyond the City Center's two."
+        },
+        {
+          "item": "Settler",
+          "why": "Fourth and fifth coastal cities; every one is +2 Faith and a Holy Site site."
+        },
+        {
+          "item": "Holy Site",
+          "why": "In every new city, on the water-ringed tile, before the Monument if the Prophet race is close."
+        },
+        {
+          "item": "Harbor",
+          "why": "Capital and the second city; Trade Routes, Great Admiral points, and the Cartography Eureka at two."
+        },
+        {
+          "item": "Trader",
+          "why": "Currency Eureka and Gold; the coastal cities have little of either."
+        },
+        {
+          "item": "Granary",
+          "why": "Housing until Kampungs are in; the Early Empire Inspiration needs six population."
+        },
+        {
+          "item": "Builder",
+          "why": "Kampungs around every Fishing Boat the turn Shipbuilding lands; the Housing and Production the cities were missing."
+        },
+        {
+          "item": "Campus",
+          "why": "Capital, on a coast tile; +1 or +2 from water and the Recorded History path later."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:celestial-navigation",
+          "note": "Harbors; Eureka free from the two Fishing Boats."
+        },
+        {
+          "id": "tech:shipbuilding",
+          "note": "Kampungs. Eureka from two Galleys, the capital's and one more from the second city."
+        },
+        {
+          "id": "tech:writing",
+          "note": "Campus on the coast; Eureka from the first civilization met by the Galley."
+        },
+        {
+          "id": "tech:bronze-working",
+          "note": "Iron revealed and the camp kills now; Eureka from three barbarian kills."
+        },
+        {
+          "id": "tech:archery",
+          "note": "An Archer per city against the ships the camps launch; Eureka from the Slinger."
+        },
+        {
+          "id": "tech:currency",
+          "note": "Commercial Hub or more Harbors; Eureka from the first Trade Route."
+        },
+        {
+          "id": "tech:irrigation",
+          "note": "Farm the one wheat the coast has; Eureka from farming a resource."
+        },
+        {
+          "id": "tech:mathematics",
+          "note": "Holy Site, Harbor and Campus are three specialty districts by turn 70."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:state-workforce",
+          "note": "Free Inspiration from the first Holy Site; the step to Political Philosophy."
+        },
+        {
+          "id": "civic:early-empire",
+          "note": "Colonization for the Settlers; six population is the Inspiration."
+        },
+        {
+          "id": "civic:mysticism",
+          "note": "Free Inspiration from the pantheon; Holy Site adjacency."
+        },
+        {
+          "id": "civic:political-philosophy",
+          "note": "Classical Republic for the Prophet points; three city-states met by the Galley."
+        },
+        {
+          "id": "civic:drama-and-poetry",
+          "note": "On the gate path to Humanism; Inspiration if Mahabodhi or the Great Lighthouse is built."
+        },
+        {
+          "id": "civic:theology",
+          "note": "Inspiration from founding the religion; Scripture doubles the water adjacency."
+        },
+        {
+          "id": "civic:games-and-recreation",
+          "note": "On the gate path to Defensive Tactics; free from researching Construction."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Colonization",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "Fourth and fifth Settlers at +50% Production while Faith buys the ships."
+        },
+        {
+          "card": "Scripture",
+          "slot": "economic",
+          "from": "civic:theology",
+          "why": "+100% Holy Site adjacency; a +3 water Holy Site becomes +6."
+        },
+        {
+          "card": "Maritime Industries",
+          "slot": "military",
+          "from": "civic:foreign-trade",
+          "why": "Still slotted for Quadriremes built with Production; it does not lower their Faith price."
+        }
+      ],
+      "districts": [
+        {
+          "district": "holy-site",
+          "city": "every city",
+          "note": "On the most water-ringed tile; Scripture doubles it."
+        },
+        {
+          "district": "harbor",
+          "city": "capital and the second city",
+          "note": "Trade Routes, Admiral points, Cartography Eureka; Shipyards later for Steam Power."
+        },
+        {
+          "district": "campus",
+          "city": "capital",
+          "note": "On a coast tile beside the Harbor; the one Science district the gate path needs."
+        }
+      ],
+      "pantheon": {
+        "slug": "god-of-the-sea",
+        "why": "Already founded; this phase spends the Fishing Boat Production on Shrines and Settlers."
+      },
+      "wonders": [
+        {
+          "name": "Mahabodhi Temple",
+          "why": "Two free Apostles and Faith; on a coastal Holy Site beside Woods it is the first convoy for nothing.",
+          "skip_if": "No Holy Site with a Temple sits beside Woods, or Theology lands after turn 80."
+        },
+        {
+          "name": "Great Lighthouse",
+          "why": "+1 Movement for every naval unit, which the Jong fleet and the Faith-bought Quadriremes carry for the whole game, and Great Admiral points.",
+          "skip_if": "The capital Harbor is not up by turn 55 or a naval civilization is on the map and ahead."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "magnus",
+          "promotion": "Provision",
+          "city": "capital",
+          "why": "Settlers do not cost population in a capital that also builds the Holy Site and the Harbor."
+        },
+        {
+          "governor": "moksha",
+          "promotion": "Bishop",
+          "city": "the second city",
+          "why": "Faith-bought Shrines and Temples where the Production cannot afford them; Faith is the one thing Indonesia has early."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "auckland",
+          "why": "Production on shallow water tiles in every coastal city; the single biggest Production source the empire can have."
+        },
+        {
+          "slug": "nan-madol",
+          "why": "Culture from every district on the coast, which is all of them."
+        },
+        {
+          "slug": "kandy",
+          "why": "A Relic per natural wonder found; Galleys find them, and Relics are Faith and Culture."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-prophet",
+          "why": "The religion by turn 60 from five Holy Sites with Shrines; it is the whole verdict."
+        },
+        {
+          "class": "great-admiral",
+          "why": "Any Classical Admiral from the Harbors retires for Combat Strength on the Quadriremes."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 55,
+          "test": "Four coastal cities with Holy Sites, three Shrines, two Harbors, Great Prophet points on pace for turn 60, and Shipbuilding researched?",
+          "pass": "Place Kampungs around every Fishing Boat and queue the fifth Settler.",
+          "fail": "Prophet behind: Holy Site prayer projects in two cities and Faith on nothing else until he lands. Shipbuilding missing: it is the Housing fix; research it before Currency."
+        },
+        {
+          "turn": 80,
+          "test": "Religion founded with a Founder belief, Crusade or Defender of the Faith as the Enhancer later, five cities, Kampungs around every Boat, and Drama and Poetry and Games and Recreation done?",
+          "pass": "Enter the staging phase; the Faith now banks for the fleet.",
+          "fail": "No religion: buy the last points if under 150 Faith; if the last Prophet is gone, the Religion verdict is dead and the plan becomes Culture at the gate, with the Jong as defence. Fewer than five cities: Colonization and Magnus until there are."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "faith-shrines",
+          "turn": 40,
+          "text": "Shrines in the first three Holy Sites; Prophet points running in all of them."
+        },
+        {
+          "id": "faith-quadrireme",
+          "turn": 45,
+          "text": "Buy a Quadrireme with Faith when the first camp launches a ship; keep it between the camp and the Kampungs."
+        },
+        {
+          "id": "faith-religion",
+          "turn": 60,
+          "text": "Found the religion: a Founder belief that pays per follower city, Feed the World or Work Ethic as the Follower, and Crusade or Defender of the Faith as the Enhancer when Apostles allow."
+        },
+        {
+          "id": "faith-kampungs",
+          "turn": 65,
+          "text": "Kampungs placed on every coast tile beside a Fishing Boat in the three oldest cities; check Housing afterwards."
+        },
+        {
+          "id": "faith-fifth-city",
+          "turn": 72,
+          "text": "Fifth coastal city settled under Colonization, Holy Site queued first."
+        },
+        {
+          "id": "faith-admiral",
+          "turn": 80,
+          "text": "Great Admiral earned from the two Harbors with Lighthouses, or the points checked for the Medieval one."
+        }
+      ]
+    },
+    {
+      "id": "stage",
+      "name": "Bank the fleet",
+      "turns": {
+        "from": 81,
+        "to": 125
+      },
+      "era": "medieval",
+      "objective": "Bank the Faith for two Jong while the civic queue runs Defensive Tactics, Feudalism, Medieval Faires, Humanism and Mercantilism; put Temples in every Holy Site, reach Reformed Church for Theocracy, spread the religion to your own cities and the nearest neighbour with free-embarking Missionaries, and choose and scout the coastal Holy City the fleet will take.",
+      "build_order": [
+        {
+          "item": "Temple",
+          "why": "In every Holy Site; Faith, Divine Right's Inspiration, and the Apostle purchase."
+        },
+        {
+          "item": "Missionary",
+          "why": "Two or three, Faith-bought, to convert your own five cities and the neighbour's coastal ones; free embarkation makes them fast."
+        },
+        {
+          "item": "Lighthouse",
+          "why": "In both Harbors; Admiral points and Housing."
+        },
+        {
+          "item": "Theater Square",
+          "why": "Capital, on a coast tile; Culture toward the gate and the Culture fallback's first district."
+        },
+        {
+          "item": "Amphitheater",
+          "why": "Culture for the gate and slots for whatever Writer Classical Republic drops."
+        },
+        {
+          "item": "Market",
+          "why": "Two for Guilds; Gold for the melee ship and the upgrades."
+        },
+        {
+          "item": "Ancient Walls",
+          "why": "In the city nearest the chosen target; its fleet will come first."
+        },
+        {
+          "item": "Quadrireme",
+          "why": "Faith-bought as needed; one kill with it is the Naval Tradition Inspiration."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:construction",
+          "note": "Water Mill if any city has a river; otherwise it is the Games and Recreation Inspiration and the Colosseum."
+        },
+        {
+          "id": "tech:cartography",
+          "note": "Two Harbors give the Eureka; Caravels for the melee ship and ocean crossing."
+        },
+        {
+          "id": "tech:apprenticeship",
+          "note": "Three Mines on whatever hills the coast has; Production for the Temples."
+        },
+        {
+          "id": "tech:military-engineering",
+          "note": "Aqueduct in the capital if it has a river or lake; otherwise skip the Eureka."
+        },
+        {
+          "id": "tech:castles",
+          "note": "Free Eureka once Theocracy is adopted at Reformed Church; Medieval Walls on the target-facing city."
+        },
+        {
+          "id": "tech:mass-production",
+          "note": "A Lumber Mill on coastal Woods; Shipyards and the Venetian Arsenal."
+        },
+        {
+          "id": "tech:education",
+          "note": "Universities; no Scientist to boost it, so pay."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:defensive-tactics",
+          "note": "On the gate path; Inspiration if the neighbour declares, which a Religion civ invites."
+        },
+        {
+          "id": "civic:feudalism",
+          "note": "On the gate path; six Farms is hard on the coast, so expect full price. Serfdom for the Kampung Builders."
+        },
+        {
+          "id": "civic:medieval-faires",
+          "note": "On the gate path; four Trade Routes from the Harbors is the Inspiration."
+        },
+        {
+          "id": "civic:divine-right",
+          "note": "Two Temples give the Inspiration; Reformed Church and Theocracy are behind it."
+        },
+        {
+          "id": "civic:reformed-church",
+          "note": "Six cities following your religion; Theocracy is the government for the gate and Simultaneum the card."
+        },
+        {
+          "id": "civic:humanism",
+          "note": "The last step before the gate; a Great Artist is the Inspiration and Classical Republic may have made one."
+        },
+        {
+          "id": "civic:mercantilism",
+          "note": "The gate. A Great Merchant is the Inspiration; two Markets and a Harbor may produce one. Buy the Jong the turn it lands."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Serfdom",
+          "slot": "economic",
+          "from": "civic:feudalism",
+          "why": "Builders with extra charges for the Kampungs in the fourth and fifth cities."
+        },
+        {
+          "card": "Scripture",
+          "slot": "economic",
+          "from": "civic:theology",
+          "why": "Still doubling every water Holy Site."
+        },
+        {
+          "card": "Simultaneum",
+          "slot": "economic",
+          "from": "civic:reformed-church",
+          "why": "Extra Faith from every Holy Site building in cities with a Temple."
+        }
+      ],
+      "districts": [
+        {
+          "district": "theater-square",
+          "city": "capital",
+          "note": "On a coast tile; Culture for the civic clock and the fallback."
+        },
+        {
+          "district": "commercial-hub",
+          "city": "the second city",
+          "note": "Markets for Guilds and the Great Merchant that boosts Mercantilism."
+        }
+      ],
+      "pantheon": {
+        "slug": "god-of-the-sea",
+        "why": "Still paying on every Fishing Boat the Kampungs ring."
+      },
+      "wonders": [
+        {
+          "name": "Hagia Sophia",
+          "why": "One more spread charge on every Missionary and Apostle; the convoys convert a third more cities for the same Faith.",
+          "skip_if": "Buttress is not researched by turn 120 or no Holy Site city has a free flat tile beside it."
+        },
+        {
+          "name": "Venetian Arsenal",
+          "why": "Every ship built in its city comes with a second one; Faith-bought ships do not double, but the Caravels and later Jong built with Production do.",
+          "skip_if": "Mass Production lands after turn 140 or the Industrial Zone city has no coast tile for it."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "moksha",
+          "promotion": "Grand Inquisitor",
+          "city": "the city nearest the target",
+          "why": "Religious units nearby fight at +10; the Apostles waiting here win their debates."
+        },
+        {
+          "governor": "pingala",
+          "promotion": "Connoisseur",
+          "city": "capital",
+          "why": "Culture per citizen; the gate is a civic and this is the lever if it slips."
+        },
+        {
+          "governor": "reyna",
+          "promotion": "Harbormaster",
+          "city": "the second Harbor city",
+          "why": "Double Harbor adjacency Gold; the Gold that buys the melee ship."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "yerevan",
+          "why": "Apostle promotions chosen: Proselytizer for the convoys, Debater for the Holy City's defenders."
+        },
+        {
+          "slug": "valletta",
+          "why": "Walls and other City Center buildings bought with Faith in the coastal cities that have no Production."
+        },
+        {
+          "type": "Trade",
+          "why": "A Trade city-state's envoys add Gold in the capital and in every Market, and this phase builds two."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-admiral",
+          "why": "The Medieval Admiral goes with the Jong fleet; earn or buy him before the gate."
+        },
+        {
+          "class": "great-merchant",
+          "why": "The Mercantilism Inspiration; two Markets and the Harbors make the points."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 105,
+          "test": "Five Temples, your religion in all five cities and two of the neighbour's, Theocracy adopted or Reformed Church within five turns, Faith at half the fleet price, and Humanism within ten turns?",
+          "pass": "Stop buying Missionaries; the treasury banks for the fleet from here, and the target is scouted one last time.",
+          "fail": "Faith short: Simultaneum and Scripture must both be slotted, and the Temples finished; Missionaries wait. Civic slow: Pingala and Amphitheaters; the late-gate plan applies if Humanism is after turn 125."
+        },
+        {
+          "turn": 125,
+          "test": "Gate check: is Mercantilism unlocked, is the Faith enough for two Jong at the panel's price, is the Admiral present, the melee ship built, the target scouted and four Apostles waiting?",
+          "pass": "Buy the Jong this turn, form up with the Admiral and the Caravel, and sail for the Holy City; enter the Jong phase.",
+          "fail": "Civic in but Faith short: do not buy one Jong; one Jong is a Frigate that dies alone. Wait the turns the treasury needs. Faith in but civic short: the late-gate plan, Apostles under Quadrireme escort meanwhile. Target converted to your religion already: pick the next rival Holy City; the fleet still needs a port to take."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "stage-temples",
+          "turn": 88,
+          "text": "Temples in five Holy Sites; Divine Right Inspiration collected and the Apostle purchase open."
+        },
+        {
+          "id": "stage-missionaries",
+          "turn": 95,
+          "text": "Two Faith-bought Missionaries convert your own cities and the neighbour's two nearest coastal cities; six followers for Reformed Church."
+        },
+        {
+          "id": "stage-target",
+          "turn": 100,
+          "text": "Choose the target: the coastal Holy City of the religion that contests yours, within fifteen water tiles of a Harbor; scout its Walls and ships with a Quadrireme."
+        },
+        {
+          "id": "stage-theocracy",
+          "turn": 110,
+          "text": "Adopt Theocracy the turn Reformed Church lands; slot Simultaneum and Scripture together."
+        },
+        {
+          "id": "stage-bank",
+          "turn": 115,
+          "text": "Faith treasury at the price of two Jong; check a Frigate's Faith price in the capital and write the number down."
+        },
+        {
+          "id": "stage-gate-check",
+          "turn": 125,
+          "text": "Run the gate check the turn Mercantilism lands; buy both Jong the same turn or none."
+        }
+      ]
+    },
+    {
+      "id": "jong",
+      "name": "The Jong fleet",
+      "turns": {
+        "from": 126,
+        "to": 190
+      },
+      "era": "renaissance",
+      "objective": "Buy the Jong fleet, clear the sea of every rival ship, take the coastal Holy City of the contesting religion with the fleet and a melee ship, and run Apostle convoys under Jong escort to every coastal city on the map until your religion is the majority in every civilization, all before Ironclads arrive.",
+      "build_order": [
+        {
+          "item": "Jong",
+          "why": "Two bought the gate turn, two more as the Faith refills; six is the fleet that takes a walled Holy City."
+        },
+        {
+          "item": "Apostle",
+          "why": "Four per convoy, Proselytizer promoted, embarked for free and moved at Jong speed inside the formation."
+        },
+        {
+          "item": "Caravel",
+          "why": "The melee ship that captures; its upgrade line is the Ironclad, so a Faith-bought Privateer is the spare once Mercantilism lands."
+        },
+        {
+          "item": "Inquisitor",
+          "why": "Two at home; a rival Apostle wave into your coast is the one thing that stops the convoys."
+        },
+        {
+          "item": "University",
+          "why": "Two for Printing; Science close enough to reach Steel before the Ironclads matter."
+        },
+        {
+          "item": "Shipyard",
+          "why": "Two for Steam Power's Eureka and Production in the Harbor cities."
+        },
+        {
+          "item": "Monument",
+          "why": "First build in the captured Holy City; Loyalty before anything else."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:printing",
+          "note": "Two Universities; the Science catch-up and Culture."
+        },
+        {
+          "id": "tech:square-rigging",
+          "note": "Rivals' Frigates come from here; a Musketman kill is the Eureka if a war is on, otherwise pay."
+        },
+        {
+          "id": "tech:banking",
+          "note": "Free Eureka from Guilds; Banks for the Gold the upgrades need."
+        },
+        {
+          "id": "tech:astronomy",
+          "note": "A University beside a mountain if any coastal city has one; the Colonialism Inspiration."
+        },
+        {
+          "id": "tech:industrialization",
+          "note": "Two Workshops; Factories and Coal for the Ironclad era."
+        },
+        {
+          "id": "tech:steam-power",
+          "note": "Two Shipyards give the Eureka; Ironclads to escort the Jong once rivals have them."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:exploration",
+          "note": "Two Caravels give the Inspiration; Press Gangs for the ships built with Production."
+        },
+        {
+          "id": "civic:guilds",
+          "note": "Two Markets; the Gold economy."
+        },
+        {
+          "id": "civic:naval-tradition",
+          "note": "A Quadrireme or Jong kill gives the Inspiration; Great Admiral points."
+        },
+        {
+          "id": "civic:diplomatic-service",
+          "note": "An alliance with a civilization already following your religion; Holy War is here if the Holy City needs a Casus Belli."
+        },
+        {
+          "id": "civic:the-enlightenment",
+          "note": "Three Great People long since; Rationalism."
+        },
+        {
+          "id": "civic:colonialism",
+          "note": "Astronomy gives the Inspiration; Native Conquest is not needed, Natural History is."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Press Gangs",
+          "slot": "military",
+          "from": "civic:exploration",
+          "why": "Ships built with Production at double speed in the Venetian Arsenal city."
+        },
+        {
+          "card": "Religious Orders",
+          "slot": "economic",
+          "from": "civic:reformed-church",
+          "why": "One more charge on every Apostle in the convoys."
+        },
+        {
+          "card": "Wars of Religion",
+          "slot": "military",
+          "from": "civic:reformed-church",
+          "why": "+4 Combat Strength against civilizations following another religion, which is the Holy City's garrison."
+        }
+      ],
+      "districts": [
+        {
+          "district": "harbor",
+          "city": "every coastal city without one",
+          "note": "Shipyards for Steam Power and Admiral points; the fleet's ports."
+        },
+        {
+          "district": "industrial-zone",
+          "city": "the Venetian Arsenal city",
+          "note": "On a coast tile for Great Nusantara; Workshops for Industrialization."
+        }
+      ],
+      "pantheon": {
+        "slug": "god-of-the-sea",
+        "why": "Still the Production of every Kampung city."
+      },
+      "wonders": [
+        {
+          "name": "Kilwa Kisiwani",
+          "why": "+15% to every yield type for each city-state type you are suzerain of two of; Religious and Trade suzerainties are already yours.",
+          "skip_if": "Machinery is not researched by turn 150 or the coastal flat tile it needs is taken by Kampungs."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "victor",
+          "promotion": "Garrison Commander",
+          "city": "the captured Holy City",
+          "why": "Loyalty and +5 for the garrison in the one city that will be counter-attacked."
+        },
+        {
+          "governor": "moksha",
+          "promotion": "Grand Inquisitor",
+          "city": "the convoy port",
+          "why": "Apostles leaving here win their first debate."
+        },
+        {
+          "governor": "amani",
+          "promotion": "Emissary",
+          "city": "the city nearest a rival coast",
+          "why": "Loyalty there; assign her to a Religious city-state instead and Emissary counts as two envoys."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "yerevan",
+          "why": "Keep the suzerainty through the whole convoy campaign."
+        },
+        {
+          "type": "Religious",
+          "why": "Every Religious suzerainty is Faith, and the Faith is the fleet and the Apostles both."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-admiral",
+          "why": "One with the fleet at all times; a second one retires for Combat Strength or a free Jong."
+        },
+        {
+          "class": "great-prophet",
+          "why": "None; but a rival's Prophet-bought Apostles are the threat, so watch the Great People screen for their Faith."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 150,
+          "test": "Four Jong afloat with the Admiral, the rival fleet gone from your water, the Holy City besieged or taken, and the first convoy of four Apostles ashore on the target continent?",
+          "pass": "Second convoy; Inquisitors at home; keep buying Jong with the refill until six.",
+          "fail": "Holy City standing at 150 with Renaissance Walls: it needs six Jong and two turns of fire with the Admiral; if it has Frigates too, blockade and convert around it instead, and take it when the Walls are pillaged. Convoy lost: Debaters and a Jong escort for the next, never Apostles alone."
+        },
+        {
+          "turn": 190,
+          "test": "Your religion the majority in half the civilizations, the Holy City held with a Monument and Victor, six Jong, and no rival at Steam Power?",
+          "pass": "Enter the close; the convoys finish it.",
+          "fail": "A rival at Steam Power: the fleet is a target from here; keep it in port under Walls, convert by Apostle alone with Debaters, and plan Steel. Religion in fewer than three civilizations: the Culture fallback begins now, with the Faith buying Naturalists and Rock Bands later."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "jong-buy",
+          "turn": 126,
+          "text": "Buy two Jong with Faith the turn the civic lands; form them with the Admiral and the Caravel."
+        },
+        {
+          "id": "jong-clear-sea",
+          "turn": 135,
+          "text": "Clear every rival Quadrireme and Caravel between your ports and the target; Naval Tradition's Inspiration comes with the first kill."
+        },
+        {
+          "id": "jong-holy-city",
+          "turn": 145,
+          "text": "Besiege the coastal Holy City: Jong on the Walls, Admiral adjacent, the Caravel takes it; Monument first and Victor in."
+        },
+        {
+          "id": "jong-first-convoy",
+          "turn": 150,
+          "text": "Four Proselytizer Apostles under two Jong to the target continent; convert the three nearest coastal cities."
+        },
+        {
+          "id": "jong-inquisitors",
+          "turn": 160,
+          "text": "Two Inquisitors at home and Moksha's Grand Inquisitor in the convoy port; no rival Apostle flips a Holy Site city."
+        },
+        {
+          "id": "jong-second-convoy",
+          "turn": 175,
+          "text": "Second convoy to the next civilization; check the religion screen each ten turns for the majority count."
+        }
+      ]
+    },
+    {
+      "id": "close",
+      "name": "Convert the last coasts",
+      "turns": {
+        "from": 191,
+        "to": null
+      },
+      "era": "industrial",
+      "objective": "Finish the Religion win with Apostle convoys to the last civilizations before Ironclads make the escort a target, upgrade the Jong to Battleships at Steel if the war continues, and if a rival religion cannot be overtaken, turn the coastal Theater Squares and Kampungs into the Culture fallback.",
+      "build_order": [
+        {
+          "item": "Apostle",
+          "why": "Convoys of four until the last civilization's majority flips."
+        },
+        {
+          "item": "Ironclad",
+          "why": "Two, built with Production under Press Gangs, to escort the Jong once rivals have Steam Power."
+        },
+        {
+          "item": "Art Museum",
+          "why": "Culture branch: the Theater Squares on the coast fill with the Artists Classical Republic made."
+        },
+        {
+          "item": "Factory",
+          "why": "Both branches: Production in the Arsenal city for the last ships."
+        },
+        {
+          "item": "Seaside Resort",
+          "why": "Culture branch: every Breathtaking coast tile not under a Kampung is Tourism."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:steel",
+          "note": "Battleships from the Jong; an Ironclad plus a Coal Mine is the Eureka."
+        },
+        {
+          "id": "tech:electricity",
+          "note": "Two Privateers give the Eureka; Power for the Factories and Shipyards."
+        },
+        {
+          "id": "tech:scientific-theory",
+          "note": "Free Eureka from The Enlightenment; the way to Radio."
+        },
+        {
+          "id": "tech:flight",
+          "note": "An Industrial wonder gives the Eureka; Kampung Tourism comes with it."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:civil-engineering",
+          "note": "Seven district types; Kampung Housing rises with it."
+        },
+        {
+          "id": "civic:natural-history",
+          "note": "Archaeological Museum for the Culture branch; Relics and Artifacts."
+        },
+        {
+          "id": "civic:nationalism",
+          "note": "Fleets from two Jong; a Holy War Casus Belli gives the Inspiration."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Religious Orders",
+          "slot": "economic",
+          "from": "civic:reformed-church",
+          "why": "Still the Apostle card."
+        },
+        {
+          "card": "Press Gangs",
+          "slot": "military",
+          "from": "civic:exploration",
+          "why": "Ironclads at double speed in the Arsenal city."
+        },
+        {
+          "card": "Grand Opera",
+          "slot": "wildcard",
+          "from": "civic:opera-and-ballet",
+          "why": "Culture branch: Great Artist and Musician points in the coastal Theater Squares."
+        }
+      ],
+      "districts": [
+        {
+          "district": "theater-square",
+          "city": "two more coastal cities",
+          "note": "Culture branch: on coast tiles for the Great Nusantara adjacency."
+        }
+      ],
+      "wonders": [],
+      "governors": [
+        {
+          "governor": "moksha",
+          "promotion": "Grand Inquisitor",
+          "city": "the convoy port",
+          "why": "Still the Apostles' governor."
+        },
+        {
+          "governor": "reyna",
+          "promotion": "Forestry Management",
+          "city": "the best coast city",
+          "why": "Culture branch: appeal for the Seaside Resorts."
+        }
+      ],
+      "city_states": [
+        {
+          "type": "Religious",
+          "why": "Faith to the last convoy."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-admiral",
+          "why": "An Industrial Admiral retires into a free Ironclad or a Combat Strength aura for the Battleships."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 240,
+          "test": "Your religion the majority in every civilization but one, with a convoy landed on that one; or the Culture branch with Tourism dominant over two civilizations?",
+          "pass": "Continue to the end; no further decisions.",
+          "fail": "Neither: the game is a Score game. Keep the Jong line as Battleships for defence, stop buying Apostles, and spend the Faith on Naturalists and Rock Bands for whatever Tourism remains."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "close-last-convoy",
+          "turn": 200,
+          "text": "Convoy to the last civilization with Debaters in front and Proselytizers behind, two Jong and an Ironclad as escort."
+        },
+        {
+          "id": "close-steel",
+          "turn": 220,
+          "text": "Steel researched; upgrade the Jong to Battleships if any rival fleet is still at sea."
+        },
+        {
+          "id": "close-review",
+          "turn": 240,
+          "text": "Review the turn 240 checkpoint and either continue the convoys or declare the game a Culture or Score game."
+        }
+      ]
+    }
+  ],
+  "boosts": [
+    {
+      "id": "tech:sailing",
+      "fit": "free",
+      "when": "shore",
+      "how": "The coastal capital triggers it on settle."
+    },
+    {
+      "id": "tech:astrology",
+      "fit": "cheap",
+      "when": "shore",
+      "how": "The Galley or the Scout sights a natural wonder along the coast."
+    },
+    {
+      "id": "tech:writing",
+      "fit": "free",
+      "when": "faith",
+      "how": "The Galley meets the first civilization along the coast."
+    },
+    {
+      "id": "tech:archery",
+      "fit": "cheap",
+      "when": "faith",
+      "how": "The Slinger finishes a barbarian from the inland camp."
+    },
+    {
+      "id": "tech:bronze-working",
+      "fit": "cheap",
+      "when": "faith",
+      "how": "Three barbarian kills by the Warrior, Slinger and Galley at the first camp."
+    },
+    {
+      "id": "tech:wheel",
+      "fit": "cheap",
+      "when": "faith",
+      "how": "A Mine on whatever resource hill the coast has."
+    },
+    {
+      "id": "tech:masonry",
+      "fit": "costly",
+      "when": "stage",
+      "how": "A Quarry only if Stone is beside a city; usually unboosted."
+    },
+    {
+      "id": "tech:irrigation",
+      "fit": "cheap",
+      "when": "faith",
+      "how": "Farm the one wheat or rice a coastal city has."
+    },
+    {
+      "id": "tech:celestial-navigation",
+      "fit": "free",
+      "when": "faith",
+      "how": "Two Fishing Boats from the first Builder."
+    },
+    {
+      "id": "tech:currency",
+      "fit": "free",
+      "when": "faith",
+      "how": "The first Trader from the capital Harbor."
+    },
+    {
+      "id": "tech:horseback-riding",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:iron-working",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:shipbuilding",
+      "fit": "free",
+      "when": "faith",
+      "how": "Two Galleys, the capital's and one more from the second city."
+    },
+    {
+      "id": "tech:mathematics",
+      "fit": "free",
+      "when": "faith",
+      "how": "Holy Site, Harbor and Campus are three specialty districts."
+    },
+    {
+      "id": "tech:construction",
+      "fit": "costly",
+      "when": "stage",
+      "how": "A Water Mill only if a city sits on a river; coastal cities rarely do."
+    },
+    {
+      "id": "tech:engineering",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "Ancient Walls in the city nearest the target."
+    },
+    {
+      "id": "tech:military-tactics",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:buttress",
+      "fit": "free",
+      "when": "stage",
+      "how": "Mahabodhi or the Great Lighthouse is a Classical-or-later wonder you own."
+    },
+    {
+      "id": "tech:apprenticeship",
+      "fit": "costly",
+      "when": "stage",
+      "how": "Three Mines; the coast may not have three hills."
+    },
+    {
+      "id": "tech:stirrups",
+      "fit": "free",
+      "when": "stage",
+      "how": "Feudalism is on the gate path."
+    },
+    {
+      "id": "tech:machinery",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:education",
+      "fit": "costly",
+      "when": "stage",
+      "how": "A Great Scientist, which a single Campus rarely earns in time."
+    },
+    {
+      "id": "tech:military-engineering",
+      "fit": "costly",
+      "when": "stage",
+      "how": "An Aqueduct only if the capital has a river or lake."
+    },
+    {
+      "id": "tech:castles",
+      "fit": "free",
+      "when": "stage",
+      "how": "Theocracy, adopted at Reformed Church, is a Tier 2 government."
+    },
+    {
+      "id": "tech:cartography",
+      "fit": "free",
+      "when": "stage",
+      "how": "Two Harbors stood by turn 70."
+    },
+    {
+      "id": "tech:mass-production",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "A Lumber Mill on coastal Woods."
+    },
+    {
+      "id": "tech:banking",
+      "fit": "free",
+      "when": "jong",
+      "how": "Guilds is on the civic path."
+    },
+    {
+      "id": "tech:gunpowder",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:printing",
+      "fit": "cheap",
+      "when": "jong",
+      "how": "Two Universities in the two biggest cities."
+    },
+    {
+      "id": "tech:square-rigging",
+      "fit": "costly",
+      "when": "jong",
+      "how": "A Musketman kill, which the Jong war may provide when the Holy City's garrison sallies."
+    },
+    {
+      "id": "tech:astronomy",
+      "fit": "costly",
+      "when": "jong",
+      "how": "A University beside a mountain, if any coastal city has one."
+    },
+    {
+      "id": "tech:siege-tactics",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:industrialization",
+      "fit": "cheap",
+      "when": "jong",
+      "how": "Two Workshops, Arsenal city and capital."
+    },
+    {
+      "id": "tech:scientific-theory",
+      "fit": "free",
+      "when": "close",
+      "how": "The Enlightenment is on the civic path."
+    },
+    {
+      "id": "tech:steam-power",
+      "fit": "free",
+      "when": "jong",
+      "how": "Two Shipyards in the Harbor cities."
+    },
+    {
+      "id": "tech:economics",
+      "fit": "costly",
+      "when": "close",
+      "how": "Two Banks if Gold runs short for upgrades."
+    },
+    {
+      "id": "tech:electricity",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Privateers, Faith-bought once Mercantilism lands."
+    },
+    {
+      "id": "tech:steel",
+      "fit": "cheap",
+      "when": "close",
+      "how": "An Ironclad built under Press Gangs plus a Coal Mine."
+    },
+    {
+      "id": "tech:flight",
+      "fit": "costly",
+      "when": "close",
+      "how": "Owning an Industrial-era wonder; Kilwa and the Venetian Arsenal come too early to count."
+    },
+    {
+      "id": "tech:military-science",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:craftsmanship",
+      "fit": "free",
+      "when": "shore",
+      "how": "Two Fishing Boats and a Mine from the first Builder."
+    },
+    {
+      "id": "civic:foreign-trade",
+      "fit": "free",
+      "when": "shore",
+      "how": "The Galley sights a second continent, which on an archipelago is the next island."
+    },
+    {
+      "id": "civic:military-tradition",
+      "fit": "cheap",
+      "when": "faith",
+      "how": "The inland camp cleared by the Warrior and the Archer."
+    },
+    {
+      "id": "civic:state-workforce",
+      "fit": "free",
+      "when": "faith",
+      "how": "The capital Holy Site is the first district."
+    },
+    {
+      "id": "civic:early-empire",
+      "fit": "free",
+      "when": "faith",
+      "how": "Six population across two coastal cities."
+    },
+    {
+      "id": "civic:mysticism",
+      "fit": "free",
+      "when": "faith",
+      "how": "The pantheon founded on turn 12."
+    },
+    {
+      "id": "civic:political-philosophy",
+      "fit": "cheap",
+      "when": "faith",
+      "how": "Three city-states met by the Galley."
+    },
+    {
+      "id": "civic:drama-and-poetry",
+      "fit": "cheap",
+      "when": "faith",
+      "how": "Mahabodhi Temple or the Great Lighthouse."
+    },
+    {
+      "id": "civic:games-and-recreation",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "Researching Construction, a small detour on the gate path."
+    },
+    {
+      "id": "civic:theology",
+      "fit": "free",
+      "when": "faith",
+      "how": "Founding the religion."
+    },
+    {
+      "id": "civic:military-training",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:defensive-tactics",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "A neighbour declares on a Religion civ before turn 100 more often than not."
+    },
+    {
+      "id": "civic:recorded-history",
+      "fit": "costly",
+      "when": "stage",
+      "how": "Two Campuses; the plan builds one unless the Culture fallback is early."
+    },
+    {
+      "id": "civic:naval-tradition",
+      "fit": "cheap",
+      "when": "jong",
+      "how": "A Quadrireme or Jong kill on the first rival ship."
+    },
+    {
+      "id": "civic:feudalism",
+      "fit": "costly",
+      "when": "stage",
+      "how": "Six Farms on coastal land; usually paid in full."
+    },
+    {
+      "id": "civic:civil-service",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "The capital at ten population on Kampungs."
+    },
+    {
+      "id": "civic:mercenaries",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:divine-right",
+      "fit": "free",
+      "when": "stage",
+      "how": "Two Temples in the Holy Sites."
+    },
+    {
+      "id": "civic:guilds",
+      "fit": "cheap",
+      "when": "jong",
+      "how": "Two Markets, second city and capital."
+    },
+    {
+      "id": "civic:medieval-faires",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "Four Trade Routes from the Harbors and the Market."
+    },
+    {
+      "id": "civic:exploration",
+      "fit": "cheap",
+      "when": "jong",
+      "how": "Two Caravels, the melee ship and its spare."
+    },
+    {
+      "id": "civic:humanism",
+      "fit": "costly",
+      "when": "stage",
+      "how": "A Great Artist, which Classical Republic and one Amphitheater may deliver by accident."
+    },
+    {
+      "id": "civic:diplomatic-service",
+      "fit": "cheap",
+      "when": "jong",
+      "how": "An alliance with a civilization already following your religion."
+    },
+    {
+      "id": "civic:reformed-church",
+      "fit": "free",
+      "when": "stage",
+      "how": "Six cities following your religion; your five and one of the neighbour's."
+    },
+    {
+      "id": "civic:mercantilism",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "A Great Merchant from the two Markets and the Harbors; buy him with Faith if the points are close."
+    },
+    {
+      "id": "civic:the-enlightenment",
+      "fit": "free",
+      "when": "jong",
+      "how": "Three Great People were earned by turn 100."
+    },
+    {
+      "id": "civic:civil-engineering",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Seven district types: Holy Site, Harbor, Campus, Theater Square, Commercial Hub, Industrial Zone and an Entertainment Complex."
+    },
+    {
+      "id": "civic:nationalism",
+      "fit": "cheap",
+      "when": "close",
+      "how": "A Holy War declared with the Casus Belli for the Holy City."
+    },
+    {
+      "id": "civic:colonialism",
+      "fit": "cheap",
+      "when": "jong",
+      "how": "Researching Astronomy."
+    },
+    {
+      "id": "civic:natural-history",
+      "fit": "costly",
+      "when": "close",
+      "how": "An Archaeological Museum only on the Culture branch."
+    },
+    {
+      "id": "civic:urbanization",
+      "fit": "costly",
+      "when": "close",
+      "how": "A city at fifteen on Kampungs and a Sewer; the capital may get there."
+    },
+    {
+      "id": "civic:opera-and-ballet",
+      "fit": "costly",
+      "when": "close",
+      "how": "An Art Museum only on the Culture branch."
+    }
+  ],
+  "decision_triggers": [
+    {
+      "name": "Map check fails on turn 1",
+      "if": "No coast under the capital and none within two Settler moves, or no second coastal site within ten water tiles.",
+      "then": "Run the fallback now: ordinary Holy Sites by mountains and Woods, Earth Goddess or Religious Settlements, a Culture finish. Do not plan the Jong fleet; a treasury banked for ships on a land map is Faith that should have been Apostles."
+    },
+    {
+      "name": "Camp launches ships",
+      "if": "A coastal barbarian camp spawns a Galley or Quadrireme within sight of a Kampung.",
+      "then": "Buy a Quadrireme with Faith that turn and park it between the camp and the Kampungs; one pillaged Kampung is twenty turns of Food. Clear the camp with a landed Archer pair when the ship is dead."
+    },
+    {
+      "name": "Target already converted",
+      "if": "The chosen coastal Holy City follows your religion by the time the fleet is bought.",
+      "then": "Good: the Religion verdict is ahead of schedule. Pick the next rival's coastal Holy City for the fleet, or if none remains, keep the fleet for sea control and spend the refill on Apostles only."
+    },
+    {
+      "name": "Rival Frigates before the gate",
+      "if": "A rival fields Frigates on your water before Mercantilism lands.",
+      "then": "Walls and Faith-bought Quadriremes in the Harbors, no Apostle convoys without escort, and the late-gate plan; when the Jong come, buy four at once and bring the Admiral, because two Jong against six Frigates is the loss the whole treasury cannot afford."
+    }
+  ],
+  "abort": {
+    "trigger": "Mercantilism lands with Faith for one Jong, no Admiral and no Theocracy, while a rival already has Frigates on your coast and a rival religion holds the majority in more than half the civilizations.",
+    "actions": [
+      "Do not buy the single Jong; one Frigate with an extra move does not clear a sea, and the Faith is the only reserve the empire has.",
+      "Hold the ports with Quadriremes under Walls, convert by Apostle alone with Debaters along your own coast, and bank until four Jong and the Admiral can sail together.",
+      "If the rival religion is past recovery by then, declare the game a Culture game at the gate: Theater Squares on every coast tile, Kilwa and Nan Madol, and the Faith into Naturalists and Rock Bands."
+    ]
+  },
+  "fail_state": "Settled two cities inland for the hills, founded the religion late, bought Caravels with the Faith because the treasury looked idle at turn 100, and reached Mercantilism with nothing to spend; then watched Frigates and Ironclads take the sea while the Apostles walked. The gate opened on an empty treasury, and the one civilization built to move religion across water never moved it.",
+  "common_mistakes": [
+    "Settling inland for hills. The kit pays per coastal City Center and per coast tile beside a district; a hill city with no coast is a city from another civilization.",
+    "Spending the Faith on Caravels or Quadriremes beyond the camp defence because the treasury is sitting there. The treasury is the Jong fleet, and a fleet bought in one turn is worth three bought in pieces.",
+    "Buying one Jong the turn the civic lands. One is a Frigate; two with an Admiral is a fleet; six takes a Holy City.",
+    "Sending Apostles across water without the fleet. Free embarkation is speed, not safety; a Quadrireme kills an embarked Apostle in one hit.",
+    "Forgetting Theocracy. The Faith discount is a fifth of the fleet and the religious strength is every debate; Reformed Church is on the path for a reason."
+  ],
+  "sources": [
+    "Civilization VI Civilopedia, Gathering Storm ruleset (Indonesia, Gitarja, Jong, Kampung; Exalted Goddess of the Three Worlds buys naval units with Faith, gives religious units free embarkation and +2 Faith on City Centers beside Coast or Lake; Great Nusantara gives minor adjacency from Coast and Lake to Holy Sites, Campuses, Industrial Zones and Theater Squares; the Jong is unlocked by the Mercantilism civic, not a technology). The Faith price of a Jong quoted in staging is an estimate from the Frigate's purchase cost and should be read off the purchase panel in the game.",
+    "Boost objectives cross-checked against civilization6planner.com tech-tree and civics-tree pages, 2026-10-01.",
+    "Leadership Focus tags, caveats and Gate supplement for Gitarja in this repository; the Gate template sets the map viability check, the navy purchase timing against obsolescence and a land plan as required elements."
+  ]
+}

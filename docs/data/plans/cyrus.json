@@ -1,0 +1,1741 @@
+{
+  "leader": "Cyrus",
+  "civilization": "Persia",
+  "generated": "2026-10-02",
+  "slug": "cyrus",
+  "shape": "Countdown",
+  "secondary_shape": null,
+  "version": 1,
+  "updated": "2026-10-02",
+  "assumptions": {
+    "ruleset": "Gathering Storm with every expansion and the Leader Pass",
+    "speed": "Standard",
+    "difficulty": "Emperor",
+    "map": "Pangaea or Continents, standard size, 8 civilizations",
+    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. Cyrus's single persona is planned here. The Immortal is treated as the game has it: a Swordsman replacement at Iron Working with a 30 Strength melee attack and a 25 Strength ranged attack of range 2, costing no Iron. Fall of Babylon is taken as +2 Movement for ten turns after a Surprise War declaration, with the Surprise War charged at Formal War grievances and occupied cities keeping their yields while garrisoned."
+  },
+  "verdict": {
+    "victory": "Domination",
+    "secondary": "Culture",
+    "confidence": "medium",
+    "one_line": "Stage four Immortals, two Archers and a Battering Ram on the target's border, declare the Surprise War on turn 46, and take the capital inside the ten turns of +2 Movement. A second ten-turn burst before turn 90 takes a second city or a second neighbour; after that the grievances are the ceiling and Persia is a domestic trade and Pairidaeza Culture civilization.",
+    "why": "Fall of Babylon gives every unit +2 Movement for ten turns after a Surprise War is declared and charges that war at Formal War grievances, which turns the most expensive declaration in the game into the cheapest and lets a 2 Movement Immortal cross four tiles a turn. The Immortal itself is a 30 Strength melee unit that also shoots at 25 with range 2, so four of them are a siege line and an assault line at once, and they need no Iron. The ten turns start the moment the declaration is made and the bonus is never banked, so anything not staged on the border before the declaration is spent from the burst, and a second burst costs a second declaration's grievances. Captured cities are permanent; the grievances are permanent too, and by the Medieval era the sum of them closes every alliance and city-state the digest phase needs, which is why the window ends at turn 90 whatever the army looks like. Satrapies pays Gold and Culture on every domestic Trade Route and the Pairidaeza pays Culture and Gold beside districts, so the empire the bursts built has a Culture engine waiting in it, which is why the secondary is Culture and not Science."
+  },
+  "map_check": {
+    "must_have": [
+      "A rival capital reachable by land within roughly 10 tiles of your border, found by turn 12; the burst is ten turns and the march is part of it.",
+      "Hills or Production near the capital for four Immortals and a Ram by turn 44; a flat food start builds them too late for the first burst."
+    ],
+    "prefer": [
+      "A river between your cities for Pairidaeza adjacency and the domestic Trade Routes that Satrapies pays on.",
+      "One or two Barbarian camps between you and the target so the road the Immortals march on is quiet when the burst starts.",
+      "Kabul within reach of the first envoys; double experience on every battle you start is every battle Cyrus fights.",
+      "Dead Sea within the target's reach: units beside it heal fully in a turn, mid-burst."
+    ],
+    "no_go": "An island or peninsula start with no land neighbour within ten tiles, or a neighbour behind a mountain range with a single Hills pass. Ten turns of +2 Movement do not cross water or a one-tile pass, and nothing else in the kit opens a city.",
+    "fallback": "If no capital is within ten tiles of the border by turn 12, settle toward the nearest one and run the first burst at turn 60 instead, from the forward city, with the deadline unchanged at 90. If none is within reach by turn 40, Persia is a domestic trade and Culture civilization: three river cities, Pairidaezas beside Theater Squares and Commercial Hubs, a Trader per city, and the Surprise War saved for a city-state or a neighbour who falls behind in the Medieval era."
+  },
+  "kit_levers": [
+    {
+      "source": "leader_ability",
+      "name": "Fall of Babylon",
+      "buys": "+2 Movement for all units for ten turns after declaring a Surprise War, Surprise Wars charged at Formal War grievances, and occupied cities keeping their yields while a unit garrisons them.",
+      "exploit": "The ten turns start at the declaration, not at the first attack, so the staging checklist in this plan must be complete on the border before the button is pressed. Four tiles a turn means Immortals reach the capital on turn one of the burst and the Ram on turn two. Each further Surprise War is another burst and another Formal War's grievances; the plan budgets two before turn 90 and none after, because the grievances are what the digest phase pays with. The civ-info text says occupied cities also gain Loyalty; the plan does not rely on it and moves Victor in regardless."
+    },
+    {
+      "source": "civ_ability",
+      "name": "Satrapies",
+      "buys": "A free Trade Route at Political Philosophy, Gold and Culture on every domestic Trade Route, and Traders building roads one era better than everyone else's.",
+      "exploit": "A Trader from the capital to the forward city before the burst builds a Classical road the Immortals march on at four tiles a turn, and pays Gold toward their maintenance. After the window every captured city gets a domestic route to the capital: Food, Production, Gold, Culture and a road, which is the whole digest phase in one unit. The extra route at Political Philosophy arrives during the arming phase and goes to the target's border."
+    },
+    {
+      "source": "unique_unit",
+      "name": "Immortal",
+      "buys": "A Swordsman replacement at Iron Working with 30 melee Strength, a 25 Strength ranged attack of range 2, and no Iron cost.",
+      "exploit": "Four Immortals shoot the garrison from two tiles away on the turn they arrive and walk in the turn the Walls are down; they are the Archers and the Swordsmen of the burst at once. No Iron means the arming phase never waits on a Mine. They lose the ranged attack when upgraded, so they stay Immortals as the garrison line until Professional Army makes the upgrade cheap."
+    },
+    {
+      "source": "unique_infrastructure",
+      "name": "Pairidaeza",
+      "buys": "An improvement at Early Empire with Culture and Gold, more Culture beside Holy Sites and Theater Squares, more Gold beside Commercial Hubs and City Centers, and Appeal to its neighbours, never adjacent to another Pairidaeza.",
+      "exploit": "The digest phase's yield. Lay one on the flat tile between the City Center and the Commercial Hub, and one between the Theater Square and the Holy Site, in every city; each is a small wonder that also raises the Appeal for Neighborhoods and Seaside Resorts later. It costs a Builder charge the arming phase does not have, so none is built before turn 90."
+    },
+    {
+      "source": "agenda",
+      "name": "Opportunist",
+      "buys": "Cyrus likes leaders who have declared Surprise Wars themselves and dislikes those who never have.",
+      "exploit": "Irrelevant to your own play except as a reminder that an AI Cyrus on the same map approves of this plan and may join a war against your target; offer him a joint war if he is near it. Everyone else reads two Surprise Wars by turn 90 as what they are, and the grievance budget below is the measure of how much of that you can afford."
+    }
+  ],
+  "shape_block": {
+    "countdown": {
+      "deadline_turn": 90,
+      "midpoint_turn": 60,
+      "target_selection": "On turn 1, send the Warrior along the longest open ground the start shows. The target is the nearest rival capital by land within ten tiles of where your border will be at turn 40, chosen by turn 12 and not changed afterwards. Prefer a capital with its second city on the near side, so the first burst takes two cities on one declaration, and prefer an owner who has not met many others, since the grievances with third parties scale with who saw the war. Walls do not close this window; the Immortals shoot them and the Ram breaks them. What closes it is distance and grievances: a target more than two burst-turns from the border, or a grievance total that already has two civilizations denouncing you.",
+      "what_counts_as_converted": "Cities you hold at turn 90: the target capital and at least one more city, held with positive Loyalty, a garrison and a Monument, taken across at most two Surprise War declarations. Kills, pillage Gold, roads built, Immortal promotions and a Great General do not count, and a third declaration after turn 90 is not a conversion, it is the fail state arriving late. Grievances are tracked as a resource with a ceiling: roughly 150 with any one civilization or 100 with the rest of the table, measured on the Grievances screen, and a burst that would cross it is not launched.",
+      "after_window": "At turn 90 the plan stops declaring whatever the count. Immortals garrison the captures and wait for Professional Army before upgrading to Musketmen. Production turns to Monuments, Granaries, Traders for domestic routes and Builders for Pairidaezas. The grievances are left to decay for forty turns before any alliance is proposed, and no Surprise War is declared again; a later war, if one comes, is a Casus Belli war against a neighbour an era behind or one an ally has started. The rest of the game is a domestic trade and Culture civilization whose Pairidaezas and Theater Squares sit on the cities the bursts took."
+    }
+  },
+  "phases": [
+    {
+      "id": "arm",
+      "name": "Arm",
+      "turns": {
+        "from": 1,
+        "to": 45
+      },
+      "era": "ancient",
+      "objective": "Pick the target by turn 12, clear the road to it, reach Iron Working by turn 40, and complete the staging checklist on the target's border by turn 45: four Immortals, two Archers, a Battering Ram, a Classical road from the forward city, Conscription ready to slot, and the Gold for one emergency purchase, before the Surprise War is declared.",
+      "build_order": [
+        {
+          "item": "Scout",
+          "why": "Finds the target and the camps on the road in the first twelve turns; Writing and Political Philosophy's city-states come from it."
+        },
+        {
+          "item": "Slinger",
+          "why": "Archery Eureka on the first camp Scout; upgrades to one of the two Archers that stand behind the Immortals."
+        },
+        {
+          "item": "Settler",
+          "why": "The second city goes toward the target as the forward base the burst launches from and the Trader builds a road to."
+        },
+        {
+          "item": "Warrior",
+          "why": "Second Warrior; the two clear the first camp for Bronze Working and carry the Ram if the Immortals are busy shooting."
+        },
+        {
+          "item": "Builder",
+          "why": "A Mine for The Wheel, a Quarry for Masonry, and a Farm on a resource for Irrigation; Craftsmanship's Inspiration."
+        },
+        {
+          "item": "Monument",
+          "why": "Culture to reach Political Philosophy and its free Trade Route before turn 40."
+        },
+        {
+          "item": "Immortal",
+          "why": "First of four the turn Iron Working lands, under Agoge; 30 Strength and a ranged attack, no Iron needed."
+        },
+        {
+          "item": "Immortal",
+          "why": "Second and third; the forward city builds one while the capital builds two."
+        },
+        {
+          "item": "Archer",
+          "why": "Second Archer; two shoot with the Immortals from two tiles and finish wounded sorties."
+        },
+        {
+          "item": "Battering Ram",
+          "why": "Behind Masonry, built in the forward city; a Warrior or Immortal carries it in at four tiles a turn."
+        },
+        {
+          "item": "Trader",
+          "why": "Capital to the forward city: a Classical road for the march and the Currency Eureka."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:mining",
+          "note": "First: Bronze Working and Iron Working hang off it, and the first Mine gives The Wheel."
+        },
+        {
+          "id": "tech:bronze-working",
+          "note": "Eureka from three Barbarian kills at the first camp; Iron Working is behind it and the Immortal behind that."
+        },
+        {
+          "id": "tech:archery",
+          "note": "Eureka from a Slinger kill at the camp; the two Archers behind the line."
+        },
+        {
+          "id": "tech:masonry",
+          "note": "The Battering Ram and the Quarry; Eureka from the Quarry."
+        },
+        {
+          "id": "tech:iron-working",
+          "note": "The Immortal; by turn 40 on Emperor with the Bronze Working Eureka. Mine the Iron it reveals for the Eureka even though Immortals do not need it."
+        },
+        {
+          "id": "tech:wheel",
+          "note": "Eureka from the first Mine on a resource; Engineering and the Water Mill behind it."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:code-of-laws",
+          "note": "Discipline for the camp fights and Urban Planning for the capital."
+        },
+        {
+          "id": "civic:craftsmanship",
+          "note": "Agoge is the point: +50% toward Ancient and Classical melee and ranged, which is the whole army. Inspiration from three improvements."
+        },
+        {
+          "id": "civic:foreign-trade",
+          "note": "The first Trader and Caravansaries; Inspiration only if a second continent is in sight."
+        },
+        {
+          "id": "civic:early-empire",
+          "note": "Colonization for the second Settler; Inspiration free at six population. The Pairidaeza unlocks here but is not built yet."
+        },
+        {
+          "id": "civic:political-philosophy",
+          "note": "Oligarchy and the Satrapies Trade Route; Inspiration from three city-states the Scout meets. Aim for turn 40."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Discipline",
+          "slot": "military",
+          "from": "civic:code-of-laws",
+          "why": "+5 Strength against Barbarians while the Warriors and Slinger clear the first camp."
+        },
+        {
+          "card": "Urban Planning",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "+1 Production in the capital, which is building units and a Settler."
+        },
+        {
+          "card": "Agoge",
+          "slot": "military",
+          "from": "civic:craftsmanship",
+          "why": "+50% Production toward Ancient and Classical melee, anti-cavalry and ranged units; four Immortals and two Archers come out in two thirds of the turns."
+        },
+        {
+          "card": "Caravansaries",
+          "slot": "economic",
+          "from": "civic:foreign-trade",
+          "why": "+2 Gold on the domestic route Satrapies already pays on; the army's upkeep before the first capture."
+        }
+      ],
+      "districts": [],
+      "pantheon": {
+        "slug": "god-of-the-forge",
+        "why": "+25% Production toward Ancient and Classical military units stacks with Agoge on every Immortal and Archer.",
+        "alternative": "religious-settlements"
+      },
+      "wonders": [],
+      "governors": [],
+      "city_states": [
+        {
+          "slug": "kabul",
+          "why": "Double experience from battles you start, and Cyrus starts every battle; an Immortal with two promotions by the second burst is worth two without."
+        },
+        {
+          "type": "Militaristic",
+          "why": "The first envoy goes to any Militaristic city-state met on the road: +2 Production toward units in the capital."
+        }
+      ],
+      "great_people": [],
+      "checkpoints": [
+        {
+          "turn": 45,
+          "test": "Staging checklist complete on the target's border: four Immortals, two Archers, a Battering Ram, a road from the forward city, Conscription unlocked, Gold for one unit purchase, and the target within two turns at four tiles a turn?",
+          "pass": "Declare the Surprise War on turn 46 with everything already adjacent; the ten turns start now.",
+          "fail": "Do not declare. Every missing item is spent from the ten turns if it is finished afterwards. Finish the checklist and declare the turn it is complete, even if that is turn 52; the deadline at 90 still allows a second burst at 75."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "arm-pick-target",
+          "turn": 1,
+          "text": "Settle in place or one tile toward Production, then send the Warrior along the open ground; the target is whichever rival capital it or the Scout finds within ten tiles of your future border by turn 12."
+        },
+        {
+          "id": "arm-first-camp",
+          "turn": 15,
+          "text": "Clear the nearest camp with two Warriors and the Slinger; Slinger kill for Archery, three kills for Bronze Working, the camp for Military Tradition."
+        },
+        {
+          "id": "arm-forward-city",
+          "turn": 22,
+          "text": "Settle the second city on the road to the target, on a river if one exists; it builds one Immortal and the Ram and is where the burst launches from."
+        },
+        {
+          "id": "arm-pantheon",
+          "turn": 24,
+          "text": "Found God of the Forge with the first 25 Faith; slot Agoge the turn Craftsmanship completes."
+        },
+        {
+          "id": "arm-road",
+          "turn": 36,
+          "text": "Run the first Trader from the capital to the forward city; the road it builds is Classical under Satrapies and the Immortals march on it at four tiles a turn."
+        },
+        {
+          "id": "arm-checklist",
+          "turn": 45,
+          "text": "Walk the staging checklist item by item on the border, out of the target's sight, and write down the grievance total with every civilization met before the declaration."
+        }
+      ]
+    },
+    {
+      "id": "window",
+      "name": "Window",
+      "turns": {
+        "from": 46,
+        "to": 90
+      },
+      "era": "classical",
+      "objective": "Take the target capital inside the first ten-turn burst, make peace or keep the second city if it is within reach, and spend one more Surprise War before turn 90 on a second city or a second neighbour only if the grievance total stays under the ceiling, while the home cities build nothing that pays back after the deadline except Settlers, Traders and Monuments.",
+      "build_order": [
+        {
+          "item": "Monument",
+          "why": "In every captured city the turn it is taken; Loyalty before anything else."
+        },
+        {
+          "item": "Immortal",
+          "why": "Replace losses only, and only between bursts; a unit finished during a burst arrives when the Movement is gone."
+        },
+        {
+          "item": "Trader",
+          "why": "Domestic route from each capture to the capital: Food, Gold, Culture, a road and the Medieval Faires count."
+        },
+        {
+          "item": "Settler",
+          "why": "Third Persian city with Colonization, on a river, while the army is away."
+        },
+        {
+          "item": "Archer",
+          "why": "One per captured city as the standing garrison so the Immortals can move on."
+        },
+        {
+          "item": "Battering Ram",
+          "why": "A second one for the second burst if the first was lost; the second target has Walls by now."
+        },
+        {
+          "item": "Builder",
+          "why": "Only after the second burst: the first Pairidaeza beside the capital's Commercial Hub."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:writing",
+          "note": "Eureka free from meeting the target; the Campus after the war."
+        },
+        {
+          "id": "tech:currency",
+          "note": "Eureka free from the first Trader; the Commercial Hub pays the army and the Pairidaeza wants to sit beside it."
+        },
+        {
+          "id": "tech:horseback-riding",
+          "note": "Eureka from a Pasture; needed only so Stirrups and Castles are reachable later."
+        },
+        {
+          "id": "tech:construction",
+          "note": "Water Mill in the capital for the Eureka; the Siege Tower is an alternative to a second Ram for the second burst."
+        },
+        {
+          "id": "tech:engineering",
+          "note": "Ancient Walls in the captured capital give the Eureka; the former owner comes back once."
+        },
+        {
+          "id": "tech:mathematics",
+          "note": "Three specialty districts once the war is done; Education behind it."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:military-tradition",
+          "note": "Inspiration from the first camp; the Great General points the first burst earns go further with it."
+        },
+        {
+          "id": "civic:state-workforce",
+          "note": "Conscription the turn it lands: eight units is eight Gold a turn without it. Inspiration from the first district."
+        },
+        {
+          "id": "civic:mysticism",
+          "note": "Free Inspiration from the pantheon; cheap Culture progress between the bursts; Drama and Poetry hangs off Early Empire, not this."
+        },
+        {
+          "id": "civic:defensive-tactics",
+          "note": "Free Inspiration when the target's friend declares on you after the first capture; Bastions if the captures are counter-attacked."
+        },
+        {
+          "id": "civic:drama-and-poetry",
+          "note": "Theater Squares for the Pairidaeza adjacency after the window; Inspiration only if a wonder is built, which this phase does not."
+        },
+        {
+          "id": "civic:games-and-recreation",
+          "note": "Free Inspiration from researching Construction; Entertainment Complexes for the captures."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Agoge",
+          "slot": "military",
+          "from": "civic:craftsmanship",
+          "why": "Kept between bursts while replacements are built, swapped for Conscription during each burst."
+        },
+        {
+          "card": "Conscription",
+          "slot": "military",
+          "from": "civic:state-workforce",
+          "why": "One Gold per unit per turn off an eight-unit army is the difference between positive and negative income."
+        },
+        {
+          "card": "Colonization",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "The third city with Settlers fifty percent faster while the army does the conquering."
+        },
+        {
+          "card": "Oligarchy",
+          "slot": "wildcard",
+          "from": "civic:political-philosophy",
+          "why": "The government: +4 Strength on every Immortal's melee attack and faster experience; Classical Republic is wrong here."
+        },
+        {
+          "card": "Raid",
+          "slot": "military",
+          "from": "civic:military-tradition",
+          "why": "Slotted only on burst turns when the Immortals pass improvements at four tiles a turn; pillaged Gold pays the maintenance."
+        }
+      ],
+      "districts": [
+        {
+          "district": "commercial-hub",
+          "city": "capital",
+          "note": "Only after the first capture; before that every hammer is a unit. The Trade Route capacity feeds Satrapies and the first Pairidaeza sits beside it."
+        }
+      ],
+      "pantheon": {
+        "slug": "god-of-the-forge",
+        "why": "Already founded; replacement Immortals and the garrison Archers benefit."
+      },
+      "wonders": [
+        {
+          "name": "Apadana",
+          "why": "Two envoys for every wonder built in the capital afterwards and two on completion; it is Persia's own wonder and the envoys buy Kabul.",
+          "skip_if": "The first capture has not happened by turn 60, or a rival is more than half done, which the Wonders tab shows; it is built after the second burst or not at all."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "magnus",
+          "promotion": "Provision",
+          "city": "capital",
+          "why": "The third-city Settler leaves without costing population while the capital is also replacing units."
+        },
+        {
+          "governor": "victor",
+          "promotion": "Garrison Commander",
+          "city": "the captured capital",
+          "why": "Loyalty and Strength in the city most likely to flip or be retaken; move him with each new capture."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "kabul",
+          "why": "Suzerainty before the second burst if it is on the map; two promotions per fight on the Immortals makes the second city cheaper than the first."
+        },
+        {
+          "type": "Trade",
+          "why": "The envoys left over go to Trade city-states: Gold in the capital and later in every Market, which is what a two-war Persia is short of."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-general",
+          "why": "A Classical Great General gives Immortals +5 Strength and +1 Movement within two tiles, which under Fall of Babylon is five tiles a turn; one is worth two more Immortals in a ten-turn burst."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 56,
+          "test": "Ten turns after the declaration: is the target capital taken and garrisoned?",
+          "pass": "Keep going to the second city only if it is within two turns' march and the Movement has not run out; otherwise make peace this turn with the capital kept and plan the second burst for turn 75.",
+          "fail": "Abort the burst: make peace now on any terms that keep what you hold. Do not continue at 2 Movement against a city that held at 4. Audit grievances; if they are under the ceiling, the second burst at turn 75 is the whole remaining window."
+        },
+        {
+          "turn": 90,
+          "test": "Deadline: two cities held with positive Loyalty across at most two declarations, grievances under 150 with any one civilization, and Gold per turn positive?",
+          "pass": "Stop declaring. Enter the digest phase and make peace on any terms that keep the cities.",
+          "fail": "Abort branch: peace now, no third declaration, disband every unit beyond one per city, and run the digest phase on the empire you have. The grievances decay; a third war does not."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "window-declare",
+          "turn": 46,
+          "text": "Declare the Surprise War with everything adjacent to the border; the Immortals move four tiles, shoot the garrison from two away, and the Ram crew reaches the Walls on turn two."
+        },
+        {
+          "id": "window-first-city",
+          "turn": 52,
+          "text": "Capture the target capital with an Immortal. Keep it; never raze a capital. Monument, an Archer garrison and Victor the same turn."
+        },
+        {
+          "id": "window-audit",
+          "turn": 53,
+          "text": "After every capture, before anything else: check Amenities and Loyalty, confirm a garrison unit is in the city so the occupation penalty is off, and buy a Monument if Loyalty is negative."
+        },
+        {
+          "id": "window-grievances",
+          "turn": 57,
+          "text": "Read the Grievances screen the turn the first peace is signed: write down the total with the target and with every third party. If any is over 150, or two civilizations have denounced you, the second burst is cancelled."
+        },
+        {
+          "id": "window-second-burst",
+          "turn": 75,
+          "text": "If the budget allows, declare the second Surprise War on the second city or the next neighbour with the staging checklist complete again on its border; ten turns, same rules."
+        },
+        {
+          "id": "window-stop",
+          "turn": 90,
+          "text": "Write down the number of cities held. Whatever it is, make peace this turn and move production to Monuments, Traders and Builders for Pairidaezas."
+        }
+      ]
+    },
+    {
+      "id": "digest",
+      "name": "Digest",
+      "turns": {
+        "from": 91,
+        "to": 160
+      },
+      "era": "medieval",
+      "objective": "Stabilize the captured cities, pay the infrastructure bill the arming phase skipped, run a domestic Trade Route from every city to the capital, lay the first Pairidaezas beside Commercial Hubs and Theater Squares, let the grievances decay for forty turns, and form the first alliance before any further war is considered.",
+      "build_order": [
+        {
+          "item": "Monument",
+          "why": "In any city still without one; Loyalty first, and the Culture game starts here."
+        },
+        {
+          "item": "Granary",
+          "why": "Housing in cities that were pillaged on the way in and have no fresh water improvements."
+        },
+        {
+          "item": "Trader",
+          "why": "One per city, every route domestic to the capital: Food, Production, Gold, Culture and a road, and Medieval Faires at four."
+        },
+        {
+          "item": "Commercial Hub",
+          "why": "Every city on a river; Markets for Guilds, Trade Route capacity for Satrapies, and a Pairidaeza beside each."
+        },
+        {
+          "item": "Builder",
+          "why": "A Pairidaeza between each Commercial Hub and City Center, then Farms; the arming phase built almost nothing on the tiles."
+        },
+        {
+          "item": "Theater Square",
+          "why": "Capital first, beside the Pairidaeza and a Holy Site if any; Amphitheater for Great Writer points."
+        },
+        {
+          "item": "Campus",
+          "why": "One in the captured capital; Persia has no Science and needs a Library somewhere."
+        },
+        {
+          "item": "Ancient Walls",
+          "why": "In the captured capital; the former owner will come back once, and Engineering's Eureka comes with it."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:irrigation",
+          "note": "Farm a Wheat or Rice tile for the Eureka; Housing for the captures."
+        },
+        {
+          "id": "tech:apprenticeship",
+          "note": "Three Mines across the hills; Industrial Zones later."
+        },
+        {
+          "id": "tech:stirrups",
+          "note": "Free Eureka from Feudalism; on the way to Castles."
+        },
+        {
+          "id": "tech:castles",
+          "note": "Free Eureka from a Tier 2 government; Gold from the Pairidaezas' Appeal is not here but Kilwa's line is."
+        },
+        {
+          "id": "tech:education",
+          "note": "Eureka from the first Great Scientist the one Library attracts; Universities."
+        },
+        {
+          "id": "tech:military-engineering",
+          "note": "An Aqueduct in the capital gives the Eureka; Niter reveal for the Musketman upgrades."
+        },
+        {
+          "id": "tech:machinery",
+          "note": "Three Archers is the garrison line already; Crossbowmen for the captures."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:military-training",
+          "note": "One Encampment in the forward city for the Inspiration and Great General points."
+        },
+        {
+          "id": "civic:recorded-history",
+          "note": "Two Campuses is costly for Persia; usually unboosted. On the way to Humanism."
+        },
+        {
+          "id": "civic:feudalism",
+          "note": "Six Farms once the Pairidaezas are laid; Serfdom Builders and the free Stirrups Eureka."
+        },
+        {
+          "id": "civic:civil-service",
+          "note": "The capital reaches ten population with Granary, Aqueduct and the domestic Food."
+        },
+        {
+          "id": "civic:guilds",
+          "note": "Two Markets in the Commercial Hubs; the Banking Eureka and Town Charters."
+        },
+        {
+          "id": "civic:medieval-faires",
+          "note": "Four Trade Routes running, which Satrapies and a Trader per city reach by turn 110; free Inspiration."
+        },
+        {
+          "id": "civic:mercenaries",
+          "note": "Eight land units is the army you already have; Professional Army halves the Musketman upgrades."
+        },
+        {
+          "id": "civic:divine-right",
+          "note": "Monarchy for the Housing and the Castles Eureka; two Temples is a detour Persia does not take, so unboosted."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Conscription",
+          "slot": "military",
+          "from": "civic:state-workforce",
+          "why": "Stays in until the garrisons are upgraded; the digest phase is a Gold phase."
+        },
+        {
+          "card": "Caravansaries",
+          "slot": "economic",
+          "from": "civic:foreign-trade",
+          "why": "+2 Gold on every domestic route on top of Satrapies; six routes is twelve Gold."
+        },
+        {
+          "card": "Serfdom",
+          "slot": "economic",
+          "from": "civic:feudalism",
+          "why": "Five-charge Builders lay Pairidaezas and Farms around every captured city in one trip."
+        },
+        {
+          "card": "Town Charters",
+          "slot": "economic",
+          "from": "civic:guilds",
+          "why": "Commercial Hub adjacency doubled; the river Hubs with a Pairidaeza beside them pay twice."
+        },
+        {
+          "card": "Professional Army",
+          "slot": "military",
+          "from": "civic:mercenaries",
+          "why": "Immortals to Musketmen at half the Gold; do not upgrade before this card is in."
+        },
+        {
+          "card": "Monarchy",
+          "slot": "wildcard",
+          "from": "civic:divine-right",
+          "why": "The Tier 2 government: Housing from Walls in captures that have them, Influence for envoys, and the Castles Eureka."
+        }
+      ],
+      "districts": [
+        {
+          "district": "commercial-hub",
+          "city": "every river city",
+          "note": "River adjacency; Markets for Guilds, a Trade Route each for Satrapies, and a Pairidaeza on the flat tile toward the City Center."
+        },
+        {
+          "district": "theater-square",
+          "city": "capital and the captured capital",
+          "note": "Beside a Pairidaeza; Amphitheaters and the Culture that reaches Humanism on time."
+        },
+        {
+          "district": "campus",
+          "city": "the captured capital",
+          "note": "Beside Mountains if any; the one Library that attracts the Great Scientist for Education."
+        },
+        {
+          "district": "aqueduct",
+          "city": "capital",
+          "note": "Housing to ten population for Civil Service and the Military Engineering Eureka."
+        },
+        {
+          "district": "encampment",
+          "city": "the forward city",
+          "note": "Military Training Inspiration, Great General points, and a place to upgrade the Immortals under cover."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Colosseum",
+          "why": "+2 Amenities and +2 Culture to every city within six tiles covers the captures that have none.",
+          "skip_if": "The captured cities are more than six tiles from any city that could build it, or Games and Recreation lands after turn 130."
+        },
+        {
+          "name": "Petra",
+          "why": "Desert Production for a desert forward city; the Culture game's wonder Tourism starts here.",
+          "skip_if": "No city has four or more Desert tiles, or Mathematics lands after turn 120."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "reyna",
+          "promotion": "Harbormaster",
+          "city": "capital",
+          "why": "Harbormaster doubles the Commercial Hub's adjacency, and the capital's river Hub is the richest district in the empire."
+        },
+        {
+          "governor": "amani",
+          "promotion": "Emissary",
+          "city": "the captured capital",
+          "why": "Loyalty pressure outward in the city nearest the former owner."
+        },
+        {
+          "governor": "pingala",
+          "promotion": "Grants",
+          "city": "capital",
+          "why": "Great Writer and Great Artist points in the Theater Square city once Researcher has done its turn."
+        }
+      ],
+      "city_states": [
+        {
+          "type": "Trade",
+          "why": "Three envoys for Gold in every Market; a six-Commercial-Hub empire is the best customer."
+        },
+        {
+          "slug": "venice",
+          "why": "If a route ever goes foreign, Gold per luxury at the destination; otherwise the suzerain Trade Routes count for Satrapies' capacity."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-merchant",
+          "why": "Commercial Hubs in every city attract one; Mercantilism's Inspiration and a free envoy or Gold."
+        },
+        {
+          "class": "great-writer",
+          "why": "The first Amphitheaters attract one; two Great Works of Writing in the capital are the Culture game's first Tourism."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 125,
+          "test": "Every captured city at positive Loyalty with a Monument, a domestic Trade Route and a Pairidaeza, two Commercial Hubs with Markets, and no civilization still denouncing you?",
+          "pass": "Continue; start the Theater Squares and the Encampment.",
+          "fail": "A city at negative Loyalty is the only emergency: Victor, a Monument purchase, and an Entertainment Complex before any Theater Square. If a denunciation is still live, send a delegation, trade a luxury for nothing, and wait; propose nothing until it lapses."
+        },
+        {
+          "turn": 160,
+          "test": "Education researched, four domestic Trade Routes, two Theater Squares with Amphitheaters, and a Declared Friendship with the civilization beyond the old target?",
+          "pass": "Enter the build phase and propose the alliance.",
+          "fail": "If no friendship exists, the grievances have not decayed enough: another twenty turns of delegations and luxury gifts before any proposal. If routes are short, Traders before any building."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "digest-loyalty-audit",
+          "turn": 92,
+          "text": "Audit Amenities and Loyalty in every captured city; Monument, Granary, a garrison unit and Victor before anything else is queued."
+        },
+        {
+          "id": "digest-routes",
+          "turn": 105,
+          "text": "A Trader in every city, every route domestic to the capital; count four running for Medieval Faires and read the Gold and Culture per route on the Trade overview."
+        },
+        {
+          "id": "digest-pairidaezas",
+          "turn": 120,
+          "text": "A Pairidaeza between the Commercial Hub and the City Center in every city; never two adjacent, and the Appeal they add is counted for Neighborhoods later."
+        },
+        {
+          "id": "digest-grievance-decay",
+          "turn": 130,
+          "text": "Read the Grievances screen: the second burst's total should be under 50 with everyone by now. If it is not, no proposals of any kind until it is."
+        },
+        {
+          "id": "digest-friendship",
+          "turn": 145,
+          "text": "Declare Friendship with the civilization on the far side of the old target; it is the alliance the Culture game hides behind and the Chemistry Eureka later."
+        },
+        {
+          "id": "digest-musketmen",
+          "turn": 158,
+          "text": "Slot Professional Army and queue the garrison Immortals to upgrade to Musketmen the turn Gunpowder lands; the ranged attack is lost on upgrade. Disband any you cannot afford to upgrade."
+        }
+      ]
+    },
+    {
+      "id": "build",
+      "name": "Build the Culture engine",
+      "turns": {
+        "from": 161,
+        "to": 240
+      },
+      "era": "renaissance",
+      "objective": "Form a Cultural or Research Alliance, put an Art Museum or Archaeological Museum in every Theater Square, a Pairidaeza beside each one, a University in two Campuses, and decide by turn 240 whether the Culture lead closes the game or an ally's war against a neighbour an era behind is worth two more cities taken with Musketmen and Bombards under a Casus Belli.",
+      "build_order": [
+        {
+          "item": "Amphitheater",
+          "why": "Every Theater Square; Great Writer points and the slots the Great Works fill."
+        },
+        {
+          "item": "Art Museum",
+          "why": "Capital and captured capital; Opera and Ballet's Inspiration and the themed-building Tourism."
+        },
+        {
+          "item": "Archaeological Museum",
+          "why": "The third city; Natural History's Inspiration and Archaeologists for Artifacts."
+        },
+        {
+          "item": "University",
+          "why": "Two Campuses by now; Printing's Eureka and the Science a Culture game still needs for Flight and Radio."
+        },
+        {
+          "item": "Bank",
+          "why": "Two Banks for Economics; the Gold that buys museums and Great Works."
+        },
+        {
+          "item": "Industrial Zone",
+          "why": "Two, in the best Production cities; Workshops for Industrialization."
+        },
+        {
+          "item": "Trader",
+          "why": "Routes to the ally for Alliance points; the rest stay domestic."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:printing",
+          "note": "Two Universities give the Eureka; the Culture multiplier and Oxford behind it."
+        },
+        {
+          "id": "tech:banking",
+          "note": "Free Eureka from Guilds; Banks for Economics."
+        },
+        {
+          "id": "tech:gunpowder",
+          "note": "An Armory in the Encampment city; the Musketmen the Immortals became."
+        },
+        {
+          "id": "tech:industrialization",
+          "note": "Two Workshops; Factories and Coal."
+        },
+        {
+          "id": "tech:scientific-theory",
+          "note": "Free Eureka from The Enlightenment."
+        },
+        {
+          "id": "tech:economics",
+          "note": "Two Banks; Stock Exchanges later and the Capitalism Inspiration."
+        },
+        {
+          "id": "tech:mass-production",
+          "note": "A Lumber Mill on any Woods tile gives the Eureka; Industrialization sits behind it."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:humanism",
+          "note": "Inspiration from the first Great Artist; Art Museums, which attract the rest."
+        },
+        {
+          "id": "civic:diplomatic-service",
+          "note": "Forming the alliance gives the Inspiration; it is also the point of the phase."
+        },
+        {
+          "id": "civic:mercantilism",
+          "note": "Inspiration from the Great Merchant the Commercial Hubs earned; Triangular Trade for the routes."
+        },
+        {
+          "id": "civic:the-enlightenment",
+          "note": "Three Great People earned by now; Rationalism for the Universities."
+        },
+        {
+          "id": "civic:civil-engineering",
+          "note": "Seven different specialty districts across a wide empire; Public Works for Builders."
+        },
+        {
+          "id": "civic:opera-and-ballet",
+          "note": "The first Art Museum gives the Inspiration; Grand Opera doubles Theater Square buildings."
+        },
+        {
+          "id": "civic:natural-history",
+          "note": "The Archaeological Museum gives the Inspiration; Archaeologists and the Combustion Eureka."
+        },
+        {
+          "id": "civic:nationalism",
+          "note": "Only if the alliance war is joined; the Inspiration comes from a Casus Belli, which every later Persian war uses."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Grand Opera",
+          "slot": "economic",
+          "from": "civic:opera-and-ballet",
+          "why": "+100% Culture from Theater Square buildings; the whole Culture engine doubled."
+        },
+        {
+          "card": "Triangular Trade",
+          "slot": "economic",
+          "from": "civic:mercantilism",
+          "why": "+4 Gold and +1 Faith on every Trade Route; the domestic routes become the best in the game."
+        },
+        {
+          "card": "Rationalism",
+          "slot": "economic",
+          "from": "civic:the-enlightenment",
+          "why": "Science from University buildings in cities at ten population or more; the domestic Food got them there."
+        },
+        {
+          "card": "Merchant Republic",
+          "slot": "wildcard",
+          "from": "civic:exploration",
+          "why": "The Tier 2 government for the Culture branch: two extra Trade Routes for Satrapies and purchase discounts; Monarchy stays only if a war is being joined."
+        }
+      ],
+      "districts": [
+        {
+          "district": "theater-square",
+          "city": "every city without one",
+          "note": "Beside a Pairidaeza; a Culture empire needs one per city."
+        },
+        {
+          "district": "campus",
+          "city": "the capital",
+          "note": "A second Campus for Recorded History and the second University for Printing."
+        },
+        {
+          "district": "industrial-zone",
+          "city": "the two best Production cities",
+          "note": "Beside Mines and the Aqueduct; Workshops for Industrialization."
+        },
+        {
+          "district": "entertainment-complex",
+          "city": "the captured capital",
+          "note": "Amenities for a wide empire; two give Professional Sports later."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Forbidden City",
+          "why": "An extra wildcard slot for Grand Opera and a military card at once.",
+          "skip_if": "Printing arrives after turn 200 or a Culture civilization is already building it."
+        },
+        {
+          "name": "Kilwa Kisiwani",
+          "why": "+15% to every yield from city-state types you are suzerain of; with Trade and Militaristic suzerainties it is the best wonder for this empire.",
+          "skip_if": "No coastal city exists, or you hold fewer than two suzerainties by turn 190."
+        },
+        {
+          "name": "Hermitage",
+          "why": "Four Great Work of Art slots and +3 Great Artist points; the Art Museums fill it.",
+          "skip_if": "No Theater Square has an Art Museum by turn 220, or the Culture branch is not the one chosen."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Curator",
+          "city": "capital",
+          "why": "+100% Tourism from Great Works in the city that holds most of them."
+        },
+        {
+          "governor": "magnus",
+          "promotion": "Industrialist",
+          "city": "the best Industrial Zone city",
+          "why": "Factory and Power Plant yields for the wonders the Culture branch builds."
+        },
+        {
+          "governor": "reyna",
+          "promotion": "Tax Collector",
+          "city": "the richest Commercial Hub city",
+          "why": "Gold to buy the museums and Great Works the Theater Squares want."
+        }
+      ],
+      "city_states": [
+        {
+          "type": "Cultural",
+          "why": "Three envoys for Culture in every Amphitheater; the AI contests these less than Scientific ones."
+        },
+        {
+          "slug": "antananarivo",
+          "why": "Culture per Great Person ever earned, up to 30%; a Culture empire has earned a dozen by now."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-artist",
+          "why": "The Humanism Inspiration and three Great Works of Art per Artist; Art Museums and the Hermitage fill with them."
+        },
+        {
+          "class": "great-writer",
+          "why": "Two Great Works of Writing per Writer; the cheapest Tourism in the game while the museums go up."
+        },
+        {
+          "class": "great-merchant",
+          "why": "A Renaissance Great Merchant adds a Trade Route or Gold; both feed Satrapies."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 200,
+          "test": "An alliance active, four Theater Squares with Amphitheaters, two museums, two Universities, and grievances under 50 with everyone?",
+          "pass": "Continue; the Culture base is what both branches need.",
+          "fail": "No alliance means the grievances are still live: Open Borders and luxury gifts to everyone, and no war under any name. Fewer than four Theater Squares means the captures still lack them; build them before any wonder."
+        },
+        {
+          "turn": 240,
+          "test": "Is your Culture per turn in the top two and your Tourism rising against the leading civilization, or is an ally at war with a neighbour an era behind whose cities you can reach with Musketmen and Bombards?",
+          "pass": "Commit: close by Culture with Open Borders, Rock Bands and Seaside Resorts on the Pairidaeza Appeal, or join the ally's war for two more cities under a Casus Belli, never a Surprise War.",
+          "fail": "Neither: the game is a Score game. Build Theater Squares and Campuses everywhere and stop paying for units beyond the garrisons."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "build-alliance",
+          "turn": 170,
+          "text": "Form a Cultural or Research Alliance with the Declared Friend; Diplomatic Service's Inspiration and later the Chemistry Eureka both come from it."
+        },
+        {
+          "id": "build-museums",
+          "turn": 195,
+          "text": "Two Art Museums and one Archaeological Museum built; Opera and Ballet and Natural History Inspirations collected."
+        },
+        {
+          "id": "build-universities",
+          "turn": 205,
+          "text": "A University in both Campuses; Printing Eureka collected."
+        },
+        {
+          "id": "build-theme",
+          "turn": 225,
+          "text": "Theme one Art Museum with three Great Works of the same type and era, bought or swapped; the Cultural Heritage Inspiration and doubled Tourism."
+        },
+        {
+          "id": "build-branch",
+          "turn": 240,
+          "text": "Choose the branch: Culture to the end, or join the ally's war for two reachable cities with a Casus Belli. Write the decision down."
+        }
+      ]
+    },
+    {
+      "id": "close",
+      "name": "Close",
+      "turns": {
+        "from": 241,
+        "to": null
+      },
+      "era": "industrial",
+      "objective": "Finish the chosen branch: Open Borders with everyone, Rock Bands, Seaside Resorts and National Parks on the Appeal the Pairidaezas built until visiting tourists pass every rival's domestic count, or join the ally's wars one after another with Field Cannons and Infantry under Casus Belli, with the grievance ceiling still in force.",
+      "build_order": [
+        {
+          "item": "Broadcast Center",
+          "why": "Culture branch: every Theater Square; Great Musician slots and the Satellites Eureka at two."
+        },
+        {
+          "item": "Research Lab",
+          "why": "Both branches: Radio, Flight and Computers on time from the two Campus cities."
+        },
+        {
+          "item": "Field Cannon",
+          "why": "Domination branch: two for Scorched Earth and the siege line for Renaissance Walls."
+        },
+        {
+          "item": "Military Academy",
+          "why": "Domination branch: Corps and Armies for the last sieges and the Mobilization Inspiration."
+        },
+        {
+          "item": "Seaside Resort",
+          "why": "Culture branch: on every coastal tile the Pairidaezas pushed to Breathtaking."
+        },
+        {
+          "item": "Neighborhood",
+          "why": "Housing for the wide empire on the high-Appeal tiles; two give the Sanitation Eureka and one on Breathtaking gives Conservation."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:rifling",
+          "note": "A Mine on the Niter Military Engineering revealed; Line Infantry, the Musketman line's next step."
+        },
+        {
+          "id": "tech:refining",
+          "note": "A Coal Power Plant in the best Industrial Zone gives the Eureka; Power for the Broadcast Centers."
+        },
+        {
+          "id": "tech:sanitation",
+          "note": "Two Neighborhoods; Housing in the captured capitals."
+        },
+        {
+          "id": "tech:chemistry",
+          "note": "Free Eureka at alliance level 2, which the build-phase alliance reaches; Research Labs."
+        },
+        {
+          "id": "tech:flight",
+          "note": "Owning the Hermitage or any Industrial wonder gives the Eureka; the Tourism multiplier for wonders."
+        },
+        {
+          "id": "tech:combustion",
+          "note": "An Artifact extracted by the Archaeologist gives the Eureka; National Parks and Radio beside it."
+        },
+        {
+          "id": "tech:radio",
+          "note": "A National Park on a Breathtaking tile gives the Eureka; the Mass Media Inspiration follows."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:scorched-earth",
+          "note": "Two Field Cannons; the Inspiration is free on the Domination branch."
+        },
+        {
+          "id": "civic:mobilization",
+          "note": "Three Corps; Levee en Masse for the maintenance on the Domination branch."
+        },
+        {
+          "id": "civic:class-struggle",
+          "note": "Three Factories; Communism for the Production; Democracy comes from Suffrage."
+        },
+        {
+          "id": "civic:urbanization",
+          "note": "A fifteen-population capital on domestic Food; Neighborhoods."
+        },
+        {
+          "id": "civic:mass-media",
+          "note": "Free Inspiration from Radio; Broadcast Centers; Online Communities waits for Social Media."
+        },
+        {
+          "id": "civic:cultural-heritage",
+          "note": "The themed museum gives the Inspiration; Heritage Tourism."
+        },
+        {
+          "id": "civic:capitalism",
+          "note": "Two Stock Exchanges in the Commercial Hub cities; Market Economy."
+        },
+        {
+          "id": "civic:conservation",
+          "note": "A Neighborhood on a Breathtaking tile beside a Pairidaeza gives the Inspiration; National Parks."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Heritage Tourism",
+          "slot": "economic",
+          "from": "civic:cultural-heritage",
+          "why": "Culture branch: +100% Tourism from Great Works, which is most of Persia's Tourism."
+        },
+        {
+          "card": "Online Communities",
+          "slot": "diplomatic",
+          "from": "civic:social-media",
+          "why": "Culture branch: +50% Tourism to civilizations you trade with; the routes to the ally count."
+        },
+        {
+          "card": "Levee en Masse",
+          "slot": "military",
+          "from": "civic:mobilization",
+          "why": "Domination branch: unit maintenance down while the last army is fielded."
+        },
+        {
+          "card": "Democracy",
+          "slot": "wildcard",
+          "from": "civic:suffrage",
+          "why": "Culture branch government: the diplomatic slots for Online Communities and the Tourism bonus; Communism only on the Domination branch."
+        }
+      ],
+      "districts": [
+        {
+          "district": "neighborhood",
+          "city": "capital and the captured capital",
+          "note": "On the high-Appeal tiles beside Pairidaezas; two give Sanitation and one on Breathtaking gives Conservation."
+        },
+        {
+          "district": "preserve",
+          "city": "the city with the most Mountains or Woods",
+          "note": "Culture branch: appeal for a National Park and the Radio Eureka."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Eiffel Tower",
+          "why": "+2 Appeal to every tile in the empire on top of the Pairidaezas; Seaside Resorts and National Parks everywhere.",
+          "skip_if": "Steel arrives after turn 280 or a Culture civilization is already building it."
+        },
+        {
+          "name": "Cristo Redentor",
+          "why": "Tourism from Seaside Resorts and Relics doubled, which doubles the Resort line the Appeal built.",
+          "skip_if": "The Domination branch is chosen, or no Hills tile is free in a high-Production city."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Curator",
+          "city": "capital",
+          "why": "Culture branch: the Tourism multiplier stays where the Great Works are."
+        },
+        {
+          "governor": "victor",
+          "promotion": "Embrasure",
+          "city": "the newest capture",
+          "why": "Domination branch: each capital holds while the army moves on."
+        }
+      ],
+      "city_states": [
+        {
+          "type": "Cultural",
+          "why": "Six envoys for Culture in every Art Museum and Archaeological Museum."
+        },
+        {
+          "type": "Trade",
+          "why": "Six envoys for Gold in every Bank; the domestic empire buys its Rock Bands and Great Works."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-musician",
+          "why": "Culture branch: three Great Works of Music per Musician are the strongest late Tourism; Broadcast Centers attract them."
+        },
+        {
+          "class": "great-general",
+          "why": "Domination branch: an Industrial Great General gives Field Cannons and Infantry +5 Strength for the Casus Belli wars."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 300,
+          "test": "Culture branch: visiting tourists above the domestic tourists of every civilization but one, or Domination branch: two capitals taken since turn 240 in Casus Belli wars with grievances still under the ceiling?",
+          "pass": "Continue to the end; no further decisions.",
+          "fail": "Convert to Score: keep the garrisons, stop new military, and spend on Theater Squares, Campuses and city-state envoys."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "close-open-borders",
+          "turn": 245,
+          "text": "Culture branch: Open Borders with every civilization you are not at war with, and a Trade Route to each; Online Communities slotted."
+        },
+        {
+          "id": "close-join-war",
+          "turn": 250,
+          "text": "Domination branch: the moment the ally declares or is declared on, join under a Casus Belli and send Field Cannons and Musketmen at the nearest enemy capital; never a Surprise War, whatever the Movement would be."
+        },
+        {
+          "id": "close-resorts",
+          "turn": 265,
+          "text": "Culture branch: a Seaside Resort on every Breathtaking coastal tile; the Pairidaeza Appeal is counted for each on the tile tooltip."
+        },
+        {
+          "id": "close-rock-bands",
+          "turn": 285,
+          "text": "Culture branch: a Rock Band bought with Faith every ten turns, sent to the civilization whose domestic tourists are highest."
+        },
+        {
+          "id": "close-review",
+          "turn": 300,
+          "text": "Review the turn 300 checkpoint and either continue or declare the game a Score game."
+        }
+      ]
+    }
+  ],
+  "boosts": [
+    {
+      "id": "tech:bronze-working",
+      "fit": "free",
+      "when": "arm",
+      "how": "Three Barbarian kills at the first camp the Warriors and Slinger clear."
+    },
+    {
+      "id": "tech:archery",
+      "fit": "cheap",
+      "when": "arm",
+      "how": "A Slinger kill on the first camp's Scout before the Warriors finish it."
+    },
+    {
+      "id": "tech:masonry",
+      "fit": "cheap",
+      "when": "arm",
+      "how": "A Quarry on Stone near the capital; the Ram needs the tech regardless."
+    },
+    {
+      "id": "tech:iron-working",
+      "fit": "cheap",
+      "when": "arm",
+      "how": "A Mine on the Iron Bronze Working revealed, even though Immortals do not need it."
+    },
+    {
+      "id": "tech:wheel",
+      "fit": "cheap",
+      "when": "arm",
+      "how": "The first Builder mines a resource hill."
+    },
+    {
+      "id": "tech:writing",
+      "fit": "free",
+      "when": "window",
+      "how": "Meeting the target civilization on the way to it."
+    },
+    {
+      "id": "tech:currency",
+      "fit": "free",
+      "when": "window",
+      "how": "The first Trader to the forward city, which Satrapies wanted anyway for the road."
+    },
+    {
+      "id": "tech:horseback-riding",
+      "fit": "cheap",
+      "when": "window",
+      "how": "A Pasture on any Horses, Sheep or Cattle."
+    },
+    {
+      "id": "tech:construction",
+      "fit": "cheap",
+      "when": "window",
+      "how": "A Water Mill in the river capital after the first capture."
+    },
+    {
+      "id": "tech:engineering",
+      "fit": "cheap",
+      "when": "window",
+      "how": "Ancient Walls in the captured capital."
+    },
+    {
+      "id": "tech:mathematics",
+      "fit": "cheap",
+      "when": "window",
+      "how": "Commercial Hub, Theater Square and Campus are three specialty districts after the war."
+    },
+    {
+      "id": "tech:astrology",
+      "fit": "costly",
+      "when": "arm",
+      "how": "Only if the Scout passes a natural wonder on the way to the target."
+    },
+    {
+      "id": "tech:sailing",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:shipbuilding",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:irrigation",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "Farm a Wheat or Rice tile in a river city."
+    },
+    {
+      "id": "tech:apprenticeship",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "Three Mines across the hills the Pairidaezas do not use."
+    },
+    {
+      "id": "tech:stirrups",
+      "fit": "free",
+      "when": "digest",
+      "how": "Feudalism is on the civic path."
+    },
+    {
+      "id": "tech:castles",
+      "fit": "free",
+      "when": "digest",
+      "how": "Monarchy is the Tier 2 government the plan adopts."
+    },
+    {
+      "id": "tech:education",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "The first Great Scientist from the one Library and Pingala's early turns there."
+    },
+    {
+      "id": "tech:military-engineering",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "The capital Aqueduct."
+    },
+    {
+      "id": "tech:machinery",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "Three Archers: the two from the burst and one garrison."
+    },
+    {
+      "id": "tech:military-tactics",
+      "fit": "costly",
+      "when": "digest",
+      "how": "A Spearman kill, which an Immortal army rarely has a Spearman for."
+    },
+    {
+      "id": "tech:buttress",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "Owning the Apadana, the Colosseum or Petra."
+    },
+    {
+      "id": "tech:printing",
+      "fit": "cheap",
+      "when": "build",
+      "how": "Two Universities, capital and captured capital."
+    },
+    {
+      "id": "tech:banking",
+      "fit": "free",
+      "when": "build",
+      "how": "Guilds is on the civic path."
+    },
+    {
+      "id": "tech:gunpowder",
+      "fit": "cheap",
+      "when": "build",
+      "how": "An Armory in the forward city's Encampment."
+    },
+    {
+      "id": "tech:industrialization",
+      "fit": "cheap",
+      "when": "build",
+      "how": "Two Workshops in the Industrial Zones."
+    },
+    {
+      "id": "tech:scientific-theory",
+      "fit": "free",
+      "when": "build",
+      "how": "The Enlightenment is on the civic path."
+    },
+    {
+      "id": "tech:economics",
+      "fit": "cheap",
+      "when": "build",
+      "how": "Two Banks in the Commercial Hub cities."
+    },
+    {
+      "id": "tech:mass-production",
+      "fit": "cheap",
+      "when": "build",
+      "how": "A Lumber Mill on any Woods tile."
+    },
+    {
+      "id": "tech:astronomy",
+      "fit": "costly",
+      "when": "build",
+      "how": "A University beside a Mountain only if a Campus already sits by one."
+    },
+    {
+      "id": "tech:military-science",
+      "fit": "costly",
+      "when": "build",
+      "how": "A Knight kill, and this plan never builds a Knight; usually unboosted."
+    },
+    {
+      "id": "tech:rifling",
+      "fit": "cheap",
+      "when": "close",
+      "how": "A Mine on the Niter Military Engineering revealed."
+    },
+    {
+      "id": "tech:refining",
+      "fit": "cheap",
+      "when": "close",
+      "how": "A Coal Power Plant in the best Industrial Zone."
+    },
+    {
+      "id": "tech:sanitation",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Neighborhoods on the high-Appeal tiles."
+    },
+    {
+      "id": "tech:chemistry",
+      "fit": "free",
+      "when": "close",
+      "how": "Alliance level 2, which the build-phase alliance reaches on its own."
+    },
+    {
+      "id": "tech:flight",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Owning the Hermitage or any Industrial wonder."
+    },
+    {
+      "id": "tech:combustion",
+      "fit": "cheap",
+      "when": "close",
+      "how": "An Artifact extracted by the Archaeologist the Archaeological Museum trains."
+    },
+    {
+      "id": "tech:radio",
+      "fit": "cheap",
+      "when": "close",
+      "how": "A National Park on the Culture branch."
+    },
+    {
+      "id": "tech:computers",
+      "fit": "free",
+      "when": "close",
+      "how": "Any Tier 3 government."
+    },
+    {
+      "id": "civic:craftsmanship",
+      "fit": "free",
+      "when": "arm",
+      "how": "Three improved tiles from the first Builder: Mine, Quarry and Farm."
+    },
+    {
+      "id": "civic:military-tradition",
+      "fit": "free",
+      "when": "arm",
+      "how": "The first camp cleared on the road to the target."
+    },
+    {
+      "id": "civic:foreign-trade",
+      "fit": "costly",
+      "when": "arm",
+      "how": "Only if a second continent is in sight; otherwise unboosted, and the civic is taken anyway for Caravansaries."
+    },
+    {
+      "id": "civic:early-empire",
+      "fit": "free",
+      "when": "arm",
+      "how": "Six population across the first two cities."
+    },
+    {
+      "id": "civic:political-philosophy",
+      "fit": "cheap",
+      "when": "arm",
+      "how": "Three city-states met by the Scout before turn 35."
+    },
+    {
+      "id": "civic:state-workforce",
+      "fit": "cheap",
+      "when": "window",
+      "how": "The capital Commercial Hub after the first capture."
+    },
+    {
+      "id": "civic:mysticism",
+      "fit": "free",
+      "when": "window",
+      "how": "Founding God of the Forge in the arming phase."
+    },
+    {
+      "id": "civic:defensive-tactics",
+      "fit": "free",
+      "when": "window",
+      "how": "The target or its friend declares war on you after the first capture."
+    },
+    {
+      "id": "civic:drama-and-poetry",
+      "fit": "costly",
+      "when": "window",
+      "how": "Only if the Apadana is completed; otherwise unboosted."
+    },
+    {
+      "id": "civic:games-and-recreation",
+      "fit": "free",
+      "when": "window",
+      "how": "Researching Construction."
+    },
+    {
+      "id": "civic:military-training",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "The Encampment in the forward city."
+    },
+    {
+      "id": "civic:recorded-history",
+      "fit": "costly",
+      "when": "digest",
+      "how": "Two Campuses, which this empire builds late; usually unboosted."
+    },
+    {
+      "id": "civic:feudalism",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "Six Farms across four cities after the Pairidaezas are laid."
+    },
+    {
+      "id": "civic:civil-service",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "The capital reaches ten population on domestic Food with Granary and Aqueduct."
+    },
+    {
+      "id": "civic:guilds",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "Two Markets in the river Commercial Hubs."
+    },
+    {
+      "id": "civic:medieval-faires",
+      "fit": "free",
+      "when": "digest",
+      "how": "Four domestic Trade Routes, which Satrapies and a Trader per city reach by turn 110."
+    },
+    {
+      "id": "civic:mercenaries",
+      "fit": "free",
+      "when": "digest",
+      "how": "Eight land units is the army left over from the window."
+    },
+    {
+      "id": "civic:divine-right",
+      "fit": "costly",
+      "when": "digest",
+      "how": "Two Temples, which need two Holy Sites this plan does not build."
+    },
+    {
+      "id": "civic:theology",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:humanism",
+      "fit": "cheap",
+      "when": "build",
+      "how": "The first Great Artist, patronized with Gold or Faith before any Art Museum exists."
+    },
+    {
+      "id": "civic:diplomatic-service",
+      "fit": "free",
+      "when": "build",
+      "how": "Forming the alliance is the point of the phase."
+    },
+    {
+      "id": "civic:mercantilism",
+      "fit": "cheap",
+      "when": "build",
+      "how": "The Great Merchant a Commercial Hub in every city earns."
+    },
+    {
+      "id": "civic:the-enlightenment",
+      "fit": "cheap",
+      "when": "build",
+      "how": "Three Great People: a Great General, a Great Merchant and a Great Writer."
+    },
+    {
+      "id": "civic:civil-engineering",
+      "fit": "cheap",
+      "when": "build",
+      "how": "Seven different specialty districts across the wide empire."
+    },
+    {
+      "id": "civic:opera-and-ballet",
+      "fit": "cheap",
+      "when": "build",
+      "how": "The first Art Museum in the capital."
+    },
+    {
+      "id": "civic:natural-history",
+      "fit": "cheap",
+      "when": "build",
+      "how": "The Archaeological Museum in the third city."
+    },
+    {
+      "id": "civic:nationalism",
+      "fit": "cheap",
+      "when": "build",
+      "how": "Joining an ally's war is a Casus Belli; so is any later Persian war."
+    },
+    {
+      "id": "civic:exploration",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:scorched-earth",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Field Cannons on the Domination branch."
+    },
+    {
+      "id": "civic:mobilization",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Three Corps on the Domination branch."
+    },
+    {
+      "id": "civic:class-struggle",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Three Factories across the Industrial Zones."
+    },
+    {
+      "id": "civic:urbanization",
+      "fit": "cheap",
+      "when": "close",
+      "how": "A fifteen-population capital on domestic Food."
+    },
+    {
+      "id": "civic:mass-media",
+      "fit": "free",
+      "when": "close",
+      "how": "Researching Radio on the Culture branch."
+    },
+    {
+      "id": "civic:cultural-heritage",
+      "fit": "cheap",
+      "when": "close",
+      "how": "The themed Art Museum from the build phase."
+    },
+    {
+      "id": "civic:capitalism",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Stock Exchanges in the Commercial Hub cities."
+    },
+    {
+      "id": "civic:conservation",
+      "fit": "cheap",
+      "when": "close",
+      "how": "A Neighborhood on a Breathtaking tile beside a Pairidaeza."
+    }
+  ],
+  "decision_triggers": [
+    {
+      "name": "Checklist incomplete at turn 45",
+      "if": "Any item of the staging checklist is missing on the border on turn 45: a unit, the Ram, the road, Conscription or the Gold reserve.",
+      "then": "Do not declare. The ten turns begin at the declaration and every missing item finished afterwards is spent from them. Declare the turn the list is complete; the deadline at 90 still allows a second burst at 75."
+    },
+    {
+      "name": "Capital standing at turn ten",
+      "if": "Ten turns after a declaration the target city has not fallen.",
+      "then": "Make peace that turn on any terms that keep what you hold. An Immortal at 2 Movement against a city that held at 4 is the trap case; the next burst is a new declaration, if the grievance budget allows one."
+    },
+    {
+      "name": "Grievance ceiling",
+      "if": "The Grievances screen shows more than 150 with any one civilization, or two civilizations have denounced you.",
+      "then": "No further declaration under any name. Gift a luxury to each denouncer, send delegations, and let the total decay; the second burst is cancelled and the digest phase begins early."
+    },
+    {
+      "name": "Gold under zero",
+      "if": "Gold per turn goes negative at any point after the third Immortal, even with Conscription.",
+      "then": "No new units until it is positive. A second Trader on a domestic route, a luxury sold, or the Scout disbanded; never a unit on the checklist."
+    },
+    {
+      "name": "Ally at war",
+      "if": "After turn 200 an ally is attacked by, or attacks, a civilization an era behind you whose cities are within ten tiles of your border.",
+      "then": "Join under the alliance's Casus Belli the same turn; Musketmen and Bombards take two more cities, and the Nationalism Inspiration comes free. Never a Surprise War, whatever the Movement would be."
+    }
+  ],
+  "abort": {
+    "trigger": "Turn 90 with no city captured, or a first burst that ended at turn 56 with the capital standing and grievances already over the ceiling.",
+    "actions": [
+      "Make peace immediately on any terms that cost no city; the grievances are already paid and prolonging the war buys nothing.",
+      "Disband every unit beyond one per city; the maintenance is pure loss and Musketmen are seventy turns away.",
+      "Run the digest phase on the empire you have: domestic Trade Routes, Pairidaezas, Theater Squares, delegations to everyone, and forty turns of silence before any proposal."
+    ]
+  },
+  "fail_state": "Turn 90 with two Surprise Wars declared, no city taken, grievances over 150 with the target and over 100 with everyone who met you, two denunciations live, eight units of maintenance on a three-city economy and no Pairidaeza laid. Persia is then a small civ a full era behind that no one will ally with, whose one ability rewards a third declaration it cannot afford.",
+  "common_mistakes": [
+    "Declaring before the checklist is complete. The ten turns start at the declaration, so a Ram finished on turn three of the burst arrives with three turns of Movement left.",
+    "Scouting the whole continent before choosing a target. The burst is ten turns and the target must be within two turns' march of the border, chosen from what the first Warrior and Scout see.",
+    "Treating grievances as a diplomatic mood. They are a resource with a ceiling; a third Surprise War before turn 90 forecloses every alliance and city-state the next two hundred turns need.",
+    "Continuing a burst that has stalled. An Immortal at 2 Movement is a Swordsman with a bow; if the capital stands at turn ten, peace and a second declaration is better than a long war.",
+    "Counting kills, pillage, roads and a Great General as progress. Only cities held at turn 90 count; a famous army with nothing to show is the fail state.",
+    "Spending Builder charges on Pairidaezas before turn 90. They are the digest phase's yield; the arming phase has no charges to spare and the window has no turns to lay them."
+  ],
+  "sources": [
+    "Civilization VI Civilopedia, Gathering Storm ruleset (Persia, Cyrus, Immortal, Pairidaeza, Fall of Babylon, Satrapies). Fall of Babylon is taken as the Gathering Storm version: +2 Movement for ten turns after a Surprise War declaration, Surprise Wars charged as Formal Wars for grievances, and occupied cities keeping their yields while garrisoned; the civ-info text's Loyalty bonus is not relied on.",
+    "The Immortal is treated as the game has it: a Swordsman replacement at Iron Working with a 25 Strength ranged attack of range 2 and no Iron requirement.",
+    "Gathering Storm grievance figures for Formal and Surprise War declarations and city captures, which set the 150-per-civilization ceiling used here as a working budget.",
+    "Boost objectives cross-checked against civilization6planner.com tech-tree and civics-tree pages, 2026-10-02.",
+    "Leadership Focus tags, caveats and the Countdown template for Cyrus in this repository."
+  ]
+}

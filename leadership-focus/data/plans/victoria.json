@@ -1,0 +1,1722 @@
+{
+  "slug": "victoria",
+  "shape": "Dead-Phase",
+  "secondary_shape": null,
+  "version": 1,
+  "updated": "2026-10-02",
+  "assumptions": {
+    "ruleset": "Gathering Storm with every expansion and the Leader Pass",
+    "speed": "Standard",
+    "difficulty": "Emperor",
+    "map": "Continents or Pangaea, standard size, 8 civilizations",
+    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. The Age of Steam persona of Victoria is planned here, not the Age of Empire persona: no Redcoats, no Pax Britannica, and the overseas half of England's history is ignored on purpose."
+  },
+  "verdict": {
+    "victory": "Science",
+    "secondary": "Domination",
+    "confidence": "medium",
+    "one_line": "Play a plain wide builder for 120 turns with an Iron Mine in every city that can have one, then put a Workshop, Factory and Coal Power Plant in every city and let 30% extra Production and +4 on every powered building carry a space race nobody else can keep pace with.",
+    "why": "Age of Steam is a percentage: +10% Production per Industrial Zone building in the city, and a flat Production bonus on every strategic resource tile inside English borders. Ten percent of a 12-Production Classical city is one hammer, so for 120 turns the leader is invisible. After Industrialization a city with Workshop, Factory and Power Plant runs at +30% on top of Workshop of the World's +4 yields on powered buildings and the extra Coal the Mines bank, and England's cheap four-charge Military Engineers lay the Railroads that move it all. That is the strongest late Production base on the roster and Production is what the Science victory's Spaceport projects consume. Domination is the fallback, not the aim, because the same Factories build Artillery and Sea Dogs if a neighbour forces it, but a Dead-Phase plan that goes to war before Industrialization has thrown away its only advantage."
+  },
+  "map_check": {
+    "must_have": [
+      "Hills within the first six city sites: Iron appears on hills and Coal appears under grassland and plains hills, and England's start bias already leans toward both.",
+      "Room for six cities by turn 85 without a fight; the plan has no early military edge and every Industrial Zone needs a city to stand in."
+    ],
+    "prefer": [
+      "A coastal capital or second city for a Royal Navy Dockyard: Harbor buildings add 10 to the strategic stockpile cap and the Shipyard is Production on water tiles.",
+      "Rivers for Aqueducts, Dams and Canals, since each adjacent one adds Industrial Zone adjacency and a Dam makes the Hydroelectric Dam later.",
+      "Cardiff on the map, whose suzerainty powers every coastal city from its Harbor buildings before a single Power Plant is built."
+    ],
+    "no_go": "A flat, hill-less start with no Iron revealed within two tiles of any of the first four city sites by turn 50, or a cramped start that holds three cities. The percentage has no base to multiply and the strategic resource bonus has no tiles to sit on.",
+    "fallback": "If Iron is absent, buy it from an AI every 30 turns for the stockpile and settle the Coal when Industrialization reveals it; the Industrial Zone half of the ability still works. If the land is cramped, settle tighter at four tiles apart and run the Industrial Zones as a cluster around one Dam so three cities share the adjacency, and accept a smaller, later Science game."
+  },
+  "kit_levers": [
+    {
+      "source": "leader_ability",
+      "name": "Age of Steam",
+      "buys": "+10% Production in a city for every Industrial Zone building it holds, and a flat Production bonus on every strategic resource tile inside English borders, improved or not.",
+      "exploit": "Every city founded in the dormant phase is sited so an Industrial Zone can take Workshop, Factory and Power Plant, which is +30% Production per city from turn 140 on. Cities are placed to put Iron, Horses and later Coal and Niter inside the borders even before a Builder reaches them, because the tile bonus does not wait for the Mine."
+    },
+    {
+      "source": "civ_ability",
+      "name": "Workshop of the World",
+      "buys": "Iron and Coal Mines accumulate extra resource per turn, Military Engineers are built at double speed with two extra charges, Industrial Zone buildings are cheaper, powered buildings give +4 of their yield, and Harbor buildings raise the strategic stockpile cap.",
+      "exploit": "Military Engineers are the dormant-phase tool: four charges each for roads to the border, two Forts for the Ballistics Eureka, and later Railroads. The +4 on powered buildings is why the Coal Power Plant goes in before the Factory in the second-best city, and why Cardiff's suzerainty is worth three envoys the moment it is met."
+    },
+    {
+      "source": "unique_unit",
+      "name": "Sea Dog",
+      "buys": "A Privateer replacement from Mercantilism that can capture enemy ships, is invisible beyond one tile, and fights harder than the unit it replaces.",
+      "exploit": "Two Sea Dogs are the Electricity Eureka and the coastal defence of the payoff phase; they are not an offensive plan. On a Domination fallback they strip a coastal rival's trade and take its Frigates before the Ironclads arrive."
+    },
+    {
+      "source": "unique_infrastructure",
+      "name": "Royal Navy Dockyard",
+      "buys": "A Harbor replacement whose naval units embark and disembark without Movement cost and that gives extra Gold and Loyalty to a city on a foreign continent, plus Great Admiral points.",
+      "exploit": "One in the coastal capital or second city in the dormant phase: the Shipyard is Production and the Steam Power Eureka, the Lighthouse is Housing for a city that will work Mines, and the Harbor buildings raise the Iron and Coal stockpile cap the Mines fill."
+    },
+    {
+      "source": "agenda",
+      "name": "Industrial Revolution",
+      "buys": "Victoria favours civilizations with high Production and dislikes those with low Production.",
+      "exploit": "Irrelevant to your own play, except as a reminder that an AI Victoria on the same map will be friendly once your Factories are up and cool before then; delay the alliance request until turn 130."
+    }
+  ],
+  "shape_block": {
+    "dead_phase": {
+      "activation_turn": 120,
+      "flatness_statement": "Victoria (Age of Steam) has no leader advantage for the first 120 turns. That is expected and it is correct: a percentage bonus on a Classical city is a single hammer, the strategic resource bonus sits on two or three tiles, the Sea Dog needs Mercantilism and the Industrial Zone buildings the whole kit multiplies do not exist before Apprenticeship and Industrialization. Do not judge this leader before turn 120 and do not switch strategies at turn 60 because the curve looks flat. England is a plain wide builder until Industrialization, and the plan below is the plain wide game, played to survive and to put a hill, a river and an Iron Mine in every city.",
+      "stockpile": [
+        "An Industrial Zone with a Workshop in six or more cities by turn 120, each placed beside an Aqueduct, Dam or Canal and adjacent to Mines, so the Factory and Power Plant have a district to go into on the turn Industrialization lands.",
+        "Iron: at least two Iron Mines inside your borders by turn 70 and the stockpile at its cap by turn 120, so the Ironclad for the Steel Eureka and the Military Engineers' Forts cost nothing extra.",
+        "Coal sites: every city founded so that a grassland or plains hill without a Mine sits inside its first ring of borders, because Coal is revealed at Industrialization and the bonus applies the turn it appears.",
+        "Four Military Engineers already built under the civ ability's double speed, standing beside the Industrial Zone cities with roads laid between them.",
+        "Science at 60 or more per turn by turn 120 with two Universities built, so Industrialization is researched at turn 118 to 122 and not at 140."
+      ],
+      "progress_markers": [
+        "City count: 4 by turn 45, 6 by turn 85, 8 by turn 120.",
+        "Science per turn: 15 by turn 50, 35 by turn 85, 60 by turn 120.",
+        "Specialty districts: 3 by turn 60, 9 by turn 85, 16 by turn 120.",
+        "Iron Mines inside borders: 1 by turn 55, 2 by turn 70; Industrial Zones: 2 by turn 95, 6 by turn 120.",
+        "Military Engineers built: 1 by turn 100, 4 by turn 120."
+      ],
+      "activation_test": "At turn 120 answer four questions: Is Industrialization researched or within three turns? Do six cities have an Industrial Zone with a Workshop standing? Are two Iron Mines inside the borders with the stockpile at its cap? Are four Military Engineers standing with roads between the Industrial Zone cities? Four yes answers mean the kit is on and the activation phase begins. Any no means the dormant phase continues for up to ten turns to fix exactly that item; a no that cannot be fixed by turn 130 means the abort branch."
+    }
+  },
+  "phases": [
+    {
+      "id": "settle",
+      "name": "Dormant: settle",
+      "turns": {
+        "from": 1,
+        "to": 45
+      },
+      "era": "ancient",
+      "objective": "Four cities by turn 45, every one of them on or beside hills with fresh water, a Slinger or Archer in each, the nearest barbarian camps cleared, and a pantheon founded. The leader gives nothing here and the plan does not pretend otherwise; this is the generic strong opening, with one twist: each city site is judged by the hills it will mine in 100 turns.",
+      "build_order": [
+        {
+          "item": "Scout",
+          "why": "Find the neighbours, the hills and the rivers; Writing comes from the first meeting and the city sites are chosen from what it sees."
+        },
+        {
+          "item": "Warrior",
+          "why": "Second escort for the Settlers and the first camp clearance; Bronze Working needs three barbarian kills and it reveals Iron."
+        },
+        {
+          "item": "Settler",
+          "why": "The second city at turn 15 to 18 on hills by a river; it is the first Industrial Zone site after the capital."
+        },
+        {
+          "item": "Slinger",
+          "why": "Archery Eureka on the first barbarian scout, then an Archer in the capital; the defensive floor starts here."
+        },
+        {
+          "item": "Settler",
+          "why": "Third city on the hill nearest a revealed Iron once Bronze Working is in, or toward the coast for the Royal Navy Dockyard."
+        },
+        {
+          "item": "Monument",
+          "why": "Culture to reach Early Empire and Political Philosophy on time; governors and Colonization come from civics."
+        },
+        {
+          "item": "Builder",
+          "why": "A Mine on a hill resource for The Wheel, a Quarry for Masonry, and a Farm for Irrigation; three improvements for Craftsmanship."
+        },
+        {
+          "item": "Settler",
+          "why": "Fourth city by turn 45 under Colonization; a wide empire is the base the percentage multiplies."
+        },
+        {
+          "item": "Warrior",
+          "why": "One more body before the Classical era; a four-city empire with three units invites a surprise war."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:mining",
+          "note": "Mines on hills are the whole economy of this kit; first research."
+        },
+        {
+          "id": "tech:animal-husbandry",
+          "note": "Reveals Horses, which count as a strategic resource tile for Age of Steam the moment they are inside the borders."
+        },
+        {
+          "id": "tech:bronze-working",
+          "note": "Reveals Iron; the third and fourth city sites are chosen after it. Eureka from three barbarian kills."
+        },
+        {
+          "id": "tech:archery",
+          "note": "Archers are the defensive floor; Eureka from a Slinger kill."
+        },
+        {
+          "id": "tech:writing",
+          "note": "Campus; Eureka from meeting the first civilization."
+        },
+        {
+          "id": "tech:masonry",
+          "note": "Ancient Walls in the border cities and the Pyramids; Eureka from a Quarry."
+        },
+        {
+          "id": "tech:wheel",
+          "note": "Water Mill and the Construction line; Eureka from the first Mine on a resource."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:code-of-laws",
+          "note": "Discipline and God King; the pantheon by turn 25."
+        },
+        {
+          "id": "civic:craftsmanship",
+          "note": "Agoge for the defensive units and Ilkum for Builders; Inspiration from three improved tiles."
+        },
+        {
+          "id": "civic:foreign-trade",
+          "note": "Trade Routes; Inspiration only if the Scout finds a second continent."
+        },
+        {
+          "id": "civic:early-empire",
+          "note": "Colonization and the first Governor Title; Inspiration at six Population."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Discipline",
+          "slot": "military",
+          "from": "civic:code-of-laws",
+          "why": "Warriors and Slingers beat camp units while the empire has nothing else."
+        },
+        {
+          "card": "God King",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "The pantheon arrives by turn 25 without a Holy Site."
+        },
+        {
+          "card": "Ilkum",
+          "slot": "economic",
+          "from": "civic:craftsmanship",
+          "why": "Builders 30% faster; this kit mines more hills than any other and the Builders start now."
+        },
+        {
+          "card": "Colonization",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "+50% Production toward Settlers for cities three and four."
+        }
+      ],
+      "districts": [
+        {
+          "district": "campus",
+          "city": "capital",
+          "note": "Placed after Writing beside mountains or a reef; the first district is the State Workforce Inspiration and the Science clock starts here."
+        }
+      ],
+      "pantheon": {
+        "slug": "god-of-craftsmen",
+        "why": "+1 Production and +1 Faith from every improved strategic resource: it pays on the Iron Mines from turn 55, on Horses, and on every Coal and Niter Mine later, which is exactly the set of tiles Age of Steam already favours.",
+        "alternative": "god-of-the-sea"
+      },
+      "wonders": [],
+      "governors": [
+        {
+          "governor": "magnus",
+          "promotion": "Provision",
+          "city": "capital",
+          "why": "Appointed with the first title at Early Empire and given Provision with the second, so the capital builds Settlers five and six without losing Population."
+        }
+      ],
+      "city_states": [
+        {
+          "type": "Industrial",
+          "why": "An early envoy buys Production toward districts and buildings in the capital, and Cardiff or Johannesburg later power the whole coast."
+        },
+        {
+          "type": "Scientific",
+          "why": "Science in the capital is the progress marker the dormant phase lives on."
+        }
+      ],
+      "great_people": [],
+      "checkpoints": [
+        {
+          "turn": 25,
+          "test": "Two cities settled on hills with fresh water, an Archer or Slinger in each, and no barbarian camp within six tiles of either?",
+          "pass": "Third Settler goes out toward the Iron Bronze Working revealed, or toward the coast.",
+          "fail": "Delay the third Settler one build: a second Slinger or a Warrior clears the camp first. A city lost here is not recoverable in a Dead-Phase plan."
+        },
+        {
+          "turn": 45,
+          "test": "Four cities, the pantheon founded, Early Empire reached, and at least one Iron tile inside or beside the borders?",
+          "pass": "Enter the build phase; Walls go into the two border cities next.",
+          "fail": "Three cities is acceptable if the fourth Settler is in production. No Iron in sight means the fifth city goes wherever the Scout found it, even at the cost of a better site."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "settle-capital",
+          "turn": 1,
+          "text": "Settle on or beside hills with fresh water; move at most one turn. Count the hills in the second ring: six or more is a Factory city."
+        },
+        {
+          "id": "settle-scout-hills",
+          "turn": 8,
+          "text": "Send the Scout along the rivers and note every hill cluster and every river bend; those are the Industrial Zone sites."
+        },
+        {
+          "id": "settle-pantheon",
+          "turn": 25,
+          "text": "Found God of Craftsmen, or God of the Sea if the capital is coastal with three or more sea resources."
+        },
+        {
+          "id": "settle-iron-site",
+          "turn": 32,
+          "text": "Bronze Working in: found the third city so a revealed Iron sits inside its first two rings, on a hill with fresh water."
+        },
+        {
+          "id": "settle-fourth-city",
+          "turn": 45,
+          "text": "Found the fourth city; mark the next four sites on the map now, each with hills and a river, so the build phase does not spend turns deciding."
+        }
+      ]
+    },
+    {
+      "id": "build",
+      "name": "Dormant: build",
+      "turns": {
+        "from": 46,
+        "to": 85
+      },
+      "era": "classical",
+      "objective": "Six cities by turn 75, Campuses with Libraries in the two best, a Commercial Hub and Government Plaza in the capital, a Royal Navy Dockyard if any city is coastal, Ancient Walls and an Archer in the two border cities, two Iron Mines inside the borders, and an Aqueduct in the capital. Still no leader advantage; the markers to watch are cities, Science, districts and Iron.",
+      "build_order": [
+        {
+          "item": "Settler",
+          "why": "Cities five and six; the percentage needs cities to multiply and each one is an Industrial Zone later."
+        },
+        {
+          "item": "Ancient Walls",
+          "why": "In the two border cities; the Engineering Eureka and the only thing that stops a Classical rush."
+        },
+        {
+          "item": "Campus",
+          "why": "Capital and second city; Science is the progress marker and the route to Industrialization."
+        },
+        {
+          "item": "Library",
+          "why": "Both Campuses; the Education path and the Great Scientist points."
+        },
+        {
+          "item": "Government Plaza",
+          "why": "Capital; the Ancestral Hall for free Builders in new cities, since every city here needs three Mines early."
+        },
+        {
+          "item": "Royal Navy Dockyard",
+          "why": "The coastal city; a Trade Route, Great Admiral points, and the Lighthouse's Housing for a city that will work Mines rather than Farms."
+        },
+        {
+          "item": "Commercial Hub",
+          "why": "Capital; the Trade Route pays for the Settlers and the Market is the Guilds Inspiration."
+        },
+        {
+          "item": "Trader",
+          "why": "Currency Eureka and Gold; the dormant phase runs on Gold more than Production."
+        },
+        {
+          "item": "Aqueduct",
+          "why": "Capital; Military Engineering Eureka, Housing, and the Industrial Zone adjacency the capital's Factory will use."
+        },
+        {
+          "item": "Water Mill",
+          "why": "In a river city for the Construction Eureka and growth."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:currency",
+          "note": "Commercial Hub and Markets; Eureka from the first Trade Route."
+        },
+        {
+          "id": "tech:iron-working",
+          "note": "Mine the Iron the third city was founded beside; the Eureka is the Mine itself, and Swordsmen are the floor if a neighbour comes early."
+        },
+        {
+          "id": "tech:celestial-navigation",
+          "note": "The Royal Navy Dockyard; Eureka from two Fishing Boats if the coastal city has them."
+        },
+        {
+          "id": "tech:construction",
+          "note": "Water Mill Eureka; Entertainment Complex later and the Games and Recreation Inspiration."
+        },
+        {
+          "id": "tech:engineering",
+          "note": "Aqueducts, the adjacency every Industrial Zone wants; Eureka from Ancient Walls."
+        },
+        {
+          "id": "tech:mathematics",
+          "note": "Campus, Commercial Hub and Royal Navy Dockyard make three specialty districts for the Eureka."
+        },
+        {
+          "id": "tech:apprenticeship",
+          "note": "The Industrial Zone itself and +1 Production on Mines; Eureka from three Mines, which this empire has by turn 60."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:state-workforce",
+          "note": "Inspiration from the first district; Government Plaza."
+        },
+        {
+          "id": "civic:political-philosophy",
+          "note": "Classical Republic and the second Governor Title."
+        },
+        {
+          "id": "civic:mysticism",
+          "note": "Free Inspiration from the pantheon; the Oracle is not built, but Mysticism leads to Drama and Poetry and the Theology line is skipped."
+        },
+        {
+          "id": "civic:games-and-recreation",
+          "note": "Free Inspiration from Construction; Entertainment Complex for the Amenities six cities need."
+        },
+        {
+          "id": "civic:defensive-tactics",
+          "note": "Bastions and Limes; Inspiration if a neighbour declares on you, which they may."
+        },
+        {
+          "id": "civic:recorded-history",
+          "note": "Two Campuses give the Inspiration; Natural Philosophy for the Campuses."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Classical Republic",
+          "slot": "wildcard",
+          "from": "civic:political-philosophy",
+          "why": "The dormant government: Amenities and Great Person points for a builder with no war to fight."
+        },
+        {
+          "card": "Colonization",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "+50% Production toward Settlers five and six."
+        },
+        {
+          "card": "Caravansaries",
+          "slot": "economic",
+          "from": "civic:foreign-trade",
+          "why": "Gold from the Trade Routes that pay for Walls and Builders."
+        },
+        {
+          "card": "Natural Philosophy",
+          "slot": "economic",
+          "from": "civic:recorded-history",
+          "why": "Double Campus adjacency; Science is the clock to Industrialization."
+        },
+        {
+          "card": "Bastions",
+          "slot": "military",
+          "from": "civic:defensive-tactics",
+          "why": "Combat Strength and ranged strength for the walled border cities; the floor costs no Production."
+        }
+      ],
+      "districts": [
+        {
+          "district": "campus",
+          "city": "capital and second city",
+          "note": "Mountain or reef adjacency; the two Campuses are the Recorded History Inspiration and Libraries follow by turn 75."
+        },
+        {
+          "district": "commercial-hub",
+          "city": "capital",
+          "note": "River adjacency; the Market is the first of two for Guilds."
+        },
+        {
+          "district": "royal-navy-dockyard",
+          "city": "the coastal city",
+          "note": "The Harbor replacement: Lighthouse for Housing, Shipyard later for the Steam Power Eureka."
+        },
+        {
+          "district": "government-plaza",
+          "city": "capital",
+          "note": "Ancestral Hall; the free Builder in every new city mines its hills in the first ten turns."
+        },
+        {
+          "district": "aqueduct",
+          "city": "capital",
+          "note": "Military Engineering Eureka now, Industrial Zone adjacency later; placed so the Industrial Zone can touch it and the Mines."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Pyramids",
+          "why": "A free Builder and an extra charge on every Builder for an empire that will mine every hill it owns for 200 turns.",
+          "skip_if": "No flat Desert tile within the capital's workable radius, or a rival shows Masonry ten turns before you."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Researcher",
+          "city": "second city",
+          "why": "Third title, with Researcher on the fourth: Science in the second Campus city, since Magnus already holds the capital; Science is the Industrialization clock."
+        },
+        {
+          "governor": "magnus",
+          "promotion": "Provision",
+          "city": "capital",
+          "why": "Kept through the Settler builds; Vertical Integration is his payoff promotion and it comes later."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "cardiff",
+          "why": "Every coastal city with a Harbor building is powered from its suzerainty; with Workshop of the World that is +4 on every powered building before a Power Plant exists."
+        },
+        {
+          "type": "Industrial",
+          "why": "Production toward buildings and districts in the capital during the long build."
+        },
+        {
+          "type": "Scientific",
+          "why": "Science in every Library at three envoys; the clock again."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-scientist",
+          "why": "The first Classical Great Scientist is the Education Eureka and a Library's worth of Science."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 65,
+          "test": "Five cities, both border cities walled, one Iron Mine working, and Political Philosophy adopted?",
+          "pass": "Appoint Pingala in the second city; queue the Aqueduct in the capital.",
+          "fail": "If the walls are missing, build them before anything else: a Classical declaration against an unwalled border city ends the plan. If no Iron is mined, the sixth Settler goes to the Iron, wherever it is."
+        },
+        {
+          "turn": 85,
+          "test": "Six cities, two Libraries, two Iron Mines, the capital Aqueduct built, Science at 35 or more?",
+          "pass": "Enter the staging phase; Apprenticeship and the first Industrial Zones are next.",
+          "fail": "Five cities and 30 Science is still inside the plan. Fewer than five cities or Science under 25 means the Industrialization date slips to 135 and the activation test moves with it; do not shorten the stockpile to hit the date."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "build-walls-border",
+          "turn": 52,
+          "text": "Ancient Walls finished in both border cities, with an Archer behind each."
+        },
+        {
+          "id": "build-first-iron",
+          "turn": 55,
+          "text": "Mine the first Iron with the third city's Builder; Iron Working's Eureka and God of Craftsmen both pay from this tile."
+        },
+        {
+          "id": "build-campuses",
+          "turn": 60,
+          "text": "Campuses placed in the capital and second city; Libraries queued."
+        },
+        {
+          "id": "build-dockyard",
+          "turn": 70,
+          "text": "Royal Navy Dockyard placed in the coastal city; Lighthouse queued. If no city is coastal, a second Commercial Hub instead."
+        },
+        {
+          "id": "build-sixth-city",
+          "turn": 75,
+          "text": "Sixth city founded on hills by a river; Ancestral Hall gives it a free Builder, which mines its hills first."
+        },
+        {
+          "id": "build-aqueduct",
+          "turn": 82,
+          "text": "Capital Aqueduct finished on the side where the Industrial Zone and the Mines will meet it; Military Engineering Eureka collected."
+        }
+      ]
+    },
+    {
+      "id": "stage",
+      "name": "Dormant: stage",
+      "turns": {
+        "from": 86,
+        "to": 120
+      },
+      "era": "renaissance",
+      "objective": "Arrive at turn 120 with Industrialization in hand or three turns away, an Industrial Zone with a Workshop in six cities, two Universities, four Military Engineers with roads between the Industrial Zone cities, the Iron stockpile at its cap, and Craftsmen slotted. The leader still gives nothing visible; this phase builds the base the percentage will multiply.",
+      "build_order": [
+        {
+          "item": "Industrial Zone",
+          "why": "Six of them, each beside an Aqueduct or river Dam and touching Mines; Workshop of the World makes the buildings in them cheaper."
+        },
+        {
+          "item": "Workshop",
+          "why": "In every Industrial Zone: +10% Production each under Age of Steam, and two Workshops are the Industrialization Eureka."
+        },
+        {
+          "item": "Aqueduct",
+          "why": "Second and third cities; the adjacency each Industrial Zone wants and the Housing a Mine-working city lacks."
+        },
+        {
+          "item": "Military Engineer",
+          "why": "Four of them at double speed with four charges each: roads between the Industrial Zone cities, two Forts for Ballistics, Railroads later."
+        },
+        {
+          "item": "University",
+          "why": "Two of them for the Printing Eureka and the Science that keeps Industrialization at turn 120."
+        },
+        {
+          "item": "Market",
+          "why": "Second Market for the Guilds Inspiration, which is the Craftsmen card."
+        },
+        {
+          "item": "Lumber Mill",
+          "why": "One on Woods for the Mass Production Eureka; Shipyards and Lumber Mills are Production for the Dockyard city."
+        },
+        {
+          "item": "Medieval Walls",
+          "why": "Border cities only; the Renaissance is when the AI brings Knights and Crossbowmen."
+        },
+        {
+          "item": "Crossbowman",
+          "why": "Three Archers upgraded; the floor for the Renaissance costs Gold, not Production."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:machinery",
+          "note": "Crossbowmen and Lumber Mills; Eureka from three Archers, which the floor already has."
+        },
+        {
+          "id": "tech:military-engineering",
+          "note": "The Military Engineer, which England builds twice as fast with two extra charges; Eureka from the capital Aqueduct. Reveals Niter."
+        },
+        {
+          "id": "tech:education",
+          "note": "Universities; Eureka from the Classical Great Scientist."
+        },
+        {
+          "id": "tech:stirrups",
+          "note": "Free Eureka from Feudalism; on the path and a Knight escort if the border gets busy."
+        },
+        {
+          "id": "tech:mass-production",
+          "note": "Shipyard in the Dockyard and the Industrialization prerequisite; Eureka from one Lumber Mill."
+        },
+        {
+          "id": "tech:castles",
+          "note": "Free Eureka from a Tier 2 government; Medieval Walls in the border cities."
+        },
+        {
+          "id": "tech:banking",
+          "note": "Free Eureka from Guilds; Banks are the Economics Eureka later."
+        },
+        {
+          "id": "tech:printing",
+          "note": "Two Universities; the Science that keeps the clock."
+        },
+        {
+          "id": "tech:industrialization",
+          "note": "The activation tech: Factories, Coal revealed, the Ruhr Valley. Eureka from two Workshops; target turn 118 to 122."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:feudalism",
+          "note": "Six Farms; Serfdom for the Builders that mine everything."
+        },
+        {
+          "id": "civic:civil-service",
+          "note": "A ten-Population city; Meritocracy and the road to Guilds."
+        },
+        {
+          "id": "civic:guilds",
+          "note": "Two Markets; the Craftsmen card doubles Industrial Zone adjacency and the Banking Eureka comes free."
+        },
+        {
+          "id": "civic:divine-right",
+          "note": "Monarchy for the Housing and the Castles Eureka; the Inspiration needs two Temples this plan does not build."
+        },
+        {
+          "id": "civic:medieval-faires",
+          "note": "Four Trade Routes running; Merchant Confederation and the road to Exploration."
+        },
+        {
+          "id": "civic:exploration",
+          "note": "Merchant Republic, the staging government: two Economic slots to Monarchy's one and Gold for the Workshops."
+        },
+        {
+          "id": "civic:humanism",
+          "note": "On the path to The Enlightenment; unboosted unless a Great Artist appears."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Serfdom",
+          "slot": "economic",
+          "from": "civic:feudalism",
+          "why": "Builders with extra charges: three Mines per city, Lumber Mills, and the second Iron Mine."
+        },
+        {
+          "card": "Craftsmen",
+          "slot": "economic",
+          "from": "civic:guilds",
+          "why": "Double Industrial Zone adjacency; slotted the turn the first Industrial Zone is placed and kept until Five-Year Plan replaces it."
+        },
+        {
+          "card": "Merchant Republic",
+          "slot": "wildcard",
+          "from": "civic:exploration",
+          "why": "The staging government: two Economic slots for Craftsmen and Serfdom, and Gold toward the Workshops."
+        },
+        {
+          "card": "Limes",
+          "slot": "military",
+          "from": "civic:defensive-tactics",
+          "why": "Medieval Walls at double speed in the border cities before the Renaissance AI arrives."
+        }
+      ],
+      "districts": [
+        {
+          "district": "industrial-zone",
+          "city": "every city with an Aqueduct, Dam or river",
+          "note": "Six by turn 120, each touching the Aqueduct and two or more Mines; Craftsmen doubles the adjacency."
+        },
+        {
+          "district": "aqueduct",
+          "city": "second and third cities",
+          "note": "Adjacency for the Industrial Zones and Housing for cities working hills."
+        },
+        {
+          "district": "dam",
+          "city": "any floodplain river city",
+          "note": "Industrial Zone adjacency and flood protection; the Hydroelectric Dam later is Power without Coal."
+        },
+        {
+          "district": "campus",
+          "city": "third and fourth cities",
+          "note": "Science is the clock; four Campuses by turn 110."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Kilwa Kisiwani",
+          "why": "+15% of each city-state type's yield in its own city for every type you are suzerain of, and in every city once you hold two of one type; with Cardiff and Johannesburg that is Production on the whole empire.",
+          "skip_if": "No coastal flat tile in a Campus or Commercial Hub city, or Machinery lands after turn 105."
+        },
+        {
+          "name": "Forbidden City",
+          "why": "An extra Wildcard slot for a government that wants Craftsmen, Serfdom, Natural Philosophy and Rationalism all at once.",
+          "skip_if": "A Culture-focused rival has Printing before you, or the capital has no flat tile beside its City Center."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "magnus",
+          "promotion": "Vertical Integration",
+          "city": "the best Industrial Zone city",
+          "why": "This city takes the regional bonus of every Factory and Power Plant in range instead of only one; Vertical Integration is his third promotion after Provision and Industrialist, so move him here once those titles are spent and two Industrial Zones stand."
+        },
+        {
+          "governor": "liang",
+          "promotion": "Zoning Commissioner",
+          "city": "the newest city",
+          "why": "Districts 20% faster in the city that is behind on its Industrial Zone."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "cardiff",
+          "why": "Keep the suzerainty: every Harbor building powers its city, and the Steam Power Eureka is two Shipyards."
+        },
+        {
+          "slug": "hattusa",
+          "why": "Two of each revealed-but-unimproved strategic resource per turn; it fills the Iron and later the Coal stockpile the Harbor buildings raised."
+        },
+        {
+          "type": "Scientific",
+          "why": "Science in every University at six envoys; the clock again."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-engineer",
+          "why": "Medieval Great Engineers rush Industrial Zones and Workshops; every one is taken, with Gold if needed."
+        },
+        {
+          "class": "great-scientist",
+          "why": "Science toward Industrialization; a Renaissance one with free techs is the clock jumping."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 100,
+          "test": "Military Engineering researched, Apprenticeship in, two Industrial Zones placed with Craftsmen slotted, and a Military Engineer under construction?",
+          "pass": "Queue Industrial Zones in the next four cities; Workshops behind them.",
+          "fail": "No Industrial Zone by turn 100 means the Workshop count will miss the Industrialization Eureka: put Liang on the slowest city and buy the Workshop with Gold when it is placed."
+        },
+        {
+          "turn": 120,
+          "test": "Run the activation test: Industrialization in or three turns out, six Industrial Zones with Workshops, two Iron Mines with the stockpile at cap, four Military Engineers with roads between the Industrial Zone cities?",
+          "pass": "The kit is on. Enter the activation phase and start Factories the turn Industrialization lands.",
+          "fail": "Fix the single missing item for up to ten turns. If two or more are missing at turn 130, the abort branch applies and the empire plays a plain Science game."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "stage-first-iz",
+          "turn": 90,
+          "text": "Apprenticeship in: place the first Industrial Zone in the capital beside the Aqueduct and the Mines; slot Craftsmen the same turn."
+        },
+        {
+          "id": "stage-engineers",
+          "turn": 98,
+          "text": "Military Engineering in: build the first Military Engineer at double speed and lay road from the capital to the second Industrial Zone city."
+        },
+        {
+          "id": "stage-workshops",
+          "turn": 105,
+          "text": "Two Workshops finished; Industrialization Eureka collected and the tech queued behind Printing."
+        },
+        {
+          "id": "stage-forts",
+          "turn": 110,
+          "text": "Two Forts from the Military Engineers on the border facing the strongest neighbour; Ballistics Eureka collected and the floor hardened."
+        },
+        {
+          "id": "stage-six-iz",
+          "turn": 118,
+          "text": "Sixth Industrial Zone placed; Workshops queued or bought in every one."
+        },
+        {
+          "id": "stage-write-order",
+          "turn": 120,
+          "text": "Write the activation build order: Factory in the three best Industrial Zones, Coal Mine with the first Serfdom Builder, Ruhr Valley in the capital, Coal Power Plant in the second-best city. Nothing else is queued until it is done."
+        }
+      ]
+    },
+    {
+      "id": "activate",
+      "name": "Activation: Factories and Coal",
+      "turns": {
+        "from": 121,
+        "to": 165
+      },
+      "era": "industrial",
+      "objective": "Switch every Phase A habit off. Coal mined the turn it is revealed, Factories in every Industrial Zone, the Ruhr Valley in the capital, Coal Power Plants in the two best cities, Oxford University and Big Ben, and Railroads from the Military Engineers between every Industrial Zone city by turn 165. The percentage is now 20 to 30 per city and the +4 on powered buildings is live.",
+      "build_order": [
+        {
+          "item": "Factory",
+          "why": "Every Industrial Zone; +10% more Production per city, and the Magnus city stacks every Factory's regional bonus under Vertical Integration. Three Factories are the Class Struggle Inspiration."
+        },
+        {
+          "item": "Ruhr Valley",
+          "why": "Capital: +20% Production and +1 per Mine and Quarry in a city that already has the most Mines; built with Grand Tour-less England this is the one wonder worth 25 turns."
+        },
+        {
+          "item": "Coal Power Plant",
+          "why": "Second-best city first: +4 Production on every powered building under Workshop of the World, and the Refining Eureka. The capital gets one after the Ruhr Valley."
+        },
+        {
+          "item": "Military Engineer",
+          "why": "Two more; Railroads between the Industrial Zone cities once Steam Power is in, and the Coal they consume comes from Mines that accumulate extra."
+        },
+        {
+          "item": "Shipyard",
+          "why": "Two of them in the two Dockyard cities for the Steam Power Eureka; Production on every water tile."
+        },
+        {
+          "item": "Bank",
+          "why": "Two for the Economics Eureka; Gold buys the Factories the slower cities cannot build in time."
+        },
+        {
+          "item": "University",
+          "why": "Every remaining Campus; Science must climb from 60 to 150 across this phase."
+        },
+        {
+          "item": "Ironclad",
+          "why": "One from the Dockyard for the Steel Eureka with the Coal Mine; the coastal defence after."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:scientific-theory",
+          "note": "Free Eureka from The Enlightenment; on the path to the Industrial-era techs."
+        },
+        {
+          "id": "tech:steam-power",
+          "note": "Railroads for the Military Engineers and Ironclads; Eureka from two Shipyards."
+        },
+        {
+          "id": "tech:economics",
+          "note": "Big Ben and Stock Exchanges; Eureka from two Banks."
+        },
+        {
+          "id": "tech:rifling",
+          "note": "Niter Mine Eureka if a source is in reach; Line Infantry for the floor and Niter is a strategic tile for Age of Steam either way."
+        },
+        {
+          "id": "tech:ballistics",
+          "note": "Free Eureka from the two Forts; Military Engineers and the Industrial-era floor."
+        },
+        {
+          "id": "tech:electricity",
+          "note": "The Power Plant line continues; Eureka from two Sea Dogs after Mercantilism."
+        },
+        {
+          "id": "tech:steel",
+          "note": "Eureka from an Ironclad plus a Coal Mine, both of which this phase builds; Artillery if the fallback is wanted."
+        },
+        {
+          "id": "tech:refining",
+          "note": "Oil revealed; Eureka from the Coal Power Plant. The Oil Power Plant later is cleaner for the same +4."
+        },
+        {
+          "id": "tech:sanitation",
+          "note": "Sewers for cities about to grow past 15; Eureka from two Neighborhoods."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:the-enlightenment",
+          "note": "Three Great People earned; Rationalism, and the Scientific Theory Eureka for free."
+        },
+        {
+          "id": "civic:mercantilism",
+          "note": "Sea Dogs and Triangular Trade; Inspiration from a Great Merchant if one arrives."
+        },
+        {
+          "id": "civic:civil-engineering",
+          "note": "Seven specialty district types; Aqueducts and Dams do not count, so an Entertainment Complex and a Theater Square or Encampment join the five already built. Public Works for the Builders."
+        },
+        {
+          "id": "civic:colonialism",
+          "note": "Free Inspiration from Astronomy; the road to Nationalism and Ideology."
+        },
+        {
+          "id": "civic:urbanization",
+          "note": "A 15-Population city; Neighborhoods for the Sanitation Eureka and Housing."
+        },
+        {
+          "id": "civic:ideology",
+          "note": "The gate to Class Struggle, which brings Communism and Five-Year Plan; Totalitarianism and Fascism instead if the Domination fallback is on."
+        },
+        {
+          "id": "civic:class-struggle",
+          "note": "Three Factories give the Inspiration; Communism and Five-Year Plan, which doubles Campus and Industrial Zone adjacency."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Craftsmen",
+          "slot": "economic",
+          "from": "civic:guilds",
+          "why": "Still the single best card in the kit; doubled adjacency now flows into Factories, until Five-Year Plan replaces it at Class Struggle."
+        },
+        {
+          "card": "Rationalism",
+          "slot": "economic",
+          "from": "civic:the-enlightenment",
+          "why": "Campus buildings doubled in cities of 15 Population with high adjacency; the Science side of the space race."
+        },
+        {
+          "card": "Public Works",
+          "slot": "economic",
+          "from": "civic:civil-engineering",
+          "why": "Builders 30% faster with two extra charges; they mine the Coal and Niter while the Military Engineers lay the Railroads."
+        },
+        {
+          "card": "Five-Year Plan",
+          "slot": "economic",
+          "from": "civic:class-struggle",
+          "why": "+100% Campus and Industrial Zone adjacency in one card, replacing Craftsmen and Natural Philosophy; eight of each district before the percentage."
+        },
+        {
+          "card": "Communism",
+          "slot": "wildcard",
+          "from": "civic:class-struggle",
+          "why": "The payoff government: +10% Production toward buildings and wonders and more toward districts; every multiplier stacks on Age of Steam. Fascism only if the Domination branch is chosen."
+        }
+      ],
+      "districts": [
+        {
+          "district": "industrial-zone",
+          "city": "every remaining city",
+          "note": "Eight by turn 165; a city without one is a city the leader ability ignores."
+        },
+        {
+          "district": "royal-navy-dockyard",
+          "city": "a second coastal city",
+          "note": "A second Royal Navy Dockyard, since England builds no plain Harbor: a second Shipyard for the Steam Power Eureka and a Trade Route."
+        },
+        {
+          "district": "neighborhood",
+          "city": "capital and the Ruhr city",
+          "note": "Two for the Sanitation Eureka and Housing for cities that will pass 15 Population."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Ruhr Valley",
+          "why": "+20% Production in the city and +1 Production per Mine and Quarry; in the capital with eight Mines this is the biggest single Production tile in the game and it is built at Industrialization, the turn the kit switches on.",
+          "skip_if": "No river-adjacent Industrial Zone in the capital, or a rival with Industrialization is seen building it; take it in the second-best city instead."
+        },
+        {
+          "name": "Oxford University",
+          "why": "Two free techs and extra Science in its Campus city; the Science half of a space race that this kit's Production will otherwise outrun.",
+          "skip_if": "It is not started by turn 150 or a Science rival already has it placed."
+        },
+        {
+          "name": "Big Ben",
+          "why": "An extra Economic slot for Five-Year Plan and a Gold windfall; this plan runs four Economic cards at once.",
+          "skip_if": "The Commercial Hub with a Bank is not river-adjacent, or Economics is researched after turn 160."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "magnus",
+          "promotion": "Vertical Integration",
+          "city": "the best Industrial Zone city",
+          "why": "This city takes the regional Production of every Factory and Power Plant within six tiles, not just one; place him where the most Industrial Zones overlap."
+        },
+        {
+          "governor": "pingala",
+          "promotion": "Space Initiative",
+          "city": "capital",
+          "why": "Grants and Space Initiative as the titles come: 30% more Production toward space projects later; established now so the titles are in place."
+        },
+        {
+          "governor": "reyna",
+          "promotion": "Contractor",
+          "city": "a slow Industrial Zone city",
+          "why": "Buy the district with Gold where the Production is late; the percentage is per building, so every city must have them."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "cardiff",
+          "why": "Still the Power source for every coastal city with a Harbor building."
+        },
+        {
+          "slug": "johannesburg",
+          "why": "+1 Production per improved resource type in every city; with a Mine on every hill this is the second-best suzerainty in the game for this kit."
+        },
+        {
+          "type": "Industrial",
+          "why": "Production in every Factory at six envoys."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-engineer",
+          "why": "Industrial Great Engineers rush Factories and Power Plants and the Ruhr Valley; Nobel Prize is not yours, so buy them with Gold if the points are short."
+        },
+        {
+          "class": "great-scientist",
+          "why": "Industrial Great Scientists give free Science and Eurekas; the space race needs 200 Science by turn 200."
+        },
+        {
+          "class": "great-merchant",
+          "why": "The Mercantilism Inspiration and Gold for the Factories the slow cities buy."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 140,
+          "test": "Coal mined, three Factories standing, the Ruhr Valley under construction, Craftsmen and Communism or Merchant Republic slotted, Science over 90?",
+          "pass": "Queue Coal Power Plants in the two best cities; Railroads start when Steam Power lands.",
+          "fail": "No Coal by turn 140 means Hattusa or a trade deal supplies it, and the Power Plant waits; keep building Factories, which do not need Coal to stand. Science under 70 means Oxford before Big Ben."
+        },
+        {
+          "turn": 165,
+          "test": "Eight Factories, two Power Plants, the Ruhr Valley built, Railroads between the Industrial Zone cities, and the capital's Production over 150?",
+          "pass": "Enter the payoff phase; the Spaceport is placed now.",
+          "fail": "Six Factories and one Power Plant at turn 165 is still a Science game, ten turns slower. Fewer than that means the dormant phase was too thin: the plan continues but the victory becomes Score unless a neighbour is weak enough for the Domination branch."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "activate-coal",
+          "turn": 122,
+          "text": "Industrialization in: mine every Coal inside the borders with Serfdom Builders this turn; Age of Steam pays on the tile before the Mine finishes, Workshop of the World fills the stockpile after."
+        },
+        {
+          "id": "activate-factories",
+          "turn": 125,
+          "text": "Factory queued in every Industrial Zone, best Production city first; buy the third with Gold if it will take more than eight turns."
+        },
+        {
+          "id": "activate-ruhr",
+          "turn": 130,
+          "text": "Ruhr Valley started in the capital; every Great Engineer charge and Gold purchase goes toward it."
+        },
+        {
+          "id": "activate-power",
+          "turn": 142,
+          "text": "Coal Power Plant finished in the second-best city; Refining Eureka collected and every Harbor city checked for Cardiff's Power."
+        },
+        {
+          "id": "activate-railroads",
+          "turn": 150,
+          "text": "Steam Power in: the Military Engineers lay Railroads between every Industrial Zone city; Production from the Mines now reaches the capital in one turn of movement."
+        },
+        {
+          "id": "activate-ironclad",
+          "turn": 158,
+          "text": "One Ironclad from the Dockyard; Steel Eureka collected with the Coal Mine already working."
+        }
+      ]
+    },
+    {
+      "id": "payoff",
+      "name": "Payoff: the space race",
+      "turns": {
+        "from": 166,
+        "to": null
+      },
+      "era": "modern",
+      "objective": "Run hot. Spaceport in the capital by turn 180, Research Labs everywhere, the Earth Satellite by turn 210 and the Moon Landing by turn 240, with the Mars Colony and the Exoplanet Expedition built in two Spaceport cities at once under Pingala's Space Initiative and 30% Production per city. There is no time for a second build-out; every city builds Industrial Zone buildings, Campus buildings or space projects and nothing else.",
+      "build_order": [
+        {
+          "item": "Spaceport",
+          "why": "Capital first, then the Ruhr city; the Space Race Inspiration and the only district the rest of the game needs."
+        },
+        {
+          "item": "Research Lab",
+          "why": "Every Campus; the Nuclear Program Inspiration from the first and the Science the projects' techs need."
+        },
+        {
+          "item": "Oil Power Plant",
+          "why": "Replace the Coal Plants as Oil is mined: the same +4 on powered buildings with less CO2, and the Advanced Ballistics Eureka."
+        },
+        {
+          "item": "Earth Satellite",
+          "why": "The first space project, in the capital at 30% bonus Production; Rocketry has no Eureka, so the tech is researched flat."
+        },
+        {
+          "item": "Sea Dog",
+          "why": "Two of them for the Electricity Eureka if it is still outstanding, and the coastal defence while every city builds projects."
+        },
+        {
+          "item": "Stock Exchange",
+          "why": "Two for the Capitalism Inspiration; Gold buys the Research Labs the slow cities cannot build."
+        },
+        {
+          "item": "Moon Landing",
+          "why": "Second project; a one-time burst of Culture equal to ten turns of Science keeps the civics coming."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:chemistry",
+          "note": "Research Labs; Eureka from alliance level 2 with the friendliest neighbour."
+        },
+        {
+          "id": "tech:flight",
+          "note": "Eureka from the Ruhr Valley or Big Ben; Aerodromes for the Synthetic Materials path if the fallback is on."
+        },
+        {
+          "id": "tech:plastics",
+          "note": "Oil Wells on the Oil Refining revealed; Eureka from the first one."
+        },
+        {
+          "id": "tech:computers",
+          "note": "Eureka from a Tier 3 government; Culture and Tourism are not the aim, but the Satellites line runs through it."
+        },
+        {
+          "id": "tech:advanced-ballistics",
+          "note": "Eureka from the Oil Power Plant; on the Rocketry path."
+        },
+        {
+          "id": "tech:nanotechnology",
+          "note": "Aluminum Mine Eureka; Lagrange Laser Station later."
+        },
+        {
+          "id": "tech:robotics",
+          "note": "Eureka from Globalization; the Exoplanet Expedition needs it."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:suffrage",
+          "note": "Four Sewers across eight cities give the Inspiration; New Deal if Amenities fail."
+        },
+        {
+          "id": "civic:capitalism",
+          "note": "Two Stock Exchanges; Market Economy later."
+        },
+        {
+          "id": "civic:nuclear-program",
+          "note": "A Research Lab gives the Inspiration; Military Research card for the Science cities."
+        },
+        {
+          "id": "civic:space-race",
+          "note": "The Spaceport gives the Inspiration; Integrated Space Cell for 15% more on space projects with a Military Academy."
+        },
+        {
+          "id": "civic:globalization",
+          "note": "Two Airports; the Robotics Eureka for the Exoplanet Expedition."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Five-Year Plan",
+          "slot": "economic",
+          "from": "civic:class-struggle",
+          "why": "Kept to the end; doubled Campus and Industrial Zone adjacency in a sixteen-district empire."
+        },
+        {
+          "card": "Integrated Space Cell",
+          "slot": "military",
+          "from": "civic:space-race",
+          "why": "+15% Production toward space projects in a city with a Military Academy; the capital gets one."
+        },
+        {
+          "card": "International Space Agency",
+          "slot": "diplomatic",
+          "from": "civic:space-race",
+          "why": "5% Science per city-state you are suzerain of; three suzerainties is 15%."
+        },
+        {
+          "card": "Rationalism",
+          "slot": "economic",
+          "from": "civic:the-enlightenment",
+          "why": "Campus buildings doubled in the big Campus cities for the project techs."
+        }
+      ],
+      "districts": [
+        {
+          "district": "spaceport",
+          "city": "capital and the Ruhr city",
+          "note": "Two Spaceports so the Mars Colony and the Exoplanet Expedition build in parallel."
+        },
+        {
+          "district": "aerodrome",
+          "city": "two Factory cities",
+          "note": "Two for the Synthetic Materials Eureka and Airports for Globalization; only if Science is ahead of schedule."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Amundsen-Scott Research Station",
+          "why": "+20% Production and Science in the city on Snow or Tundra; a Spaceport city on cold ground doubles up.",
+          "skip_if": "No Snow or Tundra tile in a Spaceport city, or Radio arrives after turn 220."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Space Initiative",
+          "city": "capital",
+          "why": "+30% Production toward space projects in the Spaceport city; the Space Initiative title is taken the moment it is available."
+        },
+        {
+          "governor": "magnus",
+          "promotion": "Vertical Integration",
+          "city": "the Ruhr city",
+          "why": "Moved here if it holds the second Spaceport; the Factories within six tiles feed the projects."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "johannesburg",
+          "why": "Production per improved resource type in every city, all the way to the Exoplanet Expedition."
+        },
+        {
+          "slug": "geneva",
+          "why": "+15% Science in every city while not at war; a Dead-Phase builder is not at war."
+        },
+        {
+          "type": "Scientific",
+          "why": "International Space Agency pays 5% Science per suzerainty."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-engineer",
+          "why": "Modern Great Engineers add Production to the space projects directly; every one is bought."
+        },
+        {
+          "class": "great-scientist",
+          "why": "Free techs and Science; Rocketry and Nuclear Fission have no Eureka and a Great Scientist is the only shortcut."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 200,
+          "test": "Spaceport built, Earth Satellite launched or under construction, Science over 200, and Research Labs in four cities?",
+          "pass": "Second Spaceport placed; Moon Landing queued.",
+          "fail": "No Satellite by turn 200 means Science is the bottleneck, not Production: every Gold purchase goes to Research Labs and Oxford if it is not built, and the Mars date slips to 260."
+        },
+        {
+          "turn": 250,
+          "test": "Moon Landing done and the Mars Colony launched, or the Exoplanet Expedition under construction?",
+          "pass": "Continue to the end; the Lagrange and Terrestrial Laser Stations shorten the trip.",
+          "fail": "A Science rival launching ahead means the Domination branch: Artillery and Infantry from the Factories against their Spaceport city, which is the only war this kit should ever start."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "payoff-spaceport",
+          "turn": 175,
+          "text": "Spaceport placed in the capital; Space Race Inspiration collected and Integrated Space Cell slotted."
+        },
+        {
+          "id": "payoff-labs",
+          "turn": 185,
+          "text": "Research Labs queued or bought in every Campus city; Nuclear Program Inspiration collected from the first."
+        },
+        {
+          "id": "payoff-oil-plants",
+          "turn": 195,
+          "text": "Oil Power Plants replace the Coal Plants as Oil Wells come online; Advanced Ballistics Eureka collected."
+        },
+        {
+          "id": "payoff-satellite",
+          "turn": 205,
+          "text": "Earth Satellite launched from the capital under Space Initiative and Integrated Space Cell."
+        },
+        {
+          "id": "payoff-second-spaceport",
+          "turn": 215,
+          "text": "Second Spaceport finished in the Ruhr city; the Mars Colony and the Exoplanet Expedition split between the two."
+        },
+        {
+          "id": "payoff-review",
+          "turn": 250,
+          "text": "Review the turn 250 checkpoint and either continue the launches or turn the Factories to Artillery for the one rival ahead."
+        }
+      ]
+    }
+  ],
+  "boosts": [
+    {
+      "id": "tech:archery",
+      "fit": "cheap",
+      "when": "settle",
+      "how": "The Slinger finishes a barbarian scout near the capital."
+    },
+    {
+      "id": "tech:writing",
+      "fit": "free",
+      "when": "settle",
+      "how": "The Scout meets the first civilization."
+    },
+    {
+      "id": "tech:masonry",
+      "fit": "cheap",
+      "when": "settle",
+      "how": "The first Builder quarries Stone; hills starts usually have some."
+    },
+    {
+      "id": "tech:bronze-working",
+      "fit": "cheap",
+      "when": "settle",
+      "how": "Three barbarian kills while clearing the nearest camp."
+    },
+    {
+      "id": "tech:wheel",
+      "fit": "free",
+      "when": "settle",
+      "how": "The first Builder mines a resource hill, which this plan does before anything else."
+    },
+    {
+      "id": "tech:celestial-navigation",
+      "fit": "cheap",
+      "when": "build",
+      "how": "Two Fishing Boats in the coastal city before the Dockyard is placed."
+    },
+    {
+      "id": "tech:currency",
+      "fit": "free",
+      "when": "build",
+      "how": "The first Trader runs its route."
+    },
+    {
+      "id": "tech:iron-working",
+      "fit": "free",
+      "when": "build",
+      "how": "The first Iron Mine is the plan's own stockpile step."
+    },
+    {
+      "id": "tech:mathematics",
+      "fit": "free",
+      "when": "build",
+      "how": "Campus, Commercial Hub and Royal Navy Dockyard by turn 80."
+    },
+    {
+      "id": "tech:construction",
+      "fit": "cheap",
+      "when": "build",
+      "how": "A Water Mill in a river city."
+    },
+    {
+      "id": "tech:engineering",
+      "fit": "free",
+      "when": "build",
+      "how": "Ancient Walls in the border cities are the defensive floor anyway."
+    },
+    {
+      "id": "tech:apprenticeship",
+      "fit": "free",
+      "when": "build",
+      "how": "Three Mines across six hill cities by turn 60."
+    },
+    {
+      "id": "tech:stirrups",
+      "fit": "free",
+      "when": "stage",
+      "how": "Feudalism is on the civic path."
+    },
+    {
+      "id": "tech:machinery",
+      "fit": "free",
+      "when": "stage",
+      "how": "Three Archers from the defensive floor."
+    },
+    {
+      "id": "tech:education",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "The Classical Great Scientist from two Libraries."
+    },
+    {
+      "id": "tech:military-engineering",
+      "fit": "free",
+      "when": "build",
+      "how": "The capital Aqueduct is built for Industrial Zone adjacency anyway."
+    },
+    {
+      "id": "tech:castles",
+      "fit": "free",
+      "when": "stage",
+      "how": "Monarchy or Merchant Republic is a Tier 2 government."
+    },
+    {
+      "id": "tech:mass-production",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "One Lumber Mill on Woods."
+    },
+    {
+      "id": "tech:banking",
+      "fit": "free",
+      "when": "stage",
+      "how": "Guilds is on the civic path for the Craftsmen card."
+    },
+    {
+      "id": "tech:printing",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "Two Universities in the Science cities."
+    },
+    {
+      "id": "tech:industrialization",
+      "fit": "free",
+      "when": "stage",
+      "how": "Two Workshops are the first two Industrial Zone buildings the plan builds."
+    },
+    {
+      "id": "tech:scientific-theory",
+      "fit": "free",
+      "when": "activate",
+      "how": "The Enlightenment is on the civic path."
+    },
+    {
+      "id": "tech:ballistics",
+      "fit": "free",
+      "when": "activate",
+      "how": "Two Forts from the Military Engineers the civ ability builds at double speed."
+    },
+    {
+      "id": "tech:steam-power",
+      "fit": "cheap",
+      "when": "activate",
+      "how": "Two Shipyards in the two Royal Navy Dockyards."
+    },
+    {
+      "id": "tech:sanitation",
+      "fit": "cheap",
+      "when": "activate",
+      "how": "Two Neighborhoods in the capital and the Ruhr city."
+    },
+    {
+      "id": "tech:economics",
+      "fit": "cheap",
+      "when": "activate",
+      "how": "Two Banks in the Commercial Hub cities."
+    },
+    {
+      "id": "tech:rifling",
+      "fit": "cheap",
+      "when": "activate",
+      "how": "A Mine on the Niter Military Engineering revealed, if one is in reach."
+    },
+    {
+      "id": "tech:flight",
+      "fit": "free",
+      "when": "payoff",
+      "how": "The Ruhr Valley or Big Ben is an Industrial wonder."
+    },
+    {
+      "id": "tech:steel",
+      "fit": "free",
+      "when": "activate",
+      "how": "An Ironclad from the Dockyard and the Coal Mine the plan mines first."
+    },
+    {
+      "id": "tech:refining",
+      "fit": "free",
+      "when": "activate",
+      "how": "The Coal Power Plant is the first Power Plant built."
+    },
+    {
+      "id": "tech:electricity",
+      "fit": "cheap",
+      "when": "payoff",
+      "how": "Two Sea Dogs from the Dockyard after Mercantilism."
+    },
+    {
+      "id": "tech:chemistry",
+      "fit": "cheap",
+      "when": "payoff",
+      "how": "Alliance level 2 with the neighbour you have traded with since turn 60."
+    },
+    {
+      "id": "tech:advanced-ballistics",
+      "fit": "cheap",
+      "when": "payoff",
+      "how": "The Oil Power Plant that replaces the first Coal Plant."
+    },
+    {
+      "id": "tech:plastics",
+      "fit": "free",
+      "when": "payoff",
+      "how": "An Oil Well on the first Oil tile Refining reveals."
+    },
+    {
+      "id": "tech:computers",
+      "fit": "free",
+      "when": "payoff",
+      "how": "Communism is a Tier 3 government."
+    },
+    {
+      "id": "tech:robotics",
+      "fit": "costly",
+      "when": "payoff",
+      "how": "Globalization needs two Airports; usually researched flat."
+    },
+    {
+      "id": "tech:nanotechnology",
+      "fit": "cheap",
+      "when": "payoff",
+      "how": "A Mine on Aluminum, which Age of Steam already pays on."
+    },
+    {
+      "id": "civic:craftsmanship",
+      "fit": "free",
+      "when": "settle",
+      "how": "Three improvements from the first Builder."
+    },
+    {
+      "id": "civic:foreign-trade",
+      "fit": "costly",
+      "when": "settle",
+      "how": "Only if the Scout reaches a second continent."
+    },
+    {
+      "id": "civic:early-empire",
+      "fit": "free",
+      "when": "settle",
+      "how": "Six Population across the first two cities."
+    },
+    {
+      "id": "civic:mysticism",
+      "fit": "free",
+      "when": "build",
+      "how": "Founding the pantheon."
+    },
+    {
+      "id": "civic:state-workforce",
+      "fit": "free",
+      "when": "build",
+      "how": "The first Campus in the capital."
+    },
+    {
+      "id": "civic:political-philosophy",
+      "fit": "cheap",
+      "when": "build",
+      "how": "Three city-states met by the Scout."
+    },
+    {
+      "id": "civic:games-and-recreation",
+      "fit": "free",
+      "when": "build",
+      "how": "Researching Construction."
+    },
+    {
+      "id": "civic:defensive-tactics",
+      "fit": "cheap",
+      "when": "build",
+      "how": "Any neighbour declaring on you; it happens to a walled builder more often than not."
+    },
+    {
+      "id": "civic:recorded-history",
+      "fit": "free",
+      "when": "build",
+      "how": "Two Campuses by turn 75."
+    },
+    {
+      "id": "civic:feudalism",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "Six Farms across six cities."
+    },
+    {
+      "id": "civic:civil-service",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "The capital reaches ten Population behind the Aqueduct."
+    },
+    {
+      "id": "civic:guilds",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "Markets in the capital and the Dockyard city."
+    },
+    {
+      "id": "civic:divine-right",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:medieval-faires",
+      "fit": "cheap",
+      "when": "stage",
+      "how": "Four Trade Routes from two Commercial Hubs and the Dockyard."
+    },
+    {
+      "id": "civic:exploration",
+      "fit": "costly",
+      "when": "stage",
+      "how": "Two Caravels only on a coastal map; usually researched flat for Merchant Republic."
+    },
+    {
+      "id": "civic:humanism",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:mercantilism",
+      "fit": "costly",
+      "when": "activate",
+      "how": "A Great Merchant from the Commercial Hubs if one comes; do not chase it."
+    },
+    {
+      "id": "civic:the-enlightenment",
+      "fit": "cheap",
+      "when": "activate",
+      "how": "Three Great People across the game so far."
+    },
+    {
+      "id": "civic:civil-engineering",
+      "fit": "cheap",
+      "when": "activate",
+      "how": "Campus, Commercial Hub, Royal Navy Dockyard, Industrial Zone and Government Plaza are five; an Entertainment Complex and a Theater Square or Encampment make seven, since Aqueducts and Dams are not specialty districts."
+    },
+    {
+      "id": "civic:colonialism",
+      "fit": "free",
+      "when": "activate",
+      "how": "Researching Astronomy on the way to Scientific Theory."
+    },
+    {
+      "id": "civic:urbanization",
+      "fit": "cheap",
+      "when": "activate",
+      "how": "The capital reaches 15 Population with Sewers and Neighborhoods."
+    },
+    {
+      "id": "civic:class-struggle",
+      "fit": "free",
+      "when": "activate",
+      "how": "Three Factories are the first three the activation phase builds."
+    },
+    {
+      "id": "civic:suffrage",
+      "fit": "cheap",
+      "when": "payoff",
+      "how": "Four Sewers across the biggest cities."
+    },
+    {
+      "id": "civic:capitalism",
+      "fit": "cheap",
+      "when": "payoff",
+      "how": "Two Stock Exchanges in the Bank cities."
+    },
+    {
+      "id": "civic:nuclear-program",
+      "fit": "free",
+      "when": "payoff",
+      "how": "The first Research Lab."
+    },
+    {
+      "id": "civic:space-race",
+      "fit": "free",
+      "when": "payoff",
+      "how": "The capital Spaceport."
+    },
+    {
+      "id": "civic:globalization",
+      "fit": "costly",
+      "when": "payoff",
+      "how": "Two Airports only if the Aerodromes were built."
+    }
+  ],
+  "decision_triggers": [
+    {
+      "name": "Early neighbour war",
+      "if": "A neighbour declares on a walled border city before turn 110.",
+      "then": "Defend inside the Walls with Archers and Crossbowmen and take the Defensive Tactics Inspiration. Do not counter-invade; the Factories are the only army this plan builds before turn 165, and a war that costs a Settler costs an Industrial Zone."
+    },
+    {
+      "name": "No Coal anywhere",
+      "if": "Industrialization reveals no Coal inside the borders or within one tile of them.",
+      "then": "Buy Coal from any AI that will sell it, put three envoys into Hattusa, and settle a ninth city on the nearest Coal even if the site is poor; the Power Plants wait, the Factories do not. Dams become Hydroelectric Dams at Electricity, which is Power without Coal."
+    },
+    {
+      "name": "Science rival ahead",
+      "if": "A rival launches the Earth Satellite before turn 200 or holds a Science lead of two techs at turn 180.",
+      "then": "The Domination branch, and only this one: Artillery and Infantry from the Factories against that rival's Spaceport city, with Sea Dogs and Ironclads if it is coastal. Take the city, keep it, and go back to the projects."
+    },
+    {
+      "name": "Cardiff on the map",
+      "if": "Cardiff is met before turn 90.",
+      "then": "Three envoys the turn it is met, before any Scientific city-state: every Harbor building powers its city, and Workshop of the World's +4 on powered buildings starts a full era before the first Power Plant."
+    }
+  ],
+  "abort": {
+    "trigger": "Turn 130 with two or more of the activation items missing (no Industrialization, fewer than four Industrial Zones, no Iron Mine, no Military Engineers), or a city lost during the dormant phase that was not retaken.",
+    "actions": [
+      "Stop placing Industrial Zones in cities that cannot reach a Workshop in ten turns; the percentage needs buildings, not districts, and a half-built zone is a lost Campus.",
+      "The leader ability is now decorative. Say so and stop planning around it; England is a wide builder with cheap Military Engineers and a Dockyard, and that is still a civilization.",
+      "Play the empire for a plain Science game: Universities everywhere, Rationalism, Oxford if it is open, and a Spaceport at turn 200 built on whatever Production exists."
+    ]
+  },
+  "fail_state": "Turn 130 with Industrialization researched and nothing to multiply: three Industrial Zones without Workshops, one Iron tile, no Coal in sight, six cities at eight Population working Farms because the hills were never mined, and Science at 40. Or, more simply, a border city lost at turn 70 to a Classical rush the walls were never built against. Both are dormant-phase failures that only show at activation.",
+  "common_mistakes": [
+    "Judging the leader at turn 60. The curve is flat by design; switching to a different plan there throws away the Industrial Zone sites that are half built.",
+    "Settling for Food. Every city in this plan is sited on the hills it will mine and the river it will Aqueduct; a lush flat site is a city Age of Steam ignores.",
+    "Placing Industrial Zones for adjacency alone. The percentage is per building in the city, so a +1 Industrial Zone with a Workshop, Factory and Power Plant beats a +6 one with a Workshop.",
+    "Skipping Walls in the border cities because nothing has happened yet. A Dead-Phase leader with no walls is the most common elimination on the roster.",
+    "Building Military Engineers for the Forts only. At four charges and half cost they are the Railroad network that moves the whole empire after Steam Power.",
+    "Taking the Sea Dog as an invitation to a naval war. Two of them are the Electricity Eureka and a coast guard; the Factories are the point, not the fleet."
+  ],
+  "sources": [
+    "Civilization VI Civilopedia, Gathering Storm ruleset with the Leader Pass (England, Victoria (Age of Steam), Workshop of the World, Sea Dog, Royal Navy Dockyard, Military Engineer).",
+    "Boost objectives cross-checked against civilization6planner.com tech-tree and civics-tree pages, 2026-10-01.",
+    "Leadership Focus tags, caveats and Dead-Phase supplement for Victoria (Age of Steam) in this repository.",
+    "Where the civ-info text differs from the game, the game is followed: the Royal Navy Dockyard does not grant a free naval unit under Age of Steam (that is Pax Britannica, the Age of Empire persona's ability); it gives free embark and disembark, Great Admiral points, and extra Gold and Loyalty on a foreign continent. Workshop of the World's Industrial Zone bonus applies to the zone's buildings. The exact size of the strategic-resource tile Production bonus in Age of Steam should be confirmed in the Civilopedia; the plan treats it as a flat per-tile bonus and does not depend on the number."
+  ]
+}

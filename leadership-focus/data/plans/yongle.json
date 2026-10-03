@@ -1,0 +1,1584 @@
+{
+  "slug": "yongle",
+  "shape": "Gate",
+  "secondary_shape": null,
+  "version": 1,
+  "updated": "2026-10-02",
+  "assumptions": {
+    "ruleset": "Gathering Storm with every expansion and the Leader Pass",
+    "speed": "Standard",
+    "difficulty": "Emperor",
+    "map": "Continents, standard size, 8 civilizations",
+    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. Yongle has a single persona and it is planned here. The gate is a Population threshold, not a turn: each city crosses on its own, the plan tracks every city separately, and the yields stay flat until the first one does. That flatline is expected."
+  },
+  "verdict": {
+    "victory": "Science",
+    "secondary": "Culture",
+    "confidence": "medium",
+    "one_line": "Grow four river cities on Granaries, Aqueducts and Farms before running a single project, then push them over Population 10 one at a time with the Lijia Food project and turn each crossing into a University and a Researcher. Nothing happens for eighty turns, and then the Science chart turns.",
+    "why": "Lijia pays per Citizen and pays most in large cities, and the Lijia projects turn Production into the Food or Gold that carries a city over the line, so the kit rewards a few very big cities and nothing else. Dynastic Cycle makes every boost worth an extra tenth, and the growth path triggers an unusual number of them: Irrigation, Construction, Military Engineering, Feudalism, Civil Service and Urbanization all come from building Housing and growing the city. Science is the verdict because per-Citizen Science stacks with Campuses, Pingala's Researcher promotion and Rationalism in exactly the cities the gate produces. The kit has no offensive lever, only a defensive ranged unit and a wall, and no Faith engine, so the Great Wall's Culture and Tourism and the per-Citizen Culture are the second line rather than the first."
+  },
+  "map_check": {
+    "must_have": [
+      "Fresh water at the capital and at two or three more city sites within about eight tiles, because Population 10 needs Housing that only rivers, lakes, Granaries and Aqueducts supply before the Industrial era.",
+      "At least two Luxury resources of different types inside the first four cities' reach, or Amenities stop the cities before Housing does."
+    ],
+    "prefer": [
+      "Grassland and plains along the rivers with Wheat, Rice or Cattle, so the Farms and Pastures that feed the threshold also give half a Housing each.",
+      "Mountains beside the capital's Campus tile, for Natural Philosophy adjacency and the Astronomy Eureka.",
+      "A narrow land border with the nearest rival, so a short Great Wall line and one walled city are the whole defensive floor.",
+      "Hong Kong, Mohenjo-Daro or Mitla within reach of the Scout; each pays this plan more than any other city-state."
+    ],
+    "no_go": "There is no hard no-go, only a soft one: a dry, cold or desert start with no river or lake for three cities. Every city then starts with a third of the Housing, needs an Aqueduct before it can grow past six, and crosses the threshold so late that the per-Citizen yields arrive after rivals have caught up in Population.",
+    "fallback": "On dry or cold land, play China as a Dynastic Cycle Science civilization: chase every Eureka and Inspiration, build Classical and Medieval wonders for the free boosts, put a Campus in every city, and treat Lijia as an Industrial-era bonus that switches on when Neighborhoods and Sewers supply the Housing the land never did."
+  },
+  "kit_levers": [
+    {
+      "source": "leader_ability",
+      "name": "Lijia",
+      "buys": "Lijia projects in every city that turn a share of the city's Production into Food, Faith or Gold, and extra Gold, Science and Culture per Citizen in large cities.",
+      "exploit": "The projects are a growth tool, not an income. Run the Food version in the one city closest to the next threshold, only while it has Housing and Amenities to hold the extra Citizen, and switch back to a building the turn it crosses. A city at 10 is worth more than two at 6 because the per-Citizen yields only pay large cities, so the plan grows four big cities rather than eight small ones and tracks each against the threshold on its own."
+    },
+    {
+      "source": "civ_ability",
+      "name": "Dynastic Cycle",
+      "buys": "Eurekas and Inspirations pay an extra tenth of the cost, and completing a wonder grants a free Eureka and a free Inspiration.",
+      "exploit": "The growth path triggers more boosts than most plans: the Farm, the Water Mill, the Aqueduct, six Farms, the first city at 10 and the first at 15 are all Eurekas or Inspirations. Research nothing unboosted that a Farm or an Aqueduct would boost a few turns later, and take one growth wonder an era (Hanging Gardens, Colosseum, Forbidden City, Ruhr Valley) so the free boosts cover what the plan cannot trigger."
+    },
+    {
+      "source": "unique_unit",
+      "name": "Crouching Tiger Cannon",
+      "buys": "A Medieval ranged unit at Machinery with 50 Ranged Strength and range 1, needing no strategic resource.",
+      "exploit": "The defensive floor for an empire that never builds an army. Two in the border city behind the Great Wall, with the three Archers that gave the Machinery Eureka still garrisoned, stop a Medieval rush without an Encampment, and the garrisons are what Retainers counts for Amenities."
+    },
+    {
+      "source": "unique_infrastructure",
+      "name": "Great Wall",
+      "buys": "A border improvement at Masonry with Gold, more for each adjacent segment, Culture once Castles is researched, Tourism after Flight, and a defensive bonus for units standing on it.",
+      "exploit": "Lay a continuous line of three or more segments on the border facing the most aggressive neighbour, on tiles the growing cities will never farm. It is the defensive floor that lets the Production go into Granaries and Aqueducts instead of Walls, Gold for the treasury Yinding wants positive now, and the Culture and Tourism line behind the Science verdict later."
+    },
+    {
+      "source": "agenda",
+      "name": "Yinding",
+      "buys": "Yongle likes civilizations running a positive Gold income and dislikes those running a deficit.",
+      "exploit": "Irrelevant to your own play, but a reminder to keep your own treasury positive: the Gold version of Lijia and the Great Wall are what pay for the Housing buildings bought ahead of each crossing. An AI Yongle on the same map will race you for river land and big cities, so settle the shared rivers first."
+    }
+  ],
+  "shape_block": {
+    "gate": {
+      "gate_condition": "The first city reaches Population 10 with a completed Lijia Food project as the step that carries it over, and it has the Housing and Amenities to stay there: Housing at 11 or more and Amenities at zero or better on the turn it crosses. Not a turn number: every city crosses on its own, the threshold sheet tracks each one, and the post-gate phase opens in a city the turn that city crosses.",
+      "fastest_path": [
+        "tech:pottery",
+        "tech:irrigation",
+        "civic:craftsmanship",
+        "tech:wheel",
+        "civic:early-empire",
+        "civic:state-workforce",
+        "tech:construction",
+        "civic:games-and-recreation",
+        "civic:political-philosophy",
+        "tech:engineering"
+      ],
+      "estimated_arrival": {
+        "from": 70,
+        "to": 100
+      },
+      "staging": [
+        "Housing two above Population in the city about to cross: river or lake, Granary, Aqueduct and four or more Farms or Pastures, checked on the threshold sheet the turn the project starts.",
+        "Amenities at zero or better after the extra Citizen: two luxury types connected, Classical Republic adopted, and the Arena built or a third luxury traded in.",
+        "A Campus with a Library in the city about to cross and Education within ten turns, so the University and the per-Citizen Science land together.",
+        "Pingala appointed in the capital with a governor title unspent, so Researcher is taken the turn the capital crosses rather than ten turns later.",
+        "The next city to cross named on the sheet, with its Granary built and its Aqueduct under way, so the project moves across without a gap.",
+        "Hong Kong's suzerainty if it is on the map, or envoys flowing toward it, for the extra Production on every Lijia turn.",
+        "A defensive floor that needs no attention: Ancient Walls and two Archers in each border city and a line of three Great Wall segments facing the nearest rival."
+      ],
+      "late_gate": "If no city has crossed by turn 120, twenty turns behind pace, Housing is almost always the cause, not Production. Stop every project, put the capital's Builders on Farms and Pastures, finish the Aqueduct, send two Traders from the capital to the other cities for Food, and appoint Magnus with Surplus Logistics there. If Amenities are the cause, trade for a luxury an AI has spare, build the Arena, and slot Retainers with an Archer garrisoned in the city. Do not settle more cities during the delay, since each one splits the luxuries further, and do not start a second city's project to make up time: two half-housed cities cross later than one fully housed one. If the delay runs past turn 140, the gate is no longer the bottleneck and the abort applies.",
+      "closing_window": "The Lijia yields are permanent, so the far deadline is not the ability expiring but parity in Population and Science. Through the Renaissance the AI's cities stall at eight to twelve for want of Housing, and China's crossed cities are three to six Citizens larger, which is the whole lead. Parity arrives in the Industrial era, roughly turn 170 to 200 on Emperor, when rivals build Neighborhoods and Sewers and their capitals reach the same size without projects, and in Science when the leading rival's Research Labs come in. Convert before that: every core city over 10 with a University by turn 170, the capital at 15 with Urbanization in reach, and Science per turn first on the table at the turn 190 check. After parity the projects are worth running only for Gold; a project turn in a city past 15 is a Research Lab turn lost."
+    }
+  },
+  "phases": [
+    {
+      "id": "found",
+      "name": "Found on fresh water",
+      "turns": {
+        "from": 1,
+        "to": 35
+      },
+      "era": "ancient",
+      "objective": "State the gate on turn 1, settle the capital and two more cities on rivers or lakes, found Fertility Rites, and have Pottery, Irrigation and Craftsmanship in, so every city has a Granary queued and its Farm tiles improved before the Classical era begins.",
+      "build_order": [
+        {
+          "item": "Scout",
+          "why": "Find the river and lake sites for the next three cities and the city-states this plan wants, Hong Kong and Mohenjo-Daro above all; the first civilization met is the Writing Eureka."
+        },
+        {
+          "item": "Slinger",
+          "why": "Archery Eureka on a barbarian scout, and the capital's only defender until the Walls."
+        },
+        {
+          "item": "Settler",
+          "why": "Second city on a river or lake within six tiles; fresh water is the cheapest Housing in the game and the gate needs it."
+        },
+        {
+          "item": "Builder",
+          "why": "Farm Wheat or Rice for the Irrigation Eureka, then two more improved tiles for Craftsmanship; each Farm is also half a Housing."
+        },
+        {
+          "item": "Monument",
+          "why": "Culture toward Early Empire and Political Philosophy; Classical Republic is the government this plan runs until the Renaissance."
+        },
+        {
+          "item": "Settler",
+          "why": "Third city on fresh water; the gate wants three river cities more than five dry ones."
+        },
+        {
+          "item": "Granary",
+          "why": "The first Housing building, in the capital before it reaches five Population."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:pottery",
+          "note": "Granary, the first Housing building; no boost, so research it first and plain."
+        },
+        {
+          "id": "tech:irrigation",
+          "note": "Farms on Wheat and Rice and the Hanging Gardens; Eureka from the first Farm on a resource."
+        },
+        {
+          "id": "tech:mining",
+          "note": "Mines for the capital's Production and The Wheel's Eureka; no boost."
+        },
+        {
+          "id": "tech:writing",
+          "note": "Campus; Eureka free from the first civilization met."
+        },
+        {
+          "id": "tech:archery",
+          "note": "Archers are the garrison and later the Machinery Eureka; Eureka from the Slinger kill."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:code-of-laws",
+          "note": "Urban Planning while there are two cities; no Inspiration exists."
+        },
+        {
+          "id": "civic:craftsmanship",
+          "note": "Ilkum for the Builders that farm the river; Inspiration from three improved tiles."
+        },
+        {
+          "id": "civic:foreign-trade",
+          "note": "The Trader and the road to Early Empire; research it plain."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Urban Planning",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "Production in every city while they build Settlers and Granaries."
+        },
+        {
+          "card": "Discipline",
+          "slot": "military",
+          "from": "civic:code-of-laws",
+          "why": "The Slinger and the starting Warrior beat barbarian scouts near the capital."
+        },
+        {
+          "card": "Ilkum",
+          "slot": "economic",
+          "from": "civic:craftsmanship",
+          "why": "Swap in for Urban Planning while Builders are queued; the Farms are the Housing and the Feudalism Inspiration both."
+        }
+      ],
+      "districts": [],
+      "pantheon": {
+        "slug": "fertility-rites",
+        "why": "Faster growth in every city and a free Builder to farm the second resource; Population is this plan's whole currency.",
+        "alternative": "city-patron-goddess"
+      },
+      "wonders": [],
+      "governors": [],
+      "city_states": [
+        {
+          "slug": "mohenjo-daro",
+          "why": "Every city gets full fresh-water Housing as if beside a river; worth the first envoys if met."
+        },
+        {
+          "type": "Industrial",
+          "why": "Hong Kong is the one to look for: Production toward city projects, which is every Lijia turn the plan will run."
+        }
+      ],
+      "great_people": [],
+      "checkpoints": [
+        {
+          "turn": 35,
+          "test": "Three cities on fresh water, Fertility Rites founded, a Granary in the capital, and Irrigation and Craftsmanship done?",
+          "pass": "Enter the Housing phase; start the capital's Campus and the threshold sheet for each city.",
+          "fail": "A city off fresh water moves its Granary to the front of its queue and is marked last to cross. If Fertility Rites was taken, found City Patron Goddess; if Irrigation is late, farm anyway and the Eureka follows."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "found-state-gate",
+          "turn": 1,
+          "text": "Write the gate down: the strategy opens when a city crosses Population 10 on a Lijia Food project with the Housing and Amenities to hold it. Settle the capital on a river or lake."
+        },
+        {
+          "id": "found-scout-water",
+          "turn": 5,
+          "text": "Scout for river and lake sites; record each as a future city with its fresh water, Farm tiles and luxury."
+        },
+        {
+          "id": "found-irrigation",
+          "turn": 14,
+          "text": "Farm the first Wheat or Rice beside the capital; Irrigation Eureka collected."
+        },
+        {
+          "id": "found-second-city",
+          "turn": 20,
+          "text": "Second city settled on fresh water within six tiles of the capital."
+        },
+        {
+          "id": "found-pantheon",
+          "turn": 24,
+          "text": "Found Fertility Rites; the free Builder farms the second resource."
+        },
+        {
+          "id": "found-third-city",
+          "turn": 34,
+          "text": "Third city settled on fresh water; Granary first in its queue after a Monument."
+        }
+      ]
+    },
+    {
+      "id": "housing",
+      "name": "Housing before projects",
+      "turns": {
+        "from": 36,
+        "to": 80
+      },
+      "era": "classical",
+      "objective": "Build the Housing and Amenities the gate assumes but does not provide: Granaries everywhere, Water Mills on the rivers, Farms in clusters, a Campus with a Library and an Aqueduct in the capital, two luxury types connected and Classical Republic adopted, behind Ancient Walls and a Great Wall line on the threatened border. No Lijia project runs yet. Every yield graph is flat in this phase, and that is the plan working, not failing.",
+      "build_order": [
+        {
+          "item": "Campus",
+          "why": "Capital, beside Mountains; the first district gives State Workforce, and its Library is what the per-Citizen Science multiplies after the gate."
+        },
+        {
+          "item": "Granary",
+          "why": "In every new city before it reaches five Population; Housing first, everything else second."
+        },
+        {
+          "item": "Water Mill",
+          "why": "Every river city; growth and the Construction Eureka."
+        },
+        {
+          "item": "Settler",
+          "why": "Fourth city on fresh water. Four cities that each reach ten are worth more to this kit than eight that stop at six."
+        },
+        {
+          "item": "Builder",
+          "why": "Farms in clusters along the rivers; six of them are the Feudalism Inspiration and each is half a Housing."
+        },
+        {
+          "item": "Ancient Walls",
+          "why": "In the border city facing the nearest rival; the Engineering Eureka and the floor while the Production goes into Housing."
+        },
+        {
+          "item": "Aqueduct",
+          "why": "Capital, the turn Engineering lands; the Housing the threshold needs and the Military Engineering Eureka."
+        },
+        {
+          "item": "Library",
+          "why": "In the capital's Campus; Great Scientist points and the building the gate city must have before it crosses."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:wheel",
+          "note": "Water Mills; Eureka from a Mine on a resource."
+        },
+        {
+          "id": "tech:masonry",
+          "note": "The Great Wall and Ancient Walls; Eureka from a Quarry if stone is inside the border."
+        },
+        {
+          "id": "tech:construction",
+          "note": "Eureka from the first Water Mill; researching it is the Games and Recreation Inspiration."
+        },
+        {
+          "id": "tech:currency",
+          "note": "Commercial Hub and Market; Eureka from the first Trade Route, a Food route out of the capital."
+        },
+        {
+          "id": "tech:engineering",
+          "note": "The Aqueduct; Eureka from the Ancient Walls in the border city."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:mysticism",
+          "note": "The Inspiration card for Great Scientist points; Inspiration from the pantheon."
+        },
+        {
+          "id": "civic:early-empire",
+          "note": "Colonization for the fourth Settler; Inspiration from six Population, which the growth path gives for free."
+        },
+        {
+          "id": "civic:state-workforce",
+          "note": "Inspiration from the capital's Campus; the road to Games and Recreation."
+        },
+        {
+          "id": "civic:games-and-recreation",
+          "note": "Entertainment Complex, Arena, Colosseum and Insulae; Inspiration from researching Construction."
+        },
+        {
+          "id": "civic:political-philosophy",
+          "note": "Classical Republic; Inspiration from three city-states met by the Scout."
+        },
+        {
+          "id": "civic:drama-and-poetry",
+          "note": "Inspiration from the Hanging Gardens; research it only boosted."
+        },
+        {
+          "id": "civic:recorded-history",
+          "note": "Natural Philosophy; Inspiration from the second Campus."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Colonization",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "The fourth Settler half again as fast, then swapped out for Insulae."
+        },
+        {
+          "card": "Classical Republic",
+          "slot": "wildcard",
+          "from": "civic:political-philosophy",
+          "why": "The government: every city with a district gains an Amenity, which is half the gate's Amenity problem solved."
+        },
+        {
+          "card": "Insulae",
+          "slot": "economic",
+          "from": "civic:games-and-recreation",
+          "why": "Housing in every city with two specialty districts; the capital qualifies first."
+        },
+        {
+          "card": "Natural Philosophy",
+          "slot": "economic",
+          "from": "civic:recorded-history",
+          "why": "Campus adjacency doubled in the cities that will cross first."
+        },
+        {
+          "card": "Inspiration",
+          "slot": "wildcard",
+          "from": "civic:mysticism",
+          "why": "Great Scientist points while the Campuses are few; the first Scientist is the Education Eureka."
+        }
+      ],
+      "districts": [
+        {
+          "district": "campus",
+          "city": "capital, then the second river city",
+          "note": "Beside Mountains; the Library in each is staging for the post-gate phase."
+        },
+        {
+          "district": "aqueduct",
+          "city": "capital",
+          "note": "The Housing the threshold needs and the Military Engineering Eureka."
+        },
+        {
+          "district": "commercial-hub",
+          "city": "second river city",
+          "note": "Trade Route capacity for a Food route out of the capital, and Muscat's Amenity if it is met."
+        },
+        {
+          "district": "entertainment-complex",
+          "city": "capital",
+          "note": "Late in the phase, once the capital has the Population for a third district; the Arena and the Colosseum both need it."
+        }
+      ],
+      "pantheon": {
+        "slug": "fertility-rites",
+        "why": "Already founded; the growth it gives is why the capital reaches eight by turn 75."
+      },
+      "wonders": [
+        {
+          "name": "Hanging Gardens",
+          "why": "A growth wonder that reaches every city, the Drama and Poetry Inspiration, and a free Eureka and Inspiration from Dynastic Cycle.",
+          "skip_if": "The capital has no free river tile, Irrigation lands after turn 45, or Babylon, Egypt or Qin is on the map with a head start."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Librarian",
+          "city": "capital",
+          "why": "Science and Culture in the city that will cross first; Researcher is held for the turn it does."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "hong-kong",
+          "why": "Production toward city projects, which is every Lijia turn; its suzerainty is worth more to this plan than any other city-state's."
+        },
+        {
+          "slug": "mitla",
+          "why": "Faster growth in every city with a Campus, which is every city this plan wants big."
+        },
+        {
+          "slug": "muscat",
+          "why": "An Amenity in every city with a Commercial Hub."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-scientist",
+          "why": "The first Scientist from the capital's Campus and the Inspiration card; earning one is the Education Eureka."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 60,
+          "test": "Four cities on fresh water, a Granary in each, the capital's Campus with its Library under way, and Classical Republic adopted?",
+          "pass": "Start the Aqueduct the turn Engineering lands and plan the Entertainment Complex in the capital.",
+          "fail": "Stop settling and finish Granaries; a fifth city now costs the capital its Housing. If Classical Republic is late, Monuments in the new cities and Political Philosophy before anything else."
+        },
+        {
+          "turn": 80,
+          "test": "Capital at eight Population or more, Housing at least two above it, Amenities at zero or better, and the Aqueduct complete?",
+          "pass": "Queue the first Lijia Food project in the capital; enter the gate phase.",
+          "fail": "Do not start the project. Name the shortfall: Housing means Farms and the Aqueduct, Amenities means a traded luxury or the Arena. A project run into a Housing cap buys one Citizen and stalls every one after it."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "housing-campus",
+          "turn": 38,
+          "text": "Campus in the capital beside the Mountains; State Workforce Inspiration collected."
+        },
+        {
+          "id": "housing-great-wall",
+          "turn": 48,
+          "text": "First three Great Wall segments in a line on the border facing the nearest rival, on tiles the cities will never farm."
+        },
+        {
+          "id": "housing-fourth-city",
+          "turn": 52,
+          "text": "Fourth city settled on fresh water under Colonization; Granary first in its queue."
+        },
+        {
+          "id": "housing-classical-republic",
+          "turn": 58,
+          "text": "Classical Republic adopted; Insulae and Natural Philosophy slotted as the cards arrive."
+        },
+        {
+          "id": "housing-aqueduct",
+          "turn": 70,
+          "text": "Aqueduct complete in the capital; Military Engineering Eureka collected."
+        },
+        {
+          "id": "housing-threshold-sheet",
+          "turn": 75,
+          "text": "Write the threshold sheet: each city's Population, Housing and Amenities, the turn it should cross, and what it still lacks. Update it every ten turns from here."
+        }
+      ]
+    },
+    {
+      "id": "cross",
+      "name": "Open the gate city by city",
+      "turns": {
+        "from": 81,
+        "to": 120
+      },
+      "era": "medieval",
+      "objective": "Run the Lijia Food project in the capital until it crosses Population 10, collect Civil Service, switch the capital to University buildings with Pingala's Researcher promotion, and move the project to the next city whose Housing has room. The gate check is run per city; the post-gate economy starts in the capital while the others are still staging.",
+      "build_order": [
+        {
+          "item": "Lijia Food project",
+          "why": "Capital first, only while its Housing is two above Population and Amenities are positive; switch back to buildings the turn it crosses."
+        },
+        {
+          "item": "Arena",
+          "why": "In the capital's Entertainment Complex: the Amenity the tenth and eleventh Citizens need."
+        },
+        {
+          "item": "Aqueduct",
+          "why": "Second river city, before its own project starts."
+        },
+        {
+          "item": "Market",
+          "why": "Capital and second city; the Guilds Inspiration and the Gold that buys the next city's Granary or Aqueduct."
+        },
+        {
+          "item": "University",
+          "why": "Capital first, the turn Education lands; the per-Citizen Science needs the building to sit beside."
+        },
+        {
+          "item": "Crouching Tiger",
+          "why": "Two at Machinery in the border city behind the Great Wall; the floor holds without an army."
+        },
+        {
+          "item": "Lijia Gold project",
+          "why": "In a city already over the threshold with nothing urgent to build; the Gold buys the Housing building the next city lacks."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:mathematics",
+          "note": "Campus, Commercial Hub and Entertainment Complex are three specialty districts."
+        },
+        {
+          "id": "tech:apprenticeship",
+          "note": "Three Mines; the Production the projects convert, and a step toward Education."
+        },
+        {
+          "id": "tech:education",
+          "note": "Universities; Eureka from the first Great Scientist."
+        },
+        {
+          "id": "tech:iron-working",
+          "note": "Needed for Machinery; boosted only if Iron sits inside the border."
+        },
+        {
+          "id": "tech:machinery",
+          "note": "Crouching Tiger; Eureka from three Archers garrisoned in the border cities."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:defensive-tactics",
+          "note": "On the road to Civil Service; the Inspiration comes only if a neighbour declares on you."
+        },
+        {
+          "id": "civic:feudalism",
+          "note": "Serfdom for Builder charges; Inspiration from the six Farms already down."
+        },
+        {
+          "id": "civic:civil-service",
+          "note": "Inspiration from the capital at Population 10, which is the gate itself."
+        },
+        {
+          "id": "civic:guilds",
+          "note": "Town Charters and the free Banking Eureka; Inspiration from two Markets."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Serfdom",
+          "slot": "economic",
+          "from": "civic:feudalism",
+          "why": "Builders with extra charges for the Farms and Mines the second and third cities still need."
+        },
+        {
+          "card": "Retainers",
+          "slot": "military",
+          "from": "civic:civil-service",
+          "why": "An Amenity in every city with a garrisoned unit; the Archers and Crouching Tigers are the garrison."
+        },
+        {
+          "card": "Town Charters",
+          "slot": "economic",
+          "from": "civic:guilds",
+          "why": "Commercial Hub adjacency doubled; Gold for buying Housing ahead of each crossing."
+        },
+        {
+          "card": "Natural Philosophy",
+          "slot": "economic",
+          "from": "civic:recorded-history",
+          "why": "Stays slotted; the Campuses are the post-gate engine."
+        }
+      ],
+      "districts": [
+        {
+          "district": "entertainment-complex",
+          "city": "the most central city other than the capital",
+          "note": "Only if the Colosseum is skipped; otherwise the Colosseum's reach covers it."
+        },
+        {
+          "district": "campus",
+          "city": "third and fourth cities",
+          "note": "Libraries before each crosses; the Recorded History Inspiration if it was not already in."
+        },
+        {
+          "district": "aqueduct",
+          "city": "second river city",
+          "note": "Its Housing has to be in before the project moves to it."
+        },
+        {
+          "district": "commercial-hub",
+          "city": "capital",
+          "note": "Market for Guilds and a second Trade Route."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Colosseum",
+          "why": "Amenities and Culture for every city within six tiles, the Amenity half of the gate for the whole core, and the Buttress Eureka.",
+          "skip_if": "The core cities do not sit within six tiles of a flat tile beside the capital's Entertainment Complex, or Games and Recreation landed after turn 80."
+        },
+        {
+          "name": "Angkor Wat",
+          "why": "A Population and a Housing in every city that exists when it completes, plus Dynastic Cycle's free boosts; it is the one Medieval wonder that is a growth building.",
+          "skip_if": "Medieval Faires is not reached by turn 115, no free tile sits beside an Aqueduct, or a rival is past half on it."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Researcher",
+          "city": "capital",
+          "why": "Science per Citizen, taken the turn the capital crosses; it is Lijia's per-Citizen yield counted twice."
+        },
+        {
+          "governor": "magnus",
+          "promotion": "Surplus Logistics",
+          "city": "second river city",
+          "why": "Faster growth in the next city to cross, and Food for the cities whose Trade Routes end there."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "hong-kong",
+          "why": "Keep the suzerainty; every Lijia turn from here is faster under it."
+        },
+        {
+          "slug": "geneva",
+          "why": "More Science in every city while at peace, and this plan wants peace."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-scientist",
+          "why": "Medieval Scientists that boost Campuses go to the capital; the Education Eureka if the first was missed."
+        },
+        {
+          "class": "great-merchant",
+          "why": "Zhangye Danxia's points if it is inside the border; a Merchant's Gold buys the second city's Aqueduct."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 95,
+          "test": "Gate check for the capital: Population 10 or more, crossed on a Lijia Food project, Housing at 11 or above and Amenities at zero or better, and the staging list ticked?",
+          "pass": "The post-gate opens in the capital: Researcher promotion, University queued, and the project moves to the second city.",
+          "fail": "Crossed but staging short: no project anywhere until the missing Housing, Amenity or Library is built. Not crossed: the capital builds Housing, not projects, and the late-gate plan applies from turn 120."
+        },
+        {
+          "turn": 120,
+          "test": "Two cities over Population 10, the third within two Citizens, and the University standing in the capital?",
+          "pass": "Enter the tall phase; the project moves to the third city.",
+          "fail": "If only the capital has crossed, the second city lacks Housing, not Production: buy its Aqueduct or Granary with Gold-project Gold and run nothing else there until it is in."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "cross-first-lijia",
+          "turn": 82,
+          "text": "Start the Lijia Food project in the capital and nowhere else."
+        },
+        {
+          "id": "cross-capital-crosses",
+          "turn": 92,
+          "text": "Capital crosses Population 10; Civil Service Inspiration collected; switch it back to buildings the same turn."
+        },
+        {
+          "id": "cross-researcher",
+          "turn": 94,
+          "text": "Pingala promoted to Researcher in the capital; University queued for the turn Education lands."
+        },
+        {
+          "id": "cross-move-project",
+          "turn": 98,
+          "text": "Lijia Food project moved to the second river city once its Aqueduct is in."
+        },
+        {
+          "id": "cross-tigers",
+          "turn": 108,
+          "text": "Two Crouching Tigers in the border city behind the Great Wall."
+        },
+        {
+          "id": "cross-threshold-sheet",
+          "turn": 112,
+          "text": "Update the threshold sheet: the next city to cross, its Housing and Amenities, and what it still lacks."
+        }
+      ]
+    },
+    {
+      "id": "tall",
+      "name": "Tall cities, Science lead",
+      "turns": {
+        "from": 121,
+        "to": 190
+      },
+      "era": "renaissance",
+      "objective": "Carry every core city through the threshold in turn and the capital toward 15, convert the per-Citizen Science into a lead with Universities and Rationalism, adopt Merchant Republic for Gold and Trade Routes, and run the closing-window check every ten turns: the Science lead must show on the overview before rivals' Industrial-era cities close the Population gap.",
+      "build_order": [
+        {
+          "item": "University",
+          "why": "In every Campus city the turn it crosses; the second gives the Printing Eureka."
+        },
+        {
+          "item": "Lijia Food project",
+          "why": "One city at a time, always the next one under 10 with Housing to spare."
+        },
+        {
+          "item": "Bank",
+          "why": "Two, for Economics; the Gold buys the University in the last city to cross."
+        },
+        {
+          "item": "Industrial Zone",
+          "why": "Capital and the best Production city; the Production the space race will draw on."
+        },
+        {
+          "item": "Lijia Gold project",
+          "why": "In the capital whenever it sits at its Housing cap; the Gold buys Housing elsewhere and keeps the treasury positive."
+        },
+        {
+          "item": "Workshop",
+          "why": "Two, for the Industrialization Eureka."
+        },
+        {
+          "item": "Great Wall",
+          "why": "More segments joined to the line on the threatened border; each pays Culture now that Castles is in."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:castles",
+          "note": "Great Wall Culture; Eureka once Merchant Republic is adopted."
+        },
+        {
+          "id": "tech:printing",
+          "note": "Forbidden City; Eureka from two Universities."
+        },
+        {
+          "id": "tech:astronomy",
+          "note": "Eureka from a University beside a Mountain; researching it is the Colonialism Inspiration."
+        },
+        {
+          "id": "tech:banking",
+          "note": "Banks; Eureka free from Guilds."
+        },
+        {
+          "id": "tech:economics",
+          "note": "Eureka from two Banks; the Gold economy for buying Housing and Universities."
+        },
+        {
+          "id": "tech:scientific-theory",
+          "note": "Oxford University; Eureka free from The Enlightenment."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:exploration",
+          "note": "Merchant Republic; research it plain unless two Caravels already exist."
+        },
+        {
+          "id": "civic:humanism",
+          "note": "On the way to The Enlightenment; research it plain."
+        },
+        {
+          "id": "civic:diplomatic-service",
+          "note": "Inspiration from an alliance; a Research Alliance with a friendly neighbour pays Science as well."
+        },
+        {
+          "id": "civic:the-enlightenment",
+          "note": "Rationalism and Liberalism; Inspiration from three Great People."
+        },
+        {
+          "id": "civic:colonialism",
+          "note": "Free Inspiration from Astronomy; research it when it costs half."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Merchant Republic",
+          "slot": "wildcard",
+          "from": "civic:exploration",
+          "why": "The government: Trade Route capacity for Food routes out of the cities still below the threshold, and cheaper Gold purchases."
+        },
+        {
+          "card": "Rationalism",
+          "slot": "economic",
+          "from": "civic:the-enlightenment",
+          "why": "More Science from Campus buildings in every University city; the post-gate engine."
+        },
+        {
+          "card": "Liberalism",
+          "slot": "economic",
+          "from": "civic:the-enlightenment",
+          "why": "An Amenity in every city with two specialty districts; Amenities are the next ceiling once Housing is solved."
+        },
+        {
+          "card": "Town Charters",
+          "slot": "economic",
+          "from": "civic:guilds",
+          "why": "Kept while Merchant Republic's second economic slot is free; the Banks pay for the purchases."
+        }
+      ],
+      "districts": [
+        {
+          "district": "campus",
+          "city": "every core city",
+          "note": "A University the turn each city crosses."
+        },
+        {
+          "district": "industrial-zone",
+          "city": "capital and the best Production city",
+          "note": "Workshops now, Factories and the Ruhr Valley later."
+        },
+        {
+          "district": "commercial-hub",
+          "city": "third city",
+          "note": "Banks for Economics and one more Trade Route."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Forbidden City",
+          "why": "A wildcard slot that fits Rationalism and Liberalism beside each other, and Dynastic Cycle's free Eureka and Inspiration.",
+          "skip_if": "No flat tile beside the capital's City Center is free, Printing lands after turn 160, or a rival is past half on it."
+        },
+        {
+          "name": "Oxford University",
+          "why": "Free technologies and more Science in the biggest Campus city, which is the city Lijia made biggest.",
+          "skip_if": "No grassland or plains tile sits beside a Campus with a University, or a Science rival has Scientific Theory first."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "reyna",
+          "promotion": "Tax Collector",
+          "city": "second city over the threshold",
+          "why": "Gold per Citizen in a large city; the purchases ahead of each crossing come from here."
+        },
+        {
+          "governor": "pingala",
+          "promotion": "Grants",
+          "city": "capital",
+          "why": "Double the Great Person points the capital earns, its Campus's Great Scientist points among them."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "geneva",
+          "why": "Still the Science city-state to hold while the plan stays at peace."
+        },
+        {
+          "type": "Scientific",
+          "why": "Six envoys in one Scientific city-state add Science to every University, and every core city has one."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-scientist",
+          "why": "Renaissance Scientists that give free technologies or Campus Science; patronize them with Lijia Faith when the points lag."
+        },
+        {
+          "class": "great-merchant",
+          "why": "A Merchant is the Mercantilism Inspiration and Gold for the late cities' Universities."
+        },
+        {
+          "class": "great-engineer",
+          "why": "Engineers that add Production to districts go to the Industrial Zone city."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 150,
+          "test": "Three or more cities over Population 10, the capital at 13 or more, a University in each crossed city, and Rationalism slotted?",
+          "pass": "Keep the order: the next city crosses, the capital heads for 15.",
+          "fail": "If cities are stuck at 9 or 10, Amenities are the ceiling now, not Housing: Liberalism, an Arena in the central city, and luxuries bought from neighbours before any project runs."
+        },
+        {
+          "turn": 190,
+          "test": "Closing-window check: Science per turn first on the table or within a tenth of the leader, the capital at 15, and the Urbanization Inspiration collected?",
+          "pass": "Enter the launch phase; the space race starts from the lead.",
+          "fail": "A rival is ahead and the Population lead was not converted. Stop Food projects in crossed cities, put every turn into Universities and Industrial Zones, patronize Great Scientists with Lijia Faith, and keep Great Wall Culture as the fallback line."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "tall-universities",
+          "turn": 130,
+          "text": "Universities in the capital and the second city; Printing Eureka collected."
+        },
+        {
+          "id": "tall-merchant-republic",
+          "turn": 138,
+          "text": "Merchant Republic adopted, then Castles researched for the Great Wall's Culture."
+        },
+        {
+          "id": "tall-forbidden-city",
+          "turn": 150,
+          "text": "Forbidden City complete beside the capital; free Eureka and Inspiration from Dynastic Cycle."
+        },
+        {
+          "id": "tall-enlightenment",
+          "turn": 160,
+          "text": "The Enlightenment in; Rationalism and Liberalism slotted."
+        },
+        {
+          "id": "tall-parity-check",
+          "turn": 170,
+          "text": "Compare Science per turn with every rival on the overview and write the gap on the threshold sheet."
+        },
+        {
+          "id": "tall-capital-fifteen",
+          "turn": 185,
+          "text": "Capital at Population 15; Urbanization Inspiration collected."
+        }
+      ]
+    },
+    {
+      "id": "launch",
+      "name": "Lift the ceiling and launch",
+      "turns": {
+        "from": 191,
+        "to": null
+      },
+      "era": "industrial",
+      "objective": "Lift the ceiling past 15 with Neighborhoods and Sewers in the four big cities, put Research Labs and the Spaceport in the largest Campus cities, run the Lijia Gold project in cities already at their Amenity limit instead of growing them further, and win the space race on per-Citizen Science before rivals reach parity.",
+      "build_order": [
+        {
+          "item": "Neighborhood",
+          "why": "Capital and second city; Housing past the Aqueduct, and two of them are the Sanitation Eureka."
+        },
+        {
+          "item": "Factory",
+          "why": "In the capital's Industrial Zone; Production for the Spaceport and the projects."
+        },
+        {
+          "item": "Coal Power Plant",
+          "why": "Power for the Factory city and the Refining Eureka."
+        },
+        {
+          "item": "Sewer",
+          "why": "In each big city once Sanitation lands; four of them are the Suffrage Inspiration."
+        },
+        {
+          "item": "Research Lab",
+          "why": "Every University city; the first is the Nuclear Program Inspiration."
+        },
+        {
+          "item": "Spaceport",
+          "why": "In the highest-Production city; the Space Race Inspiration."
+        },
+        {
+          "item": "Lijia Gold project",
+          "why": "In any city at its Amenity limit; the Gold buys Research Labs in the cities behind."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:industrialization",
+          "note": "Factories and Coal Power Plants; Eureka from two Workshops."
+        },
+        {
+          "id": "tech:sanitation",
+          "note": "Sewers; Eureka from two Neighborhoods."
+        },
+        {
+          "id": "tech:flight",
+          "note": "Great Wall Tourism; Eureka from the Ruhr Valley."
+        },
+        {
+          "id": "tech:refining",
+          "note": "Eureka from the Coal Power Plant; on the road to the space techs."
+        },
+        {
+          "id": "tech:chemistry",
+          "note": "Research Labs; the Eureka needs an alliance at level two, which rarely lines up."
+        },
+        {
+          "id": "tech:computers",
+          "note": "Eureka from adopting Democracy; on the road to the space projects."
+        },
+        {
+          "id": "tech:rocketry",
+          "note": "The Spaceport; no boost exists."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:urbanization",
+          "note": "Neighborhoods; Inspiration already collected from the capital at 15."
+        },
+        {
+          "id": "civic:suffrage",
+          "note": "Democracy; Inspiration from four Sewers."
+        },
+        {
+          "id": "civic:professional-sports",
+          "note": "Stadiums for cities past 15; Inspiration from a second Entertainment Complex."
+        },
+        {
+          "id": "civic:nuclear-program",
+          "note": "Inspiration from the first Research Lab."
+        },
+        {
+          "id": "civic:space-race",
+          "note": "Inspiration from the Spaceport; Integrated Space Cell for the space projects."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Democracy",
+          "slot": "wildcard",
+          "from": "civic:suffrage",
+          "why": "The Tier 3 government; the Computers Eureka on adoption and room for Rationalism and Liberalism together."
+        },
+        {
+          "card": "Rationalism",
+          "slot": "economic",
+          "from": "civic:the-enlightenment",
+          "why": "Stays slotted to the end of the game."
+        },
+        {
+          "card": "Integrated Space Cell",
+          "slot": "military",
+          "from": "civic:space-race",
+          "why": "Production toward the space projects; the military slot has nothing better to do."
+        }
+      ],
+      "districts": [
+        {
+          "district": "neighborhood",
+          "city": "every big city",
+          "note": "The Housing that carries cities past 15; two are the Sanitation Eureka."
+        },
+        {
+          "district": "industrial-zone",
+          "city": "capital",
+          "note": "Factory, Coal Power Plant and the Ruhr Valley beside it."
+        },
+        {
+          "district": "spaceport",
+          "city": "highest-Production city",
+          "note": "One is enough unless Production allows a second."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Ruhr Valley",
+          "why": "More Production in the Spaceport city, the Flight Eureka, and Dynastic Cycle's free boosts.",
+          "skip_if": "No river tile sits beside an Industrial Zone with a Factory, or a rival is past half on it."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Space Initiative",
+          "city": "Spaceport city",
+          "why": "Production toward the space projects; move him there from the capital once the Spaceport stands."
+        },
+        {
+          "governor": "liang",
+          "promotion": "Zoning Commissioner",
+          "city": "second big city",
+          "why": "Faster Neighborhoods and other districts in the city behind the capital."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "johannesburg",
+          "why": "More Production per improved resource type after Industrialization, in every city."
+        },
+        {
+          "type": "Scientific",
+          "why": "Keep six envoys in one Scientific city-state for the University Science."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-scientist",
+          "why": "Scientists that give free technologies or boost Research Labs go to the Spaceport city."
+        },
+        {
+          "class": "great-engineer",
+          "why": "Engineers that add Production to the space projects or Factories finish the launch sooner."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 240,
+          "test": "Spaceport built, the Earth Satellite launched, and Research Labs in three cities?",
+          "pass": "Queue the Moon Landing and the Mars projects in order; nothing else is built in the Spaceport city.",
+          "fail": "If the Spaceport is late, the Production is short, not the Science: Factory, Coal Power Plant, Liang and a Great Engineer into the Spaceport city, and Gold-project Gold buys the rest."
+        },
+        {
+          "turn": 290,
+          "test": "Exoplanet Expedition launched before any rival's, with Lagrange Laser Stations under way?",
+          "pass": "Build Laser Stations in every city that can and defend the Spaceport city to the end.",
+          "fail": "A rival launched first: fall back on Culture from Great Wall Tourism and the big cities' Culture, or accept a Score finish."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "launch-neighborhoods",
+          "turn": 200,
+          "text": "Two Neighborhoods built; Sanitation Eureka collected."
+        },
+        {
+          "id": "launch-research-labs",
+          "turn": 215,
+          "text": "Research Labs in the capital and second city; Nuclear Program Inspiration collected."
+        },
+        {
+          "id": "launch-democracy",
+          "turn": 225,
+          "text": "Democracy adopted; Computers Eureka collected."
+        },
+        {
+          "id": "launch-spaceport",
+          "turn": 235,
+          "text": "Spaceport complete in the highest-Production city; Pingala moved there with Space Initiative."
+        },
+        {
+          "id": "launch-exoplanet",
+          "turn": 285,
+          "text": "Exoplanet Expedition launched; Lagrange Laser Stations queued wherever Production allows."
+        }
+      ]
+    }
+  ],
+  "boosts": [
+    {
+      "id": "tech:irrigation",
+      "fit": "free",
+      "when": "found",
+      "how": "The first Builder farms Wheat or Rice beside the capital's river."
+    },
+    {
+      "id": "tech:writing",
+      "fit": "free",
+      "when": "found",
+      "how": "The Scout meets the first civilization while it maps river sites."
+    },
+    {
+      "id": "tech:archery",
+      "fit": "cheap",
+      "when": "found",
+      "how": "The Slinger finishes a barbarian scout near the capital."
+    },
+    {
+      "id": "tech:sailing",
+      "fit": "costly",
+      "when": "found",
+      "how": "Only if the capital is coastal as well as on fresh water; a river start does not trigger it."
+    },
+    {
+      "id": "tech:astrology",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:bronze-working",
+      "fit": "costly",
+      "when": "housing",
+      "how": "Three barbarian kills; only if a camp spawns on the border, never chased."
+    },
+    {
+      "id": "tech:wheel",
+      "fit": "cheap",
+      "when": "housing",
+      "how": "A Mine on a resource hill, which the capital's Production wants anyway."
+    },
+    {
+      "id": "tech:masonry",
+      "fit": "cheap",
+      "when": "housing",
+      "how": "A Quarry on stone inside the border; the Great Wall needs the technology regardless."
+    },
+    {
+      "id": "tech:currency",
+      "fit": "cheap",
+      "when": "housing",
+      "how": "The first Trader runs a Food route from the capital to the second city."
+    },
+    {
+      "id": "tech:construction",
+      "fit": "free",
+      "when": "housing",
+      "how": "The Water Mill in the first river city."
+    },
+    {
+      "id": "tech:engineering",
+      "fit": "cheap",
+      "when": "housing",
+      "how": "Ancient Walls in the border city facing the nearest rival."
+    },
+    {
+      "id": "tech:celestial-navigation",
+      "fit": "costly",
+      "when": "housing",
+      "how": "Two Fishing Boats; only in a coastal city, which this plan does not seek."
+    },
+    {
+      "id": "tech:military-engineering",
+      "fit": "free",
+      "when": "housing",
+      "how": "The capital's Aqueduct is the Housing the gate needs."
+    },
+    {
+      "id": "tech:buttress",
+      "fit": "cheap",
+      "when": "cross",
+      "how": "The Colosseum; the Hanging Gardens is Ancient and does not count."
+    },
+    {
+      "id": "tech:mathematics",
+      "fit": "cheap",
+      "when": "cross",
+      "how": "Campus, Commercial Hub and Entertainment Complex are three specialty districts."
+    },
+    {
+      "id": "tech:apprenticeship",
+      "fit": "cheap",
+      "when": "cross",
+      "how": "Three Mines across the core cities."
+    },
+    {
+      "id": "tech:iron-working",
+      "fit": "costly",
+      "when": "cross",
+      "how": "A Mine on Iron, only if Iron sits inside the border; Machinery needs the technology either way."
+    },
+    {
+      "id": "tech:machinery",
+      "fit": "cheap",
+      "when": "cross",
+      "how": "Three Archers as the garrisons of the border cities."
+    },
+    {
+      "id": "tech:education",
+      "fit": "cheap",
+      "when": "cross",
+      "how": "The first Great Scientist from the Campuses and the Inspiration card."
+    },
+    {
+      "id": "tech:stirrups",
+      "fit": "free",
+      "when": "cross",
+      "how": "Feudalism is on the Civil Service path."
+    },
+    {
+      "id": "tech:castles",
+      "fit": "cheap",
+      "when": "tall",
+      "how": "Adopt Merchant Republic first and research Castles after; the Great Wall's Culture switches on with it."
+    },
+    {
+      "id": "tech:printing",
+      "fit": "cheap",
+      "when": "tall",
+      "how": "Two Universities in the first two cities over the threshold."
+    },
+    {
+      "id": "tech:astronomy",
+      "fit": "cheap",
+      "when": "tall",
+      "how": "A University in a Campus beside a Mountain; the Campus tile was chosen for it in the Housing phase."
+    },
+    {
+      "id": "tech:banking",
+      "fit": "free",
+      "when": "tall",
+      "how": "Guilds is on the civic path."
+    },
+    {
+      "id": "tech:mass-production",
+      "fit": "cheap",
+      "when": "tall",
+      "how": "One Lumber Mill on a Woods tile no Farm wants."
+    },
+    {
+      "id": "tech:economics",
+      "fit": "cheap",
+      "when": "tall",
+      "how": "Two Banks in the Commercial Hubs."
+    },
+    {
+      "id": "tech:scientific-theory",
+      "fit": "free",
+      "when": "tall",
+      "how": "The Enlightenment is on the Science civic path."
+    },
+    {
+      "id": "tech:industrialization",
+      "fit": "cheap",
+      "when": "tall",
+      "how": "Two Workshops in the capital and the Production city."
+    },
+    {
+      "id": "tech:sanitation",
+      "fit": "cheap",
+      "when": "launch",
+      "how": "Two Neighborhoods, the Housing past 15 the plan builds anyway."
+    },
+    {
+      "id": "tech:flight",
+      "fit": "cheap",
+      "when": "launch",
+      "how": "The Ruhr Valley or any other Industrial-era wonder completed."
+    },
+    {
+      "id": "tech:refining",
+      "fit": "cheap",
+      "when": "launch",
+      "how": "A Coal Power Plant in the capital's Industrial Zone."
+    },
+    {
+      "id": "tech:steam-power",
+      "fit": "costly",
+      "when": "launch",
+      "how": "Two Shipyards; only coastal cities can build them."
+    },
+    {
+      "id": "tech:chemistry",
+      "fit": "costly",
+      "when": "launch",
+      "how": "An alliance kept to level two; only if a Research Alliance has run since the Renaissance."
+    },
+    {
+      "id": "tech:computers",
+      "fit": "cheap",
+      "when": "launch",
+      "how": "Adopt Democracy the turn Suffrage lands."
+    },
+    {
+      "id": "tech:radio",
+      "fit": "costly",
+      "when": "launch",
+      "how": "A National Park from a Naturalist bought with Lijia Faith; only if a Breathtaking area is free."
+    },
+    {
+      "id": "tech:nanotechnology",
+      "fit": "costly",
+      "when": "launch",
+      "how": "A Mine on Aluminum; trade for one if none sits inside the border."
+    },
+    {
+      "id": "civic:craftsmanship",
+      "fit": "free",
+      "when": "found",
+      "how": "Three improved tiles, the Farms on the capital's river."
+    },
+    {
+      "id": "civic:mysticism",
+      "fit": "free",
+      "when": "found",
+      "how": "Founding Fertility Rites in the first phase."
+    },
+    {
+      "id": "civic:foreign-trade",
+      "fit": "costly",
+      "when": "found",
+      "how": "A second continent is rarely seen from a river start; research it plain."
+    },
+    {
+      "id": "civic:military-tradition",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:state-workforce",
+      "fit": "free",
+      "when": "housing",
+      "how": "The capital's Campus is the first district."
+    },
+    {
+      "id": "civic:early-empire",
+      "fit": "free",
+      "when": "housing",
+      "how": "Six Population across the first three cities, which the growth path reaches early."
+    },
+    {
+      "id": "civic:games-and-recreation",
+      "fit": "free",
+      "when": "housing",
+      "how": "Researching Construction after the Water Mill Eureka."
+    },
+    {
+      "id": "civic:political-philosophy",
+      "fit": "cheap",
+      "when": "housing",
+      "how": "Three city-states met by the Scout; Hong Kong and Mohenjo-Daro count."
+    },
+    {
+      "id": "civic:drama-and-poetry",
+      "fit": "cheap",
+      "when": "housing",
+      "how": "The Hanging Gardens completed beside the capital's river."
+    },
+    {
+      "id": "civic:recorded-history",
+      "fit": "cheap",
+      "when": "housing",
+      "how": "Two Campuses, the capital and the second river city."
+    },
+    {
+      "id": "civic:theology",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:defensive-tactics",
+      "fit": "costly",
+      "when": "cross",
+      "how": "Only if a neighbour declares on you; research it plain on the way to Civil Service."
+    },
+    {
+      "id": "civic:feudalism",
+      "fit": "free",
+      "when": "cross",
+      "how": "Six Farms are the Housing and Food the gate needs."
+    },
+    {
+      "id": "civic:civil-service",
+      "fit": "free",
+      "when": "cross",
+      "how": "The capital crossing Population 10 is the gate itself."
+    },
+    {
+      "id": "civic:guilds",
+      "fit": "cheap",
+      "when": "cross",
+      "how": "Two Markets, in the capital and the second city."
+    },
+    {
+      "id": "civic:medieval-faires",
+      "fit": "costly",
+      "when": "cross",
+      "how": "Four Trade Routes at once; a four-city empire rarely has the capacity, so research it plain when the Renaissance civics need it."
+    },
+    {
+      "id": "civic:exploration",
+      "fit": "costly",
+      "when": "tall",
+      "how": "Two Caravels, only if a core city is coastal; otherwise research it plain for Merchant Republic."
+    },
+    {
+      "id": "civic:humanism",
+      "fit": "costly",
+      "when": "tall",
+      "how": "A Great Artist; this plan builds no Theater Squares, so it is usually unboosted."
+    },
+    {
+      "id": "civic:diplomatic-service",
+      "fit": "cheap",
+      "when": "tall",
+      "how": "An alliance with a friendly neighbour; a Research Alliance pays Science too."
+    },
+    {
+      "id": "civic:mercantilism",
+      "fit": "costly",
+      "when": "tall",
+      "how": "A Great Merchant; cheap only if Zhangye Danxia is inside the border."
+    },
+    {
+      "id": "civic:the-enlightenment",
+      "fit": "cheap",
+      "when": "tall",
+      "how": "Three Great People: two Scientists and a Merchant are enough."
+    },
+    {
+      "id": "civic:colonialism",
+      "fit": "free",
+      "when": "tall",
+      "how": "Researching Astronomy."
+    },
+    {
+      "id": "civic:urbanization",
+      "fit": "free",
+      "when": "tall",
+      "how": "The capital at Population 15 is the plan's second target."
+    },
+    {
+      "id": "civic:suffrage",
+      "fit": "cheap",
+      "when": "launch",
+      "how": "Four Sewers, the Housing for the four big cities past the Aqueduct."
+    },
+    {
+      "id": "civic:professional-sports",
+      "fit": "cheap",
+      "when": "launch",
+      "how": "A second Entertainment Complex for the Amenities of cities past 15."
+    },
+    {
+      "id": "civic:nuclear-program",
+      "fit": "free",
+      "when": "launch",
+      "how": "The first Research Lab."
+    },
+    {
+      "id": "civic:space-race",
+      "fit": "free",
+      "when": "launch",
+      "how": "The Spaceport in the highest-Production city."
+    },
+    {
+      "id": "civic:class-struggle",
+      "fit": "costly",
+      "when": "launch",
+      "how": "Three Factories; only if a third Industrial Zone is already up."
+    }
+  ],
+  "decision_triggers": [
+    {
+      "name": "Housing cap under a project",
+      "if": "A city running a Lijia project comes within one of its Housing.",
+      "then": "Stop the project that turn. Build or buy the Granary, Aqueduct or Neighborhood, farm the next tile, and restart only when Housing is two above Population."
+    },
+    {
+      "name": "Amenities would go negative",
+      "if": "The next Citizen would put a city's Amenities below zero.",
+      "then": "No project there. Connect or trade for a luxury, garrison a unit under Retainers, build the Arena, or move the project to a city with Amenities to spare."
+    },
+    {
+      "name": "Neighbour arms before the gate",
+      "if": "A neighbour moves several units to the border before the capital has crossed.",
+      "then": "Buy Ancient Walls in the border city, add Great Wall segments in the path and two Archers or Crouching Tigers; do not pull the capital off its Housing builds and run no project in the border city until the threat passes."
+    },
+    {
+      "name": "Which Lijia to run",
+      "if": "A city has crossed, has Housing for one more Citizen, and nothing urgent is left to build.",
+      "then": "Food if it is still below the next target of 15; Gold if it sits at its Housing or Amenity cap; Faith only when a Great Scientist or Naturalist is waiting to be bought with it."
+    },
+    {
+      "name": "Science rival at parity",
+      "if": "At any ten-turn check after turn 150 a rival's Science per turn exceeds China's by a tenth.",
+      "then": "Stop the Food project in every crossed city; Universities and Industrial Zones first, the Gold project to buy them, and a Research Alliance with the nearest friendly civilization."
+    }
+  ],
+  "abort": {
+    "trigger": "No city has crossed Population 10 by turn 140 and the capital is at its Housing cap with no Aqueduct, Granary or Farm left to build, or a rival already out-researches China by a third.",
+    "actions": [
+      "Stop every Lijia project; they are Production with nothing to grow into.",
+      "Play China as a Dynastic Cycle civilization: chase every Eureka and Inspiration, build Medieval and Renaissance wonders for the free boosts, and put a Campus in every city.",
+      "Settle a fifth and sixth city on whatever land is left, since the tall premise is gone, and aim for Culture through the Great Wall's Tourism or for Score."
+    ]
+  },
+  "fail_state": "Turn 150 with four cities at Population 7 to 9, Lijia projects run in all of them at once into full Housing so every Citizen grew at a fraction of the normal rate, no Universities because the Production went into projects, and the per-Citizen yields never switched on. China is then a small Science civilization with good boosts and an empty treasury, an era behind the leader, and the gate never opened in a city that could use it.",
+  "common_mistakes": [
+    "Running Lijia projects in every city from the Classical era. A project turn is a Granary or Aqueduct turn lost, and a city at its Housing cap grows slowly no matter how much Food the project makes.",
+    "Reading the flat first eighty turns as failure and switching plans. The yields are threshold-gated; the pre-gate phase is supposed to look like nothing.",
+    "Settling off fresh water for a resource. A dry city starts with a fraction of the Housing and needs an Aqueduct before it can even approach the threshold.",
+    "Solving Housing and forgetting Amenities. A city at 10 needs several Amenities, and a city that crosses into unhappiness loses the yields the crossing was for.",
+    "Leaving the project running after the city crosses. The turn it reaches 10, the city switches to its University and Pingala takes Researcher; the project moves to the next city on the sheet."
+  ],
+  "sources": [
+    "Civilization VI Civilopedia, Gathering Storm ruleset with the Leader Pass (China, Yongle, Lijia, Dynastic Cycle, Crouching Tiger, Great Wall). The civ-info text calls the Crouching Tiger Cannon a Bombard replacement that needs no Niter; in the game the Crouching Tiger is a standalone Medieval ranged unit at Machinery with range 1 and no resource cost, and the plan follows the game. The civ-info places the Great Wall on Hills; in the game it is built along the border at Masonry, with Gold per adjacent segment, Culture at Castles and Tourism at Flight, and the plan follows the game.",
+    "Lijia is taken as the civ-info describes it: projects converting a share of Production into Food, Faith or Gold, and extra Gold, Science and Culture per Citizen in large cities. The Population 10 threshold is the repository's Gate supplement for Yongle; exact Lijia percentages and per-Citizen values are not quoted and should be read off the in-game Civilopedia.",
+    "Boost objectives cross-checked against civilization6planner.com tech-tree and civics-tree pages, 2026-10-02.",
+    "Leadership Focus tags, caveats and Gate supplement for Yongle in this repository; the Gate template sets Housing and food before project spam, per-city threshold tracking and an explicit note that the pre-threshold flatline is expected."
+  ]
+}

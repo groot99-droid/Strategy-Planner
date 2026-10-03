@@ -3,10 +3,29 @@
     "purpose": "Six guide templates, one per guide_shape. Each leader renders through exactly one template. Slots in {{double_braces}} populate from leadership-focus-tags.json and leadership-focus-caveats.json.",
     "assumed_conditions": "Standard speed, standard map size, mid difficulty. Turn numbers are scaffolding, not law. See timing_adjustments.",
     "timing_adjustments": {
-      "online_speed": "Multiply all turn numbers by 0.67",
+      "online_speed": "Multiply all turn numbers by 0.5 (Online is 200% pace)",
+      "quick_speed": "Multiply by 0.67",
+      "standard_speed": "Multiply by 1 (the baseline every plan is written at)",
       "epic_speed": "Multiply by 1.5",
       "marathon_speed": "Multiply by 3",
+      "speed_factors": {
+        "online": 0.5,
+        "quick": 0.67,
+        "standard": 1,
+        "epic": 1.5,
+        "marathon": 3
+      },
       "higher_difficulty": "Pull every deadline earlier by roughly 10-15%; AI bonuses compress every window",
+      "difficulty_factors": {
+        "settler": 1.15,
+        "chieftain": 1.15,
+        "warlord": 1.1,
+        "prince": 1.1,
+        "king": 1,
+        "emperor": 1,
+        "immortal": 0.9,
+        "deity": 0.85
+      },
       "large_maps": "Countdown and Gate deadlines slip later; Front-Load decisions do not move"
     },
     "slot_sources": {
@@ -15,7 +34,7 @@
       "{{conversion}}": "tags.conversion",
       "{{condition_cost}}": "tags.condition_cost",
       "{{convert_by}}": "tags.convert_by",
-  "{{condition_check}}": "derived in build-guides.js: 'the window is open' when condition_cost is None, otherwise 'the condition is met: <condition_cost>'",
+      "{{condition_check}}": "derived in build-guides.js: 'the window is open' when condition_cost is None, otherwise 'the condition is met: <condition_cost>'",
       "{{era_role.*}}": "caveats.era_role",
       "{{caveats[]}}": "caveats.caveats",
       "{{guide_requirements[]}}": "caveats.guide_must_account_for"
@@ -26,11 +45,18 @@
       "No template lists turns the player does not need to think about. Silence is a valid instruction."
     ]
   },
-
   "templates": {
-
     "Countdown": {
-      "applies_to": ["Gilgamesh", "Cyrus", "Tomyris", "Qin Shi Huang", "Hammurabi", "Montezuma", "Ambiorix", "Amanitore"],
+      "applies_to": [
+        "Gilgamesh",
+        "Cyrus",
+        "Tomyris",
+        "Qin Shi Huang",
+        "Hammurabi",
+        "Montezuma",
+        "Ambiorix",
+        "Amanitore"
+      ],
       "principle": "The ability has an expiry. The guide is a timer wrapped around a conversion deadline. Its most important content is not the build order, it is the turn the plan stops and what replaces it.",
       "structure": [
         {
@@ -93,9 +119,18 @@
         "Letting the player believe a large army at {{convert_by}} counts as success. It does not."
       ]
     },
-
     "Gate": {
-      "applies_to": ["Shaka", "Basil II", "Chandragupta", "Philip II", "Genghis Khan", "Jadwiga", "Yongle", "Gitarja", "Peter"],
+      "applies_to": [
+        "Shaka",
+        "Basil II",
+        "Chandragupta",
+        "Philip II",
+        "Genghis Khan",
+        "Jadwiga",
+        "Yongle",
+        "Gitarja",
+        "Peter"
+      ],
       "principle": "The strategy does not begin on a turn. It begins on an unlock. This needs two complete guides with a trigger between them, not one guide with a note in the middle.",
       "structure": [
         {
@@ -149,9 +184,24 @@
         "Omitting the closing window. Gate leaders have two deadlines, not one."
       ]
     },
-
     "Monitor": {
-      "applies_to": ["Lautaro", "Tamar", "Robert the Bruce", "John Curtin", "Pericles", "Ludwig II", "Alexander", "Matthias Corvinus", "Mansa Musa", "Gorgo", "Harald Hardrada", "Pedro II", "Dido", "Joao III", "Gandhi"],
+      "applies_to": [
+        "Lautaro",
+        "Tamar",
+        "Robert the Bruce",
+        "John Curtin",
+        "Pericles",
+        "Ludwig II",
+        "Alexander",
+        "Matthias Corvinus",
+        "Mansa Musa",
+        "Gorgo",
+        "Harald Hardrada",
+        "Pedro II",
+        "Dido",
+        "Joao III",
+        "Gandhi"
+      ],
       "principle": "The core loop is a stat check, not a build order. These guides fail hardest when written as sequences, because the player's real job is watching one number and responding to it.",
       "structure": [
         {
@@ -202,9 +252,16 @@
         "Omitting the off-period plan for reactive leaders. Most turns are off-period."
       ]
     },
-
     "Front-Load": {
-      "applies_to": ["Ba Trieu", "Lady Six Sky", "Nzinga Mbande", "Amanitore", "Hojo Tokimune", "Pachacuti", "Seondeok"],
+      "applies_to": [
+        "Ba Trieu",
+        "Lady Six Sky",
+        "Nzinga Mbande",
+        "Amanitore",
+        "Hojo Tokimune",
+        "Pachacuti",
+        "Seondeok"
+      ],
       "principle": "Nearly every decision that matters is made in the first twenty turns and cannot be reversed. Guide density should be inverted: dense at the start, sparse after.",
       "structure": [
         {
@@ -261,9 +318,14 @@
         "Presenting settle sites one at a time. The map has to be drawn whole or the radius logic does not work."
       ]
     },
-
     "Dead-Phase": {
-      "applies_to": ["Kristina", "Wilfrid Laurier", "Eleanor of Aquitaine", "Victoria (Age of Steam)", "Suleiman"],
+      "applies_to": [
+        "Kristina",
+        "Wilfrid Laurier",
+        "Eleanor of Aquitaine",
+        "Victoria (Age of Steam)",
+        "Suleiman"
+      ],
       "principle": "The hardest template to write and the most necessary. The leader contributes nothing for 80 to 120 turns. Without an explicit early game AND an explicit statement that the flatness is intended, players abandon the plan around turn 60.",
       "structure": [
         {
@@ -312,9 +374,21 @@
         "Framing Phase A as preparation only. It also has to be survivable on its own terms."
       ]
     },
-
     "Linear": {
-      "applies_to": ["Trajan", "Simon Bolivar", "Jayavarman VII", "Menelik II", "Catherine de Medici (Black Queen)", "Tokugawa", "Saladin", "Cleopatra (Ptolemaic)", "Teddy Roosevelt (Bull Moose)", "Kupe", "Frederick Barbarossa", "John Curtin"],
+      "applies_to": [
+        "Trajan",
+        "Simon Bolivar",
+        "Jayavarman VII",
+        "Menelik II",
+        "Catherine de Medici (Black Queen)",
+        "Tokugawa",
+        "Saladin",
+        "Cleopatra (Ptolemaic)",
+        "Teddy Roosevelt (Bull Moose)",
+        "Kupe",
+        "Frederick Barbarossa",
+        "John Curtin"
+      ],
       "principle": "Standard era-block guides work. The ability amplifies a plan rather than supplying one, so the guide's real job is making the player choose a direction the amplifier can act on.",
       "structure": [
         {
@@ -365,7 +439,6 @@
       ]
     }
   },
-
   "worked_examples": {
     "Countdown_Gilgamesh": {
       "arm": "Turns 1-20. Scout toward the nearest neighbor only. Production is War-Carts and nothing else. Settle two cities maximum.",

@@ -1,0 +1,1757 @@
+{
+  "leader": "Nzinga Mbande",
+  "civilization": "Kongolese",
+  "generated": "2026-10-02",
+  "slug": "nzinga-mbande",
+  "shape": "Front-Load",
+  "secondary_shape": null,
+  "version": 1,
+  "updated": "2026-10-02",
+  "assumptions": {
+    "ruleset": "Gathering Storm with every expansion and the Leader Pass",
+    "speed": "Standard",
+    "difficulty": "Emperor",
+    "map": "Continents or Small Continents, standard size, 8 civilizations",
+    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. Nzinga Mbande's Kongo (Leader Pass) is planned here, not Mvemba a Nzinga's. Under Nzinga, Kongo carries none of Mvemba's religious restriction: it builds Holy Sites, earns Great Prophets and can found a religion, and this plan uses that. The shape is Front-Load because the tile the capital is settled on fixes which continent is home, and with it the number of cities the whole game will ever have, before the first Settler moves."
+  },
+  "verdict": {
+    "victory": "Culture",
+    "secondary": "Religion",
+    "confidence": "high",
+    "one_line": "Read the continent lens before the Settler plants, claim every site the home continent holds and nothing beyond it, and let Nkisi turn Relics, Artifacts and sculptures into Food, Production and Gold while half-again Great Artist and Musician points fill the Palace and the Theater Squares.",
+    "why": "Nkisi is a Culture kit twice over: every Relic, Artifact and sculpture is Food, Production and Gold as well as Culture and Tourism, and Great Artist, Musician and Merchant points come half again as fast as anyone else's, so the Great Works arrive early and each one also feeds the city it sits in. Queen of Ndongo and Matamba adds a tenth to every yield in every home-continent city and takes more than that from any city elsewhere, which caps the empire at the continent but makes each city on it slightly better than a rival's. The Mbanza is Housing, Food and Gold on the Woods and Rainforest the start bias gives, so the cities grow without Neighborhoods or Aqueducts. Religion is the secondary because Nzinga's Holy Sites, Apostles and Mont St. Michel make the Relics Nkisi wants, and a religion can be carried to continents a city cannot. Science and Domination spend the Great Person bonus on nothing."
+  },
+  "map_check": {
+    "must_have": [
+      "A home continent, read with the continent lens before settling, with room for at least six cities at four-tile spacing that rivals have not already taken by turn 30.",
+      "Woods or Rainforest within two tiles of most city sites, left standing; the Mbanza can be built on nothing else."
+    ],
+    "prefer": [
+      "Rainforest around the capital's Holy Site tile for Sacred Path, or Plantation luxuries for Goddess of Festivals.",
+      "Tsingy de Bemaraha or Roraima on the home continent: Culture and Faith on the tiles, a Relic from Kandy if it is discovered while you are suzerain, and an Astrology Eureka.",
+      "A rival capital on the same continent within fifteen tiles, because every city of theirs is a future home-continent city of yours and the Ngao Mbeba is built to take it.",
+      "A river or coast past three sites for Commercial Hub and Harbor adjacency; the Gold is what buys Great People when the points are short."
+    ],
+    "no_go": "A capital whose continent, read with the lens on turn 1, holds fewer than four city sites and cannot be swapped by a one-tile move, or a start where the continent boundary runs through the first ring so that half the sites you can see are on the wrong side. The ceiling is then fixed below what a Culture game needs and nothing in the kit raises it.",
+    "fallback": "Settle anyway and play Kongo tall, as Mvemba's players always did: three or four cities, a Theater Square and Holy Site in each, every Palace slot and Amphitheater filled, and the religion carried overseas by Apostles because cities cannot be. Say plainly that the empire will be small and that the win comes from Relics, sculptures and wonders in the capital, not from city count. Take the Decolonization war seriously: the only way to add a city is to take one on the home continent."
+  },
+  "kit_levers": [
+    {
+      "source": "leader_ability",
+      "name": "Queen of Ndongo and Matamba",
+      "buys": "Ten percent more of every yield in every city on the same continent as the capital, and fifteen percent less of every yield in any city on another continent.",
+      "exploit": "The continent, not the landmass, is the unit: read the continent lens on turn 1 and settle on the side with more room, then never found, keep or accept a city across the boundary, captured cities included. Every rival city on the home continent is a full-rate city of yours once taken, which is why the one war this plan fights is against the neighbour who shares the continent."
+    },
+    {
+      "source": "civ_ability",
+      "name": "Nkisi",
+      "buys": "Food, Production and Gold from every Relic, Artifact and sculpture, Great Artist, Musician and Merchant points half again as fast, and a Palace with extra Great Work slots.",
+      "exploit": "Great Works are not stored in this kit, they are eaten: the first Great Artist goes in the Palace and feeds the capital the turn it lands. Chase Relics through Apostles with the Martyr promotion and Kandy, Artifacts through two Archaeological Museums, and sculptures through Donatello, Michelangelo and Bernini; the Great Merchant bonus pays the Gold that buys the rest."
+    },
+    {
+      "source": "unique_unit",
+      "name": "Ngao Mbeba",
+      "buys": "A Swordsman replacement that needs no Iron, moves and sees through Woods and Rainforest at full speed, and has +10 Combat Strength when defending against ranged attacks.",
+      "exploit": "One job: remove the rival who shares the home continent while their cities are still worth ten percent more to you than to them. Six Ngao Mbeba with a Battering Ram through the forest the rival cannot see into take a Classical city under Archer fire that would kill Swordsmen. Outside that war, four of them garrison the forest border and nothing else is built for defence."
+    },
+    {
+      "source": "unique_infrastructure",
+      "name": "Mbanza",
+      "buys": "A Neighborhood replacement unlocked at Guilds instead of Urbanization, built only on Woods or Rainforest, with five Housing, two Food and four Gold regardless of Appeal.",
+      "exploit": "Every city keeps one Woods or Rainforest tile in its second ring unchopped from the day it is founded, and builds the Mbanza there the turn Guilds lands. Two of them give the Sanitation Eureka for nothing, and the Housing is what lets the cities reach Civil Service and Urbanization without Aqueducts."
+    },
+    {
+      "source": "agenda",
+      "name": "Decolonization",
+      "buys": "Nzinga likes civilizations with no cities on her home continent and dislikes those that have settled there.",
+      "exploit": "Irrelevant to your own diplomacy except as the plan's reminder: the continent is the empire. An AI Nzinga on your continent will dislike you for being there and is the one neighbour whose cities you should take."
+    }
+  ],
+  "shape_block": {
+    "front_load": {
+      "turn_zero": [
+        "Before the Settler moves: open the continent lens. The line it draws is the ceiling of the game. Count the city sites on the capital's side within twelve tiles, at four tiles between centers, and count the ones on the other side. If one tile of movement puts the capital on a continent with two or more extra sites, move; otherwise settle in place. This is the only decision in the kit that cannot be revisited, and it is made on turn 1.",
+        "Before the Settler moves: look at the first two rings for Woods and Rainforest. Mark one tile in the second ring as the Mbanza tile and never chop it, never improve it with anything a Mbanza would replace, and never pin a district or wonder on it. Mark a second as the Lumber Mill for Mass Production. Everything else with trees is reserved too until the Builder has somewhere else to work.",
+        "Before the Settler moves: pin the capital's districts. Theater Square on the tile that touches the center and the most future districts, Holy Site beside Rainforest if Sacred Path is the pantheon or beside the river if it is not, Commercial Hub on the river or Harbor on the coast. The Campus is not pinned; this capital builds one late or never.",
+        "By turn 10: send the Scout along the continent boundary, not toward the nearest rival. The survey tells you how many cities the game has, where the natural wonders are, and which rival shares the continent. Seeing across the boundary is the Foreign Trade Inspiration; the Scout has to be at the edge to collect it."
+      ],
+      "ceiling": "Every site the home continent holds at four-tile spacing, minus the ones a rival settles first and plus the ones the Ngao Mbeba take back: seven to ten cities on a Continents map shared with two rivals, four to six if the continent is an island of its own. Each is a tenth better than a rival's city and has Housing from a Mbanza, so eight of them win a Culture game around turn 270 on Emperor from Great Works, Relics, Artifacts and two wonder clusters. The cap is city count: no Settler ever leaves the continent, so the empire is as large as the lens said on turn 1, and a six-city Kongo plans Tourism from Relics and wonders rather than from Seaside Resorts in cities it will not have.",
+      "irreversibles": [
+        {
+          "decision": "Capital tile, which fixes the home continent and every site that will ever count at full rate.",
+          "by_turn": 2
+        },
+        {
+          "decision": "The Mbanza tile reserved in the capital's second ring, and the rule that no Woods or Rainforest within two tiles of any pinned site is chopped before Guilds.",
+          "by_turn": 5
+        },
+        {
+          "decision": "The whole settle map of the home continent, drawn from the Scout's survey before the second Settler finishes, with the continent boundary as its hard edge and every site's Mbanza tile marked.",
+          "by_turn": 30
+        },
+        {
+          "decision": "The overseas prohibition written down: no Settler, no captured city, no city-state gift and no peace-deal city across the boundary, for the rest of the game.",
+          "by_turn": 20
+        },
+        {
+          "decision": "Which rival on the home continent the Ngao Mbeba are for, chosen from the survey; the Encampment and Iron Working are timed to that city, not to a threat.",
+          "by_turn": 60
+        }
+      ],
+      "settle_map_rule": "Draw every city two through ten before the second Settler is produced, from the Scout's survey of the continent boundary, at four tiles between centers, and stop at the line the continent lens draws however good the land beyond it looks. Each site must have one Woods or Rainforest tile in its second ring marked as the Mbanza and one more marked as a Lumber Mill, both left unimproved and unchopped, plus a Theater Square tile touching the center. Sites a rival will probably take first are drawn anyway, labelled with the rival's name; they are the Ngao Mbeba's list. A site across the boundary is not drawn, not even as a maybe."
+    }
+  },
+  "phases": [
+    {
+      "id": "assess",
+      "name": "Assess and commit",
+      "turns": {
+        "from": 1,
+        "to": 20
+      },
+      "era": "ancient",
+      "objective": "Read the continent lens and settle on the right side of the line, reserve the Mbanza tiles, send the Scout around the continent's edge rather than toward the nearest rival, found the pantheon, and have the second Settler out and the whole settle map drawn by turn 20. The ceiling of the game is decided in these twenty turns; the next two hundred and fifty only fill it.",
+      "build_order": [
+        {
+          "item": "Scout",
+          "why": "The survey is the plan. It walks the continent boundary, counts the sites, finds the natural wonders and the rival who shares the land, and sights the second continent for Foreign Trade."
+        },
+        {
+          "item": "Warrior",
+          "why": "Second Warrior rather than a Slinger; two Warriors clear the first camp for Military Tradition and three kills for Bronze Working while the Scout is away."
+        },
+        {
+          "item": "Settler",
+          "why": "City two on the settle map, four tiles out along the river or coast, with its Mbanza tile already marked."
+        },
+        {
+          "item": "Monument",
+          "why": "Culture is the resource this kit spends; Drama and Poetry and Political Philosophy must arrive on time or the Theater Squares wait."
+        },
+        {
+          "item": "Builder",
+          "why": "Three improvements for Craftsmanship, a Mine on a resource for The Wheel, a Quarry if Stone is near for Masonry. It touches no Woods or Rainforest inside two tiles of a pinned site."
+        },
+        {
+          "item": "Settler",
+          "why": "City three before the capital's first district; the continent fills from the capital outward and the rival is filling it from theirs."
+        },
+        {
+          "item": "Holy Site",
+          "why": "First district, on its pin beside Rainforest; Faith for the pantheon's successor, the religion, and later the Great Artists bought with it."
+        },
+        {
+          "item": "Slinger",
+          "why": "Only if a camp sits within four tiles; one Slinger kill is Archery and Archers are how Kongo holds a forest border."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:astrology",
+          "note": "First. Nzinga's Kongo can build the Holy Site and the plan wants it before turn 25; Eureka if the Scout passes a natural wonder on the boundary."
+        },
+        {
+          "id": "tech:mining",
+          "note": "Mines on the hills the Builder may touch; Bronze Working hangs off it."
+        },
+        {
+          "id": "tech:bronze-working",
+          "note": "Three camp kills from the two Warriors; it reveals Iron for the Eureka and opens the Encampment."
+        },
+        {
+          "id": "tech:pottery",
+          "note": "Granary and the Irrigation line; the Palgum-style river growth is not Kongo's, but Rice and Wheat Farms give Irrigation."
+        },
+        {
+          "id": "tech:writing",
+          "note": "Free the turn the Scout meets the first rival; the Library is late in this plan but Writing is on every path."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:code-of-laws",
+          "note": "God King for the pantheon, Discipline for the camp."
+        },
+        {
+          "id": "civic:craftsmanship",
+          "note": "Inspiration from the first Builder; Ilkum for the Builders every new city needs."
+        },
+        {
+          "id": "civic:foreign-trade",
+          "note": "Inspiration when the Scout sights the second continent from the boundary; a Trader between the capital and city two."
+        }
+      ],
+      "policies": [
+        {
+          "card": "God King",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "The pantheon by turn 20, before the Holy Site exists."
+        },
+        {
+          "card": "Discipline",
+          "slot": "military",
+          "from": "civic:code-of-laws",
+          "why": "Two Warriors clear the first camp for an Inspiration and a Eureka."
+        },
+        {
+          "card": "Ilkum",
+          "slot": "economic",
+          "from": "civic:craftsmanship",
+          "why": "Builders faster; every city on the map needs Mines before its Theater Square."
+        }
+      ],
+      "districts": [
+        {
+          "district": "holy-site",
+          "city": "capital",
+          "note": "First district, on its pin beside Rainforest; Nzinga can build it and Mvemba could not."
+        }
+      ],
+      "pantheon": {
+        "slug": "sacred-path",
+        "why": "A Holy Site in Rainforest with three adjacent Rainforest tiles is a +3 Faith district on turn 25, and the Faith buys the Great Artists Nkisi eats.",
+        "alternative": "goddess-of-festivals"
+      },
+      "wonders": [],
+      "governors": [],
+      "city_states": [
+        {
+          "slug": "kandy",
+          "why": "A Relic for every natural wonder discovered while you are suzerain, and each Relic is Food, Production and Gold under Nkisi; the first envoy goes here the turn it is met."
+        },
+        {
+          "type": "Cultural",
+          "why": "If Kandy is not on the map, the first envoy is Culture in the capital toward Political Philosophy."
+        }
+      ],
+      "great_people": [],
+      "checkpoints": [
+        {
+          "turn": 8,
+          "test": "Capital settled on the side of the continent line with more sites, Mbanza tile reserved, the Scout walking the boundary and not the nearest rival's road?",
+          "pass": "Continue; the survey comes back before the second Settler finishes.",
+          "fail": "Scout headed inland: turn it to the boundary now, the inland is drawn from what the Warriors see. Capital on the smaller side: it stays, the fallback is the plan, and say so in the settle map."
+        },
+        {
+          "turn": 20,
+          "test": "Second Settler out, Astrology in, Holy Site queued on its pin, the pantheon founded, and every site on the home continent drawn with a Mbanza tile marked?",
+          "pass": "Enter the claim phase and follow the map.",
+          "fail": "No map yet: draw it this turn before the Settler moves, from whatever the Scout has seen. A Builder that chopped Woods inside a pinned ring: mark a new Mbanza tile and stop chopping."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "assess-lens",
+          "turn": 1,
+          "text": "Open the continent lens before the Settler moves; settle on the side with more sites, moving one tile if that changes the answer."
+        },
+        {
+          "id": "assess-reserve-trees",
+          "turn": 2,
+          "text": "Mark the capital's Mbanza tile and Lumber Mill tile in the second ring; pin Theater Square, Holy Site and Commercial Hub or Harbor in the first."
+        },
+        {
+          "id": "assess-survey",
+          "turn": 4,
+          "text": "Send the Scout along the continent boundary; note every site, natural wonder, camp and rival city on the home side."
+        },
+        {
+          "id": "assess-settle-map",
+          "turn": 15,
+          "text": "Draw cities two through ten on the home continent with the boundary as the edge, a Mbanza tile marked in each, and the rival's sites labelled with their name."
+        },
+        {
+          "id": "assess-pantheon",
+          "turn": 18,
+          "text": "Found Sacred Path if the Holy Site pin touches two or more Rainforest tiles, Goddess of Festivals if three Plantation luxuries are inside the first three sites."
+        },
+        {
+          "id": "assess-prohibition",
+          "turn": 20,
+          "text": "Write the overseas prohibition at the top of the settle map: no Settler, capture, gift or peace-deal city across the line, ever."
+        }
+      ]
+    },
+    {
+      "id": "claim",
+      "name": "Claim the continent",
+      "turns": {
+        "from": 21,
+        "to": 80
+      },
+      "era": "classical",
+      "objective": "Fill the settle map to six cities before the rival does, Theater Square first in every city after the capital's Holy Site, found the religion from two Holy Sites with Shrines, and have the Ngao Mbeba and a Battering Ram ready at Iron Working for the rival city nearest the border. Low decision density by design; the map is already drawn.",
+      "build_order": [
+        {
+          "item": "Settler",
+          "why": "Cities four, five and six on the map, Colonization slotted and Magnus on Provision; the rival is settling the same continent."
+        },
+        {
+          "item": "Theater Square",
+          "why": "First district in every city after the capital; Amphitheaters hold the Great Works that Nkisi feeds on."
+        },
+        {
+          "item": "Shrine",
+          "why": "Two Holy Sites with Shrines reach a Great Prophet by turn 70 on Emperor; the religion is where the Relics come from."
+        },
+        {
+          "item": "Amphitheater",
+          "why": "Holds the Great Writers that Literary Tradition brings; the first Great Work slots."
+        },
+        {
+          "item": "Encampment",
+          "why": "In the city nearest the rival's border; Ngao Mbeba, a Barracks, and the Military Training Inspiration."
+        },
+        {
+          "item": "Ngao Mbeba",
+          "why": "Six of them at Iron Working, no Iron needed; they walk through the forest the rival's Archers cannot see into."
+        },
+        {
+          "item": "Battering Ram",
+          "why": "The rival will have Ancient Walls by turn 60 on Emperor; the Ram is what the Ngao Mbeba stand beside."
+        },
+        {
+          "item": "Commercial Hub",
+          "why": "Capital, on the river; Market for Guilds and the Gold that buys Great Artists when the points are short."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:masonry",
+          "note": "A Quarry if Stone is near; the Battering Ram and Ancient Walls at home regardless."
+        },
+        {
+          "id": "tech:iron-working",
+          "note": "The Ngao Mbeba, which needs no Iron; Eureka from a Mine on the Iron Bronze Working revealed if one is in reach."
+        },
+        {
+          "id": "tech:currency",
+          "note": "The first Trade Route; Commercial Hubs and the Great Merchant points Nkisi speeds up."
+        },
+        {
+          "id": "tech:mathematics",
+          "note": "Holy Site, Theater Square and Commercial Hub in the capital are three specialty districts; free."
+        },
+        {
+          "id": "tech:wheel",
+          "note": "A Mine on a resource from the first Builder; the Water Mill line."
+        },
+        {
+          "id": "tech:construction",
+          "note": "A Water Mill in the river city; Games and Recreation comes with it."
+        },
+        {
+          "id": "tech:engineering",
+          "note": "Ancient Walls in the border city before the war, which is also the Eureka."
+        },
+        {
+          "id": "tech:apprenticeship",
+          "note": "Three Mines across the first four cities; the Industrial Zone later."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:state-workforce",
+          "note": "Free from the capital Holy Site."
+        },
+        {
+          "id": "civic:early-empire",
+          "note": "Colonization for cities four to six; six population across three cities is free."
+        },
+        {
+          "id": "civic:mysticism",
+          "note": "Free from the pantheon; on the way to Drama and Poetry."
+        },
+        {
+          "id": "civic:political-philosophy",
+          "note": "Classical Republic; Inspiration from the three city-states the survey met."
+        },
+        {
+          "id": "civic:drama-and-poetry",
+          "note": "Theater Squares and Aesthetics; Inspiration from Apadana; Mahabodhi needs Theology, which comes after."
+        },
+        {
+          "id": "civic:military-training",
+          "note": "The Encampment in the border city; Agoge is not needed, the Great General points are."
+        },
+        {
+          "id": "civic:theology",
+          "note": "Inspiration from founding the religion; Scripture and the Apostle line."
+        },
+        {
+          "id": "civic:games-and-recreation",
+          "note": "Free from Construction; an Entertainment Complex in the middle of the continent later."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Urban Planning",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "One Production in six cities that are each building a Theater Square."
+        },
+        {
+          "card": "Colonization",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "Settlers built 50% faster while the rival is racing you for the same sites."
+        },
+        {
+          "card": "Classical Republic",
+          "slot": "wildcard",
+          "from": "civic:political-philosophy",
+          "why": "Great Person points on top of Nkisi's half-again, and Amenities for a growing continent."
+        },
+        {
+          "card": "Aesthetics",
+          "slot": "economic",
+          "from": "civic:drama-and-poetry",
+          "why": "Doubles Theater Square adjacency in every city, the district this empire builds first."
+        },
+        {
+          "card": "Literary Tradition",
+          "slot": "wildcard",
+          "from": "civic:drama-and-poetry",
+          "why": "Great Writer points doubled; Nkisi does not speed Writers, so this card does; the Amphitheaters fill before anyone else's exist."
+        }
+      ],
+      "districts": [
+        {
+          "district": "theater-square",
+          "city": "every city",
+          "note": "First district after the capital's Holy Site; the victory."
+        },
+        {
+          "district": "holy-site",
+          "city": "city two",
+          "note": "Second Holy Site beside Rainforest for the Great Prophet; two Shrines are the religion."
+        },
+        {
+          "district": "encampment",
+          "city": "the city nearest the rival's border",
+          "note": "Ngao Mbeba, Walls and the Military Training Inspiration."
+        },
+        {
+          "district": "commercial-hub",
+          "city": "capital",
+          "note": "River adjacency; Markets for Guilds and Gold for Great People."
+        }
+      ],
+      "pantheon": {
+        "slug": "sacred-path",
+        "why": "Already founded; the second Holy Site goes beside Rainforest too."
+      },
+      "wonders": [
+        {
+          "name": "Apadana",
+          "why": "Two envoys per wonder built in the capital for the rest of the game, and Kongo builds many; the envoys go to Kandy and Yerevan.",
+          "skip_if": "Political Philosophy lands after turn 60 or the capital Theater Square is not yet placed; the wonder must sit beside the center and must not take a pinned tile or the Mbanza tile."
+        },
+        {
+          "name": "Mahabodhi Temple",
+          "why": "Two free Apostles and Faith; it must stand on Woods beside a Holy Site, and Kongo has the Woods it never chopped.",
+          "skip_if": "Theology lands after turn 85 or the Holy Site has no Woods neighbour that is not the Mbanza tile."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "magnus",
+          "promotion": "Provision",
+          "city": "capital",
+          "why": "Four Settlers out of the capital without losing population while it also builds the Holy Site."
+        },
+        {
+          "governor": "pingala",
+          "promotion": "Connoisseur",
+          "city": "capital, once Magnus moves out after the last Settler",
+          "why": "Culture per citizen in the city that will hold the Palace's Great Works."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "kandy",
+          "why": "Suzerainty by turn 50: every natural wonder discovered from then on is a Relic, and Relics are half again as much Faith."
+        },
+        {
+          "slug": "yerevan",
+          "why": "Apostles choose their promotion; every one is a Martyr and every Martyr is a Relic."
+        },
+        {
+          "slug": "kumasi",
+          "why": "Culture and Gold on Trade Routes per specialty district in the origin city; the capital's three districts pay on every route to a city-state."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-prophet",
+          "why": "Two Holy Sites with Shrines reach one by turn 70; without the religion there are no Apostles and no Relics."
+        },
+        {
+          "class": "great-writer",
+          "why": "Every one that appears; Literary Tradition doubles their points; Nkisi speeds Artists, Musicians and Merchants, not Writers."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 50,
+          "test": "Four cities on the map, Theater Square placed in each, two Holy Sites with Shrines, and a Great Prophet within twenty turns?",
+          "pass": "Continue; cities five and six, and the Encampment.",
+          "fail": "A city founded off the map or across the line: it stays but is the last; no Settler leaves the continent and the next one goes to the nearest drawn site. No Prophet in reach: buy the second Shrine with Gold and keep God King one more turn."
+        },
+        {
+          "turn": 80,
+          "test": "Six cities, Theater Square in each, the religion founded with Reliquaries, and six Ngao Mbeba with a Ram beside the rival's border city?",
+          "pass": "Enter the consolidate phase; declare on the rival the turn Iron Working completes if their city still has Ancient Walls or none.",
+          "fail": "Fewer than six cities and sites left: settle before anything else. Rival city already behind Medieval Walls: the war waits for Siege Towers, and the Ngao Mbeba garrison the forest instead."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "claim-cities-two-three",
+          "turn": 25,
+          "text": "Cities two and three founded on the map; Theater Square pinned in each the turn it is founded, Mbanza tile confirmed."
+        },
+        {
+          "id": "claim-kandy-envoy",
+          "turn": 30,
+          "text": "First envoy to Kandy, second and third by turn 50; a natural wonder found after suzerainty is a Relic."
+        },
+        {
+          "id": "claim-second-holy-site",
+          "turn": 45,
+          "text": "Second Holy Site placed beside Rainforest in city two; Shrine bought in both."
+        },
+        {
+          "id": "claim-religion",
+          "turn": 70,
+          "text": "Found the religion: Reliquaries as the Follower belief, a Faith-per-follower Founder belief, and a Worship building, with the Relics kept in Temples."
+        },
+        {
+          "id": "claim-encampment",
+          "turn": 65,
+          "text": "Encampment with Barracks in the city nearest the rival; six Ngao Mbeba queued the turn Iron Working completes."
+        },
+        {
+          "id": "claim-six-cities",
+          "turn": 80,
+          "text": "Six cities on the home continent; write down which rival city the Ngao Mbeba take first and whether it still lacks Medieval Walls."
+        }
+      ]
+    },
+    {
+      "id": "consolidate",
+      "name": "Consolidate the continent",
+      "turns": {
+        "from": 81,
+        "to": 150
+      },
+      "era": "medieval",
+      "objective": "Take the rival's border cities with the Ngao Mbeba while they are still behind Ancient Walls, build a Mbanza in every city the turn Guilds lands, put Mont St. Michel and Chichen Itza where their terrain allows, and start the Relic machine: Martyr Apostles from Yerevan, Art Museums for the first sculptures, Temples for Divine Right. The continent is now all yours or nearly, and every city on it is a tenth better than it would be for anyone else.",
+      "build_order": [
+        {
+          "item": "Mbanza",
+          "why": "Every city, on its reserved tile, the turn Guilds completes; Housing, Food and Gold without an Aqueduct, and two of them are the Sanitation Eureka."
+        },
+        {
+          "item": "Temple",
+          "why": "Two for Divine Right, and each holds a Relic; Mont St. Michel needs the civic."
+        },
+        {
+          "item": "Apostle",
+          "why": "Bought with Faith in the Yerevan-promoted city; Martyr every time, sent to argue with a rival's Apostle and die into a Relic."
+        },
+        {
+          "item": "Monument",
+          "why": "In every captured city the turn it falls; Loyalty before anything else."
+        },
+        {
+          "item": "Market",
+          "why": "Two for Guilds, which is the Mbanza; Kongo's Gold is already high and Banks follow."
+        },
+        {
+          "item": "Art Museum",
+          "why": "In the two largest Theater Squares; the sculptures of Donatello and Michelangelo feed the city they hang in."
+        },
+        {
+          "item": "Archer",
+          "why": "Three across the border cities for Machinery and the forest garrison; Kongo defends with Archers behind Ngao Mbeba."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:machinery",
+          "note": "Three Archers in the forest cities; Crossbowmen behind the Ngao Mbeba if the war runs long."
+        },
+        {
+          "id": "tech:military-engineering",
+          "note": "An Aqueduct in the one city with no Mbanza tile; Siege Towers, already in from Construction, if the rival reaches Medieval Walls."
+        },
+        {
+          "id": "tech:castles",
+          "note": "Free from Theocracy, the Tier 2 government this plan adopts."
+        },
+        {
+          "id": "tech:stirrups",
+          "note": "Free from Feudalism."
+        },
+        {
+          "id": "tech:education",
+          "note": "The first Great Scientist, which Classical Republic and one Campus eventually produce; Universities for Printing."
+        },
+        {
+          "id": "tech:mass-production",
+          "note": "Free from the Lumber Mill on the reserved Woods tile; Kongo keeps its trees and still gets the Eureka."
+        },
+        {
+          "id": "tech:buttress",
+          "note": "Apadana or Mahabodhi completes; Mont St. Michel itself comes from Divine Right, not a tech."
+        },
+        {
+          "id": "tech:printing",
+          "note": "Two Universities; the Science this plan otherwise neglects."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:feudalism",
+          "note": "Six Farms across the continent; Serfdom for the Builders."
+        },
+        {
+          "id": "civic:civil-service",
+          "note": "The capital at ten population on Mbanza Housing; Meritocracy."
+        },
+        {
+          "id": "civic:guilds",
+          "note": "Two Markets; the Mbanza unlocks here, two eras before anyone's Neighborhood."
+        },
+        {
+          "id": "civic:divine-right",
+          "note": "Two Temples; Mont St. Michel and Gothic Architecture."
+        },
+        {
+          "id": "civic:medieval-faires",
+          "note": "Four Trade Routes to Kumasi and the captured cities."
+        },
+        {
+          "id": "civic:mercenaries",
+          "note": "Eight land units is the Ngao Mbeba war; Professional Army to upgrade them afterwards."
+        },
+        {
+          "id": "civic:humanism",
+          "note": "Free from the first Great Artist, which Nkisi delivers early; Frescoes and Art Museums."
+        },
+        {
+          "id": "civic:reformed-church",
+          "note": "Six cities following the religion is the home continent; Theocracy."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Serfdom",
+          "slot": "economic",
+          "from": "civic:feudalism",
+          "why": "Builders with extra charges for the Farms and Mines around cities that never chop."
+        },
+        {
+          "card": "Meritocracy",
+          "slot": "economic",
+          "from": "civic:civil-service",
+          "why": "One Culture per specialty district in every city; three districts in eight cities."
+        },
+        {
+          "card": "Gothic Architecture",
+          "slot": "economic",
+          "from": "civic:divine-right",
+          "why": "Wonders faster through the Renaissance; Mont St. Michel and Chichen Itza are both in this phase."
+        },
+        {
+          "card": "Frescoes",
+          "slot": "wildcard",
+          "from": "civic:humanism",
+          "why": "Great Artist points doubled on top of Nkisi; the sculptors arrive two eras early."
+        },
+        {
+          "card": "Professional Army",
+          "slot": "military",
+          "from": "civic:mercenaries",
+          "why": "Ngao Mbeba to Men-at-Arms at half the Gold once the war is done."
+        }
+      ],
+      "districts": [
+        {
+          "district": "mbanza",
+          "city": "every city",
+          "note": "On the reserved tile the turn Guilds lands; Housing for Civil Service and Urbanization, and the Sanitation Eureka at two."
+        },
+        {
+          "district": "theater-square",
+          "city": "every captured city",
+          "note": "Pinned the turn the city is taken; the Mbanza tile reserved the same turn."
+        },
+        {
+          "district": "aqueduct",
+          "city": "the one city without a Woods or Rainforest tile",
+          "note": "Housing where the Mbanza cannot go, and the Military Engineering Eureka."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Mont St. Michel",
+          "why": "Every Apostle gets Martyr without Yerevan, and two Relic slots; it is Nkisi's wonder and Mvemba could never build it.",
+          "skip_if": "Divine Right lands after turn 130, or no Floodplains or Marsh tile sits inside a city that is not the Mbanza tile."
+        },
+        {
+          "name": "Chichen Itza",
+          "why": "Two Culture and one Production on every Rainforest tile in the city; the Rainforest Kongo never chopped pays twice.",
+          "skip_if": "Guilds lands after turn 125 or no city has three or more Rainforest tiles beyond its Mbanza."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "moksha",
+          "promotion": "Patron Saint",
+          "city": "the Mahabodhi or second Holy Site city",
+          "why": "Apostles with an extra promotion level; with Yerevan every one is a Martyr and something else."
+        },
+        {
+          "governor": "victor",
+          "promotion": "Garrison Commander",
+          "city": "the first captured city",
+          "why": "Loyalty and Strength in the city the rival will try to take back."
+        },
+        {
+          "governor": "pingala",
+          "promotion": "Grants",
+          "city": "capital",
+          "why": "Great Person points doubled in the city with the Palace slots."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "yerevan",
+          "why": "Keep suzerainty through the war; the Martyr promotion is the Relic supply."
+        },
+        {
+          "slug": "antananarivo",
+          "why": "Culture per Great Person ever earned, and Kongo earns one every few turns."
+        },
+        {
+          "type": "Religious",
+          "why": "Faith in every Shrine at three envoys and every Temple at six; Faith buys the Great Artists."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-artist",
+          "why": "Donatello and Michelangelo first; their sculptures are Food, Production and Gold in the city they hang in."
+        },
+        {
+          "class": "great-merchant",
+          "why": "Nkisi speeds these too; Marco Polo and Irene of Athens pay for Trade Routes and Great People."
+        },
+        {
+          "class": "great-general",
+          "why": "One with six Ngao Mbeba makes the Ram siege a three-turn job."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 115,
+          "test": "Mbanza in every city, the rival's border city taken with a Monument and Victor in it, two Temples, and the first Relic in a slot?",
+          "pass": "Continue; Mont St. Michel and the Art Museums.",
+          "fail": "A Mbanza missing because its tile was chopped: Aqueduct there and mark it. War stalled at Walls for three turns: take the smaller city or make peace; the continent can wait for Siege Towers."
+        },
+        {
+          "turn": 150,
+          "test": "Eight cities or every site on the continent filled, Mont St. Michel or Chichen Itza built, three Relics, two Art Museums with a sculpture each, and Culture top two?",
+          "pass": "Enter the live phase; the empire is as large as it will be.",
+          "fail": "Culture third or lower: Great Works are missing, not districts; buy a Great Artist with Faith and fill the Palace before any building. Sites still open: one last Settler, on the home side only."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "consolidate-war",
+          "turn": 85,
+          "text": "Declare on the continent rival with the Ngao Mbeba already in the forest beside their border city; Ram first, Monument the turn it falls, no city razed."
+        },
+        {
+          "id": "consolidate-mbanzas",
+          "turn": 105,
+          "text": "Guilds complete: Mbanza queued on the reserved tile in every city the same turn; check that none was chopped."
+        },
+        {
+          "id": "consolidate-martyrs",
+          "turn": 110,
+          "text": "Two Apostles bought with Faith, promoted Martyr through Yerevan, sent to debate a rival Apostle; the loser is a Relic."
+        },
+        {
+          "id": "consolidate-mont-st-michel",
+          "turn": 130,
+          "text": "Mont St. Michel on Floodplains or Marsh in a Holy Site city; Gothic Architecture slotted while it builds."
+        },
+        {
+          "id": "consolidate-sculptures",
+          "turn": 150,
+          "text": "Art Museums in the two largest Theater Squares; the first sculptor's works in them or in the Palace, and the city's Food and Production checked."
+        }
+      ]
+    },
+    {
+      "id": "live",
+      "name": "Live inside the ceiling",
+      "turns": {
+        "from": 151,
+        "to": 220
+      },
+      "era": "industrial",
+      "objective": "Turn Culture into Tourism inside the empire the lens drew: Archaeological Museums dig Artifacts that feed Nkisi, Hermitage and themed Art Museums hold the sculptures, a National Park goes in the Woods no Builder ever chopped, and the religion is carried overseas by Apostles because no Settler will be. Housing is the Mbanzas; nothing else is built for growth.",
+      "build_order": [
+        {
+          "item": "Archaeological Museum",
+          "why": "Two cities; Archaeologists dig Artifacts, each one Food, Production and Gold under Nkisi, and the Combustion Eureka."
+        },
+        {
+          "item": "University",
+          "why": "In the one or two Campuses; enough Science to reach Electricity and Computers before the Tourism stalls."
+        },
+        {
+          "item": "Bank",
+          "why": "Two for Economics; Kongo's Gold buys Great Musicians when the points are short."
+        },
+        {
+          "item": "Industrial Zone",
+          "why": "One, in the middle of the continent, Workshop then Factory; the Production the wonders need."
+        },
+        {
+          "item": "Apostle",
+          "why": "Four at a time to the largest overseas civilization; the religion travels where cities cannot."
+        },
+        {
+          "item": "Broadcast Center",
+          "why": "Every Theater Square; Great Musician slots and the Satellites Eureka at two."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:banking",
+          "note": "Free from Guilds."
+        },
+        {
+          "id": "tech:industrialization",
+          "note": "Two Workshops if a second Industrial Zone is built; otherwise researched with the Culture lead paying."
+        },
+        {
+          "id": "tech:scientific-theory",
+          "note": "Free from The Enlightenment."
+        },
+        {
+          "id": "tech:sanitation",
+          "note": "Free: two Mbanzas have stood since turn 110."
+        },
+        {
+          "id": "tech:economics",
+          "note": "Two Banks in the Commercial Hubs."
+        },
+        {
+          "id": "tech:combustion",
+          "note": "The first Artifact dug; free."
+        },
+        {
+          "id": "tech:flight",
+          "note": "Owning the Hermitage or any Industrial wonder; Flight turns the Culture on improvements into Tourism."
+        },
+        {
+          "id": "tech:radio",
+          "note": "A National Park in the untouched Woods; Mass Media is free with it."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:the-enlightenment",
+          "note": "Three Great People was done by turn 90; Rationalism is not the card, Free Market is."
+        },
+        {
+          "id": "civic:mercantilism",
+          "note": "Free from the first Great Merchant, long since earned."
+        },
+        {
+          "id": "civic:civil-engineering",
+          "note": "Seven district types; free once the Industrial Zone and Entertainment Complex exist."
+        },
+        {
+          "id": "civic:opera-and-ballet",
+          "note": "Free from the first Art Museum; Grand Opera."
+        },
+        {
+          "id": "civic:natural-history",
+          "note": "Free from the first Archaeological Museum; Archaeologists."
+        },
+        {
+          "id": "civic:urbanization",
+          "note": "The capital at fifteen population on Mbanza Housing; Neighborhoods are not needed."
+        },
+        {
+          "id": "civic:conservation",
+          "note": "A Mbanza on a Breathtaking Woods tile beside the river or coast; National Parks."
+        },
+        {
+          "id": "civic:mass-media",
+          "note": "Free from Radio; Cristo Redentor."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Grand Opera",
+          "slot": "economic",
+          "from": "civic:opera-and-ballet",
+          "why": "Doubles the Culture of Theater Square buildings in every city."
+        },
+        {
+          "card": "Free Market",
+          "slot": "economic",
+          "from": "civic:the-enlightenment",
+          "why": "Gold from Commercial Hub buildings; Great Musicians are bought, not waited for."
+        },
+        {
+          "card": "Theocracy",
+          "slot": "wildcard",
+          "from": "civic:reformed-church",
+          "why": "The government: Faith purchases cheaper, and this plan buys Great Artists, Musicians and Apostles with Faith."
+        }
+      ],
+      "districts": [
+        {
+          "district": "industrial-zone",
+          "city": "the central city",
+          "note": "One Factory covers the continent; Civil Engineering's seventh district type."
+        },
+        {
+          "district": "campus",
+          "city": "capital",
+          "note": "The one Campus, late, for a University and Electricity on time."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Hermitage",
+          "why": "Four Great Work of Art slots in one building, and Kongo has the sculptors to fill it.",
+          "skip_if": "Natural History lands after turn 205 or Russia is ahead on the civic."
+        },
+        {
+          "name": "Eiffel Tower",
+          "why": "Two Appeal on every tile; the National Park and the Mbanza Conservation tile both pay more.",
+          "skip_if": "Steel lands after turn 230 or France is ahead on the Industrial techs."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "reyna",
+          "promotion": "Forestry Management",
+          "city": "the city with the most unimproved Woods",
+          "why": "Gold and Appeal on the Woods and Rainforest this empire never chopped; the National Park city."
+        },
+        {
+          "governor": "pingala",
+          "promotion": "Curator",
+          "city": "capital",
+          "why": "Tourism from Great Works doubled in the city with the Palace slots full."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "kumasi",
+          "why": "Culture and Gold per district on every route; the routes run to Kumasi itself."
+        },
+        {
+          "type": "Cultural",
+          "why": "Culture in every Art Museum and Archaeological Museum at six envoys."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-artist",
+          "why": "Bernini and every sculptor after; a themed sculpture museum is Cultural Heritage for free."
+        },
+        {
+          "class": "great-musician",
+          "why": "Nkisi speeds these; the Broadcast Centers hold them."
+        },
+        {
+          "class": "great-merchant",
+          "why": "The ones with Amenities or Tourism; a continent of cities at ten percent extra is tight on Amenities."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 185,
+          "test": "Two Archaeological Museums digging, four Relics, Hermitage under construction, the religion in a majority of cities on one other continent, and Tourism leading half the table?",
+          "pass": "Continue to the close.",
+          "fail": "Tourism behind: open borders and a Trade Route with every civ ahead of you, then Faith-buy a Great Musician. Religion not travelling: four Apostles at once with Proselytizer, under escort."
+        },
+        {
+          "turn": 220,
+          "test": "Three themed museums, Grand Opera slotted, a National Park, and Culture first?",
+          "pass": "Enter the close.",
+          "fail": "Great Works unthemed: trade Great Works with civs behind on Culture to finish sets before any building. No Park: the Woods were chopped; Seaside Resorts on the coast instead if there is one."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "live-archaeologists",
+          "turn": 165,
+          "text": "Two Archaeological Museums with Archaeologists out; each Artifact placed where the Food and Production help most."
+        },
+        {
+          "id": "live-overseas-religion",
+          "turn": 180,
+          "text": "Four Apostles shipped to the largest overseas civilization; no Settler goes with them."
+        },
+        {
+          "id": "live-national-park",
+          "turn": 200,
+          "text": "National Park on four Breathtaking tiles of unchopped Woods, Reyna in the city; Radio collected."
+        },
+        {
+          "id": "live-hermitage",
+          "turn": 215,
+          "text": "Hermitage built and three sculptures in it; check the themed museum for Cultural Heritage."
+        }
+      ]
+    },
+    {
+      "id": "close",
+      "name": "Close",
+      "turns": {
+        "from": 221,
+        "to": null
+      },
+      "era": "modern",
+      "objective": "Finish Culture from inside the continent: Rock Bands bought with the Faith the Holy Sites banked, Heritage Tourism and Online Communities, Computers and Social Media, Cristo Redentor if Faith allows, open borders with everyone. The Ngao Mbeba are Infantry on the border and nothing else is built for war.",
+      "build_order": [
+        {
+          "item": "Rock Band",
+          "why": "Bought with Faith in the Theocracy; sent at the civ with the most domestic Tourists."
+        },
+        {
+          "item": "Broadcast Center",
+          "why": "Any Theater Square that lacks one; Satellites at two."
+        },
+        {
+          "item": "Stock Exchange",
+          "why": "Two for Capitalism; Gold for Rock Bands when Faith runs short."
+        },
+        {
+          "item": "Stadium",
+          "why": "In the central Entertainment Complex; Amenities for a continent of large cities."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:electricity",
+          "note": "Power for the Factory and the Broadcast Centers; researched unboosted unless the coast has Privateers."
+        },
+        {
+          "id": "tech:computers",
+          "note": "Eureka only if a Tier 3 government replaces Theocracy; Tourism up a quarter the turn it lands."
+        },
+        {
+          "id": "tech:satellites",
+          "note": "Two Broadcast Centers."
+        },
+        {
+          "id": "tech:chemistry",
+          "note": "Alliance level 2 with the Cultural ally."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:cultural-heritage",
+          "note": "Free from the themed sculpture museum; Heritage Tourism."
+        },
+        {
+          "id": "civic:social-media",
+          "note": "Free from Telecommunications; Online Communities."
+        },
+        {
+          "id": "civic:capitalism",
+          "note": "Two Stock Exchanges."
+        },
+        {
+          "id": "civic:distributed-sovereignty",
+          "note": "The first Rock Band."
+        },
+        {
+          "id": "civic:professional-sports",
+          "note": "Two Entertainment Complexes; Stadiums."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Heritage Tourism",
+          "slot": "economic",
+          "from": "civic:cultural-heritage",
+          "why": "Doubles Tourism from Great Works of Art and Artifacts, which is most of this empire's Tourism."
+        },
+        {
+          "card": "Online Communities",
+          "slot": "economic",
+          "from": "civic:social-media",
+          "why": "Half again as much Tourism toward every civ you trade with."
+        },
+        {
+          "card": "Satellite Broadcasts",
+          "slot": "economic",
+          "from": "civic:space-race",
+          "why": "Tourism from Great Works of Music tripled; the Broadcast Centers are full of them."
+        }
+      ],
+      "districts": [
+        {
+          "district": "entertainment-complex",
+          "city": "the central city",
+          "note": "Stadium Amenities to every city within six tiles."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Cristo Redentor",
+          "why": "Religious Tourism keeps its full value after other civs reach The Enlightenment, and Seaside Resort Tourism is doubled if there is a coast.",
+          "skip_if": "Mass Media lands after turn 250 or Brazil is on the map."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "amani",
+          "promotion": "Emissary",
+          "city": "the city nearest the civ furthest behind on your Tourism",
+          "why": "Open borders and an envoy where the last Tourists are."
+        }
+      ],
+      "city_states": [],
+      "great_people": [
+        {
+          "class": "great-musician",
+          "why": "Every one until the end; each is three Tourism sources."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 260,
+          "test": "Tourists ahead of every civ's domestic Tourists but one, Computers in, Heritage Tourism and Online Communities slotted?",
+          "pass": "Rock Bands at the last civ until it falls; no further decisions.",
+          "fail": "One civ with a large domestic count: every Rock Band and open-borders deal at that civ alone; trade Great Works for theirs."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "close-rock-bands",
+          "turn": 235,
+          "text": "First two Rock Bands bought with Faith and sent at the civ with the most domestic Tourists."
+        },
+        {
+          "id": "close-open-borders",
+          "turn": 240,
+          "text": "Open borders and a Trade Route with every civ still ahead on domestic Tourists."
+        },
+        {
+          "id": "close-garrison",
+          "turn": 250,
+          "text": "Ngao Mbeba line upgraded to Infantry on the forest border; nothing else built for war."
+        }
+      ]
+    }
+  ],
+  "boosts": [
+    {
+      "id": "tech:sailing",
+      "fit": "cheap",
+      "when": "claim",
+      "how": "City two or three on the coast if the home continent has one; otherwise unboosted."
+    },
+    {
+      "id": "tech:astrology",
+      "fit": "cheap",
+      "when": "assess",
+      "how": "The survey Scout walks the boundary, where natural wonders sit; researched first regardless."
+    },
+    {
+      "id": "tech:irrigation",
+      "fit": "cheap",
+      "when": "claim",
+      "how": "A Farm on Rice or Wheat near the capital from the first Builder."
+    },
+    {
+      "id": "tech:archery",
+      "fit": "cheap",
+      "when": "assess",
+      "how": "One Slinger kill on a camp scout if a camp sits within four tiles; otherwise unboosted."
+    },
+    {
+      "id": "tech:writing",
+      "fit": "free",
+      "when": "assess",
+      "how": "The Scout meets the continent rival on the survey."
+    },
+    {
+      "id": "tech:masonry",
+      "fit": "cheap",
+      "when": "claim",
+      "how": "A Quarry on Stone near any of the first three cities."
+    },
+    {
+      "id": "tech:bronze-working",
+      "fit": "cheap",
+      "when": "assess",
+      "how": "Three camp kills by the two Warriors while the Scout surveys."
+    },
+    {
+      "id": "tech:wheel",
+      "fit": "cheap",
+      "when": "claim",
+      "how": "A Mine on a resource hill from the first Builder."
+    },
+    {
+      "id": "tech:celestial-navigation",
+      "fit": "costly",
+      "when": "claim",
+      "how": "Two Fishing Boats only if two coastal cities exist; the Harbor is not a priority."
+    },
+    {
+      "id": "tech:currency",
+      "fit": "cheap",
+      "when": "claim",
+      "how": "The first Trader between the capital and city two."
+    },
+    {
+      "id": "tech:horseback-riding",
+      "fit": "costly",
+      "when": "claim",
+      "how": "A Pasture only if Horses or Sheep sit inside a city's rings."
+    },
+    {
+      "id": "tech:iron-working",
+      "fit": "cheap",
+      "when": "claim",
+      "how": "A Mine on the Iron Bronze Working revealed; the Ngao Mbeba needs the tech, not the Iron."
+    },
+    {
+      "id": "tech:shipbuilding",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:mathematics",
+      "fit": "free",
+      "when": "claim",
+      "how": "Holy Site, Theater Square and Commercial Hub in the capital by turn 60."
+    },
+    {
+      "id": "tech:construction",
+      "fit": "cheap",
+      "when": "claim",
+      "how": "A Water Mill in the river city."
+    },
+    {
+      "id": "tech:engineering",
+      "fit": "cheap",
+      "when": "claim",
+      "how": "Ancient Walls in the border city before the Ngao Mbeba war."
+    },
+    {
+      "id": "tech:military-tactics",
+      "fit": "costly",
+      "when": "consolidate",
+      "how": "A Spearman kill, which this army rarely has a Spearman for."
+    },
+    {
+      "id": "tech:buttress",
+      "fit": "cheap",
+      "when": "consolidate",
+      "how": "Apadana or Mahabodhi Temple completes."
+    },
+    {
+      "id": "tech:apprenticeship",
+      "fit": "cheap",
+      "when": "claim",
+      "how": "Three Mines across the first four cities, on hills without trees."
+    },
+    {
+      "id": "tech:stirrups",
+      "fit": "free",
+      "when": "consolidate",
+      "how": "Feudalism is on the civic path."
+    },
+    {
+      "id": "tech:machinery",
+      "fit": "cheap",
+      "when": "consolidate",
+      "how": "Three Archers as the forest garrison behind the Ngao Mbeba."
+    },
+    {
+      "id": "tech:education",
+      "fit": "cheap",
+      "when": "consolidate",
+      "how": "The first Great Scientist from Classical Republic and the capital Campus."
+    },
+    {
+      "id": "tech:military-engineering",
+      "fit": "cheap",
+      "when": "consolidate",
+      "how": "The Aqueduct in the one city with no Mbanza tile."
+    },
+    {
+      "id": "tech:castles",
+      "fit": "free",
+      "when": "consolidate",
+      "how": "Any Tier 2 government."
+    },
+    {
+      "id": "tech:cartography",
+      "fit": "costly",
+      "when": "consolidate",
+      "how": "Two Harbors only on a coastal continent; usually unboosted."
+    },
+    {
+      "id": "tech:mass-production",
+      "fit": "free",
+      "when": "consolidate",
+      "how": "The Lumber Mill on the reserved Woods tile; it keeps the trees."
+    },
+    {
+      "id": "tech:banking",
+      "fit": "free",
+      "when": "live",
+      "how": "Guilds is on the civic path."
+    },
+    {
+      "id": "tech:gunpowder",
+      "fit": "cheap",
+      "when": "consolidate",
+      "how": "An Armory in the Encampment that built the Ngao Mbeba."
+    },
+    {
+      "id": "tech:printing",
+      "fit": "cheap",
+      "when": "consolidate",
+      "how": "Two Universities, capital and the Campus city."
+    },
+    {
+      "id": "tech:square-rigging",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:astronomy",
+      "fit": "costly",
+      "when": "live",
+      "how": "A University beside a Mountain only if the Campus happens to touch one."
+    },
+    {
+      "id": "tech:metal-casting",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:siege-tactics",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:industrialization",
+      "fit": "costly",
+      "when": "live",
+      "how": "Two Workshops only if a second Industrial Zone is worth building; usually one."
+    },
+    {
+      "id": "tech:scientific-theory",
+      "fit": "free",
+      "when": "live",
+      "how": "The Enlightenment is on the civic path."
+    },
+    {
+      "id": "tech:ballistics",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:military-science",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:steam-power",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:sanitation",
+      "fit": "free",
+      "when": "live",
+      "how": "Two Mbanzas, standing since the consolidate phase."
+    },
+    {
+      "id": "tech:economics",
+      "fit": "cheap",
+      "when": "live",
+      "how": "Two Banks in the Commercial Hubs; Kongo's Gold is already there."
+    },
+    {
+      "id": "tech:rifling",
+      "fit": "costly",
+      "when": "live",
+      "how": "A Mine on Niter only if one sits inside a city."
+    },
+    {
+      "id": "tech:flight",
+      "fit": "cheap",
+      "when": "live",
+      "how": "Owning the Hermitage or Eiffel Tower."
+    },
+    {
+      "id": "tech:refining",
+      "fit": "cheap",
+      "when": "live",
+      "how": "The Coal Power Plant in the central Industrial Zone."
+    },
+    {
+      "id": "tech:electricity",
+      "fit": "costly",
+      "when": "close",
+      "how": "Two Privateers only on a coast; usually unboosted."
+    },
+    {
+      "id": "tech:radio",
+      "fit": "cheap",
+      "when": "live",
+      "how": "A National Park in the Woods no Builder chopped, with Reyna in the city."
+    },
+    {
+      "id": "tech:chemistry",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Alliance level 2 with the Cultural ally."
+    },
+    {
+      "id": "tech:combustion",
+      "fit": "free",
+      "when": "live",
+      "how": "The first Artifact dug by an Archaeologist."
+    },
+    {
+      "id": "tech:plastics",
+      "fit": "cheap",
+      "when": "close",
+      "how": "An Oil Well on the nearest Oil."
+    },
+    {
+      "id": "tech:computers",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Adopting any Tier 3 government; the plan otherwise stays in Theocracy."
+    },
+    {
+      "id": "tech:satellites",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Broadcast Centers in the Theater Squares."
+    },
+    {
+      "id": "civic:craftsmanship",
+      "fit": "free",
+      "when": "assess",
+      "how": "Three improvements from the first Builder."
+    },
+    {
+      "id": "civic:foreign-trade",
+      "fit": "free",
+      "when": "assess",
+      "how": "The survey Scout sights the second continent from the boundary."
+    },
+    {
+      "id": "civic:military-tradition",
+      "fit": "cheap",
+      "when": "assess",
+      "how": "The first camp cleared by the two Warriors."
+    },
+    {
+      "id": "civic:state-workforce",
+      "fit": "free",
+      "when": "claim",
+      "how": "The capital Holy Site, the first district."
+    },
+    {
+      "id": "civic:early-empire",
+      "fit": "free",
+      "when": "claim",
+      "how": "Six population across the first three cities."
+    },
+    {
+      "id": "civic:mysticism",
+      "fit": "free",
+      "when": "claim",
+      "how": "The pantheon founded by turn 20."
+    },
+    {
+      "id": "civic:political-philosophy",
+      "fit": "cheap",
+      "when": "claim",
+      "how": "Three city-states met on the survey."
+    },
+    {
+      "id": "civic:drama-and-poetry",
+      "fit": "cheap",
+      "when": "claim",
+      "how": "Apadana; Mahabodhi Temple needs Theology, which comes after."
+    },
+    {
+      "id": "civic:games-and-recreation",
+      "fit": "free",
+      "when": "claim",
+      "how": "Researching Construction."
+    },
+    {
+      "id": "civic:military-training",
+      "fit": "cheap",
+      "when": "claim",
+      "how": "The Encampment in the border city for the Ngao Mbeba."
+    },
+    {
+      "id": "civic:theology",
+      "fit": "free",
+      "when": "claim",
+      "how": "Founding the religion from two Holy Sites."
+    },
+    {
+      "id": "civic:defensive-tactics",
+      "fit": "cheap",
+      "when": "claim",
+      "how": "The continent rival declares on you first, which an AI that shares a continent usually does."
+    },
+    {
+      "id": "civic:recorded-history",
+      "fit": "costly",
+      "when": "consolidate",
+      "how": "Two Campuses is one more than this plan builds; usually unboosted."
+    },
+    {
+      "id": "civic:naval-tradition",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:feudalism",
+      "fit": "cheap",
+      "when": "consolidate",
+      "how": "Six Farms across the continent."
+    },
+    {
+      "id": "civic:civil-service",
+      "fit": "cheap",
+      "when": "consolidate",
+      "how": "The capital at ten population on Mbanza Housing."
+    },
+    {
+      "id": "civic:mercenaries",
+      "fit": "cheap",
+      "when": "consolidate",
+      "how": "Eight land units is the Ngao Mbeba war plus the Archers."
+    },
+    {
+      "id": "civic:divine-right",
+      "fit": "cheap",
+      "when": "consolidate",
+      "how": "Two Temples, each holding a Relic."
+    },
+    {
+      "id": "civic:guilds",
+      "fit": "cheap",
+      "when": "consolidate",
+      "how": "Two Markets; the Mbanza unlocks with it."
+    },
+    {
+      "id": "civic:medieval-faires",
+      "fit": "cheap",
+      "when": "consolidate",
+      "how": "Four Trade Routes to Kumasi and the captured cities."
+    },
+    {
+      "id": "civic:exploration",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:humanism",
+      "fit": "free",
+      "when": "consolidate",
+      "how": "The first Great Artist, which Nkisi and Frescoes bring two eras early."
+    },
+    {
+      "id": "civic:diplomatic-service",
+      "fit": "cheap",
+      "when": "live",
+      "how": "A Cultural Alliance with the nearest friendly overseas civ."
+    },
+    {
+      "id": "civic:reformed-church",
+      "fit": "cheap",
+      "when": "consolidate",
+      "how": "Six cities following the religion, which is the home continent."
+    },
+    {
+      "id": "civic:mercantilism",
+      "fit": "free",
+      "when": "live",
+      "how": "The first Great Merchant from the Commercial Hubs and Nkisi."
+    },
+    {
+      "id": "civic:the-enlightenment",
+      "fit": "free",
+      "when": "live",
+      "how": "Three Great People by the Medieval era."
+    },
+    {
+      "id": "civic:civil-engineering",
+      "fit": "cheap",
+      "when": "live",
+      "how": "Seven district types once the Industrial Zone and Entertainment Complex exist."
+    },
+    {
+      "id": "civic:nationalism",
+      "fit": "costly",
+      "when": "live",
+      "how": "Only if the Ngao Mbeba war was declared with a Casus Belli; usually unboosted."
+    },
+    {
+      "id": "civic:opera-and-ballet",
+      "fit": "free",
+      "when": "live",
+      "how": "The first Art Museum, built for the sculptures."
+    },
+    {
+      "id": "civic:natural-history",
+      "fit": "free",
+      "when": "live",
+      "how": "The first Archaeological Museum."
+    },
+    {
+      "id": "civic:colonialism",
+      "fit": "free",
+      "when": "live",
+      "how": "Astronomy is a prerequisite of Scientific Theory, which the plan researches."
+    },
+    {
+      "id": "civic:urbanization",
+      "fit": "cheap",
+      "when": "live",
+      "how": "The capital at fifteen population on Mbanza Housing and a Sewer."
+    },
+    {
+      "id": "civic:conservation",
+      "fit": "cheap",
+      "when": "live",
+      "how": "A Mbanza on a Breathtaking Woods tile beside the river or coast."
+    },
+    {
+      "id": "civic:mass-media",
+      "fit": "free",
+      "when": "live",
+      "how": "Research Radio first; the Inspiration follows."
+    },
+    {
+      "id": "civic:capitalism",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Stock Exchanges."
+    },
+    {
+      "id": "civic:class-struggle",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:cultural-heritage",
+      "fit": "free",
+      "when": "close",
+      "how": "The first themed sculpture museum."
+    },
+    {
+      "id": "civic:social-media",
+      "fit": "free",
+      "when": "close",
+      "how": "Researching Telecommunications."
+    },
+    {
+      "id": "civic:professional-sports",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Entertainment Complexes."
+    },
+    {
+      "id": "civic:distributed-sovereignty",
+      "fit": "cheap",
+      "when": "close",
+      "how": "The first Rock Band bought with Faith."
+    },
+    {
+      "id": "civic:space-race",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    }
+  ],
+  "decision_triggers": [
+    {
+      "name": "The lens says move",
+      "if": "On turn 1 the continent lens shows the boundary within two tiles of the Settler and the other side holds two or more extra sites.",
+      "then": "Move one tile across and settle on turn 2. One turn of Production is nothing against two cities for the whole game; this is the only move the plan ever asks for."
+    },
+    {
+      "name": "A tempting overseas city",
+      "if": "A peace deal, a city-state liberation, a flipped city or a captured city offers you a city on another continent.",
+      "then": "Refuse it, raze it if it is a capture that can be razed, or give it back in the deal. Every yield in it is fifteen percent down for the rest of the game, and it cannot be moved. The settle map has the prohibition written on it for this moment."
+    },
+    {
+      "name": "The rival builds Walls first",
+      "if": "The continent rival's border city shows Medieval Walls before the Ngao Mbeba are in the forest beside it.",
+      "then": "Do not besiege it with a Ram. Take their smaller city instead, or bring Siege Towers from Construction; the Ngao Mbeba garrison the border in the meantime and lose nothing by waiting."
+    },
+    {
+      "name": "A chopped Mbanza tile",
+      "if": "A Builder or a Harvest has removed the Woods or Rainforest on a city's reserved Mbanza tile.",
+      "then": "Mark the next Woods tile in the second ring the same turn, or if there is none, an Aqueduct goes where the Mbanza would have. No further chop inside two tiles of any pinned site; Magnus's Groundbreaker bonus is never used to harvest in this empire."
+    }
+  ],
+  "abort": {
+    "trigger": "Turn 80 with fewer than four cities on the home continent and no rival city within reach of the Ngao Mbeba, or a capital that turned out to be on the smaller side of the line with the larger side already settled by rivals.",
+    "actions": [
+      "Stop founding cities; what stands is the empire, and the plan says so. No Settler goes overseas to make up the numbers.",
+      "Play Kongo tall as Mvemba's players did: every Palace slot and Amphitheater filled, Apadana, Mont St. Michel and the Hermitage in the capital, Great Artists bought with Faith.",
+      "Carry the religion overseas with Apostles and Mont St. Michel Relics; Religion is the fallback victory that needs no city off the continent."
+    ]
+  },
+  "fail_state": "Turn 150 with a city or two on the wrong continent at fifteen percent down, Woods chopped where the Mbanzas were meant to go, Aqueducts built instead, a continent rival still holding the sites the Ngao Mbeba were for, and Culture in the middle of the table. The capital tile and the chopping that caused it were decided before turn 30 and no city can be moved.",
+  "common_mistakes": [
+    "Settling before opening the continent lens. The landmass is not the continent; one landmass can be two continents and the line is invisible until the lens is on.",
+    "Chopping Woods and Rainforest for early Production. The Mbanza needs the trees and nothing else in the kit replaces its Housing; Magnus's Groundbreaker harvests are the wrong use of him for Kongo.",
+    "Taking an overseas city because it was free. It is fifteen percent down forever and the plan has no use for it.",
+    "Playing Nzinga like Mvemba and skipping Holy Sites. Nzinga's Kongo founds a religion, and the Relics that feed Nkisi come from it.",
+    "Storing Great Works instead of placing them. A sculpture in the Palace is Food, Production and Gold for the capital the turn it lands; an unslotted one is nothing."
+  ],
+  "sources": [
+    "Civilization VI Civilopedia, Gathering Storm ruleset with the Leader Pass (Kongo, Nzinga Mbande, Nkisi, Ngao Mbeba, Mbanza). Queen of Ndongo and Matamba is taken as +10% to all yields in cities on the capital's continent and -15% in cities elsewhere; the Mbanza as +5 Housing, +2 Food, +4 Gold on Woods or Rainforest, unlocked at Guilds.",
+    "The civ-info and affinity text describe Kongo as unable to found a religion; that is Mvemba a Nzinga's Religious Convert ability, which Nzinga Mbande does not carry. Under Nzinga, Kongo builds Holy Sites and founds a religion, and the plan uses that. The Ngao Mbeba unlocks at Iron Working and requires no Iron.",
+    "Boost objectives cross-checked against civilization6planner.com tech-tree and civics-tree pages, 2026-10-01. Two Mbanzas are taken to satisfy the Sanitation Eureka as the Neighborhood replacement.",
+    "Leadership Focus tags, caveats and Front-Load template for Nzinga Mbande in this repository."
+  ]
+}

@@ -1,0 +1,1908 @@
+{
+  "slug": "catherine-de-medici",
+  "shape": "Linear",
+  "secondary_shape": null,
+  "version": 1,
+  "updated": "2026-10-01",
+  "assumptions": {
+    "ruleset": "Gathering Storm with every expansion and the Leader Pass",
+    "speed": "Standard",
+    "difficulty": "Emperor",
+    "map": "Continents or Pangaea, standard size, 8 civilizations",
+    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. This plans Catherine de Medici (Black Queen), the espionage persona, not the Magnificence persona."
+  },
+  "verdict": {
+    "victory": "Culture",
+    "secondary": "Domination",
+    "confidence": "medium",
+    "one_line": "Build the Medieval, Renaissance and Industrial wonders at a fifth off and double their Tourism, line the rivers with Châteaux, and use the free Spy and the visibility edge to see every rival's progress before they see yours. If the home continent holds a weak neighbour, the same visibility is a standing +3 Combat Strength and the Garde Impériale finishes the job.",
+    "why": "Grand Tour is the only wonder discount in the game that covers three consecutive eras, and doubling Tourism from every wonder means each one built is two for the Culture race. That is a Culture engine that needs no religion and no Great Work luck, which is why Culture is the verdict. Catherine's Flying Squadron adds nothing to Tourism directly; what it adds is information and a permanent +3 Combat Strength per visibility level against every civilization she has met, which is a Domination amplifier that costs nothing to hold in reserve. The kit never forces a choice, so the plan forces one at turn 70: the player who drifts between the two has a lovely empire and a Score game."
+  },
+  "map_check": {
+    "must_have": [
+      "A capital on or beside a river with at least three Production hills or Woods in the first two rings; the wonder race is a Production race.",
+      "Three or more further river city sites within ten tiles, so Châteaux have banks to sit on from Humanism onward."
+    ],
+    "prefer": [
+      "Grassland and plains rather than tundra or desert, for growth that keeps the wonder cities working.",
+      "Plantation luxuries near the capital for Goddess of Festivals Culture.",
+      "No Qin, Cleopatra, Kristina or Pericles on the same continent; each contests the same wonders and city-states.",
+      "A Cultural or Industrial city-state within envoy reach early (Brussels is +15% toward wonders)."
+    ],
+    "no_go": "A flat, hill-less start with no Woods and no river means no Production for the wonder race and no banks for Châteaux. Both halves of Grand Tour and the whole of the Château are then dead for the game and only the Spy remains.",
+    "fallback": "Move the Settler up to two turns toward a river hill. If the land is still flat, play France as a Theater Square civilization: Great Writers and Artists for Tourism, Spies on Great Work Heist and Steal Tech Boost missions, and the Domination option promoted to the default if a neighbour is within reach, since the visibility bonus does not care about terrain."
+  },
+  "kit_levers": [
+    {
+      "source": "leader_ability",
+      "name": "Catherine's Flying Squadron",
+      "buys": "One extra level of Diplomatic Visibility with every civilization met, a free Spy and an extra Spy slot at Castles, and every Spy starts with a free promotion.",
+      "exploit": "Each visibility level above a rival is +3 Combat Strength against that rival's units and a clearer read of their victory progress. The plan reaches Castles by turn 110, puts the first Spy on Gain Sources and Listening Post to push visibility further, then shifts missions by era: Steal Tech Boost in the Renaissance, Sabotage Production against rival wonder cities in the Industrial era, and Counterspy in the Theater Square and wonder capital once rivals send Spies back."
+    },
+    {
+      "source": "civ_ability",
+      "name": "Grand Tour",
+      "buys": "+20% Production toward Medieval, Renaissance and Industrial era wonders, and double Tourism from every wonder of any era.",
+      "exploit": "Every wonder France finishes counts twice for Tourism, so the plan skips the Ancient and Classical wonders rivals fight over, saves its Production for the three eras the discount covers, and stacks Gothic Architecture on top from Divine Right. Nine to twelve wonders between turn 95 and turn 240 is the target; each is placed where a Château can sit beside it."
+    },
+    {
+      "source": "unique_unit",
+      "name": "Garde Impériale",
+      "buys": "An Industrial era melee unit with higher Combat Strength, +10 when fighting on the capital's home continent, and Great General points from kills.",
+      "exploit": "The Domination option's instrument. Built in bulk at Military Science, promoted under a Great General, and carrying the visibility bonus on top of the continent bonus, a Garde Impériale corps takes neighbouring cities an era before Infantry. It is useless overseas, which is why the Domination option is only offered on a shared continent."
+    },
+    {
+      "source": "unique_infrastructure",
+      "name": "Château",
+      "buys": "A river-only improvement from Humanism that gives Culture and Gold, more beside wonders and luxuries, and Tourism after Flight.",
+      "exploit": "River banks within reach of a wonder are reserved from turn 1 and never farmed. From Humanism every Builder charge in a wonder city goes to Châteaux first, and the Flight tech turns their Culture into Tourism at the moment the Industrial wonders land."
+    },
+    {
+      "source": "agenda",
+      "name": "Black Queen",
+      "buys": "Catherine likes leaders who keep many Spies and high visibility, and dislikes those who ignore espionage.",
+      "exploit": "Irrelevant to your own play, but AI Catherine on the same map will run Spies against your wonder cities from the Renaissance on; park a Counterspy in the capital whenever she is met."
+    }
+  ],
+  "shape_block": {
+    "linear": {
+      "direction": {
+        "options": [
+          {
+            "victory": "Culture",
+            "when_it_fits": "The capital has the Production for a wonder every ten turns from turn 95, at least two rival wonder-builders are absent or far away, and three river cities are up by turn 60. This is the default: Grand Tour and the Château are both Culture tools and nothing else in the game doubles wonder Tourism.",
+            "first_commitment": "Theater Squares in three cities by turn 90 and Gothic Architecture slotted the turn Divine Right lands."
+          },
+          {
+            "victory": "Domination",
+            "when_it_fits": "A neighbour on the home continent is within twelve tiles with three or fewer cities and no Walls by turn 70, you have Iron or Horses, and the visibility edge is already two levels over them. Grand Tour still runs in the background and the captured cities are more wonder sites.",
+            "first_commitment": "An Encampment in the border city by turn 85 and eight land units before Castles, so the free Spy arrives to an army rather than instead of one."
+          },
+          {
+            "victory": "Diplomatic",
+            "when_it_fits": "Only when the map is an island or a tundra start kills the wonder race and no neighbour is reachable: visibility and Spies read every World Congress vote and Diplomatic Favor is bought with the Gold the Châteaux produce. A fallback, not a plan; it loses to any civ with a Diplomatic kit.",
+            "first_commitment": "Suzerainty of three city-states by turn 100 and a Diplomatic Quarter in the capital."
+          }
+        ],
+        "choose_by": 70,
+        "commit_test": "At turn 110 one of these is true: three Medieval wonders finished or under way with Gothic Architecture slotted and Châteaux planned beside them, or a Casus Belli war declared against the home-continent neighbour with eight units and a Battering Ram at their border. If neither is true the bonus is being banked, and the Turn 150 abort applies.",
+        "default": "Culture"
+      },
+      "era_checkpoints": [
+        {
+          "era": "classical",
+          "turn": 70,
+          "question": "Which option? Write it on the plan. Count Production hills in the capital, river sites claimed, rival wonder-builders met, and the nearest neighbour's city count and Walls."
+        },
+        {
+          "era": "medieval",
+          "turn": 110,
+          "question": "Is Grand Tour being spent? A wonder in progress in the capital at all times from Divine Right onward, or the Production is going somewhere the discount does not reach."
+        },
+        {
+          "era": "renaissance",
+          "turn": 160,
+          "question": "Is the chosen path still reachable? Culture: Tourism above the median civilization and six wonders standing. Domination: two cities taken. If not, pivot to the other option now; the flat curve makes the pivot cheap."
+        },
+        {
+          "era": "industrial",
+          "turn": 220,
+          "question": "Is the Spy capacity full and every Spy on a mission that serves the chosen path? Idle Spies are banked bonus."
+        }
+      ],
+      "bonus_spent_test": "Every ten turns from turn 95: is a Medieval, Renaissance or Industrial wonder in the capital's queue, and is every Spy on a mission? Two consecutive 'no' answers are the characteristic failure of this leader."
+    }
+  },
+  "phases": [
+    {
+      "id": "foundation",
+      "name": "Rivers and neighbours",
+      "turns": {
+        "from": 1,
+        "to": 50
+      },
+      "era": "ancient",
+      "objective": "Settle a river capital with Production hills, put four cities on rivers whose banks are left unimproved for Châteaux, meet every civilization on the continent so the visibility edge starts counting, and build no Ancient wonder: the discount does not reach them and the Production is needed for Settlers.",
+      "build_order": [
+        {
+          "item": "Scout",
+          "why": "Meeting civilizations is the Writing Eureka and the start of the visibility count; the Scout also finds the river sites."
+        },
+        {
+          "item": "Slinger",
+          "why": "Archery Eureka on the first barbarian scout and a garrison while the Settlers walk; France has no early military bonus."
+        },
+        {
+          "item": "Settler",
+          "why": "Second city on a river within six tiles of the capital."
+        },
+        {
+          "item": "Monument",
+          "why": "Culture to reach Early Empire and Political Philosophy on time; the Culture path starts here."
+        },
+        {
+          "item": "Builder",
+          "why": "Three improvements for Craftsmanship, a Mine for The Wheel, a Quarry for Masonry; do not improve river banks near future wonder sites."
+        },
+        {
+          "item": "Settler",
+          "why": "Third city, on a river toward the nearest neighbour."
+        },
+        {
+          "item": "Settler",
+          "why": "Fourth city; the wonder cities need a feeder ring of Trade Route destinations."
+        },
+        {
+          "item": "Ancient Walls",
+          "why": "In the city facing the nearest camp or neighbour; Walls by turn 30 is the French barbarian stance."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:animal-husbandry",
+          "note": "Horses reveal and a Pasture for Horseback Riding later."
+        },
+        {
+          "id": "tech:mining",
+          "note": "Mines on the Production hills the wonder race depends on."
+        },
+        {
+          "id": "tech:pottery",
+          "note": "Granary and the path to Writing and Currency."
+        },
+        {
+          "id": "tech:writing",
+          "note": "Eureka free from the first civilization met; Campus for the second city."
+        },
+        {
+          "id": "tech:masonry",
+          "note": "Eureka from a Quarry; Ancient Walls and the path to Engineering."
+        },
+        {
+          "id": "tech:bronze-working",
+          "note": "Iron reveal, which decides whether the Domination option exists; Encampment later."
+        },
+        {
+          "id": "tech:currency",
+          "note": "Eureka from the first Trade Route; Commercial Hub in the capital for Gold and a second route."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:code-of-laws",
+          "note": "God King for a turn-25 pantheon, Discipline against the camps."
+        },
+        {
+          "id": "civic:craftsmanship",
+          "note": "Inspiration from the first Builder; Ilkum for the next ones."
+        },
+        {
+          "id": "civic:foreign-trade",
+          "note": "Trader for the Currency Eureka; Inspiration only if a second continent is sighted."
+        },
+        {
+          "id": "civic:early-empire",
+          "note": "Colonization for the third and fourth Settler; Inspiration at six population."
+        },
+        {
+          "id": "civic:state-workforce",
+          "note": "On the path to Political Philosophy; Inspiration from the first district."
+        },
+        {
+          "id": "civic:political-philosophy",
+          "note": "Classical Republic for the Culture path; Inspiration from three city-states met."
+        }
+      ],
+      "policies": [
+        {
+          "card": "God King",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "Faith for the pantheon by turn 25; France has no other Faith source."
+        },
+        {
+          "card": "Discipline",
+          "slot": "military",
+          "from": "civic:code-of-laws",
+          "why": "Slinger and Warrior beat camp units while the Settlers walk."
+        },
+        {
+          "card": "Ilkum",
+          "slot": "economic",
+          "from": "civic:craftsmanship",
+          "why": "Builders for the Mines the wonder race needs, after the pantheon is bought."
+        },
+        {
+          "card": "Colonization",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "Third and fourth Settler at half the cost."
+        }
+      ],
+      "districts": [
+        {
+          "district": "commercial-hub",
+          "city": "capital",
+          "note": "First district: a second Trade Route, the Gold that later buys Builders for Châteaux, and Great Merchant points for Mercantilism."
+        },
+        {
+          "district": "campus",
+          "city": "second city",
+          "note": "Science keeps pace to Castles and Humanism; Recorded History wants two eventually."
+        }
+      ],
+      "pantheon": {
+        "slug": "goddess-of-festivals",
+        "why": "Culture from every Plantation; it compounds into the civics the Culture path runs on.",
+        "alternative": "god-of-the-open-sky"
+      },
+      "wonders": [],
+      "governors": [],
+      "city_states": [
+        {
+          "type": "Cultural",
+          "why": "The first envoy is Culture in the capital; three is Culture in every Amphitheater."
+        },
+        {
+          "slug": "brussels",
+          "why": "+15% Production toward wonders stacks with Grand Tour; suzerainty here is worth three envoys the moment it is met."
+        }
+      ],
+      "great_people": [],
+      "checkpoints": [
+        {
+          "turn": 50,
+          "test": "Four cities on rivers, every civilization on the continent met, a Commercial Hub down, and no Ancient wonder in any queue?",
+          "pass": "Enter the direction phase; begin the turn-70 count.",
+          "fail": "Three cities is acceptable if the fourth Settler is in production; an Ancient wonder in the queue is Production spent outside the discount, finish it only if it is under five turns from done."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "foundation-settle-river",
+          "turn": 1,
+          "text": "Settle on or beside a river with at least three Production hills or Woods in two rings; move at most two turns to get there."
+        },
+        {
+          "id": "foundation-reserve-banks",
+          "turn": 8,
+          "text": "Mark the river tiles within two of the capital and the second city as Château tiles; no Farms or Mines go on them."
+        },
+        {
+          "id": "foundation-meet-all",
+          "turn": 20,
+          "text": "Scout toward every neighbour; each one met adds a visibility level and the Writing Eureka."
+        },
+        {
+          "id": "foundation-pantheon",
+          "turn": 25,
+          "text": "Found Goddess of Festivals, or God of the Open Sky if the start is pasture country."
+        },
+        {
+          "id": "foundation-fourth-city",
+          "turn": 48,
+          "text": "Fourth city settled on a river; four Trade Route destinations exist for the wonder capital."
+        }
+      ]
+    },
+    {
+      "id": "direction",
+      "name": "Choose and reach Castles",
+      "turns": {
+        "from": 51,
+        "to": 110
+      },
+      "era": "classical",
+      "objective": "Decide the victory option at turn 70 and write it down, put Theater Squares in three cities and Commercial Hubs in all, reach Castles for the free Spy and Divine Right for Gothic Architecture, and start the first Medieval wonder in the capital before turn 110 so the discount is being spent from the first turn it exists.",
+      "build_order": [
+        {
+          "item": "Theater Square",
+          "why": "In the capital first; Culture for Divine Right and Humanism, Great Writer points, and the Amphitheater's Great Work slots."
+        },
+        {
+          "item": "Amphitheater",
+          "why": "Great Writer points and two Writing slots; the first Great Works are Tourism from the moment Open Borders exist."
+        },
+        {
+          "item": "Commercial Hub",
+          "why": "In every city; Trade Routes to the capital are the Production the wonder race runs on."
+        },
+        {
+          "item": "Trader",
+          "why": "Four routes running by turn 90 is the Medieval Faires Inspiration and the capital's food and Production."
+        },
+        {
+          "item": "Library",
+          "why": "Science to Castles and Humanism on time; Education needs a Great Scientist you will not have, so do not count on its Eureka."
+        },
+        {
+          "item": "Encampment",
+          "why": "Domination option only, in the border city by turn 85; otherwise skip it until Military Training's Inspiration is wanted."
+        },
+        {
+          "item": "Archer",
+          "why": "Three Archers is the Machinery Eureka and the garrison for every option."
+        },
+        {
+          "item": "Settler",
+          "why": "Fifth and sixth cities on rivers while Colonization is still slotted."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:horseback-riding",
+          "note": "Eureka from a Pasture; Horsemen if the Domination option is chosen, Stirrups otherwise on the way to Castles."
+        },
+        {
+          "id": "tech:iron-working",
+          "note": "Mine the Iron if Domination is chosen; Swordsmen for the first war."
+        },
+        {
+          "id": "tech:mathematics",
+          "note": "Eureka from three specialty districts, which the Commercial Hub, Campus and Theater Square give; Education and Buttress follow."
+        },
+        {
+          "id": "tech:engineering",
+          "note": "Eureka from Ancient Walls; Aqueduct in the capital for Military Engineering and Housing."
+        },
+        {
+          "id": "tech:apprenticeship",
+          "note": "Eureka from three Mines; Industrial Zone in the capital, the second Production lever for wonders."
+        },
+        {
+          "id": "tech:military-tactics",
+          "note": "Pikemen against the Knights neighbours bring, and on the road to Castles."
+        },
+        {
+          "id": "tech:castles",
+          "note": "The free Spy and the extra slot. Eureka from a Tier 2 government, which Divine Right or Exploration gives; aim to have it by turn 110."
+        },
+        {
+          "id": "tech:buttress",
+          "note": "Eureka from the first Classical-or-later wonder; Hagia Sophia and Medieval wonders on this line."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:drama-and-poetry",
+          "note": "Theater Square; Aesthetics and Literary Tradition. Inspiration needs a wonder you have not built yet, so take it unboosted."
+        },
+        {
+          "id": "civic:games-and-recreation",
+          "note": "Free Inspiration from Construction; Entertainment Complex later for Amenities in the wonder capital."
+        },
+        {
+          "id": "civic:recorded-history",
+          "note": "Inspiration from two Campuses; Natural Philosophy and Praetorium."
+        },
+        {
+          "id": "civic:feudalism",
+          "note": "Six Farms; Serfdom for the Builders the Châteaux will need."
+        },
+        {
+          "id": "civic:civil-service",
+          "note": "Inspiration at ten population in the capital; Meenakshi Temple is here but is a Religion wonder, skip it."
+        },
+        {
+          "id": "civic:theology",
+          "note": "Taken plain: Divine Right needs it, and with no religion planned its Inspiration is skipped."
+        },
+        {
+          "id": "civic:divine-right",
+          "note": "Gothic Architecture is the second wonder discount; Monarchy if the empire is wide. Inspiration from two Temples, which France will not have: unboosted."
+        },
+        {
+          "id": "civic:guilds",
+          "note": "Inspiration from two Markets; Banking Eureka; Chichen Itza unlocks here."
+        },
+        {
+          "id": "civic:medieval-faires",
+          "note": "Inspiration from four Trade Routes; Angkor Wat unlocks here."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Classical Republic",
+          "slot": "wildcard",
+          "from": "civic:political-philosophy",
+          "why": "The government: Great Person points and an Amenity; Culture path. Oligarchy instead if Domination is chosen at turn 70."
+        },
+        {
+          "card": "Aesthetics",
+          "slot": "economic",
+          "from": "civic:drama-and-poetry",
+          "why": "Double Theater Square adjacency in the three Theater cities."
+        },
+        {
+          "card": "Caravansaries",
+          "slot": "economic",
+          "from": "civic:foreign-trade",
+          "why": "Gold on the routes feeding the capital; it buys the Builders the Châteaux want later."
+        },
+        {
+          "card": "Gothic Architecture",
+          "slot": "economic",
+          "from": "civic:divine-right",
+          "why": "+15% toward Ancient through Renaissance wonders, on top of Grand Tour, slotted the turn it unlocks and never removed before the Industrial era."
+        },
+        {
+          "card": "Serfdom",
+          "slot": "economic",
+          "from": "civic:feudalism",
+          "why": "Two extra charges per Builder for the Mines and, from Humanism, the Châteaux."
+        }
+      ],
+      "districts": [
+        {
+          "district": "theater-square",
+          "city": "capital and the two best Culture cities",
+          "note": "Beside the future wonder sites: each adjacent wonder is +2 adjacency and each Theater is Great Writer points."
+        },
+        {
+          "district": "commercial-hub",
+          "city": "every city",
+          "note": "Trade Routes into the capital; Markets for Guilds."
+        },
+        {
+          "district": "industrial-zone",
+          "city": "capital",
+          "note": "Workshop and later Factory; the capital builds every wonder and needs the Production."
+        },
+        {
+          "district": "encampment",
+          "city": "the border city",
+          "note": "Domination option only."
+        }
+      ],
+      "pantheon": {
+        "slug": "goddess-of-festivals",
+        "why": "Already founded; Plantations on every luxury the Builders reach."
+      },
+      "wonders": [
+        {
+          "name": "Alhambra",
+          "why": "First Medieval wonder at Castles: an extra Military policy slot and Encampment adjacency; it also gives the Buttress Eureka.",
+          "skip_if": "No hill beside an Encampment in the capital, or Castles lands after turn 115 and a rival is already building it."
+        },
+        {
+          "name": "Chichen Itza",
+          "why": "Culture and Production on rainforest tiles; cheap under Grand Tour and Gothic Architecture.",
+          "skip_if": "The capital has fewer than three rainforest tiles."
+        },
+        {
+          "name": "Mont St. Michel",
+          "why": "Relics and Apostle promotions are irrelevant; it is a wonder for Tourism at a fifth off, and a Château site beside a river if the capital has one.",
+          "skip_if": "No floodplain or marsh river tile in the capital, or a Religion civilization is visibly building it."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Connoisseur",
+          "city": "capital",
+          "why": "Culture per citizen in the city that holds every Theater Square building and most wonders; Grants later for the Great People the wonders attract."
+        },
+        {
+          "governor": "magnus",
+          "promotion": "Groundbreaker",
+          "city": "second city",
+          "why": "Groundbreaker's larger harvests in the second Production city; Pingala holds the capital, and a city takes only one governor. Vertical Integration, which adds the feeder cities' Industrial Zone Production, is his third promotion, after Industrialist, and comes in the Industrial era."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "brussels",
+          "why": "Suzerainty before the first Medieval wonder starts; three envoys here outvalue any Scientific city-state."
+        },
+        {
+          "slug": "kumasi",
+          "why": "Culture and Gold per specialty district on routes to city-states; the Commercial Hub empire feeds it."
+        },
+        {
+          "type": "Industrial",
+          "why": "Production in the capital at one envoy, in every Workshop at three."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-writer",
+          "why": "Amphitheaters in three cities produce the first; the Great Works are Tourism and the Humanism path."
+        },
+        {
+          "class": "great-merchant",
+          "why": "Commercial Hubs in every city give the Mercantilism Inspiration and Gold for Builders."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 70,
+          "test": "Direction chosen and written down: Culture, Domination or the Diplomatic fallback, with the count that justified it?",
+          "pass": "Run the chosen option's first commitment in the next twenty turns.",
+          "fail": "Choose now using the default: Culture unless a neighbour within twelve tiles has three or fewer cities and no Walls. Not choosing is the failure the shape is named for."
+        },
+        {
+          "turn": 110,
+          "test": "Castles researched with the free Spy deployed, Gothic Architecture slotted, and a Medieval wonder in the capital's queue?",
+          "pass": "Enter the spending phase; a wonder is in the queue at all times from here on.",
+          "fail": "If Castles is more than five turns away, the Campuses were late: buy a Library and run Pingala's Researcher. If no wonder is queued, Grand Tour has been banked for twenty turns; queue Alhambra or Chichen Itza this turn."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "direction-count",
+          "turn": 70,
+          "text": "Do the turn-70 count: Production hills in the capital, river sites claimed, wonder-builders met, nearest neighbour's cities and Walls. Choose and record the option."
+        },
+        {
+          "id": "direction-theaters",
+          "turn": 85,
+          "text": "Theater Squares placed in the capital and two more cities, each beside a planned wonder site."
+        },
+        {
+          "id": "direction-encampment",
+          "turn": 85,
+          "text": "Domination option only: Encampment in the border city and eight land units by turn 105."
+        },
+        {
+          "id": "direction-four-routes",
+          "turn": 90,
+          "text": "Four Trade Routes running into the capital; Medieval Faires Inspiration collected."
+        },
+        {
+          "id": "direction-gothic",
+          "turn": 100,
+          "text": "Slot Gothic Architecture the turn Divine Right completes."
+        },
+        {
+          "id": "direction-first-spy",
+          "turn": 110,
+          "text": "Deploy the free Spy from Castles on Gain Sources in the rival whose victory path is closest to yours; the free promotion goes to Ace Driver or Quartermaster."
+        }
+      ]
+    },
+    {
+      "id": "spend",
+      "name": "Spend the discount",
+      "turns": {
+        "from": 111,
+        "to": 180
+      },
+      "era": "renaissance",
+      "objective": "Keep a Medieval or Renaissance wonder in the capital's queue every turn, reach Humanism and put a Château on every reserved river tile beside a wonder, fill the Spy slots and point them at the rival nearest your victory path, and on the Domination option take two cities from the home-continent neighbour before Musketmen and Renaissance Walls.",
+      "build_order": [
+        {
+          "item": "University",
+          "why": "Two for the Printing Eureka; Printing is Forbidden City and Science to the Industrial wonders."
+        },
+        {
+          "item": "Market",
+          "why": "Two for Guilds if not done; Banks follow for Economics."
+        },
+        {
+          "item": "Builder",
+          "why": "Under Serfdom, every charge in a wonder city is a Château from Humanism onward."
+        },
+        {
+          "item": "Workshop",
+          "why": "Capital and the second Production city; Industrialization Eureka and wonder Production."
+        },
+        {
+          "item": "Art Museum",
+          "why": "Opera and Ballet Inspiration and Great Artist points; Great Works of Art are themed Tourism."
+        },
+        {
+          "item": "Musketman",
+          "why": "Domination option: the Walls-breaker with Bombards; Culture option: two in the border city as a deterrent."
+        },
+        {
+          "item": "Spy",
+          "why": "Fill the slots Castles and Diplomatic Service open; each Spy starts promoted."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:education",
+          "note": "Universities; Eureka needs a Great Scientist, which this empire rarely earns first, so expect it unboosted."
+        },
+        {
+          "id": "tech:printing",
+          "note": "Eureka from two Universities; Forbidden City and an extra Wildcard slot."
+        },
+        {
+          "id": "tech:banking",
+          "note": "Free Eureka from Guilds; Great Zimbabwe and Banks."
+        },
+        {
+          "id": "tech:mass-production",
+          "note": "Eureka from a Lumber Mill; Venetian Arsenal if coastal, and Production for the capital."
+        },
+        {
+          "id": "tech:astronomy",
+          "note": "Potala Palace; Eureka from a University beside a Mountain if any city has one."
+        },
+        {
+          "id": "tech:gunpowder",
+          "note": "Musketmen; Eureka from an Armory on the Domination option."
+        },
+        {
+          "id": "tech:cartography",
+          "note": "Casa de Contratación beside a Government Plaza; Eureka from two Harbors only if the map is coastal."
+        },
+        {
+          "id": "tech:siege-tactics",
+          "note": "Domination option: Renaissance Walls in the captures; Bombards come from Metal Casting. Eureka from two Trebuchets."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:humanism",
+          "note": "The Château and the Art Museum. Inspiration needs a Great Artist first, which rarely happens; take it unboosted."
+        },
+        {
+          "id": "civic:mercantilism",
+          "note": "Inspiration from a Great Merchant; Triangular Trade and Torre de Belém."
+        },
+        {
+          "id": "civic:diplomatic-service",
+          "note": "Inspiration from the first alliance, which the visibility edge makes easy; an extra Spy slot."
+        },
+        {
+          "id": "civic:exploration",
+          "note": "Merchant Republic for the Culture option; Inspiration from two Caravels only on a coast."
+        },
+        {
+          "id": "civic:the-enlightenment",
+          "note": "Inspiration from three Great People; Rationalism and the path to the Industrial wonders."
+        },
+        {
+          "id": "civic:mercenaries",
+          "note": "Domination option: Professional Army for the upgrade bill; Inspiration from eight land units."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Gothic Architecture",
+          "slot": "economic",
+          "from": "civic:divine-right",
+          "why": "Stays slotted through every Renaissance wonder."
+        },
+        {
+          "card": "Merchant Republic",
+          "slot": "wildcard",
+          "from": "civic:exploration",
+          "why": "Two Economic slots for Gothic Architecture and Serfdom, plus Trade Routes; Culture option."
+        },
+        {
+          "card": "Triangular Trade",
+          "slot": "economic",
+          "from": "civic:mercantilism",
+          "why": "Gold and Faith on the Trade Routes; the Gold buys Châteaux Builders."
+        },
+        {
+          "card": "Professional Army",
+          "slot": "military",
+          "from": "civic:mercenaries",
+          "why": "Domination option: Swordsmen to Men-at-Arms and Men-at-Arms to Musketmen at half price."
+        },
+        {
+          "card": "Frescoes",
+          "slot": "wildcard",
+          "from": "civic:humanism",
+          "why": "Great Artist points for the Art Museums once the Châteaux are placed."
+        }
+      ],
+      "districts": [
+        {
+          "district": "theater-square",
+          "city": "fourth and fifth cities",
+          "note": "Five Theaters by turn 180; Art Museums in two, Archaeological Museums later in two."
+        },
+        {
+          "district": "aqueduct",
+          "city": "capital",
+          "note": "Housing for a capital that must keep growing to work the wonder tiles; Military Engineering Eureka."
+        },
+        {
+          "district": "entertainment-complex",
+          "city": "capital",
+          "note": "Amenities for a wonder capital at fifteen population; Colosseum if it is cheap."
+        }
+      ],
+      "pantheon": {
+        "slug": "goddess-of-festivals",
+        "why": "Already founded."
+      },
+      "wonders": [
+        {
+          "name": "Forbidden City",
+          "why": "An extra Wildcard policy slot, which holds a Culture card for the rest of the game.",
+          "skip_if": "Printing lands after turn 160 or a rival has shown it in the wonder list."
+        },
+        {
+          "name": "Potala Palace",
+          "why": "Diplomatic policy slot and Diplomatic Favor; it needs a Mountain, and Astronomy is on the Culture path anyway.",
+          "skip_if": "No hill beside a Mountain in any wonder city."
+        },
+        {
+          "name": "Great Zimbabwe",
+          "why": "Gold on every Trade Route from the city per bonus resource; the Builder budget for Châteaux.",
+          "skip_if": "No Commercial Hub beside Cattle, or Banking is late."
+        },
+        {
+          "name": "Torre de Belém",
+          "why": "Free buildings in cities on other continents and Great Admiral points; a coastal capital only.",
+          "skip_if": "The capital is inland, or Mercantilism arrives after turn 170."
+        },
+        {
+          "name": "Kilwa Kisiwani",
+          "why": "Suzerainty bonuses up by 15% per type, which the Brussels and Kumasi envoys already earned.",
+          "skip_if": "Fewer than two suzerainties held at Machinery."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Grants",
+          "city": "capital",
+          "why": "Great Person points from the wonders and Theater buildings; Great Writers and Artists are the second Tourism stream."
+        },
+        {
+          "governor": "amani",
+          "promotion": "Emissary",
+          "city": "Brussels or the nearest Cultural city-state",
+          "why": "Two envoys; keeps the wonder suzerainty against Pericles."
+        },
+        {
+          "governor": "victor",
+          "promotion": "Garrison Commander",
+          "city": "first captured city",
+          "why": "Domination option: the captured city holds while the army moves on."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "antananarivo",
+          "why": "Culture per Great Person earned; the wonders and Theaters earn many."
+        },
+        {
+          "type": "Cultural",
+          "why": "Six envoys is Culture in every Art and Archaeological Museum."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-artist",
+          "why": "Art Museums in two cities; three themed Art slots per Museum is the Cultural Heritage Inspiration later."
+        },
+        {
+          "class": "great-engineer",
+          "why": "Any Renaissance Great Engineer who adds Production to a wonder is cashed in the capital the turn it arrives."
+        },
+        {
+          "class": "great-general",
+          "why": "Domination option: one Great General under the Musketmen makes the second city a four-turn siege."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 140,
+          "test": "Three wonders standing, Humanism in, and at least four Châteaux placed beside them?",
+          "pass": "Continue; queue the next Renaissance wonder and buy a Builder per wonder city.",
+          "fail": "If fewer than two wonders stand, the capital's Production was spent elsewhere: audit the queue for units and buildings a feeder city could have built, and swap Magnus into the capital in place of Pingala until two wonders stand."
+        },
+        {
+          "turn": 180,
+          "test": "Culture option: six wonders, Tourism above the median civilization, five Theater Squares. Domination option: two cities taken from the neighbour, both at positive Loyalty.",
+          "pass": "Enter the Industrial phase on the same option.",
+          "fail": "Pivot. A Culture game at three wonders and median Tourism becomes the Domination option if the neighbour is still weak; a Domination game with no city taken returns to Culture and keeps the army as a deterrent. Either way, decide this turn."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "spend-queue-rule",
+          "turn": 111,
+          "text": "From this turn, the capital's queue always holds a Medieval or Renaissance wonder; feeder cities build the units and buildings."
+        },
+        {
+          "id": "spend-chateaux",
+          "turn": 135,
+          "text": "Humanism in; every reserved river tile beside a finished wonder gets a Château before any other improvement, no two Châteaux adjacent."
+        },
+        {
+          "id": "spend-spy-missions",
+          "turn": 130,
+          "text": "Second Spy slot filled; one Spy on Steal Tech Boost against the Science leader, one on Listening Post for visibility in the civilization nearest your victory path."
+        },
+        {
+          "id": "spend-alliance",
+          "turn": 140,
+          "text": "Form a Cultural or Research alliance with the rival you have the most visibility over; Diplomatic Service Inspiration and a third Spy slot."
+        },
+        {
+          "id": "spend-first-capture",
+          "turn": 150,
+          "text": "Domination option: first neighbour city captured with Musketmen and Bombards; keep it."
+        },
+        {
+          "id": "spend-pivot-check",
+          "turn": 180,
+          "text": "Run the turn-180 checkpoint honestly and record the decision."
+        }
+      ]
+    },
+    {
+      "id": "tourism",
+      "name": "Industrial wonders and Tourism",
+      "turns": {
+        "from": 181,
+        "to": 250
+      },
+      "era": "industrial",
+      "objective": "Finish the Industrial wonders while Grand Tour still discounts them, turn the Châteaux into Tourism with Flight, dig Artifacts and theme Museums, use Spies to slow the rivals' wonders and protect your own, and on the Domination option field Garde Impériale corps against the remaining home-continent capitals.",
+      "build_order": [
+        {
+          "item": "Factory",
+          "why": "Capital and the second Production city; Class Struggle Inspiration and the last wonders' Production."
+        },
+        {
+          "item": "Archaeological Museum",
+          "why": "Two cities; Natural History Inspiration, three Artifacts each, themed by era for Cultural Heritage."
+        },
+        {
+          "item": "Archaeologist",
+          "why": "One per Museum; the Combustion Eureka comes from the first dig."
+        },
+        {
+          "item": "Bank",
+          "why": "Two for Economics; Big Ben needs a Bank."
+        },
+        {
+          "item": "Garde Impériale",
+          "why": "Domination option: six of them in two corps at Military Science; +10 on the home continent and the visibility bonus on top."
+        },
+        {
+          "item": "Neighborhood",
+          "why": "Two for Sanitation; the first on a Breathtaking tile beside a wonder for Conservation."
+        },
+        {
+          "item": "Spy",
+          "why": "Fill every slot; a Counterspy in the capital from the moment a rival Spy is caught there."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:industrialization",
+          "note": "Eureka from two Workshops; Ruhr Valley and Factories."
+        },
+        {
+          "id": "tech:scientific-theory",
+          "note": "Free Eureka from The Enlightenment; Oxford University."
+        },
+        {
+          "id": "tech:economics",
+          "note": "Eureka from two Banks; Big Ben."
+        },
+        {
+          "id": "tech:sanitation",
+          "note": "Eureka from two Neighborhoods; the capital's Housing."
+        },
+        {
+          "id": "tech:military-science",
+          "note": "Garde Impériale; Eureka from a Knight kill on the Domination option."
+        },
+        {
+          "id": "tech:flight",
+          "note": "Eureka free from any Industrial wonder; Châteaux and every wonder tile start producing Tourism."
+        },
+        {
+          "id": "tech:steel",
+          "note": "Eiffel Tower; Eureka needs an Ironclad and a Coal Mine, usually unboosted."
+        },
+        {
+          "id": "tech:radio",
+          "note": "National Park and the Mass Media Inspiration; Eureka from the first Park."
+        },
+        {
+          "id": "tech:chemistry",
+          "note": "Eureka from alliance level 2, which the visibility edge keeps cheap; Research Labs."
+        },
+        {
+          "id": "tech:combustion",
+          "note": "Eureka from the first Artifact extracted."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:colonialism",
+          "note": "Free Inspiration from Astronomy; on the path to Industrial civics."
+        },
+        {
+          "id": "civic:civil-engineering",
+          "note": "Inspiration from seven district types; Public Works and the Statue of Liberty."
+        },
+        {
+          "id": "civic:opera-and-ballet",
+          "note": "Inspiration from the Art Museum; Bolshoi Theatre and Grand Opera."
+        },
+        {
+          "id": "civic:natural-history",
+          "note": "Inspiration from the Archaeological Museum; Hermitage."
+        },
+        {
+          "id": "civic:urbanization",
+          "note": "Inspiration at fifteen population; Neighborhoods."
+        },
+        {
+          "id": "civic:nationalism",
+          "note": "Inspiration from a Casus Belli war; Grande Armée on the Domination option, and Corps for everyone."
+        },
+        {
+          "id": "civic:conservation",
+          "note": "Inspiration from a Neighborhood on Breathtaking appeal, which the wonders create; National Parks and Naturalists."
+        },
+        {
+          "id": "civic:mass-media",
+          "note": "Free Inspiration from Radio; Cristo Redentor; Broadcast Centers come with Radio."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Grand Opera",
+          "slot": "economic",
+          "from": "civic:opera-and-ballet",
+          "why": "Double Culture from Theater Square buildings in five cities."
+        },
+        {
+          "card": "Heritage Tourism",
+          "slot": "economic",
+          "from": "civic:cultural-heritage",
+          "why": "Double Tourism from Great Works of Art and Artifacts once Cultural Heritage lands; the Museums are now the second engine."
+        },
+        {
+          "card": "Rationalism",
+          "slot": "economic",
+          "from": "civic:the-enlightenment",
+          "why": "Science in the Campus cities so Flight, Radio and Computers arrive on time."
+        },
+        {
+          "card": "Grande Armée",
+          "slot": "military",
+          "from": "civic:nationalism",
+          "why": "Domination option: Garde Impériale half again as fast."
+        },
+        {
+          "card": "Public Works",
+          "slot": "economic",
+          "from": "civic:civil-engineering",
+          "why": "Builders for National Parks and the last Châteaux, swapped in for ten turns."
+        }
+      ],
+      "districts": [
+        {
+          "district": "neighborhood",
+          "city": "capital",
+          "note": "On the Breathtaking tile beside the wonder cluster, for Conservation."
+        },
+        {
+          "district": "industrial-zone",
+          "city": "second and third Production cities",
+          "note": "Factories reach the capital within six tiles; three Factories is Class Struggle."
+        },
+        {
+          "district": "preserve",
+          "city": "a hill city with a Mountain",
+          "note": "Optional: appeal and a cheap National Park site for the Radio Eureka."
+        }
+      ],
+      "pantheon": {
+        "slug": "goddess-of-festivals",
+        "why": "Already founded."
+      },
+      "wonders": [
+        {
+          "name": "Big Ben",
+          "why": "An Economic slot and doubled treasury; the slot holds Heritage Tourism for the rest of the game.",
+          "skip_if": "No river Commercial Hub with a Bank, or Economics after turn 230."
+        },
+        {
+          "name": "Bolshoi Theatre",
+          "why": "Free civics and Great Work slots; the discount makes it cheap.",
+          "skip_if": "Opera and Ballet is late and a Culture rival already shows it."
+        },
+        {
+          "name": "Hermitage",
+          "why": "Four Art slots; Great Artists from Frescoes fill it and theme it.",
+          "skip_if": "Fewer than two Great Artists earned by Natural History."
+        },
+        {
+          "name": "Ruhr Valley",
+          "why": "Production per mine and 20% in the city; the last wonders and the Domination corps come from here.",
+          "skip_if": "The capital's Industrial Zone is not beside a river, or Industrialization is after turn 215."
+        },
+        {
+          "name": "Oxford University",
+          "why": "Two free techs and Science to reach Flight and Computers on time.",
+          "skip_if": "The Campus city has no flat grassland or plains tile, or Scientific Theory is after turn 225."
+        },
+        {
+          "name": "Eiffel Tower",
+          "why": "+2 Appeal on every tile in the empire; every Château, National Park and Seaside Resort pays more.",
+          "skip_if": "Steel is after turn 250 or the Modern-era discount is gone and a rival is ahead on it."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Curator",
+          "city": "capital",
+          "why": "Tourism from Great Works in the capital doubles once the sixth title lands."
+        },
+        {
+          "governor": "reyna",
+          "promotion": "Contractor",
+          "city": "second wonder city",
+          "why": "Buy a district with Gold when the capital cannot hold another; Forestry Management if Woods remain."
+        },
+        {
+          "governor": "victor",
+          "promotion": "Embrasure",
+          "city": "the newest capture",
+          "why": "Domination option: each captured capital holds while the corps move on."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "vilnius",
+          "why": "At the top alliance level every Theater Square gets +50% adjacency; the alliance exists for the Spy slot already."
+        },
+        {
+          "slug": "brussels",
+          "why": "Keep the suzerainty; every Industrial wonder is 15% cheaper again."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-artist",
+          "why": "Hermitage and the Art Museums need twelve works to theme; patronize with Gold when one is within reach."
+        },
+        {
+          "class": "great-musician",
+          "why": "Broadcast Centers at Radio; Great Works of Music are the highest Tourism per slot."
+        },
+        {
+          "class": "great-general",
+          "why": "Domination option: an Industrial Great General under two Garde Impériale corps takes a capital in four turns."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 215,
+          "test": "Flight researched, Châteaux producing Tourism, two Archaeological Museums digging, and nine wonders standing?",
+          "pass": "Continue; queue Eiffel Tower and Cristo Redentor.",
+          "fail": "If Flight is late, the Campuses were neglected: Rationalism in and buy Universities. If wonders are below seven, stop building Industrial wonders that rivals are already ahead on and put the Production into Museums and Broadcast Centers instead."
+        },
+        {
+          "turn": 250,
+          "test": "Culture option: Tourism above half the remaining civilizations with Open Borders and a Trade Route to each. Domination option: three capitals held on the home continent.",
+          "pass": "Close: Rock Bands and Social Media, or Artillery and Garde Impériale against the last capitals.",
+          "fail": "Culture below half: the path is still reachable but slow; buy every Great Work available, run Online Communities, and park a Spy on Great Work Heist in the Tourism leader. Domination at fewer than two capitals: stop and close as Culture with the army as a deterrent."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "tourism-flight",
+          "turn": 200,
+          "text": "Research Flight within ten turns of the first Industrial wonder finishing; the Eureka is free."
+        },
+        {
+          "id": "tourism-museums",
+          "turn": 205,
+          "text": "Two Archaeological Museums built and two Archaeologists digging; theme each by era."
+        },
+        {
+          "id": "tourism-counterspy",
+          "turn": 195,
+          "text": "One Spy on Counterspy in the capital; the rest on Sabotage Production in the rival wonder city or Steal Tech Boost."
+        },
+        {
+          "id": "tourism-open-borders",
+          "turn": 210,
+          "text": "Open Borders and a Trade Route to every civilization you are not at war with; each is a Tourism modifier."
+        },
+        {
+          "id": "tourism-garde",
+          "turn": 225,
+          "text": "Domination option: two Garde Impériale corps with a Great General staged at the next home-continent capital."
+        },
+        {
+          "id": "tourism-neighborhood",
+          "turn": 215,
+          "text": "Neighborhood on the Breathtaking tile beside the wonder cluster; Conservation Inspiration collected."
+        }
+      ]
+    },
+    {
+      "id": "close",
+      "name": "Close",
+      "turns": {
+        "from": 251,
+        "to": null
+      },
+      "era": "modern",
+      "objective": "Finish the chosen condition: Tourism pushed past every rival's domestic Culture with Rock Bands, National Parks, Broadcast Centers and Online Communities, and Spies defending the Great Works and Spaceport-watching the Science leader; or the last home-continent capitals taken by Garde Impériale and Artillery under Total War and Grande Armée.",
+      "build_order": [
+        {
+          "item": "Broadcast Center",
+          "why": "Two for the Satellites Eureka and Great Musician slots in every Theater city."
+        },
+        {
+          "item": "Rock Band",
+          "why": "Faith-bought, since Gold cannot buy them, at Cold War-era Culture; aim them at the civilization with the highest domestic Culture."
+        },
+        {
+          "item": "Seaside Resort",
+          "why": "Every coastal Breathtaking tile; Eiffel Tower made most of them so."
+        },
+        {
+          "item": "Artillery",
+          "why": "Domination option: Renaissance Walls fall to Artillery with Garde Impériale behind them."
+        },
+        {
+          "item": "Research Lab",
+          "why": "Nuclear Program Inspiration and enough Science that no rival launches before the Tourism closes."
+        },
+        {
+          "item": "Stock Exchange",
+          "why": "Two for Capitalism; the Gold buys Great Musicians and Great Works."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:computers",
+          "note": "Eureka from a Tier 3 government; Tourism from all sources goes up and the Social Media path opens."
+        },
+        {
+          "id": "tech:electricity",
+          "note": "Power for Broadcast Centers and Factories; Eureka from two Privateers only if coastal."
+        },
+        {
+          "id": "tech:refining",
+          "note": "Eureka from a Coal Power Plant; Oil for the Domination option's Tanks."
+        },
+        {
+          "id": "tech:replaceable-parts",
+          "note": "Domination option: Infantry after the Garde Impériale; Eureka from three Line Infantry, which the Garde are."
+        },
+        {
+          "id": "tech:satellites",
+          "note": "Eureka from two Broadcast Centers; reveals the map and every rival Spaceport."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:capitalism",
+          "note": "Inspiration from two Stock Exchanges; Democracy's partner civic."
+        },
+        {
+          "id": "civic:suffrage",
+          "note": "Democracy for the Culture option: Wildcard slots and cheaper Gold purchases. Inspiration from four Sewers, costly."
+        },
+        {
+          "id": "civic:cultural-heritage",
+          "note": "Inspiration from a themed Museum; Heritage Tourism, which doubles Tourism from Great Works of Art and Artifacts."
+        },
+        {
+          "id": "civic:professional-sports",
+          "note": "Inspiration from two Entertainment Complexes; Stadiums for the Amenity bill."
+        },
+        {
+          "id": "civic:social-media",
+          "note": "Online Communities; Inspiration from Telecommunications."
+        },
+        {
+          "id": "civic:mobilization",
+          "note": "Domination option: Levée en Masse; Inspiration from three Corps."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Online Communities",
+          "slot": "economic",
+          "from": "civic:social-media",
+          "why": "+50% Tourism to every civilization you trade with; the closing card."
+        },
+        {
+          "card": "Heritage Tourism",
+          "slot": "economic",
+          "from": "civic:cultural-heritage",
+          "why": "Stays slotted; the Museums are themed now."
+        },
+        {
+          "card": "Levée en Masse",
+          "slot": "military",
+          "from": "civic:mobilization",
+          "why": "Domination option: unit maintenance down while the corps are in the field."
+        },
+        {
+          "card": "Democracy",
+          "slot": "wildcard",
+          "from": "civic:suffrage",
+          "why": "Culture option government: patronage of Great People at a discount and Wildcard slots for the Tourism cards."
+        }
+      ],
+      "districts": [],
+      "pantheon": {
+        "slug": "goddess-of-festivals",
+        "why": "Already founded."
+      },
+      "wonders": [
+        {
+          "name": "Cristo Redentor",
+          "why": "Tourism from Seaside Resorts doubled and Relics ignore Enlightenment; the last big Tourism wonder.",
+          "skip_if": "Mass Media is late, or a Culture rival already has it queued; the discount is gone in this era."
+        },
+        {
+          "name": "Broadway",
+          "why": "Free Culture and two Music slots for the Great Musicians.",
+          "skip_if": "The Theater city has no flat tile left or the wonder is already shown in a rival's build."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "amani",
+          "promotion": "Foreign Investor",
+          "city": "Brussels or the most contested city-state",
+          "why": "Two more envoys where a rival is closest to taking the suzerainty; Amani cannot sit in another civilization's city."
+        }
+      ],
+      "city_states": [],
+      "great_people": [
+        {
+          "class": "great-musician",
+          "why": "One Music slot per Broadcast Center; each Great Musician is the most Tourism one unit can carry."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 290,
+          "test": "Culture option: visiting tourists exceed the domestic tourists of every civilization but one. Domination option: one capital left on the home continent.",
+          "pass": "Continue to the end; no further decisions.",
+          "fail": "Convert to Score: keep Tourism cards slotted, stop Rock Bands, and build Science and Culture for points."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "close-rock-bands",
+          "turn": 265,
+          "text": "Two Rock Bands a decade aimed at the civilization with the highest domestic Culture; Spies on Great Work Heist there."
+        },
+        {
+          "id": "close-spy-spaceport",
+          "turn": 270,
+          "text": "One Spy permanently in the Science leader's Spaceport city on Disrupt Rocketry; visibility shows who that is."
+        },
+        {
+          "id": "close-last-capital",
+          "turn": 280,
+          "text": "Domination option: Artillery and two Garde Impériale corps at the last home-continent capital."
+        },
+        {
+          "id": "close-review",
+          "turn": 290,
+          "text": "Run the turn-290 checkpoint and either continue or declare the game a Score game."
+        }
+      ]
+    }
+  ],
+  "boosts": [
+    {
+      "id": "tech:writing",
+      "fit": "free",
+      "when": "foundation",
+      "how": "The Scout meets the first civilization."
+    },
+    {
+      "id": "tech:archery",
+      "fit": "cheap",
+      "when": "foundation",
+      "how": "The Slinger kills a barbarian scout near the capital."
+    },
+    {
+      "id": "tech:masonry",
+      "fit": "cheap",
+      "when": "foundation",
+      "how": "A Quarry on the stone or marble beside a wonder city."
+    },
+    {
+      "id": "tech:wheel",
+      "fit": "free",
+      "when": "foundation",
+      "how": "The first Builder mines a resource hill."
+    },
+    {
+      "id": "tech:irrigation",
+      "fit": "cheap",
+      "when": "foundation",
+      "how": "Farm the first bonus resource that is not a river bank."
+    },
+    {
+      "id": "tech:bronze-working",
+      "fit": "costly",
+      "when": "foundation",
+      "how": "Three barbarian kills; France has no early military and clears only what threatens the capital."
+    },
+    {
+      "id": "tech:sailing",
+      "fit": "costly",
+      "when": "foundation",
+      "how": "Only if a city is coastal; the river capital rarely is."
+    },
+    {
+      "id": "tech:astrology",
+      "fit": "costly",
+      "when": "foundation",
+      "how": "A natural wonder found by the Scout; not chased."
+    },
+    {
+      "id": "tech:currency",
+      "fit": "free",
+      "when": "foundation",
+      "how": "The first Trader runs to the second city."
+    },
+    {
+      "id": "tech:horseback-riding",
+      "fit": "cheap",
+      "when": "direction",
+      "how": "A Pasture on the Horses the Scout found."
+    },
+    {
+      "id": "tech:iron-working",
+      "fit": "cheap",
+      "when": "direction",
+      "how": "Mine the Iron if the Domination option is chosen; otherwise unboosted."
+    },
+    {
+      "id": "tech:mathematics",
+      "fit": "free",
+      "when": "direction",
+      "how": "Commercial Hub, Campus and Theater Square are three specialty districts by turn 80."
+    },
+    {
+      "id": "tech:engineering",
+      "fit": "free",
+      "when": "direction",
+      "how": "Ancient Walls in the border city."
+    },
+    {
+      "id": "tech:construction",
+      "fit": "cheap",
+      "when": "direction",
+      "how": "A Water Mill in a river city, which every city is."
+    },
+    {
+      "id": "tech:apprenticeship",
+      "fit": "free",
+      "when": "direction",
+      "how": "Three Mines on the capital's Production hills."
+    },
+    {
+      "id": "tech:military-tactics",
+      "fit": "costly",
+      "when": "direction",
+      "how": "A Spearman kill at a camp; usually unboosted."
+    },
+    {
+      "id": "tech:machinery",
+      "fit": "cheap",
+      "when": "direction",
+      "how": "Three Archers as the standing garrison."
+    },
+    {
+      "id": "tech:castles",
+      "fit": "free",
+      "when": "direction",
+      "how": "Monarchy or Merchant Republic is adopted before Castles completes."
+    },
+    {
+      "id": "tech:stirrups",
+      "fit": "free",
+      "when": "direction",
+      "how": "Feudalism is on the civic path."
+    },
+    {
+      "id": "tech:buttress",
+      "fit": "free",
+      "when": "direction",
+      "how": "The first Medieval wonder."
+    },
+    {
+      "id": "tech:military-engineering",
+      "fit": "cheap",
+      "when": "spend",
+      "how": "The capital Aqueduct."
+    },
+    {
+      "id": "tech:education",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:printing",
+      "fit": "cheap",
+      "when": "spend",
+      "how": "Two Universities in the Campus cities."
+    },
+    {
+      "id": "tech:banking",
+      "fit": "free",
+      "when": "spend",
+      "how": "Guilds is on the civic path."
+    },
+    {
+      "id": "tech:mass-production",
+      "fit": "cheap",
+      "when": "spend",
+      "how": "One Lumber Mill on Woods beside the capital."
+    },
+    {
+      "id": "tech:astronomy",
+      "fit": "costly",
+      "when": "spend",
+      "how": "A University beside a Mountain only if a Campus already sits there."
+    },
+    {
+      "id": "tech:gunpowder",
+      "fit": "cheap",
+      "when": "spend",
+      "how": "An Armory in the Encampment city; cheap on the Domination option, costly otherwise."
+    },
+    {
+      "id": "tech:cartography",
+      "fit": "costly",
+      "when": "spend",
+      "how": "Two Harbors only on a coastal map."
+    },
+    {
+      "id": "tech:siege-tactics",
+      "fit": "costly",
+      "when": "spend",
+      "how": "Two Trebuchets on the Domination option only."
+    },
+    {
+      "id": "tech:square-rigging",
+      "fit": "costly",
+      "when": "spend",
+      "how": "A Musketman kill in the Domination war."
+    },
+    {
+      "id": "tech:metal-casting",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:industrialization",
+      "fit": "free",
+      "when": "tourism",
+      "how": "Two Workshops in the capital and the second Production city."
+    },
+    {
+      "id": "tech:scientific-theory",
+      "fit": "free",
+      "when": "tourism",
+      "how": "The Enlightenment is on the civic path."
+    },
+    {
+      "id": "tech:economics",
+      "fit": "cheap",
+      "when": "tourism",
+      "how": "Two Banks, one of them for Big Ben."
+    },
+    {
+      "id": "tech:sanitation",
+      "fit": "cheap",
+      "when": "tourism",
+      "how": "Two Neighborhoods, the first for Conservation."
+    },
+    {
+      "id": "tech:military-science",
+      "fit": "costly",
+      "when": "tourism",
+      "how": "A Knight kill on the Domination option; otherwise unboosted."
+    },
+    {
+      "id": "tech:flight",
+      "fit": "free",
+      "when": "tourism",
+      "how": "Any Industrial wonder, which France builds first."
+    },
+    {
+      "id": "tech:steel",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:radio",
+      "fit": "cheap",
+      "when": "tourism",
+      "how": "One National Park on a Breathtaking hill cluster; a Naturalist bought with Faith, the only currency that buys one."
+    },
+    {
+      "id": "tech:chemistry",
+      "fit": "cheap",
+      "when": "tourism",
+      "how": "Alliance level 2 with the partner formed for Diplomatic Service."
+    },
+    {
+      "id": "tech:combustion",
+      "fit": "free",
+      "when": "tourism",
+      "how": "The first Archaeologist extracts an Artifact."
+    },
+    {
+      "id": "tech:replaceable-parts",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Three Garde Impériale count as Line Infantry."
+    },
+    {
+      "id": "tech:refining",
+      "fit": "cheap",
+      "when": "close",
+      "how": "A Coal Power Plant in the capital's Industrial Zone."
+    },
+    {
+      "id": "tech:electricity",
+      "fit": "costly",
+      "when": "close",
+      "how": "Two Privateers only with a Harbor city."
+    },
+    {
+      "id": "tech:computers",
+      "fit": "free",
+      "when": "close",
+      "how": "Democracy or any Tier 3 government."
+    },
+    {
+      "id": "tech:satellites",
+      "fit": "free",
+      "when": "close",
+      "how": "Two Broadcast Centers in the Theater cities."
+    },
+    {
+      "id": "tech:plastics",
+      "fit": "cheap",
+      "when": "close",
+      "how": "An Oil Well on the first Oil in your borders."
+    },
+    {
+      "id": "civic:craftsmanship",
+      "fit": "free",
+      "when": "foundation",
+      "how": "The first Builder's three charges."
+    },
+    {
+      "id": "civic:foreign-trade",
+      "fit": "costly",
+      "when": "foundation",
+      "how": "A second continent sighted; not chased on Pangaea."
+    },
+    {
+      "id": "civic:military-tradition",
+      "fit": "costly",
+      "when": "foundation",
+      "how": "A camp cleared; only the one threatening the capital."
+    },
+    {
+      "id": "civic:state-workforce",
+      "fit": "free",
+      "when": "foundation",
+      "how": "The capital's Commercial Hub."
+    },
+    {
+      "id": "civic:early-empire",
+      "fit": "free",
+      "when": "foundation",
+      "how": "Six population across the first two cities."
+    },
+    {
+      "id": "civic:mysticism",
+      "fit": "free",
+      "when": "foundation",
+      "how": "The pantheon from God King Faith."
+    },
+    {
+      "id": "civic:political-philosophy",
+      "fit": "cheap",
+      "when": "foundation",
+      "how": "Three city-states met by the Scout."
+    },
+    {
+      "id": "civic:drama-and-poetry",
+      "fit": "costly",
+      "when": "direction",
+      "how": "Needs a wonder before turn 65; take it unboosted rather than build an Ancient wonder for it."
+    },
+    {
+      "id": "civic:games-and-recreation",
+      "fit": "free",
+      "when": "direction",
+      "how": "Researching Construction."
+    },
+    {
+      "id": "civic:recorded-history",
+      "fit": "cheap",
+      "when": "direction",
+      "how": "A second Campus in the third city."
+    },
+    {
+      "id": "civic:military-training",
+      "fit": "cheap",
+      "when": "direction",
+      "how": "The Encampment, built on either option by turn 100 for Alhambra."
+    },
+    {
+      "id": "civic:defensive-tactics",
+      "fit": "cheap",
+      "when": "direction",
+      "how": "A neighbour declares on a wonder-builder with Walls; it happens."
+    },
+    {
+      "id": "civic:theology",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:feudalism",
+      "fit": "cheap",
+      "when": "direction",
+      "how": "Six Farms across six cities, off the river banks."
+    },
+    {
+      "id": "civic:civil-service",
+      "fit": "cheap",
+      "when": "direction",
+      "how": "The capital at ten population with the Aqueduct."
+    },
+    {
+      "id": "civic:mercenaries",
+      "fit": "cheap",
+      "when": "spend",
+      "how": "Eight land units on the Domination option; the garrison plus Archers otherwise."
+    },
+    {
+      "id": "civic:divine-right",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:guilds",
+      "fit": "free",
+      "when": "direction",
+      "how": "Two Markets in the Commercial Hubs."
+    },
+    {
+      "id": "civic:medieval-faires",
+      "fit": "free",
+      "when": "direction",
+      "how": "Four Trade Routes into the capital."
+    },
+    {
+      "id": "civic:exploration",
+      "fit": "costly",
+      "when": "spend",
+      "how": "Two Caravels only with a coast."
+    },
+    {
+      "id": "civic:humanism",
+      "fit": "costly",
+      "when": "spend",
+      "how": "A Great Artist before Humanism needs patronage; take it unboosted."
+    },
+    {
+      "id": "civic:diplomatic-service",
+      "fit": "cheap",
+      "when": "spend",
+      "how": "One alliance; the visibility edge makes every AI readable."
+    },
+    {
+      "id": "civic:reformed-church",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:mercantilism",
+      "fit": "cheap",
+      "when": "spend",
+      "how": "A Great Merchant from six Commercial Hubs."
+    },
+    {
+      "id": "civic:the-enlightenment",
+      "fit": "free",
+      "when": "spend",
+      "how": "Three Great People by turn 170."
+    },
+    {
+      "id": "civic:civil-engineering",
+      "fit": "cheap",
+      "when": "tourism",
+      "how": "Seven district types: add an Encampment, Entertainment Complex and Harbor or Government Plaza to the usual five."
+    },
+    {
+      "id": "civic:nationalism",
+      "fit": "cheap",
+      "when": "tourism",
+      "how": "Any Casus Belli war, including a Protectorate war for a city-state."
+    },
+    {
+      "id": "civic:opera-and-ballet",
+      "fit": "free",
+      "when": "tourism",
+      "how": "The first Art Museum."
+    },
+    {
+      "id": "civic:natural-history",
+      "fit": "free",
+      "when": "tourism",
+      "how": "The first Archaeological Museum."
+    },
+    {
+      "id": "civic:scorched-earth",
+      "fit": "costly",
+      "when": "tourism",
+      "how": "Two Field Cannons on the Domination option."
+    },
+    {
+      "id": "civic:colonialism",
+      "fit": "free",
+      "when": "tourism",
+      "how": "Researching Astronomy for Potala Palace."
+    },
+    {
+      "id": "civic:urbanization",
+      "fit": "cheap",
+      "when": "tourism",
+      "how": "The capital at fifteen with the Aqueduct and Entertainment Complex."
+    },
+    {
+      "id": "civic:conservation",
+      "fit": "cheap",
+      "when": "tourism",
+      "how": "A Neighborhood beside the wonder cluster, which is Breathtaking by then."
+    },
+    {
+      "id": "civic:mass-media",
+      "fit": "free",
+      "when": "tourism",
+      "how": "Research Radio first; the Inspiration follows at no extra cost."
+    },
+    {
+      "id": "civic:mobilization",
+      "fit": "costly",
+      "when": "close",
+      "how": "Three Corps on the Domination option only."
+    },
+    {
+      "id": "civic:capitalism",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Stock Exchanges in the Bank cities."
+    },
+    {
+      "id": "civic:class-struggle",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Three Factories in the three Industrial Zones."
+    },
+    {
+      "id": "civic:suffrage",
+      "fit": "costly",
+      "when": "close",
+      "how": "Four Sewers; usually unboosted."
+    },
+    {
+      "id": "civic:nuclear-program",
+      "fit": "cheap",
+      "when": "close",
+      "how": "One Research Lab in the capital."
+    },
+    {
+      "id": "civic:cultural-heritage",
+      "fit": "free",
+      "when": "close",
+      "how": "One themed Art or Archaeological Museum."
+    },
+    {
+      "id": "civic:professional-sports",
+      "fit": "cheap",
+      "when": "close",
+      "how": "A second Entertainment Complex for the Amenity bill."
+    },
+    {
+      "id": "civic:social-media",
+      "fit": "free",
+      "when": "close",
+      "how": "Researching Telecommunications on the way to Online Communities."
+    },
+    {
+      "id": "civic:distributed-sovereignty",
+      "fit": "free",
+      "when": "close",
+      "how": "The first Rock Band."
+    }
+  ],
+  "decision_triggers": [
+    {
+      "name": "Choose the direction",
+      "if": "It is turn 70 and the count is done: Production hills, river sites, wonder-builders met, nearest neighbour's size and Walls.",
+      "then": "Culture unless the neighbour has three or fewer cities, no Walls and is within twelve tiles with Iron or Horses available; then Domination. Record it and run the first commitment within twenty turns."
+    },
+    {
+      "name": "Rival on the same wonder",
+      "if": "The wonder list shows a rival building the wonder in the capital's queue and your turns-to-finish are above theirs.",
+      "then": "Do not race it. Switch to the next wonder of the same era the same turn; the Production carries over inside an era and Grand Tour pays the same on all of them. Put a Spy on Sabotage Production in that rival's city if a slot is free."
+    },
+    {
+      "name": "Spy caught",
+      "if": "A Spy is captured or killed on an offensive mission.",
+      "then": "Pay the ransom only for a Spy with two or more promotions; otherwise rebuild. Move the next Spy to a lower-risk mission in a civilization you have two visibility levels over; the free promotion goes to Disguise if the previous one died."
+    },
+    {
+      "name": "Pivot at the era checkpoint",
+      "if": "At turn 160 or turn 220 the chosen path fails its reachability test and the other option passes its when-it-fits test.",
+      "then": "Pivot that turn. The wonders already standing keep paying Tourism on either path, and the army keeps the visibility bonus; the flat curve means nothing is lost but the turns already spent drifting."
+    },
+    {
+      "name": "Rival Spy in the capital",
+      "if": "Gossip or a failed mission shows a rival Spy operating in the wonder capital.",
+      "then": "Counterspy in the capital's Theater Square district permanently; a Great Work Heist against a themed Museum undoes forty turns of Tourism."
+    }
+  ],
+  "abort": {
+    "trigger": "Turn 150 with no option committed: fewer than two wonders standing, no Casus Belli war declared, and Spies idle or unbuilt.",
+    "actions": [
+      "Pick the path the empire is already closest to that turn: Tourism above the median means Culture, an army of eight on a border means Domination; commit fully and stop reading the other option.",
+      "Queue a Renaissance wonder in the capital this turn and keep one there until the Industrial era ends.",
+      "Fill every Spy slot within ten turns and give each a standing mission; an unbuilt Spy is a banked leader ability."
+    ]
+  },
+  "fail_state": "Turn 240 with a comfortable empire of eight river cities, four wonders built late and unthemed, Châteaux never placed because the banks were farmed, two Spies idle in the capital, and Tourism below the median; France is then a well-informed civilization that can see exactly how everyone else is going to win.",
+  "common_mistakes": [
+    "Racing Ancient and Classical wonders because France is 'the wonder civ'. Grand Tour starts at the Medieval era; Pyramids and the Oracle are Production spent at full price against civilizations with real early discounts.",
+    "Farming the river banks in the first fifty turns. Châteaux cannot go on an improved tile without wasting the Builder charge, and the best tiles are the ones beside wonders that do not exist yet.",
+    "Leaving the free Spy on Gain Sources for the whole game. The mission priority shifts by era, and a Spy that never runs Steal Tech Boost or Sabotage Production is the leader ability banked.",
+    "Treating the visibility bonus as a reason to fight. It is +3 Combat Strength per level, not an army; the Domination option is only offered on a shared continent against a small neighbour.",
+    "Never choosing. The kit pays a little in every era for a different reason, which makes drifting comfortable; the turn-70 decision and the era checkpoints exist because nothing in the kit will force the choice for you."
+  ],
+  "sources": [
+    "Civilization VI Civilopedia, Gathering Storm ruleset (France, Catherine de Medici (Black Queen), Garde Impériale, Château). The Garde Impériale is a unique Industrial era melee unit that replaces the Line Infantry, which is why three of them count for the Replaceable Parts Eureka.",
+    "Diplomatic Visibility combat bonus (+3 Combat Strength per level of advantage) and Spy mission list (Gain Sources, Listening Post, Steal Tech Boost, Sabotage Production, Great Work Heist, Disrupt Rocketry, Counterspy) per the Gathering Storm rules.",
+    "Boost objectives cross-checked against civilization6planner.com tech-tree and civics-tree pages, 2026-10-01.",
+    "Leadership Focus tags, caveats and Linear template for Catherine de Medici (Black Queen) in this repository."
+  ]
+}

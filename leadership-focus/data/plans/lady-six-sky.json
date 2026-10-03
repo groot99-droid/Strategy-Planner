@@ -1,0 +1,1663 @@
+{
+  "slug": "lady-six-sky",
+  "shape": "Front-Load",
+  "secondary_shape": null,
+  "version": 1,
+  "updated": "2026-10-02",
+  "assumptions": {
+    "ruleset": "Gathering Storm with every expansion and the Leader Pass",
+    "speed": "Standard",
+    "difficulty": "Emperor",
+    "map": "Continents or Pangaea, standard size, 8 civilizations",
+    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. Lady Six Sky's single persona is planned here. The shape is Front-Load because the whole empire is measured from the capital tile, the capital cannot be moved, and the number of city sites inside six tiles of it is fixed the turn the Settler plants."
+  },
+  "verdict": {
+    "victory": "Science",
+    "secondary": "Culture",
+    "confidence": "high",
+    "one_line": "Plant the capital where eight cities fit inside six tiles, settle all of them by turn 70 on Farms and Plantations rather than rivers, put an Observatory beside the Plantations in every one, and let a compact empire at +10% to everything out-research rivals twice its size.",
+    "why": "Ix Mutal Ajaw gives every other city within six tiles of the capital a tenth more of every yield and takes 15% away from anything farther, so the empire is a circle drawn on turn one and the only question is how many cities the circle holds. Mayab removes the need for rivers and coasts: Farms give Housing and Gold, so cities sit wherever the circle needs them, three tiles apart on dry land, and the Farms they grow on are Observatory adjacency. The Observatory takes major adjacency from Plantations and minor from Farms and districts, which a packed circle supplies without a mountain in sight. Science is the victory because the kit's yield is Science and the circle's weakness is scale, which Science punishes least. Culture is the fallback because the same compact Theater Squares get the same +10%. Domination fights the kit: a captured city outside the circle is a liability at -15%."
+  },
+  "map_check": {
+    "must_have": [
+      "Flat or hill land, not ocean, mountain or marsh, for at least six city centers at three-tile spacing inside six tiles of the start, counted on the visible map before the Settler moves.",
+      "Two or more Plantation resources (Bananas, Sugar, Spices, Cotton, Silk, Dyes, Citrus, Cocoa, Coffee, Tea, Tobacco, Olives) inside the circle for the Observatories."
+    ],
+    "prefer": [
+      "Grassland and plains rather than hills under the circle: Farms are the Housing, the Gold and the adjacency, and they need flat land.",
+      "Luxury resources adjacent to the planned city centers; Mayab gives an Amenity for each one touching the center.",
+      "Rainforest at the edge of the circle for a Holy Site and late appeal; it is cleared for Farms inside.",
+      "Ik Kil, Roraima or the Fountain of Youth inside the circle; each is a Science or district bonus the capital can own."
+    ],
+    "no_go": "A start on a peninsula, an island or a coast-and-mountain pocket where fewer than five city centers fit inside six tiles of any reachable tile. The circle then holds a capital and three satellites, the +10% multiplies almost nothing, and Maya is a civ with a good Archer.",
+    "fallback": "If the visible land is cramped but open country is within three tiles, walk the Settler up to three turns to center the circle on it; a turn-4 capital with eight sites beats a turn-1 capital with four. If nothing within three turns holds six sites, settle, draw the circle anyway, fill every site it has, and plan a Culture game from wonders in a tall capital rather than a Science game from city count; say plainly that the ceiling is five cities and that the game is won by turn 250 or not at all."
+  },
+  "kit_levers": [
+    {
+      "source": "leader_ability",
+      "name": "Ix Mutal Ajaw",
+      "buys": "Every yield in non-capital cities within six tiles of the Capital is raised by a tenth and every yield in cities farther away is cut by more; units within six tiles of the Capital fight at +5 Combat Strength.",
+      "exploit": "The capital tile is chosen for the circle it draws, not for the tile itself. Every city is founded inside the circle, at three-tile spacing so that eight to ten fit; none is founded outside it for any resource, wonder or coast. The defence is a ring of Hul'che inside the circle where they already have +5; nothing is built to fight beyond it."
+    },
+    {
+      "source": "civ_ability",
+      "name": "Mayab",
+      "buys": "Cities get no Housing from fresh water or coast, but every Farm gives Housing and Gold, and each Luxury resource adjacent to a City Center gives an Amenity.",
+      "exploit": "Rivers and lakes are ignored when drawing the circle; Farms are placed in triangles around each center so that every city has six or more by turn 80, which is Housing for twelve, Gold for Builders, and the Feudalism Inspiration. City centers are placed touching a Luxury where one exists, because the Amenity is free and the compact empire runs short of them."
+    },
+    {
+      "source": "unique_unit",
+      "name": "Hul'che",
+      "buys": "An Archer replacement with higher Ranged Strength and a bonus against units that are already wounded.",
+      "exploit": "Three of them, built at Archery and kept inside the circle, are the whole Ancient and Classical army: with +5 from the capital and the wounded bonus they finish anything a Warrior has touched. They also give the Machinery Eureka as Archers. The plan builds three and upgrades them, nothing more."
+    },
+    {
+      "source": "unique_infrastructure",
+      "name": "Observatory",
+      "buys": "A Campus replacement whose adjacency comes from Plantations and from Farms and districts rather than from mountains, reefs and rainforest.",
+      "exploit": "Placed in every city on the tile touching the most Plantations, and otherwise between the Farm triangles so that four Farms, the City Center and one more district give it +3. Its tile is pinned at settle time, because the Farms around it are placed to feed it. Natural Philosophy doubles whatever it has, and every city has one by turn 100."
+    },
+    {
+      "source": "agenda",
+      "name": "Solitary",
+      "buys": "Lady Six Sky likes leaders who settle far from her and dislikes those who settle near her borders.",
+      "exploit": "Irrelevant to your own play except as a warning: an AI Lady Six Sky on the map will forward-settle nobody and will hate anyone who crowds her circle, so leave her the land she wants and she is the safest neighbour on the roster."
+    }
+  ],
+  "shape_block": {
+    "front_load": {
+      "turn_zero": [
+        "Before the Settler moves: count the city centers that fit at three-tile spacing inside six tiles of the start on land you can see or reasonably infer. Six or more is a go. Four or five: move up to three turns toward open land and count again. Fewer: run the fallback.",
+        "Before the Settler moves: ignore the river. Mayab gives no Housing from it; the capital goes where the circle is largest, which is usually one or two tiles inland from where the game placed the Settler.",
+        "Before the Settler moves: find the Plantations. Each is an Observatory anchor; a capital with two Plantation resources within its first two rings has a +4 Observatory before any Farm. Pin the capital's Observatory on the tile that touches them, and the Farm triangles around it.",
+        "By turn 10: draw the circle. Every city site at three-tile spacing inside six tiles of the capital, numbered in the order they will be settled, each with its Observatory tile pinned. The count is the empire; write it down."
+      ],
+      "ceiling": "Eight to ten cities inside the circle, each reaching 12 to 15 population on Farm Housing, each with an Observatory at +3 to +5 and a Commercial Hub, at +10% to everything. That is a Science victory around turn 260 on Emperor from Universities and Research Labs in every city and Spaceport projects in the two biggest, with Culture close behind from the same +10% on Theater Squares. The cap is land: the circle holds what it holds, no conquest adds to it, and the Mars projects run on nine cities' Production and Gold, not on twenty. The plan accepts the cap and buys what it cannot build.",
+      "irreversibles": [
+        {
+          "decision": "Capital tile: the circle is drawn from it and nothing founded outside the circle will ever be at full yield.",
+          "by_turn": 3
+        },
+        {
+          "decision": "Capital Observatory tile pinned beside the Plantations, with the Farm triangles drawn around it; a Farm or district on the wrong tile costs adjacency for the game.",
+          "by_turn": 8
+        },
+        {
+          "decision": "The circle map: every site numbered, every Observatory tile named, before the second Settler is produced. A site skipped for a better one outside the circle is a city lost.",
+          "by_turn": 20
+        },
+        {
+          "decision": "The rule for cities that are not yours: anything captured or flipped outside the circle is razed or liberated, never kept; written down before the first war is declared on you.",
+          "by_turn": 40
+        }
+      ],
+      "settle_map_rule": "Draw every city before the second Settler is produced: a grid of centers exactly three tiles apart filling the circle of radius six around the capital, on flat or hill land, with no regard to rivers, lakes or coast. Number the sites by distance from the capital and settle them in that order so that the inner ring exists before a rival can reach it. Pin each site's Observatory on the tile touching the most Plantations, or failing that the tile where four Farms and the center can surround it. Mark the Farm triangles so no Builder mines a tile that was a Farm. A site at distance seven is not a site, however rich; a site at distance six on plain grassland is settled over it every time. Luxuries adjacent to a center are preferred for the Amenity, and the center is shifted one tile to touch one only if the shift keeps it inside the circle and keeps the three-tile spacing."
+    }
+  },
+  "phases": [
+    {
+      "id": "assess",
+      "name": "Assess and commit",
+      "turns": {
+        "from": 1,
+        "to": 20
+      },
+      "era": "ancient",
+      "objective": "Plant the capital where the circle is largest, pin its Observatory and Farm triangles, draw and number every site in the circle, found the pantheon, and have two Settlers out and the first Hul'che standing by turn 20. The twenty turns that fix the size of the empire.",
+      "build_order": [
+        {
+          "item": "Scout",
+          "why": "Walks the circle's rim to confirm the drawn sites and finds the Plantations and the first civilization for Writing."
+        },
+        {
+          "item": "Settler",
+          "why": "The second city at turn 14, on site one of the circle; the inner ring is claimed before anyone can walk into it."
+        },
+        {
+          "item": "Slinger",
+          "why": "Archery's Eureka on a barbarian; it upgrades to a Hul'che the turn the tech lands."
+        },
+        {
+          "item": "Builder",
+          "why": "Three Farms in the capital's first triangle: Housing, Gold, Craftsmanship, and the Observatory's adjacency."
+        },
+        {
+          "item": "Settler",
+          "why": "Site two, on the far side of the capital; Religious Settlements has given a third by now."
+        },
+        {
+          "item": "Monument",
+          "why": "Culture for Early Empire and Political Philosophy; a Farm capital grows faster than its civics."
+        },
+        {
+          "item": "Hul'che",
+          "why": "Two more at Archery; with +5 inside the circle they hold the rim against anything Ancient."
+        },
+        {
+          "item": "Observatory",
+          "why": "The capital's, on the pinned tile the turn Writing lands; +4 from two Plantations before any Farm."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:pottery",
+          "note": "Granary and the Irrigation line; the Plantations need Irrigation."
+        },
+        {
+          "id": "tech:animal-husbandry",
+          "note": "Archery's prerequisite; reveals Horses for the Pasture that boosts Horseback Riding."
+        },
+        {
+          "id": "tech:archery",
+          "note": "Hul'che; Eureka from a Slinger kill. The defence of the circle is this tech."
+        },
+        {
+          "id": "tech:writing",
+          "note": "Free from the first civilization met; the Observatory."
+        },
+        {
+          "id": "tech:irrigation",
+          "note": "Plantations on the Observatory anchors; Eureka from the first Farm on a resource."
+        },
+        {
+          "id": "tech:mining",
+          "note": "Mines on the few hills; most tiles here are Farms."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:code-of-laws",
+          "note": "God King for the pantheon; Urban Planning after."
+        },
+        {
+          "id": "civic:craftsmanship",
+          "note": "Inspiration from the first three Farms; Ilkum."
+        },
+        {
+          "id": "civic:foreign-trade",
+          "note": "A Trader inside the circle; Inspiration only if the Scout sees a second continent."
+        }
+      ],
+      "policies": [
+        {
+          "card": "God King",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "Religious Settlements by turn 20 is a third Settler at no Production cost."
+        },
+        {
+          "card": "Discipline",
+          "slot": "military",
+          "from": "civic:code-of-laws",
+          "why": "Slinger and Warrior at +5 inside the circle and +5 more against barbarians clear the rim camp."
+        },
+        {
+          "card": "Ilkum",
+          "slot": "economic",
+          "from": "civic:craftsmanship",
+          "why": "Builders faster; every city needs six Farms before it is a city."
+        }
+      ],
+      "districts": [
+        {
+          "district": "observatory",
+          "city": "capital",
+          "note": "Pinned beside the Plantations; placed at Writing, built after the second Settler."
+        }
+      ],
+      "pantheon": {
+        "slug": "religious-settlements",
+        "why": "A free Settler the turn the pantheon is founded fills site three of the circle twenty turns early, and the border growth claims the Plantations before a rival's city does; the circle is a race against the map and this wins it.",
+        "alternative": "goddess-of-festivals"
+      },
+      "wonders": [],
+      "governors": [],
+      "city_states": [
+        {
+          "type": "Scientific",
+          "why": "The first envoy is Science in the capital toward the Observatory techs."
+        }
+      ],
+      "great_people": [],
+      "checkpoints": [
+        {
+          "turn": 8,
+          "test": "Capital planted with six or more sites counted inside the circle, its Observatory pinned beside a Plantation, the first Farm triangle drawn, and the Settler in production?",
+          "pass": "Continue; number the sites before the Settler finishes.",
+          "fail": "Fewer than five sites: the fallback applies and the plan is a five-city Culture game from here. Observatory unpinned: pin it this turn, before the Builder farms the tile it should sit on."
+        },
+        {
+          "turn": 20,
+          "test": "Two Settlers out to numbered sites, the pantheon founded with its Settler walking, three Farms built, and every site in the circle numbered with its Observatory tile?",
+          "pass": "Enter the circle phase and settle in number order.",
+          "fail": "No numbered map: draw it this turn. A Settler walking to a site outside the circle: turn it round; the -15% is permanent and a worse site inside is better than a better site outside."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "assess-plant-capital",
+          "turn": 1,
+          "text": "Count the three-tile sites inside six tiles; plant where the count is highest, up to three turns' walk, ignoring the river."
+        },
+        {
+          "id": "assess-pin-observatory",
+          "turn": 3,
+          "text": "Pin the capital Observatory on the tile touching the most Plantations and draw the two Farm triangles around the center."
+        },
+        {
+          "id": "assess-scout-rim",
+          "turn": 6,
+          "text": "Scout the rim of the circle; mark Plantations, Luxuries beside planned centers, and the one camp inside the circle."
+        },
+        {
+          "id": "assess-number-sites",
+          "turn": 12,
+          "text": "Number every site in the circle by distance from the capital, with its Observatory tile; write the total. That number is the empire."
+        },
+        {
+          "id": "assess-pantheon",
+          "turn": 18,
+          "text": "Found Religious Settlements; send the free Settler to site three."
+        },
+        {
+          "id": "assess-hulche",
+          "turn": 20,
+          "text": "Archery in: upgrade the Slinger and build two more Hul'che; station them at the rim between the capital and the nearest rival."
+        }
+      ]
+    },
+    {
+      "id": "circle",
+      "name": "Fill the circle",
+      "turns": {
+        "from": 21,
+        "to": 80
+      },
+      "era": "classical",
+      "objective": "Every numbered site settled by turn 70, six Farms around each center, an Observatory in the capital and the three nearest cities, a Commercial Hub in the capital, and the rim held by three Hul'che. Low decision density; the work is settling in order and farming in triangles.",
+      "build_order": [
+        {
+          "item": "Settler",
+          "why": "Sites four through eight in number order; Colonization and Magnus Provision. Settlers are the only thing the capital builds until the circle is full."
+        },
+        {
+          "item": "Builder",
+          "why": "Six Farms per city in triangles; Ancestral Hall gives one free per new city; Pyramids gives every one an extra charge."
+        },
+        {
+          "item": "Observatory",
+          "why": "Capital first, then cities one through three, each on its pinned tile; Recorded History at two."
+        },
+        {
+          "item": "Library",
+          "why": "Capital and city one; Great Scientist points toward Education."
+        },
+        {
+          "item": "Commercial Hub",
+          "why": "Capital, as the second district; the Trade Route feeds Food to the newest city and the Market is Guilds."
+        },
+        {
+          "item": "Trader",
+          "why": "Domestic, from whichever city is youngest; Currency on the first route."
+        },
+        {
+          "item": "Government Plaza",
+          "why": "Capital; Ancestral Hall for the free Builder in every new city, which with eight cities is eight Builders."
+        },
+        {
+          "item": "Pyramids",
+          "why": "A free Builder and an extra charge on every Builder; this empire farms sixty tiles."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:bronze-working",
+          "note": "Three camp kills by Hul'che at the rim; Encampment later."
+        },
+        {
+          "id": "tech:currency",
+          "note": "The first domestic route; Commercial Hub and the Market for Guilds."
+        },
+        {
+          "id": "tech:masonry",
+          "note": "The Pyramids; Eureka from a Quarry if Stone is inside the circle."
+        },
+        {
+          "id": "tech:mathematics",
+          "note": "Observatory, Commercial Hub and Government Plaza make three; free by turn 60."
+        },
+        {
+          "id": "tech:wheel",
+          "note": "A Mine on a resource hill; the Water Mill is irrelevant, there is no river."
+        },
+        {
+          "id": "tech:horseback-riding",
+          "note": "A Pasture on the Horses or Sheep; Stirrups later."
+        },
+        {
+          "id": "tech:apprenticeship",
+          "note": "Three Mines on the circle's hills; Industrial Zones in the two biggest cities."
+        },
+        {
+          "id": "tech:construction",
+          "note": "Unboosted unless a Water Mill is possible; it gives the Games and Recreation Inspiration, and that civic unlocks the Entertainment Complex for the Amenities nine cities need."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:state-workforce",
+          "note": "Free from the capital Observatory."
+        },
+        {
+          "id": "civic:early-empire",
+          "note": "Six population comes early on Farms; Colonization."
+        },
+        {
+          "id": "civic:mysticism",
+          "note": "Free from the pantheon."
+        },
+        {
+          "id": "civic:military-tradition",
+          "note": "The rim camp cleared; the first step toward Mercenaries and Professional Army."
+        },
+        {
+          "id": "civic:political-philosophy",
+          "note": "Classical Republic; three city-states met."
+        },
+        {
+          "id": "civic:drama-and-poetry",
+          "note": "Inspiration from the Pyramids; Theater Squares in the inner ring later."
+        },
+        {
+          "id": "civic:recorded-history",
+          "note": "Two Observatories; Natural Philosophy."
+        },
+        {
+          "id": "civic:games-and-recreation",
+          "note": "Free from Construction; the Colosseum beside the capital covers most of the circle."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Colonization",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "+50% Production toward Settlers for the five remaining sites; the race for the circle is won here."
+        },
+        {
+          "card": "Urban Planning",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "One Production in every city while eight young cities build their first district."
+        },
+        {
+          "card": "Classical Republic",
+          "slot": "wildcard",
+          "from": "civic:political-philosophy",
+          "why": "Great Person points and Amenities; the compact empire needs both."
+        },
+        {
+          "card": "Natural Philosophy",
+          "slot": "economic",
+          "from": "civic:recorded-history",
+          "why": "Doubles Observatory adjacency, which the Plantations and Farms already made large."
+        }
+      ],
+      "districts": [
+        {
+          "district": "observatory",
+          "city": "every city",
+          "note": "On the pinned tile beside Plantations or between Farm triangles."
+        },
+        {
+          "district": "commercial-hub",
+          "city": "capital",
+          "note": "Second district; Trade Routes carry Food to the newest cities."
+        },
+        {
+          "district": "government-plaza",
+          "city": "capital",
+          "note": "Ancestral Hall; a free Builder in each of eight new cities."
+        }
+      ],
+      "pantheon": {
+        "slug": "religious-settlements",
+        "why": "Already founded; the border growth keeps claiming Plantations ahead of the neighbours."
+      },
+      "wonders": [
+        {
+          "name": "Pyramids",
+          "why": "A free Builder and an extra charge on every Builder for an empire that farms every flat tile in a six-tile circle.",
+          "skip_if": "No flat Desert tile inside the circle, or a rival shows Masonry ten turns before you."
+        },
+        {
+          "name": "Colosseum",
+          "why": "Culture and Amenities to every city within six tiles, which from a tile beside the capital is most of the circle.",
+          "skip_if": "Games and Recreation lands after turn 80 or no Entertainment Complex tile is free beside the capital."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "magnus",
+          "promotion": "Provision",
+          "city": "capital",
+          "why": "Five Settlers out of the capital without losing the population the Farms grew."
+        },
+        {
+          "governor": "pingala",
+          "promotion": "Researcher",
+          "city": "capital",
+          "why": "Science per citizen in the city with the best Observatory, once the Settlers are done."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "mitla",
+          "why": "Growth 15% faster in cities with a Campus, and the Observatory counts; nine cities grow on Farms 15% faster."
+        },
+        {
+          "slug": "la-venta",
+          "why": "Colossal Heads for Faith on the rainforest tiles at the rim; Faith buys Great Scientists later."
+        },
+        {
+          "type": "Industrial",
+          "why": "Production toward districts in the capital, which builds eight Settlers and then everything else."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-scientist",
+          "why": "The first Classical one is the Education Eureka; two Libraries reach it by turn 80."
+        },
+        {
+          "class": "great-engineer",
+          "why": "Any with wonder charges finishes the Pyramids or the Colosseum."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 50,
+          "test": "Five cities inside the circle in number order, six Farms around the capital, the capital Observatory built, and no city outside six tiles?",
+          "pass": "Continue; sites six through eight and the Observatories.",
+          "fail": "A city outside the circle: it stays as a Production city with no districts and the plan says so; nothing else leaves the circle. Fewer than five cities: Settlers ahead of everything until the inner ring is full."
+        },
+        {
+          "turn": 80,
+          "test": "Every numbered site settled, four Observatories, two Libraries, the Pyramids built or lost, and Natural Philosophy slotted?",
+          "pass": "Enter the compact phase; the empire is the size it will be.",
+          "fail": "Sites unsettled because a rival took them: the circle is smaller than drawn; write the new count and raise the Culture fallback's weight. Observatories unbuilt: they are the first district everywhere and nothing is queued ahead of them."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "circle-inner-ring",
+          "turn": 35,
+          "text": "Sites one through four settled; six Farms pinned around each the turn it is founded."
+        },
+        {
+          "id": "circle-capital-observatory",
+          "turn": 40,
+          "text": "Capital Observatory built on its pin; Library queued; count the adjacency and write it on the map."
+        },
+        {
+          "id": "circle-ancestral-hall",
+          "turn": 55,
+          "text": "Government Plaza with Ancestral Hall in the capital; every later city gets its free Builder."
+        },
+        {
+          "id": "circle-outer-ring",
+          "turn": 70,
+          "text": "Sites five through eight settled in number order; the circle is full and the Settler queue ends."
+        },
+        {
+          "id": "circle-conquest-rule",
+          "turn": 75,
+          "text": "Write the rule for captured or flipped cities outside the circle: raze if small, liberate if it was someone's, never keep."
+        }
+      ]
+    },
+    {
+      "id": "compact",
+      "name": "The compact core",
+      "turns": {
+        "from": 81,
+        "to": 150
+      },
+      "era": "medieval",
+      "objective": "Nine cities out-yield fifteen: Universities on every Observatory, Commercial Hubs and Markets everywhere for the Gold that buys what the land cannot build, Theater Squares in the inner ring for the Culture fallback, Industrial Zones in the two biggest, and an Entertainment Complex or the Colosseum for the Amenities a dense empire runs short of. The Hul'che become Crossbowmen and stay home.",
+      "build_order": [
+        {
+          "item": "University",
+          "why": "Every Observatory; two for Printing; the first Great Scientist fires Education."
+        },
+        {
+          "item": "Commercial Hub",
+          "why": "Every city; Markets for Guilds, Gold for Great Scientists, and a Trade Route per city feeding the youngest."
+        },
+        {
+          "item": "Theater Square",
+          "why": "Capital and the two inner-ring cities; Amphitheaters for Great Writers and the Culture to keep the civics moving."
+        },
+        {
+          "item": "Crossbowman",
+          "why": "Upgrade the three Hul'che under Professional Army; the rim guard for the next hundred turns."
+        },
+        {
+          "item": "Industrial Zone",
+          "why": "The two biggest cities, placed so their Factories cover the whole circle; Workshops for Industrialization."
+        },
+        {
+          "item": "Aqueduct",
+          "why": "Capital, for Housing past the Farms and the Military Engineering Eureka; Mayab does not stop Aqueducts."
+        },
+        {
+          "item": "Entertainment Complex",
+          "why": "Capital if the Colosseum was missed; nine cities at ten population need the Amenities."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:education",
+          "note": "The first Great Scientist; Universities on the Observatories."
+        },
+        {
+          "id": "tech:machinery",
+          "note": "Free from three Hul'che; Crossbowmen."
+        },
+        {
+          "id": "tech:military-engineering",
+          "note": "The capital Aqueduct; Niter."
+        },
+        {
+          "id": "tech:castles",
+          "note": "Free from the Tier 2 government."
+        },
+        {
+          "id": "tech:buttress",
+          "note": "Free from the Colosseum; the Ancient-era Pyramids do not count."
+        },
+        {
+          "id": "tech:printing",
+          "note": "Two Universities."
+        },
+        {
+          "id": "tech:banking",
+          "note": "Free from Guilds."
+        },
+        {
+          "id": "tech:astronomy",
+          "note": "A University beside a Mountain only if the rim has one; usually unboosted and taken late."
+        },
+        {
+          "id": "tech:industrialization",
+          "note": "Two Workshops."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:feudalism",
+          "note": "Free: six Farms stood by turn 40. Serfdom."
+        },
+        {
+          "id": "civic:civil-service",
+          "note": "Free: the capital passes ten population on Farm Housing."
+        },
+        {
+          "id": "civic:guilds",
+          "note": "Two Markets; Banking free."
+        },
+        {
+          "id": "civic:medieval-faires",
+          "note": "Four Trade Routes from the Commercial Hubs."
+        },
+        {
+          "id": "civic:divine-right",
+          "note": "Monarchy or stay Republic; two Temples only if a religion happened."
+        },
+        {
+          "id": "civic:humanism",
+          "note": "A Great Artist from the inner-ring Theater Squares; Art Museums for the fallback."
+        },
+        {
+          "id": "civic:diplomatic-service",
+          "note": "A Research Alliance with the nearest Science civ."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Serfdom",
+          "slot": "economic",
+          "from": "civic:feudalism",
+          "why": "Builders with extra charges for the last Farm triangles and the Mines."
+        },
+        {
+          "card": "Meritocracy",
+          "slot": "economic",
+          "from": "civic:civil-service",
+          "why": "Culture per district; nine cities at three districts is 27 Culture."
+        },
+        {
+          "card": "Craftsmen",
+          "slot": "economic",
+          "from": "civic:guilds",
+          "why": "Doubles Industrial Zone adjacency in the two zone cities."
+        },
+        {
+          "card": "Professional Army",
+          "slot": "military",
+          "from": "civic:mercenaries",
+          "why": "Hul'che to Crossbowmen at half the Gold; the only military spend of the era."
+        }
+      ],
+      "districts": [
+        {
+          "district": "commercial-hub",
+          "city": "every city",
+          "note": "Second district; the Gold is what a capped empire spends instead of Production."
+        },
+        {
+          "district": "theater-square",
+          "city": "capital and the inner ring",
+          "note": "The Culture fallback and the civics engine."
+        },
+        {
+          "district": "industrial-zone",
+          "city": "the two biggest cities",
+          "note": "Placed to cover the circle with Factories."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Kilwa Kisiwani",
+          "why": "Suzerainty of two Scientific city-states adds 15% Science empire-wide; it needs a coastal city, which the circle may hold.",
+          "skip_if": "No coastal city inside the circle, or Machinery lands after turn 130."
+        },
+        {
+          "name": "Great Zimbabwe",
+          "why": "Gold per Bonus resource in the city's Trade Routes; the circle is full of Bonus resources under Farms.",
+          "skip_if": "No Cattle inside a Commercial Hub city or Banking after turn 140."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Grants",
+          "city": "capital",
+          "why": "Great Person points doubled; Great Scientists are the Science this empire cannot build."
+        },
+        {
+          "governor": "liang",
+          "promotion": "Zoning Commissioner",
+          "city": "the newest city",
+          "why": "Districts faster where the Observatory is not yet built."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "geneva",
+          "why": "15% Science while at peace, and this empire never declares war."
+        },
+        {
+          "slug": "bologna",
+          "why": "Great Person points per district with a building; nine cities with Observatories and Hubs."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-scientist",
+          "why": "Every one; buy with Gold when the points are short. The Renaissance one, Isaac Newton, adds Science to every University, which every city has."
+        },
+        {
+          "class": "great-merchant",
+          "why": "The Gold ones; Gold buys the buildings a nine-city empire cannot build fast enough."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 115,
+          "test": "Universities in four cities, Commercial Hubs in six, three Crossbowmen at the rim, Amenities positive in every city, and Science top two?",
+          "pass": "Continue; Industrial Zones and the Theater Squares.",
+          "fail": "Amenities negative: the Colosseum or an Entertainment Complex before anything else; a compact empire in revolt loses the +10% to unhappiness. Science third: Universities before Markets."
+        },
+        {
+          "turn": 150,
+          "test": "Nine cities with Observatory and University, two Industrial Zones with Workshops, a Research Alliance running, and no city outside the circle?",
+          "pass": "Enter the Industrial phase.",
+          "fail": "A captured or flipped city outside the circle still held: raze or liberate it this turn; its -15% is also a war magnet."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "compact-universities",
+          "turn": 100,
+          "text": "Universities in the capital and the inner ring; Printing collected."
+        },
+        {
+          "id": "compact-crossbowmen",
+          "turn": 110,
+          "text": "Three Hul'che upgraded to Crossbowmen under Professional Army; parked at the rim."
+        },
+        {
+          "id": "compact-amenities",
+          "turn": 125,
+          "text": "Colosseum or Entertainment Complex in the capital; check every city is at zero or better Amenities."
+        },
+        {
+          "id": "compact-industrial-zones",
+          "turn": 140,
+          "text": "Both Industrial Zones placed with Workshops; check every city is within six tiles of one."
+        }
+      ]
+    },
+    {
+      "id": "live",
+      "name": "Live inside the ceiling",
+      "turns": {
+        "from": 151,
+        "to": 220
+      },
+      "era": "industrial",
+      "objective": "Convert the +10% into a Science lead: Factories and Power covering the circle, Research Labs on every Observatory, Rationalism, Great Scientists bought with the Farm Gold, and the two Spaceport cities chosen now. Nine cities cannot out-build twenty, so Gold does the building.",
+      "build_order": [
+        {
+          "item": "Factory",
+          "why": "Both Industrial Zones; between them the two Factories reach every city in the circle."
+        },
+        {
+          "item": "Research Lab",
+          "why": "Every Observatory; the Science victory is built here, and bought where it is slow."
+        },
+        {
+          "item": "Coal Power Plant",
+          "why": "One, in the zone with Coal nearby; Power for every Lab and Factory in six tiles, which is the circle."
+        },
+        {
+          "item": "Bank",
+          "why": "Every Commercial Hub; two for Economics; the Gold that buys Great Scientists."
+        },
+        {
+          "item": "Neighborhood",
+          "why": "Two, on the rim's Breathtaking tiles; Sanitation, and Housing past what the Farms give."
+        },
+        {
+          "item": "Sewer",
+          "why": "Capital and the two biggest; Housing for the fifteen population Urbanization wants."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:scientific-theory",
+          "note": "Free from The Enlightenment; Research Grants."
+        },
+        {
+          "id": "tech:economics",
+          "note": "Two Banks."
+        },
+        {
+          "id": "tech:sanitation",
+          "note": "Two Neighborhoods."
+        },
+        {
+          "id": "tech:refining",
+          "note": "The Coal Power Plant."
+        },
+        {
+          "id": "tech:chemistry",
+          "note": "Research Alliance at level 2; Research Labs."
+        },
+        {
+          "id": "tech:electricity",
+          "note": "Unboosted unless a coastal city has Privateers; Power for the Labs."
+        },
+        {
+          "id": "tech:radio",
+          "note": "A National Park at the rim if four Breathtaking tiles exist; otherwise unboosted."
+        },
+        {
+          "id": "tech:flight",
+          "note": "Any Industrial wonder; the Ruhr Valley if a river touches a zone."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:the-enlightenment",
+          "note": "Three Great People long done; Rationalism."
+        },
+        {
+          "id": "civic:civil-engineering",
+          "note": "Seven district types; Public Works."
+        },
+        {
+          "id": "civic:urbanization",
+          "note": "Free: the capital at fifteen population on Farms and Sewers."
+        },
+        {
+          "id": "civic:colonialism",
+          "note": "Researching Astronomy, taken late; usually unboosted."
+        },
+        {
+          "id": "civic:conservation",
+          "note": "A Neighborhood on a Breathtaking rim tile."
+        },
+        {
+          "id": "civic:natural-history",
+          "note": "An Archaeological Museum in the capital Theater Square, or unboosted on the way."
+        },
+        {
+          "id": "civic:mass-media",
+          "note": "Free from Radio."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Rationalism",
+          "slot": "economic",
+          "from": "civic:the-enlightenment",
+          "why": "Science from Campus buildings; every Observatory is +3 or more and every city passes fifteen population on Farms."
+        },
+        {
+          "card": "Free Market",
+          "slot": "economic",
+          "from": "civic:the-enlightenment",
+          "why": "Gold from Commercial Hub buildings in nine cities; the Great Scientist fund."
+        },
+        {
+          "card": "Public Works",
+          "slot": "economic",
+          "from": "civic:civil-engineering",
+          "why": "Builders with extra charges for the Coal and Aluminum Mines and the Oil Wells."
+        }
+      ],
+      "districts": [
+        {
+          "district": "neighborhood",
+          "city": "the two rim cities with Breathtaking tiles",
+          "note": "Housing past the Farms; Sanitation and Conservation in one."
+        },
+        {
+          "district": "spaceport",
+          "city": "the two Industrial Zone cities",
+          "note": "Placed now, built at Rocketry; the choice is made here."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Oxford University",
+          "why": "Two free techs and Science in the best Observatory city.",
+          "skip_if": "No Grassland or Plains tile touches an Observatory with a University by turn 200 or a Science rival is ahead on Production."
+        },
+        {
+          "name": "Ruhr Valley",
+          "why": "Production per Mine and Quarry in the zone city; the circle has few, so only if a river touches a zone.",
+          "skip_if": "No river beside an Industrial Zone, which a Mayab empire often lacks."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Space Initiative",
+          "city": "the Spaceport city",
+          "why": "Space projects 30% faster where he sits; he moves there at Rocketry."
+        },
+        {
+          "governor": "reyna",
+          "promotion": "Tax Collector",
+          "city": "the biggest Commercial Hub city",
+          "why": "Gold per citizen; the fund that buys Research Labs and Great Scientists."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "geneva",
+          "why": "Keep the 15%; the empire never declares war."
+        },
+        {
+          "slug": "hong-kong",
+          "why": "City projects 20% faster; the Campus Research Grants and later the space projects."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-scientist",
+          "why": "Every Industrial and Modern one; bought with the Farm Gold the turn it appears."
+        },
+        {
+          "class": "great-engineer",
+          "why": "Those with Production toward wonders go to Oxford; those with Power to the Spaceport city."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 185,
+          "test": "Both Factories built, Research Labs in five cities, Rationalism slotted, and Science first?",
+          "pass": "Continue to the close.",
+          "fail": "Science second or third: buy Labs with Gold in the four cities without one and move Pingala to Grants until they are built."
+        },
+        {
+          "turn": 220,
+          "test": "Two Spaceport tiles placed, Power in every Lab city, Chemistry collected, and Gold income above sixty a turn?",
+          "pass": "Enter the close.",
+          "fail": "No Power: a second plant; unpowered Labs are half Labs. Gold under sixty: Banks in every Hub before the Stock Exchanges."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "live-factories",
+          "turn": 165,
+          "text": "Factories in both zones and a Coal Power Plant beside one; confirm every city is powered."
+        },
+        {
+          "id": "live-labs",
+          "turn": 195,
+          "text": "Research Labs in every Observatory city, bought with Gold where the build exceeds twelve turns."
+        },
+        {
+          "id": "live-chemistry",
+          "turn": 205,
+          "text": "Research Alliance at level 2; Chemistry collected."
+        },
+        {
+          "id": "live-spaceport-choice",
+          "turn": 215,
+          "text": "Spaceport tiles placed in both zone cities on flat land; nothing else is queued there."
+        }
+      ]
+    },
+    {
+      "id": "close",
+      "name": "Close",
+      "turns": {
+        "from": 221,
+        "to": null
+      },
+      "era": "modern",
+      "objective": "Finish Science: Spaceports in both zone cities, the satellite, the Moon landing and the Mars colony run on Factories, Power, Great Engineers and Gold, Computers from the Tier 3 government, and the Exoplanet Expedition launched with Lasers for the laser station. The Crossbowmen become Machine Guns at the rim and nothing else is built for war.",
+      "build_order": [
+        {
+          "item": "Spaceport",
+          "why": "Both zone cities; Rocketry's turn."
+        },
+        {
+          "item": "Launch Earth Satellite",
+          "why": "The first project, in the bigger city; Mars projects follow in both."
+        },
+        {
+          "item": "Oil Power Plant",
+          "why": "Advanced Ballistics Eureka and Power when the Coal runs out."
+        },
+        {
+          "item": "Stock Exchange",
+          "why": "Two for Capitalism; the last Great Engineers are bought."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:computers",
+          "note": "Free from the Tier 3 government."
+        },
+        {
+          "id": "tech:plastics",
+          "note": "An Oil Well on the nearest Oil."
+        },
+        {
+          "id": "tech:advanced-ballistics",
+          "note": "The Oil Power Plant."
+        },
+        {
+          "id": "tech:satellites",
+          "note": "Two Broadcast Centers in the Theater Squares."
+        },
+        {
+          "id": "tech:nanotechnology",
+          "note": "A Mine on Aluminum if the circle has it; otherwise unboosted."
+        },
+        {
+          "id": "tech:nuclear-fusion",
+          "note": "A Nuclear Power Plant if Uranium is inside the circle; otherwise unboosted for the Expedition."
+        },
+        {
+          "id": "tech:robotics",
+          "note": "Unboosted; Globalization is not on the civic path."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:space-race",
+          "note": "Free from the first Spaceport; Integrated Space Cell."
+        },
+        {
+          "id": "civic:nuclear-program",
+          "note": "A Research Lab; the International Space Agency card."
+        },
+        {
+          "id": "civic:capitalism",
+          "note": "Two Stock Exchanges."
+        },
+        {
+          "id": "civic:class-struggle",
+          "note": "Three Factories; Five-Year Plan."
+        },
+        {
+          "id": "civic:social-media",
+          "note": "Free from Telecommunications."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Integrated Space Cell",
+          "slot": "military",
+          "from": "civic:space-race",
+          "why": "Space projects faster in cities with an Encampment; build one Encampment in a Spaceport city for this card alone."
+        },
+        {
+          "card": "Five-Year Plan",
+          "slot": "economic",
+          "from": "civic:class-struggle",
+          "why": "Campus and Industrial Zone adjacency doubled."
+        },
+        {
+          "card": "International Space Agency",
+          "slot": "diplomatic",
+          "from": "civic:nuclear-program",
+          "why": "Science per city-state you are suzerain of; Geneva, Bologna, Mitla and Hong Kong."
+        }
+      ],
+      "districts": [],
+      "wonders": [],
+      "governors": [
+        {
+          "governor": "magnus",
+          "promotion": "Vertical Integration",
+          "city": "the second Spaceport city",
+          "why": "Production from every Industrial Zone within six tiles; both zones are inside the circle."
+        }
+      ],
+      "city_states": [],
+      "great_people": [
+        {
+          "class": "great-engineer",
+          "why": "Every one with a space project charge; bought with Gold the turn it appears."
+        },
+        {
+          "class": "great-scientist",
+          "why": "The Atomic ones; take every one until the Expedition launches."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 260,
+          "test": "Satellite launched, Moon landing in progress, Computers in, both Spaceports powered, and the Exoplanet Expedition reachable before turn 300?",
+          "pass": "Mars projects in both cities, then the Expedition; no further decisions.",
+          "fail": "A Science rival ahead on projects: buy Great Engineers with every Gold, put Magnus on Vertical Integration in the laggard, and run Campus Research Grants in every other city."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "close-spaceports",
+          "turn": 230,
+          "text": "Spaceports built in both zone cities; Space Race collected on the first."
+        },
+        {
+          "id": "close-satellite",
+          "turn": 245,
+          "text": "Launch Earth Satellite complete; Moon landing queued the same turn."
+        },
+        {
+          "id": "close-garrison",
+          "turn": 250,
+          "text": "Crossbowmen upgraded to Machine Guns at the rim; nothing else built for war."
+        }
+      ]
+    }
+  ],
+  "boosts": [
+    {
+      "id": "tech:sailing",
+      "fit": "costly",
+      "when": "assess",
+      "how": "Only if a numbered site is coastal."
+    },
+    {
+      "id": "tech:astrology",
+      "fit": "costly",
+      "when": "assess",
+      "how": "Only if the Scout finds a natural wonder at the rim."
+    },
+    {
+      "id": "tech:irrigation",
+      "fit": "free",
+      "when": "assess",
+      "how": "The first Builder farms a Wheat, Rice or Maize; the circle is farmland."
+    },
+    {
+      "id": "tech:archery",
+      "fit": "cheap",
+      "when": "assess",
+      "how": "The Slinger finishes a barbarian at the rim camp; the Hul'che is this tech."
+    },
+    {
+      "id": "tech:writing",
+      "fit": "free",
+      "when": "assess",
+      "how": "The Scout meets the first civilization."
+    },
+    {
+      "id": "tech:masonry",
+      "fit": "cheap",
+      "when": "circle",
+      "how": "A Quarry on Stone inside the circle."
+    },
+    {
+      "id": "tech:bronze-working",
+      "fit": "cheap",
+      "when": "circle",
+      "how": "Three camp kills by the Hul'che at the rim."
+    },
+    {
+      "id": "tech:wheel",
+      "fit": "cheap",
+      "when": "circle",
+      "how": "A Mine on a resource hill, of which the circle has a few."
+    },
+    {
+      "id": "tech:celestial-navigation",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:currency",
+      "fit": "free",
+      "when": "circle",
+      "how": "The first domestic Trade Route from the youngest city."
+    },
+    {
+      "id": "tech:horseback-riding",
+      "fit": "cheap",
+      "when": "circle",
+      "how": "A Pasture on the Horses or Sheep inside the circle."
+    },
+    {
+      "id": "tech:iron-working",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:mathematics",
+      "fit": "free",
+      "when": "circle",
+      "how": "Observatory, Commercial Hub and Government Plaza in the capital."
+    },
+    {
+      "id": "tech:construction",
+      "fit": "costly",
+      "when": "circle",
+      "how": "A Water Mill needs a river, which Mayab taught the plan to ignore; usually unboosted."
+    },
+    {
+      "id": "tech:engineering",
+      "fit": "cheap",
+      "when": "circle",
+      "how": "Ancient Walls in the rim city facing the nearest rival."
+    },
+    {
+      "id": "tech:shipbuilding",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:apprenticeship",
+      "fit": "cheap",
+      "when": "circle",
+      "how": "Three Mines on the circle's hills."
+    },
+    {
+      "id": "tech:machinery",
+      "fit": "free",
+      "when": "compact",
+      "how": "Three Hul'che count as Archers."
+    },
+    {
+      "id": "tech:military-tactics",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:education",
+      "fit": "cheap",
+      "when": "compact",
+      "how": "The first Great Scientist from the Observatories."
+    },
+    {
+      "id": "tech:military-engineering",
+      "fit": "cheap",
+      "when": "compact",
+      "how": "The capital Aqueduct for Housing."
+    },
+    {
+      "id": "tech:castles",
+      "fit": "free",
+      "when": "compact",
+      "how": "Any Tier 2 government."
+    },
+    {
+      "id": "tech:stirrups",
+      "fit": "free",
+      "when": "compact",
+      "how": "Feudalism is on the civic path."
+    },
+    {
+      "id": "tech:buttress",
+      "fit": "cheap",
+      "when": "compact",
+      "how": "The Colosseum; the Ancient-era Pyramids do not count."
+    },
+    {
+      "id": "tech:cartography",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:printing",
+      "fit": "cheap",
+      "when": "compact",
+      "how": "Two Universities on the Observatories."
+    },
+    {
+      "id": "tech:mass-production",
+      "fit": "cheap",
+      "when": "compact",
+      "how": "A Lumber Mill on a rim Woods."
+    },
+    {
+      "id": "tech:banking",
+      "fit": "free",
+      "when": "compact",
+      "how": "Guilds is on the civic path."
+    },
+    {
+      "id": "tech:gunpowder",
+      "fit": "costly",
+      "when": "compact",
+      "how": "An Armory in an Encampment this plan builds only for Integrated Space Cell much later."
+    },
+    {
+      "id": "tech:astronomy",
+      "fit": "costly",
+      "when": "compact",
+      "how": "A University beside a Mountain only if the rim has one."
+    },
+    {
+      "id": "tech:industrialization",
+      "fit": "cheap",
+      "when": "compact",
+      "how": "Two Workshops in the zone cities."
+    },
+    {
+      "id": "tech:metal-casting",
+      "fit": "free",
+      "when": "compact",
+      "how": "The upgraded Hul'che are three Crossbowmen."
+    },
+    {
+      "id": "tech:scientific-theory",
+      "fit": "free",
+      "when": "live",
+      "how": "The Enlightenment is on the civic path."
+    },
+    {
+      "id": "tech:electricity",
+      "fit": "costly",
+      "when": "live",
+      "how": "Two Privateers only if a coastal city exists."
+    },
+    {
+      "id": "tech:economics",
+      "fit": "cheap",
+      "when": "live",
+      "how": "Two Banks in the Commercial Hubs."
+    },
+    {
+      "id": "tech:sanitation",
+      "fit": "cheap",
+      "when": "live",
+      "how": "Two Neighborhoods at the rim."
+    },
+    {
+      "id": "tech:rifling",
+      "fit": "costly",
+      "when": "live",
+      "how": "A Mine on Niter only if the circle holds it."
+    },
+    {
+      "id": "tech:refining",
+      "fit": "cheap",
+      "when": "live",
+      "how": "The first Coal Power Plant."
+    },
+    {
+      "id": "tech:radio",
+      "fit": "costly",
+      "when": "live",
+      "how": "A National Park only if four Breathtaking tiles sit at the rim; the circle is farmland."
+    },
+    {
+      "id": "tech:chemistry",
+      "fit": "cheap",
+      "when": "live",
+      "how": "Research Alliance at level 2."
+    },
+    {
+      "id": "tech:flight",
+      "fit": "costly",
+      "when": "live",
+      "how": "An Industrial wonder, which this plan builds only if the Ruhr fits."
+    },
+    {
+      "id": "tech:combustion",
+      "fit": "costly",
+      "when": "live",
+      "how": "An Artifact only if the capital Theater Square gets an Archaeological Museum."
+    },
+    {
+      "id": "tech:plastics",
+      "fit": "cheap",
+      "when": "close",
+      "how": "An Oil Well on the nearest Oil."
+    },
+    {
+      "id": "tech:computers",
+      "fit": "free",
+      "when": "close",
+      "how": "Any Tier 3 government."
+    },
+    {
+      "id": "tech:advanced-ballistics",
+      "fit": "cheap",
+      "when": "close",
+      "how": "The Oil Power Plant."
+    },
+    {
+      "id": "tech:satellites",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Broadcast Centers in the inner-ring Theater Squares."
+    },
+    {
+      "id": "tech:nanotechnology",
+      "fit": "costly",
+      "when": "close",
+      "how": "A Mine on Aluminum only if the circle holds it."
+    },
+    {
+      "id": "tech:nuclear-fusion",
+      "fit": "costly",
+      "when": "close",
+      "how": "A Nuclear Power Plant only if Uranium is inside the circle."
+    },
+    {
+      "id": "tech:robotics",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:craftsmanship",
+      "fit": "free",
+      "when": "assess",
+      "how": "Three Farms from the first Builder."
+    },
+    {
+      "id": "civic:foreign-trade",
+      "fit": "costly",
+      "when": "assess",
+      "how": "Only if the Scout reaches a second continent."
+    },
+    {
+      "id": "civic:military-tradition",
+      "fit": "cheap",
+      "when": "circle",
+      "how": "The rim camp cleared by the Hul'che."
+    },
+    {
+      "id": "civic:state-workforce",
+      "fit": "free",
+      "when": "circle",
+      "how": "The capital Observatory, the first district."
+    },
+    {
+      "id": "civic:early-empire",
+      "fit": "free",
+      "when": "circle",
+      "how": "Six population across the first three cities on Farms."
+    },
+    {
+      "id": "civic:mysticism",
+      "fit": "free",
+      "when": "circle",
+      "how": "The pantheon founded by turn 20."
+    },
+    {
+      "id": "civic:political-philosophy",
+      "fit": "cheap",
+      "when": "circle",
+      "how": "Three city-states met by the Scout."
+    },
+    {
+      "id": "civic:drama-and-poetry",
+      "fit": "cheap",
+      "when": "circle",
+      "how": "The Pyramids or the Colosseum."
+    },
+    {
+      "id": "civic:games-and-recreation",
+      "fit": "free",
+      "when": "circle",
+      "how": "Researching Construction."
+    },
+    {
+      "id": "civic:recorded-history",
+      "fit": "free",
+      "when": "circle",
+      "how": "Two Observatories count as Campuses."
+    },
+    {
+      "id": "civic:military-training",
+      "fit": "costly",
+      "when": "compact",
+      "how": "An Encampment only in the Spaceport city, much later."
+    },
+    {
+      "id": "civic:theology",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:defensive-tactics",
+      "fit": "costly",
+      "when": "circle",
+      "how": "Only if a neighbour declares on you."
+    },
+    {
+      "id": "civic:feudalism",
+      "fit": "free",
+      "when": "compact",
+      "how": "Six Farms stood by turn 40."
+    },
+    {
+      "id": "civic:civil-service",
+      "fit": "free",
+      "when": "compact",
+      "how": "The capital at ten population on Farm Housing."
+    },
+    {
+      "id": "civic:guilds",
+      "fit": "cheap",
+      "when": "compact",
+      "how": "Markets in two Commercial Hubs."
+    },
+    {
+      "id": "civic:medieval-faires",
+      "fit": "cheap",
+      "when": "compact",
+      "how": "Four Trade Routes from the Commercial Hubs."
+    },
+    {
+      "id": "civic:divine-right",
+      "fit": "costly",
+      "when": "compact",
+      "how": "Two Temples only if a religion happened; usually unboosted."
+    },
+    {
+      "id": "civic:mercenaries",
+      "fit": "costly",
+      "when": "compact",
+      "how": "Eight land units is more than twice the rim guard."
+    },
+    {
+      "id": "civic:humanism",
+      "fit": "cheap",
+      "when": "compact",
+      "how": "A Great Artist from the inner-ring Theater Squares."
+    },
+    {
+      "id": "civic:diplomatic-service",
+      "fit": "cheap",
+      "when": "compact",
+      "how": "A Research Alliance with the nearest Science civ."
+    },
+    {
+      "id": "civic:exploration",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:mercantilism",
+      "fit": "cheap",
+      "when": "live",
+      "how": "The first Great Merchant from nine Commercial Hubs."
+    },
+    {
+      "id": "civic:the-enlightenment",
+      "fit": "free",
+      "when": "live",
+      "how": "Three Great People by the Medieval era."
+    },
+    {
+      "id": "civic:civil-engineering",
+      "fit": "cheap",
+      "when": "live",
+      "how": "Seven district types; the Entertainment Complex and a rim Holy Site make it; an Aqueduct does not count."
+    },
+    {
+      "id": "civic:urbanization",
+      "fit": "free",
+      "when": "live",
+      "how": "The capital at fifteen population."
+    },
+    {
+      "id": "civic:colonialism",
+      "fit": "costly",
+      "when": "live",
+      "how": "Astronomy is taken late; usually unboosted."
+    },
+    {
+      "id": "civic:conservation",
+      "fit": "cheap",
+      "when": "live",
+      "how": "A Neighborhood on a Breathtaking rim tile."
+    },
+    {
+      "id": "civic:natural-history",
+      "fit": "costly",
+      "when": "live",
+      "how": "An Archaeological Museum if the capital Theater Square has the Production spare."
+    },
+    {
+      "id": "civic:mass-media",
+      "fit": "free",
+      "when": "live",
+      "how": "Research Radio first; the Inspiration follows at no extra cost."
+    },
+    {
+      "id": "civic:capitalism",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Stock Exchanges."
+    },
+    {
+      "id": "civic:class-struggle",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Three Factories; the third in the inner ring."
+    },
+    {
+      "id": "civic:nuclear-program",
+      "fit": "free",
+      "when": "close",
+      "how": "The first Research Lab."
+    },
+    {
+      "id": "civic:space-race",
+      "fit": "free",
+      "when": "close",
+      "how": "The first Spaceport."
+    },
+    {
+      "id": "civic:social-media",
+      "fit": "free",
+      "when": "close",
+      "how": "Researching Telecommunications."
+    }
+  ],
+  "decision_triggers": [
+    {
+      "name": "A rival Settler heads for the circle",
+      "if": "A foreign Settler is seen walking toward a numbered site that is not yet settled.",
+      "then": "The next Settler goes to that site out of number order, escorted by a Hul'che; a Warrior stands on the site tile until it arrives. A rival city inside the circle is a permanent hole in the empire and a loyalty war you cannot afford."
+    },
+    {
+      "name": "A city flips to you",
+      "if": "A rival city outside six tiles joins you through Loyalty or is offered in a peace deal.",
+      "then": "Apply the written rule: raze it if it is small, liberate it if it was ever someone else's, keep it only if it holds a wonder or a strategic resource the circle lacks, as a no-district Production city. The -15% is forever and so is the war it attracts."
+    },
+    {
+      "name": "Amenities turn negative",
+      "if": "Three or more cities show negative Amenities at any point after turn 90.",
+      "then": "Stop district construction in those cities and build the Entertainment Complex or buy the Arena; a compact empire shares Luxuries badly and the +10% is lost to unrest faster than it is gained. Shift a center onto a Luxury only when founding, never after."
+    },
+    {
+      "name": "An army arrives at the rim",
+      "if": "A rival force crosses into the circle before turn 150.",
+      "then": "Do not build Walls everywhere. The Hul'che and later the Crossbowmen fight at +5 inside the circle; pull them back two tiles so the enemy is wounded by the city and finished by the wounded bonus. Nothing pursues past the rim."
+    }
+  ],
+  "abort": {
+    "trigger": "Turn 20 with a capital whose circle holds fewer than five sites and no better capital within reach, or turn 80 with three or more cities founded outside six tiles.",
+    "actions": [
+      "Say plainly that the circle is small and that the empire is the cities inside it; stop founding cities for land the ability punishes.",
+      "Switch the weight to Culture: a tall capital with the Pyramids, the Colosseum, Kilwa and the Hermitage, Theater Squares in every inner city, and Faith-bought Great Artists, aiming to finish before the capped Science would.",
+      "Raze or liberate the outside cities before they become the war; keep the Hul'che line and the +5 inside the circle as the whole defence."
+    ]
+  },
+  "fail_state": "Turn 150 with five cities inside the circle and three outside it at -15%, Observatories placed beside rivers for Housing that Mayab never gives, Farms mined for Production, and Science in the middle of the table. The capital tile that drew the circle and the Settlers that left it were decided before turn 40 and no city can be moved.",
+  "common_mistakes": [
+    "Settling the capital on the river. Mayab gives no Housing from water; the Farms give it, and the capital belongs wherever the six-tile circle holds the most cities.",
+    "Founding a seventh city two tiles outside the circle because the land is better. It yields 15% less of everything for the game and the city inside on worse land yields a tenth more.",
+    "Keeping a captured or flipped city outside the radius because it is free. It is a -15% city that invites a war the Hul'che cannot fight at full strength.",
+    "Mining the hills before farming the flats. Farms are the Housing, the Gold and the Observatory adjacency; Mines are a few Production in an empire that buys with Gold.",
+    "Placing the Observatory beside the mountain or the reef. It gets nothing from either; it gets Science from Plantations, Farms and districts, and its tile is chosen for those."
+  ],
+  "sources": [
+    "Civilization VI Civilopedia, Gathering Storm ruleset with the New Frontier Pass (Maya, Lady Six Sky, Observatory, Hul'che, Mayab, Ix Mutal Ajaw).",
+    "Where the civ-info text is thin, the game is followed: Ix Mutal Ajaw is +10% to all yields in non-capital cities within six tiles of the Capital and -15% beyond, with +5 Combat Strength for units within six tiles; Mayab also grants +1 Amenity per Luxury resource adjacent to a City Center; the Observatory's major adjacency is from Plantations and its minor adjacency from Farms and districts, with none from Mountains, Reefs or Rainforest.",
+    "Boost objectives cross-checked against civilization6planner.com tech-tree and civics-tree pages, 2026-10-01.",
+    "Leadership Focus tags, caveats, Front-Load template and the FrontLoad_LadySixSky worked example in this repository."
+  ]
+}

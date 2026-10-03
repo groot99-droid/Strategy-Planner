@@ -110,6 +110,11 @@ export function initRows(root) {
     const speed = Number(row.dataset.speed || 26); // px per second
     const toggle = row.querySelector('[data-row="toggle"]');
     let playing = autoplay && !reducedMotion.matches, raf, last, onscreen = true, hover = false, focus = false, half = 0, userScroll = false, idleTimer;
+    // scrollLeft is clamped to whole pixels. At 26 px/s a frame is ~0.4 px, which rounds back to the
+    // current value and the row never moves. So the loop advances a fractional position of its own and
+    // writes a whole pixel whenever it has crossed one. `written` is the last value it wrote; if the
+    // scroller is somewhere else (user, snap, button) the position is re-read from it first.
+    let pos = 0, written = -1;
     const originals = Array.from(scroller.children);
     const cardStep = () => (originals[0] ? originals[0].getBoundingClientRect().width + 16 : 240);
     const needsLoop = () => scroller.scrollWidth > scroller.clientWidth + 40;
@@ -119,13 +124,27 @@ export function initRows(root) {
       scroller.dataset.cloned = "1";
       half = scroller.scrollWidth / 2;
     };
-    const wrap = () => { if (!half) return; if (scroller.scrollLeft >= half) scroller.scrollLeft -= half; else if (scroller.scrollLeft < 0) scroller.scrollLeft += half; };
+    const wrap = () => {
+      if (!half) return;
+      if (scroller.scrollLeft >= half) { scroller.scrollLeft -= half; pos -= half; written = scroller.scrollLeft; }
+      else if (scroller.scrollLeft < 0) { scroller.scrollLeft += half; pos += half; written = scroller.scrollLeft; }
+    };
     const tick = (ts) => {
       if (!playing || hover || focus || userScroll || document.hidden || !onscreen || reducedMotion.matches) { raf = undefined; last = undefined; return; }
-      if (last !== undefined) { scroller.scrollLeft += (speed * (ts - last)) / 1000; wrap(); }
+      if (last !== undefined) {
+        if (scroller.scrollLeft !== written) pos = scroller.scrollLeft;
+        pos += (speed * (ts - last)) / 1000;
+        const next = Math.round(pos);
+        if (next !== scroller.scrollLeft) { scroller.scrollLeft = next; written = scroller.scrollLeft; }
+        wrap();
+      }
       last = ts; raf = requestAnimationFrame(tick);
     };
-    const start = () => { ensureClones(); if (!raf && half) raf = requestAnimationFrame(tick); row.classList.toggle("row--playing", playing && !reducedMotion.matches); };
+    const start = () => {
+      ensureClones();
+      if (!raf && half) { pos = scroller.scrollLeft; written = pos; raf = requestAnimationFrame(tick); }
+      row.classList.toggle("row--playing", playing && !reducedMotion.matches);
+    };
     const halt = () => { if (raf) cancelAnimationFrame(raf); raf = undefined; last = undefined; row.classList.remove("row--playing"); };
     const entry = { ratio: 0, wants: () => autoplay && playing && !hover && !focus && !userScroll && onscreen && !document.hidden && !reducedMotion.matches, start, halt };
     ROWS.add(entry);
@@ -134,7 +153,10 @@ export function initRows(root) {
     scroller.addEventListener("wheel", onUserScroll, { passive: true });
     scroller.addEventListener("touchstart", onUserScroll, { passive: true });
     scroller.addEventListener("pointerdown", onUserScroll, { passive: true });
-    const setToggle = () => { if (!toggle) return; toggle.setAttribute("aria-pressed", String(!playing)); toggle.innerHTML = icon(playing ? "pause" : "play"); toggle.setAttribute("aria-label", (playing ? "Pause " : "Resume ") + row.getAttribute("aria-label") + " rotation"); };
+    // Scroll snap stays off for as long as the row is meant to rotate, not just while a frame is running:
+    // a hover, offscreen or hidden-tab pause must not hand the row back to snap, or it lurches to the nearest card.
+    const setAuto = () => row.classList.toggle("row--auto", autoplay && playing && !reducedMotion.matches);
+    const setToggle = () => { setAuto(); if (!toggle) return; toggle.setAttribute("aria-pressed", String(!playing)); toggle.innerHTML = icon(playing ? "pause" : "play"); toggle.setAttribute("aria-label", (playing ? "Pause " : "Resume ") + row.getAttribute("aria-label") + " rotation"); };
     row.addEventListener("click", (e) => {
       const b = e.target.closest("[data-row]"); if (!b) return;
       const step = cardStep() * 2;
@@ -202,7 +224,9 @@ export function subnavHtml(items) {
   return `<nav class="subnav" aria-label="On this page"><div class="subnav__inner">${items.map(i => `<a class="subnav__link" href="#${esc(i.id)}" data-target="${esc(i.id)}">${esc(i.label)}</a>`).join("")}</div></nav>`;
 }
 export function initSubnav(root) {
-  const links = root.querySelectorAll(".subnav__link");
+  // Only the anchor subnav (links with data-target). The leader page's tab bar reuses the same classes
+  // but its links are real routes and must not be intercepted here.
+  const links = root.querySelectorAll(".subnav__link[data-target]");
   if (!links.length) return () => {};
   const targets = Array.from(links).map(l => document.getElementById(l.dataset.target)).filter(Boolean);
   links.forEach(l => l.addEventListener("click", (e) => { e.preventDefault(); const t = document.getElementById(l.dataset.target); if (t) { t.scrollIntoView({ behavior: reducedMotion.matches ? "auto" : "smooth", block: "start" }); t.setAttribute("tabindex", "-1"); t.focus({ preventScroll: true }); } }));
@@ -213,6 +237,50 @@ export function initSubnav(root) {
   return () => io.disconnect();
 }
 
+/* ---------- tabs (leader page): real links, so the router drives them; arrows move focus, Enter/Space activate ---------- */
+export function tabsHtml(items, { active, label, panelId }) {
+  return `<nav class="subnav subnav--tabs" aria-label="${esc(label)}"><div class="subnav__inner" role="tablist" aria-label="${esc(label)}">${items.map(i => {
+    const on = i.id === active;
+    return `<a class="subnav__link${on ? " is-active" : ""}" role="tab" id="tab-${esc(i.id)}" href="${esc(i.href)}" aria-selected="${on}" aria-controls="${esc(panelId)}" tabindex="${on ? 0 : -1}" data-tab="${esc(i.id)}">${esc(i.label)}</a>`;
+  }).join("")}</div></nav>`;
+}
+export function initTabs(tablist) {
+  if (!tablist) return () => {};
+  const onKey = (e) => {
+    const tabs = Array.from(tablist.querySelectorAll('[role="tab"]')); const i = tabs.indexOf(document.activeElement); if (i < 0) return;
+    let j = null;
+    if (e.key === "ArrowRight") j = (i + 1) % tabs.length; else if (e.key === "ArrowLeft") j = (i - 1 + tabs.length) % tabs.length;
+    else if (e.key === "Home") j = 0; else if (e.key === "End") j = tabs.length - 1;
+    else if (e.key === " ") { e.preventDefault(); tabs[i].click(); return; }
+    if (j === null) return;
+    e.preventDefault(); // the global prev/next-leader shortcut yields to a defaultPrevented arrow key
+    tabs[j].focus(); tabs[j].scrollIntoView({ block: "nearest", inline: "nearest" });
+  };
+  tablist.addEventListener("keydown", onKey);
+  return () => tablist.removeEventListener("keydown", onKey);
+}
+export function setActiveTab(tablist, id) {
+  if (!tablist) return;
+  tablist.querySelectorAll('[role="tab"]').forEach(t => { const on = t.dataset.tab === id; t.setAttribute("aria-selected", String(on)); t.setAttribute("tabindex", on ? "0" : "-1"); t.classList.toggle("is-active", on); if (on) { const left = t.offsetLeft - 24; if (Math.abs(tablist.scrollLeft - left) > 4) tablist.scrollLeft = Math.max(0, left); } });
+}
+
+/* ---------- guide blocks shared by the Shape tab and the Plan tab ---------- */
+export function checklist(items) { return `<ul class="checklist">${items.map(s => `<li>${escKw(s)}</li>`).join("")}</ul>`; }
+export function listPlain(items) { return `<ul class="list-plain">${items.map(s => `<li>${escKw(s)}</li>`).join("")}</ul>`; }
+export function loopBox(label, items) { return `<div class="subblock"><p class="subblock__label">${esc(label)}</p><div class="loop-box"><ul>${items.map(s => `<li>${escKw(s)}</li>`).join("")}</ul></div></div>`; }
+export function checkpointsHtml(cps) { return `<div class="subblock"><p class="subblock__label">Checkpoints</p><div class="checkpoint-grid">${cps.map(cp => `<div class="checkpoint"><p class="checkpoint__at">Checkpoint · ${esc(cp.at)}</p><p class="checkpoint__test">${escKw(cp.test)}</p><div class="checkpoint__branches">${cp.if_yes ? `<div class="checkpoint__branch"><b>Yes</b><span>${escKw(cp.if_yes)}</span></div>` : ""}${cp.if_no ? `<div class="checkpoint__branch"><b>No</b><span>${escKw(cp.if_no)}</span></div>` : ""}</div></div>`).join("")}</div></div>`; }
+export function phaseHtml(p, i) {
+  let inner = `<div class="phase__header"><h3 class="phase__title">${esc(p.phase)}</h3>${p.turns ? `<span class="phase__turns">Turns ${esc(p.turns)}</span>` : ""}</div>`;
+  if (p.goal) inner += `<p class="phase__goal">${escKw(p.goal)}</p>`;
+  if (p.opening_statement) inner += `<div class="note-callout">${escKw(p.opening_statement)}</div>`;
+  if (p.steps) inner += checklist(p.steps); if (p.tests) inner += checklist(p.tests);
+  if (p.staging_checklist) inner += loopBox("Staging checklist", p.staging_checklist);
+  if (p.core_loop) inner += loopBox("Core loop", p.core_loop); if (p.per_turn_check) inner += loopBox("Per-turn check", p.per_turn_check);
+  if (p.opportunity_trigger) inner += `<div class="note-callout">${escKw(p.opportunity_trigger)}</div>`;
+  if (p.checkpoints) inner += checkpointsHtml(p.checkpoints);
+  return `<div class="phase"><div class="phase__node" aria-hidden="true">${i + 1}</div><div class="phase__card">${inner}</div></div>`;
+}
+
 /* ---------- power curve chart (SVG area chart, Line/Smooth Area per catalog) ---------- */
 const CURVE_PATHS = {
   Spike: "M12,102 C30,96 44,26 66,20 C92,13 124,48 164,72 C206,96 250,104 292,106",
@@ -220,23 +288,25 @@ const CURVE_PATHS = {
   Bloom: "M12,103 C62,102 112,99 152,92 C196,84 234,56 258,32 C270,21 282,17 292,15",
   Flat: "M12,94 C70,85 130,73 190,60 C230,51 262,44 292,38",
 };
-const CURVE_PEAK_X = { Spike: 66, Ramp: 205, Bloom: 285, Flat: 240 };
+// Where each curve peaks: x,y on the path and the fraction of the path length at that point (measured once with getPointAtLength).
+const CURVE_PEAK = { Spike: { x: 66, y: 20, f: 0.2885 }, Ramp: { x: 205, y: 24.8, f: 0.672 }, Bloom: { x: 285, y: 16.7, f: 0.976 }, Flat: { x: 240, y: 48.9, f: 0.814 } };
 let chartSeq = 0;
 export function curveChart(curve) {
   const path = CURVE_PATHS[curve]; if (!path) return "";
-  const id = "cc" + (++chartSeq); const peakX = CURVE_PEAK_X[curve];
+  const id = "cc" + (++chartSeq); const peak = CURVE_PEAK[curve]; const peakX = peak.x;
   const eras = ["Ancient", "Medieval", "Industrial", "Endgame"];
   let grid = "";
   for (let i = 1; i <= 3; i++) { const x = 12 + (280 / 4) * i; grid += `<line class="cc-grid" x1="${x}" y1="14" x2="${x}" y2="108"/>`; }
   [38, 62, 86].forEach(y => { grid += `<line class="cc-grid" x1="12" y1="${y}" x2="292" y2="${y}"/>`; });
   const ticks = eras.map((e, i) => { const x = 12 + (280 / 3) * i; const a = i === 0 ? "start" : i === 3 ? "end" : "middle"; return `<text class="cc-tick" x="${x}" y="119" text-anchor="${a}">${e}</text>`; }).join("");
-  const motion = reducedMotion.matches ? "" : `<animateMotion dur="1.5s" fill="freeze" begin="0s"><mpath href="#${id}"/></animateMotion>`;
+  // keyPoints stops the dot at the peak instead of the end of the path; calcMode must be linear for keyPoints to apply.
+  const motion = reducedMotion.matches ? "" : `<animateMotion dur="1.5s" fill="freeze" begin="0s" calcMode="linear" keyPoints="0;${peak.f}" keyTimes="0;1"><mpath href="#${id}"/></animateMotion>`;
   return `<svg class="curve-chart" viewBox="0 0 304 126" role="img" aria-label="${esc(curve)} power curve: ${esc(CURVE_INFO[curve])}">
     <rect class="cc-frame" x="12" y="14" width="280" height="94"/>${grid}
     <path class="cc-area" d="${path} L292,108 L12,108 Z"/><line class="cc-peak-line" x1="${peakX}" y1="14" x2="${peakX}" y2="108"/>
     <text class="cc-peak-text" x="${peakX + (curve === "Bloom" ? -4 : 4)}" y="24" text-anchor="${curve === "Bloom" ? "end" : "start"}">${curve === "Flat" ? "Steady" : "Peak"}</text>
     <path class="cc-line" id="${id}" d="${path}"/><line class="cc-axis" x1="12" y1="108" x2="292" y2="108"/><line class="cc-axis" x1="12" y1="14" x2="12" y2="108"/>
-    <text class="cc-axis-label" x="12" y="9">Power</text>${ticks}<circle class="cc-dot" r="4" ${reducedMotion.matches ? `cx="${peakX}" cy="30"` : ""}>${motion}</circle></svg>`;
+    <text class="cc-axis-label" x="12" y="9">Power</text>${ticks}<circle class="cc-dot" r="4" ${reducedMotion.matches ? `cx="${peak.x}" cy="${peak.y}"` : ""}>${motion}</circle></svg>`;
 }
 export function curvePanel(curve, catKey) {
   return `<div class="curve-panel" data-category-key="${esc(catKey)}"><div><p class="curve-panel__label">Power curve</p><p class="curve-panel__name">${esc(curve)}</p><p class="curve-panel__desc">${esc(CURVE_INFO[curve] || "")}</p></div>${curveChart(curve)}</div>`;

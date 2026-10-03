@@ -1,0 +1,1592 @@
+{
+  "leader": "Hammurabi",
+  "civilization": "Babylon",
+  "generated": "2026-10-02",
+  "slug": "hammurabi",
+  "shape": "Countdown",
+  "secondary_shape": null,
+  "version": 1,
+  "updated": "2026-10-02",
+  "assumptions": {
+    "ruleset": "Gathering Storm with every expansion and the Leader Pass",
+    "speed": "Standard",
+    "difficulty": "Emperor",
+    "map": "Continents or Pangaea, standard size, 8 civilizations",
+    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. Hammurabi has a single persona, planned here. Enuma Anu Enlil is planned as the game has it: a Eureka gives all the Science for its technology, Science per turn is halved for the whole game, and Inspirations are unchanged."
+  },
+  "verdict": {
+    "victory": "Domination",
+    "secondary": "Culture",
+    "confidence": "medium",
+    "one_line": "Trigger Eurekas instead of researching: each one is a whole technology, so chain them to Crossbowmen, Knights and Trebuchets by turn 80 and take the nearest neighbour's cities before turn 120. After that Babylon is a wide empire with half everyone else's Science, and it plays like one.",
+    "why": "Enuma Anu Enlil turns every Eureka into a finished technology and halves Science per turn for the rest of the game. In the Ancient, Classical and early Medieval eras almost every Eureka is something an empire does anyway (meet a neighbour, kill Barbarians, farm, mine, build walls, own three Archers), so Babylon reaches Medieval siege and cavalry roughly an era before an Emperor AI, and Ninu Ilu Sirum hands it a free building with each first district so the infrastructure keeps pace. From the Renaissance on, the Eurekas ask for pairs of Universities, Workshops, Shipyards and Banks, and the halved Science base cannot fill the gaps, so the lead decays unless it has already been spent. Cities taken from the target are what it is spent on. Culture is the secondary because Inspirations are never halved and a wide empire of captured cities, a free Amphitheater and wonders can run it from a Science deficit, while the late military Eurekas ask only for units an army owns, which keeps a second war open."
+  },
+  "map_check": {
+    "must_have": [
+      "A rival capital reachable by land within roughly 15 tiles, met by the Scout before turn 15.",
+      "A river at the capital or the second city site, for the Palgum and Construction's Eureka."
+    ],
+    "prefer": [
+      "A Barbarian camp within eight tiles of the capital to farm for Archery and Bronze Working before it is cleared.",
+      "Iron and Horses or Sheep inside the first three rings: Iron Working, Horseback Riding and the Knights all come from them.",
+      "Stone, Marble or Gypsum near the capital for a Quarry and Masonry's Eureka.",
+      "Mountains beside the Campus site, or Tsingy de Bemaraha or Zhangye Danxia nearby, for Great Scientist and Great Person points that the halved Science cannot provide."
+    ],
+    "no_go": "An island or peninsula start with no land neighbour within 20 tiles. The Eurekas still come, but nothing is within reach to spend them on before turn 120, and Babylon pays the halved Science for the whole game with no conquest to show for it.",
+    "fallback": "Spend the lead on wonders and land instead of cities: reach Construction and Engineering first and build the Terracotta Army and Classical wonders the AI has not reached, settle every river, sweep one of every district type for its free building, and play toward Culture with the Inspirations that are never halved. The deadline still holds: whatever the lead buys has to exist by turn 120."
+  },
+  "kit_levers": [
+    {
+      "source": "leader_ability",
+      "name": "Ninu Ilu Sirum",
+      "buys": "The first time each specialty district type is completed, its cheapest building comes free (the Government Plaza excepted), and a first district with no building to give pays an Envoy instead.",
+      "exploit": "Every district type is a building Babylon never pays for. The plan places Campus, Encampment and Commercial Hub as the three different districts for Mathematics, then sweeps Theater Square, Industrial Zone, Holy Site, Entertainment Complex and Harbor once each after the war. A free Market is half of Guilds, a free Workshop half of Industrialization, and a free Library or Amphitheater earns Great Person points from the turn it opens."
+    },
+    {
+      "source": "civ_ability",
+      "name": "Enuma Anu Enlil",
+      "buys": "Every Eureka completes its whole technology; in exchange Science per turn is halved for the entire game. Inspirations are unchanged.",
+      "exploit": "Science goes only to technologies with no Eureka (Pottery, Animal Husbandry, Mining) and to prerequisites that unlock a Eureka already banked; everything else is completed by doing what the Eureka asks. Eurekas triggered ahead of their prerequisites are banked, so the strike army's two Crossbowmen, two Trebuchets and first Knight kill pre-pay Metal Casting, Siege Tactics and Military Science."
+    },
+    {
+      "source": "unique_unit",
+      "name": "Sabum Kibittum",
+      "buys": "A cheap early melee unit that needs no technology, with extra Movement and Sight and a large Combat Strength bonus against light and heavy cavalry.",
+      "exploit": "Two of them make the opening's Barbarian kills for Bronze Working and hold off camp Horsemen while the Slinger takes the Archery kill. Later one escorts the Trebuchets against the target's Horsemen. If Gilgamesh is the neighbour, his War-Carts are heavy cavalry and the bonus applies in full, so he is both the threat and the target."
+    },
+    {
+      "source": "unique_infrastructure",
+      "name": "Palgum",
+      "buys": "A Water Mill replacement for river cities, with more Production and Housing and extra Food on tiles beside fresh water.",
+      "exploit": "It is Construction's Eureka and, through Construction, the Games and Recreation Inspiration. Build it in the first river city the turn it unlocks; the extra Food also pushes that city to ten population for Civil Service."
+    },
+    {
+      "source": "agenda",
+      "name": "Cradle of Civilization",
+      "buys": "Hammurabi wants every type of district and respects civilizations that build a variety of them.",
+      "exploit": "AI leaders do not read your agenda; use it as the digest checklist. One of every district type is one free building each, and seven different types is the Civil Engineering Inspiration."
+    }
+  ],
+  "shape_block": {
+    "countdown": {
+      "deadline_turn": 120,
+      "midpoint_turn": 80,
+      "target_selection": "On turn 1 the Scout goes toward the most open land, and the target is the first rival capital it meets within about 15 tiles; meeting it is also Writing's Eureka. Confirm by turn 15 and do not change it afterwards. Prefer a capital on flat or lightly hilled ground with no river crossing on your side. If Gilgamesh or Seondeok is that close, take them first: Gilgamesh's War-Carts lose to Sabum Kibittum, and Seondeok is the only neighbour whose Science outruns a halved Babylon. What closes this window is the target's technology, not the turn number: it is open while the target has no Medieval Walls (Castles) and fields no Pikemen or Crossbowmen of its own. Read its city banner and the units it fields every five turns from turn 60; the day either appears, the remaining turns are halved.",
+      "what_counts_as_converted": "Cities held at turn 120: the target's capital plus two more of its cities, each at positive Loyalty with a Monument built or bought. If the target has only two cities in reach, the capital and one more counts, and a completed Terracotta Army or another Classical wonder counts as the third, but no more than one wonder ever counts. The technology lead itself does not count, and nor do Crossbowmen and Knights at the border, kills, pillage Gold, or a tech count ahead of the AI; a lead that has not become something permanent at turn 120 is gone by turn 160.",
+      "after_window": "At turn 120 the war stops whether or not the third city fell, and from then on the plan assumes Babylon is behind in Science and stays behind: no research race and no Science victory. Production goes to Monuments and Granaries in the captures, then one of every missing district type for its free building, then Campuses and Theater Squares in the captured cities. Research is only ever a technology whose Eureka is banked or will fire within about ten turns, or a prerequisite that unlocks one; a technology with no reachable Eureka is researched only when it gates a defence or a Culture asset. The victory is Culture unless the turn 190 check finds two more capitals within reach of the banked military technologies, in which case the army goes again."
+    }
+  },
+  "phases": [
+    {
+      "id": "arm",
+      "name": "Arm the Eureka engine",
+      "turns": {
+        "from": 1,
+        "to": 30
+      },
+      "era": "ancient",
+      "objective": "Name the target on turn 1 and scout toward it, harvest every Ancient Eureka the start offers (meeting it, a natural wonder, a Slinger kill, three Barbarian kills, a farmed, mined and quarried resource) while Science goes only to Mining, Pottery and Animal Husbandry, and have two cities and the first Campus with its free Library by turn 30.",
+      "build_order": [
+        {
+          "item": "Scout",
+          "why": "Straight toward the nearest rival capital. Meeting it is Writing, a natural wonder on the way is Astrology, and a tribal village Eureka is a whole technology for Babylon."
+        },
+        {
+          "item": "Slinger",
+          "why": "Kills a Barbarian scout or a camp unit for Archery's Eureka, then upgrades into the first of the three Archers that Machinery needs."
+        },
+        {
+          "item": "Sabum Kibittum",
+          "why": "Fast melee that needs no technology; it makes the Barbarian kills for Bronze Working and its bonus against cavalry holds off camp Horsemen."
+        },
+        {
+          "item": "Settler",
+          "why": "Second city on a river toward the target: the forward base, and the Palgum city if the capital has no river."
+        },
+        {
+          "item": "Builder",
+          "why": "Three charges, three technologies: a Farm on a resource for Irrigation, a Mine on a resource for The Wheel, a Quarry for Masonry, and the Craftsmanship Inspiration with them."
+        },
+        {
+          "item": "Campus",
+          "why": "The first specialty district: the free Library, State Workforce's Inspiration and Great Scientist points. Place it the turn Writing completes, so its cost is fixed before the Eureka burst raises it."
+        },
+        {
+          "item": "Slinger",
+          "why": "Second Slinger, to become the second Archer; Agoge makes it cheap."
+        },
+        {
+          "item": "Settler",
+          "why": "Third city; Early Empire's six population and the room for three different districts need it."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:mining",
+          "note": "Researched with Science because it has no Eureka. First, because The Wheel, Masonry and Bronze Working all hang off it."
+        },
+        {
+          "id": "tech:pottery",
+          "note": "Researched with Science; Writing and Irrigation are banked behind it and complete the turn it lands."
+        },
+        {
+          "id": "tech:animal-husbandry",
+          "note": "Researched with Science; Archery is banked behind it from the Slinger kill, and Horseback Riding needs it."
+        },
+        {
+          "id": "tech:writing",
+          "note": "Eureka from meeting the target; Campus and the free Library."
+        },
+        {
+          "id": "tech:archery",
+          "note": "Eureka from the Slinger kill; Archers for Machinery later."
+        },
+        {
+          "id": "tech:bronze-working",
+          "note": "Eureka from three Barbarian kills at the farmed camp; reveals the Iron the Knights need."
+        },
+        {
+          "id": "tech:irrigation",
+          "note": "Eureka from the Builder's first Farm on a resource."
+        },
+        {
+          "id": "tech:wheel",
+          "note": "Eureka from the Builder's Mine on a resource; the Palgum and Engineering follow from it."
+        },
+        {
+          "id": "tech:astrology",
+          "note": "Eureka only if the Scout finds a natural wonder; never research it with Science in this phase."
+        },
+        {
+          "id": "tech:masonry",
+          "note": "Eureka from a Quarry; the Ancient Walls for Engineering need it."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:code-of-laws",
+          "note": "Discipline for farming the camp and God King toward the pantheon."
+        },
+        {
+          "id": "civic:craftsmanship",
+          "note": "Inspiration from the Builder's three improvements; Agoge and Ilkum."
+        },
+        {
+          "id": "civic:foreign-trade",
+          "note": "The Trader for Currency's Eureka; its own Inspiration is luck on this map."
+        },
+        {
+          "id": "civic:military-tradition",
+          "note": "Inspiration the turn the farmed camp is finally cleared."
+        },
+        {
+          "id": "civic:state-workforce",
+          "note": "Inspiration from the Campus; Conscription for the army's upkeep later."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Discipline",
+          "slot": "military",
+          "from": "civic:code-of-laws",
+          "why": "+5 Strength against Barbarians while the Slinger and Sabum Kibittum farm the camp for kills."
+        },
+        {
+          "card": "God King",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "Faith toward the pantheon; Fertility Rites' free Builder is three more Eurekas."
+        },
+        {
+          "card": "Agoge",
+          "slot": "military",
+          "from": "civic:craftsmanship",
+          "why": "Half again as much Production toward Slingers, Archers and Sabum Kibittum; swapped in once the camp is cleared."
+        },
+        {
+          "card": "Ilkum",
+          "slot": "economic",
+          "from": "civic:craftsmanship",
+          "why": "Faster Builders once the pantheon is founded; every Builder charge in this phase is a Eureka."
+        }
+      ],
+      "districts": [
+        {
+          "district": "campus",
+          "city": "capital",
+          "note": "Beside Mountains, a Reef or a Geothermal Fissure; the free Library comes with it. Its Science is halved like all of Babylon's, so the Great Scientist points are the reason to build it first."
+        }
+      ],
+      "pantheon": {
+        "slug": "fertility-rites",
+        "why": "The free Builder is three Eurekas: a Pasture for Horseback Riding, a Mine on Iron for Iron Working and a third Mine toward Apprenticeship, each a whole technology.",
+        "alternative": "lady-of-the-reeds-and-marshes"
+      },
+      "wonders": [],
+      "governors": [],
+      "city_states": [
+        {
+          "type": "Militaristic",
+          "why": "First envoy into a Militaristic city-state: +2 Production toward units in the capital while it builds Slingers and Archers."
+        },
+        {
+          "slug": "akkad",
+          "why": "Melee attacks at full damage against Walls, so Sabum Kibittum and Swordsmen can finish a walled city the Trebuchets have weakened; worth three envoys if it is on the map."
+        }
+      ],
+      "great_people": [],
+      "checkpoints": [
+        {
+          "turn": 30,
+          "test": "Target met and confirmed, Writing, Archery and Bronze Working completed by Eureka, two cities, and the Campus complete with its free Library?",
+          "pass": "Enter the harvest phase and run the Classical Eureka audit on turn 31.",
+          "fail": "If Bronze Working is missing, the camp was cleared too early or never found: keep the Sabum Kibittum hunting Barbarians and do not research it. If the Campus is not placed, place it this turn before another Eureka raises its cost."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "arm-pick-target",
+          "turn": 1,
+          "text": "Send the Scout toward the most open land; the first rival capital it meets within about 15 tiles is the target, and Writing completes on the meeting."
+        },
+        {
+          "id": "arm-research-rule",
+          "turn": 1,
+          "text": "Queue Mining, then Pottery and Animal Husbandry, and nothing else. A technology whose Eureka is within reach gets no Science; a Eureka on a half-researched technology wastes the half."
+        },
+        {
+          "id": "arm-farm-camp",
+          "turn": 8,
+          "text": "Find the nearest Barbarian camp and leave it standing: a Slinger kill for Archery, three kills in all for Bronze Working, then clear it for Military Tradition."
+        },
+        {
+          "id": "arm-builder-eurekas",
+          "turn": 12,
+          "text": "First Builder: a Farm on a resource, a Mine on a resource, a Quarry. Three technologies and Craftsmanship from three charges."
+        },
+        {
+          "id": "arm-campus",
+          "turn": 20,
+          "text": "Place the Campus the turn Writing completes; the free Library arrives with the district."
+        },
+        {
+          "id": "arm-eureka-audit",
+          "turn": 28,
+          "text": "Ancient Eureka audit: eight of the eleven Ancient technologies have one. Any still missing at turn 30 is researched only if a Classical Eureka is banked behind it."
+        }
+      ]
+    },
+    {
+      "id": "harvest",
+      "name": "Harvest into an army",
+      "turns": {
+        "from": 31,
+        "to": 80
+      },
+      "era": "classical",
+      "objective": "Chain the Classical and early Medieval Eurekas into the strike army: Iron Working from a Mine on Iron, Construction from the Palgum, Engineering from Ancient Walls, Mathematics from three different districts with their free buildings, Machinery from three Archers, Military Engineering from an Aqueduct and Stirrups from Feudalism. By turn 80 three Crossbowmen, two Knights and two Trebuchets stand within six tiles of the target.",
+      "build_order": [
+        {
+          "item": "Archer",
+          "why": "Upgrade the Slingers and build the third: owning three is Machinery, and they upgrade into the strike's Crossbowmen, so the Eureka costs nothing the army did not need."
+        },
+        {
+          "item": "Builder",
+          "why": "A Pasture for Horseback Riding, a Mine on Iron for Iron Working, and Mines toward Apprenticeship; Liang adds a charge to each one."
+        },
+        {
+          "item": "Palgum",
+          "why": "In the river city: Construction's Eureka, Production and Food for the army cities, and Games and Recreation's Inspiration on the same turn."
+        },
+        {
+          "item": "Ancient Walls",
+          "why": "In the city facing the target: Engineering's Eureka, and the border holds if the target strikes first."
+        },
+        {
+          "item": "Encampment",
+          "why": "Second different district, in the forward city: a free Barracks, Military Training's Inspiration and Great General points."
+        },
+        {
+          "item": "Trader",
+          "why": "Capital to the forward city: Currency's Eureka and a road toward the target."
+        },
+        {
+          "item": "Commercial Hub",
+          "why": "Third different district: Mathematics' Eureka, a free Market toward Guilds, and Gold for the Crossbowman upgrades."
+        },
+        {
+          "item": "Aqueduct",
+          "why": "Military Engineering's Eureka and Trebuchets; Housing in the river city."
+        },
+        {
+          "item": "Knight",
+          "why": "Two, the turn Stirrups completes; the Iron has to be mined before then."
+        },
+        {
+          "item": "Trebuchet",
+          "why": "Two, the turn Military Engineering completes; nothing else in the army damages Walls at full rate."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:horseback-riding",
+          "note": "Eureka from a Pasture, laid first because Construction and Stirrups are both banked behind it."
+        },
+        {
+          "id": "tech:iron-working",
+          "note": "Eureka from a Mine on the Iron Bronze Working revealed; the Knights draw on the stockpile."
+        },
+        {
+          "id": "tech:currency",
+          "note": "Eureka from the first Trade Route; the Commercial Hub."
+        },
+        {
+          "id": "tech:construction",
+          "note": "Eureka from the Palgum; the Terracotta Army."
+        },
+        {
+          "id": "tech:engineering",
+          "note": "Eureka from Ancient Walls; Machinery needs it."
+        },
+        {
+          "id": "tech:mathematics",
+          "note": "Eureka from Campus, Encampment and Commercial Hub."
+        },
+        {
+          "id": "tech:machinery",
+          "note": "Eureka from three Archers; Crossbowmen."
+        },
+        {
+          "id": "tech:military-engineering",
+          "note": "Eureka from the Aqueduct; Trebuchets, and Niter revealed for later."
+        },
+        {
+          "id": "tech:stirrups",
+          "note": "Eureka the turn Feudalism completes; Knights."
+        },
+        {
+          "id": "tech:apprenticeship",
+          "note": "Eureka from three Mines; Industrial Zones later and a prerequisite on the Gunpowder line."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:early-empire",
+          "note": "Inspiration at six population across three cities."
+        },
+        {
+          "id": "civic:mysticism",
+          "note": "Inspiration from founding Fertility Rites."
+        },
+        {
+          "id": "civic:political-philosophy",
+          "note": "Inspiration from three city-states met by the Scout; Autocracy."
+        },
+        {
+          "id": "civic:games-and-recreation",
+          "note": "Inspiration the turn Construction completes."
+        },
+        {
+          "id": "civic:military-training",
+          "note": "Inspiration from the Encampment."
+        },
+        {
+          "id": "civic:defensive-tactics",
+          "note": "The only road to Feudalism; its Inspiration needs someone to declare on you, so research it straight."
+        },
+        {
+          "id": "civic:feudalism",
+          "note": "Six Farms give the Inspiration; Stirrups completes the same turn, and Feudal Contract comes with it."
+        },
+        {
+          "id": "civic:drama-and-poetry",
+          "note": "Inspiration from Etemenanki or the Terracotta Army; Recorded History and Civil Service need it later."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Agoge",
+          "slot": "military",
+          "from": "civic:craftsmanship",
+          "why": "Kept for the Archers and the Sabum Kibittum escort."
+        },
+        {
+          "card": "Conscription",
+          "slot": "military",
+          "from": "civic:state-workforce",
+          "why": "One Gold less per unit per turn on a ten-unit army is the Gold for the Crossbowman upgrades."
+        },
+        {
+          "card": "Ilkum",
+          "slot": "economic",
+          "from": "civic:craftsmanship",
+          "why": "Builders are still Eurekas: Pasture, Iron Mine, three Mines."
+        },
+        {
+          "card": "Autocracy",
+          "slot": "wildcard",
+          "from": "civic:political-philosophy",
+          "why": "The government: higher capital yields and +10% Production toward wonders for the Terracotta Army. Oligarchy's Combat Strength bonus covers melee units and misses Crossbowmen, Knights and Trebuchets."
+        },
+        {
+          "card": "Feudal Contract",
+          "slot": "military",
+          "from": "civic:feudalism",
+          "why": "Replaces Agoge the turn Feudalism lands: half again as much Production toward Crossbowmen and the replacement melee."
+        }
+      ],
+      "districts": [
+        {
+          "district": "encampment",
+          "city": "the forward city",
+          "note": "Free Barracks, Military Training, Great General points, and the second of three for Mathematics; place it before the Classical Eurekas land."
+        },
+        {
+          "district": "commercial-hub",
+          "city": "capital",
+          "note": "River adjacency; free Market, the third different district for Mathematics, and the upgrade Gold."
+        },
+        {
+          "district": "aqueduct",
+          "city": "the river city",
+          "note": "Military Engineering's Eureka. The first Aqueduct has no building to give, so Ninu Ilu Sirum pays an Envoy for it instead."
+        }
+      ],
+      "pantheon": {
+        "slug": "fertility-rites",
+        "why": "Founded around turn 32; its free Builder goes straight to the Pasture and the Iron."
+      },
+      "wonders": [
+        {
+          "name": "Terracotta Army",
+          "why": "Every land unit you own gains a promotion level when it completes, so time it to finish with the strike army already built: seven promoted units for one wonder, and Buttress' Eureka as a Classical wonder.",
+          "skip_if": "Construction completes after turn 55, the forward city makes under 15 Production (the wonder must sit on Grassland or Plains beside an Encampment with a Barracks, which only the forward city has), or the army would not yet exist on the turn it completes."
+        },
+        {
+          "name": "Etemenanki",
+          "why": "Floodplains Production and Science in the capital and a wonder for Drama and Poetry's Inspiration. Its Science is halved like everything else, so this is a Production pick.",
+          "skip_if": "The capital has no Floodplains or Marsh tile, or building it pushes the third Archer or the Encampment past turn 50."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "liang",
+          "promotion": "Guildmaster",
+          "city": "capital",
+          "why": "+1 charge on every Builder trained there; a four-charge Builder is four Eurekas in this phase."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "hattusa",
+          "why": "Strategic resources from deposits revealed but not yet improved: Iron for the Knights before the Mine is down."
+        },
+        {
+          "type": "Industrial",
+          "why": "+2 Production in the capital toward districts and wonders: the Commercial Hub and Etemenanki."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-scientist",
+          "why": "The first one is Education's Eureka. One whose ability triggers Eurekas (Euclid, Aryabhata) is that many whole technologies for Babylon; recruit those first and patronize them with Gold if needed."
+        },
+        {
+          "class": "great-general",
+          "why": "The free Barracks and Military Training earn one before the strike; it marches with the Knights and Trebuchets."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 55,
+          "test": "Iron Working, Construction and Machinery completed, three Archers owned, and two of the three districts placed?",
+          "pass": "Continue to Military Engineering and Stirrups; start the Terracotta Army only now, so it completes after the army exists.",
+          "fail": "Production went to something that pays after turn 120. Put every city on the missing Eureka item, buy the third Archer with Gold, and drop Etemenanki."
+        },
+        {
+          "turn": 80,
+          "test": "Midpoint: three Crossbowmen, two Knights and two Trebuchets within six tiles of the target, and its banner still shows no Medieval Walls?",
+          "pass": "Declare on turn 81 with the Formal War the turn 75 denouncement allows; forty turns remain.",
+          "fail": "Reduce scope now: one city, the target's nearest, taken with whatever exists. If Machinery or Military Engineering is still missing, the chain stalled and the lead is smaller than it looks; strike before it shrinks further."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "harvest-eureka-audit",
+          "turn": 31,
+          "text": "Classical Eureka audit: all eight Classical technologies have one. Write the trigger next to each and queue the build that fires it; drop Shipbuilding and Celestial Navigation if there is no coast."
+        },
+        {
+          "id": "harvest-lock-districts",
+          "turn": 38,
+          "text": "Place the Encampment and Commercial Hub before the next batch of Eurekas; a district's cost is fixed when it is placed and rises with every technology Babylon completes."
+        },
+        {
+          "id": "harvest-archers",
+          "turn": 45,
+          "text": "Three Archers owned at once: Machinery completes as soon as Iron Working and Engineering are in. Keep them; they are the Crossbowmen."
+        },
+        {
+          "id": "harvest-palgum",
+          "turn": 48,
+          "text": "Palgum in the river city, with the Pasture already down: Construction and Games and Recreation complete together."
+        },
+        {
+          "id": "harvest-denounce",
+          "turn": 75,
+          "text": "Denounce the target so a Formal War is available on turn 81: fewer grievances, and Nationalism's Inspiration is banked by it."
+        },
+        {
+          "id": "harvest-stage",
+          "turn": 79,
+          "text": "Army within six tiles of the target and out of its sight: three Crossbowmen, two Knights, two Trebuchets, a Spearman, the Great General and a Sabum Kibittum against its Horsemen."
+        }
+      ]
+    },
+    {
+      "id": "strike",
+      "name": "Strike",
+      "turns": {
+        "from": 81,
+        "to": 120
+      },
+      "era": "medieval",
+      "objective": "Spend the lead before it decays: declare on turn 81, take the target's capital by turn 100 and two more of its cities by turn 120 while it still lacks Castles and Pikemen, keep every city, and bank the Eurekas the war itself fires (two Crossbowmen, two Trebuchets, a Knight kill, a Casus Belli).",
+      "build_order": [
+        {
+          "item": "Trebuchet",
+          "why": "Replace a lost Trebuchet before anything else; without one the next set of Walls stops the campaign."
+        },
+        {
+          "item": "Knight",
+          "why": "Replacements only; Knights capture the cities the Trebuchets open."
+        },
+        {
+          "item": "Monument",
+          "why": "In each captured city the turn it falls; Loyalty first."
+        },
+        {
+          "item": "Granary",
+          "why": "In captured cities that lost population in the siege, before any district."
+        },
+        {
+          "item": "Builder",
+          "why": "Repair pillaged tiles in the captures, and the third Mine for Apprenticeship if it is still missing."
+        },
+        {
+          "item": "Campus",
+          "why": "In the captured capital: the second Campus is Recorded History's Inspiration."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:education",
+          "note": "Eureka from the first Great Scientist; Universities for the digest phase."
+        },
+        {
+          "id": "tech:military-tactics",
+          "note": "Eureka from the Spearman's kill during the siege; Pikemen at home if the target's Knights appear."
+        },
+        {
+          "id": "tech:buttress",
+          "note": "Eureka from the Terracotta Army."
+        },
+        {
+          "id": "tech:metal-casting",
+          "note": "Eureka banked the turn two Crossbowmen exist; it completes once Gunpowder does."
+        },
+        {
+          "id": "tech:siege-tactics",
+          "note": "Eureka banked by owning two Trebuchets; it completes once Castles and Metal Casting are in."
+        },
+        {
+          "id": "tech:military-science",
+          "note": "Eureka banked by the first Knight kill; an Industrial technology waiting for its prerequisites."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:mercenaries",
+          "note": "Inspiration from eight land units, which the strike army is; Professional Army."
+        },
+        {
+          "id": "civic:recorded-history",
+          "note": "Inspiration from two Campuses, the second in the captured capital."
+        },
+        {
+          "id": "civic:civil-service",
+          "note": "Inspiration from a ten-population city; the Palgum city gets there first."
+        },
+        {
+          "id": "civic:guilds",
+          "note": "Inspiration from two Markets, the first of them free; Banking's Eureka."
+        },
+        {
+          "id": "civic:nationalism",
+          "note": "Inspiration banked by the turn 81 Formal War; it is an Industrial civic and pays later."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Feudal Contract",
+          "slot": "military",
+          "from": "civic:feudalism",
+          "why": "Replacement Crossbowmen and the Spearman at half again the speed."
+        },
+        {
+          "card": "Conscription",
+          "slot": "military",
+          "from": "civic:state-workforce",
+          "why": "Upkeep on the ten-unit army while Gold goes to upgrades and Monument purchases."
+        },
+        {
+          "card": "Professional Army",
+          "slot": "military",
+          "from": "civic:mercenaries",
+          "why": "Half-price upgrades; swap it in for one turn to turn any remaining Archer into a Crossbowman."
+        },
+        {
+          "card": "Serfdom",
+          "slot": "economic",
+          "from": "civic:feudalism",
+          "why": "Builders with extra charges repair the captures and lay the Apprenticeship Mines."
+        }
+      ],
+      "districts": [
+        {
+          "district": "campus",
+          "city": "the captured capital",
+          "note": "Recorded History's Inspiration; Great Scientist points from a second city."
+        }
+      ],
+      "wonders": [],
+      "governors": [
+        {
+          "governor": "victor",
+          "promotion": "Garrison Commander",
+          "city": "the captured capital",
+          "why": "Loyalty and Combat Strength in the city most likely to flip or be retaken; he moves with each new capture."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "kabul",
+          "why": "Double experience from attacks you start: Crossbowmen and Knights promote twice as fast during the siege."
+        },
+        {
+          "slug": "akkad",
+          "why": "If it is on the map, suzerainty before the second city lets melee units break its Walls without waiting for the Trebuchets."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-general",
+          "why": "Marches with the Knights and Trebuchets; a second one is one of the three Great People for The Enlightenment."
+        },
+        {
+          "class": "great-scientist",
+          "why": "Education's Eureka, and another Great Person toward The Enlightenment's Inspiration."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 100,
+          "test": "Target capital captured and at positive Loyalty, one Trebuchet still alive, and the target still without Castles?",
+          "pass": "Move on the second city; Victor stays in the capital until the next capture.",
+          "fail": "Reduce scope: take the target's nearest city without Walls and make peace the turn it falls. Partial conversion beats total expiry."
+        },
+        {
+          "turn": 120,
+          "test": "Deadline: three cities taken and held at positive Loyalty, or the capital plus one city and a completed Terracotta Army?",
+          "pass": "Make peace on any terms that keep the cities and enter the digest phase.",
+          "fail": "Abort branch: peace now, disband everything beyond the garrisons, and run the digest phase on what you hold."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "strike-declare",
+          "turn": 81,
+          "text": "Declare the Formal War with the army already adjacent; Trebuchets fire on the Walls on turn 82 and the Crossbowmen kill whatever sorties."
+        },
+        {
+          "id": "strike-count",
+          "turn": 85,
+          "text": "Write the turns left every five turns: 35, 30, 25. The window closes at 120 or the turn the target finishes Castles, whichever comes first."
+        },
+        {
+          "id": "strike-capital",
+          "turn": 98,
+          "text": "Capture the target capital with a Knight once its Walls are down; never raze it. Monument and a garrison the same turn."
+        },
+        {
+          "id": "strike-audit",
+          "turn": 99,
+          "text": "After every capture: Amenities, Loyalty, Victor in, and a Monument bought if Loyalty is falling. Repeat per capture, not on a schedule."
+        },
+        {
+          "id": "strike-banked",
+          "turn": 105,
+          "text": "Check the tech tree for the war's banked Eurekas: Metal Casting, Siege Tactics and Military Science should all show as boosted."
+        },
+        {
+          "id": "strike-stop",
+          "turn": 120,
+          "text": "Peace this turn whatever the count; write down the cities held."
+        }
+      ]
+    },
+    {
+      "id": "digest",
+      "name": "Digest from behind",
+      "turns": {
+        "from": 121,
+        "to": 190
+      },
+      "era": "renaissance",
+      "objective": "Stabilize the captures and rebuild on the assumption that Babylon is behind in Science and stays behind: build every missing district type once for its free building, put Campuses and Theater Squares in the captured cities, research only what a Eureka is about to complete, form one alliance, and decide at turn 190 between Culture and a second war.",
+      "build_order": [
+        {
+          "item": "Monument",
+          "why": "Any captured city still without one; Loyalty before anything else."
+        },
+        {
+          "item": "Theater Square",
+          "why": "The first one comes with a free Amphitheater: Great Writer points and the Culture this branch runs on."
+        },
+        {
+          "item": "Industrial Zone",
+          "why": "Free Workshop; the second Workshop is Industrialization's Eureka."
+        },
+        {
+          "item": "University",
+          "why": "Two, in the capital and the captured capital: Printing's Eureka and the Campus for Oxford University."
+        },
+        {
+          "item": "Holy Site",
+          "why": "One, for the free Shrine and the Faith that buys Naturalists later; Babylon has no other Faith source."
+        },
+        {
+          "item": "Entertainment Complex",
+          "why": "Free Arena; Amenities across the captures without spending a Luxury."
+        },
+        {
+          "item": "Harbor",
+          "why": "Only on a coastal city: free Lighthouse, and one more district type toward Civil Engineering."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:castles",
+          "note": "Eureka the turn Merchant Republic is adopted; Medieval Walls in the captured cities nearest the old target."
+        },
+        {
+          "id": "tech:printing",
+          "note": "Eureka from two Universities."
+        },
+        {
+          "id": "tech:banking",
+          "note": "Eureka free from Guilds."
+        },
+        {
+          "id": "tech:mass-production",
+          "note": "Eureka from a Lumber Mill on any Woods tile."
+        },
+        {
+          "id": "tech:gunpowder",
+          "note": "Research it only if a counterattack comes; the Armory Eureka is a full-price building, and Metal Casting is banked behind it."
+        },
+        {
+          "id": "tech:industrialization",
+          "note": "Eureka from two Workshops, the first free."
+        },
+        {
+          "id": "tech:scientific-theory",
+          "note": "Eureka free from The Enlightenment; Oxford University."
+        },
+        {
+          "id": "tech:economics",
+          "note": "Eureka from two Banks in the Commercial Hubs."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:exploration",
+          "note": "Merchant Republic; its Inspiration needs two Caravels, which only a coastal empire builds."
+        },
+        {
+          "id": "civic:humanism",
+          "note": "Art and Archaeological Museums for the Culture branch; its Inspiration is not chased."
+        },
+        {
+          "id": "civic:the-enlightenment",
+          "note": "Three Great People: the Great Scientist, the Great General and the first Great Writer."
+        },
+        {
+          "id": "civic:diplomatic-service",
+          "note": "Forming the alliance gives the Inspiration."
+        },
+        {
+          "id": "civic:civil-engineering",
+          "note": "Seven different specialty districts, which the free-building sweep builds."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Merchant Republic",
+          "slot": "wildcard",
+          "from": "civic:exploration",
+          "why": "The Tier 2 government: Castles' Eureka the turn it is adopted, plus Trade Routes and purchase discounts for the rebuild."
+        },
+        {
+          "card": "Craftsmen",
+          "slot": "economic",
+          "from": "civic:guilds",
+          "why": "Industrial Zone adjacency doubled while the Workshops go up."
+        },
+        {
+          "card": "Town Charters",
+          "slot": "economic",
+          "from": "civic:guilds",
+          "why": "Commercial Hub adjacency doubled: the Gold that buys Monuments and Builders for the captures."
+        },
+        {
+          "card": "Diplomatic League",
+          "slot": "diplomatic",
+          "from": "civic:political-philosophy",
+          "why": "The first Envoy sent to each city-state counts as two, and the leader ability's Envoys land on top of it."
+        }
+      ],
+      "districts": [
+        {
+          "district": "theater-square",
+          "city": "capital",
+          "note": "First Theater Square: free Amphitheater, Great Writer points."
+        },
+        {
+          "district": "industrial-zone",
+          "city": "the best Production city",
+          "note": "Beside Mines and the Aqueduct; free Workshop."
+        },
+        {
+          "district": "holy-site",
+          "city": "a river city",
+          "note": "Free Shrine; the Faith for Naturalists and Rock Bands in the close."
+        },
+        {
+          "district": "entertainment-complex",
+          "city": "the largest captured city",
+          "note": "Free Arena; its Amenities reach the neighbouring captures."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Oxford University",
+          "why": "Two free technologies arrive whole, the one kind of Science the halving never touches, and it is an Industrial-era wonder for Flight's Eureka.",
+          "skip_if": "A Science civilization is already building it, or no Campus with a University sits beside a flat tile by turn 175."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Connoisseur",
+          "city": "capital",
+          "why": "+1 Culture per citizen: the Culture branch the plan assumes, not the Science one."
+        },
+        {
+          "governor": "liang",
+          "promotion": "Zoning Commissioner",
+          "city": "the captured capital",
+          "why": "Districts at +20% in the city that has to build the most of them."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "geneva",
+          "why": "+15% Science while at peace, which the digest phase is; a percentage of a halved base, but the only Science bonus worth its envoys."
+        },
+        {
+          "type": "Cultural",
+          "why": "Envoys toward Amphitheater Culture; the free Amphitheater is the first to benefit."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-writer",
+          "why": "From the free Amphitheater: Great Works for the Culture branch and a Great Person toward The Enlightenment."
+        },
+        {
+          "class": "great-engineer",
+          "why": "Finishes Oxford University and speeds the first Industrial Zone."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 150,
+          "test": "Every captured city at positive Loyalty with a Monument and a district, and at least six different specialty district types in the empire?",
+          "pass": "Continue the sweep toward seven types and Civil Engineering.",
+          "fail": "A city at negative Loyalty is the only emergency: Monument, Victor and an Entertainment Complex before any new district type."
+        },
+        {
+          "turn": 190,
+          "test": "Branch test: Culture per turn in the top three with a Theater Square in half the cities, or two rival capitals within reach of Knights, Field Cannons and the banked military technologies?",
+          "pass": "Commit: Culture with Museums and Archaeologists, or a second war against the weaker capital.",
+          "fail": "Neither: the game is a Score game; build Theater Squares and Campuses everywhere and keep only the garrisons."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "digest-loyalty-audit",
+          "turn": 121,
+          "text": "Audit Amenities and Loyalty in every captured city; Monument, Granary and a Governor before anything else is queued."
+        },
+        {
+          "id": "digest-eureka-audit",
+          "turn": 125,
+          "text": "Renaissance and Industrial Eureka audit: all seventeen have one, but Printing, Gunpowder, Industrialization, Steam Power and Economics each ask for a pair of buildings or a building you would not otherwise build. Mark each free, cheap or skip and research a skip only when it gates a defence."
+        },
+        {
+          "id": "digest-district-sweep",
+          "turn": 150,
+          "text": "One of every missing district type for its free building: Theater Square, Industrial Zone, Holy Site, Entertainment Complex, Harbor. Seven types is Civil Engineering."
+        },
+        {
+          "id": "digest-alliance",
+          "turn": 160,
+          "text": "Declare Friendship with a civilization the war did not touch, then form an alliance: Diplomatic Service now and Chemistry's Eureka at level 2."
+        },
+        {
+          "id": "digest-oxford",
+          "turn": 175,
+          "text": "Start Oxford University in the Campus city with a University; a Great Engineer finishes it."
+        },
+        {
+          "id": "digest-branch",
+          "turn": 190,
+          "text": "Choose the branch, Culture or a second war, and write it down."
+        }
+      ]
+    },
+    {
+      "id": "close",
+      "name": "Win from behind",
+      "turns": {
+        "from": 191,
+        "to": null
+      },
+      "era": "industrial",
+      "objective": "Finish the chosen branch without a Science lead. Culture: Theater Squares with Museums in every city, Great Works, National Parks, and the tourism technologies whose Eurekas a Culture empire fires anyway (Flight from an Industrial wonder, Radio from a National Park, Combustion from an Archaeologist's dig). Domination: Field Cannons and Cavalry from the banked military technologies against the two weakest capitals in reach.",
+      "build_order": [
+        {
+          "item": "Archaeological Museum",
+          "why": "Culture branch: Natural History's Inspiration and a home for the Artifacts."
+        },
+        {
+          "item": "Archaeologist",
+          "why": "Culture branch: the first dig is Combustion's Eureka, and three Artifacts of one era theme a Museum."
+        },
+        {
+          "item": "Art Museum",
+          "why": "Culture branch: Opera and Ballet's Inspiration and slots for Great Works of Art."
+        },
+        {
+          "item": "Naturalist",
+          "why": "Culture branch: bought with the Holy Site's Faith; the first National Park is Radio's Eureka."
+        },
+        {
+          "item": "Field Cannon",
+          "why": "Domination branch: two give Scorched Earth's Inspiration; as ranged units they do reduced damage to Walls, so Bombards from the banked Siege Tactics break the Renaissance Walls."
+        },
+        {
+          "item": "Factory",
+          "why": "Both branches: the Production for Museums or for the second army."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:flight",
+          "note": "Eureka from Oxford University or the Hermitage; tourism from improvements."
+        },
+        {
+          "id": "tech:radio",
+          "note": "Eureka from the first National Park; Mass Media's Inspiration follows."
+        },
+        {
+          "id": "tech:combustion",
+          "note": "Eureka from the first Artifact extracted."
+        },
+        {
+          "id": "tech:computers",
+          "note": "Eureka from any Tier 3 government."
+        },
+        {
+          "id": "tech:replaceable-parts",
+          "note": "Domination branch only: three Line Infantry."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:natural-history",
+          "note": "Inspiration from an Archaeological Museum; Archaeologists and the Hermitage."
+        },
+        {
+          "id": "civic:opera-and-ballet",
+          "note": "Inspiration from an Art Museum; Grand Opera."
+        },
+        {
+          "id": "civic:conservation",
+          "note": "Naturalists; its Inspiration is a Neighborhood on a Breathtaking tile, rarely worth planning."
+        },
+        {
+          "id": "civic:mass-media",
+          "note": "Inspiration from researching Radio, which the National Park completed."
+        },
+        {
+          "id": "civic:cultural-heritage",
+          "note": "Inspiration from one themed Museum; Heritage Tourism."
+        },
+        {
+          "id": "civic:mobilization",
+          "note": "Domination branch: three Corps; Levee en Masse."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Grand Opera",
+          "slot": "economic",
+          "from": "civic:opera-and-ballet",
+          "why": "Culture branch: Theater Square adjacency doubled in every city with one."
+        },
+        {
+          "card": "Heritage Tourism",
+          "slot": "economic",
+          "from": "civic:cultural-heritage",
+          "why": "Culture branch: Tourism from the Artifacts the Archaeologists bring home."
+        },
+        {
+          "card": "Levee en Masse",
+          "slot": "military",
+          "from": "civic:mobilization",
+          "why": "Domination branch: lower upkeep while the second army is fielded."
+        }
+      ],
+      "districts": [
+        {
+          "district": "theater-square",
+          "city": "every city without one",
+          "note": "Culture branch: Museums are the slots the Great Works and Artifacts need."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Hermitage",
+          "why": "Great Work of Art slots in the capital, and an Industrial-era wonder for Flight's Eureka if Oxford was lost.",
+          "skip_if": "Natural History arrives after turn 230, or a Culture civilization is already building it."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Grants",
+          "city": "capital",
+          "why": "Great Person points doubled: Writers, Artists and Musicians for the Culture branch."
+        },
+        {
+          "governor": "victor",
+          "promotion": "Embrasure",
+          "city": "the newest capture",
+          "why": "Domination branch: each new city holds while the army moves on."
+        }
+      ],
+      "city_states": [
+        {
+          "type": "Cultural",
+          "why": "Six envoys for Culture in every Art and Archaeological Museum."
+        },
+        {
+          "slug": "antananarivo",
+          "why": "Culture for every Great Person ever earned; the Classical scientists and generals count too."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-artist",
+          "why": "Culture branch: Great Works of Art for the Hermitage and the Art Museums."
+        },
+        {
+          "class": "great-writer",
+          "why": "Culture branch: Great Works of Writing fill the Amphitheaters the leader ability gave."
+        },
+        {
+          "class": "great-general",
+          "why": "Domination branch: an Industrial Great General with the Field Cannons and Cavalry."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 260,
+          "test": "Culture: visiting Tourists past half the strongest rival's domestic Tourists, or Domination: two capitals taken since turn 190?",
+          "pass": "Continue to the end; no further decisions.",
+          "fail": "Convert to Score: stop new military, fill every Great Work slot, and spend the rest on Theater Squares and city-state envoys."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "close-archaeologists",
+          "turn": 205,
+          "text": "Culture branch: two Archaeologists to the nearest Antiquity Sites; the first dig completes Combustion."
+        },
+        {
+          "id": "close-national-park",
+          "turn": 220,
+          "text": "Culture branch: buy a Naturalist with the Holy Site's Faith and found the first National Park; Radio completes with it."
+        },
+        {
+          "id": "close-second-war",
+          "turn": 200,
+          "text": "Domination branch: Field Cannons and Cavalry staged beside the weaker capital, declared with a Casus Belli."
+        },
+        {
+          "id": "close-review",
+          "turn": 260,
+          "text": "Review the turn 260 checkpoint and either continue or declare the game a Score game."
+        }
+      ]
+    }
+  ],
+  "boosts": [
+    {
+      "id": "tech:astrology",
+      "fit": "cheap",
+      "when": "arm",
+      "how": "The Scout's route toward the target passes a natural wonder; never research it with Science."
+    },
+    {
+      "id": "tech:irrigation",
+      "fit": "free",
+      "when": "arm",
+      "how": "The first Builder farms a Wheat, Rice or Maize tile, which river starts nearly always have."
+    },
+    {
+      "id": "tech:archery",
+      "fit": "cheap",
+      "when": "arm",
+      "how": "The first Slinger finishes a Barbarian scout or a camp unit."
+    },
+    {
+      "id": "tech:writing",
+      "fit": "free",
+      "when": "arm",
+      "how": "The Scout meets the target on its route."
+    },
+    {
+      "id": "tech:masonry",
+      "fit": "cheap",
+      "when": "arm",
+      "how": "A Quarry on Stone, Marble or Gypsum near the capital; without one it is researched for the Walls."
+    },
+    {
+      "id": "tech:bronze-working",
+      "fit": "cheap",
+      "when": "arm",
+      "how": "Three Barbarian kills by the Slinger and Sabum Kibittum at the farmed camp."
+    },
+    {
+      "id": "tech:wheel",
+      "fit": "free",
+      "when": "arm",
+      "how": "The first Builder mines a resource hill or a Copper or Salt tile."
+    },
+    {
+      "id": "tech:currency",
+      "fit": "cheap",
+      "when": "harvest",
+      "how": "The first Trader runs from the capital to the forward city."
+    },
+    {
+      "id": "tech:horseback-riding",
+      "fit": "cheap",
+      "when": "harvest",
+      "how": "A Pasture on Horses, Sheep or Cattle from the Fertility Rites Builder."
+    },
+    {
+      "id": "tech:iron-working",
+      "fit": "cheap",
+      "when": "harvest",
+      "how": "A Mine on the Iron that Bronze Working revealed."
+    },
+    {
+      "id": "tech:mathematics",
+      "fit": "cheap",
+      "when": "harvest",
+      "how": "Campus, Encampment and Commercial Hub, each with its free building."
+    },
+    {
+      "id": "tech:construction",
+      "fit": "free",
+      "when": "harvest",
+      "how": "The Palgum counts as the Water Mill."
+    },
+    {
+      "id": "tech:engineering",
+      "fit": "cheap",
+      "when": "harvest",
+      "how": "Ancient Walls in the city facing the target."
+    },
+    {
+      "id": "tech:apprenticeship",
+      "fit": "cheap",
+      "when": "harvest",
+      "how": "Three Mines from Liang's four-charge Builders."
+    },
+    {
+      "id": "tech:stirrups",
+      "fit": "free",
+      "when": "harvest",
+      "how": "Feudalism is on the civic path to the strike."
+    },
+    {
+      "id": "tech:machinery",
+      "fit": "free",
+      "when": "harvest",
+      "how": "Three Archers, which become the strike's Crossbowmen."
+    },
+    {
+      "id": "tech:military-engineering",
+      "fit": "cheap",
+      "when": "harvest",
+      "how": "An Aqueduct in the river city."
+    },
+    {
+      "id": "tech:military-tactics",
+      "fit": "cheap",
+      "when": "strike",
+      "how": "The army's one Spearman finishes a wounded defender during the siege."
+    },
+    {
+      "id": "tech:buttress",
+      "fit": "cheap",
+      "when": "strike",
+      "how": "The Terracotta Army is a Classical-era wonder."
+    },
+    {
+      "id": "tech:education",
+      "fit": "cheap",
+      "when": "strike",
+      "how": "The first Great Scientist from the Campus with its free Library."
+    },
+    {
+      "id": "tech:metal-casting",
+      "fit": "free",
+      "when": "strike",
+      "how": "Owning two Crossbowmen in the strike army banks it."
+    },
+    {
+      "id": "tech:siege-tactics",
+      "fit": "free",
+      "when": "strike",
+      "how": "Owning two Trebuchets in the strike army banks it."
+    },
+    {
+      "id": "tech:military-science",
+      "fit": "free",
+      "when": "strike",
+      "how": "The first Knight kill of the war banks it."
+    },
+    {
+      "id": "tech:castles",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "Adopting Merchant Republic, the Tier 2 government."
+    },
+    {
+      "id": "tech:mass-production",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "One Lumber Mill on any Woods tile."
+    },
+    {
+      "id": "tech:banking",
+      "fit": "free",
+      "when": "digest",
+      "how": "Guilds is on the civic path."
+    },
+    {
+      "id": "tech:gunpowder",
+      "fit": "costly",
+      "when": "digest",
+      "how": "An Armory is a full-price build; only if the old target counterattacks."
+    },
+    {
+      "id": "tech:printing",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "Two Universities, capital and captured capital."
+    },
+    {
+      "id": "tech:industrialization",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "Two Workshops, the first free with the first Industrial Zone."
+    },
+    {
+      "id": "tech:scientific-theory",
+      "fit": "free",
+      "when": "digest",
+      "how": "The Enlightenment is on the civic path."
+    },
+    {
+      "id": "tech:economics",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "Two Banks in Commercial Hubs that already hold Markets."
+    },
+    {
+      "id": "tech:flight",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Oxford University or the Hermitage is an Industrial-era wonder."
+    },
+    {
+      "id": "tech:radio",
+      "fit": "cheap",
+      "when": "close",
+      "how": "The first National Park from a Naturalist bought with Faith."
+    },
+    {
+      "id": "tech:combustion",
+      "fit": "cheap",
+      "when": "close",
+      "how": "The first Artifact an Archaeologist extracts."
+    },
+    {
+      "id": "tech:chemistry",
+      "fit": "cheap",
+      "when": "close",
+      "how": "The alliance formed in the digest phase reaches level 2."
+    },
+    {
+      "id": "tech:computers",
+      "fit": "free",
+      "when": "close",
+      "how": "Any Tier 3 government, adopted when Suffrage, Totalitarianism or Class Struggle lands."
+    },
+    {
+      "id": "tech:replaceable-parts",
+      "fit": "costly",
+      "when": "close",
+      "how": "Three Line Infantry, on the Domination branch only."
+    },
+    {
+      "id": "civic:craftsmanship",
+      "fit": "free",
+      "when": "arm",
+      "how": "Three improved tiles from the first Builder."
+    },
+    {
+      "id": "civic:foreign-trade",
+      "fit": "costly",
+      "when": "arm",
+      "how": "Only if the Scout sights a second continent; otherwise researched for the Trader."
+    },
+    {
+      "id": "civic:military-tradition",
+      "fit": "free",
+      "when": "arm",
+      "how": "Clearing the farmed camp after its kills are taken."
+    },
+    {
+      "id": "civic:state-workforce",
+      "fit": "free",
+      "when": "arm",
+      "how": "The Campus, which is the first district."
+    },
+    {
+      "id": "civic:early-empire",
+      "fit": "free",
+      "when": "harvest",
+      "how": "Six population across the first three cities."
+    },
+    {
+      "id": "civic:mysticism",
+      "fit": "cheap",
+      "when": "harvest",
+      "how": "Founding Fertility Rites with God King's Faith."
+    },
+    {
+      "id": "civic:political-philosophy",
+      "fit": "cheap",
+      "when": "harvest",
+      "how": "Three city-states met by the Scout on its route."
+    },
+    {
+      "id": "civic:games-and-recreation",
+      "fit": "free",
+      "when": "harvest",
+      "how": "Researching Construction, which the Palgum completes."
+    },
+    {
+      "id": "civic:military-training",
+      "fit": "free",
+      "when": "harvest",
+      "how": "The Encampment in the forward city."
+    },
+    {
+      "id": "civic:defensive-tactics",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:feudalism",
+      "fit": "cheap",
+      "when": "harvest",
+      "how": "Six Farms across the first three cities."
+    },
+    {
+      "id": "civic:drama-and-poetry",
+      "fit": "cheap",
+      "when": "harvest",
+      "how": "Etemenanki or the Terracotta Army completed."
+    },
+    {
+      "id": "civic:mercenaries",
+      "fit": "free",
+      "when": "strike",
+      "how": "Eight land units is the strike army."
+    },
+    {
+      "id": "civic:recorded-history",
+      "fit": "cheap",
+      "when": "strike",
+      "how": "Two Campuses, the second in the captured capital."
+    },
+    {
+      "id": "civic:civil-service",
+      "fit": "cheap",
+      "when": "strike",
+      "how": "The Palgum city reaches ten population."
+    },
+    {
+      "id": "civic:guilds",
+      "fit": "cheap",
+      "when": "strike",
+      "how": "Two Markets, the first of them free with the Commercial Hub."
+    },
+    {
+      "id": "civic:nationalism",
+      "fit": "free",
+      "when": "strike",
+      "how": "The Formal War declared on turn 81 is a Casus Belli."
+    },
+    {
+      "id": "civic:exploration",
+      "fit": "costly",
+      "when": "digest",
+      "how": "Two Caravels, only on a coastal empire."
+    },
+    {
+      "id": "civic:humanism",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:the-enlightenment",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "Three Great People: a Scientist, a General and a Writer."
+    },
+    {
+      "id": "civic:diplomatic-service",
+      "fit": "cheap",
+      "when": "digest",
+      "how": "Forming an alliance with the Declared Friend."
+    },
+    {
+      "id": "civic:civil-engineering",
+      "fit": "free",
+      "when": "digest",
+      "how": "Seven different specialty districts from the free-building sweep."
+    },
+    {
+      "id": "civic:natural-history",
+      "fit": "cheap",
+      "when": "close",
+      "how": "An Archaeological Museum in the capital's Theater Square."
+    },
+    {
+      "id": "civic:opera-and-ballet",
+      "fit": "cheap",
+      "when": "close",
+      "how": "An Art Museum in a second Theater Square."
+    },
+    {
+      "id": "civic:conservation",
+      "fit": "costly",
+      "when": "close",
+      "how": "A Neighborhood on a Breathtaking tile, rarely worth planning."
+    },
+    {
+      "id": "civic:mass-media",
+      "fit": "free",
+      "when": "close",
+      "how": "Researching Radio, which the National Park completes."
+    },
+    {
+      "id": "civic:cultural-heritage",
+      "fit": "cheap",
+      "when": "close",
+      "how": "One themed Museum from three same-era Artifacts."
+    },
+    {
+      "id": "civic:mobilization",
+      "fit": "costly",
+      "when": "close",
+      "how": "Three Corps, on the Domination branch only."
+    }
+  ],
+  "decision_triggers": [
+    {
+      "name": "The target catches up",
+      "if": "Before turn 80 the target fields Crossbowmen or Pikemen, or its banner shows Medieval Walls.",
+      "then": "Declare now with what exists; every turn after this the lead shrinks. If Medieval Walls are up, strike its second city first and take the capital later with the Trebuchets."
+    },
+    {
+      "name": "Three stalled turns",
+      "if": "For three consecutive turns during the strike the target city is no closer to falling: Walls intact, defenders replaced, no Trebuchet able to fire.",
+      "then": "Reduce scope the same turn: take the target's weakest city instead, or make peace for whatever city it will cede. Do not wait for the next checkpoint."
+    },
+    {
+      "name": "Eureka drought",
+      "if": "At an era boundary fewer than four technologies of the next era have a Eureka the empire can fire within twenty turns.",
+      "then": "Stop expecting the lead to grow. Spend production on the conversion or the district sweep now, and give Science only to the cheapest prerequisite that unlocks a banked Eureka."
+    },
+    {
+      "name": "Eureka from a village",
+      "if": "A tribal village or a Great Scientist's ability triggers a Eureka the plan meant to earn by building something.",
+      "then": "Drop that item from the build order the same turn and move its Production to the next army unit; the harvest gets shorter, not bigger."
+    }
+  ],
+  "abort": {
+    "trigger": "Turn 120 with no city held, or three stalled turns before turn 100 with the target's Walls intact and no Trebuchet alive.",
+    "actions": [
+      "Make peace the same turn on any terms that cost no city; the lead is already spent and prolonging the war buys nothing.",
+      "Disband every unit beyond one garrison per city; the maintenance is pure loss and the Knights will be obsolete before they are used again.",
+      "Run the digest phase on the empire you have: the free-building district sweep, Theater Squares, Geneva, an alliance, and Culture as the victory."
+    ]
+  },
+  "fail_state": "Turn 120 with Knights and Trebuchets parked outside a capital that now has Castles and Pikemen, no city taken, and a tech lead already shrinking because the Renaissance Eurekas ask for pairs of Universities and Workshops. Babylon is then a four-city empire with half everyone else's Science for the rest of the game, and nothing in the kit gets it back.",
+  "common_mistakes": [
+    "Putting Science into a technology whose Eureka is a few turns away. The Eureka completes it anyway and the Science already spent is lost.",
+    "Clearing the first Barbarian camp on sight. While it stands it is Archery, Bronze Working and a Military Tactics kill; cleared, it is only Military Tradition.",
+    "Placing districts after the Eureka burst. Their cost rises with every technology completed; place them first and fill them later.",
+    "Treating the tech lead as the asset. It is worth nothing once the AI reaches Castles, and cities taken by turn 120 are the only form it keeps.",
+    "Chasing a Science victory after turn 120. Science per turn is halved for the whole game and the late Eurekas cost pairs of buildings; play the Culture branch the plan assumes."
+  ],
+  "sources": [
+    "Civilization VI Civilopedia, Gathering Storm ruleset with the New Frontier Pass Babylon Pack (Babylon, Hammurabi, Sabum Kibittum, Palgum). The civ-info text says Enuma Anu Enlil unlocks a technology by paying a share of Science or Culture; in the game a Eureka gives all the Science for its technology, Science per turn is halved, and Inspirations are unchanged. The plan follows the game.",
+    "The leader affinity note says an Archer kill gives Machinery; Machinery's Eureka is owning three Archers, as eurekas.json has it, and the plan follows that.",
+    "Boost objectives from leadership-focus/data/civ6/eurekas.json, cross-checked there against civilization6planner.com tech-tree and civics-tree pages, 2026-10-01.",
+    "Leadership Focus tags, caveats and the Countdown template and Gilgamesh worked example in this repository."
+  ]
+}

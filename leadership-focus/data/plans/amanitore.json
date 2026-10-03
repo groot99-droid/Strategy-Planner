@@ -1,0 +1,1616 @@
+{
+  "slug": "amanitore",
+  "shape": "Front-Load",
+  "secondary_shape": "Countdown",
+  "version": 1,
+  "updated": "2026-10-01",
+  "assumptions": {
+    "ruleset": "Gathering Storm with every expansion and the Leader Pass",
+    "speed": "Standard",
+    "difficulty": "Emperor",
+    "map": "Continents or Pangaea, standard size, 8 civilizations",
+    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. Amanitore has a single persona and it is planned here. The shape is Front-Load because Nubian Pyramid siting is permanent and decided before the first district; the Pitati Archer window is a Countdown laid over the top of it, and the plan carries both."
+  },
+  "verdict": {
+    "victory": "Science",
+    "secondary": "Domination",
+    "confidence": "high",
+    "one_line": "Decide the Pyramid tiles and the first target before the Settler moves, take the nearest capital with Pitati Archers before Crossbowmen exist, and then spend the permanent district discount on Campuses in every city you own or took.",
+    "why": "Kandake of Meroe is the only part of the kit that never expires: 20 percent off every district for the whole game, 40 percent in a city with a Pyramid beside the center. That is a Science engine because Campuses, Industrial Zones and Spaceports are all districts. Ta-Seti and the Pitati Archer are a Classical spike that ends when rivals reach Machinery, so the plan treats the archer war as a way to buy two or three extra cities for the district engine rather than as the victory. A plan that chases Domination into the Renaissance with a civ whose military identity is a 30-strength archer is fighting the kit; a plan that never fights at all leaves the cheapest early army in the game unused."
+  },
+  "map_check": {
+    "must_have": [
+      "At least one Desert, Desert Hills or Floodplains tile adjacent to the capital tile, or to a tile one Settler move away, so the capital's Pyramid can sit beside the City Center.",
+      "A rival capital or a weak city-state within roughly 12 tiles by land, scouted by turn 15, for the Pitati window."
+    ],
+    "prefer": [
+      "Floodplains for food; a pure desert start starves before the Pyramids pay.",
+      "Hills with Stone, Copper or a luxury near the capital: Quarry for Masonry, Mines for the Ta-Seti Gold.",
+      "Desert Hills within six tiles of the capital for Jebel Barkal.",
+      "Four or five more sites within 15 tiles that each have a Pyramid tile touching a flat city-center spot."
+    ],
+    "no_go": "No Desert, Desert Hills or Floodplains within two Settler moves of the start, and none visible within the first ring of any of the next three sites. The 40 percent district discount and the Faith engine are both off, and the leader is a generic civ with a good archer.",
+    "fallback": "Play Nubia as a ranged-rush civ with the flat 20 percent district discount: Pitati Archers at Archery, take the nearest capital by turn 60, and build Campuses in everything. Say so at turn 1 and do not go looking for sand at turn 40; the one-off Pyramid at a desert site reached later is a bonus, not the plan."
+  },
+  "kit_levers": [
+    {
+      "source": "leader_ability",
+      "name": "Kandake of Meroë",
+      "buys": "20 percent more Production toward every district, 40 percent in a city with a Nubian Pyramid adjacent to the City Center.",
+      "exploit": "The discount applies to Production only, never to a purchase, so every district in this plan is built, not bought, and Gold goes to Builders, Settlers and units instead. A Pyramid tile touching the center is chosen at settle time for every city, because the difference between 20 and 40 percent over a nine-district city is more than one free district."
+    },
+    {
+      "source": "civ_ability",
+      "name": "Ta-Seti",
+      "buys": "50 percent more Production toward ranged units, 50 percent more experience for them, +1 Production from Mines on strategic resources and +2 Gold from Mines on bonus and luxury resources.",
+      "exploit": "Pitati Archers under Agoge come out at double speed, for less Production than a Warrior and reach two promotions in the first war. Every hill with a resource gets a Mine before a Farm; the Gold from luxury Mines is what pays Settler and Builder upkeep while Production is on districts."
+    },
+    {
+      "source": "unique_unit",
+      "name": "Pitati Archer",
+      "buys": "An Archer with 30 Ranged Strength and 3 Movement at Archery, costing only a little more than the Archer it replaces.",
+      "exploit": "Six Pitati and a Battering Ram take an unwalled Emperor capital between turns 40 and 70. They move as fast as a Scout, so one target 12 tiles away is in reach; they are obsolete the turn the target has Crossbowmen, which is the window's real clock."
+    },
+    {
+      "source": "unique_infrastructure",
+      "name": "Nubian Pyramid",
+      "buys": "A Masonry improvement on Desert, Desert Hills or Floodplains: +1 Faith, +1 Food beside the City Center, and the matching yield of every adjacent specialty district.",
+      "exploit": "One Pyramid per city, on the tile that touches both the City Center and the future Campus or Commercial Hub, placed before any district is queued. The placement is permanent; a Pyramid that touches nothing is a +1 Faith tile for 300 turns."
+    },
+    {
+      "source": "agenda",
+      "name": "City Planner",
+      "buys": "Amanitore likes leaders who build many districts and dislikes those who do not.",
+      "exploit": "Irrelevant to your own play, except that an AI Amanitore on the map will reach Mathematics and Civil Engineering early; treat her as the Science rival, not the military one."
+    }
+  ],
+  "shape_block": {
+    "front_load": {
+      "turn_zero": [
+        "Before the Settler moves: is there a Desert, Desert Hills or Floodplains tile adjacent to the capital spot, with a flat or hill tile on the other side of it for the first district? If yes, settle. If one move away, move. If not within two moves, run the fallback and say so.",
+        "Before the Settler moves: which direction is the nearest rival? The Warrior goes that way on turn 1 and does not come back until a capital is seen; the Scout goes the other way for city-states and a second target.",
+        "Before the Settler moves: count the Desert, Desert Hills and Floodplains tiles you can see and sketch where five more cities go. Each site needs a Pyramid tile touching its center; a site without one is settled last or not at all.",
+        "By turn 10: the capital's Pyramid tile is chosen and the first two districts are drawn around it on the map pins. Nothing is queued in that city until the pins are placed."
+      ],
+      "ceiling": "Six to eight cities on home sites plus two or three taken in the window, each with a Pyramid beside the center and five to nine districts. That is a top-three Science empire by the Industrial era with no further help from the kit, and it is enough for a Science victory around turn 300 at Emperor. It is not enough for a Domination run past the Renaissance: the army that took the first capital cannot take a second continent.",
+      "irreversibles": [
+        {
+          "decision": "Capital tile, and with it which tile the capital's Pyramid sits on and whether the 40 percent discount exists in the capital at all.",
+          "by_turn": 2
+        },
+        {
+          "decision": "The first target for the Pitati window. Scouting after turn 15 is too late to change it; the archers must be walking by turn 35.",
+          "by_turn": 15
+        },
+        {
+          "decision": "Capital Pyramid built and the first district pinned beside it. A district placed before the Pyramid steals the tile or leaves the Pyramid touching nothing.",
+          "by_turn": 25
+        },
+        {
+          "decision": "The settle map: six home sites in order, each with its Pyramid tile and district cluster pinned, before the second Settler finishes.",
+          "by_turn": 30
+        },
+        {
+          "decision": "Pyramid tile in every later city, the turn it is settled. Builders go there before anything else in the city.",
+          "by_turn": 80
+        }
+      ],
+      "settle_map_rule": "Draw all six home sites before the second Settler is produced, including the two you will not reach until turn 60. A site qualifies only if a Desert, Desert Hills or Floodplains tile touches the center spot and a Campus and a Commercial Hub or Industrial Zone can both touch that same tile. Order the sites by distance toward the first target, so the forward city is also the staging city. A site that fails the Pyramid test is written down as a 20 percent city and settled only after the six that pass."
+    }
+  },
+  "secondary_shape_block": {
+    "countdown": {
+      "deadline_turn": 100,
+      "midpoint_turn": 60,
+      "target_selection": "The nearest rival capital within roughly 12 tiles by land, chosen by turn 15 from the Warrior's scouting. Prefer a capital not on hills, with no river crossing on the approach, whose owner has not yet shown an Archer. If no rival is in reach, the nearest city-state that is not Militaristic becomes the target and the window shrinks to one city. Track the target's tech: the day their Crossbowmen appear is the day the window closes, whatever the turn says.",
+      "what_counts_as_converted": "At least two captured cities kept at positive Loyalty with a Pyramid tile pinned in each, or the rival capital alone if it has four or more population. Kills, Gold, a promoted army and pillaged tiles do not count. A captured city is converted only when its first district is queued under the Kandake discount.",
+      "after_window": "At turn 100, or the turn the target has Machinery, whichever is first: make peace, upgrade the surviving Pitati to Crossbowmen under Professional Army for the Metal Casting Eureka, garrison one per border city, and swing every production queue to districts. No new ranged units are built after this except as defence."
+    }
+  },
+  "phases": [
+    {
+      "id": "assess",
+      "name": "Assess and commit",
+      "turns": {
+        "from": 1,
+        "to": 20
+      },
+      "era": "ancient",
+      "objective": "Settle beside a Pyramid tile, pick the target and the settle map before the second Settler, found the pantheon, and have Archery researched with the first Pitati Archers in the queue by turn 20. Every permanent decision in this game is made in these twenty turns; the rest of the plan executes them.",
+      "build_order": [
+        {
+          "item": "Scout",
+          "why": "Goes away from the Warrior's direction: city-states for Political Philosophy, a second continent sighting, and a second candidate target."
+        },
+        {
+          "item": "Slinger",
+          "why": "One barbarian kill before Archery lands gives the Eureka; it upgrades to a Pitati later for Gold."
+        },
+        {
+          "item": "Settler",
+          "why": "The second city is the forward city toward the target and the second Pyramid site from the settle map."
+        },
+        {
+          "item": "Builder",
+          "why": "Quarry on Stone for Masonry, a Mine on a resource hill for The Wheel, and a Farm on a resource for Irrigation; three improvements is Craftsmanship."
+        },
+        {
+          "item": "Pitati Archer",
+          "why": "The first of six; under Agoge and Ta-Seti it costs less than a Warrior's worth of turns."
+        },
+        {
+          "item": "Pitati Archer",
+          "why": "Two archers clear the nearest camp: three kills is Bronze Working, the camp is Military Tradition."
+        },
+        {
+          "item": "Monument",
+          "why": "Culture to Craftsmanship, Early Empire and Political Philosophy on time; the capital has no Theater Square in this plan."
+        },
+        {
+          "item": "Settler",
+          "why": "Third city on the next settle-map site; Magnus Provision in the capital for the Settlers after it."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:archery",
+          "note": "First after Animal Husbandry, its prerequisite. The Slinger kill boosts it; Pitati Archers are the whole window."
+        },
+        {
+          "id": "tech:mining",
+          "note": "Mines on every resource hill; Ta-Seti Gold and the Wheel Eureka."
+        },
+        {
+          "id": "tech:masonry",
+          "note": "Nubian Pyramids and the Pyramids wonder; Eureka from the Stone Quarry."
+        },
+        {
+          "id": "tech:bronze-working",
+          "note": "Three camp kills by the archers give it free; Encampment and Iron reveal."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:code-of-laws",
+          "note": "Urban Planning and Discipline until the pantheon needs God King; no Holy Site is built this early."
+        },
+        {
+          "id": "civic:craftsmanship",
+          "note": "Agoge. Inspiration from the first Builder's three improvements."
+        },
+        {
+          "id": "civic:foreign-trade",
+          "note": "A Trader for Currency and the second-city road; Inspiration only if the Scout finds a second continent."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Urban Planning",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "One Production in every city while the queues are Settlers and archers."
+        },
+        {
+          "card": "Discipline",
+          "slot": "military",
+          "from": "civic:code-of-laws",
+          "why": "The Slinger and Warrior clear scouts and camps before the archers arrive."
+        },
+        {
+          "card": "Agoge",
+          "slot": "military",
+          "from": "civic:craftsmanship",
+          "why": "Half again on Ancient and Classical ranged units, on top of Ta-Seti; swapped in the turn Craftsmanship lands."
+        }
+      ],
+      "districts": [],
+      "pantheon": {
+        "slug": "desert-folklore",
+        "why": "A Holy Site beside three desert tiles and a Pyramid is the Faith that buys Builders and Great Scientists later; the Pyramid's Faith alone is not enough.",
+        "alternative": "lady-of-the-reeds-and-marshes"
+      },
+      "wonders": [],
+      "governors": [],
+      "city_states": [
+        {
+          "type": "Militaristic",
+          "why": "The first envoy buys Production toward units in the capital while it builds the archers."
+        }
+      ],
+      "great_people": [],
+      "checkpoints": [
+        {
+          "turn": 10,
+          "test": "Capital settled with a Desert, Desert Hills or Floodplains tile adjacent to the center, the Warrior heading at a rival, and the capital's Pyramid tile and first two districts pinned?",
+          "pass": "Continue; the settle map is drawn before the second Settler completes.",
+          "fail": "No Pyramid tile adjacent: declare the fallback now and plan the capital as a 20 percent city. No pins: stop and place them before anything else is queued."
+        },
+        {
+          "turn": 20,
+          "test": "Archery in, two Pitati in production, a target capital or city-state identified, and six home sites drawn with their Pyramid tiles?",
+          "pass": "Enter the window phase; the archers march on the camp first and the target second.",
+          "fail": "No target seen: send the Scout back toward the Warrior and delay the war ten turns; the deadline does not move. Fewer than four Pyramid sites: the empire will be smaller and Domination moves up a notch in the verdict."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "assess-settle",
+          "turn": 1,
+          "text": "Settle on or beside a Pyramid tile; move at most two turns to get one adjacent to the City Center."
+        },
+        {
+          "id": "assess-warrior-out",
+          "turn": 1,
+          "text": "Send the Warrior toward the nearest rival and the Scout the other way; neither returns before a capital is seen."
+        },
+        {
+          "id": "assess-pin-capital",
+          "turn": 8,
+          "text": "Pin the capital's Pyramid tile and the Campus and Commercial Hub that will touch it. Nothing in the capital is queued on another of those tiles."
+        },
+        {
+          "id": "assess-target",
+          "turn": 15,
+          "text": "Write down the target: name, distance, hills or not, and whether an Archer has been seen. This does not change after today."
+        },
+        {
+          "id": "assess-settle-map",
+          "turn": 18,
+          "text": "Draw six home sites in order, each with a Pyramid tile touching the center and two districts touching the Pyramid. Mark any site that fails as a 20 percent city."
+        },
+        {
+          "id": "assess-pantheon",
+          "turn": 20,
+          "text": "Found Desert Folklore, or Lady of the Reeds and Marshes if the start is floodplains with little open desert."
+        }
+      ]
+    },
+    {
+      "id": "window",
+      "name": "The archer window",
+      "turns": {
+        "from": 21,
+        "to": 100
+      },
+      "era": "classical",
+      "objective": "Take the target capital and one more city with six Pitati Archers and a Battering Ram before the target has Crossbowmen, while the home cities build the Pyramid first and their districts second under the discount. The deadline is turn 100 or the target's Machinery, whichever comes first, and the plan tracks the number of turns left every turn.",
+      "build_order": [
+        {
+          "item": "Pitati Archer",
+          "why": "Four more for six total; under Agoge they are the cheapest army in the game."
+        },
+        {
+          "item": "Battering Ram",
+          "why": "Ancient Walls on the target otherwise end the window on the spot."
+        },
+        {
+          "item": "Warrior",
+          "why": "Two melee units to take the city and screen the archers; Swordsmen if Iron is mined in time."
+        },
+        {
+          "item": "Builder",
+          "why": "Pyramid in every city before its first district; Mines on every resource hill."
+        },
+        {
+          "item": "Campus",
+          "why": "The first district in the capital, touching the Pyramid; two Campuses is Recorded History."
+        },
+        {
+          "item": "Settler",
+          "why": "Sites three to five from the settle map while the army is away."
+        },
+        {
+          "item": "Commercial Hub",
+          "why": "Touching the capital Pyramid; a Trade Route is Currency and the Gold pays the Settlers."
+        },
+        {
+          "item": "Encampment",
+          "why": "In the forward city: Military Training, Walls, and a staging point for the second war if there is one."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:wheel",
+          "note": "Eureka from the first resource Mine; Water Mill for Construction later."
+        },
+        {
+          "id": "tech:writing",
+          "note": "Free from meeting the target; Campus in the capital."
+        },
+        {
+          "id": "tech:irrigation",
+          "note": "Farm a resource on the floodplains; Housing the desert cannot give."
+        },
+        {
+          "id": "tech:horseback-riding",
+          "note": "A Pasture if Horses or Sheep exist; it is on the way to Stirrups."
+        },
+        {
+          "id": "tech:iron-working",
+          "note": "Mine the Iron the archers revealed; Jebel Barkal and Swordsmen to take the city."
+        },
+        {
+          "id": "tech:currency",
+          "note": "Trade Route Eureka; Commercial Hubs touching Pyramids."
+        },
+        {
+          "id": "tech:mathematics",
+          "note": "Three districts by turn 70 is free for this leader; Petra if the capital is desert."
+        },
+        {
+          "id": "tech:construction",
+          "note": "Water Mill Eureka; Games and Recreation Inspiration comes with it."
+        },
+        {
+          "id": "tech:engineering",
+          "note": "Ancient Walls in the forward city; Eureka from building them."
+        },
+        {
+          "id": "tech:machinery",
+          "note": "Three Pitati give the Eureka. Research it last in this phase, after the war: your own Crossbowmen are the upgrade, the target's are the deadline."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:military-tradition",
+          "note": "Free from the first camp the archers clear."
+        },
+        {
+          "id": "civic:state-workforce",
+          "note": "Free from the first Campus; Conscription to carry six archers; Limes from Defensive Tactics if the target counter-attacks."
+        },
+        {
+          "id": "civic:early-empire",
+          "note": "Colonization while three Settlers are in the queues; six population is free."
+        },
+        {
+          "id": "civic:mysticism",
+          "note": "Free from the pantheon; a cheap civic while the war runs."
+        },
+        {
+          "id": "civic:political-philosophy",
+          "note": "Oligarchy for the war; Inspiration from three city-states met by the Scout."
+        },
+        {
+          "id": "civic:military-training",
+          "note": "Inspiration from the forward Encampment; on the way to Mercenaries."
+        },
+        {
+          "id": "civic:games-and-recreation",
+          "note": "Free from Construction; the captured cities need an Entertainment Complex eventually."
+        },
+        {
+          "id": "civic:recorded-history",
+          "note": "Two Campuses by turn 90 give it; Natural Philosophy doubles their adjacency."
+        },
+        {
+          "id": "civic:defensive-tactics",
+          "note": "Only if the target declares on you first; otherwise unboosted on the way to Feudalism."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Agoge",
+          "slot": "military",
+          "from": "civic:craftsmanship",
+          "why": "Stays slotted until the sixth archer is out."
+        },
+        {
+          "card": "Colonization",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "Settlers half again as fast for sites three to five while the capital finishes its districts."
+        },
+        {
+          "card": "Oligarchy",
+          "slot": "wildcard",
+          "from": "civic:political-philosophy",
+          "why": "Four Combat Strength for the melee units and extra experience for every unit in the war."
+        },
+        {
+          "card": "Conscription",
+          "slot": "military",
+          "from": "civic:state-workforce",
+          "why": "Six archers and two melee units at one Gold each less; swapped in when Agoge is no longer needed."
+        },
+        {
+          "card": "Natural Philosophy",
+          "slot": "economic",
+          "from": "civic:recorded-history",
+          "why": "Doubles the Campus adjacency the desert mountains and neighbouring districts give."
+        }
+      ],
+      "districts": [
+        {
+          "district": "campus",
+          "city": "capital, then every city",
+          "note": "Touching the Pyramid; the first district everywhere because it is the victory."
+        },
+        {
+          "district": "commercial-hub",
+          "city": "capital and the river city",
+          "note": "Touching the Pyramid; Trade Routes carry Food to the desert cities."
+        },
+        {
+          "district": "encampment",
+          "city": "the forward city",
+          "note": "Walls, Military Training, and a Great General from the war."
+        },
+        {
+          "district": "holy-site",
+          "city": "the city with three desert tiles around a hill",
+          "note": "Desert Folklore; the only Holy Site the plan builds."
+        }
+      ],
+      "pantheon": {
+        "slug": "desert-folklore",
+        "why": "Already founded; this phase builds the one Holy Site that uses it."
+      },
+      "wonders": [
+        {
+          "name": "Pyramids",
+          "why": "A free Builder and an extra charge on every Builder, and every Builder in this plan has a Pyramid to build first.",
+          "skip_if": "No flat Desert or Desert Floodplains tile in the capital's workable ring, or Egypt is on the map."
+        },
+        {
+          "name": "Jebel Barkal",
+          "why": "Four Faith to every city within six tiles and two Iron a turn; it sits on a Desert Hill the settle map already owns.",
+          "skip_if": "No Desert Hills within six tiles of three cities, or Iron Working is not in by turn 75."
+        },
+        {
+          "name": "Petra",
+          "why": "Food, Gold and Production on every desert tile of a desert capital; the best wonder the kit can ask for.",
+          "skip_if": "The capital has fewer than six flat desert tiles, or Mathematics lands after turn 90."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "magnus",
+          "promotion": "Provision",
+          "city": "capital",
+          "why": "Three Settlers leave the capital without costing it population while it also builds the army."
+        },
+        {
+          "governor": "victor",
+          "promotion": "Garrison Commander",
+          "city": "the first captured city",
+          "why": "Loyalty and Combat Strength the turn the city is taken; he is reassigned to the second capture when it falls."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "kabul",
+          "why": "Double experience from battles you start, on top of Ta-Seti's half again; the archers reach their third promotion in one war."
+        },
+        {
+          "type": "Militaristic",
+          "why": "Unit Production in the capital while the army is built."
+        },
+        {
+          "slug": "nazca",
+          "why": "Nazca Lines put Faith on the desert tiles the Pyramids do not use."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-general",
+          "why": "Any Classical Great General joins the siege: five Combat Strength and a Movement point to archers that already move three."
+        },
+        {
+          "class": "great-scientist",
+          "why": "The first one is the Education Eureka; two Campuses by turn 80 get there before most rivals."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 40,
+          "test": "Six Pitati and a Battering Ram within three tiles of the target, and the target without Walls?",
+          "pass": "Declare with a Surprise War if no Casus Belli exists; the grievances are the price of two cities.",
+          "fail": "Fewer than five archers: wait, but not past turn 50. Walls up already: switch to the second city of the same rival, or to the city-state target, and reduce the objective to one city."
+        },
+        {
+          "turn": 60,
+          "test": "Midpoint. Is at least one city captured and held, or the target capital under siege with its defenders dead?",
+          "pass": "Take the second city if it is within six tiles; otherwise make peace with what you have.",
+          "fail": "Reduce scope now: one city, not two. If no city is close to falling, make peace at the first offer and start upgrading the archers; the window has failed and the district plan does not need it."
+        },
+        {
+          "turn": 100,
+          "test": "Deadline. Two captured cities kept, or the rival capital, each with a Pyramid tile pinned and a district queued?",
+          "pass": "Peace, upgrade to Crossbowmen under Professional Army, and enter the snowball phase.",
+          "fail": "Peace on any terms that keep what you hold. The archers become garrisons. Nothing about the district plan changes; the empire is simply two cities smaller."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "window-camp",
+          "turn": 25,
+          "text": "Clear the nearest camp with the first two archers: Bronze Working and Military Tradition in one visit."
+        },
+        {
+          "id": "window-pyramid-first",
+          "turn": 28,
+          "text": "Capital Pyramid built on the pinned tile; the Campus is queued the same turn, touching it."
+        },
+        {
+          "id": "window-march",
+          "turn": 35,
+          "text": "Six archers, a Ram and two melee units march on the target. Count the turns remaining out loud every turn from here."
+        },
+        {
+          "id": "window-capture-one",
+          "turn": 55,
+          "text": "First city taken and kept; Victor moves in, a Pyramid tile is pinned, and its first district is a Campus."
+        },
+        {
+          "id": "window-third-city",
+          "turn": 60,
+          "text": "Third and fourth home cities settled from the map; Pyramid before district in each."
+        },
+        {
+          "id": "window-peace",
+          "turn": 95,
+          "text": "Make peace before the deadline, upgrade the archers to Crossbowmen, and move every queue in the empire to districts."
+        }
+      ]
+    },
+    {
+      "id": "snowball",
+      "name": "District snowball",
+      "turns": {
+        "from": 101,
+        "to": 160
+      },
+      "era": "medieval",
+      "objective": "Build the drawn plan with no new decisions: a Pyramid, a Campus and a Commercial Hub or Industrial Zone in every city, Universities for Printing, and the captured cities brought to positive Loyalty and Amenities before anything else goes into them.",
+      "build_order": [
+        {
+          "item": "Monument",
+          "why": "First in every captured city; Loyalty before Science."
+        },
+        {
+          "item": "Library",
+          "why": "Every Campus; Great Scientist points for Education."
+        },
+        {
+          "item": "Industrial Zone",
+          "why": "Touching a Pyramid where a Campus does not already; Workshops for Industrialization."
+        },
+        {
+          "item": "Aqueduct",
+          "why": "In the capital for Military Engineering and Housing the desert lacks."
+        },
+        {
+          "item": "University",
+          "why": "Two for Printing; the Science lead starts here."
+        },
+        {
+          "item": "Market",
+          "why": "Two for Guilds; Banking is then free."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:apprenticeship",
+          "note": "Three Mines is long done; Industrial Zones touching Pyramids."
+        },
+        {
+          "id": "tech:military-engineering",
+          "note": "Aqueduct Eureka; the capital needs the Housing anyway."
+        },
+        {
+          "id": "tech:education",
+          "note": "Great Scientist Eureka; Universities."
+        },
+        {
+          "id": "tech:castles",
+          "note": "Free from Monarchy or Merchant Republic."
+        },
+        {
+          "id": "tech:stirrups",
+          "note": "Free from Feudalism; no Knights are built."
+        },
+        {
+          "id": "tech:metal-casting",
+          "note": "Free from the two upgraded Crossbowmen."
+        },
+        {
+          "id": "tech:printing",
+          "note": "Two Universities; the first real Science jump."
+        },
+        {
+          "id": "tech:buttress",
+          "note": "Free if Jebel Barkal or Petra was built."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:feudalism",
+          "note": "Six Farms on the floodplains; Serfdom for the Pyramid Builders."
+        },
+        {
+          "id": "civic:civil-service",
+          "note": "The capital at ten population under Petra or the Aqueduct."
+        },
+        {
+          "id": "civic:mercenaries",
+          "note": "Free from the eight units the war left; Professional Army for the upgrades."
+        },
+        {
+          "id": "civic:guilds",
+          "note": "Two Markets; Craftsmen for the Industrial Zones."
+        },
+        {
+          "id": "civic:divine-right",
+          "note": "Monarchy for the wide empire; Inspiration only if two Temples get built, which they do not."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Professional Army",
+          "slot": "military",
+          "from": "civic:mercenaries",
+          "why": "Pitati to Crossbowmen at half price; slotted for one turn and removed."
+        },
+        {
+          "card": "Serfdom",
+          "slot": "economic",
+          "from": "civic:feudalism",
+          "why": "Builders with extra charges for the Pyramids and Mines of the new cities."
+        },
+        {
+          "card": "Craftsmen",
+          "slot": "economic",
+          "from": "civic:guilds",
+          "why": "Doubles Industrial Zone adjacency from Mines and neighbouring districts."
+        },
+        {
+          "card": "Monarchy",
+          "slot": "wildcard",
+          "from": "civic:divine-right",
+          "why": "Housing from Walls and the extra Loyalty a wide empire with captured cities needs."
+        }
+      ],
+      "districts": [
+        {
+          "district": "industrial-zone",
+          "city": "the two best Mine cities",
+          "note": "Touching a Pyramid and the Mines; Craftsmen doubles it."
+        },
+        {
+          "district": "aqueduct",
+          "city": "capital",
+          "note": "Housing and the Military Engineering Eureka."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Kilwa Kisiwani",
+          "why": "Fifteen percent more Science in its city for a Scientific suzerainty, and in every city once you hold two Scientific city-states.",
+          "skip_if": "No coastal city, or Machinery lands after turn 140."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Researcher",
+          "city": "capital",
+          "why": "The capital has the most Campus Science and the most citizens to multiply."
+        },
+        {
+          "governor": "liang",
+          "promotion": "Zoning Commissioner",
+          "city": "the newest home city",
+          "why": "District Production on top of the Kandake discount in the city that has the most districts still to build."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "geneva",
+          "why": "15 percent Science when not at war, which is the rest of the game."
+        },
+        {
+          "slug": "hattusa",
+          "why": "Two a turn of every strategic resource revealed but not yet improved; Niter and Coal arrive before the Builders reach them."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-scientist",
+          "why": "Every Medieval and Renaissance Great Scientist; the Campuses touching Pyramids out-point most rivals."
+        },
+        {
+          "class": "great-engineer",
+          "why": "Industrial Zone and wonder charges; the one that gives district Production is the best one in the game for this leader."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 130,
+          "test": "Every city has a Pyramid and a Campus, captured cities at positive Loyalty, and two Universities under way?",
+          "pass": "Continue; no decisions until turn 160.",
+          "fail": "A city with a district and no Pyramid has broken the rule: stop its queue and fix it with the next Builder. A captured city below zero Loyalty gets Victor and a Monument before anything else in the empire."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "snowball-loyalty-audit",
+          "turn": 102,
+          "text": "Audit Loyalty and Amenities in every captured city; Monument, Victor, and an Entertainment Complex touching a Pyramid if needed."
+        },
+        {
+          "id": "snowball-universities",
+          "turn": 135,
+          "text": "Two Universities built; Printing Eureka collected."
+        },
+        {
+          "id": "snowball-industrial",
+          "turn": 150,
+          "text": "Two Industrial Zones with Workshops touching Pyramids; Industrialization Eureka collected."
+        }
+      ]
+    },
+    {
+      "id": "live",
+      "name": "Live inside the ceiling",
+      "turns": {
+        "from": 161,
+        "to": 230
+      },
+      "era": "industrial",
+      "objective": "Run a generic strong Science empire with the district discount as its only remaining edge: Factories, Research Labs, the Enlightenment Inspiration, and Power. The military identity is gone and nothing in this phase pretends otherwise.",
+      "build_order": [
+        {
+          "item": "Workshop",
+          "why": "Every Industrial Zone; Factories after Industrialization."
+        },
+        {
+          "item": "Bank",
+          "why": "Two for Economics; the Gold that buys Builders for Niter and Coal."
+        },
+        {
+          "item": "Neighborhood",
+          "why": "Two for Sanitation; the compact desert cities run out of Housing."
+        },
+        {
+          "item": "Factory",
+          "why": "Three for Class Struggle and the regional Production for Spaceports later."
+        },
+        {
+          "item": "Research Lab",
+          "why": "Every Campus as soon as Chemistry lands; Nuclear Program is free with the first."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:banking",
+          "note": "Free from Guilds; Banks."
+        },
+        {
+          "id": "tech:industrialization",
+          "note": "Two Workshops; Factories and Coal."
+        },
+        {
+          "id": "tech:scientific-theory",
+          "note": "Free from The Enlightenment."
+        },
+        {
+          "id": "tech:rifling",
+          "note": "A Mine on Niter; Ta-Seti gives it Production too."
+        },
+        {
+          "id": "tech:sanitation",
+          "note": "Two Neighborhoods; Sewers for the big cities."
+        },
+        {
+          "id": "tech:economics",
+          "note": "Two Banks; Stock Exchanges later."
+        },
+        {
+          "id": "tech:chemistry",
+          "note": "Alliance level 2 with the Science ally; Research Labs."
+        },
+        {
+          "id": "tech:refining",
+          "note": "Coal Power Plant Eureka; the Factories need Power."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:the-enlightenment",
+          "note": "Three Great People is long done; Rationalism."
+        },
+        {
+          "id": "civic:civil-engineering",
+          "note": "Free from seven district types; Public Works."
+        },
+        {
+          "id": "civic:diplomatic-service",
+          "note": "Form a Research Alliance; Chemistry's Eureka follows."
+        },
+        {
+          "id": "civic:urbanization",
+          "note": "The capital at fifteen population; Neighborhoods."
+        },
+        {
+          "id": "civic:class-struggle",
+          "note": "Three Factories; Five-Year Plan."
+        },
+        {
+          "id": "civic:nationalism",
+          "note": "Only boosted if the window war used a Casus Belli; usually unboosted."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Rationalism",
+          "slot": "economic",
+          "from": "civic:the-enlightenment",
+          "why": "Science from Campus buildings in cities of ten or more with adjacency three or more; Campuses set among other districts and mountains get there."
+        },
+        {
+          "card": "Five-Year Plan",
+          "slot": "economic",
+          "from": "civic:class-struggle",
+          "why": "Campus and Industrial Zone adjacency once Rationalism's conditions are met everywhere."
+        },
+        {
+          "card": "Public Works",
+          "slot": "economic",
+          "from": "civic:civil-engineering",
+          "why": "Builders faster and with more charges for Niter, Coal and Oil."
+        }
+      ],
+      "districts": [
+        {
+          "district": "neighborhood",
+          "city": "capital and the largest captured city",
+          "note": "Sanitation Eureka and Housing."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Oxford University",
+          "why": "Two free techs and Science in the best Campus city.",
+          "skip_if": "A rival reached Education well ahead of you, or no flat Grassland or Plains tile touches the capital Campus."
+        },
+        {
+          "name": "Ruhr Valley",
+          "why": "Production per Mine in the city with the most Mines; Ta-Seti cities have many.",
+          "skip_if": "No river Industrial Zone, or Industrialization lands after turn 210."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Grants",
+          "city": "capital",
+          "why": "Great Scientist points doubled in the Campus city."
+        },
+        {
+          "governor": "reyna",
+          "promotion": "Contractor",
+          "city": "the Gold city",
+          "why": "Buying districts is the one thing the Kandake discount cannot do; Reyna does it where Gold is spare."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "bologna",
+          "why": "Great Person points from every district with a building, and this empire has more buildings per city than anyone."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-scientist",
+          "why": "Industrial Great Scientists give flat Science or Eurekas for the Modern techs."
+        },
+        {
+          "class": "great-merchant",
+          "why": "Gold and Amenities for the compact cities; one patronage with Faith if Jebel Barkal was built."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 200,
+          "test": "Top two in Science, Research Labs in three Campuses, and three Factories powered?",
+          "pass": "Continue to the close.",
+          "fail": "Behind in Science: Research Alliance and Pingala's Grants before any wonder; check that Rationalism's conditions are actually met in each Campus city and fix Housing where they are not."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "live-alliance",
+          "turn": 170,
+          "text": "Form a Research Alliance with the strongest Science civ not on your border; Chemistry's Eureka comes at level 2."
+        },
+        {
+          "id": "live-factories",
+          "turn": 195,
+          "text": "Three Factories built and a Coal Power Plant running; Class Struggle and Refining collected."
+        },
+        {
+          "id": "live-labs",
+          "turn": 225,
+          "text": "Research Labs in every Campus with a University; Nuclear Program collected."
+        }
+      ]
+    },
+    {
+      "id": "close",
+      "name": "Close",
+      "turns": {
+        "from": 231,
+        "to": null
+      },
+      "era": "modern",
+      "objective": "Finish Science: a Spaceport in the best Industrial city built under the discount, the Lagrange and Mars projects powered, and nothing else. Keep one Crossbowman-line garrison per border city upgraded and never start a war.",
+      "build_order": [
+        {
+          "item": "Spaceport",
+          "why": "The last district the discount buys; in the city with the highest Production and a Pyramid beside it."
+        },
+        {
+          "item": "Power Plant",
+          "why": "Oil then Nuclear; the projects need every point of Power."
+        },
+        {
+          "item": "Aerodrome",
+          "why": "Two for Synthetic Materials; otherwise skipped."
+        },
+        {
+          "item": "Broadcast Center",
+          "why": "Two for Satellites; Culture keeps the civics coming."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:plastics",
+          "note": "An Oil Well on an Oil resource; the Spaceport's Power."
+        },
+        {
+          "id": "tech:computers",
+          "note": "Free from the Tier 3 government."
+        },
+        {
+          "id": "tech:satellites",
+          "note": "Two Broadcast Centers; the first space project."
+        },
+        {
+          "id": "tech:robotics",
+          "note": "Free from Globalization; the second project."
+        },
+        {
+          "id": "tech:nanotechnology",
+          "note": "An Aluminum Mine, which Ta-Seti gives Production too."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:nuclear-program",
+          "note": "Free from the first Research Lab; Integrated Space Cell."
+        },
+        {
+          "id": "civic:space-race",
+          "note": "Free from the Spaceport."
+        },
+        {
+          "id": "civic:globalization",
+          "note": "Two Airports; the Robotics Eureka."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Integrated Space Cell",
+          "slot": "military",
+          "from": "civic:nuclear-program",
+          "why": "Production toward space projects in the Spaceport city."
+        }
+      ],
+      "districts": [
+        {
+          "district": "spaceport",
+          "city": "the best Industrial Zone city",
+          "note": "Built, not bought; the discount still applies."
+        }
+      ],
+      "wonders": [],
+      "governors": [
+        {
+          "governor": "magnus",
+          "promotion": "Vertical Integration",
+          "city": "the Spaceport city",
+          "why": "Every Factory and Power Plant in range feeds the projects."
+        }
+      ],
+      "city_states": [],
+      "great_people": [
+        {
+          "class": "great-engineer",
+          "why": "Modern and Atomic Great Engineers finish space projects outright."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 280,
+          "test": "Spaceport built and the first project under way with a powered Factory city behind it?",
+          "pass": "Continue to the end; no further decisions.",
+          "fail": "Buy the Spaceport's buildings with Reyna's Gold and put every Great Engineer into the projects; if a rival launches first, the game is a Score game and the plan has no further branch."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "close-spaceport",
+          "turn": 245,
+          "text": "Spaceport finished in the best Production city; Space Race collected."
+        },
+        {
+          "id": "close-power",
+          "turn": 260,
+          "text": "Every project city powered; Oil Well on Oil for Plastics done."
+        },
+        {
+          "id": "close-garrison",
+          "turn": 270,
+          "text": "One ranged garrison per border city upgraded; no offensive unit built since turn 100."
+        }
+      ]
+    }
+  ],
+  "boosts": [
+    {
+      "id": "tech:archery",
+      "fit": "cheap",
+      "when": "assess",
+      "how": "The Slinger kills a barbarian scout before Archery completes."
+    },
+    {
+      "id": "tech:masonry",
+      "fit": "cheap",
+      "when": "assess",
+      "how": "A Quarry on Stone from the first Builder."
+    },
+    {
+      "id": "tech:bronze-working",
+      "fit": "free",
+      "when": "window",
+      "how": "Three kills at the first camp by the Pitati Archers."
+    },
+    {
+      "id": "tech:wheel",
+      "fit": "cheap",
+      "when": "window",
+      "how": "A Mine on a resource hill, which Ta-Seti wants anyway."
+    },
+    {
+      "id": "tech:writing",
+      "fit": "free",
+      "when": "assess",
+      "how": "The Warrior meets the target civilization."
+    },
+    {
+      "id": "tech:irrigation",
+      "fit": "cheap",
+      "when": "window",
+      "how": "A Farm on Wheat or Rice on the floodplains."
+    },
+    {
+      "id": "tech:astrology",
+      "fit": "costly",
+      "when": "assess",
+      "how": "Only if the Scout happens on a natural wonder; never chased."
+    },
+    {
+      "id": "tech:sailing",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:horseback-riding",
+      "fit": "cheap",
+      "when": "window",
+      "how": "A Pasture on Horses or Sheep near the capital."
+    },
+    {
+      "id": "tech:iron-working",
+      "fit": "cheap",
+      "when": "window",
+      "how": "A Mine on the Iron Bronze Working reveals."
+    },
+    {
+      "id": "tech:currency",
+      "fit": "cheap",
+      "when": "window",
+      "how": "The first Trader runs to the forward city."
+    },
+    {
+      "id": "tech:mathematics",
+      "fit": "free",
+      "when": "window",
+      "how": "Campus, Commercial Hub and Encampment by turn 70 under the discount."
+    },
+    {
+      "id": "tech:construction",
+      "fit": "cheap",
+      "when": "window",
+      "how": "A Water Mill in the river city."
+    },
+    {
+      "id": "tech:engineering",
+      "fit": "cheap",
+      "when": "window",
+      "how": "Ancient Walls in the forward city."
+    },
+    {
+      "id": "tech:celestial-navigation",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:shipbuilding",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:machinery",
+      "fit": "free",
+      "when": "window",
+      "how": "Three Pitati Archers exist by turn 35."
+    },
+    {
+      "id": "tech:military-tactics",
+      "fit": "costly",
+      "when": "window",
+      "how": "A Spearman kill only if one is built as a screen."
+    },
+    {
+      "id": "tech:apprenticeship",
+      "fit": "free",
+      "when": "snowball",
+      "how": "Three Mines are built before the war ends."
+    },
+    {
+      "id": "tech:stirrups",
+      "fit": "free",
+      "when": "snowball",
+      "how": "Feudalism is on the civic path."
+    },
+    {
+      "id": "tech:education",
+      "fit": "cheap",
+      "when": "snowball",
+      "how": "The first Great Scientist from two Campuses with Libraries."
+    },
+    {
+      "id": "tech:military-engineering",
+      "fit": "cheap",
+      "when": "snowball",
+      "how": "The capital Aqueduct."
+    },
+    {
+      "id": "tech:castles",
+      "fit": "free",
+      "when": "snowball",
+      "how": "Any Tier 2 government."
+    },
+    {
+      "id": "tech:buttress",
+      "fit": "cheap",
+      "when": "snowball",
+      "how": "Jebel Barkal or Petra, both Classical wonders this plan builds."
+    },
+    {
+      "id": "tech:metal-casting",
+      "fit": "free",
+      "when": "snowball",
+      "how": "Two Crossbowmen upgraded from the Pitati after the war."
+    },
+    {
+      "id": "tech:printing",
+      "fit": "cheap",
+      "when": "snowball",
+      "how": "Two Universities in the Campus cities."
+    },
+    {
+      "id": "tech:banking",
+      "fit": "free",
+      "when": "live",
+      "how": "Guilds is on the civic path."
+    },
+    {
+      "id": "tech:gunpowder",
+      "fit": "cheap",
+      "when": "snowball",
+      "how": "An Armory in the forward Encampment."
+    },
+    {
+      "id": "tech:astronomy",
+      "fit": "costly",
+      "when": "snowball",
+      "how": "A University beside a Mountain only if a Campus already touches one."
+    },
+    {
+      "id": "tech:mass-production",
+      "fit": "costly",
+      "when": "live",
+      "how": "A Lumber Mill needs Woods the desert empire rarely has."
+    },
+    {
+      "id": "tech:siege-tactics",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:cartography",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:square-rigging",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:industrialization",
+      "fit": "cheap",
+      "when": "snowball",
+      "how": "Two Workshops in the Industrial Zones touching Pyramids."
+    },
+    {
+      "id": "tech:scientific-theory",
+      "fit": "free",
+      "when": "live",
+      "how": "The Enlightenment is on the civic path."
+    },
+    {
+      "id": "tech:rifling",
+      "fit": "cheap",
+      "when": "live",
+      "how": "A Mine on Niter; Ta-Seti pays Production on it."
+    },
+    {
+      "id": "tech:sanitation",
+      "fit": "cheap",
+      "when": "live",
+      "how": "Two Neighborhoods in the big cities."
+    },
+    {
+      "id": "tech:economics",
+      "fit": "costly",
+      "when": "live",
+      "how": "Two Banks only if Gold is short."
+    },
+    {
+      "id": "tech:ballistics",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:military-science",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:steam-power",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:chemistry",
+      "fit": "cheap",
+      "when": "live",
+      "how": "Alliance level 2 with the Research ally."
+    },
+    {
+      "id": "tech:electricity",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:refining",
+      "fit": "cheap",
+      "when": "live",
+      "how": "The first Coal Power Plant."
+    },
+    {
+      "id": "tech:flight",
+      "fit": "costly",
+      "when": "live",
+      "how": "Only if Ruhr Valley was built; Oxford is a Renaissance wonder and does not count."
+    },
+    {
+      "id": "tech:replaceable-parts",
+      "fit": "costly",
+      "when": "live",
+      "how": "Three Line Infantry only if a border needs them."
+    },
+    {
+      "id": "tech:plastics",
+      "fit": "cheap",
+      "when": "close",
+      "how": "An Oil Well on the nearest Oil."
+    },
+    {
+      "id": "tech:computers",
+      "fit": "free",
+      "when": "close",
+      "how": "Any Tier 3 government."
+    },
+    {
+      "id": "tech:synthetic-materials",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Aerodromes under the discount."
+    },
+    {
+      "id": "tech:satellites",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Broadcast Centers."
+    },
+    {
+      "id": "tech:robotics",
+      "fit": "free",
+      "when": "close",
+      "how": "Globalization is on the civic path."
+    },
+    {
+      "id": "tech:nanotechnology",
+      "fit": "cheap",
+      "when": "close",
+      "how": "A Mine on an Aluminum resource near a Campus city."
+    },
+    {
+      "id": "civic:craftsmanship",
+      "fit": "free",
+      "when": "assess",
+      "how": "Three improvements from the first Builder."
+    },
+    {
+      "id": "civic:foreign-trade",
+      "fit": "costly",
+      "when": "assess",
+      "how": "Only if the Scout sights a second continent."
+    },
+    {
+      "id": "civic:military-tradition",
+      "fit": "free",
+      "when": "window",
+      "how": "The first camp the archers clear."
+    },
+    {
+      "id": "civic:state-workforce",
+      "fit": "free",
+      "when": "window",
+      "how": "The capital Campus, the first district built."
+    },
+    {
+      "id": "civic:early-empire",
+      "fit": "free",
+      "when": "window",
+      "how": "Six population across the first three cities."
+    },
+    {
+      "id": "civic:mysticism",
+      "fit": "free",
+      "when": "window",
+      "how": "The pantheon founded at turn 20."
+    },
+    {
+      "id": "civic:political-philosophy",
+      "fit": "cheap",
+      "when": "window",
+      "how": "Three city-states met by the Scout."
+    },
+    {
+      "id": "civic:military-training",
+      "fit": "cheap",
+      "when": "window",
+      "how": "The forward Encampment."
+    },
+    {
+      "id": "civic:games-and-recreation",
+      "fit": "free",
+      "when": "window",
+      "how": "Researching Construction."
+    },
+    {
+      "id": "civic:drama-and-poetry",
+      "fit": "cheap",
+      "when": "window",
+      "how": "Pyramids or Jebel Barkal completes."
+    },
+    {
+      "id": "civic:recorded-history",
+      "fit": "free",
+      "when": "window",
+      "how": "Two Campuses by turn 90."
+    },
+    {
+      "id": "civic:defensive-tactics",
+      "fit": "cheap",
+      "when": "window",
+      "how": "The target declares on you in retaliation."
+    },
+    {
+      "id": "civic:theology",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:feudalism",
+      "fit": "cheap",
+      "when": "snowball",
+      "how": "Six Farms on floodplains across the empire."
+    },
+    {
+      "id": "civic:civil-service",
+      "fit": "cheap",
+      "when": "snowball",
+      "how": "The capital at ten population."
+    },
+    {
+      "id": "civic:mercenaries",
+      "fit": "free",
+      "when": "snowball",
+      "how": "The eight land units the war left behind."
+    },
+    {
+      "id": "civic:guilds",
+      "fit": "cheap",
+      "when": "snowball",
+      "how": "Two Markets in the Commercial Hubs."
+    },
+    {
+      "id": "civic:divine-right",
+      "fit": "costly",
+      "when": "snowball",
+      "how": "Two Temples only if the Holy Site city builds one and a captured city has another."
+    },
+    {
+      "id": "civic:medieval-faires",
+      "fit": "costly",
+      "when": "snowball",
+      "how": "Four Trade Routes at once needs a third Commercial Hub."
+    },
+    {
+      "id": "civic:humanism",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:the-enlightenment",
+      "fit": "cheap",
+      "when": "live",
+      "how": "Three Great People by turn 170."
+    },
+    {
+      "id": "civic:diplomatic-service",
+      "fit": "cheap",
+      "when": "live",
+      "how": "The Research Alliance."
+    },
+    {
+      "id": "civic:exploration",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:civil-engineering",
+      "fit": "free",
+      "when": "live",
+      "how": "Seven district types across the empire by turn 170."
+    },
+    {
+      "id": "civic:nationalism",
+      "fit": "costly",
+      "when": "live",
+      "how": "Only if the window war was declared with a Casus Belli."
+    },
+    {
+      "id": "civic:urbanization",
+      "fit": "cheap",
+      "when": "live",
+      "how": "The capital at fifteen population."
+    },
+    {
+      "id": "civic:class-struggle",
+      "fit": "cheap",
+      "when": "live",
+      "how": "Three Factories in the Industrial Zone cities."
+    },
+    {
+      "id": "civic:colonialism",
+      "fit": "costly",
+      "when": "live",
+      "how": "Astronomy is off the main path; usually unboosted."
+    },
+    {
+      "id": "civic:nuclear-program",
+      "fit": "free",
+      "when": "close",
+      "how": "The first Research Lab."
+    },
+    {
+      "id": "civic:space-race",
+      "fit": "free",
+      "when": "close",
+      "how": "The Spaceport built in the best Production city."
+    },
+    {
+      "id": "civic:globalization",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Airports on the Aerodromes."
+    },
+    {
+      "id": "civic:mass-media",
+      "fit": "free",
+      "when": "close",
+      "how": "Researching Radio on the way to Satellites."
+    },
+    {
+      "id": "civic:cold-war",
+      "fit": "free",
+      "when": "close",
+      "how": "Researching Nuclear Fission."
+    }
+  ],
+  "decision_triggers": [
+    {
+      "name": "No sand at the start",
+      "if": "At turn 1 no Desert, Desert Hills or Floodplains tile is within two Settler moves of the start.",
+      "then": "Settle in place, declare the fallback, and plan the capital as a 20 percent city. Pyramids go in later cities that have the tile; the archer war becomes more important and the verdict leans one notch toward Domination."
+    },
+    {
+      "name": "Walls on the target",
+      "if": "The target capital shows Ancient Walls before the archers arrive.",
+      "then": "Do not besiege it. Switch to the rival's second city or to the city-state target, reduce the objective to one city, and bring the Battering Ram anyway for the second city's Walls."
+    },
+    {
+      "name": "Crossbowmen early",
+      "if": "The target or its ally fields a Crossbowman before turn 100.",
+      "then": "The window is closed whatever the turn number says. Make peace with what you hold, upgrade the archers, and start the snowball phase early."
+    },
+    {
+      "name": "A district before the Pyramid",
+      "if": "Any city is about to queue a district on a tile pinned for its Pyramid, or before its Pyramid exists.",
+      "then": "Stop the queue. Buy or route a Builder to that city and place the Pyramid first; the 40 percent discount on every later district is worth the ten-turn delay."
+    }
+  ],
+  "abort": {
+    "trigger": "Turn 100 with no captured city and fewer than four home cities, or the capital's Pyramid tile lost to a district placed on it.",
+    "actions": [
+      "Make peace on any terms that keep your cities; the army becomes garrisons and no further ranged unit is built.",
+      "Play the rest as a generic Science empire with the flat 20 percent discount: Campuses first in every city, and say plainly that the 40 percent engine is gone.",
+      "Settle the remaining settle-map sites in order; the empire is small, so Oxford, Kilwa and a Research Alliance matter more than usual."
+    ]
+  },
+  "fail_state": "Turn 150 with Pyramids scattered on tiles that touch nothing, Campuses placed wherever they fit, an archer army that never took a city and now costs maintenance, and a Science rate indistinguishable from a civ with no district bonus at all. The placement decisions that caused it were made before turn 30 and cannot be undone.",
+  "common_mistakes": [
+    "Queuing the capital's first district before its Pyramid is placed. The Pyramid tile is taken or it touches nothing, and the 40 percent discount never exists in the city that builds the most districts.",
+    "Scouting in every direction. The target must be known by turn 15; a Scout that finds three wonders and no capital has cost the window.",
+    "Buying districts with Gold because they are cheap. The discount applies only to Production; Gold buys Builders and Settlers.",
+    "Continuing the war after Crossbowmen appear because the archers have three promotions. Experience is not Combat Strength; a 30-strength archer against a 40-strength one loses.",
+    "Treating a Pyramid as a Faith tile. It is a district adjacency tile that also gives Faith; a city whose Pyramid touches no district has misread the kit."
+  ],
+  "sources": [
+    "Civilization VI Civilopedia, Gathering Storm ruleset (Nubia, Amanitore, Pitati Archer, Nubian Pyramid, Jebel Barkal).",
+    "The civ-info text describes Kandake of Meroe as a solid bonus; the Gathering Storm values are 20 percent toward districts and 40 percent with a Nubian Pyramid adjacent to the City Center, and the plan uses those. Ta-Seti's values are 50 percent Production and experience toward ranged units, +1 Production on strategic Mines and +2 Gold on bonus and luxury Mines.",
+    "Boost objectives cross-checked against civilization6planner.com tech-tree and civics-tree pages, 2026-10-01.",
+    "Leadership Focus tags, caveats, Front-Load template and Countdown alt-shape supplement for Amanitore in this repository."
+  ]
+}

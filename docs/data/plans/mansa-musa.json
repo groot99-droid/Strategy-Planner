@@ -1,0 +1,1506 @@
+{
+  "leader": "Mansa Musa",
+  "civilization": "Mali",
+  "generated": "2026-10-02",
+  "slug": "mansa-musa",
+  "shape": "Monitor",
+  "secondary_shape": null,
+  "version": 1,
+  "updated": "2026-10-02",
+  "assumptions": {
+    "ruleset": "Gathering Storm with every expansion and the Leader Pass",
+    "speed": "Standard",
+    "difficulty": "Emperor",
+    "map": "Continents or Pangaea, standard size, 8 civilizations, with Mali's desert start bias honoured",
+    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. Mansa Musa's single persona is planned here. The Gold floors in the bands are Emperor, Standard-speed judgment numbers; raise them a third on Deity and lower them a third on Prince."
+  },
+  "verdict": {
+    "victory": "Religion",
+    "secondary": "Diplomatic",
+    "confidence": "medium",
+    "one_line": "Settle the desert, send every Trade Route abroad, buy every building with Gold and every Suguba building with Faith, and never put a unit or a building in the Production queue. The desert City Centers and Desert Folklore pay the Apostles; the Gold pays everything else, including the votes if the religion stalls.",
+    "why": "Songs of the Jeli cuts Production toward units and buildings by nearly a third and turns Mines into Gold, so Mali cannot build its way through the game and must not try; the same ability gives Faith and Food for every desert tile around a City Center and lets Commercial Hub buildings be bought with Faith. Sahel Merchants adds Gold to every international route per flat desert tile in the origin city, and each Golden Age adds a route slot, so the Gold grows with the desert and with the Era Score. The Suguba makes every purchase in its city a fifth cheaper, Gold and Faith alike. The result is an empire that is bought rather than built, and the one thing it produces in surplus beyond Gold is Faith, which is why the verdict is Religion: Apostles cost Faith, everything around them costs Gold, and Mali has both. Diplomatic is the fallback because Gold buys Diplomatic Favor from every ally each turn and the World Congress does not care what you failed to build."
+  },
+  "map_check": {
+    "must_have": [
+      "Flat desert within the capital's first two rings, at least four tiles, for Sahel Merchants and the City Center Faith and Food.",
+      "Floodplains, a river or an oasis beside the desert, because desert without Food is a size-four city for a hundred turns."
+    ],
+    "prefer": [
+      "Desert hills for the only Mines Mali wants: Gold under Songs of the Jeli and Faith under Religious Idols where the Mine sits on a bonus or luxury resource, if Desert Folklore is taken by someone else.",
+      "A Holy Site tile with three or more desert neighbours for Desert Folklore at plus three or better.",
+      "Trade city-states within reach: Venice, Hunza and Samarkand each turn a route or an improvement into more Gold, and Chinguetti turns routes into Faith."
+    ],
+    "no_go": "No desert within reach of the first two city sites. Sahel Merchants and the City Center yields are off, Desert Folklore has nothing to count, and Mali is then a civilization with a Production penalty and no reason for it.",
+    "fallback": "Move the Settler up to three turns toward desert; the capital is where the ability lives. If there is still none, keep the buying doctrine, because the Production penalty applies either way: Sugubas in every city for the purchase discount, Faith-bought Markets and Banks, Religious Idols instead of Desert Folklore, and a Trade Route economy from river Sugubas. Change the verdict to Diplomatic at the turn 90 checkpoint if the Faith is not there for a religion."
+  },
+  "kit_levers": [
+    {
+      "source": "leader_ability",
+      "name": "Sahel Merchants",
+      "buys": "International Trade Routes earn extra Gold for every flat desert tile in their origin city, and each Golden or Heroic Age adds a permanent Trade Route slot.",
+      "exploit": "Every route is international, every route starts in the city with the most flat desert, and the Era Score is watched because a Golden Age is a route slot for the rest of the game. A city settled in deep desert is a worse city and a better Trader origin; the plan accepts both."
+    },
+    {
+      "source": "civ_ability",
+      "name": "Songs of the Jeli",
+      "buys": "City Centers gain Faith and Food from adjacent desert and desert hills, Commercial Hub buildings can be bought with Faith, Mines give more Gold and less Production, and units and buildings cost more Production.",
+      "exploit": "Nothing that can be bought is built. Production goes to districts, Traders, Settlers and city projects; Gold buys the buildings and the army; Faith buys the Markets, Banks and Stock Exchanges and the Apostles. The desert around a City Center is Faith, so every city is settled with as many desert tiles touching the center as the Food allows."
+    },
+    {
+      "source": "unique_infrastructure",
+      "name": "Suguba",
+      "buys": "A Commercial Hub replacement that is cheaper, takes adjacency from rivers and Holy Sites, and makes Gold and Faith purchases in its city a fifth cheaper.",
+      "exploit": "The first district in every city, beside the Holy Site where there is one. It is the reason the buying doctrine works: with the discount, a Faith-bought Bank or a Gold-bought Temple costs less than the Production it would have taken anyone else."
+    },
+    {
+      "source": "unique_unit",
+      "name": "Mandekalu Cavalry",
+      "buys": "A Knight replacement that protects nearby Traders from plunder and earns Gold for the units it defeats.",
+      "exploit": "Two of them, bought with Gold at Stirrups, ride the desert routes and sit beside the border city. They are the only army the plan pays for before Industrial units, and they are never used to open a war; every unit they kill in defence is Gold back."
+    },
+    {
+      "source": "agenda",
+      "name": "Lord of the Mines",
+      "buys": "AI Mansa Musa pursues Gold and dislikes civilizations with weak Gold income.",
+      "exploit": "Irrelevant to your own play, except that an AI Mansa Musa on the map is the best Gold-for-luxury trade partner in the game and will never be short of Favor to sell; keep him as a friend and buyer."
+    }
+  ],
+  "shape_block": {
+    "monitor": {
+      "watched_stat": "Gold income per turn against the floor for the current era (Classical 20, Medieval 60, Renaissance 120, Industrial 200, Modern 300), and the treasury against the cost of the next item on the purchase ledger",
+      "check_every": "turn, because a Trade Route ending, a plundered Trader or a Golden Age route slot changes the number that turn",
+      "bands": {
+        "green": {
+          "test": "Income at or above the era floor, every Trade Route slot filled with an international route, and the treasury able to buy the next ledger item within five turns.",
+          "response": "No action. Buy the next ledger item the turn the Gold is there, keep Production on districts and Traders, and bank nothing beyond ten turns of upkeep."
+        },
+        "amber": {
+          "test": "Income below the floor but positive, a Trade Route slot empty or a route ending within three turns with no replacement destination chosen, or the next ledger item more than ten turns away.",
+          "response": "Fix the income before buying anything else: re-route the ending Trader to the richest coastal foreign city in range, buy a Trader for the empty slot, sell a surplus luxury or strategic resource to the AI for Gold per turn, slot Caravansaries if it is out, and move the next Suguba up the district queue. Do not touch the Production queue to fix it; Production cannot fix it."
+        },
+        "red": {
+          "test": "Income negative or below half the floor, a Trader plundered twice in ten turns on the same route, or the treasury unable to cover unit upkeep for five turns.",
+          "response": "Everything else stops. Disband the units beyond two Mandekalu and the garrison Archers, sell every surplus resource, swap to the Gold government policies, send every route to the nearest safe foreign city even at a lower yield, and buy nothing but Traders until income is back above the floor. If a war caused it, make peace at any price that is not a city."
+        }
+      },
+      "second_watch": {
+        "stat": "Era Score against the Golden Age threshold, and Trade Route capacity against routes running",
+        "why": "Every Golden Age is a permanent route slot and every slot unfilled is income the ledger assumed. The two numbers together say how much Gold Mali will have next era, which is what the purchase ledger is written against."
+      },
+      "off_period_plan": "There is no off period; the loop runs from the first Trader to the last Stock Exchange. The standing build between purchases is districts only: a Suguba then a Holy Site in every city, Campuses in the two river cities, a Government Plaza in the capital, and city projects when nothing else is wanted. Nothing with a Production cost that Gold or Faith can pay sits in a queue, and no wonder is ever started."
+    }
+  },
+  "phases": [
+    {
+      "id": "setup",
+      "name": "Setup",
+      "turns": {
+        "from": 1,
+        "to": 25
+      },
+      "era": "ancient",
+      "objective": "Settle the desert with Food beside it, found Desert Folklore before anyone else, meet a civilization and a city-state for the first foreign route, and write the purchase ledger that the watched stat is read against for the rest of the game.",
+      "build_order": [
+        {
+          "item": "Scout",
+          "why": "The first civilization met is the first international route destination and the Writing Eureka."
+        },
+        {
+          "item": "Warrior",
+          "why": "Escort for the Settler; the Production penalty makes it the last unit built rather than bought."
+        },
+        {
+          "item": "Settler",
+          "why": "Second city on desert beside floodplains or a river; a second Suguba origin."
+        },
+        {
+          "item": "Builder",
+          "why": "Farm the floodplains Wheat for Irrigation, Mine a desert hill resource for The Wheel and the Gold, Quarry Stone if any for Masonry."
+        },
+        {
+          "item": "Trader",
+          "why": "Built, not bought, because it is the one unit that pays its own Production back; Currency Eureka and the first Sahel Merchants route."
+        },
+        {
+          "item": "Holy Site",
+          "why": "On the tile with the most desert neighbours; Desert Folklore pays from the first turn."
+        },
+        {
+          "item": "Suguba",
+          "why": "Beside the Holy Site on the river; the purchase discount starts the buying doctrine."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:pottery",
+          "note": "Granary bought later; the path to Irrigation and Writing."
+        },
+        {
+          "id": "tech:astrology",
+          "note": "Holy Site first; Eureka if the Scout finds a natural wonder, and the desert has several."
+        },
+        {
+          "id": "tech:mining",
+          "note": "Mines on desert hills are Gold, not Production, for Mali."
+        },
+        {
+          "id": "tech:irrigation",
+          "note": "Farm a floodplains Wheat for the Eureka; the Food the desert lacks."
+        },
+        {
+          "id": "tech:writing",
+          "note": "Eureka from the first civilization met; Campus in a river city later."
+        },
+        {
+          "id": "tech:currency",
+          "note": "Free Eureka from the first route; Sugubas unlock here and are the first district in every new city."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:code-of-laws",
+          "note": "God King for the pantheon race; Desert Folklore is contested by every desert civilization."
+        },
+        {
+          "id": "civic:foreign-trade",
+          "note": "Caravansaries and the first international route; Inspiration if the Scout reaches a second continent."
+        },
+        {
+          "id": "civic:craftsmanship",
+          "note": "Inspiration from three improvements; Ilkum is not needed, Builders are bought."
+        },
+        {
+          "id": "civic:mysticism",
+          "note": "Free Inspiration from the pantheon; Revelation for the Prophet."
+        }
+      ],
+      "policies": [
+        {
+          "card": "God King",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "Desert Folklore before Saladin, Amanitore or Cleopatra take it; the pantheon is the religion's foundation."
+        },
+        {
+          "card": "Urban Planning",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "Production for the districts, which are the only things Mali builds; swapped in once the pantheon is founded."
+        },
+        {
+          "card": "Caravansaries",
+          "slot": "economic",
+          "from": "civic:foreign-trade",
+          "why": "Gold on every route from the first Trader to the last."
+        }
+      ],
+      "districts": [
+        {
+          "district": "holy-site",
+          "city": "capital",
+          "note": "On the tile with the most desert neighbours; Desert Folklore adjacency."
+        },
+        {
+          "district": "suguba",
+          "city": "capital",
+          "note": "On the river beside the Holy Site; the first purchase discount."
+        }
+      ],
+      "pantheon": {
+        "slug": "desert-folklore",
+        "why": "Faith per adjacent desert tile on every Holy Site; the religion and the Faith purchases both start here.",
+        "alternative": "religious-idols"
+      },
+      "wonders": [],
+      "governors": [],
+      "city_states": [
+        {
+          "type": "Trade",
+          "why": "The first envoy goes to any Trade city-state met; Gold in the capital and a route destination."
+        },
+        {
+          "slug": "chinguetti",
+          "why": "Faith on every route to a city following your religion; it stacks with Sahel Merchants on the same Trader."
+        }
+      ],
+      "great_people": [],
+      "checkpoints": [
+        {
+          "turn": 25,
+          "test": "Desert Folklore founded, first Trader running to a foreign city, second city settled, Holy Site started, and the purchase ledger written?",
+          "pass": "Enter the standing loop; read Gold per turn every turn from here.",
+          "fail": "No Desert Folklore: take Religious Idols and plan the Faith around Mines on bonus and luxury resources. No foreign route: send the Trader to the city-state and move the Scout further; income is the stat and it is already amber."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "setup-settle-desert",
+          "turn": 1,
+          "text": "Settle on a desert tile beside a river or floodplains with four or more flat desert tiles in two rings; move up to three turns to get there."
+        },
+        {
+          "id": "setup-ledger",
+          "turn": 5,
+          "text": "Write the purchase ledger: Monument, Granary, Shrine, Market by Faith, Walls in the border city, Temple, Library; add each item's Gold or Faith cost and tick them off as bought."
+        },
+        {
+          "id": "setup-pantheon",
+          "turn": 16,
+          "text": "Found Desert Folklore the turn 25 Faith is reached; God King and the desert City Center make it before turn 20."
+        },
+        {
+          "id": "setup-first-route",
+          "turn": 22,
+          "text": "First Trader to the nearest foreign city, not a domestic one; note the Gold per turn it adds and the desert tiles it counts."
+        },
+        {
+          "id": "setup-buy-monument",
+          "turn": 25,
+          "text": "Buy the Monument with Gold rather than building it; this is the first entry on the ledger and the first proof of the doctrine."
+        }
+      ]
+    },
+    {
+      "id": "loop",
+      "name": "The buying loop",
+      "turns": {
+        "from": 26,
+        "to": 90
+      },
+      "era": "classical",
+      "objective": "Grow to four desert cities with a Suguba and Holy Site in each, fill every Trade Route slot with an international route, found the religion from the Desert Folklore Faith, and keep income above the Classical floor while buying every building on the ledger instead of building it.",
+      "build_order": [
+        {
+          "item": "Settler",
+          "why": "Third and fourth cities on desert with floodplains; built with Colonization because Settlers cannot be bought with Faith until Monumentality."
+        },
+        {
+          "item": "Trader",
+          "why": "One per route slot; the only unit worth Production under the penalty."
+        },
+        {
+          "item": "Suguba",
+          "why": "Second, third and fourth cities; the discount before the first purchase in each."
+        },
+        {
+          "item": "Holy Site",
+          "why": "In every city with desert adjacency; Mathematics counts three specialty districts."
+        },
+        {
+          "item": "Shrine",
+          "why": "Bought with Gold in both Holy Site cities; the Great Prophet points."
+        },
+        {
+          "item": "Market",
+          "why": "Bought with Faith in every Suguba; Guilds needs two and each is Gold per turn."
+        },
+        {
+          "item": "Campus",
+          "why": "In the river city with the best Food; the Science Mali otherwise never has."
+        },
+        {
+          "item": "Ancient Walls",
+          "why": "Bought with Gold in the border city; Mali cannot afford to fight for its cities."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:wheel",
+          "note": "A Mine on a resource gives the Eureka; the path to Engineering and Machinery."
+        },
+        {
+          "id": "tech:masonry",
+          "note": "Walls bought with Gold in the border city; Eureka from a Quarry if Stone is near."
+        },
+        {
+          "id": "tech:bronze-working",
+          "note": "Three barbarian kills from the Warrior and bought Archers; Iron reveal for later sales."
+        },
+        {
+          "id": "tech:horseback-riding",
+          "note": "A Pasture gives the Eureka; Horses are sold, not ridden; the Mandekalu need Iron, not Horses."
+        },
+        {
+          "id": "tech:mathematics",
+          "note": "Suguba, Holy Site and Campus give the Eureka."
+        },
+        {
+          "id": "tech:apprenticeship",
+          "note": "Three desert hill Mines, each Gold under Songs of the Jeli."
+        },
+        {
+          "id": "tech:celestial-navigation",
+          "note": "Only if a city is coastal; Harbors are more routes and Fishing Boats are Food."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:early-empire",
+          "note": "Colonization for cities three and four; Inspiration at six population, which floodplains deliver."
+        },
+        {
+          "id": "civic:state-workforce",
+          "note": "Free Inspiration from the first Holy Site."
+        },
+        {
+          "id": "civic:political-philosophy",
+          "note": "Classical Republic for Great Merchant points; Inspiration from three city-states met."
+        },
+        {
+          "id": "civic:drama-and-poetry",
+          "note": "On the path to Theology and Guilds only; no wonder is built for its Inspiration."
+        },
+        {
+          "id": "civic:theology",
+          "note": "Found the religion; Scripture for the desert Holy Sites."
+        },
+        {
+          "id": "civic:games-and-recreation",
+          "note": "Free Inspiration from Construction when the tech path passes it; nothing is built from it."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Colonization",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "Settlers built with 50% more Production is the only way Mali expands before Monumentality."
+        },
+        {
+          "card": "Caravansaries",
+          "slot": "economic",
+          "from": "civic:foreign-trade",
+          "why": "Gold on every international route; never unslotted before Triangular Trade."
+        },
+        {
+          "card": "Classical Republic",
+          "slot": "wildcard",
+          "from": "civic:political-philosophy",
+          "why": "The government: Great Person points toward the Prophet and the first Great Merchant."
+        },
+        {
+          "card": "Revelation",
+          "slot": "wildcard",
+          "from": "civic:mysticism",
+          "why": "Great Prophet points; the religion must be founded before the slots run out."
+        },
+        {
+          "card": "Land Surveyors",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "Tile purchases cheaper; desert cities buy their floodplains and hills rather than wait for borders."
+        }
+      ],
+      "districts": [
+        {
+          "district": "suguba",
+          "city": "every city",
+          "note": "First district everywhere; on a river beside the Holy Site for the double adjacency."
+        },
+        {
+          "district": "holy-site",
+          "city": "every city with desert adjacency",
+          "note": "Desert Folklore pays per desert neighbour; Shrines are bought."
+        },
+        {
+          "district": "campus",
+          "city": "the best Food river city",
+          "note": "Library bought with Gold; the Science catch-up."
+        }
+      ],
+      "pantheon": {
+        "slug": "desert-folklore",
+        "why": "Already founded; this phase spends its Faith on Markets and the Prophet."
+      },
+      "wonders": [],
+      "governors": [
+        {
+          "governor": "reyna",
+          "promotion": "Tax Collector",
+          "city": "capital",
+          "why": "Gold per population in the biggest city; her later Contractor title buys districts with Gold."
+        },
+        {
+          "governor": "magnus",
+          "promotion": "Provision",
+          "city": "the Settler city",
+          "why": "Settlers without population loss in the one city that builds them."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "venice",
+          "why": "Gold per luxury at the destination on every foreign route; Mali's routes all go abroad."
+        },
+        {
+          "slug": "hunza",
+          "why": "Gold per five tiles travelled; desert routes to distant coastal cities are long."
+        },
+        {
+          "slug": "samarkand",
+          "why": "Trading Domes beside Sugubas are Gold on tiles the desert would otherwise waste."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-prophet",
+          "why": "Non-negotiable: two bought Shrines, Revelation and a Holy Site project if a rival is close."
+        },
+        {
+          "class": "great-merchant",
+          "why": "Classical Great Merchants give Trade Route capacity or Gold; either feeds the stat."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 50,
+          "test": "Income at or above 20 per turn, three cities, every route slot filled abroad, Sugubas in two cities?",
+          "pass": "Continue; buy the next ledger item the turn the Gold is there.",
+          "fail": "Income under 20 is amber already: re-route Traders to richer destinations, sell a luxury, and buy a Trader before the next Shrine. Fewer than three cities: Colonization and Magnus before any Faith purchase."
+        },
+        {
+          "turn": 90,
+          "test": "Religion founded, four cities, income at or above 40 per turn and rising, Markets bought in two Sugubas?",
+          "pass": "Enter the engine phase with the Medieval floor of 60 in view.",
+          "fail": "No religion: the Faith goes to Suguba buildings instead and the verdict moves toward Diplomatic at turn 160. Income under 40: the Medieval floor will not be met, so Traders and Sugubas before any Campus."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "loop-first-read",
+          "turn": 30,
+          "text": "First formal read: income per turn, routes running against capacity, and the next three ledger items with their costs; this is the loop from now on."
+        },
+        {
+          "id": "loop-buy-shrines",
+          "turn": 40,
+          "text": "Shrines bought with Gold in both Holy Site cities; Revelation slotted."
+        },
+        {
+          "id": "loop-faith-market",
+          "turn": 55,
+          "text": "First Market bought with Faith in the capital Suguba; note the discount and the Gold it adds."
+        },
+        {
+          "id": "loop-fourth-city",
+          "turn": 65,
+          "text": "Fourth city settled on desert with Food; Suguba placed before its first citizen works a tile."
+        },
+        {
+          "id": "loop-religion",
+          "turn": 80,
+          "text": "Found the religion: Founder belief Tithe for Gold per follower, follower belief Work Ethic or Feed the World, Worship building Mosque for the extra Apostle spread."
+        },
+        {
+          "id": "loop-walls",
+          "turn": 85,
+          "text": "Ancient Walls bought with Gold in the border city; two Archers bought behind them. Mali does not fight; it makes fighting unprofitable."
+        }
+      ]
+    },
+    {
+      "id": "engine",
+      "name": "The purchase engine",
+      "turns": {
+        "from": 91,
+        "to": 160
+      },
+      "era": "medieval",
+      "objective": "Lift income past the Medieval floor with four or more routes under Triangular Trade and Guilds Markets, buy Temples and Apostles for the first spread waves, buy two Mandekalu to guard the routes, and take the first Golden Age with Monumentality so Settlers and Builders are Faith from here.",
+      "build_order": [
+        {
+          "item": "Trader",
+          "why": "One per new slot from Sugubas, Great Merchants and Golden Ages; Medieval Faires needs four running."
+        },
+        {
+          "item": "Temple",
+          "why": "Bought with Gold in every Holy Site city; Divine Right needs two and Apostles need one."
+        },
+        {
+          "item": "Apostle",
+          "why": "Faith-bought in the Suguba city with the discount; waves of three into the nearest neighbour's cities."
+        },
+        {
+          "item": "Mandekalu Cavalry",
+          "why": "Two, bought with Gold at Stirrups; route escorts and the border's deterrent."
+        },
+        {
+          "item": "Bank",
+          "why": "Bought with Faith in two Sugubas at Banking; Economics needs two and each is Gold per turn."
+        },
+        {
+          "item": "Aqueduct",
+          "why": "Built, because it cannot be bought without Reyna; Military Engineering Eureka and Housing in the capital."
+        },
+        {
+          "item": "Settler",
+          "why": "Faith-bought under Monumentality in the first Golden Age; fifth and sixth desert cities."
+        },
+        {
+          "item": "Library",
+          "why": "Bought with Gold in the Campus city; Universities for Printing follow."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:stirrups",
+          "note": "Mandekalu Cavalry; free Eureka from Feudalism."
+        },
+        {
+          "id": "tech:education",
+          "note": "Universities bought with Gold; Eureka from a Great Scientist if one is cheap."
+        },
+        {
+          "id": "tech:banking",
+          "note": "Free Eureka from Guilds; Banks bought with Faith."
+        },
+        {
+          "id": "tech:military-engineering",
+          "note": "Aqueduct Eureka; nothing military from it."
+        },
+        {
+          "id": "tech:castles",
+          "note": "Free Eureka from a Tier 2 government; Medieval Walls bought in the border city."
+        },
+        {
+          "id": "tech:machinery",
+          "note": "Crossbowmen bought to replace the Archers; Eureka from three Archers."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:feudalism",
+          "note": "Six Farms on floodplains; Serfdom for bought Builders."
+        },
+        {
+          "id": "civic:civil-service",
+          "note": "A ten-population floodplains capital; Meritocracy."
+        },
+        {
+          "id": "civic:guilds",
+          "note": "Two Faith-bought Markets give the Inspiration; Town Charters doubles Suguba adjacency."
+        },
+        {
+          "id": "civic:medieval-faires",
+          "note": "Four routes running gives the Inspiration; it is on the way to Mercantilism."
+        },
+        {
+          "id": "civic:divine-right",
+          "note": "Two bought Temples give the Inspiration; Monarchy is not taken, Merchant Republic is."
+        },
+        {
+          "id": "civic:exploration",
+          "note": "Merchant Republic; Inspiration only with two Caravels on a coastal map."
+        },
+        {
+          "id": "civic:humanism",
+          "note": "A Great Artist only if one is cheap; otherwise unboosted on the path to Mercantilism."
+        },
+        {
+          "id": "civic:mercantilism",
+          "note": "A Great Merchant gives the Inspiration; Triangular Trade is the biggest single income step in the plan."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Town Charters",
+          "slot": "economic",
+          "from": "civic:guilds",
+          "why": "Doubled Suguba adjacency from rivers and Holy Sites."
+        },
+        {
+          "card": "Triangular Trade",
+          "slot": "economic",
+          "from": "civic:mercantilism",
+          "why": "Gold and Faith on every route; it replaces Caravansaries the turn Mercantilism lands."
+        },
+        {
+          "card": "Serfdom",
+          "slot": "economic",
+          "from": "civic:feudalism",
+          "why": "Bought Builders get the extra charges; floodplains Farms are the Food."
+        },
+        {
+          "card": "Merchant Republic",
+          "slot": "wildcard",
+          "from": "civic:exploration",
+          "why": "The government: extra Trade Route capacity and the economic slots the cards above need."
+        }
+      ],
+      "districts": [
+        {
+          "district": "aqueduct",
+          "city": "capital",
+          "note": "Housing on floodplains and the Military Engineering Eureka."
+        },
+        {
+          "district": "government-plaza",
+          "city": "capital",
+          "note": "Ancestral Hall bought with Gold for free Builders in new cities, or Warlord's Throne is not taken."
+        },
+        {
+          "district": "suguba",
+          "city": "fifth and sixth cities",
+          "note": "First district in each, before the Holy Site."
+        }
+      ],
+      "pantheon": {
+        "slug": "desert-folklore",
+        "why": "Already founded; the Faith it makes buys the Banks and Apostles of this phase."
+      },
+      "wonders": [],
+      "governors": [
+        {
+          "governor": "reyna",
+          "promotion": "Contractor",
+          "city": "capital",
+          "why": "Districts bought with Gold; the one thing Production still did is now purchasable too."
+        },
+        {
+          "governor": "moksha",
+          "promotion": "Patron Saint",
+          "city": "the best Suguba Holy Site city",
+          "why": "Apostles bought with the discount start promoted."
+        },
+        {
+          "governor": "amani",
+          "promotion": "Emissary",
+          "city": "Venice or Hunza, whichever is nearer",
+          "why": "Two envoys toward a Trade suzerainty."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "zanzibar",
+          "why": "Two luxuries nobody else has, six Amenities each, for an empire with few Entertainment Complexes."
+        },
+        {
+          "slug": "chinguetti",
+          "why": "Faith per follower at the destination; routes to converted cities pay twice."
+        },
+        {
+          "type": "Religious",
+          "why": "Six envoys for Temple Faith in every city; the Apostle budget."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-merchant",
+          "why": "Mercantilism's Inspiration, route capacity and Gold; the class Mali races every era."
+        },
+        {
+          "class": "great-scientist",
+          "why": "Education Eureka and the Science the Gold did not buy."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 120,
+          "test": "Income at or above 60 per turn, five routes running abroad, Triangular Trade slotted or within ten turns, two Temples bought, two Mandekalu on the routes?",
+          "pass": "Continue; the Renaissance floor of 120 is the next line.",
+          "fail": "Income under 60 is amber: re-route, sell, buy a Trader, and delay the Apostle wave one purchase. Under 30 is red: run the red response before anything else."
+        },
+        {
+          "turn": 160,
+          "test": "Religion in six cities, first Golden Age taken with Monumentality, two Banks bought with Faith, income at or above 100?",
+          "pass": "Enter the wealth phase; the verdict decision is at turn 230.",
+          "fail": "No Golden Age: the route slot was missed, so Era Score moments move up the priority list for the Renaissance transition. Religion in fewer than six cities: Apostles before any Gold building."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "engine-four-routes",
+          "turn": 95,
+          "text": "Four international routes running; Medieval Faires Inspiration collected; each origin is the city with the most flat desert."
+        },
+        {
+          "id": "engine-temples",
+          "turn": 105,
+          "text": "Temples bought with Gold in both Holy Site cities; Divine Right Inspiration collected; first Apostle wave bought in the Patron Saint Suguba."
+        },
+        {
+          "id": "engine-mandekalu",
+          "turn": 115,
+          "text": "Two Mandekalu Cavalry bought with Gold the turn Stirrups lands; one on the longest desert route, one in the border city."
+        },
+        {
+          "id": "engine-golden-age",
+          "turn": 125,
+          "text": "At the Renaissance transition take the Golden Age with Monumentality: Faith-buy two Settlers and three Builders in the first five turns, and note the new route slot."
+        },
+        {
+          "id": "engine-triangular",
+          "turn": 140,
+          "text": "Mercantilism reached on the back of a Great Merchant; Triangular Trade slotted in place of Caravansaries; re-read income the next turn."
+        },
+        {
+          "id": "engine-banks",
+          "turn": 155,
+          "text": "Two Banks bought with Faith in the two best Sugubas; Economics Eureka collected."
+        }
+      ]
+    },
+    {
+      "id": "wealth",
+      "name": "Wealth",
+      "turns": {
+        "from": 161,
+        "to": 230
+      },
+      "era": "renaissance",
+      "objective": "Run income past the Renaissance floor with eight or more routes, Theocracy-priced Apostle waves into every neighbour, Universities and Stock Exchanges bought the turn they unlock, and decide at turn 230 whether the religion closes the game or the Gold buys the World Congress.",
+      "build_order": [
+        {
+          "item": "Apostle",
+          "why": "Waves of four under Theocracy, bought in the Suguba with the discount; Proselytizer from Yerevan where another religion holds."
+        },
+        {
+          "item": "University",
+          "why": "Bought with Gold in two Campus cities; Printing Eureka and the Science catch-up."
+        },
+        {
+          "item": "Trader",
+          "why": "One per new slot; the Golden Age slots and Great Merchant slots are filled the turn they appear."
+        },
+        {
+          "item": "Stock Exchange",
+          "why": "Bought with Faith at Economics; Capitalism needs two and each is Gold per turn."
+        },
+        {
+          "item": "Crossbowman",
+          "why": "Bought to replace the Archers in the border city; Gunpowder Musketmen later if a neighbour arms."
+        },
+        {
+          "item": "Theater Square",
+          "why": "Built in the capital under Contractor or bought; the Culture to reach Diplomatic Service and The Enlightenment."
+        },
+        {
+          "item": "Harbor",
+          "why": "Only in a coastal city; Shipyard bought for routes with longer range."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:printing",
+          "note": "Two bought Universities give the Eureka."
+        },
+        {
+          "id": "tech:astronomy",
+          "note": "A University beside a mountain if the Campus has one; Colonialism Inspiration otherwise unboosted."
+        },
+        {
+          "id": "tech:gunpowder",
+          "note": "Musketmen bought if a neighbour arms; Eureka from an Armory only if an Encampment was bought."
+        },
+        {
+          "id": "tech:scientific-theory",
+          "note": "Free Eureka from The Enlightenment; Research Grants and the Industrial Zone question."
+        },
+        {
+          "id": "tech:economics",
+          "note": "Two Faith-bought Banks give the Eureka; Stock Exchanges."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:reformed-church",
+          "note": "Six cities following the religion; Theocracy makes every Faith purchase cheaper on top of the Suguba."
+        },
+        {
+          "id": "civic:diplomatic-service",
+          "note": "An alliance gives the Inspiration; alliances are the Diplomatic branch and the Favor market."
+        },
+        {
+          "id": "civic:the-enlightenment",
+          "note": "Three Great People: Prophet and two Merchants; Free Market and Rationalism."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Theocracy",
+          "slot": "wildcard",
+          "from": "civic:reformed-church",
+          "why": "The government for the Religion branch: Faith purchases cheaper and Apostles stronger; swapped from Merchant Republic only when the Apostle waves are the bottleneck."
+        },
+        {
+          "card": "Triangular Trade",
+          "slot": "economic",
+          "from": "civic:mercantilism",
+          "why": "Gold and Faith per route; never unslotted."
+        },
+        {
+          "card": "Town Charters",
+          "slot": "economic",
+          "from": "civic:guilds",
+          "why": "Doubled Suguba adjacency; every city has one."
+        },
+        {
+          "card": "Rationalism",
+          "slot": "economic",
+          "from": "civic:the-enlightenment",
+          "why": "Campus buildings pay Science in the two tall cities."
+        }
+      ],
+      "districts": [
+        {
+          "district": "theater-square",
+          "city": "capital",
+          "note": "Bought with Contractor; Culture for the late civics."
+        },
+        {
+          "district": "harbor",
+          "city": "the coastal city",
+          "note": "Only if a coast exists; routes with range to a second continent's coast."
+        }
+      ],
+      "pantheon": {
+        "slug": "desert-folklore",
+        "why": "Already founded; the Faith it makes buys the Stock Exchanges and the Apostle waves."
+      },
+      "wonders": [],
+      "governors": [
+        {
+          "governor": "reyna",
+          "promotion": "Renewable Subsidizer",
+          "city": "capital",
+          "why": "Gold from the Power buildings bought later; Contractor is kept."
+        },
+        {
+          "governor": "pingala",
+          "promotion": "Researcher",
+          "city": "the Campus city",
+          "why": "Science per population in the floodplains city."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "yerevan",
+          "why": "Chosen Apostle promotions for the waves into neighbours with their own religion."
+        },
+        {
+          "slug": "vatican-city",
+          "why": "A Great Merchant activated in a border city spreads religious pressure to the cities around it."
+        },
+        {
+          "type": "Trade",
+          "why": "Suzerainty of every Trade city-state met: Gold, routes and Diplomatic Favor."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-merchant",
+          "why": "Every Renaissance Great Merchant is Gold, routes or envoys; Mali should win each race."
+        },
+        {
+          "class": "great-prophet",
+          "why": "Already recruited; listed to remind that no second Prophet exists and the religion must be spread, not refounded."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 200,
+          "test": "Income at or above 120 per turn, eight routes abroad, religion the majority in two civilizations, Universities bought?",
+          "pass": "Continue the Apostle waves and buy the Stock Exchanges with Faith the turn Economics lands.",
+          "fail": "Income under 120: the amber response before any purchase. Majority nowhere abroad: the targets were too big, so take their small cities and the city-states first."
+        },
+        {
+          "turn": 230,
+          "test": "Is the religion dominant in half the civilizations, or is income above 200 with three alliances to buy Favor from?",
+          "pass": "Commit: Religion through Theocracy Apostle waves, or Diplomatic through Favor bought every turn and banked for the Congress.",
+          "fail": "Neither: a Score game. Keep buying buildings, keep the routes, and stop buying Apostles."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "wealth-theocracy",
+          "turn": 165,
+          "text": "Adopt Theocracy if the Apostle waves are the bottleneck; otherwise stay in Merchant Republic and buy the Apostles at the Suguba discount alone."
+        },
+        {
+          "id": "wealth-universities",
+          "turn": 180,
+          "text": "Two Universities bought with Gold; Printing Eureka collected."
+        },
+        {
+          "id": "wealth-alliances",
+          "turn": 190,
+          "text": "An economic alliance with the richest neighbour and a religious one with a religion founder; Diplomatic Service Inspiration collected."
+        },
+        {
+          "id": "wealth-stock-exchanges",
+          "turn": 210,
+          "text": "Two Stock Exchanges bought with Faith the turn Economics lands; Capitalism Inspiration collected; income re-read."
+        },
+        {
+          "id": "wealth-branch",
+          "turn": 230,
+          "text": "Choose the branch, Religion or Diplomatic, and write it down."
+        }
+      ]
+    },
+    {
+      "id": "close",
+      "name": "Close",
+      "turns": {
+        "from": 231,
+        "to": null
+      },
+      "era": "industrial",
+      "objective": "Finish the chosen branch with Gold: the religion carried into the last civilizations by Apostle waves bought in Suguba cities, or Diplomatic Favor bought from every ally each turn and spent on Congress votes, with income held above the Industrial floor and no unit or building ever built.",
+      "build_order": [
+        {
+          "item": "Apostle",
+          "why": "Religion branch: the last waves into the largest unconverted civilizations, Debaters first."
+        },
+        {
+          "item": "Factory",
+          "why": "Bought with Gold in two Industrial Zones built under Contractor; the only Production Mali ever has."
+        },
+        {
+          "item": "Trader",
+          "why": "Routes to the richest coastal cities on the other continent now that Harbors and Shipyards extend range."
+        },
+        {
+          "item": "Research Lab",
+          "why": "Bought the turn it unlocks; Science close enough that no rival wins first."
+        },
+        {
+          "item": "Field Cannon",
+          "why": "Two bought for the border city; Scorched Earth's Inspiration and the last defence Mali pays for."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:industrialization",
+          "note": "Two Workshops bought; Factories bought."
+        },
+        {
+          "id": "tech:sanitation",
+          "note": "Two Neighborhoods built under Contractor in the floodplains cities."
+        },
+        {
+          "id": "tech:electricity",
+          "note": "Two Privateers bought only on a coastal map; Power for the bought Factories."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:civil-engineering",
+          "note": "Seven different specialty districts; Public Works."
+        },
+        {
+          "id": "civic:urbanization",
+          "note": "A fifteen-population floodplains capital gives the Inspiration."
+        },
+        {
+          "id": "civic:capitalism",
+          "note": "Two Faith-bought Stock Exchanges give the Inspiration; Free Market stays slotted from The Enlightenment."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Free Market",
+          "slot": "economic",
+          "from": "civic:the-enlightenment",
+          "why": "More Gold from the Suguba buildings the Faith bought."
+        },
+        {
+          "card": "Gunboat Diplomacy",
+          "slot": "diplomatic",
+          "from": "civic:diplomatic-service",
+          "why": "Diplomatic branch: Favor every turn on top of what the Gold buys."
+        }
+      ],
+      "districts": [
+        {
+          "district": "industrial-zone",
+          "city": "the two river cities",
+          "note": "Bought with Contractor; Factories bought with Gold."
+        },
+        {
+          "district": "neighborhood",
+          "city": "the two biggest floodplains cities",
+          "note": "Housing; Sanitation Eureka at two."
+        }
+      ],
+      "wonders": [],
+      "governors": [
+        {
+          "governor": "reyna",
+          "promotion": "Contractor",
+          "city": "wherever the next district is wanted",
+          "why": "Moved city to city to buy the Industrial Zones and Neighborhoods."
+        }
+      ],
+      "city_states": [
+        {
+          "type": "Industrial",
+          "why": "Production in the two Industrial Zones for the few projects Mali runs."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-merchant",
+          "why": "A late Great Merchant buys the Favor or the envoys a vote is short by."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 280,
+          "test": "Religion: dominant in all but one civilization? Diplomatic: two or more Diplomatic Victory points and more Favor per turn than any rival?",
+          "pass": "Continue to the end; no further decisions.",
+          "fail": "Convert to Score: stop buying Apostles or Favor and buy Science and Culture buildings in every city instead."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "close-favor",
+          "turn": 245,
+          "text": "Diplomatic branch: buy Favor from every ally each turn the income allows and bank it for the Diplomatic Victory resolution."
+        },
+        {
+          "id": "close-last-wave",
+          "turn": 250,
+          "text": "Religion branch: a six-Apostle wave bought in the Theocracy Suguba into the largest unconverted civilization."
+        },
+        {
+          "id": "close-review",
+          "turn": 280,
+          "text": "Review the turn 280 checkpoint and either continue or declare the game a Score game."
+        }
+      ]
+    }
+  ],
+  "boosts": [
+    {
+      "id": "tech:astrology",
+      "fit": "cheap",
+      "when": "setup",
+      "how": "The Scout crosses the desert where Sahara el Beyda, the Eye of the Sahara and Lake Retba sit."
+    },
+    {
+      "id": "tech:irrigation",
+      "fit": "free",
+      "when": "setup",
+      "how": "The first Builder Farms a floodplains Wheat."
+    },
+    {
+      "id": "tech:writing",
+      "fit": "free",
+      "when": "setup",
+      "how": "The Scout meets the first civilization, which is also the first route destination."
+    },
+    {
+      "id": "tech:wheel",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "The first Mine on a resource, built for its Gold."
+    },
+    {
+      "id": "tech:masonry",
+      "fit": "costly",
+      "when": "loop",
+      "how": "A Quarry only if Stone sits beside a city; otherwise unboosted before buying Walls."
+    },
+    {
+      "id": "tech:archery",
+      "fit": "cheap",
+      "when": "setup",
+      "how": "A bought Slinger finishes a barbarian scout near the capital."
+    },
+    {
+      "id": "tech:bronze-working",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "Three barbarian kills with the Warrior and bought Archers at the nearest camp."
+    },
+    {
+      "id": "tech:currency",
+      "fit": "free",
+      "when": "setup",
+      "how": "The first Trader's route, which is also the first Sahel Merchants income."
+    },
+    {
+      "id": "tech:horseback-riding",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "A Pasture on the Horses or Sheep the desert edge usually has."
+    },
+    {
+      "id": "tech:mathematics",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "Suguba, Holy Site and Campus make three specialty districts by turn 80."
+    },
+    {
+      "id": "tech:apprenticeship",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "Three desert hill Mines, each Gold under Songs of the Jeli."
+    },
+    {
+      "id": "tech:celestial-navigation",
+      "fit": "costly",
+      "when": "loop",
+      "how": "Two Fishing Boats only if a city is coastal."
+    },
+    {
+      "id": "tech:construction",
+      "fit": "costly",
+      "when": "loop",
+      "how": "A Water Mill bought in a river city only if the Food is short; otherwise unboosted."
+    },
+    {
+      "id": "tech:engineering",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "The Ancient Walls bought in the border city."
+    },
+    {
+      "id": "tech:iron-working",
+      "fit": "skip",
+      "when": null,
+      "how": "No Swordsmen; Iron beyond what the two Mandekalu need is sold to the AI for Gold instead."
+    },
+    {
+      "id": "tech:shipbuilding",
+      "fit": "skip",
+      "when": null,
+      "how": "No navy; two Galleys would be Production the penalty makes dear."
+    },
+    {
+      "id": "tech:stirrups",
+      "fit": "free",
+      "when": "engine",
+      "how": "Feudalism is on the civic path; the Mandekalu follow."
+    },
+    {
+      "id": "tech:banking",
+      "fit": "free",
+      "when": "engine",
+      "how": "Guilds is on the civic path."
+    },
+    {
+      "id": "tech:military-engineering",
+      "fit": "cheap",
+      "when": "engine",
+      "how": "The capital Aqueduct, built for floodplains Housing."
+    },
+    {
+      "id": "tech:castles",
+      "fit": "free",
+      "when": "engine",
+      "how": "Any Tier 2 government; Merchant Republic is the plan's."
+    },
+    {
+      "id": "tech:education",
+      "fit": "costly",
+      "when": "engine",
+      "how": "A Great Scientist only if one is cheap; usually researched unboosted."
+    },
+    {
+      "id": "tech:machinery",
+      "fit": "cheap",
+      "when": "engine",
+      "how": "Three bought Archers across the border cities before upgrading them."
+    },
+    {
+      "id": "tech:military-tactics",
+      "fit": "skip",
+      "when": null,
+      "how": "A Spearman kill is not worth a Spearman under the Production penalty."
+    },
+    {
+      "id": "tech:printing",
+      "fit": "cheap",
+      "when": "wealth",
+      "how": "Two Universities bought with Gold in the Campus cities."
+    },
+    {
+      "id": "tech:economics",
+      "fit": "free",
+      "when": "wealth",
+      "how": "Two Banks bought with Faith in the Sugubas."
+    },
+    {
+      "id": "tech:astronomy",
+      "fit": "costly",
+      "when": "wealth",
+      "how": "A University beside a mountain only if a Campus has one; desert rarely does."
+    },
+    {
+      "id": "tech:gunpowder",
+      "fit": "costly",
+      "when": "wealth",
+      "how": "An Armory needs a bought Encampment this plan rarely wants."
+    },
+    {
+      "id": "tech:scientific-theory",
+      "fit": "free",
+      "when": "wealth",
+      "how": "The Enlightenment is on the civic path."
+    },
+    {
+      "id": "tech:mass-production",
+      "fit": "costly",
+      "when": "wealth",
+      "how": "A Lumber Mill only if a Woods tile exists; desert empires often have none."
+    },
+    {
+      "id": "tech:cartography",
+      "fit": "costly",
+      "when": "wealth",
+      "how": "Two Harbors only on a coastal map."
+    },
+    {
+      "id": "tech:industrialization",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Workshops bought with Gold in the Industrial Zones."
+    },
+    {
+      "id": "tech:sanitation",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Neighborhoods built under Contractor in the floodplains cities."
+    },
+    {
+      "id": "tech:electricity",
+      "fit": "costly",
+      "when": "close",
+      "how": "Two Privateers bought only on a coastal map."
+    },
+    {
+      "id": "tech:refining",
+      "fit": "cheap",
+      "when": "close",
+      "how": "A Coal Power Plant bought in one Industrial Zone."
+    },
+    {
+      "id": "civic:craftsmanship",
+      "fit": "free",
+      "when": "setup",
+      "how": "Three improvements from the first Builder."
+    },
+    {
+      "id": "civic:foreign-trade",
+      "fit": "costly",
+      "when": "setup",
+      "how": "A second continent only if the Scout finds a land bridge; otherwise unboosted."
+    },
+    {
+      "id": "civic:mysticism",
+      "fit": "free",
+      "when": "setup",
+      "how": "Founding Desert Folklore before turn 20."
+    },
+    {
+      "id": "civic:military-tradition",
+      "fit": "costly",
+      "when": "loop",
+      "how": "Clearing a camp with the Warrior and bought Archers only if one sits beside a route."
+    },
+    {
+      "id": "civic:state-workforce",
+      "fit": "free",
+      "when": "loop",
+      "how": "The first Holy Site is the first district."
+    },
+    {
+      "id": "civic:early-empire",
+      "fit": "free",
+      "when": "loop",
+      "how": "Six population across two floodplains cities."
+    },
+    {
+      "id": "civic:political-philosophy",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "Three city-states met by the Scout and the Traders."
+    },
+    {
+      "id": "civic:theology",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "Founding the religion."
+    },
+    {
+      "id": "civic:games-and-recreation",
+      "fit": "free",
+      "when": "loop",
+      "how": "Researching Construction when the tech path passes it."
+    },
+    {
+      "id": "civic:drama-and-poetry",
+      "fit": "skip",
+      "when": null,
+      "how": "A wonder is never built; research it unboosted."
+    },
+    {
+      "id": "civic:recorded-history",
+      "fit": "costly",
+      "when": "engine",
+      "how": "Two Campuses only if a second river city has the Food for one."
+    },
+    {
+      "id": "civic:defensive-tactics",
+      "fit": "costly",
+      "when": "loop",
+      "how": "Being declared on; bought Walls make it unlikely, but the Inspiration is taken if it happens."
+    },
+    {
+      "id": "civic:military-training",
+      "fit": "skip",
+      "when": null,
+      "how": "No Encampment is built or bought in this plan."
+    },
+    {
+      "id": "civic:guilds",
+      "fit": "free",
+      "when": "engine",
+      "how": "Two Markets bought with Faith in the Sugubas."
+    },
+    {
+      "id": "civic:medieval-faires",
+      "fit": "free",
+      "when": "engine",
+      "how": "Four international routes are the economy."
+    },
+    {
+      "id": "civic:feudalism",
+      "fit": "cheap",
+      "when": "engine",
+      "how": "Six Farms on floodplains from bought Builders."
+    },
+    {
+      "id": "civic:divine-right",
+      "fit": "free",
+      "when": "engine",
+      "how": "Two Temples bought with Gold in the Holy Site cities."
+    },
+    {
+      "id": "civic:civil-service",
+      "fit": "cheap",
+      "when": "engine",
+      "how": "The floodplains capital reaches ten population with the Aqueduct."
+    },
+    {
+      "id": "civic:mercantilism",
+      "fit": "free",
+      "when": "engine",
+      "how": "A Great Merchant, which Mali wins every era."
+    },
+    {
+      "id": "civic:mercenaries",
+      "fit": "skip",
+      "when": null,
+      "how": "Eight land units is an army Mali never pays for."
+    },
+    {
+      "id": "civic:exploration",
+      "fit": "costly",
+      "when": "engine",
+      "how": "Two Caravels only on a coastal map; Merchant Republic is taken unboosted otherwise."
+    },
+    {
+      "id": "civic:reformed-church",
+      "fit": "free",
+      "when": "wealth",
+      "how": "Six cities following the religion by turn 160."
+    },
+    {
+      "id": "civic:diplomatic-service",
+      "fit": "cheap",
+      "when": "wealth",
+      "how": "An economic alliance with the richest neighbour."
+    },
+    {
+      "id": "civic:the-enlightenment",
+      "fit": "cheap",
+      "when": "wealth",
+      "how": "Three Great People: the Prophet and two Merchants."
+    },
+    {
+      "id": "civic:humanism",
+      "fit": "costly",
+      "when": "engine",
+      "how": "A Great Artist only if one is cheap; otherwise unboosted."
+    },
+    {
+      "id": "civic:colonialism",
+      "fit": "costly",
+      "when": "wealth",
+      "how": "Researching Astronomy, which the desert tech path reaches late."
+    },
+    {
+      "id": "civic:capitalism",
+      "fit": "free",
+      "when": "close",
+      "how": "Two Stock Exchanges bought with Faith."
+    },
+    {
+      "id": "civic:civil-engineering",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Seven different specialty districts once the Theater Square and Industrial Zone are bought."
+    },
+    {
+      "id": "civic:urbanization",
+      "fit": "cheap",
+      "when": "close",
+      "how": "A fifteen-population floodplains capital with the Aqueduct."
+    },
+    {
+      "id": "civic:scorched-earth",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Field Cannons bought for the border city."
+    }
+  ],
+  "decision_triggers": [
+    {
+      "name": "Route destination lost",
+      "if": "A city a Trader runs to is conquered, razed, or its owner declares war on you.",
+      "then": "Re-route the Trader the turn it returns to the richest coastal foreign city in range, even at lower Gold; an idle route is the amber band. Buy a Mandekalu if the loss was plunder."
+    },
+    {
+      "name": "Golden Age in reach",
+      "if": "Era Score is within three points of the Golden Age threshold with ten turns left in the era.",
+      "then": "Buy the moment: a Trader to a new city-state, the first building of a type, a Great Merchant patronized with Gold. A Golden Age is a permanent route slot and the Monumentality Settlers; it is the best purchase on the ledger."
+    },
+    {
+      "name": "Production temptation",
+      "if": "A building sits in a Production queue for more than three turns.",
+      "then": "Remove it, put a district or project in its place, and buy the building. The Production penalty makes every built building a loss against the Gold the same turns of Trader would have made."
+    },
+    {
+      "name": "Faith outruns the ledger",
+      "if": "Faith banked exceeds the next two Suguba building purchases and no Apostle wave is due.",
+      "then": "Buy Builders and Settlers under Monumentality if a Golden Age is running, or Apostles for the next wave; banked Faith is a route not bought."
+    }
+  ],
+  "abort": {
+    "trigger": "Income has sat below half the era floor for fifteen turns with no route destination reachable and no luxury left to sell.",
+    "actions": [
+      "Disband every unit beyond two Mandekalu and the garrison; upkeep is the one cost Gold cannot avoid.",
+      "Rebuild as a generic desert Faith civilization around the Holy Sites and Sugubas already standing, with Production on districts and projects only, and target Religion against the nearest civilization.",
+      "Keep the bought Walls; a Mali that cannot buy an army must not be worth invading."
+    ]
+  },
+  "fail_state": "The Industrial era arrives with income under the Medieval floor, half the route slots empty, Temples and Libraries built in queues over thirty turns each under the Production penalty, no Golden Age ever taken and so no extra routes, and a religion in four desert cities and nowhere else. Mali is then the poorest civilization on the map, which is the one thing the kit was built to prevent.",
+  "common_mistakes": [
+    "Building a building because the Gold is not there yet. The penalty makes the build take over 40 percent longer and the Gold would have arrived first; put a district or project in the queue and wait.",
+    "Running domestic Trade Routes for Food. Sahel Merchants pays only on international routes; the Food comes from floodplains and the City Center's desert bonus.",
+    "Settling away from desert for the Production. Every city off the desert is a Suguba origin that pays nothing extra and a City Center with no Faith.",
+    "Starting a wonder because the Gold cannot buy one. The Production penalty does not apply to wonders, but the Production that a wonder eats is the districts and Traders that make the Gold; the plan has no wonders in it.",
+    "Banking Gold for safety. Ten turns of upkeep is the reserve; everything above it is a Trader, a building or a Favor purchase not made."
+  ],
+  "sources": [
+    "Civilization VI Civilopedia, Gathering Storm ruleset (Mali, Mansa Musa, Mandekalu Cavalry, Suguba, Sahel Merchants, Songs of the Jeli).",
+    "The civ-info text describes the Production penalty generally; the plan uses the Gathering Storm values of 30% less Production toward units and buildings and Mines at minus one Production and plus four Gold. Verify the exact numbers in the Civilopedia.",
+    "The Gold floors per era in the shape block are authoring judgment at Emperor and Standard speed, not game values.",
+    "Boost objectives cross-checked against civilization6planner.com tech-tree and civics-tree pages, 2026-10-01.",
+    "Leadership Focus tags, caveats and Monitor supplement for Mansa Musa in this repository."
+  ]
+}

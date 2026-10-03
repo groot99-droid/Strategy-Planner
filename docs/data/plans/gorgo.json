@@ -1,0 +1,1631 @@
+{
+  "leader": "Gorgo",
+  "civilization": "Greece",
+  "generated": "2026-10-02",
+  "slug": "gorgo",
+  "shape": "Monitor",
+  "secondary_shape": null,
+  "version": 1,
+  "updated": "2026-10-01",
+  "assumptions": {
+    "ruleset": "Gathering Storm with every expansion and the Leader Pass",
+    "speed": "Standard",
+    "difficulty": "Emperor",
+    "map": "Pangaea or Continents, standard size, 8 civilizations, barbarians on",
+    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. Gorgo's single base persona is planned here; she has no alternate persona in the Leader Pass."
+  },
+  "verdict": {
+    "victory": "Culture",
+    "secondary": "Domination",
+    "confidence": "medium",
+    "one_line": "Farm kills for Culture while there are things to kill, spend that Culture on civics the same turn it arrives, and build the Acropolis empire that keeps paying when the barbarians are gone.",
+    "why": "Thermopylae pays Culture equal to half the Combat Strength of every unit Gorgo kills, which in the Ancient and Classical eras is a second Monument in every city for the price of a Hoplite, and the civics it buys are permanent: Political Philosophy by turn 40 and Feudalism before anyone else is a lead no one takes back. The supply of things to kill is the whole constraint, because barbarian camps vanish as the map fills and a siege-heavy war gives almost nothing, so the plan treats kill sources as a resource to be maintained and the Acropolis, with its hill placement and free envoy, as the engine that replaces them. Culture is the verdict because the civic lead, the Acropolis and the Cultural city-states Greece collects for free all point the same way; Domination is the fallback for a map where the kill supply stays rich."
+  },
+  "map_check": {
+    "must_have": [
+      "Hills within the first three city sites, because the Acropolis cannot be built anywhere else.",
+      "At least one barbarian camp within eight tiles of the capital by turn 15, to farm rather than clear."
+    ],
+    "prefer": [
+      "A rival or city-state border within fifteen tiles, so there is something to kill when the camps close.",
+      "Gobustan or Giant's Causeway in reach: Culture on the wonder tiles, or stronger Hoplites.",
+      "Pasture resources near the capital for God of the Open Sky as the alternative pantheon."
+    ],
+    "no_go": "A flat start with no hills within two city sites and barbarians turned off. The Acropolis has nowhere to go and the leader ability has nothing to kill; both halves of the kit are off.",
+    "fallback": "Move the Settler toward the nearest hill, up to two turns. If there are no camps, Greece is a wide Culture civilization on the strength of the extra Wildcard slot alone: Theater Squares on whatever hills exist, Aesthetics-style adjacency cards, and the Cultural city-states; keep two Hoplites for the one war that will come to you."
+  },
+  "kit_levers": [
+    {
+      "source": "leader_ability",
+      "name": "Thermopylae",
+      "buys": "Culture equal to half the Combat Strength of every unit Gorgo's units defeat, barbarians included, in attack or in defence.",
+      "exploit": "Kills, not captures, are the currency. The plan keeps one camp alive in range of a defended city as a farm, fights wars for the field battles rather than the sieges, and spends the Culture the turn it lands on a pre-written civic list."
+    },
+    {
+      "source": "civ_ability",
+      "name": "Plato's Republic",
+      "buys": "One extra Wildcard policy slot in every government.",
+      "exploit": "The spare slot holds a Great Person card or a second military card no one else can afford: Oligarchy with Agoge and Maneuver in the Classical era, Monarchy with Professional Army and a Great Writer card in the Medieval. The card the slot holds is chosen each era in the loop."
+    },
+    {
+      "source": "unique_unit",
+      "name": "Hoplite",
+      "buys": "A Spearman replacement with a large Combat Strength bonus when adjacent to another Hoplite.",
+      "exploit": "Hoplites fight in pairs or they are Spearmen. A pair beside a camp farms it for twenty turns; three pairs with two Archers win the field battles of the first war, and every kill is Culture."
+    },
+    {
+      "source": "unique_infrastructure",
+      "name": "Acropolis",
+      "buys": "A cheaper Theater Square that must sit on a hill, with extra Culture from adjacent districts and the City Center and a free envoy when finished.",
+      "exploit": "Every city is planned around one hill beside the City Center with a second district next to it. The free envoys are how Greece takes the Cultural city-states without spending the ones the civics give."
+    },
+    {
+      "source": "agenda",
+      "name": "With Your Shield Or On It",
+      "buys": "Gorgo never gives up cities in peace deals, likes leaders who refuse to concede and dislikes those who surrender or never fight; Grievances against her decay twice as fast.",
+      "exploit": "The fast Grievance decay is the useful half: a second and third war cost half the diplomatic penalty, so the kill farm can move from a camp to a neighbour without the whole table turning on Greece."
+    }
+  ],
+  "shape_block": {
+    "monitor": {
+      "watched_stat": "Kill sources in reach: the number of barbarian camps within eight tiles of a defended Greek city, plus any active war with a rival whose units are still coming into the field",
+      "check_every": "turn, from the first Hoplite",
+      "bands": {
+        "green": {
+          "test": "Two or more camps in reach of a defended city, or one camp plus an active war in which enemy units are reaching your lines, and the Culture per turn from kills averaging five or more over the last ten turns.",
+          "response": "Keep farming. Hoplite pairs sit beside the camp, Archers finish the wounded, and no city builds a unit it does not need for the next kill source. Spend the Culture on the civic list every turn."
+        },
+        "amber": {
+          "test": "One camp left in reach and no war, or a war in which the enemy has stopped sending units and the remaining targets are Walled cities.",
+          "response": "Open the next source now, before the current one closes: scout for the next camp, or pick the neighbour with the weakest army and a shared border and prepare a war whose point is the field battles. Begin the second Acropolis so the Culture does not drop with the kills."
+        },
+        "red": {
+          "test": "No camp in reach, no war, or a war that has become a siege with no enemy units in the field, for five turns.",
+          "response": "The ability is off. Stop building military beyond defence, put every city on its Acropolis and its Amphitheater, slot the Great Writer card in the spare Wildcard slot, and treat the Culture lead as banked. Re-enter only if a rival declares on you or a new camp spawns in reach."
+        }
+      },
+      "second_watch": {
+        "stat": "Unspent Culture against the next civic on the pre-written list, and whether the current civic finishes within three turns of a kill spike",
+        "why": "Hoarded Culture is the common failure: a kill spike that overflows into a civic nobody wanted buys nothing. The list is written before the first camp and the current research always points at the civic that unlocks the next card or government the plan needs."
+      },
+      "off_period_plan": "Standard development the kills never provide: a third and fourth city on hills, an Acropolis in each, Amphitheaters for the Great Writers the Acropolis points buy, Campuses for the Science a culture civ otherwise lacks, and the Cultural city-states taken with the Acropolis envoys. The civic list is kept current so the next kill spike converts on arrival."
+    }
+  },
+  "phases": [
+    {
+      "id": "setup",
+      "name": "Setup",
+      "turns": {
+        "from": 1,
+        "to": 25
+      },
+      "era": "ancient",
+      "objective": "Settle beside a hill, find two camps and the nearest rival, write the civic list, and have two Hoplites sitting beside the first camp by turn 25 with the second camp left alive for later.",
+      "build_order": [
+        {
+          "item": "Scout",
+          "why": "Finds the camps, the hills for the next cities and the first rival; Writing comes from the meeting."
+        },
+        {
+          "item": "Warrior",
+          "why": "A second Warrior holds the capital while the Hoplites farm; its first kill is Culture too."
+        },
+        {
+          "item": "Slinger",
+          "why": "Archery Eureka on a camp scout, and the Archer that finishes wounded units for the kill credit."
+        },
+        {
+          "item": "Settler",
+          "why": "Second city on a hill toward the nearest camp; the second Acropolis site."
+        },
+        {
+          "item": "Hoplite",
+          "why": "The first of the pair, the turn Bronze Working lands."
+        },
+        {
+          "item": "Hoplite",
+          "why": "The second; alone a Hoplite is a Spearman, together they hold a camp indefinitely."
+        },
+        {
+          "item": "Monument",
+          "why": "Base Culture under the kill Culture; the civic list needs both."
+        },
+        {
+          "item": "Builder",
+          "why": "Three improvements for Craftsmanship and a Mine for The Wheel."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:mining",
+          "note": "Hills are the plan; Mines for Production and the Wheel Eureka."
+        },
+        {
+          "id": "tech:bronze-working",
+          "note": "Hoplites. Research it second; the Eureka is three barbarian kills, which is also the point."
+        },
+        {
+          "id": "tech:animal-husbandry",
+          "note": "Pastures for God of the Open Sky if that pantheon is taken, and Horses revealed."
+        },
+        {
+          "id": "tech:archery",
+          "note": "Archers to finish the wounded; the Slinger kill makes it cheap."
+        },
+        {
+          "id": "tech:pottery",
+          "note": "Granary and the road to Writing and Irrigation."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:code-of-laws",
+          "note": "Discipline against the camps; God King for the pantheon."
+        },
+        {
+          "id": "civic:craftsmanship",
+          "note": "Agoge for Hoplites and Archers."
+        },
+        {
+          "id": "civic:military-tradition",
+          "note": "Clearing the far camp, not the farm camp, gives the Inspiration."
+        },
+        {
+          "id": "civic:foreign-trade",
+          "note": "A Trade Route and the road to Early Empire; the Inspiration only if the Scout sees a second continent."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Discipline",
+          "slot": "military",
+          "from": "civic:code-of-laws",
+          "why": "Warriors and the Slinger win camp fights cleanly; every clean kill is Culture."
+        },
+        {
+          "card": "Agoge",
+          "slot": "military",
+          "from": "civic:craftsmanship",
+          "why": "Hoplites and Archers half again as fast; the second slot Greece has from the start."
+        },
+        {
+          "card": "God King",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "A pantheon by turn 25."
+        }
+      ],
+      "districts": [
+        {
+          "district": "acropolis",
+          "city": "capital",
+          "note": "Site it on the hill beside the City Center now; it is the first district the moment Drama and Poetry lands."
+        }
+      ],
+      "pantheon": {
+        "slug": "god-of-the-forge",
+        "why": "Hoplites and Archers a quarter faster; the kill farm is staffed sooner.",
+        "alternative": "god-of-the-open-sky"
+      },
+      "wonders": [],
+      "governors": [],
+      "city_states": [
+        {
+          "type": "Cultural",
+          "why": "The first envoy from a civic goes to the nearest Cultural city-state; Culture in the capital from turn 20."
+        },
+        {
+          "slug": "kabul",
+          "why": "Double experience makes Hoplite pairs veterans by the first war."
+        }
+      ],
+      "great_people": [],
+      "checkpoints": [
+        {
+          "turn": 25,
+          "test": "Two camps found, the first rival met, two Hoplites standing beside the farm camp, and the civic list written through Political Philosophy?",
+          "pass": "Enter the standing loop; read the kill-source count every turn.",
+          "fail": "No camp within eight tiles: send the Scout further and make the nearest rival the first source after Political Philosophy. No hill in reach: settle the second city on one before anything else."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "setup-settle-hill",
+          "turn": 1,
+          "text": "Settle with a hill adjacent to the City Center for the Acropolis; move one turn if needed, no more."
+        },
+        {
+          "id": "setup-civic-list",
+          "turn": 3,
+          "text": "Write the civic list: Craftsmanship, Military Tradition, Early Empire, Political Philosophy, Drama and Poetry, then Feudalism. Every kill spike finishes the next one."
+        },
+        {
+          "id": "setup-two-camps",
+          "turn": 12,
+          "text": "Scout both directions until two camps are found; mark the nearer one as the farm and the further one as the Military Tradition clear."
+        },
+        {
+          "id": "setup-hoplite-pair",
+          "turn": 22,
+          "text": "Two Hoplites adjacent to each other and to the farm camp; let its units come to them."
+        },
+        {
+          "id": "setup-pantheon",
+          "turn": 24,
+          "text": "Found God of the Forge, or God of the Open Sky if the capital has three or more Pastures."
+        }
+      ]
+    },
+    {
+      "id": "farm",
+      "name": "The camp farm",
+      "turns": {
+        "from": 26,
+        "to": 80
+      },
+      "era": "classical",
+      "objective": "Farm the camp into an early Political Philosophy and Drama and Poetry, found three more cities on hills with an Acropolis in each, and open the first war against the weakest neighbour before the camps close so the kill Culture never pauses.",
+      "build_order": [
+        {
+          "item": "Acropolis",
+          "why": "In the capital first; a free envoy and the Culture that outlasts the camps."
+        },
+        {
+          "item": "Settler",
+          "why": "Third and fourth cities on hills; each is another Acropolis and another envoy."
+        },
+        {
+          "item": "Archer",
+          "why": "Two more; Archers take the kill credit from wounded units and three give the Machinery Eureka."
+        },
+        {
+          "item": "Hoplite",
+          "why": "A second pair for the first war; six Hoplites in two lines hold any Classical field."
+        },
+        {
+          "item": "Amphitheater",
+          "why": "In the capital Acropolis; Great Writer points and the slot for the first Great Work."
+        },
+        {
+          "item": "Campus",
+          "why": "In the second city; the Science a Culture plan otherwise skips."
+        },
+        {
+          "item": "Battering Ram",
+          "why": "One, for the first war's single city capture; the war is for the field battles, not the siege."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:wheel",
+          "note": "A Mine on a resource gives it; the road to Construction and Engineering."
+        },
+        {
+          "id": "tech:writing",
+          "note": "Campus and Library; free from the first meeting."
+        },
+        {
+          "id": "tech:masonry",
+          "note": "Battering Ram and Ancient Walls; Quarry for the Eureka."
+        },
+        {
+          "id": "tech:currency",
+          "note": "Commercial Hub for the Gold a culture plan lacks; the first Trade Route boosts it."
+        },
+        {
+          "id": "tech:iron-working",
+          "note": "Swordsmen beside the Hoplites for the first war; mine any Iron found."
+        },
+        {
+          "id": "tech:construction",
+          "note": "Water Mill boosts it; Games and Recreation follows."
+        },
+        {
+          "id": "tech:mathematics",
+          "note": "Acropolis, Campus and Commercial Hub are three districts; Apprenticeship follows."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:early-empire",
+          "note": "Colonization for the hill cities; six population gives it."
+        },
+        {
+          "id": "civic:political-philosophy",
+          "note": "Oligarchy and the extra slot, with the kill Culture it arrives by turn 40; three city-states met."
+        },
+        {
+          "id": "civic:drama-and-poetry",
+          "note": "The Acropolis. Build any wonder for the Inspiration, or take it unboosted; it is the civic the plan exists for."
+        },
+        {
+          "id": "civic:mysticism",
+          "note": "Free from the pantheon; Inspiration card for Great Scientist points."
+        },
+        {
+          "id": "civic:military-training",
+          "note": "An Encampment in the border city gives it; Great General points for the war."
+        },
+        {
+          "id": "civic:games-and-recreation",
+          "note": "Free from Construction; Entertainment Complex and Colosseum later."
+        },
+        {
+          "id": "civic:recorded-history",
+          "note": "Two Campuses give it; Natural Philosophy for the Campuses beside Acropolises."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Oligarchy",
+          "slot": "wildcard",
+          "from": "civic:political-philosophy",
+          "why": "Combat Strength for Hoplites and experience for every unit; the government until Monarchy."
+        },
+        {
+          "card": "Maneuver",
+          "slot": "military",
+          "from": "civic:military-tradition",
+          "why": "Not needed for Hoplites; swap to Conscription if Gold is short."
+        },
+        {
+          "card": "Inspiration",
+          "slot": "wildcard",
+          "from": "civic:mysticism",
+          "why": "The Greek extra Wildcard slot holds a Great Person card from the start; Great Scientist points for the Campuses."
+        },
+        {
+          "card": "Colonization",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "Settlers for the hill cities half again as fast."
+        }
+      ],
+      "districts": [
+        {
+          "district": "acropolis",
+          "city": "every city, on the hill beside the City Center",
+          "note": "Plan the second district beside it: a Campus or Commercial Hub adds adjacency."
+        },
+        {
+          "district": "campus",
+          "city": "second and third cities",
+          "note": "Two Campuses for Recorded History; Science for a plan that is otherwise all Culture."
+        },
+        {
+          "district": "encampment",
+          "city": "the border city facing the first war",
+          "note": "Military Training Inspiration and Walls where the counterattack lands."
+        }
+      ],
+      "pantheon": {
+        "slug": "god-of-the-forge",
+        "why": "Already founded; the second Hoplite pair and the Archers are built under it."
+      },
+      "wonders": [
+        {
+          "name": "Oracle",
+          "why": "Great Person points from every district on a hill city, and the Drama and Poetry Inspiration from building it.",
+          "skip_if": "No spare hill beside the capital, or a Culture rival has Mysticism first; take the Inspiration unboosted instead."
+        },
+        {
+          "name": "Apadana",
+          "why": "Two envoys for every later wonder in the capital; with the Acropolis envoys it secures the Cultural city-states for the game.",
+          "skip_if": "Political Philosophy arrives after turn 55 or the capital has no free tile beside the City Center."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Connoisseur",
+          "city": "capital",
+          "why": "Culture per citizen on top of the Acropolis; the capital is the Culture city."
+        },
+        {
+          "governor": "magnus",
+          "promotion": "Provision",
+          "city": "the Settler city",
+          "why": "Hill cities without the population cost."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "nan-madol",
+          "why": "Culture for every coastal district if the map gives a coast; cheap for Greece's envoy count."
+        },
+        {
+          "slug": "kumasi",
+          "why": "Culture from Trade Routes to city-states; the Trader goes here."
+        },
+        {
+          "type": "Cultural",
+          "why": "Every Cultural city-state met gets the Acropolis envoy; Amphitheaters pay double at three."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-writer",
+          "why": "The first Great Writer's two works fill the capital Amphitheater; Tourism starts here."
+        },
+        {
+          "class": "great-general",
+          "why": "A Classical Great General makes the Hoplite lines faster and stronger for the first war's field battles."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 50,
+          "test": "Political Philosophy unlocked, the capital Acropolis finished, four cities settled, and the farm camp still producing kills?",
+          "pass": "Continue; begin the first war's preparation and write the Medieval civic list.",
+          "fail": "Camp cleared or gone: amber. Pick the weakest neighbour now. Acropolis not started: it goes ahead of the fourth Settler."
+        },
+        {
+          "turn": 80,
+          "test": "First war declared with six Hoplites and three Archers, Drama and Poetry done, and an Acropolis in three cities?",
+          "pass": "Enter the war phase; the kill Culture moves from camps to armies.",
+          "fail": "No war by turn 80 is red for the ability but not for the game: put every city on Acropolis and Amphitheater and wait for a declaration; Greece defends with Hoplites and the kills still count."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "farm-first-acropolis",
+          "turn": 40,
+          "text": "Capital Acropolis finished on the hill beside the City Center; its envoy goes to the nearest Cultural city-state."
+        },
+        {
+          "id": "farm-political-philosophy",
+          "turn": 42,
+          "text": "Political Philosophy unlocked; Oligarchy adopted with Agoge, Inspiration in the spare Wildcard slot."
+        },
+        {
+          "id": "farm-third-city",
+          "turn": 48,
+          "text": "Third city settled on a hill with room for an Acropolis and a Campus beside it."
+        },
+        {
+          "id": "farm-pick-target",
+          "turn": 60,
+          "text": "Choose the first war target: the neighbour with the smallest army and a shared border, not the richest."
+        },
+        {
+          "id": "farm-declare",
+          "turn": 72,
+          "text": "Declare with six Hoplites and three Archers on a hill inside your own border, and let the enemy come; take one city, not the capital."
+        }
+      ]
+    },
+    {
+      "id": "war",
+      "name": "The field war",
+      "turns": {
+        "from": 81,
+        "to": 150
+      },
+      "era": "medieval",
+      "objective": "Turn the kill supply from camps to the first rival's army and then the second's, fighting defensively in the field and taking only cities that fall cheaply, while the Culture buys Feudalism, Guilds and Divine Right ahead of the table and the Acropolises reach Amphitheaters and Art Museums.",
+      "build_order": [
+        {
+          "item": "Pikeman",
+          "why": "Hoplites upgrade at Military Tactics; Professional Army makes it cheap."
+        },
+        {
+          "item": "Crossbowman",
+          "why": "Archers upgrade at Machinery; the kill-finishers for the rest of the era, and two give Metal Casting."
+        },
+        {
+          "item": "Amphitheater",
+          "why": "In every Acropolis; the Great Writer works need the slots."
+        },
+        {
+          "item": "Ancient Walls",
+          "why": "In the border city; the enemy breaks on Walls and Hoplites and every unit that dies is Culture."
+        },
+        {
+          "item": "Library",
+          "why": "In both Campuses; two Universities later for Printing."
+        },
+        {
+          "item": "Market",
+          "why": "Two for Guilds; the Gold that upgrades the army."
+        },
+        {
+          "item": "Aqueduct",
+          "why": "Military Engineering Eureka and the capital to ten population for Civil Service."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:military-tactics",
+          "note": "Pikemen; a Hoplite kill gives it, since Hoplites are Spearmen."
+        },
+        {
+          "id": "tech:machinery",
+          "note": "Crossbowmen; three Archers give it."
+        },
+        {
+          "id": "tech:apprenticeship",
+          "note": "Three Mines on the hills the cities sit on."
+        },
+        {
+          "id": "tech:engineering",
+          "note": "Ancient Walls give it; Castles follows."
+        },
+        {
+          "id": "tech:military-engineering",
+          "note": "The Aqueduct gives it; Armory for Gunpowder later."
+        },
+        {
+          "id": "tech:education",
+          "note": "Universities; a Great Scientist from the two Campuses boosts it."
+        },
+        {
+          "id": "tech:castles",
+          "note": "Monarchy gives the Eureka; Medieval Walls at home."
+        },
+        {
+          "id": "tech:stirrups",
+          "note": "Free from Feudalism; Knights are not the plan, but Castles is on the line."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:defensive-tactics",
+          "note": "The war target declares back or a third party joins; Bastions for the border city."
+        },
+        {
+          "id": "civic:feudalism",
+          "note": "Six Farms; Serfdom and the Stirrups Eureka. With the kill lead this arrives before turn 100."
+        },
+        {
+          "id": "civic:civil-service",
+          "note": "The capital at ten; the road to Divine Right."
+        },
+        {
+          "id": "civic:guilds",
+          "note": "Two Markets; Craftsmen later and the Banking Eureka."
+        },
+        {
+          "id": "civic:divine-right",
+          "note": "Monarchy with the spare Wildcard slot: four military-or-wildcard cards at once."
+        },
+        {
+          "id": "civic:mercenaries",
+          "note": "Professional Army for the Pikeman and Crossbowman upgrades; eight land units is the army."
+        },
+        {
+          "id": "civic:theology",
+          "note": "Only if a religion was founded from a captured Holy Site; otherwise unboosted on the way to Reformed Church."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Monarchy",
+          "slot": "wildcard",
+          "from": "civic:divine-right",
+          "why": "The Medieval government; Housing from Walls and an extra military slot for a Greece that already has an extra Wildcard."
+        },
+        {
+          "card": "Professional Army",
+          "slot": "military",
+          "from": "civic:mercenaries",
+          "why": "Hoplites to Pikemen and Archers to Crossbowmen at half the Gold."
+        },
+        {
+          "card": "Serfdom",
+          "slot": "economic",
+          "from": "civic:feudalism",
+          "why": "Builders with extra charges for the hill Mines and Farms."
+        },
+        {
+          "card": "Natural Philosophy",
+          "slot": "economic",
+          "from": "civic:recorded-history",
+          "why": "Campus adjacency doubled beside the Acropolises."
+        }
+      ],
+      "districts": [
+        {
+          "district": "acropolis",
+          "city": "the fourth city and any capture",
+          "note": "Hill beside the City Center, Amphitheater immediately."
+        },
+        {
+          "district": "commercial-hub",
+          "city": "capital",
+          "note": "Markets for Guilds; Great Merchant points for Mercantilism."
+        },
+        {
+          "district": "aqueduct",
+          "city": "capital",
+          "note": "Military Engineering and growth."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Great Library",
+          "why": "Great Writer and Great Scientist points and free Eurekas for Ancient and Classical techs the Culture plan skipped.",
+          "skip_if": "No Campus with a Library is adjacent to flat land by turn 110, or a Science rival has Recorded History first."
+        },
+        {
+          "name": "Colosseum",
+          "why": "Culture and Amenities to every city within six tiles of a compact hill empire.",
+          "skip_if": "The cities are more than six tiles apart or no flat tile beside an Entertainment Complex is free."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "victor",
+          "promotion": "Garrison Commander",
+          "city": "the border city",
+          "why": "Combat Strength on the Hoplites inside the city and Loyalty against the enemy's pressure."
+        },
+        {
+          "governor": "amani",
+          "promotion": "Messenger",
+          "city": "a contested Cultural city-state",
+          "why": "Two envoys where a rival is one short of taking suzerainty."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "antananarivo",
+          "why": "Culture per Great Person earned; the Acropolises earn a lot of them."
+        },
+        {
+          "slug": "vilnius",
+          "why": "Theater Square adjacency bonus doubled; the Acropolis is a Theater Square."
+        },
+        {
+          "type": "Militaristic",
+          "why": "Barracks Production at three envoys where the Pikemen and Crossbowmen are built."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-writer",
+          "why": "Two or three more; each is two works and Tourism in Amphitheaters the Acropolises already have."
+        },
+        {
+          "class": "great-general",
+          "why": "The Medieval General retires into a free Pikeman or stands with the line; its aura is the difference in the field battles."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 115,
+          "test": "Feudalism and Guilds unlocked, Amphitheaters in three cities, one city captured, and Culture per turn above forty?",
+          "pass": "Open the second war against the next neighbour as the first one's units stop coming.",
+          "fail": "Culture under forty means the Acropolises are late, not the kills: Amphitheaters before any new unit. No capture is fine; no field kills in ten turns is amber."
+        },
+        {
+          "turn": 150,
+          "test": "Divine Right unlocked with Monarchy adopted, four Acropolises, two Great Writers earned, and a kill source still open?",
+          "pass": "Enter the culture phase; the kill Culture is a supplement from here.",
+          "fail": "No kill source: red for the ability, which is expected from here. Make peace on terms that give no cities and put the army on defence; the lead is banked."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "war-hold-the-hill",
+          "turn": 85,
+          "text": "Fight the first war on a hill inside your border: Hoplite pairs in front, Crossbowmen behind, Walls at the back. Every enemy unit that attacks is Culture."
+        },
+        {
+          "id": "war-upgrade",
+          "turn": 100,
+          "text": "Upgrade every Hoplite to a Pikeman and every Archer to a Crossbowman under Professional Army in one turn."
+        },
+        {
+          "id": "war-amphitheaters",
+          "turn": 110,
+          "text": "Amphitheaters in every Acropolis; the first Great Writer's works placed."
+        },
+        {
+          "id": "war-one-city",
+          "turn": 120,
+          "text": "Take the one border city that falls to a Battering Ram and Pikemen; leave the Walled capital alone."
+        },
+        {
+          "id": "war-second-source",
+          "turn": 140,
+          "text": "Second war declared on the next neighbour, or peace signed with no cities ceded, by whichever the kill count favours."
+        }
+      ]
+    },
+    {
+      "id": "culture",
+      "name": "Culture engine",
+      "turns": {
+        "from": 151,
+        "to": 230
+      },
+      "era": "renaissance",
+      "objective": "Convert the civic lead into Tourism: Art Museums and Archaeological Museums on the Acropolises, Great Artists from the Humanism line, a religion or Faith source for Rock Bands later, and the trade and open-borders network that carries Tourism to every rival while the army holds the borders.",
+      "build_order": [
+        {
+          "item": "Art Museum",
+          "why": "In the capital and second city; Humanism's Great Artists need slots, and Opera and Ballet is boosted by one."
+        },
+        {
+          "item": "Archaeological Museum",
+          "why": "In the third city; Natural History Inspiration and Artifacts from the battlefields the wars left."
+        },
+        {
+          "item": "University",
+          "why": "Two for Printing; the Science that keeps Tourism's techs on time."
+        },
+        {
+          "item": "Pike and Shot",
+          "why": "Pikemen upgrade at Gunpowder; defence only, unless a rival sends units to kill."
+        },
+        {
+          "item": "Workshop",
+          "why": "Two for Industrialization; Production for the Museums and wonders."
+        },
+        {
+          "item": "Harbor",
+          "why": "If coastal: Trade Routes and the second Harbor for Cartography."
+        },
+        {
+          "item": "Entertainment Complex",
+          "why": "Amenities for a wide hill empire; Colosseum site if not yet built."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:printing",
+          "note": "Two Universities; the Tourism from Great Works doubles with Printing's buildings later."
+        },
+        {
+          "id": "tech:gunpowder",
+          "note": "Pike and Shot for defence; an Armory gives it."
+        },
+        {
+          "id": "tech:banking",
+          "note": "Free from Guilds; Banks for Economics."
+        },
+        {
+          "id": "tech:astronomy",
+          "note": "A University beside a mountain gives it; Colonialism's Inspiration follows."
+        },
+        {
+          "id": "tech:industrialization",
+          "note": "Two Workshops; Factories and the Industrial-era Culture buildings."
+        },
+        {
+          "id": "tech:scientific-theory",
+          "note": "Free from The Enlightenment; Research Labs come later with Chemistry."
+        },
+        {
+          "id": "tech:cartography",
+          "note": "Two Harbors if coastal; otherwise unboosted on the way to Square Rigging for the Tourism from open seas."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:humanism",
+          "note": "Art Museums and the Great Artist line; a Great Artist gives the Inspiration, so take Humanism unboosted first and the boost pays on the next civic."
+        },
+        {
+          "id": "civic:reformed-church",
+          "note": "Only if a religion exists; otherwise unboosted on the road to The Enlightenment."
+        },
+        {
+          "id": "civic:exploration",
+          "note": "Merchant Republic; two Caravels if coastal."
+        },
+        {
+          "id": "civic:mercantilism",
+          "note": "A Great Merchant from the Commercial Hub; Triangular Trade."
+        },
+        {
+          "id": "civic:the-enlightenment",
+          "note": "Three Great People is long since done; Rationalism and Free Market."
+        },
+        {
+          "id": "civic:diplomatic-service",
+          "note": "An alliance for open borders and Tourism; the Inspiration from forming it."
+        },
+        {
+          "id": "civic:opera-and-ballet",
+          "note": "An Art Museum gives it; Broadway later."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Merchant Republic",
+          "slot": "wildcard",
+          "from": "civic:exploration",
+          "why": "The government for a Culture plan: Trade Routes, Gold, and two Wildcard slots plus Greece's third."
+        },
+        {
+          "card": "Rationalism",
+          "slot": "economic",
+          "from": "civic:the-enlightenment",
+          "why": "Science from the Universities."
+        },
+        {
+          "card": "Triangular Trade",
+          "slot": "economic",
+          "from": "civic:mercantilism",
+          "why": "Gold and Faith per Trade Route; the Faith buys Naturalists and Rock Bands later."
+        },
+        {
+          "card": "Professional Army",
+          "slot": "military",
+          "from": "civic:mercenaries",
+          "why": "Pikemen to Pike and Shot at half price; the army is a border garrison now."
+        }
+      ],
+      "districts": [
+        {
+          "district": "theater-square",
+          "city": "any city without a hill",
+          "note": "A plain Theater Square in a flat city still holds a Museum; the Acropolis is for hills."
+        },
+        {
+          "district": "industrial-zone",
+          "city": "the two best Production cities",
+          "note": "Workshops for Industrialization; the Museums and wonders need Production."
+        },
+        {
+          "district": "harbor",
+          "city": "coastal cities",
+          "note": "Trade Routes for Tourism and Gold; two for Cartography."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Hermitage",
+          "why": "Four Great Work of Art slots on a river; the Humanism line's Artists need somewhere to go.",
+          "skip_if": "No river tile in a Greek city, or Natural History arrives after turn 210; put the Artists in Art Museums instead."
+        },
+        {
+          "name": "Kilwa Kisiwani",
+          "why": "Yields from every city-state type Greece is suzerain of; with the Acropolis envoys that is most of them.",
+          "skip_if": "No coastal flat tile, or an Industrial rival has Machinery first."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Curator",
+          "city": "capital",
+          "why": "Doubles Tourism from Great Works in the Culture capital."
+        },
+        {
+          "governor": "reyna",
+          "promotion": "Harbormaster",
+          "city": "the coastal trade city",
+          "why": "Double adjacency Gold from the Harbor and Commercial Hub."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "ayutthaya",
+          "why": "Culture from every building finished; the Museums and Amphitheaters are many."
+        },
+        {
+          "type": "Cultural",
+          "why": "Art Museum and Archaeological Museum Culture at six envoys; the Acropolis envoys get there."
+        },
+        {
+          "slug": "geneva",
+          "why": "Science while at peace, which is the state of the Culture phase."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-artist",
+          "why": "Three works per Artist and the Humanism Inspiration; Art Museums and the Hermitage fill with them."
+        },
+        {
+          "class": "great-writer",
+          "why": "Still cheap for Greece; every Amphitheater slot filled is Tourism."
+        },
+        {
+          "class": "great-merchant",
+          "why": "Mercantilism's Inspiration and the Gold a wide empire needs."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 190,
+          "test": "Two Art Museums, one Archaeological Museum, Humanism and The Enlightenment unlocked, and Tourism per turn above thirty?",
+          "pass": "Continue; open borders and trade with every rival.",
+          "fail": "Buy the missing museum with gold, swap two cities to Culture projects, and sign open borders with every civ that will take them."
+        },
+        {
+          "turn": 230,
+          "test": "Tourism exceeding the domestic Tourists of at least half the rivals, and Culture per turn above 150?",
+          "pass": "Enter the close; Rock Bands, National Parks and Seaside Resorts finish it.",
+          "fail": "Behind on Tourism but ahead on Culture: the Museums are unthemed or empty. Theme them and trade works before any new district. Behind on both: the game is a Score game unless a rival's war reopens the kill supply."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "culture-art-museums",
+          "turn": 165,
+          "text": "Art Museums in the capital and the second city; the first Great Artist placed."
+        },
+        {
+          "id": "culture-open-borders",
+          "turn": 175,
+          "text": "Open borders and a Trade Route to every rival you are not at war with; Tourism travels on both."
+        },
+        {
+          "id": "culture-archaeology",
+          "turn": 185,
+          "text": "Archaeological Museum and an Archaeologist; the battlefields of the two wars are Antiquity Sites."
+        },
+        {
+          "id": "culture-theme",
+          "turn": 215,
+          "text": "Theme the Art Museums by trading works with rivals; a themed Museum is double Tourism."
+        }
+      ]
+    },
+    {
+      "id": "close",
+      "name": "Close",
+      "turns": {
+        "from": 231,
+        "to": null
+      },
+      "era": "industrial",
+      "objective": "Finish the Culture victory with National Parks on the hill empire's high-Appeal tiles, Seaside Resorts if there is coast, Rock Bands bought with Faith, and Broadcast Centers and Stadiums in every city, while the Pikemen's grandchildren hold the border against the rival that tries to end the game by force.",
+      "build_order": [
+        {
+          "item": "Broadcast Center",
+          "why": "In every Acropolis; Great Musician slots and the Radio-era Tourism."
+        },
+        {
+          "item": "Stadium",
+          "why": "Unlocked by Professional Sports; Amenities for the whole empire."
+        },
+        {
+          "item": "Naturalist",
+          "why": "Faith-bought; National Parks on the hill and mountain tiles for Tourism."
+        },
+        {
+          "item": "Rock Band",
+          "why": "Faith-bought once Cold War is near; each concert is a Tourism spike aimed at the rival furthest behind."
+        },
+        {
+          "item": "Factory",
+          "why": "Production for the last buildings; three give the Class Struggle Inspiration."
+        },
+        {
+          "item": "Infantry",
+          "why": "Defence only; the border garrison upgraded under Professional Army."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:radio",
+          "note": "Broadcast Centers; a National Park gives it."
+        },
+        {
+          "id": "tech:flight",
+          "note": "Tourism from wonders and the Chemamull-style improvements; an Industrial wonder gives it."
+        },
+        {
+          "id": "tech:combustion",
+          "note": "An Artifact extracted gives it; Golden Gate Bridge later."
+        },
+        {
+          "id": "tech:electricity",
+          "note": "Power for Broadcast Centers; two Privateers only if coastal."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:natural-history",
+          "note": "An Archaeological Museum gives it; Conservation follows for National Parks."
+        },
+        {
+          "id": "civic:conservation",
+          "note": "A Neighborhood on a Breathtaking tile gives it; Naturalists unlock here."
+        },
+        {
+          "id": "civic:mass-media",
+          "note": "Radio gives it; Broadcast Centers."
+        },
+        {
+          "id": "civic:cultural-heritage",
+          "note": "A themed Museum gives it; Heritage Tourism doubles the Great Work Tourism."
+        },
+        {
+          "id": "civic:professional-sports",
+          "note": "Two Entertainment Complexes give it; Stadiums."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Heritage Tourism",
+          "slot": "economic",
+          "from": "civic:cultural-heritage",
+          "why": "Double Tourism from Great Works in the themed Museums."
+        },
+        {
+          "card": "Online Communities",
+          "slot": "diplomatic",
+          "from": "civic:social-media",
+          "why": "Half again as much Tourism to every civilization you trade with."
+        },
+        {
+          "card": "Sports Media",
+          "slot": "economic",
+          "from": "civic:professional-sports",
+          "why": "Culture from Stadiums while they are built everywhere."
+        }
+      ],
+      "districts": [
+        {
+          "district": "neighborhood",
+          "city": "a city with a Breathtaking tile",
+          "note": "The Conservation Inspiration; Housing for the Stadium cities."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Eiffel Tower",
+          "why": "Appeal to every tile, which is National Parks and Seaside Resorts on a hill empire.",
+          "skip_if": "Steel arrives after turn 260 or an Industrial rival is already building it."
+        },
+        {
+          "name": "Cristo Redentor",
+          "why": "Tourism from Seaside Resorts doubled, and Tourism from relics no longer drops after the Enlightenment.",
+          "skip_if": "There is no coast for Resorts and no religion for relics; the wonder then does little."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "liang",
+          "promotion": "Parks and Recreation",
+          "city": "the city with the most hill and mountain tiles",
+          "note": "City Parks for Appeal where National Parks are planned.",
+          "why": "City Parks raise the Appeal of the National Park tiles and add Tourism of their own."
+        }
+      ],
+      "city_states": [
+        {
+          "type": "Cultural",
+          "why": "Keep every one; losing one is a Culture cut and a Tourism cut together."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-musician",
+          "why": "Three works each in Broadcast Centers; the last Tourism multiplier the Acropolis points buy."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 280,
+          "test": "Tourists exceeding every rival's domestic Tourists but one, with two National Parks and two Rock Bands sent?",
+          "pass": "Keep sending Rock Bands at the last rival; the game ends within thirty turns.",
+          "fail": "One rival far ahead on domestic Tourists: every Rock Band and every Trade Route goes to that one. If a rival is about to win another way, the Infantry and Artillery exist for exactly one war."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "close-national-parks",
+          "turn": 245,
+          "text": "Two National Parks on the hill and mountain tiles; Naturalists bought with the Triangular Trade Faith."
+        },
+        {
+          "id": "close-broadcast",
+          "turn": 255,
+          "text": "Broadcast Centers in every Acropolis; the Great Musicians placed as they arrive."
+        },
+        {
+          "id": "close-rock-bands",
+          "turn": 275,
+          "text": "Rock Bands sent to the rival with the most domestic Tourists; one per five turns until the game ends."
+        }
+      ]
+    }
+  ],
+  "boosts": [
+    {
+      "id": "tech:writing",
+      "fit": "free",
+      "when": "setup",
+      "how": "The Scout meets the first rival."
+    },
+    {
+      "id": "tech:bronze-working",
+      "fit": "free",
+      "when": "setup",
+      "how": "Three barbarian kills at the farm camp; the whole opening."
+    },
+    {
+      "id": "tech:archery",
+      "fit": "cheap",
+      "when": "setup",
+      "how": "The Slinger finishes a camp scout."
+    },
+    {
+      "id": "tech:wheel",
+      "fit": "cheap",
+      "when": "farm",
+      "how": "A Mine on a resource hill; the cities sit on hills."
+    },
+    {
+      "id": "tech:astrology",
+      "fit": "costly",
+      "when": "setup",
+      "how": "Only if the Scout finds a natural wonder on its way; do not detour."
+    },
+    {
+      "id": "tech:irrigation",
+      "fit": "cheap",
+      "when": "setup",
+      "how": "A Farm on a resource beside the capital."
+    },
+    {
+      "id": "tech:sailing",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:masonry",
+      "fit": "cheap",
+      "when": "farm",
+      "how": "A Quarry; Stone is common beside hills."
+    },
+    {
+      "id": "tech:horseback-riding",
+      "fit": "cheap",
+      "when": "farm",
+      "how": "A Pasture on the Horses or Sheep near a hill city."
+    },
+    {
+      "id": "tech:iron-working",
+      "fit": "cheap",
+      "when": "farm",
+      "how": "Mine any Iron revealed; Swordsmen stand beside the Hoplites in the first war."
+    },
+    {
+      "id": "tech:currency",
+      "fit": "cheap",
+      "when": "farm",
+      "how": "The first Trader to Kumasi or the second city."
+    },
+    {
+      "id": "tech:construction",
+      "fit": "cheap",
+      "when": "farm",
+      "how": "A Water Mill in the river city."
+    },
+    {
+      "id": "tech:mathematics",
+      "fit": "cheap",
+      "when": "farm",
+      "how": "Acropolis, Campus and Commercial Hub by turn 75."
+    },
+    {
+      "id": "tech:celestial-navigation",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:shipbuilding",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:engineering",
+      "fit": "cheap",
+      "when": "war",
+      "how": "Ancient Walls in the border city, which the war needs anyway."
+    },
+    {
+      "id": "tech:military-tactics",
+      "fit": "free",
+      "when": "war",
+      "how": "A Hoplite kill; every Hoplite is a Spearman."
+    },
+    {
+      "id": "tech:machinery",
+      "fit": "free",
+      "when": "war",
+      "how": "Three Archers; the kill-finishers are built in the farm phase."
+    },
+    {
+      "id": "tech:apprenticeship",
+      "fit": "cheap",
+      "when": "war",
+      "how": "Three Mines on hill cities."
+    },
+    {
+      "id": "tech:military-engineering",
+      "fit": "cheap",
+      "when": "war",
+      "how": "The capital Aqueduct."
+    },
+    {
+      "id": "tech:education",
+      "fit": "costly",
+      "when": "war",
+      "how": "A Great Scientist only if the two Campuses earn one before Education is needed."
+    },
+    {
+      "id": "tech:castles",
+      "fit": "free",
+      "when": "war",
+      "how": "Adopt a Tier 2 government (Monarchy) before Castles comes up."
+    },
+    {
+      "id": "tech:stirrups",
+      "fit": "free",
+      "when": "war",
+      "how": "Feudalism, which the kill Culture reaches early."
+    },
+    {
+      "id": "tech:buttress",
+      "fit": "cheap",
+      "when": "war",
+      "how": "The Apadana or Great Library counts; the Oracle is Ancient and does not."
+    },
+    {
+      "id": "tech:printing",
+      "fit": "cheap",
+      "when": "culture",
+      "how": "Two Universities in the two Campuses."
+    },
+    {
+      "id": "tech:gunpowder",
+      "fit": "cheap",
+      "when": "culture",
+      "how": "An Armory in the border Encampment."
+    },
+    {
+      "id": "tech:banking",
+      "fit": "free",
+      "when": "culture",
+      "how": "Have the Guilds civic finished before Banking is queued."
+    },
+    {
+      "id": "tech:astronomy",
+      "fit": "cheap",
+      "when": "culture",
+      "how": "A University beside a mountain; hill cities often have one."
+    },
+    {
+      "id": "tech:industrialization",
+      "fit": "cheap",
+      "when": "culture",
+      "how": "Build Workshops in two Industrial Zone cities."
+    },
+    {
+      "id": "tech:scientific-theory",
+      "fit": "free",
+      "when": "culture",
+      "how": "Adopt The Enlightenment civic before queuing Scientific Theory."
+    },
+    {
+      "id": "tech:cartography",
+      "fit": "costly",
+      "when": "culture",
+      "how": "Two Harbors only on a coastal map."
+    },
+    {
+      "id": "tech:mass-production",
+      "fit": "cheap",
+      "when": "culture",
+      "how": "One Lumber Mill on Woods."
+    },
+    {
+      "id": "tech:metal-casting",
+      "fit": "free",
+      "when": "war",
+      "how": "Two Crossbowmen upgraded from the Archers."
+    },
+    {
+      "id": "tech:square-rigging",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:siege-tactics",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:radio",
+      "fit": "cheap",
+      "when": "close",
+      "how": "The first National Park."
+    },
+    {
+      "id": "tech:flight",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Any Industrial wonder; Eiffel Tower is on the list."
+    },
+    {
+      "id": "tech:combustion",
+      "fit": "cheap",
+      "when": "close",
+      "how": "The first Artifact from the war's battlefields."
+    },
+    {
+      "id": "tech:electricity",
+      "fit": "costly",
+      "when": "close",
+      "how": "Two Privateers only on a coastal map; otherwise unboosted."
+    },
+    {
+      "id": "tech:economics",
+      "fit": "costly",
+      "when": "culture",
+      "how": "Two Banks only if Gold is short; otherwise unboosted."
+    },
+    {
+      "id": "tech:sanitation",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Neighborhoods; one is built for Conservation anyway."
+    },
+    {
+      "id": "civic:craftsmanship",
+      "fit": "free",
+      "when": "setup",
+      "how": "Three improved tiles from the first Builder."
+    },
+    {
+      "id": "civic:military-tradition",
+      "fit": "free",
+      "when": "setup",
+      "how": "Clearing the second camp, the one that is not the farm."
+    },
+    {
+      "id": "civic:foreign-trade",
+      "fit": "costly",
+      "when": "setup",
+      "how": "A second continent only if the Scout finds it; do not detour."
+    },
+    {
+      "id": "civic:state-workforce",
+      "fit": "free",
+      "when": "farm",
+      "how": "The capital Acropolis is the first district."
+    },
+    {
+      "id": "civic:early-empire",
+      "fit": "free",
+      "when": "farm",
+      "how": "Six population across two cities."
+    },
+    {
+      "id": "civic:mysticism",
+      "fit": "free",
+      "when": "farm",
+      "how": "The pantheon founded in setup."
+    },
+    {
+      "id": "civic:political-philosophy",
+      "fit": "cheap",
+      "when": "farm",
+      "how": "Three city-states met by the Scout."
+    },
+    {
+      "id": "civic:drama-and-poetry",
+      "fit": "cheap",
+      "when": "farm",
+      "how": "The Oracle or Apadana; otherwise unboosted, because the Acropolis cannot wait."
+    },
+    {
+      "id": "civic:military-training",
+      "fit": "cheap",
+      "when": "farm",
+      "how": "The border Encampment."
+    },
+    {
+      "id": "civic:games-and-recreation",
+      "fit": "free",
+      "when": "farm",
+      "how": "Researching Construction."
+    },
+    {
+      "id": "civic:recorded-history",
+      "fit": "cheap",
+      "when": "farm",
+      "how": "Two Campuses, in the second and third cities."
+    },
+    {
+      "id": "civic:theology",
+      "fit": "costly",
+      "when": "war",
+      "how": "A religion only if a Holy Site city is captured; Greece has no Faith plan."
+    },
+    {
+      "id": "civic:defensive-tactics",
+      "fit": "free",
+      "when": "war",
+      "how": "The war target or its ally declares on Greece."
+    },
+    {
+      "id": "civic:feudalism",
+      "fit": "cheap",
+      "when": "war",
+      "how": "Six Farms across the hill cities' flat tiles."
+    },
+    {
+      "id": "civic:civil-service",
+      "fit": "cheap",
+      "when": "war",
+      "how": "The capital at ten with the Aqueduct."
+    },
+    {
+      "id": "civic:guilds",
+      "fit": "cheap",
+      "when": "war",
+      "how": "Build Markets in two Commercial Hub cities."
+    },
+    {
+      "id": "civic:divine-right",
+      "fit": "costly",
+      "when": "war",
+      "how": "Two Temples only with a religion; otherwise unboosted, and the kill Culture covers it."
+    },
+    {
+      "id": "civic:mercenaries",
+      "fit": "free",
+      "when": "war",
+      "how": "Eight land units is the Hoplite and Archer army."
+    },
+    {
+      "id": "civic:medieval-faires",
+      "fit": "cheap",
+      "when": "war",
+      "how": "Four Trade Routes once the Commercial Hub and Harbor exist."
+    },
+    {
+      "id": "civic:naval-tradition",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:humanism",
+      "fit": "cheap",
+      "when": "culture",
+      "how": "The first Great Artist; Amphitheaters and the Oracle earn the points."
+    },
+    {
+      "id": "civic:reformed-church",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:exploration",
+      "fit": "costly",
+      "when": "culture",
+      "how": "Two Caravels only on a coastal map."
+    },
+    {
+      "id": "civic:mercantilism",
+      "fit": "cheap",
+      "when": "culture",
+      "how": "A Great Merchant from the capital Commercial Hub."
+    },
+    {
+      "id": "civic:the-enlightenment",
+      "fit": "free",
+      "when": "culture",
+      "how": "Three Great People; the Writers alone get there by turn 150."
+    },
+    {
+      "id": "civic:diplomatic-service",
+      "fit": "cheap",
+      "when": "culture",
+      "how": "An alliance with the trade partner furthest from the border."
+    },
+    {
+      "id": "civic:opera-and-ballet",
+      "fit": "free",
+      "when": "culture",
+      "how": "The first Art Museum."
+    },
+    {
+      "id": "civic:natural-history",
+      "fit": "free",
+      "when": "close",
+      "how": "The Archaeological Museum."
+    },
+    {
+      "id": "civic:conservation",
+      "fit": "cheap",
+      "when": "close",
+      "how": "A Neighborhood on a Breathtaking hill tile."
+    },
+    {
+      "id": "civic:mass-media",
+      "fit": "free",
+      "when": "close",
+      "how": "Research Radio first; the Inspiration follows at no extra cost."
+    },
+    {
+      "id": "civic:cultural-heritage",
+      "fit": "free",
+      "when": "close",
+      "how": "A themed Art Museum; the trades in the culture phase do it."
+    },
+    {
+      "id": "civic:professional-sports",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Entertainment Complexes."
+    },
+    {
+      "id": "civic:social-media",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:nationalism",
+      "fit": "costly",
+      "when": "culture",
+      "how": "A Casus Belli war only if a kill source is wanted; otherwise unboosted."
+    },
+    {
+      "id": "civic:colonialism",
+      "fit": "free",
+      "when": "culture",
+      "how": "Researching Astronomy."
+    }
+  ],
+  "decision_triggers": [
+    {
+      "name": "Camp spawns in reach",
+      "if": "A new barbarian camp appears within eight tiles of a defended city after the farm camp is gone.",
+      "then": "Do not clear it. Move a Hoplite pair and a ranged unit beside it and farm it; the civic list absorbs the Culture."
+    },
+    {
+      "name": "A rival declares on Greece",
+      "if": "Any civilization declares war while the watched stat is amber or red.",
+      "then": "Accept it as a gift. Fight on a hill inside your border with Hoplites in pairs and ranged units behind; do not counter-invade until their army is dead."
+    },
+    {
+      "name": "War turns into a siege",
+      "if": "The enemy has stopped sending units and the only remaining targets are Walled cities.",
+      "then": "Make peace on terms with no cities ceded. The siege pays nothing; the next kill source is elsewhere."
+    },
+    {
+      "name": "Spare Wildcard slot each era",
+      "if": "A new government or a new Great Person card becomes available.",
+      "then": "Re-read what the extra slot holds: a Great Writer card in the Classical and Medieval eras, a Great Artist card in the Renaissance, a Great Musician card in the Modern, or a second military card while a kill source is open."
+    }
+  ],
+  "abort": {
+    "trigger": "No kill source for fifteen turns, no rival willing to declare, and every neighbour behind Medieval Walls with no field army to meet.",
+    "actions": [
+      "Stop building military beyond a Pikeman pair per border city; the kill Culture is finished and its upkeep is pure loss.",
+      "Rebuild as a plain Culture civilization around the Acropolises, Amphitheaters and the Cultural city-states, which is most of the plan anyway.",
+      "Keep the civic list current so that any war a rival starts converts immediately."
+    ]
+  },
+  "fail_state": "The Renaissance arrives with the camps long gone, one siege war that produced two kills and a thousand Culture hoarded into civics nobody chose, and Acropolises in two cities because hills were never planned for. Greece is then an ordinary Culture civilization with a spare policy slot and no lead to spend it on.",
+  "common_mistakes": [
+    "Clearing the farm camp. It is a Culture mine; clear the second one for Military Tradition and leave the first alive beside a defended city.",
+    "Fighting siege wars. Thermopylae pays for kills, and a Walled city produces none; the war is fought in the field or not at all.",
+    "Hoarding Culture. A kill spike that overflows into an unplanned civic is wasted; the civic list is written before the first Hoplite.",
+    "Settling flat. The Acropolis needs a hill beside the City Center, and a city without one is a city without the kit's second half.",
+    "Sending Hoplites alone. One Hoplite is a Spearman; two adjacent are the strongest Ancient unit on the map."
+  ],
+  "sources": [
+    "Civilization VI Civilopedia, Gathering Storm ruleset (Greece, Gorgo, Hoplite, Acropolis).",
+    "Boost objectives cross-checked against civilization6planner.com tech-tree and civics-tree pages, 2026-10-01.",
+    "Leadership Focus tags, caveats and Monitor supplement for Gorgo in this repository."
+  ]
+}

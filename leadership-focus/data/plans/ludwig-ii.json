@@ -1,0 +1,1676 @@
+{
+  "slug": "ludwig-ii",
+  "shape": "Monitor",
+  "secondary_shape": null,
+  "version": 1,
+  "updated": "2026-10-02",
+  "assumptions": {
+    "ruleset": "Gathering Storm with every expansion and the Leader Pass",
+    "speed": "Standard",
+    "difficulty": "Emperor",
+    "map": "Continents or Pangaea, standard size, 8 civilizations, with a river or coast in reach of the capital",
+    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. Ludwig II's single persona (Great Builders pack) is planned here. To park a wonder is to place it, give it one turn of Production and switch the city to something else: the site keeps its tile and its progress, and Swan King pays on it exactly as on a finished wonder. A keystone is a parked wonder touching three or more districts, or a Theater Square."
+  },
+  "verdict": {
+    "victory": "Culture",
+    "secondary": "Science",
+    "confidence": "medium",
+    "one_line": "Ring each city's best tiles with districts, park a wonder in every gap for one turn of Production, and let Swan King pay Culture, and from Castles Tourism, on all of them; finish only the keystones a rival is coming for, then finish everything once the Hansas make it cheap.",
+    "why": "Swan King pays +2 Culture for every district touching a wonder, finished or not, so a site placed and parked with one turn of Production pays the same as a completed one. Free Imperial Cities gives every German city one district more than its population allows, which means a German wonder tile touches more districts than anyone else's, and the Hansa is the Production that finishes the few that matter. After Castles every Culture adjacency bonus also pays Tourism, which starts the Culture victory count in the Medieval era, an era or two before most rivals have meaningful Tourism. The real risk is not completion, which keeps the bonus, but a rival completing a parked wonder, which deletes the site; the plan is watching that and finishing keystones first. Science is the fallback because the same Hansas and Campuses carry a spaceport if the late Tourism race is lost."
+  },
+  "map_check": {
+    "must_have": [
+      "A capital on plains, hills or a river with at least eight buildable land tiles in its second and third rings, because a cluster needs districts and wonder sites side by side.",
+      "Room for five cities without an early war, so each core city can hold three or four districts around one or two wonder tiles."
+    ],
+    "prefer": [
+      "A river through the capital or the second city: Hanging Gardens, Taj Mahal, Hermitage and Ruhr Valley all want one, so a river bend is a chain of wonder sites.",
+      "Coast beside a Harbor site, so Mausoleum at Halicarnassus and Torre de Belém can be parked on water tiles that cost no land.",
+      "Floodplains, marsh or a hill beside a mountain inside the planned cluster: Mont St. Michel and Potala Palace take tiles no district wants.",
+      "Chocolate Hills in the capital's reach for wonder Production, or Ik-Kil if the Scout finds one."
+    ],
+    "no_go": "A start boxed in by two aggressive neighbours inside eight tiles, or an AI Qin Shi Huang on the same landmass. The clusters need room and quiet, and Qin finishes Ancient and Classical wonders early enough to delete parked sites before they have paid for their tile.",
+    "fallback": "Play Germany as a Hansa Science civilization: Commercial Hub and Hansa pairs, Campuses and a Spaceport, with wonders parked only from the Medieval era and only beside the capital's districts. Swan King still pays there, just less, and the verdict becomes Science at the turn 90 checkpoint."
+  },
+  "kit_levers": [
+    {
+      "source": "leader_ability",
+      "name": "Swan King",
+      "buys": "Every wonder, finished or still under construction, gives +2 Culture for each adjacent district, and after Castles every Culture adjacency bonus also gives Tourism.",
+      "exploit": "A parked wonder pays the same Culture as a finished one, so each city's district ring gets a wonder in every gap the placement rules allow. The price is a tile and one turn of Production; the risk is a rival finishing that wonder, which deletes the site. Castles turns the same Culture into Tourism from the Medieval era, so it is reached through the Tier 2 government Eureka as early as the civics allow."
+    },
+    {
+      "source": "civ_ability",
+      "name": "Free Imperial Cities",
+      "buys": "Every German city can build one district more than its population would normally allow.",
+      "exploit": "More districts per city is more districts touching each wonder tile. Each core city is planned on founding as three or four districts around one or two wonder gaps, and the extra slot goes to a Theater Square or Entertainment Complex beside a wonder rather than to a third Campus."
+    },
+    {
+      "source": "unique_infrastructure",
+      "name": "Hansa",
+      "buys": "A half-cost Industrial Zone with +2 Production from each adjacent Commercial Hub, +1 from each adjacent resource and the normal Aqueduct and Dam bonuses.",
+      "exploit": "The Hansa is two levers: a district that gives the wonder beside it +2 Culture, and the Production that finishes a keystone when the watched stat goes amber. Ruhr Valley and Venetian Arsenal must touch it, so it goes where a river or coast tile beside it is still free."
+    },
+    {
+      "source": "unique_unit",
+      "name": "U-Boat",
+      "buys": "A cheaper Submarine with extra Sight and Combat Strength on Ocean tiles, unlocked at Electricity.",
+      "exploit": "Defence only. Two U-Boats guard the coastal wonder city against the naval raids a Tourism leader attracts; nothing in the plan is built around them."
+    },
+    {
+      "source": "agenda",
+      "name": "Eternal Enigma",
+      "buys": "Ludwig likes civilizations that leave district slots unused and dislikes those that fill every one.",
+      "exploit": "Matters only for an AI Ludwig on the map, who will dislike you because this plan fills every slot. Treat him as a rival on the same watched stat: he races the same wonders you park."
+    }
+  ],
+  "shape_block": {
+    "monitor": {
+      "watched_stat": "Rival production progress on each parked wonder, read from Gossip (Open access reports a wonder started), any rival construction site in view, and which met rivals have had the wonder's unlocking tech or civic for ten turns or more",
+      "check_every": "five turns from the first parked wonder, every turn while any keystone is amber, and on every turn a wonder-completed notice arrives",
+      "bands": {
+        "green": {
+          "test": "No met rival has started a parked wonder according to Gossip, no rival construction site of one is in view, and no rival has had a parked wonder's unlock for ten turns.",
+          "response": "No action. Production goes to the districts that give each parked wonder its third and fourth neighbour, and the next wonder is parked the turn it unlocks, beside two districts or not at all."
+        },
+        "amber": {
+          "test": "Gossip reports a rival has started a parked wonder, or a rival has had its unlocking tech or civic for ten turns or more, or a rival is finishing wonders of that era faster than one every ten turns.",
+          "response": "Run the finish rule this turn. A keystone the host city can finish inside ten turns with the era's wonder card, Brussels, chops under Magnus and a Great Engineer is finished now. Anything else is marked expendable: no more Production goes into it, and the backup wonder for its tile is named."
+        },
+        "red": {
+          "test": "A rival has been building a parked wonder for eight turns or more while you are more than five turns from finishing it, or a parked keystone has been completed elsewhere and its site deleted.",
+          "response": "Stop spending on that wonder; a race lost at nine-tenths is the worst trade in the plan. Place the backup wonder on the freed tile the turn it frees, check the Theater Square beside it still touches a wonder, and if two keystones fall in one era, put the next era's keystones in the capital, where Apadana's envoys and the Hansa make finishing fastest."
+        }
+      },
+      "second_watch": {
+        "stat": "Production stored in parked wonders, counted as turns of each host city's current output",
+        "why": "Parking should cost one turn per wonder. A host city holding more than ten turns of its own Production in wonders it has not finished has slid into half-building them, which is the condition cost the leader record warns about: Production a rival can delete with one completion."
+      },
+      "off_period_plan": "There is no off period once the first wonder is parked, around turn 45. Before that, and in any check where every parked wonder is green, the build is districts: five cities, a Campus, Commercial Hub and Theater Square in each core city placed so the gaps between them take wonders, Hansas beside the Commercial Hubs from Apprenticeship, and Builders that leave two Woods per core city standing for the chops an amber finish needs."
+    }
+  },
+  "phases": [
+    {
+      "id": "setup",
+      "name": "Setup",
+      "turns": {
+        "from": 1,
+        "to": 30
+      },
+      "era": "ancient",
+      "objective": "Settle a Production capital, meet every neighbour and send each a Delegation so Gossip can report wonders started, found Monument to the Gods, settle two more cities, and sketch the capital's cluster: which tiles will hold districts and which will hold parked wonders.",
+      "build_order": [
+        {
+          "item": "Scout",
+          "why": "Every civilization met is Writing, a Delegation and a Gossip feed for the watched stat; a natural wonder is Astrology."
+        },
+        {
+          "item": "Slinger",
+          "why": "The barbarian stance: Discipline and a Slinger clear the nearest camp for Archery and Military Tradition."
+        },
+        {
+          "item": "Settler",
+          "why": "Second city toward the river or coast, whichever offers more wonder sites beside future districts."
+        },
+        {
+          "item": "Builder",
+          "why": "Farm a resource for Irrigation and Mine a resource hill for The Wheel; leave the Woods for chopping into Apadana."
+        },
+        {
+          "item": "Monument",
+          "why": "Culture toward Political Philosophy, where Apadana and Classical Republic unlock."
+        },
+        {
+          "item": "Warrior",
+          "why": "A second body at the camp; Bronze Working needs three barbarian kills."
+        },
+        {
+          "item": "Settler",
+          "why": "Third city; the engine is five clusters, not one capital."
+        },
+        {
+          "item": "Campus",
+          "why": "First district and the State Workforce Inspiration; placed so the flat tile beside it can take the Great Library later."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:mining",
+          "note": "Mines on plains hills are the capital's Production; no boost to collect."
+        },
+        {
+          "id": "tech:astrology",
+          "note": "Eureka if the Scout finds a natural wonder; Chocolate Hills or Ik-Kil is worth a detour."
+        },
+        {
+          "id": "tech:writing",
+          "note": "Free from the first civilization met; the Campus follows."
+        },
+        {
+          "id": "tech:irrigation",
+          "note": "Farm a resource for the Eureka; Hanging Gardens unlocks here if the capital has a river."
+        },
+        {
+          "id": "tech:bronze-working",
+          "note": "Three barbarian kills at the camp the stance clears."
+        },
+        {
+          "id": "tech:masonry",
+          "note": "Ancient Walls for the barbarian stance; Eureka only if a Quarry resource is in range."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:code-of-laws",
+          "note": "God King and Discipline; no Inspiration to collect."
+        },
+        {
+          "id": "civic:craftsmanship",
+          "note": "Three improvements from the first Builder; Ilkum for more Builders."
+        },
+        {
+          "id": "civic:military-tradition",
+          "note": "Clearing the camp gives the Inspiration; Maneuver is not needed."
+        },
+        {
+          "id": "civic:foreign-trade",
+          "note": "Traders, which Currency's Eureka and the Open access level both need; Inspiration if the Scout walks onto a second continent."
+        },
+        {
+          "id": "civic:mysticism",
+          "note": "Free from the pantheon."
+        },
+        {
+          "id": "civic:state-workforce",
+          "note": "The capital Campus gives the Inspiration; Corvée is the first wonder card."
+        }
+      ],
+      "policies": [
+        {
+          "card": "God King",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "Faith for Monument to the Gods by turn 22."
+        },
+        {
+          "card": "Discipline",
+          "slot": "military",
+          "from": "civic:code-of-laws",
+          "why": "The Slinger and Warrior beat the camp units the stance sends them at."
+        },
+        {
+          "card": "Ilkum",
+          "slot": "economic",
+          "from": "civic:craftsmanship",
+          "why": "Builders faster once the pantheon is in; their charges are the chops that finish Apadana."
+        }
+      ],
+      "districts": [
+        {
+          "district": "campus",
+          "city": "capital",
+          "note": "On the tile with mountain adjacency that also leaves a flat tile beside it for the Great Library."
+        }
+      ],
+      "pantheon": {
+        "slug": "monument-to-the-gods",
+        "why": "Production toward Ancient and Classical wonders: the finishing speed for Apadana and every Classical keystone that goes amber.",
+        "alternative": "divine-spark"
+      },
+      "wonders": [],
+      "governors": [],
+      "city_states": [
+        {
+          "type": "Industrial",
+          "why": "The first envoy into any Industrial city-state is Production in the capital while it builds districts and wonders."
+        },
+        {
+          "slug": "brussels",
+          "why": "Production toward wonders as suzerain; every spare envoy goes here from the day it is met."
+        }
+      ],
+      "great_people": [],
+      "checkpoints": [
+        {
+          "turn": 30,
+          "test": "Three cities, Monument to the Gods founded, a Delegation in every met civilization, and the capital cluster sketched with its wonder gaps marked?",
+          "pass": "Enter the cluster phase; the watched stat starts the turn the first wonder is parked.",
+          "fail": "If the pantheon is missing, keep God King and found it before the Campus. If only two cities stand, the third Settler goes ahead of the Campus, because one cluster is not an engine."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "setup-settle-production",
+          "turn": 1,
+          "text": "Settle on plains, hills or a river with at least eight buildable land tiles in rings two and three; move at most one turn to get there."
+        },
+        {
+          "id": "setup-scout-meet",
+          "turn": 5,
+          "text": "Send the Scout toward the nearest neighbours and city-states; note any rival that looks like a wonder builder."
+        },
+        {
+          "id": "setup-delegations",
+          "turn": 15,
+          "text": "Send a Delegation to every met civilization as the Gold allows; with a Trade Route later it lifts access to Open, the level at which Gossip reports a wonder started."
+        },
+        {
+          "id": "setup-pantheon",
+          "turn": 22,
+          "text": "Found Monument to the Gods, or Divine Spark if the capital has no hills to mine."
+        },
+        {
+          "id": "setup-cluster-sketch",
+          "turn": 25,
+          "text": "Mark the capital cluster: Campus, Commercial Hub, Theater Square and Hansa tiles, and the gaps between them a wonder can take (river, floodplains, hills, coast beside the Harbor, beside the City Center)."
+        },
+        {
+          "id": "setup-third-city",
+          "turn": 30,
+          "text": "Third city founded, its own cluster sketched before the Settler lands."
+        }
+      ]
+    },
+    {
+      "id": "lay",
+      "name": "Lay the clusters",
+      "turns": {
+        "from": 31,
+        "to": 90
+      },
+      "era": "classical",
+      "objective": "Era role: nothing meaningful yet, because a Classical city has too few districts for Swan King to pay much. Grow to five cities with two or three districts each, finish Apadana in the capital for the envoy engine and the Drama and Poetry Inspiration, and park the first wonders in the gaps the clusters leave; the watched stat starts with the first one.",
+      "build_order": [
+        {
+          "item": "Commercial Hub",
+          "why": "In the capital beside the planned Hansa tile, on the river if there is one; the first Trade Route and Mathematics' third district."
+        },
+        {
+          "item": "Trader",
+          "why": "Currency Eureka, then a route to Kumasi or Brussels once met."
+        },
+        {
+          "item": "Settler",
+          "why": "Fourth and fifth cities, each founded with three district tiles around a wonder gap already chosen."
+        },
+        {
+          "item": "Apadana",
+          "why": "Finished in the capital with Corvée, Monument to the Gods and two chops: Drama and Poetry, Buttress, and two envoys for every later wonder finished there."
+        },
+        {
+          "item": "Ancient Walls",
+          "why": "The barbarian stance and the Engineering Eureka in one build."
+        },
+        {
+          "item": "Water Mill",
+          "why": "Construction Eureka in the river city; Games and Recreation follows free."
+        },
+        {
+          "item": "Theater Square",
+          "why": "In the capital touching Apadana and one parked wonder; its Culture adjacency is what Castles turns into Tourism."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:wheel",
+          "note": "A Mine on a resource hill gives the Eureka; Water Mills follow."
+        },
+        {
+          "id": "tech:currency",
+          "note": "Free from the first Trade Route; Commercial Hubs."
+        },
+        {
+          "id": "tech:mathematics",
+          "note": "Campus, Commercial Hub and Theater Square are three specialty districts by turn 85; Free Imperial Cities makes that early."
+        },
+        {
+          "id": "tech:construction",
+          "note": "A Water Mill gives the Eureka, and researching it is the Games and Recreation Inspiration."
+        },
+        {
+          "id": "tech:engineering",
+          "note": "Ancient Walls give the Eureka; Aqueducts and Machu Picchu."
+        },
+        {
+          "id": "tech:celestial-navigation",
+          "note": "Only for a coastal city: two Fishing Boats boost it, and the Harbor anchors the water wonder sites."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:early-empire",
+          "note": "Six population across three cities; Colonization for the fourth and fifth Settlers."
+        },
+        {
+          "id": "civic:political-philosophy",
+          "note": "Three city-states met; Apadana and Classical Republic."
+        },
+        {
+          "id": "civic:games-and-recreation",
+          "note": "Free from Construction; Entertainment Complexes are second anchor districts."
+        },
+        {
+          "id": "civic:drama-and-poetry",
+          "note": "Researched only after Apadana completes, so the Inspiration lands; Theater Squares."
+        },
+        {
+          "id": "civic:recorded-history",
+          "note": "Campuses in two cities give the Inspiration; the Great Library unlocks to be parked."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Corvée",
+          "slot": "economic",
+          "from": "civic:state-workforce",
+          "why": "Production toward Ancient and Classical wonders; slotted for Apadana and for any Classical keystone that goes amber, and out otherwise."
+        },
+        {
+          "card": "Colonization",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "Settlers faster while the capital alternates them with districts."
+        },
+        {
+          "card": "Classical Republic",
+          "slot": "wildcard",
+          "from": "civic:political-philosophy",
+          "why": "The government: an Amenity in every city with a district, which is every city, and more Great Person points for the first Writers."
+        }
+      ],
+      "districts": [
+        {
+          "district": "commercial-hub",
+          "city": "capital and second city",
+          "note": "Beside the tile reserved for the Hansa, so Apprenticeship turns it into a +2 pair at once."
+        },
+        {
+          "district": "campus",
+          "city": "second city",
+          "note": "Recorded History's second Campus; placed to touch a wonder gap."
+        },
+        {
+          "district": "theater-square",
+          "city": "capital",
+          "note": "Touching Apadana and a parked wonder; the first district that will pay Tourism after Castles."
+        }
+      ],
+      "pantheon": {
+        "slug": "monument-to-the-gods",
+        "why": "Already founded; this phase spends it on Apadana and on any Classical keystone a rival comes for."
+      },
+      "wonders": [
+        {
+          "name": "Apadana",
+          "why": "Finish list. Two envoys for every wonder finished in the capital, Apadana included; its completion is the Drama and Poetry Inspiration and the Buttress Eureka, and it sits beside the City Center by rule.",
+          "skip_if": "Gossip reports it started elsewhere before yours is half built; finish the Colosseum beside an Entertainment Complex instead for the same two boosts."
+        },
+        {
+          "name": "Great Library",
+          "why": "Stall list. Parked on the flat tile beside the capital Campus with its Library, so it touches a district by rule and pays from the turn it is placed.",
+          "skip_if": "No flat tile beside the Campus also touches a second district; a one-district site is not worth the tile."
+        },
+        {
+          "name": "Mausoleum at Halicarnassus",
+          "why": "Stall list. Parked on a coast tile beside the Harbor, it costs no land and touches the Harbor and any shore district.",
+          "skip_if": "No coastal city exists, or the only coast tile beside the Harbor touches nothing else."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "liang",
+          "promotion": "Guildmaster",
+          "city": "capital",
+          "why": "Builders trained in the capital carry an extra charge; those charges are the chops behind Apadana and every amber finish."
+        },
+        {
+          "governor": "amani",
+          "promotion": "Emissary",
+          "city": "Brussels",
+          "why": "Two envoys' worth in Brussels makes the wonder Production bonus yours before a rival contests it."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "brussels",
+          "why": "Production toward wonders as suzerain; Apadana's envoys go here first."
+        },
+        {
+          "slug": "kumasi",
+          "why": "Culture and Gold on Trade Routes to city-states for every specialty district in the origin city, and Germany has more districts than anyone."
+        },
+        {
+          "type": "Cultural",
+          "why": "Culture in the capital while the Theater Square is still a plan; Apadana envoys that Brussels does not need go here."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-writer",
+          "why": "The first Writer fills the Amphitheater the capital Theater Square gets; Great Works are Tourism later."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 60,
+          "test": "Four cities, two districts in the capital, Apadana started with Corvée slotted, and at least one wonder parked beside two districts?",
+          "pass": "Continue; read Gossip every five turns from here.",
+          "fail": "If Apadana is not started, chop it in now and delay the fifth Settler; if no wonder is parked, the cluster sketch was wrong, so redraw it around the Campus and City Center."
+        },
+        {
+          "turn": 90,
+          "test": "Apadana finished, Drama and Poetry in, five cities, and three or more wonders parked or finished, each touching two or more districts?",
+          "pass": "Enter the Castles phase; Swan King starts to matter now.",
+          "fail": "If Apadana was lost, the Colosseum or Great Library is finished instead for Buttress and Drama and Poetry. If fewer than three wonders pay, stop parking for the rest of the era and spend on districts until every gap has two neighbours."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "lay-first-park",
+          "turn": 45,
+          "text": "Park the first wonder beside the capital Campus and City Center: place it, give it one turn, switch back, and check its tooltip shows Swan King Culture."
+        },
+        {
+          "id": "lay-gossip-read",
+          "turn": 50,
+          "text": "First formal read: open every civilization's Gossip, note wonders started, and list each parked wonder with the rivals who have its unlock. Any rival still below Open access gets the next Trader."
+        },
+        {
+          "id": "lay-apadana",
+          "turn": 52,
+          "text": "Start Apadana in the capital the turn Political Philosophy lands, Corvée slotted, two Woods chopped into it."
+        },
+        {
+          "id": "lay-fourth-city",
+          "turn": 60,
+          "text": "Fourth city settled with its Commercial Hub and Hansa tiles and one wonder gap marked."
+        },
+        {
+          "id": "lay-drama",
+          "turn": 80,
+          "text": "Research Drama and Poetry only after Apadana completes; then the capital Theater Square goes in beside it."
+        },
+        {
+          "id": "lay-era-reread",
+          "turn": 88,
+          "text": "Era re-read before the Medieval era: list every parked site, its districts touched and its backup wonder, and drop any site that still touches one district."
+        }
+      ]
+    },
+    {
+      "id": "castles",
+      "name": "Castles",
+      "turns": {
+        "from": 91,
+        "to": 155
+      },
+      "era": "medieval",
+      "objective": "Era role: peak. Reach Castles through Monarchy's Eureka so Culture adjacency becomes Tourism, build a Hansa in the three best Production cities, park every Medieval wonder the turn it unlocks beside two or more districts, and finish keystones only when the watched stat goes amber.",
+      "build_order": [
+        {
+          "item": "Hansa",
+          "why": "Beside the Commercial Hub and a wonder gap: the finishing Production, and +2 Culture to the wonder it touches."
+        },
+        {
+          "item": "Workshop",
+          "why": "Great Engineer points, the best amber tool, and half the Industrialization Eureka."
+        },
+        {
+          "item": "Aqueduct",
+          "why": "Military Engineering Eureka and Housing; Angkor Wat parks beside it."
+        },
+        {
+          "item": "Entertainment Complex",
+          "why": "Amenities for district-heavy cities and a second anchor district beside a wonder gap."
+        },
+        {
+          "item": "Market",
+          "why": "Two Markets for Guilds, the Banking Eureka and the Gold that buys districts later."
+        },
+        {
+          "item": "Holy Site",
+          "why": "One, in the city where it touches a wonder gap: the Faith that buys Rock Bands later, and Civil Engineering's seventh district type."
+        },
+        {
+          "item": "Amphitheater",
+          "why": "Writing slots in every Theater Square city; the Writers are Tourism after Castles too."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:apprenticeship",
+          "note": "Three Mines give the Eureka; the Hansa unlocks here."
+        },
+        {
+          "id": "tech:buttress",
+          "note": "Free from owning Apadana."
+        },
+        {
+          "id": "tech:stirrups",
+          "note": "Free once Feudalism is unlocked; research it only when nothing better is open."
+        },
+        {
+          "id": "tech:military-engineering",
+          "note": "The capital Aqueduct gives the Eureka."
+        },
+        {
+          "id": "tech:castles",
+          "note": "Monarchy gives the Eureka; from here every Culture adjacency bonus is also Tourism."
+        },
+        {
+          "id": "tech:education",
+          "note": "Universities; usually unboosted, since Great Scientists are not chased."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:feudalism",
+          "note": "Six Farms across five cities; Serfdom for chop charges."
+        },
+        {
+          "id": "civic:civil-service",
+          "note": "The capital at ten population with its Aqueduct."
+        },
+        {
+          "id": "civic:theology",
+          "note": "Researched unboosted on the way to Divine Right; no religion is planned."
+        },
+        {
+          "id": "civic:divine-right",
+          "note": "Monarchy and Gothic Architecture; the Inspiration needs two Temples and is usually missed."
+        },
+        {
+          "id": "civic:guilds",
+          "note": "Two Markets; Craftsmen for the Hansas."
+        },
+        {
+          "id": "civic:medieval-faires",
+          "note": "Four Trade Routes running; Aesthetics and Angkor Wat."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Monarchy",
+          "slot": "wildcard",
+          "from": "civic:divine-right",
+          "why": "The first Tier 2 government on this path; adopting it is the Castles Eureka, which starts the Tourism."
+        },
+        {
+          "card": "Gothic Architecture",
+          "slot": "economic",
+          "from": "civic:divine-right",
+          "why": "Production toward Medieval and Renaissance wonders; the era's finishing card, slotted whenever a keystone is amber."
+        },
+        {
+          "card": "Aesthetics",
+          "slot": "economic",
+          "from": "civic:medieval-faires",
+          "why": "Doubles Theater Square adjacency, and after Castles that adjacency is Tourism as well as Culture."
+        },
+        {
+          "card": "Craftsmen",
+          "slot": "economic",
+          "from": "civic:guilds",
+          "why": "Doubles Hansa adjacency; the finishing Production in the capital."
+        },
+        {
+          "card": "Serfdom",
+          "slot": "economic",
+          "from": "civic:feudalism",
+          "why": "Builders with more charges, so an amber finish has chops on hand."
+        }
+      ],
+      "districts": [
+        {
+          "district": "hansa",
+          "city": "capital and the two best Production cities",
+          "note": "Touching the Commercial Hub, two resources and a wonder gap; Ruhr Valley later needs a river tile beside it."
+        },
+        {
+          "district": "theater-square",
+          "city": "every core city",
+          "note": "Each one touching at least one finished or parked wonder; Aesthetics doubles the adjacency."
+        },
+        {
+          "district": "entertainment-complex",
+          "city": "capital and second city",
+          "note": "Amenities and an anchor for the Colosseum or a later parked wonder."
+        },
+        {
+          "district": "aqueduct",
+          "city": "capital",
+          "note": "Housing, the Military Engineering Eureka and the Angkor Wat site."
+        },
+        {
+          "district": "holy-site",
+          "city": "one city, touching a wonder gap",
+          "note": "Faith for late Rock Bands and Naturalists; it is also a district the wonder beside it counts."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Mont St. Michel",
+          "why": "Stall list. Parked on floodplains or marsh, tiles no district wants, beside two districts.",
+          "skip_if": "No floodplains or marsh tile in a core city touches two districts."
+        },
+        {
+          "name": "Angkor Wat",
+          "why": "Stall list, with an exception: parked beside the Aqueduct, and finished on amber if it also touches two other districts, since its own effect feeds every city.",
+          "skip_if": "No free tile beside the Aqueduct touches a second district."
+        },
+        {
+          "name": "Kilwa Kisiwani",
+          "why": "Finish list. Suzerain of Brussels and a Cultural city-state, it adds to Production and Culture; parked beside the shore districts until finished.",
+          "skip_if": "No flat tile beside the coast in a core city, or fewer than two suzerainties at turn 140."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "magnus",
+          "promotion": "Groundbreaker",
+          "city": "capital",
+          "why": "Half again from every chop and harvest in the wonder capital, which is where the amber finishes happen."
+        },
+        {
+          "governor": "liang",
+          "promotion": "Zoning Commissioner",
+          "city": "second city",
+          "why": "District Production in the second cluster, whose wonder gaps need their third and fourth neighbours."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "brussels",
+          "why": "Keep suzerainty; it is the cheapest permanent wonder Production in the game."
+        },
+        {
+          "slug": "antananarivo",
+          "why": "Culture for every Great Person ever earned; Writers and Engineers both count."
+        },
+        {
+          "slug": "nan-madol",
+          "why": "Culture from districts beside the coast, which is where the water wonders and their neighbours sit."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-engineer",
+          "why": "Medieval and Renaissance Engineers who add Production toward wonders are the amber response that costs no Production; hold one for the next keystone rather than spending it at once."
+        },
+        {
+          "class": "great-writer",
+          "why": "Every Writer fills an Amphitheater; after Castles their works are Tourism on top of the adjacency."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 120,
+          "test": "Castles researched and Tourism showing on the Culture victory screen, two Hansas standing, and Swan King paying on five or more wonders?",
+          "pass": "Continue; park every Medieval wonder the turn it unlocks.",
+          "fail": "If Castles is late, adopt Monarchy now even at a cost in slots; the Tourism is worth more than any card it displaces. If fewer than five wonders pay, buy districts beside the existing gaps before parking more."
+        },
+        {
+          "turn": 155,
+          "test": "Every Medieval wonder parked beside two districts or written off with a reason, no keystone deleted by a rival this era, and stored Production under ten turns in every host city?",
+          "pass": "Enter the hold phase.",
+          "fail": "A deleted keystone means amber was missed: tighten the check to every turn for keystones, and finish the next one at amber instead of waiting for red."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "castles-hansa",
+          "turn": 100,
+          "text": "First Hansa in the capital, touching the Commercial Hub, two resources and a wonder gap."
+        },
+        {
+          "id": "castles-monarchy",
+          "turn": 105,
+          "text": "Adopt Monarchy the turn Divine Right completes, collect the Castles Eureka, and slot Gothic Architecture."
+        },
+        {
+          "id": "castles-tourism-check",
+          "turn": 115,
+          "text": "Research Castles and confirm on the Theater Square tooltip that its Culture adjacency now also shows Tourism."
+        },
+        {
+          "id": "castles-stall-list",
+          "turn": 120,
+          "text": "Write the designated stall list for the game: Great Library, Mausoleum at Halicarnassus, Mont St. Michel, Angkor Wat, Torre de Belém, Taj Mahal and St. Basil's Cathedral are parked and never finished unless the finish rule fires."
+        },
+        {
+          "id": "castles-backups",
+          "turn": 130,
+          "text": "Name a backup wonder for every parked site: floodplains to Mont St. Michel, coast to Torre de Belém, beside the City Center to Forbidden City or Eiffel Tower, beside a Theater Square to Bolshoi Theatre."
+        },
+        {
+          "id": "castles-stored-audit",
+          "turn": 150,
+          "text": "Count Production stored in parked wonders per host city; over ten turns of output means finish the keystone or stop investing in the rest."
+        }
+      ]
+    },
+    {
+      "id": "hold",
+      "name": "Hold and finish",
+      "turns": {
+        "from": 156,
+        "to": 215
+      },
+      "era": "renaissance",
+      "objective": "Era role: still peak. Keep the parked sites alive through the Renaissance while Hansa Production rises, finish the Forbidden City and the keystones in order of districts touched, fill Art Museums for Great Work Tourism, and form the alliance that Chemistry and the Cultural city-states need.",
+      "build_order": [
+        {
+          "item": "Forbidden City",
+          "why": "Finished in the capital: a wildcard slot for a second wonder card, and two Apadana envoys."
+        },
+        {
+          "item": "University",
+          "why": "Two for Printing; one beside a mountain for Astronomy and Potala Palace."
+        },
+        {
+          "item": "Art Museum",
+          "why": "Great Artist points, slots for their works, and Opera and Ballet's Inspiration."
+        },
+        {
+          "item": "Harbor",
+          "why": "In the coastal city: Torre de Belém parks beside it and the shore districts touch the water wonders."
+        },
+        {
+          "item": "Lumber Mill",
+          "why": "Mass Production Eureka; on Woods the chops spared."
+        },
+        {
+          "item": "Potala Palace",
+          "why": "Finished on a hill beside a mountain when that hill touches two districts; a Diplomatic slot."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:printing",
+          "note": "Two Universities; Forbidden City unlocks."
+        },
+        {
+          "id": "tech:banking",
+          "note": "Free from Guilds."
+        },
+        {
+          "id": "tech:astronomy",
+          "note": "A University beside a mountain; Potala Palace and the Colonialism Inspiration."
+        },
+        {
+          "id": "tech:mass-production",
+          "note": "A Lumber Mill gives the Eureka; Venetian Arsenal if a Hansa touches the coast."
+        },
+        {
+          "id": "tech:cartography",
+          "note": "Two Harbors only if two coastal cities exist; Torre de Belém unlocks."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:humanism",
+          "note": "Usually unboosted; Art Museums, Frescoes and Invention."
+        },
+        {
+          "id": "civic:diplomatic-service",
+          "note": "An alliance with the friendliest neighbour; Vilnius pays at the highest alliance level."
+        },
+        {
+          "id": "civic:the-enlightenment",
+          "note": "Three Great People is already done; Rationalism if the Science fallback is live."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Gothic Architecture",
+          "slot": "economic",
+          "from": "civic:divine-right",
+          "why": "Still the finishing card for Renaissance keystones, now in the Forbidden City's extra slot alongside Aesthetics."
+        },
+        {
+          "card": "Invention",
+          "slot": "wildcard",
+          "from": "civic:humanism",
+          "why": "Great Engineer points; every Engineer banked is an amber finish that costs no Production."
+        },
+        {
+          "card": "Frescoes",
+          "slot": "wildcard",
+          "from": "civic:humanism",
+          "why": "Great Artist points for the Art Museums; swapped with Invention when no keystone is threatened."
+        }
+      ],
+      "districts": [
+        {
+          "district": "campus",
+          "city": "capital and second city",
+          "note": "Universities for Printing; the one beside a mountain gives Astronomy."
+        },
+        {
+          "district": "harbor",
+          "city": "the coastal city",
+          "note": "Anchor for Torre de Belém and the water wonders; Cartography if a second exists."
+        },
+        {
+          "district": "hansa",
+          "city": "third Production city",
+          "note": "Beside a coast tile if possible, for Venetian Arsenal."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Forbidden City",
+          "why": "Finish list. A wildcard slot, finished in the capital beside the City Center where Apadana adds two envoys.",
+          "skip_if": "China is on the map and ahead in Printing, or capital Production is under 30 when Printing lands."
+        },
+        {
+          "name": "Potala Palace",
+          "why": "Finish list when its hill touches two districts: a Diplomatic slot and Culture on a tile no district takes.",
+          "skip_if": "No hill beside a mountain in a core city touches two districts."
+        },
+        {
+          "name": "Torre de Belém",
+          "why": "Stall list. Parked on a coast tile beside the Harbor; it is also the backup for a deleted Mausoleum site.",
+          "skip_if": "No coastal city, or the coast tile touches only the Harbor."
+        },
+        {
+          "name": "Taj Mahal",
+          "why": "Stall list. Parked on a river tile between districts; it is also the backup for a deleted Hanging Gardens site.",
+          "skip_if": "No river tile in a core city touches two districts."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Connoisseur",
+          "city": "the largest Theater Square city that is not the capital",
+          "why": "Culture per citizen in the second cluster; Curator follows when the museums are full."
+        },
+        {
+          "governor": "reyna",
+          "promotion": "Contractor",
+          "city": "the newest core city",
+          "why": "Buys the districts that give a parked wonder its second and third neighbour, with the Gold the Commercial Hubs make."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "vilnius",
+          "why": "Theater Square adjacency up by half at the highest alliance level, which Diplomatic Service starts."
+        },
+        {
+          "slug": "johannesburg",
+          "why": "Production per improved resource type in every city; the Hansas finish more keystones."
+        },
+        {
+          "type": "Cultural",
+          "why": "Culture in every Amphitheater and later every museum, and Diplomatic Favor from each suzerainty for the Congress."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-engineer",
+          "why": "Renaissance Engineers with wonder Production are held for the Forbidden City or the next amber keystone."
+        },
+        {
+          "class": "great-artist",
+          "why": "Fill the Art Museums by era and type; themed museums are Cultural Heritage later."
+        },
+        {
+          "class": "great-writer",
+          "why": "Every Writer is a Great Work of Writing in an Amphitheater, Tourism on top of the adjacency."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 185,
+          "test": "Forbidden City finished, at least two keystones finished since Castles, and Tourism per turn ahead of every rival?",
+          "pass": "Continue; finish keystones in order of districts touched as Production allows.",
+          "fail": "If Tourism trails a rival, audit the Theater Squares: any that touch no wonder get one parked beside them before anything else is built."
+        },
+        {
+          "turn": 215,
+          "test": "Every Renaissance wonder parked or finished, stored Production under ten turns in every host city, and your Visitors above half the civilizations' domestic tourists?",
+          "pass": "Enter the Tourism phase; the finish rule changes now.",
+          "fail": "Behind in Visitors but ahead in Science: switch the verdict to Science at this checkpoint, keep the Hansas and Campuses, and finish only Oxford University and Ruhr Valley from here."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "hold-era-reread",
+          "turn": 160,
+          "text": "Era re-read: list every parked wonder with how long each rival has had its unlock; anything a rival has had for twenty turns is finished or written off now."
+        },
+        {
+          "id": "hold-forbidden-city",
+          "turn": 175,
+          "text": "Forbidden City finished in the capital; Gothic Architecture and Aesthetics both slotted."
+        },
+        {
+          "id": "hold-art-museums",
+          "turn": 185,
+          "text": "Art Museums in two Theater Squares; Frescoes in when no keystone is amber."
+        },
+        {
+          "id": "hold-alliance",
+          "turn": 195,
+          "text": "Alliance formed with the friendliest Culture neighbour for Diplomatic Service and later Chemistry; the first Spy goes on Listening Post in the leading wonder builder's capital."
+        },
+        {
+          "id": "hold-finish-order",
+          "turn": 205,
+          "text": "Rank parked wonders by districts touched; the top one is finished whenever its host city can do it in ten turns."
+        }
+      ]
+    },
+    {
+      "id": "tourism",
+      "name": "Culture into Tourism",
+      "turns": {
+        "from": 216,
+        "to": null
+      },
+      "era": "industrial",
+      "objective": "Era role: Culture converting to Tourism, then the victory position. Switch from parking to finishing as Factory and Ruhr Valley Production make most wonders ten-turn builds and every rival has the unlocks, add Bolshoi Theatre, Hermitage, Eiffel Tower and Broadway beside the Theater Squares and City Centers, and close with themed museums, Heritage Tourism and Rock Bands.",
+      "build_order": [
+        {
+          "item": "Factory",
+          "why": "In each Hansa; the Production that ends the stall era and Ruhr Valley's prerequisite."
+        },
+        {
+          "item": "Ruhr Valley",
+          "why": "Finished along a river beside the capital Hansa with its Factory: more Production for every wonder after it, and the Flight Eureka."
+        },
+        {
+          "item": "Archaeological Museum",
+          "why": "Natural History's Inspiration and Artifacts for Combustion; a third Great Work type to theme."
+        },
+        {
+          "item": "Bolshoi Theatre",
+          "why": "Finished on the flat tile beside a Theater Square; Great Work slots, and the Theater Square's own wonder adjacency."
+        },
+        {
+          "item": "Eiffel Tower",
+          "why": "Finished beside the City Center: Appeal across the empire for Neighborhoods, Seaside Resorts and National Parks."
+        },
+        {
+          "item": "Broadcast Center",
+          "why": "Two for Satellites; Great Musicians and their works."
+        },
+        {
+          "item": "Rock Band",
+          "why": "Bought with the Holy Site's Faith and sent to the civilizations with the most domestic Culture."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:industrialization",
+          "note": "Workshops in two Hansas give the Eureka; Factories and Ruhr Valley."
+        },
+        {
+          "id": "tech:scientific-theory",
+          "note": "Free from The Enlightenment; Oxford University for the Science fallback."
+        },
+        {
+          "id": "tech:sanitation",
+          "note": "Two Neighborhoods beside wonders; districts the wonders count too."
+        },
+        {
+          "id": "tech:flight",
+          "note": "Free from Ruhr Valley, Bolshoi Theatre or Hermitage; Tourism from Appeal."
+        },
+        {
+          "id": "tech:chemistry",
+          "note": "Alliance level two with the Diplomatic Service ally."
+        },
+        {
+          "id": "tech:combustion",
+          "note": "The first Artifact from the Archaeologist."
+        },
+        {
+          "id": "tech:steel",
+          "note": "Usually unboosted; the Eiffel Tower is the reason to reach it."
+        },
+        {
+          "id": "tech:radio",
+          "note": "Usually unboosted; National Parks only if Faith is spare after Rock Bands."
+        },
+        {
+          "id": "tech:computers",
+          "note": "Democracy gives the Eureka; more Tourism from every source."
+        },
+        {
+          "id": "tech:satellites",
+          "note": "Two Broadcast Centers in Theater Squares beside wonders."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:opera-and-ballet",
+          "note": "The first Art Museum gave the Inspiration; Grand Opera and Bolshoi Theatre."
+        },
+        {
+          "id": "civic:natural-history",
+          "note": "An Archaeological Museum gives the Inspiration; Hermitage and Archaeologists."
+        },
+        {
+          "id": "civic:colonialism",
+          "note": "Astronomy gave the Inspiration."
+        },
+        {
+          "id": "civic:civil-engineering",
+          "note": "Seven specialty district types; Skyscrapers for the last wonders."
+        },
+        {
+          "id": "civic:urbanization",
+          "note": "The capital at fifteen; Neighborhoods beside wonder gaps."
+        },
+        {
+          "id": "civic:mass-media",
+          "note": "Researching Radio gives the Inspiration; Broadway unlocks."
+        },
+        {
+          "id": "civic:suffrage",
+          "note": "Democracy; four Sewers is a detour, so usually unboosted."
+        },
+        {
+          "id": "civic:cultural-heritage",
+          "note": "One themed museum gives the Inspiration; Heritage Tourism."
+        },
+        {
+          "id": "civic:professional-sports",
+          "note": "Two Entertainment Complexes; Estádio do Maracanã if a Stadium stands."
+        },
+        {
+          "id": "civic:distributed-sovereignty",
+          "note": "The first Rock Band gives the Inspiration."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Skyscrapers",
+          "slot": "economic",
+          "from": "civic:civil-engineering",
+          "why": "Production toward Industrial and later wonders; the finishing card for the last era of the stall list."
+        },
+        {
+          "card": "Grand Opera",
+          "slot": "economic",
+          "from": "civic:opera-and-ballet",
+          "why": "Culture from Theater Square buildings, which every core city has."
+        },
+        {
+          "card": "Heritage Tourism",
+          "slot": "economic",
+          "from": "civic:cultural-heritage",
+          "why": "Tourism from Great Works in an empire that has been filling slots since Castles."
+        },
+        {
+          "card": "Democracy",
+          "slot": "wildcard",
+          "from": "civic:suffrage",
+          "why": "The Tier 3 government for a peaceful Culture civilization; Computers' Eureka and cheaper Gold patronage of Great Engineers."
+        }
+      ],
+      "districts": [
+        {
+          "district": "neighborhood",
+          "city": "capital and the two largest cities",
+          "note": "Beside wonders where a gap is left; Sanitation at two."
+        },
+        {
+          "district": "theater-square",
+          "city": "any city without one",
+          "note": "Beside a finished wonder; Broadcast Centers for the Musicians."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Ruhr Valley",
+          "why": "Finish list. Production for every wonder finished after it; it sits beside the Hansa, which already counts for Swan King.",
+          "skip_if": "No river tile beside a Hansa with a Factory."
+        },
+        {
+          "name": "Bolshoi Theatre",
+          "why": "Finish list. Beside a Theater Square by rule, so the Theater Square gains a wonder neighbour and the wonder a district.",
+          "skip_if": "No flat tile beside a Theater Square is free and Broadway is closer than ten turns."
+        },
+        {
+          "name": "Hermitage",
+          "why": "Finish list. Art slots and Great Artist points on a river tile between districts.",
+          "skip_if": "No river tile in a core city touches two districts, or a Culture rival is already building it by Gossip."
+        },
+        {
+          "name": "Eiffel Tower",
+          "why": "Finish list. Appeal across the empire beside the City Center; Neighborhoods and Seaside Resorts gain from it.",
+          "skip_if": "Steel arrives after turn 270, or France is ahead in Science."
+        },
+        {
+          "name": "Broadway",
+          "why": "Finish list. A second wonder beside a Theater Square for Great Work slots and adjacency.",
+          "skip_if": "Mass Media lands after turn 280 or no flat tile beside a Theater Square remains."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Curator",
+          "city": "capital",
+          "why": "Doubles Tourism from the Great Works the capital museums hold."
+        },
+        {
+          "governor": "magnus",
+          "promotion": "Vertical Integration",
+          "city": "the Ruhr Valley city",
+          "why": "Regional Production from more than one Hansa, for the last finishes."
+        }
+      ],
+      "city_states": [
+        {
+          "type": "Cultural",
+          "why": "Culture in every museum at six envoys, and Diplomatic Favor from each suzerainty to spend in the Congress."
+        },
+        {
+          "slug": "kumasi",
+          "why": "Routes to city-states still pay Culture per specialty district; four routes from the biggest clusters."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-artist",
+          "why": "Themed Art Museums and the Hermitage; Heritage Tourism doubles their value."
+        },
+        {
+          "class": "great-musician",
+          "why": "Broadcast Centers hold their works; each is Tourism no rival matches."
+        },
+        {
+          "class": "great-engineer",
+          "why": "Industrial and Modern Engineers finish the last parked keystones."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 260,
+          "test": "Ruhr Valley and Bolshoi Theatre finished, every keystone finished, Tourism per turn higher than every rival, and your Visitors above every civilization's domestic tourists but two?",
+          "pass": "Continue; Rock Bands and themed museums finish it.",
+          "fail": "If two or more rivals stay ahead, buy Rock Bands with every point of Faith, send Trade Routes to the leaders for Tourism, and stop finishing wonders that touch fewer than three districts."
+        },
+        {
+          "turn": 300,
+          "test": "Culture victory won or projected within twenty turns?",
+          "pass": "No further decisions; keep the Tourism sources running.",
+          "fail": "Convert to Score: stop buying Rock Bands, finish every parked wonder for the points, and spend Gold on buildings."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "tourism-finish-season",
+          "turn": 220,
+          "text": "Industrial re-read: the finish rule changes. Every parked wonder is now finished in order of districts touched, because rivals all have the unlocks and the Hansas make each a ten-turn build."
+        },
+        {
+          "id": "tourism-ruhr",
+          "turn": 235,
+          "text": "Ruhr Valley finished beside the capital Hansa; Flight Eureka collected."
+        },
+        {
+          "id": "tourism-bolshoi",
+          "turn": 245,
+          "text": "Bolshoi Theatre finished beside the best Theater Square; check its adjacency rose by the wonder."
+        },
+        {
+          "id": "tourism-eiffel",
+          "turn": 265,
+          "text": "Eiffel Tower finished beside the City Center; plan Neighborhoods on the tiles it lifts."
+        },
+        {
+          "id": "tourism-rock-bands",
+          "turn": 280,
+          "text": "First two Rock Bands bought and sent to the two civilizations with the highest domestic tourists."
+        },
+        {
+          "id": "tourism-review",
+          "turn": 300,
+          "text": "Review the turn 300 checkpoint; win, or declare a Score game and finish the stall list for points."
+        }
+      ]
+    }
+  ],
+  "boosts": [
+    {
+      "id": "tech:writing",
+      "fit": "free",
+      "when": "setup",
+      "how": "The Scout meets the first neighbour; the Delegation follows."
+    },
+    {
+      "id": "tech:astrology",
+      "fit": "cheap",
+      "when": "setup",
+      "how": "The Scout finds a natural wonder; Chocolate Hills or Ik-Kil is worth the walk."
+    },
+    {
+      "id": "tech:irrigation",
+      "fit": "cheap",
+      "when": "setup",
+      "how": "The first Builder Farms a Wheat or Rice before anything else."
+    },
+    {
+      "id": "tech:archery",
+      "fit": "cheap",
+      "when": "setup",
+      "how": "The Slinger finishes a barbarian at the camp the stance clears."
+    },
+    {
+      "id": "tech:bronze-working",
+      "fit": "cheap",
+      "when": "setup",
+      "how": "Three barbarian kills at that camp with the Slinger and a Warrior."
+    },
+    {
+      "id": "tech:masonry",
+      "fit": "costly",
+      "when": "setup",
+      "how": "Only with Stone or Marble in range; otherwise researched unboosted for Ancient Walls."
+    },
+    {
+      "id": "tech:wheel",
+      "fit": "cheap",
+      "when": "setup",
+      "how": "A Mine on a resource hill, which a plains-hills capital has."
+    },
+    {
+      "id": "tech:sailing",
+      "fit": "cheap",
+      "when": "lay",
+      "how": "The second or third city on the coast, where the water wonders will park."
+    },
+    {
+      "id": "tech:currency",
+      "fit": "free",
+      "when": "lay",
+      "how": "The first Trader's route."
+    },
+    {
+      "id": "tech:mathematics",
+      "fit": "free",
+      "when": "lay",
+      "how": "Campus, Commercial Hub and Theater Square; Free Imperial Cities makes three districts early."
+    },
+    {
+      "id": "tech:construction",
+      "fit": "cheap",
+      "when": "lay",
+      "how": "A Water Mill in the river city."
+    },
+    {
+      "id": "tech:engineering",
+      "fit": "cheap",
+      "when": "lay",
+      "how": "Ancient Walls in the capital, which the barbarian stance builds anyway."
+    },
+    {
+      "id": "tech:celestial-navigation",
+      "fit": "cheap",
+      "when": "lay",
+      "how": "Two Fishing Boats in the coastal city whose Harbor anchors the water wonders."
+    },
+    {
+      "id": "tech:shipbuilding",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:buttress",
+      "fit": "free",
+      "when": "castles",
+      "how": "Owning Apadana, a Classical wonder, is the Eureka."
+    },
+    {
+      "id": "tech:apprenticeship",
+      "fit": "cheap",
+      "when": "castles",
+      "how": "Three Mines on the capital's plains hills."
+    },
+    {
+      "id": "tech:stirrups",
+      "fit": "free",
+      "when": "castles",
+      "how": "Feudalism is on the civic path."
+    },
+    {
+      "id": "tech:military-engineering",
+      "fit": "cheap",
+      "when": "castles",
+      "how": "The capital Aqueduct, which Angkor Wat parks beside."
+    },
+    {
+      "id": "tech:castles",
+      "fit": "free",
+      "when": "castles",
+      "how": "Monarchy adopted the turn Divine Right completes."
+    },
+    {
+      "id": "tech:education",
+      "fit": "costly",
+      "when": "castles",
+      "how": "A Great Scientist from Campus points alone; usually researched unboosted."
+    },
+    {
+      "id": "tech:printing",
+      "fit": "cheap",
+      "when": "hold",
+      "how": "Universities in the capital and second-city Campuses."
+    },
+    {
+      "id": "tech:banking",
+      "fit": "free",
+      "when": "hold",
+      "how": "Guilds is on the civic path."
+    },
+    {
+      "id": "tech:astronomy",
+      "fit": "cheap",
+      "when": "hold",
+      "how": "A University in the Campus placed beside a mountain in setup."
+    },
+    {
+      "id": "tech:mass-production",
+      "fit": "cheap",
+      "when": "hold",
+      "how": "One Lumber Mill on Woods the chops spared."
+    },
+    {
+      "id": "tech:cartography",
+      "fit": "costly",
+      "when": "hold",
+      "how": "Two Harbors only if a second coastal city exists."
+    },
+    {
+      "id": "tech:industrialization",
+      "fit": "free",
+      "when": "tourism",
+      "how": "Workshops in two Hansas are already built in the Castles phase."
+    },
+    {
+      "id": "tech:scientific-theory",
+      "fit": "free",
+      "when": "tourism",
+      "how": "The Enlightenment is on the civic path."
+    },
+    {
+      "id": "tech:sanitation",
+      "fit": "cheap",
+      "when": "tourism",
+      "how": "Two Neighborhoods beside wonder gaps in the largest cities."
+    },
+    {
+      "id": "tech:flight",
+      "fit": "free",
+      "when": "tourism",
+      "how": "Ruhr Valley, Bolshoi Theatre or Hermitage finished is an Industrial wonder."
+    },
+    {
+      "id": "tech:steel",
+      "fit": "costly",
+      "when": "tourism",
+      "how": "An Ironclad and a Coal Mine; worth it only for the Eiffel Tower."
+    },
+    {
+      "id": "tech:chemistry",
+      "fit": "cheap",
+      "when": "tourism",
+      "how": "Alliance level two with the Diplomatic Service ally."
+    },
+    {
+      "id": "tech:combustion",
+      "fit": "cheap",
+      "when": "tourism",
+      "how": "The first Artifact from the Archaeological Museum's Archaeologist."
+    },
+    {
+      "id": "tech:radio",
+      "fit": "costly",
+      "when": "tourism",
+      "how": "A National Park needs a Naturalist bought with Faith the Rock Bands want."
+    },
+    {
+      "id": "tech:computers",
+      "fit": "free",
+      "when": "tourism",
+      "how": "Democracy is the Tier 3 government."
+    },
+    {
+      "id": "tech:satellites",
+      "fit": "cheap",
+      "when": "tourism",
+      "how": "Two Broadcast Centers in Theater Squares beside wonders."
+    },
+    {
+      "id": "civic:craftsmanship",
+      "fit": "free",
+      "when": "setup",
+      "how": "Three tiles improved by the first Builder."
+    },
+    {
+      "id": "civic:military-tradition",
+      "fit": "cheap",
+      "when": "setup",
+      "how": "Clearing the nearest camp, which the barbarian stance does anyway."
+    },
+    {
+      "id": "civic:mysticism",
+      "fit": "free",
+      "when": "setup",
+      "how": "Founding Monument to the Gods."
+    },
+    {
+      "id": "civic:foreign-trade",
+      "fit": "cheap",
+      "when": "setup",
+      "how": "The Scout walks onto a second named continent; on Pangaea that is a long walk, not a voyage."
+    },
+    {
+      "id": "civic:state-workforce",
+      "fit": "free",
+      "when": "setup",
+      "how": "The capital Campus is the first district."
+    },
+    {
+      "id": "civic:early-empire",
+      "fit": "free",
+      "when": "lay",
+      "how": "Six population across the first three cities."
+    },
+    {
+      "id": "civic:political-philosophy",
+      "fit": "cheap",
+      "when": "lay",
+      "how": "Three city-states met by the Scout; Brussels first if it is one."
+    },
+    {
+      "id": "civic:games-and-recreation",
+      "fit": "free",
+      "when": "lay",
+      "how": "Researching Construction."
+    },
+    {
+      "id": "civic:drama-and-poetry",
+      "fit": "cheap",
+      "when": "lay",
+      "how": "Finish Apadana before researching it."
+    },
+    {
+      "id": "civic:recorded-history",
+      "fit": "cheap",
+      "when": "lay",
+      "how": "Campuses in the capital and the second city."
+    },
+    {
+      "id": "civic:theology",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:feudalism",
+      "fit": "cheap",
+      "when": "castles",
+      "how": "Six Farms across five cities."
+    },
+    {
+      "id": "civic:civil-service",
+      "fit": "cheap",
+      "when": "castles",
+      "how": "The capital at ten population with its Aqueduct."
+    },
+    {
+      "id": "civic:divine-right",
+      "fit": "costly",
+      "when": "castles",
+      "how": "Two Temples need a second Holy Site this plan does not build; take it only if one already exists."
+    },
+    {
+      "id": "civic:guilds",
+      "fit": "cheap",
+      "when": "castles",
+      "how": "Markets in the two Commercial Hubs."
+    },
+    {
+      "id": "civic:medieval-faires",
+      "fit": "cheap",
+      "when": "castles",
+      "how": "Four Trade Routes, two of them to Kumasi and Brussels."
+    },
+    {
+      "id": "civic:humanism",
+      "fit": "costly",
+      "when": "hold",
+      "how": "A Great Artist before Art Museums exist is rare; usually researched unboosted."
+    },
+    {
+      "id": "civic:diplomatic-service",
+      "fit": "cheap",
+      "when": "hold",
+      "how": "An alliance with the friendliest Culture neighbour."
+    },
+    {
+      "id": "civic:the-enlightenment",
+      "fit": "free",
+      "when": "hold",
+      "how": "Writers and Engineers have made three Great People by the Renaissance."
+    },
+    {
+      "id": "civic:colonialism",
+      "fit": "free",
+      "when": "hold",
+      "how": "Researching Astronomy for Potala Palace."
+    },
+    {
+      "id": "civic:opera-and-ballet",
+      "fit": "free",
+      "when": "hold",
+      "how": "The first Art Museum, built in the hold phase."
+    },
+    {
+      "id": "civic:natural-history",
+      "fit": "cheap",
+      "when": "tourism",
+      "how": "An Archaeological Museum in a Theater Square."
+    },
+    {
+      "id": "civic:civil-engineering",
+      "fit": "cheap",
+      "when": "tourism",
+      "how": "Campus, Theater Square, Commercial Hub, Hansa, Entertainment Complex, Holy Site and Harbor."
+    },
+    {
+      "id": "civic:urbanization",
+      "fit": "cheap",
+      "when": "tourism",
+      "how": "The capital at fifteen with Aqueduct, Neighborhood and Entertainment Complex."
+    },
+    {
+      "id": "civic:mass-media",
+      "fit": "free",
+      "when": "tourism",
+      "how": "Researching Radio before the civic."
+    },
+    {
+      "id": "civic:suffrage",
+      "fit": "costly",
+      "when": "tourism",
+      "how": "Four Sewers; usually researched unboosted for Democracy."
+    },
+    {
+      "id": "civic:cultural-heritage",
+      "fit": "cheap",
+      "when": "tourism",
+      "how": "One Art Museum themed with three works of one era."
+    },
+    {
+      "id": "civic:professional-sports",
+      "fit": "cheap",
+      "when": "tourism",
+      "how": "Entertainment Complexes in the capital and second city."
+    },
+    {
+      "id": "civic:distributed-sovereignty",
+      "fit": "cheap",
+      "when": "tourism",
+      "how": "The first Rock Band bought with the Holy Site's Faith."
+    }
+  ],
+  "decision_triggers": [
+    {
+      "name": "Finish the keystone",
+      "if": "A parked wonder touching three or more districts, or a Theater Square, goes amber and its host city can finish it inside ten turns with every tool on hand.",
+      "then": "Finish it now: slot the era's wonder card (Corvée, Gothic Architecture or Skyscrapers), chop two Woods under Magnus, and activate a held Great Engineer last. In the capital Apadana adds two envoys for the finish; send them to Brussels."
+    },
+    {
+      "name": "Let it go",
+      "if": "Gossip shows a rival has been building a parked wonder for eight turns or more and you are more than five turns from finishing it.",
+      "then": "Put no more Production into it. Name its backup wonder, place the backup the turn the site is deleted, and check every district that touched it still touches a wonder."
+    },
+    {
+      "name": "Finish season",
+      "if": "The Industrial era has begun, or every met rival has a parked wonder's unlock, or the host city could finish it in eight turns or fewer.",
+      "then": "Stop holding it. A finished wonder keeps Swan King, adds its own effect and Tourism, and cannot be deleted; late in the game rivals have every unlock and the Hansas make finishing cheap, so parked wonders are finished in order of districts touched."
+    },
+    {
+      "name": "Wonder rival on the map",
+      "if": "Qin Shi Huang, an AI Ludwig, or any civilization that has finished two Ancient wonders by turn 50 is met.",
+      "then": "Park nothing Ancient or Classical except the Great Library beside the capital Campus. Finish Apadana with every tool, and save parking for the Medieval era, when Gothic Architecture and the Hansas can finish a threatened keystone in time."
+    },
+    {
+      "name": "Science over Culture",
+      "if": "At turn 215 Visitors trail two or more civilizations' domestic tourists but Science per turn leads them all.",
+      "then": "Switch the verdict to Science: finish Oxford University and Ruhr Valley, build the Spaceport beside the capital Hansa, and keep the parked sites only for their Culture."
+    }
+  ],
+  "abort": {
+    "trigger": "The watched stat has been red for fifteen turns: two or more keystones deleted by rivals in one era, Gossip showing rivals building every remaining parked wonder, and no host city able to finish one inside ten turns.",
+    "actions": [
+      "Stop parking. Finish only the finish-list wonders and put no more Production into the rest; what is stored there is already at risk.",
+      "Rebuild as a German district civilization around the Hansas and Campuses already standing, aiming at Science.",
+      "Keep every Theater Square and finished wonder: their Culture adjacency is still Tourism after Castles, with or without the parked sites."
+    ]
+  },
+  "fail_state": "The Renaissance ends with keystones deleted by rivals one by one, Production stored in half-built wonders nobody will finish, and districts placed around tiles that now hold nothing. Ludwig is then Germany without its Production lead: a Culture civilization whose Tourism engine pays on a handful of finished wonders, an era behind the Science leaders the Hansas were meant to match.",
+  "common_mistakes": [
+    "Believing completion ends the bonus. A finished wonder keeps Swan King's Culture and cannot be deleted; the risk is a rival finishing the parked one, not you finishing it.",
+    "Putting a second turn of Production into a wonder you do not mean to finish. Parking costs one turn; every turn after that is Production a rival can delete with one completion.",
+    "Parking a wonder that touches one district. It costs a tile for +2 Culture; wait until a second district can be placed beside it.",
+    "Reading Gossip only when a wonder-completed notice arrives. By then the site is gone; Open access with every civilization, from a Delegation and a Trade Route, is what makes amber visible.",
+    "Researching Drama and Poetry before Apadana is finished, which throws away the Inspiration the wonder was built for.",
+    "Delaying Castles. Every turn before it is Culture adjacency that is not yet Tourism, and Monarchy's Eureka makes it cheap."
+  ],
+  "sources": [
+    "Civilization VI Civilopedia, Gathering Storm ruleset and the Great Builders pack (Germany, Ludwig II, Swan King, Free Imperial Cities, Hansa, U-Boat).",
+    "Boost objectives from this repository's civ6/eurekas.json; Gossip access levels (Open reports a wonder started, Secret reports techs and civics completed) from community diplomacy guides, checked 2026-10-02.",
+    "Leadership Focus tags, caveats and Monitor supplement for Ludwig II in this repository. The caveats say completing a wonder ends the bonus; the civ-info text and the in-game ability pay on finished and unfinished wonders alike, so the plan follows the game and treats completion as the safe exit, and treats a rival's completion as the failure.",
+    "Aesthetics is placed at Medieval Faires and Gothic Architecture at Divine Right, as community policy lists give them; Democracy is placed at Suffrage."
+  ]
+}

@@ -1,0 +1,1633 @@
+{
+  "slug": "tokugawa",
+  "shape": "Linear",
+  "secondary_shape": null,
+  "version": 1,
+  "updated": "2026-10-02",
+  "assumptions": {
+    "ruleset": "Gathering Storm with every expansion and the Leader Pass",
+    "speed": "Standard",
+    "difficulty": "Emperor",
+    "map": "Continents or Small Continents, standard size, 8 civilizations",
+    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. Tokugawa has one persona and that is the one planned here; he is Japan's Leader Pass leader, not Hojo Tokimune, so Divine Wind's half-price districts do not apply. The plan counts only Bakuhan's domestic route bonus and its penalty on international routes; read the full Bakuhan text on the leader screen at turn 1 and treat any further clause as a bonus."
+  },
+  "verdict": {
+    "victory": "Science",
+    "secondary": "Culture",
+    "confidence": "medium",
+    "one_line": "Settle eight to ten cities in a tight coastal cluster, give each a Commercial Hub or Harbor so it adds a Trader, send the routes into a capital stacked with every district type, never trade abroad, and decide by turn 70 what the Culture, Science and Gold are for.",
+    "why": "Bakuhan pays Culture, Science and Gold on domestic routes for every specialty district at the destination, so the empire's income is the number of routes times the districts in the city they end in. Meiji Restoration makes that district stack the best-adjacency layout as well, and the Electronics Factory covers a tight cluster with Production and later Culture. None of this points at a victory by itself, and the price is the whole international trade game, which costs a Science victory nothing: a Spaceport needs no foreign route, no alliance and no Tourism. Culture is the second direction because the same yields buy civics just as well, but Bakuhan's penalty takes the Tourism a foreign route would carry, so that direction needs the map to hand over the Culture pieces first."
+  },
+  "map_check": {
+    "must_have": [
+      "Room for seven or eight cities within about ten tiles of the capital, since every city is a Trader and every route must be short and inside your own borders.",
+      "A coastal capital, or coast one move from the start; Harbors are half the cluster's Trade Route capacity and the capital wants both a Harbor and a Commercial Hub."
+    ],
+    "prefer": [
+      "Flat or gently hilled land around the capital, so a ring of seven or eight districts can touch the City Center and each other.",
+      "A river beside the capital for the Hanging Gardens and Commercial Hub adjacency.",
+      "The Great Barrier Reef in reach, so one Campus adds Reef adjacency to the district adjacency Meiji Restoration already gives.",
+      "The nearest rival on another continent or across a wide sea; isolation is cheap when nobody is close."
+    ],
+    "no_go": "A start boxed in by two rivals with room for three or four cities. Bakuhan multiplies routes by districts, and four cities is four routes into a hub that never fills; nothing in the kit buys land.",
+    "fallback": "Settle what there is as tightly as possible and run the boxed-in trigger: four Samurai with a Battering Ram take the nearest rival's two closest cities once Military Tactics lands, then make peace. If the neighbours are too strong for that, play the four cities for Science with every route into the capital and accept a slower game."
+  },
+  "kit_levers": [
+    {
+      "source": "leader_ability",
+      "name": "Bakuhan",
+      "buys": "Domestic Trade Routes gain +1 Culture, +1 Science and +1 Gold for every specialty district at the destination; international routes, city-state routes included, lose yields and the Tourism they would carry.",
+      "exploit": "The yield is routes times districts at the destination, so the plan makes the capital the destination for one route from every city and stacks every district type in it, including an Encampment and a Holy Site that would be wasted elsewhere; further Traders go to a second hub. Eight routes into a seven-district capital is fifty-six Culture, fifty-six Science and fifty-six Gold a turn before the second hub adds its share, and none of it needs a foreign city."
+    },
+    {
+      "source": "civ_ability",
+      "name": "Meiji Restoration",
+      "buys": "Every district gets a full +1 adjacency from each adjacent district instead of the half point other civilizations get.",
+      "exploit": "The capital's districts go in a ring touching the City Center and each other, so the stack Bakuhan wants is also the best-adjacency layout. In the small cities the second district touches the Commercial Hub or Harbor already there; it is never walked off to a distant Mountain."
+    },
+    {
+      "source": "unique_unit",
+      "name": "Samurai",
+      "buys": "A Medieval melee unit that fights at full Combat Strength however badly damaged it is.",
+      "exploit": "The isolation's army. Two to four Samurai on the coastal approaches hold the Trader roads and the capital against a landing without Walls in every city. On a boxed-in start the same four take a neighbour's two nearest cities before Medieval Walls and then go home."
+    },
+    {
+      "source": "unique_infrastructure",
+      "name": "Electronics Factory",
+      "buys": "A Factory whose Production reaches every city within six tiles and which adds Culture to each of them once Electricity is researched.",
+      "exploit": "A tight cluster puts every city inside one Electronics Factory's reach. Build it in the central Industrial Zone, research Electricity as soon as it is in reach, and the Culture it adds pays for the late civics on either direction."
+    },
+    {
+      "source": "agenda",
+      "name": "Sakoku",
+      "buys": "AI Tokugawa likes civilizations that avoid conquest and dislikes any leader who has captured a capital.",
+      "exploit": "Only matters when an AI plays Tokugawa. For your own play it is a reminder that the boxed-in war takes border cities, never a capital, so the peaceful neighbours this plan wants as friends and allies stay friendly."
+    }
+  ],
+  "shape_block": {
+    "linear": {
+      "direction": {
+        "options": [
+          {
+            "victory": "Science",
+            "when_it_fits": "The default. Take it when at turn 70 the cluster holds six or more cities, the capital can grow to nineteen population for a seventh district, and the World Rankings show no met civilization more than a few techs ahead. Isolation costs a Science victory nothing: Campuses ringed by districts, Universities bought with Bakuhan Gold, Rationalism and the Spaceport need no foreign route, alliance or Tourism."
+          },
+          {
+            "victory": "Culture",
+            "when_it_fits": "Take it only when the map has already handed over the pieces by turn 70: two Cultural city-states met, a Classical wonder in the capital, Breathtaking coast for Seaside Resorts, and no Culture-specialist rival among the met civilizations. Theater Squares ringed by districts and Electronics Factory Culture make the civic side easy, but Bakuhan's penalty removes trade-route Tourism, so the Tourism must come from Open Borders, Great Works, National Parks and Seaside Resorts."
+          }
+        ],
+        "choose_by": 70,
+        "commit_test": "At turn 100 check three things. The second district in every city outside the capital is the direction's (Campus for Science, Theater Square for Culture); the Economic and Wildcard slots hold the direction's cards (Natural Philosophy, later Rationalism, or Literary Tradition); and the Bakuhan Gold of the last twenty turns bought the direction's buildings (Libraries and Universities, or Amphitheaters). A mix of districts and a growing treasury means the bonus is being banked and the plan has failed its own test."
+      }
+    }
+  },
+  "phases": [
+    {
+      "id": "cluster",
+      "name": "Seat the cluster",
+      "turns": {
+        "from": 1,
+        "to": 40
+      },
+      "era": "ancient",
+      "objective": "Settle a coastal capital, found three more cities four tiles apart so every future route is short and inside your borders, take City Patron Goddess, place the capital's Campus, and finish Foreign Trade so the first Trader runs a domestic route into the capital by turn 40, while the Scout starts the information plan by meeting every civilization and city-state in reach.",
+      "build_order": [
+        {
+          "item": "Scout",
+          "why": "Meets the neighbours for Writing and three city-states for Political Philosophy; every civilization met now is one you can watch later."
+        },
+        {
+          "item": "Slinger",
+          "why": "Guards the capital while the Scout is away and clears the camp scouts that would later plunder Traders."
+        },
+        {
+          "item": "Settler",
+          "why": "Second city four tiles along the coast; the cluster is built tight so every route into the capital is short and safe."
+        },
+        {
+          "item": "Builder",
+          "why": "A Farm on Wheat or Rice for Irrigation, a Mine on a resource for The Wheel, and three improvements for Craftsmanship."
+        },
+        {
+          "item": "Settler",
+          "why": "Third city four tiles out, on the side away from the nearest rival."
+        },
+        {
+          "item": "Campus",
+          "why": "The capital's first district: City Patron Goddess makes it quick, it gives the State Workforce Inspiration, and both directions need the Science."
+        },
+        {
+          "item": "Monument",
+          "why": "Culture toward Foreign Trade and Early Empire; Japan has no early Culture of its own."
+        },
+        {
+          "item": "Trader",
+          "why": "Built in the second city the turn Foreign Trade lands and sent to the capital; Currency Eureka and a road."
+        },
+        {
+          "item": "Settler",
+          "why": "Fourth city under Colonization, still inside the cluster."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:pottery",
+          "note": "No Eureka; the prerequisite for Writing and Irrigation."
+        },
+        {
+          "id": "tech:sailing",
+          "note": "Free Eureka from the coastal capital; Harbors and Celestial Navigation."
+        },
+        {
+          "id": "tech:mining",
+          "note": "No Eureka; a Mine on a resource for The Wheel."
+        },
+        {
+          "id": "tech:writing",
+          "note": "Eureka from the first meeting; the capital Campus."
+        },
+        {
+          "id": "tech:bronze-working",
+          "note": "Three barbarian kills while clearing the camps within five tiles that would plunder Traders later."
+        },
+        {
+          "id": "tech:irrigation",
+          "note": "A Farm on Wheat or Rice; the capital is the hub and has to grow from turn one."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:code-of-laws",
+          "note": "No Inspiration; God King, Urban Planning and Discipline."
+        },
+        {
+          "id": "civic:craftsmanship",
+          "note": "Three improvements from the first Builder; Ilkum if Builders run short."
+        },
+        {
+          "id": "civic:foreign-trade",
+          "note": "The Trader and the first point of Trade Route capacity; take it straight after Code of Laws, Inspiration or not."
+        },
+        {
+          "id": "civic:early-empire",
+          "note": "Six population across the cities; Colonization for the third and fourth Settlers."
+        },
+        {
+          "id": "civic:state-workforce",
+          "note": "The capital's Campus gives the Inspiration."
+        },
+        {
+          "id": "civic:mysticism",
+          "note": "The pantheon gives the Inspiration; the Inspiration card for Great Scientist points."
+        }
+      ],
+      "policies": [
+        {
+          "card": "God King",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "Faith toward City Patron Goddess by turn 22; swapped for Urban Planning the turn after."
+        },
+        {
+          "card": "Urban Planning",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "+1 Production in every city while each one builds a Settler or its first district."
+        },
+        {
+          "card": "Discipline",
+          "slot": "military",
+          "from": "civic:code-of-laws",
+          "why": "The Slinger and Warrior beat the camp units near the cluster."
+        },
+        {
+          "card": "Colonization",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "Faster Settlers for cities three and four; it replaces Urban Planning until the fourth city is founded."
+        }
+      ],
+      "districts": [
+        {
+          "district": "campus",
+          "city": "capital",
+          "note": "Touching the City Center, with the tiles on either side kept free for the Commercial Hub and Harbor so the ring starts here."
+        }
+      ],
+      "pantheon": {
+        "slug": "city-patron-goddess",
+        "why": "+25% Production toward districts in cities that have none yet; every city's first district is a Campus, Commercial Hub or Harbor, and the last two are a Trader each.",
+        "alternative": "god-of-the-sea"
+      },
+      "wonders": [],
+      "governors": [],
+      "city_states": [
+        {
+          "type": "Trade",
+          "why": "The first envoy into a Trade city-state is Gold in the capital, and that Gold buys the first Builder or Trader."
+        },
+        {
+          "type": "Scientific",
+          "why": "Science in the capital from the first envoy; both directions need it."
+        }
+      ],
+      "great_people": [],
+      "checkpoints": [
+        {
+          "turn": 25,
+          "test": "Two cities four tiles apart on the coast, the pantheon taken, and at least two civilizations or city-states met?",
+          "pass": "Keep settling; Foreign Trade is the next civic.",
+          "fail": "A late second city means the Settler sat behind the Monument; move it ahead. Nobody met means the information plan has not started; send the Slinger the opposite way from the Scout."
+        },
+        {
+          "turn": 40,
+          "test": "Four cities, the first Trader on a domestic route into the capital, and the capital Campus built or under way?",
+          "pass": "Enter the routes phase.",
+          "fail": "Three cities is acceptable with the fourth Settler walking. No Trader means Foreign Trade was delayed for another civic; take it now and buy the Trader with Gold."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "cluster-settle-coast",
+          "turn": 1,
+          "text": "Settle the capital on the coast, moving at most one tile, where a ring of districts can touch the City Center."
+        },
+        {
+          "id": "cluster-read-bakuhan",
+          "turn": 1,
+          "text": "Read Bakuhan on the leader screen and note the exact international penalty; the plan relies on the domestic bonus only."
+        },
+        {
+          "id": "cluster-scout-meet",
+          "turn": 6,
+          "text": "Scout along the coast; record every civilization and city-state met, and send a Delegation to each civilization as soon as Gold allows."
+        },
+        {
+          "id": "cluster-pantheon",
+          "turn": 22,
+          "text": "Found City Patron Goddess, or God of the Sea if the capital has four or more sea resources."
+        },
+        {
+          "id": "cluster-first-route",
+          "turn": 35,
+          "text": "First Trader from the second city to the capital; never to a foreign city and never to a city-state."
+        },
+        {
+          "id": "cluster-fourth-city",
+          "turn": 40,
+          "text": "Fourth city founded four tiles out; mark the district ring around the capital before any Builder improves those tiles."
+        }
+      ]
+    },
+    {
+      "id": "routes",
+      "name": "Every city a Trader",
+      "turns": {
+        "from": 41,
+        "to": 95
+      },
+      "era": "classical",
+      "objective": "Grow the cluster to eight cities, give every one a Commercial Hub or Harbor so each adds a point of Trade Route capacity, run every route into the capital, adopt Classical Republic, write the direction down by turn 70, and have a Delegation with every civilization met so the isolation does not leave you blind.",
+      "build_order": [
+        {
+          "item": "Settler",
+          "why": "Cities five to eight inside the cluster; each is a Trader and a set of districts, which is exactly what Bakuhan multiplies."
+        },
+        {
+          "item": "Commercial Hub",
+          "why": "First district in every inland city and the second in the capital: a point of Trade Route capacity, and City Patron Goddess adds 25% Production toward it wherever it is the first district."
+        },
+        {
+          "item": "Harbor",
+          "why": "First district in every coastal city instead of the Commercial Hub: the same capacity plus Fishing Boat Food. The capital gets both because both count at the destination."
+        },
+        {
+          "item": "Trader",
+          "why": "One per point of capacity, built in a city other than the capital and sent to the capital."
+        },
+        {
+          "item": "Campus",
+          "why": "Second city's Campus for Recorded History; the capital's is already up."
+        },
+        {
+          "item": "Water Mill",
+          "why": "Construction Eureka in a river city and Production for its first district."
+        },
+        {
+          "item": "Ancient Walls",
+          "why": "On the coastal city that faces the sea lanes; a plundered Trader costs more than the Walls, and they give the Engineering Eureka."
+        },
+        {
+          "item": "Builder",
+          "why": "Fishing Boats and Farms; the capital must reach ten population for Civil Service and nineteen for its seventh district."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:currency",
+          "note": "Free Eureka from the first route; the Commercial Hub every inland city builds first."
+        },
+        {
+          "id": "tech:astrology",
+          "note": "The prerequisite for Celestial Navigation; the Scout's lap usually finds a natural wonder for the Eureka."
+        },
+        {
+          "id": "tech:celestial-navigation",
+          "note": "Two Fishing Boats give the Eureka; Harbors, each a point of capacity in a coastal city."
+        },
+        {
+          "id": "tech:wheel",
+          "note": "A Mine on a resource; Water Mills and the way to Engineering."
+        },
+        {
+          "id": "tech:masonry",
+          "note": "Ancient Walls for the exposed coastal city; a Quarry gives the Eureka only if Stone or Marble is in the cluster."
+        },
+        {
+          "id": "tech:mathematics",
+          "note": "Campus, Commercial Hub and Harbor are three specialty district types; the Eureka comes without trying."
+        },
+        {
+          "id": "tech:construction",
+          "note": "A Water Mill gives the Eureka; Games and Recreation follows from it."
+        },
+        {
+          "id": "tech:engineering",
+          "note": "Ancient Walls give the Eureka."
+        },
+        {
+          "id": "tech:shipbuilding",
+          "note": "The Colossus now and Cartography and Mass Production later; two Galleys for the Eureka are a real detour."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:military-tradition",
+          "note": "Clearing the nearest camp gives the Inspiration; on the way to Political Philosophy."
+        },
+        {
+          "id": "civic:political-philosophy",
+          "note": "Three city-states met; Classical Republic and Charismatic Leader."
+        },
+        {
+          "id": "civic:games-and-recreation",
+          "note": "Construction gives the Inspiration."
+        },
+        {
+          "id": "civic:recorded-history",
+          "note": "Two Campuses; Natural Philosophy for the Science direction."
+        },
+        {
+          "id": "civic:drama-and-poetry",
+          "note": "A wonder gives the Inspiration; Literary Tradition for the Culture direction."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Caravansaries",
+          "slot": "economic",
+          "from": "civic:foreign-trade",
+          "why": "+2 Gold on every route; it stays slotted until Triangular Trade replaces it."
+        },
+        {
+          "card": "Natural Philosophy",
+          "slot": "economic",
+          "from": "civic:recorded-history",
+          "why": "Science direction: Campus adjacency doubled, on top of the full point per neighbouring district that Meiji Restoration already gives."
+        },
+        {
+          "card": "Charismatic Leader",
+          "slot": "diplomatic",
+          "from": "civic:political-philosophy",
+          "why": "Influence for the envoys that make Muscat and Geneva yours."
+        },
+        {
+          "card": "Inspiration",
+          "slot": "wildcard",
+          "from": "civic:mysticism",
+          "why": "Great Scientist points while the first Campuses fill; the Education Eureka comes from them."
+        }
+      ],
+      "districts": [
+        {
+          "district": "commercial-hub",
+          "city": "every inland city, and the capital",
+          "note": "Touching the City Center so the second district can touch both; in the capital it sits beside the Campus."
+        },
+        {
+          "district": "harbor",
+          "city": "every coastal city, and the capital",
+          "note": "The coastal cities' point of capacity; in the capital it closes the first half of the ring."
+        },
+        {
+          "district": "campus",
+          "city": "the second city",
+          "note": "Recorded History needs two; it touches that city's Commercial Hub or Harbor."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Colossus",
+          "why": "+1 Trade Route capacity and a free Trader on the capital's coast; a route into the hub that costs no Production.",
+          "skip_if": "Shipbuilding cannot be reached by turn 80, the capital has no buildable Coast tile left after the Harbor, or a rival has already started it."
+        },
+        {
+          "name": "Hanging Gardens",
+          "why": "+15% growth in every city; the capital must reach nineteen population for a seventh district.",
+          "skip_if": "The capital is not beside a River, or a rival with Irrigation long before you has started it."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "magnus",
+          "promotion": "Provision",
+          "city": "capital",
+          "why": "Settlers five to eight without costing population in the city that has to grow fastest."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "muscat",
+          "why": "An Amenity in every city with a Commercial Hub, which is most of the cluster; eight cities stay content without luxuries."
+        },
+        {
+          "slug": "geneva",
+          "why": "+15% Science in every city while you are at war with nobody, which is how Tokugawa plays anyway."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-merchant",
+          "why": "Zhang Qian adds a point of Trade Route capacity; every early Great Merchant is another route into the hub."
+        },
+        {
+          "class": "great-scientist",
+          "why": "The Education Eureka; the capital Campus, ringed by districts, earns points quickly."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 70,
+          "test": "Direction written down with its preconditions met, six cities, three Traders all running into the capital, and a Delegation with every civilization met?",
+          "pass": "Second districts switch to the direction's: Campuses for Science, Theater Squares for Culture.",
+          "fail": "No direction at turn 70 is the shape's failure: take Science unless two Cultural city-states and a Classical wonder are already in hand. Fewer than three routes means Commercial Hubs were skipped for other districts; they go next in every city."
+        },
+        {
+          "turn": 95,
+          "test": "Eight cities, each with a Commercial Hub or Harbor, every point of capacity filled by a domestic route, Classical Republic adopted, and each route into the capital showing at least +3 Culture, +3 Science and +3 Gold from Bakuhan?",
+          "pass": "Enter the stack phase.",
+          "fail": "Fewer than three specialty districts in the capital means it is building something else; put it on districts only. Idle capacity is yield lost every turn; buy the missing Traders with Gold."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "routes-commercial-hubs",
+          "turn": 50,
+          "text": "Commercial Hub or Harbor queued as the first district in every city founded so far."
+        },
+        {
+          "id": "routes-delegations",
+          "turn": 55,
+          "text": "Delegation to every civilization met, and Open Borders with each one that will sign."
+        },
+        {
+          "id": "routes-government",
+          "turn": 65,
+          "text": "Adopt Classical Republic the turn Political Philosophy lands."
+        },
+        {
+          "id": "routes-direction",
+          "turn": 70,
+          "text": "Write the direction down: Science, or Culture if its preconditions are met. Every second district and every Gold purchase from here serves it."
+        },
+        {
+          "id": "routes-capacity-audit",
+          "turn": 85,
+          "text": "Count Traders against capacity in the Trade Routes panel; buy a Trader for every idle point."
+        },
+        {
+          "id": "routes-eighth-city",
+          "turn": 95,
+          "text": "Eighth city founded inside the cluster; settle beyond it only where the road to the capital is short."
+        }
+      ]
+    },
+    {
+      "id": "stack",
+      "name": "Stack the hub",
+      "turns": {
+        "from": 96,
+        "to": 165
+      },
+      "era": "medieval",
+      "objective": "Turn the capital into a stack of seven specialty districts so every route into it pays seven Culture, Science and Gold, adopt Merchant Republic for two more Traders, name a second hub for the capital's own Traders, hold the coast with Samurai, start the spy and Caravel side of the information plan, and pass the era checkpoint that asks whether Bakuhan's yield is being spent on the direction or banked.",
+      "build_order": [
+        {
+          "item": "Aqueduct",
+          "why": "In the capital: Housing past ten population toward the nineteen a seventh district needs, and the Military Engineering Eureka."
+        },
+        {
+          "item": "Encampment",
+          "why": "In the capital only: the cheapest specialty district, and every route ending there earns +1 Culture, Science and Gold from it. Military Training's Inspiration if that civic has waited for it."
+        },
+        {
+          "item": "Trader",
+          "why": "Two the turn Merchant Republic is adopted and one for every new Commercial Hub or Harbor; each city's first route goes to the capital, any further one to the second hub."
+        },
+        {
+          "item": "University",
+          "why": "Science direction: in every Campus, bought with Bakuhan Gold in the small cities; two give the Printing Eureka."
+        },
+        {
+          "item": "Amphitheater",
+          "why": "Culture direction: in every Theater Square, with Great Writers to fill the slots."
+        },
+        {
+          "item": "Market",
+          "why": "Two for Guilds, in the capital and the second hub."
+        },
+        {
+          "item": "Samurai",
+          "why": "Two to four on the coastal approaches to the capital; they fight at full strength when wounded. No war unless the boxed-in trigger has fired."
+        },
+        {
+          "item": "Caravel",
+          "why": "Two for the Exploration Inspiration; they circle the map and meet every civilization the cluster has not seen."
+        },
+        {
+          "item": "Industrial Zone",
+          "why": "In the city central to the cluster, touching three districts; the Electronics Factory goes here."
+        },
+        {
+          "item": "Holy Site",
+          "why": "In the capital: no religion is needed, the district is what every route counts."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:apprenticeship",
+          "note": "Three Mines give the Eureka; Industrial Zones."
+        },
+        {
+          "id": "tech:education",
+          "note": "A Great Scientist gives the Eureka; Universities."
+        },
+        {
+          "id": "tech:military-tactics",
+          "note": "The Samurai; research it unboosted, there is no Spearman war to win the Eureka."
+        },
+        {
+          "id": "tech:military-engineering",
+          "note": "The capital Aqueduct gives the Eureka."
+        },
+        {
+          "id": "tech:castles",
+          "note": "Hold it until Merchant Republic is adopted; a Tier 2 government gives the Eureka."
+        },
+        {
+          "id": "tech:cartography",
+          "note": "Two Harbors give the Eureka; Caravels for the information lap."
+        },
+        {
+          "id": "tech:mass-production",
+          "note": "A Lumber Mill gives the Eureka; Shipyards for Steam Power later."
+        },
+        {
+          "id": "tech:banking",
+          "note": "Guilds gives the Eureka; Banks and Great Zimbabwe."
+        },
+        {
+          "id": "tech:printing",
+          "note": "Two Universities on the Science direction."
+        },
+        {
+          "id": "tech:astronomy",
+          "note": "A University beside a Mountain only if one exists; Colonialism's Inspiration either way."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:military-training",
+          "note": "Delay it until the capital Encampment is built; the Inspiration then comes free."
+        },
+        {
+          "id": "civic:feudalism",
+          "note": "Six Farms; Serfdom and the Stirrups Eureka."
+        },
+        {
+          "id": "civic:civil-service",
+          "note": "The capital at ten population; Meritocracy."
+        },
+        {
+          "id": "civic:guilds",
+          "note": "Two Markets; the Banking Eureka."
+        },
+        {
+          "id": "civic:medieval-faires",
+          "note": "Four routes running at once, which the plan passes around turn 90."
+        },
+        {
+          "id": "civic:exploration",
+          "note": "Two Caravels; Merchant Republic and its extra Trade Route capacity."
+        },
+        {
+          "id": "civic:mercantilism",
+          "note": "A Great Merchant from the Commercial Hubs; Triangular Trade."
+        },
+        {
+          "id": "civic:diplomatic-service",
+          "note": "An alliance with a peaceful neighbour; the first Spy."
+        },
+        {
+          "id": "civic:humanism",
+          "note": "Culture direction: a Great Artist gives the Inspiration; unboosted on Science."
+        },
+        {
+          "id": "civic:the-enlightenment",
+          "note": "Three Great People; Rationalism and the Scientific Theory Eureka."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Meritocracy",
+          "slot": "economic",
+          "from": "civic:civil-service",
+          "why": "+1 Culture in each city for each specialty district; the cluster builds more districts than anyone."
+        },
+        {
+          "card": "Triangular Trade",
+          "slot": "economic",
+          "from": "civic:mercantilism",
+          "why": "+4 Gold and +1 Faith on every route, domestic ones included; it replaces Caravansaries."
+        },
+        {
+          "card": "Serfdom",
+          "slot": "economic",
+          "from": "civic:feudalism",
+          "why": "Builders with extra charges for the Farms, Mines and Lumber Mills eight cities need; slotted until Mercantilism."
+        },
+        {
+          "card": "Rationalism",
+          "slot": "economic",
+          "from": "civic:the-enlightenment",
+          "why": "Science direction: more Science from Campus buildings, which the ringed Campuses qualify for."
+        },
+        {
+          "card": "Literary Tradition",
+          "slot": "wildcard",
+          "from": "civic:drama-and-poetry",
+          "why": "Culture direction: Great Writer points to fill the Amphitheaters."
+        }
+      ],
+      "districts": [
+        {
+          "district": "aqueduct",
+          "city": "capital",
+          "note": "Beside the City Center and the river or coast; it is not a specialty district and costs a ring tile, so place it on the side facing water."
+        },
+        {
+          "district": "encampment",
+          "city": "capital",
+          "note": "Hub only. Anywhere else an Encampment is dead Production; in the hub it is +1 of three yields on every incoming route."
+        },
+        {
+          "district": "holy-site",
+          "city": "capital",
+          "note": "Same reasoning as the Encampment; the Faith is incidental."
+        },
+        {
+          "district": "industrial-zone",
+          "city": "the city central to the cluster",
+          "note": "Touching three districts for Meiji adjacency, placed so six tiles reach every city."
+        },
+        {
+          "district": "campus",
+          "city": "every city on the Science direction",
+          "note": "Touching the Commercial Hub or Harbor already there."
+        },
+        {
+          "district": "theater-square",
+          "city": "every city on the Culture direction, and the capital on either",
+          "note": "In the capital it is one more district counted by every route, whatever the direction."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Great Zimbabwe",
+          "why": "+1 Trade Route capacity from a Commercial Hub with a Market beside Cattle; another Trader into the hub.",
+          "skip_if": "No Cattle beside a Commercial Hub with a free tile, or Banking lands after turn 150."
+        },
+        {
+          "name": "Forbidden City",
+          "why": "An extra Wildcard slot: Natural Philosophy and Rationalism together on Science, or Literary Tradition beside Meritocracy on Culture.",
+          "skip_if": "Printing lands after turn 160, or the Wonders notification shows a rival already building it."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "magnus",
+          "promotion": "Surplus Logistics",
+          "city": "capital",
+          "why": "Faster growth in the hub that needs nineteen population, and +2 Food on every route ending there for the small origin cities."
+        },
+        {
+          "governor": "liang",
+          "promotion": "Zoning Commissioner",
+          "city": "the second hub",
+          "why": "Faster districts in the city that is the capital's own Traders' destination."
+        },
+        {
+          "governor": "pingala",
+          "promotion": "Researcher",
+          "city": "the best Campus city outside the capital",
+          "why": "Science per citizen; take Connoisseur instead on the Culture direction."
+        },
+        {
+          "governor": "amani",
+          "promotion": "Messenger",
+          "city": "Geneva or Muscat",
+          "why": "Counts as envoys and holds the suzerainty that a rival's envoys would otherwise take."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "nan-madol",
+          "why": "+2 Culture on every district on or beside the Coast; a coastal cluster's districts mostly are."
+        },
+        {
+          "slug": "bologna",
+          "why": "Every district with a building adds a Great Person point of its type, and this empire has more districts than anyone."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-merchant",
+          "why": "The Mercantilism Inspiration, and any Great Merchant whose ability adds Trade Route capacity is another route into the hub."
+        },
+        {
+          "class": "great-scientist",
+          "why": "Science direction: University and Campus boosts, and one of the three Great People for The Enlightenment."
+        },
+        {
+          "class": "great-writer",
+          "why": "Culture direction: the Amphitheaters' slots and the first Tourism."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 130,
+          "test": "Era checkpoint: is the bonus being spent? Five or more specialty districts in the capital, every route domestic and ending in a hub, the last three civics on the direction's path, and no city missing the direction's building while the treasury holds more than 500 Gold?",
+          "pass": "Continue to Merchant Republic and the second hub.",
+          "fail": "Spend the treasury today on Universities or Amphitheaters in the cities without one, re-pick the civic queue for the direction, and put a district at the top of the capital's queue before anything else it builds."
+        },
+        {
+          "turn": 165,
+          "test": "Seven specialty districts in the capital, ten or more domestic routes, Merchant Republic adopted, and a Spy on a Listening Post in the capital of the civilization leading the direction's race?",
+          "pass": "Enter the industry phase.",
+          "fail": "A short capital stack means it lacks population: Aqueduct, Hanging Gardens Food and Surplus Logistics first. No Spy means the information plan has lapsed; the next Spy goes to the leading rival before any other mission."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "stack-encampment",
+          "turn": 100,
+          "text": "Encampment placed in the capital; Military Training waits until it is down."
+        },
+        {
+          "id": "stack-samurai",
+          "turn": 115,
+          "text": "Two Samurai on the coastal approaches and Walls on the two cities facing the sea lanes."
+        },
+        {
+          "id": "stack-second-hub",
+          "turn": 120,
+          "text": "Name the second hub, the city with the most districts after the capital; the capital's own Traders go there."
+        },
+        {
+          "id": "stack-merchant-republic",
+          "turn": 125,
+          "text": "Adopt Merchant Republic as soon as Exploration lands and buy the extra Traders the same turn."
+        },
+        {
+          "id": "stack-caravel-lap",
+          "turn": 135,
+          "text": "Two Caravels circle the map; meet every civilization, send Delegations and then Embassies, and note who leads the Science and Culture rankings."
+        },
+        {
+          "id": "stack-spy",
+          "turn": 155,
+          "text": "First Spy on a Listening Post in the capital of the civilization leading the direction's race."
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "name": "Wire the cluster",
+      "turns": {
+        "from": 166,
+        "to": 235
+      },
+      "era": "industrial",
+      "objective": "Build the Electronics Factory in the central Industrial Zone so its Production and, after Electricity, its Culture reach every city, push the capital past eight specialty districts with an Entertainment Complex, convert the Bakuhan yields into the direction's buildings, and pass the era checkpoint asking whether the direction is still reachable on what the information plan shows.",
+      "build_order": [
+        {
+          "item": "Electronics Factory",
+          "why": "In the central Industrial Zone; one covers the cluster within six tiles, and a second goes at the far end only if a city sits outside that reach."
+        },
+        {
+          "item": "Coal Power Plant",
+          "why": "Power for the Electronics Factory and the cities around it."
+        },
+        {
+          "item": "Workshop",
+          "why": "Two for Industrialization, in the Industrial Zone cities."
+        },
+        {
+          "item": "Bank",
+          "why": "Two for Economics; the Commercial Hubs Bakuhan's Gold already funds."
+        },
+        {
+          "item": "Entertainment Complex",
+          "why": "In the capital: another district every route counts, and Amenities for a nineteen-population hub."
+        },
+        {
+          "item": "Neighborhood",
+          "why": "Two for Sanitation, in the capital and the second hub; Housing past the Aqueduct."
+        },
+        {
+          "item": "Shipyard",
+          "why": "Two in coastal cities with Harbors for Steam Power and Production."
+        },
+        {
+          "item": "Art Museum",
+          "why": "Culture direction: Great Works of Art from the Great Artists, and the Opera and Ballet Inspiration."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:industrialization",
+          "note": "Two Workshops give the Eureka; Factories and the Electronics Factory."
+        },
+        {
+          "id": "tech:scientific-theory",
+          "note": "The Enlightenment gives the Eureka; Oxford University."
+        },
+        {
+          "id": "tech:economics",
+          "note": "Two Banks give the Eureka; Stock Exchanges later."
+        },
+        {
+          "id": "tech:sanitation",
+          "note": "Two Neighborhoods; Housing for the hub."
+        },
+        {
+          "id": "tech:steam-power",
+          "note": "Two Shipyards give the Eureka."
+        },
+        {
+          "id": "tech:electricity",
+          "note": "Switches on the Electronics Factory's Culture; research it as soon as it is in reach, boosted or not."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:civil-engineering",
+          "note": "Seven district types in the capital alone; Public Works."
+        },
+        {
+          "id": "civic:colonialism",
+          "note": "Astronomy gives the Inspiration."
+        },
+        {
+          "id": "civic:urbanization",
+          "note": "The capital passes fifteen population; Neighborhoods."
+        },
+        {
+          "id": "civic:opera-and-ballet",
+          "note": "Culture direction: an Art Museum gives the Inspiration; Grand Opera."
+        },
+        {
+          "id": "civic:natural-history",
+          "note": "Culture direction: an Archaeological Museum gives the Inspiration; unboosted on Science."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Public Works",
+          "slot": "economic",
+          "from": "civic:civil-engineering",
+          "why": "Builders faster and with more charges for the Mines and Farms the Electronics Factory cities work."
+        },
+        {
+          "card": "Grand Opera",
+          "slot": "economic",
+          "from": "civic:opera-and-ballet",
+          "why": "Culture direction: more Culture from Theater Squares that already carry +1 per neighbouring district."
+        },
+        {
+          "card": "Triangular Trade",
+          "slot": "economic",
+          "from": "civic:mercantilism",
+          "why": "Still the best card for an empire of twelve domestic routes; it stays."
+        }
+      ],
+      "districts": [
+        {
+          "district": "entertainment-complex",
+          "city": "capital",
+          "note": "Touching the ring; the Arena's Amenities keep the hub growing."
+        },
+        {
+          "district": "neighborhood",
+          "city": "capital and the second hub",
+          "note": "Not a specialty district, so it goes on the low-Appeal tile outside the ring."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Oxford University",
+          "why": "Science direction: two free technologies and Science in the Campus city.",
+          "skip_if": "Scientific Theory lands after turn 200, or a Science civilization is shown building it."
+        },
+        {
+          "name": "Ruhr Valley",
+          "why": "Production in the Electronics Factory city, which then builds the Spaceport or the late Culture buildings.",
+          "skip_if": "No River tile touches the central Industrial Zone, or Industrialization lands after turn 210."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Grants",
+          "city": "the best Campus city outside the capital",
+          "why": "Great Person points from buildings doubled; Great Scientists for Science, and on Culture move Pingala to the Theater Square city."
+        },
+        {
+          "governor": "reyna",
+          "promotion": "Harbormaster",
+          "city": "the second hub",
+          "why": "Commercial Hub and Harbor adjacency doubled where Meiji Restoration already gives +1 per neighbouring district."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "mexico-city",
+          "why": "Regional effects reach three tiles farther; the Electronics Factory's Production and Culture then cover the whole cluster from one Industrial Zone."
+        },
+        {
+          "type": "Industrial",
+          "why": "+2 Production in every Factory at six envoys; the Electronics Factory counts."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-engineer",
+          "why": "Production toward the Electronics Factory and Ruhr Valley."
+        },
+        {
+          "class": "great-scientist",
+          "why": "Science direction: the late Eurekas and Research Lab Science."
+        },
+        {
+          "class": "great-artist",
+          "why": "Culture direction: the Art Museums' slots."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 200,
+          "test": "Era checkpoint: is the direction still reachable on what the Listening Post, the Embassies and the World Rankings show? Science: first or second in technologies and Universities in every Campus. Culture: Tourism rising against the top rival's domestic tourists.",
+          "pass": "Continue; the close is thirty-five turns away.",
+          "fail": "A direction out of reach is pivoted, not forced. A cluster with ringed districts can switch from Culture to Science and still finish; switch today and reserve the Spaceport site. Science behind by an era turns the Electronics Factory Culture toward the Culture direction instead."
+        },
+        {
+          "turn": 235,
+          "test": "Electronics Factory powered with its Culture switched on, eight or more specialty districts in the capital, and the Spaceport site reserved or three themed Great Work buildings under way?",
+          "pass": "Enter the close.",
+          "fail": "Neither direction ready means the game is a Score game; keep building Science and Culture in every city, which a district-dense cluster does well."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "industry-electronics-factory",
+          "turn": 185,
+          "text": "Electronics Factory built in the central Industrial Zone with a Coal Power Plant beside it."
+        },
+        {
+          "id": "industry-electricity",
+          "turn": 200,
+          "text": "Electricity researched; confirm the Electronics Factory's Culture reaches every city in the cluster."
+        },
+        {
+          "id": "industry-entertainment",
+          "turn": 210,
+          "text": "Entertainment Complex in the capital; count its specialty districts and every route's Bakuhan line."
+        },
+        {
+          "id": "industry-rankings",
+          "turn": 220,
+          "text": "Read the World Rankings, the Listening Post and every Embassy; write down who leads the direction's race."
+        }
+      ]
+    },
+    {
+      "id": "close",
+      "name": "Close",
+      "turns": {
+        "from": 236,
+        "to": null
+      },
+      "era": "modern",
+      "objective": "Finish the direction with the whole cluster's output: the Spaceport projects with Power and Great Scientists on Science, or Broadcast Centers, National Parks and Seaside Resorts carrying Tourism past every rival's domestic tourists on Culture, with every route still domestic.",
+      "build_order": [
+        {
+          "item": "Spaceport",
+          "why": "Science direction: in the Electronics Factory city; the projects start the turn it finishes."
+        },
+        {
+          "item": "Research Lab",
+          "why": "Science direction: in every University city; Bakuhan Gold buys them in the small cities."
+        },
+        {
+          "item": "Broadcast Center",
+          "why": "Culture direction: Great Work of Music slots and Tourism."
+        },
+        {
+          "item": "Stock Exchange",
+          "why": "Two for Capitalism; Gold to buy the last buildings."
+        },
+        {
+          "item": "Sewer",
+          "why": "Four for Suffrage; the hub keeps growing past its Neighborhoods."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:flight",
+          "note": "An Industrial-era wonder gives the Eureka."
+        },
+        {
+          "id": "tech:chemistry",
+          "note": "Alliance level 2 gives the Eureka; Research Labs."
+        },
+        {
+          "id": "tech:plastics",
+          "note": "An Oil Well gives the Eureka."
+        },
+        {
+          "id": "tech:rocketry",
+          "note": "No Eureka; the Spaceport."
+        },
+        {
+          "id": "tech:computers",
+          "note": "A Tier 3 government gives the Eureka."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:class-struggle",
+          "note": "Three Factories only if a third Industrial Zone is wanted; Five-Year Plan either way."
+        },
+        {
+          "id": "civic:ideology",
+          "note": "No Inspiration; the gate to Tier 3 governments."
+        },
+        {
+          "id": "civic:suffrage",
+          "note": "Four Sewers; Democracy for cheaper Great Person patronage with Bakuhan Gold."
+        },
+        {
+          "id": "civic:capitalism",
+          "note": "Two Stock Exchanges."
+        },
+        {
+          "id": "civic:space-race",
+          "note": "The Spaceport gives the Inspiration."
+        },
+        {
+          "id": "civic:cultural-heritage",
+          "note": "Culture direction: a themed building gives the Inspiration."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Five-Year Plan",
+          "slot": "economic",
+          "from": "civic:class-struggle",
+          "why": "Science direction: Campus and Industrial Zone adjacency doubled in a cluster where every one touches several districts."
+        },
+        {
+          "card": "Heritage Tourism",
+          "slot": "economic",
+          "from": "civic:cultural-heritage",
+          "why": "Culture direction: more Tourism from the Great Works in the themed Museums."
+        }
+      ],
+      "districts": [
+        {
+          "district": "spaceport",
+          "city": "the Electronics Factory city",
+          "note": "Science direction: on a flat tile inside the Electronics Factory's reach, with Power."
+        }
+      ],
+      "wonders": [],
+      "governors": [
+        {
+          "governor": "pingala",
+          "promotion": "Space Initiative",
+          "city": "the Spaceport city",
+          "why": "Production toward every space project."
+        }
+      ],
+      "city_states": [
+        {
+          "type": "Scientific",
+          "why": "Science direction: six envoys for Science in every University."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-scientist",
+          "why": "Science direction: the late Great Scientists are the boosts for the last space technologies."
+        },
+        {
+          "class": "great-engineer",
+          "why": "Project Production in the Spaceport city."
+        },
+        {
+          "class": "great-musician",
+          "why": "Culture direction: the Broadcast Centers' slots."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 280,
+          "test": "Science: the Moon Landing done and the Mars projects running? Culture: Tourism ahead of two rivals' domestic tourists and still climbing?",
+          "pass": "Continue to the end; every route stays domestic.",
+          "fail": "Convert to Score; a district-dense cluster scores well, and the plan stops paying for anything that does not add to it."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "close-spaceport",
+          "turn": 245,
+          "text": "Science direction: Spaceport finished with Power and the first project started."
+        },
+        {
+          "id": "close-tourism",
+          "turn": 250,
+          "text": "Culture direction: Broadcast Centers in three Theater Square cities and Seaside Resorts on every Breathtaking coast."
+        },
+        {
+          "id": "close-review",
+          "turn": 280,
+          "text": "Review the turn 280 checkpoint and either continue or declare the game a Score game."
+        }
+      ]
+    }
+  ],
+  "boosts": [
+    {
+      "id": "tech:sailing",
+      "fit": "free",
+      "when": "cluster",
+      "how": "The coastal capital triggers it on settling."
+    },
+    {
+      "id": "tech:writing",
+      "fit": "free",
+      "when": "cluster",
+      "how": "The Scout meets the first civilization along the coast."
+    },
+    {
+      "id": "tech:bronze-working",
+      "fit": "cheap",
+      "when": "cluster",
+      "how": "Three barbarian kills while clearing the camps within five tiles of the cluster."
+    },
+    {
+      "id": "tech:irrigation",
+      "fit": "cheap",
+      "when": "cluster",
+      "how": "The first Builder farms Wheat or Rice beside the capital."
+    },
+    {
+      "id": "tech:astrology",
+      "fit": "cheap",
+      "when": "cluster",
+      "how": "The Scout's coastal lap for the information plan usually finds a natural wonder."
+    },
+    {
+      "id": "tech:wheel",
+      "fit": "cheap",
+      "when": "cluster",
+      "how": "The first Builder mines a resource."
+    },
+    {
+      "id": "tech:currency",
+      "fit": "free",
+      "when": "cluster",
+      "how": "The first Trader's domestic route into the capital."
+    },
+    {
+      "id": "tech:masonry",
+      "fit": "costly",
+      "when": "routes",
+      "how": "A Quarry only if Stone or Marble is in the cluster; otherwise research it unboosted for Ancient Walls."
+    },
+    {
+      "id": "tech:celestial-navigation",
+      "fit": "cheap",
+      "when": "routes",
+      "how": "Two Fishing Boats from the coastal cities' Builders."
+    },
+    {
+      "id": "tech:mathematics",
+      "fit": "free",
+      "when": "routes",
+      "how": "Campus, Commercial Hub and Harbor are three specialty district types by turn 80."
+    },
+    {
+      "id": "tech:construction",
+      "fit": "cheap",
+      "when": "routes",
+      "how": "A Water Mill in a river city."
+    },
+    {
+      "id": "tech:engineering",
+      "fit": "cheap",
+      "when": "routes",
+      "how": "Ancient Walls on the coastal city facing the sea lanes."
+    },
+    {
+      "id": "tech:shipbuilding",
+      "fit": "costly",
+      "when": "routes",
+      "how": "Two Galleys, built only if the Colossus is wanted."
+    },
+    {
+      "id": "tech:apprenticeship",
+      "fit": "cheap",
+      "when": "stack",
+      "how": "Three Mines across the cluster's hills."
+    },
+    {
+      "id": "tech:education",
+      "fit": "cheap",
+      "when": "stack",
+      "how": "The first Great Scientist from the ringed capital Campus."
+    },
+    {
+      "id": "tech:military-tactics",
+      "fit": "costly",
+      "when": "stack",
+      "how": "A Spearman kill, which a peaceful cluster rarely gets; research it unboosted for the Samurai."
+    },
+    {
+      "id": "tech:military-engineering",
+      "fit": "free",
+      "when": "stack",
+      "how": "The capital's Aqueduct, which the hub needs for Housing anyway."
+    },
+    {
+      "id": "tech:castles",
+      "fit": "free",
+      "when": "stack",
+      "how": "Merchant Republic is a Tier 2 government; research Castles after adopting it."
+    },
+    {
+      "id": "tech:stirrups",
+      "fit": "free",
+      "when": "stack",
+      "how": "Feudalism is on the civic path."
+    },
+    {
+      "id": "tech:cartography",
+      "fit": "free",
+      "when": "stack",
+      "how": "The capital and the coastal cities have Harbors from the routes phase."
+    },
+    {
+      "id": "tech:mass-production",
+      "fit": "cheap",
+      "when": "stack",
+      "how": "One Lumber Mill on Woods inside the cluster."
+    },
+    {
+      "id": "tech:banking",
+      "fit": "free",
+      "when": "stack",
+      "how": "Guilds is on the civic path."
+    },
+    {
+      "id": "tech:printing",
+      "fit": "cheap",
+      "when": "stack",
+      "how": "Two Universities on the Science direction; a real detour on Culture."
+    },
+    {
+      "id": "tech:astronomy",
+      "fit": "costly",
+      "when": "stack",
+      "how": "A University beside a Mountain; Meiji Restoration places Campuses by districts, so only if one already touches a Mountain."
+    },
+    {
+      "id": "tech:industrialization",
+      "fit": "cheap",
+      "when": "industry",
+      "how": "Two Workshops, in the central Industrial Zone and a second one."
+    },
+    {
+      "id": "tech:scientific-theory",
+      "fit": "free",
+      "when": "industry",
+      "how": "The Enlightenment is on the civic path."
+    },
+    {
+      "id": "tech:economics",
+      "fit": "cheap",
+      "when": "industry",
+      "how": "Two Banks in the Commercial Hubs Bakuhan's Gold already pays for."
+    },
+    {
+      "id": "tech:sanitation",
+      "fit": "cheap",
+      "when": "industry",
+      "how": "Two Neighborhoods, in the capital and the second hub."
+    },
+    {
+      "id": "tech:steam-power",
+      "fit": "cheap",
+      "when": "industry",
+      "how": "Two Shipyards in coastal cities that already have Harbors."
+    },
+    {
+      "id": "tech:electricity",
+      "fit": "costly",
+      "when": "industry",
+      "how": "Two Privateers from coastal cities; worth it only if Electricity is still more than ten turns away."
+    },
+    {
+      "id": "tech:flight",
+      "fit": "cheap",
+      "when": "industry",
+      "how": "Oxford University or Ruhr Valley is an Industrial-era wonder."
+    },
+    {
+      "id": "tech:chemistry",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Alliance level 2 with the Diplomatic Service ally."
+    },
+    {
+      "id": "tech:plastics",
+      "fit": "cheap",
+      "when": "close",
+      "how": "An Oil Well on the first Oil inside the cluster."
+    },
+    {
+      "id": "tech:computers",
+      "fit": "free",
+      "when": "close",
+      "how": "Any Tier 3 government."
+    },
+    {
+      "id": "civic:craftsmanship",
+      "fit": "free",
+      "when": "cluster",
+      "how": "Three improvements from the first Builder."
+    },
+    {
+      "id": "civic:foreign-trade",
+      "fit": "costly",
+      "when": "cluster",
+      "how": "A second continent only if the Scout reaches one; take the civic unboosted, the Trader cannot wait."
+    },
+    {
+      "id": "civic:early-empire",
+      "fit": "free",
+      "when": "cluster",
+      "how": "Six population across the first cities."
+    },
+    {
+      "id": "civic:state-workforce",
+      "fit": "free",
+      "when": "cluster",
+      "how": "The capital's Campus, its first district."
+    },
+    {
+      "id": "civic:mysticism",
+      "fit": "free",
+      "when": "cluster",
+      "how": "Founding City Patron Goddess."
+    },
+    {
+      "id": "civic:military-tradition",
+      "fit": "free",
+      "when": "cluster",
+      "how": "Clearing the nearest barbarian outpost, which the cluster does anyway to protect its Traders."
+    },
+    {
+      "id": "civic:political-philosophy",
+      "fit": "cheap",
+      "when": "routes",
+      "how": "Three city-states met by the Scout and a Warrior sent the other way."
+    },
+    {
+      "id": "civic:games-and-recreation",
+      "fit": "free",
+      "when": "routes",
+      "how": "Researching Construction."
+    },
+    {
+      "id": "civic:recorded-history",
+      "fit": "cheap",
+      "when": "routes",
+      "how": "Two Campuses, the capital's and the second city's."
+    },
+    {
+      "id": "civic:drama-and-poetry",
+      "fit": "cheap",
+      "when": "routes",
+      "how": "The Colossus or Hanging Gardens; costly if both are skipped."
+    },
+    {
+      "id": "civic:military-training",
+      "fit": "cheap",
+      "when": "stack",
+      "how": "The capital's Encampment, built before the civic is researched."
+    },
+    {
+      "id": "civic:theology",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:feudalism",
+      "fit": "cheap",
+      "when": "stack",
+      "how": "Six Farms across eight cities."
+    },
+    {
+      "id": "civic:civil-service",
+      "fit": "free",
+      "when": "stack",
+      "how": "The capital reaches ten population with its Aqueduct."
+    },
+    {
+      "id": "civic:guilds",
+      "fit": "cheap",
+      "when": "stack",
+      "how": "Two Markets, in the capital and the second hub."
+    },
+    {
+      "id": "civic:medieval-faires",
+      "fit": "free",
+      "when": "stack",
+      "how": "Four domestic routes running at once, reached around turn 90."
+    },
+    {
+      "id": "civic:exploration",
+      "fit": "cheap",
+      "when": "stack",
+      "how": "Two Caravels that also make the information plan's lap of the map."
+    },
+    {
+      "id": "civic:mercantilism",
+      "fit": "cheap",
+      "when": "stack",
+      "how": "A Great Merchant from Commercial Hubs in most cities."
+    },
+    {
+      "id": "civic:diplomatic-service",
+      "fit": "cheap",
+      "when": "stack",
+      "how": "An alliance with a peaceful neighbour after a declared friendship."
+    },
+    {
+      "id": "civic:humanism",
+      "fit": "costly",
+      "when": "stack",
+      "how": "A Great Artist; one step on the Culture direction, unboosted on Science."
+    },
+    {
+      "id": "civic:the-enlightenment",
+      "fit": "cheap",
+      "when": "stack",
+      "how": "Three Great People: the Merchant, the Scientist and one more."
+    },
+    {
+      "id": "civic:civil-engineering",
+      "fit": "free",
+      "when": "industry",
+      "how": "The capital stack alone holds seven district types."
+    },
+    {
+      "id": "civic:colonialism",
+      "fit": "free",
+      "when": "industry",
+      "how": "Researching Astronomy."
+    },
+    {
+      "id": "civic:urbanization",
+      "fit": "free",
+      "when": "industry",
+      "how": "The capital passes fifteen population on its way to nineteen."
+    },
+    {
+      "id": "civic:opera-and-ballet",
+      "fit": "costly",
+      "when": "industry",
+      "how": "An Art Museum; only on the Culture direction."
+    },
+    {
+      "id": "civic:natural-history",
+      "fit": "costly",
+      "when": "industry",
+      "how": "An Archaeological Museum; only on the Culture direction."
+    },
+    {
+      "id": "civic:class-struggle",
+      "fit": "costly",
+      "when": "close",
+      "how": "Three Factories; the cluster needs one or two Electronics Factories, so the third is built only for this."
+    },
+    {
+      "id": "civic:suffrage",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Four Sewers in the four largest cities."
+    },
+    {
+      "id": "civic:capitalism",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Stock Exchanges paid for with Bakuhan Gold."
+    },
+    {
+      "id": "civic:space-race",
+      "fit": "cheap",
+      "when": "close",
+      "how": "The Spaceport on the Science direction."
+    },
+    {
+      "id": "civic:cultural-heritage",
+      "fit": "costly",
+      "when": "close",
+      "how": "A themed Museum; only on the Culture direction."
+    }
+  ],
+  "decision_triggers": [
+    {
+      "name": "A foreign route looks bigger",
+      "if": "A foreign city or a city-state such as Kumasi shows a larger number in a Trader's destination list than the capital, usually because the capital has fewer than four specialty districts.",
+      "then": "Send the Trader to the capital anyway and move the capital's next district to the top of its queue. Bakuhan's penalty applies to every international route, city-states included, and a route abroad gives up the per-district bonus for good; the fix is the destination's districts, never the border."
+    },
+    {
+      "name": "Boxed in",
+      "if": "At turn 70 the cluster has fewer than six city sites and a neighbour's cities sit within eight tiles of the capital.",
+      "then": "Keep the direction, but once Military Tactics lands take the neighbour's two nearest cities with four Samurai and a Battering Ram before it has Medieval Walls. Each becomes a trade origin and a set of districts; make peace the turn the second one falls and never take its capital."
+    },
+    {
+      "name": "Rival out of reach",
+      "if": "At an era checkpoint the Listening Post, the Embassies or the World Rankings show a rival a full era ahead on the direction's race.",
+      "then": "Pivot: from Science to Culture, Theater Squares become every city's next district and the Electronics Factory Culture goes to the Tourism civics; from Culture to Science, Campuses do. The flat curve makes the switch affordable; drifting between the two does not."
+    },
+    {
+      "name": "Trader in danger",
+      "if": "A barbarian camp appears within five tiles of a route, a Trader is plundered, or a rival fleet is sighted off the cluster's coast.",
+      "then": "Clear the camp or put two Samurai on the road before re-sending, and build Walls in the coastal city that is threatened. A route lost mid-way costs every turn it had left, not one turn."
+    },
+    {
+      "name": "Hub full",
+      "if": "The capital has as many specialty districts as its population allows and a district is waiting.",
+      "then": "Point the next Traders at the second hub, put Liang's Zoning Commissioner there, and grow the capital with a Neighborhood and Surplus Logistics before the next district."
+    }
+  ],
+  "abort": {
+    "trigger": "Turn 150 with no direction committed: second districts split between Campuses and Theater Squares, more than 1,000 Gold of Bakuhan income unspent, and the civic queue picked in tree order.",
+    "actions": [
+      "Pick the direction the cluster is already closest to; with a ringed Campus in the capital and isolation costing it nothing, that is almost always Science. Commit fully; Linear leaders lose by drifting, not by collapsing.",
+      "Spend the banked Gold today on the direction's buildings in every city that lacks them.",
+      "Re-pick the civic queue toward The Enlightenment and Class Struggle for Science, or Humanism and Opera and Ballet for Culture."
+    ]
+  },
+  "fail_state": "Turn 220 with ten tidy Japanese cities, a capital ringed with districts, every route domestic and the treasury full, and nothing pointing anywhere: Campuses in some cities and Theater Squares in others, no Spaceport site, no Tourism lead, and no idea how far ahead the rival on the other continent is because nobody sent a Delegation or a Spy. Bakuhan has paid for two hundred turns and bought a comfortable Score game.",
+  "common_mistakes": [
+    "Sending one Trader abroad because its number looks bigger. Bakuhan's penalty applies to every international and city-state route; a small domestic number means the capital needs districts, not that the route should leave.",
+    "Spreading districts to chase terrain adjacency. Meiji Restoration pays for touching districts; a Campus walked three tiles to a Mountain loses its neighbours and gains nothing.",
+    "Building Encampments and Holy Sites in every city. They pay through Bakuhan only at the destination; outside the capital they are dead Production.",
+    "Re-sending a finished Trader on its old route out of habit. Each time a route ends, send it to whichever hub has the most specialty districts now.",
+    "Skipping the information plan. Isolation hides rival progress; Delegations, Embassies, the Caravel lap and a Spy are the only way to know the direction is still reachable.",
+    "Settling a scattered empire. A city ten tiles from the capital is a long, plunderable route outside the Electronics Factory's reach; the cluster stays tight."
+  ],
+  "sources": [
+    "Civilization VI Civilopedia, Gathering Storm ruleset with the Leader Pass (Japan, Tokugawa, Bakuhan, Meiji Restoration, Samurai, Electronics Factory).",
+    "The civ-info text puts Amenities for cities near the capital and District Tourism after Flight under Meiji Restoration. In Gathering Storm, Meiji Restoration is the district-to-district adjacency rule only; if those clauses exist they belong to Tokugawa's own ability text, so the plan treats them as a bonus and depends on neither. The civ-info source label says New Frontier Pass; Tokugawa came with the Leader Pass.",
+    "The civ-info text gives no numbers for Bakuhan; the plan uses +1 Culture, +1 Science and +1 Gold per specialty district at the destination, and treats the international penalty as large enough that no foreign route is worth sending. The Electronics Factory's Culture to cities within six tiles requires Electricity.",
+    "Boost objectives from leadership-focus/data/civ6/eurekas.json in this repository.",
+    "Leadership Focus tags, caveats, Linear template and the Trajan Linear plan in this repository."
+  ]
+}

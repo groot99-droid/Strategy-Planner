@@ -1,0 +1,1684 @@
+{
+  "leader": "Matthias Corvinus",
+  "civilization": "Hungary",
+  "generated": "2026-10-02",
+  "slug": "matthias-corvinus",
+  "shape": "Monitor",
+  "secondary_shape": null,
+  "version": 1,
+  "updated": "2026-10-02",
+  "assumptions": {
+    "ruleset": "Gathering Storm with every expansion and the Leader Pass",
+    "speed": "Standard",
+    "difficulty": "Emperor",
+    "map": "Continents or Pangaea, standard size, 8 civilizations, with the Hungary river start bias honoured",
+    "notes": "Turn numbers are Standard-speed scaffolding; the site rescales them for other speeds and difficulties. Matthias Corvinus's single persona is planned here. A levy lasts 30 turns, is priced by era and by how many units the city-state owns, and ends the moment suzerainty is lost; the plan treats the levied army as rented and the captured cities as the only permanent gain."
+  },
+  "verdict": {
+    "victory": "Domination",
+    "secondary": "Diplomatic",
+    "confidence": "medium",
+    "one_line": "Build Gold and Envoys across the river while city-states build the soldiers, then rent their armies at Castles with Black Army riding inside them and take cities you keep. If no neighbour is in reach, the same Envoys are a Diplomatic game.",
+    "why": "Raven King turns Gold and Envoys into an army that costs no Production and no strategic resources, arrives with extra Movement and Combat Strength, and refunds two Envoys to the city-state it came from, so every levy tightens the suzerainty it depends on. The price is that nothing levied is ever yours: the units return after 30 turns or the instant a rival outbids you, which is why the plan watches the treasury against the next levy and the Envoy margin at every city-state in the field. Pearl of the Danube puts the home economy on the far bank, where Commercial Hubs, Markets, Aqueducts and Industrial Zones finish half again as fast, so the cities make the Gold and the city-states make the war. Captured cities are permanent, the army is not, and Diplomatic is the fallback because the Envoy count the loop accumulates is already most of a Congress majority."
+  },
+  "map_check": {
+    "must_have": [
+      "A river at the capital with workable land on both banks, so the Commercial Hub, Aqueduct and Industrial Zone can all sit across the water from the City Center.",
+      "Two or more city-states met by turn 40 within roughly twelve tiles of the capital, at least one of them Militaristic or with a visible standing army."
+    ],
+    "prefer": [
+      "A rival capital within fifteen tiles of the nearest city-state you can hold, so a levied army reaches a target inside its 30 turns.",
+      "A Geothermal Fissure in the first three cities for the Thermal Bath's Tourism and Fire Goddess Faith.",
+      "Hills across the river for Mines, Apprenticeship and the Production the far bank already raises by half.",
+      "Horses within the first two cities; Black Army is a Courser and needs them."
+    ],
+    "no_go": "No river within two Settler moves and no city-state met by turn 40. Both halves of the kit are off: nothing builds faster and nothing can be levied, so Hungary is a plain civilization with a late Zoo.",
+    "fallback": "Move the Settler up to two turns toward a river. If there is still none, play for the city-states alone: Scouts in both directions until two are met, Diplomatic League and Charismatic Leader from the first Envoys, and the Domination plan unchanged except that every district takes its normal time. If no city-state is met by turn 60, switch the verdict to Diplomatic through Envoys and Favor and build a normal army for defence."
+  },
+  "kit_levers": [
+    {
+      "source": "leader_ability",
+      "name": "Raven King",
+      "buys": "Levied units gain extra Movement and Combat Strength, upgrade for a fraction of the Gold and without strategic resources, and every levy grants two Envoys with that city-state.",
+      "exploit": "A levy is both the army and a two-Envoy gain at the city-state that supplied it, so the plan levies the city-state whose suzerainty is contested rather than the one that is safe, upgrades the rented units the turn they arrive because the upgrade is nearly free, and times each levy so the 30 turns cover one siege and the march home."
+    },
+    {
+      "source": "civ_ability",
+      "name": "Pearl of the Danube",
+      "buys": "Half again the Production toward districts and buildings placed across a river from the City Center.",
+      "exploit": "Every city is settled with its river on one side and its districts planned on the other bank before the Settler lands. Commercial Hubs, Markets and Banks go there first because the plan's Gold comes from them, then the Aqueduct and the Industrial Zone, so the home cities out-build their size while the Production that would have gone to soldiers goes to Settlers and Envoy-earning buildings."
+    },
+    {
+      "source": "unique_unit",
+      "name": "Black Army",
+      "buys": "A Courser replacement at Castles that gains Combat Strength for every adjacent levied unit.",
+      "exploit": "Four Black Army ride inside the levied army rather than beside it: each one touching three rented units fights like a unit two eras ahead. They are the only soldiers Hungary builds for itself before the Industrial era, and they are kept alive because they upgrade into the Huszár line."
+    },
+    {
+      "source": "unique_unit",
+      "name": "Huszár",
+      "buys": "A Cavalry replacement at Military Science that gains Combat Strength for every active alliance.",
+      "exploit": "The surviving Black Army upgrade into it under Professional Army. The plan signs three alliances before Military Science, one of them Military, so the Huszár arrives already stronger than Cavalry and the second campaign does not depend on a levy being affordable."
+    },
+    {
+      "source": "unique_infrastructure",
+      "name": "Thermal Bath",
+      "buys": "A Zoo replacement with regional Amenities and Production for every city within six tiles, and Tourism where the city holds a Geothermal Fissure.",
+      "exploit": "It arrives at Natural History, late, so it is the consolidation building rather than the plan: two Thermal Baths placed between the captured cities keep a wide, war-weary empire content and productive without luxuries, and the two Entertainment Complexes they sit in are the Professional Sports Inspiration."
+    },
+    {
+      "source": "agenda",
+      "name": "Raven Banner",
+      "buys": "AI Matthias likes leaders who levy city-state units and dislikes those who never do.",
+      "exploit": "Irrelevant to your own play, except that an AI Matthias on the map will outbid you at the same Militaristic city-states; treat him as the first Envoy rival and the first target."
+    }
+  ],
+  "shape_block": {
+    "monitor": {
+      "watched_stat": "Treasury against the quoted price of the next levy at the chosen city-state, and your Envoy lead over the nearest rival at every city-state whose units are in the field",
+      "check_every": "turn once a levy is placed, and every five turns before that from turn 25, read on the city-state screen where the levy price and the Envoy columns both sit",
+      "bands": {
+        "green": {
+          "test": "The treasury covers the next levy at the chosen city-state twice over, and you lead the nearest rival by three or more Envoys at every city-state whose units you hold.",
+          "response": "No action. Gold goes to Builders, Settlers and Markets across the river; new Envoys go to the next city-state on the list, not to one already safe. If a war is on, keep pressing with the units you have."
+        },
+        "amber": {
+          "test": "The treasury covers one levy only, or a rival is within two Envoys of you at a city-state whose units are in the field, or the current levy expires inside eight turns with a siege unfinished.",
+          "response": "Act now while it is cheap: sell a luxury or a Great Work for lump Gold, slot Charismatic Leader if it is out, send the next two Envoys to the threatened city-state rather than a new one, and if the levy will expire mid-siege, read the re-levy price today and decide whether the war ends on the cities already taken."
+        },
+        "red": {
+          "test": "The next levy is unaffordable, or a rival has matched or passed your Envoys at a city-state whose army is in the field, or the levy expires within three turns with the target city above half health.",
+          "response": "The army is about to vanish. Pull every levied unit out of enemy reach the turn before it returns so your Black Army are not left alone, spend the next Envoys buying the suzerainty back before anything else, and make peace if a second levy cannot be paid. Nothing is built that is not a Market, a Bank or a Monument until the treasury reads green again."
+        }
+      },
+      "second_watch": {
+        "stat": "Gold per turn after unit maintenance and building upkeep, read on the Reports screen rather than the top bar",
+        "why": "The levy price rises with the era and with every unit the city-state adds, so an income that covered a Medieval levy does not cover a Renaissance one. The reserve says whether the next levy exists; the income says whether the one after it does, and the plan needs three in a row for a campaign."
+      },
+      "off_period_plan": "The economy has no off period, only the army does. Between levies the empire builds on the far bank: a Commercial Hub and Market in every city, an Aqueduct and Industrial Zone in the two best river cities, Harbors where there is coast, and Settlers to six cities by turn 100. Envoys keep flowing on the loop's schedule whether or not a war is on. A levy is a decision taken when the band is green and a target is in reach; suzerainty is a habit kept every turn."
+    }
+  },
+  "phases": [
+    {
+      "id": "setup",
+      "name": "Setup",
+      "turns": {
+        "from": 1,
+        "to": 25
+      },
+      "era": "ancient",
+      "objective": "Settle on a river with both banks workable, meet two city-states and put the free first Envoy in each, found the pantheon, and have the far-bank district tiles chosen in the first two cities before anything is built there.",
+      "build_order": [
+        {
+          "item": "Scout",
+          "why": "City-states are the army; the first Envoy to each is free and three of them is the Political Philosophy Inspiration."
+        },
+        {
+          "item": "Warrior",
+          "why": "A second body for the camp nearest a city-state; keeping it alive earns its Envoy quests and the Military Tradition Inspiration."
+        },
+        {
+          "item": "Slinger",
+          "why": "Archery Eureka on the first barbarian Scout and a ranged defender while the Warriors are away."
+        },
+        {
+          "item": "Settler",
+          "why": "Second city on the same river, its district bank chosen before the Settler lands."
+        },
+        {
+          "item": "Builder",
+          "why": "A Mine on a resource for The Wheel, a Farm on a resource for Irrigation, a Pasture for Horseback Riding; three improvements is Craftsmanship."
+        },
+        {
+          "item": "Monument",
+          "why": "Culture to Political Philosophy by turn 45; Oligarchy and Charismatic Leader are the Envoy engine."
+        },
+        {
+          "item": "Settler",
+          "why": "Third city toward the nearest city-state cluster, on a river if the land allows."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:animal-husbandry",
+          "note": "Reveals Horses for the Black Army later and opens Pastures; no boost to collect."
+        },
+        {
+          "id": "tech:mining",
+          "note": "Mines on the far-bank hills; no boost to collect."
+        },
+        {
+          "id": "tech:writing",
+          "note": "Eureka free from the first civilization met; a Campus is not early in this plan, but Writing leads to Currency."
+        },
+        {
+          "id": "tech:irrigation",
+          "note": "Farm a resource for the Eureka; growth for Early Empire."
+        },
+        {
+          "id": "tech:wheel",
+          "note": "A Mine on a resource hill boosts it; the Water Mill on the river is Construction's Eureka next phase."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:code-of-laws",
+          "note": "Discipline against the camps and God King for the pantheon."
+        },
+        {
+          "id": "civic:craftsmanship",
+          "note": "Inspiration from the first Builder's three improvements; Ilkum if more Builders are wanted."
+        },
+        {
+          "id": "civic:foreign-trade",
+          "note": "The first Trade Route is Currency's Eureka; Inspiration if the Scout crosses onto a second continent."
+        },
+        {
+          "id": "civic:mysticism",
+          "note": "Free Inspiration from the pantheon; Diplomatic League waits for Political Philosophy."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Discipline",
+          "slot": "military",
+          "from": "civic:code-of-laws",
+          "why": "Warriors and the Slinger win the camp fights that protect the first city-state."
+        },
+        {
+          "card": "God King",
+          "slot": "economic",
+          "from": "civic:code-of-laws",
+          "why": "Faith for the pantheon by turn 20, then swapped for Urban Planning."
+        }
+      ],
+      "districts": [
+        {
+          "district": "commercial-hub",
+          "city": "capital",
+          "note": "Across the river on a tile that also touches a second river bend or a Harbor site if there is coast; chosen on turn 1, built after the second Settler."
+        }
+      ],
+      "pantheon": {
+        "slug": "religious-settlements",
+        "why": "A free Settler is a third river city a dozen turns early, and faster borders claim both banks before a rival does.",
+        "alternative": "fire-goddess"
+      },
+      "wonders": [],
+      "governors": [],
+      "city_states": [
+        {
+          "type": "Militaristic",
+          "why": "The first Envoy into any Militaristic city-state met is Production toward units in the capital and the first levy source later."
+        },
+        {
+          "type": "Industrial",
+          "why": "Production in the capital while the far bank is still being planned."
+        }
+      ],
+      "great_people": [],
+      "checkpoints": [
+        {
+          "turn": 25,
+          "test": "Two cities on the river, two city-states met with an Envoy in each, and the pantheon founded?",
+          "pass": "Enter the standing loop; read the city-state screen every five turns from here.",
+          "fail": "If no city-state has been met, build a second Scout before the third Settler. If the second city is not on a river, accept it and make sure the third one is; the Production bonus is per city, not per empire."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "setup-settle-river",
+          "turn": 1,
+          "text": "Settle on a river with flat or hill tiles on the far bank; move at most two turns to get there. Note which bank the districts will use before ending the turn."
+        },
+        {
+          "id": "setup-scout-city-states",
+          "turn": 4,
+          "text": "Send the Scout along the river and then outward; a city-state met before turn 20 gets its free Envoy while every rival is still looking."
+        },
+        {
+          "id": "setup-first-envoys",
+          "turn": 15,
+          "text": "Place the first earned Envoy in the Militaristic city-state if one is met, otherwise in whichever is nearest; suzerainty of the nearest one is the first levy."
+        },
+        {
+          "id": "setup-pantheon",
+          "turn": 20,
+          "text": "Found Religious Settlements, or Fire Goddess if the capital holds a Geothermal Fissure."
+        },
+        {
+          "id": "setup-second-city",
+          "turn": 24,
+          "text": "Second city settled on the river with its Commercial Hub tile across the water already chosen."
+        }
+      ]
+    },
+    {
+      "id": "loop",
+      "name": "Standing loop",
+      "turns": {
+        "from": 26,
+        "to": 100
+      },
+      "era": "classical",
+      "objective": "Build the Gold and Envoy machine: a Commercial Hub and Market across the river in every city, Oligarchy with Charismatic Leader and Diplomatic League, suzerainty of two city-states by turn 70, one trial levy to learn the price and the clock, and six cities by turn 100.",
+      "build_order": [
+        {
+          "item": "Trader",
+          "why": "Currency Eureka and the first steady Gold; four routes running is Medieval Faires later."
+        },
+        {
+          "item": "Commercial Hub",
+          "why": "Across the river in the capital at half again the speed; Currency is researched first, and its extra Trade Route keeps a second Trader running."
+        },
+        {
+          "item": "Water Mill",
+          "why": "Every city is on a river, so the Construction Eureka is free and the growth feeds Early Empire."
+        },
+        {
+          "item": "Settler",
+          "why": "Fourth, fifth and sixth cities, all on rivers if the land allows; the free Settler from the pantheon is one of them."
+        },
+        {
+          "item": "Market",
+          "why": "Two for Guilds; Markets across the river finish fast and the Gold is the levy budget."
+        },
+        {
+          "item": "Encampment",
+          "why": "One, across the river in the city nearest the first target; Military Training Inspiration and the upgrade point for levied units."
+        },
+        {
+          "item": "Ancient Walls",
+          "why": "Engineering Eureka in the capital; a civilization that rents its army defends with stone."
+        },
+        {
+          "item": "Apadana",
+          "why": "Two Envoys for every wonder built in that city, itself included; the one wonder the loop chases."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:currency",
+          "note": "Eureka from the first Trade Route; Markets and the Gold the whole plan runs on."
+        },
+        {
+          "id": "tech:construction",
+          "note": "Water Mill on the river gives the Eureka free; Colosseum is not planned, Games and Recreation is."
+        },
+        {
+          "id": "tech:horseback-riding",
+          "note": "A Pasture gives the Eureka; Horses for the Black Army line and Horsemen if a camp needs clearing fast."
+        },
+        {
+          "id": "tech:bronze-working",
+          "note": "Three barbarian kills with the Warriors or the trial levy; the Encampment unlocks here."
+        },
+        {
+          "id": "tech:masonry",
+          "note": "A Quarry if a stone or marble is in reach; Ancient Walls."
+        },
+        {
+          "id": "tech:engineering",
+          "note": "Ancient Walls give the Eureka; Aqueducts across the river follow."
+        },
+        {
+          "id": "tech:mathematics",
+          "note": "Commercial Hub, Encampment and a Harbor or Industrial Zone make three specialty districts by turn 80."
+        },
+        {
+          "id": "tech:apprenticeship",
+          "note": "Three Mines on the far-bank hills; the Industrial Zone unlocks here and the bonus applies to it."
+        },
+        {
+          "id": "tech:military-tactics",
+          "note": "A Spearman kill, usually by a levied Spearman at a camp; on the way to Castles."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:early-empire",
+          "note": "Colonization for the Settlers; Inspiration at six population across two cities."
+        },
+        {
+          "id": "civic:state-workforce",
+          "note": "Free Inspiration from the first Commercial Hub; Conscription cuts maintenance on what little you own."
+        },
+        {
+          "id": "civic:political-philosophy",
+          "note": "Oligarchy and Charismatic Leader; Inspiration free from the three city-states the Scout met."
+        },
+        {
+          "id": "civic:military-tradition",
+          "note": "Clearing the camp beside the first city-state gives the Inspiration; the card slots are not needed yet."
+        },
+        {
+          "id": "civic:military-training",
+          "note": "The Encampment gives the Inspiration; Great General points start here."
+        },
+        {
+          "id": "civic:games-and-recreation",
+          "note": "Free Inspiration from Construction; the Entertainment Complex line the Thermal Bath sits in."
+        },
+        {
+          "id": "civic:defensive-tactics",
+          "note": "A neighbour declares on a civilization with no visible army sooner or later; the Inspiration arrives by itself."
+        },
+        {
+          "id": "civic:feudalism",
+          "note": "Six Farms along the rivers; Serfdom for the Builders that improve the far bank."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Oligarchy",
+          "slot": "wildcard",
+          "from": "civic:political-philosophy",
+          "why": "The government: Combat Strength for the levied melee and anti-cavalry units, experience for them and the Black Army later, and the diplomatic slot the Envoy cards need."
+        },
+        {
+          "card": "Diplomatic League",
+          "slot": "diplomatic",
+          "from": "civic:political-philosophy",
+          "why": "The first Envoy to every city-state counts double; slotted until every city-state met has one, then swapped."
+        },
+        {
+          "card": "Charismatic Leader",
+          "slot": "diplomatic",
+          "from": "civic:political-philosophy",
+          "why": "Two extra Influence points a turn; it replaces Diplomatic League once the first Envoys are placed and stays in for the rest of the game."
+        },
+        {
+          "card": "Colonization",
+          "slot": "economic",
+          "from": "civic:early-empire",
+          "why": "Half again the Production toward Settlers while the capital alternates them with the Commercial Hub."
+        },
+        {
+          "card": "Caravansaries",
+          "slot": "economic",
+          "from": "civic:foreign-trade",
+          "why": "Gold per Trade Route once Colonization has done its work; the levy budget."
+        }
+      ],
+      "districts": [
+        {
+          "district": "commercial-hub",
+          "city": "every city",
+          "note": "Across the river from each City Center; the Market inside it is the Guilds Inspiration and the Gold."
+        },
+        {
+          "district": "encampment",
+          "city": "the city nearest the first target",
+          "note": "Across the river; levied units upgrade here cheaply and the Military Training Inspiration comes with it."
+        },
+        {
+          "district": "aqueduct",
+          "city": "capital",
+          "note": "Across the river, so it finishes in a few turns; Military Engineering Eureka and Housing for a tall capital."
+        }
+      ],
+      "pantheon": {
+        "slug": "religious-settlements",
+        "why": "Already founded; the free Settler is the fourth city this phase."
+      },
+      "wonders": [
+        {
+          "name": "Apadana",
+          "why": "Two Envoys when it completes and two more for every later wonder in the same city; Pearl of the Danube does not speed wonders, but it pays in the currency the plan runs on.",
+          "skip_if": "Persia is on the map and has Political Philosophy first, or the capital's Production is under 15 at turn 50."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "amani",
+          "promotion": "Messenger",
+          "city": "the most contested city-state",
+          "why": "She counts as two Envoys where she sits and is moved to whichever city-state a rival is closest to matching; she is the plan's Envoy reserve."
+        },
+        {
+          "governor": "magnus",
+          "promotion": "Provision",
+          "city": "capital",
+          "why": "Settlers without the population cost from the city that is also building the Commercial Hub and Apadana."
+        }
+      ],
+      "city_states": [
+        {
+          "type": "Militaristic",
+          "why": "The levy source: Militaristic city-states field the most and strongest units for the price, and the Envoys placed there add Production to your own units too."
+        },
+        {
+          "slug": "kabul",
+          "why": "Double experience for units that start a fight, and levied units promoted inside the 30 turns fight better for the whole levy."
+        },
+        {
+          "type": "Trade",
+          "why": "Gold is the levy budget; Envoys at a Trade city-state put Gold in the capital and every Market."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-merchant",
+          "why": "Every Classical Great Merchant is lump Gold or an extra Trade Route; Zhang Qian's route pays for an era of levies on his own."
+        },
+        {
+          "class": "great-general",
+          "why": "Levied units are under your command, so a Classical Great General's Combat Strength and Movement apply to them too."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 60,
+          "test": "Suzerain of one city-state, Commercial Hubs standing across the river in two cities, and Oligarchy adopted with Charismatic Leader slotted?",
+          "pass": "Continue; place the trial levy as soon as the treasury covers it twice.",
+          "fail": "No suzerainty at turn 60 means the Envoys are spread too thin: put every new Envoy into the single nearest city-state until it flips, and move Amani there."
+        },
+        {
+          "turn": 100,
+          "test": "Six cities, suzerain of two city-states, the treasury above twice the quoted levy at the nearest Militaristic one, and one trial levy already placed and returned?",
+          "pass": "Enter the peak phase; Castles is the next research priority.",
+          "fail": "If the trial levy was never placed, place it now against a camp even at amber; the plan cannot run a campaign on a mechanic the player has not watched once. If the treasury is short, Markets before any further Settler."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "loop-first-hub",
+          "turn": 35,
+          "text": "Trader bought or built and sent to the second city for the Currency Eureka; capital Commercial Hub finished across the river."
+        },
+        {
+          "id": "loop-oligarchy",
+          "turn": 45,
+          "text": "Political Philosophy reached; Oligarchy adopted with Diplomatic League in the diplomatic slot until every known city-state has an Envoy."
+        },
+        {
+          "id": "loop-first-suzerain",
+          "turn": 60,
+          "text": "First suzerainty taken, at the nearest city-state regardless of type; Amani established there."
+        },
+        {
+          "id": "loop-trial-levy",
+          "turn": 70,
+          "text": "Levy the nearest city-state once against a barbarian camp or as a Settler escort: read the price, watch the two Envoys land, note the return turn on the city-state screen, and upgrade one levied unit to see what the discount is."
+        },
+        {
+          "id": "loop-encampment",
+          "turn": 80,
+          "text": "Encampment across the river in the city nearest the likely target; Ancient Walls in the capital for Engineering."
+        },
+        {
+          "id": "loop-sixth-city",
+          "turn": 100,
+          "text": "Sixth city settled; Markets standing in at least two Commercial Hubs for Guilds."
+        }
+      ]
+    },
+    {
+      "id": "peak",
+      "name": "Peak",
+      "turns": {
+        "from": 101,
+        "to": 180
+      },
+      "era": "medieval",
+      "objective": "The kit at full strength: reach Castles and Monarchy, levy the strongest city-state army in reach with four Black Army riding inside it, and take two cities from the nearest rival inside one 30-turn levy, re-levying once only if the band is green. Every city taken is kept.",
+      "build_order": [
+        {
+          "item": "Black Army",
+          "why": "Four of them at Castles; each gains Combat Strength for every adjacent levied unit, so they ride in the middle of the rented army."
+        },
+        {
+          "item": "Battering Ram",
+          "why": "Levied armies bring no siege equipment; your own Ram or Siege Tower rides with them against Ancient Walls."
+        },
+        {
+          "item": "Trebuchet",
+          "why": "Two for the Siege Tactics Eureka and for any target that already has Medieval Walls."
+        },
+        {
+          "item": "Aqueduct",
+          "why": "Across the river in the capital; Military Engineering Eureka and Housing while the capital keeps building Black Army."
+        },
+        {
+          "item": "Industrial Zone",
+          "why": "Across the river in the two best Production cities; Workshops for Industrialization later and the Production for the Huszár line."
+        },
+        {
+          "item": "Alhambra",
+          "why": "A military policy slot and Great General points, built on hills beside the Encampment; Pearl of the Danube does not speed wonders."
+        },
+        {
+          "item": "Kilwa Kisiwani",
+          "why": "Envoys on completion and the yields of your suzerain city-states stronger across the empire once you hold two of a type; it is a Matthias wonder before it is anyone else's."
+        },
+        {
+          "item": "Monument",
+          "why": "First build in every captured city; Loyalty before anything else."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:castles",
+          "note": "Eureka free from Monarchy; Black Army and the Alhambra unlock here and this is the research priority of the phase."
+        },
+        {
+          "id": "tech:stirrups",
+          "note": "Free Eureka from Feudalism; Knights are not planned, but Stirrups is on the way to Castles."
+        },
+        {
+          "id": "tech:military-engineering",
+          "note": "The capital Aqueduct gives the Eureka; Armories and Trebuchets."
+        },
+        {
+          "id": "tech:machinery",
+          "note": "Three Archers, levied ones included, give the Eureka; Crossbowmen behind the Black Army and Kilwa Kisiwani unlocks here."
+        },
+        {
+          "id": "tech:metal-casting",
+          "note": "Two Crossbowmen, levied ones count; Bombards later."
+        },
+        {
+          "id": "tech:siege-tactics",
+          "note": "Two Trebuchets give the Eureka; Medieval Walls on the second target need them."
+        },
+        {
+          "id": "tech:buttress",
+          "note": "Owning Apadana or Alhambra gives the Eureka; otherwise unboosted on the way to Printing."
+        },
+        {
+          "id": "tech:mass-production",
+          "note": "A Lumber Mill on any Woods; Shipyards, and the road to Industrialization and the Huszár line's Factories."
+        },
+        {
+          "id": "tech:gunpowder",
+          "note": "An Armory in the Encampment city gives the Eureka; Musketmen to garrison captured cities."
+        },
+        {
+          "id": "tech:banking",
+          "note": "Free Eureka from Guilds; Banks across the river are the Renaissance levy budget."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:divine-right",
+          "note": "Monarchy: half again the Influence toward Envoys and Housing from Walls; Inspiration from two Temples is a detour, so research it unboosted."
+        },
+        {
+          "id": "civic:mercenaries",
+          "note": "Eight land units including levied ones give the Inspiration free during the first campaign; Professional Army for the Black Army's upgrades later."
+        },
+        {
+          "id": "civic:civil-service",
+          "note": "The capital at ten population with its Aqueduct gives the Inspiration."
+        },
+        {
+          "id": "civic:guilds",
+          "note": "Two Markets give the Inspiration; the Banking Eureka comes with it."
+        },
+        {
+          "id": "civic:medieval-faires",
+          "note": "Four Trade Routes running give the Inspiration; Merchant Confederation is Gold per Envoy, which this empire has more of than anyone."
+        },
+        {
+          "id": "civic:diplomatic-service",
+          "note": "The first alliance gives the Inspiration; alliances are the Huszár's strength later and Wisselbanken sits here."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Monarchy",
+          "slot": "wildcard",
+          "from": "civic:divine-right",
+          "why": "The government for the rest of the game: half again the Influence points, which is the Envoy half of the watched stat."
+        },
+        {
+          "card": "Merchant Confederation",
+          "slot": "diplomatic",
+          "from": "civic:medieval-faires",
+          "why": "Gold for every Envoy you have placed; with Charismatic Leader in the other diplomatic or wildcard slot, Envoys pay for the levies they protect."
+        },
+        {
+          "card": "Chivalry",
+          "slot": "military",
+          "from": "civic:divine-right",
+          "why": "Black Army faster while the campaign is on."
+        },
+        {
+          "card": "Professional Army",
+          "slot": "military",
+          "from": "civic:mercenaries",
+          "why": "Half-price upgrades for your own units; the levied ones are already nearly free under Raven King."
+        },
+        {
+          "card": "Serfdom",
+          "slot": "economic",
+          "from": "civic:feudalism",
+          "why": "Builders with extra charges to repair pillaged tiles in captured cities and improve six cities' far banks."
+        }
+      ],
+      "districts": [
+        {
+          "district": "aqueduct",
+          "city": "capital and the second river city",
+          "note": "Across the river they finish in a handful of turns; Housing for tall Commercial Hub cities."
+        },
+        {
+          "district": "industrial-zone",
+          "city": "the two best Production cities",
+          "note": "Across the river beside the Aqueduct; Workshops for Industrialization and Factories for the Huszár line."
+        },
+        {
+          "district": "encampment",
+          "city": "the first captured city",
+          "note": "A forward upgrade point for the second campaign; Preslav's Loyalty per Encampment building helps hold it."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Alhambra",
+          "why": "An extra military policy slot and Great General points, and it acts as a Fort on the frontier; it goes on a hill beside the Encampment.",
+          "skip_if": "No hill tile beside the Encampment, or Castles arrives after turn 140."
+        },
+        {
+          "name": "Kilwa Kisiwani",
+          "why": "Envoys when it completes and the suzerain bonuses of two city-states of a type amplified in every city; nobody holds more suzerainties than this plan.",
+          "skip_if": "Machinery lands after turn 150, or a coastal Gold civilization already has it half built."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "victor",
+          "promotion": "Garrison Commander",
+          "city": "the first captured city",
+          "why": "Loyalty and Combat Strength in the city most likely to flip or be retaken while the levy is still in the field."
+        },
+        {
+          "governor": "amani",
+          "promotion": "Puppeteer",
+          "city": "the levied city-state",
+          "why": "Her extra Envoys sit at the city-state whose army is fighting; losing that suzerainty mid-siege is the red band."
+        },
+        {
+          "governor": "magnus",
+          "promotion": "Black Marketeer",
+          "city": "the Black Army city",
+          "why": "Black Army without the full Horses bill from the one city that builds soldiers."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "kabul",
+          "why": "Every levied unit that starts a fight promotes twice as fast; a promoted rented army is worth more than a second levy."
+        },
+        {
+          "slug": "akkad",
+          "why": "Levied melee units do full damage to Walls, which removes the one thing a rented army cannot carry: siege."
+        },
+        {
+          "slug": "preslav",
+          "why": "Loyalty per Encampment building in captured cities; suzerainty here is the consolidation plan."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-general",
+          "why": "A Medieval Great General beside the levied army is Combat Strength and Movement on units you did not pay Production for; retire him only for a free promotion when the levy is about to return."
+        },
+        {
+          "class": "great-merchant",
+          "why": "Lump Gold the turn before a levy is the difference between amber and green."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 130,
+          "test": "Castles researched, Monarchy adopted, the campaign levy placed with four Black Army beside it, and the first target under siege with the treasury still green?",
+          "pass": "Continue; note the levy's return turn and plan the second city before it.",
+          "fail": "If Castles is late, levy anyway and fight with the rented army alone; the Black Army join when they can. If the treasury went amber on the levy, end the war after the first city and rebuild the reserve before the second."
+        },
+        {
+          "turn": 180,
+          "test": "Two cities taken and held with Monuments standing, suzerainty of the levied city-state intact, and the treasury green for a third levy if one is wanted?",
+          "pass": "Enter the consolidation phase; the empire is now the asset.",
+          "fail": "One city or none: stop the war, keep the Black Army for defence, and spend the next 40 turns on Banks and Envoys. The kit is not off; it is unpaid, and the loop fixes that."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "peak-castles",
+          "turn": 105,
+          "text": "Castles researched and Monarchy adopted at Divine Right; four Black Army queued across the river in the Encampment city."
+        },
+        {
+          "id": "peak-target",
+          "turn": 110,
+          "text": "Choose the target: the rival city within twelve tiles of the city-state you will levy, with Ancient Walls at most and the fewest defenders; write its name and its Walls level down."
+        },
+        {
+          "id": "peak-levy",
+          "turn": 120,
+          "text": "Read the levy price, confirm the treasury covers it twice, levy, and note the return turn; the 30-turn clock starts now and every later decision in this phase is measured against it."
+        },
+        {
+          "id": "peak-siege",
+          "turn": 128,
+          "text": "Levied army and Black Army at the target together; the Ram or Siege Tower adjacent before the first attack. Declare with a Casus Belli if one exists."
+        },
+        {
+          "id": "peak-second-city",
+          "turn": 148,
+          "text": "Second city taken or under siege with at least five levy turns left; if neither, this is the amber response: end the war on the first city."
+        },
+        {
+          "id": "peak-return",
+          "turn": 150,
+          "text": "Five turns before the levy returns, move every levied unit out of enemy reach so the Black Army are not left alone; re-levy only if the band is green."
+        }
+      ]
+    },
+    {
+      "id": "consolidate",
+      "name": "Consolidate",
+      "turns": {
+        "from": 181,
+        "to": 250
+      },
+      "era": "renaissance",
+      "objective": "Make the captured cities permanent with Monuments, Governors and Thermal Baths, sign the alliances the Huszár needs and upgrade the Black Army into it, build the Banks that make Renaissance levies affordable, and decide by turn 250 between a second campaign and a Diplomatic close on the Envoys and Favor already banked.",
+      "build_order": [
+        {
+          "item": "Monument",
+          "why": "In every captured city that still lacks one; Loyalty first."
+        },
+        {
+          "item": "Bank",
+          "why": "Two for Economics; Banks across the river are the levy budget for an era whose levies cost twice as much."
+        },
+        {
+          "item": "Entertainment Complex",
+          "why": "In the two cities that sit within six tiles of the most captured cities; the Thermal Bath goes inside them at Natural History."
+        },
+        {
+          "item": "Workshop",
+          "why": "Two for Industrialization; the Industrial Zones across the river finish them fast."
+        },
+        {
+          "item": "Huszár",
+          "why": "Upgraded from the surviving Black Army at Military Science under Professional Army; stronger for every alliance signed."
+        },
+        {
+          "item": "Field Cannon",
+          "why": "Two for Scorched Earth; the siege line a second campaign needs."
+        },
+        {
+          "item": "Thermal Bath",
+          "why": "At Natural History, in both Entertainment Complexes; regional Amenities and Production across the captured belt."
+        },
+        {
+          "item": "University",
+          "why": "Two for Printing; the Science the levy years skipped."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:square-rigging",
+          "note": "A Musketman kill if a war is still on; Frigates only matter on a coastal map."
+        },
+        {
+          "id": "tech:printing",
+          "note": "Two Universities give the Eureka; Science catch-up and the Forbidden City."
+        },
+        {
+          "id": "tech:astronomy",
+          "note": "A University beside a mountain if one exists; researching it is the Colonialism Inspiration either way."
+        },
+        {
+          "id": "tech:economics",
+          "note": "Two Banks give the Eureka; Stock Exchanges and the Gold for Industrial levies."
+        },
+        {
+          "id": "tech:industrialization",
+          "note": "Two Workshops give the Eureka; Factories and Coal."
+        },
+        {
+          "id": "tech:military-science",
+          "note": "A Knight kill, usually by a levied Knight; the Huszár unlocks here and this is the research priority of the phase."
+        },
+        {
+          "id": "tech:rifling",
+          "note": "A Mine on Niter gives the Eureka; Field Cannons and Musketmen need the Niter anyway."
+        },
+        {
+          "id": "tech:ballistics",
+          "note": "Two Forts in your territory; Military Engineers from the Encampment build them on the frontier."
+        },
+        {
+          "id": "tech:scientific-theory",
+          "note": "Free Eureka from The Enlightenment if it is reached; otherwise unboosted."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:nationalism",
+          "note": "The campaign was declared with a Casus Belli, so the Inspiration is free; Corps for the Huszár line."
+        },
+        {
+          "id": "civic:the-enlightenment",
+          "note": "Three Great People is done by now; Rationalism is not the point, the Scientific Theory Eureka is."
+        },
+        {
+          "id": "civic:mercantilism",
+          "note": "A Great Merchant gives the Inspiration; Triangular Trade is Gold per route."
+        },
+        {
+          "id": "civic:colonialism",
+          "note": "Researching Astronomy gives the Inspiration; on the way to Natural History."
+        },
+        {
+          "id": "civic:scorched-earth",
+          "note": "Two Field Cannons give the Inspiration; Total War if the second campaign is chosen."
+        },
+        {
+          "id": "civic:natural-history",
+          "note": "The Thermal Bath unlocks here; the Inspiration is an Archaeological Museum, which is a detour, so research it unboosted."
+        },
+        {
+          "id": "civic:civil-engineering",
+          "note": "Seven district types is a stretch for this empire; unboosted, on the way to the Industrial governments."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Wisselbanken",
+          "slot": "diplomatic",
+          "from": "civic:diplomatic-service",
+          "why": "Trade Routes to your allies earn more and build alliance points; alliances are Huszár strength."
+        },
+        {
+          "card": "Triangular Trade",
+          "slot": "economic",
+          "from": "civic:mercantilism",
+          "why": "Gold and Faith per Trade Route; the Renaissance levy budget."
+        },
+        {
+          "card": "Retainers",
+          "slot": "military",
+          "from": "civic:feudalism",
+          "why": "Amenities in the captured cities while the Thermal Baths are still unbuilt."
+        },
+        {
+          "card": "Grand Armee",
+          "slot": "military",
+          "from": "civic:nationalism",
+          "why": "Industrial units faster if the second campaign is chosen; otherwise the slot goes back to Conscription."
+        }
+      ],
+      "districts": [
+        {
+          "district": "entertainment-complex",
+          "city": "the two cities central to the captured belt",
+          "note": "Placed so the Thermal Bath's six-tile reach covers the most captured City Centers."
+        },
+        {
+          "district": "commercial-hub",
+          "city": "every captured city",
+          "note": "Across the river where there is one; the Bank inside is the levy budget and the Trade Route is Loyalty food."
+        },
+        {
+          "district": "theater-square",
+          "city": "capital",
+          "note": "One, for the Culture that reaches Natural History on time; not a Culture plan, a Thermal Bath plan."
+        }
+      ],
+      "wonders": [
+        {
+          "name": "Forbidden City",
+          "why": "A second wildcard slot, which for this plan keeps Charismatic Leader and Merchant Confederation in beside Wisselbanken.",
+          "skip_if": "China is on the map, Printing lands after turn 230, or the capital's Production is under 30 at turn 215."
+        }
+      ],
+      "governors": [
+        {
+          "governor": "victor",
+          "promotion": "Embrasure",
+          "city": "the most exposed captured city",
+          "why": "Loyalty and defence in the city a rival will try to take back."
+        },
+        {
+          "governor": "reyna",
+          "promotion": "Tax Collector",
+          "city": "the largest Commercial Hub city",
+          "why": "Gold per citizen is the levy budget in the era levies get expensive."
+        },
+        {
+          "governor": "amani",
+          "promotion": "Puppeteer",
+          "city": "whichever city-state the Envoy gap is smallest at",
+          "why": "She moves every twenty turns to wherever the watched stat is closest to amber."
+        }
+      ],
+      "city_states": [
+        {
+          "slug": "preslav",
+          "why": "Loyalty per Encampment building; two captured cities with Barracks hold themselves."
+        },
+        {
+          "type": "Industrial",
+          "why": "Production in every Workshop and Factory, the Thermal Bath cities' included."
+        },
+        {
+          "type": "Trade",
+          "why": "Gold in the capital, every Market and every Bank; a second Trade suzerainty with Kilwa Kisiwani is Gold in every city."
+        }
+      ],
+      "great_people": [
+        {
+          "class": "great-general",
+          "why": "A Renaissance Great General retires beside the Huszár line for a free promotion or stays for the Movement; either way he is the second campaign's escort."
+        },
+        {
+          "class": "great-merchant",
+          "why": "Gold and Trade Route capacity; Industrial levies cost more than any Bank makes in ten turns."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 210,
+          "test": "Every captured city at positive Loyalty with a Monument, two Banks built, and three alliances signed with one of them Military?",
+          "pass": "Continue; upgrade the Black Army at Military Science.",
+          "fail": "A city at negative Loyalty is the only emergency: Victor, a Monument and a Trade Route to it before anything else. Fewer than three alliances means Diplomatic Service was skipped; sign them now, the Huszár is weak without them."
+        },
+        {
+          "turn": 250,
+          "test": "Can a Renaissance or Industrial levy plus the Huszárs take two more cities before Infantry appears, or do you hold more Envoys and Diplomatic Favor than any rival?",
+          "pass": "Commit: a second campaign on the same loop, or the Congress with Favor and Envoys.",
+          "fail": "Neither: the game is a Score game. Stop levying, keep Monarchy for the Envoys, and spend the Gold on buildings in every city."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "consolidate-loyalty-audit",
+          "turn": 185,
+          "text": "Audit Loyalty and Amenities in every captured city; a Monument, a Governor and a Trade Route to any city below plus two before any new military."
+        },
+        {
+          "id": "consolidate-alliances",
+          "turn": 200,
+          "text": "Three alliances signed, one of them Military; each is Combat Strength for every Huszár and the second level is the Chemistry Eureka."
+        },
+        {
+          "id": "consolidate-banks",
+          "turn": 205,
+          "text": "Two Banks built across the river; Economics Eureka collected and the treasury read against the current levy price at the nearest Militaristic city-state."
+        },
+        {
+          "id": "consolidate-huszar",
+          "turn": 225,
+          "text": "Military Science researched; every surviving Black Army upgraded to a Huszár under Professional Army in the same turn."
+        },
+        {
+          "id": "consolidate-thermal-baths",
+          "turn": 240,
+          "text": "Natural History reached; Thermal Baths in both Entertainment Complexes, and the Professional Sports Inspiration collected from the two complexes."
+        },
+        {
+          "id": "consolidate-decide",
+          "turn": 250,
+          "text": "Write down the branch: second campaign or Congress. The watched stat decides it, not the player's mood."
+        }
+      ]
+    },
+    {
+      "id": "close",
+      "name": "Close",
+      "turns": {
+        "from": 251,
+        "to": null
+      },
+      "era": "industrial",
+      "objective": "Finish the chosen branch: a last Industrial levy with Huszár corps and Artillery against the two nearest capitals before levied units fall behind Infantry, or hold the Congress with the Envoy and Favor lead until the Diplomatic Victory points are in.",
+      "build_order": [
+        {
+          "item": "Artillery",
+          "why": "Domination branch: the siege line a levied army still cannot carry; two Field Cannons upgrade into them."
+        },
+        {
+          "item": "Huszár",
+          "why": "Domination branch: a second line of them formed into Corps for the Mobilization Inspiration."
+        },
+        {
+          "item": "Stock Exchange",
+          "why": "Both branches: the last Gold building across the river; levies and Favor both cost it."
+        },
+        {
+          "item": "Factory",
+          "why": "Both branches: Production in the Industrial Zones for whichever close is chosen."
+        },
+        {
+          "item": "Thermal Bath",
+          "why": "A third one if a third Entertainment Complex covers more captured cities; Amenities are the last Loyalty lever."
+        }
+      ],
+      "research": [
+        {
+          "id": "tech:chemistry",
+          "note": "Alliance level two with any of the three allies gives the Eureka; Research Labs are not the point, the free Science is."
+        },
+        {
+          "id": "tech:replaceable-parts",
+          "note": "Three Line Infantry, levied ones count, give the Eureka; Infantry is the unit that ends the levy era."
+        },
+        {
+          "id": "tech:combined-arms",
+          "note": "Three Armies give the Eureka on the Domination branch; otherwise unboosted or ignored."
+        }
+      ],
+      "civics": [
+        {
+          "id": "civic:mobilization",
+          "note": "Three Corps give the Inspiration; Levee en Masse cuts maintenance on an army that is finally yours."
+        },
+        {
+          "id": "civic:totalitarianism",
+          "note": "Fascism on the Domination branch; three Military Academies is a detour, research it unboosted."
+        },
+        {
+          "id": "civic:professional-sports",
+          "note": "Two Entertainment Complexes with Thermal Baths gave the Inspiration; Stadiums are the last Amenities."
+        },
+        {
+          "id": "civic:ideology",
+          "note": "the road to Suffrage's Democracy for the Diplomatic branch and Totalitarianism's Fascism for Domination; no Inspiration exists."
+        }
+      ],
+      "policies": [
+        {
+          "card": "Levee en Masse",
+          "slot": "military",
+          "from": "civic:mobilization",
+          "why": "Maintenance down on the Huszár and Artillery that are owned rather than rented."
+        },
+        {
+          "card": "Fascism",
+          "slot": "wildcard",
+          "from": "civic:totalitarianism",
+          "why": "Domination branch only: Combat Strength and unit Production for the last campaign; the Diplomatic branch keeps Monarchy for the Influence."
+        },
+        {
+          "card": "Containment",
+          "slot": "diplomatic",
+          "from": "civic:diplomatic-service",
+          "why": "Envoys to city-states whose suzerain runs a different government count double; the Congress branch's last Envoy lever."
+        }
+      ],
+      "districts": [],
+      "wonders": [],
+      "governors": [
+        {
+          "governor": "victor",
+          "promotion": "Embrasure",
+          "city": "the newest capture",
+          "why": "Each new capital holds while the army moves on."
+        }
+      ],
+      "city_states": [],
+      "great_people": [
+        {
+          "class": "great-general",
+          "why": "An Industrial Great General beside Huszár corps and a levied Industrial army is the last time the kit is at its best."
+        }
+      ],
+      "checkpoints": [
+        {
+          "turn": 290,
+          "test": "Domination: two capitals taken since turn 250; Diplomatic: within one Congress session of the victory points with the Favor banked to buy the last vote?",
+          "pass": "Continue to the end; no further decisions.",
+          "fail": "Convert to Score: stop levying, keep Monarchy and the Envoys for the Congress's lesser prizes, and spend every turn's Gold on buildings."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "close-last-levy",
+          "turn": 260,
+          "text": "Domination branch: the last levy placed only when the treasury covers it twice and the target capital is within ten tiles of the levied city-state; Artillery adjacent before the first attack."
+        },
+        {
+          "id": "close-congress",
+          "turn": 270,
+          "text": "Diplomatic branch: spend Favor only on the victory resolution and the proposals that strip a rival's Favor; keep Envoys flowing to any city-state within two of a rival."
+        },
+        {
+          "id": "close-review",
+          "turn": 290,
+          "text": "Review the turn 290 checkpoint and either continue or declare the game a Score game."
+        }
+      ]
+    }
+  ],
+  "boosts": [
+    {
+      "id": "tech:writing",
+      "fit": "free",
+      "when": "setup",
+      "how": "The Scout meets the first civilization while looking for city-states."
+    },
+    {
+      "id": "tech:irrigation",
+      "fit": "cheap",
+      "when": "setup",
+      "how": "The first Builder Farms a Wheat or Rice on the river."
+    },
+    {
+      "id": "tech:wheel",
+      "fit": "cheap",
+      "when": "setup",
+      "how": "A Mine on a resource hill across the river."
+    },
+    {
+      "id": "tech:archery",
+      "fit": "cheap",
+      "when": "setup",
+      "how": "The Slinger finishes a barbarian Scout near the capital."
+    },
+    {
+      "id": "tech:astrology",
+      "fit": "costly",
+      "when": "setup",
+      "how": "Only if the Scout happens on a natural wonder; no Holy Site is planned."
+    },
+    {
+      "id": "tech:sailing",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:currency",
+      "fit": "free",
+      "when": "loop",
+      "how": "The first Trader runs a route to the second city."
+    },
+    {
+      "id": "tech:construction",
+      "fit": "free",
+      "when": "loop",
+      "how": "A Water Mill in a river city, which every city in this plan is."
+    },
+    {
+      "id": "tech:horseback-riding",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "A Pasture on the Horses the Black Army needs."
+    },
+    {
+      "id": "tech:bronze-working",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "Three barbarian kills with the Warriors and the trial levy."
+    },
+    {
+      "id": "tech:masonry",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "A Quarry on stone or marble; river valleys usually have one."
+    },
+    {
+      "id": "tech:engineering",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "Ancient Walls in the capital; a rented army needs stone at home."
+    },
+    {
+      "id": "tech:mathematics",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "Commercial Hub, Encampment and Industrial Zone across the river make three specialty districts by turn 80."
+    },
+    {
+      "id": "tech:apprenticeship",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "Three Mines on the far-bank hills across the first three cities."
+    },
+    {
+      "id": "tech:military-tactics",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "A levied Spearman kills a camp unit during the trial levy."
+    },
+    {
+      "id": "tech:iron-working",
+      "fit": "costly",
+      "when": "loop",
+      "how": "A Mine on Iron only if one sits inside a city's rings; Swordsmen are not planned."
+    },
+    {
+      "id": "tech:celestial-navigation",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:shipbuilding",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:castles",
+      "fit": "free",
+      "when": "peak",
+      "how": "Monarchy is a Tier 2 government and the plan's government."
+    },
+    {
+      "id": "tech:stirrups",
+      "fit": "free",
+      "when": "peak",
+      "how": "Feudalism is on the civic path for Serfdom."
+    },
+    {
+      "id": "tech:military-engineering",
+      "fit": "cheap",
+      "when": "peak",
+      "how": "The capital Aqueduct, built across the river in a few turns."
+    },
+    {
+      "id": "tech:machinery",
+      "fit": "cheap",
+      "when": "peak",
+      "how": "Three Archers in the field at once, levied Archers included."
+    },
+    {
+      "id": "tech:metal-casting",
+      "fit": "cheap",
+      "when": "peak",
+      "how": "Two Crossbowmen in the field at once, levied ones included."
+    },
+    {
+      "id": "tech:siege-tactics",
+      "fit": "cheap",
+      "when": "peak",
+      "how": "Two Trebuchets built for the second target's Walls."
+    },
+    {
+      "id": "tech:buttress",
+      "fit": "cheap",
+      "when": "peak",
+      "how": "Owning Apadana, Alhambra or Kilwa Kisiwani."
+    },
+    {
+      "id": "tech:mass-production",
+      "fit": "cheap",
+      "when": "peak",
+      "how": "A Lumber Mill on any Woods tile across the river."
+    },
+    {
+      "id": "tech:gunpowder",
+      "fit": "cheap",
+      "when": "peak",
+      "how": "An Armory in the Encampment city."
+    },
+    {
+      "id": "tech:banking",
+      "fit": "free",
+      "when": "peak",
+      "how": "Guilds is on the civic path for the Markets."
+    },
+    {
+      "id": "tech:education",
+      "fit": "costly",
+      "when": "peak",
+      "how": "A Great Scientist is not pursued; research Education unboosted when Universities are wanted."
+    },
+    {
+      "id": "tech:cartography",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:square-rigging",
+      "fit": "costly",
+      "when": "consolidate",
+      "how": "A Musketman kill only if a war is still running."
+    },
+    {
+      "id": "tech:printing",
+      "fit": "cheap",
+      "when": "consolidate",
+      "how": "Two Universities in the Science catch-up."
+    },
+    {
+      "id": "tech:astronomy",
+      "fit": "costly",
+      "when": "consolidate",
+      "how": "A University beside a mountain only if a Campus already touches one."
+    },
+    {
+      "id": "tech:economics",
+      "fit": "cheap",
+      "when": "consolidate",
+      "how": "Two Banks across the river; the levy budget needs them anyway."
+    },
+    {
+      "id": "tech:industrialization",
+      "fit": "cheap",
+      "when": "consolidate",
+      "how": "Two Workshops in the far-bank Industrial Zones."
+    },
+    {
+      "id": "tech:military-science",
+      "fit": "cheap",
+      "when": "consolidate",
+      "how": "A levied Knight kills a unit during the second campaign or a camp clearance."
+    },
+    {
+      "id": "tech:rifling",
+      "fit": "cheap",
+      "when": "consolidate",
+      "how": "A Mine on the Niter the Field Cannons need."
+    },
+    {
+      "id": "tech:ballistics",
+      "fit": "costly",
+      "when": "consolidate",
+      "how": "Two Forts from a Military Engineer; only if the frontier needs them."
+    },
+    {
+      "id": "tech:scientific-theory",
+      "fit": "costly",
+      "when": "consolidate",
+      "how": "The Enlightenment is a detour for a Domination civ; take it only if the Culture is there."
+    },
+    {
+      "id": "tech:sanitation",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:steam-power",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "tech:chemistry",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Alliance level two with any of the three allies the Huszár needed."
+    },
+    {
+      "id": "tech:replaceable-parts",
+      "fit": "costly",
+      "when": "close",
+      "how": "Three Line Infantry in the field at once, levied ones included, on the Domination branch."
+    },
+    {
+      "id": "tech:combined-arms",
+      "fit": "costly",
+      "when": "close",
+      "how": "Three Armies on the Domination branch only."
+    },
+    {
+      "id": "tech:flight",
+      "fit": "costly",
+      "when": "close",
+      "how": "An Industrial-era wonder only if one falls into a captured city; the Forbidden City is Renaissance and does not count."
+    },
+    {
+      "id": "tech:computers",
+      "fit": "free",
+      "when": "close",
+      "how": "Democracy or Fascism is a Tier 3 government."
+    },
+    {
+      "id": "civic:craftsmanship",
+      "fit": "free",
+      "when": "setup",
+      "how": "Three improvements from the first Builder."
+    },
+    {
+      "id": "civic:foreign-trade",
+      "fit": "costly",
+      "when": "setup",
+      "how": "A second continent only if the Scout reaches one on a Continents map."
+    },
+    {
+      "id": "civic:mysticism",
+      "fit": "free",
+      "when": "setup",
+      "how": "Founding Religious Settlements or Fire Goddess."
+    },
+    {
+      "id": "civic:military-tradition",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "Clearing the camp beside the first city-state with Warriors or the trial levy."
+    },
+    {
+      "id": "civic:state-workforce",
+      "fit": "free",
+      "when": "loop",
+      "how": "The capital Commercial Hub is the first district."
+    },
+    {
+      "id": "civic:early-empire",
+      "fit": "free",
+      "when": "loop",
+      "how": "Six population across the first two river cities."
+    },
+    {
+      "id": "civic:political-philosophy",
+      "fit": "free",
+      "when": "loop",
+      "how": "Three city-states met by the Scout, which is the plan's whole opening."
+    },
+    {
+      "id": "civic:games-and-recreation",
+      "fit": "free",
+      "when": "loop",
+      "how": "Researching Construction for the Water Mill."
+    },
+    {
+      "id": "civic:military-training",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "The Encampment across the river in the forward city."
+    },
+    {
+      "id": "civic:defensive-tactics",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "A neighbour declares on a civilization with no visible army; it happens."
+    },
+    {
+      "id": "civic:drama-and-poetry",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "Finishing Apadana across the river in the capital."
+    },
+    {
+      "id": "civic:theology",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:recorded-history",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:feudalism",
+      "fit": "cheap",
+      "when": "loop",
+      "how": "Six Farms along the rivers across six cities."
+    },
+    {
+      "id": "civic:civil-service",
+      "fit": "cheap",
+      "when": "peak",
+      "how": "The capital reaches ten population with its Aqueduct."
+    },
+    {
+      "id": "civic:mercenaries",
+      "fit": "free",
+      "when": "peak",
+      "how": "Eight land units in the field during the first campaign, levied ones included."
+    },
+    {
+      "id": "civic:divine-right",
+      "fit": "costly",
+      "when": "peak",
+      "how": "Two Temples need two Holy Sites this plan does not build; research it unboosted for Monarchy."
+    },
+    {
+      "id": "civic:guilds",
+      "fit": "cheap",
+      "when": "peak",
+      "how": "Two Markets across the river in the first two Commercial Hubs."
+    },
+    {
+      "id": "civic:medieval-faires",
+      "fit": "cheap",
+      "when": "peak",
+      "how": "Four Trade Routes running from the Commercial Hubs."
+    },
+    {
+      "id": "civic:diplomatic-service",
+      "fit": "cheap",
+      "when": "peak",
+      "how": "The first alliance, signed for the Huszár's sake."
+    },
+    {
+      "id": "civic:naval-tradition",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:exploration",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:humanism",
+      "fit": "skip",
+      "when": null,
+      "how": ""
+    },
+    {
+      "id": "civic:mercantilism",
+      "fit": "costly",
+      "when": "consolidate",
+      "how": "A Great Merchant only if one comes free; no Great Merchant race is run."
+    },
+    {
+      "id": "civic:the-enlightenment",
+      "fit": "costly",
+      "when": "consolidate",
+      "how": "Three Great People across Generals and Merchants; usually met late."
+    },
+    {
+      "id": "civic:nationalism",
+      "fit": "free",
+      "when": "consolidate",
+      "how": "The first campaign was declared with a Casus Belli."
+    },
+    {
+      "id": "civic:colonialism",
+      "fit": "free",
+      "when": "consolidate",
+      "how": "Researching Astronomy on the way to the Industrial techs."
+    },
+    {
+      "id": "civic:scorched-earth",
+      "fit": "cheap",
+      "when": "consolidate",
+      "how": "Two Field Cannons for the second campaign's siege line."
+    },
+    {
+      "id": "civic:natural-history",
+      "fit": "costly",
+      "when": "consolidate",
+      "how": "An Archaeological Museum is a detour; research it unboosted for the Thermal Bath."
+    },
+    {
+      "id": "civic:civil-engineering",
+      "fit": "costly",
+      "when": "consolidate",
+      "how": "Seven district types needs a Theater Square and a Harbor this plan rarely builds."
+    },
+    {
+      "id": "civic:urbanization",
+      "fit": "costly",
+      "when": "consolidate",
+      "how": "A city of fifteen; the capital with two Aqueduct-era Housing buildings may reach it."
+    },
+    {
+      "id": "civic:mobilization",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Three Corps of Huszár on the Domination branch."
+    },
+    {
+      "id": "civic:totalitarianism",
+      "fit": "costly",
+      "when": "close",
+      "how": "Three Military Academies only if the Domination branch has the Encampments."
+    },
+    {
+      "id": "civic:professional-sports",
+      "fit": "cheap",
+      "when": "close",
+      "how": "Two Entertainment Complexes holding the Thermal Baths."
+    }
+  ],
+  "decision_triggers": [
+    {
+      "name": "Levy now",
+      "if": "The band is green, a Militaristic city-state you hold has six or more units, and a rival city with Ancient Walls at most sits within twelve tiles of it.",
+      "then": "Levy that city-state this turn, upgrade the rented units at the nearest Encampment, put the Black Army in the middle of them, and declare with a Casus Belli. Write the return turn down."
+    },
+    {
+      "name": "Switch the levy source",
+      "if": "A rival is within two Envoys of you at the city-state whose army you planned to use, and another city-state you hold by four or more is within reach of the same target.",
+      "then": "Levy the safe city-state instead and send the next Envoys to the contested one; the two Envoys the levy grants go to whichever one the watched stat says is closer to amber."
+    },
+    {
+      "name": "Levy mid-siege expiry",
+      "if": "The target is above half health and the levy returns inside five turns.",
+      "then": "Do not re-levy to finish a siege the first levy could not: pull back, keep the city you have, and plan the second campaign on a target one size smaller."
+    },
+    {
+      "name": "Diplomatic over conquest",
+      "if": "At turn 250 the campaign took one city or none but you are suzerain of five or more city-states with Favor banked.",
+      "then": "Stop levying for war, keep Monarchy and Charismatic Leader, and spend the Envoys and Favor on the Congress; the kit's Envoy half closes a Diplomatic game on its own."
+    }
+  ],
+  "abort": {
+    "trigger": "The band has been red for fifteen turns: no levy is affordable and the suzerainty of the nearest Militaristic city-state is gone with no Envoy lead anywhere within three.",
+    "actions": [
+      "Stop paying for Envoys to city-states you cannot hold and stop saving for a levy; build your own army from the Encampment with the Gold instead.",
+      "Rebuild as a river-Production civilization around the Commercial Hubs, Industrial Zones and captured cities already standing, and aim for Score or a late Science game.",
+      "Keep the Thermal Baths and Victor in the captured cities; they are the only permanent gain and they are what the game is now about."
+    ]
+  },
+  "fail_state": "The Renaissance arrives with the treasury spent on a levy that returned mid-siege, the levied city-state flipped to a rival the same turn, four Black Army standing alone in enemy territory, and no captured city to show for it. Hungary is then a river civilization with good Production and an army it never built, two eras from the Huszár and with nothing the kit can do about the gap.",
+  "common_mistakes": [
+    "Levying when the treasury covers the price once. The second levy is the one that takes the second city, and amber on the first means there is no second.",
+    "Levying the safe city-state. The two Envoys a levy grants are worth most at the city-state a rival is about to take, which is also the one whose army you would otherwise lose.",
+    "Building districts on the near bank because the far bank tile was a turn further away. The bonus is half again the Production for the whole game; one turn of walking is nothing against it.",
+    "Forgetting the return turn. Levied units vanish at the end of it wherever they stand, and the Black Army beside them are then alone in enemy land.",
+    "Building a standing army of your own in the Classical era. Every Warrior and Archer is a Market not built; the plan's army lives in the city-states until Castles."
+  ],
+  "sources": [
+    "Civilization VI Civilopedia, Gathering Storm ruleset (Hungary, Matthias Corvinus, Black Army, Huszar, Thermal Bath, levying units from city-states).",
+    "The civ-info text lists the Black Army as a Man-At-Arms replacement; in Gathering Storm it replaces the Courser and the Huszar replaces the Cavalry, and the plan follows the game.",
+    "Boost objectives cross-checked against civilization6planner.com tech-tree and civics-tree pages, 2026-10-01.",
+    "Leadership Focus tags, caveats and Monitor supplement for Matthias Corvinus in this repository."
+  ]
+}
