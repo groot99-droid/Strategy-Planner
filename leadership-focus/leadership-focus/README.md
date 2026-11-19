@@ -1,5 +1,7 @@
 # Leadership Focus
 
+> **Status, 2026-11-19:** Historical record, kept as written on 2026-08-31. This nested folder is an early copy from the first commit (four data files, one script, its own `output/`); no script, page or workflow reads it. Current state: the maintained pipeline is the parent folder, `leadership-focus/` (see its `README.md`), which has more source data, plan validation and the site build.
+
 Data and build pipeline for the Civ VI Leadership Focus strategy tool.
 
 ## Structure
